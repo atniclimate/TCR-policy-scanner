@@ -1,0 +1,44 @@
+name: Daily Policy Scan
+
+on:
+  schedule:
+    # 6:00 AM Pacific (13:00 UTC) every weekday
+    - cron: '0 13 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run policy scan
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+        run: python -m src.main --verbose
+
+      - name: Commit and push results
+        run: |
+          git config user.name "TCR Policy Scanner"
+          git config user.email "scanner@atniclimate.org"
+          git add outputs/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "policy scan: $(date -u +%Y-%m-%d)"
+            git push
+          fi

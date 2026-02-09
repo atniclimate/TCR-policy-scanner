@@ -1,0 +1,86 @@
+{
+  "sources": {
+    "federal_register": {
+      "name": "Federal Register",
+      "base_url": "https://www.federalregister.gov/api/v1",
+      "requires_key": false,
+      "authority_weight": 0.9,
+      "search_params": {
+        "per_page": 50,
+        "order": "newest",
+        "conditions[agencies]": [
+          "interior-department",
+          "environmental-protection-agency",
+          "federal-emergency-management-agency",
+          "energy-department",
+          "housing-and-urban-development-department",
+          "transportation-department",
+          "agriculture-department",
+          "commerce-department"
+        ]
+      }
+    },
+    "grants_gov": {
+      "name": "Grants.gov",
+      "base_url": "https://api.grants.gov/v1",
+      "requires_key": false,
+      "authority_weight": 0.85,
+      "search_params": {
+        "rows": 50,
+        "sortBy": "openDate|desc"
+      }
+    },
+    "congress_gov": {
+      "name": "Congress.gov",
+      "base_url": "https://api.congress.gov/v3",
+      "requires_key": true,
+      "key_env_var": "CONGRESS_API_KEY",
+      "authority_weight": 0.8,
+      "search_params": {
+        "limit": 50,
+        "sort": "updateDate+desc"
+      }
+    }
+  },
+  "scoring": {
+    "weights": {
+      "program_match": 0.35,
+      "tribal_keyword_density": 0.25,
+      "recency": 0.15,
+      "source_authority": 0.15,
+      "action_relevance": 0.10
+    },
+    "critical_boost": 0.15,
+    "relevance_threshold": 0.30
+  },
+  "tribal_keywords": [
+    "tribal", "tribe", "tribes", "indian", "native american",
+    "alaska native", "indigenous", "indian country",
+    "trust responsibility", "self-determination", "sovereignty",
+    "bureau of indian affairs", "BIA", "indian health service",
+    "tribal climate", "tribal resilience", "tribal mitigation",
+    "tribal set-aside", "tribal consultation", "tribal nations",
+    "tribal lands", "reservation", "indian reservation",
+    "638 contract", "self-governance", "tribal government"
+  ],
+  "action_keywords": [
+    "notice of funding", "NOFO", "request for applications",
+    "proposed rule", "final rule", "executive order",
+    "appropriation", "authorization", "reauthorization",
+    "amendment", "extension", "deadline", "comment period",
+    "grant opportunity", "funding opportunity", "solicitation",
+    "budget request", "continuing resolution", "omnibus"
+  ],
+  "search_queries": [
+    "tribal climate resilience",
+    "tribal climate adaptation",
+    "tribal hazard mitigation",
+    "indian tribe grant",
+    "tribal energy",
+    "tribal infrastructure",
+    "BRIC tribal",
+    "elective pay tribal",
+    "tribal clean energy"
+  ],
+  "scan_window_days": 14
+}

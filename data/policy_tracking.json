@@ -1,0 +1,106 @@
+{
+  "policy_tracking_id": "FY26-TRIBAL-RESILIENCE-001",
+  "last_updated": "2026-02-09",
+  "ci_thresholds": {
+    "stable": 0.85,
+    "at_risk_floor": 0.50,
+    "flagged_floor": 0.0
+  },
+  "positions": [
+    {
+      "program_id": "bia_tcr",
+      "program_name": "BIA Tribal Climate Resilience",
+      "agency": "BIA",
+      "confidence_index": 0.88,
+      "status": "STABLE",
+      "reasoning": "FY26 funded at $34.291M. Core vehicle for Tribal climate adaptation. Non-competitive direct-access pathway.",
+      "extensible_fields": {
+        "advocacy_priority": "Critical",
+        "fy26_funding": "$34.291M",
+        "scanner_trigger_keywords": ["BIA climate", "TCR program", "annual award"],
+        "tightened_language": "Protect the $34.291M base funding line as a floor, ensuring non-competitive, direct-access pathways for Tribes to bypass administrative bottlenecks inherent in discretionary grant cycles."
+      }
+    },
+    {
+      "program_id": "fema_bric",
+      "program_name": "FEMA BRIC",
+      "agency": "FEMA",
+      "confidence_index": 0.12,
+      "status": "FLAGGED",
+      "reasoning": "FEMA announced termination of BRIC on April 4, 2025. FY24/25 cycles canceled. ~$882M unobligated IIJA funds returned to Treasury or reapportioned.",
+      "extensible_fields": {
+        "advocacy_priority": "Critical - Specialist Required",
+        "termination_date": "2025-04-04",
+        "unobligated_funds": "$882M",
+        "scanner_trigger_keywords": ["BRIC termination", "responsive mitigation", "pre-disaster mitigation replacement"],
+        "specialist_focus": "Advocacy must pivot to the replacement mechanism. Ensure Tribal set-asides are baked into the new 'responsive mitigation approach' from day one.",
+        "strength_area": "Fully obligated projects (started construction) are still being honored; protect these existing obligations."
+      }
+    },
+    {
+      "program_id": "irs_elective_pay",
+      "program_name": "IRS Elective Pay",
+      "agency": "Treasury/IRS",
+      "confidence_index": 0.92,
+      "status": "STABLE",
+      "reasoning": "Final regulations (Jan 2026) confirm Tribal instrumentalities as applicable entities under Section 6417.",
+      "extensible_fields": {
+        "advocacy_priority": "Critical",
+        "final_rule_date": "2026-01",
+        "scanner_trigger_keywords": ["elective pay", "6417", "tribal instrumentality", "direct pay"],
+        "tightened_language": "Maintain the January 2026 final rule status of Tribal instrumentalities (Section 17/Section 3 corps) to ensure liquidity for Tribal energy projects without the need for tax-equity partners."
+      }
+    },
+    {
+      "program_id": "epa_stag",
+      "program_name": "EPA STAG / DWIG-TSA",
+      "agency": "EPA",
+      "confidence_index": 0.90,
+      "status": "STABLE",
+      "reasoning": "IIJA-funded supplemental lines (Lead/PFAS) remain active through FY26.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["STAG", "DWIG-TSA", "tribal capitalization", "lead service line"]
+      }
+    },
+    {
+      "program_id": "fema_tribal_mitigation",
+      "program_name": "FEMA Tribal Mitigation Plans",
+      "agency": "FEMA",
+      "confidence_index": 0.65,
+      "status": "AT_RISK",
+      "reasoning": "Loss of BRIC as primary funding incentive reduces plan ROI; statutory requirement remains but funding for planning is opaque.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["Stafford Act", "404 Mitigation", "Plan Update"],
+        "proposed_fix": "Legislative mandate for automatic plan updates post-disaster."
+      }
+    },
+    {
+      "program_id": "dot_protect",
+      "program_name": "DOT PROTECT Grants",
+      "agency": "DOT",
+      "confidence_index": 0.86,
+      "status": "STABLE",
+      "reasoning": "Tribal set-aside (2%) is statutorily protected through FY26.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "tribal_set_aside": "2%",
+        "scanner_trigger_keywords": ["PROTECT grant", "transportation resilience"]
+      }
+    },
+    {
+      "program_id": "usda_wildfire",
+      "program_name": "Community Wildfire Defense Grants",
+      "agency": "USDA/USFS",
+      "confidence_index": 0.78,
+      "status": "STABLE_BUT_VULNERABLE",
+      "reasoning": "High tribal participation but subject to Forest Management reforms (EO 14225).",
+      "extensible_fields": {
+        "advocacy_priority": "Medium",
+        "scanner_trigger_keywords": ["CWDG", "Hazardous Fuels", "Match Waiver"],
+        "proposed_fix": "Codify Tribal match waivers in FY26 Interior Approps."
+      }
+    }
+  ]
+}
