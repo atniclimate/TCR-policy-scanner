@@ -16,7 +16,7 @@ from pathlib import Path
 
 from src.graph.schema import (
     ProgramNode, AuthorityNode, FundingVehicleNode,
-    BarrierNode, AdvocacyLeverNode, ObligationNode, Edge,
+    BarrierNode, AdvocacyLeverNode, ObligationNode, TrustSuperNode, Edge,
     node_to_dict, edge_to_dict,
 )
 
@@ -235,6 +235,56 @@ class GraphBuilder:
                     target_id=lever_id,
                     edge_type="MITIGATED_BY",
                 ))
+
+        # Structural Asks (Five Structural Asks as AdvocacyLeverNodes with ADVANCES edges)
+        self._seed_structural_asks(schema)
+
+        # Trust Super-Node
+        self._seed_trust_node(schema)
+
+    def _seed_structural_asks(self, schema: dict) -> None:
+        """Load Five Structural Asks as AdvocacyLeverNodes with ADVANCES edges."""
+        for ask in schema.get("structural_asks", []):
+            node = AdvocacyLeverNode(
+                id=ask["id"],
+                description=ask["description"],
+                target=ask.get("target", ""),
+                urgency=ask.get("urgency", ""),
+            )
+            self.graph.add_node(node)
+            # ADVANCES edges: Ask -> Program
+            for pid in ask.get("programs", []):
+                self.graph.add_edge(Edge(
+                    source_id=ask["id"],
+                    target_id=pid,
+                    edge_type="ADVANCES",
+                ))
+            # Structural ask mitigates barriers (reuses existing MITIGATED_BY edge type)
+            for bar_id in ask.get("mitigates", []):
+                self.graph.add_edge(Edge(
+                    source_id=ask["id"],
+                    target_id=bar_id,
+                    edge_type="MITIGATED_BY",
+                ))
+
+    def _seed_trust_node(self, schema: dict) -> None:
+        """Load Trust Super-Node with TRUST_OBLIGATION edges to BIA/EPA programs."""
+        trust_data = schema.get("trust_super_node")
+        if not trust_data:
+            return
+        node = TrustSuperNode(
+            id=trust_data["id"],
+            name=trust_data["name"],
+            description=trust_data.get("description", ""),
+            legal_basis=trust_data.get("legal_basis", ""),
+        )
+        self.graph.add_node(node)
+        for pid in trust_data.get("programs", []):
+            self.graph.add_edge(Edge(
+                source_id=trust_data["id"],
+                target_id=pid,
+                edge_type="TRUST_OBLIGATION",
+            ))
 
     def _enrich_from_items(self, items: list[dict]) -> None:
         """Infer new nodes and edges from scraped policy items."""
