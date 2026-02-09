@@ -22,6 +22,7 @@ logger = logging.getLogger(__name__)
 # CFDA numbers for tracked programs (Assistance Listings)
 CFDA_NUMBERS = {
     "15.156": "bia_tcr",        # BIA Tribal Climate Resilience
+    "15.124": "bia_tcr_awards",  # BIA Tribal Community Resilience Annual Awards
     "97.047": "fema_bric",      # FEMA BRIC / Hazard Mitigation
     "97.039": "fema_bric",      # FEMA Hazard Mitigation Grant Program
     "66.926": "epa_gap",        # EPA Indian Environmental GAP
