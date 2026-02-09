@@ -4,35 +4,35 @@
 
 **Core Value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
 
-**Current Focus:** Phase 1 complete -- pipeline validated locally and in CI. Ready for Phase 2 (Data Model and Graph Enhancements).
+**Current Focus:** Phase 2 in progress -- data model enrichment. Plan 01 complete (data file gaps), Plan 02 next (graph schema/builder).
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, and report generator already implemented.
 
 ## Current Position
 
 **Milestone:** v1
-**Phase:** 1 of 4 (Pipeline Validation) -- COMPLETE
-**Plan:** 2 of 2 complete
-**Status:** Phase complete
-**Last activity:** 2026-02-09 - Completed 01-02-PLAN.md
+**Phase:** 2 of 4 (Data Model and Graph)
+**Plan:** 1 of 2 complete
+**Status:** In progress
+**Last activity:** 2026-02-09 - Completed 02-01-PLAN.md
 
 **Progress:**
 ```
 Phase 1 [##########] 100% Pipeline Validation (2/2 plans) COMPLETE
-Phase 2 [..........] 0%   Data Model and Graph
+Phase 2 [#####.....] 50%  Data Model and Graph (1/2 plans)
 Phase 3 [..........] 0%   Monitoring and Logic
 Phase 4 [..........] 0%   Report Enhancements
-Overall [##........] 25%  2/8 plans complete
+Overall [###.......] 37%  3/8 plans complete
 ```
 
 ## Performance Metrics
 
 | Metric | Value |
 |--------|-------|
-| Requirements completed | 4/31 (PIPE-01, PIPE-02, PIPE-03, PIPE-04) |
+| Requirements completed | 7/31 (PIPE-01, PIPE-02, PIPE-03, PIPE-04, DATA-02, DATA-04, DATA-05) |
 | Phases completed | 1/4 |
-| Plans completed | 2/8 |
-| Session count | 2 |
+| Plans completed | 3/8 |
+| Session count | 3 |
 
 ## Accumulated Context
 
@@ -49,6 +49,9 @@ Overall [##........] 25%  2/8 plans complete
 | Congress.gov graceful skip without API key | 01-01 | Scraper logs warning and returns 0 items rather than crashing pipeline |
 | SAM_API_KEY stored in GitHub Secrets | 01-02 | Added for future SAM.gov scraper use; prevents revisiting secrets config later |
 | CI validation via workflow_dispatch | 01-02 | Manual trigger exercises same code path as cron schedule; sufficient for PIPE-03 validation |
+| flagged_floor raised to 0.10 | 02-01 | FEMA BRIC at CI 0.12 stays FLAGGED; gap 0.10-0.0 reserved for TERMINATED only |
+| terminated_floor at 0.0 | 02-01 | Absolute floor for confirmed-dead programs |
+| Reconciliation keywords as shared scanner terms | 02-01 | Added to global action_keywords/search_queries so all scrapers benefit |
 
 ### Architecture Notes
 
@@ -61,6 +64,9 @@ Overall [##........] 25%  2/8 plans complete
 - **CI results (01-02):** All 4 scrapers ran in CI with API keys from GitHub Secrets; outputs committed at 6178fc3
 - **Pipeline throughput:** 279 raw -> 164 scored above threshold -> 182 graph nodes, 196 graph edges
 - **GitHub Secrets configured:** CONGRESS_API_KEY, SAM_API_KEY
+- **CI thresholds:** 7-tier model (secure/stable/stable_but_vulnerable/at_risk/uncertain/flagged/terminated)
+- **Scanner keywords:** 42 action keywords, 16 search queries (includes reconciliation/repeal terms)
+- **CFDA mappings:** 12 entries in grants_gov.py (includes 15.124 for BIA TCR Awards)
 
 ### Todos
 
@@ -75,12 +81,12 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-09
-**Stopped at:** Completed 01-02-PLAN.md (GitHub Actions CI Workflow Validation) -- Phase 1 complete
-**Resume file:** `.planning/phases/02-data-model-graph/` (Phase 2 plans)
+**Stopped at:** Completed 02-01-PLAN.md (Data File Gaps) -- Phase 2 Plan 1 complete
+**Resume file:** `.planning/phases/02-data-model-graph/02-02-PLAN.md`
 
 ### Resume Instructions
 
-Phase 1 (Pipeline Validation) is complete. All 4 PIPE requirements validated. Begin Phase 2 (Data Model and Graph Enhancements) which has 2 plans: Program Inventory/Status Alignment and Graph Schema/Builder Enhancements.
+Phase 2 Plan 1 (Data File Gaps) is complete. DATA-02, DATA-04, DATA-05 requirements addressed. Continue with Phase 2 Plan 2 (Graph Schema and Builder Enhancements).
 
 ---
 *State initialized: 2026-02-09*
