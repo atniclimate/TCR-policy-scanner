@@ -26,11 +26,19 @@ class ReportGenerator:
         ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
 
     def generate(self, scored_items: list[dict], changes: dict,
-                 graph_data: dict | None = None) -> dict:
+                 graph_data: dict | None = None,
+                 monitor_data: dict | None = None,
+                 classifications: dict | None = None) -> dict:
         """Generate both Markdown and JSON reports. Returns file paths."""
         timestamp = datetime.utcnow().strftime("%Y-%m-%d")
-        md_content = self._build_markdown(scored_items, changes, timestamp, graph_data)
-        json_content = self._build_json(scored_items, changes, timestamp, graph_data)
+        md_content = self._build_markdown(
+            scored_items, changes, timestamp, graph_data,
+            monitor_data, classifications,
+        )
+        json_content = self._build_json(
+            scored_items, changes, timestamp, graph_data,
+            monitor_data, classifications,
+        )
 
         # Write latest
         md_path = OUTPUTS_DIR / "LATEST-BRIEFING.md"
@@ -48,8 +56,15 @@ class ReportGenerator:
         return {"markdown": str(md_path), "json": str(json_path)}
 
     def _build_markdown(self, items: list[dict], changes: dict,
-                        timestamp: str, graph_data: dict | None = None) -> str:
+                        timestamp: str, graph_data: dict | None = None,
+                        monitor_data: dict | None = None,
+                        classifications: dict | None = None) -> str:
         """Build a Markdown briefing for Tribal Leaders."""
+        if monitor_data is None:
+            logger.warning("monitor_data is None; monitor-dependent sections will be limited")
+        if classifications is None:
+            logger.warning("classifications is None; advocacy goals section will be skipped")
+
         lines = [
             f"# TCR Policy Briefing — {timestamp}",
             "",
@@ -71,6 +86,10 @@ class ReportGenerator:
             lines.append("No new policy developments since the last scan.")
         lines.append("")
 
+        # Urgent/time-sensitive sections (above the fold)
+        lines.extend(self._format_reconciliation_watch(monitor_data))
+        lines.extend(self._format_iija_countdown(monitor_data))
+
         # New items section
         if changes["new_items"]:
             lines.append("## New Developments")
@@ -91,26 +110,34 @@ class ReportGenerator:
                 lines.extend(self._format_item(item))
             lines.append("")
 
-        # All items by score
-        lines.append("## All Relevant Items (by score)")
-        lines.append("")
-        for item in items:
-            lines.extend(self._format_item_brief(item))
-        lines.append("")
-
-        # Confidence Index Dashboard
+        # Confidence Index Dashboard (with Hot Sheets column)
         ci_programs = [p for p in self.programs.values() if "confidence_index" in p]
         if ci_programs:
             lines.append("## Confidence Index Dashboard")
             lines.append("")
-            lines.append("| Program | CI | Status | Determination |")
-            lines.append("|---------|---:|--------|--------------|")
+            lines.append("| Program | CI | Status | Hot Sheets | Determination |")
+            lines.append("|---------|---:|--------|:----------:|--------------|")
             for prog in sorted(ci_programs, key=lambda p: p.get("confidence_index", 0)):
                 ci = prog.get("confidence_index", 0)
                 status = prog.get("ci_status", "N/A")
-                det = prog.get("ci_determination", "")[:80]
+                det = prog.get("ci_determination", "")[:70]
                 ci_pct = f"{ci * 100:.0f}%"
-                lines.append(f"| {prog['name']} | {ci_pct} | {status} | {det} |")
+
+                # Hot Sheets sync indicator
+                hs = prog.get("hot_sheets_status")
+                if hs:
+                    hs_status = hs.get("status", "")
+                    original = prog.get("original_ci_status")
+                    if original and original != hs_status:
+                        hs_badge = f"OVERRIDE ({original}->{hs_status})"
+                    elif hs_status == status:
+                        hs_badge = "ALIGNED"
+                    else:
+                        hs_badge = f"DIVERGED ({hs_status})"
+                else:
+                    hs_badge = "--"
+
+                lines.append(f"| {prog['name']} | {ci_pct} | {status} | {hs_badge} | {det} |")
             lines.append("")
 
             # Flagged programs warning
@@ -127,7 +154,11 @@ class ReportGenerator:
                         lines.append(f"> **Specialist Focus:** {prog['specialist_focus']}")
                     lines.append("")
 
-        # Knowledge Graph: Barriers & Levers
+        # Analytical sections (after FLAGGED detail)
+        lines.extend(self._format_advocacy_goals(classifications))
+        lines.extend(self._format_structural_asks(graph_data))
+
+        # Knowledge Graph: Barriers & Authorities
         if graph_data:
             lines.extend(self._format_graph_barriers(graph_data))
             lines.extend(self._format_graph_authorities(graph_data))
@@ -149,9 +180,197 @@ class ReportGenerator:
                     lines.append(f"| {prog['name']} | {prog['priority'].upper()} | {ci_str} | {prog['advocacy_lever']} |")
             lines.append("")
 
+        # All items by score (reference data, near end)
+        lines.append("## All Relevant Items (by score)")
+        lines.append("")
+        for item in items:
+            lines.extend(self._format_item_brief(item))
+        lines.append("")
+
         lines.append("---")
         lines.append(f"*Generated by TCR Policy Scanner on {timestamp}*")
         return "\n".join(lines)
+
+    def _format_structural_asks(self, graph_data: dict) -> list[str]:
+        """Format Five Structural Asks mapped to barriers and programs (RPT-01)."""
+        if not graph_data:
+            return []
+
+        nodes = graph_data.get("nodes", {})
+        edges = graph_data.get("edges", [])
+
+        # Find structural ask nodes (id starts with "ask_")
+        asks = {
+            nid: n for nid, n in nodes.items()
+            if n.get("_type") == "AdvocacyLeverNode" and nid.startswith("ask_")
+        }
+        if not asks:
+            return []
+
+        lines = [
+            "## Five Structural Asks",
+            "",
+        ]
+
+        for ask_id, ask in sorted(asks.items()):
+            name = ask.get("description", ask_id)
+            urgency = ask.get("urgency", "")
+            target = ask.get("target", "")
+
+            # Find programs this ask ADVANCES
+            program_ids = [
+                e["target"] for e in edges
+                if e["source"] == ask_id and e["type"] == "ADVANCES"
+            ]
+            program_names = []
+            for pid in program_ids:
+                prog = self.programs.get(pid)
+                if prog:
+                    program_names.append(prog["name"])
+
+            # Find barriers this ask mitigates
+            barrier_ids = [
+                e["source"] for e in edges
+                if e["target"] == ask_id and e["type"] == "MITIGATED_BY"
+            ]
+            barrier_descs = []
+            for bid in barrier_ids:
+                bar = nodes.get(bid, {})
+                if bar:
+                    barrier_descs.append(bar.get("description", bid))
+
+            urgency_badge = f" [{urgency}]" if urgency else ""
+            lines.append(f"### {name}{urgency_badge}")
+            lines.append(f"**Target:** {target}")
+            if program_names:
+                lines.append(f"**Programs:** {', '.join(program_names)}")
+            if barrier_descs:
+                lines.append(f"**Mitigates:**")
+                for bd in barrier_descs:
+                    lines.append(f"- {bd}")
+            lines.append("")
+
+        return lines
+
+    def _format_iija_countdown(self, monitor_data: dict | None) -> list[str]:
+        """Format IIJA sunset countdown table (RPT-03). Always renders."""
+        lines = [
+            "## IIJA Sunset Countdown",
+            "",
+        ]
+
+        if not monitor_data:
+            lines.append("*No monitor data available.*")
+            lines.append("")
+            return lines
+
+        iija_alerts = [
+            a for a in monitor_data.get("alerts", [])
+            if a.get("monitor") == "iija_sunset"
+        ]
+
+        if not iija_alerts:
+            lines.append("No IIJA-funded programs currently tracked.")
+            lines.append("")
+            return lines
+
+        lines.append("| Program | Deadline | Days Remaining | Severity | Type |")
+        lines.append("|---------|----------|---------------:|----------|------|")
+
+        for alert in sorted(iija_alerts, key=lambda a: a.get("metadata", {}).get("days_remaining") or 9999):
+            meta = alert.get("metadata", {})
+            program_names = [
+                self.programs.get(pid, {}).get("name", pid)
+                for pid in alert.get("program_ids", [])
+            ]
+            name = ", ".join(program_names)
+            deadline = meta.get("deadline", "N/A")
+            days = meta.get("days_remaining")
+            days_str = str(days) if days is not None else "N/A"
+            severity = alert.get("severity", "INFO")
+            threat_type = meta.get("threat_type", "sunset")
+
+            lines.append(f"| {name} | {deadline} | {days_str} | {severity} | {threat_type} |")
+
+        lines.append("")
+        return lines
+
+    def _format_reconciliation_watch(self, monitor_data: dict | None) -> list[str]:
+        """Format Reconciliation Watch section (RPT-05). Always renders."""
+        lines = [
+            "## Reconciliation Watch",
+            "",
+        ]
+
+        if not monitor_data:
+            lines.append("*No monitor data available.*")
+            lines.append("")
+            return lines
+
+        recon_alerts = [
+            a for a in monitor_data.get("alerts", [])
+            if a.get("monitor") == "reconciliation"
+        ]
+
+        if not recon_alerts:
+            lines.append("No active reconciliation threats detected in current scan.")
+            lines.append("")
+            return lines
+
+        for alert in recon_alerts:
+            meta = alert.get("metadata", {})
+            lines.append(f"**{alert.get('severity', 'WARNING')}:** {alert.get('title', '')}")
+            lines.append("")
+            lines.append(f"> {alert.get('detail', '')}")
+            if meta.get("matched_keywords"):
+                lines.append(f"> Keywords: {', '.join(meta['matched_keywords'])}")
+            lines.append("")
+
+        return lines
+
+    def _format_advocacy_goals(self, classifications: dict | None) -> list[str]:
+        """Format advocacy goal classifications per program (RPT-06)."""
+        if not classifications:
+            return []
+
+        # Separate classified from unclassified (avoids table dominated by no-match rows)
+        classified = {
+            pid: c for pid, c in classifications.items()
+            if c.get("advocacy_goal") is not None
+        }
+
+        if not classified:
+            return []
+
+        lines = [
+            "## Advocacy Goal Classifications",
+            "",
+            "| Program | Advocacy Goal | Rule | Confidence | Reason |",
+            "|---------|--------------|------|-----------|--------|",
+        ]
+
+        for pid, c in sorted(classified.items(),
+                             key=lambda x: x[1].get("rule", "Z")):
+            prog = self.programs.get(pid)
+            name = prog["name"] if prog else pid
+            goal = c.get("goal_label", "--")
+            rule = c.get("rule", "--")
+            conf = c.get("confidence", "--")
+            reason = c.get("reason", "")[:80]
+            lines.append(f"| {name} | {goal} | {rule} | {conf} | {reason} |")
+
+        # Unclassified summary
+        unclassified = [
+            pid for pid, c in classifications.items()
+            if c.get("advocacy_goal") is None
+        ]
+        if unclassified:
+            lines.append("")
+            names = [self.programs.get(pid, {}).get("name", pid) for pid in unclassified]
+            lines.append(f"*{len(unclassified)} programs unclassified:* {', '.join(names)}")
+
+        lines.append("")
+        return lines
 
     def _format_graph_barriers(self, graph_data: dict) -> list[str]:
         """Format barrier/lever relationships from the knowledge graph."""
@@ -270,7 +489,9 @@ class ReportGenerator:
         ]
 
     def _build_json(self, items: list[dict], changes: dict,
-                    timestamp: str, graph_data: dict | None = None) -> dict:
+                    timestamp: str, graph_data: dict | None = None,
+                    monitor_data: dict | None = None,
+                    classifications: dict | None = None) -> dict:
         """Build the JSON report structure."""
         result = {
             "scan_date": timestamp,
@@ -284,4 +505,8 @@ class ReportGenerator:
         }
         if graph_data:
             result["knowledge_graph"] = graph_data
+        if monitor_data:
+            result["monitor_data"] = monitor_data
+        if classifications:
+            result["classifications"] = classifications
         return result
