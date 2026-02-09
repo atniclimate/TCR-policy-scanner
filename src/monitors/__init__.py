@@ -93,9 +93,23 @@ class MonitorRunner:
         self._init_monitors()
 
     def _init_monitors(self) -> None:
-        """Import and instantiate all available monitors."""
+        """Import and instantiate all available monitors.
+
+        Order matters: HotSheetsValidator runs FIRST because it applies
+        CI status overrides that affect decision engine classifications.
+        Then threat monitors, then consultation (informational) monitor.
+        """
         # Lazy imports to avoid circular dependencies and allow
         # individual monitors to be developed independently
+
+        # --- HotSheetsValidator MUST run first (CI override) ---
+        try:
+            from src.monitors.hot_sheets import HotSheetsValidator
+            self._monitors.append(HotSheetsValidator(self.config, self.programs))
+        except ImportError:
+            logger.warning("HotSheetsValidator not available")
+
+        # --- Threat monitors ---
         try:
             from src.monitors.iija_sunset import IIJASunsetMonitor
             self._monitors.append(IIJASunsetMonitor(self.config, self.programs))
@@ -113,6 +127,13 @@ class MonitorRunner:
             self._monitors.append(DHSFundingCliffMonitor(self.config, self.programs))
         except ImportError:
             logger.warning("DHSFundingCliffMonitor not available")
+
+        # --- Informational monitors ---
+        try:
+            from src.monitors.tribal_consultation import TribalConsultationMonitor
+            self._monitors.append(TribalConsultationMonitor(self.config, self.programs))
+        except ImportError:
+            logger.warning("TribalConsultationMonitor not available")
 
         logger.info("MonitorRunner initialized with %d monitors", len(self._monitors))
 

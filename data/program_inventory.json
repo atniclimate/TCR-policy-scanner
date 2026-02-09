@@ -13,7 +13,12 @@
       "confidence_index": 0.88,
       "ci_status": "STABLE",
       "ci_determination": "FY26 funded at $34.291M. Core vehicle; focus on permanent multi-year stability.",
-      "tightened_language": "Protect the $34.291M base funding line as a floor, ensuring non-competitive, direct-access pathways for Tribes to bypass administrative bottlenecks inherent in discretionary grant cycles."
+      "tightened_language": "Protect the $34.291M base funding line as a floor, ensuring non-competitive, direct-access pathways for Tribes to bypass administrative bottlenecks inherent in discretionary grant cycles.",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "fema_bric",
@@ -29,7 +34,12 @@
       "ci_status": "FLAGGED",
       "ci_determination": "FEMA announced termination of BRIC on April 4, 2025. FY24/25 cycles canceled. ~$882M unobligated IIJA funds being returned to Treasury. Requires immediate specialist engagement.",
       "specialist_required": true,
-      "specialist_focus": "Advocacy must pivot to the replacement mechanism. Ensure Tribal set-asides are baked into the new 'responsive mitigation approach' from day one. Protect existing fully obligated projects."
+      "specialist_focus": "Advocacy must pivot to the replacement mechanism. Ensure Tribal set-asides are baked into the new 'responsive mitigation approach' from day one. Protect existing fully obligated projects.",
+      "hot_sheets_status": {
+        "status": "FLAGGED",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "irs_elective_pay",
@@ -45,7 +55,12 @@
       "ci_status": "AT_RISK",
       "ci_determination": "Final regulations (Jan 2026) confirm Tribal instrumentalities, but IRA §6417 faces active reconciliation repeal threat. Bipartisan defense coalition needed.",
       "tightened_language": "Maintain the January 2026 final rule status of Tribal instrumentalities (Section 17/Section 3 corps) to ensure liquidity for Tribal energy projects without the need for tax-equity partners.",
-      "scanner_trigger_keywords": ["elective pay repeal", "reconciliation", "Section 6417", "IRA repeal", "direct pay termination"]
+      "scanner_trigger_keywords": ["elective pay repeal", "reconciliation", "Section 6417", "IRA repeal", "direct pay termination"],
+      "hot_sheets_status": {
+        "status": "AT_RISK",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "epa_stag",
@@ -59,7 +74,12 @@
       "description": "EPA State and Tribal Assistance Grants for environmental infrastructure.",
       "confidence_index": 0.90,
       "ci_status": "STABLE",
-      "ci_determination": "IIJA-funded supplemental lines (Lead/PFAS) remain active through FY26."
+      "ci_determination": "IIJA-funded supplemental lines (Lead/PFAS) remain active through FY26.",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "epa_gap",
@@ -73,7 +93,12 @@
       "description": "EPA General Assistance Program providing base environmental capacity to Tribes.",
       "confidence_index": 0.80,
       "ci_status": "STABLE",
-      "ci_determination": "Established program under Indian Environmental GAP Act of 1992. Annual appropriations; stable baseline."
+      "ci_determination": "Established program under Indian Environmental GAP Act of 1992. Annual appropriations; stable baseline.",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "fema_tribal_mitigation",
@@ -89,7 +114,12 @@
       "ci_status": "AT_RISK",
       "ci_determination": "Loss of BRIC as primary funding incentive reduces plan ROI; statutory requirement remains but funding for planning is opaque.",
       "proposed_fix": "Legislative mandate for automatic plan updates post-disaster.",
-      "scanner_trigger_keywords": ["Stafford Act", "404 Mitigation", "Plan Update"]
+      "scanner_trigger_keywords": ["Stafford Act", "404 Mitigation", "Plan Update"],
+      "hot_sheets_status": {
+        "status": "AT_RISK",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "dot_protect",
@@ -103,7 +133,12 @@
       "description": "DOT program for resilience improvements to surface transportation. Statutory Tribal set-aside provides durable protection.",
       "confidence_index": 0.93,
       "ci_status": "SECURE",
-      "ci_determination": "Tribal set-aside (2%) is statutorily protected under IIJA §11405. Not subject to annual appropriations volatility."
+      "ci_determination": "Tribal set-aside (2%) is statutorily protected under IIJA §11405. Not subject to annual appropriations volatility.",
+      "hot_sheets_status": {
+        "status": "SECURE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "usda_wildfire",
@@ -119,7 +154,12 @@
       "ci_status": "STABLE_BUT_VULNERABLE",
       "ci_determination": "High Tribal participation but subject to Forest Management reforms (EO 14225).",
       "proposed_fix": "Codify Tribal match waivers in FY26 Interior Approps.",
-      "scanner_trigger_keywords": ["CWDG", "Hazardous Fuels", "Match Waiver"]
+      "scanner_trigger_keywords": ["CWDG", "Hazardous Fuels", "Match Waiver"],
+      "hot_sheets_status": {
+        "status": "STABLE_BUT_VULNERABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "doe_indian_energy",
@@ -133,7 +173,12 @@
       "description": "DOE Office of Indian Energy programs for Tribal energy development.",
       "confidence_index": 0.55,
       "ci_status": "UNCERTAIN",
-      "ci_determination": "Active program but DOE reorganization and IRA implementation uncertainty create structural ambiguity."
+      "ci_determination": "Active program but DOE reorganization and IRA implementation uncertainty create structural ambiguity.",
+      "hot_sheets_status": {
+        "status": "UNCERTAIN",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "hud_ihbg",
@@ -147,7 +192,12 @@
       "description": "HUD Indian Housing Block Grant program under NAHASDA.",
       "confidence_index": 0.85,
       "ci_status": "STABLE",
-      "ci_determination": "Established formula program under NAHASDA. Reauthorization pending but baseline funding stable."
+      "ci_determination": "Established formula program under NAHASDA. Reauthorization pending but baseline funding stable.",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "noaa_tribal",
@@ -161,7 +211,12 @@
       "description": "NOAA programs supporting Tribal climate and coastal resilience.",
       "confidence_index": 0.50,
       "ci_status": "UNCERTAIN",
-      "ci_determination": "NOAA climate programs face potential restructuring. Tribal-specific lines not well-protected in appropriations."
+      "ci_determination": "NOAA climate programs face potential restructuring. Tribal-specific lines not well-protected in appropriations.",
+      "hot_sheets_status": {
+        "status": "UNCERTAIN",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "fhwa_ttp_safety",
@@ -175,7 +230,12 @@
       "description": "FHWA Tribal Transportation Program safety funding.",
       "confidence_index": 0.85,
       "ci_status": "STABLE",
-      "ci_determination": "Formula-based under 23 U.S.C. 202. Stable statutory authorization."
+      "ci_determination": "Formula-based under 23 U.S.C. 202. Stable statutory authorization.",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "usbr_watersmart",
@@ -189,7 +249,12 @@
       "description": "Bureau of Reclamation WaterSMART grants for water conservation and drought resilience.",
       "confidence_index": 0.60,
       "ci_status": "UNCERTAIN",
-      "ci_determination": "IIJA supplemental funding expires FY26. Baseline reauthorization path unclear."
+      "ci_determination": "IIJA supplemental funding expires FY26. Baseline reauthorization path unclear.",
+      "hot_sheets_status": {
+        "status": "UNCERTAIN",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "usbr_tap",
@@ -203,7 +268,12 @@
       "description": "Bureau of Reclamation Technical Assistance Program.",
       "confidence_index": 0.75,
       "ci_status": "STABLE",
-      "ci_determination": "Technical assistance program tied to WaterSMART. Stable but dependent on parent program reauthorization."
+      "ci_determination": "Technical assistance program tied to WaterSMART. Stable but dependent on parent program reauthorization.",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "bia_tcr_awards",
@@ -218,7 +288,12 @@
       "confidence_index": 0.85,
       "ci_status": "STABLE",
       "ci_determination": "Established BIA program tied to TCR appropriations line. Stable under current Interior budget.",
-      "cfda": "15.124"
+      "cfda": "15.124",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     },
     {
       "id": "epa_tribal_air",
@@ -232,7 +307,12 @@
       "description": "EPA program supporting Tribal air quality monitoring and management under Clean Air Act §105.",
       "confidence_index": 0.82,
       "ci_status": "STABLE",
-      "ci_determination": "Permanent authorization under Clean Air Act §105. Stable baseline appropriations."
+      "ci_determination": "Permanent authorization under Clean Air Act §105. Stable baseline appropriations.",
+      "hot_sheets_status": {
+        "status": "STABLE",
+        "last_updated": "2026-02-09",
+        "source": "FY26 Hot Sheets v2"
+      }
     }
   ]
 }
