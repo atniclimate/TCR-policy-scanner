@@ -481,6 +481,29 @@ No active reconciliation threats detected in current scan.
 | USBR WaterSMART | MEDIUM | 60% | Expand Tribal drought access; lower match |
 | USDA Wildfire Defense Grants | HIGH | 78% | Add match waivers; long-term fuels pathways |
 
+## CI Score Trends
+
+*Tracking 2 scan(s). Showing last 2.*
+
+| Program | 2026-02-08 | 2026-02-09 | Trend |
+|---------|-----:|-----:|-------|
+| BIA Tribal Climate Resilience | 85% | 88% | +3% |
+| Tribal Community Resilience Annual Awards | 82% | 85% | +3% |
+| DOE Indian Energy | 52% | 55% | +3% |
+| DOT PROTECT | 90% | 93% | +3% |
+| EPA GAP | 77% | 80% | +3% |
+| EPA STAG | 87% | 90% | +3% |
+| Tribal Air Quality Management | 79% | 82% | +3% |
+| FEMA BRIC | 9% | 12% | +3% |
+| FEMA Tribal Mitigation Plans | 62% | 65% | +3% |
+| FHWA TTP Safety | 82% | 85% | +3% |
+| HUD IHBG | 82% | 85% | +3% |
+| IRS Elective Pay | 52% | 55% | +3% |
+| NOAA Tribal Grants | 47% | 50% | +3% |
+| USBR TAP | 72% | 75% | +3% |
+| USBR WaterSMART | 57% | 60% | +3% |
+| USDA Wildfire Defense Grants | 75% | 78% | +3% |
+
 ## All Relevant Items (by score)
 
 - **0.83** | [FY26 Obligation: A21AP10255 — COW CREEK BAND OF UMPQUA TRIBE OF INDIANS](https://www.usaspending.gov/award/259248162) | BIA Tribal Climate Resilience

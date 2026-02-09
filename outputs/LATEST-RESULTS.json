@@ -9845,7 +9845,7 @@
           "creates_threatens_edge": true,
           "dhs_bills_detected": 0
         },
-        "timestamp": "2026-02-09T21:52:34.160881+00:00"
+        "timestamp": "2026-02-09T22:00:26.524963+00:00"
       },
       {
         "monitor": "dhs_funding",
@@ -9862,7 +9862,7 @@
           "creates_threatens_edge": true,
           "dhs_bills_detected": 0
         },
-        "timestamp": "2026-02-09T21:52:34.160887+00:00"
+        "timestamp": "2026-02-09T22:00:26.524969+00:00"
       },
       {
         "monitor": "iija_sunset",
@@ -9880,7 +9880,7 @@
           "reauth_detected": false,
           "creates_threatens_edge": true
         },
-        "timestamp": "2026-02-09T21:52:34.160645+00:00"
+        "timestamp": "2026-02-09T22:00:26.524761+00:00"
       },
       {
         "monitor": "iija_sunset",
@@ -9898,7 +9898,7 @@
           "reauth_detected": false,
           "creates_threatens_edge": true
         },
-        "timestamp": "2026-02-09T21:52:34.160712+00:00"
+        "timestamp": "2026-02-09T22:00:26.524816+00:00"
       },
       {
         "monitor": "iija_sunset",
@@ -9914,7 +9914,7 @@
           "expiration_type": "fund_exhaustion",
           "days_remaining": null
         },
-        "timestamp": "2026-02-09T21:52:34.160717+00:00"
+        "timestamp": "2026-02-09T22:00:26.524821+00:00"
       }
     ],
     "classifications": {
