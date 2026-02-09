@@ -100,5 +100,32 @@
     "reconciliation bill energy",
     "section 6417 repeal"
   ],
-  "scan_window_days": 14
+  "scan_window_days": 14,
+  "monitors": {
+    "iija_sunset": {
+      "warning_days": 180,
+      "critical_days": 90,
+      "fy26_end": "2026-09-30"
+    },
+    "reconciliation": {
+      "keywords": ["reconciliation", "repeal", "section 6417", "elective pay", "IRA repeal", "direct pay termination"],
+      "active_bill_statuses": ["introduced", "committee", "floor", "conference"],
+      "enacted_laws_exclude": ["Public Law 119-21"]
+    },
+    "tribal_consultation": {
+      "keywords": ["dear tribal leader", "DTLL", "tribal consultation", "EO 13175", "Executive Order 13175", "consultation notice", "government-to-government", "nation-to-nation"],
+      "agency_slugs": ["indian-affairs-bureau", "environmental-protection-agency", "interior-department", "energy-department"]
+    },
+    "hot_sheets": {
+      "staleness_days": 90
+    },
+    "dhs_funding": {
+      "cr_expiration": "2026-02-13",
+      "fema_program_ids": ["fema_bric", "fema_tribal_mitigation"],
+      "warning_days": 14
+    },
+    "decision_engine": {
+      "urgency_threshold_days": 30
+    }
+  }
 }

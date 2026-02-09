@@ -98,6 +98,7 @@ class Edge:
       OBLIGATED_BY     (Program -> ObligationNode) — actual spending
       ADVANCES         (StructuralAsk -> Program)
       TRUST_OBLIGATION (TrustSuperNode -> Program)
+      THREATENS        (ThreatNode -> Program) -- time-sensitive legislative threat
     """
     source_id: str
     target_id: str
