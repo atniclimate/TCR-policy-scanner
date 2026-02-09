@@ -7,10 +7,10 @@
 
 ### Pipeline Validation
 
-- [ ] **PIPE-01**: All 4 scrapers (Federal Register, Grants.gov, Congress.gov, USASpending) return valid data from live APIs
-- [ ] **PIPE-02**: End-to-end pipeline produces LATEST-BRIEFING.md and LATEST-RESULTS.json from real scan data
-- [ ] **PIPE-03**: GitHub Actions daily-scan.yml runs successfully on schedule (weekday 6 AM Pacific)
-- [ ] **PIPE-04**: Change detector correctly identifies new/modified/removed items between scan cycles
+- [x] **PIPE-01**: All 4 scrapers (Federal Register, Grants.gov, Congress.gov, USASpending) return valid data from live APIs
+- [x] **PIPE-02**: End-to-end pipeline produces LATEST-BRIEFING.md and LATEST-RESULTS.json from real scan data
+- [x] **PIPE-03**: GitHub Actions daily-scan.yml runs successfully on schedule (weekday 6 AM Pacific)
+- [x] **PIPE-04**: Change detector correctly identifies new/modified/removed items between scan cycles
 
 ### Data Model Updates
 
@@ -92,10 +92,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PIPE-01 | Phase 1 | Pending |
-| PIPE-02 | Phase 1 | Pending |
-| PIPE-03 | Phase 1 | Pending |
-| PIPE-04 | Phase 1 | Pending |
+| PIPE-01 | Phase 1 | Complete |
+| PIPE-02 | Phase 1 | Complete |
+| PIPE-03 | Phase 1 | Complete |
+| PIPE-04 | Phase 1 | Complete |
 | DATA-01 | Phase 2 | Pending |
 | DATA-02 | Phase 2 | Pending |
 | DATA-03 | Phase 2 | Pending |
