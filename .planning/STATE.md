@@ -4,7 +4,7 @@
 
 **Core Value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
 
-**Current Focus:** Phase 3 in progress -- monitor framework and threat monitors complete. Decision engine and signal monitors next.
+**Current Focus:** Phase 3 in progress -- monitor framework, threat monitors, and decision engine complete. Signal monitors and pipeline integration next.
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, and report generator already implemented.
 
@@ -12,27 +12,27 @@
 
 **Milestone:** v1
 **Phase:** 3 of 4 (Monitoring and Logic) -- IN PROGRESS
-**Plan:** 1 of 3 complete
+**Plan:** 2 of 3 complete
 **Status:** In progress
-**Last activity:** 2026-02-09 - Completed 03-01-PLAN.md
+**Last activity:** 2026-02-09 - Completed 03-02-PLAN.md
 
 **Progress:**
 ```
 Phase 1 [##########] 100% Pipeline Validation (2/2 plans) COMPLETE
 Phase 2 [##########] 100% Data Model and Graph (2/2 plans) COMPLETE
-Phase 3 [###.......] 33%  Monitoring and Logic (1/3 plans)
+Phase 3 [#######...] 67%  Monitoring and Logic (2/3 plans)
 Phase 4 [..........] 0%   Report Enhancements
-Overall [######....] 63%  5/8 plans complete
+Overall [########..] 75%  6/8 plans complete
 ```
 
 ## Performance Metrics
 
 | Metric | Value |
 |--------|-------|
-| Requirements completed | 13/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01, MON-02, MON-05) |
+| Requirements completed | 18/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01, MON-02, MON-05, LOGIC-01..05) |
 | Phases completed | 2/4 |
-| Plans completed | 5/8 |
-| Session count | 5 |
+| Plans completed | 6/8 |
+| Session count | 6 |
 
 ## Accumulated Context
 
@@ -59,6 +59,10 @@ Overall [######....] 63%  5/8 plans complete
 | Fund-exhaustion programs get INFO alerts, no THREATENS edge | 03-01 | No calendar deadline means no days_remaining for urgency calculation |
 | Reconciliation uses urgency_threshold_days for days_remaining | 03-01 | Reconciliation timelines are unpredictable; setting to threshold ensures LOGIC-05 triggers |
 | Enacted laws filtered by config list + latest_action status | 03-01 | Double filtering prevents OBBBA false positives and any future enacted bills |
+| Rule evaluation as explicit list, not data-driven | 03-02 | 5 rules is too few to justify dispatch table; explicit list is clearer |
+| FLAGGED treated as near-TERMINATED for LOGIC-01 | 03-02 | FEMA BRIC at CI 0.12 needs Restore/Replace classification |
+| AT_RISK/UNCERTAIN with discretionary = threat signal for LOGIC-02 | 03-02 | Status itself indicates risk; combined with discretionary funding confirms Protect Base |
+| access_type required for LOGIC-03 and LOGIC-04 | 03-02 | Programs without explicit access_type fall through to default classification |
 
 ### Architecture Notes
 
@@ -82,6 +86,9 @@ Overall [######....] 63%  5/8 plans complete
 - **Active monitors:** IIJASunsetMonitor (MON-01), ReconciliationMonitor (MON-02), DHSFundingCliffMonitor (MON-05)
 - **Monitor output (empty scan, Feb 9):** 6 alerts (3 IIJA sunset INFO, 1 IIJA fund-exhaustion INFO, 2 DHS funding WARNING), 5 THREATENS edges
 - **Monitor config:** 6 sub-keys in scanner_config.json monitors section
+- **Decision engine:** DecisionEngine in src/analysis/decision_engine.py with 5 rules, ADVOCACY_GOALS constant, classify_all() method
+- **Decision rules:** LOGIC-05 > 01 > 02 > 03 > 04 priority order; secondary_rules for transparency
+- **Test infrastructure:** pytest installed, tests/ package with 45 test cases for decision engine
 
 ### Todos
 
@@ -96,12 +103,12 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-09
-**Stopped at:** Completed 03-01-PLAN.md (Monitor Framework and Threat Monitors)
-**Resume file:** `.planning/phases/03-monitoring-logic/03-02-PLAN.md` (Decision Engine)
+**Stopped at:** Completed 03-02-PLAN.md (Advocacy Decision Engine)
+**Resume file:** `.planning/phases/03-monitoring-logic/03-03-PLAN.md` (Signal Monitors + Pipeline Integration)
 
 ### Resume Instructions
 
-Phase 3 Plan 1 (Monitor Framework) is complete. Three threat monitors producing THREATENS edges. Begin Plan 03-02 (Decision Engine with 5 classification rules, TDD).
+Phase 3 Plan 2 (Decision Engine) is complete. DecisionEngine with 5 rules and 45 passing tests. Begin Plan 03-03 (Signal monitors: Tribal consultation + Hot Sheets, pipeline integration).
 
 ---
 *State initialized: 2026-02-09*
