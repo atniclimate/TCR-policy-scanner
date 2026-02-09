@@ -26,7 +26,7 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 
 ### Active
 
-- [ ] Pipeline validation — verify all 4 scrapers work against live APIs
+- [x] Pipeline validation — all 4 scrapers validated against live APIs, full pipeline produces real output, CI workflow runs on schedule (Phase 1 complete)
 - [ ] Graph builder loads Five Structural Asks from graph_schema.json as AdvocacyLeverNodes with ADVANCES edges
 - [ ] IIJA sunset tracker — flag programs approaching FY26 expiration with no reauthorization bill
 - [ ] Reconciliation monitor — track House/Senate bills for IRA section 6417 repeal
@@ -85,7 +85,10 @@ Ingest → Normalize → Graph Construction → Analysis → Reporting
 | 5-factor weighted scoring | Balances program relevance, Tribal keywords, recency, authority, actionability | ✓ Good |
 | 6-tier CI status model | Hot Sheets alignment adds SECURE, UNCERTAIN, TERMINATED categories | — Pending |
 | Five Structural Asks framework | Cross-cutting advocacy levers from Hot Sheets | — Pending |
-| F:\ local workspace | Consolidate development on external drive with full access | — Pending |
+| F:\ local workspace | Consolidate development on external drive with full access | ✓ Good |
+| Pipeline validates before building | Brownfield project — confirm existing pipeline works with live APIs before adding features | ✓ Phase 1 |
+| Grants.gov search2 + aln param | API migrated from /opportunities/search to /api/search2 with aln param | ✓ Phase 1 |
+| Federal Register slug agency IDs | API requires string slugs, not numeric IDs | ✓ Phase 1 |
 
 ---
-*Last updated: 2026-02-09 after initialization*
+*Last updated: 2026-02-09 after Phase 1 completion*
