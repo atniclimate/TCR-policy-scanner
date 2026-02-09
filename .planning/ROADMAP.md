@@ -22,7 +22,7 @@ The TCR Policy Scanner is a brownfield Python project with working scrapers, sco
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Fix Grants.gov endpoint, validate all 4 scrapers, full pipeline run, change detection
+- [x] 01-01-PLAN.md -- Fix Grants.gov endpoint, validate all 4 scrapers, full pipeline run, change detection
 - [ ] 01-02-PLAN.md -- Verify GitHub Actions CI workflow via manual trigger
 
 **Success Criteria:**
@@ -127,11 +127,11 @@ Unmapped: 0
 
 | Phase | Status | Plans | Completed |
 |-------|--------|-------|-----------|
-| 1 - Pipeline Validation | Planned | 0/2 | |
+| 1 - Pipeline Validation | In progress | 1/2 | 01-01 |
 | 2 - Data Model and Graph | Not Started | 0/2 | |
 | 3 - Monitoring and Logic | Not Started | 0/2 | |
 | 4 - Report Enhancements | Not Started | 0/2 | |
 
 ---
 *Roadmap created: 2026-02-09*
-*Last updated: 2026-02-09*
+*Last updated: 2026-02-09 (01-01 complete)*
