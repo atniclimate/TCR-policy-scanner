@@ -4,35 +4,35 @@
 
 **Core Value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
 
-**Current Focus:** Phase 2 in progress -- data model enrichment. Plan 01 complete (data file gaps), Plan 02 next (graph schema/builder).
+**Current Focus:** Phase 2 complete -- data model and graph enhancements done. Ready for Phase 3 (Monitoring and Logic).
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, and report generator already implemented.
 
 ## Current Position
 
 **Milestone:** v1
-**Phase:** 2 of 4 (Data Model and Graph)
-**Plan:** 1 of 2 complete
-**Status:** In progress
-**Last activity:** 2026-02-09 - Completed 02-01-PLAN.md
+**Phase:** 2 of 4 (Data Model and Graph) -- COMPLETE
+**Plan:** 2 of 2 complete
+**Status:** Phase complete
+**Last activity:** 2026-02-09 - Completed 02-02-PLAN.md
 
 **Progress:**
 ```
 Phase 1 [##########] 100% Pipeline Validation (2/2 plans) COMPLETE
-Phase 2 [#####.....] 50%  Data Model and Graph (1/2 plans)
+Phase 2 [##########] 100% Data Model and Graph (2/2 plans) COMPLETE
 Phase 3 [..........] 0%   Monitoring and Logic
 Phase 4 [..........] 0%   Report Enhancements
-Overall [###.......] 37%  3/8 plans complete
+Overall [#####.....] 50%  4/8 plans complete
 ```
 
 ## Performance Metrics
 
 | Metric | Value |
 |--------|-------|
-| Requirements completed | 7/31 (PIPE-01, PIPE-02, PIPE-03, PIPE-04, DATA-02, DATA-04, DATA-05) |
-| Phases completed | 1/4 |
-| Plans completed | 3/8 |
-| Session count | 3 |
+| Requirements completed | 10/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05) |
+| Phases completed | 2/4 |
+| Plans completed | 4/8 |
+| Session count | 4 |
 
 ## Accumulated Context
 
@@ -52,6 +52,9 @@ Overall [###.......] 37%  3/8 plans complete
 | flagged_floor raised to 0.10 | 02-01 | FEMA BRIC at CI 0.12 stays FLAGGED; gap 0.10-0.0 reserved for TERMINATED only |
 | terminated_floor at 0.0 | 02-01 | Absolute floor for confirmed-dead programs |
 | Reconciliation keywords as shared scanner terms | 02-01 | Added to global action_keywords/search_queries so all scrapers benefit |
+| Structural asks reuse AdvocacyLeverNode | 02-02 | ask_ prefix distinguishes from per-program lever_ nodes; avoids new type per RESEARCH.md |
+| Trust Super-Node connects to 5 BIA/EPA programs | 02-02 | bia_tcr, bia_tcr_awards, epa_gap, epa_stag, epa_tribal_air carry direct trust responsibility implications |
+| ADVANCES/TRUST_OBLIGATION edge direction | 02-02 | ADVANCES: ask -> program (advocacy direction); TRUST_OBLIGATION: trust node -> program (obligation direction) |
 
 ### Architecture Notes
 
@@ -67,6 +70,10 @@ Overall [###.......] 37%  3/8 plans complete
 - **CI thresholds:** 7-tier model (secure/stable/stable_but_vulnerable/at_risk/uncertain/flagged/terminated)
 - **Scanner keywords:** 42 action keywords, 16 search queries (includes reconciliation/repeal terms)
 - **CFDA mappings:** 12 entries in grants_gov.py (includes 15.124 for BIA TCR Awards)
+- **Graph stats (static seed):** 79 nodes (16 ProgramNode, 21 AdvocacyLeverNode, 20 AuthorityNode, 8 FundingVehicleNode, 13 BarrierNode, 1 TrustSuperNode), 118 edges
+- **Graph edge types:** AUTHORIZED_BY, FUNDED_BY, BLOCKED_BY, MITIGATED_BY, OBLIGATED_BY, ADVANCES, TRUST_OBLIGATION
+- **Structural asks:** 5 asks (multi_year, match_waivers, direct_access, consultation, data_sovereignty) with 26 ADVANCES edges and 9 MITIGATED_BY edges
+- **Trust Super-Node:** FEDERAL_TRUST_RESPONSIBILITY with 5 TRUST_OBLIGATION edges
 
 ### Todos
 
@@ -81,12 +88,12 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-09
-**Stopped at:** Completed 02-01-PLAN.md (Data File Gaps) -- Phase 2 Plan 1 complete
-**Resume file:** `.planning/phases/02-data-model-graph/02-02-PLAN.md`
+**Stopped at:** Completed 02-02-PLAN.md (Graph Schema & Builder Enhancements) -- Phase 2 complete
+**Resume file:** `.planning/phases/03-monitoring-logic/` (Phase 3 plans)
 
 ### Resume Instructions
 
-Phase 2 Plan 1 (Data File Gaps) is complete. DATA-02, DATA-04, DATA-05 requirements addressed. Continue with Phase 2 Plan 2 (Graph Schema and Builder Enhancements).
+Phase 2 (Data Model and Graph) is complete. All GRAPH requirements addressed (GRAPH-01, GRAPH-02, GRAPH-05). Begin Phase 3 (Monitoring and Logic).
 
 ---
 *State initialized: 2026-02-09*
