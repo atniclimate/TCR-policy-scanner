@@ -12,7 +12,7 @@ keyword density is low. Tracks zombie CFDAs.
 import asyncio
 import json
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from src.scrapers.base import BaseScraper, check_zombie_cfda, CFDA_TRACKER_PATH
@@ -30,9 +30,9 @@ CFDA_NUMBERS = {
     "20.205": "fhwa_ttp_safety",  # FHWA Highway Planning & Construction (includes TTP)
     "14.867": "hud_ihbg",       # HUD IHBG
     "81.087": "doe_indian_energy",  # DOE Indian Energy
-    "10.691": "usda_wildfire",  # USDA Community Wildfire Defense
+    "10.720": "usda_wildfire",  # USDA Community Wildfire Defense
     "15.507": "usbr_watersmart",  # USBR WaterSMART
-    "20.934": "dot_protect",    # DOT PROTECT
+    "20.284": "dot_protect",    # DOT PROTECT
 }
 
 # Eligibility codes that indicate Tribal government eligibility
@@ -121,7 +121,7 @@ class GrantsGovScraper(BaseScraper):
 
     async def _search(self, session, query: str) -> list[dict]:
         """Execute a keyword search query."""
-        posted_from = (datetime.utcnow() - timedelta(days=self.scan_window)).strftime("%m/%d/%Y")
+        posted_from = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%m/%d/%Y")
         payload = {
             "keyword": query,
             "oppStatuses": "forecasted|posted",
@@ -179,14 +179,16 @@ class GrantsGovScraper(BaseScraper):
     def _load_cfda_tracker() -> dict:
         if CFDA_TRACKER_PATH.exists():
             try:
-                with open(CFDA_TRACKER_PATH) as f:
+                with open(CFDA_TRACKER_PATH, encoding="utf-8") as f:
                     return json.load(f)
             except (json.JSONDecodeError, IOError):
-                pass
+                logger.warning("CFDA tracker file corrupt, starting fresh")
         return {}
 
     @staticmethod
     def _save_cfda_tracker(tracker: dict) -> None:
         CFDA_TRACKER_PATH.parent.mkdir(parents=True, exist_ok=True)
-        with open(CFDA_TRACKER_PATH, "w") as f:
+        tmp_path = CFDA_TRACKER_PATH.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(tracker, f, indent=2)
+        tmp_path.replace(CFDA_TRACKER_PATH)

@@ -86,9 +86,9 @@ class ReconciliationMonitor(BaseMonitor):
             # Active reconciliation bill detected
             source_id = item.get("source_id", "unknown")
 
-            affected_programs = item.get(
-                "matched_programs", ["irs_elective_pay"]
-            )
+            affected_programs = item.get("matched_programs", [])
+            if not affected_programs:
+                affected_programs = list(self.programs.keys())
             alerts.append(MonitorAlert(
                 monitor="reconciliation",
                 severity="WARNING",

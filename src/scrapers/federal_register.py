@@ -10,7 +10,7 @@ Collection Requests (ICR/PRA) as bureaucratic friction signals.
 
 import asyncio
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlencode
 
 from src.scrapers.base import BaseScraper
@@ -49,7 +49,7 @@ class FederalRegisterScraper(BaseScraper):
 
     async def scan(self) -> list[dict]:
         """Run all search queries against the Federal Register API."""
-        start_date = (datetime.utcnow() - timedelta(days=self.scan_window)).strftime("%m/%d/%Y")
+        start_date = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%Y-%m-%d")
         all_items = []
         seen_urls = set()
 

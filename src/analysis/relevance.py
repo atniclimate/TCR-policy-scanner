@@ -11,8 +11,7 @@ Enhanced with:
 """
 
 import logging
-import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 from dateutil import parser as dateparser
 
@@ -148,17 +147,22 @@ class RelevanceScorer:
             return 0.3  # default for missing dates
         try:
             pub_date = dateparser.parse(date_str)
-            days_old = (datetime.utcnow() - pub_date.replace(tzinfo=None)).days
+            now = datetime.now(timezone.utc)
+            if pub_date.tzinfo is None:
+                pub_date = pub_date.replace(tzinfo=timezone.utc)
+            days_old = (now - pub_date).days
             if days_old <= 1:
                 return 1.0
             elif days_old <= 7:
-                return 0.8
+                return 0.9
             elif days_old <= 14:
-                return 0.6
+                return 0.75
             elif days_old <= 30:
+                return 0.6
+            elif days_old <= 60:
                 return 0.4
             else:
-                return 0.2
+                return 0.25
         except (ValueError, TypeError):
             return 0.3
 

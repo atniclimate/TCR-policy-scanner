@@ -78,7 +78,7 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     """Show what would be scanned without making API calls."""
     domain = config.get("domain_name", config.get("domain", "unknown"))
     print(f"\n=== DRY RUN === [{domain}]")
-    print(f"Pipeline: Ingest -> Normalize -> Graph -> Monitors -> Decision Engine -> Reporting")
+    print("Pipeline: Ingest -> Normalize -> Graph -> Monitors -> Decision Engine -> Reporting")
     print(f"Scan window: {config['scan_window_days']} days")
     print(f"Relevance threshold: {config['scoring']['relevance_threshold']}")
     print(f"\nSources to scan:")
@@ -121,21 +121,27 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
 
 
 async def run_scan(config: dict, programs: list[dict], sources: list[str]) -> list[dict]:
-    """Execute scrapers and return all collected items (Ingest + Normalize)."""
-    all_items = []
-    for source_name in sources:
+    """Execute scrapers concurrently and return all collected items (Ingest + Normalize)."""
+    async def _run_one(source_name: str) -> list[dict]:
         if source_name not in SCRAPERS:
             logger.warning("Unknown source: %s", source_name)
-            continue
+            return []
         scraper_cls = SCRAPERS[source_name]
         scraper = scraper_cls(config)
         logger.info("Scanning %s...", source_name)
         try:
             items = await scraper.scan()
-            all_items.extend(items)
             logger.info("  -> %d items from %s", len(items), source_name)
+            return items
         except Exception:
             logger.exception("Failed to scan %s", source_name)
+            return []
+
+    results = await asyncio.gather(*[_run_one(s) for s in sources])
+    all_items = []
+    for result in results:
+        all_items.extend(result)
+    logger.info("Total raw items collected: %d", len(all_items))
     return all_items
 
 
@@ -145,10 +151,12 @@ def build_graph(programs: list[dict], scored_items: list[dict]) -> dict:
     graph = builder.build(scored_items)
     graph_data = graph.to_dict()
 
-    # Write graph output
+    # Write graph output (atomic)
     GRAPH_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(GRAPH_OUTPUT_PATH, "w", encoding="utf-8") as f:
+    tmp_path = GRAPH_OUTPUT_PATH.with_suffix(".tmp")
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(graph_data, f, indent=2, default=str)
+    tmp_path.replace(GRAPH_OUTPUT_PATH)
     logger.info("Knowledge graph written to %s", GRAPH_OUTPUT_PATH)
 
     return graph_data
@@ -189,17 +197,19 @@ def run_monitors_and_classify(
         "classifications": classifications,
         "summary": {
             "total_alerts": len(alerts),
-            "critical_count": len([a for a in alerts if a.severity == "CRITICAL"]),
-            "warning_count": len([a for a in alerts if a.severity == "WARNING"]),
-            "info_count": len([a for a in alerts if a.severity == "INFO"]),
+            "critical_count": sum(1 for a in alerts if a.severity == "CRITICAL"),
+            "warning_count": sum(1 for a in alerts if a.severity == "WARNING"),
+            "info_count": sum(1 for a in alerts if a.severity == "INFO"),
             "monitors_run": sorted(set(a.monitor for a in alerts)),
         },
     }
 
-    # Save monitor data for Phase 4 reporting
+    # Save monitor data for Phase 4 reporting (atomic)
     MONITOR_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(MONITOR_OUTPUT_PATH, "w", encoding="utf-8") as f:
+    tmp_path = MONITOR_OUTPUT_PATH.with_suffix(".tmp")
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(monitor_data, f, indent=2, default=str)
+    tmp_path.replace(MONITOR_OUTPUT_PATH)
     logger.info("Monitor data written to %s", MONITOR_OUTPUT_PATH)
 
     return alerts, classifications, monitor_data
@@ -213,7 +223,7 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
 
     if report_only or graph_only:
         logger.info("Loading cached results")
-        previous = detector._load_previous()
+        previous = detector.load_cached()
         if not previous:
             logger.error("No cached results found. Run a full scan first.")
             sys.exit(1)
@@ -225,7 +235,6 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
     else:
         # Stage 1-2: Ingest + Normalize
         raw_items = asyncio.run(run_scan(config, programs, sources))
-        logger.info("Total raw items collected: %d", len(raw_items))
 
         # Stage 4: Analysis (scoring)
         scored = scorer.score_items(raw_items)

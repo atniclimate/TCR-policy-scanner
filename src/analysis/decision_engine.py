@@ -33,6 +33,7 @@ ADVOCACY_GOALS = {
     "PROTECT_BASE": "Protect Base",
     "DIRECT_ACCESS_PARITY": "Direct Access Parity",
     "EXPAND_STRENGTHEN": "Expand and Strengthen",
+    "MONITOR_ENGAGE": "Monitor and Engage",
 }
 
 # ---------------------------------------------------------------------------
@@ -71,6 +72,15 @@ class DecisionEngine:
         Returns:
             Dict mapping each program_id to its classification dict.
         """
+        # Build edge index for O(1) lookups
+        self._edge_idx: dict[tuple, list] = {}
+        for e in graph_data.get("edges", []):
+            src, tgt, etype = e.get("source"), e.get("target"), e.get("type")
+            if src and etype:
+                self._edge_idx.setdefault((src, etype, "source"), []).append(e)
+            if tgt and etype:
+                self._edge_idx.setdefault((tgt, etype, "target"), []).append(e)
+
         results: dict[str, dict] = {}
         for pid, program in self.programs.items():
             classification = self._classify_program(pid, program, graph_data, alerts)
@@ -109,11 +119,11 @@ class DecisionEngine:
 
         if not matches:
             return {
-                "advocacy_goal": None,
-                "goal_label": None,
+                "advocacy_goal": "MONITOR_ENGAGE",
+                "goal_label": "Monitor and Engage",
                 "rule": None,
                 "confidence": "LOW",
-                "reason": "No decision rule matched for this program",
+                "reason": "No specific decision rule matched; maintain active monitoring",
                 "secondary_rules": [],
             }
 
@@ -134,15 +144,12 @@ class DecisionEngine:
         Queries graph_data edges for THREATENS edges targeting this program
         where days_remaining <= threshold.
         """
-        threatens_edges = _get_edges_for_program(
-            graph_data, pid, "THREATENS", direction="target"
-        )
+        threatens_edges = self._get_edges(pid, "THREATENS", "target")
 
         for edge in threatens_edges:
             days = edge.get("metadata", {}).get("days_remaining")
-            if days is None:
-                continue
-            if days <= self.urgency_threshold_days:
+            severity = edge.get("metadata", {}).get("severity", "")
+            if days is not None and days <= self.urgency_threshold_days:
                 description = edge.get("metadata", {}).get("description", "")
                 return {
                     "advocacy_goal": "URGENT_STABILIZATION",
@@ -153,6 +160,16 @@ class DecisionEngine:
                         f"THREATENS edge: {description} "
                         f"({days} days remaining, threshold {self.urgency_threshold_days})"
                     ),
+                }
+            elif days is None and severity == "CRITICAL":
+                description = edge.get("metadata", {}).get("description", "")
+                return {
+                    "advocacy_goal": "URGENT_STABILIZATION",
+                    "goal_label": ADVOCACY_GOALS["URGENT_STABILIZATION"],
+                    "rule": "LOGIC-05",
+                    "confidence": "MEDIUM",
+                    "reason": f"CRITICAL threat without deadline: {description}",
+                    "secondary_rules": [],
                 }
         return None
 
@@ -168,9 +185,7 @@ class DecisionEngine:
         if ci_status not in ("TERMINATED", "FLAGGED"):
             return None
 
-        auth_edges = _get_edges_for_program(
-            graph_data, pid, "AUTHORIZED_BY", direction="source"
-        )
+        auth_edges = self._get_edges(pid, "AUTHORIZED_BY", "source")
 
         for edge in auth_edges:
             auth_id = edge.get("target", "")
@@ -234,9 +249,7 @@ class DecisionEngine:
             return None
 
         # Check for high-severity administrative barriers
-        barrier_edges = _get_edges_for_program(
-            graph_data, pid, "BLOCKED_BY", direction="source"
-        )
+        barrier_edges = self._get_edges(pid, "BLOCKED_BY", "source")
 
         for edge in barrier_edges:
             bar_id = edge.get("target", "")
@@ -262,10 +275,10 @@ class DecisionEngine:
     ) -> dict | None:
         """LOGIC-04: STABLE/SECURE program with direct or set-aside access.
 
-        ci_status must be STABLE, SECURE, or STABLE_BUT_VULNERABLE.
+        ci_status must be STABLE or SECURE.
         access_type must be 'direct', 'set_aside', or 'tribal_set_aside'.
         """
-        eligible_statuses = ("STABLE", "SECURE", "STABLE_BUT_VULNERABLE")
+        eligible_statuses = ("STABLE", "SECURE")
         eligible_access = ("direct", "set_aside", "tribal_set_aside")
 
         ci_status = program.get("ci_status", "")
@@ -289,14 +302,19 @@ class DecisionEngine:
 
     # -- Helper methods -----------------------------------------------------
 
+    def _get_edges(self, program_id: str, edge_type: str, direction: str = "any") -> list[dict]:
+        """Get edges for a program using the pre-built index."""
+        if direction == "any":
+            return (self._edge_idx.get((program_id, edge_type, "source"), [])
+                    + self._edge_idx.get((program_id, edge_type, "target"), []))
+        return self._edge_idx.get((program_id, edge_type, direction), [])
+
     def _has_discretionary_funding(
         self, pid: str, program: dict, graph_data: dict
     ) -> bool:
         """Check if program has discretionary funding via edges or program field."""
         # Check FUNDED_BY edges
-        funding_edges = _get_edges_for_program(
-            graph_data, pid, "FUNDED_BY", direction="source"
-        )
+        funding_edges = self._get_edges(pid, "FUNDED_BY", "source")
         for edge in funding_edges:
             fv_id = edge.get("target", "")
             fv_node = graph_data.get("nodes", {}).get(fv_id, {})
@@ -332,52 +350,14 @@ class DecisionEngine:
                     return True
 
         # Check for THREATENS edges
-        threatens = _get_edges_for_program(
-            graph_data, pid, "THREATENS", direction="target"
-        )
+        threatens = self._get_edges(pid, "THREATENS", "target")
         if threatens:
             return True
 
         # ci_status AT_RISK or UNCERTAIN with discretionary funding is a signal
         ci_status = program.get("ci_status", "")
-        if ci_status in ("AT_RISK", "UNCERTAIN"):
+        if ci_status in ("AT_RISK", "UNCERTAIN", "STABLE_BUT_VULNERABLE"):
             return True
 
         return False
 
-
-# ---------------------------------------------------------------------------
-# Module-level helpers
-# ---------------------------------------------------------------------------
-
-def _get_edges_for_program(
-    graph_data: dict,
-    program_id: str,
-    edge_type: str,
-    direction: str = "any",
-) -> list[dict]:
-    """Filter graph_data edges for a program by type and direction.
-
-    Args:
-        graph_data:  Serialized graph dict with 'edges' list
-        program_id:  The program node ID
-        edge_type:   Edge type string (e.g. 'THREATENS', 'AUTHORIZED_BY')
-        direction:   'source' (pid is source), 'target' (pid is target), or 'any'
-
-    Returns:
-        List of matching edge dicts.
-    """
-    edges = graph_data.get("edges", [])
-    results = []
-    for e in edges:
-        if e.get("type") != edge_type:
-            continue
-        if direction == "source" and e.get("source") == program_id:
-            results.append(e)
-        elif direction == "target" and e.get("target") == program_id:
-            results.append(e)
-        elif direction == "any" and (
-            e.get("source") == program_id or e.get("target") == program_id
-        ):
-            results.append(e)
-    return results

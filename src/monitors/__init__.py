@@ -219,7 +219,7 @@ class MonitorRunner:
                 # Create ThreatNode so edge source is not dangling
                 graph_data["nodes"][threat_node_id] = {
                     "id": threat_node_id,
-                    "type": "ThreatNode",
+                    "_type": "ThreatNode",
                     "threat_type": threat_type,
                     "description": alert.title,
                     "monitor": alert.monitor,

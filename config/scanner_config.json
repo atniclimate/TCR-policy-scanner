@@ -45,10 +45,10 @@
   "scoring": {
     "weights": {
       "program_match": 0.35,
-      "tribal_keyword_density": 0.25,
-      "recency": 0.15,
+      "tribal_keyword_density": 0.20,
+      "recency": 0.10,
       "source_authority": 0.15,
-      "action_relevance": 0.10
+      "action_relevance": 0.20
     },
     "critical_boost": 0.15,
     "relevance_threshold": 0.30,
@@ -63,7 +63,13 @@
     "tribal set-aside", "tribal consultation", "tribal nations",
     "tribal lands", "reservation", "indian reservation",
     "638 contract", "self-governance", "tribal government",
-    "tribal instrumentality", "tribal energy"
+    "tribal instrumentality", "tribal energy",
+    "NEPA", "environmental justice", "treaty rights", "treaty obligation",
+    "EO 13175", "government-to-government", "nation-to-nation",
+    "allotment", "fee-to-trust", "ISDEAA", "P.L. 93-638",
+    "trust land", "tribal college", "tribal utility",
+    "alaska native corporation", "tribal enterprise", "compact",
+    "direct service tribe"
   ],
   "action_keywords": [
     "notice of funding", "NOFO", "request for applications",
@@ -98,7 +104,11 @@
     "budget reconciliation tribal",
     "IRA repeal tribal",
     "reconciliation bill energy",
-    "section 6417 repeal"
+    "section 6417 repeal",
+    "tribal NEPA", "tribal environmental justice",
+    "IHBG tribal housing", "tribal air quality",
+    "NOAA tribal climate", "WaterSMART tribal",
+    "tribal transportation program"
   ],
   "scan_window_days": 14,
   "monitors": {

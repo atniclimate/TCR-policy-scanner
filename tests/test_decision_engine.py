@@ -99,8 +99,8 @@ def _blocked_by_edge(pid, bar_id):
 class TestAdvocacyGoals:
     """Verify the ADVOCACY_GOALS constant has all 5 goals."""
 
-    def test_has_five_goals(self):
-        assert len(ADVOCACY_GOALS) == 5
+    def test_has_six_goals(self):
+        assert len(ADVOCACY_GOALS) == 6
 
     def test_keys(self):
         expected = {
@@ -109,6 +109,7 @@ class TestAdvocacyGoals:
             "PROTECT_BASE",
             "DIRECT_ACCESS_PARITY",
             "EXPAND_STRENGTHEN",
+            "MONITOR_ENGAGE",
         }
         assert set(ADVOCACY_GOALS.keys()) == expected
 
@@ -413,13 +414,14 @@ class TestLogic04ExpandStrengthen:
 
         assert result["prog_a"]["advocacy_goal"] == "EXPAND_STRENGTHEN"
 
-    def test_stable_but_vulnerable_with_tribal_set_aside(self):
+    def test_stable_but_vulnerable_no_longer_eligible(self):
+        """STABLE_BUT_VULNERABLE was moved out of LOGIC-04 eligible statuses."""
         programs = {"prog_a": {"id": "prog_a", "ci_status": "STABLE_BUT_VULNERABLE", "access_type": "tribal_set_aside"}}
         graph = _make_graph()
         engine = DecisionEngine(_default_config(), programs)
         result = engine.classify_all(graph, [])
 
-        assert result["prog_a"]["advocacy_goal"] == "EXPAND_STRENGTHEN"
+        assert result["prog_a"]["advocacy_goal"] != "EXPAND_STRENGTHEN"
 
     def test_at_risk_does_not_trigger(self):
         programs = {"prog_a": {"id": "prog_a", "ci_status": "AT_RISK", "access_type": "direct"}}
@@ -446,13 +448,14 @@ class TestLogic04ExpandStrengthen:
 class TestDefaultNoMatch:
     """Programs matching no rules get a default classification."""
 
-    def test_no_match_returns_none_goal(self):
+    def test_no_match_returns_monitor_engage(self):
         programs = {"prog_a": {"id": "prog_a", "ci_status": "STABLE"}}
         graph = _make_graph()
         engine = DecisionEngine(_default_config(), programs)
         result = engine.classify_all(graph, [])
 
-        assert result["prog_a"]["advocacy_goal"] is None
+        assert result["prog_a"]["advocacy_goal"] == "MONITOR_ENGAGE"
+        assert result["prog_a"]["goal_label"] == "Monitor and Engage"
         assert result["prog_a"]["rule"] is None
         assert result["prog_a"]["confidence"] == "LOW"
 
@@ -632,7 +635,7 @@ class TestEdgeCases:
         engine = DecisionEngine(_default_config(), programs)
         result = engine.classify_all(graph, [])
 
-        assert result["prog_a"]["advocacy_goal"] is None
+        assert result["prog_a"]["advocacy_goal"] == "MONITOR_ENGAGE"
 
     def test_empty_programs(self):
         programs = {}
@@ -679,3 +682,144 @@ class TestEdgeCases:
         result = engine.classify_all(graph, [])
 
         assert result["prog_a"]["advocacy_goal"] == "URGENT_STABILIZATION"
+
+
+# ---------------------------------------------------------------------------
+# T2-05: STABLE_BUT_VULNERABLE -> Protect Base (not Expand)
+# ---------------------------------------------------------------------------
+
+class TestStableButVulnerableProtectBase:
+    """STABLE_BUT_VULNERABLE with discretionary funding + threat -> LOGIC-02."""
+
+    def test_stable_but_vulnerable_with_discretionary_and_threat(self):
+        """STABLE_BUT_VULNERABLE program with discretionary funding and a
+        THREATENS edge should get Protect Base (LOGIC-02), not Expand."""
+        programs = {"prog_a": {
+            "id": "prog_a",
+            "ci_status": "STABLE_BUT_VULNERABLE",
+            "access_type": "direct",
+            "funding_type": "Discretionary",
+        }}
+        graph = _make_graph(
+            edges=[_threatens_edge("prog_a", days_remaining=60)],
+        )
+        engine = DecisionEngine(_default_config(), programs)
+        result = engine.classify_all(graph, [])
+
+        assert result["prog_a"]["advocacy_goal"] == "PROTECT_BASE"
+        assert result["prog_a"]["rule"] == "LOGIC-02"
+
+    def test_stable_but_vulnerable_discretionary_no_threat_still_protect(self):
+        """STABLE_BUT_VULNERABLE with discretionary funding triggers LOGIC-02
+        via ci_status signal even without explicit threat edges."""
+        programs = {"prog_a": {
+            "id": "prog_a",
+            "ci_status": "STABLE_BUT_VULNERABLE",
+            "access_type": "direct",
+            "funding_type": "Discretionary",
+        }}
+        graph = _make_graph()
+        engine = DecisionEngine(_default_config(), programs)
+        result = engine.classify_all(graph, [])
+
+        assert result["prog_a"]["advocacy_goal"] == "PROTECT_BASE"
+        assert result["prog_a"]["rule"] == "LOGIC-02"
+
+
+# ---------------------------------------------------------------------------
+# T2-01: CRITICAL threats without days_remaining -> LOGIC-05 fallback
+# ---------------------------------------------------------------------------
+
+class TestCriticalThreatWithoutDeadline:
+    """THREATENS edge with days_remaining=None and severity=CRITICAL triggers LOGIC-05."""
+
+    def test_critical_severity_no_days_triggers_logic05(self):
+        """CRITICAL threat without deadline should trigger Urgent Stabilization."""
+        programs = {"prog_a": {"id": "prog_a", "ci_status": "STABLE"}}
+        edge = {
+            "source": "threat_prog_a",
+            "target": "prog_a",
+            "type": "THREATENS",
+            "metadata": {
+                "threat_type": "executive_order",
+                "days_remaining": None,
+                "severity": "CRITICAL",
+                "description": "IRS Elective Pay reconciliation threat",
+            },
+        }
+        graph = _make_graph(edges=[edge])
+        engine = DecisionEngine(_default_config(), programs)
+        result = engine.classify_all(graph, [])
+
+        assert result["prog_a"]["advocacy_goal"] == "URGENT_STABILIZATION"
+        assert result["prog_a"]["rule"] == "LOGIC-05"
+        assert result["prog_a"]["confidence"] == "MEDIUM"
+        assert "CRITICAL threat without deadline" in result["prog_a"]["reason"]
+
+    def test_warning_severity_no_days_does_not_trigger_logic05(self):
+        """WARNING threat without deadline should NOT trigger Urgent Stabilization."""
+        programs = {"prog_a": {"id": "prog_a", "ci_status": "STABLE"}}
+        edge = {
+            "source": "threat_prog_a",
+            "target": "prog_a",
+            "type": "THREATENS",
+            "metadata": {
+                "threat_type": "budget_proposal",
+                "days_remaining": None,
+                "severity": "WARNING",
+                "description": "Budget reduction proposal",
+            },
+        }
+        graph = _make_graph(edges=[edge])
+        engine = DecisionEngine(_default_config(), programs)
+        result = engine.classify_all(graph, [])
+
+        assert result["prog_a"]["advocacy_goal"] != "URGENT_STABILIZATION"
+
+    def test_no_severity_no_days_does_not_trigger_logic05(self):
+        """Threat without both deadline and severity should NOT trigger LOGIC-05."""
+        programs = {"prog_a": {"id": "prog_a", "ci_status": "STABLE"}}
+        edge = {
+            "source": "threat_prog_a",
+            "target": "prog_a",
+            "type": "THREATENS",
+            "metadata": {
+                "threat_type": "unknown",
+                "days_remaining": None,
+                "description": "Vague threat",
+            },
+        }
+        graph = _make_graph(edges=[edge])
+        engine = DecisionEngine(_default_config(), programs)
+        result = engine.classify_all(graph, [])
+
+        assert result["prog_a"]["advocacy_goal"] != "URGENT_STABILIZATION"
+
+
+# ---------------------------------------------------------------------------
+# Verify: No program can return advocacy_goal=None
+# ---------------------------------------------------------------------------
+
+class TestNoNoneAdvocacyGoal:
+    """After T2-06 fix, no program should ever get advocacy_goal=None."""
+
+    def test_all_programs_have_non_none_goal(self):
+        """Classify a variety of programs and ensure none have advocacy_goal=None."""
+        programs = {
+            "stable": {"id": "stable", "ci_status": "STABLE"},
+            "at_risk": {"id": "at_risk", "ci_status": "AT_RISK"},
+            "terminated": {"id": "terminated", "ci_status": "TERMINATED"},
+            "flagged": {"id": "flagged", "ci_status": "FLAGGED"},
+            "uncertain": {"id": "uncertain", "ci_status": "UNCERTAIN"},
+            "secure": {"id": "secure", "ci_status": "SECURE"},
+            "sbv": {"id": "sbv", "ci_status": "STABLE_BUT_VULNERABLE"},
+            "no_status": {"id": "no_status"},
+        }
+        graph = _make_graph()
+        engine = DecisionEngine(_default_config(), programs)
+        result = engine.classify_all(graph, [])
+
+        for pid, classification in result.items():
+            assert classification["advocacy_goal"] is not None, (
+                f"Program {pid} has advocacy_goal=None"
+            )

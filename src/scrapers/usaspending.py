@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
 # Map CFDA numbers to program IDs (shared with grants_gov.py)
 CFDA_TO_PROGRAM = {
     "15.156": "bia_tcr",
+    "15.124": "bia_tcr_awards",
     "97.047": "fema_bric",
     "97.039": "fema_bric",
     "66.926": "epa_gap",
@@ -27,9 +28,9 @@ CFDA_TO_PROGRAM = {
     "20.205": "fhwa_ttp_safety",
     "14.867": "hud_ihbg",
     "81.087": "doe_indian_energy",
-    "10.691": "usda_wildfire",
+    "10.720": "usda_wildfire",
     "15.507": "usbr_watersmart",
-    "20.934": "dot_protect",
+    "20.284": "dot_protect",
 }
 
 
@@ -61,7 +62,7 @@ class USASpendingScraper(BaseScraper):
     async def _fetch_obligations(
         self, session: aiohttp.ClientSession, cfda: str, program_id: str,
     ) -> list[dict]:
-        """Fetch spending by CFDA using the spending_by_award_count endpoint."""
+        """Fetch spending by CFDA using the spending_by_award endpoint."""
         payload = {
             "filters": {
                 "time_period": [{"start_date": "2025-10-01", "end_date": "2026-09-30"}],
@@ -91,7 +92,11 @@ class USASpendingScraper(BaseScraper):
 
     def _normalize(self, item: dict, cfda: str, program_id: str) -> dict:
         """Map USASpending fields to the standard schema."""
-        award_amount = item.get("Award Amount") or item.get("Total Obligation") or 0
+        raw_amount = item.get("Award Amount") or item.get("Total Obligation") or 0
+        try:
+            award_amount = float(raw_amount)
+        except (ValueError, TypeError):
+            award_amount = 0.0
         recipient = item.get("Recipient Name", "")
 
         return {

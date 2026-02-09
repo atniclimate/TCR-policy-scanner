@@ -26,36 +26,36 @@ GRAPH_SCHEMA_PATH = Path("data/graph_schema.json")
 
 # Patterns for detecting barriers in scraped text
 BARRIER_PATTERNS = [
-    (r"(\d+)\s*%?\s*(?:cost[- ]share|match(?:ing)?(?:\s+requirement)?)", "Cost Share", "Administrative"),
-    (r"(?:requires?|must\s+have)\s+(?:a\s+)?(?:hazard\s+)?mitigation\s+plan", "Plan Requirement", "Administrative"),
-    (r"(?:requires?|must\s+have)\s+(?:a\s+)?(?:tribal\s+)?consultation", "Consultation Requirement", "Administrative"),
-    (r"(?:new|additional)\s+reporting\s+requirement", "Reporting Requirement", "Administrative"),
-    (r"(?:application|submission)\s+deadline", "Deadline", "Administrative"),
+    (re.compile(r"(\d+)\s*%?\s*(?:cost[- ]share|match(?:ing)?(?:\s+requirement)?)", re.IGNORECASE), "Cost Share", "Administrative"),
+    (re.compile(r"(?:requires?|must\s+have)\s+(?:a\s+)?(?:hazard\s+)?mitigation\s+plan", re.IGNORECASE), "Plan Requirement", "Administrative"),
+    (re.compile(r"(?:requires?|must\s+have)\s+(?:a\s+)?(?:tribal\s+)?consultation", re.IGNORECASE), "Consultation Requirement", "Administrative"),
+    (re.compile(r"(?:new|additional)\s+reporting\s+requirement", re.IGNORECASE), "Reporting Requirement", "Administrative"),
+    (re.compile(r"(?:application|submission)\s+deadline", re.IGNORECASE), "Deadline", "Administrative"),
     # Bureaucratic friction signals (per Gemini research)
-    (r"information\s+collection\s+(?:request|requirement)", "Information Collection / PRA", "Administrative"),
-    (r"paperwork\s+reduction\s+act", "PRA Compliance", "Administrative"),
-    (r"(?:new|revised)\s+(?:application|reporting)\s+form", "Form Change", "Administrative"),
+    (re.compile(r"information\s+collection\s+(?:request|requirement)", re.IGNORECASE), "Information Collection / PRA", "Administrative"),
+    (re.compile(r"paperwork\s+reduction\s+act", re.IGNORECASE), "PRA Compliance", "Administrative"),
+    (re.compile(r"(?:new|revised)\s+(?:application|reporting)\s+form", re.IGNORECASE), "Form Change", "Administrative"),
 ]
 
 # Patterns for detecting funding signals
 FUNDING_PATTERNS = [
-    (r"\$\s*([\d,.]+)\s*(million|billion|M|B)", "amount"),
-    (r"FY\s*(\d{2,4})", "fiscal_year"),
-    (r"(discretionary|mandatory|formula|competitive)", "funding_type"),
+    (re.compile(r"\$\s*([\d,.]+)\s*(million|billion|M|B)", re.IGNORECASE), "amount"),
+    (re.compile(r"FY\s*(\d{2,4})", re.IGNORECASE), "fiscal_year"),
+    (re.compile(r"(discretionary|mandatory|formula|competitive)", re.IGNORECASE), "funding_type"),
 ]
 
 # Patterns for detecting authority citations
 AUTHORITY_PATTERNS = [
-    (r"(Stafford\s+Act(?:\s+[§S]\s*\d+)?)", "Statute"),
-    (r"(Snyder\s+Act)", "Statute"),
-    (r"(NAHASDA)", "Statute"),
-    (r"(Infrastructure\s+Investment\s+and\s+Jobs\s+Act|IIJA|BIL)", "Statute"),
-    (r"(Inflation\s+Reduction\s+Act|IRA)", "Statute"),
-    (r"(Indian\s+Self[- ]Determination(?:\s+Act)?)", "Statute"),
-    (r"(Clean\s+Water\s+Act|Safe\s+Drinking\s+Water\s+Act)", "Statute"),
-    (r"(\d+\s+(?:U\.?S\.?C\.?|CFR)\s+[§S]?\s*[\d.]+(?:\([a-z]\))?)", "Statute"),
-    (r"(Executive\s+Order\s+\d+)", "Guidance"),
-    (r"((?:proposed|final|interim)\s+rule)", "Regulation"),
+    (re.compile(r"(Stafford\s+Act(?:\s+[§S]\s*\d+)?)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(Snyder\s+Act)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(NAHASDA)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(Infrastructure\s+Investment\s+and\s+Jobs\s+Act|IIJA|BIL)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(Inflation\s+Reduction\s+Act|IRA)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(Indian\s+Self[- ]Determination(?:\s+Act)?)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(Clean\s+Water\s+Act|Safe\s+Drinking\s+Water\s+Act)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(\d+\s+(?:U\.?S\.?C\.?|CFR)\s+[§S]?\s*[\d.]+(?:\([a-z]\))?)", re.IGNORECASE), "Statute"),
+    (re.compile(r"(Executive\s+Order\s+\d+)", re.IGNORECASE), "Guidance"),
+    (re.compile(r"((?:proposed|final|interim)\s+rule)", re.IGNORECASE), "Regulation"),
 ]
 
 
@@ -66,6 +66,7 @@ class KnowledgeGraph:
         self.nodes: dict[str, dict] = {}
         self.edges: list[Edge] = []
         self._program_ids: set[str] = set()
+        self._edge_keys: set[tuple[str, str, str]] = set()
 
     def add_node(self, node) -> None:
         """Add a node (any schema type) to the graph."""
@@ -77,6 +78,11 @@ class KnowledgeGraph:
     def add_edge(self, edge: Edge) -> None:
         """Add an edge to the graph."""
         self.edges.append(edge)
+        self._edge_keys.add((edge.source_id, edge.target_id, edge.edge_type))
+
+    def has_edge(self, source_id: str, target_id: str, edge_type: str) -> bool:
+        """Check if an edge already exists (O(1) lookup)."""
+        return (source_id, target_id, edge_type) in self._edge_keys
 
     def get_program_subgraph(self, program_id: str) -> dict:
         """Return all nodes and edges connected to a program."""
@@ -177,8 +183,12 @@ class GraphBuilder:
             logger.info("No graph schema file at %s, skipping static seed", self.schema_path)
             return
 
-        with open(self.schema_path) as f:
-            schema = json.load(f)
+        with open(self.schema_path, encoding="utf-8") as f:
+            try:
+                schema = json.load(f)
+            except json.JSONDecodeError:
+                logger.error("Corrupt graph schema at %s, skipping static seed", self.schema_path)
+                return
 
         # Authorities
         for auth in schema.get("authorities", []):
@@ -294,12 +304,13 @@ class GraphBuilder:
                 self._add_obligation(item)
                 continue
 
-            text = f"{item.get('title', '')} {item.get('abstract', '')} {item.get('action', '')}"
+            action_text = item.get("action", "") or item.get("latest_action", "")
+            text = f"{item.get('title', '')} {item.get('abstract', '')} {action_text}"
             matched_pids = item.get("matched_programs", [])
 
             # Detect authorities mentioned in text
             for pattern, auth_type in AUTHORITY_PATTERNS:
-                for match in re.finditer(pattern, text, re.IGNORECASE):
+                for match in pattern.finditer(text):
                     citation = match.group(1).strip()
                     auth_id = f"auth_{re.sub(r'[^a-z0-9]+', '_', citation.lower())}"
                     if auth_id not in self.graph.nodes:
@@ -310,8 +321,7 @@ class GraphBuilder:
                         ))
                     for pid in matched_pids:
                         # Avoid duplicate edges
-                        if not any(e.source_id == pid and e.target_id == auth_id
-                                   for e in self.graph.edges):
+                        if not self.graph.has_edge(pid, auth_id, "AUTHORIZED_BY"):
                             self.graph.add_edge(Edge(
                                 source_id=pid,
                                 target_id=auth_id,
@@ -321,7 +331,7 @@ class GraphBuilder:
 
             # Detect barriers mentioned in text
             for pattern, desc, barrier_type in BARRIER_PATTERNS:
-                for match in re.finditer(pattern, text, re.IGNORECASE):
+                for match in pattern.finditer(text):
                     barrier_text = match.group(0).strip()
                     bar_id = f"bar_{re.sub(r'[^a-z0-9]+', '_', barrier_text.lower())[:40]}"
                     if bar_id not in self.graph.nodes:
@@ -332,8 +342,7 @@ class GraphBuilder:
                             severity="Med",
                         ))
                     for pid in matched_pids:
-                        if not any(e.source_id == pid and e.target_id == bar_id
-                                   for e in self.graph.edges):
+                        if not self.graph.has_edge(pid, bar_id, "BLOCKED_BY"):
                             self.graph.add_edge(Edge(
                                 source_id=pid,
                                 target_id=bar_id,
@@ -343,7 +352,7 @@ class GraphBuilder:
 
             # Detect funding signals
             for pattern, field_name in FUNDING_PATTERNS:
-                for match in re.finditer(pattern, text, re.IGNORECASE):
+                for match in pattern.finditer(text):
                     if field_name == "amount":
                         raw = match.group(1).replace(",", "")
                         unit = match.group(2).lower()

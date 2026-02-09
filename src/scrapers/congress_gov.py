@@ -11,7 +11,7 @@ Integration strategy: filters for 119th Congress, searches for Tribal AND
 import asyncio
 import logging
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlencode
 
 from src.scrapers.base import BaseScraper
@@ -45,6 +45,8 @@ class CongressGovScraper(BaseScraper):
         self.api_key = os.environ.get(src.get("key_env_var", "CONGRESS_API_KEY"), "")
         self.search_queries = config.get("search_queries", [])
         self.scan_window = config.get("scan_window_days", 14)
+        if self.api_key:
+            self._headers["X-Api-Key"] = self.api_key
 
     async def scan(self) -> list[dict]:
         """Run targeted + broad queries against Congress.gov."""
@@ -95,13 +97,12 @@ class CongressGovScraper(BaseScraper):
         bill_type: str = "", congress: int = 119,
     ) -> list[dict]:
         """Search for bills in a specific Congress and bill type."""
-        from_date = (datetime.utcnow() - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
+        from_date = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
         params = {
             "query": term,
             "fromDateTime": from_date,
             "sort": "updateDate+desc",
             "limit": 50,
-            "api_key": self.api_key,
         }
 
         # Congress-specific bill endpoint
@@ -116,13 +117,12 @@ class CongressGovScraper(BaseScraper):
 
     async def _search(self, session, query: str) -> list[dict]:
         """Execute a broad search query against the bill endpoint."""
-        from_date = (datetime.utcnow() - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
+        from_date = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
         params = {
             "query": query,
             "fromDateTime": from_date,
             "sort": "updateDate+desc",
             "limit": 50,
-            "api_key": self.api_key,
         }
         url = f"{self.base_url}/bill?{urlencode(params)}"
 

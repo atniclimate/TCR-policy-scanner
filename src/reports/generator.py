@@ -8,7 +8,7 @@ insights: barriers, authorities, and funding vehicle summaries.
 import json
 import logging
 import shutil
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -31,7 +31,7 @@ class ReportGenerator:
                  monitor_data: dict | None = None,
                  classifications: dict | None = None) -> dict:
         """Generate both Markdown and JSON reports. Returns file paths."""
-        timestamp = datetime.utcnow().strftime("%Y-%m-%d")
+        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
         # Persist CI snapshot before generating (RPT-04)
         self._save_ci_snapshot(timestamp)
@@ -49,8 +49,8 @@ class ReportGenerator:
         # Write latest
         md_path = OUTPUTS_DIR / "LATEST-BRIEFING.md"
         json_path = OUTPUTS_DIR / "LATEST-RESULTS.json"
-        md_path.write_text(md_content)
-        json_path.write_text(json.dumps(json_content, indent=2, default=str))
+        md_path.write_text(md_content, encoding="utf-8")
+        json_path.write_text(json.dumps(json_content, indent=2, default=str), encoding="utf-8")
 
         # Archive
         archive_md = ARCHIVE_DIR / f"briefing-{timestamp}.md"
@@ -124,8 +124,9 @@ class ReportGenerator:
             lines.append("")
             lines.append("| Program | CI | Status | Hot Sheets | Determination |")
             lines.append("|---------|---:|--------|:----------:|--------------|")
-            for prog in sorted(ci_programs, key=lambda p: p.get("confidence_index", 0)):
-                ci = prog.get("confidence_index", 0)
+            for prog in sorted(ci_programs, key=lambda p: p.get("confidence_index") if p.get("confidence_index") is not None else 0):
+                ci = prog.get("confidence_index")
+                ci = ci if ci is not None else 0
                 status = prog.get("ci_status", "N/A")
                 det = prog.get("ci_determination", "")[:70]
                 ci_pct = f"{ci * 100:.0f}%"
@@ -153,7 +154,9 @@ class ReportGenerator:
                 lines.append("### FLAGGED — Requires Specialist Attention")
                 lines.append("")
                 for prog in flagged:
-                    lines.append(f"**{prog['name']}** (CI: {prog['confidence_index'] * 100:.0f}%)")
+                    ci = prog.get("confidence_index")
+                    ci = ci if ci is not None else 0
+                    lines.append(f"**{prog['name']}** (CI: {ci * 100:.0f}%)")
                     lines.append("")
                     lines.append(f"> {prog.get('ci_determination', '')}")
                     if prog.get("specialist_focus"):
@@ -248,6 +251,7 @@ class ReportGenerator:
                 bar = nodes.get(bid, {})
                 if bar:
                     barrier_descs.append(bar.get("description", bid))
+            barrier_descs = list(dict.fromkeys(barrier_descs))  # preserve order, remove dupes
 
             urgency_badge = f" [{urgency}]" if urgency else ""
             lines.append(f"### {name}{urgency_badge}")
@@ -287,7 +291,7 @@ class ReportGenerator:
         lines.append("| Program | Deadline | Days Remaining | Severity | Type |")
         lines.append("|---------|----------|---------------:|----------|------|")
 
-        for alert in sorted(iija_alerts, key=lambda a: a.get("metadata", {}).get("days_remaining") or 9999):
+        for alert in sorted(iija_alerts, key=lambda a: a.get("metadata", {}).get("days_remaining") if a.get("metadata", {}).get("days_remaining") is not None else 9999):
             meta = alert.get("metadata", {})
             program_names = [
                 self.programs.get(pid, {}).get("name", pid)
@@ -419,6 +423,7 @@ class ReportGenerator:
                 lever = nodes.get(lid, {})
                 if lever:
                     lever_descs.append(lever.get("description", lid))
+            lever_descs = list(dict.fromkeys(lever_descs))  # preserve order, remove dupes
 
             if blocked_names:
                 lines.append(f"**{barrier.get('description', bar_id)}**{sev_badge}")
@@ -528,8 +533,10 @@ class ReportGenerator:
             history = history[-90:]
 
         CI_HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
-        with open(CI_HISTORY_PATH, "w") as f:
+        tmp_path = CI_HISTORY_PATH.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(history, f, indent=2)
+        tmp_path.replace(CI_HISTORY_PATH)
         logger.info("CI snapshot saved (%d entries in history)", len(history))
 
     def _load_ci_history(self) -> list[dict]:
@@ -540,7 +547,7 @@ class ReportGenerator:
         if not CI_HISTORY_PATH.exists():
             return []
         try:
-            with open(CI_HISTORY_PATH) as f:
+            with open(CI_HISTORY_PATH, encoding="utf-8") as f:
                 return json.load(f)
         except (json.JSONDecodeError, OSError):
             logger.warning("Failed to load CI history from %s; starting fresh", CI_HISTORY_PATH)
@@ -628,16 +635,6 @@ class ReportGenerator:
 
         # Compact summary for stable programs
         if stable_names:
-            if changed_rows:
-                # Add a separator row if there were changed programs above
-                stable_ci_sample = ""
-                for pid in latest_pids:
-                    prog = self.programs.get(pid)
-                    if prog and prog["name"] == stable_names[0]:
-                        ci = recent[-1].get("programs", {}).get(pid, {}).get("ci")
-                        if ci is not None:
-                            stable_ci_sample = f" (latest scan values unchanged)"
-                        break
             lines.append("")
             lines.append(
                 f"*{len(stable_names)} program(s) stable across window:* "

@@ -67,8 +67,10 @@ class ChangeDetector:
     def save_current(self, items: list[dict]) -> None:
         """Save current results as the baseline for the next scan."""
         self.cache_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(self.cache_path, "w") as f:
+        tmp_path = self.cache_path.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump({"scan_results": items}, f, indent=2, default=str)
+        tmp_path.replace(self.cache_path)
         logger.info("Saved %d items to %s", len(items), self.cache_path)
 
     def _load_previous(self) -> list[dict]:
@@ -77,12 +79,16 @@ class ChangeDetector:
             logger.info("No previous scan results found at %s", self.cache_path)
             return []
         try:
-            with open(self.cache_path) as f:
+            with open(self.cache_path, encoding="utf-8") as f:
                 data = json.load(f)
             return data.get("scan_results", [])
         except (json.JSONDecodeError, KeyError):
             logger.warning("Could not parse previous results at %s", self.cache_path)
             return []
+
+    def load_cached(self) -> list[dict]:
+        """Load results from the previous scan (public API)."""
+        return self._load_previous()
 
     @staticmethod
     def _item_key(item: dict) -> str:
