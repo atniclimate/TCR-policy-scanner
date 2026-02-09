@@ -1,0 +1,2987 @@
+{
+  "nodes": {
+    "bia_tcr": {
+      "id": "bia_tcr",
+      "name": "BIA Tribal Climate Resilience",
+      "agency": "BIA",
+      "confidence_index": 0.88,
+      "fy26_status": "STABLE",
+      "priority": "critical",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_bia_tcr": {
+      "id": "lever_bia_tcr",
+      "description": "Protect/expand the line; waived match, multi-year stability",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "fema_bric": {
+      "id": "fema_bric",
+      "name": "FEMA BRIC",
+      "agency": "FEMA",
+      "confidence_index": 0.12,
+      "fy26_status": "FLAGGED",
+      "priority": "critical",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_fema_bric": {
+      "id": "lever_fema_bric",
+      "description": "Restore/replace with Tribal set-aside",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "Immediate",
+      "_type": "AdvocacyLeverNode"
+    },
+    "irs_elective_pay": {
+      "id": "irs_elective_pay",
+      "name": "IRS Elective Pay",
+      "agency": "Treasury/IRS",
+      "confidence_index": 0.55,
+      "fy26_status": "AT_RISK",
+      "priority": "critical",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_irs_elective_pay": {
+      "id": "lever_irs_elective_pay",
+      "description": "Defend against reconciliation repeal; protect Tribal instrumentality access",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "epa_stag": {
+      "id": "epa_stag",
+      "name": "EPA STAG",
+      "agency": "EPA",
+      "confidence_index": 0.9,
+      "fy26_status": "STABLE",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_epa_stag": {
+      "id": "lever_epa_stag",
+      "description": "Direct Tribal capitalization pathways",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "epa_gap": {
+      "id": "epa_gap",
+      "name": "EPA GAP",
+      "agency": "EPA",
+      "confidence_index": 0.8,
+      "fy26_status": "STABLE",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_epa_gap": {
+      "id": "lever_epa_gap",
+      "description": "Increase funding; link to climate resilience readiness",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "fema_tribal_mitigation": {
+      "id": "fema_tribal_mitigation",
+      "name": "FEMA Tribal Mitigation Plans",
+      "agency": "FEMA",
+      "confidence_index": 0.65,
+      "fy26_status": "AT_RISK",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_fema_tribal_mitigation": {
+      "id": "lever_fema_tribal_mitigation",
+      "description": "Fund planning; accelerate approvals",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "dot_protect": {
+      "id": "dot_protect",
+      "name": "DOT PROTECT",
+      "agency": "DOT",
+      "confidence_index": 0.93,
+      "fy26_status": "SECURE",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_dot_protect": {
+      "id": "lever_dot_protect",
+      "description": "Maintain/expand Tribal set-aside",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "usda_wildfire": {
+      "id": "usda_wildfire",
+      "name": "USDA Wildfire Defense Grants",
+      "agency": "USFS",
+      "confidence_index": 0.78,
+      "fy26_status": "STABLE_BUT_VULNERABLE",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_usda_wildfire": {
+      "id": "lever_usda_wildfire",
+      "description": "Add match waivers; long-term fuels pathways",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "doe_indian_energy": {
+      "id": "doe_indian_energy",
+      "name": "DOE Indian Energy",
+      "agency": "DOE",
+      "confidence_index": 0.55,
+      "fy26_status": "UNCERTAIN",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_doe_indian_energy": {
+      "id": "lever_doe_indian_energy",
+      "description": "Protect FY26 appropriations; reduce burden",
+      "target": "Congress",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "hud_ihbg": {
+      "id": "hud_ihbg",
+      "name": "HUD IHBG",
+      "agency": "HUD",
+      "confidence_index": 0.85,
+      "fy26_status": "STABLE",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_hud_ihbg": {
+      "id": "lever_hud_ihbg",
+      "description": "Frame resilient housing as trust responsibility",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "noaa_tribal": {
+      "id": "noaa_tribal",
+      "name": "NOAA Tribal Grants",
+      "agency": "NOAA",
+      "confidence_index": 0.5,
+      "fy26_status": "UNCERTAIN",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_noaa_tribal": {
+      "id": "lever_noaa_tribal",
+      "description": "Protect climate/coastal functions in appropriations",
+      "target": "Congress",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "fhwa_ttp_safety": {
+      "id": "fhwa_ttp_safety",
+      "name": "FHWA TTP Safety",
+      "agency": "FHWA",
+      "confidence_index": 0.85,
+      "fy26_status": "STABLE",
+      "priority": "medium",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_fhwa_ttp_safety": {
+      "id": "lever_fhwa_ttp_safety",
+      "description": "Increase Tribal formula/discretionary resilience",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "usbr_watersmart": {
+      "id": "usbr_watersmart",
+      "name": "USBR WaterSMART",
+      "agency": "Reclamation",
+      "confidence_index": 0.6,
+      "fy26_status": "UNCERTAIN",
+      "priority": "medium",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_usbr_watersmart": {
+      "id": "lever_usbr_watersmart",
+      "description": "Expand Tribal drought access; lower match",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "usbr_tap": {
+      "id": "usbr_tap",
+      "name": "USBR TAP",
+      "agency": "Reclamation",
+      "confidence_index": 0.75,
+      "fy26_status": "STABLE",
+      "priority": "medium",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_usbr_tap": {
+      "id": "lever_usbr_tap",
+      "description": "Link TA to pre-award support",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "bia_tcr_awards": {
+      "id": "bia_tcr_awards",
+      "name": "Tribal Community Resilience Annual Awards",
+      "agency": "BIA",
+      "confidence_index": 0.85,
+      "fy26_status": "STABLE",
+      "priority": "high",
+      "cfda": "15.124",
+      "_type": "ProgramNode"
+    },
+    "lever_bia_tcr_awards": {
+      "id": "lever_bia_tcr_awards",
+      "description": "Protect award program; ensure multi-year planning capacity",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "epa_tribal_air": {
+      "id": "epa_tribal_air",
+      "name": "Tribal Air Quality Management",
+      "agency": "EPA",
+      "confidence_index": 0.82,
+      "fy26_status": "STABLE",
+      "priority": "high",
+      "cfda": "",
+      "_type": "ProgramNode"
+    },
+    "lever_epa_tribal_air": {
+      "id": "lever_epa_tribal_air",
+      "description": "Protect Clean Air Act \u00c2\u00a7105 Tribal funding; link to climate co-benefits",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "auth_stafford_act": {
+      "id": "auth_stafford_act",
+      "citation": "Stafford Act (42 U.S.C. 5121 et seq.)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_snyder_act": {
+      "id": "auth_snyder_act",
+      "citation": "Snyder Act (25 U.S.C. 13)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_ira_6417": {
+      "id": "auth_ira_6417",
+      "citation": "Inflation Reduction Act \u00c2\u00a7 6417 (Elective Pay)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_iija": {
+      "id": "auth_iija",
+      "citation": "Infrastructure Investment and Jobs Act (IIJA/BIL)",
+      "authority_type": "Statute",
+      "durability": "Expires FY26",
+      "_type": "AuthorityNode"
+    },
+    "auth_nahasda": {
+      "id": "auth_nahasda",
+      "citation": "Native American Housing Assistance and Self-Determination Act (NAHASDA)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_isdeaa": {
+      "id": "auth_isdeaa",
+      "citation": "Indian Self-Determination and Education Assistance Act (25 U.S.C. 5301)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_clean_water_act": {
+      "id": "auth_clean_water_act",
+      "citation": "Clean Water Act / Safe Drinking Water Act",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_energy_policy_act": {
+      "id": "auth_energy_policy_act",
+      "citation": "Energy Policy Act of 2005, Title V",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_protect_formula": {
+      "id": "auth_protect_formula",
+      "citation": "IIJA \u00c2\u00a7 11405 (PROTECT Program)",
+      "authority_type": "Statute",
+      "durability": "Expires FY26",
+      "_type": "AuthorityNode"
+    },
+    "auth_iija_wildfire": {
+      "id": "auth_iija_wildfire",
+      "citation": "IIJA \u00c2\u00a7 40803 (Community Wildfire Defense Grants)",
+      "authority_type": "Statute",
+      "durability": "Expires when funds exhausted",
+      "_type": "AuthorityNode"
+    },
+    "auth_eo_14225": {
+      "id": "auth_eo_14225",
+      "citation": "Executive Order 14225 (Forest Management)",
+      "authority_type": "Guidance",
+      "durability": "Executive discretion",
+      "_type": "AuthorityNode"
+    },
+    "auth_magnuson_stevens": {
+      "id": "auth_magnuson_stevens",
+      "citation": "Magnuson-Stevens Fishery Conservation and Management Act",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_ttp_statute": {
+      "id": "auth_ttp_statute",
+      "citation": "23 U.S.C. 202 (Tribal Transportation Program)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_reclamation_act": {
+      "id": "auth_reclamation_act",
+      "citation": "SECURE Water Act (P.L. 111-11, \u00c2\u00a7 9504)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_ira_48e": {
+      "id": "auth_ira_48e",
+      "citation": "IRA \u00c2\u00a7 48(e) (Low-Income Community Solar)",
+      "authority_type": "Statute",
+      "durability": "Expires 2032",
+      "_type": "AuthorityNode"
+    },
+    "auth_ira_45_48": {
+      "id": "auth_ira_45_48",
+      "citation": "IRA \u00c2\u00a7 45/48 (Production/Investment Tax Credits)",
+      "authority_type": "Statute",
+      "durability": "Expires 2032",
+      "_type": "AuthorityNode"
+    },
+    "auth_caa_105": {
+      "id": "auth_caa_105",
+      "citation": "Clean Air Act \u00c2\u00a7 105 (Tribal Air Quality)",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_indian_environmental_gap": {
+      "id": "auth_indian_environmental_gap",
+      "citation": "Indian Environmental General Assistance Program Act of 1992",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "auth_iija_watersmart": {
+      "id": "auth_iija_watersmart",
+      "citation": "IIJA \u00c2\u00a7 40901 (WaterSMART Enhancement)",
+      "authority_type": "Statute",
+      "durability": "Expires FY26",
+      "_type": "AuthorityNode"
+    },
+    "auth_snyder_act_tcr_awards": {
+      "id": "auth_snyder_act_tcr_awards",
+      "citation": "Snyder Act (25 U.S.C. 13) \u00e2\u20ac\u201d TCR Annual Awards",
+      "authority_type": "Statute",
+      "durability": "Permanent",
+      "_type": "AuthorityNode"
+    },
+    "fv_fy26_interior_approps": {
+      "id": "fv_fy26_interior_approps",
+      "name": "FY26 Interior/Environment Appropriations",
+      "amount": 34291000,
+      "fiscal_year": "FY26",
+      "funding_type": "Discretionary",
+      "_type": "FundingVehicleNode"
+    },
+    "fv_iija_bric": {
+      "id": "fv_iija_bric",
+      "name": "IIJA BRIC Allocation (unobligated returned)",
+      "amount": 0,
+      "fiscal_year": "FY24-FY26",
+      "funding_type": "One-Time",
+      "_type": "FundingVehicleNode"
+    },
+    "fv_ira_elective_pay": {
+      "id": "fv_ira_elective_pay",
+      "name": "IRA Elective Pay (uncapped)",
+      "amount": 0,
+      "fiscal_year": "FY23-FY32",
+      "funding_type": "Mandatory",
+      "_type": "FundingVehicleNode"
+    },
+    "fv_iija_srf": {
+      "id": "fv_iija_srf",
+      "name": "IIJA Supplemental SRF (Lead/PFAS/Emerging Contaminants)",
+      "amount": 0,
+      "fiscal_year": "FY22-FY26",
+      "funding_type": "One-Time",
+      "_type": "FundingVehicleNode"
+    },
+    "fv_ihbg_annual": {
+      "id": "fv_ihbg_annual",
+      "name": "IHBG Annual Formula Allocation",
+      "amount": 0,
+      "fiscal_year": "FY26",
+      "funding_type": "Discretionary",
+      "_type": "FundingVehicleNode"
+    },
+    "fv_iija_protect": {
+      "id": "fv_iija_protect",
+      "name": "IIJA PROTECT Formula + Competitive",
+      "amount": 0,
+      "fiscal_year": "FY22-FY26",
+      "funding_type": "Discretionary",
+      "_type": "FundingVehicleNode"
+    },
+    "fv_iija_cwdg": {
+      "id": "fv_iija_cwdg",
+      "name": "IIJA Community Wildfire Defense Grants",
+      "amount": 0,
+      "fiscal_year": "FY22-FY26",
+      "funding_type": "One-Time",
+      "_type": "FundingVehicleNode"
+    },
+    "fv_ttp_formula": {
+      "id": "fv_ttp_formula",
+      "name": "Tribal Transportation Program Formula",
+      "amount": 0,
+      "fiscal_year": "FY26",
+      "funding_type": "Discretionary",
+      "_type": "FundingVehicleNode"
+    },
+    "bar_bric_terminated": {
+      "id": "bar_bric_terminated",
+      "description": "BRIC program terminated April 2025; no FY24/25 cycle; ~$882M unobligated IIJA funds returned to Treasury",
+      "barrier_type": "Statutory",
+      "severity": "High",
+      "_type": "BarrierNode"
+    },
+    "bar_cost_share": {
+      "id": "bar_cost_share",
+      "description": "Cost share / match requirements (25-50%) create barriers for under-resourced Tribes",
+      "barrier_type": "Administrative",
+      "severity": "High",
+      "_type": "BarrierNode"
+    },
+    "bar_plan_requirement": {
+      "id": "bar_plan_requirement",
+      "description": "Tribal Hazard Mitigation Plan required for post-disaster funding (Stafford Act \u00c2\u00a7 322)",
+      "barrier_type": "Statutory",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_instrumentality_ambiguity": {
+      "id": "bar_instrumentality_ambiguity",
+      "description": "Tribal instrumentality definition for elective pay requires legal clarity",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_competitive_only": {
+      "id": "bar_competitive_only",
+      "description": "Competitive-only programs disadvantage Tribes without grant-writing capacity",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_eo14225_reform": {
+      "id": "bar_eo14225_reform",
+      "description": "Executive Order 14225 forest management reforms may restructure CWDG eligibility",
+      "barrier_type": "Statutory",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_appropriations_volatility": {
+      "id": "bar_appropriations_volatility",
+      "description": "Annual appropriations volatility creates year-to-year uncertainty for Tribal programs",
+      "barrier_type": "Statutory",
+      "severity": "High",
+      "_type": "BarrierNode"
+    },
+    "bar_reconciliation_repeal": {
+      "id": "bar_reconciliation_repeal",
+      "description": "IRA provisions (\u00c2\u00a76417 Elective Pay) subject to budget reconciliation repeal",
+      "barrier_type": "Statutory",
+      "severity": "High",
+      "_type": "BarrierNode"
+    },
+    "bar_iija_sunset": {
+      "id": "bar_iija_sunset",
+      "description": "IIJA supplemental funding expires end of FY26; no reauthorization bill yet introduced",
+      "barrier_type": "Statutory",
+      "severity": "High",
+      "_type": "BarrierNode"
+    },
+    "bar_agency_capacity": {
+      "id": "bar_agency_capacity",
+      "description": "Tribal set-aside administrative capacity at agencies insufficient for demand",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_reauthorization_gap": {
+      "id": "bar_reauthorization_gap",
+      "description": "NAHASDA reauthorization uncertainty creates long-term program risk",
+      "barrier_type": "Statutory",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_data_sovereignty": {
+      "id": "bar_data_sovereignty",
+      "description": "Federal data reporting requirements conflict with Tribal data sovereignty principles",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_match_burden": {
+      "id": "bar_match_burden",
+      "description": "Cost-share/match requirements across multiple programs disproportionately burden Tribes",
+      "barrier_type": "Administrative",
+      "severity": "High",
+      "_type": "BarrierNode"
+    },
+    "usa_15.156_259248162": {
+      "id": "usa_15.156_259248162",
+      "amount": 58810.0,
+      "recipient": "COW CREEK BAND OF UMPQUA TRIBE OF INDIANS",
+      "fiscal_year": "FY26",
+      "cfda": "15.156",
+      "_type": "ObligationNode"
+    },
+    "auth_bil": {
+      "id": "auth_bil",
+      "citation": "bil",
+      "authority_type": "Statute",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "usa_97.047_266578341": {
+      "id": "usa_97.047_266578341",
+      "amount": 11300743.04,
+      "recipient": "INDIANA DEPT OF HOMELAND SECURITY",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_258855092": {
+      "id": "usa_66.926_258855092",
+      "amount": 569776.0,
+      "recipient": "HAVASUPAI TRIBE",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266579745": {
+      "id": "usa_97.047_266579745",
+      "amount": 128132185.8,
+      "recipient": "DEPARTMENT OF PUBLIC SAFETY STATE UTAH",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266583353": {
+      "id": "usa_97.047_266583353",
+      "amount": 23347074.02,
+      "recipient": "NEW YORK STATE DIVISION OF HOMELAND SECURITY & EMERGENCY SERVICES",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266576522": {
+      "id": "usa_97.047_266576522",
+      "amount": 3253880.0,
+      "recipient": "STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198509858": {
+      "id": "usa_66.468_198509858",
+      "amount": 92861000.0,
+      "recipient": "INDIANA FINANCE AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_15.156_259243705": {
+      "id": "usa_15.156_259243705",
+      "amount": 145571.0,
+      "recipient": "SAC & FOX NATION",
+      "fiscal_year": "FY26",
+      "cfda": "15.156",
+      "_type": "ObligationNode"
+    },
+    "usa_15.156_259246538": {
+      "id": "usa_15.156_259246538",
+      "amount": 105264.12,
+      "recipient": "SAC & FOX NATION OF MISSOURI IN KANSAS",
+      "fiscal_year": "FY26",
+      "cfda": "15.156",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266586551": {
+      "id": "usa_97.047_266586551",
+      "amount": 119964652.83,
+      "recipient": "HOMELAND SECURITY & EMERGENCY",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266579822": {
+      "id": "usa_97.047_266579822",
+      "amount": 54886012.74,
+      "recipient": "DEPARTMENT OF PUBLIC SAFETY STATE UTAH",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266578307": {
+      "id": "usa_97.047_266578307",
+      "amount": 7319476.92,
+      "recipient": "STATE OF MICHIGAN",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266576176": {
+      "id": "usa_97.047_266576176",
+      "amount": 2041266.85,
+      "recipient": "ADJUTANT GENERAL SOUTH CAROLINA",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266576314": {
+      "id": "usa_97.047_266576314",
+      "amount": 1776596.86,
+      "recipient": "NORTH CAROLINA DEPARTMENT OF PUBLIC SAFETY",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.047_266578500": {
+      "id": "usa_97.047_266578500",
+      "amount": 620040.14,
+      "recipient": "STATE OF MICHIGAN",
+      "fiscal_year": "FY26",
+      "cfda": "97.047",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_242979461": {
+      "id": "usa_97.039_242979461",
+      "amount": 2965284568.57,
+      "recipient": "TEXAS DEPARTMENT OF PUBLIC SAFETY",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_242989882": {
+      "id": "usa_97.039_242989882",
+      "amount": 2431315839.05,
+      "recipient": "STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_243133358": {
+      "id": "usa_97.039_243133358",
+      "amount": 1992707974.02,
+      "recipient": "OFFICE OF EMERGENCY SERVICES",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_241929350": {
+      "id": "usa_97.039_241929350",
+      "amount": 1385958174.5,
+      "recipient": "NEW YORK STATE DIVISION OF HOMELAND SECURITY & EMERGENCY SERVICES",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_243103051": {
+      "id": "usa_97.039_243103051",
+      "amount": 784255099.64,
+      "recipient": "NORTH CAROLINA DEPARTMENT OF PUBLIC SAFETY",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_242739086": {
+      "id": "usa_97.039_242739086",
+      "amount": 754181002.25,
+      "recipient": "HOMELAND SECURITY & EMERGENCY",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_231672680": {
+      "id": "usa_97.039_231672680",
+      "amount": 661453537.7,
+      "recipient": "HOMELAND SECURITY & EMERGENCY",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_242994067": {
+      "id": "usa_97.039_242994067",
+      "amount": 556705504.7,
+      "recipient": "GOVERNOR'S AUTHORIZED REPRESENTATIVE",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_243004448": {
+      "id": "usa_97.039_243004448",
+      "amount": 489778742.2,
+      "recipient": "OFFICE OF EMERGENCY SERVICES",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_242979462": {
+      "id": "usa_97.039_242979462",
+      "amount": 478470064.06,
+      "recipient": "TEXAS DIVISION OF EMERGENCY MANAGEMENT",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_268688309": {
+      "id": "usa_14.867_268688309",
+      "amount": 3237206.3,
+      "recipient": "NATIONAL AMERICAN INDIAN HOUSING COUNCIL",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_198511204": {
+      "id": "usa_66.926_198511204",
+      "amount": 1050000.0,
+      "recipient": "NORTHWEST INDIAN FISHERIES COMMISSION",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663338": {
+      "id": "usa_14.867_247663338",
+      "amount": 26614748.0,
+      "recipient": "CROW CREEK SIOUX TRIBE",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663270": {
+      "id": "usa_14.867_247663270",
+      "amount": 24638840.0,
+      "recipient": "OMAHA TRIBAL HOUSING AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_258855099": {
+      "id": "usa_66.926_258855099",
+      "amount": 921536.0,
+      "recipient": "VIEJAS BAND OF KUMEYAAY INDIANS",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_258855084": {
+      "id": "usa_66.926_258855084",
+      "amount": 669996.0,
+      "recipient": "LONE PINE PAIUTE SHOSHONE RESERVATION",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_258855091": {
+      "id": "usa_66.926_258855091",
+      "amount": 586673.0,
+      "recipient": "HOPLAND BAND OF POMO INDIANS",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663272": {
+      "id": "usa_14.867_247663272",
+      "amount": 15760817.0,
+      "recipient": "SANTEE SIOUX TRIBAL HOUSING AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663280": {
+      "id": "usa_14.867_247663280",
+      "amount": 14082714.0,
+      "recipient": "YERINGTON PAIUTE TRIBAL HOUSING AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663471": {
+      "id": "usa_14.867_247663471",
+      "amount": 2959089.6,
+      "recipient": "PASKENTA BAND OF NOMLAKI INDIANS",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_352778598": {
+      "id": "usa_10.691_352778598",
+      "amount": 1191338.0,
+      "recipient": "EASTERN BAND OF CHEROKEE INDIANS",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_354250769": {
+      "id": "usa_66.926_354250769",
+      "amount": 900000.0,
+      "recipient": "REGION 10 TRIBAL OPERATIONS COMMITTEE CONSORTIUM",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_258855489": {
+      "id": "usa_66.926_258855489",
+      "amount": 661222.0,
+      "recipient": "FORT MCDERMITT PAIUTE AND SHOSHONE TRIBE",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_258855301": {
+      "id": "usa_66.926_258855301",
+      "amount": 646387.0,
+      "recipient": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "auth_inflation_reduction_act": {
+      "id": "auth_inflation_reduction_act",
+      "citation": "Inflation Reduction Act",
+      "authority_type": "Statute",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "auth_proposed_rule": {
+      "id": "auth_proposed_rule",
+      "citation": "proposed rule",
+      "authority_type": "Regulation",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "usa_66.926_258855656": {
+      "id": "usa_66.926_258855656",
+      "amount": 683076.0,
+      "recipient": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "auth_final_rule": {
+      "id": "auth_final_rule",
+      "citation": "Final rule",
+      "authority_type": "Regulation",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "usa_20.205_202624551": {
+      "id": "usa_20.205_202624551",
+      "amount": 488422692.0,
+      "recipient": "STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251213831": {
+      "id": "usa_20.205_251213831",
+      "amount": 432785124.0,
+      "recipient": "TRANSPORTATION NORTH CAROLINA DEPARTMENT",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251151053": {
+      "id": "usa_20.205_251151053",
+      "amount": 307240525.49,
+      "recipient": "TEXAS DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251063314": {
+      "id": "usa_20.205_251063314",
+      "amount": 245364400.0,
+      "recipient": "DEPARTMENT OF TRANSPORTATION ARIZONA",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251063333": {
+      "id": "usa_20.205_251063333",
+      "amount": 243801202.27,
+      "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_244594183": {
+      "id": "usa_20.205_244594183",
+      "amount": 215892832.13,
+      "recipient": "TEXAS DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251104940": {
+      "id": "usa_20.205_251104940",
+      "amount": 209732883.0,
+      "recipient": "STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251029156": {
+      "id": "usa_20.205_251029156",
+      "amount": 199120182.0,
+      "recipient": "STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251065604": {
+      "id": "usa_20.205_251065604",
+      "amount": 195988456.0,
+      "recipient": "TRANSPORTATION NORTH CAROLINA DEPARTMENT",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_251095175": {
+      "id": "usa_20.205_251095175",
+      "amount": 195978061.37,
+      "recipient": "TRANSPORTATION, MICHIGAN DEPARTMENT OF",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_251100399": {
+      "id": "usa_20.934_251100399",
+      "amount": 100000000.0,
+      "recipient": "ALABAMA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_251215114": {
+      "id": "usa_20.934_251215114",
+      "amount": 83266416.0,
+      "recipient": "COLORADO DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_251215168": {
+      "id": "usa_20.934_251215168",
+      "amount": 53394723.0,
+      "recipient": "SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_251100400": {
+      "id": "usa_20.934_251100400",
+      "amount": 25000000.0,
+      "recipient": "ALABAMA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_251143970": {
+      "id": "usa_20.934_251143970",
+      "amount": 23120859.0,
+      "recipient": "COLORADO DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_251179492": {
+      "id": "usa_20.934_251179492",
+      "amount": 16733584.0,
+      "recipient": "COLORADO DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258059947": {
+      "id": "usa_66.468_258059947",
+      "amount": 123110000.0,
+      "recipient": "NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_353150079": {
+      "id": "usa_66.468_353150079",
+      "amount": 89851000.0,
+      "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258059946": {
+      "id": "usa_66.468_258059946",
+      "amount": 82971000.0,
+      "recipient": "NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_233887094": {
+      "id": "usa_10.691_233887094",
+      "amount": 2206000.0,
+      "recipient": "CALIFORNIA DEPARTMENT OF FORESTRY AND FIRE PROTECTION",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_198418210": {
+      "id": "usa_66.926_198418210",
+      "amount": 545901.0,
+      "recipient": "MODOC NATION",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198417908": {
+      "id": "usa_66.468_198417908",
+      "amount": 395000000.0,
+      "recipient": "MISSISSIPPI STATE DEPARTMENT OF HEALTH",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198418391": {
+      "id": "usa_66.468_198418391",
+      "amount": 140993000.0,
+      "recipient": "TEXAS WATER DEVELOPMENT BOARD",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198417577": {
+      "id": "usa_66.468_198417577",
+      "amount": 89756000.0,
+      "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198417578": {
+      "id": "usa_66.468_198417578",
+      "amount": 84997000.0,
+      "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_197960698": {
+      "id": "usa_66.468_197960698",
+      "amount": 71300000.0,
+      "recipient": "THE STATE OF OHIO OFFICE OF BUDGET AND MANAGEMENT",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_197960741": {
+      "id": "usa_66.468_197960741",
+      "amount": 69593000.0,
+      "recipient": "MICHIGAN DEPARTMENT OF ENVIRONMENT, GREAT LAKES, AND ENERGY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663182": {
+      "id": "usa_14.867_247663182",
+      "amount": 47070863.0,
+      "recipient": "NORTH PACIFIC RIM HOUSING AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663274": {
+      "id": "usa_14.867_247663274",
+      "amount": 44987757.0,
+      "recipient": "DUCK VALLEY HOUSING AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663269": {
+      "id": "usa_14.867_247663269",
+      "amount": 43671249.67,
+      "recipient": "CHIPPEWA CREE HOUSING AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_14.867_247663340": {
+      "id": "usa_14.867_247663340",
+      "amount": 22477528.0,
+      "recipient": "LOWER BRULE HOUSING AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260361803": {
+      "id": "usa_81.087_260361803",
+      "amount": 42681706.0,
+      "recipient": "PLUG POWER INC.",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260361808": {
+      "id": "usa_81.087_260361808",
+      "amount": 41186672.0,
+      "recipient": "ELECTRIC HYDROGEN CO",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260361804": {
+      "id": "usa_81.087_260361804",
+      "amount": 39633303.0,
+      "recipient": "VERDAGY INC",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260361837": {
+      "id": "usa_81.087_260361837",
+      "amount": 36525625.0,
+      "recipient": "AMERICAN INSTITUTE OF CHEMICAL ENGINEERS",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260360664": {
+      "id": "usa_81.087_260360664",
+      "amount": 30058299.0,
+      "recipient": "PACCAR INC",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260361841": {
+      "id": "usa_81.087_260361841",
+      "amount": 29800000.0,
+      "recipient": "BALLARD US INC.",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260361842": {
+      "id": "usa_81.087_260361842",
+      "amount": 28195948.0,
+      "recipient": "PLUG POWER INC.",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260359685": {
+      "id": "usa_81.087_260359685",
+      "amount": 20599175.0,
+      "recipient": "GE VERNOVA OPERATIONS LLC",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260360033": {
+      "id": "usa_81.087_260360033",
+      "amount": 20000000.0,
+      "recipient": "UNIVERSITY OF TENNESSEE",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260359332": {
+      "id": "usa_81.087_260359332",
+      "amount": 18500000.0,
+      "recipient": "NEW YORK STATE ENERGY RESEARCH & DEVELOPMENT AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_354333184": {
+      "id": "usa_10.691_354333184",
+      "amount": 5050000.0,
+      "recipient": "NATURAL RESOURCES & CONSERVATION, MONTANA DEPT OF",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_234529989": {
+      "id": "usa_10.691_234529989",
+      "amount": 1788018.56,
+      "recipient": "CALIFORNIA TAHOE CONSERVANCY",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_233141190": {
+      "id": "usa_10.691_233141190",
+      "amount": 975478.18,
+      "recipient": "OREGON DEPARTMENT OF FORESTRY",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_235762563": {
+      "id": "usa_10.691_235762563",
+      "amount": 426712.73,
+      "recipient": "STATE OF UTAH, DIVISION OF WILDLIFE RESOURCES",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_235142400": {
+      "id": "usa_10.691_235142400",
+      "amount": 402904.0,
+      "recipient": "STATE OF WYOMING OFFICE OF STATELANDS",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_235400422": {
+      "id": "usa_10.691_235400422",
+      "amount": 386318.0,
+      "recipient": "COLORADO STATE UNIVERSITY",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_233887111": {
+      "id": "usa_10.691_233887111",
+      "amount": 312387.37,
+      "recipient": "NORTH CAROLINA DEPARTMENT OF AGRICULTURE & CONSUMER SERVICES",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_10.691_235142446": {
+      "id": "usa_10.691_235142446",
+      "amount": 267689.93,
+      "recipient": "OREGON DEPARTMENT OF FORESTRY",
+      "fiscal_year": "FY26",
+      "cfda": "10.691",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_352048893": {
+      "id": "usa_15.507_352048893",
+      "amount": 4273925.0,
+      "recipient": "CITY OF STOCKTON",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_353554916": {
+      "id": "usa_15.507_353554916",
+      "amount": 3000000.0,
+      "recipient": "UNITED WATER CONSERVATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_353554915": {
+      "id": "usa_15.507_353554915",
+      "amount": 3000000.0,
+      "recipient": "SAN DIEGO COUNTY WATER AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270331701": {
+      "id": "usa_15.507_270331701",
+      "amount": 3000000.0,
+      "recipient": "MUNICIPAL WATER DISTRICT OF ORANGE COUNTY WATER FACILITIES CORPORATION",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270330931": {
+      "id": "usa_15.507_270330931",
+      "amount": 2000000.0,
+      "recipient": "DEAVER IRRIGATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270330916": {
+      "id": "usa_15.507_270330916",
+      "amount": 2000000.0,
+      "recipient": "KENNEWICK IRRIGATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270330932": {
+      "id": "usa_15.507_270330932",
+      "amount": 1999711.0,
+      "recipient": "NORTHWESTERN BAND OF SHOSHONE NATION",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270331771": {
+      "id": "usa_15.507_270331771",
+      "amount": 1891500.0,
+      "recipient": "MENARD COUNTY WATER CONTROL & IMPROVEMENT DISTRICT #1",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_354110956": {
+      "id": "usa_15.507_354110956",
+      "amount": 1610500.0,
+      "recipient": "MOON LAKE WATER USERS' ASSOCIATION",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_352048894": {
+      "id": "usa_15.507_352048894",
+      "amount": 1200000.0,
+      "recipient": "THE WATER SUPPLY AND STORAGE COMPANY",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_354453498": {
+      "id": "usa_20.934_354453498",
+      "amount": 141605277.0,
+      "recipient": "SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_354775499": {
+      "id": "usa_20.934_354775499",
+      "amount": 53893206.0,
+      "recipient": "NORTH COUNTY TRANSIT DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_354807133": {
+      "id": "usa_20.934_354807133",
+      "amount": 21172718.0,
+      "recipient": "NEBRASKA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "usa_20.934_354152933": {
+      "id": "usa_20.934_354152933",
+      "amount": 17221840.0,
+      "recipient": "MONTANA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.934",
+      "_type": "ObligationNode"
+    },
+    "bar_paperwork_reduction_act": {
+      "id": "bar_paperwork_reduction_act",
+      "description": "Paperwork Reduction Act",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_information_collection_request": {
+      "id": "bar_information_collection_request",
+      "description": "information collection request",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    }
+  },
+  "edges": [
+    {
+      "source": "fema_bric",
+      "target": "auth_stafford_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_tribal_mitigation",
+      "target": "auth_stafford_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bia_tcr",
+      "target": "auth_snyder_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "auth_ira_6417",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_stag",
+      "target": "auth_iija",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_bric",
+      "target": "auth_iija",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_iija",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "auth_iija",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "auth_nahasda",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bia_tcr",
+      "target": "auth_isdeaa",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_gap",
+      "target": "auth_isdeaa",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_stag",
+      "target": "auth_clean_water_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "auth_energy_policy_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_protect_formula",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "auth_iija_wildfire",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "auth_eo_14225",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "noaa_tribal",
+      "target": "auth_magnuson_stevens",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "auth_ttp_statute",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "auth_reclamation_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_tap",
+      "target": "auth_reclamation_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "auth_ira_48e",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "auth_ira_45_48",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_caa_105",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_gap",
+      "target": "auth_indian_environmental_gap",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "auth_iija_watersmart",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bia_tcr_awards",
+      "target": "auth_snyder_act_tcr_awards",
+      "type": "AUTHORIZED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bia_tcr",
+      "target": "fv_fy26_interior_approps",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_bric",
+      "target": "fv_iija_bric",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "fv_ira_elective_pay",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_stag",
+      "target": "fv_iija_srf",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "fv_ihbg_annual",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "dot_protect",
+      "target": "fv_iija_protect",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "fv_iija_cwdg",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "fv_ttp_formula",
+      "type": "FUNDED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_bric",
+      "target": "bar_bric_terminated",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_bric_terminated",
+      "target": "lever_fema_bric",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_bric",
+      "target": "bar_cost_share",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "bar_cost_share",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "bar_cost_share",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_cost_share",
+      "target": "lever_usda_wildfire",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_cost_share",
+      "target": "lever_usbr_watersmart",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_tribal_mitigation",
+      "target": "bar_plan_requirement",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_bric",
+      "target": "bar_plan_requirement",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_plan_requirement",
+      "target": "lever_fema_tribal_mitigation",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "bar_instrumentality_ambiguity",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_instrumentality_ambiguity",
+      "target": "lever_irs_elective_pay",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "dot_protect",
+      "target": "bar_competitive_only",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "bar_competitive_only",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_competitive_only",
+      "target": "lever_usbr_tap",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "bar_eo14225_reform",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_eo14225_reform",
+      "target": "lever_usda_wildfire",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bia_tcr",
+      "target": "bar_appropriations_volatility",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "bar_appropriations_volatility",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "noaa_tribal",
+      "target": "bar_appropriations_volatility",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_gap",
+      "target": "bar_appropriations_volatility",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_appropriations_volatility",
+      "target": "lever_bia_tcr",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_appropriations_volatility",
+      "target": "ask_multi_year",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "bar_reconciliation_repeal",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_reconciliation_repeal",
+      "target": "lever_irs_elective_pay",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_stag",
+      "target": "bar_iija_sunset",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "dot_protect",
+      "target": "bar_iija_sunset",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "bar_iija_sunset",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "bar_iija_sunset",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_iija_sunset",
+      "target": "ask_multi_year",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "dot_protect",
+      "target": "bar_agency_capacity",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_stag",
+      "target": "bar_agency_capacity",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_agency_capacity",
+      "target": "ask_direct_access",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "bar_reauthorization_gap",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_reauthorization_gap",
+      "target": "ask_multi_year",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bia_tcr",
+      "target": "bar_data_sovereignty",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_gap",
+      "target": "bar_data_sovereignty",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "epa_stag",
+      "target": "bar_data_sovereignty",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "noaa_tribal",
+      "target": "bar_data_sovereignty",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_data_sovereignty",
+      "target": "ask_data_sovereignty",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "bar_match_burden",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "bar_match_burden",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "fema_tribal_mitigation",
+      "target": "bar_match_burden",
+      "type": "BLOCKED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_match_burden",
+      "target": "ask_match_waivers",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bia_tcr",
+      "target": "usa_15.156_259248162",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 58810.0,
+        "recipient": "COW CREEK BAND OF UMPQUA TRIBE OF INDIANS"
+      }
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-01843"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-01843"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266578341",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 11300743.04,
+        "recipient": "INDIANA DEPT OF HOMELAND SECURITY"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_258855092",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 569776.0,
+        "recipient": "HAVASUPAI TRIBE"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266579745",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 128132185.8,
+        "recipient": "DEPARTMENT OF PUBLIC SAFETY STATE UTAH"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266583353",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 23347074.02,
+        "recipient": "NEW YORK STATE DIVISION OF HOMELAND SECURITY & EMERGENCY SERVICES"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266576522",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 3253880.0,
+        "recipient": "STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198509858",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 92861000.0,
+        "recipient": "INDIANA FINANCE AUTHORITY"
+      }
+    },
+    {
+      "source": "bia_tcr",
+      "target": "usa_15.156_259243705",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 145571.0,
+        "recipient": "SAC & FOX NATION"
+      }
+    },
+    {
+      "source": "bia_tcr",
+      "target": "usa_15.156_259246538",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 105264.12,
+        "recipient": "SAC & FOX NATION OF MISSOURI IN KANSAS"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266586551",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 119964652.83,
+        "recipient": "HOMELAND SECURITY & EMERGENCY"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266579822",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 54886012.74,
+        "recipient": "DEPARTMENT OF PUBLIC SAFETY STATE UTAH"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266578307",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 7319476.92,
+        "recipient": "STATE OF MICHIGAN"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266576176",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2041266.85,
+        "recipient": "ADJUTANT GENERAL SOUTH CAROLINA"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266576314",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1776596.86,
+        "recipient": "NORTH CAROLINA DEPARTMENT OF PUBLIC SAFETY"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.047_266578500",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 620040.14,
+        "recipient": "STATE OF MICHIGAN"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_242979461",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2965284568.57,
+        "recipient": "TEXAS DEPARTMENT OF PUBLIC SAFETY"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_242989882",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2431315839.05,
+        "recipient": "STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_243133358",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1992707974.02,
+        "recipient": "OFFICE OF EMERGENCY SERVICES"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_241929350",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1385958174.5,
+        "recipient": "NEW YORK STATE DIVISION OF HOMELAND SECURITY & EMERGENCY SERVICES"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_243103051",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 784255099.64,
+        "recipient": "NORTH CAROLINA DEPARTMENT OF PUBLIC SAFETY"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_242739086",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 754181002.25,
+        "recipient": "HOMELAND SECURITY & EMERGENCY"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_231672680",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 661453537.7,
+        "recipient": "HOMELAND SECURITY & EMERGENCY"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_242994067",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 556705504.7,
+        "recipient": "GOVERNOR'S AUTHORIZED REPRESENTATIVE"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_243004448",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 489778742.2,
+        "recipient": "OFFICE OF EMERGENCY SERVICES"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_242979462",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 478470064.06,
+        "recipient": "TEXAS DIVISION OF EMERGENCY MANAGEMENT"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_268688309",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 3237206.3,
+        "recipient": "NATIONAL AMERICAN INDIAN HOUSING COUNCIL"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_198511204",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1050000.0,
+        "recipient": "NORTHWEST INDIAN FISHERIES COMMISSION"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663338",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 26614748.0,
+        "recipient": "CROW CREEK SIOUX TRIBE"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663270",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 24638840.0,
+        "recipient": "OMAHA TRIBAL HOUSING AUTHORITY"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_258855099",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 921536.0,
+        "recipient": "VIEJAS BAND OF KUMEYAAY INDIANS"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_258855084",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 669996.0,
+        "recipient": "LONE PINE PAIUTE SHOSHONE RESERVATION"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_258855091",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 586673.0,
+        "recipient": "HOPLAND BAND OF POMO INDIANS"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663272",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 15760817.0,
+        "recipient": "SANTEE SIOUX TRIBAL HOUSING AUTHORITY"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663280",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 14082714.0,
+        "recipient": "YERINGTON PAIUTE TRIBAL HOUSING AUTHORITY"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663471",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2959089.6,
+        "recipient": "PASKENTA BAND OF NOMLAKI INDIANS"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_352778598",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1191338.0,
+        "recipient": "EASTERN BAND OF CHEROKEE INDIANS"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_354250769",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 900000.0,
+        "recipient": "REGION 10 TRIBAL OPERATIONS COMMITTEE CONSORTIUM"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_258855489",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 661222.0,
+        "recipient": "FORT MCDERMITT PAIUTE AND SHOSHONE TRIBE"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_258855301",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 646387.0,
+        "recipient": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA"
+      }
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "auth_inflation_reduction_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02246"
+      }
+    },
+    {
+      "source": "irs_elective_pay",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02246"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_258855656",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 683076.0,
+        "recipient": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-01733"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-01733"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02350"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02350"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02344"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_202624551",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 488422692.0,
+        "recipient": "STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251213831",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 432785124.0,
+        "recipient": "TRANSPORTATION NORTH CAROLINA DEPARTMENT"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251151053",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 307240525.49,
+        "recipient": "TEXAS DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251063314",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 245364400.0,
+        "recipient": "DEPARTMENT OF TRANSPORTATION ARIZONA"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251063333",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 243801202.27,
+        "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_244594183",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 215892832.13,
+        "recipient": "TEXAS DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251104940",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 209732883.0,
+        "recipient": "STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251029156",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 199120182.0,
+        "recipient": "STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251065604",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 195988456.0,
+        "recipient": "TRANSPORTATION NORTH CAROLINA DEPARTMENT"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_251095175",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 195978061.37,
+        "recipient": "TRANSPORTATION, MICHIGAN DEPARTMENT OF"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_251100399",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 100000000.0,
+        "recipient": "ALABAMA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_251215114",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 83266416.0,
+        "recipient": "COLORADO DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_251215168",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 53394723.0,
+        "recipient": "SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_251100400",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 25000000.0,
+        "recipient": "ALABAMA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_251143970",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 23120859.0,
+        "recipient": "COLORADO DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_251179492",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 16733584.0,
+        "recipient": "COLORADO DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258059947",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 123110000.0,
+        "recipient": "NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_66.468_258059947",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 123110000.0,
+        "recipient": "NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_353150079",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 89851000.0,
+        "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_66.468_353150079",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 89851000.0,
+        "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258059946",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 82971000.0,
+        "recipient": "NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_66.468_258059946",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 82971000.0,
+        "recipient": "NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_233887094",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2206000.0,
+        "recipient": "CALIFORNIA DEPARTMENT OF FORESTRY AND FIRE PROTECTION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_10.691_233887094",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2206000.0,
+        "recipient": "CALIFORNIA DEPARTMENT OF FORESTRY AND FIRE PROTECTION"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_198418210",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 545901.0,
+        "recipient": "MODOC NATION"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198417908",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 395000000.0,
+        "recipient": "MISSISSIPPI STATE DEPARTMENT OF HEALTH"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198418391",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 140993000.0,
+        "recipient": "TEXAS WATER DEVELOPMENT BOARD"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198417577",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 89756000.0,
+        "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198417578",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 84997000.0,
+        "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_197960698",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 71300000.0,
+        "recipient": "THE STATE OF OHIO OFFICE OF BUDGET AND MANAGEMENT"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_197960741",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 69593000.0,
+        "recipient": "MICHIGAN DEPARTMENT OF ENVIRONMENT, GREAT LAKES, AND ENERGY"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663182",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 47070863.0,
+        "recipient": "NORTH PACIFIC RIM HOUSING AUTHORITY"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663274",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 44987757.0,
+        "recipient": "DUCK VALLEY HOUSING AUTHORITY"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663269",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 43671249.67,
+        "recipient": "CHIPPEWA CREE HOUSING AUTHORITY"
+      }
+    },
+    {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663340",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 22477528.0,
+        "recipient": "LOWER BRULE HOUSING AUTHORITY"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260361803",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 42681706.0,
+        "recipient": "PLUG POWER INC."
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260361808",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 41186672.0,
+        "recipient": "ELECTRIC HYDROGEN CO"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260361804",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 39633303.0,
+        "recipient": "VERDAGY INC"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260361837",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 36525625.0,
+        "recipient": "AMERICAN INSTITUTE OF CHEMICAL ENGINEERS"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260360664",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 30058299.0,
+        "recipient": "PACCAR INC"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260361841",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 29800000.0,
+        "recipient": "BALLARD US INC."
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260361842",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 28195948.0,
+        "recipient": "PLUG POWER INC."
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260359685",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 20599175.0,
+        "recipient": "GE VERNOVA OPERATIONS LLC"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260360033",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 20000000.0,
+        "recipient": "UNIVERSITY OF TENNESSEE"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260359332",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 18500000.0,
+        "recipient": "NEW YORK STATE ENERGY RESEARCH & DEVELOPMENT AUTHORITY"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_354333184",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 5050000.0,
+        "recipient": "NATURAL RESOURCES & CONSERVATION, MONTANA DEPT OF"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_234529989",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1788018.56,
+        "recipient": "CALIFORNIA TAHOE CONSERVANCY"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_233141190",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 975478.18,
+        "recipient": "OREGON DEPARTMENT OF FORESTRY"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_235762563",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 426712.73,
+        "recipient": "STATE OF UTAH, DIVISION OF WILDLIFE RESOURCES"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_235142400",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 402904.0,
+        "recipient": "STATE OF WYOMING OFFICE OF STATELANDS"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_235400422",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 386318.0,
+        "recipient": "COLORADO STATE UNIVERSITY"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_233887111",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 312387.37,
+        "recipient": "NORTH CAROLINA DEPARTMENT OF AGRICULTURE & CONSUMER SERVICES"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.691_235142446",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 267689.93,
+        "recipient": "OREGON DEPARTMENT OF FORESTRY"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_352048893",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 4273925.0,
+        "recipient": "CITY OF STOCKTON"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_353554916",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 3000000.0,
+        "recipient": "UNITED WATER CONSERVATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_353554915",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 3000000.0,
+        "recipient": "SAN DIEGO COUNTY WATER AUTHORITY"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270331701",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 3000000.0,
+        "recipient": "MUNICIPAL WATER DISTRICT OF ORANGE COUNTY WATER FACILITIES CORPORATION"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270330931",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2000000.0,
+        "recipient": "DEAVER IRRIGATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270330916",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2000000.0,
+        "recipient": "KENNEWICK IRRIGATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270330932",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1999711.0,
+        "recipient": "NORTHWESTERN BAND OF SHOSHONE NATION"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270331771",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1891500.0,
+        "recipient": "MENARD COUNTY WATER CONTROL & IMPROVEMENT DISTRICT #1"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_354110956",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1610500.0,
+        "recipient": "MOON LAKE WATER USERS' ASSOCIATION"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_352048894",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1200000.0,
+        "recipient": "THE WATER SUPPLY AND STORAGE COMPANY"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_354453498",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 141605277.0,
+        "recipient": "SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_354775499",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 53893206.0,
+        "recipient": "NORTH COUNTY TRANSIT DISTRICT"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_354807133",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 21172718.0,
+        "recipient": "NEBRASKA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.934_354152933",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 17221840.0,
+        "recipient": "MONTANA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "bar_paperwork_reduction_act",
+      "type": "BLOCKED_BY",
+      "metadata": {
+        "inferred_from": "2026-01870"
+      }
+    },
+    {
+      "source": "usbr_tap",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-01560"
+      }
+    }
+  ],
+  "summary": {
+    "total_nodes": 182,
+    "total_edges": 196,
+    "programs": 16,
+    "node_types": {
+      "ProgramNode": 16,
+      "AdvocacyLeverNode": 16,
+      "AuthorityNode": 24,
+      "FundingVehicleNode": 8,
+      "BarrierNode": 15,
+      "ObligationNode": 103
+    }
+  }
+}
