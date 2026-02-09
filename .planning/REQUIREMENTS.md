@@ -38,12 +38,12 @@
 
 ### Report Enhancements
 
-- [ ] **RPT-01**: Five Structural Asks section in LATEST-BRIEFING.md mapping to barrier mitigation pathways
-- [ ] **RPT-02**: Hot Sheets sync status indicator showing alignment/divergence per program
-- [ ] **RPT-03**: IIJA Sunset Countdown for affected programs
-- [ ] **RPT-04**: Historical CI trend tracking — score trajectories over time
-- [ ] **RPT-05**: Reconciliation Watch section when relevant bills detected
-- [ ] **RPT-06**: Advocacy goal classification per scanner decision logic (5 rules from FY26 Reference)
+- [x] **RPT-01**: Five Structural Asks section in LATEST-BRIEFING.md mapping to barrier mitigation pathways
+- [x] **RPT-02**: Hot Sheets sync status indicator showing alignment/divergence per program
+- [x] **RPT-03**: IIJA Sunset Countdown for affected programs
+- [x] **RPT-04**: Historical CI trend tracking — score trajectories over time
+- [x] **RPT-05**: Reconciliation Watch section when relevant bills detected
+- [x] **RPT-06**: Advocacy goal classification per scanner decision logic (5 rules from FY26 Reference)
 
 ### Scanner Decision Logic
 
@@ -111,12 +111,12 @@
 | MON-03 | Phase 3 | Complete |
 | MON-04 | Phase 3 | Complete |
 | MON-05 | Phase 3 | Complete |
-| RPT-01 | Phase 4 | Pending |
-| RPT-02 | Phase 4 | Pending |
-| RPT-03 | Phase 4 | Pending |
-| RPT-04 | Phase 4 | Pending |
-| RPT-05 | Phase 4 | Pending |
-| RPT-06 | Phase 4 | Pending |
+| RPT-01 | Phase 4 | Complete |
+| RPT-02 | Phase 4 | Complete |
+| RPT-03 | Phase 4 | Complete |
+| RPT-04 | Phase 4 | Complete |
+| RPT-05 | Phase 4 | Complete |
+| RPT-06 | Phase 4 | Complete |
 | LOGIC-01 | Phase 3 | Complete |
 | LOGIC-02 | Phase 3 | Complete |
 | LOGIC-03 | Phase 3 | Complete |
@@ -130,4 +130,4 @@
 
 ---
 *Requirements defined: 2026-02-09*
-*Last updated: 2026-02-09 after Phase 3 completion*
+*Last updated: 2026-02-09 after Phase 4 completion — all v1 requirements complete*
