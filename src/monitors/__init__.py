@@ -106,34 +106,34 @@ class MonitorRunner:
         try:
             from src.monitors.hot_sheets import HotSheetsValidator
             self._monitors.append(HotSheetsValidator(self.config, self.programs))
-        except ImportError:
-            logger.warning("HotSheetsValidator not available")
+        except Exception:
+            logger.exception("HotSheetsValidator not available")
 
         # --- Threat monitors ---
         try:
             from src.monitors.iija_sunset import IIJASunsetMonitor
             self._monitors.append(IIJASunsetMonitor(self.config, self.programs))
-        except ImportError:
-            logger.warning("IIJASunsetMonitor not available")
+        except Exception:
+            logger.exception("IIJASunsetMonitor not available")
 
         try:
             from src.monitors.reconciliation import ReconciliationMonitor
             self._monitors.append(ReconciliationMonitor(self.config, self.programs))
-        except ImportError:
-            logger.warning("ReconciliationMonitor not available")
+        except Exception:
+            logger.exception("ReconciliationMonitor not available")
 
         try:
             from src.monitors.dhs_funding import DHSFundingCliffMonitor
             self._monitors.append(DHSFundingCliffMonitor(self.config, self.programs))
-        except ImportError:
-            logger.warning("DHSFundingCliffMonitor not available")
+        except Exception:
+            logger.exception("DHSFundingCliffMonitor not available")
 
         # --- Informational monitors ---
         try:
             from src.monitors.tribal_consultation import TribalConsultationMonitor
             self._monitors.append(TribalConsultationMonitor(self.config, self.programs))
-        except ImportError:
-            logger.warning("TribalConsultationMonitor not available")
+        except Exception:
+            logger.exception("TribalConsultationMonitor not available")
 
         logger.info("MonitorRunner initialized with %d monitors", len(self._monitors))
 
@@ -182,12 +182,23 @@ class MonitorRunner:
     def _add_threatens_edges(self, graph_data: dict, alerts: list[MonitorAlert]) -> None:
         """Scan alerts for THREATENS edge metadata and add edges to graph_data.
 
+        Creates ThreatNode source nodes and THREATENS edges. Deduplicates
+        by (source, target, type) to prevent duplicates if called multiple times.
+
         Monitors signal edge creation by including these keys in metadata:
             creates_threatens_edge: True
             threat_type: str (e.g. "iija_sunset", "reconciliation")
         """
         if "edges" not in graph_data:
             graph_data["edges"] = []
+        if "nodes" not in graph_data:
+            graph_data["nodes"] = {}
+
+        # Build set of existing edge keys for deduplication
+        existing_edges = {
+            (e.get("source"), e.get("target"), e.get("type"))
+            for e in graph_data["edges"]
+        }
 
         edges_added = 0
         for alert in alerts:
@@ -199,6 +210,24 @@ class MonitorRunner:
 
             for program_id in alert.program_ids:
                 threat_node_id = f"threat_{threat_type}_{program_id}"
+
+                # Skip duplicate edges
+                edge_key = (threat_node_id, program_id, "THREATENS")
+                if edge_key in existing_edges:
+                    continue
+
+                # Create ThreatNode so edge source is not dangling
+                graph_data["nodes"][threat_node_id] = {
+                    "id": threat_node_id,
+                    "type": "ThreatNode",
+                    "threat_type": threat_type,
+                    "description": alert.title,
+                    "monitor": alert.monitor,
+                    "severity": alert.severity,
+                    "deadline": meta.get("deadline", ""),
+                    "days_remaining": meta.get("days_remaining"),
+                }
+
                 edge = {
                     "source": threat_node_id,
                     "target": program_id,
@@ -213,6 +242,7 @@ class MonitorRunner:
                     },
                 }
                 graph_data["edges"].append(edge)
+                existing_edges.add(edge_key)
                 edges_added += 1
 
         if edges_added:

@@ -139,7 +139,9 @@ class DecisionEngine:
         )
 
         for edge in threatens_edges:
-            days = edge.get("metadata", {}).get("days_remaining", 999)
+            days = edge.get("metadata", {}).get("days_remaining")
+            if days is None:
+                continue
             if days <= self.urgency_threshold_days:
                 description = edge.get("metadata", {}).get("description", "")
                 return {

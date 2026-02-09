@@ -160,7 +160,7 @@ class HotSheetsValidator(BaseMonitor):
         """Load monitor state from outputs/.monitor_state.json."""
         if MONITOR_STATE_PATH.exists():
             try:
-                with open(MONITOR_STATE_PATH) as f:
+                with open(MONITOR_STATE_PATH, encoding="utf-8") as f:
                     return json.load(f)
             except (json.JSONDecodeError, OSError) as e:
                 logger.warning("Could not load monitor state: %s", e)
@@ -173,8 +173,10 @@ class HotSheetsValidator(BaseMonitor):
             self._known_divergences
         )
         try:
-            with open(MONITOR_STATE_PATH, "w") as f:
+            tmp_path = MONITOR_STATE_PATH.with_suffix(".tmp")
+            with open(tmp_path, "w", encoding="utf-8") as f:
                 json.dump(self._state, f, indent=2)
+            tmp_path.replace(MONITOR_STATE_PATH)
             logger.debug("Monitor state saved to %s", MONITOR_STATE_PATH)
         except OSError as e:
             logger.error("Could not save monitor state: %s", e)

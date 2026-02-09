@@ -46,13 +46,13 @@ SCRAPERS = {
 
 def load_config() -> dict:
     """Load scanner configuration."""
-    with open(CONFIG_PATH) as f:
+    with open(CONFIG_PATH, encoding="utf-8") as f:
         return json.load(f)
 
 
 def load_programs() -> list[dict]:
     """Load the program inventory."""
-    with open(INVENTORY_PATH) as f:
+    with open(INVENTORY_PATH, encoding="utf-8") as f:
         data = json.load(f)
     return data["programs"]
 
@@ -103,7 +103,7 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     # Graph schema summary
     schema_path = Path("data/graph_schema.json")
     if schema_path.exists():
-        with open(schema_path) as f:
+        with open(schema_path, encoding="utf-8") as f:
             schema = json.load(f)
         print(f"\nKnowledge Graph schema:")
         print(f"  Authorities: {len(schema.get('authorities', []))}")
@@ -147,7 +147,7 @@ def build_graph(programs: list[dict], scored_items: list[dict]) -> dict:
 
     # Write graph output
     GRAPH_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(GRAPH_OUTPUT_PATH, "w") as f:
+    with open(GRAPH_OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(graph_data, f, indent=2, default=str)
     logger.info("Knowledge graph written to %s", GRAPH_OUTPUT_PATH)
 
@@ -198,7 +198,7 @@ def run_monitors_and_classify(
 
     # Save monitor data for Phase 4 reporting
     MONITOR_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(MONITOR_OUTPUT_PATH, "w") as f:
+    with open(MONITOR_OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(monitor_data, f, indent=2, default=str)
     logger.info("Monitor data written to %s", MONITOR_OUTPUT_PATH)
 

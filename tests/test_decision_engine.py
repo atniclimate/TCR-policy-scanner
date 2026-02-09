@@ -661,6 +661,16 @@ class TestEdgeCases:
 
         assert "prog_a" in result
 
+    def test_none_days_remaining_does_not_crash(self):
+        """THREATENS edge with days_remaining=None must not trigger TypeError."""
+        programs = {"prog_a": {"id": "prog_a", "ci_status": "STABLE"}}
+        graph = _make_graph(edges=[_threatens_edge("prog_a", days_remaining=None)])
+        engine = DecisionEngine(_default_config(), programs)
+        result = engine.classify_all(graph, [])
+
+        # None days_remaining should be skipped, not crash
+        assert result["prog_a"]["advocacy_goal"] != "URGENT_STABILIZATION"
+
     def test_default_config_uses_30_days(self):
         """Config without decision_engine section defaults to 30 days."""
         programs = {"prog_a": {"id": "prog_a", "ci_status": "STABLE"}}

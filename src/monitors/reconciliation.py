@@ -86,10 +86,13 @@ class ReconciliationMonitor(BaseMonitor):
             # Active reconciliation bill detected
             source_id = item.get("source_id", "unknown")
 
+            affected_programs = item.get(
+                "matched_programs", ["irs_elective_pay"]
+            )
             alerts.append(MonitorAlert(
                 monitor="reconciliation",
                 severity="WARNING",
-                program_ids=["irs_elective_pay"],
+                program_ids=affected_programs,
                 title=(
                     f"Reconciliation threat: {title[:80]}"
                 ),
@@ -130,9 +133,14 @@ class ReconciliationMonitor(BaseMonitor):
         Filters out the OBBBA (Public Law 119-21) and any other enacted
         laws listed in the config exclusion list.
         """
+        # Check config exclusion list
         for law_ref in self.enacted_laws_exclude:
             if law_ref.lower() in text:
                 return True
+        # Check common OBBBA aliases not in config
+        obbba_aliases = ["obbba", "one big beautiful bill"]
+        if any(alias in text for alias in obbba_aliases):
+            return True
         return False
 
     def _is_historical_bill(self, item: dict) -> bool:
