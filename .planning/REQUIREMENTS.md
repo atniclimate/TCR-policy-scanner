@@ -14,27 +14,27 @@
 
 ### Data Model Updates
 
-- [ ] **DATA-01**: All 16 programs have CI scores assigned (no gaps) with Hot Sheets-aligned statuses
-- [ ] **DATA-02**: SECURE, UNCERTAIN, TERMINATED status categories added to policy_tracking.json CI thresholds
-- [ ] **DATA-03**: IRS Elective Pay reclassified AT_RISK (CI: 0.55); DOT PROTECT reclassified SECURE (CI: 0.93)
-- [ ] **DATA-04**: Reconciliation/repeal trigger keywords added to scanner_config.json and relevant program entries
-- [ ] **DATA-05**: BIA TCR Awards and EPA Tribal Air Quality programs present in program_inventory.json with full metadata
+- [x] **DATA-01**: All 16 programs have CI scores assigned (no gaps) with Hot Sheets-aligned statuses
+- [x] **DATA-02**: SECURE, UNCERTAIN, TERMINATED status categories added to policy_tracking.json CI thresholds
+- [x] **DATA-03**: IRS Elective Pay reclassified AT_RISK (CI: 0.55); DOT PROTECT reclassified SECURE (CI: 0.93)
+- [x] **DATA-04**: Reconciliation/repeal trigger keywords added to scanner_config.json and relevant program entries
+- [x] **DATA-05**: BIA TCR Awards and EPA Tribal Air Quality programs present in program_inventory.json with full metadata
 
 ### Graph Enhancements
 
-- [ ] **GRAPH-01**: Graph builder loads Five Structural Asks from graph_schema.json as AdvocacyLeverNodes
-- [ ] **GRAPH-02**: ADVANCES edge type connects Structural Asks to program nodes
-- [ ] **GRAPH-03**: 10 new statutory authorities from Strategic Framework added to graph_schema.json
-- [ ] **GRAPH-04**: 6 new barriers from Strategic Framework added to graph_schema.json
-- [ ] **GRAPH-05**: Trust Super-Node (FEDERAL_TRUST_RESPONSIBILITY) implemented with TRUST_OBLIGATION edges to BIA/EPA programs
+- [x] **GRAPH-01**: Graph builder loads Five Structural Asks from graph_schema.json as AdvocacyLeverNodes
+- [x] **GRAPH-02**: ADVANCES edge type connects Structural Asks to program nodes
+- [x] **GRAPH-03**: 10 new statutory authorities from Strategic Framework added to graph_schema.json
+- [x] **GRAPH-04**: 6 new barriers from Strategic Framework added to graph_schema.json
+- [x] **GRAPH-05**: Trust Super-Node (FEDERAL_TRUST_RESPONSIBILITY) implemented with TRUST_OBLIGATION edges to BIA/EPA programs
 
 ### Monitoring Capabilities
 
-- [ ] **MON-01**: IIJA sunset tracker flags programs approaching FY26 expiration with no reauthorization bill
-- [ ] **MON-02**: Reconciliation monitor tracks House/Senate bills for IRA section 6417 repeal provisions
-- [ ] **MON-03**: Tribal consultation tracker detects DTLLs, consultation notices, EO 13175 compliance signals
-- [ ] **MON-04**: Hot Sheets sync validation compares scanner CI vs Hot Sheets positions after each scan cycle
-- [ ] **MON-05**: DHS funding cliff tracker surfaces FEMA-related nodes when DHS CR approaches expiration
+- [x] **MON-01**: IIJA sunset tracker flags programs approaching FY26 expiration with no reauthorization bill
+- [x] **MON-02**: Reconciliation monitor tracks House/Senate bills for IRA section 6417 repeal provisions
+- [x] **MON-03**: Tribal consultation tracker detects DTLLs, consultation notices, EO 13175 compliance signals
+- [x] **MON-04**: Hot Sheets sync validation compares scanner CI vs Hot Sheets positions after each scan cycle
+- [x] **MON-05**: DHS funding cliff tracker surfaces FEMA-related nodes when DHS CR approaches expiration
 
 ### Report Enhancements
 
@@ -47,11 +47,11 @@
 
 ### Scanner Decision Logic
 
-- [ ] **LOGIC-01**: Rule 1 — Restore/Replace: TERMINATED program + ACTIVE authority triggers restore advocacy
-- [ ] **LOGIC-02**: Rule 2 — Protect Base: DISCRETIONARY funding + ELIMINATE/REDUCE signal triggers protect advocacy
-- [ ] **LOGIC-03**: Rule 3 — Direct Access Parity: STATE_PASS_THROUGH access + HIGH burden triggers parity advocacy
-- [ ] **LOGIC-04**: Rule 4 — Expand and Strengthen: STABLE/SECURE status + DIRECT/SET_ASIDE access triggers growth advocacy
-- [ ] **LOGIC-05**: Rule 5 — Urgent Stabilization: THREATENS edge within 30 days overrides all other classifications
+- [x] **LOGIC-01**: Rule 1 — Restore/Replace: TERMINATED program + ACTIVE authority triggers restore advocacy
+- [x] **LOGIC-02**: Rule 2 — Protect Base: DISCRETIONARY funding + ELIMINATE/REDUCE signal triggers protect advocacy
+- [x] **LOGIC-03**: Rule 3 — Direct Access Parity: STATE_PASS_THROUGH access + HIGH burden triggers parity advocacy
+- [x] **LOGIC-04**: Rule 4 — Expand and Strengthen: STABLE/SECURE status + DIRECT/SET_ASIDE access triggers growth advocacy
+- [x] **LOGIC-05**: Rule 5 — Urgent Stabilization: THREATENS edge within 30 days overrides all other classifications
 
 ## v2 Requirements
 
@@ -106,22 +106,22 @@
 | GRAPH-03 | Phase 2 | Complete |
 | GRAPH-04 | Phase 2 | Complete |
 | GRAPH-05 | Phase 2 | Complete |
-| MON-01 | Phase 3 | Pending |
-| MON-02 | Phase 3 | Pending |
-| MON-03 | Phase 3 | Pending |
-| MON-04 | Phase 3 | Pending |
-| MON-05 | Phase 3 | Pending |
+| MON-01 | Phase 3 | Complete |
+| MON-02 | Phase 3 | Complete |
+| MON-03 | Phase 3 | Complete |
+| MON-04 | Phase 3 | Complete |
+| MON-05 | Phase 3 | Complete |
 | RPT-01 | Phase 4 | Pending |
 | RPT-02 | Phase 4 | Pending |
 | RPT-03 | Phase 4 | Pending |
 | RPT-04 | Phase 4 | Pending |
 | RPT-05 | Phase 4 | Pending |
 | RPT-06 | Phase 4 | Pending |
-| LOGIC-01 | Phase 3 | Pending |
-| LOGIC-02 | Phase 3 | Pending |
-| LOGIC-03 | Phase 3 | Pending |
-| LOGIC-04 | Phase 3 | Pending |
-| LOGIC-05 | Phase 3 | Pending |
+| LOGIC-01 | Phase 3 | Complete |
+| LOGIC-02 | Phase 3 | Complete |
+| LOGIC-03 | Phase 3 | Complete |
+| LOGIC-04 | Phase 3 | Complete |
+| LOGIC-05 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 31 total
@@ -130,4 +130,4 @@
 
 ---
 *Requirements defined: 2026-02-09*
-*Last updated: 2026-02-09 after Phase 2 completion*
+*Last updated: 2026-02-09 after Phase 3 completion*
