@@ -19,19 +19,18 @@ The TCR Policy Scanner is a brownfield Python project with working scrapers, sco
 
 **Requirements:** PIPE-01, PIPE-02, PIPE-03, PIPE-04
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md -- Fix Grants.gov endpoint, validate all 4 scrapers, full pipeline run, change detection
+- [ ] 01-02-PLAN.md -- Verify GitHub Actions CI workflow via manual trigger
+
 **Success Criteria:**
 
 1. Running `python src/main.py` against live APIs produces a LATEST-BRIEFING.md and LATEST-RESULTS.json with real scan data from all 4 sources (Federal Register, Grants.gov, Congress.gov, USASpending)
 2. Each scraper handles API errors gracefully -- a single source failure does not crash the pipeline, and partial results are still reported
 3. The GitHub Actions daily-scan.yml workflow completes successfully on a manual trigger, producing committed output files
 4. Running two consecutive scans with a known change between them produces a change detection summary that correctly identifies the new/modified/removed items
-
-**Plans:**
-
-| Plan | Scope | Requirements |
-|------|-------|--------------|
-| 1.1 - Scraper Validation and Pipeline Run | Verify all 4 scrapers against live APIs, run full pipeline, confirm output generation | PIPE-01, PIPE-02, PIPE-04 |
-| 1.2 - CI Workflow Validation | Trigger GitHub Actions workflow, verify schedule config, confirm end-to-end in CI | PIPE-03 |
 
 ---
 
@@ -128,7 +127,7 @@ Unmapped: 0
 
 | Phase | Status | Plans | Completed |
 |-------|--------|-------|-----------|
-| 1 - Pipeline Validation | Not Started | 0/2 | |
+| 1 - Pipeline Validation | Planned | 0/2 | |
 | 2 - Data Model and Graph | Not Started | 0/2 | |
 | 3 - Monitoring and Logic | Not Started | 0/2 | |
 | 4 - Report Enhancements | Not Started | 0/2 | |
