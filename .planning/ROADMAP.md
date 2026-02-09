@@ -42,6 +42,12 @@ Plans:
 
 **Requirements:** DATA-01, DATA-02, DATA-03, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-03, GRAPH-04, GRAPH-05
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 02-01-PLAN.md -- Add TERMINATED status tier, reconciliation keywords, BIA TCR Awards CFDA
+- [ ] 02-02-PLAN.md -- Five Structural Asks loading, Trust Super-Node, ADVANCES/TRUST_OBLIGATION edges
+
 **Success Criteria:**
 
 1. Loading program_inventory.json shows 18 programs (16 original + BIA TCR Awards + EPA Tribal Air Quality), each with a CI score and Hot Sheets-aligned status from the 6-tier model (SECURE, STABLE, STABLE_BUT_VULNERABLE, AT_RISK, UNCERTAIN, FLAGGED)
@@ -49,13 +55,6 @@ Plans:
 3. The graph contains the Trust Super-Node (FEDERAL_TRUST_RESPONSIBILITY) with TRUST_OBLIGATION edges to BIA and EPA programs
 4. Graph schema includes 10 new statutory authorities and 6 new barriers from the Strategic Framework, and scanner_config.json contains reconciliation/repeal trigger keywords
 5. IRS Elective Pay shows AT_RISK status (CI: 0.55) and DOT PROTECT shows SECURE status (CI: 0.93) in policy_tracking.json
-
-**Plans:**
-
-| Plan | Scope | Requirements |
-|------|-------|--------------|
-| 2.1 - Program Inventory and Status Alignment | Add 2 new programs, reconcile CI statuses, add trigger keywords, align policy_tracking thresholds | DATA-01, DATA-02, DATA-03, DATA-04, DATA-05 |
-| 2.2 - Graph Schema and Builder Enhancements | Five Structural Asks, ADVANCES edges, Trust Super-Node, new authorities/barriers | GRAPH-01, GRAPH-02, GRAPH-03, GRAPH-04, GRAPH-05 |
 
 ---
 
@@ -128,10 +127,10 @@ Unmapped: 0
 | Phase | Status | Plans | Completed |
 |-------|--------|-------|-----------|
 | 1 - Pipeline Validation | Complete (2026-02-09) | 2/2 | 01-01, 01-02 |
-| 2 - Data Model and Graph | Not Started | 0/2 | |
+| 2 - Data Model and Graph | In Progress | 0/2 | |
 | 3 - Monitoring and Logic | Not Started | 0/2 | |
 | 4 - Report Enhancements | Not Started | 0/2 | |
 
 ---
 *Roadmap created: 2026-02-09*
-*Last updated: 2026-02-09 (Phase 1 complete)*
+*Last updated: 2026-02-09 (Phase 2 planned)*
