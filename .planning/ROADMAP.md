@@ -91,6 +91,12 @@ Plans:
 
 **Requirements:** RPT-01, RPT-02, RPT-03, RPT-04, RPT-05, RPT-06
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md -- Briefing sections and indicators (Five Structural Asks, Hot Sheets sync, IIJA countdown, Reconciliation Watch, advocacy goals)
+- [ ] 04-02-PLAN.md -- Historical CI trend tracking and trend visualization in briefing
+
 **Success Criteria:**
 
 1. LATEST-BRIEFING.md contains a "Five Structural Asks" section that maps each Ask to its barrier mitigation pathways and connected programs
@@ -98,13 +104,6 @@ Plans:
 3. IIJA-affected programs display a sunset countdown (days remaining) and reconciliation-affected programs appear in a "Reconciliation Watch" section when relevant bills are detected
 4. The briefing includes historical CI trend data showing score trajectories over the last N scan cycles for each program
 5. Each program entry displays its advocacy goal classification (from Phase 3 decision logic) with the rule that triggered it
-
-**Plans:**
-
-| Plan | Scope | Requirements |
-|------|-------|--------------|
-| 4.1 - Briefing Sections and Indicators | Five Structural Asks section, Hot Sheets sync indicator, IIJA countdown, Reconciliation Watch, advocacy goal display | RPT-01, RPT-02, RPT-03, RPT-05, RPT-06 |
-| 4.2 - Historical CI Trends | Score trajectory tracking across scan cycles, trend visualization in briefing | RPT-04 |
 
 ---
 
@@ -129,8 +128,8 @@ Unmapped: 0
 | 1 - Pipeline Validation | Complete (2026-02-09) | 2/2 | 01-01, 01-02 |
 | 2 - Data Model and Graph | Complete (2026-02-09) | 2/2 | 02-01, 02-02 |
 | 3 - Monitoring and Logic | Complete (2026-02-09) | 3/3 | 03-01, 03-02, 03-03 |
-| 4 - Report Enhancements | Not Started | 0/2 | |
+| 4 - Report Enhancements | In Progress | 0/2 | |
 
 ---
 *Roadmap created: 2026-02-09*
-*Last updated: 2026-02-09 (Plan 03-03 complete -- Phase 3 COMPLETE)*
+*Last updated: 2026-02-09 (Phase 4 planned -- 2 plans in 2 waves)*
