@@ -7,7 +7,6 @@
       "base_url": "https://www.federalregister.gov/api/v1",
       "requires_key": false,
       "authority_weight": 0.9,
-      "agency_ids": [438, 492, 466, 183, 227, 228, 12, 54, 497, 253, 436],
       "search_params": {
         "per_page": 50,
         "order": "newest",

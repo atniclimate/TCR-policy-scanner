@@ -107,7 +107,7 @@ class GrantsGovScraper(BaseScraper):
     async def _search_cfda(self, session, cfda: str, program_id: str) -> list[dict]:
         """Search by CFDA / Assistance Listing number."""
         payload = {
-            "cfda": cfda,
+            "aln": cfda,
             "oppStatuses": "forecasted|posted",
             "sortBy": "openDate|desc",
             "rows": 25,
