@@ -68,6 +68,10 @@ class USASpendingScraper(BaseScraper):
                 "award_type_codes": ["02", "03", "04", "05"],  # Grants
                 "program_numbers": [cfda],
             },
+            "fields": [
+                "Award ID", "Recipient Name", "Award Amount",
+                "Awarding Agency", "Start Date",
+            ],
             "subawards": False,
             "page": 1,
             "limit": 10,

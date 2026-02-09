@@ -107,13 +107,14 @@ class GrantsGovScraper(BaseScraper):
     async def _search_cfda(self, session, cfda: str, program_id: str) -> list[dict]:
         """Search by CFDA / Assistance Listing number."""
         payload = {
-            "assistanceListing": cfda,
+            "cfda": cfda,
             "oppStatuses": "forecasted|posted",
             "sortBy": "openDate|desc",
             "rows": 25,
         }
-        url = f"{self.base_url}/opportunities/search"
-        data = await self._request_with_retry(session, "POST", url, json=payload)
+        url = f"{self.base_url}/api/search2"
+        resp = await self._request_with_retry(session, "POST", url, json=payload)
+        data = resp.get("data", resp)
         results = data.get("oppHits", [])
         return [self._normalize(item, cfda=cfda, matched_program=program_id) for item in results]
 
@@ -127,8 +128,9 @@ class GrantsGovScraper(BaseScraper):
             "rows": 50,
             "postedFrom": posted_from,
         }
-        url = f"{self.base_url}/opportunities/search"
-        data = await self._request_with_retry(session, "POST", url, json=payload)
+        url = f"{self.base_url}/api/search2"
+        resp = await self._request_with_retry(session, "POST", url, json=payload)
+        data = resp.get("data", resp)
         results = data.get("oppHits", [])
         return [self._normalize(item) for item in results]
 

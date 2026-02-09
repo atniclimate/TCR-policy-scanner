@@ -20,9 +20,21 @@ logger = logging.getLogger(__name__)
 # Federal Register document type codes
 DOC_TYPES = ["RULE", "PRORULE", "NOTICE", "PRESDOCU"]
 
-# Agency IDs per the spec: BIA=438, FEMA=492, EPA=466, DOE=183, HUD=227,
-# DOT=228, USDA=12, Commerce=54, Treasury=497, Interior=253, Reclamation=436
-AGENCY_IDS = [438, 492, 466, 183, 227, 228, 12, 54, 497, 253, 436]
+# Agency slugs for the Federal Register API (uses slugs, not numeric IDs)
+# BIA, FEMA, EPA, DOE, HUD, DOT, USDA, Commerce, Treasury, Interior, Reclamation
+AGENCY_SLUGS = [
+    "indian-affairs-bureau",
+    "federal-emergency-management-agency",
+    "environmental-protection-agency",
+    "energy-department",
+    "housing-and-urban-development-department",
+    "transportation-department",
+    "agriculture-department",
+    "commerce-department",
+    "treasury-department",
+    "interior-department",
+    "reclamation-bureau",
+]
 
 
 class FederalRegisterScraper(BaseScraper):
@@ -90,7 +102,7 @@ class FederalRegisterScraper(BaseScraper):
         """Sweep key agencies for any Rule/Notice mentioning Tribal terms."""
         params = {
             "conditions[term]": "tribal",
-            "conditions[agencies][]": AGENCY_IDS,
+            "conditions[agencies][]": AGENCY_SLUGS,
             "conditions[publication_date][gte]": start_date,
             "conditions[type][]": ["RULE", "PRORULE", "NOTICE"],
             "per_page": 50,
