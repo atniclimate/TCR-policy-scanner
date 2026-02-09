@@ -20,7 +20,6 @@ Exports:
 """
 
 import logging
-from typing import Optional
 
 logger = logging.getLogger(__name__)
 
@@ -35,17 +34,6 @@ ADVOCACY_GOALS = {
     "DIRECT_ACCESS_PARITY": "Direct Access Parity",
     "EXPAND_STRENGTHEN": "Expand and Strengthen",
 }
-
-# Rule evaluation order -- first match wins as primary classification.
-# Index position determines priority (lower index = higher priority).
-_RULE_ORDER = [
-    ("LOGIC-05", "URGENT_STABILIZATION"),
-    ("LOGIC-01", "RESTORE_REPLACE"),
-    ("LOGIC-02", "PROTECT_BASE"),
-    ("LOGIC-03", "DIRECT_ACCESS_PARITY"),
-    ("LOGIC-04", "EXPAND_STRENGTHEN"),
-]
-
 
 # ---------------------------------------------------------------------------
 # DecisionEngine
@@ -140,7 +128,7 @@ class DecisionEngine:
 
     def _check_urgent_stabilization(
         self, pid: str, graph_data: dict, alerts: list
-    ) -> Optional[dict]:
+    ) -> dict | None:
         """LOGIC-05: THREATENS edge within urgency_threshold_days overrides all.
 
         Queries graph_data edges for THREATENS edges targeting this program
@@ -168,7 +156,7 @@ class DecisionEngine:
 
     def _check_restore_replace(
         self, pid: str, program: dict, graph_data: dict
-    ) -> Optional[dict]:
+    ) -> dict | None:
         """LOGIC-01: TERMINATED or FLAGGED program with active/permanent authority.
 
         FLAGGED is treated as near-terminated. Checks AUTHORIZED_BY edges
@@ -203,7 +191,7 @@ class DecisionEngine:
 
     def _check_protect_base(
         self, pid: str, program: dict, graph_data: dict, alerts: list
-    ) -> Optional[dict]:
+    ) -> dict | None:
         """LOGIC-02: Discretionary-funded program facing eliminate/reduce signals.
 
         Triggers when:
@@ -233,7 +221,7 @@ class DecisionEngine:
 
     def _check_direct_access_parity(
         self, pid: str, program: dict, graph_data: dict
-    ) -> Optional[dict]:
+    ) -> dict | None:
         """LOGIC-03: State pass-through program with high administrative barriers.
 
         Checks program access_type for 'state_pass_through' and BLOCKED_BY edges
@@ -269,7 +257,7 @@ class DecisionEngine:
 
     def _check_expand_strengthen(
         self, pid: str, program: dict, graph_data: dict
-    ) -> Optional[dict]:
+    ) -> dict | None:
         """LOGIC-04: STABLE/SECURE program with direct or set-aside access.
 
         ci_status must be STABLE, SECURE, or STABLE_BUT_VULNERABLE.
