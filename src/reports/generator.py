@@ -15,6 +15,7 @@ logger = logging.getLogger(__name__)
 
 OUTPUTS_DIR = Path("outputs")
 ARCHIVE_DIR = OUTPUTS_DIR / "archive"
+CI_HISTORY_PATH = OUTPUTS_DIR / ".ci_history.json"
 
 
 class ReportGenerator:
@@ -31,9 +32,14 @@ class ReportGenerator:
                  classifications: dict | None = None) -> dict:
         """Generate both Markdown and JSON reports. Returns file paths."""
         timestamp = datetime.utcnow().strftime("%Y-%m-%d")
+
+        # Persist CI snapshot before generating (RPT-04)
+        self._save_ci_snapshot(timestamp)
+        ci_history = self._load_ci_history()
+
         md_content = self._build_markdown(
             scored_items, changes, timestamp, graph_data,
-            monitor_data, classifications,
+            monitor_data, classifications, ci_history,
         )
         json_content = self._build_json(
             scored_items, changes, timestamp, graph_data,
@@ -58,7 +64,8 @@ class ReportGenerator:
     def _build_markdown(self, items: list[dict], changes: dict,
                         timestamp: str, graph_data: dict | None = None,
                         monitor_data: dict | None = None,
-                        classifications: dict | None = None) -> str:
+                        classifications: dict | None = None,
+                        ci_history: list[dict] | None = None) -> str:
         """Build a Markdown briefing for Tribal Leaders."""
         if monitor_data is None:
             logger.warning("monitor_data is None; monitor-dependent sections will be limited")
@@ -179,6 +186,9 @@ class ReportGenerator:
                     ci_str = f"{ci * 100:.0f}%" if ci is not None else "\u2014"
                     lines.append(f"| {prog['name']} | {prog['priority'].upper()} | {ci_str} | {prog['advocacy_lever']} |")
             lines.append("")
+
+        # CI Score Trends (RPT-04, reference data)
+        lines.extend(self._format_ci_trends(ci_history or []))
 
         # All items by score (reference data, near end)
         lines.append("## All Relevant Items (by score)")
@@ -487,6 +497,155 @@ class ReportGenerator:
         return [
             f"- **{score:.2f}** | [{item['title']}]({item.get('url', '')}) | {programs}",
         ]
+
+    # --- CI History Persistence (RPT-04) ---
+
+    def _save_ci_snapshot(self, timestamp: str) -> None:
+        """Append current CI scores to history file.
+
+        De-duplicates by timestamp (same-day re-runs are idempotent).
+        Caps history at 90 entries to prevent unbounded growth.
+        """
+        snapshot = {
+            "timestamp": timestamp,
+            "programs": {
+                pid: {
+                    "ci": prog.get("confidence_index"),
+                    "status": prog.get("ci_status"),
+                }
+                for pid, prog in self.programs.items()
+            },
+        }
+        history = self._load_ci_history()
+
+        # De-duplicate: skip if this timestamp already exists
+        existing_timestamps = {h["timestamp"] for h in history}
+        if timestamp not in existing_timestamps:
+            history.append(snapshot)
+
+        # Cap at 90 entries (Pitfall 3)
+        if len(history) > 90:
+            history = history[-90:]
+
+        CI_HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(CI_HISTORY_PATH, "w") as f:
+            json.dump(history, f, indent=2)
+        logger.info("CI snapshot saved (%d entries in history)", len(history))
+
+    def _load_ci_history(self) -> list[dict]:
+        """Load CI history from file.
+
+        Returns empty list if file does not exist or is corrupted.
+        """
+        if not CI_HISTORY_PATH.exists():
+            return []
+        try:
+            with open(CI_HISTORY_PATH) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            logger.warning("Failed to load CI history from %s; starting fresh", CI_HISTORY_PATH)
+            return []
+
+    def _format_ci_trends(self, ci_history: list[dict]) -> list[str]:
+        """Format CI score trajectory table showing trends across scans (RPT-04).
+
+        With <2 scans: shows informational message.
+        With 2+ scans: shows table with per-program scores and trend indicators.
+        Programs with no CI changes across the window are grouped into a compact
+        summary line instead of individual table rows.
+        """
+        lines = [
+            "## CI Score Trends",
+            "",
+        ]
+
+        if len(ci_history) < 2:
+            lines.append(
+                f"*Trend data requires at least 2 scan cycles. "
+                f"Current: {len(ci_history)} scan(s).*"
+            )
+            lines.append("")
+            return lines
+
+        # Show last 10 scans max
+        recent = ci_history[-10:]
+        dates = [h["timestamp"] for h in recent]
+
+        lines.append(f"*Tracking {len(ci_history)} scan(s). Showing last {len(recent)}.*")
+        lines.append("")
+
+        # Table header
+        header = "| Program | " + " | ".join(dates) + " | Trend |"
+        separator = "|---------|" + "|".join(["-----:" for _ in dates]) + "|-------|"
+        lines.append(header)
+        lines.append(separator)
+
+        # Get all program IDs from latest scan
+        latest_pids = sorted(recent[-1].get("programs", {}).keys())
+
+        # Separate programs with changes from stable ones
+        changed_rows = []
+        stable_names = []
+
+        for pid in latest_pids:
+            prog = self.programs.get(pid)
+            name = prog["name"] if prog else pid
+
+            scores_display = []
+            ci_values = []
+            for h in recent:
+                ci = h.get("programs", {}).get(pid, {}).get("ci")
+                ci_values.append(ci)
+                scores_display.append(f"{ci * 100:.0f}%" if ci is not None else "--")
+
+            # Calculate trend indicator
+            first_ci = ci_values[0]
+            last_ci = ci_values[-1]
+            if first_ci is not None and last_ci is not None:
+                delta = last_ci - first_ci
+                if delta > 0.02:
+                    trend = f"+{delta * 100:.0f}%"
+                elif delta < -0.02:
+                    trend = f"{delta * 100:.0f}%"
+                else:
+                    trend = "STABLE"
+            else:
+                trend = "--"
+
+            # Check if any values differ across the window
+            valid_cis = [v for v in ci_values if v is not None]
+            all_same = len(set(valid_cis)) <= 1 if valid_cis else True
+
+            if all_same and trend == "STABLE":
+                stable_names.append(name)
+            else:
+                row = f"| {name} | " + " | ".join(scores_display) + f" | {trend} |"
+                changed_rows.append(row)
+
+        # Render changed programs first
+        for row in changed_rows:
+            lines.append(row)
+
+        # Compact summary for stable programs
+        if stable_names:
+            if changed_rows:
+                # Add a separator row if there were changed programs above
+                stable_ci_sample = ""
+                for pid in latest_pids:
+                    prog = self.programs.get(pid)
+                    if prog and prog["name"] == stable_names[0]:
+                        ci = recent[-1].get("programs", {}).get(pid, {}).get("ci")
+                        if ci is not None:
+                            stable_ci_sample = f" (latest scan values unchanged)"
+                        break
+            lines.append("")
+            lines.append(
+                f"*{len(stable_names)} program(s) stable across window:* "
+                f"{', '.join(stable_names)}"
+            )
+
+        lines.append("")
+        return lines
 
     def _build_json(self, items: list[dict], changes: dict,
                     timestamp: str, graph_data: dict | None = None,
