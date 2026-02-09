@@ -1,0 +1,167 @@
+# TCR Policy Scanner
+
+Automated policy intelligence pipeline for Tribal Climate Resilience advocacy. Scans federal policy sources, scores relevance against a program inventory, and generates actionable briefings for Tribal Leaders.
+
+**TSDF Classification: T0 (Open)**
+All data sourced from public federal documents. No Tribal-specific or sensitive data is collected or stored.
+
+## Purpose
+
+Tribal Leaders advocating for climate resilience funding need current, reliable policy intelligence. This scanner automates the collection and synthesis of federal policy developments across 16 programs tracked by the Affiliated Tribes of Northwest Indians (ATNI) Climate Resilience Committee.
+
+The scanner answers the question: *What has changed in the federal policy landscape that is relevant to Tribal Climate Resilience funding, and what can Tribal Leaders do about it?*
+
+## What It Does
+
+1. **Collects** policy documents from federal sources (Federal Register, Grants.gov, Congress.gov)
+2. **Scores** each item against the ATNI program inventory using weighted relevance factors
+3. **Detects changes** between scan cycles to surface new developments
+4. **Generates briefings** formatted for Tribal Leaders with advocacy levers attached
+
+## Programs Tracked
+
+| Priority | Program | Federal Home | Advocacy Lever |
+|----------|---------|-------------|----------------|
+| CRITICAL | BIA Tribal Climate Resilience | BIA | Protect/expand the line; waived match, multi-year stability |
+| CRITICAL | FEMA BRIC | FEMA | Restore/replace with Tribal set-aside |
+| CRITICAL | IRS Elective Pay | Treasury/IRS | Ensure stability and Tribal instrumentality access |
+| HIGH | EPA STAG | EPA | Direct Tribal capitalization pathways |
+| HIGH | EPA GAP | EPA | Increase funding; link to climate resilience readiness |
+| HIGH | FEMA Tribal Mitigation Plans | FEMA | Fund planning; accelerate approvals |
+| HIGH | DOT PROTECT | DOT | Maintain/expand Tribal set-aside |
+| HIGH | USDA Wildfire Defense Grants | USFS | Add match waivers; long-term fuels pathways |
+| HIGH | DOE Indian Energy | DOE | Protect FY26 appropriations; reduce burden |
+| HIGH | HUD IHBG | HUD | Frame resilient housing as trust responsibility |
+| HIGH | NOAA Tribal Grants | NOAA | Protect climate/coastal functions in appropriations |
+| MEDIUM | FHWA TTP Safety | FHWA | Increase Tribal formula/discretionary resilience |
+| MEDIUM | USBR WaterSMART | Reclamation | Expand Tribal drought access; lower match |
+| MEDIUM | USBR TAP | Reclamation | Link TA to pre-award support |
+
+## Quick Start
+
+### Local
+
+```bash
+# Clone
+git clone https://github.com/atniclimate/TCR-policy-scanner.git
+cd TCR-policy-scanner
+
+# Install
+pip install -r requirements.txt
+
+# List tracked programs
+python -m src.main --programs
+
+# Dry run (shows what would be scanned)
+python -m src.main --dry-run
+
+# Full scan
+python -m src.main
+
+# Scan specific source
+python -m src.main --source federal_register
+
+# Generate report from cached data
+python -m src.main --report-only
+```
+
+### GitHub Actions (Automated)
+
+The scanner runs automatically via GitHub Actions. No local computer needed.
+
+**Setup:**
+
+1. Push this repo to `github.com/atniclimate/TCR-policy-scanner`
+2. Add API keys as repository secrets:
+   - `CONGRESS_API_KEY`: Free key from [api.congress.gov](https://api.congress.gov/)
+   - `SAM_API_KEY` (optional): Key from [SAM.gov](https://sam.gov/content/home)
+3. The workflow runs at 6:00 AM Pacific every weekday
+4. Reports are committed directly to the `outputs/` directory
+5. Trigger a manual scan anytime from Actions > Daily Policy Scan > Run workflow
+
+**Getting API Keys:**
+
+- **Congress.gov**: Free, instant. Visit [api.congress.gov/sign-up](https://api.congress.gov/sign-up/)
+- **Federal Register**: No key required (public API)
+- **Grants.gov**: No key required (public API)
+- **SAM.gov**: Free, may take 1-2 days. Visit [SAM.gov API access](https://sam.gov/content/home)
+
+## Project Structure
+
+```
+TCR-policy-scanner/
+    config/
+        scanner_config.json     # Source definitions, search terms, scoring weights
+    data/
+        program_inventory.json  # The 16 tracked programs with advocacy levers
+    src/
+        main.py                 # Pipeline orchestrator
+        scrapers/
+            federal_register.py # Federal Register API scraper
+            grants_gov.py       # Grants.gov API scraper
+            congress_gov.py     # Congress.gov API scraper
+        analysis/
+            relevance.py        # Multi-factor relevance scorer
+            change_detector.py  # Scan-to-scan change detection
+        reports/
+            generator.py        # Markdown and JSON report generation
+    outputs/
+        LATEST-BRIEFING.md     # Most recent policy briefing
+        LATEST-RESULTS.json    # Most recent machine-readable results
+        archive/               # Historical reports
+    .github/
+        workflows/
+            daily-scan.yml      # Automated daily scan via GitHub Actions
+```
+
+## Relevance Scoring
+
+Each item is scored using five weighted factors:
+
+| Factor | Weight | Description |
+|--------|--------|-------------|
+| Program Match | 0.35 | Direct match to a tracked program |
+| Tribal Keyword Density | 0.25 | Concentration of Tribal-relevant terms |
+| Recency | 0.15 | Publication date proximity |
+| Source Authority | 0.15 | Federal source reliability weight |
+| Action Relevance | 0.10 | Signals actionable policy change |
+
+Items matching **critical priority programs** receive a 15% score boost. Items below a 0.30 relevance threshold are filtered out.
+
+## Extending the Scanner
+
+### Adding Programs
+
+Edit `data/program_inventory.json` to add new programs to the tracking list. Each program needs:
+- Unique `id`
+- `keywords` for matching
+- `search_queries` for source-specific scanning
+- `advocacy_lever` for the report output
+- `priority` level (critical, high, medium, low)
+
+### Adding Sources
+
+Create a new scraper in `src/scrapers/` following the pattern of existing scrapers. Each scraper needs:
+- An async `scan()` method that returns a list of normalized items
+- A `_normalize()` method that maps source-specific fields to the standard schema
+
+### Adding Notification Channels
+
+The GitHub Actions workflow can be extended to send notifications via:
+- Email (using GitHub Actions email actions)
+- Slack (using the Slack webhook action)
+- Microsoft Teams (using the Teams webhook action)
+
+## Data Sovereignty Note
+
+This scanner operates exclusively on **T0 (Open)** data under the Tiered Sovereignty Data Framework. It collects only public federal policy documents. No Tribal-specific data, Traditional Knowledge, or community information is collected, stored, or transmitted.
+
+The scanner is a tool to support Tribal sovereignty in policy advocacy, not a replacement for Tribal decision-making processes.
+
+## License
+
+Apache 2.0
+
+## Maintained By
+
+ATNI Climate Resilience Committee
