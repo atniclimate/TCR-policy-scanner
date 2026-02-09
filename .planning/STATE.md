@@ -4,35 +4,35 @@
 
 **Core Value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
 
-**Current Focus:** Phase 2 complete -- data model and graph enhancements done. Ready for Phase 3 (Monitoring and Logic).
+**Current Focus:** Phase 3 in progress -- monitor framework and threat monitors complete. Decision engine and signal monitors next.
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, and report generator already implemented.
 
 ## Current Position
 
 **Milestone:** v1
-**Phase:** 2 of 4 (Data Model and Graph) -- COMPLETE
-**Plan:** 2 of 2 complete
-**Status:** Phase complete
-**Last activity:** 2026-02-09 - Completed 02-02-PLAN.md
+**Phase:** 3 of 4 (Monitoring and Logic) -- IN PROGRESS
+**Plan:** 1 of 3 complete
+**Status:** In progress
+**Last activity:** 2026-02-09 - Completed 03-01-PLAN.md
 
 **Progress:**
 ```
 Phase 1 [##########] 100% Pipeline Validation (2/2 plans) COMPLETE
 Phase 2 [##########] 100% Data Model and Graph (2/2 plans) COMPLETE
-Phase 3 [..........] 0%   Monitoring and Logic
+Phase 3 [###.......] 33%  Monitoring and Logic (1/3 plans)
 Phase 4 [..........] 0%   Report Enhancements
-Overall [#####.....] 50%  4/8 plans complete
+Overall [######....] 63%  5/8 plans complete
 ```
 
 ## Performance Metrics
 
 | Metric | Value |
 |--------|-------|
-| Requirements completed | 10/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05) |
+| Requirements completed | 13/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01, MON-02, MON-05) |
 | Phases completed | 2/4 |
-| Plans completed | 4/8 |
-| Session count | 4 |
+| Plans completed | 5/8 |
+| Session count | 5 |
 
 ## Accumulated Context
 
@@ -55,6 +55,10 @@ Overall [#####.....] 50%  4/8 plans complete
 | Structural asks reuse AdvocacyLeverNode | 02-02 | ask_ prefix distinguishes from per-program lever_ nodes; avoids new type per RESEARCH.md |
 | Trust Super-Node connects to 5 BIA/EPA programs | 02-02 | bia_tcr, bia_tcr_awards, epa_gap, epa_stag, epa_tribal_air carry direct trust responsibility implications |
 | ADVANCES/TRUST_OBLIGATION edge direction | 02-02 | ADVANCES: ask -> program (advocacy direction); TRUST_OBLIGATION: trust node -> program (obligation direction) |
+| THREATENS edges are ephemeral (regenerated each scan) | 03-01 | Days_remaining changes daily; persisting would create stale data |
+| Fund-exhaustion programs get INFO alerts, no THREATENS edge | 03-01 | No calendar deadline means no days_remaining for urgency calculation |
+| Reconciliation uses urgency_threshold_days for days_remaining | 03-01 | Reconciliation timelines are unpredictable; setting to threshold ensures LOGIC-05 triggers |
+| Enacted laws filtered by config list + latest_action status | 03-01 | Double filtering prevents OBBBA false positives and any future enacted bills |
 
 ### Architecture Notes
 
@@ -71,9 +75,13 @@ Overall [#####.....] 50%  4/8 plans complete
 - **Scanner keywords:** 42 action keywords, 16 search queries (includes reconciliation/repeal terms)
 - **CFDA mappings:** 12 entries in grants_gov.py (includes 15.124 for BIA TCR Awards)
 - **Graph stats (static seed):** 79 nodes (16 ProgramNode, 21 AdvocacyLeverNode, 20 AuthorityNode, 8 FundingVehicleNode, 13 BarrierNode, 1 TrustSuperNode), 118 edges
-- **Graph edge types:** AUTHORIZED_BY, FUNDED_BY, BLOCKED_BY, MITIGATED_BY, OBLIGATED_BY, ADVANCES, TRUST_OBLIGATION
+- **Graph edge types:** AUTHORIZED_BY, FUNDED_BY, BLOCKED_BY, MITIGATED_BY, OBLIGATED_BY, ADVANCES, TRUST_OBLIGATION, THREATENS
 - **Structural asks:** 5 asks (multi_year, match_waivers, direct_access, consultation, data_sovereignty) with 26 ADVANCES edges and 9 MITIGATED_BY edges
 - **Trust Super-Node:** FEDERAL_TRUST_RESPONSIBILITY with 5 TRUST_OBLIGATION edges
+- **Monitor framework:** BaseMonitor ABC, MonitorAlert dataclass, MonitorRunner orchestrator in src/monitors/
+- **Active monitors:** IIJASunsetMonitor (MON-01), ReconciliationMonitor (MON-02), DHSFundingCliffMonitor (MON-05)
+- **Monitor output (empty scan, Feb 9):** 6 alerts (3 IIJA sunset INFO, 1 IIJA fund-exhaustion INFO, 2 DHS funding WARNING), 5 THREATENS edges
+- **Monitor config:** 6 sub-keys in scanner_config.json monitors section
 
 ### Todos
 
@@ -88,12 +96,12 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-09
-**Stopped at:** Completed 02-02-PLAN.md (Graph Schema & Builder Enhancements) -- Phase 2 complete
-**Resume file:** `.planning/phases/03-monitoring-logic/` (Phase 3 plans)
+**Stopped at:** Completed 03-01-PLAN.md (Monitor Framework and Threat Monitors)
+**Resume file:** `.planning/phases/03-monitoring-logic/03-02-PLAN.md` (Decision Engine)
 
 ### Resume Instructions
 
-Phase 2 (Data Model and Graph) is complete. All GRAPH requirements addressed (GRAPH-01, GRAPH-02, GRAPH-05). Begin Phase 3 (Monitoring and Logic).
+Phase 3 Plan 1 (Monitor Framework) is complete. Three threat monitors producing THREATENS edges. Begin Plan 03-02 (Decision Engine with 5 classification rules, TDD).
 
 ---
 *State initialized: 2026-02-09*
