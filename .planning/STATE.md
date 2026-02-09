@@ -4,35 +4,35 @@
 
 **Core Value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
 
-**Current Focus:** Phase 3 COMPLETE. All monitors, decision engine, and pipeline integration done. Phase 4 (Report Enhancements) is next.
+**Current Focus:** Phase 4 in progress. Report sections and pipeline wiring complete (Plan 1). CI trend history remains (Plan 2).
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, and report generator.
 
 ## Current Position
 
 **Milestone:** v1
-**Phase:** 3 of 4 (Monitoring and Logic) -- COMPLETE
-**Plan:** 3 of 3 complete
-**Status:** Phase complete
-**Last activity:** 2026-02-09 - Completed 03-03-PLAN.md
+**Phase:** 4 of 4 (Report Enhancements) -- In progress
+**Plan:** 1 of 2 complete
+**Status:** In progress
+**Last activity:** 2026-02-09 - Completed 04-01-PLAN.md
 
 **Progress:**
 ```
 Phase 1 [##########] 100% Pipeline Validation (2/2 plans) COMPLETE
 Phase 2 [##########] 100% Data Model and Graph (2/2 plans) COMPLETE
 Phase 3 [##########] 100% Monitoring and Logic (3/3 plans) COMPLETE
-Phase 4 [..........] 0%   Report Enhancements
-Overall [#########.] 88%  7/8 plans complete
+Phase 4 [#####.....] 50%  Report Enhancements (1/2 plans)
+Overall [#########.] 89%  8/9 plans complete
 ```
 
 ## Performance Metrics
 
 | Metric | Value |
 |--------|-------|
-| Requirements completed | 28/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01..05, LOGIC-01..05) |
+| Requirements completed | 33/37 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01..05, LOGIC-01..05, RPT-01, RPT-02, RPT-03, RPT-05, RPT-06) |
 | Phases completed | 3/4 |
-| Plans completed | 7/8 |
-| Session count | 7 |
+| Plans completed | 8/9 |
+| Session count | 8 |
 
 ## Accumulated Context
 
@@ -67,6 +67,11 @@ Overall [#########.] 88%  7/8 plans complete
 | Hot Sheets status aligned at baseline | 03-03 | Clean starting point; user updates inventory manually when Hot Sheets positions change |
 | Tribal consultation signals are INFO severity | 03-03 | Consultations are informational signals, not threats -- no THREATENS edges created |
 | Monitor data saved to separate JSON file | 03-03 | ReportGenerator modification is Phase 4 scope; separate file provides clean data interface |
+| Section ordering: urgent above fold, analytical middle, reference at end | 04-01 | Tribal leaders see time-sensitive items (reconciliation/IIJA) first, then strategic context, then reference data |
+| Always-render pattern for Reconciliation Watch and IIJA Countdown | 04-01 | "No active threats" is valuable information for Tribal leaders preparing for meetings |
+| Classified/unclassified split in Advocacy Goals | 04-01 | Prevents 14 "No match" rows from obscuring 2 classified programs |
+| CI Dashboard Determination truncated 80 -> 70 chars | 04-01 | Accommodates 5th column (Hot Sheets) without excessive table width |
+| All Items section moved to near-end position | 04-01 | Reference data goes after structural analysis sections |
 
 ### Architecture Notes
 
@@ -98,6 +103,9 @@ Overall [#########.] 88%  7/8 plans complete
 - **Test infrastructure:** pytest installed, tests/ package with 45 test cases for decision engine
 - **Hot Sheets baseline:** All 16 programs have hot_sheets_status field aligned with scanner CI status
 - **Pipeline integration:** run_monitors_and_classify() in src/main.py runs stages 3.5-3.6
+- **Report generator:** 11 sections in LATEST-BRIEFING.md (5 new from 04-01: Reconciliation Watch, IIJA Countdown, Advocacy Goals, Structural Asks, Hot Sheets column)
+- **Report data flow:** monitor_data and classifications passed from run_monitors_and_classify() -> reporter.generate() -> _build_markdown()/_build_json()
+- **Briefing sections (04-01):** Executive Summary -> Reconciliation Watch -> IIJA Countdown -> New Developments -> Critical Updates -> CI Dashboard (w/ Hot Sheets) -> FLAGGED -> Advocacy Goals -> Structural Asks -> Barriers -> Authorities -> Advocacy Levers -> All Items
 
 ### Todos
 
@@ -112,12 +120,12 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-09
-**Stopped at:** Completed 03-03-PLAN.md (Signal Monitors + Pipeline Integration) -- Phase 3 COMPLETE
-**Resume file:** Phase 4 plans (Report Enhancements)
+**Stopped at:** Completed 04-01-PLAN.md (Report Sections and Pipeline Wiring)
+**Resume file:** 04-02-PLAN.md (CI Trend History)
 
 ### Resume Instructions
 
-Phase 3 is fully complete. All 5 monitors and decision engine are integrated into the pipeline. LATEST-MONITOR-DATA.json provides alert and classification data for Phase 4 reporting. Begin Phase 4 (Report Enhancements) -- briefing sections, Hot Sheets indicators, IIJA countdowns, reconciliation watch, CI trends.
+Plan 04-01 complete. ReportGenerator has 5 new sections and pipeline wiring is done. Proceed with 04-02-PLAN.md for CI trend history tracking (RPT-04). The _build_markdown() method has clear insertion points for the CI Trends section near the end (before All Items).
 
 ---
 *State initialized: 2026-02-09*
