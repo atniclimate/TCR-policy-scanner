@@ -61,6 +61,20 @@ class AdvocacyLeverNode:
 
 
 @dataclass
+class TrustSuperNode:
+    """Federal trust responsibility meta-node.
+
+    Represents the overarching federal trust obligation to Tribal Nations,
+    connecting to BIA and EPA programs that carry direct trust responsibility
+    implications. Creates TRUST_OBLIGATION edges to connected programs.
+    """
+    id: str
+    name: str
+    description: str = ""
+    legal_basis: str = ""
+
+
+@dataclass
 class ObligationNode:
     """Actual spending record from USASpending.gov."""
     id: str
@@ -77,11 +91,13 @@ class Edge:
     """Directed relationship between two nodes.
 
     Edge types:
-      AUTHORIZED_BY  (Program -> Authority)
-      FUNDED_BY      (Program -> FundingVehicle)
-      BLOCKED_BY     (Program -> Barrier)
-      MITIGATED_BY   (Barrier -> AdvocacyLever)
-      OBLIGATED_BY   (Program -> ObligationNode) — actual spending
+      AUTHORIZED_BY    (Program -> Authority)
+      FUNDED_BY        (Program -> FundingVehicle)
+      BLOCKED_BY       (Program -> Barrier)
+      MITIGATED_BY     (Barrier -> AdvocacyLever)
+      OBLIGATED_BY     (Program -> ObligationNode) — actual spending
+      ADVANCES         (StructuralAsk -> Program)
+      TRUST_OBLIGATION (TrustSuperNode -> Program)
     """
     source_id: str
     target_id: str

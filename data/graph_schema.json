@@ -359,5 +359,12 @@
       "mitigates": ["bar_data_sovereignty"],
       "programs": ["bia_tcr", "epa_gap", "epa_stag", "noaa_tribal", "epa_tribal_air"]
     }
-  ]
+  ],
+  "trust_super_node": {
+    "id": "FEDERAL_TRUST_RESPONSIBILITY",
+    "name": "Federal Trust Responsibility",
+    "description": "The United States government's legal obligation to protect Tribal treaty rights, lands, assets, and resources, establishing a fiduciary duty that underpins all federal Tribal programs.",
+    "legal_basis": "Cherokee Nation v. Georgia (1831), Seminole Nation v. United States (1942), Snyder Act (25 U.S.C. 13), Indian Self-Determination and Education Assistance Act (25 U.S.C. 5301)",
+    "programs": ["bia_tcr", "bia_tcr_awards", "epa_gap", "epa_stag", "epa_tribal_air"]
+  }
 }
