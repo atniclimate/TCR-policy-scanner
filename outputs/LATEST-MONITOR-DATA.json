@@ -1,0 +1,232 @@
+{
+  "alerts": [
+    {
+      "monitor": "dhs_funding",
+      "severity": "WARNING",
+      "program_ids": [
+        "fema_bric"
+      ],
+      "title": "DHS funding cliff: FEMA BRIC -- 4 days to CR expiration",
+      "detail": "The DHS Continuing Resolution expires on 2026-02-13. 4 days remain. FEMA BRIC (FEMA) may be affected if DHS funding lapses.",
+      "metadata": {
+        "threat_type": "dhs_funding_cliff",
+        "deadline": "2026-02-13",
+        "days_remaining": 4,
+        "creates_threatens_edge": true,
+        "dhs_bills_detected": 0
+      },
+      "timestamp": "2026-02-09T21:50:15.131911+00:00"
+    },
+    {
+      "monitor": "dhs_funding",
+      "severity": "WARNING",
+      "program_ids": [
+        "fema_tribal_mitigation"
+      ],
+      "title": "DHS funding cliff: FEMA Tribal Mitigation Plans -- 4 days to CR expiration",
+      "detail": "The DHS Continuing Resolution expires on 2026-02-13. 4 days remain. FEMA Tribal Mitigation Plans (FEMA) may be affected if DHS funding lapses.",
+      "metadata": {
+        "threat_type": "dhs_funding_cliff",
+        "deadline": "2026-02-13",
+        "days_remaining": 4,
+        "creates_threatens_edge": true,
+        "dhs_bills_detected": 0
+      },
+      "timestamp": "2026-02-09T21:50:15.131918+00:00"
+    },
+    {
+      "monitor": "iija_sunset",
+      "severity": "INFO",
+      "program_ids": [
+        "epa_stag"
+      ],
+      "title": "IIJA sunset: EPA STAG -- 233 days remaining",
+      "detail": "EPA STAG is funded under auth_iija which expires September 30, 2026. 233 days remain. No reauthorization bill detected in scan results.",
+      "metadata": {
+        "threat_type": "iija_sunset",
+        "deadline": "2026-09-30",
+        "days_remaining": 233,
+        "authority_id": "auth_iija",
+        "reauth_detected": false,
+        "creates_threatens_edge": true
+      },
+      "timestamp": "2026-02-09T21:50:15.131638+00:00"
+    },
+    {
+      "monitor": "iija_sunset",
+      "severity": "INFO",
+      "program_ids": [
+        "usbr_watersmart"
+      ],
+      "title": "IIJA sunset: USBR WaterSMART -- 233 days remaining",
+      "detail": "USBR WaterSMART is funded under auth_iija_watersmart which expires September 30, 2026. 233 days remain. No reauthorization bill detected in scan results.",
+      "metadata": {
+        "threat_type": "iija_sunset",
+        "deadline": "2026-09-30",
+        "days_remaining": 233,
+        "authority_id": "auth_iija_watersmart",
+        "reauth_detected": false,
+        "creates_threatens_edge": true
+      },
+      "timestamp": "2026-02-09T21:50:15.131714+00:00"
+    },
+    {
+      "monitor": "iija_sunset",
+      "severity": "INFO",
+      "program_ids": [
+        "usda_wildfire"
+      ],
+      "title": "IIJA fund-exhaustion: USDA Wildfire Defense Grants -- expires when funds exhausted",
+      "detail": "USDA Wildfire Defense Grants is funded under auth_iija_wildfire with 'expires when funds exhausted' durability. No fixed calendar deadline, but IIJA one-time allocation is finite. Monitor fund obligation rates for depletion signals.",
+      "metadata": {
+        "threat_type": "iija_fund_exhaustion",
+        "authority_id": "auth_iija_wildfire",
+        "expiration_type": "fund_exhaustion",
+        "days_remaining": null
+      },
+      "timestamp": "2026-02-09T21:50:15.131720+00:00"
+    }
+  ],
+  "classifications": {
+    "bia_tcr": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "fema_bric": {
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: DHS funding cliff: FEMA BRIC -- 4 days to CR expiration (4 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-01"
+      ]
+    },
+    "irs_elective_pay": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "epa_stag": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "epa_gap": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "fema_tribal_mitigation": {
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: DHS funding cliff: FEMA Tribal Mitigation Plans -- 4 days to CR expiration (4 days remaining, threshold 30)",
+      "secondary_rules": []
+    },
+    "dot_protect": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "usda_wildfire": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "doe_indian_energy": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "hud_ihbg": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "noaa_tribal": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "fhwa_ttp_safety": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "usbr_watersmart": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "usbr_tap": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "bia_tcr_awards": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    },
+    "epa_tribal_air": {
+      "advocacy_goal": null,
+      "goal_label": null,
+      "rule": null,
+      "confidence": "LOW",
+      "reason": "No decision rule matched for this program",
+      "secondary_rules": []
+    }
+  },
+  "summary": {
+    "total_alerts": 5,
+    "critical_count": 0,
+    "warning_count": 2,
+    "info_count": 3,
+    "monitors_run": [
+      "dhs_funding",
+      "iija_sunset"
+    ]
+  }
+}

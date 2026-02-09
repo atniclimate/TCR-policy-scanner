@@ -304,7 +304,7 @@
     },
     "auth_ira_6417": {
       "id": "auth_ira_6417",
-      "citation": "Inflation Reduction Act \u00a7 6417 (Elective Pay)",
+      "citation": "Inflation Reduction Act \u00c2\u00a7 6417 (Elective Pay)",
       "authority_type": "Statute",
       "durability": "Permanent",
       "_type": "AuthorityNode"
@@ -346,14 +346,14 @@
     },
     "auth_protect_formula": {
       "id": "auth_protect_formula",
-      "citation": "IIJA \u00a7 11405 (PROTECT Program)",
+      "citation": "IIJA \u00c2\u00a7 11405 (PROTECT Program)",
       "authority_type": "Statute",
       "durability": "Expires FY26",
       "_type": "AuthorityNode"
     },
     "auth_iija_wildfire": {
       "id": "auth_iija_wildfire",
-      "citation": "IIJA \u00a7 40803 (Community Wildfire Defense Grants)",
+      "citation": "IIJA \u00c2\u00a7 40803 (Community Wildfire Defense Grants)",
       "authority_type": "Statute",
       "durability": "Expires when funds exhausted",
       "_type": "AuthorityNode"
@@ -381,28 +381,28 @@
     },
     "auth_reclamation_act": {
       "id": "auth_reclamation_act",
-      "citation": "SECURE Water Act (P.L. 111-11, \u00a7 9504)",
+      "citation": "SECURE Water Act (P.L. 111-11, \u00c2\u00a7 9504)",
       "authority_type": "Statute",
       "durability": "Permanent",
       "_type": "AuthorityNode"
     },
     "auth_ira_48e": {
       "id": "auth_ira_48e",
-      "citation": "IRA \u00a7 48(e) (Low-Income Community Solar)",
+      "citation": "IRA \u00c2\u00a7 48(e) (Low-Income Community Solar)",
       "authority_type": "Statute",
       "durability": "Expires 2032",
       "_type": "AuthorityNode"
     },
     "auth_ira_45_48": {
       "id": "auth_ira_45_48",
-      "citation": "IRA \u00a7 45/48 (Production/Investment Tax Credits)",
+      "citation": "IRA \u00c2\u00a7 45/48 (Production/Investment Tax Credits)",
       "authority_type": "Statute",
       "durability": "Expires 2032",
       "_type": "AuthorityNode"
     },
     "auth_caa_105": {
       "id": "auth_caa_105",
-      "citation": "Clean Air Act \u00a7 105 (Tribal Air Quality)",
+      "citation": "Clean Air Act \u00c2\u00a7 105 (Tribal Air Quality)",
       "authority_type": "Statute",
       "durability": "Permanent",
       "_type": "AuthorityNode"
@@ -416,14 +416,14 @@
     },
     "auth_iija_watersmart": {
       "id": "auth_iija_watersmart",
-      "citation": "IIJA \u00a7 40901 (WaterSMART Enhancement)",
+      "citation": "IIJA \u00c2\u00a7 40901 (WaterSMART Enhancement)",
       "authority_type": "Statute",
       "durability": "Expires FY26",
       "_type": "AuthorityNode"
     },
     "auth_snyder_act_tcr_awards": {
       "id": "auth_snyder_act_tcr_awards",
-      "citation": "Snyder Act (25 U.S.C. 13) \u2014 TCR Annual Awards",
+      "citation": "Snyder Act (25 U.S.C. 13) \u00e2\u20ac\u201d TCR Annual Awards",
       "authority_type": "Statute",
       "durability": "Permanent",
       "_type": "AuthorityNode"
@@ -508,7 +508,7 @@
     },
     "bar_plan_requirement": {
       "id": "bar_plan_requirement",
-      "description": "Tribal Hazard Mitigation Plan required for post-disaster funding (Stafford Act \u00a7 322)",
+      "description": "Tribal Hazard Mitigation Plan required for post-disaster funding (Stafford Act \u00c2\u00a7 322)",
       "barrier_type": "Statutory",
       "severity": "Med",
       "_type": "BarrierNode"
@@ -543,7 +543,7 @@
     },
     "bar_reconciliation_repeal": {
       "id": "bar_reconciliation_repeal",
-      "description": "IRA provisions (\u00a76417 Elective Pay) subject to budget reconciliation repeal",
+      "description": "IRA provisions (\u00c2\u00a76417 Elective Pay) subject to budget reconciliation repeal",
       "barrier_type": "Statutory",
       "severity": "High",
       "_type": "BarrierNode"
@@ -582,6 +582,53 @@
       "barrier_type": "Administrative",
       "severity": "High",
       "_type": "BarrierNode"
+    },
+    "ask_multi_year": {
+      "id": "ask_multi_year",
+      "description": "Shift from annual discretionary to multi-year or permanent authorization for core Tribal climate programs",
+      "target": "Congress",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "ask_match_waivers": {
+      "id": "ask_match_waivers",
+      "description": "Categorical Tribal exemptions from cost-share requirements based on trust responsibility",
+      "target": "Congress",
+      "action_verb": "",
+      "urgency": "Immediate",
+      "_type": "AdvocacyLeverNode"
+    },
+    "ask_direct_access": {
+      "id": "ask_direct_access",
+      "description": "Non-competitive, formula-based, or direct-service pathways that bypass state pass-through bottlenecks",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "ask_consultation": {
+      "id": "ask_consultation",
+      "description": "Enforceable consultation requirements (EO 13175) with reporting accountability",
+      "target": "Agency",
+      "action_verb": "",
+      "urgency": "Ongoing",
+      "_type": "AdvocacyLeverNode"
+    },
+    "ask_data_sovereignty": {
+      "id": "ask_data_sovereignty",
+      "description": "Tribal control over climate/environmental data with federal TA funding for data infrastructure",
+      "target": "Congress",
+      "action_verb": "",
+      "urgency": "FY26",
+      "_type": "AdvocacyLeverNode"
+    },
+    "FEDERAL_TRUST_RESPONSIBILITY": {
+      "id": "FEDERAL_TRUST_RESPONSIBILITY",
+      "name": "Federal Trust Responsibility",
+      "description": "The United States government's legal obligation to protect Tribal treaty rights, lands, assets, and resources, establishing a fiduciary duty that underpins all federal Tribal programs.",
+      "legal_basis": "Cherokee Nation v. Georgia (1831), Seminole Nation v. United States (1942), Snyder Act (25 U.S.C. 13), Indian Self-Determination and Education Assistance Act (25 U.S.C. 5301)",
+      "_type": "TrustSuperNode"
     },
     "usa_15.156_259248162": {
       "id": "usa_15.156_259248162",
@@ -1920,6 +1967,246 @@
       "metadata": {}
     },
     {
+      "source": "ask_multi_year",
+      "target": "bia_tcr",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "epa_gap",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "doe_indian_energy",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "noaa_tribal",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "epa_stag",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "dot_protect",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "usbr_watersmart",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "usda_wildfire",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_multi_year",
+      "target": "hud_ihbg",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "bar_appropriations_volatility",
+      "target": "ask_multi_year",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_iija_sunset",
+      "target": "ask_multi_year",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_reauthorization_gap",
+      "target": "ask_multi_year",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "ask_match_waivers",
+      "target": "usda_wildfire",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_match_waivers",
+      "target": "usbr_watersmart",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_match_waivers",
+      "target": "fema_tribal_mitigation",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_match_waivers",
+      "target": "fema_bric",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "bar_cost_share",
+      "target": "ask_match_waivers",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_match_burden",
+      "target": "ask_match_waivers",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "ask_direct_access",
+      "target": "bia_tcr",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_direct_access",
+      "target": "dot_protect",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_direct_access",
+      "target": "usbr_watersmart",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_direct_access",
+      "target": "epa_stag",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "bar_competitive_only",
+      "target": "ask_direct_access",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "bar_agency_capacity",
+      "target": "ask_direct_access",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "ask_consultation",
+      "target": "fema_tribal_mitigation",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_consultation",
+      "target": "bia_tcr",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_consultation",
+      "target": "epa_gap",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_consultation",
+      "target": "epa_tribal_air",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "bar_plan_requirement",
+      "target": "ask_consultation",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "ask_data_sovereignty",
+      "target": "bia_tcr",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_data_sovereignty",
+      "target": "epa_gap",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_data_sovereignty",
+      "target": "epa_stag",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_data_sovereignty",
+      "target": "noaa_tribal",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "ask_data_sovereignty",
+      "target": "epa_tribal_air",
+      "type": "ADVANCES",
+      "metadata": {}
+    },
+    {
+      "source": "bar_data_sovereignty",
+      "target": "ask_data_sovereignty",
+      "type": "MITIGATED_BY",
+      "metadata": {}
+    },
+    {
+      "source": "FEDERAL_TRUST_RESPONSIBILITY",
+      "target": "bia_tcr",
+      "type": "TRUST_OBLIGATION",
+      "metadata": {}
+    },
+    {
+      "source": "FEDERAL_TRUST_RESPONSIBILITY",
+      "target": "bia_tcr_awards",
+      "type": "TRUST_OBLIGATION",
+      "metadata": {}
+    },
+    {
+      "source": "FEDERAL_TRUST_RESPONSIBILITY",
+      "target": "epa_gap",
+      "type": "TRUST_OBLIGATION",
+      "metadata": {}
+    },
+    {
+      "source": "FEDERAL_TRUST_RESPONSIBILITY",
+      "target": "epa_stag",
+      "type": "TRUST_OBLIGATION",
+      "metadata": {}
+    },
+    {
+      "source": "FEDERAL_TRUST_RESPONSIBILITY",
+      "target": "epa_tribal_air",
+      "type": "TRUST_OBLIGATION",
+      "metadata": {}
+    },
+    {
       "source": "bia_tcr",
       "target": "usa_15.156_259248162",
       "type": "OBLIGATED_BY",
@@ -2972,15 +3259,16 @@
     }
   ],
   "summary": {
-    "total_nodes": 182,
-    "total_edges": 196,
+    "total_nodes": 188,
+    "total_edges": 236,
     "programs": 16,
     "node_types": {
       "ProgramNode": 16,
-      "AdvocacyLeverNode": 16,
+      "AdvocacyLeverNode": 21,
       "AuthorityNode": 24,
       "FundingVehicleNode": 8,
       "BarrierNode": 15,
+      "TrustSuperNode": 1,
       "ObligationNode": 103
     }
   }

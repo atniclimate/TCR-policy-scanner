@@ -256,7 +256,11 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
 
     # Stage 5: Reporting
     reporter = ReportGenerator(programs)
-    paths = reporter.generate(scored, changes, graph_data)
+    paths = reporter.generate(
+        scored, changes, graph_data,
+        monitor_data=monitor_data,
+        classifications=classifications,
+    )
     print(f"\nScan complete.")
     print(f"  Items scored above threshold: {len(scored)}")
     print(f"  New since last scan: {changes['summary']['new_count']}")
