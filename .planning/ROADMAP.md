@@ -66,6 +66,13 @@ Plans:
 
 **Requirements:** MON-01, MON-02, MON-03, MON-04, MON-05, LOGIC-01, LOGIC-02, LOGIC-03, LOGIC-04, LOGIC-05
 
+**Plans:** 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md -- Monitor framework + threat monitors (IIJA sunset, reconciliation, DHS funding cliff)
+- [ ] 03-02-PLAN.md -- Advocacy decision engine with 5 classification rules (TDD)
+- [ ] 03-03-PLAN.md -- Signal monitors (Tribal consultation, Hot Sheets) + pipeline integration
+
 **Success Criteria:**
 
 1. After a scan, any IIJA-funded program approaching FY26 expiration without a detected reauthorization bill is flagged in scan results with a sunset warning and days remaining
@@ -73,13 +80,6 @@ Plans:
 3. Running a scan that encounters a Dear Tribal Leader Letter, consultation notice, or EO 13175 reference produces a Tribal consultation alert in results
 4. After each scan, the Hot Sheets sync validator produces a comparison showing where scanner CI statuses agree or diverge from Hot Sheets positions
 5. Each program in scan results carries an advocacy goal classification (Restore/Replace, Protect Base, Direct Access Parity, Expand and Strengthen, or Urgent Stabilization) derived from the 5 decision rules applied to its current graph state
-
-**Plans:**
-
-| Plan | Scope | Requirements |
-|------|-------|--------------|
-| 3.1 - Threat and Consultation Monitors | IIJA sunset tracker, reconciliation monitor, DHS funding cliff tracker, Tribal consultation tracker, Hot Sheets sync validator | MON-01, MON-02, MON-03, MON-04, MON-05 |
-| 3.2 - Advocacy Decision Logic | Implement 5 decision rules that classify programs into advocacy goals based on graph state | LOGIC-01, LOGIC-02, LOGIC-03, LOGIC-04, LOGIC-05 |
 
 ---
 
@@ -128,9 +128,9 @@ Unmapped: 0
 |-------|--------|-------|-----------|
 | 1 - Pipeline Validation | Complete (2026-02-09) | 2/2 | 01-01, 01-02 |
 | 2 - Data Model and Graph | Complete (2026-02-09) | 2/2 | 02-01, 02-02 |
-| 3 - Monitoring and Logic | Not Started | 0/2 | |
+| 3 - Monitoring and Logic | Not Started | 0/3 | |
 | 4 - Report Enhancements | Not Started | 0/2 | |
 
 ---
 *Roadmap created: 2026-02-09*
-*Last updated: 2026-02-09 (Phase 2 complete)*
+*Last updated: 2026-02-09 (Phase 3 planned)*
