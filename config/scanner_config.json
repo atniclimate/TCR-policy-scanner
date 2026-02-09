@@ -78,7 +78,9 @@
     "significant guidance", "policy statement", "memorandum",
     "dear tribal leader", "tribal consultation notice",
     "consent decree", "settlement agreement",
-    "interagency agreement", "memorandum of understanding"
+    "interagency agreement", "memorandum of understanding",
+    "reconciliation", "reconciliation bill", "budget reconciliation",
+    "revenue offsets", "repeal", "section 6417"
   ],
   "search_queries": [
     "tribal climate resilience",
@@ -92,7 +94,11 @@
     "tribal clean energy",
     "tribal water infrastructure",
     "tribal wildfire",
-    "tribal housing resilience"
+    "tribal housing resilience",
+    "budget reconciliation tribal",
+    "IRA repeal tribal",
+    "reconciliation bill energy",
+    "section 6417 repeal"
   ],
   "scan_window_days": 14
 }
