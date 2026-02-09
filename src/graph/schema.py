@@ -60,14 +60,32 @@ class AdvocacyLeverNode:
     urgency: str = ""       # Immediate / FY26 / Ongoing
 
 
+@dataclass
+class ObligationNode:
+    """Actual spending record from USASpending.gov."""
+    id: str
+    amount: float = 0.0
+    recipient: str = ""
+    fiscal_year: str = ""
+    cfda: str = ""
+
+
 # ── Edge Types ──
 
 @dataclass
 class Edge:
-    """Directed relationship between two nodes."""
+    """Directed relationship between two nodes.
+
+    Edge types:
+      AUTHORIZED_BY  (Program -> Authority)
+      FUNDED_BY      (Program -> FundingVehicle)
+      BLOCKED_BY     (Program -> Barrier)
+      MITIGATED_BY   (Barrier -> AdvocacyLever)
+      OBLIGATED_BY   (Program -> ObligationNode) — actual spending
+    """
     source_id: str
     target_id: str
-    edge_type: str        # AUTHORIZED_BY, FUNDED_BY, BLOCKED_BY, MITIGATED_BY
+    edge_type: str
     metadata: dict = field(default_factory=dict)
 
 

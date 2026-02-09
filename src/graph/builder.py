@@ -16,7 +16,7 @@ from pathlib import Path
 
 from src.graph.schema import (
     ProgramNode, AuthorityNode, FundingVehicleNode,
-    BarrierNode, AdvocacyLeverNode, Edge,
+    BarrierNode, AdvocacyLeverNode, ObligationNode, Edge,
     node_to_dict, edge_to_dict,
 )
 
@@ -31,6 +31,10 @@ BARRIER_PATTERNS = [
     (r"(?:requires?|must\s+have)\s+(?:a\s+)?(?:tribal\s+)?consultation", "Consultation Requirement", "Administrative"),
     (r"(?:new|additional)\s+reporting\s+requirement", "Reporting Requirement", "Administrative"),
     (r"(?:application|submission)\s+deadline", "Deadline", "Administrative"),
+    # Bureaucratic friction signals (per Gemini research)
+    (r"information\s+collection\s+(?:request|requirement)", "Information Collection / PRA", "Administrative"),
+    (r"paperwork\s+reduction\s+act", "PRA Compliance", "Administrative"),
+    (r"(?:new|revised)\s+(?:application|reporting)\s+form", "Form Change", "Administrative"),
 ]
 
 # Patterns for detecting funding signals
@@ -235,6 +239,11 @@ class GraphBuilder:
     def _enrich_from_items(self, items: list[dict]) -> None:
         """Infer new nodes and edges from scraped policy items."""
         for item in items:
+            # Handle USASpending obligation records as ObligationNodes
+            if item.get("source") == "usaspending" and item.get("award_amount"):
+                self._add_obligation(item)
+                continue
+
             text = f"{item.get('title', '')} {item.get('abstract', '')} {item.get('action', '')}"
             matched_pids = item.get("matched_programs", [])
 
@@ -311,3 +320,29 @@ class GraphBuilder:
                                     edge_type="FUNDED_BY",
                                     metadata={"inferred_from": item.get("source_id", "")},
                                 ))
+
+    def _add_obligation(self, item: dict) -> None:
+        """Add a USASpending obligation record to the graph."""
+        obl_id = item.get("source_id", "")
+        amount = item.get("award_amount", 0)
+        recipient = item.get("recipient", "")
+        cfda = item.get("cfda", "")
+        matched_pids = item.get("matched_programs", [])
+
+        if not obl_id or obl_id in self.graph.nodes:
+            return
+
+        self.graph.add_node(ObligationNode(
+            id=obl_id,
+            amount=amount,
+            recipient=recipient,
+            fiscal_year="FY26",
+            cfda=cfda,
+        ))
+        for pid in matched_pids:
+            self.graph.add_edge(Edge(
+                source_id=pid,
+                target_id=obl_id,
+                edge_type="OBLIGATED_BY",
+                metadata={"amount": amount, "recipient": recipient},
+            ))

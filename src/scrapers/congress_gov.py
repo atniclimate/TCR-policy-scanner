@@ -14,7 +14,7 @@ import os
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
 
-import aiohttp
+from src.scrapers.base import BaseScraper
 
 logger = logging.getLogger(__name__)
 
@@ -34,10 +34,11 @@ LEGISLATIVE_QUERIES = [
 ]
 
 
-class CongressGovScraper:
+class CongressGovScraper(BaseScraper):
     """Scrapes the Congress.gov API for legislative items."""
 
     def __init__(self, config: dict):
+        super().__init__("congress_gov")
         src = config["sources"]["congress_gov"]
         self.base_url = src["base_url"]
         self.authority_weight = src["authority_weight"]
@@ -54,7 +55,7 @@ class CongressGovScraper:
         all_items = []
         seen_keys = set()
 
-        async with aiohttp.ClientSession() as session:
+        async with self._create_session() as session:
             # Targeted 119th Congress queries by bill type
             for lq in LEGISLATIVE_QUERIES:
                 try:
@@ -90,7 +91,7 @@ class CongressGovScraper:
         return all_items
 
     async def _search_congress(
-        self, session: aiohttp.ClientSession, term: str,
+        self, session, term: str,
         bill_type: str = "", congress: int = 119,
     ) -> list[dict]:
         """Search for bills in a specific Congress and bill type."""
@@ -109,14 +110,11 @@ class CongressGovScraper:
             endpoint = f"{endpoint}/{bill_type}"
         url = f"{endpoint}?{urlencode(params)}"
 
-        async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
-            resp.raise_for_status()
-            data = await resp.json()
-
+        data = await self._request_with_retry(session, "GET", url)
         bills = data.get("bills", [])
         return [self._normalize(bill) for bill in bills]
 
-    async def _search(self, session: aiohttp.ClientSession, query: str) -> list[dict]:
+    async def _search(self, session, query: str) -> list[dict]:
         """Execute a broad search query against the bill endpoint."""
         from_date = (datetime.utcnow() - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
         params = {
@@ -128,10 +126,7 @@ class CongressGovScraper:
         }
         url = f"{self.base_url}/bill?{urlencode(params)}"
 
-        async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
-            resp.raise_for_status()
-            data = await resp.json()
-
+        data = await self._request_with_retry(session, "GET", url)
         bills = data.get("bills", [])
         return [self._normalize(bill) for bill in bills]
 

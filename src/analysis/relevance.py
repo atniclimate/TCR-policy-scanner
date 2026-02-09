@@ -3,6 +3,11 @@
 Scores each collected policy item against the ATNI program inventory using
 five weighted factors: program match, Tribal keyword density, recency,
 source authority, and action relevance.
+
+Enhanced with:
+- Tribal eligibility override: Grants.gov items with Tribal government
+  eligibility codes are force-included above threshold
+- ICR/guidance document subtype detection for bureaucratic friction signals
 """
 
 import logging
@@ -24,6 +29,7 @@ class RelevanceScorer:
         self.tribal_keywords = [kw.lower() for kw in config.get("tribal_keywords", [])]
         self.action_keywords = [kw.lower() for kw in config.get("action_keywords", [])]
         self.programs = programs
+        self.eligibility_override = config["scoring"].get("tribal_eligibility_override", True)
 
     def score_items(self, items: list[dict]) -> list[dict]:
         """Score all items and return those above the relevance threshold."""
@@ -61,6 +67,23 @@ class RelevanceScorer:
         if has_critical:
             composite = min(1.0, composite + self.critical_boost)
 
+        # Tribal eligibility override: force-include grants where Tribal
+        # governments are listed as eligible applicants even when keyword
+        # density is low (catches "generic" titled resilience grants)
+        eligibility_override = False
+        if (self.eligibility_override
+                and item.get("tribal_eligible")
+                and item.get("tribal_eligibility_override")
+                and composite < self.threshold):
+            composite = max(composite, self.threshold + 0.05)
+            eligibility_override = True
+
+        # ICR/guidance subtype boost: information collection requests and
+        # significant guidance documents are bureaucratic friction signals
+        doc_subtype = item.get("document_subtype", "")
+        if doc_subtype in ("icr", "guidance", "rfi", "anprm"):
+            composite = min(1.0, composite + 0.05)
+
         item_scored = dict(item)
         item_scored.update({
             "relevance_score": round(composite, 4),
@@ -73,6 +96,8 @@ class RelevanceScorer:
                 "source_authority": round(authority_score, 4),
                 "action_relevance": round(action_score, 4),
                 "critical_boost_applied": has_critical,
+                "eligibility_override": eligibility_override,
+                "subtype_boost": doc_subtype if doc_subtype else None,
             },
         })
         return item_scored

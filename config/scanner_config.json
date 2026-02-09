@@ -1,4 +1,6 @@
 {
+  "domain": "tcr",
+  "domain_name": "Tribal Climate Resilience",
   "sources": {
     "federal_register": {
       "name": "Federal Register",
@@ -33,6 +35,12 @@
         "limit": 50,
         "sort": "updateDate+desc"
       }
+    },
+    "usaspending": {
+      "name": "USASpending.gov",
+      "base_url": "https://api.usaspending.gov/api/v2",
+      "requires_key": false,
+      "authority_weight": 0.7
     }
   },
   "scoring": {
@@ -44,7 +52,8 @@
       "action_relevance": 0.10
     },
     "critical_boost": 0.15,
-    "relevance_threshold": 0.30
+    "relevance_threshold": 0.30,
+    "tribal_eligibility_override": true
   },
   "tribal_keywords": [
     "tribal", "tribe", "tribes", "indian", "native american",
@@ -64,7 +73,13 @@
     "amendment", "extension", "deadline", "comment period",
     "grant opportunity", "funding opportunity", "solicitation",
     "budget request", "continuing resolution", "omnibus",
-    "rescission", "impoundment", "termination", "replacement"
+    "rescission", "impoundment", "termination", "replacement",
+    "information collection request", "paperwork reduction",
+    "request for information", "advance notice of proposed rulemaking",
+    "significant guidance", "policy statement", "memorandum",
+    "dear tribal leader", "tribal consultation notice",
+    "consent decree", "settlement agreement",
+    "interagency agreement", "memorandum of understanding"
   ],
   "search_queries": [
     "tribal climate resilience",

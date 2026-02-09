@@ -21,6 +21,7 @@ from pathlib import Path
 from src.scrapers.federal_register import FederalRegisterScraper
 from src.scrapers.grants_gov import GrantsGovScraper
 from src.scrapers.congress_gov import CongressGovScraper
+from src.scrapers.usaspending import USASpendingScraper
 from src.analysis.relevance import RelevanceScorer
 from src.analysis.change_detector import ChangeDetector
 from src.graph.builder import GraphBuilder
@@ -36,6 +37,7 @@ SCRAPERS = {
     "federal_register": FederalRegisterScraper,
     "grants_gov": GrantsGovScraper,
     "congress_gov": CongressGovScraper,
+    "usaspending": USASpendingScraper,
 }
 
 
@@ -71,7 +73,8 @@ def list_programs(programs: list[dict]) -> None:
 
 def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     """Show what would be scanned without making API calls."""
-    print("\n=== DRY RUN ===")
+    domain = config.get("domain_name", config.get("domain", "unknown"))
+    print(f"\n=== DRY RUN === [{domain}]")
     print(f"Pipeline: Ingest -> Normalize -> Graph Construction -> Analysis -> Reporting")
     print(f"Scan window: {config['scan_window_days']} days")
     print(f"Relevance threshold: {config['scoring']['relevance_threshold']}")
