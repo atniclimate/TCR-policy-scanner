@@ -8,7 +8,8 @@
     "stable_but_vulnerable": 0.65,
     "at_risk_floor": 0.40,
     "uncertain_floor": 0.25,
-    "flagged_floor": 0.0
+    "flagged_floor": 0.10,
+    "terminated_floor": 0.0
   },
   "status_definitions": {
     "SECURE": "Statutory set-aside or permanent authorization; minimal annual risk",
@@ -16,7 +17,8 @@
     "STABLE_BUT_VULNERABLE": "Active but exposed to executive/legislative restructuring",
     "AT_RISK": "Facing specific threat; advocacy action required",
     "UNCERTAIN": "Structural ambiguity; agency reorganization or unclear reauth path",
-    "FLAGGED": "Terminated, zeroed out, or requires specialist intervention"
+    "FLAGGED": "Terminated, zeroed out, or requires specialist intervention",
+    "TERMINATED": "Program confirmed terminated; advocacy pivots to replacement mechanism"
   },
   "positions": [
     {
