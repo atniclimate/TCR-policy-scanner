@@ -4,35 +4,35 @@
 
 **Core Value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
 
-**Current Focus:** Phase 3 in progress -- monitor framework, threat monitors, and decision engine complete. Signal monitors and pipeline integration next.
+**Current Focus:** Phase 3 COMPLETE. All monitors, decision engine, and pipeline integration done. Phase 4 (Report Enhancements) is next.
 
-**Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, and report generator already implemented.
+**Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, and report generator.
 
 ## Current Position
 
 **Milestone:** v1
-**Phase:** 3 of 4 (Monitoring and Logic) -- IN PROGRESS
-**Plan:** 2 of 3 complete
-**Status:** In progress
-**Last activity:** 2026-02-09 - Completed 03-02-PLAN.md
+**Phase:** 3 of 4 (Monitoring and Logic) -- COMPLETE
+**Plan:** 3 of 3 complete
+**Status:** Phase complete
+**Last activity:** 2026-02-09 - Completed 03-03-PLAN.md
 
 **Progress:**
 ```
 Phase 1 [##########] 100% Pipeline Validation (2/2 plans) COMPLETE
 Phase 2 [##########] 100% Data Model and Graph (2/2 plans) COMPLETE
-Phase 3 [#######...] 67%  Monitoring and Logic (2/3 plans)
+Phase 3 [##########] 100% Monitoring and Logic (3/3 plans) COMPLETE
 Phase 4 [..........] 0%   Report Enhancements
-Overall [########..] 75%  6/8 plans complete
+Overall [#########.] 88%  7/8 plans complete
 ```
 
 ## Performance Metrics
 
 | Metric | Value |
 |--------|-------|
-| Requirements completed | 18/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01, MON-02, MON-05, LOGIC-01..05) |
-| Phases completed | 2/4 |
-| Plans completed | 6/8 |
-| Session count | 6 |
+| Requirements completed | 28/31 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01..05, LOGIC-01..05) |
+| Phases completed | 3/4 |
+| Plans completed | 7/8 |
+| Session count | 7 |
 
 ## Accumulated Context
 
@@ -63,10 +63,14 @@ Overall [########..] 75%  6/8 plans complete
 | FLAGGED treated as near-TERMINATED for LOGIC-01 | 03-02 | FEMA BRIC at CI 0.12 needs Restore/Replace classification |
 | AT_RISK/UNCERTAIN with discretionary = threat signal for LOGIC-02 | 03-02 | Status itself indicates risk; combined with discretionary funding confirms Protect Base |
 | access_type required for LOGIC-03 and LOGIC-04 | 03-02 | Programs without explicit access_type fall through to default classification |
+| HotSheetsValidator runs first in monitor order | 03-03 | CI overrides must be applied before decision engine classifies programs |
+| Hot Sheets status aligned at baseline | 03-03 | Clean starting point; user updates inventory manually when Hot Sheets positions change |
+| Tribal consultation signals are INFO severity | 03-03 | Consultations are informational signals, not threats -- no THREATENS edges created |
+| Monitor data saved to separate JSON file | 03-03 | ReportGenerator modification is Phase 4 scope; separate file provides clean data interface |
 
 ### Architecture Notes
 
-- **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Analysis -> Reporting
+- **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
 - **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json
 - **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2
 - **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific, cron `0 13 * * 1-5`)
@@ -79,16 +83,21 @@ Overall [########..] 75%  6/8 plans complete
 - **Scanner keywords:** 42 action keywords, 16 search queries (includes reconciliation/repeal terms)
 - **CFDA mappings:** 12 entries in grants_gov.py (includes 15.124 for BIA TCR Awards)
 - **Graph stats (static seed):** 79 nodes (16 ProgramNode, 21 AdvocacyLeverNode, 20 AuthorityNode, 8 FundingVehicleNode, 13 BarrierNode, 1 TrustSuperNode), 118 edges
+- **Graph stats (with scan data):** 188 nodes, 236 edges
 - **Graph edge types:** AUTHORIZED_BY, FUNDED_BY, BLOCKED_BY, MITIGATED_BY, OBLIGATED_BY, ADVANCES, TRUST_OBLIGATION, THREATENS
 - **Structural asks:** 5 asks (multi_year, match_waivers, direct_access, consultation, data_sovereignty) with 26 ADVANCES edges and 9 MITIGATED_BY edges
 - **Trust Super-Node:** FEDERAL_TRUST_RESPONSIBILITY with 5 TRUST_OBLIGATION edges
 - **Monitor framework:** BaseMonitor ABC, MonitorAlert dataclass, MonitorRunner orchestrator in src/monitors/
-- **Active monitors:** IIJASunsetMonitor (MON-01), ReconciliationMonitor (MON-02), DHSFundingCliffMonitor (MON-05)
-- **Monitor output (empty scan, Feb 9):** 6 alerts (3 IIJA sunset INFO, 1 IIJA fund-exhaustion INFO, 2 DHS funding WARNING), 5 THREATENS edges
+- **Active monitors (5):** HotSheetsValidator (MON-04, runs first), IIJASunsetMonitor (MON-01), ReconciliationMonitor (MON-02), DHSFundingCliffMonitor (MON-05), TribalConsultationMonitor (MON-03)
+- **Monitor output (cached scan, Feb 9):** 5 alerts (2 DHS WARNING, 2 IIJA INFO, 1 IIJA fund-exhaustion INFO), 4 THREATENS edges
 - **Monitor config:** 6 sub-keys in scanner_config.json monitors section
+- **Monitor state:** outputs/.monitor_state.json tracks known Hot Sheets divergences between runs
+- **Monitor data output:** outputs/LATEST-MONITOR-DATA.json with alerts, classifications, and summary
 - **Decision engine:** DecisionEngine in src/analysis/decision_engine.py with 5 rules, ADVOCACY_GOALS constant, classify_all() method
 - **Decision rules:** LOGIC-05 > 01 > 02 > 03 > 04 priority order; secondary_rules for transparency
 - **Test infrastructure:** pytest installed, tests/ package with 45 test cases for decision engine
+- **Hot Sheets baseline:** All 16 programs have hot_sheets_status field aligned with scanner CI status
+- **Pipeline integration:** run_monitors_and_classify() in src/main.py runs stages 3.5-3.6
 
 ### Todos
 
@@ -103,12 +112,12 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-09
-**Stopped at:** Completed 03-02-PLAN.md (Advocacy Decision Engine)
-**Resume file:** `.planning/phases/03-monitoring-logic/03-03-PLAN.md` (Signal Monitors + Pipeline Integration)
+**Stopped at:** Completed 03-03-PLAN.md (Signal Monitors + Pipeline Integration) -- Phase 3 COMPLETE
+**Resume file:** Phase 4 plans (Report Enhancements)
 
 ### Resume Instructions
 
-Phase 3 Plan 2 (Decision Engine) is complete. DecisionEngine with 5 rules and 45 passing tests. Begin Plan 03-03 (Signal monitors: Tribal consultation + Hot Sheets, pipeline integration).
+Phase 3 is fully complete. All 5 monitors and decision engine are integrated into the pipeline. LATEST-MONITOR-DATA.json provides alert and classification data for Phase 4 reporting. Begin Phase 4 (Report Enhancements) -- briefing sections, Hot Sheets indicators, IIJA countdowns, reconciliation watch, CI trends.
 
 ---
 *State initialized: 2026-02-09*
