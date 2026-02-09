@@ -259,11 +259,11 @@ class GraphBuilder:
                     target_id=pid,
                     edge_type="ADVANCES",
                 ))
-            # Structural ask mitigates barriers (reuses existing MITIGATED_BY edge type)
+            # Barrier -> Ask mitigations (same direction as Barrier -> Lever)
             for bar_id in ask.get("mitigates", []):
                 self.graph.add_edge(Edge(
-                    source_id=ask["id"],
-                    target_id=bar_id,
+                    source_id=bar_id,
+                    target_id=ask["id"],
                     edge_type="MITIGATED_BY",
                 ))
 
