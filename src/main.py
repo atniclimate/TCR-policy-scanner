@@ -1,6 +1,6 @@
 """TCR Policy Scanner — main pipeline orchestrator.
 
-DAG Pipeline: Ingest -> Normalize -> Graph Construction -> Analysis -> Reporting
+DAG Pipeline: Ingest -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
 
 Usage:
     python -m src.main              # Full scan
@@ -26,12 +26,15 @@ from src.analysis.relevance import RelevanceScorer
 from src.analysis.change_detector import ChangeDetector
 from src.graph.builder import GraphBuilder
 from src.reports.generator import ReportGenerator
+from src.monitors import MonitorRunner
+from src.analysis.decision_engine import DecisionEngine
 
 logger = logging.getLogger("tcr_scanner")
 
 CONFIG_PATH = Path("config/scanner_config.json")
 INVENTORY_PATH = Path("data/program_inventory.json")
 GRAPH_OUTPUT_PATH = Path("outputs/LATEST-GRAPH.json")
+MONITOR_OUTPUT_PATH = Path("outputs/LATEST-MONITOR-DATA.json")
 
 SCRAPERS = {
     "federal_register": FederalRegisterScraper,
@@ -75,7 +78,7 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     """Show what would be scanned without making API calls."""
     domain = config.get("domain_name", config.get("domain", "unknown"))
     print(f"\n=== DRY RUN === [{domain}]")
-    print(f"Pipeline: Ingest -> Normalize -> Graph Construction -> Analysis -> Reporting")
+    print(f"Pipeline: Ingest -> Normalize -> Graph -> Monitors -> Decision Engine -> Reporting")
     print(f"Scan window: {config['scan_window_days']} days")
     print(f"Relevance threshold: {config['scoring']['relevance_threshold']}")
     print(f"\nSources to scan:")
@@ -106,6 +109,14 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
         print(f"  Authorities: {len(schema.get('authorities', []))}")
         print(f"  Funding vehicles: {len(schema.get('funding_vehicles', []))}")
         print(f"  Barriers: {len(schema.get('barriers', []))}")
+
+    # Monitor configuration
+    monitor_config = config.get("monitors", {})
+    if monitor_config:
+        print(f"\nMonitor configuration:")
+        for name, mc in monitor_config.items():
+            print(f"  - {name}")
+
     print()
 
 
@@ -143,9 +154,60 @@ def build_graph(programs: list[dict], scored_items: list[dict]) -> dict:
     return graph_data
 
 
+def run_monitors_and_classify(
+    config: dict, programs_dict: dict, graph_data: dict, scored: list[dict]
+) -> tuple[list, dict, dict]:
+    """Run monitors and decision engine. Returns (alerts, classifications, monitor_data).
+
+    This stage runs after graph construction and before reporting:
+        Graph -> [HotSheets -> Monitors -> Decision Engine] -> Report
+    """
+    # Stage 3.5: Monitors (detect threats, consultation signals, Hot Sheets sync)
+    monitor_runner = MonitorRunner(config, programs_dict)
+    alerts = monitor_runner.run_all(graph_data, scored)
+    logger.info("Monitors produced %d alerts", len(alerts))
+
+    # Stage 3.6: Decision Engine (classify programs into advocacy goals)
+    decision_engine = DecisionEngine(config, programs_dict)
+    classifications = decision_engine.classify_all(graph_data, alerts)
+    logger.info("Classified %d programs into advocacy goals", len(classifications))
+
+    # Build monitor data dict for output
+    monitor_data = {
+        "alerts": [
+            {
+                "monitor": a.monitor,
+                "severity": a.severity,
+                "program_ids": a.program_ids,
+                "title": a.title,
+                "detail": a.detail,
+                "metadata": a.metadata,
+                "timestamp": a.timestamp,
+            }
+            for a in alerts
+        ],
+        "classifications": classifications,
+        "summary": {
+            "total_alerts": len(alerts),
+            "critical_count": len([a for a in alerts if a.severity == "CRITICAL"]),
+            "warning_count": len([a for a in alerts if a.severity == "WARNING"]),
+            "info_count": len([a for a in alerts if a.severity == "INFO"]),
+            "monitors_run": sorted(set(a.monitor for a in alerts)),
+        },
+    }
+
+    # Save monitor data for Phase 4 reporting
+    MONITOR_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(MONITOR_OUTPUT_PATH, "w") as f:
+        json.dump(monitor_data, f, indent=2, default=str)
+    logger.info("Monitor data written to %s", MONITOR_OUTPUT_PATH)
+
+    return alerts, classifications, monitor_data
+
+
 def run_pipeline(config: dict, programs: list[dict], sources: list[str],
                  report_only: bool = False, graph_only: bool = False) -> None:
-    """Run the full DAG pipeline: Ingest -> Normalize -> Graph -> Analysis -> Report."""
+    """Run the full DAG pipeline: Ingest -> Normalize -> Graph -> Monitors -> Decision -> Report."""
     detector = ChangeDetector()
     scorer = RelevanceScorer(config, programs)
 
@@ -173,11 +235,23 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
     # Stage 3: Graph Construction
     graph_data = build_graph(programs, scored)
 
+    # Stage 3.5-3.6: Monitors + Decision Engine
+    # programs_dict is needed by monitors and decision engine (keyed by program_id).
+    # Hot Sheets validator mutates program dicts in-place, which is fine since
+    # they are the same objects used downstream.
+    programs_dict = {p["id"]: p for p in programs}
+    alerts, classifications, monitor_data = run_monitors_and_classify(
+        config, programs_dict, graph_data, scored
+    )
+
     if graph_only:
         print(f"\nGraph exported to {GRAPH_OUTPUT_PATH}")
         summary = graph_data["summary"]
         print(f"  Nodes: {summary['total_nodes']} ({summary['node_types']})")
         print(f"  Edges: {summary['total_edges']}")
+        print(f"  Monitor alerts: {len(alerts)} ({monitor_data['summary']['critical_count']} critical)")
+        print(f"  Advocacy goals: {len([c for c in classifications.values() if c.get('advocacy_goal')])} classified")
+        print(f"  Monitor data: {MONITOR_OUTPUT_PATH}")
         return
 
     # Stage 5: Reporting
@@ -187,9 +261,12 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
     print(f"  Items scored above threshold: {len(scored)}")
     print(f"  New since last scan: {changes['summary']['new_count']}")
     print(f"  Knowledge graph: {graph_data['summary']['total_nodes']} nodes, {graph_data['summary']['total_edges']} edges")
+    print(f"  Monitor alerts: {len(alerts)} ({monitor_data['summary']['critical_count']} critical)")
+    print(f"  Advocacy goals: {len([c for c in classifications.values() if c.get('advocacy_goal')])} classified")
     print(f"  Briefing: {paths['markdown']}")
     print(f"  JSON:     {paths['json']}")
     print(f"  Graph:    {GRAPH_OUTPUT_PATH}")
+    print(f"  Monitor data: {MONITOR_OUTPUT_PATH}")
 
 
 def main() -> None:
