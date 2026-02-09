@@ -1,10 +1,10 @@
 {
   "scan_date": "2026-02-09",
   "summary": {
-    "new_count": 1,
+    "new_count": 13,
     "updated_count": 0,
-    "removed_count": 1,
-    "total_current": 164,
+    "removed_count": 0,
+    "total_current": 177,
     "total_previous": 164
   },
   "scan_results": [
@@ -4589,6 +4589,40 @@
       }
     },
     {
+      "source": "congress_gov",
+      "source_id": "119-S-266",
+      "title": "Dr. Lorna Breen Health Care Provider Protection Reauthorization Act",
+      "abstract": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "url": "https://api.congress.gov/v3/bill/119/s/266?format=json",
+      "pdf_url": "",
+      "published_date": "2026-02-05",
+      "document_type": "S 266",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "266",
+      "agencies": [],
+      "latest_action": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+      "latest_action_date": "2025-01-28",
+      "authority_weight": 0.8,
+      "relevance_score": 0.4765,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.8,
+        "source_authority": 0.8,
+        "action_relevance": 0.5,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
       "source": "federal_register",
       "source_id": "2026-01899",
       "title": "Indian Entities Recognized by and Eligible To Receive Services From the United States Bureau of Indian Affairs",
@@ -4794,6 +4828,70 @@
         "recency": 0.6,
         "source_authority": 0.9,
         "action_relevance": 0.5,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "119-S-240",
+      "title": "Crow Tribe Water Rights Settlement Amendments Act of 2025",
+      "abstract": "Held at the desk.",
+      "url": "https://api.congress.gov/v3/bill/119/s/240?format=json",
+      "pdf_url": "",
+      "published_date": "2026-02-04",
+      "document_type": "S 240",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "240",
+      "agencies": [],
+      "latest_action": "Held at the desk.",
+      "latest_action_date": "2025-12-15",
+      "authority_weight": 0.8,
+      "relevance_score": 0.4573,
+      "matched_programs": [],
+      "matched_program_names": [],
+      "score_breakdown": {
+        "program_match": 0.0,
+        "tribal_keyword_density": 0.7692,
+        "recency": 0.8,
+        "source_authority": 0.8,
+        "action_relevance": 0.25,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "119-S-90",
+      "title": "Historic Roadways Protection Act",
+      "abstract": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "url": "https://api.congress.gov/v3/bill/119/s/90?format=json",
+      "pdf_url": "",
+      "published_date": "2026-02-05",
+      "document_type": "S 90",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "90",
+      "agencies": [],
+      "latest_action": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+      "latest_action_date": "2026-02-04",
+      "authority_weight": 0.8,
+      "relevance_score": 0.4516,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.8,
+        "source_authority": 0.8,
+        "action_relevance": 0.25,
         "critical_boost_applied": false,
         "eligibility_override": false,
         "subtype_boost": null
@@ -5083,6 +5181,108 @@
         "tribal_keyword_density": 0.0654,
         "recency": 0.6,
         "source_authority": 0.9,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "119-S-167",
+      "title": "Protect and Serve Act of 2025",
+      "abstract": "Read twice and referred to the Committee on the Judiciary.",
+      "url": "https://api.congress.gov/v3/bill/119/s/167?format=json",
+      "pdf_url": "",
+      "published_date": "2026-02-06",
+      "document_type": "S 167",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "167",
+      "agencies": [],
+      "latest_action": "Read twice and referred to the Committee on the Judiciary.",
+      "latest_action_date": "2025-01-21",
+      "authority_weight": 0.8,
+      "relevance_score": 0.4265,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.8,
+        "source_authority": 0.8,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "119-S-289",
+      "title": "Youth Poisoning Protection Act",
+      "abstract": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 132.",
+      "url": "https://api.congress.gov/v3/bill/119/s/289?format=json",
+      "pdf_url": "",
+      "published_date": "2026-02-04",
+      "document_type": "S 289",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "289",
+      "agencies": [],
+      "latest_action": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 132.",
+      "latest_action_date": "2025-07-29",
+      "authority_weight": 0.8,
+      "relevance_score": 0.4265,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.8,
+        "source_authority": 0.8,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "119-S-455",
+      "title": "Protecting Sensitive Locations Act",
+      "abstract": "Read twice and referred to the Committee on the Judiciary.",
+      "url": "https://api.congress.gov/v3/bill/119/s/455?format=json",
+      "pdf_url": "",
+      "published_date": "2026-02-06",
+      "document_type": "S 455",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "455",
+      "agencies": [],
+      "latest_action": "Read twice and referred to the Committee on the Judiciary.",
+      "latest_action_date": "2025-02-06",
+      "authority_weight": 0.8,
+      "relevance_score": 0.4265,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.8,
+        "source_authority": 0.8,
         "action_relevance": 0.0,
         "critical_boost_applied": false,
         "eligibility_override": false,
@@ -5382,6 +5582,210 @@
         "tribal_keyword_density": 0.5769,
         "recency": 0.8,
         "source_authority": 0.9,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "119-S-6",
+      "title": "Born-Alive Abortion Survivors Protection Act",
+      "abstract": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 11. (CR S294-295)",
+      "url": "https://api.congress.gov/v3/bill/119/s/6?format=json",
+      "pdf_url": "",
+      "published_date": "2026-01-29",
+      "document_type": "S 6",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "6",
+      "agencies": [],
+      "latest_action": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 11. (CR S294-295)",
+      "latest_action_date": "2025-01-22",
+      "authority_weight": 0.8,
+      "relevance_score": 0.3965,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.6,
+        "source_authority": 0.8,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "119-S-272",
+      "title": "Protect Infant Formula from Contamination Act",
+      "abstract": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 306.",
+      "url": "https://api.congress.gov/v3/bill/119/s/272?format=json",
+      "pdf_url": "",
+      "published_date": "2026-01-31",
+      "document_type": "S 272",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "272",
+      "agencies": [],
+      "latest_action": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 306.",
+      "latest_action_date": "2026-01-28",
+      "authority_weight": 0.8,
+      "relevance_score": 0.3965,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.6,
+        "source_authority": 0.8,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "114-HR-3437",
+      "title": "Protecting American Lives Act",
+      "abstract": "Referred to the Subcommittee on Immigration and Border Security.",
+      "url": "https://api.congress.gov/v3/bill/114/hr/3437?format=json",
+      "pdf_url": "",
+      "published_date": "2026-01-27",
+      "document_type": "HR 3437",
+      "congress": 114,
+      "bill_type": "HR",
+      "bill_number": "3437",
+      "agencies": [],
+      "latest_action": "Referred to the Subcommittee on Immigration and Border Security.",
+      "latest_action_date": "2015-09-28",
+      "authority_weight": 0.8,
+      "relevance_score": 0.3965,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.6,
+        "source_authority": 0.8,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "114-HR-5851",
+      "title": "Refugee Protection Act of 2016",
+      "abstract": "Referred to the Subcommittee on Human Resources.",
+      "url": "https://api.congress.gov/v3/bill/114/hr/5851?format=json",
+      "pdf_url": "",
+      "published_date": "2026-01-27",
+      "document_type": "HR 5851",
+      "congress": 114,
+      "bill_type": "HR",
+      "bill_number": "5851",
+      "agencies": [],
+      "latest_action": "Referred to the Subcommittee on Human Resources.",
+      "latest_action_date": "2016-08-17",
+      "authority_weight": 0.8,
+      "relevance_score": 0.3965,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.6,
+        "source_authority": 0.8,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "113-HR-1365",
+      "title": "Refugee Protection Act of 2013",
+      "abstract": "Referred to the Subcommittee on Immigration And Border Security.",
+      "url": "https://api.congress.gov/v3/bill/113/hr/1365?format=json",
+      "pdf_url": "",
+      "published_date": "2026-01-27",
+      "document_type": "HR 1365",
+      "congress": 113,
+      "bill_type": "HR",
+      "bill_number": "1365",
+      "agencies": [],
+      "latest_action": "Referred to the Subcommittee on Immigration And Border Security.",
+      "latest_action_date": "2013-04-15",
+      "authority_weight": 0.8,
+      "relevance_score": 0.3965,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.6,
+        "source_authority": 0.8,
+        "action_relevance": 0.0,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
+      "source": "congress_gov",
+      "source_id": "113-HR-4711",
+      "title": "To establish a regulatory framework for the comprehensive protection of personal data for individuals under the aegis of the Federal Trade Commission, to amend the Children's Online Privacy Protection Act of 1998 to improve provisions relating to collection, use, and disclosure of personal information of children, and for other purposes.",
+      "abstract": "Referred to the Subcommittee on Commerce, Manufacturing, and Trade.",
+      "url": "https://api.congress.gov/v3/bill/113/hr/4711?format=json",
+      "pdf_url": "",
+      "published_date": "2026-01-27",
+      "document_type": "HR 4711",
+      "congress": 113,
+      "bill_type": "HR",
+      "bill_number": "4711",
+      "agencies": [],
+      "latest_action": "Referred to the Subcommittee on Commerce, Manufacturing, and Trade.",
+      "latest_action_date": "2014-05-23",
+      "authority_weight": 0.8,
+      "relevance_score": 0.3965,
+      "matched_programs": [
+        "dot_protect"
+      ],
+      "matched_program_names": [
+        "DOT PROTECT"
+      ],
+      "score_breakdown": {
+        "program_match": 0.533,
+        "tribal_keyword_density": 0.0,
+        "recency": 0.6,
+        "source_authority": 0.8,
         "action_relevance": 0.0,
         "critical_boost_applied": false,
         "eligibility_override": false,
@@ -5757,6 +6161,36 @@
       }
     },
     {
+      "source": "congress_gov",
+      "source_id": "119-S-446",
+      "title": "A bill to prohibit Big Cypress National Preserve from being designated as wilderness or as a component of the National Wilderness Preservation System, and for other purposes.",
+      "abstract": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably and an amendment to the title.",
+      "url": "https://api.congress.gov/v3/bill/119/s/446?format=json",
+      "pdf_url": "",
+      "published_date": "2026-02-05",
+      "document_type": "S 446",
+      "congress": 119,
+      "bill_type": "S",
+      "bill_number": "446",
+      "agencies": [],
+      "latest_action": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably and an amendment to the title.",
+      "latest_action_date": "2026-02-04",
+      "authority_weight": 0.8,
+      "relevance_score": 0.3122,
+      "matched_programs": [],
+      "matched_program_names": [],
+      "score_breakdown": {
+        "program_match": 0.0,
+        "tribal_keyword_density": 0.1887,
+        "recency": 0.8,
+        "source_authority": 0.8,
+        "action_relevance": 0.25,
+        "critical_boost_applied": false,
+        "eligibility_override": false,
+        "subtype_boost": null
+      }
+    },
+    {
       "source": "federal_register",
       "source_id": "2026-02510",
       "title": "Mammoth Cave National Park; Bicycling and Horses",
@@ -6025,48 +6459,442 @@
   "changes": {
     "new_items": [
       {
-        "source": "usaspending",
-        "source_id": "usa_15.156_259248162",
-        "title": "FY26 Obligation: A21AP10255 \u2014 COW CREEK BAND OF UMPQUA TRIBE OF INDIANS",
-        "abstract": "$58,810 obligated under CFDA 15.156 to COW CREEK BAND OF UMPQUA TRIBE OF INDIANS",
-        "url": "https://www.usaspending.gov/award/259248162",
+        "source": "congress_gov",
+        "source_id": "119-S-266",
+        "title": "Dr. Lorna Breen Health Care Provider Protection Reauthorization Act",
+        "abstract": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+        "url": "https://api.congress.gov/v3/bill/119/s/266?format=json",
         "pdf_url": "",
-        "published_date": "2021-08-16",
-        "document_type": "obligation",
-        "agencies": [
-          "Department of the Interior"
-        ],
-        "award_amount": 58810.0,
-        "cfda": "15.156",
-        "cfda_program_match": "bia_tcr",
-        "recipient": "COW CREEK BAND OF UMPQUA TRIBE OF INDIANS",
-        "authority_weight": 0.7,
-        "relevance_score": 0.827,
+        "published_date": "2026-02-05",
+        "document_type": "S 266",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "266",
+        "agencies": [],
+        "latest_action": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+        "latest_action_date": "2025-01-28",
+        "authority_weight": 0.8,
+        "relevance_score": 0.4765,
         "matched_programs": [
-          "bia_tcr"
+          "dot_protect"
         ],
         "matched_program_names": [
-          "BIA Tribal Climate Resilience"
+          "DOT PROTECT"
         ],
         "score_breakdown": {
-          "program_match": 0.999,
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.8,
+          "source_authority": 0.8,
+          "action_relevance": 0.5,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-240",
+        "title": "Crow Tribe Water Rights Settlement Amendments Act of 2025",
+        "abstract": "Held at the desk.",
+        "url": "https://api.congress.gov/v3/bill/119/s/240?format=json",
+        "pdf_url": "",
+        "published_date": "2026-02-04",
+        "document_type": "S 240",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "240",
+        "agencies": [],
+        "latest_action": "Held at the desk.",
+        "latest_action_date": "2025-12-15",
+        "authority_weight": 0.8,
+        "relevance_score": 0.4573,
+        "matched_programs": [],
+        "matched_program_names": [],
+        "score_breakdown": {
+          "program_match": 0.0,
           "tribal_keyword_density": 0.7692,
-          "recency": 0.2,
-          "source_authority": 0.7,
+          "recency": 0.8,
+          "source_authority": 0.8,
+          "action_relevance": 0.25,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-90",
+        "title": "Historic Roadways Protection Act",
+        "abstract": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+        "url": "https://api.congress.gov/v3/bill/119/s/90?format=json",
+        "pdf_url": "",
+        "published_date": "2026-02-05",
+        "document_type": "S 90",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "90",
+        "agencies": [],
+        "latest_action": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+        "latest_action_date": "2026-02-04",
+        "authority_weight": 0.8,
+        "relevance_score": 0.4516,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.8,
+          "source_authority": 0.8,
+          "action_relevance": 0.25,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-167",
+        "title": "Protect and Serve Act of 2025",
+        "abstract": "Read twice and referred to the Committee on the Judiciary.",
+        "url": "https://api.congress.gov/v3/bill/119/s/167?format=json",
+        "pdf_url": "",
+        "published_date": "2026-02-06",
+        "document_type": "S 167",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "167",
+        "agencies": [],
+        "latest_action": "Read twice and referred to the Committee on the Judiciary.",
+        "latest_action_date": "2025-01-21",
+        "authority_weight": 0.8,
+        "relevance_score": 0.4265,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.8,
+          "source_authority": 0.8,
           "action_relevance": 0.0,
-          "critical_boost_applied": true,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-289",
+        "title": "Youth Poisoning Protection Act",
+        "abstract": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 132.",
+        "url": "https://api.congress.gov/v3/bill/119/s/289?format=json",
+        "pdf_url": "",
+        "published_date": "2026-02-04",
+        "document_type": "S 289",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "289",
+        "agencies": [],
+        "latest_action": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 132.",
+        "latest_action_date": "2025-07-29",
+        "authority_weight": 0.8,
+        "relevance_score": 0.4265,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.8,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-455",
+        "title": "Protecting Sensitive Locations Act",
+        "abstract": "Read twice and referred to the Committee on the Judiciary.",
+        "url": "https://api.congress.gov/v3/bill/119/s/455?format=json",
+        "pdf_url": "",
+        "published_date": "2026-02-06",
+        "document_type": "S 455",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "455",
+        "agencies": [],
+        "latest_action": "Read twice and referred to the Committee on the Judiciary.",
+        "latest_action_date": "2025-02-06",
+        "authority_weight": 0.8,
+        "relevance_score": 0.4265,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.8,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-6",
+        "title": "Born-Alive Abortion Survivors Protection Act",
+        "abstract": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 11. (CR S294-295)",
+        "url": "https://api.congress.gov/v3/bill/119/s/6?format=json",
+        "pdf_url": "",
+        "published_date": "2026-01-29",
+        "document_type": "S 6",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "6",
+        "agencies": [],
+        "latest_action": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 11. (CR S294-295)",
+        "latest_action_date": "2025-01-22",
+        "authority_weight": 0.8,
+        "relevance_score": 0.3965,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.6,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-272",
+        "title": "Protect Infant Formula from Contamination Act",
+        "abstract": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 306.",
+        "url": "https://api.congress.gov/v3/bill/119/s/272?format=json",
+        "pdf_url": "",
+        "published_date": "2026-01-31",
+        "document_type": "S 272",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "272",
+        "agencies": [],
+        "latest_action": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 306.",
+        "latest_action_date": "2026-01-28",
+        "authority_weight": 0.8,
+        "relevance_score": 0.3965,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.6,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "114-HR-3437",
+        "title": "Protecting American Lives Act",
+        "abstract": "Referred to the Subcommittee on Immigration and Border Security.",
+        "url": "https://api.congress.gov/v3/bill/114/hr/3437?format=json",
+        "pdf_url": "",
+        "published_date": "2026-01-27",
+        "document_type": "HR 3437",
+        "congress": 114,
+        "bill_type": "HR",
+        "bill_number": "3437",
+        "agencies": [],
+        "latest_action": "Referred to the Subcommittee on Immigration and Border Security.",
+        "latest_action_date": "2015-09-28",
+        "authority_weight": 0.8,
+        "relevance_score": 0.3965,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.6,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "114-HR-5851",
+        "title": "Refugee Protection Act of 2016",
+        "abstract": "Referred to the Subcommittee on Human Resources.",
+        "url": "https://api.congress.gov/v3/bill/114/hr/5851?format=json",
+        "pdf_url": "",
+        "published_date": "2026-01-27",
+        "document_type": "HR 5851",
+        "congress": 114,
+        "bill_type": "HR",
+        "bill_number": "5851",
+        "agencies": [],
+        "latest_action": "Referred to the Subcommittee on Human Resources.",
+        "latest_action_date": "2016-08-17",
+        "authority_weight": 0.8,
+        "relevance_score": 0.3965,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.6,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "113-HR-1365",
+        "title": "Refugee Protection Act of 2013",
+        "abstract": "Referred to the Subcommittee on Immigration And Border Security.",
+        "url": "https://api.congress.gov/v3/bill/113/hr/1365?format=json",
+        "pdf_url": "",
+        "published_date": "2026-01-27",
+        "document_type": "HR 1365",
+        "congress": 113,
+        "bill_type": "HR",
+        "bill_number": "1365",
+        "agencies": [],
+        "latest_action": "Referred to the Subcommittee on Immigration And Border Security.",
+        "latest_action_date": "2013-04-15",
+        "authority_weight": 0.8,
+        "relevance_score": 0.3965,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.6,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "113-HR-4711",
+        "title": "To establish a regulatory framework for the comprehensive protection of personal data for individuals under the aegis of the Federal Trade Commission, to amend the Children's Online Privacy Protection Act of 1998 to improve provisions relating to collection, use, and disclosure of personal information of children, and for other purposes.",
+        "abstract": "Referred to the Subcommittee on Commerce, Manufacturing, and Trade.",
+        "url": "https://api.congress.gov/v3/bill/113/hr/4711?format=json",
+        "pdf_url": "",
+        "published_date": "2026-01-27",
+        "document_type": "HR 4711",
+        "congress": 113,
+        "bill_type": "HR",
+        "bill_number": "4711",
+        "agencies": [],
+        "latest_action": "Referred to the Subcommittee on Commerce, Manufacturing, and Trade.",
+        "latest_action_date": "2014-05-23",
+        "authority_weight": 0.8,
+        "relevance_score": 0.3965,
+        "matched_programs": [
+          "dot_protect"
+        ],
+        "matched_program_names": [
+          "DOT PROTECT"
+        ],
+        "score_breakdown": {
+          "program_match": 0.533,
+          "tribal_keyword_density": 0.0,
+          "recency": 0.6,
+          "source_authority": 0.8,
+          "action_relevance": 0.0,
+          "critical_boost_applied": false,
+          "eligibility_override": false,
+          "subtype_boost": null
+        }
+      },
+      {
+        "source": "congress_gov",
+        "source_id": "119-S-446",
+        "title": "A bill to prohibit Big Cypress National Preserve from being designated as wilderness or as a component of the National Wilderness Preservation System, and for other purposes.",
+        "abstract": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably and an amendment to the title.",
+        "url": "https://api.congress.gov/v3/bill/119/s/446?format=json",
+        "pdf_url": "",
+        "published_date": "2026-02-05",
+        "document_type": "S 446",
+        "congress": 119,
+        "bill_type": "S",
+        "bill_number": "446",
+        "agencies": [],
+        "latest_action": "Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably and an amendment to the title.",
+        "latest_action_date": "2026-02-04",
+        "authority_weight": 0.8,
+        "relevance_score": 0.3122,
+        "matched_programs": [],
+        "matched_program_names": [],
+        "score_breakdown": {
+          "program_match": 0.0,
+          "tribal_keyword_density": 0.1887,
+          "recency": 0.8,
+          "source_authority": 0.8,
+          "action_relevance": 0.25,
+          "critical_boost_applied": false,
           "eligibility_override": false,
           "subtype_boost": null
         }
       }
     ],
     "updated_items": [],
-    "removed_items": [
-      {
-        "source_id": "fake-item-001",
-        "title": "Fake Test Item for Change Detection Validation"
-      }
-    ]
+    "removed_items": []
   },
   "knowledge_graph": {
     "nodes": {
@@ -6352,7 +7180,7 @@
       },
       "lever_epa_tribal_air": {
         "id": "lever_epa_tribal_air",
-        "description": "Protect Clean Air Act \u00c2\u00a7105 Tribal funding; link to climate co-benefits",
+        "description": "Protect Clean Air Act \u00a7105 Tribal funding; link to climate co-benefits",
         "target": "Agency",
         "action_verb": "",
         "urgency": "FY26",
@@ -6374,7 +7202,7 @@
       },
       "auth_ira_6417": {
         "id": "auth_ira_6417",
-        "citation": "Inflation Reduction Act \u00c2\u00a7 6417 (Elective Pay)",
+        "citation": "Inflation Reduction Act \u00a7 6417 (Elective Pay)",
         "authority_type": "Statute",
         "durability": "Permanent",
         "_type": "AuthorityNode"
@@ -6416,14 +7244,14 @@
       },
       "auth_protect_formula": {
         "id": "auth_protect_formula",
-        "citation": "IIJA \u00c2\u00a7 11405 (PROTECT Program)",
+        "citation": "IIJA \u00a7 11405 (PROTECT Program)",
         "authority_type": "Statute",
         "durability": "Expires FY26",
         "_type": "AuthorityNode"
       },
       "auth_iija_wildfire": {
         "id": "auth_iija_wildfire",
-        "citation": "IIJA \u00c2\u00a7 40803 (Community Wildfire Defense Grants)",
+        "citation": "IIJA \u00a7 40803 (Community Wildfire Defense Grants)",
         "authority_type": "Statute",
         "durability": "Expires when funds exhausted",
         "_type": "AuthorityNode"
@@ -6451,28 +7279,28 @@
       },
       "auth_reclamation_act": {
         "id": "auth_reclamation_act",
-        "citation": "SECURE Water Act (P.L. 111-11, \u00c2\u00a7 9504)",
+        "citation": "SECURE Water Act (P.L. 111-11, \u00a7 9504)",
         "authority_type": "Statute",
         "durability": "Permanent",
         "_type": "AuthorityNode"
       },
       "auth_ira_48e": {
         "id": "auth_ira_48e",
-        "citation": "IRA \u00c2\u00a7 48(e) (Low-Income Community Solar)",
+        "citation": "IRA \u00a7 48(e) (Low-Income Community Solar)",
         "authority_type": "Statute",
         "durability": "Expires 2032",
         "_type": "AuthorityNode"
       },
       "auth_ira_45_48": {
         "id": "auth_ira_45_48",
-        "citation": "IRA \u00c2\u00a7 45/48 (Production/Investment Tax Credits)",
+        "citation": "IRA \u00a7 45/48 (Production/Investment Tax Credits)",
         "authority_type": "Statute",
         "durability": "Expires 2032",
         "_type": "AuthorityNode"
       },
       "auth_caa_105": {
         "id": "auth_caa_105",
-        "citation": "Clean Air Act \u00c2\u00a7 105 (Tribal Air Quality)",
+        "citation": "Clean Air Act \u00a7 105 (Tribal Air Quality)",
         "authority_type": "Statute",
         "durability": "Permanent",
         "_type": "AuthorityNode"
@@ -6486,14 +7314,14 @@
       },
       "auth_iija_watersmart": {
         "id": "auth_iija_watersmart",
-        "citation": "IIJA \u00c2\u00a7 40901 (WaterSMART Enhancement)",
+        "citation": "IIJA \u00a7 40901 (WaterSMART Enhancement)",
         "authority_type": "Statute",
         "durability": "Expires FY26",
         "_type": "AuthorityNode"
       },
       "auth_snyder_act_tcr_awards": {
         "id": "auth_snyder_act_tcr_awards",
-        "citation": "Snyder Act (25 U.S.C. 13) \u00e2\u20ac\u201d TCR Annual Awards",
+        "citation": "Snyder Act (25 U.S.C. 13) \u2014 TCR Annual Awards",
         "authority_type": "Statute",
         "durability": "Permanent",
         "_type": "AuthorityNode"
@@ -6578,7 +7406,7 @@
       },
       "bar_plan_requirement": {
         "id": "bar_plan_requirement",
-        "description": "Tribal Hazard Mitigation Plan required for post-disaster funding (Stafford Act \u00c2\u00a7 322)",
+        "description": "Tribal Hazard Mitigation Plan required for post-disaster funding (Stafford Act \u00a7 322)",
         "barrier_type": "Statutory",
         "severity": "Med",
         "_type": "BarrierNode"
@@ -6613,7 +7441,7 @@
       },
       "bar_reconciliation_repeal": {
         "id": "bar_reconciliation_repeal",
-        "description": "IRA provisions (\u00c2\u00a76417 Elective Pay) subject to budget reconciliation repeal",
+        "description": "IRA provisions (\u00a76417 Elective Pay) subject to budget reconciliation repeal",
         "barrier_type": "Statutory",
         "severity": "High",
         "_type": "BarrierNode"
