@@ -45,8 +45,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md -- Add TERMINATED status tier, reconciliation keywords, BIA TCR Awards CFDA
-- [ ] 02-02-PLAN.md -- Five Structural Asks loading, Trust Super-Node, ADVANCES/TRUST_OBLIGATION edges
+- [x] 02-01-PLAN.md -- Add TERMINATED status tier, reconciliation keywords, BIA TCR Awards CFDA
+- [x] 02-02-PLAN.md -- Five Structural Asks loading, Trust Super-Node, ADVANCES/TRUST_OBLIGATION edges
 
 **Success Criteria:**
 
@@ -127,10 +127,10 @@ Unmapped: 0
 | Phase | Status | Plans | Completed |
 |-------|--------|-------|-----------|
 | 1 - Pipeline Validation | Complete (2026-02-09) | 2/2 | 01-01, 01-02 |
-| 2 - Data Model and Graph | In Progress | 0/2 | |
+| 2 - Data Model and Graph | Complete (2026-02-09) | 2/2 | 02-01, 02-02 |
 | 3 - Monitoring and Logic | Not Started | 0/2 | |
 | 4 - Report Enhancements | Not Started | 0/2 | |
 
 ---
 *Roadmap created: 2026-02-09*
-*Last updated: 2026-02-09 (Phase 2 planned)*
+*Last updated: 2026-02-09 (Phase 2 complete)*
