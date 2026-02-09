@@ -1,10 +1,22 @@
 {
   "policy_tracking_id": "FY26-TRIBAL-RESILIENCE-001",
   "last_updated": "2026-02-09",
+  "hot_sheets_sync_date": "2026-02-09",
   "ci_thresholds": {
-    "stable": 0.85,
-    "at_risk_floor": 0.50,
+    "secure": 0.90,
+    "stable": 0.75,
+    "stable_but_vulnerable": 0.65,
+    "at_risk_floor": 0.40,
+    "uncertain_floor": 0.25,
     "flagged_floor": 0.0
+  },
+  "status_definitions": {
+    "SECURE": "Statutory set-aside or permanent authorization; minimal annual risk",
+    "STABLE": "Funded and active; subject to normal appropriations process",
+    "STABLE_BUT_VULNERABLE": "Active but exposed to executive/legislative restructuring",
+    "AT_RISK": "Facing specific threat; advocacy action required",
+    "UNCERTAIN": "Structural ambiguity; agency reorganization or unclear reauth path",
+    "FLAGGED": "Terminated, zeroed out, or requires specialist intervention"
   },
   "positions": [
     {
@@ -19,6 +31,18 @@
         "fy26_funding": "$34.291M",
         "scanner_trigger_keywords": ["BIA climate", "TCR program", "annual award"],
         "tightened_language": "Protect the $34.291M base funding line as a floor, ensuring non-competitive, direct-access pathways for Tribes to bypass administrative bottlenecks inherent in discretionary grant cycles."
+      }
+    },
+    {
+      "program_id": "bia_tcr_awards",
+      "program_name": "Tribal Community Resilience Annual Awards",
+      "agency": "BIA",
+      "confidence_index": 0.85,
+      "status": "STABLE",
+      "reasoning": "Established BIA program tied to TCR appropriations line. Stable under current Interior budget.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["community resilience awards", "TCR awards", "annual awards"]
       }
     },
     {
@@ -41,13 +65,14 @@
       "program_id": "irs_elective_pay",
       "program_name": "IRS Elective Pay",
       "agency": "Treasury/IRS",
-      "confidence_index": 0.92,
-      "status": "STABLE",
-      "reasoning": "Final regulations (Jan 2026) confirm Tribal instrumentalities as applicable entities under Section 6417.",
+      "confidence_index": 0.55,
+      "status": "AT_RISK",
+      "reasoning": "Final regulations (Jan 2026) confirm Tribal instrumentalities, but IRA §6417 faces active reconciliation repeal threat. Bipartisan defense coalition needed.",
       "extensible_fields": {
         "advocacy_priority": "Critical",
         "final_rule_date": "2026-01",
-        "scanner_trigger_keywords": ["elective pay", "6417", "tribal instrumentality", "direct pay"],
+        "threat_vector": "Budget reconciliation repeal of IRA provisions",
+        "scanner_trigger_keywords": ["elective pay", "6417", "tribal instrumentality", "direct pay", "reconciliation", "IRA repeal"],
         "tightened_language": "Maintain the January 2026 final rule status of Tribal instrumentalities (Section 17/Section 3 corps) to ensure liquidity for Tribal energy projects without the need for tax-equity partners."
       }
     },
@@ -57,10 +82,34 @@
       "agency": "EPA",
       "confidence_index": 0.90,
       "status": "STABLE",
-      "reasoning": "IIJA-funded supplemental lines (Lead/PFAS) remain active through FY26.",
+      "reasoning": "IIJA-funded supplemental lines (Lead/PFAS) remain active through FY26. Baseline program under CWA/SDWA is permanent.",
       "extensible_fields": {
         "advocacy_priority": "High",
         "scanner_trigger_keywords": ["STAG", "DWIG-TSA", "tribal capitalization", "lead service line"]
+      }
+    },
+    {
+      "program_id": "epa_gap",
+      "program_name": "EPA GAP",
+      "agency": "EPA",
+      "confidence_index": 0.80,
+      "status": "STABLE",
+      "reasoning": "Established program under Indian Environmental GAP Act of 1992. Annual appropriations; stable baseline.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["GAP", "general assistance program", "tribal environmental capacity"]
+      }
+    },
+    {
+      "program_id": "epa_tribal_air",
+      "program_name": "Tribal Air Quality Management",
+      "agency": "EPA",
+      "confidence_index": 0.82,
+      "status": "STABLE",
+      "reasoning": "Permanent authorization under Clean Air Act §105. Stable baseline appropriations.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["tribal air quality", "Clean Air Act", "section 105"]
       }
     },
     {
@@ -80,9 +129,9 @@
       "program_id": "dot_protect",
       "program_name": "DOT PROTECT Grants",
       "agency": "DOT",
-      "confidence_index": 0.86,
-      "status": "STABLE",
-      "reasoning": "Tribal set-aside (2%) is statutorily protected through FY26.",
+      "confidence_index": 0.93,
+      "status": "SECURE",
+      "reasoning": "Tribal set-aside (2%) is statutorily protected under IIJA §11405. Not subject to annual appropriations volatility.",
       "extensible_fields": {
         "advocacy_priority": "High",
         "tribal_set_aside": "2%",
@@ -95,11 +144,83 @@
       "agency": "USDA/USFS",
       "confidence_index": 0.78,
       "status": "STABLE_BUT_VULNERABLE",
-      "reasoning": "High tribal participation but subject to Forest Management reforms (EO 14225).",
+      "reasoning": "High Tribal participation but subject to Forest Management reforms (EO 14225). IIJA funding expires when exhausted.",
       "extensible_fields": {
         "advocacy_priority": "Medium",
         "scanner_trigger_keywords": ["CWDG", "Hazardous Fuels", "Match Waiver"],
         "proposed_fix": "Codify Tribal match waivers in FY26 Interior Approps."
+      }
+    },
+    {
+      "program_id": "doe_indian_energy",
+      "program_name": "DOE Indian Energy",
+      "agency": "DOE",
+      "confidence_index": 0.55,
+      "status": "UNCERTAIN",
+      "reasoning": "Active program but DOE reorganization and IRA implementation uncertainty create structural ambiguity.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["indian energy", "tribal energy", "DOE reorganization"]
+      }
+    },
+    {
+      "program_id": "hud_ihbg",
+      "program_name": "HUD IHBG",
+      "agency": "HUD",
+      "confidence_index": 0.85,
+      "status": "STABLE",
+      "reasoning": "Established formula program under NAHASDA. Reauthorization pending but baseline funding stable.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["IHBG", "NAHASDA", "tribal housing"]
+      }
+    },
+    {
+      "program_id": "noaa_tribal",
+      "program_name": "NOAA Tribal Grants",
+      "agency": "NOAA",
+      "confidence_index": 0.50,
+      "status": "UNCERTAIN",
+      "reasoning": "NOAA climate programs face potential restructuring. Tribal-specific lines not well-protected in appropriations.",
+      "extensible_fields": {
+        "advocacy_priority": "High",
+        "scanner_trigger_keywords": ["NOAA tribal", "coastal resilience", "climate adaptation NOAA"]
+      }
+    },
+    {
+      "program_id": "fhwa_ttp_safety",
+      "program_name": "FHWA TTP Safety",
+      "agency": "FHWA",
+      "confidence_index": 0.85,
+      "status": "STABLE",
+      "reasoning": "Formula-based under 23 U.S.C. 202. Stable statutory authorization.",
+      "extensible_fields": {
+        "advocacy_priority": "Medium",
+        "scanner_trigger_keywords": ["TTP", "tribal transportation", "FHWA tribal"]
+      }
+    },
+    {
+      "program_id": "usbr_watersmart",
+      "program_name": "USBR WaterSMART",
+      "agency": "Reclamation",
+      "confidence_index": 0.60,
+      "status": "UNCERTAIN",
+      "reasoning": "IIJA supplemental funding expires FY26. Baseline reauthorization path unclear.",
+      "extensible_fields": {
+        "advocacy_priority": "Medium",
+        "scanner_trigger_keywords": ["WaterSMART", "drought", "water conservation tribal"]
+      }
+    },
+    {
+      "program_id": "usbr_tap",
+      "program_name": "USBR TAP",
+      "agency": "Reclamation",
+      "confidence_index": 0.75,
+      "status": "STABLE",
+      "reasoning": "Technical assistance program tied to WaterSMART. Stable but dependent on parent program reauthorization.",
+      "extensible_fields": {
+        "advocacy_priority": "Medium",
+        "scanner_trigger_keywords": ["TAP", "reclamation TA", "technical assistance"]
       }
     }
   ]

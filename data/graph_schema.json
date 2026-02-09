@@ -97,6 +97,48 @@
       "type": "Statute",
       "durability": "Permanent",
       "programs": ["usbr_watersmart", "usbr_tap"]
+    },
+    {
+      "id": "auth_ira_48e",
+      "citation": "IRA § 48(e) (Low-Income Community Solar)",
+      "type": "Statute",
+      "durability": "Expires 2032",
+      "programs": ["irs_elective_pay"]
+    },
+    {
+      "id": "auth_ira_45_48",
+      "citation": "IRA § 45/48 (Production/Investment Tax Credits)",
+      "type": "Statute",
+      "durability": "Expires 2032",
+      "programs": ["irs_elective_pay"]
+    },
+    {
+      "id": "auth_caa_105",
+      "citation": "Clean Air Act § 105 (Tribal Air Quality)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["epa_tribal_air"]
+    },
+    {
+      "id": "auth_indian_environmental_gap",
+      "citation": "Indian Environmental General Assistance Program Act of 1992",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["epa_gap"]
+    },
+    {
+      "id": "auth_iija_watersmart",
+      "citation": "IIJA § 40901 (WaterSMART Enhancement)",
+      "type": "Statute",
+      "durability": "Expires FY26",
+      "programs": ["usbr_watersmart"]
+    },
+    {
+      "id": "auth_snyder_act_tcr_awards",
+      "citation": "Snyder Act (25 U.S.C. 13) — TCR Annual Awards",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["bia_tcr_awards"]
     }
   ],
   "funding_vehicles": [
@@ -220,7 +262,102 @@
       "type": "Statutory",
       "severity": "High",
       "programs": ["bia_tcr", "doe_indian_energy", "noaa_tribal", "epa_gap"],
-      "mitigated_by": ["lever_bia_tcr"]
+      "mitigated_by": ["lever_bia_tcr", "ask_multi_year"]
+    },
+    {
+      "id": "bar_reconciliation_repeal",
+      "description": "IRA provisions (§6417 Elective Pay) subject to budget reconciliation repeal",
+      "type": "Statutory",
+      "severity": "High",
+      "programs": ["irs_elective_pay"],
+      "mitigated_by": ["lever_irs_elective_pay"]
+    },
+    {
+      "id": "bar_iija_sunset",
+      "description": "IIJA supplemental funding expires end of FY26; no reauthorization bill yet introduced",
+      "type": "Statutory",
+      "severity": "High",
+      "programs": ["epa_stag", "dot_protect", "usbr_watersmart", "usda_wildfire"],
+      "mitigated_by": ["ask_multi_year"]
+    },
+    {
+      "id": "bar_agency_capacity",
+      "description": "Tribal set-aside administrative capacity at agencies insufficient for demand",
+      "type": "Administrative",
+      "severity": "Med",
+      "programs": ["dot_protect", "epa_stag"],
+      "mitigated_by": ["ask_direct_access"]
+    },
+    {
+      "id": "bar_reauthorization_gap",
+      "description": "NAHASDA reauthorization uncertainty creates long-term program risk",
+      "type": "Statutory",
+      "severity": "Med",
+      "programs": ["hud_ihbg"],
+      "mitigated_by": ["ask_multi_year"]
+    },
+    {
+      "id": "bar_data_sovereignty",
+      "description": "Federal data reporting requirements conflict with Tribal data sovereignty principles",
+      "type": "Administrative",
+      "severity": "Med",
+      "programs": ["bia_tcr", "epa_gap", "epa_stag", "noaa_tribal"],
+      "mitigated_by": ["ask_data_sovereignty"]
+    },
+    {
+      "id": "bar_match_burden",
+      "description": "Cost-share/match requirements across multiple programs disproportionately burden Tribes",
+      "type": "Administrative",
+      "severity": "High",
+      "programs": ["usda_wildfire", "usbr_watersmart", "fema_tribal_mitigation"],
+      "mitigated_by": ["ask_match_waivers"]
+    }
+  ],
+  "structural_asks": [
+    {
+      "id": "ask_multi_year",
+      "name": "Multi-Year Funding Stability",
+      "description": "Shift from annual discretionary to multi-year or permanent authorization for core Tribal climate programs",
+      "target": "Congress",
+      "urgency": "FY26",
+      "mitigates": ["bar_appropriations_volatility", "bar_iija_sunset", "bar_reauthorization_gap"],
+      "programs": ["bia_tcr", "epa_gap", "doe_indian_energy", "noaa_tribal", "epa_stag", "dot_protect", "usbr_watersmart", "usda_wildfire", "hud_ihbg"]
+    },
+    {
+      "id": "ask_match_waivers",
+      "name": "Match/Cost-Share Waivers",
+      "description": "Categorical Tribal exemptions from cost-share requirements based on trust responsibility",
+      "target": "Congress",
+      "urgency": "Immediate",
+      "mitigates": ["bar_cost_share", "bar_match_burden"],
+      "programs": ["usda_wildfire", "usbr_watersmart", "fema_tribal_mitigation", "fema_bric"]
+    },
+    {
+      "id": "ask_direct_access",
+      "name": "Direct Tribal Access",
+      "description": "Non-competitive, formula-based, or direct-service pathways that bypass state pass-through bottlenecks",
+      "target": "Agency",
+      "urgency": "FY26",
+      "mitigates": ["bar_competitive_only", "bar_agency_capacity"],
+      "programs": ["bia_tcr", "dot_protect", "usbr_watersmart", "epa_stag"]
+    },
+    {
+      "id": "ask_consultation",
+      "name": "Tribal Consultation Compliance",
+      "description": "Enforceable consultation requirements (EO 13175) with reporting accountability",
+      "target": "Agency",
+      "urgency": "Ongoing",
+      "mitigates": ["bar_plan_requirement"],
+      "programs": ["fema_tribal_mitigation", "bia_tcr", "epa_gap", "epa_tribal_air"]
+    },
+    {
+      "id": "ask_data_sovereignty",
+      "name": "Data Sovereignty & Capacity",
+      "description": "Tribal control over climate/environmental data with federal TA funding for data infrastructure",
+      "target": "Congress",
+      "urgency": "FY26",
+      "mitigates": ["bar_data_sovereignty"],
+      "programs": ["bia_tcr", "epa_gap", "epa_stag", "noaa_tribal", "epa_tribal_air"]
     }
   ]
 }

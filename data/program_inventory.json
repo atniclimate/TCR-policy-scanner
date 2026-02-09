@@ -37,14 +37,15 @@
       "agency": "Treasury/IRS",
       "federal_home": "Department of the Treasury / IRS",
       "priority": "critical",
-      "keywords": ["elective pay", "direct pay", "tax credit", "clean energy credit", "6417", "tribal instrumentality"],
-      "search_queries": ["IRS elective pay tribal", "direct pay clean energy tribal"],
-      "advocacy_lever": "Ensure stability and Tribal instrumentality access",
-      "description": "IRA provision allowing Tribes to receive clean energy tax credits as direct payments.",
-      "confidence_index": 0.92,
-      "ci_status": "STABLE",
-      "ci_determination": "Final regulations (Jan 2026) confirm Tribal instrumentalities as applicable entities.",
-      "tightened_language": "Maintain the January 2026 final rule status of Tribal instrumentalities (Section 17/Section 3 corps) to ensure liquidity for Tribal energy projects without the need for tax-equity partners."
+      "keywords": ["elective pay", "direct pay", "tax credit", "clean energy credit", "6417", "tribal instrumentality", "reconciliation", "IRA repeal"],
+      "search_queries": ["IRS elective pay tribal", "direct pay clean energy tribal", "reconciliation IRA tribal"],
+      "advocacy_lever": "Defend against reconciliation repeal; protect Tribal instrumentality access",
+      "description": "IRA provision allowing Tribes to receive clean energy tax credits as direct payments. Subject to reconciliation repeal threat.",
+      "confidence_index": 0.55,
+      "ci_status": "AT_RISK",
+      "ci_determination": "Final regulations (Jan 2026) confirm Tribal instrumentalities, but IRA §6417 faces active reconciliation repeal threat. Bipartisan defense coalition needed.",
+      "tightened_language": "Maintain the January 2026 final rule status of Tribal instrumentalities (Section 17/Section 3 corps) to ensure liquidity for Tribal energy projects without the need for tax-equity partners.",
+      "scanner_trigger_keywords": ["elective pay repeal", "reconciliation", "Section 6417", "IRA repeal", "direct pay termination"]
     },
     {
       "id": "epa_stag",
@@ -69,7 +70,10 @@
       "keywords": ["general assistance program", "GAP", "EPA GAP", "tribal environmental", "capacity building"],
       "search_queries": ["EPA general assistance program tribal", "EPA GAP tribal"],
       "advocacy_lever": "Increase funding; link to climate resilience readiness",
-      "description": "EPA General Assistance Program providing base environmental capacity to Tribes."
+      "description": "EPA General Assistance Program providing base environmental capacity to Tribes.",
+      "confidence_index": 0.80,
+      "ci_status": "STABLE",
+      "ci_determination": "Established program under Indian Environmental GAP Act of 1992. Annual appropriations; stable baseline."
     },
     {
       "id": "fema_tribal_mitigation",
@@ -96,10 +100,10 @@
       "keywords": ["PROTECT", "promoting resilient operations", "transportation resilience", "DOT resilience"],
       "search_queries": ["DOT PROTECT tribal", "transportation resilience tribal"],
       "advocacy_lever": "Maintain/expand Tribal set-aside",
-      "description": "DOT program for resilience improvements to surface transportation.",
-      "confidence_index": 0.86,
-      "ci_status": "STABLE",
-      "ci_determination": "Tribal set-aside (2%) is statutorily protected through FY26."
+      "description": "DOT program for resilience improvements to surface transportation. Statutory Tribal set-aside provides durable protection.",
+      "confidence_index": 0.93,
+      "ci_status": "SECURE",
+      "ci_determination": "Tribal set-aside (2%) is statutorily protected under IIJA §11405. Not subject to annual appropriations volatility."
     },
     {
       "id": "usda_wildfire",
@@ -126,7 +130,10 @@
       "keywords": ["indian energy", "tribal energy", "DOE tribal", "office of indian energy", "energy development"],
       "search_queries": ["DOE indian energy tribal", "department energy tribal"],
       "advocacy_lever": "Protect FY26 appropriations; reduce burden",
-      "description": "DOE Office of Indian Energy programs for Tribal energy development."
+      "description": "DOE Office of Indian Energy programs for Tribal energy development.",
+      "confidence_index": 0.55,
+      "ci_status": "UNCERTAIN",
+      "ci_determination": "Active program but DOE reorganization and IRA implementation uncertainty create structural ambiguity."
     },
     {
       "id": "hud_ihbg",
@@ -137,7 +144,10 @@
       "keywords": ["IHBG", "indian housing block grant", "NAHASDA", "tribal housing", "HUD tribal"],
       "search_queries": ["HUD IHBG tribal", "indian housing block grant"],
       "advocacy_lever": "Frame resilient housing as trust responsibility",
-      "description": "HUD Indian Housing Block Grant program under NAHASDA."
+      "description": "HUD Indian Housing Block Grant program under NAHASDA.",
+      "confidence_index": 0.85,
+      "ci_status": "STABLE",
+      "ci_determination": "Established formula program under NAHASDA. Reauthorization pending but baseline funding stable."
     },
     {
       "id": "noaa_tribal",
@@ -148,7 +158,10 @@
       "keywords": ["NOAA tribal", "coastal resilience", "climate adaptation", "NOAA grant", "marine fisheries tribal"],
       "search_queries": ["NOAA tribal grant", "NOAA coastal resilience tribal"],
       "advocacy_lever": "Protect climate/coastal functions in appropriations",
-      "description": "NOAA programs supporting Tribal climate and coastal resilience."
+      "description": "NOAA programs supporting Tribal climate and coastal resilience.",
+      "confidence_index": 0.50,
+      "ci_status": "UNCERTAIN",
+      "ci_determination": "NOAA climate programs face potential restructuring. Tribal-specific lines not well-protected in appropriations."
     },
     {
       "id": "fhwa_ttp_safety",
@@ -159,7 +172,10 @@
       "keywords": ["tribal transportation", "TTP", "tribal safety", "FHWA tribal", "transportation program"],
       "search_queries": ["FHWA tribal transportation safety", "TTP tribal safety"],
       "advocacy_lever": "Increase Tribal formula/discretionary resilience",
-      "description": "FHWA Tribal Transportation Program safety funding."
+      "description": "FHWA Tribal Transportation Program safety funding.",
+      "confidence_index": 0.85,
+      "ci_status": "STABLE",
+      "ci_determination": "Formula-based under 23 U.S.C. 202. Stable statutory authorization."
     },
     {
       "id": "usbr_watersmart",
@@ -170,7 +186,10 @@
       "keywords": ["WaterSMART", "water conservation", "drought", "reclamation tribal", "water efficiency"],
       "search_queries": ["WaterSMART tribal", "bureau reclamation tribal drought"],
       "advocacy_lever": "Expand Tribal drought access; lower match",
-      "description": "Bureau of Reclamation WaterSMART grants for water conservation and drought resilience."
+      "description": "Bureau of Reclamation WaterSMART grants for water conservation and drought resilience.",
+      "confidence_index": 0.60,
+      "ci_status": "UNCERTAIN",
+      "ci_determination": "IIJA supplemental funding expires FY26. Baseline reauthorization path unclear."
     },
     {
       "id": "usbr_tap",
@@ -181,7 +200,39 @@
       "keywords": ["technical assistance program", "TAP", "reclamation TA", "pre-award"],
       "search_queries": ["bureau reclamation technical assistance tribal", "reclamation TAP tribal"],
       "advocacy_lever": "Link TA to pre-award support",
-      "description": "Bureau of Reclamation Technical Assistance Program."
+      "description": "Bureau of Reclamation Technical Assistance Program.",
+      "confidence_index": 0.75,
+      "ci_status": "STABLE",
+      "ci_determination": "Technical assistance program tied to WaterSMART. Stable but dependent on parent program reauthorization."
+    },
+    {
+      "id": "bia_tcr_awards",
+      "name": "Tribal Community Resilience Annual Awards",
+      "agency": "BIA",
+      "federal_home": "Bureau of Indian Affairs",
+      "priority": "high",
+      "keywords": ["community resilience", "annual awards", "BIA resilience", "tribal community resilience", "TCR awards"],
+      "search_queries": ["BIA tribal community resilience annual awards", "tribal community resilience awards"],
+      "advocacy_lever": "Protect award program; ensure multi-year planning capacity",
+      "description": "BIA annual awards program for Tribal community resilience projects. Complements the core TCR program with implementation funding.",
+      "confidence_index": 0.85,
+      "ci_status": "STABLE",
+      "ci_determination": "Established BIA program tied to TCR appropriations line. Stable under current Interior budget.",
+      "cfda": "15.124"
+    },
+    {
+      "id": "epa_tribal_air",
+      "name": "Tribal Air Quality Management",
+      "agency": "EPA",
+      "federal_home": "Environmental Protection Agency",
+      "priority": "high",
+      "keywords": ["tribal air quality", "air quality management", "Clean Air Act", "EPA air tribal", "section 105"],
+      "search_queries": ["EPA tribal air quality management", "Clean Air Act tribal"],
+      "advocacy_lever": "Protect Clean Air Act §105 Tribal funding; link to climate co-benefits",
+      "description": "EPA program supporting Tribal air quality monitoring and management under Clean Air Act §105.",
+      "confidence_index": 0.82,
+      "ci_status": "STABLE",
+      "ci_determination": "Permanent authorization under Clean Air Act §105. Stable baseline appropriations."
     }
   ]
 }
