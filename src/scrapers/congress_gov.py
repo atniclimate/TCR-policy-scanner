@@ -2,6 +2,10 @@
 
 Collects bills, resolutions, and committee reports related to Tribal climate
 resilience from the Congress.gov API (requires free API key).
+
+Integration strategy: filters for 119th Congress, searches for Tribal AND
+(Resilience OR Climate OR Adaptation). Populates FundingVehicle nodes
+(amounts, dates) and detects legislative actions.
 """
 
 import asyncio
@@ -13,6 +17,21 @@ from urllib.parse import urlencode
 import aiohttp
 
 logger = logging.getLogger(__name__)
+
+# Targeted legislative queries per the spec
+LEGISLATIVE_QUERIES = [
+    {"term": "tribal resilience", "type": "hr"},
+    {"term": "tribal climate", "type": "hr"},
+    {"term": "tribal adaptation", "type": "hr"},
+    {"term": "indian tribe climate", "type": "hr"},
+    {"term": "tribal resilience", "type": "s"},
+    {"term": "tribal climate", "type": "s"},
+    {"term": "tribal adaptation", "type": "s"},
+    {"term": "tribal hazard mitigation", "type": "hr"},
+    {"term": "tribal hazard mitigation", "type": "s"},
+    {"term": "tribal energy", "type": "hr"},
+    {"term": "tribal energy", "type": "s"},
+]
 
 
 class CongressGovScraper:
@@ -27,31 +46,78 @@ class CongressGovScraper:
         self.scan_window = config.get("scan_window_days", 14)
 
     async def scan(self) -> list[dict]:
-        """Run all search queries against Congress.gov."""
+        """Run targeted + broad queries against Congress.gov."""
         if not self.api_key:
             logger.warning("Congress.gov: CONGRESS_API_KEY not set, skipping")
             return []
 
         all_items = []
-        seen_urls = set()
+        seen_keys = set()
 
         async with aiohttp.ClientSession() as session:
+            # Targeted 119th Congress queries by bill type
+            for lq in LEGISLATIVE_QUERIES:
+                try:
+                    items = await self._search_congress(
+                        session, lq["term"], bill_type=lq["type"], congress=119
+                    )
+                    for item in items:
+                        key = item["source_id"]
+                        if key not in seen_keys:
+                            seen_keys.add(key)
+                            all_items.append(item)
+                except Exception:
+                    logger.exception(
+                        "Error searching Congress.gov for '%s' (%s)",
+                        lq["term"], lq["type"],
+                    )
+                await asyncio.sleep(0.3)
+
+            # Broad keyword queries
             for query in self.search_queries:
                 try:
                     items = await self._search(session, query)
                     for item in items:
-                        if item["url"] not in seen_urls:
-                            seen_urls.add(item["url"])
+                        key = item["source_id"]
+                        if key not in seen_keys:
+                            seen_keys.add(key)
                             all_items.append(item)
                 except Exception:
                     logger.exception("Error searching Congress.gov for '%s'", query)
-                await asyncio.sleep(0.5)
+                await asyncio.sleep(0.3)
 
         logger.info("Congress.gov: collected %d unique items", len(all_items))
         return all_items
 
+    async def _search_congress(
+        self, session: aiohttp.ClientSession, term: str,
+        bill_type: str = "", congress: int = 119,
+    ) -> list[dict]:
+        """Search for bills in a specific Congress and bill type."""
+        from_date = (datetime.utcnow() - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
+        params = {
+            "query": term,
+            "fromDateTime": from_date,
+            "sort": "updateDate+desc",
+            "limit": 50,
+            "api_key": self.api_key,
+        }
+
+        # Congress-specific bill endpoint
+        endpoint = f"{self.base_url}/bill/{congress}"
+        if bill_type:
+            endpoint = f"{endpoint}/{bill_type}"
+        url = f"{endpoint}?{urlencode(params)}"
+
+        async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
+            resp.raise_for_status()
+            data = await resp.json()
+
+        bills = data.get("bills", [])
+        return [self._normalize(bill) for bill in bills]
+
     async def _search(self, session: aiohttp.ClientSession, query: str) -> list[dict]:
-        """Execute a single search query against the bill endpoint."""
+        """Execute a broad search query against the bill endpoint."""
         from_date = (datetime.utcnow() - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
         params = {
             "query": query,
@@ -86,6 +152,9 @@ class CongressGovScraper:
             "pdf_url": "",
             "published_date": item.get("updateDate", ""),
             "document_type": f"{bill_type} {bill_number}",
+            "congress": congress,
+            "bill_type": bill_type,
+            "bill_number": bill_number,
             "agencies": [],
             "latest_action": latest_action.get("text", ""),
             "latest_action_date": latest_action.get("actionDate", ""),

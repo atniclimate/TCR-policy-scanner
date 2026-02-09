@@ -1,0 +1,226 @@
+{
+  "authorities": [
+    {
+      "id": "auth_stafford_act",
+      "citation": "Stafford Act (42 U.S.C. 5121 et seq.)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["fema_bric", "fema_tribal_mitigation"]
+    },
+    {
+      "id": "auth_snyder_act",
+      "citation": "Snyder Act (25 U.S.C. 13)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["bia_tcr"]
+    },
+    {
+      "id": "auth_ira_6417",
+      "citation": "Inflation Reduction Act § 6417 (Elective Pay)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["irs_elective_pay"]
+    },
+    {
+      "id": "auth_iija",
+      "citation": "Infrastructure Investment and Jobs Act (IIJA/BIL)",
+      "type": "Statute",
+      "durability": "Expires FY26",
+      "programs": ["epa_stag", "fema_bric", "dot_protect", "usbr_watersmart"]
+    },
+    {
+      "id": "auth_nahasda",
+      "citation": "Native American Housing Assistance and Self-Determination Act (NAHASDA)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["hud_ihbg"]
+    },
+    {
+      "id": "auth_isdeaa",
+      "citation": "Indian Self-Determination and Education Assistance Act (25 U.S.C. 5301)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["bia_tcr", "epa_gap"]
+    },
+    {
+      "id": "auth_clean_water_act",
+      "citation": "Clean Water Act / Safe Drinking Water Act",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["epa_stag"]
+    },
+    {
+      "id": "auth_energy_policy_act",
+      "citation": "Energy Policy Act of 2005, Title V",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["doe_indian_energy"]
+    },
+    {
+      "id": "auth_protect_formula",
+      "citation": "IIJA § 11405 (PROTECT Program)",
+      "type": "Statute",
+      "durability": "Expires FY26",
+      "programs": ["dot_protect"]
+    },
+    {
+      "id": "auth_iija_wildfire",
+      "citation": "IIJA § 40803 (Community Wildfire Defense Grants)",
+      "type": "Statute",
+      "durability": "Expires when funds exhausted",
+      "programs": ["usda_wildfire"]
+    },
+    {
+      "id": "auth_eo_14225",
+      "citation": "Executive Order 14225 (Forest Management)",
+      "type": "Guidance",
+      "durability": "Executive discretion",
+      "programs": ["usda_wildfire"]
+    },
+    {
+      "id": "auth_magnuson_stevens",
+      "citation": "Magnuson-Stevens Fishery Conservation and Management Act",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["noaa_tribal"]
+    },
+    {
+      "id": "auth_ttp_statute",
+      "citation": "23 U.S.C. 202 (Tribal Transportation Program)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["fhwa_ttp_safety"]
+    },
+    {
+      "id": "auth_reclamation_act",
+      "citation": "SECURE Water Act (P.L. 111-11, § 9504)",
+      "type": "Statute",
+      "durability": "Permanent",
+      "programs": ["usbr_watersmart", "usbr_tap"]
+    }
+  ],
+  "funding_vehicles": [
+    {
+      "id": "fv_fy26_interior_approps",
+      "name": "FY26 Interior/Environment Appropriations",
+      "amount": 34291000,
+      "fiscal_year": "FY26",
+      "type": "Discretionary",
+      "programs": ["bia_tcr"]
+    },
+    {
+      "id": "fv_iija_bric",
+      "name": "IIJA BRIC Allocation (unobligated returned)",
+      "amount": 0,
+      "fiscal_year": "FY24-FY26",
+      "type": "One-Time",
+      "programs": ["fema_bric"]
+    },
+    {
+      "id": "fv_ira_elective_pay",
+      "name": "IRA Elective Pay (uncapped)",
+      "amount": 0,
+      "fiscal_year": "FY23-FY32",
+      "type": "Mandatory",
+      "programs": ["irs_elective_pay"]
+    },
+    {
+      "id": "fv_iija_srf",
+      "name": "IIJA Supplemental SRF (Lead/PFAS/Emerging Contaminants)",
+      "amount": 0,
+      "fiscal_year": "FY22-FY26",
+      "type": "One-Time",
+      "programs": ["epa_stag"]
+    },
+    {
+      "id": "fv_ihbg_annual",
+      "name": "IHBG Annual Formula Allocation",
+      "amount": 0,
+      "fiscal_year": "FY26",
+      "type": "Discretionary",
+      "programs": ["hud_ihbg"]
+    },
+    {
+      "id": "fv_iija_protect",
+      "name": "IIJA PROTECT Formula + Competitive",
+      "amount": 0,
+      "fiscal_year": "FY22-FY26",
+      "type": "Discretionary",
+      "programs": ["dot_protect"]
+    },
+    {
+      "id": "fv_iija_cwdg",
+      "name": "IIJA Community Wildfire Defense Grants",
+      "amount": 0,
+      "fiscal_year": "FY22-FY26",
+      "type": "One-Time",
+      "programs": ["usda_wildfire"]
+    },
+    {
+      "id": "fv_ttp_formula",
+      "name": "Tribal Transportation Program Formula",
+      "amount": 0,
+      "fiscal_year": "FY26",
+      "type": "Discretionary",
+      "programs": ["fhwa_ttp_safety"]
+    }
+  ],
+  "barriers": [
+    {
+      "id": "bar_bric_terminated",
+      "description": "BRIC program terminated April 2025; no FY24/25 cycle; ~$882M unobligated IIJA funds returned to Treasury",
+      "type": "Statutory",
+      "severity": "High",
+      "programs": ["fema_bric"],
+      "mitigated_by": ["lever_fema_bric"]
+    },
+    {
+      "id": "bar_cost_share",
+      "description": "Cost share / match requirements (25-50%) create barriers for under-resourced Tribes",
+      "type": "Administrative",
+      "severity": "High",
+      "programs": ["fema_bric", "usda_wildfire", "usbr_watersmart"],
+      "mitigated_by": ["lever_usda_wildfire", "lever_usbr_watersmart"]
+    },
+    {
+      "id": "bar_plan_requirement",
+      "description": "Tribal Hazard Mitigation Plan required for post-disaster funding (Stafford Act § 322)",
+      "type": "Statutory",
+      "severity": "Med",
+      "programs": ["fema_tribal_mitigation", "fema_bric"],
+      "mitigated_by": ["lever_fema_tribal_mitigation"]
+    },
+    {
+      "id": "bar_instrumentality_ambiguity",
+      "description": "Tribal instrumentality definition for elective pay requires legal clarity",
+      "type": "Administrative",
+      "severity": "Med",
+      "programs": ["irs_elective_pay"],
+      "mitigated_by": ["lever_irs_elective_pay"]
+    },
+    {
+      "id": "bar_competitive_only",
+      "description": "Competitive-only programs disadvantage Tribes without grant-writing capacity",
+      "type": "Administrative",
+      "severity": "Med",
+      "programs": ["dot_protect", "usbr_watersmart"],
+      "mitigated_by": ["lever_usbr_tap"]
+    },
+    {
+      "id": "bar_eo14225_reform",
+      "description": "Executive Order 14225 forest management reforms may restructure CWDG eligibility",
+      "type": "Statutory",
+      "severity": "Med",
+      "programs": ["usda_wildfire"],
+      "mitigated_by": ["lever_usda_wildfire"]
+    },
+    {
+      "id": "bar_appropriations_volatility",
+      "description": "Annual appropriations volatility creates year-to-year uncertainty for Tribal programs",
+      "type": "Statutory",
+      "severity": "High",
+      "programs": ["bia_tcr", "doe_indian_energy", "noaa_tribal", "epa_gap"],
+      "mitigated_by": ["lever_bia_tcr"]
+    }
+  ]
+}

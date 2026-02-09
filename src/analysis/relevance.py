@@ -41,7 +41,7 @@ class RelevanceScorer:
         """Compute the composite relevance score for a single item."""
         text = f"{item.get('title', '')} {item.get('abstract', '')}".lower()
 
-        program_score, matched_programs = self._program_match(text)
+        program_score, matched_programs = self._program_match(text, item)
         keyword_score = self._tribal_keyword_density(text)
         recency_score = self._recency(item.get("published_date", ""))
         authority_score = item.get("authority_weight", 0.5)
@@ -77,12 +77,27 @@ class RelevanceScorer:
         })
         return item_scored
 
-    def _program_match(self, text: str) -> tuple[float, list[dict]]:
-        """Score based on matches to tracked program keywords."""
+    def _program_match(self, text: str, item: dict | None = None) -> tuple[float, list[dict]]:
+        """Score based on matches to tracked program keywords and CFDA lookups."""
         matched = []
         total_hits = 0
+
+        # Check for CFDA-based direct match from Grants.gov scraper
+        cfda_match_id = (item or {}).get("cfda_program_match", "")
+        if cfda_match_id:
+            for program in self.programs:
+                if program["id"] == cfda_match_id:
+                    matched.append(program)
+                    total_hits += 3  # CFDA match = strong signal
+                    break
+
         for program in self.programs:
+            if program in matched:
+                continue
             hits = sum(1 for kw in program["keywords"] if kw.lower() in text)
+            # Also check scanner_trigger_keywords if present
+            trigger_kws = program.get("scanner_trigger_keywords", [])
+            hits += sum(1 for kw in trigger_kws if kw.lower() in text)
             if hits > 0:
                 matched.append(program)
                 total_hits += hits

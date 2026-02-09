@@ -5,19 +5,11 @@
       "base_url": "https://www.federalregister.gov/api/v1",
       "requires_key": false,
       "authority_weight": 0.9,
+      "agency_ids": [438, 492, 466, 183, 227, 228, 12, 54, 497, 253, 436],
       "search_params": {
         "per_page": 50,
         "order": "newest",
-        "conditions[agencies]": [
-          "interior-department",
-          "environmental-protection-agency",
-          "federal-emergency-management-agency",
-          "energy-department",
-          "housing-and-urban-development-department",
-          "transportation-department",
-          "agriculture-department",
-          "commerce-department"
-        ]
+        "conditions[type][]": ["RULE", "PRORULE", "NOTICE", "PRESDOCU"]
       }
     },
     "grants_gov": {
@@ -36,6 +28,7 @@
       "requires_key": true,
       "key_env_var": "CONGRESS_API_KEY",
       "authority_weight": 0.8,
+      "congress_session": 119,
       "search_params": {
         "limit": 50,
         "sort": "updateDate+desc"
@@ -61,7 +54,8 @@
     "tribal climate", "tribal resilience", "tribal mitigation",
     "tribal set-aside", "tribal consultation", "tribal nations",
     "tribal lands", "reservation", "indian reservation",
-    "638 contract", "self-governance", "tribal government"
+    "638 contract", "self-governance", "tribal government",
+    "tribal instrumentality", "tribal energy"
   ],
   "action_keywords": [
     "notice of funding", "NOFO", "request for applications",
@@ -69,7 +63,8 @@
     "appropriation", "authorization", "reauthorization",
     "amendment", "extension", "deadline", "comment period",
     "grant opportunity", "funding opportunity", "solicitation",
-    "budget request", "continuing resolution", "omnibus"
+    "budget request", "continuing resolution", "omnibus",
+    "rescission", "impoundment", "termination", "replacement"
   ],
   "search_queries": [
     "tribal climate resilience",
@@ -80,7 +75,10 @@
     "tribal infrastructure",
     "BRIC tribal",
     "elective pay tribal",
-    "tribal clean energy"
+    "tribal clean energy",
+    "tribal water infrastructure",
+    "tribal wildfire",
+    "tribal housing resilience"
   ],
   "scan_window_days": 14
 }
