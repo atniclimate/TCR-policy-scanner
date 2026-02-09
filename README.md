@@ -13,10 +13,12 @@ The scanner answers the question: *What has changed in the federal policy landsc
 
 ## What It Does
 
-1. **Collects** policy documents from federal sources (Federal Register, Grants.gov, Congress.gov)
+1. **Collects** policy documents from federal sources (Federal Register, Grants.gov, Congress.gov, USASpending)
 2. **Scores** each item against the ATNI program inventory using weighted relevance factors
-3. **Detects changes** between scan cycles to surface new developments
-4. **Generates briefings** formatted for Tribal Leaders with advocacy levers attached
+3. **Builds a knowledge graph** connecting programs to authorities, barriers, and funding vehicles
+4. **Monitors** for urgent threats (IIJA sunset, reconciliation, consultation signals)
+5. **Classifies** each program with an advocacy goal using a 6-rule decision engine
+6. **Generates briefings** formatted for Tribal Leaders with advocacy levers attached
 
 ## Programs Tracked
 
@@ -25,8 +27,10 @@ The scanner answers the question: *What has changed in the federal policy landsc
 | CRITICAL | BIA Tribal Climate Resilience | BIA | Protect/expand the line; waived match, multi-year stability |
 | CRITICAL | FEMA BRIC | FEMA | Restore/replace with Tribal set-aside |
 | CRITICAL | IRS Elective Pay | Treasury/IRS | Ensure stability and Tribal instrumentality access |
+| HIGH | BIA TCR Awards | BIA | Protect annual awards; waived match |
 | HIGH | EPA STAG | EPA | Direct Tribal capitalization pathways |
 | HIGH | EPA GAP | EPA | Increase funding; link to climate resilience readiness |
+| HIGH | EPA Tribal Air Quality | EPA | Protect Clean Air Act SS 105 tribal grants |
 | HIGH | FEMA Tribal Mitigation Plans | FEMA | Fund planning; accelerate approvals |
 | HIGH | DOT PROTECT | DOT | Maintain/expand Tribal set-aside |
 | HIGH | USDA Wildfire Defense Grants | USFS | Add match waivers; long-term fuels pathways |
@@ -94,20 +98,29 @@ TCR-policy-scanner/
         scanner_config.json     # Source definitions, search terms, scoring weights
     data/
         program_inventory.json  # The 16 tracked programs with advocacy levers
+        policy_tracking.json    # CI status tracking and history
+        graph_schema.json       # Knowledge graph node/edge type definitions
     src/
         main.py                 # Pipeline orchestrator
         scrapers/
             federal_register.py # Federal Register API scraper
             grants_gov.py       # Grants.gov API scraper
             congress_gov.py     # Congress.gov API scraper
+            usaspending.py      # USASpending API scraper
         analysis/
             relevance.py        # Multi-factor relevance scorer
             change_detector.py  # Scan-to-scan change detection
+            decision_engine.py  # 6-rule advocacy goal classification
+        graph/
+            builder.py          # Knowledge graph construction
+            schema.py           # Graph node and edge types
+        monitors/               # Threat monitoring framework (IIJA, reconciliation, etc.)
         reports/
             generator.py        # Markdown and JSON report generation
     outputs/
         LATEST-BRIEFING.md     # Most recent policy briefing
         LATEST-RESULTS.json    # Most recent machine-readable results
+        LATEST-MONITOR-DATA.json # Most recent monitor alerts and classifications
         archive/               # Historical reports
     .github/
         workflows/
@@ -121,10 +134,10 @@ Each item is scored using five weighted factors:
 | Factor | Weight | Description |
 |--------|--------|-------------|
 | Program Match | 0.35 | Direct match to a tracked program |
-| Tribal Keyword Density | 0.25 | Concentration of Tribal-relevant terms |
-| Recency | 0.15 | Publication date proximity |
+| Tribal Keyword Density | 0.20 | Concentration of Tribal-relevant terms |
+| Recency | 0.10 | Publication date proximity |
 | Source Authority | 0.15 | Federal source reliability weight |
-| Action Relevance | 0.10 | Signals actionable policy change |
+| Action Relevance | 0.20 | Signals actionable policy change |
 
 Items matching **critical priority programs** receive a 15% score boost. Items below a 0.30 relevance threshold are filtered out.
 
@@ -138,6 +151,9 @@ Edit `data/program_inventory.json` to add new programs to the tracking list. Eac
 - `search_queries` for source-specific scanning
 - `advocacy_lever` for the report output
 - `priority` level (critical, high, medium, low)
+- `access_type` (direct, competitive, or tribal_set_aside)
+- `funding_type` (Discretionary, Mandatory, or One-Time)
+- `cfda` (CFDA/Assistance Listing Number, or null)
 
 ### Adding Sources
 

@@ -12,7 +12,7 @@ pipeline for Tribal Climate Resilience (TCR) FY26 advocacy, used by the Affiliat
 Tribes of Northwest Indians (ATNI) Climate Resilience Committee.
 
 **Repository:** `github.com/atniclimate/TCR-policy-scanner`
-**Branch:** `claude/setup-tcr-policy-scanner-trZB1`
+**Branch:** `main`
 
 ### Project Architecture
 
@@ -24,16 +24,18 @@ Ingest → Normalize → Graph Construction → Analysis → Reporting
 
 **Pipeline components:**
 - **4 Scrapers** (`src/scrapers/`): Federal Register API, Grants.gov API, Congress.gov API, USASpending.gov API — all inherit from `BaseScraper` with exponential backoff, User-Agent compliance, and 403/429 resilience
-- **Relevance Scorer** (`src/analysis/relevance.py`): 5-factor weighted scoring (program_match 0.35, tribal_keyword_density 0.25, recency 0.15, source_authority 0.15, action_relevance 0.10) with critical boost, Tribal eligibility override, and document subtype boost
+- **Relevance Scorer** (`src/analysis/relevance.py`): 5-factor weighted scoring (program_match 0.35, tribal_keyword_density 0.20, recency 0.10, source_authority 0.15, action_relevance 0.20) with critical boost, Tribal eligibility override, and document subtype boost
 - **Change Detector** (`src/analysis/change_detector.py`): Scan-to-scan diff detection
 - **Knowledge Graph** (`src/graph/`): Typed dataclass schema (ProgramNode, AuthorityNode, FundingVehicleNode, BarrierNode, AdvocacyLeverNode, ObligationNode) with edges (AUTHORIZED_BY, FUNDED_BY, BLOCKED_BY, MITIGATED_BY, OBLIGATED_BY). Two-phase builder: static seed from `data/graph_schema.json` + dynamic enrichment from scraped items via regex pattern matching
-- **Report Generator** (`src/reports/generator.py`): Markdown briefings and JSON output with CI Dashboard, Barriers & Mitigation Pathways, Statutory Authority Map
+- **Report Generator** (`src/reports/generator.py`): 14-section Markdown briefings and JSON output (Executive Summary, Reconciliation Watch, IIJA Countdown, New Developments, Critical Updates, CI Dashboard, FLAGGED, Advocacy Goals, Structural Asks, Barriers, Authorities, Advocacy Levers, CI Score Trends, All Items)
+- **Decision Engine** (`src/analysis/decision_engine.py`): 6 advocacy goal classifications (URGENT_STABILIZATION, RESTORE_REPLACE, PROTECT_BASE, DIRECT_ACCESS_PARITY, EXPAND_STRENGTHEN, MONITOR_ENGAGE) via 5 prioritized logic rules with MONITOR_ENGAGE as default fallback
+- **5 Monitors** (`src/monitors/`): IIJA sunset, reconciliation, consultation, Hot Sheets, DHS funding cliff
 - **GitHub Actions** (`.github/workflows/daily-scan.yml`): Weekday 6 AM Pacific automated scans
 
 ### Key Data Files
 
-- `config/scanner_config.json` — Sources, scoring weights, keywords (28 tribal, 30 action), search queries
-- `data/program_inventory.json` — **16 tracked programs** with CI scores, statuses, keywords, advocacy levers
+- `config/scanner_config.json` — Sources, scoring weights, keywords (46 tribal, 42 action), 23 search queries
+- `data/program_inventory.json` — **16 tracked programs** with CI scores, statuses, keywords, advocacy levers, access_type, funding_type, and CFDA mappings
 - `data/policy_tracking.json` — FY26 positions with CI thresholds (6 statuses: SECURE, STABLE, STABLE_BUT_VULNERABLE, AT_RISK, UNCERTAIN, FLAGGED)
 - `data/graph_schema.json` — Static authorities (21), funding vehicles (8), barriers (14), and Five Structural Asks (cross-cutting advocacy levers)
 - `docs/STRATEGIC-FRAMEWORK.md` — Framework bridging scanner architecture to FY26 Hot Sheets congressional advocacy brief
@@ -47,7 +49,7 @@ Ingest → Normalize → Graph Construction → Analysis → Reporting
 
 **Scraper strategies:**
 - Federal Register: Term search + agency ID sweep (11 agency IDs) + document subtype detection (ICR, guidance, RFI, ANPRM)
-- Grants.gov: 11 CFDA-targeted queries + keyword broad sweep + Tribal eligibility override (codes 06, 07, 11) + zombie CFDA detection
+- Grants.gov: 12 CFDA-targeted queries (incl. 10.720 USDA Wildfire, 20.284 DOT PROTECT) + keyword broad sweep + Tribal eligibility override (codes 06, 07, 11) + zombie CFDA detection
 - Congress.gov: 11 legislative queries for 119th Congress (HR/S bill types)
 - USASpending: CFDA-based obligation tracking for FY26
 
@@ -63,23 +65,29 @@ Ingest → Normalize → Graph Construction → Analysis → Reporting
 - Introduced SECURE, UNCERTAIN status categories
 - Added CI scores for all 16 programs (no gaps)
 
-### Priority Next Steps (from `docs/STRATEGIC-FRAMEWORK.md`)
+### Priority Next Steps
 
-1. **Graph builder enhancement**: Load `structural_asks` from graph_schema.json and create AdvocacyLeverNodes with ADVANCES edges connecting to programs
-2. **IIJA sunset tracker**: Monitor IIJA-funded programs approaching FY26 expiration; flag when no reauthorization bill introduced
-3. **Reconciliation monitor**: Track House/Senate reconciliation bills for IRA §6417 repeal provisions
-4. **Report enhancements**: Add Five Structural Asks section, Hot Sheets sync status indicator, IIJA Sunset Countdown
-5. **Tribal consultation tracker**: Detect DTLLs, consultation notices, EO 13175 compliance signals
-6. **Hot Sheets sync validation**: Automated comparison between scanner CI and Hot Sheets positions after each scan
-7. **Historical CI trends**: Track CI scores over time for stability trajectory visualization
-8. **Test suite**: Unit tests for scorer, graph builder, and each scraper normalizer
+**Completed in v1:**
+- ~~Graph builder enhancement~~ (structural asks, ADVANCES edges) -- Phase 2
+- ~~IIJA sunset tracker~~ -- Phase 3
+- ~~Reconciliation monitor~~ -- Phase 3
+- ~~Tribal consultation tracker~~ -- Phase 3
+- ~~Report enhancements~~ (14-section briefings, Hot Sheets sync, IIJA Countdown) -- Phase 4
+- ~~Historical CI trends~~ -- Phase 4
+- ~~Test suite~~ (52 tests) -- all phases
+
+**Remaining v2 priorities:**
+1. **Hot Sheets sync validation**: Automated comparison between scanner CI and Hot Sheets positions after each scan
+2. **Cross-program correlation analysis**: Identify funding/policy linkages across programs
+3. **Repository restructure and packaging**: Clean up for distribution and deployment
+4. **SAM.gov scraper implementation**: Add contract opportunity tracking
 
 ### Key Constraints
 
 - **TSDF: T0 (Open)** — All data is public federal data; no Tribal-specific or sensitive data
 - **No API keys in repo** — Congress.gov key via `CONGRESS_API_KEY` env var; SAM key via `SAM_API_KEY`
 - **Config-driven design** — Architecture supports domain adaptability via `domain`/`domain_name` config fields
-- Python 3.12, dependencies: aiohttp, python-dateutil, jinja2
+- Python 3.13, dependencies: aiohttp, python-dateutil, jinja2
 - All scrapers are async (aiohttp)
 
 Please read `docs/STRATEGIC-FRAMEWORK.md` and the `data/` files first to understand the full context before making changes. The framework document contains a detailed implementation checklist.

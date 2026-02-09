@@ -13,52 +13,56 @@ the scanner's current assumptions.
 
 ## 1. Program Inventory Alignment
 
-### 1.1 Current Scanner Coverage (14 programs)
+### 1.1 Current Scanner Coverage (16 programs)
 
 | ID | Program | Agency | CI | Scanner Status |
 |----|---------|--------|----|----------------|
 | `bia_tcr` | BIA Tribal Climate Resilience | BIA | 88% | STABLE |
+| `bia_tcr_awards` | Tribal Community Resilience Annual Awards | BIA | 85% | STABLE |
 | `fema_bric` | FEMA BRIC | FEMA | 12% | FLAGGED |
-| `irs_elective_pay` | IRS Elective Pay (§6417) | Treasury/IRS | 92% | STABLE |
+| `irs_elective_pay` | IRS Elective Pay (§6417) | Treasury/IRS | 55% | AT_RISK |
 | `epa_stag` | EPA STAG / DWIG-TSA | EPA | 90% | STABLE |
-| `epa_gap` | EPA GAP | EPA | — | — |
+| `epa_gap` | EPA GAP | EPA | 80% | STABLE |
+| `epa_tribal_air` | Tribal Air Quality Management | EPA | 82% | STABLE |
 | `fema_tribal_mitigation` | FEMA Tribal Mitigation Plans | FEMA | 65% | AT_RISK |
-| `dot_protect` | DOT PROTECT | DOT | 86% | STABLE |
+| `dot_protect` | DOT PROTECT | DOT | 93% | SECURE |
 | `usda_wildfire` | USDA Wildfire Defense Grants | USFS | 78% | STABLE_BUT_VULNERABLE |
-| `doe_indian_energy` | DOE Indian Energy | DOE | — | — |
-| `hud_ihbg` | HUD IHBG | HUD | — | — |
-| `noaa_tribal` | NOAA Tribal Grants | NOAA | — | — |
-| `fhwa_ttp_safety` | FHWA TTP Safety | FHWA | — | — |
-| `usbr_watersmart` | USBR WaterSMART | Reclamation | — | — |
-| `usbr_tap` | USBR TAP | Reclamation | — | — |
+| `doe_indian_energy` | DOE Indian Energy | DOE | 55% | UNCERTAIN |
+| `hud_ihbg` | HUD IHBG | HUD | 85% | STABLE |
+| `noaa_tribal` | NOAA Tribal Grants | NOAA | 50% | UNCERTAIN |
+| `fhwa_ttp_safety` | FHWA TTP Safety | FHWA | 85% | STABLE |
+| `usbr_watersmart` | USBR WaterSMART | Reclamation | 60% | UNCERTAIN |
+| `usbr_tap` | USBR TAP | Reclamation | 75% | STABLE |
 
-### 1.2 Hot Sheets Additions (2 new programs to add)
+### 1.2 Hot Sheets Additions (Completed)
 
-| Proposed ID | Program | Agency | Hot Sheets Status | Action Required |
-|-------------|---------|--------|-------------------|-----------------|
-| `bia_tcr_awards` | Tribal Community Resilience Annual Awards | BIA | STABLE | Add to inventory, graph schema, CFDA queries |
-| `epa_tribal_air` | Tribal Air Quality Management | EPA | STABLE | Add to inventory, graph schema |
+Both programs were added to the scanner inventory during Phase 2 implementation.
+
+| ID | Program | Agency | CI | Status | Added |
+|----|---------|--------|----|--------|-------|
+| `bia_tcr_awards` | Tribal Community Resilience Annual Awards | BIA | 85% | STABLE | Phase 2 |
+| `epa_tribal_air` | Tribal Air Quality Management | EPA | 82% | STABLE | Phase 2 |
 
 ### 1.3 Status Reclassifications (Hot Sheets vs. Scanner)
 
-These entries in the Hot Sheets differ from the scanner's current CI assessment
-and should be reconciled:
+All reclassifications identified in the Hot Sheets have been applied during
+Phase 2 implementation. The table below reflects the final reconciled state:
 
 | Program | Scanner Status | Hot Sheets Status | Delta | Resolution |
 |---------|---------------|-------------------|-------|------------|
-| IRS Elective Pay | STABLE (CI: 92%) | **AT RISK** | Legislative repeal threat not captured by CI | Lower CI to ~0.55; add scanner_trigger_keywords for reconciliation bill language |
-| DOT PROTECT | STABLE (CI: 86%) | **SECURE** | Statutory set-aside stronger than "STABLE" implies | Raise CI to ~0.93; introduce `SECURE` status category |
-| USBR WaterSMART | — (no CI) | **UNCERTAIN** | Missing from CI model | Assign CI ~0.60; add `UNCERTAIN` status category |
-| DOE Indian Energy | — (no CI) | **UNCERTAIN** | Missing from CI model | Assign CI ~0.55; status = `UNCERTAIN` |
-| NOAA Tribal Grants | — (no CI) | **UNCERTAIN** | Missing from CI model | Assign CI ~0.50; status = `UNCERTAIN` |
-| FEMA BRIC | FLAGGED (CI: 12%) | **TERMINATED → REPLACEMENT** | Hot Sheets confirms termination; adds "responsive mitigation" replacement framing | Keep FLAGGED; add replacement program tracking |
-| HUD IHBG | — (no CI) | **STABLE** | Missing from CI model | Assign CI ~0.85; status = `STABLE` |
-| EPA GAP | — (no CI) | **STABLE** | Missing from CI model | Assign CI ~0.80; status = `STABLE` |
-| FHWA TTP Safety | — (no CI) | **STABLE** | Missing from CI model | Assign CI ~0.85; status = `STABLE` |
-| EPA STAG | STABLE (CI: 90%) | **STABLE** | Aligned | No change |
-| BIA TCR | STABLE (CI: 88%) | **STABLE** | Aligned | No change |
-| USDA Wildfire | STABLE_BUT_VULNERABLE (CI: 78%) | **VULNERABLE** | Aligned (terminology difference) | No change |
-| FEMA Tribal Mitigation | AT_RISK (CI: 65%) | **AT RISK** | Aligned | No change |
+| IRS Elective Pay | AT_RISK (CI: 55%) | **AT RISK** | Legislative repeal threat not captured by CI | DONE - CI set to 0.55; reconciliation trigger keywords added |
+| DOT PROTECT | SECURE (CI: 93%) | **SECURE** | Statutory set-aside stronger than "STABLE" implies | DONE - CI set to 0.93; SECURE status category introduced |
+| USBR WaterSMART | UNCERTAIN (CI: 60%) | **UNCERTAIN** | Missing from CI model | DONE - CI set to 0.60; UNCERTAIN status category added |
+| DOE Indian Energy | UNCERTAIN (CI: 55%) | **UNCERTAIN** | Missing from CI model | DONE - CI set to 0.55; status = UNCERTAIN |
+| NOAA Tribal Grants | UNCERTAIN (CI: 50%) | **UNCERTAIN** | Missing from CI model | DONE - CI set to 0.50; status = UNCERTAIN |
+| FEMA BRIC | FLAGGED (CI: 12%) | **TERMINATED → REPLACEMENT** | Hot Sheets confirms termination; adds "responsive mitigation" replacement framing | DONE - Kept FLAGGED; replacement program tracking added |
+| HUD IHBG | STABLE (CI: 85%) | **STABLE** | Missing from CI model | DONE - CI set to 0.85; status = STABLE |
+| EPA GAP | STABLE (CI: 80%) | **STABLE** | Missing from CI model | DONE - CI set to 0.80; status = STABLE |
+| FHWA TTP Safety | STABLE (CI: 85%) | **STABLE** | Missing from CI model | DONE - CI set to 0.85; status = STABLE |
+| EPA STAG | STABLE (CI: 90%) | **STABLE** | Aligned | No change needed |
+| BIA TCR | STABLE (CI: 88%) | **STABLE** | Aligned | No change needed |
+| USDA Wildfire | STABLE_BUT_VULNERABLE (CI: 78%) | **VULNERABLE** | Aligned (terminology difference) | No change needed |
+| FEMA Tribal Mitigation | AT_RISK (CI: 65%) | **AT RISK** | Aligned | No change needed |
 
 ### 1.4 New Status Categories
 
@@ -293,20 +297,20 @@ Add to `LATEST-RESULTS.json`:
 
 ## 7. Implementation Checklist
 
-- [ ] Add `bia_tcr_awards` and `epa_tribal_air` to program_inventory.json
-- [ ] Assign CI scores to all programs (no gaps)
-- [ ] Introduce SECURE, UNCERTAIN, TERMINATED status categories
-- [ ] Reclassify IRS Elective Pay → AT_RISK (CI: 0.55)
-- [ ] Reclassify DOT PROTECT → SECURE (CI: 0.93)
-- [ ] Add reconciliation/repeal trigger keywords
-- [ ] Add 10 new authorities to graph_schema.json
-- [ ] Add 6 new barriers to graph_schema.json
-- [ ] Add Five Structural Asks as AdvocacyLeverNodes
-- [ ] Add ADVANCES edge type to graph schema
-- [ ] Update scanner_config.json with new search queries
-- [ ] Update report generator with Hot Sheets sync section
-- [ ] Add IIJA sunset tracking logic
-- [ ] Update CI threshold model in policy_tracking.json
+- [x] Add `bia_tcr_awards` and `epa_tribal_air` to program_inventory.json
+- [x] Assign CI scores to all programs (no gaps)
+- [x] Introduce SECURE, UNCERTAIN, TERMINATED status categories
+- [x] Reclassify IRS Elective Pay → AT_RISK (CI: 0.55)
+- [x] Reclassify DOT PROTECT → SECURE (CI: 0.93)
+- [x] Add reconciliation/repeal trigger keywords
+- [x] Add 10 new authorities to graph_schema.json
+- [x] Add 6 new barriers to graph_schema.json
+- [x] Add Five Structural Asks as AdvocacyLeverNodes
+- [x] Add ADVANCES edge type to graph schema
+- [x] Update scanner_config.json with new search queries
+- [x] Update report generator with Hot Sheets sync section
+- [x] Add IIJA sunset tracking logic
+- [x] Update CI threshold model in policy_tracking.json
 - [ ] Create Hot Sheets sync validation script
 
 ---
@@ -315,4 +319,4 @@ Add to `LATEST-RESULTS.json`:
 and should be updated each time the Hot Sheets brief is revised.*
 
 *Last updated: 2026-02-09*
-*Scanner branch: `claude/setup-tcr-policy-scanner-trZB1`*
+*Scanner branch: `main`*

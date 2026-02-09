@@ -4,7 +4,7 @@
 
 **Core Value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
 
-**Current Focus:** All 4 phases complete. v1 milestone achieved. Pipeline produces a complete 12-section advocacy intelligence briefing from 4 federal API sources.
+**Current Focus:** All 4 phases complete. v1 milestone achieved. Pass 1 + Pass 2 code review fixes applied. Pipeline produces a complete 14-section advocacy intelligence briefing from 4 federal API sources.
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, and report generator.
 
@@ -14,7 +14,7 @@
 **Phase:** 4 of 4 (Report Enhancements) -- COMPLETE
 **Plan:** 2 of 2 complete
 **Status:** COMPLETE
-**Last activity:** 2026-02-09 - Completed 04-02-PLAN.md
+**Last activity:** 2026-02-09 - Applied pass 2 domain review fixes (commit 41b535c)
 
 **Progress:**
 ```
@@ -88,7 +88,7 @@ Overall [##########] 100% 9/9 plans complete
 - **Pipeline throughput:** 279 raw -> 164 scored above threshold -> 182 graph nodes, 196 graph edges
 - **GitHub Secrets configured:** CONGRESS_API_KEY, SAM_API_KEY
 - **CI thresholds:** 7-tier model (secure/stable/stable_but_vulnerable/at_risk/uncertain/flagged/terminated)
-- **Scanner keywords:** 42 action keywords, 16 search queries (includes reconciliation/repeal terms)
+- **Scanner keywords:** 46 tribal keywords, 42 action keywords, 23 search queries (includes reconciliation/repeal terms)
 - **CFDA mappings:** 12 entries in grants_gov.py (includes 15.124 for BIA TCR Awards)
 - **Graph stats (static seed):** 79 nodes (16 ProgramNode, 21 AdvocacyLeverNode, 20 AuthorityNode, 8 FundingVehicleNode, 13 BarrierNode, 1 TrustSuperNode), 118 edges
 - **Graph stats (with scan data):** 188 nodes, 236 edges
@@ -101,15 +101,20 @@ Overall [##########] 100% 9/9 plans complete
 - **Monitor config:** 6 sub-keys in scanner_config.json monitors section
 - **Monitor state:** outputs/.monitor_state.json tracks known Hot Sheets divergences between runs
 - **Monitor data output:** outputs/LATEST-MONITOR-DATA.json with alerts, classifications, and summary
-- **Decision engine:** DecisionEngine in src/analysis/decision_engine.py with 5 rules, ADVOCACY_GOALS constant, classify_all() method
+- **Decision engine:** DecisionEngine in src/analysis/decision_engine.py with 6 advocacy goals (5 prioritized logic rules + MONITOR_ENGAGE default), ADVOCACY_GOALS constant, classify_all() method
 - **Decision rules:** LOGIC-05 > 01 > 02 > 03 > 04 priority order; secondary_rules for transparency
-- **Test infrastructure:** pytest installed, tests/ package with 45 test cases for decision engine
+- **Test infrastructure:** pytest installed, tests/ package with 52 test cases for decision engine
 - **Hot Sheets baseline:** All 16 programs have hot_sheets_status field aligned with scanner CI status
 - **Pipeline integration:** run_monitors_and_classify() in src/main.py runs stages 3.5-3.6
-- **Report generator:** 12 sections in LATEST-BRIEFING.md (6 new from Phase 4: Reconciliation Watch, IIJA Countdown, Advocacy Goals, Structural Asks, Hot Sheets column, CI Score Trends)
+- **Report generator:** 14 sections in LATEST-BRIEFING.md (8 new from Phase 4: Reconciliation Watch, IIJA Countdown, Advocacy Goals, Structural Asks, Hot Sheets column, CI Score Trends, plus pass 2 additions)
 - **Report data flow:** monitor_data, classifications, and ci_history passed from run_monitors_and_classify() -> reporter.generate() -> _build_markdown()/_build_json()
-- **Briefing sections (final):** Executive Summary -> Reconciliation Watch -> IIJA Countdown -> New Developments -> Critical Updates -> CI Dashboard (w/ Hot Sheets) -> FLAGGED -> Advocacy Goals -> Structural Asks -> Barriers -> Authorities -> Advocacy Levers -> CI Score Trends -> All Items
+- **Briefing sections (final, 14):** Executive Summary -> Reconciliation Watch -> IIJA Countdown -> New Developments -> Critical Updates -> CI Dashboard (w/ Hot Sheets) -> FLAGGED -> Advocacy Goals -> Structural Asks -> Barriers -> Authorities -> Advocacy Levers -> CI Score Trends -> All Items
 - **CI history:** outputs/.ci_history.json append-only file, 90-entry cap, timestamp dedup
+- **Program inventory fields:** 16 programs with id, name, priority, keywords, search_queries, advocacy_lever, ci_status, confidence_index, hot_sheets_status, access_type, funding_type, cfda
+- **Decision engine goals:** URGENT_STABILIZATION > RESTORE_REPLACE > PROTECT_BASE > DIRECT_ACCESS_PARITY > EXPAND_STRENGTHEN > MONITOR_ENGAGE (priority order)
+- **Scoring weights (post-review):** program_match 0.35, action_relevance 0.20, tribal_keyword_density 0.20, source_authority 0.15, recency 0.10
+- **Recency decay:** 6-band step function (1d: 1.0, 7d: 0.9, 14d: 0.75, 30d: 0.6, 60d: 0.4, >60d: 0.25)
+- **CFDA corrections (pass 2):** 10.691->10.720 (USDA Wildfire), 20.934->20.284 (DOT PROTECT)
 
 ### Todos
 
@@ -124,12 +129,12 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-09
-**Stopped at:** Completed 04-02-PLAN.md (CI Score History and Trend Visualization)
-**Resume file:** None -- all plans complete
+**Stopped at:** Pass 2 domain review fixes applied (commit 41b535c, 16 files, 52/52 tests)
+**Resume file:** None -- v1 milestone complete with review fixes
 
 ### Resume Instructions
 
-All 4 phases and 9 plans are complete. The v1 milestone is achieved. The pipeline produces a complete 12-section advocacy intelligence briefing with CI history tracking.
+All 4 phases and 9 plans are complete. Pass 1 and Pass 2 code review fixes have been applied. The pipeline produces a complete 14-section advocacy intelligence briefing with CI history tracking. 52 tests pass.
 
 ---
 *State initialized: 2026-02-09*
