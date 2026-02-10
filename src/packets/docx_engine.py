@@ -185,10 +185,11 @@ class DocxEngine:
             context, relevant_programs, economic_summary, structural_asks
         )
 
-        # 4. Appendix (omitted programs)
-        if omitted_programs:
-            document.add_page_break()
-            render_appendix(document, omitted_programs, context, style_manager)
+        # 4. Appendix (omitted programs or "all included" note)
+        document.add_page_break()
+        render_appendix(
+            document, omitted_programs or [], context, style_manager
+        )
 
         # 5. Save and return path
         tribe_id = getattr(context, "tribe_id", "unknown")

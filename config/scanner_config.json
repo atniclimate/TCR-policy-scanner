@@ -159,6 +159,10 @@
       "usfs_dir": "data/usfs",
       "cache_dir": "data/hazard_profiles",
       "crosswalk_path": "data/aiannh_tribe_crosswalk.json"
+    },
+    "docx": {
+      "enabled": true,
+      "output_dir": "outputs/packets"
     }
   }
 }

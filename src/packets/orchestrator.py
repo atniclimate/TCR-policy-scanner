@@ -11,10 +11,15 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from dataclasses import asdict
+
 from src.packets.context import TribePacketContext
 from src.packets.congress import CongressionalMapper
+from src.packets.docx_engine import DocxEngine
 from src.packets.ecoregion import EcoregionMapper
+from src.packets.economic import EconomicImpactCalculator
 from src.packets.registry import TribalRegistry
+from src.packets.relevance import ProgramRelevanceFilter
 
 logger = logging.getLogger("tcr_scanner.packets.orchestrator")
 
@@ -52,6 +57,10 @@ class PacketOrchestrator:
         self.hazard_cache_dir = Path(
             packets_cfg.get("hazards", {}).get("cache_dir", "data/hazard_profiles")
         )
+
+        # Phase 7: DOCX generation components
+        self.economic_calculator = EconomicImpactCalculator()
+        self.relevance_filter = ProgramRelevanceFilter(self.programs)
 
     def run_single_tribe(self, tribe_name: str) -> None:
         """Resolve a single Tribe by name and display its packet context.
@@ -104,6 +113,15 @@ class PacketOrchestrator:
 
         context = self._build_context(tribe)
         self._display_tribe_info(context)
+
+        # After displaying info, generate DOCX if configured
+        if self.config.get("packets", {}).get("docx", {}).get("enabled", True):
+            try:
+                path = self.generate_packet_from_context(context, tribe)
+                print(f"\n  DOCX packet generated: {path}")
+            except Exception as exc:
+                logger.error("Failed to generate DOCX for %s: %s", tribe["name"], exc)
+                print(f"\n  DOCX generation failed: {exc}")
 
     def run_all_tribes(self) -> None:
         """Generate packet context for all Tribes in the registry.
@@ -361,3 +379,107 @@ class PacketOrchestrator:
             if risk_to_homes or likelihood:
                 print(f"    Wildfire Risk (USFS): Risk to Homes: {risk_to_homes:.2f}, "
                       f"Likelihood: {likelihood:.4f}")
+
+    # ------------------------------------------------------------------
+    # Phase 7: DOCX generation
+    # ------------------------------------------------------------------
+
+    def generate_packet(self, tribe_name: str) -> Path | None:
+        """Generate a complete DOCX advocacy packet for a single Tribe.
+
+        Resolves the Tribe by name, builds context, computes economic
+        impact, filters relevant programs, and assembles the full DOCX
+        document.
+
+        Args:
+            tribe_name: Tribe name or partial name to resolve.
+
+        Returns:
+            Path to generated .docx file, or None if Tribe not found.
+        """
+        result = self.registry.resolve(tribe_name)
+
+        if result is None:
+            logger.warning("No Tribe found matching '%s'", tribe_name)
+            return None
+
+        if isinstance(result, list):
+            tribe = result[0]
+            logger.info(
+                "Fuzzy match: using '%s' for '%s'", tribe["name"], tribe_name
+            )
+        else:
+            tribe = result
+
+        context = self._build_context(tribe)
+        return self.generate_packet_from_context(context, tribe)
+
+    def generate_packet_from_context(
+        self, context: TribePacketContext, tribe: dict
+    ) -> Path:
+        """Generate a DOCX packet from an already-built context.
+
+        Shared implementation between generate_packet() (standalone) and
+        run_single_tribe() (display + generate).
+
+        Args:
+            context: Fully populated TribePacketContext.
+            tribe: Original tribe dict from registry.
+
+        Returns:
+            Path to generated .docx file.
+        """
+        # Compute economic impact
+        economic_summary = self.economic_calculator.compute(
+            tribe_id=context.tribe_id,
+            tribe_name=context.tribe_name,
+            awards=context.awards,
+            districts=context.districts,
+            programs=self.programs,
+        )
+
+        # Store economic impact in context
+        context.economic_impact = asdict(economic_summary)
+
+        # Filter relevant programs
+        relevant = self.relevance_filter.filter_for_tribe(
+            hazard_profile=context.hazard_profile,
+            ecoregions=context.ecoregions,
+            ecoregion_mapper=self.ecoregion,
+        )
+
+        # Get omitted programs
+        omitted = self.relevance_filter.get_omitted_programs(relevant)
+
+        # Load structural asks
+        structural_asks = self._load_structural_asks()
+
+        # Create engine and generate document
+        engine = DocxEngine(self.config, self.programs)
+        path = engine.generate(
+            context=context,
+            relevant_programs=relevant,
+            economic_summary=economic_summary,
+            structural_asks=structural_asks,
+            omitted_programs=omitted,
+        )
+
+        logger.info("Generated packet for %s: %s", context.tribe_name, path)
+        return path
+
+    def _load_structural_asks(self) -> list[dict]:
+        """Load structural asks from graph_schema.json.
+
+        Returns:
+            List of structural ask dicts, or empty list on error.
+        """
+        graph_path = Path("data/graph_schema.json")
+        if not graph_path.exists():
+            return []
+        try:
+            with open(graph_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            return data.get("structural_asks", [])
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning("Failed to load graph schema: %s", exc)
+            return []
