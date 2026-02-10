@@ -12,17 +12,17 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 5 (Foundation) -- COMPLETE
-**Plan:** 04 of 4 complete in Phase 5
-**Status:** Phase 5 complete and verified, ready for Phase 6
-**Last activity:** 2026-02-10 -- Phase 5 verified (23/23 must-haves passed)
+**Phase:** 6 (Data Acquisition) -- IN PROGRESS
+**Plan:** 02 of 3 complete in Phase 6
+**Status:** Plan 06-02 complete, continuing Phase 6
+**Last activity:** 2026-02-10 -- Completed 06-02-PLAN.md (Hazard Profiling Pipeline)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [########  ]  25% Phase 5 complete
+v1.1     [######### ]  42% Phase 6 in progress
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
-  Phase 6: Data Acquisition [          ] 0%   (4 requirements)
+  Phase 6: Data Acquisition [######    ] 67%  (2/3 plans complete)
   Phase 7: Computation+DOCX [          ] 0%   (5 requirements)
   Phase 8: Assembly+Polish  [          ] 0%   (5 requirements)
 ```
@@ -42,6 +42,7 @@ v1.1     [########  ]  25% Phase 5 complete
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
 | v1.1 Total tests passing | 83/83 |
+| v1.1 Phase 6 plans completed | 2/3 |
 
 ## Accumulated Context
 
@@ -49,8 +50,8 @@ v1.1     [########  ]  25% Phase 5 complete
 
 - **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
 - **Packet flow:** CLI (--prep-packets) -> PacketOrchestrator -> TribalRegistry + EcoregionMapper + CongressionalMapper -> TribePacketContext -> Display
-- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json, tribal_registry.json, congressional_cache.json, aiannh_tribe_crosswalk.json
-- **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (v1.1), rapidfuzz (v1.1)
+- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json, tribal_registry.json, congressional_cache.json, aiannh_tribe_crosswalk.json, hazard_profiles/*.json
+- **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (v1.1), rapidfuzz (v1.1), openpyxl (v1.1)
 - **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific, cron `0 13 * * 1-5`)
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
 
@@ -86,6 +87,15 @@ v1.1     [########  ]  25% Phase 5 complete
 | Lazy import for packets module | 05-04 | PacketOrchestrator only imported when --prep-packets is set; avoids rapidfuzz overhead for existing pipeline |
 | Graceful no-delegation display | 05-04 | Tribes without congressional data get informative message instead of crash |
 
+### Decisions (Phase 6)
+
+| Decision | Plan | Rationale |
+|----------|------|-----------|
+| MAX risk / SUM EAL aggregation for multi-county Tribes | 06-02 | Conservative: highlights worst-case risk exposure; SUM reflects total expected annual loss |
+| State-level county fallback for unmatched Tribes | 06-02 | Less precise but ensures every Tribe gets some hazard data when tribal relational CSV unavailable |
+| Schema discovery for USFS/NRI columns | 06-02 | Column names uncertain from research; dynamic header inspection avoids hardcoded assumptions |
+| Empty profiles for all 592 Tribes | 06-02 | Downstream DOCX generation never crashes on missing cache; note field explains data gaps |
+
 ### Todos
 
 _None._
@@ -99,10 +109,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Phase 5 verified and complete (4/4 plans, 23/23 must-haves, 83/83 tests)
-**Next step:** `/gsd:discuss-phase 6` or `/gsd:plan-phase 6` for Data Acquisition
+**Stopped at:** Completed 06-02-PLAN.md (Hazard Profiling Pipeline)
+**Next step:** Execute 06-03-PLAN.md (remaining Phase 6 plan)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 05-04 plan execution (Phase 5 complete)*
+*Last updated: 2026-02-10 after 06-02 plan execution (Phase 6: 2/3 plans complete)*
