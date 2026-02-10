@@ -1,0 +1,13 @@
+/* Awesomplete - MIT License - Copyright (c) Lea Verou
+ * https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.7/awesomplete.css */
+.awesomplete [hidden]{display:none}
+.awesomplete .visually-hidden{position:absolute;clip:rect(0,0,0,0);clip-path:inset(50%);height:1px;width:1px;overflow:hidden;white-space:nowrap}
+.awesomplete{display:inline-block;position:relative;width:100%}
+.awesomplete>input{display:block}
+.awesomplete>ul{position:absolute;left:0;z-index:1;min-width:100%;box-sizing:border-box;list-style:none;padding:0;margin:.2em 0 0;background:#fff;border:1px solid rgba(0,0,0,.3);border-radius:.3em;box-shadow:.05em .2em .6em rgba(0,0,0,.2);max-height:15em;overflow-y:auto}
+.awesomplete>ul>li{position:relative;padding:.5em .75em;cursor:pointer;font-size:.95em}
+.awesomplete>ul>li:hover{background:hsl(200,40%,80%);color:#000}
+.awesomplete>ul>li[aria-selected="true"]{background:hsl(205,40%,40%);color:#fff}
+.awesomplete mark{background:hsl(65,100%,62%);color:inherit;font-weight:700}
+.awesomplete li:hover mark{background:hsl(68,100%,41%)}
+.awesomplete li[aria-selected="true"] mark{background:hsl(86,100%,21%);color:inherit}
