@@ -13,15 +13,15 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
 **Phase:** 5 (Foundation) -- in progress
-**Plan:** 02 of 4 complete in Phase 5 (Wave 1)
+**Plan:** 03 of 4 complete in Phase 5 (Wave 1)
 **Status:** Executing Phase 5 Wave 1
-**Last activity:** 2026-02-10 -- Completed 05-02-PLAN.md (tribal registry data layer)
+**Last activity:** 2026-02-10 -- Completed 05-03-PLAN.md (congressional mapping data layer)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [####      ]  50% Phase 5 in progress
-  Phase 5: Foundation       [#####     ] 50%  (2/4 plans complete)
+v1.1     [######    ]  75% Phase 5 in progress
+  Phase 5: Foundation       [########  ] 75%  (3/4 plans complete)
   Phase 6: Data Acquisition [          ] 0%  (4 requirements)
   Phase 7: Computation+DOCX [          ] 0%  (5 requirements)
   Phase 8: Assembly+Polish  [          ] 0%  (5 requirements)
@@ -45,7 +45,7 @@ v1.1     [####      ]  50% Phase 5 in progress
 ### Architecture Notes
 
 - **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
-- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json (new), tribal_registry.json (new)
+- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json (new), tribal_registry.json (new), congressional_cache.json (new), aiannh_tribe_crosswalk.json (new)
 - **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (new for v1.1), rapidfuzz (new for v1.1)
 - **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific, cron `0 13 * * 1-5`)
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
@@ -75,6 +75,9 @@ v1.1     [####      ]  50% Phase 5 in progress
 | WRatio scorer for fuzzy matching | 05-02 | token_sort_ratio gives ~20% for short queries vs long names; WRatio auto-selects partial matching |
 | EPA API text/plain response handling | 05-02 | EPA returns JSON with text/plain content type; parse as text + json.loads() |
 | 592 tribes in registry (not 574) | 05-02 | EPA API AllTribes filter now returns 592 records; more complete than research estimate |
+| Census CD119-AIANNH over CRS R48107 | 05-03 | Machine-readable, 119th Congress (current), has area overlap data; CRS report is 118th Congress PDF |
+| Four-tier crosswalk matching | 05-03 | Single-pass normalization matched only 60/577; added variant generation + substring + fuzzy = 550/577 (95.3%) |
+| 538 Congress members (not 541) | 05-03 | API returned 538 current members; difference from research estimate likely vacancies |
 
 ### Todos
 
@@ -89,10 +92,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 05-02-PLAN.md (tribal registry data layer)
-**Next step:** Execute 05-03 (Wave 1 parallel), then 05-04 (Wave 2)
+**Stopped at:** Completed 05-03-PLAN.md (congressional mapping data layer)
+**Next step:** Execute 05-04 (Wave 2, CLI skeleton)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 05-02 plan execution*
+*Last updated: 2026-02-10 after 05-03 plan execution*
