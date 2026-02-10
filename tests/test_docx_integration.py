@@ -715,8 +715,8 @@ class TestFullSuiteNoRegression:
         parts = last_line.split()
         if parts and parts[0].isdigit():
             count = int(parts[0])
-            assert count >= 193, (
-                f"Expected >= 193 tests collected, got {count}. "
+            assert count >= 214, (
+                f"Expected >= 214 tests collected, got {count}. "
                 f"Output: {last_line}"
             )
         else:
@@ -725,6 +725,6 @@ class TestFullSuiteNoRegression:
                 l for l in output.split("\n")
                 if "::" in l and "test_" in l
             ]
-            assert len(test_lines) >= 193, (
-                f"Expected >= 193 test items, got {len(test_lines)}"
+            assert len(test_lines) >= 214, (
+                f"Expected >= 214 test items, got {len(test_lines)}"
             )

@@ -23,6 +23,8 @@ from src.packets.relevance import ProgramRelevanceFilter
 
 logger = logging.getLogger("tcr_scanner.packets.orchestrator")
 
+_MAX_CACHE_SIZE_BYTES: int = 10 * 1024 * 1024  # 10 MB
+
 
 class PacketOrchestrator:
     """Orchestrates Tribe packet generation from registry, ecoregion, and congress modules.
@@ -166,6 +168,16 @@ class PacketOrchestrator:
         """
         cache_file = cache_dir / f"{tribe_id}.json"
         if not cache_file.exists():
+            return {}
+        try:
+            file_size = cache_file.stat().st_size
+        except OSError:
+            return {}
+        if file_size > _MAX_CACHE_SIZE_BYTES:
+            logger.warning(
+                "Cache file %s exceeds size limit (%d bytes > %d), skipping",
+                cache_file, file_size, _MAX_CACHE_SIZE_BYTES,
+            )
             return {}
         try:
             with open(cache_file, "r", encoding="utf-8") as f:
@@ -475,6 +487,16 @@ class PacketOrchestrator:
         """
         graph_path = Path("data/graph_schema.json")
         if not graph_path.exists():
+            return []
+        try:
+            file_size = graph_path.stat().st_size
+        except OSError:
+            return []
+        if file_size > _MAX_CACHE_SIZE_BYTES:
+            logger.warning(
+                "Graph schema %s exceeds size limit (%d bytes > %d), skipping",
+                graph_path, file_size, _MAX_CACHE_SIZE_BYTES,
+            )
             return []
         try:
             with open(graph_path, "r", encoding="utf-8") as f:

@@ -118,7 +118,7 @@ class TestEconomicImpactCalculator:
         )
 
         # All should be benchmarks
-        assert len(summary.by_program) > 0
+        assert len(summary.by_program) == 4
         assert all(p.is_benchmark for p in summary.by_program)
         assert summary.total_obligation > 0
 

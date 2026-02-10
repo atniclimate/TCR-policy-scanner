@@ -214,9 +214,12 @@ class ProgramRelevanceFilter:
             result.append(prog_copy)
 
         # Step 8: Clamp to MIN-MAX range
-        # Never remove critical programs
+        # Critical programs are never removed. If the number of critical
+        # programs exceeds MAX_PROGRAMS, the result intentionally overflows
+        # rather than dropping a legitimately critical program. In practice,
+        # the current inventory has only 2-3 critical programs, so this edge
+        # case does not activate.
         if len(result) > MAX_PROGRAMS:
-            # Keep critical + top-scored up to MAX
             kept: list[dict] = []
             for prog in result:
                 if prog["id"] in critical_ids:

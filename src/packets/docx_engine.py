@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from docx import Document
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Inches, Pt, RGBColor
 
 from src.packets.context import TribePacketContext
@@ -108,7 +109,6 @@ class DocxEngine:
             footer_run.font.size = Pt(7)
             footer_run.font.color.rgb = COLORS.muted
             footer_run.font.name = "Arial"
-            from docx.enum.text import WD_ALIGN_PARAGRAPH
             footer_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     def save(self, document: Document, tribe_id: str) -> Path:
@@ -117,29 +117,43 @@ class DocxEngine:
         Writes to a temporary file first, then atomically replaces the
         target path. This prevents partial/corrupt files on crash.
 
+        Warning:
+            Not safe for concurrent execution by multiple processes
+            targeting the same tribe_id. If parallel packet generation
+            is needed, use external locking or a task queue with
+            single-worker concurrency per tribe_id.
+
         Args:
             document: The completed python-docx Document.
             tribe_id: Tribe identifier used as filename stem.
 
         Returns:
             Path to the saved .docx file.
+
+        Raises:
+            ValueError: If tribe_id contains path traversal sequences.
         """
-        output_path = self.output_dir / f"{tribe_id}.docx"
+        # Sanitize tribe_id to prevent path traversal
+        safe_id = Path(tribe_id).name
+        if not safe_id or safe_id in (".", ".."):
+            raise ValueError(f"Invalid tribe_id: {tribe_id!r}")
+
+        output_path = self.output_dir / f"{safe_id}.docx"
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Atomic write: save to tmp, then replace
+        # Atomic write: save to tmp, then replace.
+        # Close handle before save to avoid Windows file-locking conflicts.
         tmp_fd = tempfile.NamedTemporaryFile(
             dir=str(self.output_dir), suffix=".docx", delete=False
         )
+        tmp_name = tmp_fd.name
+        tmp_fd.close()
         try:
-            document.save(tmp_fd.name)
-            tmp_fd.close()
-            os.replace(tmp_fd.name, str(output_path))
+            document.save(tmp_name)
+            os.replace(tmp_name, str(output_path))
         except Exception:
-            tmp_fd.close()
-            # Clean up tmp file on failure
             try:
-                os.unlink(tmp_fd.name)
+                os.unlink(tmp_name)
             except OSError:
                 pass
             raise

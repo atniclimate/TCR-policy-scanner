@@ -18,7 +18,6 @@ from docx.shared import Inches, Pt, RGBColor
 
 from src.packets.context import TribePacketContext
 from src.packets.docx_styles import (
-    CI_STATUS_COLORS,
     CI_STATUS_LABELS,
     COLORS,
     StyleManager,
