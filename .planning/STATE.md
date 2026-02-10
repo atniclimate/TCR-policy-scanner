@@ -13,9 +13,9 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
 **Phase:** 8 (Assembly, Polish, Web Distribution) -- IN PROGRESS
-**Plan:** 3 of 6 complete in Phase 8
-**Status:** Phase 8 Wave 2 in progress (08-03 complete, 08-04 in parallel)
-**Last activity:** 2026-02-10 -- Completed 08-03-PLAN.md (batch generation OPS-02/OPS-03)
+**Plan:** 4 of 6 complete in Phase 8
+**Status:** Phase 8 Wave 2 complete (08-03 + 08-04); ready for Wave 3
+**Last activity:** 2026-02-10 -- Completed 08-04-PLAN.md (OPS-03 change tracking)
 
 **Progress:**
 ```
@@ -24,7 +24,7 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 planned
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
   Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
   Phase 7: Computation+DOCX [##########] 100% (4/4 plans complete)
-  Phase 8: Assembly+Polish  [#####     ] 50%  (3/6 plans, Wave 2 in progress)
+  Phase 8: Assembly+Polish  [######    ] 67%  (4/6 plans, Wave 2 complete)
 ```
 
 ## Performance Metrics
@@ -41,14 +41,14 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 planned
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 256/256 |
+| v1.1 Total tests passing | 272/272 |
 | v1.1 Phase 6 plans completed | 3/3 |
 | v1.1 Phase 6 tests added | 23 |
 | v1.1 Phase 7 plans completed | 4/4 |
 | v1.1 Phase 7 tests added | 108 |
 | v1.1 Systemic review | 9-agent, 40 findings triaged, 10 fixes applied |
 | v1.1 Requirements complete | 18/22 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..06, OPS-02, OPS-03) |
-| v1.1 Phase 8 tests added | 42 |
+| v1.1 Phase 8 tests added | 58 |
 | v1.1 Phase 8 plans | 6 (08-01..06, 3 waves) |
 | v1.1 Phase 8 requirements | 8 (DOC-05, DOC-06, OPS-01..03, WEB-01..03) |
 
@@ -153,6 +153,8 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 planned
 | time.monotonic() for elapsed time | 08-03 | Immune to system clock adjustments; better for measuring durations |
 | run_all_tribes() returns dict (not None) | 08-03 | Enables programmatic checking in tests and CI pipelines |
 | Error list capped at 10 in output | 08-03 | Prevents wall of text for mass failures; full list in logs |
+| Advocacy goal derived from award count (0=new_applicant, >0=renewal) | 08-04 | Simple heuristic sufficient for change detection |
+| Change tracking section placed between structural asks and appendix | 08-04 | Non-essential for first-time readers; useful context before appendix |
 
 ### Todos
 
@@ -167,11 +169,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 08-03-PLAN.md (batch generation OPS-02/OPS-03)
-**Next step:** Verify 08-04 completion, then execute Wave 3 (08-05 + 08-06)
+**Stopped at:** Completed 08-04-PLAN.md (OPS-03 change tracking)
+**Next step:** Execute Phase 8 Wave 3 (08-05 + 08-06 in parallel)
 **Resume file:** .planning/phases/08-assembly-polish/08-MASTER-PROMPT.md
-**Resume command:** Execute Wave 3: Plans 08-05 and 08-06
+**Resume command:** Execute Wave 3: Plans 08-05 and 08-06 in parallel
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 08-03 completion (256 tests, 18/22 requirements)*
+*Last updated: 2026-02-10 after 08-04 completion (272 tests, 18/22 requirements)*
