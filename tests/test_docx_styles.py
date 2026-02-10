@@ -386,16 +386,26 @@ class TestDocxEngine:
         assert section.left_margin == Inches(1)
         assert section.right_margin == Inches(1)
 
-    def test_engine_generate_stub(self, tmp_path):
-        """generate() stub creates a document and returns a valid path."""
+    def test_engine_generate_full(self, tmp_path):
+        """generate() creates a complete document and returns a valid path."""
+        from src.packets.context import TribePacketContext
+        from src.packets.economic import TribeEconomicSummary
+
         engine = self._make_engine(tmp_path)
 
-        # Create a mock context
-        class MockContext:
-            tribe_name = "Test Tribe"
-            tribe_id = "test_123"
+        context = TribePacketContext(
+            tribe_id="test_123",
+            tribe_name="Test Tribe",
+            states=["AZ"],
+            ecoregions=["southwest"],
+            congress_session="119",
+            generated_at="2026-01-15T00:00:00Z",
+        )
+        economic_summary = TribeEconomicSummary(
+            tribe_id="test_123", tribe_name="Test Tribe"
+        )
 
-        path = engine.generate(MockContext(), {}, {}, {})
+        path = engine.generate(context, [], economic_summary, [])
         assert path.exists()
         assert path.name == "test_123.docx"
 

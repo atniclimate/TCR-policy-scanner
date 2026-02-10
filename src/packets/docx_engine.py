@@ -13,7 +13,15 @@ from pathlib import Path
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 
+from src.packets.context import TribePacketContext
+from src.packets.docx_hotsheet import HotSheetRenderer
+from src.packets.docx_sections import (
+    render_appendix,
+    render_cover_page,
+    render_table_of_contents,
+)
 from src.packets.docx_styles import COLORS, StyleManager
+from src.packets.economic import TribeEconomicSummary
 
 logger = logging.getLogger("tcr_scanner.packets.docx_engine")
 
@@ -139,31 +147,57 @@ class DocxEngine:
         logger.info("Saved advocacy packet: %s", output_path)
         return output_path
 
-    def generate(self, context, relevant_programs, economic_summary, structural_asks) -> Path:
+    def generate(
+        self,
+        context: TribePacketContext,
+        relevant_programs: list[dict],
+        economic_summary: TribeEconomicSummary,
+        structural_asks: list[dict],
+        omitted_programs: list[dict] | None = None,
+    ) -> Path:
         """Generate a complete advocacy packet DOCX for a single Tribe.
 
-        .. note::
-            Stub implementation. Plan 07-04 will complete this with
-            section assembly (cover page, program matrix, hazard profile,
-            economic impact, congressional briefing, key asks).
+        Assembles the full document: cover page, table of contents, Hot Sheet
+        pages for each relevant program, and an appendix of omitted programs.
 
         Args:
             context: TribePacketContext with all Tribe data.
-            relevant_programs: Dict of programs relevant to this Tribe.
-            economic_summary: Economic impact calculations.
-            structural_asks: Prioritized structural asks for advocacy.
+            relevant_programs: List of program dicts relevant to this Tribe.
+            economic_summary: Aggregated economic impact calculations.
+            structural_asks: List of structural ask dicts from graph schema.
+            omitted_programs: Optional list of programs not included in
+                Hot Sheets (rendered in appendix).
 
         Returns:
             Path to the saved .docx file.
         """
-        # TODO: Plan 07-04 will complete this with section assembly
         document, style_manager = self.create_document()
 
-        # Placeholder: add Tribe name as title
-        document.add_paragraph(
-            getattr(context, "tribe_name", "Tribal Advocacy Packet"),
-            style="HS Title",
+        # 1. Cover page
+        render_cover_page(document, context, style_manager)
+
+        # 2. Table of contents
+        render_table_of_contents(document, relevant_programs, context, style_manager)
+
+        # 3. Hot Sheets for all relevant programs
+        renderer = HotSheetRenderer(document, style_manager)
+        renderer.render_all_hotsheets(
+            context, relevant_programs, economic_summary, structural_asks
         )
 
+        # 4. Appendix (omitted programs)
+        if omitted_programs:
+            document.add_page_break()
+            render_appendix(document, omitted_programs, context, style_manager)
+
+        # 5. Save and return path
         tribe_id = getattr(context, "tribe_id", "unknown")
-        return self.save(document, tribe_id)
+        output_path = self.save(document, tribe_id)
+
+        logger.info(
+            "Generated complete packet for %s: %d Hot Sheets, %d omitted programs",
+            context.tribe_name,
+            len(relevant_programs),
+            len(omitted_programs or []),
+        )
+        return output_path
