@@ -2,7 +2,7 @@
 
 **Status:** Active
 **Phases:** 5-8
-**Total Requirements:** 19
+**Total Requirements:** 22
 
 ## Overview
 
@@ -98,27 +98,39 @@ Plans:
 
 ---
 
-### Phase 8: Assembly and Polish
+### Phase 8: Assembly, Polish, and Web Distribution
 
-**Goal**: Complete per-Tribe packets (Document 1) and the shared strategic overview (Document 2) are generated via CLI in batch and ad-hoc modes, with change tracking showing what shifted since the last generation -- ready for distribution to congressional offices.
+**Goal**: Complete per-Tribe packets (Document 1) and the shared strategic overview (Document 2) are generated via CLI in batch and ad-hoc modes, with change tracking showing what shifted since the last generation, plus a lightweight web distribution layer via GitHub Pages -- ready for distribution to congressional offices.
 **Depends on**: Phase 7 (Hot Sheet sections and DOCX engine must be working)
-**Plans**: TBD
+**Plans**: 6 plans
+
+Plans:
+- [x] 08-01-PLAN.md -- Document 1 full assembly: exec summary, delegation, hazard, structural asks sections (DOC-05) [Wave 1]
+- [x] 08-02-PLAN.md -- Document 2 strategic overview generator (DOC-06) [Wave 1]
+- [x] 08-03-PLAN.md -- Batch & ad-hoc CLI with memory management (OPS-01, OPS-02) [Wave 2]
+- [x] 08-04-PLAN.md -- Change tracking with per-Tribe state persistence (OPS-03) [Wave 2]
+- [x] 08-05-PLAN.md -- GitHub Pages search widget + Actions workflow + SquareSpace embed (WEB-01, WEB-02, WEB-03) [Wave 3]
+- [x] 08-06-PLAN.md -- E2E integration testing + documentation updates [Wave 3]
 
 **Details:**
-- Requirements: DOC-05, DOC-06, OPS-01, OPS-02, OPS-03
+- Requirements: DOC-05, DOC-06, OPS-01, OPS-02, OPS-03, WEB-01, WEB-02, WEB-03
 
-**DOC-05** assembles Document 1 -- FY26 [Tribe Name] Climate Resilience Program Priorities: per-Tribe DOCX (592 variants) with cover page, executive summary, delegation section, 16 Hot Sheets, hazard profile, structural asks, and appendix. This is the final assembly of all sections built in Phase 7 into a complete, print-ready document. **DOC-06** builds Document 2 -- FY26 Federal Funding Overview & Strategy: a single shared DOCX with appropriations landscape, ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework, and messaging guidance.
+**DOC-05** assembles Document 1 -- FY26 [Tribe Name] Climate Resilience Program Priorities: per-Tribe DOCX (592 variants) with cover page, executive summary, delegation section, 8-12 relevant program Hot Sheets (via ProgramRelevanceFilter), hazard profile, structural asks, and appendix. This is the final assembly of all sections built in Phase 7 into a complete, print-ready document. **DOC-06** builds Document 2 -- FY26 Federal Funding Overview & Strategy: a single shared DOCX with appropriations landscape, ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework, and messaging guidance.
 
-**OPS-01** delivers `--prep-packets --all-tribes` CLI mode for batch generation of all 592 Tribe packets plus strategic overview. **OPS-02** delivers `--prep-packets --tribe <name>` CLI mode for ad-hoc single-Tribe packet generation. Both build on the CLI skeleton from Phase 5 but now route to the full PacketOrchestrator with complete data and DOCX generation. **OPS-03** adds change tracking -- a "Since Last Packet" section in each DOCX showing CI status changes, new awards, advocacy goal shifts, and new legislative threats since the previous generation.
+**OPS-01** delivers `--prep-packets --all-tribes` CLI mode for batch generation of all 592 Tribe packets plus strategic overview, with GC every 25 Tribes and progress reporting. **OPS-02** delivers `--prep-packets --tribe <name>` CLI mode for ad-hoc single-Tribe packet generation. Both build on the CLI skeleton from Phase 5 but now route to the full PacketOrchestrator with complete data and DOCX generation. **OPS-03** adds change tracking -- a "Since Last Packet" section in each DOCX showing CI status changes, new awards, advocacy goal shifts, and new legislative threats since the previous generation.
 
-**Rationale:** Assembly comes last because it integrates everything: the DOCX engine (Phase 7), all per-Tribe data (Phase 6), the registry and delegation (Phase 5), and existing v1.0 pipeline outputs. The shared strategic overview (DOC-06) aggregates per-Tribe data computed in earlier phases. Change tracking (OPS-03) requires packet state persistence, which is an operational feature that builds on a proven core rather than being part of it. Batch generation at 592 Tribes requires memory management (per-document GC, batch processing) that only makes sense to optimize after single-Tribe generation works.
+**WEB-01** delivers a self-contained HTML/CSS/JS search widget hosted on GitHub Pages with Tribe autocomplete, info card, and DOCX download -- embeddable via iframe in SquareSpace. **WEB-02** adds a GitHub Actions workflow for batch packet generation + publishing to GitHub Pages (weekly schedule + manual trigger). **WEB-03** provides SquareSpace embed code (iframe) for Business/Commerce plan sites. AF-05 ("No web UI") is superseded -- the widget is a lightweight static search+download tool, not a dashboard.
+
+**Rationale:** Assembly comes last because it integrates everything: the DOCX engine (Phase 7), all per-Tribe data (Phase 6), the registry and delegation (Phase 5), and existing v1.0 pipeline outputs. The shared strategic overview (DOC-06) aggregates per-Tribe data computed in earlier phases. Change tracking (OPS-03) requires packet state persistence, which is an operational feature that builds on a proven core rather than being part of it. Batch generation at 592 Tribes requires memory management (per-document GC, batch processing) that only makes sense to optimize after single-Tribe generation works. The web distribution layer (WEB-01/02/03) is Wave 3 because it depends on batch generation being operational.
 
 **Success Criteria:**
-1. `--prep-packets --tribe "Cherokee Nation"` generates a complete DOCX packet in `outputs/packets/tribes/` that opens in Word with cover page, executive summary, delegation, 16 Hot Sheets, hazard profile, structural asks, and appendix
-2. `--prep-packets --all-tribes` generates 592 Tribe packets plus STRATEGIC-OVERVIEW.docx in under 5 minutes, with progress reporting and no memory errors
+1. `--prep-packets --tribe "Cherokee Nation"` generates a complete DOCX packet in `outputs/packets/tribes/` that opens in Word with cover page, executive summary, delegation, Hot Sheets, hazard profile, structural asks, and appendix
+2. `--prep-packets --all-tribes` generates 592 Tribe packets plus STRATEGIC-OVERVIEW.docx with progress reporting and no memory errors
 3. Document 2 (Strategic Overview) contains appropriations landscape, ecoregion priorities for all 7 ecoregions, FEMA analysis, and cross-cutting framework drawn from existing v1.0 pipeline data
 4. Running `--prep-packets` twice for the same Tribe produces a "Since Last Packet" section in the second run showing any CI status changes, new awards, or advocacy goal shifts
 5. A generated packet for a multi-state Tribe (e.g., Navajo Nation) correctly lists all representatives across all districts and states in the delegation section
+6. GitHub Pages widget loads, search works, DOCX download works
+7. SquareSpace iframe embed renders correctly
 
 ---
 

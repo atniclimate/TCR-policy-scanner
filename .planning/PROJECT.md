@@ -41,17 +41,18 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 - [x] Hazard Profiling — FEMA NRI 18 hazard types + USFS wildfire risk per Tribe (EPA EJScreen deferred, NOAA deferred)
 - [x] Economic Impact Synthesis — published multipliers + FEMA 4:1 BCR, avoided cost framing per Tribe per program
 - [x] DOCX Generation Engine — python-docx programmatic document construction with Hot Sheets, cover page, appendix
-- [ ] Document 1: FY26 [Tribe Name] Climate Resilience Program Priorities — complete per-Tribe DOCX assembly with all sections
-- [ ] Document 2: FY26 Federal Funding Overview & Strategy — shared DOCX with appropriations landscape, ecoregion strategic priorities
-- [ ] CLI triggers — batch (all 592 Tribes) and ad-hoc (single Tribe) generation modes
-- [ ] Change Tracking — "since last packet" diffs showing what shifted between packet generations
+- [x] Document 1: FY26 [Tribe Name] Climate Resilience Program Priorities — complete per-Tribe DOCX assembly with all sections
+- [x] Document 2: FY26 Federal Funding Overview & Strategy — shared DOCX with appropriations landscape, ecoregion strategic priorities
+- [x] CLI triggers — batch (all 592 Tribes) and ad-hoc (single Tribe) generation modes
+- [x] Change Tracking -- "since last packet" diffs showing what shifted between packet generations
+- [x] Web Distribution -- GitHub Pages search widget with Tribe autocomplete and DOCX download, embeddable via iframe in SquareSpace
 
 ### Out of Scope
 
-- Tribal-specific or sensitive data collection — T0 (Open) data only, public federal sources
-- Real-time streaming — batch scan architecture, not live feeds
-- Non-climate Tribal policy domains — v1 focused on TCR; config-driven design supports future expansion
-- Frontend dashboard — CLI and markdown/JSON output for now
+- Tribal-specific or sensitive data collection -- T0 (Open) data only, public federal sources
+- Real-time streaming -- batch scan architecture, not live feeds
+- Non-climate Tribal policy domains -- v1 focused on TCR; config-driven design supports future expansion
+- ~~Frontend dashboard~~ -- **AF-05 Superseded**: lightweight static search+download widget on GitHub Pages (WEB-01/02/03); not a dashboard or editing UI. Pre-generated DOCX files served statically.
 
 ## Context
 
@@ -92,7 +93,7 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 - BEA regional input-output models — economic multipliers for district-level impact framing
 - FEMA benefit-cost ratios — pre-disaster mitigation returns (4:1 standard)
 
-**Test suite:** 214 tests across 5 modules (decision engine, integration, DOCX, economic, data validation)
+**Test suite:** 287 tests across 11 modules (decision engine, integration, DOCX styles/hotsheet/sections/assembly, economic, strategic overview, batch generation, change tracking, web index, E2E)
 
 ## Constraints
 
@@ -126,7 +127,9 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 | All 592 Tribes | Program scope serves all federally recognized Tribes nationally (EPA API returns 592) | Good — registry + caches for all 592 |
 | Multi-source hazard profiling | FEMA NRI + USFS wildfire (EJScreen deferred, NOAA deferred) | Good — 18 NRI hazard types + USFS wildfire |
 | Published multipliers for economic impact | Standard federal methodology makes framing defensible (not RIMS II at $500/region) | Good — FEMA BCR + published multipliers |
-| Scanner generates both documents | Document 1 (per-Tribe) and Document 2 (strategic overview) both auto-generated | — Pending (Phase 8) |
+| Scanner generates both documents | Document 1 (per-Tribe) and Document 2 (strategic overview) both auto-generated | Good -- DocxEngine + StrategicOverviewGenerator operational |
+| Web distribution widget | Static search+download on GitHub Pages, iframe embed for SquareSpace | Good -- 15KB bundle, autocomplete, WCAG 2.1 AA |
+| AF-05 superseded | Lightweight widget is not a dashboard; supersedes "no web UI" constraint | Good -- static file server, not interactive UI |
 
 ## Current Milestone: v1.1 Tribe-Specific Advocacy Packets
 
@@ -143,4 +146,4 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 - Change tracking between packet generations
 
 ---
-*Last updated: 2026-02-10 after Phase 7 systemic review (214 tests, 14/19 requirements complete)*
+*Last updated: 2026-02-10 after Phase 8 complete (287 tests, 22/22 requirements complete, v1.1 milestone finished)*

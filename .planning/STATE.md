@@ -5,26 +5,26 @@
 See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.1 Tribe-Specific Advocacy Intelligence Packets
+**Current focus:** v1.1 COMPLETE -- Tribe-Specific Advocacy Intelligence Packets
 
-**Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, and report generator.
+**Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, and per-Tribe DOCX advocacy packet generation.
 
 ## Current Position
 
-**Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 8 (Assembly, Polish, Web Distribution) -- IN PROGRESS
-**Plan:** 5 of 6 complete in Phase 8
-**Status:** Phase 8 Wave 3 in progress (08-05 complete, 08-06 pending)
-**Last activity:** 2026-02-10 -- Completed 08-05-PLAN.md (WEB-01/WEB-02/WEB-03 web widget)
+**Milestone:** v1.1 Tribe-Specific Advocacy Packets -- COMPLETE
+**Phase:** 8 (Assembly, Polish, Web Distribution) -- COMPLETE
+**Plan:** 6 of 6 complete in Phase 8
+**Status:** v1.1 milestone complete. All 22 requirements delivered, 287 tests passing.
+**Last activity:** 2026-02-10 -- Completed 08-06-PLAN.md (E2E integration testing + documentation)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [##########]  95% Phase 7 complete, Phase 8 nearly complete
+v1.1     [##########] 100% COMPLETE (4 phases, 17 plans, 22 requirements)
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
   Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
   Phase 7: Computation+DOCX [##########] 100% (4/4 plans complete)
-  Phase 8: Assembly+Polish  [########  ] 83%  (5/6 plans, 08-06 remaining)
+  Phase 8: Assembly+Polish  [##########] 100% (6/6 plans complete)
 ```
 
 ## Performance Metrics
@@ -41,16 +41,18 @@ v1.1     [##########]  95% Phase 7 complete, Phase 8 nearly complete
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 279/279 |
+| v1.1 Total tests passing | 287/287 |
 | v1.1 Phase 6 plans completed | 3/3 |
 | v1.1 Phase 6 tests added | 23 |
 | v1.1 Phase 7 plans completed | 4/4 |
 | v1.1 Phase 7 tests added | 108 |
 | v1.1 Systemic review | 9-agent, 40 findings triaged, 10 fixes applied |
 | v1.1 Requirements complete | 22/22 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..06, OPS-01..03, WEB-01..03) |
-| v1.1 Phase 8 tests added | 65 |
-| v1.1 Phase 8 plans | 6 (08-01..06, 3 waves) |
-| v1.1 Phase 8 requirements | 8 (DOC-05, DOC-06, OPS-01..03, WEB-01..03) |
+| v1.1 Phase 8 tests added | 73 |
+| v1.1 Phase 8 plans completed | 6/6 (08-01..06, 3 waves) |
+| v1.1 Phase 8 requirements complete | 8/8 (DOC-05, DOC-06, OPS-01..03, WEB-01..03) |
+| v1.1 Plans total | 17 (4+3+4+6 across Phases 5-8) |
+| v1.1 Milestone status | COMPLETE |
 
 ## Accumulated Context
 
@@ -173,11 +175,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 08-05-PLAN.md (WEB-01/WEB-02/WEB-03 web widget + CI)
-**Next step:** Execute 08-06-PLAN.md (final polish)
-**Resume file:** .planning/phases/08-assembly-polish/08-MASTER-PROMPT.md
-**Resume command:** Execute 08-06 (final plan in Phase 8)
+**Stopped at:** Completed 08-06-PLAN.md (E2E integration testing + documentation updates)
+**Next step:** /gsd:audit-milestone or /gsd:complete-milestone for v1.1
+**Resume file:** None -- v1.1 milestone complete
+**Resume command:** None -- milestone complete
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 08-05 completion (279 tests, 22/22 requirements)*
+*Last updated: 2026-02-10 after 08-06 completion (287 tests, 22/22 requirements, v1.1 COMPLETE)*

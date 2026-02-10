@@ -3,7 +3,7 @@
 **Milestone:** v1.1
 **Created:** 2026-02-10
 **Status:** Active
-**Total:** 19 requirements
+**Total:** 22 requirements
 
 ---
 
@@ -38,14 +38,20 @@
 - [x] **DOC-02**: 16 per-program Hot Sheets per Tribe, each containing: program status (CI, advocacy goal), Tribe-specific award history, local hazard relevance, district economic impact, and congressional delegation
 - [x] **DOC-03**: Advocacy language per program assembled from decision engine classifications, program inventory tightened_language, and advocacy_lever fields — template-based, not AI-generated
 - [x] **DOC-04**: Five Structural Asks woven into per-program Hot Sheets showing which asks advance which programs, with Tribe-specific evidence from award and hazard data
-- [ ] **DOC-05**: Document 1 — FY26 [Tribe Name] Climate Resilience Program Priorities: per-Tribe DOCX (592 variants) with cover page, executive summary, delegation section, 16 Hot Sheets, hazard profile, structural asks, and appendix
-- [ ] **DOC-06**: Document 2 — FY26 Federal Funding Overview & Strategy: shared DOCX with appropriations landscape, ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework, and messaging guidance
+- [x] **DOC-05**: Document 1 — FY26 [Tribe Name] Climate Resilience Program Priorities: per-Tribe DOCX (592 variants) with cover page, executive summary, delegation section, 16 Hot Sheets, hazard profile, structural asks, and appendix
+- [x] **DOC-06**: Document 2 — FY26 Federal Funding Overview & Strategy: shared DOCX with appropriations landscape, ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework, and messaging guidance
 
 ## Operations
 
-- [ ] **OPS-01**: `--prep-packets --all-tribes` CLI mode for batch generation of all 592 Tribe packets plus strategic overview
-- [ ] **OPS-02**: `--prep-packets --tribe <name>` CLI mode for ad-hoc single-Tribe packet generation
-- [ ] **OPS-03**: Change tracking — "Since Last Packet" section in each DOCX showing CI status changes, new awards, advocacy goal shifts, and new legislative threats since previous generation
+- [x] **OPS-01**: `--prep-packets --all-tribes` CLI mode for batch generation of all 592 Tribe packets plus strategic overview, with GC every 25 Tribes and progress reporting
+- [x] **OPS-02**: `--prep-packets --tribe <name>` CLI mode for ad-hoc single-Tribe packet generation
+- [x] **OPS-03**: Change tracking -- "Since Last Packet" section in each DOCX showing CI status changes, new awards, advocacy goal shifts, and new legislative threats since previous generation
+
+## Web Distribution
+
+- [x] **WEB-01**: Self-contained HTML/CSS/JS search widget hosted on GitHub Pages with Tribe autocomplete, info card, and DOCX download -- embeddable via iframe in SquareSpace
+- [x] **WEB-02**: GitHub Actions workflow for batch packet generation + publishing to GitHub Pages (weekly schedule + manual trigger)
+- [x] **WEB-03**: SquareSpace embed code (iframe) for Business/Commerce plan sites
 
 ## Traceability
 
@@ -65,18 +71,22 @@
 | DOC-02 | TS-02 | High | Phase 7 | Complete |
 | DOC-03 | TS-05 | Medium | Phase 7 | Complete |
 | DOC-04 | DF-05 | Low | Phase 7 | Complete |
-| DOC-05 | TS-01+TS-02 | High | Phase 8 | Pending |
-| DOC-06 | TS-07 | Medium | Phase 8 | Pending |
-| OPS-01 | TS-08 | Low | Phase 8 | Pending |
-| OPS-02 | TS-08 | Low | Phase 8 | Pending |
-| OPS-03 | DF-03 | Medium | Phase 8 | Pending |
+| DOC-05 | TS-01+TS-02 | High | Phase 8 | Complete |
+| DOC-06 | TS-07 | Medium | Phase 8 | Complete |
+| OPS-01 | TS-08 | Low | Phase 8 | Complete |
+| OPS-02 | TS-08 | Low | Phase 8 | Complete |
+| OPS-03 | DF-03 | Medium | Phase 8 | Complete |
+| WEB-01 | User request | Medium | Phase 8 | Complete |
+| WEB-02 | User request | Low | Phase 8 | Complete |
+| WEB-03 | User request | Low | Phase 8 | Complete |
 
 ## Coverage
 
 - Research Table Stakes (8): All 8 covered (TS-01->REG-01/REG-03, TS-02->DOC-02, TS-03->CONG-01/CONG-02, TS-04->AWARD-01/AWARD-02, TS-05->DOC-03, TS-06->DOC-01, TS-07->DOC-06, TS-08->OPS-01/OPS-02)
 - Research Differentiators (5): All 5 covered (DF-01->HAZ-01/HAZ-02, DF-02->ECON-01, DF-03->OPS-03, DF-04->REG-02, DF-05->DOC-04)
-- Research Anti-Features (6): All 6 respected as out-of-scope constraints
+- Research Anti-Features (6): 5 respected as out-of-scope; AF-05 superseded by WEB-01/02/03 (static widget, not dashboard)
 - Research Critical Pitfalls (5): All 5 addressed (C-1->AWARD-02, C-2->HAZ design, C-3->ECON-01, C-4->CONG-01, C-5->AWARD-01 pre-cache)
+- User requests (3): WEB-01/02/03 for web distribution layer
 
 ## Out of Scope (Anti-Features)
 
@@ -84,7 +94,7 @@
 - **AF-02**: No AI/LLM text generation for advocacy language -- template-based assembly only
 - **AF-03**: No real-time document editing or collaboration features
 - **AF-04**: ~~No per-Tribe program filtering~~ **Superseded** -- ProgramRelevanceFilter returns 8-12 relevant programs per Tribe based on hazard profile, ecoregion, and priority; omitted programs appear in appendix
-- **AF-05**: No web UI or frontend dashboard
+- **AF-05**: ~~No web UI or frontend dashboard~~ **Superseded** -- Lightweight static search+download widget on GitHub Pages (WEB-01/02/03); not a dashboard or editing UI
 - **AF-06**: No BEA RIMS II purchase -- use FEMA BCR + published multipliers
 
 ---
