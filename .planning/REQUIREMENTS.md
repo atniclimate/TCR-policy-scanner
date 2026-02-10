@@ -9,14 +9,14 @@
 
 ## Tribal Registry
 
-- [ ] **REG-01**: 575 federally recognized Tribes loaded from EPA Tribes Names Service API with BIA codes, states, and historical name variants for fuzzy matching corpus
-- [ ] **REG-02**: Ecoregion classification for each Tribe (7 ecoregions) with ecoregion-to-program priority mapping
-- [ ] **REG-03**: Per-Tribe DOCX packets display Tribe identity in document title, headers, and cover page fields (Tribe name, state(s), ecoregion, congressional district(s), delegation, primary hazards)
+- [x] **REG-01**: 575 federally recognized Tribes loaded from EPA Tribes Names Service API with BIA codes, states, and historical name variants for fuzzy matching corpus
+- [x] **REG-02**: Ecoregion classification for each Tribe (7 ecoregions) with ecoregion-to-program priority mapping
+- [x] **REG-03**: Per-Tribe DOCX packets display Tribe identity in document title, headers, and cover page fields (Tribe name, state(s), ecoregion, congressional district(s), delegation, primary hazards)
 
 ## Congressional Mapping
 
-- [ ] **CONG-01**: Tribe-to-congressional-district mapping modeled as many-to-many (CRS R48107 authoritative table), correctly handling multi-state Tribes (e.g., Navajo = 4 districts, 3 states) and Alaska at-large
-- [ ] **CONG-02**: Senators, House representatives, and relevant committee assignments (Indian Affairs, Appropriations, Natural Resources) per Tribe from Congress.gov API, pre-cached for 119th Congress
+- [x] **CONG-01**: Tribe-to-congressional-district mapping modeled as many-to-many (CRS R48107 authoritative table), correctly handling multi-state Tribes (e.g., Navajo = 4 districts, 3 states) and Alaska at-large
+- [x] **CONG-02**: Senators, House representatives, and relevant committee assignments (Indian Affairs, Appropriations, Natural Resources) per Tribe from Congress.gov API, pre-cached for 119th Congress
 
 ## Award Matching
 
@@ -51,11 +51,11 @@
 
 | Requirement | Source | Complexity | Phase | Status |
 |-------------|--------|------------|-------|--------|
-| REG-01 | TS-01 | Low | Phase 5 | Pending |
-| REG-02 | DF-04 | Medium | Phase 5 | Pending |
-| REG-03 | TS-01 | Low | Phase 5 | Pending |
-| CONG-01 | TS-03, C-4 | Medium | Phase 5 | Pending |
-| CONG-02 | TS-03 | Medium | Phase 5 | Pending |
+| REG-01 | TS-01 | Low | Phase 5 | Complete |
+| REG-02 | DF-04 | Medium | Phase 5 | Complete |
+| REG-03 | TS-01 | Low | Phase 5 | Complete |
+| CONG-01 | TS-03, C-4 | Medium | Phase 5 | Complete |
+| CONG-02 | TS-03 | Medium | Phase 5 | Complete |
 | AWARD-01 | TS-04, C-5 | Medium | Phase 6 | Pending |
 | AWARD-02 | TS-04, C-1 | High | Phase 6 | Pending |
 | HAZ-01 | DF-01 | High | Phase 6 | Pending |

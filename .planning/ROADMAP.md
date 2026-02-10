@@ -17,10 +17,10 @@ The v1.1 milestone extends the TCR Policy Scanner from a shared advocacy intelli
 **Plans**: 4 plans
 
 Plans:
-- [ ] 05-01-PLAN.md -- Module skeleton, ecoregion classification, context dataclass, graph schema
-- [ ] 05-02-PLAN.md -- Tribal registry build script + runtime module (EPA API)
-- [ ] 05-03-PLAN.md -- Congressional mapping build script + runtime module (Census + Congress.gov + YAML)
-- [ ] 05-04-PLAN.md -- PacketOrchestrator, CLI integration, test suite
+- [x] 05-01-PLAN.md -- Module skeleton, ecoregion classification, context dataclass, graph schema [Wave 1]
+- [x] 05-02-PLAN.md -- Tribal registry build script + runtime module (EPA API) [Wave 1]
+- [x] 05-03-PLAN.md -- Congressional mapping build script + runtime module (Census + Congress.gov + YAML) [Wave 1]
+- [x] 05-04-PLAN.md -- PacketOrchestrator, CLI integration, test suite [Wave 2]
 
 **Details:**
 - Requirements: REG-01, REG-02, REG-03, CONG-01, CONG-02
