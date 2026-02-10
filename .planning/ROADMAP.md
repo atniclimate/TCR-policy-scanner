@@ -72,7 +72,13 @@ Plans:
 
 **Goal**: The DOCX generation engine produces professional per-program Hot Sheet sections with economic impact framing, advocacy language, and structural asks -- so that a single Tribe's complete packet sections can be rendered and opened in Microsoft Word.
 **Depends on**: Phase 6 (award data feeds economic impact calculations; hazard data feeds per-program relevance)
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 07-01-PLAN.md -- Economic impact calculator + program relevance filter (ECON-01) [Wave 1]
+- [ ] 07-02-PLAN.md -- DOCX styles + engine skeleton (DOC-01) [Wave 1]
+- [ ] 07-03-PLAN.md -- Hot Sheet renderer with advocacy language + structural asks (DOC-02, DOC-03, DOC-04) [Wave 2]
+- [ ] 07-04-PLAN.md -- Cover page, appendix, engine completion, orchestrator integration [Wave 3]
 
 **Details:**
 - Requirements: ECON-01, DOC-01, DOC-02, DOC-03, DOC-04
