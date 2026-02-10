@@ -5,9 +5,11 @@ congressional delegation lookup into a unified TribePacketContext.
 Called from CLI via ``--prep-packets --tribe <name>`` or ``--prep-packets --all-tribes``.
 """
 
+import json
 import logging
 import sys
 from datetime import datetime, timezone
+from pathlib import Path
 
 from src.packets.context import TribePacketContext
 from src.packets.congress import CongressionalMapper
@@ -41,6 +43,15 @@ class PacketOrchestrator:
         self.registry = TribalRegistry(config)
         self.congress = CongressionalMapper(config)
         self.ecoregion = EcoregionMapper(config)
+
+        # Phase 6: Award and hazard cache directories
+        packets_cfg = config.get("packets", {})
+        self.award_cache_dir = Path(
+            packets_cfg.get("awards", {}).get("cache_dir", "data/award_cache")
+        )
+        self.hazard_cache_dir = Path(
+            packets_cfg.get("hazards", {}).get("cache_dir", "data/hazard_profiles")
+        )
 
     def run_single_tribe(self, tribe_name: str) -> None:
         """Resolve a single Tribe by name and display its packet context.
@@ -125,6 +136,26 @@ class PacketOrchestrator:
         if error_count:
             print(f"Errors: {error_count}")
 
+    def _load_tribe_cache(self, cache_dir: Path, tribe_id: str) -> dict:
+        """Load a per-Tribe JSON cache file. Returns empty dict if not found.
+
+        Args:
+            cache_dir: Directory containing per-Tribe JSON cache files.
+            tribe_id: Tribe identifier (used as filename stem).
+
+        Returns:
+            Parsed JSON dict, or empty dict on missing/corrupt files.
+        """
+        cache_file = cache_dir / f"{tribe_id}.json"
+        if not cache_file.exists():
+            return {}
+        try:
+            with open(cache_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning("Failed to load cache %s: %s", cache_file, exc)
+            return {}
+
     def _build_context(self, tribe: dict) -> TribePacketContext:
         """Assemble a TribePacketContext from registry, ecoregion, and congress data.
 
@@ -146,6 +177,14 @@ class PacketOrchestrator:
         senators = delegation.get("senators", []) if delegation else []
         representatives = delegation.get("representatives", []) if delegation else []
 
+        # Award data (Phase 6)
+        award_data = self._load_tribe_cache(self.award_cache_dir, tribe_id)
+        awards = award_data.get("awards", [])
+
+        # Hazard profile (Phase 6)
+        hazard_data = self._load_tribe_cache(self.hazard_cache_dir, tribe_id)
+        hazard_profile = hazard_data.get("sources", {})
+
         context = TribePacketContext(
             tribe_id=tribe_id,
             tribe_name=tribe["name"],
@@ -156,17 +195,21 @@ class PacketOrchestrator:
             districts=districts,
             senators=senators,
             representatives=representatives,
+            awards=awards,
+            hazard_profile=hazard_profile,
             generated_at=datetime.now(timezone.utc).isoformat(),
             congress_session=self.congress.get_congress_session(),
         )
 
-        logger.debug("Built context for %s: %d districts, %d senators, %d reps",
+        logger.debug("Built context for %s: %d districts, %d senators, %d reps, "
+                      "%d awards, %d hazard sources",
                       tribe["name"], len(districts), len(senators),
-                      len(representatives))
+                      len(representatives), len(awards),
+                      len(hazard_profile))
         return context
 
     def _display_tribe_info(self, context: TribePacketContext) -> None:
-        """Display formatted Tribe identity and congressional delegation.
+        """Display formatted Tribe identity, delegation, awards, and hazards.
 
         Args:
             context: The TribePacketContext to display.
@@ -198,46 +241,123 @@ class PacketOrchestrator:
 
         if not context.districts and not context.senators and not context.representatives:
             print("    No congressional delegation data available.")
-            print(sep)
-            return
+        else:
+            # Districts
+            if context.districts:
+                print(f"\n  Districts ({len(context.districts)}):")
+                for d in context.districts:
+                    overlap = d.get("overlap_pct")
+                    overlap_str = f" ({overlap:.1f}% overlap)" if overlap is not None else ""
+                    print(f"    {d['district']}{overlap_str}")
 
-        # Districts
-        if context.districts:
-            print(f"\n  Districts ({len(context.districts)}):")
-            for d in context.districts:
-                overlap = d.get("overlap_pct")
-                overlap_str = f" ({overlap:.1f}% overlap)" if overlap is not None else ""
-                print(f"    {d['district']}{overlap_str}")
+            # Senators
+            if context.senators:
+                print(f"\n  Senators ({len(context.senators)}):")
+                for s in context.senators:
+                    name_str = s.get("formatted_name", s.get("name", "Unknown"))
+                    committees = s.get("committees", [])
+                    print(f"    {name_str}")
+                    if committees:
+                        comm_strs = []
+                        for c in committees:
+                            role = c.get("title") or c.get("role", "")
+                            role_str = f" [{role}]" if role and role != "member" else ""
+                            comm_strs.append(f"{c.get('committee_name', c.get('committee_id', ''))}{role_str}")
+                        print(f"      Committees: {'; '.join(comm_strs)}")
 
-        # Senators
-        if context.senators:
-            print(f"\n  Senators ({len(context.senators)}):")
-            for s in context.senators:
-                name_str = s.get("formatted_name", s.get("name", "Unknown"))
-                committees = s.get("committees", [])
-                print(f"    {name_str}")
-                if committees:
-                    comm_strs = []
-                    for c in committees:
-                        role = c.get("title") or c.get("role", "")
-                        role_str = f" [{role}]" if role and role != "member" else ""
-                        comm_strs.append(f"{c.get('committee_name', c.get('committee_id', ''))}{role_str}")
-                    print(f"      Committees: {'; '.join(comm_strs)}")
+            # Representatives
+            if context.representatives:
+                print(f"\n  Representatives ({len(context.representatives)}):")
+                for r in context.representatives:
+                    name_str = r.get("formatted_name", r.get("name", "Unknown"))
+                    committees = r.get("committees", [])
+                    print(f"    {name_str}")
+                    if committees:
+                        comm_strs = []
+                        for c in committees:
+                            role = c.get("title") or c.get("role", "")
+                            role_str = f" [{role}]" if role and role != "member" else ""
+                            comm_strs.append(f"{c.get('committee_name', c.get('committee_id', ''))}{role_str}")
+                        print(f"      Committees: {'; '.join(comm_strs)}")
 
-        # Representatives
-        if context.representatives:
-            print(f"\n  Representatives ({len(context.representatives)}):")
-            for r in context.representatives:
-                name_str = r.get("formatted_name", r.get("name", "Unknown"))
-                committees = r.get("committees", [])
-                print(f"    {name_str}")
-                if committees:
-                    comm_strs = []
-                    for c in committees:
-                        role = c.get("title") or c.get("role", "")
-                        role_str = f" [{role}]" if role and role != "member" else ""
-                        comm_strs.append(f"{c.get('committee_name', c.get('committee_id', ''))}{role_str}")
-                    print(f"      Committees: {'; '.join(comm_strs)}")
+        # Award history (Phase 6)
+        self._display_award_summary(context)
+
+        # Climate hazard profile (Phase 6)
+        self._display_hazard_summary(context)
 
         print(f"\n  Generated: {context.generated_at}")
         print(sep)
+
+    def _display_award_summary(self, context: TribePacketContext) -> None:
+        """Display award history summary.
+
+        Args:
+            context: The TribePacketContext with awards data.
+        """
+        print(f"\n  Award History:")
+        if not context.awards:
+            print("    No federal climate resilience awards in tracked programs.")
+            print("    First-time applicant opportunity.")
+            return
+
+        total_obligation = sum(a.get("obligation", 0.0) for a in context.awards)
+        count = len(context.awards)
+        print(f"    Total Obligation: ${total_obligation:,.0f} across {count} awards")
+
+        # Group by program/CFDA
+        program_totals: dict[str, float] = {}
+        for award in context.awards:
+            prog = award.get("program_id") or award.get("cfda", "Unknown")
+            program_totals[prog] = program_totals.get(prog, 0.0) + award.get("obligation", 0.0)
+
+        if program_totals:
+            prog_strs = []
+            for prog, total in sorted(program_totals.items(), key=lambda x: -x[1]):
+                prog_strs.append(f"{prog} (${total:,.0f})")
+            print(f"    Programs: {', '.join(prog_strs)}")
+
+    def _display_hazard_summary(self, context: TribePacketContext) -> None:
+        """Display climate hazard profile summary.
+
+        Args:
+            context: The TribePacketContext with hazard_profile data.
+        """
+        print(f"\n  Climate Hazard Profile:")
+
+        if not context.hazard_profile:
+            print("    No hazard profile data available.")
+            return
+
+        # FEMA NRI section
+        nri = context.hazard_profile.get("fema_nri", {})
+        composite = nri.get("composite", {})
+
+        risk_rating = composite.get("risk_rating", "")
+        risk_score = composite.get("risk_score", 0.0)
+        sovi_rating = composite.get("sovi_rating", "")
+        sovi_score = composite.get("sovi_score", 0.0)
+
+        if risk_rating or risk_score:
+            print(f"    Overall Risk: {risk_rating or 'N/A'} (score: {risk_score:.1f})")
+        if sovi_rating or sovi_score:
+            print(f"    Social Vulnerability: {sovi_rating or 'N/A'} (score: {sovi_score:.1f})")
+
+        # Top hazards
+        top_hazards = nri.get("top_hazards", [])
+        if top_hazards:
+            print("    Top Hazards:")
+            for i, h in enumerate(top_hazards, 1):
+                haz_type = h.get("type", "Unknown")
+                haz_score = h.get("risk_score", 0.0)
+                haz_eal = h.get("eal_total", 0.0)
+                print(f"      {i}. {haz_type} (score: {haz_score:.1f}, EAL: ${haz_eal:,.0f})")
+
+        # USFS wildfire section
+        usfs = context.hazard_profile.get("usfs_wildfire", {})
+        if usfs:
+            risk_to_homes = usfs.get("risk_to_homes", 0.0)
+            likelihood = usfs.get("wildfire_likelihood", 0.0)
+            if risk_to_homes or likelihood:
+                print(f"    Wildfire Risk (USFS): Risk to Homes: {risk_to_homes:.2f}, "
+                      f"Likelihood: {likelihood:.4f}")

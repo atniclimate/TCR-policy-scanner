@@ -148,6 +148,17 @@
     "ecoregion": {
       "data_path": "data/ecoregion_config.json"
     },
-    "output_dir": "outputs/packets"
+    "output_dir": "outputs/packets",
+    "awards": {
+      "alias_path": "data/tribal_aliases.json",
+      "cache_dir": "data/award_cache",
+      "fuzzy_threshold": 85
+    },
+    "hazards": {
+      "nri_dir": "data/nri",
+      "usfs_dir": "data/usfs",
+      "cache_dir": "data/hazard_profiles",
+      "crosswalk_path": "data/aiannh_tribe_crosswalk.json"
+    }
   }
 }
