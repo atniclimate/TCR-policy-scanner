@@ -13,6 +13,7 @@ from pathlib import Path
 
 from dataclasses import asdict
 
+from src.packets.change_tracker import PacketChangeTracker
 from src.packets.context import TribePacketContext
 from src.packets.congress import CongressionalMapper
 from src.packets.docx_engine import DocxEngine
@@ -493,6 +494,22 @@ class PacketOrchestrator:
         # Load structural asks
         structural_asks = self._load_structural_asks()
 
+        # Change tracking (OPS-03)
+        state_dir = Path(
+            self.config.get("packets", {}).get(
+                "state_dir", "data/packet_state"
+            )
+        )
+        tracker = PacketChangeTracker(state_dir=state_dir)
+        previous_state = tracker.load_previous(context.tribe_id)
+        current_state = tracker.compute_current(context, self.programs)
+
+        changes: list[dict] = []
+        previous_date: str | None = None
+        if previous_state is not None:
+            changes = tracker.diff(previous_state, current_state)
+            previous_date = previous_state.get("generated_at")
+
         # Create engine and generate document
         engine = DocxEngine(self.config, self.programs)
         path = engine.generate(
@@ -501,7 +518,12 @@ class PacketOrchestrator:
             economic_summary=economic_summary,
             structural_asks=structural_asks,
             omitted_programs=omitted,
+            changes=changes,
+            previous_date=previous_date,
         )
+
+        # Persist current state after successful generation
+        tracker.save_current(context.tribe_id, current_state)
 
         logger.info("Generated packet for %s: %s", context.tribe_name, path)
         return path

@@ -18,6 +18,7 @@ from src.packets.context import TribePacketContext
 from src.packets.docx_hotsheet import HotSheetRenderer
 from src.packets.docx_sections import (
     render_appendix,
+    render_change_tracking,
     render_cover_page,
     render_delegation_section,
     render_executive_summary,
@@ -175,12 +176,12 @@ class DocxEngine:
         changes: list[dict] | None = None,
         previous_date: str | None = None,
     ) -> Path:
-        """Generate a complete 8-section advocacy packet DOCX for a single Tribe.
+        """Generate a complete 9-section advocacy packet DOCX for a single Tribe.
 
         Assembles the full document in order: cover page, table of contents,
         executive summary, congressional delegation, Hot Sheet pages for each
-        relevant program, hazard profile summary, structural policy asks, and
-        appendix of omitted programs.
+        relevant program, hazard profile summary, structural policy asks,
+        change tracking (if changes exist), and appendix of omitted programs.
 
         Args:
             context: TribePacketContext with all Tribe data.
@@ -190,10 +191,9 @@ class DocxEngine:
             omitted_programs: Optional list of programs not included in
                 Hot Sheets (rendered in appendix).
             changes: Optional list of change dicts for change tracking
-                (forward-compatible stub for Plan 08-04, not used here).
+                (OPS-03). Empty or None means no "Since Last Packet" section.
             previous_date: Optional ISO date string of previous packet
-                generation (forward-compatible stub for Plan 08-04, not
-                used here).
+                generation, displayed in the change tracking header.
 
         Returns:
             Path to the saved .docx file.
@@ -232,7 +232,14 @@ class DocxEngine:
             document, structural_asks, context, style_manager
         )
 
-        # 8. Appendix (omitted programs or "all included" note)
+        # 8. Change tracking (OPS-03, if changes exist)
+        if changes:
+            document.add_page_break()
+            render_change_tracking(
+                document, changes, previous_date, style_manager
+            )
+
+        # 9. Appendix (omitted programs or "all included" note)
         render_appendix(
             document, omitted_programs or [], context, style_manager
         )
@@ -242,11 +249,12 @@ class DocxEngine:
         output_path = self.save(document, tribe_id)
 
         logger.info(
-            "Generated complete 8-section packet for %s: "
-            "%d Hot Sheets, %d structural asks, %d omitted programs",
+            "Generated complete packet for %s: "
+            "%d Hot Sheets, %d structural asks, %d omitted, %d changes",
             context.tribe_name,
             len(relevant_programs),
             len(structural_asks),
             len(omitted_programs or []),
+            len(changes or []),
         )
         return output_path
