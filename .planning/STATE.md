@@ -12,19 +12,19 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 5 (Foundation) -- in progress
-**Plan:** 03 of 4 complete in Phase 5 (Wave 1)
-**Status:** Executing Phase 5 Wave 1
-**Last activity:** 2026-02-10 -- Completed 05-03-PLAN.md (congressional mapping data layer)
+**Phase:** 5 (Foundation) -- COMPLETE
+**Plan:** 04 of 4 complete in Phase 5
+**Status:** Phase 5 complete, ready for Phase 6
+**Last activity:** 2026-02-10 -- Completed 05-04-PLAN.md (PacketOrchestrator + CLI + tests)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [######    ]  75% Phase 5 in progress
-  Phase 5: Foundation       [########  ] 75%  (3/4 plans complete)
-  Phase 6: Data Acquisition [          ] 0%  (4 requirements)
-  Phase 7: Computation+DOCX [          ] 0%  (5 requirements)
-  Phase 8: Assembly+Polish  [          ] 0%  (5 requirements)
+v1.1     [########  ]  25% Phase 5 complete
+  Phase 5: Foundation       [##########] 100% (4/4 plans complete)
+  Phase 6: Data Acquisition [          ] 0%   (4 requirements)
+  Phase 7: Computation+DOCX [          ] 0%   (5 requirements)
+  Phase 8: Assembly+Polish  [          ] 0%   (5 requirements)
 ```
 
 ## Performance Metrics
@@ -39,14 +39,18 @@ v1.1     [######    ]  75% Phase 5 in progress
 | v1.1 Requirements total | 19 |
 | v1.1 Phases planned | 4 (Phases 5-8) |
 | v1.1 Requirements mapped | 19/19 |
+| v1.1 Phase 5 plans completed | 4/4 |
+| v1.1 Phase 5 tests added | 31 |
+| v1.1 Total tests passing | 83/83 |
 
 ## Accumulated Context
 
 ### Architecture Notes
 
 - **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
-- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json (new), tribal_registry.json (new), congressional_cache.json (new), aiannh_tribe_crosswalk.json (new)
-- **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (new for v1.1), rapidfuzz (new for v1.1)
+- **Packet flow:** CLI (--prep-packets) -> PacketOrchestrator -> TribalRegistry + EcoregionMapper + CongressionalMapper -> TribePacketContext -> Display
+- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json, tribal_registry.json, congressional_cache.json, aiannh_tribe_crosswalk.json
+- **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (v1.1), rapidfuzz (v1.1)
 - **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific, cron `0 13 * * 1-5`)
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
 
@@ -54,15 +58,15 @@ v1.1     [######    ]  75% Phase 5 in progress
 
 - Output as DOCX (Word) for congressional office distribution
 - Programmatic DOCX generation (python-docx), no template files
-- All 575 federally recognized Tribes (NCAI scope, not just ATNI)
+- All 592 federally recognized Tribes (EPA API scope, updated from 574/575 estimate)
 - Two output documents: per-Tribe Program Priorities + shared Federal Funding Overview
 - Multi-source hazard profiling: FEMA NRI + USFS wildfire (EJScreen deferred, NOAA deferred)
 - Economic impact: USASpending obligations x published multipliers + FEMA BCR (not RIMS II)
-- Congressional mapping: CRS R48107 table + Congress.gov API members/committees
+- Congressional mapping: Census CD119-AIANNH + Congress.gov API members/committees
 - Many-to-many Tribe-to-district model from day one
 - Separate CLI command (`--prep-packets`), not daily pipeline integration
 - Pre-cache all data layers before DOCX generation (zero API calls during doc construction)
-- Batch (all 575) and ad-hoc (single Tribe) generation modes
+- Batch (all 592) and ad-hoc (single Tribe) generation modes
 - Change tracking between packet generations
 
 ### Decisions (Phase 5)
@@ -78,6 +82,9 @@ v1.1     [######    ]  75% Phase 5 in progress
 | Census CD119-AIANNH over CRS R48107 | 05-03 | Machine-readable, 119th Congress (current), has area overlap data; CRS report is 118th Congress PDF |
 | Four-tier crosswalk matching | 05-03 | Single-pass normalization matched only 60/577; added variant generation + substring + fuzzy = 550/577 (95.3%) |
 | 538 Congress members (not 541) | 05-03 | API returned 538 current members; difference from research estimate likely vacancies |
+| Auto-select first fuzzy match | 05-04 | Orchestrator auto-selects best match from ambiguous results, shows alternatives as warning |
+| Lazy import for packets module | 05-04 | PacketOrchestrator only imported when --prep-packets is set; avoids rapidfuzz overhead for existing pipeline |
+| Graceful no-delegation display | 05-04 | Tribes without congressional data get informative message instead of crash |
 
 ### Todos
 
@@ -92,10 +99,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 05-03-PLAN.md (congressional mapping data layer)
-**Next step:** Execute 05-04 (Wave 2, CLI skeleton)
+**Stopped at:** Completed 05-04-PLAN.md (PacketOrchestrator + CLI integration + test suite)
+**Next step:** Begin Phase 6 (Data Acquisition) planning/execution
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 05-03 plan execution*
+*Last updated: 2026-02-10 after 05-04 plan execution (Phase 5 complete)*
