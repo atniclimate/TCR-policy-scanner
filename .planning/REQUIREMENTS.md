@@ -20,13 +20,13 @@
 
 ## Award Matching
 
-- [ ] **AWARD-01**: Per-CFDA USASpending Tribal award queries with full pagination and `recipient_type_names: ["tribal"]` filter — not limited to top 10
-- [ ] **AWARD-02**: Two-tier Tribal name matching: curated alias table (primary) + rapidfuzz token_sort_ratio >= 85 fallback, with state-overlap validation and match confidence scoring
+- [x] **AWARD-01**: Per-CFDA USASpending Tribal award queries with full pagination and `recipient_type_names: ["tribal"]` filter — not limited to top 10
+- [x] **AWARD-02**: Two-tier Tribal name matching: curated alias table (primary) + rapidfuzz token_sort_ratio >= 85 fallback, with state-overlap validation and match confidence scoring
 
 ## Hazard Profiling
 
-- [ ] **HAZ-01**: FEMA National Risk Index (NRI v1.20) risk ratings for 18 hazard types mapped to Tribal areas from pre-downloaded CSV, with overall risk score, top hazards, expected annual loss, and social vulnerability
-- [ ] **HAZ-02**: USFS Wildfire Risk to Communities data integrated per Tribe from pre-downloaded tabular data
+- [x] **HAZ-01**: FEMA National Risk Index (NRI v1.20) risk ratings for 18 hazard types mapped to Tribal areas from pre-downloaded CSV, with overall risk score, top hazards, expected annual loss, and social vulnerability
+- [x] **HAZ-02**: USFS Wildfire Risk to Communities data integrated per Tribe from pre-downloaded tabular data
 
 ## Economic Impact
 
@@ -56,10 +56,10 @@
 | REG-03 | TS-01 | Low | Phase 5 | Complete |
 | CONG-01 | TS-03, C-4 | Medium | Phase 5 | Complete |
 | CONG-02 | TS-03 | Medium | Phase 5 | Complete |
-| AWARD-01 | TS-04, C-5 | Medium | Phase 6 | Pending |
-| AWARD-02 | TS-04, C-1 | High | Phase 6 | Pending |
-| HAZ-01 | DF-01 | High | Phase 6 | Pending |
-| HAZ-02 | DF-01 | Medium | Phase 6 | Pending |
+| AWARD-01 | TS-04, C-5 | Medium | Phase 6 | Complete |
+| AWARD-02 | TS-04, C-1 | High | Phase 6 | Complete |
+| HAZ-01 | DF-01 | High | Phase 6 | Complete |
+| HAZ-02 | DF-01 | Medium | Phase 6 | Complete |
 | ECON-01 | DF-02, C-3 | Medium | Phase 7 | Pending |
 | DOC-01 | TS-06 | Medium | Phase 7 | Pending |
 | DOC-02 | TS-02 | High | Phase 7 | Pending |

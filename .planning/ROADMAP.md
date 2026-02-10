@@ -46,9 +46,9 @@ This phase also delivers the `--prep-packets` CLI extension in main.py, the Pack
 **Plans**: 3 plans
 
 Plans:
-- [ ] 06-01-PLAN.md -- TribalAwardMatcher: batch USASpending queries + two-tier name matching + per-Tribe award cache [Wave 1]
-- [ ] 06-02-PLAN.md -- HazardProfileBuilder: FEMA NRI + USFS wildfire ingestion + per-Tribe hazard cache [Wave 1]
-- [ ] 06-03-PLAN.md -- Integration: wire awards + hazards into orchestrator, config, tests [Wave 2]
+- [x] 06-01-PLAN.md -- TribalAwardMatcher: batch USASpending queries + two-tier name matching + per-Tribe award cache [Wave 1]
+- [x] 06-02-PLAN.md -- HazardProfileBuilder: FEMA NRI + USFS wildfire ingestion + per-Tribe hazard cache [Wave 1]
+- [x] 06-03-PLAN.md -- Integration: wire awards + hazards into orchestrator, config, tests [Wave 2]
 
 **Details:**
 - Requirements: AWARD-01, AWARD-02, HAZ-01, HAZ-02
