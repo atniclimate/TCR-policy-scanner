@@ -13,9 +13,9 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
 **Phase:** 6 (Data Acquisition) -- IN PROGRESS
-**Plan:** 02 of 3 complete in Phase 6
-**Status:** Plan 06-02 complete, continuing Phase 6
-**Last activity:** 2026-02-10 -- Completed 06-02-PLAN.md (Hazard Profiling Pipeline)
+**Plan:** 01 + 02 of 3 complete in Phase 6
+**Status:** Plans 06-01 and 06-02 complete, 06-03 remaining
+**Last activity:** 2026-02-10 -- Completed 06-01-PLAN.md (Tribal Award Matching Pipeline)
 
 **Progress:**
 ```
@@ -42,7 +42,7 @@ v1.1     [######### ]  42% Phase 6 in progress
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
 | v1.1 Total tests passing | 83/83 |
-| v1.1 Phase 6 plans completed | 2/3 |
+| v1.1 Phase 6 plans completed | 2/3 (06-01, 06-02) |
 
 ## Accumulated Context
 
@@ -50,7 +50,7 @@ v1.1     [######### ]  42% Phase 6 in progress
 
 - **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
 - **Packet flow:** CLI (--prep-packets) -> PacketOrchestrator -> TribalRegistry + EcoregionMapper + CongressionalMapper -> TribePacketContext -> Display
-- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json, tribal_registry.json, congressional_cache.json, aiannh_tribe_crosswalk.json, hazard_profiles/*.json
+- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json, tribal_registry.json, congressional_cache.json, aiannh_tribe_crosswalk.json, tribal_aliases.json, hazard_profiles/*.json, award_cache/*.json
 - **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (v1.1), rapidfuzz (v1.1), openpyxl (v1.1)
 - **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific, cron `0 13 * * 1-5`)
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
@@ -95,6 +95,10 @@ v1.1     [######### ]  42% Phase 6 in progress
 | State-level county fallback for unmatched Tribes | 06-02 | Less precise but ensures every Tribe gets some hazard data when tribal relational CSV unavailable |
 | Schema discovery for USFS/NRI columns | 06-02 | Column names uncertain from research; dynamic header inspection avoids hardcoded assumptions |
 | Empty profiles for all 592 Tribes | 06-02 | Downstream DOCX generation never crashes on missing cache; note field explains data gaps |
+| token_sort_ratio (not WRatio) for award matching | 06-01 | WRatio is for interactive registry resolve(); award matching needs strict, word-order-invariant scoring |
+| 85 threshold for fuzzy award matching | 06-01 | Prevents false positives; alias table (3751 entries) handles known names at Tier 1 |
+| Per-Tribe cache files (not single file) | 06-01 | O(1) per-Tribe lookup during DOCX generation; avoids loading all 592 Tribes' data |
+| Zero-award Tribes get advocacy framing | 06-01 | First-time applicant status is a competitive advantage, not a data gap |
 
 ### Todos
 
@@ -109,10 +113,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 06-02-PLAN.md (Hazard Profiling Pipeline)
+**Stopped at:** Completed 06-01-PLAN.md (Tribal Award Matching Pipeline)
 **Next step:** Execute 06-03-PLAN.md (remaining Phase 6 plan)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 06-02 plan execution (Phase 6: 2/3 plans complete)*
+*Last updated: 2026-02-10 after 06-01 plan execution (Phase 6: 2/3 plans complete)*
