@@ -13,12 +13,22 @@ The scanner answers the question: *What has changed in the federal policy landsc
 
 ## What It Does
 
+### v1.0: Policy Scanning Pipeline
+
 1. **Collects** policy documents from federal sources (Federal Register, Grants.gov, Congress.gov, USASpending)
 2. **Scores** each item against the tracked program inventory using weighted relevance factors
 3. **Builds a knowledge graph** connecting programs to authorities, barriers, and funding vehicles
 4. **Monitors** for urgent threats via 5 monitors (IIJA sunset, reconciliation, Tribal consultation, Hot Sheets sync, DHS funding cliff)
 5. **Classifies** each program with an advocacy goal using a 5-rule decision engine across 6 advocacy goals
 6. **Generates briefings** formatted for Tribal Leaders with advocacy levers attached
+
+### v1.1: Tribe-Specific Advocacy Packets
+
+7. **Generates per-Tribe DOCX advocacy packets** (Document 1) with executive summary, congressional delegation, Hot Sheet pages for each relevant program, climate hazard profile, structural policy asks, change tracking, and program appendix
+8. **Generates a shared strategic overview** (Document 2) with FY26 appropriations landscape, ecoregion priorities, FEMA analysis, cross-cutting policy framework, and messaging guidance
+9. **Runs batch generation** for all 592 Tribes with memory management (GC every 25 Tribes) and error isolation
+10. **Tracks changes** between packet generations, highlighting new awards, CI status changes, and emerging hazard threats in a "Since Last Packet" section
+11. **Provides a GitHub Pages search widget** for discovering and downloading Tribal advocacy packets, embeddable via SquareSpace iframe
 
 ## Programs Tracked
 
@@ -197,7 +207,17 @@ The graph schema defines 7 node types and 8 edge types:
 
 ## Testing
 
-The test suite contains 52 tests covering all 5 decision engine rules, priority ordering, default fallback behavior, secondary rules transparency, classification shape validation, and edge cases.
+The test suite contains 287 tests covering:
+
+- **Decision engine** (52 tests): All 5 rules, priority ordering, default fallback, edge cases
+- **DOCX generation** (108 tests): Style manager, Hot Sheet rendering, section renderers, full document assembly
+- **Economic impact** (26 tests): BEA multipliers, BLS employment, FEMA BCR, benchmark path
+- **Packet orchestration** (54 tests): Registry, ecoregion, congressional mapping, award/hazard caches
+- **Strategic overview** (22 tests): 7-section Document 2 generation
+- **Batch and CLI** (7 tests): run_all_tribes(), run_single_tribe(), GC, progress format
+- **Change tracking** (16 tests): 5 change types, state persistence, render_change_tracking()
+- **Web widget** (7 tests): build_index(), GitHub Pages widget, CI workflow
+- **E2E integration** (8 tests): Full pipeline verification across all Phase 8 components
 
 ```bash
 # Run all tests
@@ -205,6 +225,9 @@ python -m pytest tests/ -v
 
 # Run decision engine tests only
 python -m pytest tests/test_decision_engine.py -v
+
+# Run E2E integration tests
+python -m pytest tests/test_e2e_phase8.py -v
 ```
 
 ## Data Integrity Validation
@@ -243,6 +266,43 @@ The GitHub Actions workflow can be extended to send notifications via:
 - Email (using GitHub Actions email actions)
 - Slack (using the Slack webhook action)
 - Microsoft Teams (using the Teams webhook action)
+
+## Web Distribution
+
+TCR Policy Scanner includes a lightweight search widget for discovering and downloading
+Tribal advocacy packets. The widget is hosted on GitHub Pages and can be embedded in
+any website via iframe.
+
+### Search Widget
+
+The widget at `docs/web/` provides:
+- Autocomplete search across all 592 Tribal Nations
+- Info card showing Tribe name, state(s), and ecoregion
+- Direct DOCX download for generated advocacy packets
+- Strategic overview download
+- Mobile-responsive, WCAG 2.1 AA accessible
+
+### SquareSpace Embed
+
+To embed the widget in a SquareSpace page, add a Code block with:
+
+```html
+<div style="width:100%;max-width:800px;margin:0 auto;">
+  <iframe
+    src="https://atniclimate.github.io/TCR-policy-scanner/"
+    width="100%" height="700" frameborder="0"
+    style="border:1px solid #e0e0e0;border-radius:8px;"
+    title="TCR Policy Scanner - Tribal Advocacy Packet Search"
+    loading="lazy">
+  </iframe>
+</div>
+```
+
+### Automated Generation
+
+A GitHub Actions workflow generates packets weekly (Sunday 8AM Pacific) and on manual
+trigger. The workflow runs `--prep-packets --all-tribes`, builds the web index, and
+commits updated packets to `docs/web/tribes/`.
 
 ## Data Sovereignty Note
 
