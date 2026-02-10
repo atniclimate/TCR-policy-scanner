@@ -13,9 +13,9 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
 **Phase:** 8 (Assembly, Polish, Web Distribution) -- IN PROGRESS
-**Plan:** 1 of 6 complete in Phase 8
-**Status:** Phase 8 Wave 1 in progress; 08-01 complete, 08-02 pending
-**Last activity:** 2026-02-10 -- Completed 08-01-PLAN.md (DOC-05 document assembly)
+**Plan:** 2 of 6 complete in Phase 8
+**Status:** Phase 8 Wave 1 complete (08-01 + 08-02); ready for Wave 2
+**Last activity:** 2026-02-10 -- Completed 08-02-PLAN.md (DOC-06 strategic overview)
 
 **Progress:**
 ```
@@ -24,7 +24,7 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 planned
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
   Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
   Phase 7: Computation+DOCX [##########] 100% (4/4 plans complete)
-  Phase 8: Assembly+Polish  [##        ] 17%  (1/6 plans, Wave 1 in progress)
+  Phase 8: Assembly+Polish  [###       ] 33%  (2/6 plans, Wave 1 complete)
 ```
 
 ## Performance Metrics
@@ -41,14 +41,14 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 planned
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 227/227 |
+| v1.1 Total tests passing | 249/249 |
 | v1.1 Phase 6 plans completed | 3/3 |
 | v1.1 Phase 6 tests added | 23 |
 | v1.1 Phase 7 plans completed | 4/4 |
 | v1.1 Phase 7 tests added | 108 |
 | v1.1 Systemic review | 9-agent, 40 findings triaged, 10 fixes applied |
-| v1.1 Requirements complete | 15/22 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..05) |
-| v1.1 Phase 8 tests added | 13 |
+| v1.1 Requirements complete | 16/22 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..06) |
+| v1.1 Phase 8 tests added | 35 |
 | v1.1 Phase 8 plans | 6 (08-01..06, 3 waves) |
 | v1.1 Phase 8 requirements | 8 (DOC-05, DOC-06, OPS-01..03, WEB-01..03) |
 
@@ -145,6 +145,9 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 planned
 | Senators shown as "At-Large" in district column | 08-01 | Senators represent entire state, not specific districts |
 | EAL formatted as $X,XXX (no decimals) | 08-01 | Consistent with _format_dollars pattern in docx_hotsheet.py |
 | Evidence line uses program_id match (not CFDA) | 08-01 | Direct match sufficient for standalone section |
+| Policy tracking lookup via extensible_fields with reasoning fallback | 08-02 | policy_tracking.json uses 'positions' key; authorization_status in extensible_fields |
+| Monitor data tries multiple key names for alerts | 08-02 | Cascading lookup (alerts/findings/threats/monitors) handles different output formats |
+| _FEMA_PROGRAM_IDS includes 5 IDs (only 2 in current inventory) | 08-02 | Future-proof for when fema_hmgp/fma/pdm are added |
 
 ### Todos
 
@@ -159,11 +162,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 08-01-PLAN.md (DOC-05 full document assembly)
-**Next step:** Execute 08-02-PLAN.md (DOC-06 Federal Funding Overview)
-**Resume file:** .planning/phases/08-assembly-polish/08-02-PLAN.md
-**Resume command:** Execute Plan 08-02
+**Stopped at:** Completed 08-02-PLAN.md (DOC-06 strategic overview)
+**Next step:** Execute Phase 8 Wave 2 (08-03 + 08-04 in parallel)
+**Resume file:** .planning/phases/08-assembly-polish/08-MASTER-PROMPT.md
+**Resume command:** Execute Wave 2: Plans 08-03 and 08-04 in parallel
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 08-01 completion (227 tests, 15/22 requirements)*
+*Last updated: 2026-02-10 after 08-02 completion (249 tests, 16/22 requirements)*
