@@ -1,0 +1,55 @@
+name: Generate Advocacy Packets
+
+on:
+  schedule:
+    # Sunday 8AM Pacific (15:00 UTC during PST, 14:00 UTC during PDT)
+    - cron: '0 15 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate all packets
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+        run: python -m src.main --prep-packets --all-tribes
+
+      - name: Build web index
+        run: python scripts/build_web_index.py
+
+      - name: Stage for GitHub Pages
+        run: |
+          mkdir -p docs/web/tribes docs/web/data
+          cp outputs/packets/*.docx docs/web/tribes/ || true
+          cp outputs/packets/STRATEGIC-OVERVIEW.docx docs/web/tribes/ || true
+
+      - name: Commit and push
+        run: |
+          git config user.name "TCR Policy Scanner"
+          git config user.email "scanner@tcr-policy-scanner.local"
+          git add docs/web/tribes/ docs/web/data/tribes.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "packets: generate $(date -u +%Y-%m-%d)"
+            git push
+          fi
