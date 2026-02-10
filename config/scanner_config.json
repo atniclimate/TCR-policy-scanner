@@ -137,5 +137,17 @@
     "decision_engine": {
       "urgency_threshold_days": 30
     }
+  },
+  "packets": {
+    "tribal_registry": {
+      "data_path": "data/tribal_registry.json"
+    },
+    "congressional_cache": {
+      "data_path": "data/congressional_cache.json"
+    },
+    "ecoregion": {
+      "data_path": "data/ecoregion_config.json"
+    },
+    "output_dir": "outputs/packets"
   }
 }

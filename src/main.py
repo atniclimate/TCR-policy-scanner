@@ -293,6 +293,12 @@ def main() -> None:
     parser.add_argument("--report-only", action="store_true", help="Regenerate report from cached data")
     parser.add_argument("--graph-only", action="store_true", help="Export knowledge graph from cached data")
     parser.add_argument("--verbose", "-v", action="store_true", help="Enable verbose logging")
+    parser.add_argument("--prep-packets", action="store_true",
+                        help="Generate Tribe-specific advocacy packets")
+    parser.add_argument("--tribe", type=str,
+                        help="Tribe name for single packet (used with --prep-packets)")
+    parser.add_argument("--all-tribes", action="store_true",
+                        help="Generate for all Tribes (used with --prep-packets)")
     args = parser.parse_args()
 
     log_level = logging.DEBUG if args.verbose else logging.INFO
@@ -304,6 +310,21 @@ def main() -> None:
 
     config = load_config()
     programs = load_programs()
+
+    if args.prep_packets:
+        if not args.tribe and not args.all_tribes:
+            print("Error: --prep-packets requires either --tribe <name> or --all-tribes")
+            print("Usage:")
+            print("  python -m src.main --prep-packets --tribe 'Navajo Nation'")
+            print("  python -m src.main --prep-packets --all-tribes")
+            sys.exit(1)
+        from src.packets.orchestrator import PacketOrchestrator
+        orch = PacketOrchestrator(config, programs)
+        if args.tribe:
+            orch.run_single_tribe(args.tribe)
+        else:
+            orch.run_all_tribes()
+        return
 
     if args.programs:
         list_programs(programs)
