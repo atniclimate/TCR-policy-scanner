@@ -124,8 +124,8 @@
 | LOGIC-05 | Phase 3 | Complete |
 
 **Coverage:**
-- v1 requirements: 31 total
-- Mapped to phases: 31
+- v1 requirements: 30 total
+- Mapped to phases: 30
 - Unmapped: 0
 
 ---

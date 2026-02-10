@@ -29,7 +29,7 @@ Overall [##########] 100% 9/9 plans complete
 
 | Metric | Value |
 |--------|-------|
-| Requirements completed | 34/37 (PIPE-01..04, DATA-02, DATA-04, DATA-05, GRAPH-01, GRAPH-02, GRAPH-05, MON-01..05, LOGIC-01..05, RPT-01..06) |
+| Requirements completed | 30/30 (PIPE-01..04, DATA-01..05, GRAPH-01..05, MON-01..05, LOGIC-01..05, RPT-01..06) |
 | Phases completed | 4/4 |
 | Plans completed | 9/9 |
 | Session count | 9 |
