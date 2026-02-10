@@ -30,14 +30,14 @@
 
 ## Economic Impact
 
-- [ ] **ECON-01**: District-level economic impact framing per Tribe per program: USASpending obligations x published multiplier ranges (~2.0x), plus FEMA 4:1 benefit-cost ratio for mitigation programs, with citable methodology
+- [x] **ECON-01**: District-level economic impact framing per Tribe per program: USASpending obligations x published multiplier ranges (~2.0x), plus FEMA 4:1 benefit-cost ratio for mitigation programs, with citable methodology
 
 ## DOCX Generation
 
-- [ ] **DOC-01**: python-docx programmatic DOCX construction engine with professional formatting — tables, headers/footers, page breaks, consistent styles via style reference document
-- [ ] **DOC-02**: 16 per-program Hot Sheets per Tribe, each containing: program status (CI, advocacy goal), Tribe-specific award history, local hazard relevance, district economic impact, and congressional delegation
-- [ ] **DOC-03**: Advocacy language per program assembled from decision engine classifications, program inventory tightened_language, and advocacy_lever fields — template-based, not AI-generated
-- [ ] **DOC-04**: Five Structural Asks woven into per-program Hot Sheets showing which asks advance which programs, with Tribe-specific evidence from award and hazard data
+- [x] **DOC-01**: python-docx programmatic DOCX construction engine with professional formatting — tables, headers/footers, page breaks, consistent styles via style reference document
+- [x] **DOC-02**: 16 per-program Hot Sheets per Tribe, each containing: program status (CI, advocacy goal), Tribe-specific award history, local hazard relevance, district economic impact, and congressional delegation
+- [x] **DOC-03**: Advocacy language per program assembled from decision engine classifications, program inventory tightened_language, and advocacy_lever fields — template-based, not AI-generated
+- [x] **DOC-04**: Five Structural Asks woven into per-program Hot Sheets showing which asks advance which programs, with Tribe-specific evidence from award and hazard data
 - [ ] **DOC-05**: Document 1 — FY26 [Tribe Name] Climate Resilience Program Priorities: per-Tribe DOCX (575 variants) with cover page, executive summary, delegation section, 16 Hot Sheets, hazard profile, structural asks, and appendix
 - [ ] **DOC-06**: Document 2 — FY26 Federal Funding Overview & Strategy: shared DOCX with appropriations landscape, ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework, and messaging guidance
 
@@ -60,11 +60,11 @@
 | AWARD-02 | TS-04, C-1 | High | Phase 6 | Complete |
 | HAZ-01 | DF-01 | High | Phase 6 | Complete |
 | HAZ-02 | DF-01 | Medium | Phase 6 | Complete |
-| ECON-01 | DF-02, C-3 | Medium | Phase 7 | Pending |
-| DOC-01 | TS-06 | Medium | Phase 7 | Pending |
-| DOC-02 | TS-02 | High | Phase 7 | Pending |
-| DOC-03 | TS-05 | Medium | Phase 7 | Pending |
-| DOC-04 | DF-05 | Low | Phase 7 | Pending |
+| ECON-01 | DF-02, C-3 | Medium | Phase 7 | Complete |
+| DOC-01 | TS-06 | Medium | Phase 7 | Complete |
+| DOC-02 | TS-02 | High | Phase 7 | Complete |
+| DOC-03 | TS-05 | Medium | Phase 7 | Complete |
+| DOC-04 | DF-05 | Low | Phase 7 | Complete |
 | DOC-05 | TS-01+TS-02 | High | Phase 8 | Pending |
 | DOC-06 | TS-07 | Medium | Phase 8 | Pending |
 | OPS-01 | TS-08 | Low | Phase 8 | Pending |

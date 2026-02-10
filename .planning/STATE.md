@@ -46,7 +46,7 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 remaining
 | v1.1 Phase 6 tests added | 23 |
 | v1.1 Phase 7 plans completed | 4/4 |
 | v1.1 Phase 7 tests added | 108 |
-| v1.1 Requirements complete | 9/19 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02) |
+| v1.1 Requirements complete | 14/19 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..04) |
 
 ## Accumulated Context
 
