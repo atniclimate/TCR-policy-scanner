@@ -7,7 +7,7 @@
 ## Project Reference
 
 **Project:** TCR Policy Scanner (Tribal Climate Resilience)
-**Repo:** github.com/atniclimate/TCR-policy-scanner (private)
+**Repo:** private repository
 **Local workspace:** `F:\tcr-policy-scanner`
 **Planning root:** `F:\tcr-policy-scanner\.planning\`
 

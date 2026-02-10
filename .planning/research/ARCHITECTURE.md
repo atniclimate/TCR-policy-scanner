@@ -517,7 +517,7 @@ class EconomicImpact:
 
 ```
 1. Cover Page
-   - Tribe name, date, "Prepared for [Tribe] by ATNI"
+   - Tribe name, date, "Prepared for [Tribe]"
 
 2. Executive Summary
    - Tribe location, ecoregion, congressional district

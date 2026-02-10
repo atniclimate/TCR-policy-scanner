@@ -34,7 +34,7 @@ jobs:
       - name: Commit and push results
         run: |
           git config user.name "TCR Policy Scanner"
-          git config user.email "scanner@atniclimate.org"
+          git config user.email "scanner@tcr-policy-scanner.local"
           git add outputs/
           if git diff --cached --quiet; then
             echo "No changes to commit"

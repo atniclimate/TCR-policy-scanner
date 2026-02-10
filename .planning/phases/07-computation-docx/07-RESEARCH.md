@@ -443,7 +443,7 @@ f_run.font.color.rgb = RGBColor(0x9C, 0xA3, 0xAF)
 #### Tribal-Specific Context
 - Federal Reserve Bank of Minneapolis Center for Indian Country Development (CICD) research shows Tribal economies generate spillover effects to surrounding communities
 - $22.5M direct expenditures generated $31.6M total regional impact in one CICD case study (1.4x multiplier on a single-program basis, but broader multipliers are higher)
-- NCAI "Honor the Promises" framework provides additional context for policy narratives
+- Tribal advocacy frameworks provide additional context for policy narratives
 - **Key framing:** "Tribal economic activity benefits the entire regional economy -- every dollar of federal climate resilience investment in Indian Country supports jobs and commerce across the district"
 
 #### Multi-District Handling

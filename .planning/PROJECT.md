@@ -4,7 +4,7 @@
 
 Automated policy intelligence pipeline for Tribal Climate Resilience advocacy. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending), scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces advocacy intelligence products for Tribal Leaders advocating for FY26 climate resilience funding. v1.1 adds Tribe-specific congressional advocacy packet generation for all 574 federally recognized Tribes, with per-program award history, hazard profiling, economic impact framing, and congressional delegation mapping — output as print-ready DOCX documents.
 
-Built for the NCAI Climate Action Task Force, serving 574+ federally recognized Tribal Nations.
+Built for the Tribal Climate Resilience program, serving 574+ federally recognized Tribal Nations.
 
 ## Core Value
 
@@ -55,8 +55,8 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 
 ## Context
 
-**Organization:** NCAI Climate Action Task Force (expanded from ATNI in v1.1)
-**Repository:** github.com/atniclimate/TCR-policy-scanner (private)
+**Organization:** Tribal Climate Resilience program
+**Repository:** private repository
 **TSDF Classification:** T0 (Open) — all data from public federal documents
 **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest — all async
 **Server:** GitHub-hosted with Claude Code at /root/.claude/projects/-home-user-TCR-policy-scanner/
@@ -123,7 +123,7 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 | CI history 90-entry cap | ~3 months daily scans; prevents unbounded growth | ✓ Good |
 | DOCX output (not Markdown) | Congressional offices need printable/shareable documents | — Pending |
 | Programmatic DOCX (no template files) | Build document structure in code for full control; no external template dependency | — Pending |
-| All 574 Tribes (not just ATNI) | NCAI scope serves all federally recognized Tribes nationally | — Pending |
+| All 574 Tribes | Program scope serves all federally recognized Tribes nationally | — Pending |
 | Multi-source hazard profiling | FEMA NRI + EPA EJScreen + USFS + NOAA gives comprehensive picture | — Pending |
 | BEA multipliers for economic impact | Standard federal methodology makes framing defensible | — Pending |
 | Scanner generates both documents | Document 1 (per-Tribe) and Document 2 (strategic overview) both auto-generated | — Pending |

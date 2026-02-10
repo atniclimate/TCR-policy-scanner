@@ -7,11 +7,11 @@ on this project. Copy everything between the `---` delimiters.
 
 ## Prompt
 
-I am working on the **ATNI TCR Policy Scanner** — an automated policy intelligence
-pipeline for Tribal Climate Resilience (TCR) FY26 advocacy, used by the Affiliated
-Tribes of Northwest Indians (ATNI) Climate Resilience Committee.
+I am working on the **TCR Policy Scanner** — an automated policy intelligence
+pipeline for Tribal Climate Resilience (TCR) FY26 advocacy, used by the
+Tribal Climate Resilience program.
 
-**Repository:** `github.com/atniclimate/TCR-policy-scanner`
+**Repository:** private repository
 **Branch:** `main`
 
 ### Project Architecture

@@ -25,7 +25,7 @@ Features users expect. Missing any of these and the packet is not usable for its
 | Attribute | Value |
 |-----------|-------|
 | **Description** | Each of the 16 tracked programs gets a "Hot Sheet" section in the per-Tribe DOCX. Each Hot Sheet includes: program status (CI, advocacy goal), Tribe-specific award history, local hazard relevance, district economic impact, and congressional delegation. This is the core content unit. |
-| **Why Expected** | The existing Hot Sheets format (from ATNI/NCAI conventions) is how Tribal policy staff consume program information. Each program gets its own page or section. The scanner must replicate this structure but populate it with Tribe-localized data. |
+| **Why Expected** | The existing Hot Sheets format (from Tribal advocacy conventions) is how Tribal policy staff consume program information. Each program gets its own page or section. The scanner must replicate this structure but populate it with Tribe-localized data. |
 | **Complexity** | High -- requires data assembly from 5 distinct sources per Tribe per program |
 | **Dependencies** | USASpending award matching (existing scraper), hazard profiling (new), economic impact (new), congressional mapping (new), program inventory (existing) |
 | **Existing Assets** | 16-program inventory with CI scores, advocacy goals, advocacy levers, tightened language, Hot Sheets status -- all reusable |
@@ -86,7 +86,7 @@ Features users expect. Missing any of these and the packet is not usable for its
 | Attribute | Value |
 |-----------|-------|
 | **Description** | CLI supports two modes: (1) batch -- generate packets for all 574 Tribes; (2) ad-hoc -- generate a single Tribe's packet by name or ID. Batch is for pre-event preparation. Ad-hoc is for when a specific Tribe requests their packet. |
-| **Why Expected** | Before NCAI Mid-Year, staff run batch to prepare 574 packets. When a Tribal leader calls asking for their packet before a congressional meeting next week, staff run ad-hoc. Both use cases are routine. |
+| **Why Expected** | Before a mid-year advocacy event, staff run batch to prepare 574 packets. When a Tribal leader calls asking for their packet before a congressional meeting next week, staff run ad-hoc. Both use cases are routine. |
 | **Complexity** | Low (CLI flag routing) |
 | **Dependencies** | DOCX generation engine (TS-06), Tribal Registry (TS-01) |
 | **Existing Assets** | main.py CLI pattern with argparse; add --generate-packets and --tribe flags |
@@ -122,7 +122,7 @@ Features that set this system apart from manual advocacy packet preparation. Not
 | Attribute | Value |
 |-----------|-------|
 | **Description** | Each packet includes a "What Changed" section showing shifts since the last time that Tribe's packet was generated: CI status changes, new legislative threats, funding amount changes, new grant opportunities, advocacy goal reclassifications. |
-| **Value Proposition** | Tribal leaders attend multiple advocacy events per year. Without diff tracking, every packet looks the same and loses urgency. "Since your NCAI Mid-Year packet: FEMA BRIC status changed from AT_RISK to FLAGGED" creates immediate actionability. |
+| **Value Proposition** | Tribal leaders attend multiple advocacy events per year. Without diff tracking, every packet looks the same and loses urgency. "Since your mid-year advocacy packet: FEMA BRIC status changed from AT_RISK to FLAGGED" creates immediate actionability. |
 | **Complexity** | Medium |
 | **Dependencies** | Per-Tribe packet state persistence (new -- store last-generated state per Tribe), change detection logic (existing ChangeDetector pattern adaptable) |
 | **Existing Assets** | ChangeDetector class compares scan-to-scan; needs adaptation for packet-to-packet comparison. CI history tracking (90-entry cap) provides trend data. |
@@ -322,4 +322,4 @@ For an MVP that delivers usable per-Tribe advocacy packets:
 
 - [EJScreen removal and reconstruction](https://screening-tools.com/epa-ejscreen) -- PEDP reconstruction of EJScreen v2.3
 - [python-docx batch performance](https://github.com/python-openxml/python-docx/issues/158) -- Performance considerations for batch generation
-- [NCAI Tribal Unity Impact Days](https://www.ncai.org/news/unity-25-strengthening-tribal-voices) -- 2025 tribal priorities including FY26 appropriations
+- Tribal advocacy organization impact days -- 2025 Tribal priorities including FY26 appropriations

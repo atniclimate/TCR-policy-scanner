@@ -298,11 +298,11 @@ The `names[]` array in `/tribeDetails` is the primary corpus for building the fu
 
 This is the AUTHORITATIVE list. Use it as the validation reference to verify EPA API completeness. It is a plain text list of tribe names -- no BIA codes, no states, no structured data. Its sole purpose is to verify "is this tribe federally recognized?"
 
-### Source 4: NCAI Tribal Directory
+### Source 4: Tribal Advocacy Organization Directory
 
 | Attribute | Value |
 |-----------|-------|
-| **URL** | `https://www.ncai.org/tribal-directory` |
+| **URL** | Web-based Tribal directory |
 | **Format** | Web-only (no API, no bulk download) |
 | **Use case** | Manual verification only -- NOT suitable for automated data loading |
 
@@ -448,5 +448,5 @@ The CONTEXT.md states "Primary key: BIA code (not EPA Tribe ID or NAICS)." This 
 
 ### Tertiary (LOW confidence)
 - [BIA Tribal Leaders Directory count of 587](https://www.bia.gov/service/tribal-leaders-directory) -- count discrepancy with 575; likely includes sub-component bands
-- [NCAI Tribal Directory](https://www.ncai.org/tribal-directory) -- no API access, web-only
+- Tribal advocacy organization directory -- no API access, web-only
 - [Lumbee Tribe recognition announcement](https://www.bia.gov/news/lumbee-tribe-added-official-list-federally-recognized-tribes)

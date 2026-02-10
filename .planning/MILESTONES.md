@@ -25,6 +25,6 @@
 
 **Git range:** `38f3821` (initial upload) -> `8491e66` (pass 3 docs)
 
-**What's next:** v1.1 Meeting Prep Packets -- event-specific advocacy intelligence packets for Tribal leaders attending NCAI, ATNI, ECWS, and other policy events.
+**What's next:** v1.1 Meeting Prep Packets -- event-specific advocacy intelligence packets for Tribal leaders attending policy conventions, advocacy sessions, ECWS, and other policy events.
 
 ---

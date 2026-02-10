@@ -1,9 +1,9 @@
 # FY26 Tribal Climate Resilience: Policy Scanner Reference
 
-> **Affiliated Tribes of Northwest Indians (ATNI) | Climate Resilience Committee**
+> **Tribal Climate Resilience | Policy Scanner Reference**
 > Current as of February 9, 2026 | For Tribal Leader Use in Congressional Meetings
 >
-> **Repository:** `github.com/atniclimate/tcr-policy-scanner`
+> **Repository:** private repository
 
 ---
 
@@ -46,5 +46,5 @@ The One Big Beautiful Bill Act (Public Law 119-21) modified federal tax credits 
 
 ---
 
-*Prepared by ATNI Climate Resilience Committee | February 9, 2026*
+*Prepared by project contributors | February 9, 2026*
 *Full program hot sheets and scanner integration architecture in docs/*

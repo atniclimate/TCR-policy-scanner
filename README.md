@@ -7,14 +7,14 @@ All data sourced from public federal documents. No Tribal-specific or sensitive 
 
 ## Purpose
 
-Tribal Leaders advocating for climate resilience funding need current, reliable policy intelligence. This scanner automates the collection and synthesis of federal policy developments across 16 programs tracked by the Affiliated Tribes of Northwest Indians (ATNI) Climate Resilience Committee.
+Tribal Leaders advocating for climate resilience funding need current, reliable policy intelligence. This scanner automates the collection and synthesis of federal policy developments across 16 programs tracked for Tribal Climate Resilience advocacy.
 
 The scanner answers the question: *What has changed in the federal policy landscape that is relevant to Tribal Climate Resilience funding, and what can Tribal Leaders do about it?*
 
 ## What It Does
 
 1. **Collects** policy documents from federal sources (Federal Register, Grants.gov, Congress.gov, USASpending)
-2. **Scores** each item against the ATNI program inventory using weighted relevance factors
+2. **Scores** each item against the tracked program inventory using weighted relevance factors
 3. **Builds a knowledge graph** connecting programs to authorities, barriers, and funding vehicles
 4. **Monitors** for urgent threats via 5 monitors (IIJA sunset, reconciliation, Tribal consultation, Hot Sheets sync, DHS funding cliff)
 5. **Classifies** each program with an advocacy goal using a 5-rule decision engine across 6 advocacy goals
@@ -47,7 +47,7 @@ The scanner answers the question: *What has changed in the federal policy landsc
 
 ```bash
 # Clone
-git clone https://github.com/atniclimate/TCR-policy-scanner.git
+git clone <private repository URL>
 cd TCR-policy-scanner
 
 # Install
@@ -81,7 +81,7 @@ The scanner runs automatically via GitHub Actions. No local computer needed.
 
 **Setup:**
 
-1. Push this repo to `github.com/atniclimate/TCR-policy-scanner`
+1. Push this repo to your private repository
 2. Add API keys as repository secrets:
    - `CONGRESS_API_KEY`: Free key from [api.congress.gov](https://api.congress.gov/)
    - `SAM_API_KEY` (optional): Key from [SAM.gov](https://sam.gov/content/home)
@@ -256,4 +256,4 @@ Apache 2.0
 
 ## Maintained By
 
-ATNI Climate Resilience Committee
+Project contributors

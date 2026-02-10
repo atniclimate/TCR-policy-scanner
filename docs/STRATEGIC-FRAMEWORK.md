@@ -1,4 +1,4 @@
-# ATNI TCR Policy Scanner — Strategic Framework
+# TCR Policy Scanner — Strategic Framework
 
 ## Purpose
 

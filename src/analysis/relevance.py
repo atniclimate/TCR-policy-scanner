@@ -1,6 +1,6 @@
 """Multi-factor relevance scorer.
 
-Scores each collected policy item against the ATNI program inventory using
+Scores each collected policy item against the tracked program inventory using
 five weighted factors: program match, Tribal keyword density, recency,
 source authority, and action relevance.
 
