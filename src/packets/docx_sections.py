@@ -673,3 +673,66 @@ def render_appendix(
         len(omitted_programs),
         context.tribe_name,
     )
+
+
+def render_change_tracking(
+    document: Document,
+    changes: list[dict],
+    previous_date: str,
+    style_manager: StyleManager,
+) -> None:
+    """Render 'Since Last Packet' section showing changes between generations.
+
+    Groups changes by type with human-readable descriptions. If the changes
+    list is empty, the section is NOT rendered (omitted entirely). The caller
+    is responsible for adding a page break before this section if needed.
+
+    Args:
+        document: python-docx Document to render into.
+        changes: List of change dicts with ``type`` and ``description`` keys.
+        previous_date: ISO date string of the previous packet generation.
+        style_manager: StyleManager with registered custom styles.
+    """
+    if not changes:
+        return
+
+    date_display = previous_date[:10] if previous_date else "unknown"
+    document.add_heading(
+        f"Since Last Packet (generated {date_display})", level=2
+    )
+
+    type_labels = {
+        "ci_status_change": "Confidence Index Changes",
+        "new_award": "New Awards",
+        "award_total_change": "Funding Changes",
+        "advocacy_goal_shift": "Advocacy Position Shifts",
+        "new_threat": "New Hazard Threats",
+    }
+
+    # Group changes by type
+    grouped: dict[str, list[dict]] = {}
+    for change in changes:
+        ctype = change.get("type", "other")
+        if ctype not in grouped:
+            grouped[ctype] = []
+        grouped[ctype].append(change)
+
+    for ctype, group in grouped.items():
+        label = type_labels.get(ctype, ctype.replace("_", " ").title())
+        p = document.add_paragraph()
+        run = p.add_run(label)
+        run.bold = True
+
+        for change in group:
+            description = change.get("description", str(change))
+            document.add_paragraph(description, style="List Bullet")
+
+    summary = document.add_paragraph()
+    run = summary.add_run(
+        f"{len(changes)} change(s) detected since last generation."
+    )
+    run.italic = True
+
+    logger.debug(
+        "Rendered change tracking section with %d changes", len(changes)
+    )
