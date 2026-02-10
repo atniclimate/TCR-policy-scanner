@@ -125,36 +125,63 @@ class PacketOrchestrator:
                 logger.error("Failed to generate DOCX for %s: %s", tribe["name"], exc)
                 print(f"\n  DOCX generation failed: {exc}")
 
-    def run_all_tribes(self) -> None:
-        """Generate packet context for all Tribes in the registry.
+    def run_all_tribes(self) -> dict:
+        """Generate DOCX packets for all Tribes + strategic overview.
 
-        Iterates through all Tribes, builds context for each, and prints
-        a summary at completion.
+        Returns:
+            dict with keys: success, errors, total, duration_s
         """
+        import gc
+        import time
+
         all_tribes = self.registry.get_all()
         total = len(all_tribes)
-        print(f"\nGenerating packet context for {total} Tribes...\n")
-
+        start = time.monotonic()
         success_count = 0
         error_count = 0
+        error_tribes: list[str] = []
 
         for i, tribe in enumerate(all_tribes, 1):
-            print(f"[{i}/{total}] {tribe['name']}...", end="")
+            elapsed = time.monotonic() - start
+            print(f"[{i}/{total}] {tribe['name']}...", end="", flush=True)
             try:
-                self._build_context(tribe)
-                print(" OK")
+                context = self._build_context(tribe)
+                self.generate_packet_from_context(context, tribe)
+                print(f" OK ({elapsed:.0f}s)")
                 success_count += 1
             except Exception as exc:
                 print(f" ERROR: {exc}")
-                logger.error("Failed to build context for %s: %s",
-                             tribe["name"], exc)
+                logger.error("Failed: %s: %s", tribe["name"], exc)
                 error_count += 1
+                error_tribes.append(tribe["name"])
+            finally:
+                if i % 25 == 0:
+                    gc.collect()
 
-        print(f"\n--- Summary ---")
-        print(f"Total: {total}")
-        print(f"Success: {success_count}")
-        if error_count:
-            print(f"Errors: {error_count}")
+        # Strategic overview
+        print("\nGenerating Strategic Overview...", end="", flush=True)
+        try:
+            overview_path = self.generate_strategic_overview()
+            print(f" OK ({overview_path})")
+        except Exception as exc:
+            print(f" ERROR: {exc}")
+            logger.error("Strategic overview failed: %s", exc)
+
+        duration = time.monotonic() - start
+        print(f"\n--- Batch Complete ---")
+        print(f"Total: {total} | Success: {success_count} | Errors: {error_count}")
+        print(f"Duration: {duration:.0f}s")
+        if error_tribes:
+            print(f"Failed: {', '.join(error_tribes[:10])}")
+            if len(error_tribes) > 10:
+                print(f"  ... and {len(error_tribes) - 10} more")
+
+        return {
+            "success": success_count,
+            "errors": error_count,
+            "total": total,
+            "duration_s": duration,
+        }
 
     def _load_tribe_cache(self, cache_dir: Path, tribe_id: str) -> dict:
         """Load a per-Tribe JSON cache file. Returns empty dict if not found.
