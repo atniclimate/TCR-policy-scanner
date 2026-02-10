@@ -1,7 +1,7 @@
 # FY26 Tribal Climate Resilience: Policy Scanner Reference
 
 > **Affiliated Tribes of Northwest Indians (ATNI) | Climate Resilience Committee**
-> Current as of February 8, 2026 | For Tribal Leader Use in Congressional Meetings
+> Current as of February 9, 2026 | For Tribal Leader Use in Congressional Meetings
 >
 > **Repository:** `github.com/atniclimate/tcr-policy-scanner`
 
@@ -9,9 +9,9 @@
 
 ## How This Document Works
 
-This reference serves two purposes. First, it is the human-readable policy brief for Tribal leaders preparing for FY26 Congressional advocacy. Second, it is the canonical data source that the TCR Policy Scanner ingests to build and maintain its knowledge graph. Every program entry below is structured so that both a policy staffer reading on screen and a scanner subagent parsing programmatically can extract the same decision-relevant information.
+This reference serves two purposes. First, it is the human-readable policy brief for Tribal leaders preparing for FY26 Congressional advocacy. Second, it provides the canonical program data that the TCR Policy Scanner uses to track federal programs relevant to Tribal climate resilience.
 
-The document distinguishes between two categories of knowledge. **Scenario Facts** are time-bound observations specific to the current legislative and appropriations context (the DHS expiration date, the enacted BIA TCR funding level, the BRIC termination). These facts have expiration dates and must be reassessed on the scanner's update cycle. **Statutory Authorities** are durable legal citations (the Snyder Act, the Stafford Act Section 203, 44 CFR Section 201.7) that persist across fiscal years and anchor the knowledge graph's structural nodes. The scanner treats these two categories differently: scenario facts trigger alerts when conditions change, while statutory authorities anchor the advocacy logic even when programs are created, modified, or terminated.
+The document distinguishes between two categories of information. **Scenario Facts** are time-bound observations specific to the current legislative and appropriations context (the DHS expiration date, the enacted BIA TCR funding level, the BRIC termination). These facts have expiration dates and must be reassessed regularly. **Statutory Authorities** are durable legal citations (the Snyder Act, the Stafford Act Section 203, 44 CFR Section 201.7) that persist across fiscal years and anchor long-term advocacy strategies. Scenario facts require active monitoring for changes, while statutory authorities provide the legal foundation for advocacy regardless of annual program changes.
 
 ---
 
@@ -21,32 +21,30 @@ Congress enacted a consolidated FY26 funding package on February 3, 2026 that fu
 
 The One Big Beautiful Bill Act (Public Law 119-21) modified federal tax credits including clean energy credits, affecting Tribal elective pay pathways. FEMA's BRIC program was terminated in April 2025, though the underlying Stafford Act Section 203 authority for pre-disaster mitigation remains active.
 
-**Scanner Integration Note:** The landscape context above populates the `SCENARIO_CONTEXT` node in the knowledge graph. The scanner should re-validate all scenario facts on a weekly cycle by checking enacted legislation status, continuing resolution expirations, and NOFO announcements against the federal register and Congressional tracking sources.
-
 ---
 
 ## Program Index
 
-| Program | Agency | FY26 Status | Cluster | Scanner Node ID |
-|---------|--------|-------------|---------|-----------------|
-| Tribal Climate Resilience (TCR) | BIA | STABLE | A | `BIA_TCR` |
-| Tribal Community Resilience Annual Awards | BIA | STABLE | A | `BIA_AWARDS` |
-| State & Tribal Assistance Grants (STAG) | EPA | STABLE | A | `EPA_STAG` |
-| Indian Environmental GAP | EPA | STABLE | A | `EPA_GAP` |
-| Tribal Air Quality Management | EPA | STABLE | A | `EPA_AIR` |
-| Indian Housing Block Grant (IHBG) | HUD | STABLE | A | `HUD_IHBG` |
-| TTP Safety Fund | FHWA | STABLE | A | `FHWA_TTP` |
-| Community Wildfire Defense Grants (CWDG) | USFS | STABLE | A | `USFS_CWDG` |
-| Native American Affairs TAP | BOR | STABLE | A | `BOR_TAP` |
-| PROTECT Discretionary Grants | DOT | SECURE | A | `DOT_PROTECT` |
-| Tribal Mitigation Plans (Eligibility Gate) | FEMA | AT RISK | B | `FEMA_PLANS` |
-| Elective Pay (Clean Energy Tax Credits) | IRS | AT RISK | B | `IRS_ELECTIVE` |
-| WaterSMART / Drought Response | BOR | UNCERTAIN | B | `BOR_WATER` |
-| Office of Indian Energy TA and FOAs | DOE | UNCERTAIN | B | `DOE_ENERGY` |
-| NOAA Tribal Grants | NOAA | UNCERTAIN | B | `NOAA_TRIBAL` |
-| BRIC (Pre-Disaster Mitigation) | FEMA | TERMINATED | B | `FEMA_BRIC` |
+| Program | Agency | FY26 Status | CI Score | Scanner Node ID |
+|---------|--------|-------------|----------|-----------------|
+| BIA Tribal Climate Resilience (TCR) | BIA | STABLE | 88% | `bia_tcr` |
+| Tribal Community Resilience Annual Awards | BIA | STABLE | 85% | `bia_tcr_awards` |
+| State & Tribal Assistance Grants (STAG) | EPA | STABLE | 90% | `epa_stag` |
+| Indian Environmental GAP | EPA | STABLE | 80% | `epa_gap` |
+| Tribal Air Quality Management | EPA | STABLE | 82% | `epa_tribal_air` |
+| Indian Housing Block Grant (IHBG) | HUD | STABLE | 85% | `hud_ihbg` |
+| TTP Safety Fund | FHWA | STABLE | 85% | `fhwa_ttp_safety` |
+| USDA Wildfire Defense Grants | USFS | STABLE BUT VULNERABLE | 78% | `usda_wildfire` |
+| Native American Affairs TAP | Reclamation | STABLE | 75% | `usbr_tap` |
+| PROTECT Discretionary Grants | DOT | SECURE | 93% | `dot_protect` |
+| Tribal Mitigation Plans (Eligibility Gate) | FEMA | AT RISK | 65% | `fema_tribal_mitigation` |
+| Elective Pay (Clean Energy Tax Credits) | Treasury/IRS | AT RISK | 55% | `irs_elective_pay` |
+| WaterSMART / Drought Response | Reclamation | UNCERTAIN | 60% | `usbr_watersmart` |
+| DOE Indian Energy | DOE | UNCERTAIN | 55% | `doe_indian_energy` |
+| NOAA Tribal Grants | NOAA | UNCERTAIN | 50% | `noaa_tribal` |
+| BRIC (Pre-Disaster Mitigation) | FEMA | FLAGGED | 12% | `fema_bric` |
 
 ---
 
-*Prepared by ATNI Climate Resilience Committee | February 8, 2026*
+*Prepared by ATNI Climate Resilience Committee | February 9, 2026*
 *Full program hot sheets and scanner integration architecture in docs/*

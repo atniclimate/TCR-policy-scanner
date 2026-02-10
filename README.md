@@ -16,8 +16,8 @@ The scanner answers the question: *What has changed in the federal policy landsc
 1. **Collects** policy documents from federal sources (Federal Register, Grants.gov, Congress.gov, USASpending)
 2. **Scores** each item against the ATNI program inventory using weighted relevance factors
 3. **Builds a knowledge graph** connecting programs to authorities, barriers, and funding vehicles
-4. **Monitors** for urgent threats (IIJA sunset, reconciliation, consultation signals)
-5. **Classifies** each program with an advocacy goal using a 6-rule decision engine
+4. **Monitors** for urgent threats via 5 monitors (IIJA sunset, reconciliation, Tribal consultation, Hot Sheets sync, DHS funding cliff)
+5. **Classifies** each program with an advocacy goal using a 5-rule decision engine across 6 advocacy goals
 6. **Generates briefings** formatted for Tribal Leaders with advocacy levers attached
 
 ## Programs Tracked
@@ -26,11 +26,11 @@ The scanner answers the question: *What has changed in the federal policy landsc
 |----------|---------|-------------|----------------|
 | CRITICAL | BIA Tribal Climate Resilience | BIA | Protect/expand the line; waived match, multi-year stability |
 | CRITICAL | FEMA BRIC | FEMA | Restore/replace with Tribal set-aside |
-| CRITICAL | IRS Elective Pay | Treasury/IRS | Ensure stability and Tribal instrumentality access |
-| HIGH | BIA TCR Awards | BIA | Protect annual awards; waived match |
+| CRITICAL | IRS Elective Pay | Treasury/IRS | Defend against reconciliation repeal; protect Tribal instrumentality access |
+| HIGH | Tribal Community Resilience Annual Awards | BIA | Protect award program; ensure multi-year planning capacity |
 | HIGH | EPA STAG | EPA | Direct Tribal capitalization pathways |
 | HIGH | EPA GAP | EPA | Increase funding; link to climate resilience readiness |
-| HIGH | EPA Tribal Air Quality | EPA | Protect Clean Air Act SS 105 tribal grants |
+| HIGH | Tribal Air Quality Management | EPA | Protect Clean Air Act SS105 Tribal funding; link to climate co-benefits |
 | HIGH | FEMA Tribal Mitigation Plans | FEMA | Fund planning; accelerate approvals |
 | HIGH | DOT PROTECT | DOT | Maintain/expand Tribal set-aside |
 | HIGH | USDA Wildfire Defense Grants | USFS | Add match waivers; long-term fuels pathways |
@@ -67,6 +67,12 @@ python -m src.main --source federal_register
 
 # Generate report from cached data
 python -m src.main --report-only
+
+# Export knowledge graph from cached data
+python -m src.main --graph-only
+
+# Verbose logging
+python -m src.main --verbose
 ```
 
 ### GitHub Actions (Automated)
@@ -103,6 +109,7 @@ TCR-policy-scanner/
     src/
         main.py                 # Pipeline orchestrator
         scrapers/
+            base.py             # Base scraper with retry, backoff, zombie CFDA detection
             federal_register.py # Federal Register API scraper
             grants_gov.py       # Grants.gov API scraper
             congress_gov.py     # Congress.gov API scraper
@@ -110,22 +117,53 @@ TCR-policy-scanner/
         analysis/
             relevance.py        # Multi-factor relevance scorer
             change_detector.py  # Scan-to-scan change detection
-            decision_engine.py  # 6-rule advocacy goal classification
+            decision_engine.py  # 5-rule advocacy goal classification (6 goals)
         graph/
             builder.py          # Knowledge graph construction
             schema.py           # Graph node and edge types
-        monitors/               # Threat monitoring framework (IIJA, reconciliation, etc.)
+        monitors/
+            hot_sheets.py       # Hot Sheets sync validator (CI override, staleness check)
+            iija_sunset.py      # IIJA FY26 sunset countdown and reauth detection
+            reconciliation.py   # Reconciliation bill threat detection (IRA S6417)
+            dhs_funding.py      # DHS Continuing Resolution funding cliff monitor
+            tribal_consultation.py # Tribal consultation signal detection (DTLLs, EO 13175)
         reports/
             generator.py        # Markdown and JSON report generation
+    tests/
+        test_decision_engine.py # 52 tests covering all 5 decision rules
     outputs/
-        LATEST-BRIEFING.md     # Most recent policy briefing
-        LATEST-RESULTS.json    # Most recent machine-readable results
+        LATEST-BRIEFING.md      # Most recent policy briefing
+        LATEST-RESULTS.json     # Most recent machine-readable results
+        LATEST-GRAPH.json       # Most recent knowledge graph export
         LATEST-MONITOR-DATA.json # Most recent monitor alerts and classifications
-        archive/               # Historical reports
+        .ci_history.json        # CI score snapshots for trend tracking
+        .cfda_tracker.json      # Zombie CFDA detection state
+        .monitor_state.json     # Hot Sheets divergence tracking state
+        archive/                # Historical reports
+    validate_data_integrity.py  # Cross-file consistency validator (8 checks)
     .github/
         workflows/
             daily-scan.yml      # Automated daily scan via GitHub Actions
 ```
+
+## Pipeline
+
+The scanner runs a six-stage DAG pipeline:
+
+```
+Ingest -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
+```
+
+**Monitors** produce alerts and inject THREATENS edges into the knowledge graph. The **Decision Engine** then classifies each program into one of 6 advocacy goals using 5 prioritized rules (LOGIC-05 through LOGIC-04, evaluated in priority order). Programs matching no rule receive the default MONITOR_ENGAGE goal.
+
+| Rule | Advocacy Goal | Trigger |
+|------|--------------|---------|
+| LOGIC-05 | Urgent Stabilization | THREATENS edge within urgency window |
+| LOGIC-01 | Restore/Replace | TERMINATED/FLAGGED program with permanent authority |
+| LOGIC-02 | Protect Base | Discretionary funding facing eliminate/reduce signals |
+| LOGIC-03 | Direct Access Parity | State pass-through with high administrative barriers |
+| LOGIC-04 | Expand and Strengthen | STABLE/SECURE program with direct or set-aside access |
+| *(default)* | Monitor and Engage | No specific rule matched |
 
 ## Relevance Scoring
 
@@ -140,6 +178,44 @@ Each item is scored using five weighted factors:
 | Action Relevance | 0.20 | Signals actionable policy change |
 
 Items matching **critical priority programs** receive a 15% score boost. Items below a 0.30 relevance threshold are filtered out.
+
+## Knowledge Graph
+
+The graph schema defines 7 node types and 8 edge types:
+
+**Node types:** ProgramNode, AuthorityNode, FundingVehicleNode, BarrierNode, AdvocacyLeverNode, TrustSuperNode, ObligationNode
+
+**Edge types:**
+- AUTHORIZED_BY (Program -> Authority)
+- FUNDED_BY (Program -> FundingVehicle)
+- BLOCKED_BY (Program -> Barrier)
+- MITIGATED_BY (Barrier -> AdvocacyLever)
+- OBLIGATED_BY (Program -> Obligation)
+- ADVANCES (StructuralAsk -> Program)
+- TRUST_OBLIGATION (TrustSuperNode -> Program)
+- THREATENS (ThreatNode -> Program)
+
+## Testing
+
+The test suite contains 52 tests covering all 5 decision engine rules, priority ordering, default fallback behavior, secondary rules transparency, classification shape validation, and edge cases.
+
+```bash
+# Run all tests
+python -m pytest tests/ -v
+
+# Run decision engine tests only
+python -m pytest tests/test_decision_engine.py -v
+```
+
+## Data Integrity Validation
+
+A standalone validator checks cross-file consistency across all data files:
+
+```bash
+python validate_data_integrity.py
+```
+
+This runs 8 checks: JSON validity, program ID consistency, CFDA consistency, graph schema references, barrier mitigation references, CI threshold ordering, status consistency, and keyword deduplication.
 
 ## Extending the Scanner
 
