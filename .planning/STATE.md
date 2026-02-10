@@ -13,17 +13,17 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
 **Phase:** 7 (Computation + DOCX) -- IN PROGRESS
-**Plan:** 2 of 4 complete in Phase 7
-**Status:** 07-01 and 07-02 complete; 07-03 and 07-04 remaining (Wave 2)
-**Last activity:** 2026-02-10 -- Completed 07-02-PLAN.md (DOCX styling foundation + engine skeleton)
+**Plan:** 3 of 4 complete in Phase 7
+**Status:** 07-01, 07-02, 07-03 complete; 07-04 remaining
+**Last activity:** 2026-02-10 -- Completed 07-03-PLAN.md (Hot Sheet renderer + tests)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [########  ]  73% Phase 7 in progress
+v1.1     [######### ]  80% Phase 7 in progress
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
   Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
-  Phase 7: Computation+DOCX [#####     ] 50%  (2/4 plans complete)
+  Phase 7: Computation+DOCX [########  ] 75%  (3/4 plans complete)
   Phase 8: Assembly+Polish  [          ] 0%   (not yet planned)
 ```
 
@@ -41,11 +41,11 @@ v1.1     [########  ]  73% Phase 7 in progress
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 158/158 |
+| v1.1 Total tests passing | 193/193 |
 | v1.1 Phase 6 plans completed | 3/3 |
 | v1.1 Phase 6 tests added | 23 |
-| v1.1 Phase 7 plans completed | 2/4 |
-| v1.1 Phase 7 tests added | 52 |
+| v1.1 Phase 7 plans completed | 3/4 |
+| v1.1 Phase 7 tests added | 87 |
 | v1.1 Requirements complete | 9/19 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02) |
 
 ## Accumulated Context
@@ -119,6 +119,10 @@ v1.1     [########  ]  73% Phase 7 in progress
 | paragraph.clear() not cell.text="" for headers | 07-02 | cell.text="" creates ghost empty run at runs[0]; clear() properly removes all runs |
 | _ColorNamespace class for COLORS | 07-02 | Attribute access (COLORS.primary_dark) more readable than dict access |
 | docx.document.Document for isinstance | 07-02 | Top-level Document import is a factory function, not a type |
+| Page breaks (not section breaks) between Hot Sheets | 07-03 | Section breaks disrupt header/footer; page breaks are cosmetic only |
+| Paragraph-level shading for Key Ask callout | 07-03 | OxmlElement w:shd on pPr simpler than table-based callout |
+| USFS wildfire data only for _WILDFIRE_PROGRAM_IDS | 07-03 | Only wildfire-related programs benefit from USFS risk data |
+| Evidence lines derived dynamically from context | 07-03 | Structural ask evidence assembled at render time from award/hazard data |
 
 ### Todos
 
@@ -133,10 +137,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 07-02-PLAN.md (DOCX styling foundation + engine skeleton, 2/2 tasks, 158 tests)
-**Next step:** Execute 07-03-PLAN.md and 07-04-PLAN.md (Wave 2: section renderers + assembly)
+**Stopped at:** Completed 07-03-PLAN.md (Hot Sheet renderer + 35 tests, 193 total tests)
+**Next step:** Execute 07-04-PLAN.md (section renderers + engine completion + orchestrator integration)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 07-02 plan execution (Phase 7: 2/4 plans complete, 158 tests passing)*
+*Last updated: 2026-02-10 after 07-03 plan execution (Phase 7: 3/4 plans complete, 193 tests passing)*
