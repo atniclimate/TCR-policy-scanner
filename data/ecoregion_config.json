@@ -1,0 +1,51 @@
+{
+  "ecoregions": {
+    "alaska": {
+      "name": "Alaska",
+      "states": ["AK"],
+      "description": "Arctic and subarctic climate impacts",
+      "priority_programs": ["bia_tcr", "epa_gap", "doe_indian_energy", "noaa_tribal"]
+    },
+    "pacific_northwest": {
+      "name": "Pacific Northwest",
+      "states": ["WA", "OR"],
+      "description": "Marine, forest, and salmon habitat impacts",
+      "priority_programs": ["bia_tcr", "fema_bric", "usda_wildfire", "noaa_tribal"]
+    },
+    "southwest": {
+      "name": "Southwest",
+      "states": ["AZ", "NM", "NV", "UT", "CA"],
+      "description": "Drought, wildfire, and water scarcity",
+      "priority_programs": ["bia_tcr", "fema_bric", "usda_wildfire", "epa_gap"]
+    },
+    "mountain_west": {
+      "name": "Mountain West",
+      "states": ["CO", "MT", "WY", "ID", "ND", "SD", "NE"],
+      "description": "Wildfire, drought, and extreme temperature",
+      "priority_programs": ["bia_tcr", "fema_bric", "usda_wildfire", "epa_stag"]
+    },
+    "great_plains_south": {
+      "name": "Great Plains & South",
+      "states": ["OK", "TX", "KS", "AR", "LA", "IA"],
+      "description": "Tornado, flood, and extreme heat",
+      "priority_programs": ["bia_tcr", "fema_bric", "fema_tribal_mitigation", "hud_ihbg"]
+    },
+    "southeast": {
+      "name": "Southeast",
+      "states": ["FL", "NC", "SC", "VA", "GA", "AL", "MS", "TN", "KY", "WV", "DC"],
+      "description": "Hurricane, sea level rise, and flood",
+      "priority_programs": ["bia_tcr", "fema_bric", "fema_tribal_mitigation", "hud_ihbg"]
+    },
+    "northeast_midwest": {
+      "name": "Northeast & Midwest",
+      "states": ["CT", "ME", "MA", "NY", "MN", "WI", "MI", "NH", "NJ", "PA", "RI", "VT", "DE", "MD", "IL", "IN", "OH", "MO", "HI"],
+      "description": "Extreme precipitation, flooding, and coastal erosion",
+      "priority_programs": ["bia_tcr", "fema_bric", "epa_gap", "noaa_tribal"]
+    }
+  },
+  "metadata": {
+    "scheme": "NCA5-derived 7-region advocacy classification",
+    "version": "1.0",
+    "note": "Hawaii mapped to northeast_midwest for simplicity; no federally recognized Tribes in HI use TCR programs. DC mapped to southeast."
+  }
+}

@@ -84,6 +84,24 @@ class ObligationNode:
     cfda: str = ""
 
 
+@dataclass
+class TribeNode:
+    """Federally recognized Tribal Nation."""
+    id: str              # epa_{epaTribalInternalId}
+    name: str            # Official BIA name
+    state: str = ""      # Primary state (or comma-separated for multi-state)
+    ecoregion: str = ""  # Primary ecoregion
+
+
+@dataclass
+class CongressionalDistrictNode:
+    """U.S. Congressional District (119th Congress)."""
+    id: str              # e.g., "AZ-01", "AK-AL"
+    state: str = ""
+    representative: str = ""
+    party: str = ""
+
+
 # ── Edge Types ──
 
 @dataclass
@@ -99,6 +117,8 @@ class Edge:
       ADVANCES         (StructuralAsk -> Program)
       TRUST_OBLIGATION (TrustSuperNode -> Program)
       THREATENS        (ThreatNode -> Program) -- time-sensitive legislative threat
+      REPRESENTED_BY  (TribeNode -> CongressionalDistrictNode) -- many-to-many Tribe-to-district
+      IN_ECOREGION    (TribeNode -> ecoregion_id) -- Tribe's climate advocacy region
     """
     source_id: str
     target_id: str
