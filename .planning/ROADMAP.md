@@ -14,7 +14,13 @@ The v1.1 milestone extends the TCR Policy Scanner from a shared advocacy intelli
 
 **Goal**: The Tribal registry, congressional mapping, and CLI skeleton are in place so that `--prep-packets --tribe <name>` resolves a Tribe, displays its delegation, and routes to the packet generation pathway -- even though actual DOCX output is stubbed.
 **Depends on**: v1.0 pipeline (Phases 1-4 complete)
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 05-01-PLAN.md -- Module skeleton, ecoregion classification, context dataclass, graph schema
+- [ ] 05-02-PLAN.md -- Tribal registry build script + runtime module (EPA API)
+- [ ] 05-03-PLAN.md -- Congressional mapping build script + runtime module (Census + Congress.gov + YAML)
+- [ ] 05-04-PLAN.md -- PacketOrchestrator, CLI integration, test suite
 
 **Details:**
 - Requirements: REG-01, REG-02, REG-03, CONG-01, CONG-02
@@ -114,7 +120,7 @@ This phase also delivers the `--prep-packets` CLI extension in main.py, the Pack
 - Programmatic python-docx construction with style reference document (not template-per-Tribe)
 - Two-tier name matching for USASpending (curated alias table + rapidfuzz fallback) -- false negatives preferred over false positives
 - FEMA BCR + published multiplier ranges for economic impact (not RIMS II at $500/region)
-- CRS R48107 authoritative table for Tribe-to-district mapping (not computed from TIGER shapefiles)
+- Census CD119-AIANNH relationship file for Tribe-to-district mapping (replaces CRS R48107, which maps to 118th Congress; not computed from TIGER shapefiles)
 - Many-to-many Tribe-to-district model from day one (multi-state Tribes, Alaska at-large)
 - 575 Tribes (Lumbee added via FY2026 NDAA, Federal Register 2026-01899)
 - Foundation phase has no external API dependencies -- enables testing with mock data while data acquisition phases progress
