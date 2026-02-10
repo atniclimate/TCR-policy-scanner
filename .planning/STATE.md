@@ -12,17 +12,17 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 6 (Data Acquisition) -- IN PROGRESS
-**Plan:** 01 + 02 of 3 complete in Phase 6
-**Status:** Plans 06-01 and 06-02 complete, 06-03 remaining
-**Last activity:** 2026-02-10 -- Completed 06-01-PLAN.md (Tribal Award Matching Pipeline)
+**Phase:** 6 (Data Acquisition) -- COMPLETE
+**Plan:** 3 of 3 complete in Phase 6
+**Status:** Phase 6 complete, ready for Phase 7
+**Last activity:** 2026-02-10 -- Completed 06-03-PLAN.md (Orchestrator Integration + Tests)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [######### ]  42% Phase 6 in progress
+v1.1     [##########]  58% Phase 6 complete
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
-  Phase 6: Data Acquisition [######    ] 67%  (2/3 plans complete)
+  Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
   Phase 7: Computation+DOCX [          ] 0%   (5 requirements)
   Phase 8: Assembly+Polish  [          ] 0%   (5 requirements)
 ```
@@ -41,15 +41,16 @@ v1.1     [######### ]  42% Phase 6 in progress
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 83/83 |
-| v1.1 Phase 6 plans completed | 2/3 (06-01, 06-02) |
+| v1.1 Total tests passing | 106/106 |
+| v1.1 Phase 6 plans completed | 3/3 |
+| v1.1 Phase 6 tests added | 23 |
 
 ## Accumulated Context
 
 ### Architecture Notes
 
 - **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
-- **Packet flow:** CLI (--prep-packets) -> PacketOrchestrator -> TribalRegistry + EcoregionMapper + CongressionalMapper -> TribePacketContext -> Display
+- **Packet flow:** CLI (--prep-packets) -> PacketOrchestrator -> TribalRegistry + EcoregionMapper + CongressionalMapper + AwardCache + HazardCache -> TribePacketContext -> Display
 - **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json, tribal_registry.json, congressional_cache.json, aiannh_tribe_crosswalk.json, tribal_aliases.json, hazard_profiles/*.json, award_cache/*.json
 - **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (v1.1), rapidfuzz (v1.1), openpyxl (v1.1)
 - **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific, cron `0 13 * * 1-5`)
@@ -99,6 +100,9 @@ v1.1     [######### ]  42% Phase 6 in progress
 | 85 threshold for fuzzy award matching | 06-01 | Prevents false positives; alias table (3751 entries) handles known names at Tier 1 |
 | Per-Tribe cache files (not single file) | 06-01 | O(1) per-Tribe lookup during DOCX generation; avoids loading all 592 Tribes' data |
 | Zero-award Tribes get advocacy framing | 06-01 | First-time applicant status is a competitive advantage, not a data gap |
+| Read-only cache loading in orchestrator | 06-03 | Orchestrator displays pre-built data, never generates; keeps --prep-packets fast |
+| Generic _load_tribe_cache helper | 06-03 | Reused for both award and hazard cache directories; DRY pattern |
+| Awards grouped by program_id in display | 06-03 | Shows which specific programs funded the Tribe for advocacy context |
 
 ### Todos
 
@@ -113,10 +117,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 06-01-PLAN.md (Tribal Award Matching Pipeline)
-**Next step:** Execute 06-03-PLAN.md (remaining Phase 6 plan)
+**Stopped at:** Completed 06-03-PLAN.md (Orchestrator Integration + Tests) -- Phase 6 complete
+**Next step:** Plan and execute Phase 7 (Computation + DOCX)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 06-01 plan execution (Phase 6: 2/3 plans complete)*
+*Last updated: 2026-02-10 after 06-03 plan execution (Phase 6: 3/3 plans complete, 106 tests passing)*
