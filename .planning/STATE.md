@@ -12,19 +12,19 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 7 (Computation + DOCX) -- COMPLETE
-**Plan:** 4 of 4 complete in Phase 7
-**Status:** 07-01, 07-02, 07-03, 07-04 all complete; Phase 7 finished
-**Last activity:** 2026-02-10 -- Phase 7 systemic review (9-agent, 3-wave, 40 findings, 10 fixes applied)
+**Phase:** 8 (Assembly, Polish, Web Distribution) -- IN PROGRESS
+**Plan:** 1 of 6 complete in Phase 8
+**Status:** Phase 8 Wave 1 in progress; 08-01 complete, 08-02 pending
+**Last activity:** 2026-02-10 -- Completed 08-01-PLAN.md (DOC-05 document assembly)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [##########]  90% Phase 7 complete, Phase 8 remaining
+v1.1     [##########]  90% Phase 7 complete, Phase 8 planned
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
   Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
   Phase 7: Computation+DOCX [##########] 100% (4/4 plans complete)
-  Phase 8: Assembly+Polish  [          ] 0%   (not yet planned)
+  Phase 8: Assembly+Polish  [##        ] 17%  (1/6 plans, Wave 1 in progress)
 ```
 
 ## Performance Metrics
@@ -36,18 +36,21 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 remaining
 | v1.0 Plans completed | 9/9 |
 | v1.0 Tests passing | 52/52 |
 | v1.0 Code review passes | 3 |
-| v1.1 Requirements total | 19 |
+| v1.1 Requirements total | 22 |
 | v1.1 Phases planned | 4 (Phases 5-8) |
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 214/214 |
+| v1.1 Total tests passing | 227/227 |
 | v1.1 Phase 6 plans completed | 3/3 |
 | v1.1 Phase 6 tests added | 23 |
 | v1.1 Phase 7 plans completed | 4/4 |
 | v1.1 Phase 7 tests added | 108 |
 | v1.1 Systemic review | 9-agent, 40 findings triaged, 10 fixes applied |
-| v1.1 Requirements complete | 14/19 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..04) |
+| v1.1 Requirements complete | 15/22 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..05) |
+| v1.1 Phase 8 tests added | 13 |
+| v1.1 Phase 8 plans | 6 (08-01..06, 3 waves) |
+| v1.1 Phase 8 requirements | 8 (DOC-05, DOC-06, OPS-01..03, WEB-01..03) |
 
 ## Accumulated Context
 
@@ -134,6 +137,15 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 remaining
 | NamedTemporaryFile closed before save | review | Prevents Windows file locking conflicts |
 | Program relevance filtering supersedes AF-04 | review | ProgramRelevanceFilter returns 8-12 programs per Tribe; omitted programs go to appendix |
 
+### Decisions (Phase 8)
+
+| Decision | Plan | Rationale |
+|----------|------|-----------|
+| Structural asks count hardcoded to 5 | 08-01 | Per project design; dynamic count would require cross-section coordination |
+| Senators shown as "At-Large" in district column | 08-01 | Senators represent entire state, not specific districts |
+| EAL formatted as $X,XXX (no decimals) | 08-01 | Consistent with _format_dollars pattern in docx_hotsheet.py |
+| Evidence line uses program_id match (not CFDA) | 08-01 | Direct match sufficient for standalone section |
+
 ### Todos
 
 _None._
@@ -147,11 +159,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** All planning docs synced, stale prompts marked, memory files updated -- foundation clean for Phase 8
-**Next step:** Phase 8 planning (Assembly + Polish -- DOC-05, DOC-06, OPS-01, OPS-02, OPS-03)
-**Resume file:** None
-**Resume command:** `/gsd:plan-phase 8`
+**Stopped at:** Completed 08-01-PLAN.md (DOC-05 full document assembly)
+**Next step:** Execute 08-02-PLAN.md (DOC-06 Federal Funding Overview)
+**Resume file:** .planning/phases/08-assembly-polish/08-02-PLAN.md
+**Resume command:** Execute Plan 08-02
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after planning doc cleanup and memory sync*
+*Last updated: 2026-02-10 after 08-01 completion (227 tests, 15/22 requirements)*
