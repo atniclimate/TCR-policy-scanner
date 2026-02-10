@@ -505,3 +505,28 @@ class PacketOrchestrator:
         except (json.JSONDecodeError, OSError) as exc:
             logger.warning("Failed to load graph schema: %s", exc)
             return []
+
+    def generate_strategic_overview(self) -> Path:
+        """Generate the shared strategic overview DOCX (Document 2).
+
+        Creates a single STRATEGIC-OVERVIEW.docx covering all 16 programs,
+        7 ecoregions, and the full structural policy framework. This document
+        is generated once (not per-Tribe).
+
+        Uses lazy import of StrategicOverviewGenerator to avoid circular
+        imports and keep the module lightweight when strategic overview
+        is not needed.
+
+        Returns:
+            Path to the generated STRATEGIC-OVERVIEW.docx file.
+        """
+        from src.packets.strategic_overview import StrategicOverviewGenerator
+
+        output_dir = Path(
+            self.config.get("packets", {}).get("output_dir", "outputs/packets")
+        )
+        generator = StrategicOverviewGenerator(self.config, self.programs)
+        path = generator.generate(output_dir)
+
+        logger.info("Generated strategic overview: %s", path)
+        return path
