@@ -139,8 +139,8 @@ def format_header_row(table, headers: list[str]) -> None:
     for i, cell in enumerate(header_row.cells):
         set_cell_shading(cell, COLORS.table_header_bg)
         if i < len(headers):
-            cell.text = ""
             paragraph = cell.paragraphs[0]
+            paragraph.clear()
             run = paragraph.add_run(headers[i])
             run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
             run.font.bold = True
