@@ -9,7 +9,10 @@ estimates using published federal multipliers:
 All calculations are stateless pure functions with no file I/O.
 """
 
+import logging
 from dataclasses import dataclass, field
+
+logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
@@ -190,6 +193,11 @@ class EconomicImpactCalculator:
                 try:
                     obligation = float(obligation)
                 except (ValueError, TypeError):
+                    logger.warning(
+                        "Skipping award with invalid obligation '%s' for %s",
+                        award.get("obligation"),
+                        award.get("program_id"),
+                    )
                     continue
             if obligation <= 0:
                 continue

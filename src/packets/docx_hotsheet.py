@@ -295,8 +295,10 @@ class HotSheetRenderer:
         for award in context.awards:
             if award.get("program_id") == program_id:
                 matching_awards.append(award)
-            elif award.get("cfda") and award.get("cfda") in cfda_list:
-                matching_awards.append(award)
+            elif award.get("cfda"):
+                award_cfdas = _normalize_cfda(award.get("cfda"))
+                if any(c in cfda_list for c in award_cfdas):
+                    matching_awards.append(award)
 
         self.document.add_paragraph("Award History", style="HS Section")
 
@@ -690,7 +692,8 @@ class HotSheetRenderer:
         program_id = program.get("id", "")
         cfda_list = _normalize_cfda(program.get("cfda"))
         has_awards = any(
-            a.get("program_id") == program_id or a.get("cfda") in cfda_list
+            a.get("program_id") == program_id
+            or any(c in cfda_list for c in _normalize_cfda(a.get("cfda")))
             for a in context.awards
         )
         if has_awards:

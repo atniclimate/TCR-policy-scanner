@@ -290,8 +290,10 @@ class ProgramRelevanceFilter:
         if not hazard_profile:
             return []
 
-        nri = hazard_profile.get("fema_nri", {})
-        top_hazards = nri.get("top_hazards", [])
+        nri = hazard_profile.get("fema_nri") or hazard_profile.get(
+            "sources", {}
+        ).get("fema_nri", {})
+        top_hazards = nri.get("top_hazards", []) if nri else []
         return list(top_hazards)
 
     def _resolve_hazard_code(self, hazard: dict) -> str | None:
