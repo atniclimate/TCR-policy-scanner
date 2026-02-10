@@ -147,10 +147,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Phase 7 systemic review complete -- 9-agent review (3 waves, 40 findings), 10 fixes committed, 214/214 tests pass, zero NCAI/ATNI references
+**Stopped at:** All planning docs synced, stale prompts marked, memory files updated -- foundation clean for Phase 8
 **Next step:** Phase 8 planning (Assembly + Polish -- DOC-05, DOC-06, OPS-01, OPS-02, OPS-03)
 **Resume file:** None
+**Resume command:** `/gsd:plan-phase 8`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after Phase 7 systemic review (10 fixes, 3 commits, 214 tests passing)*
+*Last updated: 2026-02-10 after planning doc cleanup and memory sync*

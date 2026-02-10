@@ -12,3 +12,4 @@ build/
 outputs/archive/*.md
 outputs/archive/*.json
 !outputs/archive/.gitkeep
+outputs/packets/
