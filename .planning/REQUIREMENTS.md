@@ -9,7 +9,7 @@
 
 ## Tribal Registry
 
-- [x] **REG-01**: 575 federally recognized Tribes loaded from EPA Tribes Names Service API with BIA codes, states, and historical name variants for fuzzy matching corpus
+- [x] **REG-01**: 592 federally recognized Tribes loaded from EPA Tribes Names Service API with BIA codes, states, and historical name variants for fuzzy matching corpus
 - [x] **REG-02**: Ecoregion classification for each Tribe (7 ecoregions) with ecoregion-to-program priority mapping
 - [x] **REG-03**: Per-Tribe DOCX packets display Tribe identity in document title, headers, and cover page fields (Tribe name, state(s), ecoregion, congressional district(s), delegation, primary hazards)
 
@@ -38,12 +38,12 @@
 - [x] **DOC-02**: 16 per-program Hot Sheets per Tribe, each containing: program status (CI, advocacy goal), Tribe-specific award history, local hazard relevance, district economic impact, and congressional delegation
 - [x] **DOC-03**: Advocacy language per program assembled from decision engine classifications, program inventory tightened_language, and advocacy_lever fields — template-based, not AI-generated
 - [x] **DOC-04**: Five Structural Asks woven into per-program Hot Sheets showing which asks advance which programs, with Tribe-specific evidence from award and hazard data
-- [ ] **DOC-05**: Document 1 — FY26 [Tribe Name] Climate Resilience Program Priorities: per-Tribe DOCX (575 variants) with cover page, executive summary, delegation section, 16 Hot Sheets, hazard profile, structural asks, and appendix
+- [ ] **DOC-05**: Document 1 — FY26 [Tribe Name] Climate Resilience Program Priorities: per-Tribe DOCX (592 variants) with cover page, executive summary, delegation section, 16 Hot Sheets, hazard profile, structural asks, and appendix
 - [ ] **DOC-06**: Document 2 — FY26 Federal Funding Overview & Strategy: shared DOCX with appropriations landscape, ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework, and messaging guidance
 
 ## Operations
 
-- [ ] **OPS-01**: `--prep-packets --all-tribes` CLI mode for batch generation of all 575 Tribe packets plus strategic overview
+- [ ] **OPS-01**: `--prep-packets --all-tribes` CLI mode for batch generation of all 592 Tribe packets plus strategic overview
 - [ ] **OPS-02**: `--prep-packets --tribe <name>` CLI mode for ad-hoc single-Tribe packet generation
 - [ ] **OPS-03**: Change tracking — "Since Last Packet" section in each DOCX showing CI status changes, new awards, advocacy goal shifts, and new legislative threats since previous generation
 
@@ -83,7 +83,7 @@
 - **AF-01**: No Tribal-specific sensitive data collection (enrollment, governance, cultural sites) -- T0 only
 - **AF-02**: No AI/LLM text generation for advocacy language -- template-based assembly only
 - **AF-03**: No real-time document editing or collaboration features
-- **AF-04**: No per-Tribe program filtering -- all 16 programs in every packet
+- **AF-04**: ~~No per-Tribe program filtering~~ **Superseded** -- ProgramRelevanceFilter returns 8-12 relevant programs per Tribe based on hazard profile, ecoregion, and priority; omitted programs appear in appendix
 - **AF-05**: No web UI or frontend dashboard
 - **AF-06**: No BEA RIMS II purchase -- use FEMA BCR + published multipliers
 

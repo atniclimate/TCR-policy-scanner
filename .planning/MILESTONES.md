@@ -25,6 +25,28 @@
 
 **Git range:** `38f3821` (initial upload) -> `8491e66` (pass 3 docs)
 
-**What's next:** v1.1 Meeting Prep Packets -- event-specific advocacy intelligence packets for Tribal leaders attending policy conventions, advocacy sessions, ECWS, and other policy events.
+**What's next:** v1.1 Tribe-Specific Advocacy Packets -- per-Tribe congressional advocacy DOCX packets for all 592 federally recognized Tribes.
+
+---
+
+## v1.1 Tribe-Specific Advocacy Packets (In Progress)
+
+**Status:** Phases 5-7 complete, Phase 8 remaining
+**Started:** 2026-02-10
+
+**Progress:**
+
+- Phase 5 (Foundation): 4/4 plans, 5 requirements complete (REG-01..03, CONG-01..02)
+- Phase 6 (Data Acquisition): 3/3 plans, 4 requirements complete (AWARD-01..02, HAZ-01..02)
+- Phase 7 (Computation + DOCX): 4/4 plans, 5 requirements complete (ECON-01, DOC-01..04)
+- Phase 8 (Assembly + Polish): Not yet planned, 5 requirements remaining (DOC-05..06, OPS-01..03)
+- Systemic review: 9-agent, 3-wave review with 40 findings triaged, 10 fixes applied
+
+**Stats so far:**
+
+- 14/19 requirements complete
+- 214 tests passing across 5 test modules
+- 11 plans executed across 3 phases
+- 3 systemic review passes (code quality, security, domain correctness)
 
 ---

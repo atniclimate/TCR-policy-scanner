@@ -15,7 +15,7 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 **Phase:** 7 (Computation + DOCX) -- COMPLETE
 **Plan:** 4 of 4 complete in Phase 7
 **Status:** 07-01, 07-02, 07-03, 07-04 all complete; Phase 7 finished
-**Last activity:** 2026-02-10 -- Completed 07-04-PLAN.md (pipeline assembly + integration tests)
+**Last activity:** 2026-02-10 -- Phase 7 systemic review (9-agent, 3-wave, 40 findings, 10 fixes applied)
 
 **Progress:**
 ```
@@ -46,6 +46,7 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 remaining
 | v1.1 Phase 6 tests added | 23 |
 | v1.1 Phase 7 plans completed | 4/4 |
 | v1.1 Phase 7 tests added | 108 |
+| v1.1 Systemic review | 9-agent, 40 findings triaged, 10 fixes applied |
 | v1.1 Requirements complete | 14/19 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02, ECON-01, DOC-01..04) |
 
 ## Accumulated Context
@@ -126,6 +127,12 @@ v1.1     [##########]  90% Phase 7 complete, Phase 8 remaining
 | Always render appendix section even when empty | 07-04 | Better document structure; shows reader all programs were considered |
 | dataclasses.asdict() for economic_summary serialization | 07-04 | TribeEconomicSummary lacks to_dict(); asdict() provides deep conversion |
 | Shared generate_packet_from_context() helper | 07-04 | Avoids duplicate code between generate_packet() and run_single_tribe() flows |
+| NCAI/ATNI references removed from all files | review | Organizations did not authorize name use; replaced with generic terms |
+| Allow critical program overflow past MAX_PROGRAMS | review | In practice only 2-3 critical programs exist; capping could drop a legitimately critical program |
+| Path traversal validation on tribe_id | review | Defense-in-depth: sanitize tribe_id in DocxEngine.save() |
+| 10MB JSON cache size limit | review | Defense-in-depth: prevents memory exhaustion from oversized files |
+| NamedTemporaryFile closed before save | review | Prevents Windows file locking conflicts |
+| Program relevance filtering supersedes AF-04 | review | ProgramRelevanceFilter returns 8-12 programs per Tribe; omitted programs go to appendix |
 
 ### Todos
 
@@ -140,10 +147,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 07-04-PLAN.md (pipeline assembly + 21 integration tests, 214 total tests)
-**Next step:** Phase 8 planning (Assembly + Polish)
+**Stopped at:** Phase 7 systemic review complete -- 9-agent review (3 waves, 40 findings), 10 fixes committed, 214/214 tests pass, zero NCAI/ATNI references
+**Next step:** Phase 8 planning (Assembly + Polish -- DOC-05, DOC-06, OPS-01, OPS-02, OPS-03)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 07-04 plan execution (Phase 7: 4/4 plans COMPLETE, 214 tests passing)*
+*Last updated: 2026-02-10 after Phase 7 systemic review (10 fixes, 3 commits, 214 tests passing)*

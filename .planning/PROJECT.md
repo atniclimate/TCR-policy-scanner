@@ -2,9 +2,9 @@
 
 ## What This Is
 
-Automated policy intelligence pipeline for Tribal Climate Resilience advocacy. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending), scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces advocacy intelligence products for Tribal Leaders advocating for FY26 climate resilience funding. v1.1 adds Tribe-specific congressional advocacy packet generation for all 574 federally recognized Tribes, with per-program award history, hazard profiling, economic impact framing, and congressional delegation mapping — output as print-ready DOCX documents.
+Automated policy intelligence pipeline for Tribal Climate Resilience advocacy. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending), scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces advocacy intelligence products for Tribal Leaders advocating for FY26 climate resilience funding. v1.1 adds Tribe-specific congressional advocacy packet generation for all 592 federally recognized Tribes, with per-program award history, hazard profiling, economic impact framing, and congressional delegation mapping — output as print-ready DOCX documents.
 
-Built for the Tribal Climate Resilience program, serving 574+ federally recognized Tribal Nations.
+Built for the Tribal Climate Resilience program, serving 592 federally recognized Tribal Nations.
 
 ## Core Value
 
@@ -35,15 +35,15 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 
 **v1.1 — Tribe-Specific Advocacy Intelligence Packets:**
 
-- [ ] Tribal Registry — 574 federally recognized Tribes with state, location, ecoregion classification (BIA Federal Register data)
-- [ ] Congressional Mapping — senators, House representatives, and committee assignments per Tribe (Census TIGER districts + Congress.gov)
-- [ ] USASpending Award Matching — per-Tribe per-program funding history from existing scraper (fuzzy Tribal name matching)
-- [ ] Hazard Profiling — multi-source Tribe-specific hazard data (FEMA NRI, EPA EJScreen, USFS wildfire risk, NOAA climate projections)
-- [ ] Economic Impact Synthesis — BEA regional multipliers, FEMA 4:1 benefit-cost ratios, avoided cost framing per Tribe per program
-- [ ] Document 1: FY26 [Tribe Name] Climate Resilience Program Priorities — per-Tribe DOCX with 16 program Hot Sheets, each with Tribe-specific award history, local hazards, district economic impact, congressional delegation, and advocacy language
-- [ ] Document 2: FY26 Federal Funding Overview & Strategy — shared DOCX with appropriations landscape, ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework
-- [ ] DOCX Generation Engine — python-docx programmatic document construction (no template files)
-- [ ] CLI triggers — batch (all 574 Tribes) and ad-hoc (single Tribe) generation modes
+- [x] Tribal Registry — 592 federally recognized Tribes with state, location, ecoregion classification (EPA API + BIA codes)
+- [x] Congressional Mapping — senators, House representatives, and committee assignments per Tribe (Census CD119-AIANNH + Congress.gov API)
+- [x] USASpending Award Matching — per-Tribe per-program funding history with two-tier name matching (alias table + rapidfuzz)
+- [x] Hazard Profiling — FEMA NRI 18 hazard types + USFS wildfire risk per Tribe (EPA EJScreen deferred, NOAA deferred)
+- [x] Economic Impact Synthesis — published multipliers + FEMA 4:1 BCR, avoided cost framing per Tribe per program
+- [x] DOCX Generation Engine — python-docx programmatic document construction with Hot Sheets, cover page, appendix
+- [ ] Document 1: FY26 [Tribe Name] Climate Resilience Program Priorities — complete per-Tribe DOCX assembly with all sections
+- [ ] Document 2: FY26 Federal Funding Overview & Strategy — shared DOCX with appropriations landscape, ecoregion strategic priorities
+- [ ] CLI triggers — batch (all 592 Tribes) and ad-hoc (single Tribe) generation modes
 - [ ] Change Tracking — "since last packet" diffs showing what shifted between packet generations
 
 ### Out of Scope
@@ -58,8 +58,8 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 **Organization:** Tribal Climate Resilience program
 **Repository:** private repository
 **TSDF Classification:** T0 (Open) — all data from public federal documents
-**Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest — all async
-**Server:** GitHub-hosted with Claude Code at /root/.claude/projects/-home-user-TCR-policy-scanner/
+**Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx, rapidfuzz, openpyxl — async pipeline + DOCX generation
+**Server:** GitHub-hosted, developed locally at F:\tcr-policy-scanner
 **Local workspace:** F:\tcr-policy-scanner
 
 **Shipped v1.0 with 4,074 LOC Python across 46 source files.**
@@ -82,7 +82,7 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 - FY26 Federal Funding Overview & Strategy — inter-Tribal strategic landscape (see `C:\Users\PatrickFreeland\Desktop\FY26_Federal_Funding_Strategy.docx`)
 
 **v1.1 data sources:**
-- BIA Federal Register notice — list of 574 federally recognized Tribes
+- BIA Federal Register notice — list of 592 federally recognized Tribes
 - Census TIGER — congressional district boundaries for Tribe-to-district mapping
 - Congress.gov API — current members, committee assignments (already have API key)
 - FEMA National Risk Index — county-level hazard scores for 18 natural hazard types
@@ -92,7 +92,7 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 - BEA regional input-output models — economic multipliers for district-level impact framing
 - FEMA benefit-cost ratios — pre-disaster mitigation returns (4:1 standard)
 
-**Test suite:** 52 tests (decision engine), 8 data validation checks
+**Test suite:** 214 tests across 5 modules (decision engine, integration, DOCX, economic, data validation)
 
 ## Constraints
 
@@ -121,19 +121,19 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 | HotSheetsValidator runs first | CI overrides must apply before decision engine | ✓ Good |
 | Always-render threat sections | "No threats" is valuable info for meeting prep | ✓ Good |
 | CI history 90-entry cap | ~3 months daily scans; prevents unbounded growth | ✓ Good |
-| DOCX output (not Markdown) | Congressional offices need printable/shareable documents | — Pending |
-| Programmatic DOCX (no template files) | Build document structure in code for full control; no external template dependency | — Pending |
-| All 574 Tribes | Program scope serves all federally recognized Tribes nationally | — Pending |
-| Multi-source hazard profiling | FEMA NRI + EPA EJScreen + USFS + NOAA gives comprehensive picture | — Pending |
-| BEA multipliers for economic impact | Standard federal methodology makes framing defensible | — Pending |
-| Scanner generates both documents | Document 1 (per-Tribe) and Document 2 (strategic overview) both auto-generated | — Pending |
+| DOCX output (not Markdown) | Congressional offices need printable/shareable documents | Good — DocxEngine + StyleManager operational |
+| Programmatic DOCX (no template files) | Build document structure in code for full control; no external template dependency | Good — python-docx with _ColorNamespace styles |
+| All 592 Tribes | Program scope serves all federally recognized Tribes nationally (EPA API returns 592) | Good — registry + caches for all 592 |
+| Multi-source hazard profiling | FEMA NRI + USFS wildfire (EJScreen deferred, NOAA deferred) | Good — 18 NRI hazard types + USFS wildfire |
+| Published multipliers for economic impact | Standard federal methodology makes framing defensible (not RIMS II at $500/region) | Good — FEMA BCR + published multipliers |
+| Scanner generates both documents | Document 1 (per-Tribe) and Document 2 (strategic overview) both auto-generated | — Pending (Phase 8) |
 
 ## Current Milestone: v1.1 Tribe-Specific Advocacy Packets
 
-**Goal:** Generate per-Tribe congressional advocacy DOCX packets for all 574 federally recognized Tribes, with localized funding data, hazard profiling, economic impact framing, and congressional delegation mapping.
+**Goal:** Generate per-Tribe congressional advocacy DOCX packets for all 592 federally recognized Tribes, with localized funding data, hazard profiling, economic impact framing, and congressional delegation mapping.
 
 **Target features:**
-- Tribal Registry with 574 Tribes mapped to states, ecoregions, and congressional districts
+- Tribal Registry with 592 Tribes mapped to states, ecoregions, and congressional districts
 - Per-Tribe DOCX (Document 1) with 16 program Hot Sheets populated with Tribe-specific data
 - Shared strategic DOCX (Document 2) with appropriations landscape and ecoregion priorities
 - Multi-source hazard profiling (FEMA NRI, EPA EJScreen, USFS, NOAA)
@@ -143,4 +143,4 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 - Change tracking between packet generations
 
 ---
-*Last updated: 2026-02-10 after v1.1 milestone initialization*
+*Last updated: 2026-02-10 after Phase 7 systemic review (214 tests, 14/19 requirements complete)*
