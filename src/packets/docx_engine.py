@@ -19,6 +19,10 @@ from src.packets.docx_hotsheet import HotSheetRenderer
 from src.packets.docx_sections import (
     render_appendix,
     render_cover_page,
+    render_delegation_section,
+    render_executive_summary,
+    render_hazard_summary,
+    render_structural_asks_section,
     render_table_of_contents,
 )
 from src.packets.docx_styles import COLORS, StyleManager
@@ -168,11 +172,15 @@ class DocxEngine:
         economic_summary: TribeEconomicSummary,
         structural_asks: list[dict],
         omitted_programs: list[dict] | None = None,
+        changes: list[dict] | None = None,
+        previous_date: str | None = None,
     ) -> Path:
-        """Generate a complete advocacy packet DOCX for a single Tribe.
+        """Generate a complete 8-section advocacy packet DOCX for a single Tribe.
 
-        Assembles the full document: cover page, table of contents, Hot Sheet
-        pages for each relevant program, and an appendix of omitted programs.
+        Assembles the full document in order: cover page, table of contents,
+        executive summary, congressional delegation, Hot Sheet pages for each
+        relevant program, hazard profile summary, structural policy asks, and
+        appendix of omitted programs.
 
         Args:
             context: TribePacketContext with all Tribe data.
@@ -181,6 +189,11 @@ class DocxEngine:
             structural_asks: List of structural ask dicts from graph schema.
             omitted_programs: Optional list of programs not included in
                 Hot Sheets (rendered in appendix).
+            changes: Optional list of change dicts for change tracking
+                (forward-compatible stub for Plan 08-04, not used here).
+            previous_date: Optional ISO date string of previous packet
+                generation (forward-compatible stub for Plan 08-04, not
+                used here).
 
         Returns:
             Path to the saved .docx file.
@@ -191,28 +204,49 @@ class DocxEngine:
         render_cover_page(document, context, style_manager)
 
         # 2. Table of contents
-        render_table_of_contents(document, relevant_programs, context, style_manager)
+        render_table_of_contents(
+            document, relevant_programs, context, style_manager
+        )
 
-        # 3. Hot Sheets for all relevant programs
+        # 3. Executive summary (DOC-05)
+        render_executive_summary(
+            document, context, relevant_programs, economic_summary,
+            style_manager,
+        )
+
+        # 4. Congressional delegation (DOC-05)
+        render_delegation_section(document, context, style_manager)
+
+        # 5. Hot Sheets for all relevant programs (8-12 per Tribe)
         renderer = HotSheetRenderer(document, style_manager)
         renderer.render_all_hotsheets(
             context, relevant_programs, economic_summary, structural_asks
         )
 
-        # 4. Appendix (omitted programs or "all included" note)
+        # 6. Hazard profile summary (DOC-05)
         document.add_page_break()
+        render_hazard_summary(document, context, style_manager)
+
+        # 7. Structural asks standalone (DOC-05)
+        render_structural_asks_section(
+            document, structural_asks, context, style_manager
+        )
+
+        # 8. Appendix (omitted programs or "all included" note)
         render_appendix(
             document, omitted_programs or [], context, style_manager
         )
 
-        # 5. Save and return path
+        # Save and return path
         tribe_id = getattr(context, "tribe_id", "unknown")
         output_path = self.save(document, tribe_id)
 
         logger.info(
-            "Generated complete packet for %s: %d Hot Sheets, %d omitted programs",
+            "Generated complete 8-section packet for %s: "
+            "%d Hot Sheets, %d structural asks, %d omitted programs",
             context.tribe_name,
             len(relevant_programs),
+            len(structural_asks),
             len(omitted_programs or []),
         )
         return output_path
