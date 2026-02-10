@@ -12,16 +12,16 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 5 (Foundation) -- not yet started
-**Plan:** None (roadmap created, awaiting phase planning)
-**Status:** Roadmap created, ready for phase planning
-**Last activity:** 2026-02-10 -- Roadmap created (4 phases, 19 requirements)
+**Phase:** 5 (Foundation) -- in progress
+**Plan:** 01 of 4 complete in Phase 5 (Wave 1)
+**Status:** Executing Phase 5 Wave 1
+**Last activity:** 2026-02-10 -- Completed 05-01-PLAN.md (foundation types & ecoregion)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [          ]   0% Roadmap created, planning Phase 5
-  Phase 5: Foundation       [          ] 0%  (5 requirements)
+v1.1     [##        ]  25% Phase 5 in progress
+  Phase 5: Foundation       [###       ] 25%  (1/4 plans complete)
   Phase 6: Data Acquisition [          ] 0%  (4 requirements)
   Phase 7: Computation+DOCX [          ] 0%  (5 requirements)
   Phase 8: Assembly+Polish  [          ] 0%  (5 requirements)
@@ -45,7 +45,7 @@ v1.1     [          ]   0% Roadmap created, planning Phase 5
 ### Architecture Notes
 
 - **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
-- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json
+- **Data files:** scanner_config.json, program_inventory.json, policy_tracking.json, graph_schema.json, ecoregion_config.json (new)
 - **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx (new for v1.1), rapidfuzz (new for v1.1)
 - **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific, cron `0 13 * * 1-5`)
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
@@ -65,6 +65,14 @@ v1.1     [          ]   0% Roadmap created, planning Phase 5
 - Batch (all 575) and ad-hoc (single Tribe) generation modes
 - Change tracking between packet generations
 
+### Decisions (Phase 5)
+
+| Decision | Plan | Rationale |
+|----------|------|-----------|
+| Ecoregion program IDs mapped to actual inventory | 05-01 | Plan referenced 5 non-existent program IDs; substituted with verified inventory matches |
+| DC mapped to southeast ecoregion | 05-01 | Geographically appropriate; ensures 50-state + DC coverage |
+| Lazy-loaded ecoregion config | 05-01 | Faster import time; JSON only loaded on first classify() call |
+
 ### Todos
 
 _None._
@@ -78,10 +86,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Roadmap created for v1.1 (Phases 5-8, 19 requirements mapped)
-**Next step:** `/gsd:plan-phase 5` to create plans for Phase 5 (Foundation)
+**Stopped at:** Completed 05-01-PLAN.md (foundation types & ecoregion classification)
+**Next step:** Execute 05-02, 05-03 (Wave 1 parallel), then 05-04 (Wave 2)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after v1.1 roadmap creation*
+*Last updated: 2026-02-10 after 05-01 plan execution*
