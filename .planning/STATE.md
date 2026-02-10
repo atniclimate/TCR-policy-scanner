@@ -12,18 +12,18 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 6 (Data Acquisition) -- COMPLETE
-**Plan:** 3 of 3 complete in Phase 6
-**Status:** Phase 6 complete and verified, ready for Phase 7
-**Last activity:** 2026-02-10 -- Phase 6 verified (18/18 must-haves passed, 106/106 tests)
+**Phase:** 7 (Computation + DOCX) -- IN PROGRESS
+**Plan:** 1 of 4 complete in Phase 7
+**Status:** 07-01 complete, ready for 07-02
+**Last activity:** 2026-02-10 -- Completed 07-01-PLAN.md (economic calculator + relevance filter)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [##########]  58% Phase 6 complete
+v1.1     [############]  64% Phase 7 in progress
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
   Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
-  Phase 7: Computation+DOCX [          ] 0%   (5 requirements)
+  Phase 7: Computation+DOCX [##        ] 25%  (1/4 plans complete)
   Phase 8: Assembly+Polish  [          ] 0%   (5 requirements)
 ```
 
@@ -41,9 +41,11 @@ v1.1     [##########]  58% Phase 6 complete
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 106/106 |
+| v1.1 Total tests passing | 158/158 |
 | v1.1 Phase 6 plans completed | 3/3 |
 | v1.1 Phase 6 tests added | 23 |
+| v1.1 Phase 7 plans completed | 1/4 |
+| v1.1 Phase 7 tests added | 26 |
 | v1.1 Requirements complete | 9/19 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02) |
 
 ## Accumulated Context
@@ -105,6 +107,16 @@ v1.1     [##########]  58% Phase 6 complete
 | Generic _load_tribe_cache helper | 06-03 | Reused for both award and hazard cache directories; DRY pattern |
 | Awards grouped by program_id in display | 06-03 | Shows which specific programs funded the Tribe for advocacy context |
 
+### Decisions (Phase 7)
+
+| Decision | Plan | Rationale |
+|----------|------|-----------|
+| Zero-award Tribes use PROGRAM_BENCHMARK_AVERAGES | 07-01 | Primary path since all current caches have empty awards; is_benchmark=True enables distinct framing |
+| Total obligation includes benchmarks | 07-01 | Complete economic picture for Tribes even without award history |
+| Actual awards sorted before benchmarks | 07-01 | Most impactful data shown first in by_program list |
+| 18 NRI hazard types mapped to programs | 07-01 | Full coverage; unmapped hazards fall back to bia_tcr + fema_bric |
+| Dual hazard code resolution (code + type) | 07-01 | Handles both NRI code field and human-readable type field from cached profiles |
+
 ### Todos
 
 _None._
@@ -118,10 +130,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Phase 6 verified and complete (3/3 plans, 18/18 must-haves, 106/106 tests)
-**Next step:** `/gsd:discuss-phase 7` or `/gsd:plan-phase 7` for Computation + DOCX Generation
+**Stopped at:** Completed 07-01-PLAN.md (economic calculator + relevance filter, 2/2 tasks, 158 tests)
+**Next step:** Execute 07-02-PLAN.md (Hot Sheet DOCX rendering)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 06-03 plan execution (Phase 6: 3/3 plans complete, 106 tests passing)*
+*Last updated: 2026-02-10 after 07-01 plan execution (Phase 7: 1/4 plans complete, 158 tests passing)*
