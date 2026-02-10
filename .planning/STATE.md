@@ -12,18 +12,18 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 **Milestone:** v1.1 Tribe-Specific Advocacy Packets
-**Phase:** 7 (Computation + DOCX) -- IN PROGRESS
-**Plan:** 3 of 4 complete in Phase 7
-**Status:** 07-01, 07-02, 07-03 complete; 07-04 remaining
-**Last activity:** 2026-02-10 -- Completed 07-03-PLAN.md (Hot Sheet renderer + tests)
+**Phase:** 7 (Computation + DOCX) -- COMPLETE
+**Plan:** 4 of 4 complete in Phase 7
+**Status:** 07-01, 07-02, 07-03, 07-04 all complete; Phase 7 finished
+**Last activity:** 2026-02-10 -- Completed 07-04-PLAN.md (pipeline assembly + integration tests)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
-v1.1     [######### ]  80% Phase 7 in progress
+v1.1     [##########]  90% Phase 7 complete, Phase 8 remaining
   Phase 5: Foundation       [##########] 100% (4/4 plans complete)
   Phase 6: Data Acquisition [##########] 100% (3/3 plans complete)
-  Phase 7: Computation+DOCX [########  ] 75%  (3/4 plans complete)
+  Phase 7: Computation+DOCX [##########] 100% (4/4 plans complete)
   Phase 8: Assembly+Polish  [          ] 0%   (not yet planned)
 ```
 
@@ -41,11 +41,11 @@ v1.1     [######### ]  80% Phase 7 in progress
 | v1.1 Requirements mapped | 19/19 |
 | v1.1 Phase 5 plans completed | 4/4 |
 | v1.1 Phase 5 tests added | 31 |
-| v1.1 Total tests passing | 193/193 |
+| v1.1 Total tests passing | 214/214 |
 | v1.1 Phase 6 plans completed | 3/3 |
 | v1.1 Phase 6 tests added | 23 |
-| v1.1 Phase 7 plans completed | 3/4 |
-| v1.1 Phase 7 tests added | 87 |
+| v1.1 Phase 7 plans completed | 4/4 |
+| v1.1 Phase 7 tests added | 108 |
 | v1.1 Requirements complete | 9/19 (REG-01..03, CONG-01..02, AWARD-01..02, HAZ-01..02) |
 
 ## Accumulated Context
@@ -123,6 +123,9 @@ v1.1     [######### ]  80% Phase 7 in progress
 | Paragraph-level shading for Key Ask callout | 07-03 | OxmlElement w:shd on pPr simpler than table-based callout |
 | USFS wildfire data only for _WILDFIRE_PROGRAM_IDS | 07-03 | Only wildfire-related programs benefit from USFS risk data |
 | Evidence lines derived dynamically from context | 07-03 | Structural ask evidence assembled at render time from award/hazard data |
+| Always render appendix section even when empty | 07-04 | Better document structure; shows reader all programs were considered |
+| dataclasses.asdict() for economic_summary serialization | 07-04 | TribeEconomicSummary lacks to_dict(); asdict() provides deep conversion |
+| Shared generate_packet_from_context() helper | 07-04 | Avoids duplicate code between generate_packet() and run_single_tribe() flows |
 
 ### Todos
 
@@ -137,10 +140,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-10
-**Stopped at:** Completed 07-03-PLAN.md (Hot Sheet renderer + 35 tests, 193 total tests)
-**Next step:** Execute 07-04-PLAN.md (section renderers + engine completion + orchestrator integration)
+**Stopped at:** Completed 07-04-PLAN.md (pipeline assembly + 21 integration tests, 214 total tests)
+**Next step:** Phase 8 planning (Assembly + Polish)
 **Resume file:** None
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-10 after 07-03 plan execution (Phase 7: 3/4 plans complete, 193 tests passing)*
+*Last updated: 2026-02-10 after 07-04 plan execution (Phase 7: 4/4 plans COMPLETE, 214 tests passing)*
