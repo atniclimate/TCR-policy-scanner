@@ -397,6 +397,8 @@ def main() -> None:
                         help="Tribe name for single packet (used with --prep-packets)")
     parser.add_argument("--all-tribes", action="store_true",
                         help="Generate for all Tribes (used with --prep-packets)")
+    parser.add_argument("--enable-agent-review", action="store_true",
+                        help="Enable 3-pass agent review cycle for DOCX Hot Sheets")
     parser.add_argument("--health-check", action="store_true",
                         help="Check API availability for all sources")
     args = parser.parse_args()
@@ -426,7 +428,10 @@ def main() -> None:
             print("  python -m src.main --prep-packets --all-tribes")
             sys.exit(1)
         from src.packets.orchestrator import PacketOrchestrator
-        orch = PacketOrchestrator(config, programs)
+        orch = PacketOrchestrator(
+            config, programs,
+            enable_agent_review=args.enable_agent_review,
+        )
         if args.tribe:
             orch.run_single_tribe(args.tribe)
         else:

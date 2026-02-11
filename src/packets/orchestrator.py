@@ -28,6 +28,7 @@ from src.paths import (
     PACKETS_OUTPUT_DIR,
     PROJECT_ROOT,
 )
+from src.packets.agent_review import AgentReviewOrchestrator
 from src.packets.relevance import ProgramRelevanceFilter
 
 logger = logging.getLogger(__name__)
@@ -47,15 +48,23 @@ class PacketOrchestrator:
         orch.run_all_tribes()
     """
 
-    def __init__(self, config: dict, programs: list[dict]) -> None:
+    def __init__(
+        self,
+        config: dict,
+        programs: list[dict],
+        enable_agent_review: bool = False,
+    ) -> None:
         """Initialize the orchestrator with config and program inventory.
 
         Args:
             config: Application configuration dict (with ``packets`` section).
             programs: List of program dicts from program_inventory.json.
+            enable_agent_review: Enable the 3-pass agent review cycle for
+                DOCX Hot Sheet production. Default ``False`` (opt-in).
         """
         self.config = config
         self.programs = {p["id"]: p for p in programs}
+        self.enable_agent_review = enable_agent_review
         self.registry = TribalRegistry(config)
         self.congress = CongressionalMapper(config)
         self.ecoregion = EcoregionMapper(config)
@@ -531,6 +540,20 @@ class PacketOrchestrator:
             changes=changes,
             previous_date=previous_date,
         )
+
+        # Agent review cycle (opt-in)
+        reviewer = AgentReviewOrchestrator(enabled=self.enable_agent_review)
+        if reviewer.enabled:
+            logger.info(
+                "Agent review enabled for %s — "
+                "awaiting critique registration via review agents",
+                context.tribe_name,
+            )
+            # NOTE: In the current workflow, critiques are registered
+            # externally by Claude Code agents via the review-orchestrator
+            # agent definition.  The Python-side reviewer stores protocol
+            # state and will be populated when the orchestrator agent calls
+            # register_critiques() with each agent's output.
 
         # Persist current state after successful generation
         tracker.save_current(context.tribe_id, current_state)
