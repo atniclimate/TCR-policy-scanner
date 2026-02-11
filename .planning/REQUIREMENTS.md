@@ -7,8 +7,8 @@
 
 ### Config Hardening
 
-- [ ] **CONF-01**: Structural asks path resolved via config/pathlib (not hardcoded string)
-- [ ] **CONF-02**: Centralized path constants module (`src/paths.py`) for all data/config file paths
+- [x] **CONF-01**: Structural asks path resolved via config/pathlib (not hardcoded string)
+- [x] **CONF-02**: Centralized path constants module (`src/paths.py`) for all data/config file paths
 
 ### Code Quality
 
@@ -88,8 +88,8 @@ These tech debt items were resolved during the research phase:
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CONF-01 | Phase 9 | Pending |
-| CONF-02 | Phase 9 | Pending |
+| CONF-01 | Phase 9 | Complete |
+| CONF-02 | Phase 9 | Complete |
 | QUAL-01 | Phase 10 | Pending |
 | QUAL-02 | Phase 10 | Pending |
 | RESL-01 | Phase 11 | Pending |
