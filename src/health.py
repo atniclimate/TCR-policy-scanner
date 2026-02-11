@@ -84,6 +84,8 @@ class HealthChecker:
             api_key = ""
 
         headers = {"User-Agent": USER_AGENT}
+        if api_key:
+            headers["X-API-Key"] = api_key
         start = time.monotonic()
 
         try:
@@ -95,29 +97,16 @@ class HealthChecker:
                 if probe.get("json"):
                     kwargs["json"] = probe["json"]
 
-                if api_key:
-                    # Add API key as query parameter
-                    separator = "&" if "?" in url else "?"
-                    url = f"{url}{separator}api_key={api_key}"
-
-                if method == "GET":
-                    async with session.get(url, **kwargs) as resp:
-                        latency_ms = int((time.monotonic() - start) * 1000)
-                        if 200 <= resp.status < 300:
-                            return {"status": "UP", "latency_ms": latency_ms, "detail": "OK"}
-                        return self._check_degraded_or_down(
-                            source_name, f"HTTP {resp.status}"
-                        )
-                elif method == "POST":
-                    async with session.post(url, **kwargs) as resp:
-                        latency_ms = int((time.monotonic() - start) * 1000)
-                        if 200 <= resp.status < 300:
-                            return {"status": "UP", "latency_ms": latency_ms, "detail": "OK"}
-                        return self._check_degraded_or_down(
-                            source_name, f"HTTP {resp.status}"
-                        )
-                else:
+                request_fn = getattr(session, method.lower(), None)
+                if request_fn is None:
                     return {"status": "DOWN", "latency_ms": 0, "detail": f"Unsupported method: {method}"}
+                async with request_fn(url, **kwargs) as resp:
+                    latency_ms = int((time.monotonic() - start) * 1000)
+                    if 200 <= resp.status < 300:
+                        return {"status": "UP", "latency_ms": latency_ms, "detail": "OK"}
+                    return self._check_degraded_or_down(
+                        source_name, f"HTTP {resp.status}"
+                    )
 
         except (aiohttp.ClientError, TimeoutError, OSError) as e:
             return self._check_degraded_or_down(source_name, str(e))
@@ -126,6 +115,8 @@ class HealthChecker:
         """Check if cached data exists; return DEGRADED if so, DOWN otherwise."""
         cache_path = OUTPUTS_DIR / f".cache_{source_name}.json"
         if cache_path.exists():
+            if cache_path.stat().st_size > 10 * 1024 * 1024:
+                return {"status": "DOWN", "latency_ms": 0, "detail": "cache file too large"}
             try:
                 with open(cache_path, encoding="utf-8") as f:
                     data = json.load(f)

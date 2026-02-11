@@ -172,6 +172,9 @@ def _load_source_cache(source_name: str, config: dict | None = None) -> list[dic
     if not cache_path.exists():
         logger.warning("No cached data available for %s", source_name)
         return []
+    if cache_path.is_symlink():
+        logger.error("Cache file is a symlink for %s, skipping", source_name)
+        return []
     try:
         # Security: check file size before parsing (10MB cap)
         file_size = cache_path.stat().st_size

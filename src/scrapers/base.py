@@ -45,7 +45,7 @@ class BaseScraper:
         # Read resilience config (or use hardcoded defaults)
         resilience = (config or {}).get("resilience", {})
         self.max_retries = resilience.get("max_retries", MAX_RETRIES)
-        self.backoff_base = resilience.get("backoff_base", BACKOFF_BASE)
+        self.backoff_base = max(1, resilience.get("backoff_base", BACKOFF_BASE))
         self.backoff_max = resilience.get("backoff_max", 300)
         self.request_timeout = aiohttp.ClientTimeout(
             total=resilience.get("request_timeout", 30)

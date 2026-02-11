@@ -247,6 +247,22 @@ class TestBaseScraperCircuitBreakerIntegration:
         assert scraper.max_retries == 7
         assert scraper.backoff_base == 4
 
+    def test_backoff_base_zero_clamped_to_one(self):
+        """GRIBBLE-09: backoff_base=0 is clamped to 1 to prevent collapsed backoff."""
+        from src.scrapers.base import BaseScraper
+
+        config = {"resilience": {"backoff_base": 0}}
+        scraper = BaseScraper("test_source", config=config)
+        assert scraper.backoff_base >= 1
+
+    def test_backoff_base_negative_clamped_to_one(self):
+        """GRIBBLE-08: backoff_base=-2 is clamped to 1 to prevent negative sleep."""
+        from src.scrapers.base import BaseScraper
+
+        config = {"resilience": {"backoff_base": -2}}
+        scraper = BaseScraper("test_source", config=config)
+        assert scraper.backoff_base >= 1
+
 
 # ── Per-source cache tests ──
 
@@ -358,6 +374,23 @@ class TestSourceCache:
             _save_source_cache("test_source", [{"id": "1"}])
             tmp_files = list(tmp_path.glob("*.tmp"))
             assert len(tmp_files) == 0
+
+    def test_load_source_cache_rejects_symlink(self, tmp_path, caplog):
+        """GRIBBLE-03: Symlinked cache file is rejected as defense-in-depth."""
+        from pathlib import Path
+        from src.main import _load_source_cache
+
+        with patch("src.main.OUTPUTS_DIR", tmp_path):
+            # Mock the cache path to appear as a symlink
+            cache_path = tmp_path / ".cache_evil.json"
+            cache_path.write_text('{"items": [{"id": "1"}], "cached_at": "now"}', encoding="utf-8")
+
+            with patch.object(Path, "is_symlink", return_value=True):
+                with caplog.at_level(logging.ERROR):
+                    result = _load_source_cache("evil")
+
+            assert result == [], "Symlinked cache should return empty list"
+            assert any("symlink" in r.message.lower() for r in caplog.records)
 
 
 # ── Health check tests ──
@@ -516,3 +549,71 @@ class TestHealthChecker:
                 )
         assert result["status"] == "DOWN"
         assert "API key not configured" in result["detail"]
+
+    def test_api_key_in_header_not_url(self):
+        """GRIBBLE-11: API key must be sent via header, never in URL query string."""
+        import asyncio
+        from unittest.mock import AsyncMock, MagicMock
+
+        from src.health import HealthChecker
+
+        checker = HealthChecker({
+            "sources": {"congress_gov": {"key_env_var": "TEST_CONGRESS_KEY"}},
+        })
+
+        captured_headers = {}
+        captured_url = None
+
+        mock_resp = AsyncMock()
+        mock_resp.status = 200
+        mock_resp.__aenter__ = AsyncMock(return_value=mock_resp)
+        mock_resp.__aexit__ = AsyncMock(return_value=False)
+
+        def capture_get(url, **kwargs):
+            nonlocal captured_url
+            captured_url = url
+            return mock_resp
+
+        mock_session = AsyncMock()
+        mock_session.get = MagicMock(side_effect=capture_get)
+        mock_session.__aenter__ = AsyncMock(return_value=mock_session)
+        mock_session.__aexit__ = AsyncMock(return_value=False)
+
+        def capture_session(headers=None, **kwargs):
+            nonlocal captured_headers
+            captured_headers = headers or {}
+            return mock_session
+
+        with patch("src.health.aiohttp.ClientSession", side_effect=capture_session):
+            with patch.dict(os.environ, {"TEST_CONGRESS_KEY": "secret123"}):
+                result = asyncio.run(checker._probe_one("congress_gov", {
+                    "url": "https://api.congress.gov/v3/bill?limit=1",
+                    "method": "GET",
+                    "requires_key": True,
+                }))
+
+        assert result["status"] == "UP"
+        # Key MUST be in headers, NOT in URL
+        assert "X-API-Key" in captured_headers, "API key not found in session headers"
+        assert captured_headers["X-API-Key"] == "secret123"
+        assert "api_key=" not in captured_url, "API key leaked into URL query string"
+
+    def test_health_cache_oversized_returns_down(self, tmp_path):
+        """GRIBBLE-14: Oversized cache file in health check returns DOWN, not DEGRADED."""
+        from src.health import HealthChecker
+
+        checker = HealthChecker({"sources": {}})
+
+        # Create a valid JSON cache file that's over 10MB
+        cache_file = tmp_path / ".cache_usaspending.json"
+        padding = "x" * (10 * 1024 * 1024)
+        cache_file.write_text(
+            json.dumps({"cached_at": "2026-01-01", "padding": padding}),
+            encoding="utf-8",
+        )
+        assert cache_file.stat().st_size > 10 * 1024 * 1024
+
+        with patch("src.health.OUTPUTS_DIR", tmp_path):
+            result = checker._check_degraded_or_down("usaspending", "timeout")
+
+        assert result["status"] == "DOWN", f"Expected DOWN for oversized cache, got {result['status']}"
