@@ -150,7 +150,7 @@ Plans:
 - [x] 14-03-PLAN.md -- Audience-filtered Tribal document generation (Doc A + Doc B) [Wave 2]
 - [x] 14-04-PLAN.md -- Regional aggregation + Doc C/D generation [Wave 2]
 - [ ] 14-05-PLAN.md -- Batch generation + quality review automation [Wave 3]
-- [ ] 14-06-PLAN.md -- Data validation script + VERIFICATION.md [Wave 3]
+- [x] 14-06-PLAN.md -- Data validation script + VERIFICATION.md [Wave 3]
 - [ ] 14-07-PLAN.md -- GitHub Pages deployment + production URL finalization [Wave 4]
 
 ---
@@ -164,8 +164,8 @@ Plans:
 | 11 - API Resilience | 2 | 2 | Complete | 2026-02-11 |
 | 12 - Award Population | 4 | 4 | Complete | 2026-02-11 |
 | 13 - Hazard Population | 3 | 3 | Complete | 2026-02-11 |
-| 14 - Integration & Validation | 7 | 4 | In Progress | -- |
-| **Total** | **20** | **15** | -- | -- |
+| 14 - Integration & Validation | 7 | 5 | In Progress | -- |
+| **Total** | **20** | **16** | -- | -- |
 
 ## Dependency & Wave Summary
 
