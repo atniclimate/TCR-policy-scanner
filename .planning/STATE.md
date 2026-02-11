@@ -12,17 +12,17 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ## Current Position
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
-**Phase:** 9 - Config Hardening (in progress)
-**Plan:** 1 of 2
-**Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 09-01-PLAN.md (centralized paths module + 7 file migrations)
+**Phase:** 9 - Config Hardening (complete)
+**Plan:** 2 of 2
+**Status:** Phase complete
+**Last activity:** 2026-02-11 -- Completed 09-02-PLAN.md (packets/tests/scripts path migration)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [##~~~~~~~~]  27% IN PROGRESS (6 phases, 15 plans, 24 requirements)
-  Phase  9: Config Hardening     [#####~~~~~]  50%  1/2 plans complete
+v1.2     [##~~~~~~~~]  13% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+  Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [~~~~~~~~~~]   0%  Ready (Wave 1, parallel with 9)
   Phase 11: API Resilience       [~~~~~~~~~~]   0%  Blocked on Wave 1
   Phase 12: Award Population     [~~~~~~~~~~]   0%  Blocked on Wave 1
@@ -92,6 +92,9 @@ v1.2     [##~~~~~~~~]  27% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 - Quick depth: 2-3 plans per phase, 15 total plans
 - DEC-0901-01: src/paths.py imports only pathlib.Path (zero project imports) to prevent circular dependencies
 - DEC-0901-02: src/config.py re-exports PROJECT_ROOT via __all__ for backward compatibility
+- DEC-0902-01: Scripts use sys.path insertion pattern for src.paths access (standalone entry points)
+- DEC-0902-02: Config-overridable paths use `Path(raw) if raw else CONSTANT` pattern (backward compat)
+- DEC-0902-03: Docstring path references left as-is (documentation, not executable)
 
 ### Todos
 
@@ -106,11 +109,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 09-01-PLAN.md (centralized paths module + core file migrations)
-**Next step:** Execute 09-02-PLAN.md (migrate packets, tests, scripts to src/paths)
-**Resume file:** .planning/phases/09-config-hardening/09-02-PLAN.md
-**Resume command:** `/gsd:execute-phase 09-02`
+**Stopped at:** Completed 09-02-PLAN.md (packets/tests/scripts path migration -- Phase 9 complete)
+**Next step:** Execute Phase 10 (Code Quality) or continue with Wave 1 plans
+**Resume file:** None
+**Resume command:** `/gsd:execute-phase 10`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 09-01 plan execution*
+*Last updated: 2026-02-11 after 09-02 plan execution (Phase 9 complete)*

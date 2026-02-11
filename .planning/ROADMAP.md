@@ -23,7 +23,7 @@ Wave 3:  Phase 13 (Hazards) ─────┐
          Phase 14 (Integration) ──┘  (14 depends on 11+12+13)
 ```
 
-- [ ] **Phase 9: Config Hardening** -- All file paths resolve via config or pathlib; zero hardcoded path strings in source
+- [x] **Phase 9: Config Hardening** -- All file paths resolve via config or pathlib; zero hardcoded path strings in source
 - [ ] **Phase 10: Code Quality** -- Codebase passes ruff clean with complete program inventory and no dead code
 - [ ] **Phase 11: API Resilience** -- Pipeline survives API outages via circuit breakers and graceful cache fallback
 - [ ] **Phase 12: Award Population** -- 450+ Tribes have real USASpending award data in their cache files
@@ -46,7 +46,7 @@ Wave 3:  Phase 13 (Hazards) ─────┐
 
 Plans:
 - [x] 09-01-PLAN.md -- Create src/paths.py + migrate core pipeline files (config, main, builder, generator, change_detector, base, hot_sheets) [Wave 1]
-- [ ] 09-02-PLAN.md -- Migrate packets subsystem, tests, and scripts to src/paths + grep regression verification [Wave 2]
+- [x] 09-02-PLAN.md -- Migrate packets subsystem, tests, and scripts to src/paths + grep regression verification [Wave 2]
 
 ---
 
@@ -151,13 +151,13 @@ Plans:
 
 | Phase | Plans | Plans Complete | Status | Completed |
 |-------|-------|----------------|--------|-----------|
-| 9 - Config Hardening | 2 | 1 | In Progress | -- |
+| 9 - Config Hardening | 2 | 2 | Complete | 2026-02-11 |
 | 10 - Code Quality | 2 | 0 | Pending | -- |
 | 11 - API Resilience | 2 | 0 | Pending | -- |
 | 12 - Award Population | 3 | 0 | Pending | -- |
 | 13 - Hazard Population | 3 | 0 | Pending | -- |
 | 14 - Integration & Validation | 3 | 0 | Pending | -- |
-| **Total** | **15** | **0** | -- | -- |
+| **Total** | **15** | **2** | -- | -- |
 
 ## Dependency & Wave Summary
 
