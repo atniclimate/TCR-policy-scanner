@@ -3,150 +3,158 @@
   "tribe_name": "Eastern Shawnee Tribe of Oklahoma",
   "sources": {
     "fema_nri": {
-      "version": "1.20",
-      "counties_analyzed": 0,
-      "note": "NRI county data not loaded",
+      "version": "NRI_v1.20",
+      "counties_analyzed": 192,
       "composite": {
-        "risk_score": 0.0,
-        "risk_rating": "",
-        "eal_total": 0.0,
-        "eal_score": 0.0,
-        "sovi_score": 0.0,
-        "sovi_rating": "",
-        "resl_score": 0.0,
-        "resl_rating": ""
+        "risk_score": 52.53,
+        "eal_score": 50.47,
+        "sovi_score": 55.54,
+        "resl_score": 40.7,
+        "eal_total": 31555549.31,
+        "risk_rating": "Relatively Moderate",
+        "eal_rating": "Relatively Moderate",
+        "sovi_rating": "Relatively Moderate",
+        "resl_rating": "Relatively Moderate"
       },
-      "top_hazards": [],
+      "top_hazards": [
+        {
+          "type": "Heat Wave",
+          "code": "HWAV",
+          "risk_score": 74.88,
+          "risk_rating": "Relatively High",
+          "eal_total": 4960029.42
+        },
+        {
+          "type": "Ice Storm",
+          "code": "ISTM",
+          "risk_score": 72.33,
+          "risk_rating": "Relatively High",
+          "eal_total": 827278.01
+        },
+        {
+          "type": "Tornado",
+          "code": "TRND",
+          "risk_score": 65.76,
+          "risk_rating": "Relatively High",
+          "eal_total": 4273856.61
+        },
+        {
+          "type": "Drought",
+          "code": "DRGT",
+          "risk_score": 65.7,
+          "risk_rating": "Relatively High",
+          "eal_total": 744421.49
+        },
+        {
+          "type": "Wildfire",
+          "code": "WFIR",
+          "risk_score": 61.24,
+          "risk_rating": "Relatively High",
+          "eal_total": 356813.63
+        }
+      ],
       "all_hazards": {
-        "AVLN": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
-        },
-        "CFLD": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
-        },
         "CWAV": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 60.94,
+          "risk_rating": "Relatively High",
+          "eal_total": 2825277.3,
+          "annualized_freq": 2.256,
+          "num_events": 42.86
         },
         "DRGT": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 65.7,
+          "risk_rating": "Relatively High",
+          "eal_total": 744421.49,
+          "annualized_freq": 27.3629,
+          "num_events": 832.85
         },
         "ERQK": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
+          "risk_score": 55.04,
+          "risk_rating": "Relatively Moderate",
+          "eal_total": 2598745.6,
+          "annualized_freq": 0.0025,
           "num_events": 0.0
         },
         "HAIL": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 60.68,
+          "risk_rating": "Relatively High",
+          "eal_total": 1262023.38,
+          "annualized_freq": 6.6456,
+          "num_events": 252.54
         },
         "HWAV": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 74.88,
+          "risk_rating": "Relatively High",
+          "eal_total": 4960029.42,
+          "annualized_freq": 14.0828,
+          "num_events": 197.71
         },
         "HRCN": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 25.42,
+          "risk_rating": "Relatively Low",
+          "eal_total": 12928.57,
+          "annualized_freq": 0.0098,
+          "num_events": 2.06
         },
         "ISTM": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 72.33,
+          "risk_rating": "Relatively High",
+          "eal_total": 827278.01,
+          "annualized_freq": 1.0255,
+          "num_events": 69.4
         },
         "IFLD": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 47.87,
+          "risk_rating": "Relatively Moderate",
+          "eal_total": 12028596.25,
+          "annualized_freq": 1.8737,
+          "num_events": 52.46
         },
         "LNDS": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
+          "risk_score": 59.3,
+          "risk_rating": "Relatively Moderate",
+          "eal_total": 12445.64,
+          "annualized_freq": 0.5384,
           "num_events": 0.0
         },
         "LTNG": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 45.24,
+          "risk_rating": "Relatively Moderate",
+          "eal_total": 312564.32,
+          "annualized_freq": 52.5058,
+          "num_events": 125853.07
         },
         "SWND": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 57.3,
+          "risk_rating": "Relatively Moderate",
+          "eal_total": 1217068.7,
+          "annualized_freq": 4.5567,
+          "num_events": 173.68
         },
         "TRND": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
-        },
-        "TSUN": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
-        },
-        "VLCN": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 65.76,
+          "risk_rating": "Relatively High",
+          "eal_total": 4273856.61,
+          "annualized_freq": 0.5589,
+          "num_events": 30.07
         },
         "WFIR": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
+          "risk_score": 61.24,
+          "risk_rating": "Relatively High",
+          "eal_total": 356813.63,
+          "annualized_freq": 0.0034,
           "num_events": 0.0
         },
         "WNTW": {
-          "risk_score": 0.0,
-          "risk_rating": "",
-          "eal_total": 0.0,
-          "annualized_freq": 0.0,
-          "num_events": 0.0
+          "risk_score": 54.46,
+          "risk_rating": "Relatively Moderate",
+          "eal_total": 123500.39,
+          "annualized_freq": 9.3909,
+          "num_events": 178.43
         }
       }
     },
     "usfs_wildfire": {}
   },
-  "generated_at": "2026-02-10T17:35:21.800476+00:00"
+  "generated_at": "2026-02-11T20:01:23.217822+00:00"
 }
