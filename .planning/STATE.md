@@ -12,20 +12,20 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ## Current Position
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
-**Phase:** 13 - Hazard Population (complete)
-**Plan:** 3 of 3
+**Phase:** 12 - Award Population (complete, gap closure done)
+**Plan:** 4 of 4
 **Status:** Phase complete
-**Last activity:** 2026-02-11 -- Completed 13-03-PLAN.md (USFS override + population pipeline)
+**Last activity:** 2026-02-11 -- Completed 12-04-PLAN.md (HA alias gap closure, 451/592 coverage)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [#########~]  87% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+v1.2     [#########~]  93% IN PROGRESS (6 phases, 16 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
-  Phase 12: Award Population     [##########] 100%  3/3 plans complete  DONE
+  Phase 12: Award Population     [##########] 100%  4/4 plans complete  DONE (gap closure)
   Phase 13: Hazard Population    [##########] 100%  3/3 plans complete  DONE
   Phase 14: Integration          [~~~~~~~~~~]   0%  Ready to start
 ```
@@ -39,11 +39,11 @@ v1.2     [#########~]  87% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 35 completed + 6 planned = 41 |
+| Total plans | 36 completed + 5 planned = 41 |
 | Total requirements | 57 completed + 19 planned = 76 |
-| Total tests | 511 (+9 USFS override integration tests) |
-| Total LOC | ~24,000 Python (est. +800 scripts + tests + hazards.py updates) |
-| Source files | 67 (+3: download_usfs_data.py, populate_hazards.py, test_usfs_override_integration.py) |
+| Total tests | 606 |
+| Total LOC | ~25,000 Python (est. +1,300 scripts + tests + HA aliases) |
+| Source files | 70 (+6: generate_ha_aliases.py, test_housing_authority_aliases.py, etc.) |
 
 ## Accumulated Context
 
@@ -130,6 +130,11 @@ v1.2     [#########~]  87% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 - DEC-1303-04: NRI version detected dynamically from sibling ZIP filenames; falls back to NRI_v1.20
 - DEC-1303-05: Coverage report tracks per-state breakdown and unmatched Tribes list
 - DEC-1303-06: populate_hazards.py requires NRI county CSV as hard prerequisite; crosswalk and USFS are soft (warnings)
+- DEC-1204-01: Housing authority aliases generated programmatically (suffix stripping) + curated overrides (5 rounds)
+- DEC-1204-02: Regional Alaska HAs (Cook Inlet, Bering Straits, Interior, etc.) excluded — serve multiple Nations
+- DEC-1204-03: BIA-prefixed names (e.g., "DOI TRB WA UPPER SKAGIT") added as curated overrides
+- DEC-1204-04: Self-designation names (Apsaalooke = Crow, Sicangu Wicoti = Rosebud) included in curated overrides
+- DEC-1204-05: MN Chippewa component bands (Bois Forte, White Earth, Mille Lacs, Fond du Lac, Leech Lake) mapped to parent epa_100000161
 
 ### Todos
 
@@ -144,11 +149,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 13-03-PLAN.md (USFS override + hazard population pipeline)
+**Stopped at:** Completed 12-04-PLAN.md (HA gap closure, 451/592 coverage PASS)
 **Next step:** Execute Phase 14 (Integration)
 **Resume file:** None
 **Resume command:** `/gsd:execute-phase 14`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 13-03 plan execution (Phase 13 complete, 3/3 plans)*
+*Last updated: 2026-02-11 after 12-04 gap closure (Phase 12 complete, 4/4 plans, 451/592 coverage)*

@@ -26,7 +26,7 @@ Wave 3:  Phase 13 (Hazards) ─────┐
 - [x] **Phase 9: Config Hardening** -- All file paths resolve via config or pathlib; zero hardcoded path strings in source
 - [x] **Phase 10: Code Quality** -- Codebase passes ruff clean with complete program inventory and no dead code
 - [x] **Phase 11: API Resilience** -- Pipeline survives API outages via circuit breakers and graceful cache fallback
-- [ ] **Phase 12: Award Population** -- 450+ Tribes have real USASpending award data in their cache files
+- [x] **Phase 12: Award Population** -- 450+ Tribes have real USASpending award data in their cache files
 - [x] **Phase 13: Hazard Population** -- 550+ Tribes have real FEMA NRI hazard scores and ranked risks
 - [ ] **Phase 14: Integration & Validation** -- End-to-end packets produce complete, data-backed documents for 400+ Tribes
 
@@ -103,7 +103,7 @@ Plans:
 - [x] 12-01-PLAN.md -- Extend USASpending scraper: per-FY batch queries, 14 CFDAs, expanded award type codes (02-06,10) + unit tests [Plan Wave 1]
 - [x] 12-02-PLAN.md -- Extend TribalAwardMatcher: dedup by Award ID, year-by-year cache schema, consortium detection, trend computation + unit tests [Plan Wave 1]
 - [x] 12-03-PLAN.md -- CLI script (scripts/populate_awards.py) wiring fetch+dedup+match+cache, run against live API, validate 450+ coverage [Plan Wave 2]
-- [ ] 12-04-PLAN.md -- Gap closure: housing authority alias mapping + re-population to reach 450+ coverage target [Plan Wave 3]
+- [x] 12-04-PLAN.md -- Gap closure: housing authority alias mapping + re-population to reach 450+ coverage target [Plan Wave 3]
 
 ---
 

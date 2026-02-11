@@ -24,10 +24,10 @@
 
 ### Award Data Population
 
-- [ ] **AWRD-01**: Batch USASpending queries by CFDA number (11 program queries, not 592 Tribe queries)
-- [ ] **AWRD-02**: Two-tier Tribe matching (curated alias table primary + rapidfuzz fallback >= 85)
-- [ ] **AWRD-03**: Award cache files populated for 592 Tribes with real USASpending data
-- [ ] **AWRD-04**: 450+ Tribes have at least one non-zero award record
+- [x] **AWRD-01**: Batch USASpending queries by CFDA number (11 program queries, not 592 Tribe queries)
+- [x] **AWRD-02**: Two-tier Tribe matching (curated alias table primary + rapidfuzz fallback >= 85)
+- [x] **AWRD-03**: Award cache files populated for 592 Tribes with real USASpending data
+- [x] **AWRD-04**: 450+ Tribes have at least one non-zero award record
 
 ### Hazard Data Population
 
@@ -96,10 +96,10 @@ These tech debt items were resolved during the research phase:
 | RESL-02 | Phase 11 | Complete |
 | RESL-03 | Phase 11 | Complete |
 | RESL-04 | Phase 11 | Complete |
-| AWRD-01 | Phase 12 | Pending |
-| AWRD-02 | Phase 12 | Pending |
-| AWRD-03 | Phase 12 | Pending |
-| AWRD-04 | Phase 12 | Pending |
+| AWRD-01 | Phase 12 | Complete |
+| AWRD-02 | Phase 12 | Complete |
+| AWRD-03 | Phase 12 | Complete |
+| AWRD-04 | Phase 12 | Complete |
 | HZRD-01 | Phase 13 | Complete |
 | HZRD-02 | Phase 13 | Complete |
 | HZRD-03 | Phase 13 | Complete |
