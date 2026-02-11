@@ -706,11 +706,11 @@ class TestE2EPhase8:
         assert output_index.exists(), "tribes.json not created"
         assert index["total_tribes"] == 3, f"Expected 3 tribes, got {index['total_tribes']}"
 
-        # Check that generated packets are marked
+        # Check that generated packets are marked via documents dict
         tribe_map = {t["id"]: t for t in index["tribes"]}
-        assert tribe_map["epa_001"]["has_packet"] is True, "Alpha Tribe should have packet"
-        assert tribe_map["epa_003"]["has_packet"] is True, "Gamma Band should have packet"
-        assert tribe_map["epa_002"]["has_packet"] is False, "Beta Nation should not have packet"
+        assert len(tribe_map["epa_001"]["documents"]) > 0, "Alpha Tribe should have documents"
+        assert len(tribe_map["epa_003"]["documents"]) > 0, "Gamma Band should have documents"
+        assert len(tribe_map["epa_002"]["documents"]) == 0, "Beta Nation should not have documents"
 
     def test_multi_state_delegation(self, phase8_env):
         """Multi-state Tribe (Beta Nation) has representatives from OR, WA, and ID."""

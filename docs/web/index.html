@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TCR Policy Scanner - Tribal Advocacy Packet Search</title>
-<meta name="description" content="Search and download Tribal Climate Resilience advocacy packets for federally recognized Tribal Nations.">
+<title>Tribal Climate Resilience - Program Priorities</title>
+<meta name="description" content="Search and download Tribal Climate Resilience advocacy documents for federally recognized Tribal Nations.">
 <link rel="stylesheet" href="css/awesomplete.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header role="banner">
   <h1>Tribal Climate Resilience</h1>
-  <p class="subtitle">Advocacy Packet Search</p>
+  <p class="subtitle">Program Priorities</p>
 </header>
 <main role="main">
   <section class="search-container" aria-label="Tribe search">
@@ -29,20 +29,23 @@
       <div class="detail-row"><dt>State(s)</dt><dd id="tribe-states"></dd></div>
       <div class="detail-row"><dt>Ecoregion</dt><dd id="tribe-ecoregion"></dd></div>
     </dl>
-    <div class="card-actions">
-      <a id="download-link" class="btn-download" role="button" aria-label="Download advocacy packet" tabindex="0">Download Report</a>
+    <div class="card-actions" id="tribe-actions">
       <p id="packet-status" class="packet-status" aria-live="polite"></p>
     </div>
   </section>
+  <section id="regions-section" class="regions-section" hidden aria-label="Regional documents">
+    <h2 class="section-title">Regional Documents</h2>
+    <p class="section-desc">Inter-Tribal regional advocacy documents covering shared priorities across geographic regions.</p>
+    <div id="regions-list" class="regions-list"></div>
+  </section>
 </main>
 <footer role="contentinfo">
-  <p><a href="tribes/STRATEGIC-OVERVIEW.docx" download class="overview-link" aria-label="Download Federal Funding Strategic Overview document">Download Strategic Overview</a></p>
-  <p class="footer-credit">TCR Policy Scanner</p>
+  <p class="footer-credit">Tribal Climate Resilience Program</p>
 </footer>
 <script src="js/awesomplete.min.js"></script>
 <script src="js/app.js" defer></script>
-<!-- SquareSpace Embed: Add a Code block with this iframe:
-<div style="width:100%;max-width:800px;margin:0 auto;"><iframe src="https://yourusername.github.io/tcr-policy-scanner/" width="100%" height="700" frameborder="0" style="border:1px solid #e0e0e0;border-radius:8px;" title="TCR Policy Scanner - Tribal Advocacy Packet Search" loading="lazy"></iframe></div>
-Update src URL to your GitHub Pages URL. iframe title required for WCAG 2.1 AA. -->
+<!-- Embed: Add a Code block with this iframe:
+<div style="width:100%;max-width:800px;margin:0 auto;"><iframe src="https://atniclimate.github.io/TCR-policy-scanner/" width="100%" height="700" frameborder="0" style="border:1px solid #e0e0e0;border-radius:8px;" title="Tribal Climate Resilience - Program Priorities" loading="lazy"></iframe></div>
+iframe title required for WCAG 2.1 AA. -->
 </body>
 </html>

@@ -28,6 +28,21 @@ footer{max-width:640px;margin:2rem auto;padding:1rem;text-align:center;font-size
 .overview-link:hover{color:var(--tcr-primary)}
 .overview-link:focus{outline:3px solid rgba(41,128,185,.5);outline-offset:2px}
 .footer-credit{margin:.5rem 0 0;font-size:.8rem;opacity:.7}
-@media(max-width:600px){header{padding:1rem}header h1{font-size:1.25rem}.search-container{margin:1rem auto}.search-input{font-size:1rem;padding:.875rem 1rem;min-height:48px}.tribe-card{margin:1rem .5rem;padding:1rem}.detail-row{flex-direction:column;gap:.125rem}.btn-download{width:100%;padding:.875rem 1rem;min-height:48px}}
+.card-actions .btn-download{margin:.25rem .25rem}
+.btn-internal{background:#2c6e49}
+.btn-internal:hover{background:#3a8f5e}
+.btn-congressional{background:var(--tcr-primary)}
+.btn-both{background:#6c3483}
+.btn-both:hover{background:#884ea0}
+.btn-sm{padding:.5rem 1rem;font-size:.875rem}
+.section-title{max-width:640px;margin:2rem auto .5rem;padding:0 1rem;font-size:1.25rem;font-weight:700;color:var(--tcr-primary)}
+.section-desc{max-width:640px;margin:0 auto 1rem;padding:0 1rem;font-size:.9rem;color:var(--tcr-muted)}
+.regions-section{margin-bottom:2rem}
+.regions-list{max-width:640px;margin:0 auto;padding:0 1rem;display:flex;flex-direction:column;gap:.75rem}
+.region-card{background:var(--tcr-card);border:1px solid var(--tcr-border);border-radius:8px;padding:1rem;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.region-name{margin:0 0 .25rem;font-size:1.05rem;font-weight:700;color:var(--tcr-primary)}
+.region-states{margin:0 0 .5rem;font-size:.85rem;color:var(--tcr-muted)}
+.region-actions{display:flex;flex-wrap:wrap;gap:.5rem}
+@media(max-width:600px){header{padding:1rem}header h1{font-size:1.25rem}.search-container{margin:1rem auto}.search-input{font-size:1rem;padding:.875rem 1rem;min-height:48px}.tribe-card{margin:1rem .5rem;padding:1rem}.detail-row{flex-direction:column;gap:.125rem}.btn-download{width:100%;padding:.875rem 1rem;min-height:48px}.region-actions{flex-direction:column}.regions-list{padding:0 .5rem}}
 @media(prefers-reduced-motion:reduce){.search-input,.btn-download{transition:none}}
-@media print{header,.search-container,footer,.status-message{display:none}.tribe-card{box-shadow:none;border:1px solid #000;margin:0;max-width:none}.btn-download{display:none}}
+@media print{header,.search-container,footer,.status-message,.regions-section{display:none}.tribe-card{box-shadow:none;border:1px solid #000;margin:0;max-width:none}.btn-download{display:none}}
