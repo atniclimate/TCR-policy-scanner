@@ -9,7 +9,7 @@ Stateless pure-function module with no file I/O.
 
 import logging
 
-logger = logging.getLogger("tcr_scanner.packets.relevance")
+logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------

@@ -24,7 +24,7 @@ from pathlib import Path
 from src.packets.registry import TribalRegistry
 from src.scrapers.usaspending import CFDA_TO_PROGRAM
 
-logger = logging.getLogger("tcr_scanner.packets.awards")
+logger = logging.getLogger(__name__)
 
 # Default paths
 _DEFAULT_ALIAS_PATH = "data/tribal_aliases.json"

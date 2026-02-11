@@ -29,7 +29,7 @@ from pathlib import Path
 
 from src.packets.context import TribePacketContext
 
-logger = logging.getLogger("tcr_scanner.packets.change_tracker")
+logger = logging.getLogger(__name__)
 
 MAX_STATE_FILE_SIZE: int = 10 * 1024 * 1024  # 10 MB
 

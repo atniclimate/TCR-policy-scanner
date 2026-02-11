@@ -16,7 +16,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
-logger = logging.getLogger("tcr_scanner.packets.docx_styles")
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Color constants

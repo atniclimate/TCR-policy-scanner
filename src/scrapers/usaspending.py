@@ -13,6 +13,7 @@ import logging
 
 import aiohttp
 
+from src.config import FISCAL_YEAR_SHORT, FISCAL_YEAR_START, FISCAL_YEAR_END
 from src.scrapers.base import BaseScraper
 
 logger = logging.getLogger(__name__)
@@ -65,7 +66,7 @@ class USASpendingScraper(BaseScraper):
         """Fetch spending by CFDA using the spending_by_award endpoint."""
         payload = {
             "filters": {
-                "time_period": [{"start_date": "2025-10-01", "end_date": "2026-09-30"}],
+                "time_period": [{"start_date": FISCAL_YEAR_START, "end_date": FISCAL_YEAR_END}],
                 "award_type_codes": ["02", "03", "04", "05"],  # Grants
                 "program_numbers": [cfda],
             },
@@ -213,7 +214,7 @@ class USASpendingScraper(BaseScraper):
         return {
             "source": "usaspending",
             "source_id": f"usa_{cfda}_{item.get('internal_id', '')}",
-            "title": f"FY26 Obligation: {item.get('Award ID', cfda)} — {recipient}",
+            "title": f"{FISCAL_YEAR_SHORT} Obligation: {item.get('Award ID', cfda)} — {recipient}",
             "abstract": f"${award_amount:,.0f} obligated under CFDA {cfda} to {recipient}",
             "url": f"https://www.usaspending.gov/award/{item.get('internal_id', '')}",
             "pdf_url": "",

@@ -8,7 +8,7 @@ import json
 import logging
 from pathlib import Path
 
-logger = logging.getLogger("tcr_scanner.packets.ecoregion")
+logger = logging.getLogger(__name__)
 
 # Default path relative to project root
 _DEFAULT_CONFIG_PATH = "data/ecoregion_config.json"

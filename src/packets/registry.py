@@ -20,7 +20,7 @@ import json
 import logging
 from pathlib import Path
 
-logger = logging.getLogger("tcr_scanner.packets.registry")
+logger = logging.getLogger(__name__)
 
 # Default path relative to project root
 _DEFAULT_DATA_PATH = "data/tribal_registry.json"

@@ -29,7 +29,7 @@ from src.packets.docx_sections import (
 from src.packets.docx_styles import COLORS, StyleManager
 from src.packets.economic import TribeEconomicSummary
 
-logger = logging.getLogger("tcr_scanner.packets.docx_engine")
+logger = logging.getLogger(__name__)
 
 
 class DocxEngine:

@@ -28,13 +28,14 @@ from src.graph.builder import GraphBuilder
 from src.reports.generator import ReportGenerator
 from src.monitors import MonitorRunner
 from src.analysis.decision_engine import DecisionEngine
+from src.config import PROJECT_ROOT
 
-logger = logging.getLogger("tcr_scanner")
+logger = logging.getLogger(__name__)
 
-CONFIG_PATH = Path("config/scanner_config.json")
-INVENTORY_PATH = Path("data/program_inventory.json")
-GRAPH_OUTPUT_PATH = Path("outputs/LATEST-GRAPH.json")
-MONITOR_OUTPUT_PATH = Path("outputs/LATEST-MONITOR-DATA.json")
+CONFIG_PATH = PROJECT_ROOT / "config" / "scanner_config.json"
+INVENTORY_PATH = PROJECT_ROOT / "data" / "program_inventory.json"
+GRAPH_OUTPUT_PATH = PROJECT_ROOT / "outputs" / "LATEST-GRAPH.json"
+MONITOR_OUTPUT_PATH = PROJECT_ROOT / "outputs" / "LATEST-MONITOR-DATA.json"
 
 SCRAPERS = {
     "federal_register": FederalRegisterScraper,
@@ -101,7 +102,7 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
         print(f"  - {q}")
 
     # Graph schema summary
-    schema_path = Path("data/graph_schema.json")
+    schema_path = PROJECT_ROOT / "data" / "graph_schema.json"
     if schema_path.exists():
         with open(schema_path, encoding="utf-8") as f:
             schema = json.load(f)

@@ -24,7 +24,7 @@ import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
-logger = logging.getLogger("tcr_scanner.packets.hazards")
+logger = logging.getLogger(__name__)
 
 # All 18 NRI hazard type codes and their display names
 NRI_HAZARD_CODES = {

@@ -8,12 +8,31 @@ Validates cross-file consistency across:
 - graph_schema.json
 - scanner_config.json
 - grants_gov.py CFDA_NUMBERS
+- tribal_registry.json (Pydantic schema validation)
+- award_cache/*.json (Pydantic schema validation)
+- hazard_profiles/*.json (Pydantic schema validation)
+- congressional_cache.json (Pydantic schema validation)
 """
 
 import json
 import sys
 from pathlib import Path
 from typing import Dict, List, Set, Tuple
+
+try:
+    from pydantic import ValidationError
+    from src.schemas.models import (
+        AwardCacheFile,
+        CongressionalDelegate,
+        CongressionalDelegation,
+        HazardProfile,
+        PolicyPosition,
+        ProgramRecord,
+        TribeRecord,
+    )
+    PYDANTIC_AVAILABLE = True
+except ImportError:
+    PYDANTIC_AVAILABLE = False
 
 
 class ValidationReport:
@@ -319,6 +338,271 @@ def check_keyword_deduplication(report: ValidationReport, config: dict):
     report.add_check("Keyword Deduplication", passed, details)
 
 
+def check_program_schema_validation(report: ValidationReport, inventory: dict):
+    """Check 9: Validate all programs against ProgramRecord Pydantic schema."""
+    if not PYDANTIC_AVAILABLE:
+        report.add_check(
+            "Program Schema Validation",
+            True,
+            "SKIPPED: pydantic or src.schemas not available",
+        )
+        return
+
+    errors = []
+    for prog_data in inventory["programs"]:
+        try:
+            ProgramRecord(**prog_data)
+        except ValidationError as e:
+            prog_id = prog_data.get("id", "UNKNOWN")
+            for err in e.errors():
+                field = " -> ".join(str(loc) for loc in err["loc"])
+                errors.append(f"Program '{prog_id}', field '{field}': {err['msg']}")
+
+    passed = len(errors) == 0
+    if passed:
+        count = len(inventory["programs"])
+        details = f"All {count} programs pass ProgramRecord schema validation"
+    else:
+        details = "\n".join(errors)
+    report.add_check("Program Schema Validation", passed, details)
+
+
+def check_policy_schema_validation(report: ValidationReport, tracking: dict):
+    """Check 10: Validate all policy positions against PolicyPosition Pydantic schema."""
+    if not PYDANTIC_AVAILABLE:
+        report.add_check(
+            "Policy Position Schema Validation",
+            True,
+            "SKIPPED: pydantic or src.schemas not available",
+        )
+        return
+
+    errors = []
+    for pos_data in tracking["positions"]:
+        try:
+            PolicyPosition(**pos_data)
+        except ValidationError as e:
+            prog_id = pos_data.get("program_id", "UNKNOWN")
+            for err in e.errors():
+                field = " -> ".join(str(loc) for loc in err["loc"])
+                errors.append(f"Position '{prog_id}', field '{field}': {err['msg']}")
+
+    passed = len(errors) == 0
+    if passed:
+        count = len(tracking["positions"])
+        details = f"All {count} positions pass PolicyPosition schema validation"
+    else:
+        details = "\n".join(errors)
+    report.add_check("Policy Position Schema Validation", passed, details)
+
+
+def check_tribe_schema_validation(report: ValidationReport, base_path: Path):
+    """Check 11: Validate tribal_registry.json against TribeRecord Pydantic schema."""
+    if not PYDANTIC_AVAILABLE:
+        report.add_check(
+            "Tribe Registry Schema Validation",
+            True,
+            "SKIPPED: pydantic or src.schemas not available",
+        )
+        return
+
+    registry_path = base_path / "data" / "tribal_registry.json"
+    if not registry_path.exists():
+        report.add_check(
+            "Tribe Registry Schema Validation",
+            False,
+            f"File not found: {registry_path}",
+        )
+        return
+
+    registry = load_json(registry_path)
+    tribes = registry.get("tribes", [])
+    errors = []
+    for tribe_data in tribes:
+        try:
+            TribeRecord(**tribe_data)
+        except ValidationError as e:
+            tribe_id = tribe_data.get("tribe_id", "UNKNOWN")
+            for err in e.errors():
+                field = " -> ".join(str(loc) for loc in err["loc"])
+                errors.append(f"Tribe '{tribe_id}', field '{field}': {err['msg']}")
+
+    passed = len(errors) == 0
+    if passed:
+        details = f"All {len(tribes)} Tribe records pass TribeRecord schema validation"
+    else:
+        details = f"{len(errors)} validation errors in {len(tribes)} Tribe records:\n"
+        details += "\n".join(errors[:20])
+        if len(errors) > 20:
+            details += f"\n... and {len(errors) - 20} more errors"
+    report.add_check("Tribe Registry Schema Validation", passed, details)
+
+
+def check_award_cache_schema_validation(report: ValidationReport, base_path: Path):
+    """Check 12: Validate sample award_cache files against AwardCacheFile Pydantic schema."""
+    if not PYDANTIC_AVAILABLE:
+        report.add_check(
+            "Award Cache Schema Validation",
+            True,
+            "SKIPPED: pydantic or src.schemas not available",
+        )
+        return
+
+    award_dir = base_path / "data" / "award_cache"
+    if not award_dir.exists():
+        report.add_check(
+            "Award Cache Schema Validation",
+            False,
+            f"Directory not found: {award_dir}",
+        )
+        return
+
+    files = sorted(award_dir.glob("epa_*.json"))
+    errors = []
+    validated = 0
+
+    # Validate all files (they are small)
+    for f in files:
+        try:
+            with open(f, "r", encoding="utf-8") as fp:
+                data = json.load(fp)
+            AwardCacheFile(**data)
+            validated += 1
+        except ValidationError as e:
+            for err in e.errors():
+                field = " -> ".join(str(loc) for loc in err["loc"])
+                errors.append(f"File '{f.name}', field '{field}': {err['msg']}")
+        except json.JSONDecodeError as e:
+            errors.append(f"File '{f.name}': Invalid JSON - {e}")
+
+    passed = len(errors) == 0
+    if passed:
+        details = f"All {validated} award cache files pass AwardCacheFile schema validation"
+    else:
+        details = f"{len(errors)} validation errors across {len(files)} award cache files:\n"
+        details += "\n".join(errors[:20])
+        if len(errors) > 20:
+            details += f"\n... and {len(errors) - 20} more errors"
+    report.add_check("Award Cache Schema Validation", passed, details)
+
+
+def check_hazard_profile_schema_validation(report: ValidationReport, base_path: Path):
+    """Check 13: Validate sample hazard_profiles against HazardProfile Pydantic schema."""
+    if not PYDANTIC_AVAILABLE:
+        report.add_check(
+            "Hazard Profile Schema Validation",
+            True,
+            "SKIPPED: pydantic or src.schemas not available",
+        )
+        return
+
+    hazard_dir = base_path / "data" / "hazard_profiles"
+    if not hazard_dir.exists():
+        report.add_check(
+            "Hazard Profile Schema Validation",
+            False,
+            f"Directory not found: {hazard_dir}",
+        )
+        return
+
+    files = sorted(hazard_dir.glob("epa_*.json"))
+    errors = []
+    validated = 0
+
+    for f in files:
+        try:
+            with open(f, "r", encoding="utf-8") as fp:
+                data = json.load(fp)
+            HazardProfile(**data)
+            validated += 1
+        except ValidationError as e:
+            for err in e.errors():
+                field = " -> ".join(str(loc) for loc in err["loc"])
+                errors.append(f"File '{f.name}', field '{field}': {err['msg']}")
+        except json.JSONDecodeError as e:
+            errors.append(f"File '{f.name}': Invalid JSON - {e}")
+
+    passed = len(errors) == 0
+    if passed:
+        details = f"All {validated} hazard profile files pass HazardProfile schema validation"
+    else:
+        details = f"{len(errors)} validation errors across {len(files)} hazard profile files:\n"
+        details += "\n".join(errors[:20])
+        if len(errors) > 20:
+            details += f"\n... and {len(errors) - 20} more errors"
+    report.add_check("Hazard Profile Schema Validation", passed, details)
+
+
+def check_congressional_schema_validation(report: ValidationReport, base_path: Path):
+    """Check 14: Validate congressional_cache.json against Pydantic schemas."""
+    if not PYDANTIC_AVAILABLE:
+        report.add_check(
+            "Congressional Cache Schema Validation",
+            True,
+            "SKIPPED: pydantic or src.schemas not available",
+        )
+        return
+
+    cache_path = base_path / "data" / "congressional_cache.json"
+    if not cache_path.exists():
+        report.add_check(
+            "Congressional Cache Schema Validation",
+            False,
+            f"File not found: {cache_path}",
+        )
+        return
+
+    cache = load_json(cache_path)
+    errors = []
+
+    # Validate members
+    members = cache.get("members", {})
+    member_count = 0
+    for bioguide_id, member_data in members.items():
+        try:
+            cd = CongressionalDelegate(**member_data)
+            if cd.bioguide_id != bioguide_id:
+                errors.append(
+                    f"Member key '{bioguide_id}' does not match "
+                    f"bioguide_id '{cd.bioguide_id}'"
+                )
+            member_count += 1
+        except ValidationError as e:
+            for err in e.errors():
+                field = " -> ".join(str(loc) for loc in err["loc"])
+                errors.append(f"Member '{bioguide_id}', field '{field}': {err['msg']}")
+
+    # Validate delegations
+    delegations = cache.get("delegations", {})
+    deleg_count = 0
+    for tribe_id, deleg_data in delegations.items():
+        try:
+            d = CongressionalDelegation(**deleg_data)
+            if d.tribe_id != tribe_id:
+                errors.append(
+                    f"Delegation key '{tribe_id}' does not match "
+                    f"tribe_id '{d.tribe_id}'"
+                )
+            deleg_count += 1
+        except ValidationError as e:
+            for err in e.errors():
+                field = " -> ".join(str(loc) for loc in err["loc"])
+                errors.append(f"Delegation '{tribe_id}', field '{field}': {err['msg']}")
+
+    passed = len(errors) == 0
+    if passed:
+        details = (
+            f"{member_count} members and {deleg_count} delegations "
+            f"pass Congressional schema validation"
+        )
+    else:
+        details = f"{len(errors)} validation errors:\n"
+        details += "\n".join(errors[:20])
+        if len(errors) > 20:
+            details += f"\n... and {len(errors) - 20} more errors"
+    report.add_check("Congressional Cache Schema Validation", passed, details)
+
+
 def main():
     """Run all validation checks."""
     # Determine base path
@@ -353,6 +637,7 @@ def main():
     # Run all validation checks
     print("Running validation checks...\n")
 
+    # Original checks (1-8)
     check_json_validity(report, base_path)
     check_program_id_consistency(report, inventory, tracking)
     check_cfda_consistency(report, inventory, grants_gov_cfda)
@@ -361,6 +646,14 @@ def main():
     check_ci_threshold_ordering(report, tracking)
     check_status_consistency(report, inventory, tracking)
     check_keyword_deduplication(report, config)
+
+    # Pydantic schema validation checks (9-14)
+    check_program_schema_validation(report, inventory)
+    check_policy_schema_validation(report, tracking)
+    check_tribe_schema_validation(report, base_path)
+    check_award_cache_schema_validation(report, base_path)
+    check_hazard_profile_schema_validation(report, base_path)
+    check_congressional_schema_validation(report, base_path)
 
     # Print report
     success = report.print_report()

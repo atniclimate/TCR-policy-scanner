@@ -12,7 +12,7 @@ import json
 import logging
 from pathlib import Path
 
-logger = logging.getLogger("tcr_scanner.packets.congress")
+logger = logging.getLogger(__name__)
 
 # Default path relative to project root
 _DEFAULT_CACHE_PATH = "data/congressional_cache.json"

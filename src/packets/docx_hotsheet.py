@@ -17,6 +17,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 from src.packets.context import TribePacketContext
+from src.utils import format_dollars
 from src.packets.docx_styles import (
     CI_STATUS_LABELS,
     COLORS,
@@ -33,7 +34,7 @@ from src.packets.economic import (
     TribeEconomicSummary,
 )
 
-logger = logging.getLogger("tcr_scanner.packets.docx_hotsheet")
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -105,11 +106,6 @@ def _normalize_cfda(cfda: Any) -> list[str]:
     if isinstance(cfda, list):
         return [c for c in cfda if isinstance(c, str)]
     return []
-
-
-def _format_dollars(amount: float) -> str:
-    """Format a dollar amount with commas and no decimals."""
-    return f"${amount:,.0f}"
 
 
 def _add_paragraph_shading(paragraph, color_hex: str) -> None:
@@ -317,7 +313,7 @@ class HotSheetRenderer:
                 obligation = award.get("obligation", 0.0)
                 if isinstance(obligation, (int, float)):
                     total_obligation += obligation
-                    row.cells[2].text = _format_dollars(obligation)
+                    row.cells[2].text = format_dollars(obligation)
                 else:
                     row.cells[2].text = str(obligation)
                 start = award.get("start_date", "")
@@ -330,7 +326,7 @@ class HotSheetRenderer:
             # Total row
             total_para = self.document.add_paragraph(style="HS Body")
             total_run = total_para.add_run(
-                f"Total: {_format_dollars(total_obligation)}"
+                f"Total: {format_dollars(total_obligation)}"
             )
             total_run.bold = True
         else:
@@ -454,7 +450,7 @@ class HotSheetRenderer:
                     high = economic_impact.estimated_impact_high * frac
                     self.document.add_paragraph(
                         f"  {district_key} ({overlap:.0f}% overlap): "
-                        f"{_format_dollars(low)} - {_format_dollars(high)}",
+                        f"{format_dollars(low)} - {format_dollars(high)}",
                         style="HS Body",
                     )
 

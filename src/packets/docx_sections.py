@@ -15,6 +15,7 @@ from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Pt
 
+from src.config import FISCAL_YEAR_SHORT
 from src.packets.context import TribePacketContext
 from src.packets.docx_hotsheet import RELEVANT_COMMITTEE_KEYWORDS
 from src.packets.docx_styles import (
@@ -28,7 +29,7 @@ from src.packets.docx_styles import (
 )
 from src.packets.economic import TribeEconomicSummary
 
-logger = logging.getLogger("tcr_scanner.packets.docx_sections")
+logger = logging.getLogger(__name__)
 
 
 def render_cover_page(
@@ -52,7 +53,7 @@ def render_cover_page(
 
     # Main title
     document.add_paragraph(
-        "FY26 Climate Resilience Program Priorities",
+        f"{FISCAL_YEAR_SHORT} Climate Resilience Program Priorities",
         style="Heading 1",
     )
 

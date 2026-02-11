@@ -14,6 +14,7 @@ import logging
 import re
 from pathlib import Path
 
+from src.config import FISCAL_YEAR_SHORT, PROJECT_ROOT
 from src.graph.schema import (
     ProgramNode, AuthorityNode, FundingVehicleNode,
     BarrierNode, AdvocacyLeverNode, ObligationNode, TrustSuperNode, Edge,
@@ -22,7 +23,7 @@ from src.graph.schema import (
 
 logger = logging.getLogger(__name__)
 
-GRAPH_SCHEMA_PATH = Path("data/graph_schema.json")
+GRAPH_SCHEMA_PATH = PROJECT_ROOT / "data" / "graph_schema.json"
 
 # Patterns for detecting barriers in scraped text
 BARRIER_PATTERNS = [
@@ -173,7 +174,7 @@ class GraphBuilder:
                     target="Congress" if "approp" in prog["advocacy_lever"].lower()
                            or "FY" in prog["advocacy_lever"]
                            else "Agency",
-                    urgency="Immediate" if prog.get("ci_status") == "FLAGGED" else "FY26",
+                    urgency="Immediate" if prog.get("ci_status") == "FLAGGED" else FISCAL_YEAR_SHORT,
                 )
                 self.graph.add_node(lever)
 
@@ -395,7 +396,7 @@ class GraphBuilder:
             id=obl_id,
             amount=amount,
             recipient=recipient,
-            fiscal_year="FY26",
+            fiscal_year=FISCAL_YEAR_SHORT,
             cfda=cfda,
         ))
         for pid in matched_pids:

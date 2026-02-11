@@ -12,6 +12,8 @@ All calculations are stateless pure functions with no file I/O.
 import logging
 from dataclasses import dataclass, field
 
+from src.utils import format_dollars
+
 logger = logging.getLogger(__name__)
 
 
@@ -335,8 +337,8 @@ class EconomicImpactCalculator:
         Returns:
             Narrative string suitable for DOCX rendering.
         """
-        low_str = _format_dollars(impact.estimated_impact_low)
-        high_str = _format_dollars(impact.estimated_impact_high)
+        low_str = format_dollars(impact.estimated_impact_low)
+        high_str = format_dollars(impact.estimated_impact_high)
         jobs_low = int(round(impact.jobs_estimate_low))
         jobs_high = int(round(impact.jobs_estimate_high))
 
@@ -378,18 +380,3 @@ class EconomicImpactCalculator:
             "(FEMA/NIBS MitSaves, 2018)."
         )
 
-
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
-def _format_dollars(amount: float) -> str:
-    """Format a dollar amount with commas and no decimals.
-
-    Args:
-        amount: Dollar amount.
-
-    Returns:
-        Formatted string like "$1,234,567".
-    """
-    return f"${amount:,.0f}"

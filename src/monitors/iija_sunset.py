@@ -17,11 +17,12 @@ IIJA fund-exhaustion programs (no calendar deadline):
 import logging
 from datetime import date
 
+from src.config import FISCAL_YEAR_END, FISCAL_YEAR_SHORT
 from src.monitors import BaseMonitor, MonitorAlert
 
 logger = logging.getLogger(__name__)
 
-# IIJA programs with FY26 calendar expiration (Sep 30, 2026)
+# IIJA programs with calendar expiration at end of current fiscal year
 IIJA_FY26_PROGRAMS = {
     "epa_stag": "auth_iija",
     "dot_protect": "auth_protect_formula",
@@ -50,7 +51,7 @@ class IIJASunsetMonitor(BaseMonitor):
         monitor_config = config.get("monitors", {}).get("iija_sunset", {})
         self.warning_days = monitor_config.get("warning_days", 180)
         self.critical_days = monitor_config.get("critical_days", 90)
-        fy26_end_str = monitor_config.get("fy26_end", "2026-09-30")
+        fy26_end_str = monitor_config.get("fy26_end", FISCAL_YEAR_END)
         self.fy26_end = date.fromisoformat(fy26_end_str)
 
     def check(self, graph_data: dict, scored_items: list[dict]) -> list[MonitorAlert]:
@@ -148,8 +149,8 @@ class IIJASunsetMonitor(BaseMonitor):
             ))
 
         logger.info(
-            "IIJASunsetMonitor: %d alerts (days to FY26 end: %d)",
-            len(alerts), days_remaining,
+            "IIJASunsetMonitor: %d alerts (days to %s end: %d)",
+            len(alerts), FISCAL_YEAR_SHORT, days_remaining,
         )
         return alerts
 

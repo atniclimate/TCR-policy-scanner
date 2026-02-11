@@ -20,9 +20,10 @@ from src.packets.docx_engine import DocxEngine
 from src.packets.ecoregion import EcoregionMapper
 from src.packets.economic import EconomicImpactCalculator
 from src.packets.registry import TribalRegistry
+from src.config import PROJECT_ROOT
 from src.packets.relevance import ProgramRelevanceFilter
 
-logger = logging.getLogger("tcr_scanner.packets.orchestrator")
+logger = logging.getLogger(__name__)
 
 _MAX_CACHE_SIZE_BYTES: int = 10 * 1024 * 1024  # 10 MB
 
@@ -534,7 +535,7 @@ class PacketOrchestrator:
         Returns:
             List of structural ask dicts, or empty list on error.
         """
-        graph_path = Path("data/graph_schema.json")
+        graph_path = PROJECT_ROOT / "data" / "graph_schema.json"
         if not graph_path.exists():
             return []
         try:

@@ -44,7 +44,18 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 
 ### Active
 
-(None -- planning next milestone)
+**Current Milestone: v1.2 Tech Debt Cleanup**
+
+**Goal:** Clean sweep of all 17 documented tech debt items — hardcoded paths/dates, missing tests, code duplication, data population, and documentation gaps.
+
+**Target items:**
+- Configurable fiscal year (scanner_config + DOCX output)
+- Config-driven paths (graph_schema.json, structural asks)
+- Scraper integration tests
+- Data cache population tooling (awards + hazard profiles)
+- Code quality fixes (_format_dollars dedup, logger naming, program fields)
+- Documentation cleanup (VERIFICATION.md, GitHub Pages config, SquareSpace URL)
+- Retry/circuit-breaker pattern for transient API failures
 
 ### Out of Scope
 
@@ -141,7 +152,7 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 **v1.0 MVP** shipped 2026-02-09 — policy intelligence pipeline with 4 scrapers, 5 monitors, decision engine, 14-section briefing.
 **v1.1 Tribe-Specific Advocacy Packets** shipped 2026-02-10 — per-Tribe DOCX generation for 592 Tribes with award history, hazard profiling, economic impact, congressional delegation, and web distribution widget.
 
-**Next milestone:** Not yet planned. Use `/gsd:new-milestone` to start.
+**Next milestone:** v1.2 Tech Debt Cleanup (started 2026-02-11)
 
 ---
-*Last updated: 2026-02-10 after v1.1 milestone complete*
+*Last updated: 2026-02-11 after v1.2 milestone started*
