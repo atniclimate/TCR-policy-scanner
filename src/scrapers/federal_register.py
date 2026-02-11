@@ -41,7 +41,7 @@ class FederalRegisterScraper(BaseScraper):
     """Scrapes the Federal Register API for policy documents."""
 
     def __init__(self, config: dict):
-        super().__init__("federal_register")
+        super().__init__("federal_register", config=config)
         self.base_url = config["sources"]["federal_register"]["base_url"]
         self.authority_weight = config["sources"]["federal_register"]["authority_weight"]
         self.search_queries = config.get("search_queries", [])

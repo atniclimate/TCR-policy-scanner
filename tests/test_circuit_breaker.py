@@ -176,3 +176,67 @@ class TestCircuitBreakerStateMachine:
         cb.record_failure()
         cb.record_failure()
         assert cb.state == CircuitState.OPEN
+
+
+# ── BaseScraper integration tests ──
+
+
+class TestBaseScraperCircuitBreakerIntegration:
+    """Circuit breaker integration with BaseScraper config."""
+
+    def test_base_scraper_creates_circuit_breaker(self):
+        """BaseScraper with config creates a breaker with config values."""
+        from src.scrapers.base import BaseScraper
+
+        config = {
+            "resilience": {
+                "max_retries": 5,
+                "backoff_base": 3,
+                "backoff_max": 600,
+                "request_timeout": 45,
+                "circuit_breaker": {
+                    "failure_threshold": 10,
+                    "recovery_timeout": 120,
+                },
+            }
+        }
+        scraper = BaseScraper("test_source", config=config)
+        assert scraper._circuit_breaker.name == "test_source"
+        assert scraper._circuit_breaker.failure_threshold == 10
+        assert scraper._circuit_breaker.recovery_timeout == 120
+        assert scraper._circuit_breaker.state == CircuitState.CLOSED
+
+    def test_base_scraper_defaults_without_config(self):
+        """BaseScraper with no config uses hardcoded defaults."""
+        from src.scrapers.base import BaseScraper, BACKOFF_BASE, MAX_RETRIES
+
+        scraper = BaseScraper("test_source")
+        assert scraper.max_retries == MAX_RETRIES
+        assert scraper.backoff_base == BACKOFF_BASE
+        assert scraper.backoff_max == 300
+        assert scraper._circuit_breaker.failure_threshold == 5
+        assert scraper._circuit_breaker.recovery_timeout == 60
+
+    def test_base_scraper_defaults_without_resilience_section(self):
+        """BaseScraper with config dict that has no 'resilience' key uses defaults."""
+        from src.scrapers.base import BaseScraper, BACKOFF_BASE, MAX_RETRIES
+
+        config = {"sources": {"some_api": {}}}
+        scraper = BaseScraper("test_source", config=config)
+        assert scraper.max_retries == MAX_RETRIES
+        assert scraper.backoff_base == BACKOFF_BASE
+        assert scraper._circuit_breaker.failure_threshold == 5
+
+    def test_config_overrides_retry_params(self):
+        """max_retries, backoff_base from config are used."""
+        from src.scrapers.base import BaseScraper
+
+        config = {
+            "resilience": {
+                "max_retries": 7,
+                "backoff_base": 4,
+            }
+        }
+        scraper = BaseScraper("test_source", config=config)
+        assert scraper.max_retries == 7
+        assert scraper.backoff_base == 4

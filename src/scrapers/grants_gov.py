@@ -48,7 +48,7 @@ class GrantsGovScraper(BaseScraper):
     """Scrapes the Grants.gov API for grant opportunities."""
 
     def __init__(self, config: dict):
-        super().__init__("grants_gov")
+        super().__init__("grants_gov", config=config)
         self.base_url = config["sources"]["grants_gov"]["base_url"]
         self.authority_weight = config["sources"]["grants_gov"]["authority_weight"]
         self.search_queries = config.get("search_queries", [])

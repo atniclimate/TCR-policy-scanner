@@ -38,7 +38,7 @@ class CongressGovScraper(BaseScraper):
     """Scrapes the Congress.gov API for legislative items."""
 
     def __init__(self, config: dict):
-        super().__init__("congress_gov")
+        super().__init__("congress_gov", config=config)
         src = config["sources"]["congress_gov"]
         self.base_url = src["base_url"]
         self.authority_weight = src["authority_weight"]

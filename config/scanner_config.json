@@ -111,6 +111,16 @@
     "tribal transportation program"
   ],
   "scan_window_days": 14,
+  "resilience": {
+    "max_retries": 3,
+    "backoff_base": 2,
+    "backoff_max": 300,
+    "request_timeout": 30,
+    "circuit_breaker": {
+      "failure_threshold": 5,
+      "recovery_timeout": 60
+    }
+  },
   "monitors": {
     "iija_sunset": {
       "warning_days": 180,

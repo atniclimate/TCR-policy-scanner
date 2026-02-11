@@ -39,7 +39,7 @@ class USASpendingScraper(BaseScraper):
     """Scrapes USASpending.gov for actual obligation data by CFDA."""
 
     def __init__(self, config: dict):
-        super().__init__("usaspending")
+        super().__init__("usaspending", config=config)
         src = config["sources"].get("usaspending", {})
         self.base_url = src.get("base_url", "https://api.usaspending.gov/api/v2")
         self.authority_weight = src.get("authority_weight", 0.7)
