@@ -12,22 +12,22 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ## Current Position
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
-**Phase:** 13 - Hazard Population (in progress)
-**Plan:** 2 of 3
-**Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 13-02-PLAN.md (area-weighted NRI aggregation)
+**Phase:** 13 - Hazard Population (complete)
+**Plan:** 3 of 3
+**Status:** Phase complete
+**Last activity:** 2026-02-11 -- Completed 13-03-PLAN.md (USFS override + population pipeline)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [########~~]  80% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+v1.2     [#########~]  87% IN PROGRESS (6 phases, 15 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
   Phase 12: Award Population     [##########] 100%  3/3 plans complete  DONE
-  Phase 13: Hazard Population    [######~~~~]  67%  2/3 plans complete  IN PROGRESS
-  Phase 14: Integration          [~~~~~~~~~~]   0%  Blocked on 13
+  Phase 13: Hazard Population    [##########] 100%  3/3 plans complete  DONE
+  Phase 14: Integration          [~~~~~~~~~~]   0%  Ready to start
 ```
 
 ## Performance Metrics
@@ -39,11 +39,11 @@ v1.2     [########~~]  80% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 34 completed + 7 planned = 41 |
+| Total plans | 35 completed + 6 planned = 41 |
 | Total requirements | 57 completed + 19 planned = 76 |
-| Total tests | 497 (+22 hazard aggregation tests) |
-| Total LOC | ~23,000 Python (est. +650 test + refactored hazards.py) |
-| Source files | 64 (+1: test_hazard_aggregation.py) |
+| Total tests | 511 (+9 USFS override integration tests) |
+| Total LOC | ~24,000 Python (est. +800 scripts + tests + hazards.py updates) |
+| Source files | 67 (+3: download_usfs_data.py, populate_hazards.py, test_usfs_override_integration.py) |
 
 ## Accumulated Context
 
@@ -124,6 +124,12 @@ v1.2     [########~~]  80% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 - DEC-1302-02: Ratings re-derived from weighted scores via quintile breakpoints (not MAX of source ratings)
 - DEC-1302-03: Version string changed from '1.20' to 'NRI_v1.20' to document data source
 - DEC-1302-04: Empty profiles use empty all_hazards dict instead of 18-entry zero dict
+- DEC-1303-01: USFS conditional-risk-to-structures overrides NRI WFIR only when both NRI WFIR > 0 and USFS risk_to_homes > 0
+- DEC-1303-02: Original NRI WFIR score preserved in usfs_wildfire.nri_wfir_original for audit trail
+- DEC-1303-03: data/usfs/ and data/hazard_profiles/ added to .gitignore (large downloaded/generated files)
+- DEC-1303-04: NRI version detected dynamically from sibling ZIP filenames; falls back to NRI_v1.20
+- DEC-1303-05: Coverage report tracks per-state breakdown and unmatched Tribes list
+- DEC-1303-06: populate_hazards.py requires NRI county CSV as hard prerequisite; crosswalk and USFS are soft (warnings)
 
 ### Todos
 
@@ -138,11 +144,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 13-02-PLAN.md (area-weighted NRI aggregation + tests)
-**Next step:** Execute 13-03-PLAN.md (bulk hazard profile regeneration for 592 Tribes)
+**Stopped at:** Completed 13-03-PLAN.md (USFS override + hazard population pipeline)
+**Next step:** Execute Phase 14 (Integration)
 **Resume file:** None
-**Resume command:** `/gsd:execute-phase 13` (continues with plan 03)
+**Resume command:** `/gsd:execute-phase 14`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 13-02 plan execution (Phase 13, plan 2 of 3)*
+*Last updated: 2026-02-11 after 13-03 plan execution (Phase 13 complete, 3/3 plans)*
