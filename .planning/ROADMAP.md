@@ -28,7 +28,7 @@ Wave 3:  Phase 13 (Hazards) ─────┐
 - [x] **Phase 11: API Resilience** -- Pipeline survives API outages via circuit breakers and graceful cache fallback
 - [x] **Phase 12: Award Population** -- 450+ Tribes have real USASpending award data in their cache files
 - [x] **Phase 13: Hazard Population** -- 550+ Tribes have real FEMA NRI hazard scores and ranked risks
-- [ ] **Phase 14: Integration & Validation** -- End-to-end packets produce complete, data-backed documents for 400+ Tribes
+- [x] **Phase 14: Integration & Validation** -- End-to-end packets produce complete, data-backed documents for 400+ Tribes
 
 ## Phase Details
 
@@ -151,7 +151,7 @@ Plans:
 - [x] 14-04-PLAN.md -- Regional aggregation + Doc C/D generation [Wave 2]
 - [x] 14-05-PLAN.md -- Batch generation + quality review automation [Wave 3]
 - [x] 14-06-PLAN.md -- Data validation script + VERIFICATION.md [Wave 3]
-- [ ] 14-07-PLAN.md -- GitHub Pages deployment + production URL finalization [Wave 4]
+- [x] 14-07-PLAN.md -- GitHub Pages deployment + production URL finalization [Wave 4]
 
 ---
 
@@ -164,7 +164,7 @@ Plans:
 | 11 - API Resilience | 2 | 2 | Complete | 2026-02-11 |
 | 12 - Award Population | 4 | 4 | Complete | 2026-02-11 |
 | 13 - Hazard Population | 3 | 3 | Complete | 2026-02-11 |
-| 14 - Integration & Validation | 7 | 6 | In Progress | -- |
+| 14 - Integration & Validation | 7 | 7 | Complete | 2026-02-11 |
 | **Total** | **20** | **17** | -- | -- |
 
 ## Dependency & Wave Summary
