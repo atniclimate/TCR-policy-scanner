@@ -7,6 +7,10 @@ Called from CLI via ``--prep-packets --tribe <name>`` or ``--prep-packets --all-
 Supports multi-document generation per Tribe:
   - Doc A (internal strategy) to ``internal/`` subdirectory
   - Doc B (congressional overview) to ``congressional/`` subdirectory
+
+Supports regional document generation for 8 regions:
+  - Doc C (InterTribal strategy) to ``regional/internal/`` subdirectory
+  - Doc D (regional overview) to ``regional/congressional/`` subdirectory
 """
 
 from __future__ import annotations
@@ -800,3 +804,210 @@ class PacketOrchestrator:
 
         logger.info("Generated strategic overview: %s", path)
         return path
+
+    # ------------------------------------------------------------------
+    # Phase 14: Regional document generation (INTG-02, Doc C/D)
+    # ------------------------------------------------------------------
+
+    def generate_regional_docs(
+        self,
+        skip_context_build: bool = False,
+        prebuilt_contexts: dict[str, TribePacketContext] | None = None,
+    ) -> dict[str, list[Path]]:
+        """Generate Doc C + Doc D for all 8 regions.
+
+        Pre-aggregates all Tribe contexts, then generates 2 documents per
+        region (internal InterTribal strategy + congressional overview).
+
+        Args:
+            skip_context_build: If True, skip building contexts (use
+                prebuilt_contexts instead).
+            prebuilt_contexts: Optional dict mapping tribe_id to
+                TribePacketContext. Useful when run_all_tribes() has
+                already built contexts.
+
+        Returns:
+            Dict mapping region_id to [path_c, path_d] for each region.
+        """
+        from src.packets.doc_types import DOC_C, DOC_D
+        from src.packets.regional import RegionalAggregator
+        from src.paths import REGIONAL_CONFIG_PATH
+
+        # Step 1: Build all TribePacketContexts
+        if prebuilt_contexts is not None:
+            all_contexts = prebuilt_contexts
+        else:
+            all_contexts = {}
+            all_tribes = self.registry.get_all()
+            for tribe in all_tribes:
+                try:
+                    ctx = self._build_context(tribe)
+                    all_contexts[tribe["tribe_id"]] = ctx
+                except Exception as exc:
+                    logger.warning(
+                        "Failed to build context for %s: %s",
+                        tribe.get("name", tribe.get("tribe_id", "?")),
+                        exc,
+                    )
+
+        # Step 2: Create aggregator
+        aggregator = RegionalAggregator(
+            regional_config_path=REGIONAL_CONFIG_PATH,
+            registry=self.registry,
+        )
+
+        results: dict[str, list[Path]] = {}
+
+        for region_id in aggregator.get_region_ids():
+            try:
+                # Get Tribe IDs for this region
+                tribe_ids = aggregator.get_tribe_ids_for_region(region_id)
+                region_contexts = [
+                    all_contexts[tid]
+                    for tid in tribe_ids
+                    if tid in all_contexts
+                ]
+
+                # Aggregate
+                regional_ctx = aggregator.aggregate(
+                    region_id, region_contexts
+                )
+
+                # Generate Doc C (internal)
+                path_c = self._generate_regional_doc(
+                    regional_ctx, DOC_C
+                )
+
+                # Generate Doc D (congressional)
+                path_d = self._generate_regional_doc(
+                    regional_ctx, DOC_D
+                )
+
+                results[region_id] = [path_c, path_d]
+                logger.info(
+                    "Regional docs for %s: %d Tribes aggregated",
+                    region_id,
+                    len(region_contexts),
+                )
+            except Exception as exc:
+                logger.error(
+                    "Failed to generate regional docs for %s: %s",
+                    region_id,
+                    exc,
+                )
+                results[region_id] = []
+
+        return results
+
+    def _generate_regional_doc(
+        self,
+        regional_ctx,
+        doc_type_config: DocumentTypeConfig,
+    ) -> Path:
+        """Generate a single regional document (Doc C or Doc D).
+
+        Creates the DOCX document with regional section renderers and
+        saves to the appropriate subdirectory.
+
+        Args:
+            regional_ctx: RegionalContext with aggregated region data.
+            doc_type_config: DOC_C or DOC_D configuration.
+
+        Returns:
+            Path to the generated .docx file.
+        """
+        import os
+        import tempfile
+
+        from docx import Document as DocxDocument
+
+        from src.packets.docx_regional_sections import (
+            render_regional_appendix,
+            render_regional_award_landscape,
+            render_regional_cover_page,
+            render_regional_delegation,
+            render_regional_executive_summary,
+            render_regional_hazard_synthesis,
+        )
+        from src.packets.docx_styles import StyleManager
+
+        # Create document with styles
+        document = DocxDocument()
+        style_manager = StyleManager(document)
+
+        # Configure page margins
+        from docx.shared import Inches
+
+        for section in document.sections:
+            section.top_margin = Inches(1)
+            section.bottom_margin = Inches(1)
+            section.left_margin = Inches(1)
+            section.right_margin = Inches(1)
+
+        # Apply doc-type-specific headers/footers
+        engine = DocxEngine(
+            self.config, self.programs, doc_type_config=doc_type_config
+        )
+        engine._setup_header_footer(
+            document,
+            header_text=doc_type_config.format_header(
+                region_name=regional_ctx.region_name,
+            ),
+            footer_text=doc_type_config.footer_template,
+            confidential=doc_type_config.confidential,
+        )
+
+        # Render regional sections
+        render_regional_cover_page(
+            document, regional_ctx, style_manager, doc_type_config
+        )
+        render_regional_executive_summary(
+            document, regional_ctx, style_manager, doc_type_config
+        )
+        render_regional_hazard_synthesis(
+            document, regional_ctx, style_manager
+        )
+        render_regional_award_landscape(
+            document, regional_ctx, style_manager
+        )
+        render_regional_delegation(
+            document, regional_ctx, style_manager, doc_type_config
+        )
+        render_regional_appendix(
+            document, regional_ctx, style_manager
+        )
+
+        # Determine output path
+        base_dir = self._get_output_dir()
+        if doc_type_config.is_internal:
+            output_dir = base_dir / "regional" / "internal"
+        else:
+            output_dir = base_dir / "regional" / "congressional"
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        filename = doc_type_config.format_filename(regional_ctx.region_id)
+        output_path = output_dir / filename
+
+        # Atomic write
+        tmp_fd = tempfile.NamedTemporaryFile(
+            dir=str(output_dir), suffix=".docx", delete=False
+        )
+        tmp_name = tmp_fd.name
+        tmp_fd.close()
+        try:
+            document.save(tmp_name)
+            os.replace(tmp_name, str(output_path))
+        except Exception:
+            try:
+                os.unlink(tmp_name)
+            except OSError:
+                pass
+            raise
+
+        logger.info(
+            "Generated regional %s doc for %s: %s",
+            doc_type_config.doc_type,
+            regional_ctx.region_name,
+            output_path,
+        )
+        return output_path

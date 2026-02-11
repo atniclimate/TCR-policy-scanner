@@ -552,3 +552,220 @@ class TestCompositeRisk:
         contexts = [_make_context("t1", "Tribe 1")]
         score = aggregator._compute_composite_risk(contexts)
         assert score == 0.0
+
+
+# ---------------------------------------------------------------------------
+# Test: Regional DOCX section renderers
+# ---------------------------------------------------------------------------
+
+
+class TestRegionalDocxSections:
+    """Tests for regional document section renderers."""
+
+    def _make_regional_ctx(self):
+        """Create a sample RegionalContext for rendering tests."""
+        return RegionalContext(
+            region_id="pnw",
+            region_name="Pacific Northwest / Columbia River Basin",
+            short_name="Pacific Northwest",
+            core_frame="Drought, fisheries, snowpack",
+            treaty_trust_angle="Treaty fisheries, ceded lands",
+            key_programs=["bia_tcr", "noaa_tribal"],
+            states=["WA", "OR", "ID", "MT"],
+            tribe_count=3,
+            tribes=[
+                {"tribe_id": "t1", "tribe_name": "Tribe One", "states": ["WA"]},
+                {"tribe_id": "t2", "tribe_name": "Tribe Two", "states": ["OR"]},
+                {"tribe_id": "t3", "tribe_name": "Tribe Three", "states": ["WA", "ID"]},
+            ],
+            total_awards=500_000.0,
+            award_coverage=2,
+            hazard_coverage=3,
+            congressional_coverage=3,
+            top_shared_hazards=[
+                {"hazard_type": "DRGT", "tribe_count": 3, "avg_score": 12.5},
+                {"hazard_type": "WFIR", "tribe_count": 2, "avg_score": 8.0},
+            ],
+            composite_risk_score=14.5,
+            aggregate_economic_impact={
+                "total_low": 900_000.0,
+                "total_high": 1_200_000.0,
+                "total_jobs_low": 7.0,
+                "total_jobs_high": 12.0,
+            },
+            delegation_overlap=[{
+                "member_name": "Sen. Shared",
+                "role": "Senator",
+                "tribe_count": 2,
+                "tribe_ids": ["t1", "t2"],
+                "committees": ["Appropriations"],
+            }],
+            total_senators=4,
+            total_representatives=6,
+            tribes_without_awards=["t3"],
+            tribes_without_hazards=[],
+            tribes_without_delegation=[],
+            generated_at="2026-02-11T00:00:00Z",
+        )
+
+    def test_regional_cover_page_renders(self):
+        """Cover page renders without error for Doc C."""
+        from docx import Document as DocxDocument
+        from src.packets.doc_types import DOC_C
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_cover_page,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_cover_page(doc, ctx, sm, DOC_C)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "CONFIDENTIAL" in text
+        assert "Pacific Northwest" in text
+
+    def test_regional_cover_page_congressional(self):
+        """Cover page for Doc D has no CONFIDENTIAL banner."""
+        from docx import Document as DocxDocument
+        from src.packets.doc_types import DOC_D
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_cover_page,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_cover_page(doc, ctx, sm, DOC_D)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "CONFIDENTIAL" not in text
+        assert "Pacific Northwest" in text
+
+    def test_regional_exec_summary_internal(self):
+        """Internal exec summary includes coverage gap analysis."""
+        from docx import Document as DocxDocument
+        from src.packets.doc_types import DOC_C
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_executive_summary,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_executive_summary(doc, ctx, sm, DOC_C)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "Coverage Gap" in text
+        assert "Shared Delegation" in text
+
+    def test_regional_exec_summary_congressional(self):
+        """Congressional exec summary is evidence-only."""
+        from docx import Document as DocxDocument
+        from src.packets.doc_types import DOC_D
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_executive_summary,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_executive_summary(doc, ctx, sm, DOC_D)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "Federal Investment Overview" in text
+        assert "Coverage Gap" not in text
+        assert "Shared Delegation" not in text
+
+    def test_regional_hazard_synthesis(self):
+        """Hazard synthesis renders shared hazards table."""
+        from docx import Document as DocxDocument
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_hazard_synthesis,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_hazard_synthesis(doc, ctx, sm)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "Regional Hazard Synthesis" in text
+        assert "DRGT" in doc.tables[0].rows[1].cells[0].text
+
+    def test_regional_delegation_internal_overlap(self):
+        """Internal delegation section shows overlap table."""
+        from docx import Document as DocxDocument
+        from src.packets.doc_types import DOC_C
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_delegation,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_delegation(doc, ctx, sm, DOC_C)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "Delegation Overlap Analysis" in text
+        # Check overlap table
+        assert len(doc.tables) >= 1
+        assert "Sen. Shared" in doc.tables[0].rows[1].cells[0].text
+
+    def test_regional_delegation_congressional_no_overlap(self):
+        """Congressional delegation has no overlap analysis."""
+        from docx import Document as DocxDocument
+        from src.packets.doc_types import DOC_D
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_delegation,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_delegation(doc, ctx, sm, DOC_D)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "Delegation Overlap Analysis" not in text
+
+    def test_regional_appendix_lists_tribes(self):
+        """Appendix lists all Tribes in the region."""
+        from docx import Document as DocxDocument
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_appendix,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_appendix(doc, ctx, sm)
+
+        # Check table has 3 tribe rows + 1 header
+        assert len(doc.tables) >= 1
+        assert len(doc.tables[0].rows) == 4  # 1 header + 3 tribes
+
+    def test_regional_award_landscape(self):
+        """Award landscape shows aggregate and gap data."""
+        from docx import Document as DocxDocument
+        from src.packets.docx_styles import StyleManager
+        from src.packets.docx_regional_sections import (
+            render_regional_award_landscape,
+        )
+
+        doc = DocxDocument()
+        sm = StyleManager(doc)
+        ctx = self._make_regional_ctx()
+        render_regional_award_landscape(doc, ctx, sm)
+
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "$500,000" in text
+        assert "2 of 3" in text
+        assert "Investment Gap" in text
