@@ -129,22 +129,29 @@ Plans:
 ---
 
 ### Phase 14: Integration & Validation
-**Goal**: All data sources wire together so end-to-end packet generation produces complete, data-backed advocacy documents for 400+ Tribes
+**Goal**: All data sources wire together so the document generation pipeline produces complete, data-backed advocacy documents in 4 types (Tribal internal strategy, Tribal congressional overview, regional InterTribal strategy, regional congressional overview) for 400+ Tribes and all 8 regions
 **Wave**: 3 (after Phases 11, 12, 13 complete)
 **Depends on**: Phase 11, Phase 12, Phase 13 (all data populated + API resilience in place)
 **Requirements**: INTG-01, INTG-02, INTG-03, INTG-04, INTG-05, INTG-06
 **Success Criteria** (what must be TRUE when this phase completes):
   1. Economic impact section auto-computes using real award amounts and hazard scores (no placeholder fallbacks)
-  2. Batch packet generation for all 592 Tribes completes without error, producing complete packets for 400+
-  3. A data validation script reports coverage percentages across all cache types (awards, hazards, congressional, registry)
-  4. VERIFICATION.md documents the v1.2 testing methodology, sample validation results, and known coverage gaps
-  5. GitHub Pages deployment serves updated packets with production URLs (no SquareSpace placeholders)
-**Plans**: 3 plans
+  2. Batch packet generation for all 592 Tribes produces Doc A (internal) + Doc B (congressional) for 400+ Tribes
+  3. Regional documents (Doc C + Doc D) generated for all 8 regions with aggregated data
+  4. Internal docs contain strategy/leverage/messaging; congressional docs contain evidence only (audience differentiation)
+  5. Quality review validates all outputs (audience leakage, air gap, placeholders)
+  6. Data validation script reports coverage percentages across all cache types (awards, hazards, congressional, registry)
+  7. VERIFICATION.md documents the v1.2 testing methodology, sample validation results, and known coverage gaps
+  8. GitHub Pages deployment serves updated packets with production URLs (no SquareSpace placeholders)
+**Plans**: 7 plans across 4 waves
 
 Plans:
-- [ ] 14-01-PLAN.md -- Economic impact activation + end-to-end packet validation [Wave 3]
-- [ ] 14-02-PLAN.md -- Data validation script + VERIFICATION.md documentation [Wave 3]
-- [ ] 14-03-PLAN.md -- GitHub Pages deployment config + production URL finalization [Wave 3]
+- [ ] 14-01-PLAN.md -- Hazard data activation + 8-region config [Wave 1]
+- [ ] 14-02-PLAN.md -- DocumentTypeConfig system + air gap header/footer fix [Wave 1]
+- [ ] 14-03-PLAN.md -- Audience-filtered Tribal document generation (Doc A + Doc B) [Wave 2]
+- [ ] 14-04-PLAN.md -- Regional aggregation + Doc C/D generation [Wave 2]
+- [ ] 14-05-PLAN.md -- Batch generation + quality review automation [Wave 3]
+- [ ] 14-06-PLAN.md -- Data validation script + VERIFICATION.md [Wave 3]
+- [ ] 14-07-PLAN.md -- GitHub Pages deployment + production URL finalization [Wave 4]
 
 ---
 
@@ -155,10 +162,10 @@ Plans:
 | 9 - Config Hardening | 2 | 2 | Complete | 2026-02-11 |
 | 10 - Code Quality | 2 | 2 | Complete | 2026-02-11 |
 | 11 - API Resilience | 2 | 2 | Complete | 2026-02-11 |
-| 12 - Award Population | 4 | 3 | Gap Closure | -- |
+| 12 - Award Population | 4 | 4 | Complete | 2026-02-11 |
 | 13 - Hazard Population | 3 | 3 | Complete | 2026-02-11 |
-| 14 - Integration & Validation | 3 | 0 | Pending | -- |
-| **Total** | **16** | **10** | -- | -- |
+| 14 - Integration & Validation | 7 | 0 | Planned | -- |
+| **Total** | **20** | **13** | -- | -- |
 
 ## Dependency & Wave Summary
 
@@ -206,4 +213,4 @@ Duplicates: 0
 *Depth: quick*
 *Coverage: 24/24 requirements mapped*
 *Phases: 6 (numbered 9-14, continuing from v1.1)*
-*Plans: 16 total*
+*Plans: 20 total*
