@@ -13,9 +13,9 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
 **Phase:** 14 - Integration & Validation
-**Plan:** 3 of 7 (14-01 + 14-02 + 14-03 complete)
+**Plan:** 4 of 7 (14-01 + 14-02 + 14-03 + 14-04 complete)
 **Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 14-03-PLAN.md (Content Filtering + Multi-Doc Generation)
+**Last activity:** 2026-02-11 -- Completed 14-04-PLAN.md (Regional Aggregation + Doc C/D Generation)
 
 **Progress:**
 ```
@@ -27,7 +27,7 @@ v1.2     [#########~]  95% IN PROGRESS (6 phases, 16 plans, 24 requirements)
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
   Phase 12: Award Population     [##########] 100%  4/4 plans complete  DONE (gap closure)
   Phase 13: Hazard Population    [##########] 100%  3/3 plans complete  DONE
-  Phase 14: Integration          [####~~~~~~]  43%  3/7 plans complete  IN PROGRESS
+  Phase 14: Integration          [#####~~~~~]  57%  4/7 plans complete  IN PROGRESS
 ```
 
 ## Performance Metrics
@@ -39,9 +39,9 @@ v1.2     [#########~]  95% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 37 completed + 4 planned = 41 |
-| Total requirements | 59 completed + 17 planned = 76 |
-| Total tests | 691 |
+| Total plans | 38 completed + 3 planned = 41 |
+| Total requirements | 60 completed + 16 planned = 76 |
+| Total tests | 700 |
 | Total LOC | ~25,000 Python (est. +1,300 scripts + tests + HA aliases) |
 | Source files | 70 (+6: generate_ha_aliases.py, test_housing_authority_aliases.py, etc.) |
 
@@ -147,6 +147,9 @@ v1.2     [#########~]  95% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 - DEC-1403-03: Orchestrator _has_complete_data checks awards AND hazards AND delegation
 - DEC-1403-04: Hazard alignment paragraph in economic impact for all doc types (factual, safe for congressional)
 - DEC-1403-05: Change tracking excluded from congressional docs (is_internal gate)
+- DEC-1404-01: RegionalContext in regional.py (not context.py) to avoid bloating TribePacketContext file
+- DEC-1404-02: Orchestrator regional methods use lazy imports for regional module
+- DEC-1404-03: Delegation overlap keyed by bioguide_id with formatted_name fallback
 
 ### Todos
 
@@ -161,11 +164,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 14-03-PLAN.md (Content Filtering + Multi-Doc Generation)
-**Next step:** Execute 14-04-PLAN.md (Regional Documents)
+**Stopped at:** Completed 14-04-PLAN.md (Regional Aggregation + Doc C/D Generation)
+**Next step:** Execute 14-05-PLAN.md
 **Resume file:** None
 **Resume command:** `/gsd:execute-phase 14`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 14-03 completion (Phase 14 in progress, 3/7 plans: 14-01 + 14-02 + 14-03)*
+*Last updated: 2026-02-11 after 14-04 completion (Phase 14 in progress, 4/7 plans: 14-01 + 14-02 + 14-03 + 14-04)*
