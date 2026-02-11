@@ -116,6 +116,7 @@
     "backoff_base": 2,
     "backoff_max": 300,
     "request_timeout": 30,
+    "cache_max_age_hours": 168,
     "circuit_breaker": {
       "failure_threshold": 5,
       "recovery_timeout": 60

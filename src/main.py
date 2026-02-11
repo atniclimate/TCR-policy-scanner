@@ -15,8 +15,12 @@ import argparse
 import asyncio
 import json
 import logging
+import os
 import sys
+from datetime import datetime, timezone
+from pathlib import Path
 
+from src.scrapers.circuit_breaker import CircuitOpenError
 from src.scrapers.federal_register import FederalRegisterScraper
 from src.scrapers.grants_gov import GrantsGovScraper
 from src.scrapers.congress_gov import CongressGovScraper
@@ -31,6 +35,7 @@ from src.paths import (
     GRAPH_SCHEMA_PATH,
     LATEST_GRAPH_PATH,
     LATEST_MONITOR_DATA_PATH,
+    OUTPUTS_DIR,
     PROGRAM_INVENTORY_PATH,
     SCANNER_CONFIG_PATH,
 )
@@ -120,8 +125,93 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     print()
 
 
+def _source_cache_path(source_name: str) -> Path:
+    """Return the per-source cache file path in the outputs directory."""
+    return OUTPUTS_DIR / f".cache_{source_name}.json"
+
+
+def _save_source_cache(source_name: str, items: list[dict]) -> None:
+    """Persist scan results to per-source cache with atomic write.
+
+    JSON structure includes timestamp metadata for staleness detection.
+    Uses tmp file + os.replace() for crash safety (CLAUDE.md rule 8).
+    """
+    cache_path = _source_cache_path(source_name)
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = cache_path.with_suffix(".tmp")
+    try:
+        data = {
+            "source": source_name,
+            "cached_at": datetime.now(timezone.utc).isoformat(),
+            "item_count": len(items),
+            "items": items,
+        }
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, default=str)
+        os.replace(str(tmp_path), str(cache_path))
+        logger.info("Cached %d items for %s", len(items), source_name)
+    except Exception:
+        logger.exception("Failed to save cache for %s", source_name)
+        # Clean up tmp file on failure
+        if tmp_path.exists():
+            tmp_path.unlink()
+
+
+def _load_source_cache(source_name: str, config: dict | None = None) -> list[dict]:
+    """Load cached scan results for a source as fallback when API is unreachable.
+
+    Returns an empty list if no cache exists or cache is corrupt.
+    Logs WARNING with cache age for degradation visibility.
+    Logs CRITICAL if cache exceeds cache_max_age_hours (default 168h = 7 days).
+
+    Single-writer-per-source assumption: only one pipeline run writes a given
+    source cache at a time. Concurrent reads during write are safe due to
+    atomic os.replace() in _save_source_cache.
+    """
+    cache_path = _source_cache_path(source_name)
+    if not cache_path.exists():
+        logger.warning("No cached data available for %s", source_name)
+        return []
+    try:
+        # Security: check file size before parsing (10MB cap)
+        file_size = cache_path.stat().st_size
+        if file_size > 10 * 1024 * 1024:
+            logger.error("Cache file too large for %s (%d bytes), skipping", source_name, file_size)
+            return []
+
+        with open(cache_path, encoding="utf-8") as f:
+            data = json.load(f)
+
+        cached_at = data.get("cached_at", "unknown")
+        logger.warning("DEGRADED: %s using cached data from %s", source_name, cached_at)
+
+        # Check staleness against configured max age
+        cache_max_age_hours = (config or {}).get("resilience", {}).get("cache_max_age_hours", 168)
+        if cached_at != "unknown":
+            try:
+                cache_time = datetime.fromisoformat(cached_at)
+                age_hours = (datetime.now(timezone.utc) - cache_time).total_seconds() / 3600
+                if age_hours > cache_max_age_hours:
+                    logger.critical(
+                        "STALE CACHE: %s cache is %.0fh old (limit: %dh)",
+                        source_name, age_hours, cache_max_age_hours,
+                    )
+            except (ValueError, TypeError):
+                pass
+
+        return data.get("items", [])
+    except (json.JSONDecodeError, IOError) as e:
+        logger.error("Failed to load cache for %s: %s", source_name, e)
+        return []
+
+
 async def run_scan(config: dict, programs: list[dict], sources: list[str]) -> list[dict]:
-    """Execute scrapers concurrently and return all collected items (Ingest + Normalize)."""
+    """Execute scrapers concurrently and return all collected items (Ingest + Normalize).
+
+    On successful scan, caches results per source. On CircuitOpenError or any
+    other exception, falls back to cached data so the pipeline can continue
+    in degraded mode.
+    """
     async def _run_one(source_name: str) -> list[dict]:
         if source_name not in SCRAPERS:
             logger.warning("Unknown source: %s", source_name)
@@ -132,10 +222,15 @@ async def run_scan(config: dict, programs: list[dict], sources: list[str]) -> li
         try:
             items = await scraper.scan()
             logger.info("  -> %d items from %s", len(items), source_name)
+            if items:
+                _save_source_cache(source_name, items)
             return items
+        except CircuitOpenError:
+            logger.warning("DEGRADED: %s circuit OPEN, falling back to cache", source_name)
+            return _load_source_cache(source_name, config)
         except Exception:
-            logger.exception("Failed to scan %s", source_name)
-            return []
+            logger.exception("Failed to scan %s, falling back to cache", source_name)
+            return _load_source_cache(source_name, config)
 
     results = await asyncio.gather(*[_run_one(s) for s in sources])
     all_items = []
