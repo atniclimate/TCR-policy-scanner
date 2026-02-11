@@ -13,20 +13,20 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
 **Phase:** 13 - Hazard Population (in progress)
-**Plan:** 1 of 3
+**Plan:** 2 of 3
 **Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 13-01-PLAN.md (NRI data download + area crosswalk)
+**Last activity:** 2026-02-11 -- Completed 13-02-PLAN.md (area-weighted NRI aggregation)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [########~~]  67% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+v1.2     [########~~]  80% IN PROGRESS (6 phases, 15 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
   Phase 12: Award Population     [##########] 100%  3/3 plans complete  DONE
-  Phase 13: Hazard Population    [###~~~~~~~]  33%  1/3 plans complete  IN PROGRESS
+  Phase 13: Hazard Population    [######~~~~]  67%  2/3 plans complete  IN PROGRESS
   Phase 14: Integration          [~~~~~~~~~~]   0%  Blocked on 13
 ```
 
@@ -39,11 +39,11 @@ v1.2     [########~~]  67% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 33 completed + 8 planned = 41 |
-| Total requirements | 55 completed + 21 planned = 76 |
-| Total tests | 477 (+6 populate_awards, +2 schema updates) |
-| Total LOC | ~22,300 Python (est. +282 from populate_awards script + tests) |
-| Source files | 63 (+2: populate_awards.py, test_populate_awards.py) |
+| Total plans | 34 completed + 7 planned = 41 |
+| Total requirements | 57 completed + 19 planned = 76 |
+| Total tests | 497 (+22 hazard aggregation tests) |
+| Total LOC | ~23,000 Python (est. +650 test + refactored hazards.py) |
+| Source files | 64 (+1: test_hazard_aggregation.py) |
 
 ## Accumulated Context
 
@@ -120,6 +120,10 @@ v1.2     [########~~]  67% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 - DEC-1301-01: data/nri/ added to .gitignore since it contains large downloaded data files (shapefiles, CSVs)
 - DEC-1301-02: requests library added to requirements.txt for download script (aiohttp not needed for sync downloads)
 - DEC-1301-03: Shapefile ZIPs extract to subdirectories (aiannh/, county/) to keep data/nri/ organized
+- DEC-1302-01: EAL dollar amounts use weighted SUM (not average) to reflect proportional exposure
+- DEC-1302-02: Ratings re-derived from weighted scores via quintile breakpoints (not MAX of source ratings)
+- DEC-1302-03: Version string changed from '1.20' to 'NRI_v1.20' to document data source
+- DEC-1302-04: Empty profiles use empty all_hazards dict instead of 18-entry zero dict
 
 ### Todos
 
@@ -134,11 +138,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 12-03-PLAN.md (award population pipeline + 592 cache files with real data)
-**Next step:** Continue Phase 13 (hazard population) -- 13-02 and 13-03 remaining
+**Stopped at:** Completed 13-02-PLAN.md (area-weighted NRI aggregation + tests)
+**Next step:** Execute 13-03-PLAN.md (bulk hazard profile regeneration for 592 Tribes)
 **Resume file:** None
-**Resume command:** `/gsd:execute-phase 13` (continues with plan 02)
+**Resume command:** `/gsd:execute-phase 13` (continues with plan 03)
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 12-03 plan execution (Phase 12 COMPLETE, 3/3 plans)*
+*Last updated: 2026-02-11 after 13-02 plan execution (Phase 13, plan 2 of 3)*
