@@ -402,7 +402,7 @@ class TestAreaWeightedAggregation:
         assert profile["composite"]["resl_score"] == 56.0
 
     def test_nonzero_hazard_filtering(self, base_fixture: dict) -> None:
-        """Zero-score hazards are omitted from all_hazards."""
+        """Zero-score hazards are included with zero values for schema consistency."""
         fix = base_fixture
         nri_dir = fix["nri_dir"]
 
@@ -434,14 +434,16 @@ class TestAreaWeightedAggregation:
         tribe = {"tribe_id": "epa_001", "name": "Test Tribe Alpha", "states": ["AZ"]}
         profile = builder._build_tribe_nri_profile("epa_001", tribe, county_data, tribal_counties)
 
-        # WFIR and DRGT have non-zero scores, HRCN has zero -> omitted
+        # WFIR and DRGT have non-zero scores; HRCN has zero score but
+        # is still present in all_hazards (all 18 types always included)
         assert "WFIR" in profile["all_hazards"]
         assert "DRGT" in profile["all_hazards"]
-        assert "HRCN" not in profile["all_hazards"], (
-            "Zero-score HRCN should be omitted from all_hazards"
+        assert "HRCN" in profile["all_hazards"], (
+            "Zero-score HRCN should still be present in all_hazards"
         )
-        # All 15 other hazard types (not in test CSV) should also be omitted
-        assert len(profile["all_hazards"]) == 2
+        assert profile["all_hazards"]["HRCN"]["risk_score"] == 0.0
+        # All 18 NRI hazard types are always present for schema consistency
+        assert len(profile["all_hazards"]) == 18
 
     def test_top_5_extraction(self, base_fixture: dict) -> None:
         """With >5 non-zero hazards, only top 5 by risk_score appear in top_hazards."""
@@ -588,8 +590,8 @@ class TestAreaWeightedAggregation:
         assert profile["all_hazards"]["DRGT"]["risk_score"] == 60.0
         assert profile["all_hazards"]["DRGT"]["risk_rating"] == "Relatively High"
 
-    def test_empty_profile_has_empty_all_hazards(self, base_fixture: dict) -> None:
-        """Empty profiles (no county data) have empty all_hazards dict."""
+    def test_empty_profile_has_all_18_zero_hazards(self, base_fixture: dict) -> None:
+        """Empty profiles (no county data) have all 18 hazard types with zeros."""
         fix = base_fixture
         nri_dir = fix["nri_dir"]
 
@@ -605,7 +607,10 @@ class TestAreaWeightedAggregation:
             {},
             {},
         )
-        assert profile["all_hazards"] == {}
+        # All 18 hazard types present with zero values for schema consistency
+        assert len(profile["all_hazards"]) == 18
+        for code, data in profile["all_hazards"].items():
+            assert data["risk_score"] == 0.0, f"{code} should have zero risk_score"
         assert profile["top_hazards"] == []
         assert profile["composite"]["risk_score"] == 0.0
 

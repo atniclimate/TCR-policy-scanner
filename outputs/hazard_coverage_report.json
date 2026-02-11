@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-02-11T20:01:36.441554+00:00",
+  "generated_at": "2026-02-11T20:16:35.591484+00:00",
   "summary": {
-    "total_profiles": 592,
-    "nri_matched": 592,
+    "total_profiles": 3,
+    "nri_matched": 3,
     "usfs_matched": 0,
     "usfs_overrides": 0,
-    "scored_profiles": 592,
+    "scored_profiles": 3,
     "unmatched_profiles": 0,
     "scored_pct": 100.0,
     "nri_pct": 100.0,
@@ -13,225 +13,21 @@
   },
   "unmatched_tribes": [],
   "per_state": {
-    "AK": {
-      "total": 229,
-      "nri_matched": 229,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "AL": {
-      "total": 1,
-      "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
     "AZ": {
-      "total": 23,
-      "nri_matched": 23,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "CA": {
-      "total": 110,
-      "nri_matched": 110,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "CO": {
-      "total": 2,
-      "nri_matched": 2,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "CT": {
-      "total": 2,
-      "nri_matched": 2,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "FL": {
-      "total": 3,
-      "nri_matched": 3,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "IA": {
-      "total": 4,
-      "nri_matched": 4,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "ID": {
-      "total": 7,
-      "nri_matched": 7,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "IN": {
       "total": 1,
       "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "KS": {
-      "total": 7,
-      "nri_matched": 7,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "LA": {
-      "total": 4,
-      "nri_matched": 4,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "MA": {
-      "total": 2,
-      "nri_matched": 2,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "ME": {
-      "total": 6,
-      "nri_matched": 6,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "MI": {
-      "total": 12,
-      "nri_matched": 12,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "MN": {
-      "total": 12,
-      "nri_matched": 12,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "MO": {
-      "total": 1,
-      "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "MS": {
-      "total": 1,
-      "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "MT": {
-      "total": 10,
-      "nri_matched": 10,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "NC": {
-      "total": 1,
-      "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "ND": {
-      "total": 5,
-      "nri_matched": 5,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "NE": {
-      "total": 7,
-      "nri_matched": 7,
       "usfs_matched": 0,
       "unmatched": 0
     },
     "NM": {
-      "total": 24,
-      "nri_matched": 24,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "NV": {
-      "total": 24,
-      "nri_matched": 24,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "NY": {
-      "total": 8,
-      "nri_matched": 8,
+      "total": 1,
+      "nri_matched": 1,
       "usfs_matched": 0,
       "unmatched": 0
     },
     "OK": {
-      "total": 38,
-      "nri_matched": 38,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "OR": {
-      "total": 10,
-      "nri_matched": 10,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "RI": {
       "total": 1,
       "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "SC": {
-      "total": 1,
-      "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "SD": {
-      "total": 10,
-      "nri_matched": 10,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "TN": {
-      "total": 1,
-      "nri_matched": 1,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "TX": {
-      "total": 3,
-      "nri_matched": 3,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "UT": {
-      "total": 6,
-      "nri_matched": 6,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "VA": {
-      "total": 7,
-      "nri_matched": 7,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "WA": {
-      "total": 29,
-      "nri_matched": 29,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "WI": {
-      "total": 12,
-      "nri_matched": 12,
-      "usfs_matched": 0,
-      "unmatched": 0
-    },
-    "WY": {
-      "total": 2,
-      "nri_matched": 2,
       "usfs_matched": 0,
       "unmatched": 0
     }

@@ -416,7 +416,7 @@ class TestHazardProfileSchema:
         hp = HazardProfile(**data)
         nri = hp.get_nri_source()
         assert isinstance(nri, NRISource)
-        assert nri.version == "1.20"
+        assert nri.version == "NRI_v1.20"
 
 
 # ── 5. PolicyPosition validation ──

@@ -103,6 +103,13 @@
           "annualized_freq": 3.8187,
           "num_events": 45.67
         },
+        "HRCN": {
+          "risk_score": 0.0,
+          "risk_rating": "",
+          "eal_total": 0.0,
+          "annualized_freq": 0.0,
+          "num_events": 0.0
+        },
         "ISTM": {
           "risk_score": 50.22,
           "risk_rating": "Relatively Moderate",
@@ -177,5 +184,5 @@
     },
     "usfs_wildfire": {}
   },
-  "generated_at": "2026-02-11T20:01:27.372479+00:00"
+  "generated_at": "2026-02-11T20:15:52.747398+00:00"
 }

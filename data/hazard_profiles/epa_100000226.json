@@ -61,6 +61,13 @@
           "annualized_freq": 0.0132,
           "num_events": 0.15
         },
+        "CFLD": {
+          "risk_score": 0.0,
+          "risk_rating": "",
+          "eal_total": 0.0,
+          "annualized_freq": 0.0,
+          "num_events": 0.0
+        },
         "CWAV": {
           "risk_score": 33.27,
           "risk_rating": "Relatively Low",
@@ -145,6 +152,13 @@
           "annualized_freq": 0.3277,
           "num_events": 12.58
         },
+        "TSUN": {
+          "risk_score": 0.0,
+          "risk_rating": "",
+          "eal_total": 0.0,
+          "annualized_freq": 0.0,
+          "num_events": 0.0
+        },
         "VLCN": {
           "risk_score": 16.94,
           "risk_rating": "Very Low",
@@ -170,5 +184,5 @@
     },
     "usfs_wildfire": {}
   },
-  "generated_at": "2026-02-11T20:01:27.193247+00:00"
+  "generated_at": "2026-02-11T20:15:52.671644+00:00"
 }

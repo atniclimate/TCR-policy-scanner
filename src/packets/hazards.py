@@ -649,7 +649,7 @@ class HazardProfileBuilder:
         composite["sovi_rating"] = score_to_rating(composite["sovi_score"])
         composite["resl_rating"] = score_to_rating(composite["resl_score"])
 
-        # Step 5: Area-weighted per-hazard scores + non-zero filter
+        # Step 5: Area-weighted per-hazard scores (all 18 types always present)
         all_hazards: dict[str, dict] = {}
         for code in NRI_HAZARD_CODES:
             hazard_records = [
@@ -658,28 +658,36 @@ class HazardProfileBuilder:
                 if code in c.get("hazards", {})
             ]
             if not hazard_records:
-                continue  # Skip -- only non-zero hazards stored
+                # No county data for this hazard type -- include with zeros
+                all_hazards[code] = {
+                    "risk_score": 0.0,
+                    "risk_rating": "",
+                    "eal_total": 0.0,
+                    "annualized_freq": 0.0,
+                    "num_events": 0.0,
+                }
+                continue
 
             weighted_risk = sum(h["risk_score"] * w for h, w in hazard_records)
             weighted_eal = sum(h["eal_total"] * w for h, w in hazard_records)
             weighted_freq = sum(h["annualized_freq"] * w for h, w in hazard_records)
             total_events = sum(h["num_events"] * w for h, w in hazard_records)
 
-            # Only store if risk_score is non-zero
-            if weighted_risk <= 0:
-                continue
-
             all_hazards[code] = {
                 "risk_score": round(weighted_risk, 2),
-                "risk_rating": score_to_rating(weighted_risk),
+                "risk_rating": score_to_rating(weighted_risk) if weighted_risk > 0 else "",
                 "eal_total": round(weighted_eal, 2),
                 "annualized_freq": round(weighted_freq, 4),
                 "num_events": round(total_events, 2),
             }
 
-        # Step 6: Top 5 hazards by risk score
+        # Step 6: Top 5 hazards by risk score (non-zero only)
+        nonzero_hazards = [
+            (code, data) for code, data in all_hazards.items()
+            if data["risk_score"] > 0
+        ]
         sorted_hazards = sorted(
-            all_hazards.items(),
+            nonzero_hazards,
             key=lambda x: x[1]["risk_score"],
             reverse=True,
         )
@@ -711,6 +719,17 @@ class HazardProfileBuilder:
         Returns:
             Dict with null/zero values and a note field.
         """
+        # Build all_hazards with zeros for all 18 NRI codes (schema consistency)
+        empty_hazards = {
+            code: {
+                "risk_score": 0.0,
+                "risk_rating": "",
+                "eal_total": 0.0,
+                "annualized_freq": 0.0,
+                "num_events": 0.0,
+            }
+            for code in NRI_HAZARD_CODES
+        }
         return {
             "version": "",
             "counties_analyzed": 0,
@@ -727,7 +746,7 @@ class HazardProfileBuilder:
                 "resl_rating": "",
             },
             "top_hazards": [],
-            "all_hazards": {},
+            "all_hazards": empty_hazards,
         }
 
     def _load_usfs_wildfire_data(self) -> dict[str, dict]:
@@ -1034,8 +1053,8 @@ class HazardProfileBuilder:
 
             # USFS wildfire override: replace NRI WFIR when USFS data exists
             # and Tribe is fire-prone (NRI WFIR score > 0)
-            if usfs_match and nri_profile.get("all_hazards", {}).get("WFIR"):
-                wfir_entry = nri_profile["all_hazards"]["WFIR"]
+            wfir_entry = nri_profile.get("all_hazards", {}).get("WFIR")
+            if usfs_match and wfir_entry and wfir_entry.get("risk_score", 0.0) > 0:
                 nri_wfir_original = wfir_entry.get("risk_score", 0.0)
 
                 # Override with USFS conditional risk to structures
@@ -1049,9 +1068,13 @@ class HazardProfileBuilder:
                     usfs_profile["nri_wfir_original"] = round(nri_wfir_original, 2)
                     usfs_overrides += 1
 
-                    # Re-extract top 5 after USFS override (WFIR score changed)
+                    # Re-extract top 5 after USFS override (non-zero only)
+                    nonzero = [
+                        (code, data) for code, data in nri_profile["all_hazards"].items()
+                        if data["risk_score"] > 0
+                    ]
                     sorted_hazards = sorted(
-                        nri_profile["all_hazards"].items(),
+                        nonzero,
                         key=lambda x: x[1]["risk_score"],
                         reverse=True,
                     )

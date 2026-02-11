@@ -268,7 +268,10 @@ class TestUSFSOverrideIntegration:
 
         nri = gamma["sources"]["fema_nri"]
         assert nri["counties_analyzed"] == 0
-        assert nri["all_hazards"] == {}
+        # All 18 hazard types present with zero values for schema consistency
+        assert len(nri["all_hazards"]) == 18
+        for code, data in nri["all_hazards"].items():
+            assert data["risk_score"] == 0.0, f"{code} should have zero risk_score"
 
     def test_top_hazards_resorted_after_override(self, integration_fixture):
         """After USFS override boosts WFIR, top_hazards should reflect new ranking."""
