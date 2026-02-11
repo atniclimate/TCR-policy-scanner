@@ -118,12 +118,12 @@ Plans:
   4. Each Tribe with county data has its top 5 hazards extracted, ranked, and stored in the hazard profile
   5. 300+ Tribes in fire-prone regions have USFS wildfire risk data populated
   6. 550+ of 592 hazard profile JSON files contain real scored data (not placeholders)
-**Plans**: 3 plans
+**Plans**: 3 plans (3 sequential waves: 13-01 then 13-02 then 13-03)
 
 Plans:
-- [ ] 13-01-PLAN.md -- FEMA NRI download + Tribe-to-county geographic crosswalk [Wave 3]
-- [ ] 13-02-PLAN.md -- NRI score aggregation + top-5 hazard extraction per Tribe [Wave 3]
-- [ ] 13-03-PLAN.md -- USFS wildfire data + hazard cache population for 592 Tribes [Wave 3]
+- [ ] 13-01-PLAN.md -- NRI county CSV + shapefile download scripts, geopandas area-weighted crosswalk builder, paths.py constant [Plan Wave 1]
+- [ ] 13-02-PLAN.md -- Refactor hazards.py: MAX -> area-weighted aggregation, score_to_rating(), top-5 hazards, non-zero filtering + unit tests [Plan Wave 2]
+- [ ] 13-03-PLAN.md -- USFS wildfire download, USFS WFIR override, populate_hazards.py CLI, coverage report (JSON+MD) [Plan Wave 3]
 
 ---
 
