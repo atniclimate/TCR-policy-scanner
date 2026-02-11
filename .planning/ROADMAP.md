@@ -82,8 +82,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 11-01-PLAN.md -- Circuit breaker implementation + configurable retry/backoff [Wave 2]
-- [ ] 11-02-PLAN.md -- Graceful degradation (cache fallback) + health check command [Wave 2]
+- [ ] 11-01-PLAN.md -- CircuitBreaker state machine (CLOSED/OPEN/HALF_OPEN) + configurable retry/backoff in scanner_config.json + BaseScraper integration [Wave 1]
+- [ ] 11-02-PLAN.md -- Per-source cache fallback on circuit-open/failure + HealthChecker with --health-check CLI command [Wave 2]
 
 ---
 
