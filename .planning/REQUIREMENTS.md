@@ -40,12 +40,12 @@
 
 ### Integration & Validation
 
-- [ ] **INTG-01**: Economic impact section auto-computes using real award + hazard data
-- [ ] **INTG-02**: End-to-end packet generation produces complete packets for 400+ Tribes
-- [ ] **INTG-03**: Data validation script reports coverage across all data caches
-- [ ] **INTG-04**: VERIFICATION.md documents v1.2 testing methodology
-- [ ] **INTG-05**: GitHub Pages deployment config finalized
-- [ ] **INTG-06**: SquareSpace placeholder URL replaced with production URL
+- [x] **INTG-01**: Economic impact section auto-computes using real award + hazard data
+- [x] **INTG-02**: End-to-end packet generation produces complete packets for 400+ Tribes
+- [x] **INTG-03**: Data validation script reports coverage across all data caches
+- [x] **INTG-04**: VERIFICATION.md documents v1.2 testing methodology
+- [x] **INTG-05**: GitHub Pages deployment config finalized
+- [x] **INTG-06**: SquareSpace placeholder URL replaced with production URL
 
 ## Already Completed (Fire Keeper, 2026-02-11)
 
@@ -106,12 +106,12 @@ These tech debt items were resolved during the research phase:
 | HZRD-04 | Phase 13 | Complete |
 | HZRD-05 | Phase 13 | Complete |
 | HZRD-06 | Phase 13 | Complete |
-| INTG-01 | Phase 14 | Pending |
-| INTG-02 | Phase 14 | Pending |
-| INTG-03 | Phase 14 | Pending |
-| INTG-04 | Phase 14 | Pending |
-| INTG-05 | Phase 14 | Pending |
-| INTG-06 | Phase 14 | Pending |
+| INTG-01 | Phase 14 | Complete |
+| INTG-02 | Phase 14 | Complete |
+| INTG-03 | Phase 14 | Complete |
+| INTG-04 | Phase 14 | Complete |
+| INTG-05 | Phase 14 | Complete |
+| INTG-06 | Phase 14 | Complete |
 
 **Coverage:**
 - v1.2 requirements: 24 total (+ 4 already completed by Fire Keeper)
@@ -120,4 +120,4 @@ These tech debt items were resolved during the research phase:
 
 ---
 *Requirements defined: 2026-02-11*
-*Last updated: 2026-02-11 after roadmap creation*
+*Last updated: 2026-02-11 after v1.2 milestone completion (24/24 requirements Complete)*

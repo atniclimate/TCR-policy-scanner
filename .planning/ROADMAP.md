@@ -165,7 +165,7 @@ Plans:
 | 12 - Award Population | 4 | 4 | Complete | 2026-02-11 |
 | 13 - Hazard Population | 3 | 3 | Complete | 2026-02-11 |
 | 14 - Integration & Validation | 7 | 7 | Complete | 2026-02-11 |
-| **Total** | **20** | **17** | -- | -- |
+| **Total** | **20** | **20** | -- | -- |
 
 ## Dependency & Wave Summary
 
