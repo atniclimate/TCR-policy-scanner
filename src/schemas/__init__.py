@@ -15,11 +15,13 @@ and examples. Schema violations are bugs, not warnings.
 
 from src.schemas.models import (
     AwardCacheFile,
+    CFDASummaryEntry,
     CommitteeAssignment,
     CongressionalDelegate,
     CongressionalDelegation,
     DistrictMapping,
     ExtensibleFields,
+    FiscalYearRange,
     FundingRecord,
     HazardDetail,
     HazardProfile,
@@ -33,11 +35,13 @@ from src.schemas.models import (
 
 __all__ = [
     "AwardCacheFile",
+    "CFDASummaryEntry",
     "CommitteeAssignment",
     "CongressionalDelegate",
     "CongressionalDelegation",
     "DistrictMapping",
     "ExtensibleFields",
+    "FiscalYearRange",
     "FundingRecord",
     "HazardDetail",
     "HazardProfile",

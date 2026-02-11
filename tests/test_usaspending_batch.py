@@ -75,7 +75,7 @@ class TestFetchByYear:
     """Tests for fetch_tribal_awards_by_year()."""
 
     def test_builds_correct_payload(self):
-        """Verify time_period, award_type_codes, and recipient filter in payload."""
+        """Verify time_period, award_type_codes (per group), and recipient filter in payload."""
         scraper = _make_scraper()
         mock_session = MagicMock()
 
@@ -94,25 +94,29 @@ class TestFetchByYear:
 
         results = asyncio.run(run())
 
-        assert len(captured_payloads) == 1
-        payload = captured_payloads[0]
-        filters = payload["filters"]
+        # 2 payloads: one per award type group (grants, direct payments)
+        assert len(captured_payloads) == 2
 
-        # Fiscal year 2024: Oct 1, 2023 through Sep 30, 2024
-        assert filters["time_period"] == [
+        # First payload: grants group
+        filters_1 = captured_payloads[0]["filters"]
+        assert filters_1["time_period"] == [
             {"start_date": "2023-10-01", "end_date": "2024-09-30"}
         ]
-        assert filters["award_type_codes"] == [
-            "02", "03", "04", "05", "06", "10"
-        ]
-        assert filters["program_numbers"] == ["15.156"]
-        assert filters["recipient_type_names"] == [
+        assert filters_1["award_type_codes"] == ["02", "03", "04", "05"]
+        assert filters_1["program_numbers"] == ["15.156"]
+        assert filters_1["recipient_type_names"] == [
             "indian_native_american_tribal_government"
         ]
+
+        # Second payload: direct payments group
+        filters_2 = captured_payloads[1]["filters"]
+        assert filters_2["award_type_codes"] == ["06", "10"]
+        assert filters_2["program_numbers"] == ["15.156"]
+
         assert results == []
 
     def test_paginates_across_pages(self):
-        """Verify pagination collects results from multiple pages."""
+        """Verify pagination collects results from multiple pages within a type group."""
         scraper = _make_scraper()
         mock_session = MagicMock()
 
@@ -129,15 +133,22 @@ class TestFetchByYear:
         async def mock_request(_session, _method, _url, **kwargs):
             nonlocal call_count
             call_count += 1
-            if call_count == 1:
+            payload = kwargs.get("json", {})
+            type_codes = payload.get("filters", {}).get("award_type_codes", [])
+
+            # Only return paginated results for the grants group
+            if type_codes == ["02", "03", "04", "05"]:
+                if payload.get("page") == 1:
+                    return {
+                        "results": page_1_results,
+                        "page_metadata": {"hasNext": True},
+                    }
                 return {
-                    "results": page_1_results,
-                    "page_metadata": {"hasNext": True},
+                    "results": page_2_results,
+                    "page_metadata": {"hasNext": False},
                 }
-            return {
-                "results": page_2_results,
-                "page_metadata": {"hasNext": False},
-            }
+            # Direct payments group returns empty
+            return {"results": [], "page_metadata": {"hasNext": False}}
 
         scraper._request_with_retry = mock_request
 
@@ -148,8 +159,9 @@ class TestFetchByYear:
 
         results = asyncio.run(run())
 
-        assert len(results) == 3
-        assert call_count == 2
+        assert len(results) == 3  # 2 from page 1 + 1 from page 2 of grants group
+        # 3 calls: 2 for grants group (paginated) + 1 for direct payments group
+        assert call_count == 3
 
         # Verify _fiscal_year injected into every result
         for r in results:
@@ -161,10 +173,15 @@ class TestFetchByYear:
         mock_session = MagicMock()
 
         async def mock_request(_session, _method, _url, **kwargs):
-            return {
-                "results": [{"Award ID": "X001"}],
-                "page_metadata": {"hasNext": False},
-            }
+            payload = kwargs.get("json", {})
+            type_codes = payload.get("filters", {}).get("award_type_codes", [])
+            # Only grants group returns data
+            if type_codes == ["02", "03", "04", "05"]:
+                return {
+                    "results": [{"Award ID": "X001"}],
+                    "page_metadata": {"hasNext": False},
+                }
+            return {"results": [], "page_metadata": {"hasNext": False}}
 
         scraper._request_with_retry = mock_request
 
@@ -179,7 +196,7 @@ class TestFetchByYear:
         assert results[0]["_fiscal_year"] == 2023
 
     def test_truncation_warning_at_page_100(self, caplog):
-        """Verify method stops at page 100 and logs a warning about truncation."""
+        """Verify method stops at page 100 per group and logs truncation warnings."""
         scraper = _make_scraper()
         mock_session = MagicMock()
 
@@ -203,16 +220,17 @@ class TestFetchByYear:
         with caplog.at_level(logging.WARNING):
             results = asyncio.run(run())
 
-        # Should stop at page 100 (100 calls), not loop forever
-        assert call_count == 100
-        assert len(results) == 100
+        # 100 calls per group x 2 groups = 200 total calls
+        assert call_count == 200
+        # 100 results per group x 2 groups = 200 total results
+        assert len(results) == 200
 
-        # Check truncation warning was logged
+        # Check truncation warnings were logged (one per group)
         truncation_warnings = [
             r for r in caplog.records
             if "truncated" in r.message.lower() or "page 100" in r.message
         ]
-        assert len(truncation_warnings) >= 1
+        assert len(truncation_warnings) >= 2
 
     def test_handles_request_failure_gracefully(self):
         """Verify method returns partial results on mid-pagination failure."""

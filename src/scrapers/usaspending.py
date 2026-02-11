@@ -41,10 +41,18 @@ CFDA_TO_PROGRAM = {
     "66.038": "epa_tribal_air",
 }
 
-# Award type codes for Tribal award queries.
-# 02-05 = grants/cooperative agreements, 06 = direct payments (unrestricted),
-# 10 = direct payments (specified use). Excludes loans (07/08), insurance (09),
-# and other (11).
+# Award type code GROUPS for Tribal award queries.
+# USASpending API requires award_type_codes from a single group per request.
+# Group 1 (grants): 02-05 = grants/cooperative agreements
+# Group 2 (other_financial_assistance): 06 = direct payments (unrestricted),
+#   10 = direct payments (specified use)
+# Excludes loans (07/08), insurance (09), and other (11).
+TRIBAL_AWARD_TYPE_CODE_GROUPS = [
+    ["02", "03", "04", "05"],       # grants
+    ["06", "10"],                    # other_financial_assistance (direct payments)
+]
+
+# Flat list for backward compatibility and external reference
 TRIBAL_AWARD_TYPE_CODES = ["02", "03", "04", "05", "06", "10"]
 
 
@@ -110,9 +118,9 @@ class USASpendingScraper(BaseScraper):
         """Fetch ALL Tribal government awards for a given CFDA with full pagination.
 
         Queries USASpending spending_by_award endpoint filtered to
-        indian_native_american_tribal_government recipients. Returns raw
-        award dicts (not normalized through _normalize) so the awards
-        module can process fields directly.
+        indian_native_american_tribal_government recipients. Issues separate
+        queries per award type group (grants vs. direct payments) since the
+        API requires award_type_codes from a single group per request.
 
         Args:
             session: Active aiohttp session.
@@ -123,61 +131,64 @@ class USASpendingScraper(BaseScraper):
         """
         url = f"{self.base_url}/search/spending_by_award/"
         all_results: list[dict] = []
-        page = 1
 
-        while True:
-            payload = {
-                "filters": {
-                    "award_type_codes": TRIBAL_AWARD_TYPE_CODES,
-                    "program_numbers": [cfda],
-                    "recipient_type_names": [
-                        "indian_native_american_tribal_government"
+        for type_group in TRIBAL_AWARD_TYPE_CODE_GROUPS:
+            page = 1
+            while True:
+                payload = {
+                    "filters": {
+                        "award_type_codes": type_group,
+                        "program_numbers": [cfda],
+                        "recipient_type_names": [
+                            "indian_native_american_tribal_government"
+                        ],
+                    },
+                    "fields": [
+                        "Award ID",
+                        "Recipient Name",
+                        "Award Amount",
+                        "Total Obligation",
+                        "Start Date",
+                        "End Date",
+                        "Description",
+                        "CFDA Number",
+                        "Awarding Agency",
+                        "recipient_id",
                     ],
-                },
-                "fields": [
-                    "Award ID",
-                    "Recipient Name",
-                    "Award Amount",
-                    "Total Obligation",
-                    "Start Date",
-                    "End Date",
-                    "Description",
-                    "CFDA Number",
-                    "Awarding Agency",
-                    "recipient_id",
-                ],
-                "subawards": False,
-                "page": page,
-                "limit": 100,
-                "sort": "Award Amount",
-                "order": "desc",
-            }
+                    "subawards": False,
+                    "page": page,
+                    "limit": 100,
+                    "sort": "Award Amount",
+                    "order": "desc",
+                }
 
-            try:
-                data = await self._request_with_retry(session, "POST", url, json=payload)
-            except Exception:
-                logger.warning(
-                    "USASpending: failed fetching Tribal awards for CFDA %s page %d",
-                    cfda, page,
-                )
-                break
+                try:
+                    data = await self._request_with_retry(
+                        session, "POST", url, json=payload,
+                    )
+                except Exception:
+                    logger.warning(
+                        "USASpending: failed fetching Tribal awards for CFDA %s "
+                        "page %d (types %s)",
+                        cfda, page, type_group,
+                    )
+                    break
 
-            results = data.get("results", [])
-            if not results:
-                break
+                results = data.get("results", [])
+                if not results:
+                    break
 
-            all_results.extend(results)
+                all_results.extend(results)
 
-            # Check pagination: hasNext in page_metadata
-            page_meta = data.get("page_metadata", {})
-            if not page_meta.get("hasNext", False):
-                break
+                page_meta = data.get("page_metadata", {})
+                if not page_meta.get("hasNext", False):
+                    break
 
-            page += 1
+                page += 1
 
         logger.info(
-            "USASpending: fetched %d Tribal awards for CFDA %s (%d pages)",
-            len(all_results), cfda, page,
+            "USASpending: fetched %d Tribal awards for CFDA %s",
+            len(all_results), cfda,
         )
         return all_results
 
@@ -221,9 +232,9 @@ class USASpendingScraper(BaseScraper):
         """Fetch Tribal government awards for a single CFDA in a single fiscal year.
 
         Queries the USASpending spending_by_award endpoint filtered to
-        indian_native_american_tribal_government recipients with expanded
-        award type codes (grants + direct payments) and per-fiscal-year
-        time boundaries.
+        indian_native_american_tribal_government recipients. Issues separate
+        queries per award type group (grants vs. direct payments) since the
+        API requires award_type_codes from a single group per request.
 
         Federal fiscal year N runs from October 1 of year N-1 through
         September 30 of year N.
@@ -240,80 +251,80 @@ class USASpendingScraper(BaseScraper):
         start_date = f"{fy - 1}-10-01"
         end_date = f"{fy}-09-30"
         all_results: list[dict] = []
-        page = 1
 
-        while True:
-            payload = {
-                "filters": {
-                    "award_type_codes": TRIBAL_AWARD_TYPE_CODES,
-                    "program_numbers": [cfda],
-                    "recipient_type_names": [
-                        "indian_native_american_tribal_government"
+        for type_group in TRIBAL_AWARD_TYPE_CODE_GROUPS:
+            page = 1
+            while True:
+                payload = {
+                    "filters": {
+                        "award_type_codes": type_group,
+                        "program_numbers": [cfda],
+                        "recipient_type_names": [
+                            "indian_native_american_tribal_government"
+                        ],
+                        "time_period": [
+                            {"start_date": start_date, "end_date": end_date}
+                        ],
+                    },
+                    "fields": [
+                        "Award ID",
+                        "Recipient Name",
+                        "Award Amount",
+                        "Total Obligation",
+                        "Start Date",
+                        "End Date",
+                        "Description",
+                        "CFDA Number",
+                        "Awarding Agency",
+                        "recipient_id",
                     ],
-                    "time_period": [
-                        {"start_date": start_date, "end_date": end_date}
-                    ],
-                },
-                "fields": [
-                    "Award ID",
-                    "Recipient Name",
-                    "Award Amount",
-                    "Total Obligation",
-                    "Start Date",
-                    "End Date",
-                    "Description",
-                    "CFDA Number",
-                    "Awarding Agency",
-                    "recipient_id",
-                ],
-                "subawards": False,
-                "page": page,
-                "limit": 100,
-                "sort": "Award Amount",
-                "order": "desc",
-            }
+                    "subawards": False,
+                    "page": page,
+                    "limit": 100,
+                    "sort": "Award Amount",
+                    "order": "desc",
+                }
 
-            try:
-                data = await self._request_with_retry(
-                    session, "POST", url, json=payload,
-                )
-            except Exception:
-                logger.warning(
-                    "USASpending: failed fetching Tribal awards for CFDA %s "
-                    "FY%d page %d",
-                    cfda, fy, page,
-                )
-                break
+                try:
+                    data = await self._request_with_retry(
+                        session, "POST", url, json=payload,
+                    )
+                except Exception:
+                    logger.warning(
+                        "USASpending: failed fetching Tribal awards for CFDA %s "
+                        "FY%d page %d (types %s)",
+                        cfda, fy, page, type_group,
+                    )
+                    break
 
-            results = data.get("results", [])
-            if not results:
-                break
+                results = data.get("results", [])
+                if not results:
+                    break
 
-            all_results.extend(results)
+                all_results.extend(results)
 
-            page_meta = data.get("page_metadata", {})
-            if not page_meta.get("hasNext", False):
-                break
+                page_meta = data.get("page_metadata", {})
+                if not page_meta.get("hasNext", False):
+                    break
 
-            page += 1
+                page += 1
 
-            # Safety: 100 pages * 100 results = 10K records. If we hit this
-            # limit, the data may be silently truncated.
-            if page > 100:
-                logger.warning(
-                    "USASpending: CFDA %s FY%d reached page 100 (10K records). "
-                    "Results may be truncated. Consider narrowing the query.",
-                    cfda, fy,
-                )
-                break
+                # Safety: 100 pages * 100 results = 10K records per group
+                if page > 100:
+                    logger.warning(
+                        "USASpending: CFDA %s FY%d reached page 100 (10K records) "
+                        "for types %s. Results may be truncated.",
+                        cfda, fy, type_group,
+                    )
+                    break
 
         # Inject fiscal year into each result for downstream processing
         for result in all_results:
             result["_fiscal_year"] = fy
 
         logger.info(
-            "USASpending: fetched %d Tribal awards for CFDA %s FY%d (%d pages)",
-            len(all_results), cfda, fy, page,
+            "USASpending: fetched %d Tribal awards for CFDA %s FY%d",
+            len(all_results), cfda, fy,
         )
         return all_results
 

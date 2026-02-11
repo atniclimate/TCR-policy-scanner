@@ -757,9 +757,10 @@ class TestSchemaEdgeCases:
     def test_funding_record_defaults(self):
         """FundingRecord should accept minimal data with defaults."""
         fr = FundingRecord()
-        assert fr.amount == 0.0
+        assert fr.obligation == 0.0
         assert fr.award_id is None
-        assert fr.fiscal_year is None
+        assert fr.cfda is None
+        assert fr.recipient_name_raw is None
 
     def test_hot_sheets_status_invalid_status(self):
         """HotSheetsStatus must reject invalid status values."""
