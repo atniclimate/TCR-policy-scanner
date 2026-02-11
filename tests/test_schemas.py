@@ -20,6 +20,16 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
+from src.paths import (
+    AWARD_CACHE_DIR,
+    CONGRESSIONAL_CACHE_PATH,
+    DATA_DIR,
+    HAZARD_PROFILES_DIR,
+    POLICY_TRACKING_PATH,
+    PROGRAM_INVENTORY_PATH,
+    PROJECT_ROOT,
+    TRIBAL_REGISTRY_PATH,
+)
 from src.schemas.models import (
     AwardCacheFile,
     CommitteeAssignment,
@@ -46,51 +56,45 @@ from src.schemas.models import (
 
 # ── Fixtures ──
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-
 
 @pytest.fixture
 def program_inventory():
     """Load program_inventory.json."""
-    path = PROJECT_ROOT / "data" / "program_inventory.json"
-    with open(path, "r", encoding="utf-8") as f:
+    with open(PROGRAM_INVENTORY_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 @pytest.fixture
 def policy_tracking():
     """Load policy_tracking.json."""
-    path = PROJECT_ROOT / "data" / "policy_tracking.json"
-    with open(path, "r", encoding="utf-8") as f:
+    with open(POLICY_TRACKING_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 @pytest.fixture
 def tribal_registry():
     """Load tribal_registry.json."""
-    path = PROJECT_ROOT / "data" / "tribal_registry.json"
-    with open(path, "r", encoding="utf-8") as f:
+    with open(TRIBAL_REGISTRY_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 @pytest.fixture
 def congressional_cache():
     """Load congressional_cache.json."""
-    path = PROJECT_ROOT / "data" / "congressional_cache.json"
-    with open(path, "r", encoding="utf-8") as f:
+    with open(CONGRESSIONAL_CACHE_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def load_award_cache(tribe_id: str) -> dict:
     """Load a specific award_cache file."""
-    path = PROJECT_ROOT / "data" / "award_cache" / f"{tribe_id}.json"
+    path = AWARD_CACHE_DIR / f"{tribe_id}.json"
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def load_hazard_profile(tribe_id: str) -> dict:
     """Load a specific hazard_profiles file."""
-    path = PROJECT_ROOT / "data" / "hazard_profiles" / f"{tribe_id}.json"
+    path = HAZARD_PROFILES_DIR / f"{tribe_id}.json"
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -301,13 +305,13 @@ class TestAwardCacheSchema:
 
     def test_all_592_award_files_exist(self):
         """There must be exactly 592 award_cache files."""
-        award_dir = PROJECT_ROOT / "data" / "award_cache"
+        award_dir = AWARD_CACHE_DIR
         files = list(award_dir.glob("epa_*.json"))
         assert len(files) == 592, f"Expected 592 award cache files, got {len(files)}"
 
     def test_award_count_matches_awards_length(self):
         """award_count must equal len(awards) in every file."""
-        award_dir = PROJECT_ROOT / "data" / "award_cache"
+        award_dir = AWARD_CACHE_DIR
         errors = []
         for f in sorted(award_dir.glob("epa_*.json"))[:50]:
             with open(f, "r", encoding="utf-8") as fp:
@@ -362,7 +366,7 @@ class TestHazardProfileSchema:
 
     def test_all_592_hazard_files_exist(self):
         """There must be exactly 592 hazard_profile files."""
-        hazard_dir = PROJECT_ROOT / "data" / "hazard_profiles"
+        hazard_dir = HAZARD_PROFILES_DIR
         files = list(hazard_dir.glob("epa_*.json"))
         assert len(files) == 592, f"Expected 592 hazard profile files, got {len(files)}"
 

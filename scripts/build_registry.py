@@ -18,7 +18,15 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Ensure project root is on sys.path for src.paths imports
+_SCRIPT_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
 import aiohttp
+
+from src.paths import TRIBAL_REGISTRY_PATH
 
 logger = logging.getLogger("tcr_scanner.build_registry")
 
@@ -343,8 +351,8 @@ async def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("data/tribal_registry.json"),
-        help="Output file path (default: data/tribal_registry.json)",
+        default=TRIBAL_REGISTRY_PATH,
+        help=f"Output file path (default: {TRIBAL_REGISTRY_PATH})",
     )
     parser.add_argument(
         "--verbose", "-v",

@@ -677,6 +677,7 @@ class TestRegression:
 
     def test_existing_tests_unaffected(self):
         """All existing test modules pass without regression."""
+        from src.paths import PROJECT_ROOT
         result = subprocess.run(
             [
                 sys.executable, "-m", "pytest",
@@ -688,7 +689,7 @@ class TestRegression:
             ],
             capture_output=True,
             text=True,
-            cwd=str(Path(__file__).parent.parent),
+            cwd=str(PROJECT_ROOT),
             timeout=120,
         )
 

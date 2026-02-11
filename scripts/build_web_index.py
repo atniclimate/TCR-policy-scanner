@@ -14,14 +14,23 @@ import argparse
 import json
 import logging
 import os
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Ensure project root is on sys.path for src.paths imports
+_SCRIPT_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
+from src.paths import PACKETS_OUTPUT_DIR, TRIBAL_REGISTRY_PATH, TRIBES_INDEX_PATH
+
 logger = logging.getLogger(__name__)
 
-DEFAULT_REGISTRY = Path("data/tribal_registry.json")
-DEFAULT_PACKETS = Path("outputs/packets")
-DEFAULT_OUTPUT = Path("docs/web/data/tribes.json")
+DEFAULT_REGISTRY = TRIBAL_REGISTRY_PATH
+DEFAULT_PACKETS = PACKETS_OUTPUT_DIR
+DEFAULT_OUTPUT = TRIBES_INDEX_PATH
 
 MAX_REGISTRY_SIZE = 10 * 1024 * 1024  # 10 MB
 

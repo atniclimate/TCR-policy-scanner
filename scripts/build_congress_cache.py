@@ -25,8 +25,21 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Ensure project root is on sys.path for src.paths imports
+_SCRIPT_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
 import aiohttp
 import yaml
+
+from src.paths import (
+    AIANNH_CROSSWALK_PATH,
+    CENSUS_DATA_PATH,
+    CONGRESSIONAL_CACHE_PATH,
+    TRIBAL_REGISTRY_PATH,
+)
 
 logger = logging.getLogger("tcr_scanner.build_congress_cache")
 
@@ -38,7 +51,7 @@ CENSUS_URL = (
     "https://www2.census.gov/geo/docs/maps-data/data/rel2020/"
     "cd-sld/tab20_cd11920_aiannh20_natl.txt"
 )
-CENSUS_LOCAL_PATH = Path("data/census/tab20_cd11920_aiannh20_natl.txt")
+CENSUS_LOCAL_PATH = CENSUS_DATA_PATH
 
 COMMITTEE_MEMBERSHIP_URL = (
     "https://raw.githubusercontent.com/unitedstates/"
@@ -1049,20 +1062,20 @@ async def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("data/congressional_cache.json"),
-        help="Output cache file path (default: data/congressional_cache.json)",
+        default=CONGRESSIONAL_CACHE_PATH,
+        help=f"Output cache file path (default: {CONGRESSIONAL_CACHE_PATH})",
     )
     parser.add_argument(
         "--crosswalk-output",
         type=Path,
-        default=Path("data/aiannh_tribe_crosswalk.json"),
-        help="Output crosswalk file path",
+        default=AIANNH_CROSSWALK_PATH,
+        help=f"Output crosswalk file path (default: {AIANNH_CROSSWALK_PATH})",
     )
     parser.add_argument(
         "--registry-path",
         type=Path,
-        default=Path("data/tribal_registry.json"),
-        help="Path to tribal_registry.json for crosswalk matching",
+        default=TRIBAL_REGISTRY_PATH,
+        help=f"Path to tribal_registry.json for crosswalk matching (default: {TRIBAL_REGISTRY_PATH})",
     )
     parser.add_argument(
         "--verbose", "-v",

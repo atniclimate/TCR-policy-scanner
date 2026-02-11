@@ -11,11 +11,20 @@ Usage:
 
 import json
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-REGISTRY_PATH = Path("data/tribal_registry.json")
-OUTPUT_PATH = Path("data/tribal_aliases.json")
+# Ensure project root is on sys.path for src.paths imports
+_SCRIPT_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
+from src.paths import TRIBAL_ALIASES_PATH, TRIBAL_REGISTRY_PATH
+
+REGISTRY_PATH = TRIBAL_REGISTRY_PATH
+OUTPUT_PATH = TRIBAL_ALIASES_PATH
 
 # US state names for suffix stripping
 _US_STATES = {

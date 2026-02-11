@@ -603,7 +603,8 @@ class TestConfigDocx:
 
     def test_config_json_has_docx(self):
         """scanner_config.json has packets.docx section."""
-        config_path = Path("config/scanner_config.json")
+        from src.paths import SCANNER_CONFIG_PATH
+        config_path = SCANNER_CONFIG_PATH
         if not config_path.exists():
             pytest.skip("scanner_config.json not found")
 
@@ -699,11 +700,12 @@ class TestFullSuiteNoRegression:
 
     def test_minimum_test_count(self):
         """Verify we have >= 193 tests across all test files via collection."""
+        from src.paths import PROJECT_ROOT
         result = subprocess.run(
             [sys.executable, "-m", "pytest", "tests/", "--collect-only", "-q"],
             capture_output=True,
             text=True,
-            cwd=str(Path(__file__).parent.parent),
+            cwd=str(PROJECT_ROOT),
             timeout=60,
         )
 
