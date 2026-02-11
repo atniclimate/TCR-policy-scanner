@@ -233,7 +233,7 @@ class TestUSFSOverrideIntegration:
         content = md_path.read_text(encoding="utf-8")
         assert "Hazard Coverage Report" in content
         assert "Per-State Breakdown" in content
-        assert "Unmatched Tribes" in content
+        assert "Tribes Not Covered by Federal Hazard Data" in content
 
     def test_per_state_breakdown(self, integration_fixture):
         fix = integration_fixture

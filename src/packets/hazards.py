@@ -17,9 +17,13 @@ Usage:
     print(f"Built {count} hazard profiles")
 """
 
+import contextlib
 import csv
 import json
 import logging
+import math
+import os
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -86,12 +90,18 @@ def _safe_float(value, default: float = 0.0) -> float:
     if value is None:
         return default
     if isinstance(value, (int, float)):
-        return float(value)
+        result = float(value)
+        if math.isnan(result) or math.isinf(result):
+            return default
+        return result
     s = str(value).strip()
     if not s:
         return default
     try:
-        return float(s)
+        result = float(s)
+        if math.isnan(result) or math.isinf(result):
+            return default
+        return result
     except (ValueError, TypeError):
         return default
 
@@ -338,11 +348,12 @@ class HazardProfileBuilder:
         # e.g. .../nri/v120/NRI_Table_Counties.zip -> version "NRI_v1.20"
         self._nri_version = self._detect_nri_version(csv_path)
 
-        with open(csv_path, encoding="utf-8") as f:
+        with open(csv_path, encoding="utf-8-sig") as f:
             reader = csv.DictReader(f)
             row_count = 0
             for row in reader:
                 fips = row.get("STCOFIPS", "").strip()
+                fips = fips.zfill(5) if fips else fips
                 if not fips:
                     continue
 
@@ -427,7 +438,7 @@ class HazardProfileBuilder:
         logger.info("Loading NRI tribal relational data from %s", csv_path)
         tribal_counties: dict[str, list[str]] = {}
 
-        with open(csv_path, encoding="utf-8") as f:
+        with open(csv_path, encoding="utf-8-sig") as f:
             reader = csv.DictReader(f)
             headers = reader.fieldnames or []
             logger.info("Tribal relational CSV headers: %s", headers)
@@ -531,7 +542,7 @@ class HazardProfileBuilder:
         Aggregation strategy (area-weighted):
           - Percentile scores (risk_score, eal_score, sovi_score, resl_score):
             weighted AVERAGE proportional to geographic overlap area
-          - Dollar amounts (eal_total): weighted SUM proportional to overlap area
+          - Dollar amounts (eal_total): weighted average (proportional attribution)
           - Rating strings: re-derived from weighted scores via score_to_rating()
           - Non-zero hazards only: zero-score hazard types are omitted
           - Top 5 hazards: ranked by risk_score descending
@@ -626,7 +637,7 @@ class HazardProfileBuilder:
             "resl_score": round(
                 sum(c["resl_score"] * norm_weights[c["fips"]] for c in matched_counties), 2
             ),
-            # Dollar amounts: weighted SUM (proportional to overlap area)
+            # Dollar amounts: weighted average (proportional attribution)
             "eal_total": round(
                 sum(c["eal_total"] * norm_weights[c["fips"]] for c in matched_counties), 2
             ),
@@ -974,7 +985,10 @@ class HazardProfileBuilder:
         state_stats: dict[str, dict] = {}  # state -> {total, nri_matched, usfs_matched, unmatched, tribe_names}
 
         for tribe in all_tribes:
-            tribe_id = tribe["tribe_id"]
+            tribe_id = Path(tribe["tribe_id"]).name
+            if tribe_id != tribe["tribe_id"] or ".." in tribe_id:
+                logger.warning("Skipping suspicious tribe_id: %r", tribe["tribe_id"])
+                continue
             tribe_states = tribe.get("states", [])
 
             # Initialize per-state tracking
@@ -1074,10 +1088,19 @@ class HazardProfileBuilder:
                 "generated_at": datetime.now(timezone.utc).isoformat(),
             }
 
-            # Write cache file
+            # Write cache file (atomic: tmp + os.replace)
             cache_file = self.cache_dir / f"{tribe_id}.json"
-            with open(cache_file, "w", encoding="utf-8") as f:
-                json.dump(profile, f, indent=2, ensure_ascii=False)
+            tmp_fd, tmp_path = tempfile.mkstemp(
+                dir=self.cache_dir, suffix=".tmp", prefix=f"{tribe_id}_"
+            )
+            try:
+                with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
+                    json.dump(profile, f, indent=2, ensure_ascii=False)
+                os.replace(tmp_path, cache_file)
+            except Exception:
+                with contextlib.suppress(OSError):
+                    os.unlink(tmp_path)
+                raise
             files_written += 1
 
         # Log summary
@@ -1095,8 +1118,8 @@ class HazardProfileBuilder:
         if unmatched_tribes:
             names = [t["name"] for t in unmatched_tribes]
             logger.warning(
-                "%d Tribes have no hazard data (no crosswalk entry, "
-                "no state match, no USFS match): %s%s",
+                "%d Tribes not covered by federal hazard datasets "
+                "(federal data gap — no NRI county crosswalk or USFS match): %s%s",
                 len(names),
                 ", ".join(names[:10]),
                 f"... and {len(names) - 10} more"
@@ -1171,8 +1194,17 @@ class HazardProfileBuilder:
         }
 
         json_path = OUTPUTS_DIR / "hazard_coverage_report.json"
-        with open(json_path, "w", encoding="utf-8") as f:
-            json.dump(report_json, f, indent=2, ensure_ascii=False)
+        tmp_fd, tmp_path = tempfile.mkstemp(
+            dir=OUTPUTS_DIR, suffix=".tmp", prefix="hazard_cov_"
+        )
+        try:
+            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
+                json.dump(report_json, f, indent=2, ensure_ascii=False)
+            os.replace(tmp_path, json_path)
+        except Exception:
+            with contextlib.suppress(OSError):
+                os.unlink(tmp_path)
+            raise
         logger.info("Coverage report (JSON) written to %s", json_path)
 
         # Build Markdown report
@@ -1207,7 +1239,7 @@ class HazardProfileBuilder:
 
         md_lines.extend([
             "",
-            "## Unmatched Tribes",
+            "## Tribes Not Covered by Federal Hazard Data",
             "",
         ])
 
@@ -1221,5 +1253,15 @@ class HazardProfileBuilder:
         md_lines.append("")  # trailing newline
 
         md_path = OUTPUTS_DIR / "hazard_coverage_report.md"
-        md_path.write_text("\n".join(md_lines), encoding="utf-8")
+        tmp_fd, tmp_path = tempfile.mkstemp(
+            dir=OUTPUTS_DIR, suffix=".tmp", prefix="hazard_cov_md_"
+        )
+        try:
+            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
+                f.write("\n".join(md_lines))
+            os.replace(tmp_path, md_path)
+        except Exception:
+            with contextlib.suppress(OSError):
+                os.unlink(tmp_path)
+            raise
         logger.info("Coverage report (Markdown) written to %s", md_path)

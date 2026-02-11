@@ -146,10 +146,17 @@ def _download_with_retry(url: str, dest: Path) -> None:
 
 
 def _extract_zip(zip_path: Path, extract_dir: Path) -> None:
-    """Extract a ZIP archive to *extract_dir*."""
+    """Extract a ZIP archive to *extract_dir* with path traversal protection."""
     extract_dir.mkdir(parents=True, exist_ok=True)
     logger.info("Extracting %s to %s ...", zip_path.name, extract_dir)
+    resolved_dir = extract_dir.resolve()
     with zipfile.ZipFile(zip_path, "r") as zf:
+        for member in zf.namelist():
+            member_path = (resolved_dir / member).resolve()
+            if not member_path.is_relative_to(resolved_dir):
+                raise ValueError(
+                    f"ZIP Slip detected: {member!r} escapes {extract_dir}"
+                )
         zf.extractall(extract_dir)
     logger.info(
         "Extracted %d files to %s",

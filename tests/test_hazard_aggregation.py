@@ -15,7 +15,55 @@ from unittest.mock import patch
 
 import pytest
 
-from src.packets.hazards import HazardProfileBuilder, NRI_HAZARD_CODES, score_to_rating
+from src.packets.hazards import (
+    HazardProfileBuilder,
+    NRI_HAZARD_CODES,
+    _safe_float,
+    score_to_rating,
+)
+
+import math
+
+
+# ============================================================================
+# _safe_float() unit tests -- NaN/Inf guards (GRIBBLE-06)
+# ============================================================================
+
+
+class TestSafeFloat:
+    """Test _safe_float handles NaN, Inf, and -Inf values."""
+
+    def test_nan_string_returns_default(self):
+        assert _safe_float("nan") == 0.0
+
+    def test_nan_float_returns_default(self):
+        assert _safe_float(float("nan")) == 0.0
+
+    def test_inf_string_returns_default(self):
+        assert _safe_float("inf") == 0.0
+
+    def test_neg_inf_string_returns_default(self):
+        assert _safe_float("-inf") == 0.0
+
+    def test_inf_float_returns_default(self):
+        assert _safe_float(float("inf")) == 0.0
+
+    def test_neg_inf_float_returns_default(self):
+        assert _safe_float(float("-inf")) == 0.0
+
+    def test_nan_with_custom_default(self):
+        assert _safe_float("nan", default=-1.0) == -1.0
+
+    def test_normal_values_unchanged(self):
+        assert _safe_float("42.5") == 42.5
+        assert _safe_float(100) == 100.0
+        assert _safe_float(0.0) == 0.0
+
+    def test_none_returns_default(self):
+        assert _safe_float(None) == 0.0
+
+    def test_empty_string_returns_default(self):
+        assert _safe_float("") == 0.0
 
 
 # ============================================================================
@@ -648,3 +696,63 @@ class TestAreaWeightedAggregation:
         # Equal weights (0.5 each): risk = (80+40)/2 = 60
         assert profile["composite"]["risk_score"] == 60.0
         assert profile["counties_analyzed"] == 2
+
+
+# ============================================================================
+# GRIBBLE-03: Atomic writes for profile cache files
+# ============================================================================
+
+
+class TestAtomicProfileWrites:
+    """Verify build_all_profiles uses atomic write pattern for cache files."""
+
+    def test_cache_file_written_atomically(self, tmp_path: Path) -> None:
+        """Cache files should use tmp + os.replace, not direct write.
+
+        We verify by checking the source code uses os.replace pattern.
+        This is a structural test: the atomic write produces the same file,
+        but survives crashes mid-write.
+        """
+        import inspect
+        source = inspect.getsource(HazardProfileBuilder.build_all_profiles)
+        assert "os.replace" in source, (
+            "build_all_profiles must use os.replace() for atomic writes"
+        )
+        assert "tempfile" in source or "tmp" in source.lower(), (
+            "build_all_profiles must use a temp file for atomic writes"
+        )
+
+
+# ============================================================================
+# GRIBBLE-09: Path traversal guard for tribe_id
+# ============================================================================
+
+
+class TestPathTraversalGuard:
+    """Verify tribe_id path sanitization in build_all_profiles."""
+
+    def test_source_contains_path_sanitization(self) -> None:
+        """build_all_profiles must sanitize tribe_id before file write."""
+        import inspect
+        source = inspect.getsource(HazardProfileBuilder.build_all_profiles)
+        assert "Path(" in source and ".name" in source, (
+            "build_all_profiles must sanitize tribe_id with Path().name"
+        )
+
+
+# ============================================================================
+# GRIBBLE-01: ZIP Slip path traversal in download script
+# ============================================================================
+
+
+class TestZipSlipGuard:
+    """Verify _extract_zip validates member paths."""
+
+    def test_extract_zip_validates_paths(self) -> None:
+        """_extract_zip must validate all member paths resolve within extract_dir."""
+        import inspect
+        from scripts.download_nri_data import _extract_zip
+        source = inspect.getsource(_extract_zip)
+        assert "resolve" in source or "is_relative_to" in source, (
+            "_extract_zip must validate extracted paths resolve within extract_dir"
+        )

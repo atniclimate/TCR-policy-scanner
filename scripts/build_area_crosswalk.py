@@ -23,6 +23,7 @@ Usage:
 import argparse
 import json
 import logging
+import math
 import os
 import sys
 import tempfile
@@ -128,6 +129,10 @@ def _compute_intersections(
     aiannh_ea = aiannh.to_crs(crs)
     counties_ea = counties.to_crs(crs)
 
+    # Repair invalid geometries before overlay (CARTO-02)
+    aiannh_ea["geometry"] = aiannh_ea.geometry.make_valid()
+    counties_ea["geometry"] = counties_ea.geometry.make_valid()
+
     # Compute original AIANNH areas before intersection
     aiannh_ea["_aiannh_area"] = aiannh_ea.geometry.area
 
@@ -164,6 +169,10 @@ def _compute_intersections(
 
         overlap_area = row["_overlap_area"]
         aiannh_area = row["_aiannh_area"]
+
+        # Guard against NaN from geometry ops (GRIBBLE-05)
+        if math.isnan(overlap_area) or math.isnan(aiannh_area):
+            continue
 
         if aiannh_area <= 0:
             continue
