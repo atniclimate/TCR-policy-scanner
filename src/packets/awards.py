@@ -308,6 +308,7 @@ class TribalAwardMatcher:
         """
         matched_by_tribe: dict[str, list[dict]] = {}
         consortium_awards: list[dict] = []
+        unmatched_awards: list[dict] = []
         total_awards = 0
         matched_count = 0
         unmatched_count = 0
@@ -338,6 +339,16 @@ class TribalAwardMatcher:
 
                 if tribe is None:
                     unmatched_count += 1
+                    obligation = _safe_float(
+                        award.get("Total Obligation")
+                        or award.get("Award Amount"),
+                    )
+                    unmatched_awards.append({
+                        "recipient_name": recipient_name,
+                        "cfda": cfda,
+                        "obligation": obligation,
+                        "award_id": award.get("Award ID", ""),
+                    })
                     logger.debug(
                         "Unmatched award: %r (CFDA %s, %s)",
                         recipient_name, cfda,
@@ -369,7 +380,8 @@ class TribalAwardMatcher:
                     matched_by_tribe[tribe_id] = []
                 matched_by_tribe[tribe_id].append(normalized_award)
 
-        # Log consortium summary
+        # Store unmatched and consortium for downstream reporting
+        self._last_unmatched_awards = unmatched_awards
         self._last_consortium_awards = consortium_awards
         if consortium_awards:
             consortium_total = sum(a["obligation"] for a in consortium_awards)
