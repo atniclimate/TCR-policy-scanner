@@ -45,7 +45,7 @@ Wave 3:  Phase 13 (Hazards) ─────┐
 **Plans**: 2 plans
 
 Plans:
-- [ ] 09-01-PLAN.md -- Create src/paths.py + migrate core pipeline files (config, main, builder, generator, change_detector, base, hot_sheets) [Wave 1]
+- [x] 09-01-PLAN.md -- Create src/paths.py + migrate core pipeline files (config, main, builder, generator, change_detector, base, hot_sheets) [Wave 1]
 - [ ] 09-02-PLAN.md -- Migrate packets subsystem, tests, and scripts to src/paths + grep regression verification [Wave 2]
 
 ---
@@ -151,7 +151,7 @@ Plans:
 
 | Phase | Plans | Plans Complete | Status | Completed |
 |-------|-------|----------------|--------|-----------|
-| 9 - Config Hardening | 2 | 0 | Pending | -- |
+| 9 - Config Hardening | 2 | 1 | In Progress | -- |
 | 10 - Code Quality | 2 | 0 | Pending | -- |
 | 11 - API Resilience | 2 | 0 | Pending | -- |
 | 12 - Award Population | 3 | 0 | Pending | -- |

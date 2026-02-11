@@ -12,17 +12,17 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ## Current Position
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
-**Phase:** 9 - Config Hardening (ready for planning)
-**Plan:** --
-**Status:** Roadmap defined, ready for Phase 9 planning
-**Last activity:** 2026-02-11 -- Roadmap created (6 phases, 15 plans, 24 requirements)
+**Phase:** 9 - Config Hardening (in progress)
+**Plan:** 1 of 2
+**Status:** In progress
+**Last activity:** 2026-02-11 -- Completed 09-01-PLAN.md (centralized paths module + 7 file migrations)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [##~~~~~~~~]  20% ROADMAP DEFINED (6 phases, 15 plans, 24 requirements)
-  Phase  9: Config Hardening     [~~~~~~~~~~]   0%  Ready
+v1.2     [##~~~~~~~~]  27% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+  Phase  9: Config Hardening     [#####~~~~~]  50%  1/2 plans complete
   Phase 10: Code Quality         [~~~~~~~~~~]   0%  Ready (Wave 1, parallel with 9)
   Phase 11: API Resilience       [~~~~~~~~~~]   0%  Blocked on Wave 1
   Phase 12: Award Population     [~~~~~~~~~~]   0%  Blocked on Wave 1
@@ -43,7 +43,7 @@ v1.2     [##~~~~~~~~]  20% ROADMAP DEFINED (6 phases, 15 plans, 24 requirements)
 | Total requirements | 52 completed + 24 planned = 76 |
 | Total tests | 383 (+96 from River Runner schemas) |
 | Total LOC | ~19,500 Python (est. +~950 from fixes + schemas + utils) |
-| Source files | 55 (+3: config.py, utils.py, schemas/models.py) |
+| Source files | 56 (+4: config.py, utils.py, schemas/models.py, paths.py) |
 
 ## Accumulated Context
 
@@ -90,6 +90,8 @@ v1.2     [##~~~~~~~~]  20% ROADMAP DEFINED (6 phases, 15 plans, 24 requirements)
 - Wave parallelization: Phases 9+10 (Wave 1), 11+12 (Wave 2), 13+14 (Wave 3)
 - 24 v1.2 requirements (original count of 22 was undercounted; INTG-05 and INTG-06 were missed)
 - Quick depth: 2-3 plans per phase, 15 total plans
+- DEC-0901-01: src/paths.py imports only pathlib.Path (zero project imports) to prevent circular dependencies
+- DEC-0901-02: src/config.py re-exports PROJECT_ROOT via __all__ for backward compatibility
 
 ### Todos
 
@@ -104,11 +106,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Roadmap created for v1.2 (6 phases, 15 plans, 24 requirements mapped)
-**Next step:** Plan Phase 9 (Config Hardening) -- `/gsd:plan-phase 9`
-**Resume file:** .planning/ROADMAP.md
-**Resume command:** `/gsd:plan-phase 9`
+**Stopped at:** Completed 09-01-PLAN.md (centralized paths module + core file migrations)
+**Next step:** Execute 09-02-PLAN.md (migrate packets, tests, scripts to src/paths)
+**Resume file:** .planning/phases/09-config-hardening/09-02-PLAN.md
+**Resume command:** `/gsd:execute-phase 09-02`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after v1.2 roadmap creation*
+*Last updated: 2026-02-11 after 09-01 plan execution*
