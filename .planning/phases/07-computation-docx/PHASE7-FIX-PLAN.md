@@ -5,7 +5,7 @@
 | Metric | Count |
 |--------|-------|
 | Total findings across all agents | 40 |
-| Section A (NCAI/ATNI removal) | DONE (Agent 1 completed all edits) |
+| Section A (organization name removal) | DONE (Agent 1 completed all edits) |
 | Section B (Code Quality) | 0 findings (section headers present, no content written) |
 | Section C (python-docx Patterns) | 3 (2 findings + 1 informational) |
 | Section D (Data Flow) | 0 findings (section headers present, no content written) |
@@ -45,7 +45,7 @@ All three can be applied in a single pass without conflict.
 
 ### Agent 1 Impact Assessment
 
-Agent 1's NCAI/ATNI edits modified `src/analysis/relevance.py` (line 3, docstring text only). This is a **different file** from `src/packets/relevance.py` which Agent 6 flagged (F-06, F-07, F-08). No interaction between Agent 1's edits and any other agent's findings.
+Agent 1's organization name edits modified `src/analysis/relevance.py` (line 3, docstring text only). This is a **different file** from `src/packets/relevance.py` which Agent 6 flagged (F-06, F-07, F-08). No interaction between Agent 1's edits and any other agent's findings.
 
 Agent 1 modified 14 files total -- all changes were to string literals, comments, docstrings, documentation, and CI/CD config. No functional code behavior was changed. No cascade risk.
 
@@ -398,7 +398,7 @@ This fix requires a domain decision: should critical programs be hard-capped at 
 ## Items Excluded from Fix Plan
 
 ### Already Done (Agent 1)
-All 14 files in Section A -- NCAI/ATNI removal complete and verified.
+All 14 files in Section A -- organization name removal complete and verified.
 
 ### Informational Only (no code change needed)
 | ID | Agent | Description |
@@ -445,7 +445,7 @@ After all batches are complete, run in order:
 # 1. Full test suite -- all 214+ tests must pass
 python -m pytest tests/ -v --tb=short
 
-# 2. NCAI/ATNI removal verification -- zero results expected
+# 2. Organization name removal verification -- zero results expected
 python -c "import subprocess, sys; r = subprocess.run(['python', '-m', 'grep', '-ri', 'NCAI|ATNI', '.', '--include=*.py', '--include=*.md', '--include=*.json'], capture_output=True, text=True); print(r.stdout or 'Clean'); sys.exit(1 if 'NCAI' in r.stdout or 'ATNI' in r.stdout else 0)"
 
 # 3. Import chain verification -- no ImportError

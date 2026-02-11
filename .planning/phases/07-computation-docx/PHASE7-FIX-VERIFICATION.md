@@ -565,7 +565,7 @@ python -m pytest tests/ -v --tb=short
 
 ---
 
-### Step 2: NCAI/ATNI Removal Verification
+### Step 2: Organization Name Removal Verification
 ```bash
 cd F:\tcr-policy-scanner
 grep -ri "NCAI\|ATNI" . --include="*.py" --include="*.md" --include="*.json" \
@@ -748,7 +748,7 @@ These findings require code changes, not just tests:
 
 ### Must-Have (Blockers)
 - [ ] All 214+ tests pass (including 15 new tests)
-- [ ] Zero NCAI/ATNI references in source code
+- [ ] Zero organization name references in source code
 - [ ] All 3 import checks succeed
 - [ ] End-to-end DOCX generation succeeds
 - [ ] SEC-01 (path traversal) fix verified

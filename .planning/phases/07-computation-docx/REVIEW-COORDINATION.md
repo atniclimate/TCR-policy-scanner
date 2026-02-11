@@ -1,6 +1,6 @@
 # Phase 7 Review Coordination
 
-## Section A: NCAI/ATNI Removal (Agent 1)
+## Section A: Organization Name Removal (Agent 1)
 
 **Status:** COMPLETE
 **Date:** 2026-02-10
@@ -26,40 +26,40 @@
 
 | File | Line(s) | Old Text | New Text |
 |------|---------|----------|----------|
-| `src/analysis/relevance.py` | 3 | "against the ATNI program inventory" | "against the tracked program inventory" |
-| `README.md` | 10 | "16 programs tracked by the Affiliated Tribes of Northwest Indians (ATNI) Climate Resilience Committee" | "16 programs tracked for Tribal Climate Resilience advocacy" |
-| `README.md` | 17 | "against the ATNI program inventory" | "against the tracked program inventory" |
-| `README.md` | 50 | "github.com/atniclimate/TCR-policy-scanner.git" | "<private repository URL>" |
-| `README.md` | 84 | "Push this repo to `github.com/atniclimate/TCR-policy-scanner`" | "Push this repo to your private repository" |
-| `README.md` | 259 | "ATNI Climate Resilience Committee" | "Project contributors" |
-| `FY26_TCR_PolicyScanner_Reference.md` | 3 | "Affiliated Tribes of Northwest Indians (ATNI) \| Climate Resilience Committee" | "Tribal Climate Resilience \| Policy Scanner Reference" |
-| `FY26_TCR_PolicyScanner_Reference.md` | 6 | "Repository: `github.com/atniclimate/tcr-policy-scanner`" | "Repository: private repository" |
-| `FY26_TCR_PolicyScanner_Reference.md` | 49 | "Prepared by ATNI Climate Resilience Committee" | "Prepared by project contributors" |
-| `docs/CLAUDE-CODE-PROMPT.md` | 10-12 | "ATNI TCR Policy Scanner...Affiliated Tribes of Northwest Indians (ATNI) Climate Resilience Committee" | "TCR Policy Scanner...Tribal Climate Resilience program" |
-| `docs/CLAUDE-CODE-PROMPT.md` | 14 | "github.com/atniclimate/TCR-policy-scanner" | "private repository" |
-| `docs/STRATEGIC-FRAMEWORK.md` | 1 | "# ATNI TCR Policy Scanner" | "# TCR Policy Scanner" |
-| `.planning/v1.1-session-prompt.md` | 12 | "NCAI conventions, ATNI sessions" | "policy conventions, advocacy sessions" |
-| `.planning/v1.1-session-prompt.md` | 20 | "ECWS 2026, NCAI Mid-Year" | "ECWS 2026, a policy convention" |
-| `.planning/v1.1-session-prompt.md` | 40 | "event templates (NCAI, ATNI, ECWS" | "event templates (policy convention, advocacy session, ECWS" |
-| `.planning/v1.1-session-prompt.md` | 46 | "Since NCAI 2025 Mid-Year" | "Since the 2025 mid-year advocacy event" |
-| `.planning/v1.1-session-prompt.md` | 52 | "from ATNI/NCAI" | "from Tribal advocacy organizations" |
-| `.planning/v1.1-session-prompt.md` | 63 | "ATNI produces" | "Tribal advocacy organizations produce" |
-| `.planning/v1.1-session-prompt.md` | 106 | "since last ATNI/NCAI event" | "since last advocacy event" |
-| `.planning/MILESTONES.md` | 28 | "attending NCAI, ATNI, ECWS" | "attending policy conventions, advocacy sessions, ECWS" |
-| `.planning/PROJECT.md` | 7 | "Built for the NCAI Climate Action Task Force" | "Built for the Tribal Climate Resilience program" |
-| `.planning/PROJECT.md` | 58 | "NCAI Climate Action Task Force (expanded from ATNI in v1.1)" | "Tribal Climate Resilience program" |
-| `.planning/PROJECT.md` | 59 | "github.com/atniclimate/TCR-policy-scanner (private)" | "private repository" |
-| `.planning/PROJECT.md` | 126 | "All 574 Tribes (not just ATNI) \| NCAI scope serves all" | "All 574 Tribes \| Program scope serves all" |
-| `.planning/research/FEATURES.md` | 28 | "from ATNI/NCAI conventions" | "from Tribal advocacy conventions" |
-| `.planning/research/FEATURES.md` | 89 | "Before NCAI Mid-Year" | "Before a mid-year advocacy event" |
-| `.planning/research/FEATURES.md` | 125 | "Since your NCAI Mid-Year packet" | "Since your mid-year advocacy packet" |
-| `.planning/research/FEATURES.md` | 325 | "NCAI Tribal Unity Impact Days (ncai.org URL)" | "Tribal advocacy organization impact days" |
-| `.planning/research/ARCHITECTURE.md` | 520 | "Prepared for [Tribe] by ATNI" | "Prepared for [Tribe]" |
-| `.planning/phases/05-foundation/TEAM1-epa-tribes-api.md` | 301 | "Source 4: NCAI Tribal Directory (ncai.org URL)" | "Source 4: Tribal Advocacy Organization Directory" |
-| `.planning/phases/05-foundation/TEAM1-epa-tribes-api.md` | 451 | "NCAI Tribal Directory (ncai.org URL)" | "Tribal advocacy organization directory" |
-| `.planning/phases/07-computation-docx/07-RESEARCH.md` | 446 | "NCAI 'Honor the Promises' framework" | "Tribal advocacy frameworks" |
-| `.github/workflows/daily-scan.yml` | 37 | "scanner@atniclimate.org" | "scanner@tcr-policy-scanner.local" |
-| `.planning/phases/02-data-model-graph/02-CONTEXT.md` | 10 | "github.com/atniclimate/TCR-policy-scanner (private)" | "private repository" |
+| `src/analysis/relevance.py` | 3 | "against the [org] program inventory" | "against the tracked program inventory" |
+| `README.md` | 10 | "16 programs tracked by a regional Tribal organization's climate resilience committee" | "16 programs tracked for Tribal Climate Resilience advocacy" |
+| `README.md` | 17 | "against the [org] program inventory" | "against the tracked program inventory" |
+| `README.md` | 50 | "github.com/[org-handle]/TCR-policy-scanner.git" | "<private repository URL>" |
+| `README.md` | 84 | "Push this repo to `github.com/[org-handle]/TCR-policy-scanner`" | "Push this repo to your private repository" |
+| `README.md` | 259 | "Tribal climate resilience committee" | "Project contributors" |
+| `FY26_TCR_PolicyScanner_Reference.md` | 3 | "A regional Tribal organization \| Climate Resilience Committee" | "Tribal Climate Resilience \| Policy Scanner Reference" |
+| `FY26_TCR_PolicyScanner_Reference.md` | 6 | "Repository: `github.com/[org-handle]/tcr-policy-scanner`" | "Repository: private repository" |
+| `FY26_TCR_PolicyScanner_Reference.md` | 49 | "Prepared by Tribal climate resilience committee" | "Prepared by project contributors" |
+| `docs/CLAUDE-CODE-PROMPT.md` | 10-12 | "[org] TCR Policy Scanner...a regional Tribal organization's climate resilience committee" | "TCR Policy Scanner...Tribal Climate Resilience program" |
+| `docs/CLAUDE-CODE-PROMPT.md` | 14 | "github.com/[org-handle]/TCR-policy-scanner" | "private repository" |
+| `docs/STRATEGIC-FRAMEWORK.md` | 1 | "# [org] TCR Policy Scanner" | "# TCR Policy Scanner" |
+| `.planning/v1.1-session-prompt.md` | 12 | "organization conventions, organization sessions" | "policy conventions, advocacy sessions" |
+| `.planning/v1.1-session-prompt.md` | 20 | "ECWS 2026, [org] Mid-Year" | "ECWS 2026, a policy convention" |
+| `.planning/v1.1-session-prompt.md` | 40 | "event templates ([org], [org], ECWS" | "event templates (policy convention, advocacy session, ECWS" |
+| `.planning/v1.1-session-prompt.md` | 46 | "Since [org] 2025 Mid-Year" | "Since the 2025 mid-year advocacy event" |
+| `.planning/v1.1-session-prompt.md` | 52 | "from [org]/[org]" | "from Tribal advocacy organizations" |
+| `.planning/v1.1-session-prompt.md` | 63 | "[org] produces" | "Tribal advocacy organizations produce" |
+| `.planning/v1.1-session-prompt.md` | 106 | "since last [org]/[org] event" | "since last advocacy event" |
+| `.planning/MILESTONES.md` | 28 | "attending [org], [org], ECWS" | "attending policy conventions, advocacy sessions, ECWS" |
+| `.planning/PROJECT.md` | 7 | "Built for the Tribal climate resilience program" | "Built for the Tribal Climate Resilience program" |
+| `.planning/PROJECT.md` | 58 | "Tribal climate resilience program (expanded from [org] in v1.1)" | "Tribal Climate Resilience program" |
+| `.planning/PROJECT.md` | 59 | "github.com/[org-handle]/TCR-policy-scanner (private)" | "private repository" |
+| `.planning/PROJECT.md` | 126 | "All 574 Tribes (not just [org]) \| program scope serves all" | "All 574 Tribes \| Program scope serves all" |
+| `.planning/research/FEATURES.md` | 28 | "from [org]/[org] conventions" | "from Tribal advocacy conventions" |
+| `.planning/research/FEATURES.md` | 89 | "Before [org] Mid-Year" | "Before a mid-year advocacy event" |
+| `.planning/research/FEATURES.md` | 125 | "Since your [org] Mid-Year packet" | "Since your mid-year advocacy packet" |
+| `.planning/research/FEATURES.md` | 325 | "[org] Tribal Unity Impact Days ([org].org URL)" | "Tribal advocacy organization impact days" |
+| `.planning/research/ARCHITECTURE.md` | 520 | "Prepared for [Tribe] by [org]" | "Prepared for [Tribe]" |
+| `.planning/phases/05-foundation/TEAM1-epa-tribes-api.md` | 301 | "Source 4: [org] Tribal Directory ([org].org URL)" | "Source 4: Tribal Advocacy Organization Directory" |
+| `.planning/phases/05-foundation/TEAM1-epa-tribes-api.md` | 451 | "[org] Tribal Directory ([org].org URL)" | "Tribal advocacy organization directory" |
+| `.planning/phases/07-computation-docx/07-RESEARCH.md` | 446 | "[org] 'Honor the Promises' framework" | "Tribal advocacy frameworks" |
+| `.github/workflows/daily-scan.yml` | 37 | "scanner@[org-domain].org" | "scanner@tcr-policy-scanner.local" |
+| `.planning/phases/02-data-model-graph/02-CONTEXT.md` | 10 | "github.com/[org-handle]/TCR-policy-scanner (private)" | "private repository" |
 
 ### Verification
 
@@ -68,10 +68,10 @@ grep -ri "NCAI\|ATNI" F:\tcr-policy-scanner --include="*.py" --include="*.md" --
 ```
 
 **Result:** Zero matches in all 14 modified files (12 originally identified + 2 found during comprehensive sweep). Only 2 files still contain references:
-- `REVIEW-COORDINATION.md` -- this coordination document (expected, as it describes the task)
+- `REVIEW-COORDINATION.md` -- this coordination document (expected, as it describes the removal task)
 - `PHASE7-SYSTEMIC-REVIEW-PROMPT.md` -- the task prompt itself (expected, as it defines the removal task)
 
-All source code, documentation, planning, research, and CI/CD files are clean. No functional code behavior was changed -- only proper nouns in strings, comments, docstrings, documentation, and git config were replaced with neutral equivalents.
+All source code, documentation, planning, research, and CI/CD files are clean. No functional code behavior was changed -- only organization names in strings, comments, docstrings, documentation, and git config were replaced with neutral equivalents.
 
 **Comprehensive sweep performed:** Checked all `*.py`, `*.md`, `*.json`, `*.yml`, `*.yaml`, `*.txt`, `*.cfg`, `*.toml`, `*.ini` files across the entire repository. Two additional files (`.github/workflows/daily-scan.yml` and `.planning/phases/02-data-model-graph/02-CONTEXT.md`) were discovered and fixed beyond the original 12-file list.
 
@@ -421,9 +421,9 @@ All public/private rendering methods tested except:
 
 ### Best Practices Findings
 
-#### 1. NCAI/ATNI Removal Verified (PASS)
+#### 1. Organization Name Removal Verified (PASS)
 
-NCAI/ATNI references have been completely removed from all source code (`*.py`), documentation (`*.md` outside review artifacts), JSON data files (`*.json`), and CI/CD configuration. The only remaining mentions are in this coordination document and the review prompt -- both expected since they document the removal itself.
+Organization name references have been completely removed from all source code (`*.py`), documentation (`*.md` outside review artifacts), JSON data files (`*.json`), and CI/CD configuration. The only remaining mentions are in this coordination document and the review prompt -- both expected since they document the removal itself.
 
 #### 2. No Debug Artifacts (PASS)
 

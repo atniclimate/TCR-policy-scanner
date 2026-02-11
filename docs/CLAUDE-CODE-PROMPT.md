@@ -34,7 +34,7 @@ Ingest → Normalize → Graph Construction → Monitors → Decision Engine →
 
 ### Key Data Files
 
-- `config/scanner_config.json` — Sources, scoring weights, keywords (46 tribal, 42 action), 23 search queries
+- `config/scanner_config.json` — Sources, scoring weights, keywords (46 Tribal, 42 action), 23 search queries
 - `data/program_inventory.json` — **16 tracked programs** with CI scores, statuses, keywords, advocacy levers, access_type, funding_type, and CFDA mappings
 - `data/policy_tracking.json` — FY26 positions with CI thresholds (7 statuses: SECURE, STABLE, STABLE_BUT_VULNERABLE, AT_RISK, UNCERTAIN, FLAGGED, TERMINATED)
 - `data/graph_schema.json` — Static authorities (20), funding vehicles (8), barriers (13), and Five Structural Asks (cross-cutting advocacy levers)

@@ -132,7 +132,7 @@ v1.1     [##########] 100% COMPLETE (4 phases, 17 plans, 22 requirements)
 | Always render appendix section even when empty | 07-04 | Better document structure; shows reader all programs were considered |
 | dataclasses.asdict() for economic_summary serialization | 07-04 | TribeEconomicSummary lacks to_dict(); asdict() provides deep conversion |
 | Shared generate_packet_from_context() helper | 07-04 | Avoids duplicate code between generate_packet() and run_single_tribe() flows |
-| NCAI/ATNI references removed from all files | review | Organizations did not authorize name use; replaced with generic terms |
+| Organization name references removed from all files | review | Organizations did not authorize name use; replaced with generic terms |
 | Allow critical program overflow past MAX_PROGRAMS | review | In practice only 2-3 critical programs exist; capping could drop a legitimately critical program |
 | Path traversal validation on tribe_id | review | Defense-in-depth: sanitize tribe_id in DocxEngine.save() |
 | 10MB JSON cache size limit | review | Defense-in-depth: prevents memory exhaustion from oversized files |

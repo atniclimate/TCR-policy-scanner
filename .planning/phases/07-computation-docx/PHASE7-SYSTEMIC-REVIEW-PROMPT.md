@@ -9,7 +9,7 @@
 
 Execute a critical systemic review of TCR Policy Scanner Phase 7 (Computation + DOCX Generation) -- the 7 new source modules, 4 test files, updated orchestrator, and all integration seams. This review ensures the code is functional, correct, secure, and Phase 8-ready before any further development occurs.
 
-**Non-negotiable constraint:** All references to NCAI and ATNI must be removed from the entire codebase to prevent perceived ethical violations. These organizations did not authorize use of their names in this tool.
+**Non-negotiable constraint:** All references to specific organization names must be removed from the entire codebase to prevent perceived ethical violations. These organizations did not authorize use of their names in this tool.
 
 ---
 
@@ -63,41 +63,41 @@ Execute a critical systemic review of TCR Policy Scanner Phase 7 (Computation + 
 
 ---
 
-## NCAI/ATNI Reference Removal (CRITICAL)
+## Organization Name Reference Removal (CRITICAL)
 
-All references to "NCAI" (National Congress of American Indians) and "ATNI" (Affiliated Tribes of Northwest Indians) must be removed from the entire codebase. These organizations did not authorize association with this tool. This is an ethical compliance requirement, not optional cleanup.
+All references to specific Tribal organization names (a national Tribal organization and a regional Tribal organization) must be removed from the entire codebase. These organizations did not authorize association with this tool. This is an ethical compliance requirement, not optional cleanup.
 
 ### Files Containing References (12 files identified)
 
 **Source code (1 file):**
-- `src/analysis/relevance.py:3` -- docstring: "ATNI program inventory"
+- `src/analysis/relevance.py:3` -- docstring: "[org] program inventory"
 
 **Documentation and planning (11 files):**
-- `README.md` -- Lines 10, 17, 259: "ATNI Climate Resilience Committee", "ATNI program inventory"
-- `FY26_TCR_PolicyScanner_Reference.md` -- Lines 3, 49: "ATNI | Climate Resilience Committee"
-- `docs/CLAUDE-CODE-PROMPT.md` -- Lines 10, 12, 14: "ATNI TCR Policy Scanner", repo URL
-- `docs/STRATEGIC-FRAMEWORK.md` -- Line 1: "ATNI TCR"
-- `.planning/v1.1-session-prompt.md` -- Lines 12, 20, 40, 46, 52, 63, 106: Multiple NCAI/ATNI event references
-- `.planning/MILESTONES.md` -- Line 28: "NCAI, ATNI"
-- `.planning/PROJECT.md` -- Lines 7, 58, 126: "NCAI Climate Action Task Force", "ATNI"
-- `.planning/research/FEATURES.md` -- Lines 28, 89, 125, 325: ATNI/NCAI references
-- `.planning/research/ARCHITECTURE.md` -- Line 520: "Prepared for [Tribe] by ATNI"
-- `.planning/phases/05-foundation/TEAM1-epa-tribes-api.md` -- Lines 301, 451: "NCAI Tribal Directory"
-- `.planning/phases/07-computation-docx/07-RESEARCH.md` -- Line 446: "NCAI Honor the Promises"
+- `README.md` -- Lines 10, 17, 259: "Tribal climate resilience committee", "[org] program inventory"
+- `FY26_TCR_PolicyScanner_Reference.md` -- Lines 3, 49: "[org] | Climate Resilience Committee"
+- `docs/CLAUDE-CODE-PROMPT.md` -- Lines 10, 12, 14: "[org] TCR Policy Scanner", repo URL
+- `docs/STRATEGIC-FRAMEWORK.md` -- Line 1: "[org] TCR"
+- `.planning/v1.1-session-prompt.md` -- Lines 12, 20, 40, 46, 52, 63, 106: Multiple organization name event references
+- `.planning/MILESTONES.md` -- Line 28: "[org], [org]"
+- `.planning/PROJECT.md` -- Lines 7, 58, 126: "Tribal climate resilience program", "[org]"
+- `.planning/research/FEATURES.md` -- Lines 28, 89, 125, 325: organization name references
+- `.planning/research/ARCHITECTURE.md` -- Line 520: "Prepared for [Tribe] by [org]"
+- `.planning/phases/05-foundation/TEAM1-epa-tribes-api.md` -- Lines 301, 451: "[org] Tribal Directory"
+- `.planning/phases/07-computation-docx/07-RESEARCH.md` -- Line 446: "[org] Honor the Promises"
 
 ### Replacement Strategy
 
-- **In source code:** Replace "ATNI program inventory" with "tracked program inventory" or equivalent neutral language
+- **In source code:** Replace "[org] program inventory" with "tracked program inventory" or equivalent neutral language
 - **In README/docs:** Replace organizational attributions with generic descriptions:
-  - "ATNI Climate Resilience Committee" -> "Tribal Climate Resilience advocacy" or remove attribution entirely
-  - "NCAI Climate Action Task Force" -> "Tribal Climate Resilience program"
-  - "github.com/atniclimate/" -> "private repository" (no org-specific URL)
-  - "Maintained By: ATNI..." -> "Maintained by project contributors"
-  - "Prepared for [Tribe] by ATNI" -> "Prepared for [Tribe]"
+  - "Tribal climate resilience committee" -> "Tribal Climate Resilience advocacy" or remove attribution entirely
+  - "Tribal climate resilience program" -> "Tribal Climate Resilience program"
+  - "github.com/[org-handle]/" -> "private repository" (no org-specific URL)
+  - "Maintained By: [org]..." -> "Maintained by project contributors"
+  - "Prepared for [Tribe] by [org]" -> "Prepared for [Tribe]"
 - **In planning/research docs:** Replace specific organizational names with generic references
-  - "NCAI Mid-Year" -> "advocacy event"
-  - "ATNI sessions" -> "policy sessions"
-  - "NCAI Honor the Promises" -> remove or generalize the reference
+  - "[org] Mid-Year" -> "advocacy event"
+  - "[org] sessions" -> "policy sessions"
+  - "[org] Honor the Promises" -> remove or generalize the reference
 - **DO NOT** replace the organizational names with other specific organizations
 - **DO NOT** change the functional meaning of any sentence -- only swap the proper nouns
 
@@ -105,11 +105,11 @@ All references to "NCAI" (National Congress of American Indians) and "ATNI" (Aff
 
 ## Review Domains and Agent Assignments
 
-### Wave 1: Static Analysis + NCAI/ATNI Removal (4 agents, parallel)
+### Wave 1: Static Analysis + organization name Removal (4 agents, parallel)
 
-**Agent 1: NCAI/ATNI Reference Purge** (code-simplifier or general-purpose)
+**Agent 1: organization name Reference Purge** (code-simplifier or general-purpose)
 - Scope: All 12 files listed above
-- Task: Replace every NCAI/ATNI reference per the replacement strategy
+- Task: Replace every organization name reference per the replacement strategy
 - Coordination: Write completed replacements to `REVIEW-COORDINATION.md` Section A
 - Verify: `grep -ri "NCAI\|ATNI" .` returns zero matches across entire repo
 - Tools: Grep, Read, Edit
@@ -211,7 +211,7 @@ All references to "NCAI" (National Congress of American Indians) and "ATNI" (Aff
   - pytest best practices for document generation testing
   - python-docx performance optimization for batch generation
 - Documentation review:
-  - Is README accurate after NCAI/ATNI removal?
+  - Is README accurate after organization name removal?
   - Are all Phase 7 modules documented in project docs?
   - Is CLAUDE.md current and accurate?
   - Are planning docs up to date (STATE.md, ROADMAP.md checkboxes)?
@@ -273,7 +273,7 @@ All agents write findings to a shared coordination document at:
 ```markdown
 # Phase 7 Review Coordination
 
-## Section A: NCAI/ATNI Removal (Agent 1)
+## Section A: organization name Removal (Agent 1)
 ### Files Modified
 ### Changes Made
 ### Verification
@@ -323,7 +323,7 @@ All agents write findings to a shared coordination document at:
 ### Agent Types for Review
 | Agent Type | Best For | Wave |
 |------------|----------|------|
-| `code-simplifier` | NCAI/ATNI removal, code cleanup | 1 |
+| `code-simplifier` | organization name removal, code cleanup | 1 |
 | `feature-dev:code-reviewer` | Code quality, pattern analysis | 1 |
 | `general-purpose` | Context7 research, data flow tracing | 1 |
 | `feature-dev:code-explorer` | Dependency tracing, architecture analysis | 1 |
@@ -365,7 +365,7 @@ These were identified in v1.0 Pass 1 and Pass 2 reviews. Phase 7 agents should v
 
 ## Success Criteria for This Review
 
-1. **Zero NCAI/ATNI references** in entire codebase (verified by grep)
+1. **Zero organization name references** in entire codebase (verified by grep)
 2. **All existing tests still pass** (220+ tests, zero regressions)
 3. **Every Critical finding has a fix** (no Critical items left unresolved)
 4. **Data flow integrity verified** end-to-end from orchestrator to saved .docx
@@ -384,7 +384,7 @@ These were identified in v1.0 Pass 1 and Pass 2 reviews. Phase 7 agents should v
 
 1. **Create coordination document** first: Write empty `REVIEW-COORDINATION.md` with section headers
 2. **Launch Wave 1** (4 agents in parallel):
-   - Agent 1: NCAI/ATNI purge (code-simplifier or general-purpose)
+   - Agent 1: organization name purge (code-simplifier or general-purpose)
    - Agent 2: Code quality (feature-dev:code-reviewer)
    - Agent 3: python-docx best practices (general-purpose + Context7)
    - Agent 4: Data flow integrity (feature-dev:code-explorer)
@@ -400,7 +400,7 @@ These were identified in v1.0 Pass 1 and Pass 2 reviews. Phase 7 agents should v
 7. **Review PHASE7-FIX-PLAN.md** before any fixes are applied
 8. **Execute fixes** in prioritized batches (Critical first, then High, etc.)
 9. **Run full test suite** after all fixes: `python -m pytest tests/ -v --tb=short`
-10. **Verify NCAI/ATNI removal**: `grep -ri "NCAI\|ATNI" . --include="*.py" --include="*.md" --include="*.json"`
+10. **Verify organization name removal**: `grep -ri "NCAI\|ATNI" . --include="*.py" --include="*.md" --include="*.json"`
 11. **Update documentation** (STATE.md, ROADMAP.md, REQUIREMENTS.md, MEMORY.md)
 12. **Commit** with descriptive message
 
