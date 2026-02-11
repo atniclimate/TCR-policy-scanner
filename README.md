@@ -313,7 +313,3 @@ The scanner is a tool to support Tribal sovereignty in policy advocacy, not a re
 ## License
 
 Apache 2.0
-
-## Maintained By
-
-Project contributors
