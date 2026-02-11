@@ -13,7 +13,12 @@ import logging
 
 import aiohttp
 
-from src.config import FISCAL_YEAR_SHORT, FISCAL_YEAR_START, FISCAL_YEAR_END
+from src.config import (
+    FISCAL_YEAR_END,
+    FISCAL_YEAR_INT,
+    FISCAL_YEAR_SHORT,
+    FISCAL_YEAR_START,
+)
 from src.scrapers.base import BaseScraper
 
 logger = logging.getLogger(__name__)
@@ -32,7 +37,15 @@ CFDA_TO_PROGRAM = {
     "10.720": "usda_wildfire",
     "15.507": "usbr_watersmart",
     "20.284": "dot_protect",
+    "11.483": "noaa_tribal",
+    "66.038": "epa_tribal_air",
 }
+
+# Award type codes for Tribal award queries.
+# 02-05 = grants/cooperative agreements, 06 = direct payments (unrestricted),
+# 10 = direct payments (specified use). Excludes loans (07/08), insurance (09),
+# and other (11).
+TRIBAL_AWARD_TYPE_CODES = ["02", "03", "04", "05", "06", "10"]
 
 
 class USASpendingScraper(BaseScraper):
@@ -115,7 +128,7 @@ class USASpendingScraper(BaseScraper):
         while True:
             payload = {
                 "filters": {
-                    "award_type_codes": ["02", "03", "04", "05"],  # Grants
+                    "award_type_codes": TRIBAL_AWARD_TYPE_CODES,
                     "program_numbers": [cfda],
                     "recipient_type_names": [
                         "indian_native_american_tribal_government"
@@ -169,7 +182,7 @@ class USASpendingScraper(BaseScraper):
         return all_results
 
     async def fetch_all_tribal_awards(self) -> dict[str, list[dict]]:
-        """Fetch Tribal awards for all 12 tracked CFDAs.
+        """Fetch Tribal awards for all 14 tracked CFDAs.
 
         Iterates each CFDA in CFDA_TO_PROGRAM, calls
         fetch_tribal_awards_for_cfda for each, with rate limiting
@@ -199,6 +212,165 @@ class USASpendingScraper(BaseScraper):
         logger.info(
             "USASpending: fetched %d total Tribal awards across %d CFDAs",
             total, len(awards_by_cfda),
+        )
+        return awards_by_cfda
+
+    async def fetch_tribal_awards_by_year(
+        self, session: aiohttp.ClientSession, cfda: str, fy: int,
+    ) -> list[dict]:
+        """Fetch Tribal government awards for a single CFDA in a single fiscal year.
+
+        Queries the USASpending spending_by_award endpoint filtered to
+        indian_native_american_tribal_government recipients with expanded
+        award type codes (grants + direct payments) and per-fiscal-year
+        time boundaries.
+
+        Federal fiscal year N runs from October 1 of year N-1 through
+        September 30 of year N.
+
+        Args:
+            session: Active aiohttp session.
+            cfda: CFDA/Assistance Listing number (e.g., "15.156").
+            fy: Fiscal year as 4-digit integer (e.g., 2024).
+
+        Returns:
+            List of raw award dicts, each with an injected ``_fiscal_year`` field.
+        """
+        url = f"{self.base_url}/search/spending_by_award/"
+        start_date = f"{fy - 1}-10-01"
+        end_date = f"{fy}-09-30"
+        all_results: list[dict] = []
+        page = 1
+
+        while True:
+            payload = {
+                "filters": {
+                    "award_type_codes": TRIBAL_AWARD_TYPE_CODES,
+                    "program_numbers": [cfda],
+                    "recipient_type_names": [
+                        "indian_native_american_tribal_government"
+                    ],
+                    "time_period": [
+                        {"start_date": start_date, "end_date": end_date}
+                    ],
+                },
+                "fields": [
+                    "Award ID",
+                    "Recipient Name",
+                    "Award Amount",
+                    "Total Obligation",
+                    "Start Date",
+                    "End Date",
+                    "Description",
+                    "CFDA Number",
+                    "Awarding Agency",
+                    "recipient_id",
+                ],
+                "subawards": False,
+                "page": page,
+                "limit": 100,
+                "sort": "Award Amount",
+                "order": "desc",
+            }
+
+            try:
+                data = await self._request_with_retry(
+                    session, "POST", url, json=payload,
+                )
+            except Exception:
+                logger.warning(
+                    "USASpending: failed fetching Tribal awards for CFDA %s "
+                    "FY%d page %d",
+                    cfda, fy, page,
+                )
+                break
+
+            results = data.get("results", [])
+            if not results:
+                break
+
+            all_results.extend(results)
+
+            page_meta = data.get("page_metadata", {})
+            if not page_meta.get("hasNext", False):
+                break
+
+            page += 1
+
+            # Safety: 100 pages * 100 results = 10K records. If we hit this
+            # limit, the data may be silently truncated.
+            if page > 100:
+                logger.warning(
+                    "USASpending: CFDA %s FY%d reached page 100 (10K records). "
+                    "Results may be truncated. Consider narrowing the query.",
+                    cfda, fy,
+                )
+                break
+
+        # Inject fiscal year into each result for downstream processing
+        for result in all_results:
+            result["_fiscal_year"] = fy
+
+        logger.info(
+            "USASpending: fetched %d Tribal awards for CFDA %s FY%d (%d pages)",
+            len(all_results), cfda, fy, page,
+        )
+        return all_results
+
+    async def fetch_all_tribal_awards_multi_year(
+        self, fy_start: int | None = None, fy_end: int | None = None,
+    ) -> dict[str, list[dict]]:
+        """Fetch Tribal awards for all CFDAs across a multi-year fiscal year range.
+
+        Queries each (CFDA, fiscal year) pair sequentially with rate limiting
+        to respect API limits. Catches exceptions per-(CFDA, FY) so one failure
+        does not abort the entire batch.
+
+        Single-writer-per-tribe_id assumption: this method is not designed for
+        concurrent invocation with overlapping CFDA sets.
+
+        Args:
+            fy_start: First fiscal year (inclusive). Defaults to
+                ``FISCAL_YEAR_INT - 4`` (5-year window).
+            fy_end: Last fiscal year (inclusive). Defaults to
+                ``FISCAL_YEAR_INT``.
+
+        Returns:
+            Dict keyed by CFDA number -> flat list of all awards across
+            the requested fiscal years for that CFDA.
+        """
+        if fy_end is None:
+            fy_end = FISCAL_YEAR_INT
+        if fy_start is None:
+            fy_start = FISCAL_YEAR_INT - 4
+
+        awards_by_cfda: dict[str, list[dict]] = {
+            cfda: [] for cfda in CFDA_TO_PROGRAM
+        }
+        query_count = 0
+
+        async with self._create_session() as session:
+            for cfda in CFDA_TO_PROGRAM:
+                for fy in range(fy_start, fy_end + 1):
+                    try:
+                        results = await self.fetch_tribal_awards_by_year(
+                            session, cfda, fy,
+                        )
+                        awards_by_cfda[cfda].extend(results)
+                    except Exception:
+                        logger.exception(
+                            "USASpending: error fetching Tribal awards for "
+                            "CFDA %s FY%d, continuing",
+                            cfda, fy,
+                        )
+                    query_count += 1
+                    await asyncio.sleep(0.5)
+
+        total = sum(len(v) for v in awards_by_cfda.values())
+        fy_count = fy_end - fy_start + 1
+        logger.info(
+            "USASpending: %d awards across %d CFDAs, %d fiscal years, %d queries",
+            total, len(CFDA_TO_PROGRAM), fy_count, query_count,
         )
         return awards_by_cfda
 

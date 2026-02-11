@@ -15,8 +15,6 @@ import os
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
-import pytest
-
 from src.scrapers.circuit_breaker import CircuitBreaker, CircuitOpenError, CircuitState
 
 

@@ -5,7 +5,9 @@ Provides the TribalAwardMatcher class that:
   2. Matches awards to specific Tribes using a two-tier approach:
      - Tier 1: Curated alias table lookup (O(1), exact match)
      - Tier 2: rapidfuzz token_sort_ratio >= 85 with state-overlap validation
-  3. Writes per-Tribe JSON cache files (one per Tribe, including zero-award Tribes)
+  3. Deduplicates awards by Award ID (multi-year awards span FY queries)
+  4. Detects consortium/inter-Tribal awards (logged, not attributed)
+  5. Writes per-Tribe JSON cache files with year-by-year obligation breakdowns
 
 Usage:
     matcher = TribalAwardMatcher(config)
@@ -21,11 +23,67 @@ import json
 import logging
 from pathlib import Path
 
+from src.config import FISCAL_YEAR_INT
 from src.packets.registry import TribalRegistry
 from src.paths import AWARD_CACHE_DIR, PROJECT_ROOT, TRIBAL_ALIASES_PATH
 from src.scrapers.usaspending import CFDA_TO_PROGRAM
 
 logger = logging.getLogger(__name__)
+
+
+# Patterns that indicate a consortium or inter-Tribal organization
+# (not attributable to a single Tribe).
+_CONSORTIUM_PATTERNS = [
+    "inter tribal", "intertribal", "inter-tribal",
+    "consortium", "council of", "united tribes",
+    "indian health board", "tribal council inc",
+    "association of", "united south and eastern",
+]
+
+
+def _is_consortium(recipient_name: str) -> bool:
+    """Check if a recipient name matches a consortium/inter-Tribal pattern.
+
+    Consortium awards are logged separately and not attributed to individual
+    Tribes, per the Phase 12 CONTEXT decision.
+
+    Args:
+        recipient_name: Raw recipient name from USASpending.
+
+    Returns:
+        True if the name matches a known consortium pattern.
+    """
+    lowered = recipient_name.lower()
+    return any(pattern in lowered for pattern in _CONSORTIUM_PATTERNS)
+
+
+def _determine_award_fy(award: dict) -> int | None:
+    """Determine the federal fiscal year for an award.
+
+    Uses the ``_fiscal_year`` field if present (set by the scraper), otherwise
+    parses ``start_date`` (format "YYYY-MM-DD") using the October 1 boundary:
+    month >= 10 means the next calendar year's FY.
+
+    Args:
+        award: Normalized award dict.
+
+    Returns:
+        Fiscal year as 4-digit int, or None if undeterminable.
+    """
+    if "_fiscal_year" in award:
+        return award["_fiscal_year"]
+
+    start_date = award.get("start_date", "")
+    if not start_date or not isinstance(start_date, str):
+        return None
+
+    try:
+        parts = start_date.split("-")
+        year = int(parts[0])
+        month = int(parts[1])
+        return year + 1 if month >= 10 else year
+    except (IndexError, ValueError):
+        return None
 
 
 class TribalAwardMatcher:
@@ -96,6 +154,62 @@ class TribalAwardMatcher:
                 alt_key = alt.lower().strip()
                 if alt_key not in self._name_to_tribe:
                     self._name_to_tribe[alt_key] = tribe
+
+    @staticmethod
+    def deduplicate_awards(
+        awards_by_cfda: dict[str, list[dict]],
+    ) -> dict[str, list[dict]]:
+        """Remove duplicate awards across CFDA batches.
+
+        Multi-year awards often appear in multiple fiscal year queries.
+        Deduplication uses Award ID as the primary key. For awards with
+        empty/missing Award IDs, a composite key of
+        ``{recipient_name}|{cfda}|{obligation}|{start_date}`` is used.
+
+        Keeps the FIRST occurrence (earliest fiscal year appearance).
+
+        Args:
+            awards_by_cfda: Dict keyed by CFDA number -> list of raw award dicts.
+
+        Returns:
+            New dict with same structure but deduplicated award lists.
+        """
+        seen_keys: set[str] = set()
+        deduped: dict[str, list[dict]] = {}
+        original_count = 0
+        deduped_count = 0
+
+        for cfda, awards in awards_by_cfda.items():
+            deduped_list: list[dict] = []
+            for award in awards:
+                original_count += 1
+                award_id = award.get("Award ID", "").strip()
+
+                if award_id:
+                    key = award_id
+                else:
+                    # Composite fallback for empty Award IDs
+                    recipient = award.get("Recipient Name", "")
+                    obligation = award.get(
+                        "Total Obligation",
+                        award.get("Award Amount", ""),
+                    )
+                    start_date = award.get("Start Date", "")
+                    key = f"{recipient}|{cfda}|{obligation}|{start_date}"
+
+                if key not in seen_keys:
+                    seen_keys.add(key)
+                    deduped_list.append(award)
+                    deduped_count += 1
+
+            deduped[cfda] = deduped_list
+
+        removed = original_count - deduped_count
+        logger.info(
+            "Deduplicated %d -> %d awards (removed %d duplicates)",
+            original_count, deduped_count, removed,
+        )
+        return deduped
 
     def match_recipient_to_tribe(
         self,
@@ -181,6 +295,10 @@ class TribalAwardMatcher:
     ) -> dict[str, list[dict]]:
         """Match all awards to Tribes, returning per-tribe_id award lists.
 
+        Consortium/inter-Tribal awards are detected and logged separately
+        (not attributed to individual Tribes). Access them via
+        ``self._last_consortium_awards`` after calling this method.
+
         Args:
             awards_by_cfda: Dict keyed by CFDA number -> list of raw award dicts
                 (output of USASpendingScraper.fetch_all_tribal_awards()).
@@ -189,6 +307,7 @@ class TribalAwardMatcher:
             Dict keyed by tribe_id -> list of normalized award dicts.
         """
         matched_by_tribe: dict[str, list[dict]] = {}
+        consortium_awards: list[dict] = []
         total_awards = 0
         matched_count = 0
         unmatched_count = 0
@@ -197,6 +316,20 @@ class TribalAwardMatcher:
             for award in awards:
                 total_awards += 1
                 recipient_name = award.get("Recipient Name", "")
+
+                # Detect consortium/inter-Tribal awards before matching
+                if _is_consortium(recipient_name):
+                    obligation = _safe_float(
+                        award.get("Total Obligation")
+                        or award.get("Award Amount"),
+                    )
+                    consortium_awards.append({
+                        "recipient_name": recipient_name,
+                        "cfda": cfda,
+                        "obligation": obligation,
+                        "award_id": award.get("Award ID", ""),
+                    })
+                    continue
 
                 # Try to extract state from recipient name (trailing ", XX" pattern)
                 state = _extract_state_from_name(recipient_name)
@@ -236,34 +369,60 @@ class TribalAwardMatcher:
                     matched_by_tribe[tribe_id] = []
                 matched_by_tribe[tribe_id].append(normalized_award)
 
+        # Log consortium summary
+        self._last_consortium_awards = consortium_awards
+        if consortium_awards:
+            consortium_total = sum(a["obligation"] for a in consortium_awards)
+            logger.info(
+                "Found %d consortium/inter-Tribal awards totaling $%s "
+                "(not attributed to individual Tribes)",
+                len(consortium_awards),
+                f"{consortium_total:,.0f}",
+            )
+
         matched_tribes = len(matched_by_tribe)
         logger.info(
             "Award matching complete: %d total awards, %d matched to %d Tribes, "
-            "%d unmatched",
+            "%d unmatched, %d consortium",
             total_awards, matched_count, matched_tribes, unmatched_count,
+            len(consortium_awards),
         )
 
         return matched_by_tribe
 
-    def write_cache(self, matched_awards: dict[str, list[dict]]) -> int:
-        """Write per-Tribe JSON cache files to the cache directory.
+    def write_cache(
+        self,
+        matched_awards: dict[str, list[dict]],
+        fy_start: int | None = None,
+        fy_end: int | None = None,
+    ) -> int:
+        """Write per-Tribe JSON cache files with enhanced schema.
 
         Creates a cache file for EVERY Tribe (592), not just those with
-        awards. Zero-award Tribes get a no_awards_context field with
-        advocacy framing.
+        awards. Zero-award Tribes get a ``no_awards_context`` field with
+        advocacy framing. Each file includes year-by-year obligation
+        breakdowns and a funding trend indicator.
 
         Args:
             matched_awards: Dict keyed by tribe_id -> list of award dicts.
+            fy_start: First fiscal year in range (default: FISCAL_YEAR_INT - 4).
+            fy_end: Last fiscal year in range (default: FISCAL_YEAR_INT).
 
         Returns:
             Number of cache files written.
         """
+        if fy_end is None:
+            fy_end = FISCAL_YEAR_INT
+        if fy_start is None:
+            fy_start = FISCAL_YEAR_INT - 4
+
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         files_written = 0
 
         for tribe in self.registry.get_all():
             tribe_id = tribe["tribe_id"]
             awards = matched_awards.get(tribe_id, [])
+            total_obligation = sum(a.get("obligation", 0.0) for a in awards)
 
             # Build CFDA summary
             cfda_summary: dict[str, dict] = {}
@@ -274,13 +433,30 @@ class TribalAwardMatcher:
                 cfda_summary[cfda]["count"] += 1
                 cfda_summary[cfda]["total"] += award.get("obligation", 0.0)
 
+            # Build yearly obligations breakdown
+            yearly_obligations: dict[str, float] = {}
+            for fy in range(fy_start, fy_end + 1):
+                yearly_obligations[str(fy)] = 0.0
+            for award in awards:
+                award_fy = _determine_award_fy(award)
+                if award_fy is not None and fy_start <= award_fy <= fy_end:
+                    yearly_obligations[str(award_fy)] += award.get(
+                        "obligation", 0.0,
+                    )
+
+            # Compute funding trend
+            trend = _compute_trend(yearly_obligations, fy_start, fy_end)
+
             cache_data: dict = {
                 "tribe_id": tribe_id,
                 "tribe_name": tribe["name"],
+                "fiscal_year_range": {"start": fy_start, "end": fy_end},
                 "awards": awards,
-                "total_obligation": sum(a.get("obligation", 0.0) for a in awards),
+                "total_obligation": total_obligation,
                 "award_count": len(awards),
                 "cfda_summary": cfda_summary,
+                "yearly_obligations": yearly_obligations,
+                "trend": trend,
             }
 
             if not awards:
@@ -298,7 +474,8 @@ class TribalAwardMatcher:
             files_written += 1
 
         logger.info(
-            "Wrote %d cache files to %s", files_written, self.cache_dir,
+            "Wrote %d cache files to %s (FY%d-FY%d)",
+            files_written, self.cache_dir, fy_start, fy_end,
         )
         return files_written
 
@@ -367,6 +544,57 @@ class TribalAwardMatcher:
             "matched_tribes": len(matched),
             "cache_files_written": cache_count,
         }
+
+
+def _compute_trend(
+    yearly_obligations: dict[str, float],
+    fy_start: int,
+    fy_end: int,
+) -> str:
+    """Compute a funding trend indicator from yearly obligation data.
+
+    Compares the first half of the fiscal year range to the second half:
+      - "none": No awards at all
+      - "new": Awards only in the last 2 fiscal years
+      - "increasing": Second half > first half * 1.2
+      - "decreasing": Second half < first half * 0.8
+      - "stable": Otherwise
+
+    Args:
+        yearly_obligations: Dict of FY (str) -> obligation amount.
+        fy_start: First fiscal year in range.
+        fy_end: Last fiscal year in range.
+
+    Returns:
+        Trend string: "none", "new", "increasing", "decreasing", or "stable".
+    """
+    total = sum(yearly_obligations.values())
+    if total == 0:
+        return "none"
+
+    # Check if awards only exist in the last 2 years
+    fy_range = list(range(fy_start, fy_end + 1))
+    earlier = set(str(fy) for fy in fy_range[:-2])
+    has_earlier = any(yearly_obligations.get(fy, 0.0) > 0 for fy in earlier)
+    if not has_earlier:
+        return "new"
+
+    # Split into first half and second half
+    mid = len(fy_range) // 2
+    first_half_fys = [str(fy) for fy in fy_range[:mid]]
+    second_half_fys = [str(fy) for fy in fy_range[mid:]]
+
+    first_half_sum = sum(yearly_obligations.get(fy, 0.0) for fy in first_half_fys)
+    second_half_sum = sum(
+        yearly_obligations.get(fy, 0.0) for fy in second_half_fys
+    )
+
+    if first_half_sum > 0 and second_half_sum > first_half_sum * 1.2:
+        return "increasing"
+    if first_half_sum > 0 and second_half_sum < first_half_sum * 0.8:
+        return "decreasing"
+
+    return "stable"
 
 
 def _extract_state_from_name(name: str) -> str | None:
