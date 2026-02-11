@@ -12,22 +12,22 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ## Current Position
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
-**Phase:** 12 - Award Population (complete, gap closure done)
-**Plan:** 4 of 4
-**Status:** Phase complete
-**Last activity:** 2026-02-11 -- Completed 12-04-PLAN.md (HA alias gap closure, 451/592 coverage)
+**Phase:** 14 - Integration & Validation
+**Plan:** 2 of 7
+**Status:** In progress
+**Last activity:** 2026-02-11 -- Completed 14-02-PLAN.md (DocumentTypeConfig + air gap scrub)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [#########~]  93% IN PROGRESS (6 phases, 16 plans, 24 requirements)
+v1.2     [#########~]  94% IN PROGRESS (6 phases, 16 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
   Phase 12: Award Population     [##########] 100%  4/4 plans complete  DONE (gap closure)
   Phase 13: Hazard Population    [##########] 100%  3/3 plans complete  DONE
-  Phase 14: Integration          [~~~~~~~~~~]   0%  Ready to start
+  Phase 14: Integration          [##~~~~~~~~]  29%  2/7 plans complete  IN PROGRESS
 ```
 
 ## Performance Metrics
@@ -41,7 +41,7 @@ v1.2     [#########~]  93% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 | Total phases | 8 completed + 6 planned = 14 |
 | Total plans | 36 completed + 5 planned = 41 |
 | Total requirements | 57 completed + 19 planned = 76 |
-| Total tests | 606 |
+| Total tests | 647 |
 | Total LOC | ~25,000 Python (est. +1,300 scripts + tests + HA aliases) |
 | Source files | 70 (+6: generate_ha_aliases.py, test_housing_authority_aliases.py, etc.) |
 
@@ -135,6 +135,9 @@ v1.2     [#########~]  93% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 - DEC-1204-03: BIA-prefixed names (e.g., "DOI TRB WA UPPER SKAGIT") added as curated overrides
 - DEC-1204-04: Self-designation names (Apsaalooke = Crow, Sicangu Wicoti = Rosebud) included in curated overrides
 - DEC-1204-05: MN Chippewa component bands (Bois Forte, White Earth, Mille Lacs, Fond du Lac, Leech Lake) mapped to parent epa_100000161
+- DEC-1402-01: Default doc_type_config is None (not DOC_B) for full backward compatibility
+- DEC-1402-02: Air gap covers all src/packets/ files including strategic_overview and docx_template
+- DEC-1402-03: Cover page shows "For Congressional Office Use" as default classification
 
 ### Todos
 
@@ -149,11 +152,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 12-04-PLAN.md (HA gap closure, 451/592 coverage PASS)
-**Next step:** Execute Phase 14 (Integration)
+**Stopped at:** Completed 14-02-PLAN.md (DocumentTypeConfig + air gap scrub)
+**Next step:** Execute 14-03-PLAN.md (Content Filtering)
 **Resume file:** None
 **Resume command:** `/gsd:execute-phase 14`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 12-04 gap closure (Phase 12 complete, 4/4 plans, 451/592 coverage)*
+*Last updated: 2026-02-11 after 14-02 completion (Phase 14 in progress, 2/7 plans)*
