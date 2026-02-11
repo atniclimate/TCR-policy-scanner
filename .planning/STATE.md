@@ -12,21 +12,21 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ## Current Position
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
-**Phase:** 10 - Code Quality (in progress)
-**Plan:** 1 of 2
-**Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 10-01-PLAN.md (CFDA inventory completion)
+**Phase:** 10 - Code Quality (complete)
+**Plan:** 2 of 2
+**Status:** Phase complete
+**Last activity:** 2026-02-11 -- Completed 10-02-PLAN.md (ruff-clean codebase)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [###~~~~~~~]  20% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+v1.2     [####~~~~~~]  27% IN PROGRESS (6 phases, 15 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
-  Phase 10: Code Quality         [#####~~~~~]  50%  1/2 plans complete  IN PROGRESS
-  Phase 11: API Resilience       [~~~~~~~~~~]   0%  Blocked on Wave 1
-  Phase 12: Award Population     [~~~~~~~~~~]   0%  Blocked on Wave 1
-  Phase 13: Hazard Population    [~~~~~~~~~~]   0%  Blocked on Wave 1
+  Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
+  Phase 11: API Resilience       [~~~~~~~~~~]   0%  Ready (Wave 2)
+  Phase 12: Award Population     [~~~~~~~~~~]   0%  Ready (Wave 2)
+  Phase 13: Hazard Population    [~~~~~~~~~~]   0%  Blocked on Wave 2
   Phase 14: Integration          [~~~~~~~~~~]   0%  Blocked on 11+12+13
 ```
 
@@ -39,8 +39,8 @@ v1.2     [###~~~~~~~]  20% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 27 completed + 14 planned = 41 |
-| Total requirements | 52 completed + 24 planned = 76 |
+| Total plans | 28 completed + 13 planned = 41 |
+| Total requirements | 53 completed + 23 planned = 76 |
 | Total tests | 383 (+96 from River Runner schemas) |
 | Total LOC | ~19,500 Python (est. +~950 from fixes + schemas + utils) |
 | Source files | 56 (+4: config.py, utils.py, schemas/models.py, paths.py) |
@@ -97,6 +97,10 @@ v1.2     [###~~~~~~~]  20% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 - DEC-0902-03: Docstring path references left as-is (documentation, not executable)
 - DEC-1001-01: IRS elective pay uses "N/A - ..." sentinel string (not a grant program, no CFDA exists)
 - DEC-1001-02: usbr_tap shares ALN 15.507 with usbr_watersmart (same WaterSMART umbrella)
+- DEC-1002-01: E402 suppressed via per-file-ignores for scripts/*.py only (sys.path pattern)
+- DEC-1002-02: CFDA_TRACKER_PATH import redirected from base.py re-export to direct src.paths import
+- DEC-1002-03: Unused variables removed or kept based on side-effect analysis
+- DEC-1002-04: hazards.py E402 fixed by moving import above constant definitions
 
 ### Todos
 
@@ -111,11 +115,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 10-01-PLAN.md (CFDA inventory completion -- Phase 10 plan 1 of 2)
-**Next step:** Execute Phase 10 Plan 2 (remaining code quality items)
+**Stopped at:** Completed 10-02-PLAN.md (ruff-clean codebase -- Phase 10 complete)
+**Next step:** Execute Phase 11 (API Resilience) or Phase 12 (Award Population) -- Wave 2
 **Resume file:** None
-**Resume command:** `/gsd:execute-phase 10` (plan 2)
+**Resume command:** `/gsd:execute-phase 11` or `/gsd:execute-phase 12`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 10-01 plan execution (Phase 10 plan 1 complete)*
+*Last updated: 2026-02-11 after 10-02 plan execution (Phase 10 complete)*
