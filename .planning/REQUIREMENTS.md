@@ -17,10 +17,10 @@
 
 ### API Resilience
 
-- [ ] **RESL-01**: Circuit breaker pattern (CLOSED/OPEN/HALF_OPEN) wraps all external API calls
-- [ ] **RESL-02**: Configurable retry counts and backoff multipliers in `scanner_config.json`
-- [ ] **RESL-03**: Pipeline completes using cached data when an API is unreachable
-- [ ] **RESL-04**: Health check reports API availability status for all 4 sources
+- [x] **RESL-01**: Circuit breaker pattern (CLOSED/OPEN/HALF_OPEN) wraps all external API calls
+- [x] **RESL-02**: Configurable retry counts and backoff multipliers in `scanner_config.json`
+- [x] **RESL-03**: Pipeline completes using cached data when an API is unreachable
+- [x] **RESL-04**: Health check reports API availability status for all 4 sources
 
 ### Award Data Population
 
@@ -92,10 +92,10 @@ These tech debt items were resolved during the research phase:
 | CONF-02 | Phase 9 | Complete |
 | QUAL-01 | Phase 10 | Complete |
 | QUAL-02 | Phase 10 | Complete |
-| RESL-01 | Phase 11 | Pending |
-| RESL-02 | Phase 11 | Pending |
-| RESL-03 | Phase 11 | Pending |
-| RESL-04 | Phase 11 | Pending |
+| RESL-01 | Phase 11 | Complete |
+| RESL-02 | Phase 11 | Complete |
+| RESL-03 | Phase 11 | Complete |
+| RESL-04 | Phase 11 | Complete |
 | AWRD-01 | Phase 12 | Pending |
 | AWRD-02 | Phase 12 | Pending |
 | AWRD-03 | Phase 12 | Pending |
