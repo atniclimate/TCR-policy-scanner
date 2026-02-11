@@ -45,8 +45,8 @@ Wave 3:  Phase 13 (Hazards) ─────┐
 **Plans**: 2 plans
 
 Plans:
-- [ ] 09-01-PLAN.md -- Structural asks path resolution via config/pathlib [Wave 1]
-- [ ] 09-02-PLAN.md -- Centralized path constants module (src/paths.py) [Wave 1]
+- [ ] 09-01-PLAN.md -- Create src/paths.py + migrate core pipeline files (config, main, builder, generator, change_detector, base, hot_sheets) [Wave 1]
+- [ ] 09-02-PLAN.md -- Migrate packets subsystem, tests, and scripts to src/paths + grep regression verification [Wave 2]
 
 ---
 
