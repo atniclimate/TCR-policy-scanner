@@ -13,9 +13,9 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
 **Phase:** 14 - Integration & Validation
-**Plan:** 2 of 7
+**Plan:** 2 of 7 (14-01 + 14-02 complete)
 **Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 14-02-PLAN.md (DocumentTypeConfig + air gap scrub)
+**Last activity:** 2026-02-11 -- Completed 14-01-PLAN.md (Hazard data activation + 8-region config)
 
 **Progress:**
 ```
@@ -135,6 +135,10 @@ v1.2     [#########~]  94% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 - DEC-1204-03: BIA-prefixed names (e.g., "DOI TRB WA UPPER SKAGIT") added as curated overrides
 - DEC-1204-04: Self-designation names (Apsaalooke = Crow, Sicangu Wicoti = Rosebud) included in curated overrides
 - DEC-1204-05: MN Chippewa component bands (Bois Forte, White Earth, Mille Lacs, Fond du Lac, Leech Lake) mapped to parent epa_100000161
+- DEC-1401-01: All 18 NRI hazard types always present in all_hazards dict (zeros for non-applicable) for schema consistency
+- DEC-1401-02: regional_config.json is separate from ecoregion_config.json -- complementary configs serving different purposes
+- DEC-1401-03: Crosscutting region has empty states list; spans all 592 Tribes for Doc C/D aggregation
+- DEC-1401-04: USFS XLSX first sheet is README; USFS wildfire override unavailable this run (soft prerequisite per DEC-1303-06)
 - DEC-1402-01: Default doc_type_config is None (not DOC_B) for full backward compatibility
 - DEC-1402-02: Air gap covers all src/packets/ files including strategic_overview and docx_template
 - DEC-1402-03: Cover page shows "For Congressional Office Use" as default classification
@@ -152,11 +156,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 14-02-PLAN.md (DocumentTypeConfig + air gap scrub)
+**Stopped at:** Completed 14-01-PLAN.md (Hazard data activation + 8-region config)
 **Next step:** Execute 14-03-PLAN.md (Content Filtering)
 **Resume file:** None
 **Resume command:** `/gsd:execute-phase 14`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 14-02 completion (Phase 14 in progress, 2/7 plans)*
+*Last updated: 2026-02-11 after 14-01 completion (Phase 14 in progress, 2/7 plans: 14-01 + 14-02)*
