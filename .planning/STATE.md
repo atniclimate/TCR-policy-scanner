@@ -21,13 +21,13 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [########~~]  60% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+v1.2     [########~~]  67% IN PROGRESS (6 phases, 15 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
-  Phase 12: Award Population     [######~~~~]  67%  2/3 plans complete  IN PROGRESS
+  Phase 12: Award Population     [##########] 100%  3/3 plans complete  DONE
   Phase 13: Hazard Population    [###~~~~~~~]  33%  1/3 plans complete  IN PROGRESS
-  Phase 14: Integration          [~~~~~~~~~~]   0%  Blocked on 12+13
+  Phase 14: Integration          [~~~~~~~~~~]   0%  Blocked on 13
 ```
 
 ## Performance Metrics
@@ -39,11 +39,11 @@ v1.2     [########~~]  60% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 32 completed + 9 planned = 41 |
+| Total plans | 33 completed + 8 planned = 41 |
 | Total requirements | 55 completed + 21 planned = 76 |
-| Total tests | 469 |
-| Total LOC | ~22,000 Python (est. +657 from crosswalk+download scripts) |
-| Source files | 61 (+2: download_nri_data.py, build_area_crosswalk.py) |
+| Total tests | 477 (+6 populate_awards, +2 schema updates) |
+| Total LOC | ~22,300 Python (est. +282 from populate_awards script + tests) |
+| Source files | 63 (+2: populate_awards.py, test_populate_awards.py) |
 
 ## Accumulated Context
 
@@ -114,6 +114,9 @@ v1.2     [########~~]  60% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 - DEC-1201-03: Page-100 safety break prevents infinite loop on large result sets
 - DEC-1202-01: Consortium patterns are case-insensitive substring matches; 'association of' requires 'of' suffix to avoid false positives
 - DEC-1202-02: Task 1 code bundled in 12-01 commit during parallel execution; Task 2 tests committed separately
+- DEC-1203-01: USASpending API requires award_type_codes from single group per request; split into TRIBAL_AWARD_TYPE_CODE_GROUPS
+- DEC-1203-02: 418/592 coverage (70.6%) accepted below 450 target; housing authority names dominate unmatched
+- DEC-1203-03: Data files (award_cache/*.json, outputs/*.json) NOT committed to git
 - DEC-1301-01: data/nri/ added to .gitignore since it contains large downloaded data files (shapefiles, CSVs)
 - DEC-1301-02: requests library added to requirements.txt for download script (aiohttp not needed for sync downloads)
 - DEC-1301-03: Shapefile ZIPs extract to subdirectories (aiannh/, county/) to keep data/nri/ organized
@@ -131,11 +134,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 13-01-PLAN.md (NRI data download + area crosswalk scripts)
-**Next step:** Execute 13-02-PLAN.md (hazard profile builder) to continue Phase 13
+**Stopped at:** Completed 12-03-PLAN.md (award population pipeline + 592 cache files with real data)
+**Next step:** Continue Phase 13 (hazard population) -- 13-02 and 13-03 remaining
 **Resume file:** None
 **Resume command:** `/gsd:execute-phase 13` (continues with plan 02)
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 13-01 plan execution (Phase 13, plan 1 of 3)*
+*Last updated: 2026-02-11 after 12-03 plan execution (Phase 12 COMPLETE, 3/3 plans)*
