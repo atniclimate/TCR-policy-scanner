@@ -41,21 +41,24 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 - ✓ Batch (all 592 Tribes) and ad-hoc (single Tribe) CLI generation modes — v1.1
 - ✓ Change tracking ("Since Last Packet" diffs between generations) — v1.1
 - ✓ GitHub Pages search widget (15KB) with Tribe autocomplete and DOCX download — v1.1
+- ✓ Config-driven fiscal year (`src/config.py` with dynamic FY) — v1.2
+- ✓ Config-driven `graph_schema.json` path (PROJECT_ROOT via pathlib) — v1.2
+- ✓ Deduplicated `format_dollars` (`src/utils.py` single source of truth) — v1.2
+- ✓ Logger naming fixed to `__name__` across 14 files — v1.2
 
 ### Active
 
-**Current Milestone: v1.2 Tech Debt Cleanup**
+**Current Milestone: v1.2 Tech Debt Cleanup + Data Foundation**
 
-**Goal:** Clean sweep of all 17 documented tech debt items — hardcoded paths/dates, missing tests, code duplication, data population, and documentation gaps.
+**Goal:** Eliminate remaining tech debt, add API resilience, and populate all data caches so every Tribe's advocacy packet has real federal data — not placeholders.
 
-**Target items:**
-- Configurable fiscal year (scanner_config + DOCX output)
-- Config-driven paths (graph_schema.json, structural asks)
-- Scraper integration tests
-- Data cache population tooling (awards + hazard profiles)
-- Code quality fixes (_format_dollars dedup, logger naming, program fields)
-- Documentation cleanup (VERIFICATION.md, GitHub Pages config, SquareSpace URL)
-- Retry/circuit-breaker pattern for transient API failures
+**22 requirements across 6 categories:**
+- Config hardening (structural asks path, centralized path constants)
+- Code quality (program fields, dead code removal)
+- API resilience (circuit breaker, retry, graceful degradation, health check)
+- Award data population (USASpending batch queries for 592 Tribes)
+- Hazard data population (FEMA NRI + USFS wildfire for 592 Tribes)
+- Integration & validation (economic impact activation, E2E testing, docs)
 
 ### Out of Scope
 
@@ -155,4 +158,4 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 **Next milestone:** v1.2 Tech Debt Cleanup (started 2026-02-11)
 
 ---
-*Last updated: 2026-02-11 after v1.2 milestone started*
+*Last updated: 2026-02-11 after v1.2 requirements defined*
