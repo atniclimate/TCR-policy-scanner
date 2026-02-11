@@ -35,6 +35,7 @@ from src.packets.docx_sections import (
     render_delegation_section,
     render_executive_summary,
     render_hazard_summary,
+    render_messaging_framework,
     render_structural_asks_section,
     render_table_of_contents,
 )
@@ -329,45 +330,60 @@ class DocxEngine:
             document, relevant_programs, context, style_manager
         )
 
-        # 3. Executive summary (DOC-05)
+        # 3. Executive summary
         render_executive_summary(
             document, context, relevant_programs, economic_summary,
-            style_manager,
+            style_manager, doc_type_config=dtc,
         )
 
-        # 4. Congressional delegation (DOC-05)
-        render_delegation_section(document, context, style_manager)
+        # 4. Congressional delegation
+        render_delegation_section(
+            document, context, style_manager, doc_type_config=dtc
+        )
 
         # 5. Hot Sheets for all relevant programs (8-12 per Tribe)
         renderer = HotSheetRenderer(document, style_manager)
         renderer.render_all_hotsheets(
-            context, relevant_programs, economic_summary, structural_asks
+            context, relevant_programs, economic_summary, structural_asks,
+            doc_type_config=dtc,
         )
 
-        # 6. Hazard profile summary (DOC-05)
+        # 6. Hazard profile summary
         document.add_page_break()
-        render_hazard_summary(document, context, style_manager)
-
-        # 7. Structural asks standalone (DOC-05)
-        render_structural_asks_section(
-            document, structural_asks, context, style_manager
+        render_hazard_summary(
+            document, context, style_manager, doc_type_config=dtc
         )
 
-        # 8. Change tracking (OPS-03, if changes exist)
-        if changes:
+        # 7. Structural asks standalone
+        render_structural_asks_section(
+            document, structural_asks, context, style_manager,
+            doc_type_config=dtc,
+        )
+
+        # 8. Messaging framework (Doc A only -- internal with messaging flag)
+        if dtc is not None and dtc.include_messaging_framework:
+            render_messaging_framework(document, context, style_manager)
+
+        # 9. Change tracking (OPS-03, internal only, if changes exist)
+        if changes and (dtc is None or dtc.is_internal):
             document.add_page_break()
             render_change_tracking(
                 document, changes, previous_date, style_manager
             )
 
-        # 9. Appendix (omitted programs or "all included" note)
+        # 10. Appendix (omitted programs or "all included" note)
         render_appendix(
-            document, omitted_programs or [], context, style_manager
+            document, omitted_programs or [], context, style_manager,
+            doc_type_config=dtc,
         )
 
-        # Save and return path
+        # Save with doc-type-aware filename
         tribe_id = getattr(context, "tribe_id", "unknown")
-        output_path = self.save(document, tribe_id)
+        if dtc is not None:
+            filename_stem = dtc.format_filename(tribe_id).replace(".docx", "")
+        else:
+            filename_stem = tribe_id
+        output_path = self.save(document, filename_stem)
 
         logger.info(
             "Generated complete packet for %s (doc_type=%s): "

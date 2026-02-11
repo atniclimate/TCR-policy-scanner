@@ -1,12 +1,18 @@
 """Document section renderers for Tribal advocacy packets.
 
 Provides cover page, table of contents, executive summary, congressional
-delegation, hazard summary, structural asks, and appendix section renderers
-that are called by DocxEngine.generate() to assemble the full document.
+delegation, hazard summary, structural asks, messaging framework, and
+appendix section renderers called by DocxEngine.generate() to assemble
+the full document.
 
 Each function renders directly into the provided python-docx Document,
 adding paragraphs and page breaks. No new Word sections are created
 (all content shares the same header/footer).
+
+Section renderers accept an optional ``doc_type_config`` parameter
+(DocumentTypeConfig) for audience-differentiated rendering. When provided,
+sections adjust content, voice, and included subsections based on the
+target audience (internal vs. congressional).
 
 Air gap: no organizational names or tool attribution appear in any
 rendered section content.
@@ -15,6 +21,7 @@ rendered section content.
 from __future__ import annotations
 
 import logging
+from typing import TYPE_CHECKING
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -31,6 +38,9 @@ from src.packets.docx_styles import (
     format_header_row,
 )
 from src.packets.economic import TribeEconomicSummary
+
+if TYPE_CHECKING:
+    from src.packets.doc_types import DocumentTypeConfig
 
 logger = logging.getLogger(__name__)
 
@@ -188,11 +198,18 @@ def render_executive_summary(
     relevant_programs: list[dict],
     economic_summary: TribeEconomicSummary,
     style_manager: StyleManager,
+    doc_type_config: DocumentTypeConfig | None = None,
 ) -> None:
     """Render the executive summary section with Tribe overview.
 
     Includes Tribe identity, hazard snapshot, funding summary, top programs
     with CI status, delegation snapshot, and structural asks count.
+
+    When ``doc_type_config`` is provided, adjusts narrative voice:
+      - Internal (assertive): includes strategic framing paragraph
+      - Congressional (objective): evidence-first opening, hazard profile
+        summary, award history summary
+
     Ends with a page break.
 
     Args:
@@ -201,6 +218,8 @@ def render_executive_summary(
         relevant_programs: List of relevant program dicts.
         economic_summary: Aggregated economic impact calculations.
         style_manager: StyleManager with registered custom styles.
+        doc_type_config: Optional DocumentTypeConfig for audience-aware
+            rendering. When None, uses default (backward compatible).
     """
     document.add_paragraph("Executive Summary", style="Heading 2")
 
@@ -209,6 +228,19 @@ def render_executive_summary(
     document.add_paragraph(
         f"{context.tribe_name} -- {states_str}", style="HS Title"
     )
+
+    # Audience-specific opening
+    is_internal = doc_type_config is not None and doc_type_config.is_internal
+
+    if is_internal:
+        # Assertive voice: strategic framing paragraph
+        document.add_paragraph(
+            f"This strategy document outlines {context.tribe_name}'s federal "
+            f"climate resilience funding landscape, identifies strategic "
+            f"leverage points across key programs, and recommends sequenced "
+            f"advocacy actions for the current congressional session.",
+            style="HS Body",
+        )
 
     # Hazard snapshot: top 3 hazards
     hazard_profile = context.hazard_profile or {}
@@ -243,6 +275,15 @@ def render_executive_summary(
             "First-time applicant positioning available.",
             style="HS Body",
         )
+
+    # Congressional-facing: add award history summary line
+    if doc_type_config is not None and doc_type_config.is_congressional:
+        award_count = len(context.awards)
+        if award_count > 0:
+            document.add_paragraph(
+                f"{award_count} federal climate resilience award(s) on record.",
+                style="HS Body",
+            )
 
     # Top programs (first 3) with CI status badge
     for program in relevant_programs[:3]:
@@ -284,17 +325,27 @@ def render_delegation_section(
     document: Document,
     context: TribePacketContext,
     style_manager: StyleManager,
+    doc_type_config: DocumentTypeConfig | None = None,
 ) -> None:
     """Render the congressional delegation section with tabular member listing.
 
     Lists senators and representatives with their relevant committee
     assignments filtered by RELEVANT_COMMITTEE_KEYWORDS.
+
+    When ``doc_type_config`` is provided:
+      - Internal: adds STRATEGIC NOTES subsection after the delegation table
+        with per-member approach guidance
+      - Congressional: delegation table with committee assignments only,
+        no strategic notes
+
     Ends with a page break.
 
     Args:
         document: python-docx Document to render into.
         context: TribePacketContext with all Tribe data.
         style_manager: StyleManager with registered custom styles.
+        doc_type_config: Optional DocumentTypeConfig for audience-aware
+            rendering. When None, uses default (backward compatible).
     """
     document.add_paragraph("Congressional Delegation", style="Heading 2")
 
@@ -362,6 +413,20 @@ def render_delegation_section(
         style="HS Body",
     )
 
+    # Internal-only: STRATEGIC NOTES subsection
+    is_internal = (
+        doc_type_config is not None and doc_type_config.include_member_approach
+    )
+    if is_internal:
+        document.add_paragraph("Strategic Notes", style="HS Section")
+        for member in all_members:
+            if member["committees"]:
+                document.add_paragraph(
+                    f"{member['name']}: Sits on {member['committees']}. "
+                    f"Direct influence on relevant programs.",
+                    style="HS Body",
+                )
+
     # Page break
     document.add_page_break()
 
@@ -377,16 +442,28 @@ def render_hazard_summary(
     document: Document,
     context: TribePacketContext,
     style_manager: StyleManager,
+    doc_type_config: DocumentTypeConfig | None = None,
 ) -> None:
     """Render the climate hazard profile summary section.
 
     Displays FEMA NRI composite ratings, top 5 hazards in a table, and
-    USFS wildfire risk data if available. Ends with a page break.
+    USFS wildfire risk data if available.
+
+    When ``doc_type_config`` is provided:
+      - Internal: includes hazard-to-program alignment narrative
+      - Congressional: presents hazard data factually with NRI scores
+        and source citation
+
+    Both versions use real hazard data when available.
+
+    Ends with a page break.
 
     Args:
         document: python-docx Document to render into.
         context: TribePacketContext with all Tribe data.
         style_manager: StyleManager with registered custom styles.
+        doc_type_config: Optional DocumentTypeConfig for audience-aware
+            rendering. When None, uses default (backward compatible).
     """
     document.add_paragraph("Climate Hazard Profile", style="Heading 2")
 
@@ -406,6 +483,17 @@ def render_hazard_summary(
         )
         document.add_page_break()
         return
+
+    # Congressional: source citation up front
+    is_congressional = (
+        doc_type_config is not None and doc_type_config.is_congressional
+    )
+    if is_congressional:
+        document.add_paragraph(
+            "Source: FEMA National Risk Index, county-level data aggregated "
+            "to Tribal geographic boundaries.",
+            style="HS Small",
+        )
 
     # FEMA NRI composite section
     composite = fema_nri.get("composite", {}) if fema_nri else {}
@@ -454,6 +542,22 @@ def render_hazard_summary(
 
         apply_zebra_stripe(table)
 
+    # Internal-only: hazard-to-program alignment narrative
+    is_internal = doc_type_config is not None and doc_type_config.is_internal
+    if is_internal and top_hazards:
+        document.add_paragraph(
+            "Hazard-to-Program Alignment", style="HS Section"
+        )
+        hazard_names = [h.get("type", "Unknown") for h in top_hazards[:3]]
+        document.add_paragraph(
+            f"{context.tribe_name}'s top hazard exposures "
+            f"({', '.join(hazard_names)}) align directly with federal "
+            f"programs designed to address these risks. Strategic advocacy "
+            f"should emphasize this alignment when engaging congressional "
+            f"offices.",
+            style="HS Body",
+        )
+
     # USFS wildfire section
     if usfs_data:
         document.add_paragraph(
@@ -480,11 +584,18 @@ def render_structural_asks_section(
     structural_asks: list[dict],
     context: TribePacketContext,
     style_manager: StyleManager,
+    doc_type_config: DocumentTypeConfig | None = None,
 ) -> None:
     """Render the standalone structural policy asks section.
 
     Lists all structural asks with descriptions, targets, urgency badges,
     programs advanced, and evidence lines connecting to Tribe data.
+
+    When ``doc_type_config`` is provided:
+      - Strategic framing (internal): assertive, action-oriented intro
+      - Policy recommendation framing (congressional): measured,
+        evidence-based intro
+
     Ends with a page break.
 
     Args:
@@ -492,6 +603,8 @@ def render_structural_asks_section(
         structural_asks: List of structural ask dicts.
         context: TribePacketContext with all Tribe data.
         style_manager: StyleManager with registered custom styles.
+        doc_type_config: Optional DocumentTypeConfig for audience-aware
+            rendering. When None, uses default (backward compatible).
     """
     document.add_paragraph("Structural Policy Asks", style="Heading 2")
 
@@ -502,13 +615,26 @@ def render_structural_asks_section(
         document.add_page_break()
         return
 
-    # Brief intro
-    document.add_paragraph(
-        f"The following structural policy changes would advance climate "
-        f"resilience funding for {context.tribe_name} and similarly "
-        f"situated Tribes.",
-        style="HS Body",
+    # Audience-calibrated intro
+    is_strategic = (
+        doc_type_config is not None
+        and doc_type_config.structural_asks_framing == "strategic"
     )
+    if is_strategic:
+        document.add_paragraph(
+            f"The following structural policy changes are priority advocacy "
+            f"targets for {context.tribe_name}. Each ask has been identified "
+            f"as high-impact based on current program vulnerabilities and "
+            f"congressional dynamics.",
+            style="HS Body",
+        )
+    else:
+        document.add_paragraph(
+            f"The following structural policy changes would advance climate "
+            f"resilience funding for {context.tribe_name} and similarly "
+            f"situated Tribes.",
+            style="HS Body",
+        )
 
     for ask in structural_asks:
         ask_name = ask.get("name", "")
@@ -617,11 +743,93 @@ def _build_ask_evidence(ask: dict, context: TribePacketContext) -> str:
     return "; ".join(parts) if parts else ""
 
 
+def render_messaging_framework(
+    document: Document,
+    context: TribePacketContext,
+    style_manager: StyleManager,
+) -> None:
+    """Render the messaging framework section (Doc A only).
+
+    Provides audience-calibrated talking points for Tribal leadership
+    when engaging congressional offices, committee staff, and media.
+    This section contains strategic framing that should never appear
+    in congressional-facing documents.
+
+    Ends with a page break.
+
+    Args:
+        document: python-docx Document to render into.
+        context: TribePacketContext with all Tribe data.
+        style_manager: StyleManager with registered custom styles.
+    """
+    document.add_paragraph("Messaging Framework", style="Heading 2")
+
+    document.add_paragraph(
+        f"Audience-calibrated talking points for {context.tribe_name}'s "
+        f"advocacy engagements during the current congressional session.",
+        style="HS Body",
+    )
+
+    # Core message
+    document.add_paragraph("Core Message", style="HS Section")
+    states_str = ", ".join(context.states) if context.states else "our region"
+
+    # Extract top hazard for contextual messaging
+    hazard_profile = context.hazard_profile or {}
+    fema_nri = hazard_profile.get("fema_nri") or hazard_profile.get(
+        "sources", {}
+    ).get("fema_nri", {})
+    top_hazards = fema_nri.get("top_hazards", []) if fema_nri else []
+    if top_hazards:
+        top_hazard = top_hazards[0].get("type", "extreme weather")
+    else:
+        top_hazard = "extreme weather"
+
+    document.add_paragraph(
+        f"{context.tribe_name} faces significant {top_hazard.lower()} risk. "
+        f"Congress has funded programs that address this risk, but "
+        f"administrative delivery gaps and structural barriers prevent "
+        f"these resources from reaching Tribal communities in {states_str}.",
+        style="HS Body",
+    )
+
+    # Congressional framing
+    document.add_paragraph(
+        "Congressional Office Framing", style="HS Section"
+    )
+    document.add_paragraph(
+        "Lead with bipartisan infrastructure investment and return on "
+        "investment. Emphasize that Congress made the funding decisions; "
+        "the ask is for oversight and delivery accountability.",
+        style="HS Body",
+    )
+
+    # Committee-specific guidance
+    document.add_paragraph(
+        "Committee-Specific Guidance", style="HS Section"
+    )
+    document.add_paragraph(
+        "Appropriations: Frame around funding continuity and program "
+        "effectiveness metrics. Indian Affairs: Frame around trust "
+        "responsibility, self-determination, and direct service delivery. "
+        "Natural Resources / Energy: Frame around infrastructure "
+        "resilience and economic development.",
+        style="HS Body",
+    )
+
+    document.add_page_break()
+
+    logger.info(
+        "Rendered messaging framework for %s", context.tribe_name
+    )
+
+
 def render_appendix(
     document: Document,
     omitted_programs: list[dict],
     context: TribePacketContext,
     style_manager: StyleManager,
+    doc_type_config: DocumentTypeConfig | None = None,
 ) -> None:
     """Render the appendix listing omitted (lower-priority) programs.
 
@@ -634,6 +842,9 @@ def render_appendix(
         omitted_programs: List of program dicts not included in Hot Sheets.
         context: TribePacketContext for Tribe name reference.
         style_manager: StyleManager with registered custom styles.
+        doc_type_config: Optional DocumentTypeConfig for audience-aware
+            rendering. Currently unused but accepted for signature
+            consistency with other section renderers.
     """
     document.add_paragraph("Appendix: Additional Programs", style="Heading 2")
 

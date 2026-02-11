@@ -4,12 +4,20 @@ Builds the per-program Hot Sheet pages: status badge, program description,
 award history, hazard relevance, economic impact, advocacy language,
 Key Ask callout, structural asks, and delegation info.
 
+
 Each Hot Sheet is a self-contained 1-2 page section ordered by relevance
 score.  Empty sections are omitted (hidden), not shown with N/A.
+
+Supports audience-differentiated rendering via ``doc_type_config``:
+  - Internal (Doc A/C): includes advocacy lever, approach strategy
+  - Congressional (Doc B/D): Key Ask with ASK/WHY/IMPACT only,
+    no leverage or approach strategy subsections
 """
 
+from __future__ import annotations
+
 import logging
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from docx import Document
 from docx.oxml import OxmlElement
@@ -31,6 +39,9 @@ from src.packets.economic import (
     ProgramEconomicImpact,
     TribeEconomicSummary,
 )
+
+if TYPE_CHECKING:
+    from src.packets.doc_types import DocumentTypeConfig
 
 logger = logging.getLogger(__name__)
 
@@ -152,6 +163,7 @@ class HotSheetRenderer:
         programs: list[dict],
         economic_summary: TribeEconomicSummary,
         structural_asks: list[dict],
+        doc_type_config: DocumentTypeConfig | None = None,
     ) -> int:
         """Render Hot Sheets for all programs into the document.
 
@@ -163,6 +175,8 @@ class HotSheetRenderer:
             programs: List of program dicts sorted by relevance.
             economic_summary: Aggregated economic impact for the Tribe.
             structural_asks: List of structural ask dicts.
+            doc_type_config: Optional DocumentTypeConfig for audience-aware
+                rendering. Passed through to individual Hot Sheets.
 
         Returns:
             Number of Hot Sheets rendered.
@@ -185,6 +199,7 @@ class HotSheetRenderer:
                 program=program,
                 economic_impact=economic_impact,
                 structural_asks=structural_asks,
+                doc_type_config=doc_type_config,
             )
             count += 1
             logger.debug(
@@ -205,25 +220,48 @@ class HotSheetRenderer:
         program: dict,
         economic_impact: ProgramEconomicImpact | None,
         structural_asks: list[dict],
+        doc_type_config: DocumentTypeConfig | None = None,
     ) -> None:
         """Render a single Hot Sheet section into the document.
 
         Sub-sections are rendered in fixed order; sections with no data are
         omitted entirely (never shown as blank or N/A).
 
+        When ``doc_type_config`` is provided:
+          - Internal: includes advocacy language, full Key Ask with leverage
+          - Congressional: Key Ask box with ASK/WHY/IMPACT only (no
+            leverage or approach strategy subsections)
+
         Args:
             context: TribePacketContext with all Tribe data.
             program: Program metadata dict.
             economic_impact: Economic impact for this program (or None).
             structural_asks: List of all structural ask dicts.
+            doc_type_config: Optional DocumentTypeConfig for audience-aware
+                rendering. When None, all sub-sections are included
+                (backward compatible).
         """
         self._add_title_and_status(program)
         self._add_program_description(program)
         self._add_award_history(context, program)
         self._add_hazard_relevance(context, program)
-        self._add_economic_impact(economic_impact, context, program)
-        self._add_advocacy_language(program)
-        self._add_key_ask(program, context, economic_impact)
+        self._add_economic_impact(
+            economic_impact, context, program,
+            doc_type_config=doc_type_config,
+        )
+
+        # Advocacy language: internal only (or no config = backward compat)
+        include_advocacy = (
+            doc_type_config is None
+            or doc_type_config.include_advocacy_lever
+        )
+        if include_advocacy:
+            self._add_advocacy_language(program)
+
+        self._add_key_ask(
+            program, context, economic_impact,
+            doc_type_config=doc_type_config,
+        )
         self._add_structural_asks(program, structural_asks, context)
         self._add_delegation_info(context, program)
         self._add_methodology_footnote()
@@ -412,8 +450,21 @@ class HotSheetRenderer:
         economic_impact: ProgramEconomicImpact | None,
         context: TribePacketContext,
         program: dict,
+        doc_type_config: DocumentTypeConfig | None = None,
     ) -> None:
-        """Add district economic impact section."""
+        """Add district economic impact section.
+
+        When hazard profile has real data, adds a Hazard Alignment
+        paragraph connecting economic impact to Tribe-specific hazards.
+        This integration implements INTG-01.
+
+        Args:
+            economic_impact: Economic impact for this program (or None).
+            context: TribePacketContext with all Tribe data.
+            program: Program metadata dict.
+            doc_type_config: Optional DocumentTypeConfig (unused for now
+                but accepted for signature consistency).
+        """
         if economic_impact is None:
             return
 
@@ -433,6 +484,23 @@ class HotSheetRenderer:
             )
 
         self.document.add_paragraph(narrative, style="HS Body")
+
+        # INTG-01: Hazard alignment paragraph when real hazard data exists
+        hazard_profile = context.hazard_profile or {}
+        fema_nri = hazard_profile.get("fema_nri") or hazard_profile.get(
+            "sources", {}
+        ).get("fema_nri", {})
+        top_hazards = fema_nri.get("top_hazards", []) if fema_nri else []
+        if top_hazards:
+            top_hazard = top_hazards[0].get("type", "")
+            if top_hazard:
+                self.document.add_paragraph(
+                    f"Hazard Alignment: {context.tribe_name}'s "
+                    f"{top_hazard.lower()} risk profile reinforces the "
+                    f"economic case for continued federal investment in "
+                    f"{program_name}.",
+                    style="HS Body",
+                )
 
         # Multi-district breakdown
         if len(context.districts) > 1:
@@ -507,18 +575,47 @@ class HotSheetRenderer:
         program: dict,
         context: TribePacketContext,
         economic_impact: ProgramEconomicImpact | None,
+        doc_type_config: DocumentTypeConfig | None = None,
     ) -> None:
-        """Add Key Ask callout block (ASK / WHY / IMPACT)."""
+        """Add Key Ask callout block.
+
+        Internal docs (Doc A/C): full Key Ask with ASK / WHY / IMPACT
+        and leverage context.
+        Congressional docs (Doc B/D): ASK / WHY / IMPACT only -- no
+        leverage language, no approach strategy.
+        No config (backward compat): full content.
+
+        Args:
+            program: Program metadata dict.
+            context: TribePacketContext with all Tribe data.
+            economic_impact: Economic impact for this program (or None).
+            doc_type_config: Optional DocumentTypeConfig for audience-aware
+                rendering.
+        """
         advocacy_lever = program.get("advocacy_lever", "")
         if not advocacy_lever:
             return
 
         self.document.add_paragraph("Key Ask", style="HS Section")
 
-        # ASK line
-        ask_para = self.document.add_paragraph(style="HS Callout")
-        ask_para.add_run(f"ASK: {advocacy_lever}")
-        _add_paragraph_shading(ask_para, COLORS.callout_bg)
+        # Congressional: use program description as the ask line
+        # instead of the advocacy lever
+        is_congressional = (
+            doc_type_config is not None
+            and not doc_type_config.include_advocacy_lever
+        )
+
+        if is_congressional:
+            # Evidence-only ask: what this program does and what is needed
+            ask_text = program.get("description", advocacy_lever)
+            ask_para = self.document.add_paragraph(style="HS Callout")
+            ask_para.add_run(f"ASK: {ask_text}")
+            _add_paragraph_shading(ask_para, COLORS.callout_bg)
+        else:
+            # Full advocacy lever
+            ask_para = self.document.add_paragraph(style="HS Callout")
+            ask_para.add_run(f"ASK: {advocacy_lever}")
+            _add_paragraph_shading(ask_para, COLORS.callout_bg)
 
         # WHY line -- connect to hazard context
         hazard_context = self._get_hazard_context_brief(context)
