@@ -1,9 +1,151 @@
 {
   "tribe_id": "epa_100000214",
   "tribe_name": "Pueblo of Jemez, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F07501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 375000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PONCA TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF BY PROVIDING AN ENVIRONMENTAL OFFICE, SUPPORTING THE PUEBLO'S TRANSFER STATION AND RECYCLING CENTER, MAINTAINING CAPABILITY FOR UNDERGROUND STORAGE TANKS, TRAVEL AND TRAINING, OUTREACH, BUILDING AIR QUALITY CAPABILITY, ADDRESSING CLIMATE CHANGE, AND WATER SAMPLING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, UPDATED INTEGRATED WASTE MANAGEMENT PLAN, OUTREACH MATERIALS, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE PUEBLO OF JEMEZ.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F98301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 270000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF, SUPPORT THE WORK AND EFFORTS OF THE TRANSFER STATION, RECYCLING CENTER AND GAS STATION STAFF IN REGARDS TO UNDERGROUND STORAGE TANK REGULATIONS, ATTEND TRAINING AND CONFERENCES, UPDATE QUALITY ASSURANCE DOCUMENTS, OUTREACH AND EDUCATION, APPLY FOR TREATMENT AS A STATE FOR 303(C) AND DEVELOPMENT OF GEOGRAPHIC INFORMATION SYSTEMS PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE PUEBLO OF JEMEZ.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V170NM0044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 1403968.96,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V600NM0044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 848237.57,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NM0044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 69775.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600NM0044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 1012214.11,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NM3044024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 805192.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF JEMEZ TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF JEMEZ UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NM3044024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 244646.4,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF JEMEZ TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF JEMEZ UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NM0044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 118323.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NM3044025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 939790.1,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF JEMEZ TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF JEMEZ UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177NM3044025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF JEMEZ",
+      "obligation": 244497.33,
+      "start_date": "2025-01-24",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PUEBLO OF JEMEZ TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF JEMEZ UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 6331645.72,
+  "award_count": 11,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 645000.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 5686645.72
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 375000.0,
+    "2024": 0.0,
+    "2025": 244497.33,
+    "2026": 270000.0
+  },
+  "trend": "increasing"
 }

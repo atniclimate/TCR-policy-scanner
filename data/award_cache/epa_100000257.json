@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000257",
   "tribe_name": "San Pasqual Band of Diegueno Mission Indians of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "55IT0633190",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SAN PASQUAL BAND OF DIEGUENO MISSION INDIANS OF CALIFORNIA",
+      "obligation": 7045325.0,
+      "start_date": "2012-01-06",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000149",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SAN PASQUAL BAND OF DIEGUENO MISSION INDIANS OF CALIFORNIA",
+      "obligation": 400566.0,
+      "start_date": "2021-10-01",
+      "end_date": "2026-04-30",
+      "description": "SAN PASQUAL BAND OF MISSION INDIANS COMMUNITY SOLAR 1",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 7445891.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "14.867": {
+      "count": 1,
+      "total": 7045325.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 400566.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 400566.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

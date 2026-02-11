@@ -1,9 +1,152 @@
 {
   "tribe_id": "epa_100000182",
   "tribe_name": "Oneida Indian Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "96275102",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 539447.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:PLANNING, DEVELOPMENT, AND ESTABLISHMENT OF AN ENVIRONMENTAL SUSTAINABILITY PROGRAM TO ENABLE THE ONEIDA INDIAN NATION TO APPROPRIATELY IMPLEMENT SUSTAINABILITY AND WASTE DIVERSION/REDUCTION PROGRAMS, AND TO MONITOR SUCH PROGRAMS THROUGHOUT ONEIDA INDIAN NATION LANDS (INCLUDING LANDS HELD IN TRUST BY THE U.S. GOVERNMENT FOR THE BENEFIT OF THE NATION WITHIN THE ONEIDA INDIAN NATION RESERVATION) IN ORDER TO ENABLE THE NATION TO CONTINUE AND ENHANCE ITS STEWARDSHIP OF ITS ENVIRONMENT AND RESOURCES AND TO CONSERVE AND IMPROVE THE VALUE OF SUCH RESOURCES FOR THE NATION'S CURRENT AND FUTURE GENERATIONS.\nACTIVITIES:THE ACTIVITIES TO BE PERFORMED INCLUDE: 1. DEVELOPING THE ASSESSMENT AND PLANNING FOR AN ENVIRONMENTAL SUSTAINABILITY PROGRAM; 2. BUILDING CAPACITY FOR A SUSTAINABLE MANAGEMENT OF FOOD WASTE PROGRAM; 3. BUILDING CAPACITY FOR THE ONEIDA NATION TO OPERATE AND FURTHER DEVELOP AN ENVIRONMENTAL SUSTAINABILITY PROGRAM; 4. DEVELOPING THE OPERATIONS AND SUPPORT OF AN ENVIRONMENTAL SUSTAINABILITY PROGRAM; AND 5. ENSURING THE THE ENVIRONMENTAL SUSTAINABILITY PROGRAM SUPPORTS THE GOALS OF ONEIDA NATION'S EPA TRIBAL ENVIRONMENTAL PLAN. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES WILL BE REPORTED TO EPA ON AN ANNUAL BASIS AT PROGRAM REVIEW MEETINGS OR VIA TELECONFERENCE OR VIRTUAL MEETINGS. SOME ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES INCLUDE A WRITTEN NEEDS ASSESSMENT AND STRATEGIC PLAN, AN INCREASE IN CAPACITY OF THE NATION TO MONITOR AND INCREASE FOOD WASTE RECYCLING, THE ESTABLISHMENT OF A COMMITTEE TO GUIDE THE ENVIRONMENTAL SUSTAINABILITY PROGRAM, THE DEVELOPMENT OF A SELF-SUSTAINING OPERATION OF ENVIRONMENTAL SUSTAINABILITY PROGRAMS, AND THE CREATION OF AN ENVIRONMENTAL SUSTAINABILITY PROGRAM THAT SUPPORTS THE NATION'S EFFORTS TO CONTINUE AND ENHANCE ITS STEWARDSHIP OF ITS LANDS AND RESOURCES IN ORDER TO CONSERVE AND IMPROVE THE VALUE OF SUCH RESOURCES FOR CURRENT AND FUTURE GENERATIONS.\nTHE INTENDED BENEFICIARY IS THE CITIZENS OF THE ONEIDA INDIAN NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00987",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 4630232.77,
+      "start_date": "2016-09-01",
+      "end_date": "2025-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00813",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 89557.23,
+      "start_date": "2011-09-30",
+      "end_date": "2025-09-30",
+      "description": "2% PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32540018",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 12823915.0,
+      "start_date": "2024-12-06",
+      "end_date": "2030-12-05",
+      "description": "EV CHARGERS ON ONEIDA INDIAN NATION, CORRIDOR COMPONENT",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT5549100",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ONEIDA NATION",
+      "obligation": 74597862.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "55IT3647420",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 6281776.62,
+      "start_date": "2015-11-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000124",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 1523946.0,
+      "start_date": "2019-09-01",
+      "end_date": "2025-12-31",
+      "description": "ONEIDA INDIAN NATION'S FACILITY ENERGY EFFICIENCY PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000176",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 549524.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "ONEIDA INDIAN NATION CLEAN ENERGY DEPLOYMENT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000197",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "ONEIDA INDIAN NATION",
+      "obligation": 1094589.0,
+      "start_date": "2024-01-01",
+      "end_date": "2027-12-31",
+      "description": "ONEIDA INDIAN NATION ENERGY EFFICIENCY PROJECT PHASE 2",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "00E03013",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "ONEIDA NATION",
+      "obligation": 123458.0,
+      "start_date": "2021-10-01",
+      "end_date": "2026-06-30",
+      "description": "THE ONEIDA NATION WILL WORK ON ESTABLISHING CORE CAPACITY TO PROMOTE HEALTHIER INDOOR AIR QUALITY THROUGH INDOOR AIR QUALITY HOME ASSESSMENT TRAINING, DEVELOPING QUALITY ASSURANCE PROTOCOLS FOR DATA COLLECTION, PROVIDING RESOURCES TO DEVELOP ENERGY EFFICIENT AND CLEANER HEATING AND IDENTIFYING WEATHERIZATION PROJECTS.  THE DIRECT BENEFICIARIES OF THE PROGRAM ARE THE MEMBERS OF THE ONEIDA NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 102254307.62,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 539447.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 17543705.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 80879638.62
+    },
+    "81.087": {
+      "count": 3,
+      "total": 3168059.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 123458.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 123458.0,
+    "2023": 539447.0,
+    "2024": 1644113.0,
+    "2025": 12823915.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

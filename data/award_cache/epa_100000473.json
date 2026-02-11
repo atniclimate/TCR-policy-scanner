@@ -1,9 +1,107 @@
 {
   "tribe_id": "epa_100000473",
   "tribe_name": "Native Village of Napaskiak",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J77101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF NAPASKIAK",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO NAPASKIAK TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL DEVELOP SKILLS AND KNOWLEDGE TO BETTER MANAGE THE GAP GRANT AND UNDERSTAND THE ENVIRONMENTAL ISSUES IN THE WORK PLAN; CONDUCT COMMUNITY EDUCATION AND OUTREACH TO ASSESS AND IMPROVE LOCAL KNOWLEDGE ON POLLUTION PREVENTION AND RECYCLING; AND ESTABLISH MECHANISMS TO ASSURE A SUSTAINABLE WASTE MANAGEMENT AND RECYCLING  PROGRAM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J66401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF NAPASKIAK",
+      "obligation": 293000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF NAPASKIAK WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE IMPLEMENTING SOLID WASTE MANAGEMENT STRATEGIES, BUILDING TRIBAL CAPACITIES TO MONITOR AND ADDRESS SHORELINE EROSION, AND ENHANCING POLLUTION PREVENTION AWARENESS THROUGH EDUCATION AND OUTREACH.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM THE NATIVE VILLAGE OF NAPASKIAK WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A14AV00850",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NAPASKIAK",
+      "obligation": 1644042.31,
+      "start_date": "2014-08-15",
+      "end_date": "2028-12-31",
+      "description": "NAPASKIAK CONSTRUCTION FOR ROUTE 1037",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00926",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NAPASKIAK",
+      "obligation": 462656.17,
+      "start_date": "2019-07-07",
+      "end_date": "2025-12-31",
+      "description": "NAPASKIAK FY19 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00992",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NAPASKIAK",
+      "obligation": 380129.42,
+      "start_date": "2018-10-01",
+      "end_date": "2025-12-31",
+      "description": "NAPASKIAK A19AV00992 FY19 66K & 6K1 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01146",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NAPASKIAK",
+      "obligation": 53046.29,
+      "start_date": "2025-08-29",
+      "end_date": "2028-12-31",
+      "description": "NAPASKIAK FY 2025 TTP PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01149",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NAPASKIAK",
+      "obligation": 50000.0,
+      "start_date": "2025-09-04",
+      "end_date": "2028-12-31",
+      "description": "NAPASKIAK FY 2025 6V1 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 3392874.19,
+  "award_count": 7,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 803000.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 2589874.19
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 396046.29,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

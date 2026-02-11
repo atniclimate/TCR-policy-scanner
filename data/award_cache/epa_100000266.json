@@ -1,9 +1,196 @@
 {
   "tribe_id": "epa_100000266",
   "tribe_name": "Seminole Tribe of Florida",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00143",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 150000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2025-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00219",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 0.0,
+      "start_date": "2019-08-01",
+      "end_date": "2024-07-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00036",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 0.0,
+      "start_date": "2018-10-01",
+      "end_date": "2023-09-30",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00857",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 249886.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "TRIBALCLIMATERESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMA-2020-PC-0007",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 234487.5,
+      "start_date": "2019-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMA-2020-BR-036-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 42285.49,
+      "start_date": "2022-03-10",
+      "end_date": "2025-03-09",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMA-2021-BR-133-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 73687.5,
+      "start_date": "2022-12-10",
+      "end_date": "2025-12-09",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A14AV00830",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 1787239.59,
+      "start_date": "2014-08-18",
+      "end_date": "2025-09-30",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00630",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 826423.76,
+      "start_date": "2015-06-15",
+      "end_date": "2028-09-30",
+      "description": "2% PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00829",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 112991.89,
+      "start_date": "2014-08-18",
+      "end_date": "2026-09-30",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00250",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 8472176.45,
+      "start_date": "2020-05-20",
+      "end_date": "2028-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT1228220",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 25935586.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000150",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 2158593.0,
+      "start_date": "2021-10-01",
+      "end_date": "2026-06-30",
+      "description": "SEMINOLE RURAL RESERVATION RESILIENCY - BRIGHTON SOLAR",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000109",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SEMINOLE TRIBE OF FLORIDA",
+      "obligation": 1608000.0,
+      "start_date": "2018-12-01",
+      "end_date": "2024-09-30",
+      "description": "SEMINOLE RURAL RESERVATION RESILIENCY INITIATIVE",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 41651357.18,
+  "award_count": 14,
+  "cfda_summary": {
+    "15.156": {
+      "count": 4,
+      "total": 399886.0
+    },
+    "97.047": {
+      "count": 3,
+      "total": 350460.49
+    },
+    "20.205": {
+      "count": 4,
+      "total": 11198831.69
+    },
+    "14.867": {
+      "count": 1,
+      "total": 25935586.0
+    },
+    "81.087": {
+      "count": 2,
+      "total": 3766593.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 2200878.49,
+    "2023": 73687.5,
+    "2024": 0.0,
+    "2025": 249886.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

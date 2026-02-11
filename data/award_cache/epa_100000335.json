@@ -1,9 +1,48 @@
 {
   "tribe_id": "epa_100000335",
   "tribe_name": "Yocha Dehe Wintun Nation, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "99T85001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "YOCHA DEHE WINTUN NATION",
+      "obligation": 289145.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE YOCHA DEHE WINTUN NATION'S ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE MANAGING THE ENVIRONMENTAL OFFICE, DEVELOPING AN ADAPTATION PLAN, IMPLEMENTING A RECYCLING PROGRAM, COORDINATING WITH TRIBAL DEPARTMENTS ON ZERO WASTE/POLLUTION PREVENTION WORK, CONSULTING WITH STATE AND FEDERAL AGENCIES, CONDUCTING EDUCATIONAL AND OUTREACH ACTIVITIES, AND ATTENDING TRAINING TO DEVELOP ENVIRONMENTAL PROGRAM CAPACITY.   THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $76,500.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T55201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "YOCHA DEHE WINTUN NATION",
+      "obligation": 266836.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO YOCHA DEHE WINTUN NATION TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $102,729.ACTIVITIES:\nTHE RECIPIENT WILL PARTICIPATE IN LOCAL AND STATE MEETINGS RELATED TO ENVIRONMENTAL ISSUES AFFECTING THE TRIBE, DEVELOP A SOLID WASTE MANAGEMENT PROGRAM, PLAN OUTREACH AND EDUCATION ACTIVITIES FOR THE COMMUNITY, AND CONDUCT RESEARCH ON CLIMATE CHANGE ADAPTATION AND MITIGATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE COPIES OF QUARTERLY NEWSLETTERS, SUMMARY REPORTS OF OUTREACH AND EDUCATIONAL EVENTS, AND NOTES FROM PLANNING MEETINGS RELATED TO ISSUES OF CLIMATE CHANGE. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE YOCHA DEHE WINTUN NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 555981.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 555981.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 266836.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

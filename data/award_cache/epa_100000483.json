@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000483",
   "tribe_name": "Ninilchik Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J87301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NINILCHIK VILLAGE",
+      "obligation": 209000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2028-09-30",
+      "description": "DESCRIPTION:THE PRIMARY PROJECT OBJECTIVE IS TO INCREASE OVERALL ADMINISTRATIVE AND PROGRAMMATIC GRANTS MANAGEMENT CAPACITY, INCLUDING ADMINISTRATIVE, PROGRAMMATIC, COMMUNICATIONS, AND TECHNICAL CAPACITY.ACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE COMPLETING WORKPLAN COMMITMENTS; RECORD KEEPING AND REPORTING; CONDUCTING RESEARCH; CONFERENCE AND TRAINING ATTENDANCE; EFFECTIVE INTERNAL AND EXTERNAL COMMUNICATIONS; COMMUNITY EDUCATION; COLLABORATION WITH OTHER GAP PROGRAMS, AND DEVELOPING A GIS PROGRAM. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE A LIST OF MEETINGS AND CALLS, AN UPDATED ENVIRONMENTAL INVENTORY, A LIST OF POLICIES, PROJECTS AND PERMITS REVIEWED, DATA SETS AND MAPS, AND QUARTERLY PROGRESS REPORTS. EXPECTED  OUTCOMES INCLUDE INCREASED CAPACITY TO ADMINISTER PROGRAMS AND GRANTS, ADDRESS ENVIRONMENTAL ISSUES, OBTAIN RESOURCES AND FUNDING, GET COMMUNITY SUPPORT, COLLABORATE WITH OTHER ORGANIZATIONS, AND DEVELOP MEDIA SPECIFIC PROGRAMS. THE INTENDED BENEFICIARIES ARE THE RESIDENTS AND ENVIRONMENT OF NINILCHIK.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00647",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NINILCHIK VILLAGE",
+      "obligation": 1335520.29,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DIST. OF AID TO TRIBAL GOVERNMENT (TPA) (ART90) FUNDING UNDER HR1319 - THE AMERICAN RESCUE PLAN ACT. FUNDS ARE DISTRIBUTED TO TRIBES THAT DO NOT RECEIVE LAW ENFORCEMENT SERVICES OR FUNDING. FUNDING CAN BE USED FOR TRIBAL SAFETY NEEDS THAT FALL OUTSIDE OF A FORMAL LAW ENFORCEMENT PROGRAM. THE TRIBE CAN DETERMINE WHETHER TO REPROGRAM THEM AS NECESSARY TO OTHER TPA AREAS LIKE TRIBAL COURTS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00097",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NINILCHIK VILLAGE",
+      "obligation": 605357.47,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS (TPA BASE) CR1 (17.53%) DISTRIBUTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00110",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NINILCHIK VILLAGE",
+      "obligation": 535359.56,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE AND SELF GOVERNANCE COMPACTS FOR TPA BASE AT 80.27% OF THE CR ANNUAL RATE OF OPERATIONS OF THE TRIBAL PRIORITY ALLOCATION (TPA) PROGRAMS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00716",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NINILCHIK VILLAGE",
+      "obligation": 195290.36,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT0211300",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NINILCHIK VILLAGE",
+      "obligation": 8123481.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 11004008.68,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 209000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 2671527.68
+    },
+    "14.867": {
+      "count": 1,
+      "total": 8123481.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 800647.83,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 209000.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

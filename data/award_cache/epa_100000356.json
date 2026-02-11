@@ -1,9 +1,129 @@
 {
   "tribe_id": "epa_100000356",
   "tribe_name": "Anvik Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J28001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 427796.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT IN FY24 INCLUDE MANAGING THE ENVIRONMENTAL OFFICE AND PROGRAM ENHANCEMENT, SUSTAINING TRIBAL LANDS AND WATERSHEDS, LANDFILL AND SOLID WASTE MANAGEMENT, AND KEEPING UP WITH THE CLIMATE CRISES. THE PRIMARY OBJECTIVES OF THIS PROJECT IN FY25 INCLUDE MANAGING THE ENVIRONMENTAL OFFICE AND PROGRAM ENHANCEMENT, SUSTAINING TRIBAL LANDS AND WATERSHEDS, LANDFILL AND SOLID WASTE MANAGEMENT, AND DRINKING WATER IMPROVEMENT.ACTIVITIES:ANVIK WILL USE THE GRANT FUNDS TO OVERSEE THE FINANCIAL AND ADMINISTRATIVE ASPECTS OF THE GRANT, ATTEND VIRTUAL AND IN-PERSON TRAININGS, ASSIST OTHER GAP PROGRAMS IN THE REGION, PARTNER WITH YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL ON WATER QUALITY TESTING, EDUCATE THE COMMUNITY THROUGH NEWSLETTERS AND AN EARTH DAY EVENT, MAINTAIN THE LANDFILL, COLLECT AND BACKHAUL SOLID AND HAZARDOUS WASTE AND RECYCLING, MAINTAIN THE LANDFILL, CONDUCT A COMMUNITY CLEAN-UP, AND PARTICIPATE IN THE LOCAL ENVIRONMENTAL OBSERVATION NETWORK. IN FISCAL YEAR (FY) 2024, THE TRIBE WILL ALSO PURCHASE AN ATV TRAILER AND TRASH BINS TO COLLECT TRASH, PARTNER WITH LOCAL ORGANIZATION ON LOCAL CLIMATE PROJECTIONS, DEVELOP A CLIMATE CHANGE RISK ASSESSMENT, AND SEEK FUNDING FOR AIR QUALITY IMPROVEMENTS. IN FY25, THE TRIBE WILL ALSO WORK TO GET ALL TRIBAL MEMBERS' WATER WELLS TESTED, EDUCATE THE COMMUNITY ABOUT CLEAN DRINKING WATER, RESEARCH THE STATE'S VILLAGE SAFE WATER PROGRAM, AND SEEK FUNDING FOR DRINKING WATER IMPROVEMENTS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE TRIP REPORTS, COPY OF THE NEEDS ASSESSMENT AND THE RESULTS, QUARTERLY REPORTS, UPDATED ETEP; COMPLETED WORK PLAN AND BUDGET, SF-425, COPY OF NEWSLETTERS, PICTURES OF EVENTS, CERTIFICATE OF COMPLETION FOR TRAINING, PICTURES OF SEPARATED RECYCLABLES, NUMBER OF TRASH BAGS COLLECTED, BACKHAUL INVENTORY, CLIMATE PROJECTIONS, A COPY OF THE CLIMATE ASSESSMENT, AND A COPY OF THE WATER WELL TEST RESULTS. ANTICIPATED OUTCOMES INCLUDE IMPROVED ADMINISTRATIVE CAPACITY TO DEVELOP, IMPLEMENT AND ENHANCE TRIBAL ENVIRONMENTAL PROGRAMS AND STRATEGIES; IMPROVED ADMINISTRATIVE CAPACITY TO PURSUE FURTHER FUNDING TO ADDRESS SPECIFIC ENVIRONMENTAL ISSUES; ENVIRONMENTAL EDUCATION THAT WILL ESTABLISH THE FOUNDATION FOR FUTURE AWARENESS AND RESPECT FOR THE ENVIRONMENT; CLEAN AND HEATHY LANDS AND WATERSHED FOR FUTURE GENERATIONS; AN EFFICIENTLY MANAGED LANDFILL THAT IMPROVES HUMAN AND ENVIRONMENTAL HEALTH IN THE COMMUNITY; ABILITY TO ADAPT TO THE EVER-CHANGING CONDITIONS DUE TO CLIMATE CHANGE; AND ACCESSIBLE, SAFE, CLEAN DRINKING WATER FOR TRIBAL AND COMMUNITY MEMBERS. THE INTENDED BENEFICIARIES ARE THE TRIBAL MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0030",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 61297.34,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0030",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 5251.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0030",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 64861.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3030024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 56184.04,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ANVIK VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ANVIK VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3030024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 22283.23,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ANVIK VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ANVIK VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0030",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 8506.39,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3030025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 65954.73,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ANVIK VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ANVIK VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3030025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANVIK VILLAGE",
+      "obligation": 22278.08,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: ANVIK VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ANVIK VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 734412.2,
+  "award_count": 9,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 427796.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 306616.2
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 427796.0,
+    "2025": 22278.08,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

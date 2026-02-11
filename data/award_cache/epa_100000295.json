@@ -1,9 +1,181 @@
 {
   "tribe_id": "epa_100000295",
   "tribe_name": "Swinomish Indian Tribal Community",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10152",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 149659.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-31",
+      "description": "PROMOTING ADAPTIVE MANAGEMENT AND RESILIENCY IN THE SALISH SEA DUNGENESS CRAB FISHERY: DEVELOPMENT OF A GENETIC AND MORPHOLOGICAL POPULATION ASSESSMENT MODEL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00069",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 146141.56,
+      "start_date": "2020-06-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00139",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 144033.0,
+      "start_date": "2020-06-01",
+      "end_date": "2025-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00216",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 97123.0,
+      "start_date": "2019-08-01",
+      "end_date": "2021-10-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2020-PC-0004",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 115301.16,
+      "start_date": "2018-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "693JG42230000V600WA0069",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 411648.44,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600WA0069",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 412848.97,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600WA0069",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 422832.65,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602WA3069024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 353501.77,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SWINOMISH INDIAN TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SWINOMISH INDIAN TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176WA3069024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 133976.14,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SWINOMISH INDIAN TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SWINOMISH INDIAN TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602WA3069025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 419443.95,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177WA3069025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 133861.2,
+      "start_date": "2025-02-12",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "R24AP00461",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "SWINOMISH INDIAN TRIBAL COMMUNITY",
+      "obligation": 400000.0,
+      "start_date": "2024-08-26",
+      "end_date": "2027-12-31",
+      "description": "THE SWINOMISH INDIAN TRIBAL COMMUNITY IS LOCATED ON FIDALGO ISLAND IN WESTERN SKAGIT COUNTY, WASHINGTON AND PROVIDES DOMESTIC WATER SUPPLIES FOR OVER 3,000 RESIDENTS IN AN AREA FACING ECONOMIC VULNERABILITIES AND WATER SUPPLY AND QUALITY CONCERNS. THE TRIBE WILL DEVELOP AN INTEGRATED WATER RESOURCES MANAGEMENT PLAN TO SUPPORT FUTURE IMPROVEMENTS TO THEIR MUNICIPAL WATER SUPPLY SYSTEM TO ADDRESS SUPPLY INTERRUPTIONS AND TO PROVIDE CONNECTIONS TO RESIDENTS WHO CURRENTLY RELY ON LOW-PRODUCING WELLS IMPACTED BY SEAWATER INTRUSION, WATER QUALITY VIOLATIONS, AND UNRELIABLE SUPPLIES DURING SUMMER MONTHS. THIS PLANNING EFFORT WILL ASSESS EXISTING DOMESTIC WATER SUPPLY INFRASTRUCTURE, AND PRIORITIZE IMPROVEMENTS TO MEET DOMESTIC WATER SUPPLY NEEDS, WITHSTAND NATURAL HAZARDS, AND SUPPORT GROWTH. SEVERAL TRIBAL ENTITIES ARE PROJECT PARTNERS AND STAKEHOLDERS AND WILL BE ENGAGED THROUGH EXISTING MONTHLY MEETINGS, INCLUDING THE SWINOMISH UTILITY AUTHORITY, THE SWINOMISH UTILITY COMMISSIONER, PLANNING AND COMMUNITY DEVELOPMENT, THE SWINOMISH PLANNING COMMISSION, AND THE DEPARTMENTS OF ENVIRONMENTAL PROTECTION, LANDS MANAGEMENT, AND ENVIRONMENTAL POLICY.",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 3340370.84,
+  "award_count": 13,
+  "cfda_summary": {
+    "15.156": {
+      "count": 4,
+      "total": 536956.56
+    },
+    "97.047": {
+      "count": 1,
+      "total": 115301.16
+    },
+    "20.205": {
+      "count": 7,
+      "total": 2288113.1200000006
+    },
+    "15.507": {
+      "count": 1,
+      "total": 400000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 400000.0,
+    "2025": 133861.2,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

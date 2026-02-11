@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000374",
   "tribe_name": "Chevak Native Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10134",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHEVAK NATIVE VILLAGE",
+      "obligation": 148312.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "CHEVAK NATIVE VILLAGE PERMAFROST VULNERABILITY ASSESSMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10135",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHEVAK NATIVE VILLAGE",
+      "obligation": 145071.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-12-31",
+      "description": "CHEVAK NATIVE VILLAGE RIVERINE EROSION AND FLOOD ASSESSMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J20801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHEVAK NATIVE VILLAGE",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS WORK PLAN CONTAINS THREE COMPONENTS. COMPONENT 1 IS FOCUSED ON BUILDING THE CORE ADMINISTRATIVE CAPACITY TO MANAGE A TRIBAL ENVIRONMENTAL PROGRAM. COMPONENT 2 IS FOCUSED ON BUILDING THE COMMUNITY'S SOLID AND HAZARDOUS WASTE CAPACITIES AND SOURCE SEPARATION IMPLEMENTATION. COMPONENT 3 IS FOCUSED ON BUILDING CAPACITY TO ADDRESS CLIMATE CHANGE ISSUES LIKE GROUND LOSS DUE TO PERMAFROST MELT AND SHORE LINE EROSION.ACTIVITIES:THE ACTIVITIES PERFORMED WILL INCLUDE DEVELOPING SYSTEMS FOR ADMINISTRATION OF THE GRANT, ATTENDING TRAINING TO LEARN ABOUT ENVIRONMENTAL ISSUES. STAFF WILL ATTEND TRAINING AND DEVELOP PLANS TO SUPPORT ENVIRONMENTAL PROGRAMS. MEMORANDUM OF AGREEMENTS WILL BE CREATED TO ALLOW THE LOCAL ENTITIES TO WORK TOGETHER.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES INCLUDE QUARTERLY REPORTS, TRIP REPORTS, TRAINING REPORTS, COPIES OF PLANS, AND COPIES OF MEMORANDUMS. OUTCOMES OF THESE EFFORTS DIRECTLY IMPACT THE COMMUNITY HEALTH AND ENVIRONMENT AND WILL ENHANCE THE TRIBE'S ABILITY TO MAINTAIN ENVIRONMENTAL PRESENCE.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 821383.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 293383.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 528000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 528000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

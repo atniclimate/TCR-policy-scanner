@@ -1,9 +1,48 @@
 {
   "tribe_id": "epa_100000513",
   "tribe_name": "Portage Creek Village (aka Ohgsenakale)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J81901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PORTAGE CREEK VILLAGE",
+      "obligation": 510000.0,
+      "start_date": "2021-01-01",
+      "end_date": "2024-12-31",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO PORTAGE CREEK VILLAGE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD ADMINISTRATIVE CAPACITY TO MANAGE PORTAGE CREEK VILLAGE ENVIRONMENTAL PROGRAM, UPDATE THE EPA TRIBAL ENVIRONMENTAL PLAN, WORK ON UPDATING THE WATER QUALITY QUALITY ASSURANCE PROJECT PLAN, RESEARCH CLOSURE OF THE OLD LANDFILL, PROVIDE THE COMMUNITY WITH ENVIRONMENTAL EDUCATION AND OUTREACH.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J66501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PORTAGE CREEK VILLAGE",
+      "obligation": 268000.0,
+      "start_date": "2025-01-01",
+      "end_date": "2026-12-31",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS AWARD IS TO DEVELOP AND BUILD ENVIRONMENTAL CAPACITY; CONTINUE AWARENESS OF MINING INDUSTRY AND PEBBLE MINE ACTIVITIES AND TO DEVELOP A SOLID WASTE MANAGEMENT PROGRAM AND EDUCATE COMMUNITY ON RENEWABLE ENERGY.ACTIVITIES:STAFF WILL ATTEND WORKSHOPS AND TRAININGS NEEDED TO ACCOMPLISH ENVIRONMENTAL PROGRAM MANAGEMENT; MEET WITH UNITED TRIBES OF BRISTOL BAY AND OTHER TRIBES ON HOW TO PROTECT BRISTOL BAY WATERSHED; AND MAINTAIN THE SOLID WASTE FACILITY AT PORTAGE CREEK.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:TRAININGS WILL INSURE STAFF HAS KNOWLEDGE TO CONTINUE TO ENHANCE THE PORTAGE CREEK ENVIRONMENTAL PROGRAM DEVELOPMENT AND CAPABILITIES FOR IGAP. THE ENVIRONMENTAL PROGRAM WILL CONTINUE TO PROTECT BRISTOL BAY WATERSHED FOR VILLAGE OF PORTAGE CREEK. PORTAGE CREEK WILL HAVE A SUSTAINABLE SOLID WASTE PROGRAM. THE IGAP PROGRAM WILL ALSO EDUCATE THE COMMUNITY ON RENEWABLE ENERGY. THE INTENDED BENEFICIARY IS THE COMMUNITY OF PORTAGE CREEK.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 778000.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 778000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 268000.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

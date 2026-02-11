@@ -1,9 +1,140 @@
 {
   "tribe_id": "epa_100000395",
   "tribe_name": "Native Village of Eagle",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J82201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 509946.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO NATIVE VILLAGE OF EAGLE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL: 1) CONDUCT CORE ADMINISTRATIVE CAPACITY BUILDING TO MAINTAIN THE ENVIRONMENTAL OFFICE AND FUNCTIONS; 2) CONTINUE TO BUILD COMMUNITY ENVIRONMENTAL AWARENESS THROUGH EDUCATION AND OUTREACH; 3) IMPROVE LANDFILL WASTE REDUCTION AND EFFICIENCY; 4) ADVANCEPROGRAM CAPACITY BUILDING BY ATTENDING WELL ORGANIZED ENVIRONMENTAL WORKSHOPS AND FORUMS ; AND 5) CONTINUE AS AN ACTIVE MEMBER OF THE YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL.  PLEASE NOTE - SPECIAL PAYMENT INSTRUCTIONS APPLY TO THIS AGREEMENT.  SEE ADMINISTRATIVE CONDITION F.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J65301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 267999.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS PROJECT IS TO IMPROVE ADMINISTRATIVE GRANTS MANAGEMENT, CONDUCT COMMUNITY ENVIRONMENTAL EDUCATION AND OUTREACH, EXPAND THE WASTE MANAGEMENT PROGRAM, DEVELOP AN INDOOR AIR QUALITY PROGRAM, AND WORK WITH THE YUKON RIVER INTER TRIBAL WATERSHED COUNCIL TO COMPLETE WATER QUALITY, DRINKING WATER, AND PERMAFROST BASELINE STUDIES.  ACTIVITIES:ADMINISTRATIVE ACTIVITIES INCLUDE A POLICIES REVIEW, MEETING ATTENDANCE, REPORTING, TRAINING, NEWSLETTER PUBLICATION, AND COMMUNITY PRESENTATIONS. WASTE MANAGEMENT TASKS INCLUDE LANDFILL OPERATIONS AND MAINTENANCE, RECYCLING, REPORTING DATA ON MATERIALS MANAGED, AND WORKING WITH PARTNERS TO DEVELOP A REGIONAL BACKHAUL PROGRAM. AIR QUALITY WORK INCLUDES INDOOR AIR QUALITY PROGRAM ESTABLISHMENT THROUGH PARTNERING, TRAINING, AN ASSESSMENT, AND DEVELOPING AN AIR QUALITY MANAGEMENT PLAN. WATER QUALITY ACTIVITIES INCLUDE TRAINING AND SAMPLE COLLECTION FOR WATER AND PERMAFROST.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES ARE REPORTS, POLICIES, AN EPA TRIBAL ENVIRONMENTAL PLAN, NEWSLETTERS, PRESENTATIONS, WASTE MANAGEMENT DATA, AN ASSESSMENT, AN AIR QUALITY MANAGEMENT PLAN, AND A QUALITY ASSURANCE PROJECT PLAN. EXPECTED OUTCOMES ARE THAT COMMUNITY COLLABORATION, IMPROVED LANDFILL OPERATIONS, AND DEVELOPING AIR AND WATER QUALITY PROGRAMS WILL BENEFIT THE COMMUNITY AND LOCAL ENVIRONMENT. INTENDED BENEFICIARIES ARE THE RESIDENTS OF EAGLE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0109",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 29759.36,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0109",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 2528.88,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0109",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 31469.58,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3109024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 27259.57,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EAGLE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF EAGLE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3109024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 10057.69,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EAGLE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF EAGLE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0109",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 4127.15,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3109025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 32000.15,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EAGLE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED TO NATIVE VILLAGE OF EAGLE BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3109025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EAGLE",
+      "obligation": 10055.63,
+      "start_date": "2025-07-15",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EAGLE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED TO NATIVE VILLAGE OF EAGLE BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 925203.01,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 777945.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 147258.01
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 278054.63,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

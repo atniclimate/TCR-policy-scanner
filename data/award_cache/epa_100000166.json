@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000166",
   "tribe_name": "Mooretown Rancheria of Maidu Indians of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01188",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "MOORETOWN RANCHERIA",
+      "obligation": 249930.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "ENVIRONMENT (WATER, AIR, SOLID WASTE, PESTICIDES, RADIATION), AGRICULTURE/FORESTRY/FISH AND GAME, NATURAL RESOURCES (MINERAL, WATER, WILDLIFE, LAND), PLANNING, PUBLIC WORKS, SCIENCE AND TECHNOLOGY, TRAINING, YOUTH DEVELOPMENT, CIVIL DEFENSE/DISASTER PREVENTION AND RELIEF/EMERGENCY PREPAREDNESS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T19401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MOORETOWN RANCHERIA",
+      "obligation": 445005.0,
+      "start_date": "2021-08-01",
+      "end_date": "2025-07-31",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO MOORETOWN RANCHERIA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL INVENTORY HAZARDOUS CHEMICALS AROUND THE RESERVATION; DEVELOP A PLAN TO COORDINATE WITH LOCAL, STATE, AND FEDERAL AGENCIES IN CASE OF EMERGENCY CHEMICAL ISSUES; AND EVALUATE AS WELL AS UPDATE OUTREACH AND EDUCATION METHODS SINCE REMOTE LIVING BEGAN.  THIS AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $99,338 FOR THE PERIOD OF 8/1/21 THROUGH 7/31/22.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T34801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MOORETOWN RANCHERIA",
+      "obligation": 122221.0,
+      "start_date": "2025-08-01",
+      "end_date": "2029-07-31",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE MOORETOWN RANCHERIA. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND/OR IMPLEMENT SOLID/HAZARDOUS WASTE ACTIVITIES.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES PARTIAL FEDERAL FUNDING IN THE AMOUNT OF $122,221.  PRE-AWARD COSTS ARE APPROVED BACK TO 8/1/2025.  SEE TERMS AND CONDITIONS. ACTIVITIES:THE ACTIVITIES INCLUDE COLLABORATION WITH LOCAL TRIBES REGARDING LOCAL ENVIRONMENTAL CONCERNS, UPDATE TRIBAL ENVIRONMENTAL PLAN, UPDATE TRIBAL SOLID WASTE ORDINANCE, UPDATE TRIBAL WATER ORDINANCE, AND REVISE ENVIRONMENTAL ORDINANCE. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE UPDATES REGARDING FOUND ENVIRONMENTAL RESULTS EFFICIENCIES FROM LOCAL TRIBES THROUGH COLLABORATION, AN UPDATED TRIBAL ENVIRONMENTAL PLAN, UPDATED SOLID WASTE AND WATER ORDINANCES, AND AN IMPROVED ENVIRONMENTAL ORDINANCE. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE MOORETOWN RANCHERIA.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 817156.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 249930.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 567226.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 122221.0,
+    "2026": 249930.0
+  },
+  "trend": "new"
 }

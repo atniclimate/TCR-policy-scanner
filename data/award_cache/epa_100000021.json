@@ -1,9 +1,119 @@
 {
   "tribe_id": "epa_100000021",
   "tribe_name": "Blue Lake Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00161",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "BLUE LAKE RANCHERIA",
+      "obligation": 148500.0,
+      "start_date": "2019-08-01",
+      "end_date": "2023-06-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00861",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "BLUE LAKE RANCHERIA",
+      "obligation": 3929510.0,
+      "start_date": "2024-07-01",
+      "end_date": "2026-12-31",
+      "description": "AWARD BLUE LAKE FY2024 TRIBAL CLIMATE RESILIENCY FUNDING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2022-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "BLUE LAKE RANCHERIA",
+      "obligation": 562356.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-04-01",
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "55IT0603680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "BLUE LAKE RANCHERIA",
+      "obligation": 1165043.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEEE0008575",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "BLUE LAKE RANCHERIA",
+      "obligation": 501818.73,
+      "start_date": "2019-06-01",
+      "end_date": "2023-03-31",
+      "description": "MULTI-SECTOR SOLAR CAREER TRAINING INITIATIVE FOR NATIVE AMERICANS AND VETERANS",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "97T14801",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "BLUE LAKE RANCHERIA",
+      "obligation": 70000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS PROJECT IS TO BUILD THE TRIBE'S CAPACITY TO ASSESS AIR QUALITY CONDITIONS AND TO DEVELOP STRATEGIES TO ADDRESS AIR QUALITY ISSUES. THE TRIBE WILL CONTINUE STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING AIR EMISSIONS, RULEMAKING, AND OTHER PROGRAM ACTIVITIES. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE TRIBE'S AIR QUALITY. \n\nTHIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $70,000.ACTIVITIES:THE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE SECTION 103 PROGRAM INCLUDING: STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING RESERVATION-WIDE AIR EMISSIONS, DEVELOPING AN AIR REGULATORY PROGRAM, PROVIDING COMMUNITY EDUCATION AND OUTREACH, AND PARTICIPATING IN REGIONAL AND NATIONAL INITIATIVES TO IMPROVE AIR QUALITY. THESE ACTIVITIES SUPPORT THE TRIBE'S GOAL TO PROTECT THE HEALTH OF THE TRIBAL COMMUNITY.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:EXPECTED DELIVERABLES INCLUDE COLLECTING AIR QUALITY DATA AND SUBMITTING RESULTS TO EPA'S NATIONAL AIR QUALITY DATABASE. OUTCOMES INCLUDE A BROADENED AWARENESS OF AIR QUALITY ISSUES AND ESTABLISH PROGRAMS TO ADDRESS THE ATTAINMENT AND MAINTENANCE OF NATIONAL AMBIENT AIR QUALITY STANDARDS (NAAQS) AS WELL AS IMMEDIATE AND EMERGING THREATS TO PUBLIC HEALTH AND WELFARE FROM AIR POLLUTION. INTENDED BENEFICIARIES: DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE TABLE MOUNTAIN AREA RESIDENTS WHO WILL HAVE DECREASED EXPOSURE TO CRITERIA AND HAZARDOUS AIR POLLUTANTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T46601",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "BLUE LAKE RANCHERIA",
+      "obligation": 76524.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE BLUE LAKE RANCHERIA TO ASSIST WITH BUILDING THE TRIBE'S CAPACITY TO ASSESS AIR QUALITY CONDITIONS AND TO DEVELOP STRATEGIES TO REDUCE AIR POLLUTION SOURCES TO IMPROVE AIR QUALITY ISSUES. THE TRIBE WILL CONTINUE STRATEGIC PLANNING AND EVALUATION, MONITORING AIR EMISSIONS, OUTREACH AND OTHER PROGRAM ACTIVITIES. THIS ACTION PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $76,524. REFER TO TERMS AND CONDITIONS.ACTIVITIES:THE ACTIVITIES INCLUDE COLLECTING QUALITY ASSURED AMBIENT AIR DATA, MAINTAIN QUALITY ASSURANCE PROJECT PLANS (QAPP), PROVIDING INFORMATION TO THE COMMUNITY, ATTENDING AND PARTICIPATING IN REGIONAL INITIATIVES TO IMPROVE AIR QUALITY, AND SUBMITTING QUARTERLY REPORTS WITH DATA TO EPA.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE QUALITY ASSURED DATA UPLOAD TO EPA'S NATIONAL AIR QUALITY DATABASE, QUARTERLY PROGRESS REPORTS, UPDATE QUALITY ASSURANCE PERFORMANCE PLAN (QAPP) AND CONTINUING COMMUNITY AWARENESS OF AIR QUALITY STATUS. \n\nTHE EXPECTED OUTCOMES INCLUDE A BROADENED AWARENESS OF AIR QUALITY ISSUES AND ESTABLISHING PROGRAMS TO ADDRESS THE ATTAINMENT AND MAINTENANCE OF NATIONAL AMBIENT AIR QUALITY STANDARDS (NAQQS) AS WELL AS IMMEDIATE AND EMERGING THREATS TO PUBLIC HEALTH AND WELFARE FROM POLLUTION.\n\nTHE INTENDED BENEFICIARY IS THE TRIBAL COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 6453751.73,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 4078010.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 562356.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1165043.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 501818.73
+    },
+    "66.038": {
+      "count": 2,
+      "total": 146524.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 3929510.0,
+    "2025": 70000.0,
+    "2026": 76524.0
+  },
+  "trend": "stable"
 }

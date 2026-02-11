@@ -1,9 +1,250 @@
 {
   "tribe_id": "epa_100000302",
   "tribe_name": "Tohono O'odham Nation of Arizona",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T21201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 1714408.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE GRANTEE WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. THE RECIPIENT WILL ATTEND ENVIRONMENTAL TRAININGS AND WORKSHOPSAND CONDUCT COMMUNITY EDUCATION AND OUTREACH ON RECYCLING EFFORTS AND INTEGRATED PEST MANAGEMENT APPROACHESAND PARTICIPATE AT EPA CONFERENCESAND DEVELOP THE TRIBES CLEAN AIR PROGRAM THROUGH TRAININGAND AND IMPLEMENT SOLID WASTE ACTIVITIES, INCLUDING THE COLLECTION OF TIRES, BULKY ITEMS, AND RECYCLABLES, CONDUCTING A WASTE CHARACTERIZATION ASSESSMENT, AND ESTABLISHING A TRANSFER STATION.  \n\nTHIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $674,405.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T35401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 194104.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE TOHONO O'ODHAM NATION. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND/OR IMPLEMENT SOLID/HAZARDOUS WASTE ACTIVITIES.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $194,104.  SEE TERMS AND CONDITIONS.  ACTIVITIES:THE ACTIVITIES INCLUDE DEVELOPING OUTREACH AND EDUCATION MATERIALS FOR THE COMMUNITY FOCUSING ON COMPOSTING AND INDOOR AIR QUALITY, ATTENDING RELEVANT TRAINING, ATTENDING REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS IN REGION 9 AS WELL AS THE ANNUAL TRIBAL-EPA CONFERENCE, LOCAL, STATE AND FEDERAL MEETINGS, PARTICIPATING IN OUTREACH EVENTS, AND COORDINATING A COMMUNITY WASTE COLLECTION EVENT.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE SUMMARIES ON THE COMMUNITY OUTREACH AND EDUCATION EVENTS, AND SUMMARIES DEPICTING THE INCREASE IN KNOWLEDGE GAINED BY ATTENDING MEETINGS, TRAINING AND CONFERENCES LIKE THE REGION 9 TRIBAL AND ENVIRONMENTAL PROTECTION AGENCY ANNUAL CONFERENCE, REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS, AND LOCAL MEETINGS AS WELL AS MATERIALS DEVELOPED. \n\nTHE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE TOHONO O'ODHAM NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A12AV01416",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 11871840.94,
+      "start_date": "2012-09-27",
+      "end_date": "2026-04-30",
+      "description": "A12AV01416",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00796",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 1931458.0,
+      "start_date": "2015-09-17",
+      "end_date": "2027-09-30",
+      "description": "FY 2015 AWARD PROJ SXIR CONSOL NO. 2; POP 9/30/2016",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00779",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 1609049.76,
+      "start_date": "2012-09-27",
+      "end_date": "2027-09-30",
+      "description": "A12AV00779",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00491",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 1388150.03,
+      "start_date": "2022-04-11",
+      "end_date": "2027-09-30",
+      "description": "TRIBAL LONG RANGE TRANSPORTATION PLAN GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00903",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 290000.0,
+      "start_date": "2015-09-24",
+      "end_date": "2027-09-30",
+      "description": "AWARD PROJ PIR 10(1) TO DEVELOP DESIGN CONCEPT REPORT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV01025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 277074.46,
+      "start_date": "2020-09-14",
+      "end_date": "2024-09-30",
+      "description": "TOHONO O'ODHAM NATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00231",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 210714.4,
+      "start_date": "2011-09-30",
+      "end_date": "2027-09-30",
+      "description": "AWARD(IRR/RDS/PROJ/PIR 101(2)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A10AV00193",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 182825.32,
+      "start_date": "2010-09-28",
+      "end_date": "2027-09-30",
+      "description": "AWARD(RDS/CONST/PROJ/PIR 400(1",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A10AV00192",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 13844.42,
+      "start_date": "2010-09-28",
+      "end_date": "2025-04-02",
+      "description": "AWARD(IRR RD/CONST/PROJ/PIR 28",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A10AV00194",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 0.0,
+      "start_date": "2010-09-28",
+      "end_date": "2027-09-30",
+      "description": "INITIAL AWARD/ROUTE 102",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00307",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 5800000.0,
+      "start_date": "2022-12-23",
+      "end_date": "2027-09-30",
+      "description": "NEW AWARD_PIR 1(5)_TOHONO O'ODHAM NATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00163",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 1555000.34,
+      "start_date": "2022-12-06",
+      "end_date": "2027-09-30",
+      "description": "NEW AWARD_PIR CONSOL #37_TOHONO O'ODHAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01100",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 1324970.07,
+      "start_date": "2023-08-30",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD_PIR 151(1)_SAN LUIS ST_TOHONO",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00315",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 800000.0,
+      "start_date": "2022-12-23",
+      "end_date": "2027-09-30",
+      "description": "NEW AWARD_PIR 34(8)_TOHONO O'ODHAM NATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00306",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 800000.0,
+      "start_date": "2022-12-21",
+      "end_date": "2025-09-30",
+      "description": "PL 93-638 SUBPART J AWARD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00918",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 799997.94,
+      "start_date": "2023-08-14",
+      "end_date": "2025-09-30",
+      "description": "NEW AWARD_PIR 3(2)_TOHONO O'ODHAM NATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00965",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 5436578.49,
+      "start_date": "2024-09-23",
+      "end_date": "2025-09-30",
+      "description": "PROJECT PIR 2(4)\nPULVERIZE EXISTING BITUMINOUS SURFACE, INCORPORATE INTO EXISTING BASE, PLACE LEVELING COURSE OF AGGREGATE BASE, HOT ASPHALT CONCRETE PAVEMENT AND PAVEMENT MARKINGS FOR 6.958 MILES ON ROUTE 2",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00964",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOHONO O'ODHAM NATION",
+      "obligation": 4999801.22,
+      "start_date": "2024-09-23",
+      "end_date": "2025-09-30",
+      "description": "NEW AWARD_PIR ROAD  MAINTENANCE_TOHONO",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 41199817.39,
+  "award_count": 20,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 1908512.0
+    },
+    "20.205": {
+      "count": 18,
+      "total": 39291305.39
+    }
+  },
+  "yearly_obligations": {
+    "2022": 3102558.0300000003,
+    "2023": 11079968.35,
+    "2024": 10436379.71,
+    "2025": 0.0,
+    "2026": 194104.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,225 @@
 {
   "tribe_id": "epa_100000443",
   "tribe_name": "Klawock Cooperative Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00142",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 129667.76,
+      "start_date": "2020-06-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00046",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 0.0,
+      "start_date": "2018-10-01",
+      "end_date": "2020-10-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01069",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 249921.0,
+      "start_date": "2023-08-23",
+      "end_date": "2026-12-31",
+      "description": "KLAWOCK",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J61101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 494868.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE KLAWOCK COOPERATIVE ASSOCIATION WILL BUILD ENVIRONMENTAL CAPACITY THROUGH TRAINING; GATHERING BASELINE WATER QUALITY DATA; EDUCATION ON SOLID WASTE ISSUES AND BEGINNING ADAPTATION PLANNING. THIS ACTION APPROVES A TWO YEAR WORKPLAN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01J48101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 155001.0,
+      "start_date": "2018-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE KLAWOCK COOPERATIVE ASSOCIATION WILL BUILD TRIBAL ENVIRONMENTAL CAPACITY THROUGH PURCHASE AND CONSTRUCTION OF A METAL BUILDING AT THE KLAWOCK LANDFILL.  THIS WILL ENABLE SOURCE SEPARATION, RECYCLING AND COMPOSTING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J39001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 402993.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE KLAWOCK COOPERATIVE ASSOCIATION WILL CONTINUE TO BUILD THEIR ENVIRONMENTAL PROGRAM THROUGH MAINTAINING THE IGAP ADMINISTRATIVE FUNCTIONS. THEY WILL CONTINUE TRIBAL WATER QUALITY PROGRAM IN ACCORDANCE WITH EPA APPROVED MONITORING STRATEGY AND EPA APPROVED QUALITY ASSURANCE PROJECT PLAN AND CONTINUE TO WORK WITH THE TRIBAL ENVIRONMENTAL COALITION AND PRINCE OF WALES TRIBAL  STEWARDSHIP CONSORTIA ON RECYCLING, COMPOSTING AND SOLID WASTE REDUCTION. THE TRIBE WILL SUBMIT PROGRAM REPORTS TO EPA AND TRIBAL COUNCIL AND THE ENVIRONMENTAL DIRECTOR WILL WORK WITH TRIBAL ADMINISTRATOR/TRIBAL FINANCE MANAGER ON ALL REQUIRED REPORTS TO US EPA.  TRIBAL ENVIRONMENTAL STAFF WILL PARTICIPATE IN A WATERSHED AND BEACH CLEAN-UP ON HIGH-USE AREAS AND WILL DO A BIANNUAL ASSESSMENT OF CULTURALLY SENSITIVE AREAS THAT CAN BE AFFECTED BY CLIMATE CHANGE IMPACTS.  THEY WILL DEVELOP AN APPROVED QUALITY ASSURANCE PROJECT PLAN FOR FISH TISSUE SAMPLING, INCLUDING A STANDARD OPERATING PROCEDURE (SOP) FOR FISH SAMPLING. THEY WILL RECEIVE TRAINING FOR THE MOST APPROPRIATE METHODS FOR FISH TISSUE SAMPLING AND DATA MANAGEMENT.  THE TRIBAL STAFF WILL CONTINUE WITH PHYTOPLANKTON, SHELLFISH BASELINE FOR HARMFUL ALGAL BLOOMS.  THEY WILL PARTNER WITH OTHER TRIBES AND TRIBAL CONSORTIA TO CONDUCT A COMMUNITY CLEANUP AS AN EDUCATIONAL EVENT EMPHASIZING SOURCE REDUCTION AND REUSE.ACTIVITIES:PROGRAM REPORTS WILL BE SUBMITTED TO EPA AND TRIBAL COUNCIL. THE ENVIRONMENTAL DIRECTOR WILL WORK WITH TRIBAL ADMINISTRATOR/TRIBAL FINANCE MANAGER ON ALL REQUIRED REPORTS TO US EPA. STAFF WILL PARTICIPATE IN A SPRING/FALL WATERSHED/BEACH CLEAN-UP ON HIGH-USE AREA.  ENVIRONMENTAL STAFF WILL CONTINUE PHYTOPLANKTON, SHELLFISH BASELINE (HABS), WATER FILTER SAMPLING AND SHELLFISH BIOMASS SURVEY AND CONTINUE TO CONDUCT A COMMUNITY CLEANUP AS AN EDUCATIONAL EVENT, EMPHASIZING SOURCE REDUCTION AND REUSE.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES AND OUTCOMES INCLUDE; PROPER GRANT MANAGEMENT, COMPLIANCE WITH REGULATION AND WORK CONDUCTED IN ACCORDANCE WITH APPROVED WORKPLAN AND FEDERAL GRANT REGULATIONS.  THEY INCLUDE STAFF TRAINED TO ENHANCE PROGRAM DEVELOPMENT AND MANAGEMENT CAPABILITIES AND CONTINUED PARTNERSHIPS WITH FEDERAL, LOCAL GOVERNMENTS AND OTHER AGENCIES TO ADDRESS WATER QUALITY (MOU'S, AGREEMENTS, ETC.).  OTHER DELIVERABLES INCLUDE SIGN IN SHEETS, EVALUATIONS AND REPORTS.  THE INTENDED BENEFICIARIES IS THE COMMUNITY OF KLAWOCK.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0075",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 864517.19,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0075",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 72395.41,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42220000K600AK0075",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 7500.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0075",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 913157.41,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3075024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 793494.82,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KLAWOCK COOPERATIVE ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KLAWOCK COOPERATIVE ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3075024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 250895.51,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KLAWOCK COOPERATIVE ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KLAWOCK COOPERATIVE ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0075",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 119758.35,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271AK3075025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 1586544.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KLAWOCK COOPERATIVE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KLAWOCK COOPERATIVE  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3075025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 928552.92,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KLAWOCK COOPERATIVE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KLAWOCK COOPERATIVE  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3075025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 250868.53,
+      "start_date": "2025-03-26",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: KLAWOCK COOPERATIVE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KLAWOCK COOPERATIVE  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "DEEE0007852",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "KLAWOCK COOPERATIVE ASSOCIATION",
+      "obligation": 336390.11,
+      "start_date": "2017-03-01",
+      "end_date": "2022-12-31",
+      "description": "RACEE: COMMUNITY OF KLAWOCK COMPETITION PROJECT SUMMARY",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 7556525.01,
+  "award_count": 17,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 379588.76
+    },
+    "66.926": {
+      "count": 3,
+      "total": 1052862.0
+    },
+    "20.205": {
+      "count": 10,
+      "total": 5787684.14
+    },
+    "81.087": {
+      "count": 1,
+      "total": 336390.11
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 249921.0,
+    "2024": 402993.0,
+    "2025": 250868.53,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

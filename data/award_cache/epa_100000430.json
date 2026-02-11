@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000430",
   "tribe_name": "Village of Kalskag",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J94401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF KALSKAG",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE NATIVE VILLAGE OF KALSKAG WILL USE FY22 GAP FUNDING TO MANAGE THE GRANT AND BUILD CAPACITY BY ATTENDING TRAININGS, AND HANDLING ADMINISTRATIVE ASPECTS OF THE GRANTAND IMPROVE ENVIRONMENTAL AND COMMUNITY HEALTH AND KNOWLEDGE THROUGH ENVIRONMENTAL EDUCATION OUTREACHAND ADDRESS SOLID WASTE PLANNING AND CAPACITY BUILDING BY IMPROVING MANAGEMENT OF SOLID WASTE, RECYCLABLES, AND BACKHAUL MATERIALS OUT OF KALSKAGAND EDUCATE COMMUNITY MEMBERS ON AIR QUALITY ISSUES AND ENVIRONMENTAL HAZARDS BY ATTENDING MEETINGS AND TRAININGS, AND ENGAGE IN OTHER ACTIVITIES THAT BUILD AWARENESS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J05101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF KALSKAG",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE VILLAGE OF KALSKAG WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE ESTABLISHING PUBLIC PARTICIPATION AND EDUCATION THROUGH COMMUNITY ENGAGEMENT ON EMERGENCY PREPAREDNESS AND ADDRESSING SOLID WASTE MANAGEMENT ISSUES. ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM THE VILLAGE OF KALSKAG WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A15AV00336",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KALSKAG",
+      "obligation": 3614466.81,
+      "start_date": "2015-02-05",
+      "end_date": "2028-12-31",
+      "description": "CONSTRUCTION OF CEMETERY AND LANDFILL ROAD PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00980",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KALSKAG",
+      "obligation": 861963.49,
+      "start_date": "2019-07-05",
+      "end_date": "2024-12-31",
+      "description": "KALSKAG A19AV00980 FY 2019 MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00983",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KALSKAG",
+      "obligation": 829924.11,
+      "start_date": "2019-07-05",
+      "end_date": "2024-12-31",
+      "description": "KALSKAG A19AV00983 FY1 2019 66K AND 6K1 PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00978",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KALSKAG",
+      "obligation": 165809.05,
+      "start_date": "2019-07-05",
+      "end_date": "2024-12-31",
+      "description": "KALSKAG A19AV00978 FY 2019 TRANSIT FACILITIES",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 6125163.46,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 5472163.46
+    }
+  },
+  "yearly_obligations": {
+    "2022": 519000.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

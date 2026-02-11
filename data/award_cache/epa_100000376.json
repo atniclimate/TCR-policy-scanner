@@ -1,9 +1,155 @@
 {
   "tribe_id": "epa_100000376",
   "tribe_name": "Chignik Bay Tribal Council",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV01036",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 249638.0,
+      "start_date": "2024-09-18",
+      "end_date": "2026-12-31",
+      "description": "CHIGNIK BAY FY 2023 TCR CAT 2",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01029",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 248989.0,
+      "start_date": "2024-09-18",
+      "end_date": "2026-12-31",
+      "description": "CHIGNIK BAY TCR CATEGORY 1",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J56901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "TRIBE WILL BUILD CAPACITY THRU TRAINING AND EDUCATION; BY CONDUCTING A SELF-ASSESSMENT ON ADMINISTRATIVE/FISCAL POLICIES AND PROCEDURES; MAKE IMPROVEMENTS TO PLANNING ON MITIGATION STRATEGIES IN TRIBAL HAZARD MITIGATION PLAN; COLLABORATE ON WATERSHED PLANNING WITH REGIONAL PARTNERS; IMPROVE SOLID WASTE MANAGEMENT PRACTICES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J47601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 402990.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE TRIBE WILL BUILD CAPACITY TO MANAGE ENVIRONMENTAL PROGRAMS BY DEVELOPING A WATERSHED PROTECTION PROGRAM, AN ALL HAZARDS MITIGATION PROGRAM, ADDRESSING AIR QUALITY, AND CLIMATE CHANGE ADAPTATION AND EMERGENCY RESPONSE PLANNING.  THE PRIMARY OBJECTIVES OF THIS PROJECT INCLUDE: PROGRESSIVE ADMINISTRATIVE AND PROGRAMMATIC CAPACITY DEVELOPMENT WILL STRENGTHEN THE TRIBE'S ENVIRONMENTAL PROGRAM; COMMUNITY OUTREACH AND EDUCATION: EXPLORE A VARIETY OF ENVIRONMENTAL TOPICS AND ISSUES WITH COMMUNITY MEMBERS TO ENCOURAGE INVOLVEMENT IN ENVIRONMENTAL ISSUES AND PROJECTS. FOCUS ON THE PRIORITIES IN THE TRIBE'S EPA TRIBAL ENVIRONMENTAL PLAN (ETEP) AND CURRENT WORKPLAN; CONTINUE TO IMPROVE SOLID/HAZARDOUS WASTE MANAGEMENT THROUGH COLLABORATION WITH PARTNERS, TRAINING FOR STAFF, AND COMMUNITY OUTREACH AND EDUCATION; CONTINUE TO EXPAND AND IMPROVE THE SOLID/HAZARDOUS WASTE MANAGEMENT PROGRAM USING OPTIMAL PRACTICES AND THE LATEST TECHNOLOGIES; AND ENHANCE CLIMATE CHANGE ADAPTATION PLANNING AND EMERGENCY RESPONSE PLANNING/PROGRAM DEVELOPMENT BY COLLABORATING WITH A VARIETY OF ORGANIZATIONS TO IMPROVE ENVIRONMENTAL HEALTH AND SUSTAINABILITY.ACTIVITIES:ATTEND ALASKA TRIBAL CONFERENCE ON ENVIRONMENTAL MANAGEMENT AND THE ALASKA FORUM ON THE ENVIRONMENT CONFERENCES. THE ENVIRONMENTAL DEPARTMENT WILL COLLABORATE WITH OTHER ORGANIZATIONS ON WASTE MANAGEMENT, CLIMATE CHANGE, EMERGENCY RESPONSE, AND OTHER ENVIRONMENTAL ISSUES. REVIEW THE EPA-TRIBAL ENVIRONMENTAL PLAN AND UPDATE IT AS NEEDED. ENVIRONMENTAL STAFF WILL DO COASTAL EROSION AND WATERSHED PLANNING.\n\t\nDISTRIBUTE ENVIRONMENTAL INFORMATION TO THE COMMUNITY, AND IMPROVE COMMUNICATIONS ON ENVIRONMENTAL EVENTS AND ISSUES. MEET WITH THE SCHOOL PRINCIPAL TO SCHEDULE PRESENTATIONS/ACTIVITIES WITH STUDENTS ON  PROTECTING THE ENVIRONMENT. CREATE FLYERS TO PROMOTE RECYCLING, DISPOSING OF HAZARDOUS WASTE, CURRENT CLIMATE CHANGE NEWS, AND AIR QUALITY.\n\t\nWORK WITH ORGANIZATIONS TO EDUCATE THE COMMUNITY ON ENVIRONMENTAL PROTECTION WITH ACTIVITIES LIKE COMMUNITY CLEAN UP. REVIEW/UPDATE THE SOLID WASTE MANAGEMENT PLAN. \n\t\nMAINTAIN A REUSE AREA FOR COMMUNITY MEMBERS. ACCEPT AND STAGE BACKHAUL MATERIALS DURING THE SUMMER MONTHS. \n\t\nGATHER INFORMATION ON EXISTING PLANNING AND ASSESSMENT EFFORTS AT BOTH REGIONAL AND LOCAL LEVELS ON CLIMATE CHANGE AND ADAPTATION PLANNING. LEAD ON EMERGENCY RESPONSE PLANNING. WORK WITH ELDERS AND OTHERS TO COMPILE TRADITIONAL KNOWLEDGE OF ENVIRONMENTAL CONDITIONS. TRIBAL NEWSLETTER WILL INCLUDE INFORMATION ABOUT CLIMATE CHANGE AND ENVIRONMENTAL EMERGENCY RESPONSE. EC WILL NETWORK WITH GOVERNMENT ENTITIES, INCLUDING THE CITY AND DIVISION OF HOMELAND SECURITY AND EMERGENCY RESPONSE  TO UPDATE THE NEW EMERGENCY OPERATIONS PLAN.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES: COPIES OF PRESENTATIONS AND HANDOUT MATERIALS, SUMMARY REPORT ON COLLECTION, STAGING, AND BACKHAUL OF MATERIALS, UPDATED SOLID WASTE MANAGEMENT PLAN (SWMP), PHOTOS., TRIP REPORTS AND MEETING NOTES.  EXPECTED OUTCOMES INCLUDE: A STRONG FOUNDATION IN GRANTS MANAGEMENT AND COLLABORATION WITH PARTNERS WILL PROMOTE ENVIRONMENTAL STEWARDSHIP AND SUSTAINABILITY; TRIBAL MEMBERS' PARTICIPATION IN LOCAL ENVIRONMENTAL ACTIVITIES AND PROJECTS WILL RESULT IN A DESIRE TO SERVE AS ENVIRONMENTAL STEWARDS; COMMUNITY UNDERSTANDING/INVOLVEMENT WITH SOLID/HAZARDOUS WASTE ISSUES WILL PROMOTE IMPROVED HUMAN AND ENVIRONMENTAL HEALTH; A SMOOTHLY FUNCTIONING SOLID/HAZARDOUS WASTE MANAGEMENT PROGRAM WILL PROMOTE BETTER HUMAN AND ENVIRONMENTAL HEALTH, AND; AS THE COMMUNITY BECOMES INFORMED AND PREPARED TO ADAPT TO CLIMATE CHANGE AND NATURAL AND HUMAN CAUSED DISASTERS, HUMAN AND ENVIRONMENTAL HEALTH WILL IMPROVE. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00882",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 402998.83,
+      "start_date": "2018-08-18",
+      "end_date": "2025-12-31",
+      "description": "A18AV00882",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00678",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 140965.0,
+      "start_date": "2014-02-11",
+      "end_date": "2026-12-31",
+      "description": "CHIGNIK BAY TRIBAL COUNCIL A12AV00678 M1",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00379",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 132876.0,
+      "start_date": "2014-05-01",
+      "end_date": "2026-12-31",
+      "description": "CHIGNIK BAY DESIGN CONTRACT FOR .1 MILE GRAVEL ROAD, ROUTE 0034",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00881",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 22737.34,
+      "start_date": "2018-08-18",
+      "end_date": "2025-12-31",
+      "description": "A18AV00881",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00058",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 0.0,
+      "start_date": "2009-10-16",
+      "end_date": "2026-12-31",
+      "description": "HARRIS CLINIC ACCESS ROAD AND PARKING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00623",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 244501.82,
+      "start_date": "2023-05-09",
+      "end_date": "2028-12-31",
+      "description": "CHIGNIK BAY ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00622",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK BAY TRIBAL COUNCIL",
+      "obligation": 4882.04,
+      "start_date": "2023-05-09",
+      "end_date": "2028-12-31",
+      "description": "CHIGNIK BAY 2% PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2345002.03,
+  "award_count": 11,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 498627.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 897414.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 948961.03
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 249383.86000000002,
+    "2024": 901617.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

@@ -1,9 +1,221 @@
 {
   "tribe_id": "epa_100000162",
   "tribe_name": "Mississippi Band of Choctaw Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01D17820",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 616000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2026-09-30",
+      "description": "THIS ACTION APPROVES AN AWARD IN THE AMOUNT OF $586,000 TO MISSISSIPPI BAND OF CHOCTAW INDIANS TO PROVIDE SAFE DRINKING WATER FOR OVER 2700 HOMES ON THE RESERVATION OF THE MISSISSIPPI BAND OF CHOCTAW INDIANS IN CHOCTAW AND NESHOBA COUNTIES IN MISSISSIPPI. IN PARTICULAR, THREE PROJECTS WILL BE COMPLETED TO REDUCE THE RISK OF DRINKING WATER CONTAMINATION AS A RESULT OF ACUTE OR POTENTIAL INFRASTRUCTURE FAILURES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03D21325",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 487000.0,
+      "start_date": "2025-01-01",
+      "end_date": "2026-12-31",
+      "description": "DESCRIPTION:THIS ACTION PROVIDES FUNDING IN THE AMOUNT OF $487,000 TO MISSISSIPPI BAND OF CHOCTAW INDIANS UNDER THE SAFE DRINKING WATER ACT (SDWA): SECTION 1452 AND INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) (PL 117-58). THE PURPOSE OF THIS AGREEMENT IS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA. SPECIFICALLY, THE RECIPIENT WILL UPGRADE DRINKING WATER SYSTEMS IN BOGUE CHITTO, CONEHATTA, PROJECTS MAY INCLUDE PLANNING AND CONSTRUCTION EXPENDITURES AT COMMUNITY OR NON-PROFIT NON-COMMUNITY DRINKING WATER SYSTEMS THAT SERVE TRIBES. TRAINING AND OPERATOR CERTIFICATION PROGRAMS ARE ALSO ELIGIBLE.\n\nACTIVITIES: THE ACTIVITIES INCLUDE UPGRADING INFRASTRUCTURE, DEVELOPING FLUSHING PROGRAM, DEVELOPING EMERGENCY RESPONSE PLAN, PROCURING EQUIPMENT AND SERVICES, DEVELOPING PURCHASE ORDERS AND CONTRACTS, AND MONITORING EQUIPMENT INSTALLATIONS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE PERFORMANCE AND FINAL REPORTS.  THE EXPECTED OUTCOMES INCLUDE INFRASTRUCTURE UPGRADES, FLUSHING PROGRAMS, AND EMERGENCY RESPONSE PLANS FOR CONEHATTA, BOGUE CHITTO, AND TUCKER DRINKING WATER SYSTEMS. THE INTENDED BENEFICIARIES INCLUDE CITIZENS OF THE MISSISSIPPI BAND OF CHOCTAW INDIANS AND THE STATE OF MISSISSIPPI.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01D17825",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 135000.0,
+      "start_date": "2025-01-01",
+      "end_date": "2026-12-31",
+      "description": "DESCRIPTION:THE ACTION PROVIDES FUNDING IN THE AMOUNT OF $135,000 TO MISSISSIPPI BAND OF CHOCTAW INDIANS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SAFE DRINKING WATER ACT (SDWA). SPECIFICALLY, THE RECIPIENT WILL PRIORITIZE THE MANY NEEDS OF THE BOGUE CHITTO, CONEHATTA, AND TUCKER DRINKING WATER SYSTEMS, AND TO MITIGATE THE DEFICIENCIES NOTED BY THE ENVIRONMENTAL PROTECTION AGENCY TO THE MAXIMUM EXTENT POSSIBLE WITH THE AMOUNT OF FUNDING MADE AVAILABLE. PROJECTS MAY INCLUDE PLANNING AND CONSTRUCTION EXPENDITURES AT COMMUNITY OR NON-PROFIT NON-COMMUNITY DRINKING WATER SYSTEMS THAT SERVE TRIBES. TRAINING AND OPERATOR CERTIFICATION PROGRAMS ARE ALSO ELIGIBLE.\n\n\n\nACTIVITIES:THE ACTIVITIES TO BE PERFORMED INCLUDE UPGRADING INFRASTRUCTURE, DEVELOPING FLUSHING PROGRAM, DEVELOPING EMERGENCY RESPONSE PLAN, PROCURING EQUIPMENT AND SERVICES, DEVELOPING PURCHASE ORDERS AND CONTRACTS, MONITORING EQUIPMENT INSTALLATIONS, AND PROJECT AND FINANCIAL REPORTING FOR IMPROVED DRINKING WATER QUALITY. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE PERFORMANCE AND FINAL REPORTS, INFRASTRUCTURE UPGRADES, FLUSHING PROGRAMS, AND EMERGENCY RESPONSE PLANS FOR CONEHATTA, BOGUE CHITTO, AND TUCKER DRINKING WATER SYSTEMS. THESE DELIVERABLES WILL RESULT IN IMPROVED WATER QUALITY TO THE DRINKING WATER SYSTEM CUSTOMERS AS WELL AS ACHIEVING IMPROVED OPERATIONS AT THESE DRINKING WATER SYSTEMS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A10AV00418",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 1946864.0,
+      "start_date": "2010-09-27",
+      "end_date": "2023-09-30",
+      "description": "PAVEMENT REHAB",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00938",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 1743500.0,
+      "start_date": "2017-01-02",
+      "end_date": "2027-09-30",
+      "description": "MBCI_16X_BIA RTE 2242_0222_NC",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00099",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 515763.88,
+      "start_date": "2007-09-20",
+      "end_date": "2027-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A04AV00009",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 315000.0,
+      "start_date": "2004-09-03",
+      "end_date": "2027-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A06AV00034",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 250000.0,
+      "start_date": "2006-09-27",
+      "end_date": "2027-09-30",
+      "description": "SAFETY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00921",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 160000.0,
+      "start_date": "2017-01-02",
+      "end_date": "2027-09-30",
+      "description": "MBCI_17X_BIA ROUTE 22D1_NC",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00941",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 125000.0,
+      "start_date": "2017-01-02",
+      "end_date": "2027-09-30",
+      "description": "MBCI_15X_16X_BIA ROUTE 2905_NC",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A04AV00010",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 30000.0,
+      "start_date": "2004-09-07",
+      "end_date": "2027-09-30",
+      "description": "FROG LEVEL RD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00927",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 12500.0,
+      "start_date": null,
+      "end_date": "2027-09-30",
+      "description": "SAFETY PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00098",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 0.0,
+      "start_date": "2008-09-25",
+      "end_date": "2027-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00908",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 16160451.79,
+      "start_date": "2017-01-02",
+      "end_date": "2027-09-30",
+      "description": "MBCI_17X_MULTIPLE ROUTES_NC",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00915",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 1639691.75,
+      "start_date": "2017-01-02",
+      "end_date": "2027-09-30",
+      "description": "MBCI_15X_17X_BIA RTE 0233_NC",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00963",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 791609.45,
+      "start_date": "2016-11-01",
+      "end_date": "2027-09-30",
+      "description": "MBCI_15X_16X_17X_PLANNING_NC",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "00D51617",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "MISSISSIPPI BAND OF CHOCTAW INDIANS",
+      "obligation": 339339.0,
+      "start_date": "2016-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS ACTION APPROVES AN AWARD IN THE AMOUNT OF $45,000 TO THE THE MISSISSIPPI BAND OF CHOCTAW INDIANS TO BUILD CAPACITY FOR ESTABLISHING AN AIR QUALI",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 25267719.869999997,
+  "award_count": 17,
+  "cfda_summary": {
+    "66.468": {
+      "count": 3,
+      "total": 1238000.0
+    },
+    "20.205": {
+      "count": 13,
+      "total": 23690380.869999997
+    },
+    "66.038": {
+      "count": 1,
+      "total": 339339.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 622000.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

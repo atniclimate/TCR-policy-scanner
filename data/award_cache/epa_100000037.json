@@ -1,9 +1,218 @@
 {
   "tribe_id": "epa_100000037",
   "tribe_name": "Cher-Ae Heights Indian Community of the Trinidad Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00155",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 11972.0,
+      "start_date": "2019-08-01",
+      "end_date": "2021-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00147",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 0.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2022-BR-020",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 142500.0,
+      "start_date": "2024-06-21",
+      "end_date": "2027-06-20",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "98T02601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 894430.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE TRINIDAD RANCHERIA ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE UPDATING THE TRIBE'S ENVIRONMENTAL PLAN, CONDUCTING A HOUSEHOLD HAZARDOUS WASTE CLEANUP EVENT, MANAGING THE ENVIRONMENTAL OFFICE, REFINING THEIR SOLID WASTE ORDINANCE, CONDUCTING COMMUNITY OUTREACH, COORDINATING WITH VARIOUS TRIBAL, STATE AND FEDERAL ENTITIES ON ENVIRONMENTAL ISSUES, AND COMPLETING TRAININGS TO DEVELOP ENVIRONMENTAL PROGRAM CAPACITY.  THIS ASSISTANCE AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $198,727 FOR THE PERIOD OF 10/1/20 THROUGH 9/30/21.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T93601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 683076.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE TRINIDAD RANCHERIA. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.ACTIVITIES:THE ACTIVITIES INCLUDE MANAGING AN ENVIRONMENTAL PROGRAM, COORDINATING WITH VARIOUS ORGANIZATIONS TO PROMOTE ENVIRONMENTAL PRIORITIES, DEVELOPING AND CONDUCTING OUTREACH EVENTS, ATTENDING CAPACITY BUILDING TRAININGS AND WORKSHOPS, ADVANCING EMERGENCY RESPONSE EXPERTISE, AND BUILDING A SOLID AND HAZARDOUS WASTE PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE REVIEWED ENVIRONMENTAL PLANS, COMPLETED NETWORKING WITH STAKEHOLDERS, UPDATED ENVIRONMENTAL OUTREACH MATERIALS, AND IMPROVED DISPOSAL OF SOLID AND HAZARDOUS WASTE. THE EXPECTED OUTCOMES INCLUDE KNOWLEDGEABLE ENVIRONMENTAL STAFF, IMPROVED RESPONSE TO TRIBAL ENVIRONMENTAL PRIORITIES, AND MEASURABLE PROGRESS ON ENVIRONMENTAL PLANS. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE TRINIDAD RANCHERIA.   THIS ASSISTANCE AGREEMENT PROVIDES PARTIAL FEDERAL FUNDING IN THE AMOUNT OF $172,477.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600CA0057",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 302069.72,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600CA0057",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 25488.09,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0057",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 326762.34,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42420000V600OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 27000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17ACA3057024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 2000000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RACHERIA :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RACHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600CA0057",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 1035226.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602CA3057024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 289104.51,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RACHERIA :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RACHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176CA3057024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 133557.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RACHERIA :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RACHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3057025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 345187.88,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177CA3057025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 133549.84,
+      "start_date": "2025-01-08",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHER-AE HEIGHTS INDIAN COMMUNITY OF TRINIDAD RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0637570",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA",
+      "obligation": 1239851.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 7589775.26,
+  "award_count": 16,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 11972.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 142500.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1577506.0
+    },
+    "20.205": {
+      "count": 10,
+      "total": 4617946.26
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1239851.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 142500.0,
+    "2025": 816625.84,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

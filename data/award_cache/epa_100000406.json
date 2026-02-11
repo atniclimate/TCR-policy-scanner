@@ -1,9 +1,203 @@
 {
   "tribe_id": "epa_100000406",
   "tribe_name": "Native Village of Fort Yukon",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00214",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 150000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01045",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 250000.0,
+      "start_date": "2023-08-21",
+      "end_date": "2025-09-30",
+      "description": "NATIVE VILLAGE OF FORT YUKON TRIBAL CLIMATE RESILIENCE GRANT AWARD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00288",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 5000000.0,
+      "start_date": "2024-12-16",
+      "end_date": "2029-12-31",
+      "description": "FORT YUKON",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J77701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT WILL ASSIST NATIVE VILLAGE OF FORT YUKON TO BUILD ITS ADMINISTRATIVE CAPACITY OF ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  THE RECIPIENT WILL: 1. BUILD ON ADMINISTRATIVE AND PROGRAMMATIC CAPACITY DEVELOPED UNDER PREVIOUS IGAP GRANTS; 2. PROMOTE COMMUNITY OUTREACH, EDUCATION, AND INVOLVEMENT IN ENVIRONMENTAL ISSUES AND PROJECTS; 3. CONTINUE PROGRESSIVE SOLID WASTE PROGRAM PLANNING AND DEVELOPMENT; AND 4. CONTINUE TO EXPAND FORT YUKON'S SOLID/HAZARDOUS WASTE IMPLEMENTATION CAPACITY THROUGH COLLABORATION WITH PARTNERS AND USING BEST PRACTICES AND THE LATEST TECHNOLOGIES.  NOTE THAT YOU MAY NOT DRAW DOWN FUNDS FOR INDIRECT COSTS WITHOUT A CURRENT, APPROVED RATE IN PLACE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J65801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 267998.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:PROJECT OBJECTIVES INCLUDE ADVANCING GRANTS MANAGEMENT CAPACITY, PROVIDING COMMUNITY OUTREACH AND EDUCATION, EXPANDING THE WASTE MANAGEMENT PROGRAM, AND CONDUCTING PLANNING FOR CLIMATE CHANGE ADAPTATION AND EMERGENCY RESPONSE.ACTIVITIES:PROJECT ACTIVITIES WILL INCLUDE ATTENDING CONFERENCES AND WEBINARS, STAFF TRAINING, COLLABORATION WITH PARTNERS ON PROGRAM DEVELOPMENT, AND IMPROVING COMMUNICATIONS FOR OUTREACH AND EDUCATION. OTHER ACTIVITIES INCLUDE EXPANDING WASTE MANAGEMENT PLANNING, IMPLEMENTATION, AND SERVICE DELIVERY ACTIVITIES AND RESEARCH AND PLANNING FOR CLIMATE CHANGE AND EMERGENCY RESPONSE PROGRAM DEVELOPMENT.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE PROGRESS REPORTING, WASTE DATA, AGREEMENTS, MEETING NOTES, POLICIES AND PROCEDURES, PRESENTATIONS, A QUALITY ASSURANCE PROJECT PLAN, FLYERS, CERTIFICATIONS, AN INTEGRATED WASTE MANAGEMENT PLAN, AND INTERVIEW NOTES. EXPECTED OUTCOMES ARE THAT STRONG GRANTS MANAGEMENT SKILLS, COLLABORATION, PARTICIPATION IN ENVIRONMENTAL ACTIVITIES, AND KNOWLEDGE OF POTENTIAL IMPACTS FROM CLIMATE CHANGE AND NATURAL DISASTERS WILL PROMOTE ENVIRONMENTAL SUSTAINABILITY. THE INTENDED BENEFICIARIES ARE THE RESIDENTS OF FORT YUKON.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42220000R710AK0031",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 327492.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V600AK0031",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 154686.44,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0031",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 11914.2,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0031",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 164472.51,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3031024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 146111.43,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF FORT YUKON TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF FORT YUKON UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3031024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 63972.36,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF FORT YUKON TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF FORT YUKON UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0031",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 31570.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3031025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 174232.2,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF FORT YUKON FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE NATIVE VILLAGE OF FORT YUKON PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3031025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 63938.71,
+      "start_date": "2025-04-01",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF FORT YUKON FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE NATIVE VILLAGE OF FORT YUKON PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0205360",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NATIVE VILLAGE OF FORT YUKON",
+      "obligation": 8945718.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 16262106.01,
+  "award_count": 15,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 5400000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 777998.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 1138390.01
+    },
+    "14.867": {
+      "count": 1,
+      "total": 8945718.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 250000.0,
+    "2024": 0.0,
+    "2025": 5331936.71,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

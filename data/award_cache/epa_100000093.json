@@ -1,9 +1,221 @@
 {
   "tribe_id": "epa_100000093",
   "tribe_name": "Gila River Indian Community of the Gila River Indian Reservation, Arizona",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T19501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 742382.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO GILA RIVER INDIAN COMMUNITY TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. THE DIRECT BENEFICIARIES ARE THE MEMBERS AND/OR RESIDENTS OF THE GILA RIVER INDIAN COMMUNITY. THE RECIPIENT WILL PROVIDE AND EVALUATE OUTREACH AND EDUCATION ABOUT THE TRIBE'S ENVIRONMENTAL LAWS, CLEAN-UP DUMP SITES, AND ATTEND TRAININGS THAT TARGET GEOGRAPHIC INFORMATION SYSTEMS. ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE ENHANCING THE TRIBE'S ENVIRONMENTAL ENFORCEMENT CAPACITY VIA COMMUNITY EDUCATION, DUMP CLOSURE FORMS, AND ENHANCED GEOGRAPHIC INFORMATION SYSTEM CAPACITY IN THE TRIBE'S ENVIRONMENTAL DEPARTMENT.\n\nTHE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $95,918.00.  SEE TERMS AND CONDITIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T35301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 151097.0,
+      "start_date": "2025-10-01",
+      "end_date": "2029-09-30",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO GILA RIVER INDIAN COMMUNITY.  THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND/OR IMPLEMENT SOLID/HAZARDOUS WASTE ACTIVITIES.\n\nTHIS AGREEMENT PROVIDES PARTIAL FEDERAL FUNDING IN THE AMOUNT OF $151,097 TO SUPPORT WORKPLAN ACTIVITIES THROUGH 9/30/2026. REFER TO TERMS AND CONDITIONS.  ACTIVITIES:THE ACTIVITIES INCLUDE HOSTING A COMMUNITY CLEANUP DAY AS PART OF AN EARTH DAY EVENT, CREATING OUTREACH VIDEOS TO PROMOTE PESTICIDES AWARENESS, ATTENDING REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE COPIES OF OUTREACH VIDEOS UPON REQUEST, AN EARTH DAY EVENT SUMMARY TO REPORT SUCCESSES AND IMPROVEMENTS. THE EXPECTED OUTCOMES INCLUDE A PESTICIDE CONTROL WITHOUT DANGEROUS CHEMICALS, AN INFORMED COMMUNITY, AND A HEALTHIER ENVIRONMENT. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR RESIDENTS OF THE GILA RIVER INDIAN COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AZ0023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 2937724.72,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42220000K600AZ0023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 785339.32,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AZ0023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 2916940.92,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000V926AZ0023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 1000000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000V928AZ0023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 915000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000V929AZ0023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 293000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AAZ3023024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 3997000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  GILA RIVER TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GILA RIVER UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AZ3023024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 2986360.01,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  GILA RIVER TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GILA RIVER UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AZ3023024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 865022.97,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  GILA RIVER TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GILA RIVER UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y604AZ3023024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 850000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  GILA RIVER TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GILA RIVER UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AZ0023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 382549.63,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AZ3023025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 3042568.88,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: GILA RIVER TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GILA RIVER  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AZ3023025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 864052.9,
+      "start_date": "2025-01-10",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: GILA RIVER TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GILA RIVER  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0401760",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 162456959.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0401760",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "GILA RIVER INDIAN COMMUNITY",
+      "obligation": 5294956.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "PURPOSE: THE INDIAN HOUSING BLOCK GRANTS (IHBG) PROGRAM IS AUTHORIZED UNDER THE NATIVE AMERICAN HOUSING ASSISTANCE AND SELF-DETERMINATION ACT OF 1996 (25 U.S.C. §4101 ET SEQ.) (NAHASDA). REGULATIONS FOR THE PROGRAM, WHICH ARE FOUND AT 24 CFR PART 1000, WERE WRITTEN BY HUD IN NEGOTIATION WITH TRIBES AND TRIBALLY DESIGNATED HOUSING ENTITIES (TDHES). THE GRANTS, WHICH ARE AWARDED BASED ON A FORMULA TO TRIBES AND TDHES, FUND A RANGE OF AFFORDABLE HOUSING ACTIVITIES THAT PRIMARILY BENEFIT LOW-INCOME AMERICAN INDIAN AND ALASKA NATIVE FAMILIES LIVING IN INDIAN COUNTRY AND INCLUDE ACTIVITIES THAT: 1) ASSIST AND PROMOTE AFFORDABLE HOUSING ACTIVITIES TO DEVELOP, MAINTAIN, AND OPERATE AFFORDABLE HOUSING IN SAFE AND HEALTHY ENVIRONMENTS ON INDIAN RESERVATIONS AND IN OTHER INDIAN AREAS FOR OCCUPANCY BY LOW-INCOME INDIAN FAMILIES; 2) COORDINATE ACTIVITIES TO PROVIDE HOUSING FOR INDIAN TRIBES AND THEIR MEMBERS AND TO PROMOTE SELF-SUFFICIENCY AND THEIR MEMBERS; 3) PLAN FOR AND INTEGRATE INFRASTRUCTURE RESOURCES FOR INDIAN TRIBES WITH HOUSING DEVELOPMENT FOR INDIAN TRIBES. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; ACTIVITIES TO BE PERFORMED: NO VALUE PROVIDED; EXPECTED OUTCOMES: NO VALUE PROVIDED; INTENDED BENEFICIARIES: THE PRIMARY BENEFICIARIES OF FUNDS ARE FAMILIES THAT MEET THE CRITERIA OF NAHASDA AND 24 CFR 1000.104. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; SUBRECIPIENT ACTIVITIES: NO VALUE PROVIDED",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 190480953.35,
+  "award_count": 17,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 893479.0
+    },
+    "20.205": {
+      "count": 13,
+      "total": 21835559.349999998
+    },
+    "14.867": {
+      "count": 2,
+      "total": 167751915.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 742382.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 864052.9,
+    "2026": 151097.0
+  },
+  "trend": "increasing"
 }

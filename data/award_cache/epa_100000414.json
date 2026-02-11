@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000414",
   "tribe_name": "Native Village of Hamilton",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10160",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF HAMILTON",
+      "obligation": 126919.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-08-31",
+      "description": "NATIVE VILLAGE OF HAMILTON EROSION PROTECTION FINAL DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J75801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF HAMILTON",
+      "obligation": 463425.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO NATIVE VILLAGE OF HAMILTON TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. THIS WORK PLAN CONTAINS 4 COMPONENTS THAT INCLUDE: 1)BUILDING ADMINISTRATIVE CAPACITY  2)BUILDING TECHNICAL (WATER QUALITY) CAPACITY 3)ESTABLISH AIR QUALITY PROGRAM 4)BUILDING SOLID WASTE CAPACITIES",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J88801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF HAMILTON",
+      "obligation": 259000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF HAMILTON WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE ESTABLISHING PUBLIC PARTICIPATION AND EDUCATION THROUGH COMMUNITY ENGAGEMENT ON CLIMATE CHANGE AND EMERGENCY PREPAREDNESS AND ADDRESSING SOLID WASTE MANAGEMENT ISSUES.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM THE NATIVE VILLAGE OF HAMILTON WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV01061",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF HAMILTON",
+      "obligation": 1419431.52,
+      "start_date": "2019-08-25",
+      "end_date": "2025-12-31",
+      "description": "HAMILTON FY19 6K1 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01029",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF HAMILTON",
+      "obligation": 303592.26,
+      "start_date": "2019-08-12",
+      "end_date": "2025-12-31",
+      "description": "HAMILTON A19AV01029 FY 2019 PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01062",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF HAMILTON",
+      "obligation": 234330.42,
+      "start_date": "2025-07-31",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01053",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF HAMILTON",
+      "obligation": 50593.77,
+      "start_date": "2025-07-30",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2857291.97,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 126919.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 722425.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 2007947.97
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 543924.1900000001,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

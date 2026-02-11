@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000531",
   "tribe_name": "Native Village of Shishmaref",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10168",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHISHMAREF",
+      "obligation": 149988.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-12-31",
+      "description": "EROSION PROTECTION DESIGN AND PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00173",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHISHMAREF",
+      "obligation": 138060.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10146",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHISHMAREF",
+      "obligation": 124960.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-12-31",
+      "description": "SITE EXPANSION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J04001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHISHMAREF",
+      "obligation": 509000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:\nTHE TRIBE WILL CONTINUE TO BUILD CAPACITY REGARDING ENVIRONMENTAL ISSUES FACING THE TRIBE, AND CONTINUE EFFORTS TO REMEDIATE AND ELIMINATE DANGEROUS AND POLLUTION FROM OUR LANDFILL AND THE AIR. THE NATIVE VILLAGE OF SHISHMAREF WILL COMMUNICATE OUTDOOR AND INDOOR AIR POLLUTION ISSUES, CLIMATE CHANGE FACTS, IMPACTS AND CHALLENGES, AND CONTINUE LANDFILL CONTAINMENT AND RECYCLE PROGRAMS. THE SHISHMAREF ENVIRONMENTAL PROGRAM STAFF WILL ATTEND TRAINING TO PROTECT HUMAN HEALTH AND IMPROVE AIR QUALITY AND PUBLIC HEALTH IN THE COMMUNITY AND INCREASE AWARENESS OF AIR POLLUTION SOURCES. THE TRIBE WILL FOLLOW AND UPDATE THE SOLID WASTE MANAGEMENT PLAN, WORK WITH STATE AND LOCAL ENTITIES TO CONTINUE TO PERMIT AND MAINTAIN THE LANDFILL. BEHAVIOR CHANGES WILL BE REALIZED THROUGH EDUCATION REGARDING AIR IMPACTS, THE LANDFILL, RECYCLING EFFORTS AND PRESENTATIONS. THIS PROGRAM PROJECT PLAN WILL COVER MORE THAN FOUR YEARS OF CAPACITY BUILDING, LOCATING FUNDING RESOURCES, PLANNING AND PROJECT BUILDING.  \n\nACTIVITIES:\nTRAINING, EDUCATING TRIBAL MEMBERS THROUGH PRESENTATIONS, NEWSLETTERS, AND SERVICES. TRIBE STAFF WILL WRITE EPA REQUIRED PLANNING DOCUMENTS, DEVELOPING KEY PRIORITIES FOR PROJECT BUILDING IN ENVIRONMENTAL ISSUES ALLOWABLE UNDER GAP. REPORT ALL WORKPLAN PROGRESS TO EPA, COMMUNICATE WITH PROJECT OFFICER, DISCUSS ISSUES AND SETBACKS. SEE THAT PROJECTS ARE SUCCESSFUL AND TRACK LESSONS LEARNED. \nOUTCOMES:\nDELIVERABLES INCLUDE REPORTING OF ALL ACCOMPLISHMENTS AND LESSONS LEARNED, FINANCIAL ACCOUNTABILITY, SUCCESSFUL WRITTEN DOCUMENTS AS REQUIRED, SUCH AS THE INTEGRATED WASTE MANAGEMENT PLAN AND A CLIMATE CHANGE ACTION PLAN. REALIZING A CLEANER AIR AND LANDFILL SITUATION THROUGH EDUCATION AND IMPLEMENTATION THE TRIBAL COMMUNITY WILL BENEFIT IN HEALTH AND REDUCED STRESS. MAINTAINING A CLEAN ENVIRONMENT REDUCES POLLUTION, PRESERVES OUR BIOSPHERE, PROTECTS OCEAN AND LAND SPECIES, AND HELPS PRESERVE THE EARTH'S NATURAL RESOURCES. THE HUMAN HEALTH AND THE ENVIRONMENT AND TRIBAL COMMUNITY ARE THE BENEFICIARY BECAUSE THE STATE OF GENERAL HEALTH AND HAPPINESS REPRESENTS THE OVERALL MINDSET.\n\nSUBRECIPIENT:\nNO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 922008.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 413008.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 509000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 509000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

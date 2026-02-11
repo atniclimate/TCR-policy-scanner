@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000011",
   "tribe_name": "Augustine Band of Cahuilla Indians, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV00588",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "AUGUSTINE BAND OF CAHUILLA INDIANS",
+      "obligation": 149912.0,
+      "start_date": "2022-10-15",
+      "end_date": "2024-12-31",
+      "description": "TRIBAL CLIMATE RESILIANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2021-BR-099",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "AUGUSTINE BAND OF CAHUILLA INDIANS",
+      "obligation": 610350.0,
+      "start_date": "2024-06-21",
+      "end_date": "2027-06-20",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    }
+  ],
+  "total_obligation": 760262.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 149912.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 610350.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 149912.0,
+    "2024": 610350.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

@@ -1,9 +1,129 @@
 {
   "tribe_id": "epa_100000468",
   "tribe_name": "Native Village of Minto",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J74601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO NATIVE VILLAGE OF MINTO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL  BUILD STAFF'S AND COUNCIL'S ADMINISTRATIVE AND PROGRAMMATIC CAPACITY, DEVELOP SOLID WASTE AND RECYCLING SUSTAINABILITY, CONTINUE WATER QUALITY BASELINE SAMPLING, AND CONDUCT INDOOR AIR QUALITY CAPACITY BUILDING AND EMERGENCY RESPONSE PLANNING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J65901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:PROJECT OBJECTIVES ARE TO IMPROVE ADMINISTRATIVE GRANTS MANAGEMENT, ENCOURAGE COMMUNITY ENVIRONMENTAL STEWARDSHIP THROUGH OUTREACH AND EDUCATION, CONTINUE AIR QUALITY PROGRAM DEVELOPMENT, INCREASE WASTE MANAGEMENT PLANNING AND IMPLEMENTATION CAPACITY, AND DEVELOP AN EMERGENCY RESPONSE PROGRAM.ACTIVITIES:PROJECT ACTIVITIES INCLUDE ATTENDING TRAINING AND CONFERENCES, BRIEFING THE COUNCIL ON GRANT STATUS, PARTICIPATING IN WEBINARS AND TELECONFERENCES, CONDUCTING COMMUNITY AND SCHOOL ACTIVITIES, PROVIDING A NEWSLETTER, AND PARTNERING TO DEVELOP AN AIR PROGRAM. WASTE MANAGEMENT ACTIVITIES INCLUDE RECYCLING, DEVELOPING CONTROLLED ACCESS TO THE LANDFILL, COMPILING WASTE DATA, PURCHASING PORTABLE DUMPSTERS, AND CONTINUING A FEE FOR SERVICE PROGRAM. EMERGENCY RESPONSE ACTIVITIES INCLUDE ORGANIZING A LOCAL EMERGENCY RESPONSE PLANNING COMMITTEE AND CREATING AN EMERGENCY CONTACT LIST, CONDUCTING DRILLS, AND RESEARCHING FUNDING OPPORTUNITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES INCLUDE PROGRESS REPORTS, PRESENTATIONS, EVENT NOTES, ATTENDANCE LISTS, NEWSLETTERS, AN AIR QUALITY ASSESSMENT AND PLAN, PHOTOS, WASTE DATA, AND PROGRAM INCOME RECORDS. OUTCOMES WILL BE THAT THROUGH COMMUNITY INVOLVEMENT, AIR QUALITY PROGRAM DEVELOPMENT, PROPER SOLID AND HAZARDOUS WASTE DISPOSAL, AND EMERGENCY RESPONSE PROGRAM DEVELOPMENT, HUMAN AND ENVIRONMENTAL HEALTH WILL IMPROVE. INTENDED BENEFICIARIES ARE THE RESIDENTS OF MINTO.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0089",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 47927.15,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0089",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 4146.7,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0089",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 50753.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3089024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 127349.24,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF MINTO FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: TRIBAL TRANSPORTATION FUNDING PROVIDED TO THE NATIVE VILLAGE OF MINTO UNDER THE FHWA TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3089024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 18753.66,
+      "start_date": null,
+      "end_date": "2024-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF MINTO FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: TRIBAL TRANSPORTATION FUNDING PROVIDED TO THE NATIVE VILLAGE OF MINTO UNDER THE FHWA TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3089025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 51609.22,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF MINTO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF MINTO  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3089025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MINTO",
+      "obligation": 18741.37,
+      "start_date": "2025-04-14",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF MINTO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF MINTO  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 1097280.87,
+  "award_count": 9,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 778000.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 319280.87
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 286741.37,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

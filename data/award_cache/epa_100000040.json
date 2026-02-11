@@ -1,9 +1,235 @@
 {
   "tribe_id": "epa_100000040",
   "tribe_name": "Cheyenne River Sioux Tribe of the Cheyenne River Reservation, South Dakota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AV00514",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 7407391.38,
+      "start_date": "2020-05-01",
+      "end_date": "2022-12-31",
+      "description": "P.L. 93-638 CONTRACT FOR EFRO DESIGN SD 2019-1 AT CHEYENNE RIVER.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00807",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 2047225.85,
+      "start_date": "2020-05-01",
+      "end_date": "2023-12-31",
+      "description": "P.L. 93-638 CONTRACT FOR CRST FEMA 4440 DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01035",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 1602719.63,
+      "start_date": "2018-09-17",
+      "end_date": "2025-12-31",
+      "description": "CRST MOREAU RIVER ENCROACHMENT MOD 1",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00247",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 592316.95,
+      "start_date": "2018-10-31",
+      "end_date": "2025-12-30",
+      "description": "A19AV00247",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01136",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 437235.72,
+      "start_date": "2019-09-01",
+      "end_date": "2024-12-30",
+      "description": "BIA RT. 12 RESURFACING DESIGN 19X FUNDS IN THE AMOUNT OF $341,812.22",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00245",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 278049.82,
+      "start_date": "2018-10-31",
+      "end_date": "2022-09-30",
+      "description": "A19AV00245",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00651",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 68421.5,
+      "start_date": "2018-06-01",
+      "end_date": "2022-07-31",
+      "description": "CRST MOREAU RIVR RD ENCROACHMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01089",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 1687876.27,
+      "start_date": "2023-08-01",
+      "end_date": "2026-12-31",
+      "description": "ZIEBACH CO RT 55 REALIGNMENT - CRST",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01135",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 729723.02,
+      "start_date": "2023-09-01",
+      "end_date": "2025-06-30",
+      "description": "P.L. 93-638 CONTRACT FOR EAGLE BUTTE STREETS DESIGN WITH THE CHEYENNE RIVER SIOUX TRIBE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00346",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 193616.53,
+      "start_date": "2023-02-01",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638, ISDEAA - BIA 1400 WHITEHORSE COMMUNITY STREETS DE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01124",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 171973.37,
+      "start_date": "2023-09-01",
+      "end_date": "2026-09-30",
+      "description": "TO SUPPORT DAY-TO-DAY PLANNING ACTIVITIES THAT WILL INCLUDE, BUT ARE NOT LIMITED TO, TTIP PLANNING AND CREATION, PROJECT MANAGEMENT, DAY-TO-DAY OPERATIONS OF THE PROGRAM, UTILITIES, SUPPLIES, TRAINING/TRAVEL, FUEL, MAINTENANCE OF VEHICLES, ETC.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00663",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 125000.0,
+      "start_date": "2024-03-30",
+      "end_date": "2025-03-30",
+      "description": "P.L. 93-638 GRANT FOR TRAFFIC AND CRIMINAL SOFTWARE.'",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00482",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 93183.0,
+      "start_date": "2024-08-30",
+      "end_date": "2025-12-30",
+      "description": "P.L. 93-638 SUBPART J CONSTRUCTION CONTRACT WITH THE CHEYENNE RIVER SIOUX TRIBE FOR MILE MARKER INSTALLATION.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00732",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 75000.0,
+      "start_date": "2024-05-01",
+      "end_date": "2025-05-01",
+      "description": "P.L. 93-638 GRANT WITH CHEYENNE RIVER SIOUX TRIBE FOR A ROAD SAFETY AUDIT.'",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01129",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 458413.12,
+      "start_date": "2025-09-15",
+      "end_date": "2027-12-31",
+      "description": "CRST FEMA STORM 4842 DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01142",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 150000.0,
+      "start_date": "2025-09-05",
+      "end_date": "2026-12-31",
+      "description": "CRST A002 RED WATER CREEK BRIDGE DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01100",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 150000.0,
+      "start_date": "2025-08-18",
+      "end_date": "2026-12-31",
+      "description": "CRST A007 DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01168",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 135350.13,
+      "start_date": "2025-09-09",
+      "end_date": "2026-12-31",
+      "description": "CRST A003 LITTLE MOREAU CREEK BRIDGE DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01171",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEYENNE RIVER SIOUX TRIBE",
+      "obligation": 100000.0,
+      "start_date": "2025-09-09",
+      "end_date": "2026-12-31",
+      "description": "CRST A006 CROSSING THE BEAVER CREEK BRIDGE PRELIMINARY AND DESIGN ENGINEERING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 16503496.29,
+  "award_count": 19,
+  "cfda_summary": {
+    "20.205": {
+      "count": 19,
+      "total": 16503496.289999997
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 2783189.19,
+    "2024": 293183.0,
+    "2025": 993763.25,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,152 @@
 {
   "tribe_id": "epa_100000528",
   "tribe_name": "Seldovia Village Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10130",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 150000.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-08-15",
+      "description": "VISUALIZING CLIMATE CHANGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2018-PC-0009",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 71770.0,
+      "start_date": "2017-08-14",
+      "end_date": "2021-01-30",
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2020-BR-040-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 609550.0,
+      "start_date": "2022-11-03",
+      "end_date": "2025-11-02",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02J16501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 553000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE SELDOVIA VILLAGE TRIBE IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3) BUILDING COMMUNICATIONS CAPACITY; AND 4) BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES AND CONDUCTING COMMUNITY EDUCATION ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF AIR AND WATER QUALITY; DEVELOPING AN ENVIRONMENTAL INVENTORY; DEVELOPING AN INDOOR AIR QUALITY MONITORING PROGRAM; AND COLLECTING BASELINE OCEAN WATER QUALITY DATA.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE SELDOVIA VILLAGE TRIBE, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; FINANCIAL REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; AN UPDATED ENVIRONMENTAL INVENTORY REPORT; AND A BASELINE INDOOR AIR QUALITY REPORT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00587",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 1059333.88,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DIST. FOR CRRSA HIGHWAY INFRASTRUCTURE PROGRAM FUNDING. ELIGIBLE ACTIVITIES INCLUDE THOSE ACTIVITIES THAT ARE ALSO ELIGIBLE UNDER THE TRIBAL TRANSPORTATION PROGRAM AS DESCRIBED IN 23 USC 202.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00143",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 577560.3,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS (TPA BASE) CR1 (17.53%) DISTRIBUTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00017",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 577193.1,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV01180",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 162708.92,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR ADDITIONAL AND FINAL TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES AND PROJECTS DESCRIBED IN 23 USC 202(A)(1) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT0214280",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 1527426.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0214280",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SELDOVIA VILLAGE TRIBE",
+      "obligation": 35007.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 5323549.2,
+  "award_count": 10,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 150000.0
+    },
+    "97.047": {
+      "count": 2,
+      "total": 681320.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 553000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 2376796.1999999997
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1562433.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 740269.2200000001,
+    "2023": 1162550.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

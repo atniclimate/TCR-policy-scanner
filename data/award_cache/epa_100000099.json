@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000099",
   "tribe_name": "Hannahville Indian Community, Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A09AV00434",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HANNAHVILLE INDIAN COMMUNITY",
+      "obligation": 4605487.0,
+      "start_date": "2009-08-19",
+      "end_date": "2026-09-30",
+      "description": "FY 2013 TTP FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00887",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HANNAHVILLE INDIAN COMMUNITY",
+      "obligation": 4001564.0,
+      "start_date": "2020-07-15",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL TRANSPORTATION PROGRAM (TTP) ROAD CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT2627640",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HANNAHVILLE INDIAN COMMUNITY",
+      "obligation": 2851114.0,
+      "start_date": "2013-06-19",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 11458165.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "20.205": {
+      "count": 2,
+      "total": 8607051.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 2851114.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

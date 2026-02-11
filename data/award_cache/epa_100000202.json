@@ -1,9 +1,129 @@
 {
   "tribe_id": "epa_100000202",
   "tribe_name": "Pinoleville Pomo Nation, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "693JG42230000V600CA0102",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 79875.6,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600CA0102",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 6336.97,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0102",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 85138.3,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602CA3102024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 75577.52,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PINOLEVILLE POMO TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PINOLEVILLE POMO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176CA3102024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 30531.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PINOLEVILLE POMO TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PINOLEVILLE POMO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600CA0102",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 11165.68,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3102025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 90268.84,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PINOLEVILLE POMO NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PINOLEVILLE POMO NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177CA3102025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 30490.36,
+      "start_date": "2025-02-12",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PINOLEVILLE POMO NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PINOLEVILLE POMO NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0627790",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PINOLEVILLE POMO NATION",
+      "obligation": 4075588.0,
+      "start_date": "2012-01-06",
+      "end_date": "2035-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 4484972.83,
+  "award_count": 9,
+  "cfda_summary": {
+    "20.205": {
+      "count": 8,
+      "total": 409384.82999999996
+    },
+    "14.867": {
+      "count": 1,
+      "total": 4075588.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 30490.36,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

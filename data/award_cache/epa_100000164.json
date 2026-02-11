@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000164",
   "tribe_name": "Modoc Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00177",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "MODOC NATION",
+      "obligation": 65000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02F07301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MODOC NATION",
+      "obligation": 545901.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE MODOC NATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, AND BUILD RECYCLING PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), PESTICIDES INVENTORY,  QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP).  THE INTENDED BENEFICIARY IS THE MODOC NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00598",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MODOC NATION",
+      "obligation": 852343.73,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/AID TO TRIBAL GOVERNMENT (TPA) (ART90) FUNDING DIST. THESE ARE GENERAL ASSISTANCE FUNDS THAT CAN BE USED TO SUPPORT TRIBAL GOVERNMENT SERVICES, SOCIAL SERVICES, CHILD WELFARE ASSISTANCE, PUBLIC SAFETY AND OTHER RELATED EXPENSES.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00093",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MODOC NATION",
+      "obligation": 713403.01,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS (TPA BASE) CR1 (17.53%) DISTRIBUTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00108",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MODOC NATION",
+      "obligation": 632761.4,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE AND SELF GOVERNANCE COMPACTS FOR TPA BASE AT 80.27% OF THE CR ANNUAL RATE OF OPERATIONS OF THE TRIBAL PRIORITY ALLOCATION (TPA) PROGRAMS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00741",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MODOC NATION",
+      "obligation": 953.68,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "TRIBAL TRANSPORTATION PLANNING DIST. FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2810362.82,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 65000.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 545901.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 2199461.8200000003
+    }
+  },
+  "yearly_obligations": {
+    "2022": 714356.6900000001,
+    "2023": 545901.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

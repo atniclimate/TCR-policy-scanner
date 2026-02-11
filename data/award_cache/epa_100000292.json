@@ -1,9 +1,115 @@
 {
   "tribe_id": "epa_100000292",
   "tribe_name": "Summit Lake Paiute Tribe of Nevada",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A10AV00360",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SUMMIT LAKE PAIUTE TRIBE",
+      "obligation": 802835.0,
+      "start_date": "2010-01-01",
+      "end_date": "2022-12-31",
+      "description": "RANGE MANAGEMENT PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00923",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SUMMIT LAKE PAIUTE TRIBE",
+      "obligation": 249458.0,
+      "start_date": "2023-07-17",
+      "end_date": "2025-09-30",
+      "description": "SUMMIT LAKE PAIUTE TRIBE TRIBAL CLIMATE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "99T84301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SUMMIT LAKE PAIUTE TRIBE",
+      "obligation": 164863.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE TRIBE'S ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE DEVELOPING A TRIBAL ENVIRONMENTAL PLAN, UPDATING THE INTEGRATED SOLID WASTE MANAGEMENT PLAN, DEVELOPING OUTREACH CURRICULUM TO ENSURE ENVIRONMENTAL STAFF CAN SHARE IMPORTANT EVENTS AND INFORMATION WITH THE TRIBAL COMMUNITY, DEVELOPING A TRAINING PLAN THAT REFLECTS THE CAPACITY BUILDING PRIORITIES FOR THE ENVIRONMAL PROGRAM, AND ATTENDING MEETINGS AND TRAINING IN ORDER TO DEVELOP CAPACITY IN THEIR ENVIRONMENTAL PROGRAMS.  THIS AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $75,000.  SEE TERMS AND CONDITIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T53401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SUMMIT LAKE PAIUTE TRIBE",
+      "obligation": 39982.0,
+      "start_date": "2023-10-01",
+      "end_date": "2024-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO SUMMIT LAKE PAIUTE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE SUMMIT LAKE PAIUTE TRIBE.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $39,982.ACTIVITIES:THE RECIPIENT WILL DEVELOP AND UPDATE OUTREACH AND EDUCATION MATERIALS, ATTEND FEDERAL, STATE AND LOCAL MEETINGS, PARTICIPATE IN RELEVANT ENVIRONMENTAL TRAINING, AND COMPLETE THEIR TRIBAL ENVIRONMENTAL PLAN. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE A FINAL TRIBAL ENVIRONMENTAL PLAN, MEETING SUMMARY AND TRAINING SUMMARY REPORTS, AND UPDATED OUTREACH MATERIALS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A09AV00309",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUMMIT LAKE PAIUTE TRIBE",
+      "obligation": 51000.56,
+      "start_date": "2009-09-21",
+      "end_date": "2023-12-31",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT3201600",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SUMMIT LAKE PAIUTE TRIBE",
+      "obligation": 1517121.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3201600",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SUMMIT LAKE PAIUTE TRIBE",
+      "obligation": 35007.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 2860266.56,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 1052293.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 204845.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": 51000.56
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1552128.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 249458.0,
+    "2024": 39982.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

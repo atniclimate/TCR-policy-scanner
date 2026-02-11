@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000364",
   "tribe_name": "Native Village of Belkofski",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J01601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF BELKOFSKI",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE TRIBAL GOVERNMENT WILL INCREASE IT'S CAPABILITY TO MANAGE ENVIRONMENTAL PROGRAMS BY FOCUSING ON THE FOLLOWING KEY AREAS: BUILDING ADMINISTRATIVE CAPACITY, TRIBAL TECHNICAL TRAINING AND COLLABORATIVE DISCUSSIONS/LEARNING WITH PARTNER TRIBES, DEVELOP WATER QUALITY MONITORING CAPACITIES, SOLID WASTE/MARINE DEBRIS PUBLIC OUTREACH, AND BUILDING CAPACITY TO SUPPORT LOCAL RECYCLING. SEVERAL SPECIFIC OUTPUTS WILL BE A RESULT OF THESE ACTIVITIES, AND ALL ACTIONS WILL BENEFIT TRIBAL ENVIRONMENTAL STAFF AND LOCAL COMMUNITY MEMBERS FOR A HEALTHIER SUBSISTENCE LIFESTYLE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J07801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF BELKOFSKI",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF BELKOFSKI WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE ESTABLISHING PUBLIC PARTICIPATION AND EDUCATION, WATER QUALITY MONITORING, AND ADDRESSING SOLID WASTE MANAGEMENT ISSUES.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. ANOTHER ELEMENT IS THE COLLECTION OF BASELINE WATER QUALITY SAMPLES FROM THE WATERSHED. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM NATIVE VILLAGE OF BELKOFSKI WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. ALSO, THE QUALITY ASSURANCE PROJECT PLAN WILL BE UPDATED TO MEET THE NEEDS OF THE TRIBE. FINALLY, SUMMARIES OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV01004",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF BELKOFSKI",
+      "obligation": 240364.67,
+      "start_date": "2017-10-01",
+      "end_date": "2027-12-31",
+      "description": "A18AV01004",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01011",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF BELKOFSKI",
+      "obligation": 33852.53,
+      "start_date": "2017-10-01",
+      "end_date": "2024-12-31",
+      "description": "A18AV01011",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00957",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF BELKOFSKI",
+      "obligation": 161603.32,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "BELKOFSKI FY23 6V1 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00958",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF BELKOFSKI",
+      "obligation": 3314.75,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "BELKOFSKI FY23 66V 2% PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1092135.27,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 439135.27
+    }
+  },
+  "yearly_obligations": {
+    "2022": 519000.0,
+    "2023": 164918.07,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

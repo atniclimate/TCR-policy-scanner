@@ -1,9 +1,104 @@
 {
   "tribe_id": "epa_100000043",
   "tribe_name": "Chippewa Cree Indians of the Rocky Boy's Reservation, Montana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00007",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "THE CHIPPEWA CREE TRIBE OF THE ROCKY BOY RESERVATION",
+      "obligation": 121302.9,
+      "start_date": "2018-10-01",
+      "end_date": "2019-10-31",
+      "description": "ADAPTATION PLANNING AND DATA DEVELOPMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMD-2022-BR-016",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "THE CHIPPEWA CREE TRIBE OF THE ROCKY BOY RESERVATION",
+      "obligation": 624333.04,
+      "start_date": "2023-12-06",
+      "end_date": "2026-12-05",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A22AV00731",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "THE CHIPPEWA CREE TRIBE OF THE ROCKY BOY RESERVATION",
+      "obligation": 509072.95,
+      "start_date": "2022-05-10",
+      "end_date": "2024-09-30",
+      "description": "CHIPPEWA CREE TRIBE HIP CRRSAA GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00807",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "THE CHIPPEWA CREE TRIBE OF THE ROCKY BOY RESERVATION",
+      "obligation": 1875654.02,
+      "start_date": "2023-06-27",
+      "end_date": "2025-09-30",
+      "description": "CHIPPEWA CREE TRIBE SUBPART J HAYSTACK LOOP",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01098",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "THE CHIPPEWA CREE TRIBE OF THE ROCKY BOY RESERVATION",
+      "obligation": 800320.0,
+      "start_date": "2023-08-15",
+      "end_date": "2025-09-30",
+      "description": "CHIPPEWA CREE SAFETY GRANT SHARED USE PATH",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "95805421",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "THE CHIPPEWA CREE TRIBE OF THE ROCKY BOY RESERVATION",
+      "obligation": 177419.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT WILL PROVIDE ASSISTANCE TO THE CHIPPEWA CREE TRIBE IN ITS EFFORTS TO DEVELOP SPECIAL PURPOSE AIR QUALITY ACTIVITIES ON THE ROCKY BOY'S RESERVATION, INCLUDING CONTINUING DEVELOPMENT OF AIR QUALITY PROGRAMS; IMPROVEMENT OF EMISSION INVENTORIES FOR IDENTIFICATION OF POLLUTION SOURCES; AND TO DEVELOP AN AIR MONITORING NETWORK THAT COLLECTS AIR DATA. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE PUBLIC'S AIR QUALITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 4108101.91,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 121302.9
+    },
+    "97.047": {
+      "count": 1,
+      "total": 624333.04
+    },
+    "20.205": {
+      "count": 3,
+      "total": 3185046.97
+    },
+    "66.038": {
+      "count": 1,
+      "total": 177419.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 509072.95,
+    "2023": 2675974.02,
+    "2024": 624333.04,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

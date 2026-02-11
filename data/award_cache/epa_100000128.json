@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000128",
   "tribe_name": "Kickapoo Traditional Tribe of Texas",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F08201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KICKAPOO TRADITIONAL TRIBE OF TEXAS",
+      "obligation": 470000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE KICKAPOO TRADITIONAL TRIBE OF TEXAS TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE COMMUNITY EDUCATION OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, RECYCLING ACTIVITIES, AND CONTINUE CAPACITY DEVELOPMENT FOR DRINKING WATER SYSTEM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM /GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE KICKAPOO TRADITIONAL TRIBE OF TEXAS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT4828130",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KICKAPOO TRADITIONAL TRIBE OF TEXAS",
+      "obligation": 4473815.99,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4828130",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KICKAPOO TRADITIONAL TRIBE OF TEXAS",
+      "obligation": 119560.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 5063375.99,
+  "award_count": 3,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 470000.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 4593375.99
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 470000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

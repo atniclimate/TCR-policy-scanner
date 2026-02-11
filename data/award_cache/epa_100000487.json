@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000487",
   "tribe_name": "Noorvik Native Community",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J90901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NOORVIK NATIVE COMMUNITY",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE NATIVE VILLAGE OF NOORVIK WILL BUILD CAPACITY IN ENVIRONMENTAL ISSUES WITH THE TRIBAL COMMUNITY. THE TRIBAL STAFF WILL ATTEND TRAINING AND FINALIZE A SOLID WASTE ACTION PLAN, BUILD EDUCATION AND RECOMMENDATIONS FOR RECYCLING, LANDFILL SEPARATION, AND REUSE OF MATERIALS. THE TRIBAL COMMUNITY HAS EXPERIENCED MOLD ISSUES DUE IN PART TO CLIMATE CHANGE, IDENTIFYING TYPES OF MOLD AND RECOMMENDING REMEDIATION METHODS. STAFF WILL COMPLETE A MOLD, ASBESTOS, AND LEAD BASED PAINT NEEDS ASSESSMENT IN HOMES. THE TRIBE WILL UTILIZE THEIR PARTNERSHIP WITH THE MANIILAQ ASSOCIATION TO DEVELOP PLANS AND CONTINUE WATER QUALITY ASSESSMENTS AND TESTING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J99701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NOORVIK NATIVE COMMUNITY",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2029-09-30",
+      "description": "DESCRIPTION:NOORVIK NATIVE COMMUNITY WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE BUILDING LOCAL KNOWLEDGE OF ENVIRONMENTAL ISSUES, IMPLEMENTING SOLID WASTE MANAGEMENT ACTIVITIES, AND ENHANCING TRIBAL MEMBER ENGAGEMENT ON ENVIRONMENTAL ISSUES THROUGH EDUCATION AND OUTREACH.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION AND SOLID WASTE PROGRAM IMPLEMENTATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS AND ENSURING INFORMED ENVIRONMENTAL MANAGEMENT DECISIONS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM NOORVIK NATIVE COMMUNITY WILL INCLUDE BI-ANNUAL PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PLANNING DOCUMENTS AND PHOTOS OF COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A15AV00798",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOORVIK NATIVE COMMUNITY",
+      "obligation": 364216.49,
+      "start_date": "2015-09-08",
+      "end_date": "2019-12-31",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01041",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOORVIK NATIVE COMMUNITY",
+      "obligation": 543145.85,
+      "start_date": "2025-07-11",
+      "end_date": "2029-12-31",
+      "description": "NOORVIK NATIVE COMMUNITY - PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOORVIK NATIVE COMMUNITY",
+      "obligation": 488005.16,
+      "start_date": "2025-07-11",
+      "end_date": "2029-12-31",
+      "description": "NOORVIK NATIVE COMMUNITY - ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOORVIK NATIVE COMMUNITY",
+      "obligation": 212000.0,
+      "start_date": "2025-07-11",
+      "end_date": "2029-12-31",
+      "description": "NOORVIK NATIVE COMMUNITY",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2260367.5,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1607367.5
+    }
+  },
+  "yearly_obligations": {
+    "2022": 519000.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 1243151.01,
+    "2026": 134000.0
+  },
+  "trend": "increasing"
 }

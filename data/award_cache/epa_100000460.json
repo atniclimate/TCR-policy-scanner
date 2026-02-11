@@ -1,9 +1,140 @@
 {
   "tribe_id": "epa_100000460",
   "tribe_name": "Manley Hot Springs Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "03J06001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT ARE TO ESTABLISH A GAP ENVIRONMENTAL OFFICE AND HIRE AND TRAIN AN ENVIRONMENTAL COORDINATOR. THEY WILL ALSO CONDUCT LANDFILL OPERATIONS, MAINTENANCE WORK, AND ESTABLISH A COMMUNITY WASTE COLLECTION PROGRAM.ACTIVITIES:PROJECT ACTIVITIES WILL INCLUDE HIRING AN ENVIRONMENTAL COORDINATOR TO OVERSEE MANLEY'S GAP PROGRAM; PURCHASING OFFICE FURNITURE, A COMPUTER, AND SUPPLIES; ATTENDING RELEVANT CONFERENCES; DEVELOPING AN EPA-TRIBAL ENVIRONMENTAL PLAN; PARTICIPATING IN SOLID/HAZARDOUS WASTE TRAINING; ESTABLISHING AND MANAGING A COMMUNITY WASTE COLLECTION PROGRAM; CONDUCTING OPERATIONS AND MAINTENANCE WORK AT THE LANDFILL; SORTING AND STAGING MATERIALS FOR BACKHAUL; AND HIRING A CONTRACTOR TO CONDUCT BACKHAUL OF LARGER LOADS.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE PROGRESS REPORTS, TRIP REPORTS, AN EPA-TRIBAL ENVIRONMENTAL PLAN, TRAINING CERTIFICATES, AND DATA ON WASTE COLLECTED: SOURCE OF WASTE, TYPE OF WASTE, AMOUNT OF WASTE, AND END DESTINATION OF WASTE. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42330000V170AK0016",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 1187000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0016",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 193003.52,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3016024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 86301.09,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  MANLEY VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MANLEY VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3016024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 35654.9,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  MANLEY VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MANLEY VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0016",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 12701.05,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271AK3016025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 1175300.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MANLEY VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MANLEY VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17AAK3016025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 848000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MANLEY VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MANLEY VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3016025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 103009.88,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MANLEY VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MANLEY VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3016025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MANLEY HOT SPRINGS VILLAGE",
+      "obligation": 35653.25,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: MANLEY VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MANLEY VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 3810623.69,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 134000.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 3676623.69
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 35653.25,
+    "2026": 134000.0
+  },
+  "trend": "new"
 }

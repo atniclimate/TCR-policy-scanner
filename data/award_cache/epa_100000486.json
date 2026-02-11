@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000486",
   "tribe_name": "Nondalton Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J07801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 474000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS ASSISTANCE AGREEMENT ENTAILS THE FOLLOWING ACTIVITIES.  DEVELOP AND MAINTAIN THE WATER QUALITY BASELINE ASSESSMENT FOR FRESHWATER RIVERS AND STREAMS IN LOCAL COMMUNITY. CONTINUE ENVIRONMENTAL AND CULTURAL EDUCATION TO CREATE AWARENESS ON ENVIRONMENTAL ISSUES AND CONCERNS THAT ARE IMPACTING THE COMMUNITY. IMPLEMENT AND DEVELOP SOLID WASTE MANAGEMENT ACTIVITIES. MAINTAIN PROGRAMMATIC AND ADMINISTRATIVE TO FURTHER STRENGTHEN CAPACITY AS A TRIBAL GOVERNMENT TO ADMINISTER THE ENVIRONMENTAL PROGRAM. ACTIVITIES:RECORD DATA THAT IS COLLECTED INTO THE WATER QUALITY DATABASE, TO FURTHER DEVELOP OUR BASELINE ASSESSMENT AND ENHANCE OUR COMPREHENSIVE WATERSHED PROGRAM. \nCONTINUE TO RESEARCH AND REVIEW SOLUTIONS TO THE ENVIRONMENTAL ISSUES AND CONCERNS THAT ARE AFFECTING THE COMMUNITY. EDUCATE COMMUNITY ON THE IMPORTANCE OF REDUCING, REUSING, AND RECYCLING TO REDUCE THE AMOUNT OF WASTE GOING INTO THE LANDFILL. MAINTAIN PROPER GRANT ADMINISTRATION AND MANAGEMENT AND CONTINUE TO COMPLETE THE COMPONENTS AND COMMITMENTS LISTED IN OUR EPA APPROVED WORKPLAN. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:CREATE A GREATER UNDERSTANDING OF THE IMPORTANCE OF PROTECTING AND PRESERVING A HEALTHY WATERSHED WITHIN NONDALTON COMMUNITY. EDUCATE THE NONDALTON YOUTH IN THE CULTURAL AND TRADITIONAL WAYS. IMPROVE AND IMPLEMENT NONDALTON RECYCLING PROGRAM TO MAKE IT MORE EFFICIENT. DEVELOP AND ADMINISTER THE ENVIRONMENTAL PROGRAM TO ADDRESS ENVIRONMENTAL ISSUES AND CONCERNS IN THE NONDALTON COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A13AV00551",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 224245.53,
+      "start_date": "2013-08-06",
+      "end_date": "2022-03-31",
+      "description": "NONDALTON VILLAGE TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00780",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 137109.09,
+      "start_date": "2018-06-22",
+      "end_date": "2025-12-31",
+      "description": "A18AV00780",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00784",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 107813.35,
+      "start_date": "2018-06-22",
+      "end_date": "2025-12-31",
+      "description": "A18AV00784",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A10AV00105",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 6001.0,
+      "start_date": "2013-07-19",
+      "end_date": "2022-03-27",
+      "description": "NONDALTON VILLAGE HPP PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00627",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 0.0,
+      "start_date": "2014-06-24",
+      "end_date": "2022-03-31",
+      "description": "NONDALTON A14AV00627 CLOSE-OUT CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01056",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 83312.83,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "NONDALTON 2023 6V1 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 82863.15,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "NONDALTON  FY2023 6V1 & 66V PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT0211470",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 2600306.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0211470",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NONDALTON VILLAGE",
+      "obligation": 63430.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3779080.95,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 474000.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 641344.95
+    },
+    "14.867": {
+      "count": 2,
+      "total": 2663736.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 640175.98,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

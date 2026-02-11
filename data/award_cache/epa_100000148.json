@@ -1,9 +1,104 @@
 {
   "tribe_id": "epa_100000148",
   "tribe_name": "Makah Indian Tribe of the Makah Indian Reservation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10169",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "MAKAH INDIAN TRIBE OF THE MAKAH INDIAN RESERVATION",
+      "obligation": 143760.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-08-15",
+      "description": "MANAGEMENT AND MONITORING OF EMERGING THREATS TO THE MAKAH TRIBE'S MARINE RESOURCES",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00196",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "MAKAH INDIAN TRIBE OF THE MAKAH INDIAN RESERVATION",
+      "obligation": 121102.53,
+      "start_date": "2020-06-01",
+      "end_date": "2022-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2022-PC-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "MAKAH INDIAN TRIBE OF THE MAKAH INDIAN RESERVATION",
+      "obligation": 108117.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "55IT5308800",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MAKAH INDIAN TRIBE OF THE MAKAH INDIAN RESERVATION",
+      "obligation": 14506188.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5308800",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MAKAH INDIAN TRIBE OF THE MAKAH INDIAN RESERVATION",
+      "obligation": 610581.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000069",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "MAKAH INDIAN TRIBE OF THE MAKAH INDIAN RESERVATION",
+      "obligation": 200185.8,
+      "start_date": "2017-10-01",
+      "end_date": "2021-09-30",
+      "description": "MAKAH TRIBE'S RESILIENCE, ADAPTATION, AND MITIGATION PLANNING",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 15689934.33,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 264862.53
+    },
+    "97.047": {
+      "count": 1,
+      "total": 108117.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 15116769.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 200185.8
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

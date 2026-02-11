@@ -1,9 +1,48 @@
 {
   "tribe_id": "epa_100000545",
   "tribe_name": "Tangirnaq Native Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AV00396",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TANGIRNAQ NATIVE VILLAGE",
+      "obligation": 33492.42,
+      "start_date": "2018-01-23",
+      "end_date": "2026-12-31",
+      "description": "TANGIRNAQ FY18 66K AND 6K1 FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00106",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TANGIRNAQ NATIVE VILLAGE",
+      "obligation": 31994.0,
+      "start_date": "2014-02-20",
+      "end_date": "2026-12-31",
+      "description": "TANGIRNAQ NATIVE VILLAGE",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 65486.42,
+  "award_count": 2,
+  "cfda_summary": {
+    "20.205": {
+      "count": 2,
+      "total": 65486.42
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

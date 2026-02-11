@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000134",
   "tribe_name": "Lac Courte Oreilles Band of Lake Superior Chippewa Indians of Wisconsin",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMC-2022-BR-015",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "LAC COURTE OREILLES BAND OF LAKE SUPERIOR CHIPPEWA INDIANS OF WISCONSIN",
+      "obligation": 75500.0,
+      "start_date": "2023-12-23",
+      "end_date": "2026-12-22",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A08AV00026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LAC COURTE OREILLES BAND OF LAKE SUPERIOR CHIPPEWA INDIANS OF WISCONSIN",
+      "obligation": 4092297.0,
+      "start_date": "2008-06-25",
+      "end_date": "2022-12-31",
+      "description": "FY 2013 TTP CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00851",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LAC COURTE OREILLES BAND OF LAKE SUPERIOR CHIPPEWA INDIANS OF WISCONSIN",
+      "obligation": 3181656.0,
+      "start_date": "2020-07-01",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL TRANSPORTATION PROGRAM (TTP) ROAD CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 7349453.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 75500.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 7273953.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 75500.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

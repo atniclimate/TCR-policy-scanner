@@ -1,9 +1,310 @@
 {
   "tribe_id": "epa_100000038",
   "tribe_name": "Cherokee Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMT-2021-PC-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 463065.73,
+      "start_date": "2020-11-06",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMT-2020-PC-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 357419.88,
+      "start_date": "2018-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMT-2020-BR-105-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 261502.5,
+      "start_date": "2022-02-03",
+      "end_date": "2025-02-02",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02F11601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 1045000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE CHEROKEE NATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PROMOTE RECYCLING EFFORTS, CONDUCT TRAININGS, ASSIST WITH REGIONAL ENVIRONMENTAL PRIORITIES, AND CAPACITY DEVELOPMENT FOR DRINKING WATER SYSTEM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANNUAL PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP). THE INTENDED BENEFICIARY IS THE CHEROKEE NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F11701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 525000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE CHEROKEE NATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, CONDUCT TRAININGS, AND WORK WITH MEMBER TRIBES TO ASSIST IN ADDRESSING THEIR ENVIRONMENTAL PRIORITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANNUAL PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM (GIS/) GLOBAL POSITIONING SYSTEM (GPS)  QUALITY ASSURANCE PROJECT PLAN (QAPP). THE INTENDED BENEFICIARY IS THE CHEROKEE NATION INTER-TRIBAL ENVIRONMENTAL (TEC) COUNCIL CONSORTIA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F48701",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 811000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL DEVELOP A PUBLICLY AVAILABLE SERVICE LINE INVENTORY THAT INCLUDES MATERIAL CLASSIFICATIONS (LEAD, GALVANIZED REQUIRING REPLACEMENT (GRR), NON-LEAD, OR LEAD STATUS UNKNOWN) OF ALL SERVICE LINES CONNECTED TO A PUBLIC WATER DISTRIBUTION SYSTEM (40 CFR  141.84(A)(2)). THIS INVENTORY MUST DEFINE SERVICE LINE OWNERSHIP, AND WHERE DUAL OWNERSHIP APPLIES, MATERIALS MUST BE DEFINED ON BOTH THE PWS AND CUSTOMER PORTION OF THE LINE TO ACCURATELY PROVIDE A SINGLE CLASSIFICATION PER SERVICE LINE. THE GOAL IS TO IDENTIFY, GATHER, ORGANIZE, CLEAN AND CATEGORIZE THE DATA APPROPRIATELY FOR IMPLEMENTATION INTO THE 120 WATER\nPLATFORM.ACTIVITIES:PHASE 1: PROGRAM START AND CUSTOMER ALIGNMENT (1-2 WEEKS).  THE PURPOSE OF THIS PROGRAM STAGE IS FOR THE 120 WATER AND CHEROKEE NATION TEAMS TO INITIATE THE LEAD SERVICE LINE INVENTORY (LSLI) PROGRAM AND ALIGN ON PROGRAM EXPECTATIONS.\n#9679; CUSTOMER KICK-OFF MEETING: THE 120WATER TEAM WILL HOST AN INTRODUCTORY MEETING TO ESTABLISH THE CROSS-FUNCTIONAL PROGRAM TEAM AND CONFIRM ROLES AND RESPONSIBILITIES. THE SESSION WILL ALSO ESTABLISH THE PROGRAM APPROACH INCLUDING SUCCESS METRICS AND PROJECT TIMELINES, AND THE CADENCE OF PROGRAM REVIEWS, CLIENT UPDATES, AND ANY ADDITIONAL CHEROKEE NATION GOALS AND EXPECTATIONS\n\nPHASE 2: DATA INVESTIGATION AND SUBMISSION (4-6 WEEKS) | THE PURPOSE OF THIS PROGRAM STAGE IS FOR THE 120 WATER TEAM TO IDENTIFY, REVIEW, DOCUMENT, AND COLLABORATIVELY UNDERSTAND THE EXISTING DATA SOURCE(S) AND SYSTEMS. \n#9679; DATA INVESTIGATION CALL WITH 120WATER LSLI LEAD PROGRAM CONSULTANT: THE 120 WATER TEAM WILL SCHEDULE A GUIDED REVIEW MEETING WITH CHEROKEE NATION TO IDENTIFY SOURCES OF DATA THE 120 WATER TEAM CAN USE TO BUILD OUT A PRELIMINARY LEAD SERVICE LINE INVENTORY. COMMON DATA SOURCES INCLUDE:\n#9675; GIS RECORDS\n#9675; BILLING SYSTEM RECORDS\n#9675; WORK ORDER SYSTEM RECORD\n#9675; PAPER REPORTS, TAP CARDS, AS-BUILTS, ETC.\n\nRECENT CAPITAL PROJECTS\n#9679; DATA REQUEST: AFTER THE DATA INVESTIGATION CALL, THE LSLI LEAD PROGRAM CONSULTANT WILL SUBMIT A FORMAL DATA REQUEST TO CHEROKEE NATION. THE DATA REQUEST WILL OUTLINE THE SPECIFIC SOURCES OF DATA THE 120 WATER TEAM WILL NEED TO ANALYZE IN ORDER TO IDENTIFY ALL SERVICE LOCATIONS, IDENTIFY OR RULE-OUT SOURCES OF LEAD, AND PRIORITIZE AND STRATEGIZE FOR LEAD SERVICE LINE INVENTORY AND REPLACEMENT EFFORTS.\n#9679; DATA SUBMISSION: 120 WATER WILL REVIEW ALL SUBMITTED DATA SOURCES. ONCE ALL DATA IS SUBMITTED, THE 120 WATER TEAM WILL DETERMINE THE BEST ANALYSIS APPROACH TO BRING THE DATA TOGETHER INTO A SINGLE DATA SET THAT REFLECTS ALL SERVICE LINE LOCATIONS AND ASSOCIATED ATTRIBUTES.\n#9675; ESRI PARTNERSHIP SOLUTION: SINCE CHEROKEE NATION WILL WANT THE ABILITY TO VISUALIZE DATA IN ARCGIS ONLINE (AGOL), 120 WATER WILL SET UP A CHEROKEE NATION SPECIFIC AGOL ENVIRONMENT FOR DATA SUBMISSION. 120WATER WILL UPDATE THE AGOL ENVIRONMENT WITH PRELIMINARY INVENTORY FINDINGS AND CONTINUED INVENTORY UPDATES FROM THE 120 WATER PLATFORM, AS CHEROKEE NATION PROGRESSES THROUGH THEIR LEAD SERVICE LINE INVENTORY PROGRAM\n\nPHASE 3: DATA ANALYSIS (4-8 WEEKS) | THE PURPOSE OF THIS PROGRAM STAGE IS TO COMBINE ALL SUBMITTED DATA TO DEVELOP A PRELIMINARY, LOCATION-BASED LEAD SERVICE LINE INVENTORY THAT INCLUDES EPA COMPLAINT SERVICE LINE MATERIAL CATEGORIZATIONS FOR ALL IDENTIFIED SERVICE LINES. THE AIM IS TO USE EXISTING CLIENT DATA TO IDENTIFY LOCATIONS, AND USE THE DATA TO RULE OUT POTENTIAL SOURCES OF LEAD.\n#9679; INITIATE ANALYSIS: THE 120WATER DATA ANALYSIS TEAM WILL CONDUCT A THOROUGH REVIEW OF THE SUBMITTED DATA, TO ENSURE ALL DATA FIELDS ARE UNDERSTOOD AND DATA INTEGRITY IS MAINTAINED.\n#9679; BUILD RECORDS-BASED INVENTORY: THE 120WATER DATA ANALYSIS TEAM WILL CLEAN AND COMBINE ALL APPROPRIATE DATA SOURCES INTO A SINGLE SERVICE LINE INVENTORY DATASET. THE FINAL DATASET IN THIS STAGE WILL INCLUDE SERVICE LINE LOCATIONS AND MATERIAL TYPE CATEGORIZATIONS FOR EACH IDENTIFIED SERVICE LINE IN THE DIST",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F71901",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 5240000.0,
+      "start_date": "2025-06-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES A CAPITALIZATION GRANT, FUNDED BY THE INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) (PL 117-58), FOR THE RECIPIENT'S DRINKING WATER STATE REVOLVING FUND (DWSRF) PROGRAM. FUNDS WILL BE USED FOR DWSRF - ELIGIBLE LEAD SERVICE LINE REPLACEMENT PROJECTS AND ASSOCIATED ACTIVITIES DIRECTLY CONNECTED TO THE IDENTIFICATION, PLANNING, DESIGN, AND REPLACEMENT OF LEAD SERVICE LINES. THE AWARD FURTHERS THE PUBLIC HEALTH PROTECTION OBJECTIVES OF THE SAFE DRINKING WATER ACT (SDWA).ACTIVITIES:THE RECIPIENT OF THESE FUNDS WILL PROVIDE LOW-INTEREST RATE FINANCING TO ELIGIBLE PUBLIC WATER SYSTEMS FOR THE COSTS ASSOCIATED WITH THE PLANNING, DESIGN, AND CONSTRUCTION OF ELIGIBLE DRINKING WATER IMPROVEMENT PROJECTS. THE RECIPIENT MAY ALSO USE SOME OF THE FUNDING FOR SPECIFIC SET-ASIDES. FUNDS WILL BE USED FOR DWSRF - ELIGIBLE LEAD SERVICE LINE REPLACEMENT PROJECTS AND ASSOCIATED ACTIVITIES DIRECTLY CONNECTED TO THE IDENTIFICATION, PLANNING, DESIGN, AND REPLACEMENT OF LEAD SERVICE LINES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE FINANCING, PLANNING, DESIGN, AND CONSTRUCTION OF ELIGIBLE LEAD SERVICE LINE PROJECTS AND ASSOCIATED ACTIVITIES. DELIVERABLES WILL ALSO BE USED TO INCREASE THE LEAD SERVICE LINE-RELATED TECHNICAL, MANAGERIAL, AND FINANCIAL CAPACITY OF PUBLIC WATER SYSTEMS. THE EXPECTED OUTCOME IS PUBLIC HEALTH PROTECTION. THE INTENDED BENEFICIARIES INCLUDE CITIZENS THROUGHOUT THE STATE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 17029281.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 983903.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000V250OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 12932457.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "NATIONALLY SIGNIFICANT FEDERAL LANDS AND TRIBAL PROJECTS",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000N9W0OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 233170.13,
+      "start_date": null,
+      "end_date": null,
+      "description": "EMERGENCY RELIEF FOR FEDERALLY OWNED ROADS",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 20846346.26,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V17AOK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 13997370.4,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V176OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 5753602.76,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000NE02OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 2498931.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "RECONNECTING COMMUNITIES PILOT (RCP) DISCRETIONARY GRANT PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000SR30OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 500000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V600OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 13914761.09,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V177OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 5745039.05,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V17BOK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 2663230.48,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V17AOK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 1718707.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42620000V465OK0039",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 32070566.0,
+      "start_date": "2025-12-17",
+      "end_date": "2029-12-31",
+      "description": "INFRA PROGRAM FUNDING",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT4005780",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 546669851.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXOK05780",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 7500000.0,
+      "start_date": "2025-01-03",
+      "end_date": "2029-12-28",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24DG11083150401",
+      "cfda": "10.720",
+      "program_id": "usda_wildfire",
+      "recipient_name_raw": "CHEROKEE NATION",
+      "obligation": 9998841.0,
+      "start_date": "2024-09-26",
+      "end_date": "2029-09-25",
+      "description": "COMMUNITY WLDFIRE DEFENSE GRANT COMPETETIVE PASS THRU",
+      "awarding_agency": "Department of Agriculture"
+    }
+  ],
+  "total_obligation": 703759045.98,
+  "award_count": 24,
+  "cfda_summary": {
+    "97.047": {
+      "count": 3,
+      "total": 1081988.1099999999
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1570000.0
+    },
+    "66.468": {
+      "count": 2,
+      "total": 6051000.0
+    },
+    "20.205": {
+      "count": 14,
+      "total": 130887365.87
+    },
+    "14.867": {
+      "count": 2,
+      "total": 554169851.0
+    },
+    "10.720": {
+      "count": 1,
+      "total": 9998841.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 261502.5,
+    "2023": 1570000.0,
+    "2024": 10809841.0,
+    "2025": 12740000.0,
+    "2026": 32070566.0
+  },
+  "trend": "increasing"
 }

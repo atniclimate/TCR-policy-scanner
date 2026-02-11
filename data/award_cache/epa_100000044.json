@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000044",
   "tribe_name": "Chitimacha Tribe of Louisiana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00850",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 1722793.0,
+      "start_date": "2024-07-18",
+      "end_date": "2027-09-30",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00415",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 5000000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ22440000Y17ALA3115024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 4312500.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHITIMACHA TRIBE OF LOUISIANA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO CHITIMACHA TRIBE OF LOUISIANA FOR FY2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602LA3115024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 1235939.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHITIMACHA TRIBE OF LOUISIANA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO CHITIMACHA TRIBE OF LOUISIANA FOR FY2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176LA3115024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 395415.81,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHITIMACHA TRIBE OF LOUISIANA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO CHITIMACHA TRIBE OF LOUISIANA FOR FY2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602LA3115025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 1251917.34,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHITIMACHA TRIBE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHITIMACHA TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177LA3115025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 395348.53,
+      "start_date": "2025-02-25",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: CHITIMACHA TRIBE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHITIMACHA TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "24IXLA02900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHITIMACHA TRIBE OF LOUISIANA",
+      "obligation": 3350000.0,
+      "start_date": "2025-01-03",
+      "end_date": "2029-12-28",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 17663914.35,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 6722793.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 7591121.35
+    },
+    "14.867": {
+      "count": 1,
+      "total": 3350000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 1722793.0,
+    "2025": 8745348.530000001,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

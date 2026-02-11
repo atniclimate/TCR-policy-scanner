@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000512",
   "tribe_name": "Native Village of Port Lions",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00187",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 12357.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J94901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 453000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS PROJECT WILL ASSIST THE NATIVE VILLAGE OF PORT LIONS IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE ENVIRONMENT AND HEALTH.  TASKS INCLUDE MAINTAINING AN ENVIRONMENTAL OFFICE AND PROGRAM; RESEARCHING ISSUES AND RESOURCES AND ATTENDING TRAINING; COMMUNICATING WITH OTHER AGENCIES AND CONDUCTING OUTREACH EVENTS; CONDUCTING SOURCE SEPARATION, RESOURCE RECOVERY, AND CLEANUP EVENTS; UPDATING THE INVENTORY, DEVELOPING THE SPILL RESPONSE PROGRAM, GIS CAPABILITIES, AND COLLECTING OCEAN WATER QUALITY DATA AND ASSESSING BASELINE SURFACE WATER QUALITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J06201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE NATIVE VILLAGE OF PORT LIONS IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3. BUILDING COMMUNICATIONS CAPACITY; 4. BUILDING SOLID AND HAZARDOUS WASTE MANAGEMENT CAPACITY; AND 5. BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES; CONDUCTING COMMUNITY EDUCATION ACTIVITIES; CONDUCTING SOURCE SEPARATION AND RESOURCE RECOVERY ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF WATER, AIR, AND WASTE; DEVELOPING AN ENVIRONMENTAL INVENTORY; DEVELOPING A SPILL RESPONSE PROGRAM; AND COLLECTING BASELINE OCEAN AND SURFACE WATER QUALITY DATA.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE NATIVE VILLAGE OF PORT LIONS, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; DECREASING AMOUNTS OF RECYCLABLES AND HAZARDOUS WASTES ENTERING LANDFILL; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; RECYCLING AND WASTE ACTIVITY REPORTS; AND AN UPDATED ENVIRONMENTAL INVENTORY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00467",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 328931.78,
+      "start_date": "2017-10-01",
+      "end_date": "2025-12-31",
+      "description": "PORT LIONS FY17 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00468",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 280112.03,
+      "start_date": "2017-10-01",
+      "end_date": "2025-12-31",
+      "description": "PORT LIONS FY17 TRANS PLANNIING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00889",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 139443.0,
+      "start_date": "2013-06-26",
+      "end_date": "2024-04-17",
+      "description": "PORT LIONS A12AV00889 M1 FY12 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00669",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 215886.22,
+      "start_date": "2022-10-01",
+      "end_date": "2026-12-31",
+      "description": "PORT LIONS 2023 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00662",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT LIONS",
+      "obligation": 124247.07,
+      "start_date": "2022-10-01",
+      "end_date": "2025-12-31",
+      "description": "PORT LIONS PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1687977.1,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 12357.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 587000.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 1088620.1
+    }
+  },
+  "yearly_obligations": {
+    "2022": 453000.0,
+    "2023": 340133.29000000004,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

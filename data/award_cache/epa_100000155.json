@@ -1,9 +1,104 @@
 {
   "tribe_id": "epa_100000155",
   "tribe_name": "Menominee Indian Tribe of Wisconsin",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01150",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "MENOMINEE INDIAN TRIBE OF WISCONSIN",
+      "obligation": 249292.0,
+      "start_date": "2025-09-05",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL COMMUNITY RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMC-2022-BR-013",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "MENOMINEE INDIAN TRIBE OF WISCONSIN",
+      "obligation": 966753.92,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02E01954",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MENOMINEE INDIAN TRIBE OF WISCONSIN",
+      "obligation": 471000.0,
+      "start_date": "2020-04-01",
+      "end_date": "2024-03-31",
+      "description": "THIS AWARD WILL PROVIDE GENERAL ASSISTANCE PROGRAM (GAP) FUNDS TO THE MENOMINEE INDIAN TRIBE OF WISCONSIN (MENOMINEE) IN SUPPORT OF ENVIRONMENTAL CAPACITY BUILDING ACTIVITIES.  THE FUNDS WILL ENABLE THE TRIBE TO ASSESS, MONITOR AND DEVELOP STRATEGIES FOR PROTECTION OF HUMAN HEALTH AND THE ENVIRONMENT. SPECIFIC ACTIVITIES DURING THIS PERIOD INCLUDE: ADMINISTRATIVE OVERSIGHT OF THE GAP PROGRAM, LEGISLATIVE AND REGULATORY CAPACITIES, AND COORDINATION OF TRAININGS, OUTREACH, AND EDUCATION ACTIVITIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03E01954",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MENOMINEE INDIAN TRIBE OF WISCONSIN",
+      "obligation": 520000.0,
+      "start_date": "2024-04-01",
+      "end_date": "2028-03-31",
+      "description": "DESCRIPTION:THIS AWARD WILL PROVIDE GENERAL ASSISTANCE PROGRAM (GAP) FUNDS TO THE MENOMINEE INDIAN TRIBE OF WISCONSIN IN SUPPORT OF ENVIRONMENTAL CAPACITY BUILDING ACTIVITIES. THE FUNDS WILL ENABLE THE TRIBE TO ASSESS, MONITOR, AND DEVELOP STRATEGIES FOR PROTECTION OF HUMAN HEALTH AND THE ENVIRONMENT. THE MENOMINEE INDIAN TRIBE OF WISCONSIN WILL CONTINUE TO MAINTAIN AND ENHANCE THEIR ENVIRONMENTAL REGULATORY PRESENCE. MENOMINEE INDIAN TRIBE OF WISCONSIN WILL CONTINUE TO WORK WITH FEDERAL, STATE, AND LOCAL JURISDICTIONS TO ADDRESS AREAS OF CONCERN AND ENSURE COMPLIANCE WITH THE APPROPRIATE REGULATORY AGENCY. THE DIRECT BENEFICIARIES OF THIS AGREEMENT ARE THE CITIZENS OF THE MENOMINEE INDIAN TRIBE OF WISCONSIN.ACTIVITIES:SPECIFICALLY, THE TRIBE WILL: 1. DEVELOP AND ENSURE ADEQUATE PROGRAM MANAGEMENT CAPACITY, PROCESSES, AND RESOURCES ARE IN PLACE TO SUSTAIN AN ENVIRONMENTAL REGULATORY PRESENCE IN ACTIVITIES AFFECTING THE TRIBE. 2. UPDATING A JOINT ENVIRONMENTAL PROTECTION PLAN THAT IDENTIFIES LONG-RANGE ENVIRONMENTAL CAPACITY DEVELOPMENT AND PROGRAM IMPLEMENTATION GOALS THAT ARE CONSISTENT WITH THE GAP CAPACITY INDICATORS AND EPA PROGRAM AUTHORITIES. 3. SUPPORT THE MENOMINEE WATER RESOURCE PROGRAM'S EFFORT PURSUIT OF TAS ELIGIBILITY UNDER THE CLEAN WATER ACT AND TO EXPAND WATER RESOURCE PROTECTION ACTIVITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE WORK INCLUDES OUTPUTS AND OUTCOMES ASSOCIATED WITH MANAGING CONTINUING ENVIRONMENTAL PROGRAMS WHICH INCLUDE DELIVERABLES TO PROTECT AND MAINTAIN ENVIRONMENTAL PROGRAM CAPACITY BUILDING. THE ENVIRONMENTAL SERVICES DEPARTMENT IS RECOGNIZED AS THE LEAD ENVIRONMENTAL AGENCY ASSISTING THE MENOMINEE TRIBE TO BE SUCCESSFUL IN ACHIEVING THEIR ENVIRONMENTAL AND HUMAN HEALTH PROTECTION GOALS IN ALIGNMENT WITH MENOMINEE CULTURE AND BELIEFS. THE DIRECT BENEFICIARIES OF THIS AGREEMENT ARE THE CITIZENS OF THE MENOMINEE INDIAN TRIBE OF WISCONSIN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT5542230",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MENOMINEE INDIAN TRIBE OF WISCONSIN",
+      "obligation": 46667170.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5542230",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MENOMINEE INDIAN TRIBE OF WISCONSIN",
+      "obligation": 1918782.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 50792997.92,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 249292.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 966753.92
+    },
+    "66.926": {
+      "count": 2,
+      "total": 991000.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 48585952.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 520000.0,
+    "2025": 249292.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

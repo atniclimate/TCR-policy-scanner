@@ -1,9 +1,107 @@
 {
   "tribe_id": "epa_100000057",
   "tribe_name": "Confederated Tribes of the Goshute Reservation, Nevada and Utah",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "99T97801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION",
+      "obligation": 539911.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE TRIBE'S ENVIRONMENTAL PROGRAM. ACTIVITIES TO INCLUDE COMMUNITY OUTREACH ON COMPOSTING, UPDATE THE INTEGRATED SOLID WASTE MANAGEMENT PLAN, FOLLOW UP ON THE BROWNFIELD ASSESSMENT, CONDUCT AN ASSESSMENT OF THREE BURIED/PARTIALLY BURIED OPEN DUMPS, UPDATE THE INTEGRATED SOLID WASTE MANAGEMENT PLAN AND ATTEND MEETINGS AND TRAININGS IN ORDER TO DEVELOP CAPACITY IN THEIR ENVIRONMENTAL PROGRAMS.  THIS AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $112,383.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T52601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION",
+      "obligation": 463007.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \n\nTHIS AGREEMENT PROVIDES FULL FEDERAL FUNDS IN THE AMOUNT OF $152,054. REFER TO TERMS AND CONDITIONS.ACTIVITIES:THE RECIPIENT WILL CARRY OUT YEAR TWO OF THE HOUSEHOLD PICKUP PILOT PROJECT OF LARGE FURNITURE AND WHITE GOODS FOR ELDERS, CONTINUE THEIR RECYCLING AND SOLID WASTE PROGRAM, ATTEND THE REGION 9 EPA/TRIBAL CONFERENCE, RECEIVE ONSITE TRAINING FOR INDOOR AIR QUALITY MONITORING FOR CARBON MONOXIDE AND RADON, CONTINUE INVENTORY OF THESE GASES, GATHER TRADITIONAL ECOLOGICAL KNOWLEDGE STORIES FROM ELDERS, CONDUCT YEAR TWO OF SURVEYS FOR GENERATING A BASELINE WETLANDS DATABASE AND GIS MAP OF THE RESERVATION, AND CONDUCT YEAR ONE OF BASELINE MONITORING FOR FIVE TRIBAL SPRINGS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE A REPORT ON THE PICKUP PILOT PROJECT OF LARGE FURNITURE AND WHITE GOODS FOR ELDERS, RECORDS AND RECEIPTS FROM THE RECYCLING AND SOLID WASTE PROGRAM, TRAINING REPORTS ON THE REGION 9 EPA/TRIBAL CONFERENCE AND INDOOR AIR QUALITY MONITORING FOR CARBON MONOXIDE AND RADON, A REPORT ON INDOOR AIR BASELINE INVENTORY, COLLECTED TRADITIONAL ECOLOGICAL KNOWLEDGE STORIES FROM ELDERS, A BASELINE WETLANDS DATABASE AND GIS MAP THE RESERVATION, AND BASELINE MONITORING REPORT FOR FIVE TRIBAL SPRINGS. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A12AV01190",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION",
+      "obligation": 2649935.07,
+      "start_date": "2012-09-05",
+      "end_date": "2025-09-30",
+      "description": "ROADS PROJECT GOIR ROAD MAINTENANCE GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00313",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION",
+      "obligation": 639726.12,
+      "start_date": "2009-09-21",
+      "end_date": "2025-09-30",
+      "description": "TRANSPORTATION PLANNING GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00933",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION",
+      "obligation": 195376.85,
+      "start_date": "2017-09-16",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD_GOIR SAFETY 2_GOSHUTE TRIBE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01099",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION",
+      "obligation": 160786.55,
+      "start_date": "2023-08-29",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD_GOIR 1(7)_CONFED TRIBE GOSHUTE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00277",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION",
+      "obligation": 97869.3,
+      "start_date": "2020-12-20",
+      "end_date": "2027-09-30",
+      "description": "NEW  AWARD_GOIR TRIBAL TRANSP PLNG 2_GOI",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 4746611.89,
+  "award_count": 7,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 1002918.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 3743693.8899999997
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 160786.55,
+    "2024": 463007.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000560",
   "tribe_name": "Native Village of Unalakleet",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00033",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNALAKLEET",
+      "obligation": 133166.0,
+      "start_date": "2018-10-01",
+      "end_date": "2020-12-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00185",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNALAKLEET",
+      "obligation": 12104.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J11201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNALAKLEET",
+      "obligation": 379764.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE NATIVE VILLAGE OF UNALAKLEET IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH. THE PURPOSES OF THIS AWARD INCLUDE: ENVIRONMENTAL MONITORING AND ASSESSMENT.  ENVIRONMENTAL CLEANUP AND ASSESSMENT. OUTDOOR AND INDOOR AIR QUALITY.  TRAINING/OFFICE MANAGEMENT.ACTIVITIES:ACTIVITIES TO BE PERFORMED IN THIS PROJECT INCLUDE: CONDUCT VULNERABILITY/RISK ASSESSMENT USING TRADITIONAL ECOLOGICAL KNOWLEDGE AND CONTEMPORARY SCIENTIFIC DATA/TOOLS. PERFORM THE CROSS SHORE PROFILE AND THE WATER QUALITY MONITORING FIELD SAMPLING PER THEIR RESPECTIVE QAPPS. COMPLETE A RECYCLING AND REMEDIAL EFFORTS ASSESSMENT AND REPORT. PREPARE A REPORT RECOMMENDING ACTIONS TO IMPROVE RECYCLING. COMPLETE A POLLUTION PREVENTION ASSESSMENT AND REPORT. INCORPORATE RECYCLING IMPROVEMENTS. RECYCLE EWASTE, ALUMINUM CANS, AND NO 1 PLASTIC BOTTLES. DOCUMENT INDOOR AIR QUALITY FOR HOUSING UNITS OCCUPIED BY ELDERS AND PARENT(S) WITH YOUNG KIDS. REVIEW AND MAKE RECOMMENDATIONS TO TRIBE'S PEST PREVENTION STRATEGIC PLAN AND THE NVU'S PEST PREVENTION WAIVER. UPDATE IF NECESSARY.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES, OUTCOMES, AND INTENDED BENEFICIARIES INCLUDE: DEVELOPMENT OF TRIBAL SPECIFIC AMBIENT ADAPTATION AND MITIGATION STRATEGIES AND RECOMMENDATIONS. LENGTHEN THE LIFE SPAN OF THE LANDFILL BY RECYCLING. KEEP HAZARDOUS GOODS OUT OF UNALAKLEET AND THE LANDFILL. INCREASE THE HEALTH OF THE ENVIRONMENT BY REMEDIATING POLLUTED SITES. INCREASE HUMAN HEALTH BY REMOVING CONTAMINATION SOURCES. INCREASE UNDERSTANDING OF TRIBAL ENVIRONMENTAL RESPONSIBILITIES. INCREASE CAPACITY TO IMPROVE THE HEALTH OF COMMUNITY TRIBAL MEMBERS AND THE ENVIRONMENT. IMPROVE THE ENVIRONMENTAL PROGRAM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0216700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNALAKLEET",
+      "obligation": 5232217.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 5757251.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 145270.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 379764.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 5232217.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 379764.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

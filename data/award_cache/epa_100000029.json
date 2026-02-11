@@ -1,9 +1,170 @@
 {
   "tribe_id": "epa_100000029",
   "tribe_name": "Cahto Tribe of the Laytonville Rancheria",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00165",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 18602.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "99T85601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 501859.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE CAHTO TRIBE OF LAYTONVILLE RANCHERIA'S ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE MANAGING THE ENVIRONMENTAL OFFICE, FINALIZING A SOLID WASTE ORDINANCE, DEVELOPING AN AIR PROGRAM, CONSULTING WITH STATE AND FEDERAL AGENCIES, DRAFTING AN EMERGENCY RESPONSE PLAN, COORDINATING WITH VARIOUS ENTITIES ON ENVIRONMENTAL ISSUES, AND ATTENDING TRAINING TO DEVELOP ENVIRONMENTAL PROGRAM CAPACITY.   THE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $144,823.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T55401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 646387.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $192,714.ACTIVITIES:THE RECIPIENT WILL CONDUCT A WASTE AUDIT TO INFORM SOLID WASTE PROGRAM PLANNING, PLAN AND COORDINATE A COMMUNITY EARTH DAY EVENT, AND CONDUCT A BASELINE NEEDS ASSESSMENT FOR AIR QUALITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE RESULTS FROM A WASTE AUDIT, PHOTOS AND A REPORT OF COMMUNITY PARTICIPATION FROM AN EARTH DAY EVENT, AND RESULTS OF AN AIR QUALITY BASELINE NEEDS ASSESSMENT. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600CA0090",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 12521.23,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600CA0090",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 3903.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0090",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 52484.98,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602CA3090024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 46618.7,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176CA3090024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 20112.26,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600CA0090",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 6883.28,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3090025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 55666.96,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177CA3090025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 20094.27,
+      "start_date": "2025-04-16",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0619640",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA",
+      "obligation": 6635201.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 8020333.99,
+  "award_count": 12,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 18602.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1148246.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 218284.99
+    },
+    "14.867": {
+      "count": 1,
+      "total": 6635201.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 646387.0,
+    "2025": 20094.27,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

@@ -1,9 +1,67 @@
 {
   "tribe_id": "epa_100000194",
   "tribe_name": "Paskenta Band of Nomlaki Indians of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00104",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PASKENTA BAND OF NOMLAKI INDIANS",
+      "obligation": 82150.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2020-BR-133",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PASKENTA BAND OF NOMLAKI INDIANS",
+      "obligation": 9652306.95,
+      "start_date": "2023-11-23",
+      "end_date": "2026-11-22",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "DEIE0000154",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "PASKENTA BAND OF NOMLAKI INDIANS",
+      "obligation": 202744.0,
+      "start_date": "2022-09-01",
+      "end_date": "2025-08-31",
+      "description": "COMMUNITY CENTER & ADMINISTRATION SOLAR PV PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 9937200.95,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 82150.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 9652306.95
+    },
+    "81.087": {
+      "count": 1,
+      "total": 202744.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 202744.0,
+    "2023": 0.0,
+    "2024": 9652306.95,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

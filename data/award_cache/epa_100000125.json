@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000125",
   "tribe_name": "Kialegee Tribal Town",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F68101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KIALEGEE TRIBAL TOWN",
+      "obligation": 270000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE KIALEGEE TRIBAL TOWN TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL CONDUCT COMMUNITY OUTREACH, RECYCLING, AND CONTINUE TO BUILD CAPACITY OF ENVIRONMENTAL STAFF THROUGH ATTENDING TRAININGS AND MEETINGS.ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID\nWASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, RECYCLING. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, AND QUALITY MANAGEMENT PLAN. THE INTENDED BENEFICIARY IS THE KIALEGEE TRIBAL TOWN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00292",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KIALEGEE TRIBAL TOWN",
+      "obligation": 447299.67,
+      "start_date": "2017-02-10",
+      "end_date": "2024-09-30",
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00601",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KIALEGEE TRIBAL TOWN",
+      "obligation": 579358.97,
+      "start_date": "2023-06-01",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD FOR THE FY 2023 2% PLANNING FUNDS IN THE AMOUNT OF $3,289.52 AND FY 2023 TRIBAL TRANSPORTATION DESIGN/CONSTRUCTION IN THE AMOUNT OF $143,874.61.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01038",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KIALEGEE TRIBAL TOWN",
+      "obligation": 52046.38,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "NEW AWARD FOR FY 2024 SPECIAL APPROPRIATION IN THE AMOUNT OF $42,046.38 AND FY 2025 TRIBAL SHARES IN THE AMOUNT OF $10,000.00",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4016220",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KIALEGEE TRIBAL TOWN",
+      "obligation": 3093147.0,
+      "start_date": "2011-10-18",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4016220",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KIALEGEE TRIBAL TOWN",
+      "obligation": 150779.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 4592631.02,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 270000.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 1078705.0199999998
+    },
+    "14.867": {
+      "count": 2,
+      "total": 3243926.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 579358.97,
+    "2024": 0.0,
+    "2025": 322046.38,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

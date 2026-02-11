@@ -1,9 +1,162 @@
 {
   "tribe_id": "epa_100000020",
   "tribe_name": "Blackfeet Tribe of the Blackfeet Indian Reservation of Montana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00183",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 137880.0,
+      "start_date": "2018-09-01",
+      "end_date": "2020-09-01",
+      "description": "BLACKFEET-ADAPTATION TRAINING & WORKSHOPS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00263",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 10500.0,
+      "start_date": "2019-09-10",
+      "end_date": "2020-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00778",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 1421072.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42330000V600MT0107",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 7715261.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170MT0107",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 600000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION FACILITY BRIDGE PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000K200MT0107",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 160000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602MT3107024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 3394519.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: BLACKFEET TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BLACKFEET TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176MT3107024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 1107204.22,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: BLACKFEET TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BLACKFEET TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600MT0107",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 788515.73,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AMT3107024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 618072.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: BLACKFEET TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BLACKFEET TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602MT3107025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 3980840.98,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION OF MONTANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION OF MONTANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177MT3107025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION",
+      "obligation": 1106555.77,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION OF MONTANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION OF MONTANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 21040421.84,
+  "award_count": 12,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 1569452.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 19470969.84
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 1421072.0,
+    "2024": 0.0,
+    "2025": 1106555.77,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000326",
   "tribe_name": "Wilton Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T19801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "WILTON RANCHERIA",
+      "obligation": 191243.0,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES ASSISTANCE TO WILTON RANCHERIA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL DEVELOP A TRIBAL POLLUTION PREVENTION PROGRAM, DEVELOP AN ENVIRONMENTAL EDUCATION PROGRAM AND DEVELOP A GIS PROGRAM TO DEVELOP TRIBAL ENVIRONMENTAL CAPACITY.  THIS AWARD PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $90,007 FOR THE PERIOD OF 10/1/21-9/30/22.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 191243.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 191243.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 191243.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

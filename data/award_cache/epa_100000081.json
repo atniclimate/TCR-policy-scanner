@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000081",
   "tribe_name": "Enterprise Rancheria of Maidu Indians of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01071",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "ENTERPRISE RANCHERIA",
+      "obligation": 250000.0,
+      "start_date": "2025-02-01",
+      "end_date": "2026-01-31",
+      "description": "APPROVES THE FY 2025 TCR INITIAL CONTRACT PROPOSAL, SCOPE OF WORK & BUDGET. AWARDS FY 2025 TCR FUNDS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T34201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ENTERPRISE RANCHERIA",
+      "obligation": 511360.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO ENTERPRISE RANCHERIA TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $111,424.ACTIVITIES:THE RECIPIENT WILL REACH OUT TO TRIBAL COMMUNITY TO REVIEW THE DRAFT CLIMATE CHANGE ADAPTATION PLAN; EVALUATE AND AMEND OUTREACH AND EDUCATION EFFORTS REGARDING WATER CONSERVATION; AND EVALUATE THE NEED FOR AN AIR MONITORING PROGRAM IN COLLABORATION WITH OTHER LOCAL TRIBES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE AN UPDATED CLIMATE CHANGE ADAPTATION PLAN; AMENDED WATER CONSERVATION OUTREACH AND EDUCATION; AND A DETERMINATION BY THE TRIBE ABOUT WHETHER TO PURSUE CLEAN AIR ACT FUNDING FOR MONITORING. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE ENTERPRISE RANCHERIA.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 761360.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 250000.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 511360.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 511360.0,
+    "2024": 0.0,
+    "2025": 250000.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

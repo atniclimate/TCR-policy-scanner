@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000399",
   "tribe_name": "Native Village of Ekuk",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10133",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF EKUK",
+      "obligation": 76450.0,
+      "start_date": "2021-08-16",
+      "end_date": "2023-08-15",
+      "description": "EKUK BEACH EROSION FEASIBILITY STUDY",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J61801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF EKUK",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE WORK TO BE ACCOMPLISHED INCLUDES THREE WORK PLAN COMPONENTS: BUILDS TRIBAL ADMINISTRATIVE CAPACITY AND SUPPORTS TRAVEL TO ENVIRONMENTAL CONFERENCES; RESPONDS TO LOCAL CLIMATE CHANGE AND EROSION CONCERNS; SUPPORTS A TRIBAL SOLID AND HAZARDOUS WASTE AND RECYCLING PROGRAM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J47501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF EKUK",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS AWARD IS FOR THE NATIVE VILLAGE OF EKUK TO MANAGE THE ENVIRONMENTAL OFFICE AND PERFORM ADMINISTRATIVE TASKS; DEVELOP A CLIMATE ADAPTATION PLAN AND PERFORM SHORELINE EROSION MONITORING; COORDINATE OUTREACH ON TRADITIONAL/HEALTHY FOODS WITHIN THE COMMUNITY; AND SOLID WASTE MANAGEMENT AND PLANNING FOR NEW LAND FILL DEVELOPMENT. ACTIVITIES:THE ACTIVITIES TO BE PERFORMED ARE TO DEVELOP BETTER ORGANIZATION, REPORTING AND JOB TRAINING FOR THE ENVIRONMENTAL OFFICE; COORDINATE EROSION MONITORING AND PLANNING OF EROSION PROTECTION WITH PARTNERS; UNDERSTAND TRADITIONAL HEALTHY FOODS THAT TRIBAL MEMBERS AND ELDERS GREW UP WITH AND TO UNDERSTAND TRIBAL YOUTHS KNOWLEDGE OF THESE FOODS; WORK ON OUTREACH TO THE COMMUNITY ON PROPER DISPOSAL OF WASTE AND WORK WITH CLARKS POINT AND EKUK TRIBE TO PLAN LANDFILL.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE EXPECTED OUTCOME IS TO HAVE AN ENVIRONMENTAL OFFICE THAT IS ORGANIZED AND MEETING THE ENVIRONMENTAL GOALS OF THE TRIBE FROM YEAR TO YEAR; DEVELOPING PLANS OVER TIME TO ADAPT AND STRENGTHEN THE COMMUNITY THROUGH CLIMATE CHANGE RESILIENCY; AN UNDERSTANDING OF WHAT IS CHANGING WITH TRADITIONAL HEALTHY FOODS DUE TO CLIMATE CHANGE AND COME UP WITH PLANS TO ADAPT TO THE CHANGES; AND A SOLID WASTE PROGRAM THAT KEEPS EKUK VILLAGE CLEAN. THE BENEFICIARIES OF THIS WORK WILL BE THE VILLAGE MEMBERS OF EKUK.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 973874.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 76450.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 897424.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 403000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

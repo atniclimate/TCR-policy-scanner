@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000233",
   "tribe_name": "Quileute Tribe of the Quileute Reservation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00211",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QUILEUTE INDIAN TRIBE OF THE QUILEUTE INDIAN RESERVATION",
+      "obligation": 150000.0,
+      "start_date": "2018-09-01",
+      "end_date": "2021-12-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00072",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QUILEUTE INDIAN TRIBE OF THE QUILEUTE INDIAN RESERVATION",
+      "obligation": 30244494.65,
+      "start_date": "2008-01-15",
+      "end_date": "2024-09-30",
+      "description": "SINGLE AGREEMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2018-PC-0013",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "QUILEUTE INDIAN TRIBE OF THE QUILEUTE INDIAN RESERVATION",
+      "obligation": 172841.79,
+      "start_date": "2017-08-14",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2020-BR-127-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "QUILEUTE INDIAN TRIBE OF THE QUILEUTE INDIAN RESERVATION",
+      "obligation": 77769.0,
+      "start_date": "2022-09-02",
+      "end_date": "2025-09-01",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A25AV00426",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "QUILEUTE INDIAN TRIBE OF THE QUILEUTE INDIAN RESERVATION",
+      "obligation": 3999999.0,
+      "start_date": "2024-10-01",
+      "end_date": "2029-12-31",
+      "description": "QUILEUTE INDIAN TRIBE-TRIBAL CLIMATE RESILIENCE PROGRAM SUBPART J ''MOVE TO HIGHER GROUND RAVENCREST EXTENSION HOUSING CONSTRUCTION PROJECT''",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00317",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "QUILEUTE INDIAN TRIBE OF THE QUILEUTE INDIAN RESERVATION",
+      "obligation": 1273000.0,
+      "start_date": "2024-12-17",
+      "end_date": "2027-09-30",
+      "description": "BEAR SPRINGS HATCHERY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 35918104.44,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 30394494.65
+    },
+    "97.047": {
+      "count": 2,
+      "total": 250610.79
+    },
+    "20.205": {
+      "count": 2,
+      "total": 5272999.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 77769.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 5272999.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

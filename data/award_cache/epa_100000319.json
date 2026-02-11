@@ -1,9 +1,214 @@
 {
   "tribe_id": "epa_100000319",
   "tribe_name": "Ute Mountain Ute Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00198",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 106933.0,
+      "start_date": "2018-09-01",
+      "end_date": "2020-09-30",
+      "description": "ADAPTATION PLANNING (INC DATA DEVELOPM)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00053",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 79286.02,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00212",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 14322.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00057",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 5712768.9,
+      "start_date": "2008-09-26",
+      "end_date": "2027-09-30",
+      "description": "ROAD MAINTENANCE SUPPLEMENTAL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01403",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 2786938.35,
+      "start_date": "2012-09-24",
+      "end_date": "2025-09-30",
+      "description": "ANETH ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00236",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 1993499.54,
+      "start_date": "2009-09-25",
+      "end_date": "2027-09-30",
+      "description": "MIKE WASH ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00900",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 887124.38,
+      "start_date": "2014-08-27",
+      "end_date": "2027-09-30",
+      "description": "SAFETY ENHANCEMENT IMPROVEMENT PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01054",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 681044.46,
+      "start_date": "2018-09-18",
+      "end_date": "2024-09-30",
+      "description": "WHITE MESA RD - UMUIT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00833",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 647270.5,
+      "start_date": "2012-06-04",
+      "end_date": "2027-09-30",
+      "description": "MEADOWLARK DRIVE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00062",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 567207.49,
+      "start_date": "2007-09-25",
+      "end_date": "2027-09-30",
+      "description": "TRIBAL TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A99AV00002",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 0.0,
+      "start_date": "1999-09-27",
+      "end_date": "2028-09-30",
+      "description": "LONG RANGE TRANSPORTATION PLAN (LRTP)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01199",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 15000.0,
+      "start_date": "2025-09-15",
+      "end_date": "2026-09-30",
+      "description": "TO DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "21AH0815461",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 891987.0,
+      "start_date": "2021-09-22",
+      "end_date": "2026-09-30",
+      "description": "PURPOSE: THE INDIAN HOUSING BLOCK GRANTS (IHBG) PROGRAM IS AUTHORIZED UNDER THE NATIVE AMERICAN HOUSING ASSISTANCE AND SELF-DETERMINATION ACT OF 1996 (25 U.S.C. §4101 ET SEQ.) (NAHASDA). REGULATIONS FOR THE PROGRAM, WHICH ARE FOUND AT 24 CFR PART 1000, WERE WRITTEN BY HUD IN NEGOTIATION WITH TRIBES AND TRIBALLY DESIGNATED HOUSING ENTITIES (TDHES). THE GRANTS, WHICH ARE AWARDED BASED ON A FORMULA TO TRIBES AND TDHES, FUND A RANGE OF AFFORDABLE HOUSING ACTIVITIES THAT PRIMARILY BENEFIT LOW-INCOME AMERICAN INDIAN AND ALASKA NATIVE FAMILIES LIVING IN INDIAN COUNTRY AND INCLUDE ACTIVITIES THAT: 1) ASSIST AND PROMOTE AFFORDABLE HOUSING ACTIVITIES TO DEVELOP, MAINTAIN, AND OPERATE AFFORDABLE HOUSING IN SAFE AND HEALTHY ENVIRONMENTS ON INDIAN RESERVATIONS AND IN OTHER INDIAN AREAS FOR OCCUPANCY BY LOW-INCOME INDIAN FAMILIES; 2) COORDINATE ACTIVITIES TO PROVIDE HOUSING FOR INDIAN TRIBES AND THEIR MEMBERS AND TO PROMOTE SELF-SUFFICIENCY AND THEIR MEMBERS; 3) PLAN FOR AND INTEGRATE INFRASTRUCTURE RESOURCES FOR INDIAN TRIBES WITH HOUSING DEVELOPMENT FOR INDIAN TRIBES. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; ACTIVITIES TO BE PERFORMED: NO VALUE PROVIDED; EXPECTED OUTCOMES: NO VALUE PROVIDED; INTENDED BENEFICIARIES: THE PRIMARY BENEFICIARIES OF FUNDS ARE FAMILIES THAT MEET THE CRITERIA OF NAHASDA AND 24 CFR 1000.104. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; SUBRECIPIENT ACTIVITIES: NO VALUE PROVIDED",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000095",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 973820.0,
+      "start_date": "2017-09-30",
+      "end_date": "2021-03-30",
+      "description": "UMUT COMMUNITY-SCALE SOLAR PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000151",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 432661.0,
+      "start_date": "2022-01-01",
+      "end_date": "2024-12-30",
+      "description": "TOWAOC HOUSING SOLAR INITIATIVE",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000135",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "UTE MOUNTAIN UTE TRIBE",
+      "obligation": 378528.0,
+      "start_date": "2021-06-01",
+      "end_date": "2026-12-30",
+      "description": "UMUT WHITE MESA SOLAR INITIATIVE",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 16168390.64,
+  "award_count": 16,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 200541.02000000002
+    },
+    "20.205": {
+      "count": 9,
+      "total": 13290853.62
+    },
+    "14.867": {
+      "count": 1,
+      "total": 891987.0
+    },
+    "81.087": {
+      "count": 3,
+      "total": 1785009.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 432661.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 15000.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

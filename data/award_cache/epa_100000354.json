@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000354",
   "tribe_name": "Angoon Community Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J73801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ANGOON COMMUNITY ASSOCIATION",
+      "obligation": 267901.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:ANGOON COMMUNITY ASSOCIATION WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON ISSUES ADDRESSING SOLID WASTE MANAGEMENT, DRINKING WATER, AND HARMFUL ALGAL BLOOMS.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM ANGOON COMMUNITY ASSOCIATION WILL INCLUDE CREATING NOTES, AGENDAS, AND SUMMARIES OF EVENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00691",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANGOON COMMUNITY ASSOCIATION",
+      "obligation": 545601.16,
+      "start_date": "2018-06-25",
+      "end_date": "2025-12-31",
+      "description": "A18AV00691",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00704",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANGOON COMMUNITY ASSOCIATION",
+      "obligation": 480301.2,
+      "start_date": "2018-06-22",
+      "end_date": "2025-12-31",
+      "description": "A18AV00704",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00813",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANGOON COMMUNITY ASSOCIATION",
+      "obligation": 285000.0,
+      "start_date": "2020-06-11",
+      "end_date": "2025-12-31",
+      "description": "ANGOON FY20 6K1 DESIGN CONSTRUCTION FUND",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00993",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ANGOON COMMUNITY ASSOCIATION",
+      "obligation": 55708.72,
+      "start_date": "2023-08-01",
+      "end_date": "2028-12-31",
+      "description": "ANGOON",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1634512.08,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 267901.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1366611.08
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 55708.72,
+    "2024": 0.0,
+    "2025": 267901.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

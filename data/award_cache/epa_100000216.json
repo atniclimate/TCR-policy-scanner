@@ -1,9 +1,251 @@
 {
   "tribe_id": "epa_100000216",
   "tribe_name": "Pueblo of Laguna, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00167",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 15000.0,
+      "start_date": "2018-08-28",
+      "end_date": "2023-09-30",
+      "description": "LAGUNAPUEBLO_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMT-2022-BR-011",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 128000.0,
+      "start_date": "2023-11-10",
+      "end_date": "2026-11-09",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02F09101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO OF LAGUNA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY AND ADMINISTRATIVE INFRASTRUCTURE, OVERSIGHT ON TRIBAL PRIORITY PROJECTS, ENFORCE SOLID WASTE CODES AND REGULATIONS, COMMUNITY OUTREACH, AND IMPLEMENT TRIBAL SOLID/HAZARDOUS WASTE ACTIVITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:SUBMIT ANNUAL PROGRESS REPORT, ANNUAL FEDERAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM (GIS)/GPS QUALITY ASSURANCE PROJECT PLAN (QAPP). THE INTENDED BENEFICIARY IS THE PUEBLO OF LAGUNA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01F51201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 482000.0,
+      "start_date": "2018-10-01",
+      "end_date": "2022-09-30",
+      "description": "THIS AWARD PROVIDES ASSISTANCE TO INDIAN TRIBAL GOVERNMENTS AND INTERTRIBAL CONSORTIA TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL REGULATORY PROGRAMS ON INDIAN LANDS, PROVIDE TECHNICAL ASSISTANCE FROM EPA TO INDIAN TRIBAL GOVERNMENTS, AND INTERTRIBAL CONSORTIA IN THE DEVELOPMENT OF MULTIMEDIA PROGRAMS TO ADDRESS ENVIRONMENTAL ISSUES ON INDIAN LANDS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A12AV01379",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 4191122.84,
+      "start_date": "2012-09-19",
+      "end_date": "2027-09-30",
+      "description": "L24(4)2&4 RAINFALL ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00870",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 2490977.63,
+      "start_date": "2016-08-26",
+      "end_date": "2028-09-30",
+      "description": "PRELIMINARY ENGINEERING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00865",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 2207844.42,
+      "start_date": "2016-08-26",
+      "end_date": "2027-09-30",
+      "description": "L243(2)2&4 ACORN RD-PEUBLO OF LAGUNA",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00867",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 1899860.84,
+      "start_date": "2016-08-26",
+      "end_date": "2027-09-30",
+      "description": "L26(2)2&4,DEERDANCER RD-PUEBLO OF LAGUNA",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00278",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 1517434.15,
+      "start_date": "2011-09-24",
+      "end_date": "2029-09-30",
+      "description": "L26(3)1,2&4 RAINFALL ROAD, SAN JOSE RIVER BRIDGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01366",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 1159266.03,
+      "start_date": "2012-09-18",
+      "end_date": "2027-09-30",
+      "description": "L26(3)2&4 RAINFALL ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01367",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 1071745.52,
+      "start_date": "2012-09-19",
+      "end_date": "2027-09-30",
+      "description": "RESERVATION WIDE STRIPING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00221",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 997966.0,
+      "start_date": "2009-09-25",
+      "end_date": "2027-09-30",
+      "description": "ACOMA ROAD (CASA BLANCA ROAD) L22(4)2&4",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV01026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 949277.58,
+      "start_date": "2017-09-20",
+      "end_date": "2027-09-30",
+      "description": "L248(2)2&4 BLUE JAY RD, LAGUNA PUEBLO",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01368",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 734103.82,
+      "start_date": "2012-09-19",
+      "end_date": "2029-09-30",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A00AV00025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 256964.0,
+      "start_date": "2000-09-30",
+      "end_date": "2027-09-30",
+      "description": "SAN JOSE RIVER BRIDGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00497",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 155310.0,
+      "start_date": "2021-04-01",
+      "end_date": "2027-09-30",
+      "description": "LAGUNA L50(3)2&4 SANTA FE ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV01027",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 118938.14,
+      "start_date": "2017-09-20",
+      "end_date": "2027-09-30",
+      "description": "L248(2)2&4 BLUE STAR LOOP,LAGUNA PUEBLO",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00863",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 0.0,
+      "start_date": "2016-08-26",
+      "end_date": "2027-09-30",
+      "description": "SAN JOSE BRIDGE (M137) L503(2)1,2AND4 POL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000165",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "PUEBLO OF LAGUNA",
+      "obligation": 1064.4,
+      "start_date": "2022-09-01",
+      "end_date": "2024-08-31",
+      "description": "PUEBLO OF LAGUNA VILLAGE COMMUNITY CENTER SOLAR",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 18904875.37,
+  "award_count": 19,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 15000.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 128000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1010000.0
+    },
+    "20.205": {
+      "count": 14,
+      "total": 17750810.97
+    },
+    "81.087": {
+      "count": 1,
+      "total": 1064.4
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1064.4,
+    "2023": 528000.0,
+    "2024": 128000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

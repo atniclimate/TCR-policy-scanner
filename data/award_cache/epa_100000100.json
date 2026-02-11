@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000100",
   "tribe_name": "Havasupai Tribe of the Havasupai Reservation, Arizona",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV01118",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HAVASUPAI TRIBE",
+      "obligation": 250000.0,
+      "start_date": "2023-09-07",
+      "end_date": "2026-09-30",
+      "description": "HAVASUPAI TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T33801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HAVASUPAI TRIBE",
+      "obligation": 569776.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO HAVASUPAI TRIBE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE HAVASUPAI TRIBE.  \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $123,000.ACTIVITIES:THE RECIPIENT WILL ATTEND ENVIRONMENTAL CONFERENCES AND TRAININGS, INCLUDING THE EPA ANNUAL CONFERENCE; DEVELOP EDUCATION AND OUTREACH MATERIALS ON COMPOSTING AND CLIMATE CHANGE; DEVELOP AND BEGIN CONDUCTING THE FIRST YEAR OF A TWO YEAR PILOT COMPOSTING PROJECT;  IMPLEMENT THE TRIBE'S SOLID WASTE PROGRAM, THAT INCLUDES THE REMOVAL AND TRANSPORT OF RECYCLABLES AND SOLID WASTE FROM THE CANYON TO THE NEAREST TRANSFER STATION; CONDUCT AN ABANDONED VEHICLE AND WETLANDS SURVEY; AND WILL DEVELOP CAPACITY IN THE TRIBE'S AIR QUALITY PROGRAM BY COLLECTING BASELINE DATA AS PART OF A PILOT STUDY. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE TRAINING PLANS FOR ENVIRONMENTAL STAFF; SUMMARY REPORTS FOR MEETING, TRAININGS, AND CONFERENCES ATTENDED; EDUCATIONAL MATERIALS DEVELOPED ON RECYCLING AND CLIMATE CHANGE; DATA ON RECYCLABLES AND SOLID WASTE COLLECTED AND TRANSPORTED; AND A QUALITY ASSURANCE PROJECT PLAN FOR COLLECTING AIR QUALITY DATA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0402090",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HAVASUPAI TRIBE",
+      "obligation": 4636238.0,
+      "start_date": "2011-10-18",
+      "end_date": "2032-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0402090",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HAVASUPAI TRIBE",
+      "obligation": 95480.0,
+      "start_date": "2021-04-21",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 5551494.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 250000.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 569776.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 4731718.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 819776.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

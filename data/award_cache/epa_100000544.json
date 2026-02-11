@@ -1,9 +1,166 @@
 {
   "tribe_id": "epa_100000544",
   "tribe_name": "Native Village of Tanana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J93901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "WORK TO BE ACCOMPLISHED IN THIS PROJECT INCLUDES: 1: CONTINUE WATER QUALITY PROGRAM PLANNING AND DEVELOPMENT, INCLUDING BASELINE SAMPLINGAND 2: IMPROVE AND EXPAND POLLUTION PREVENTION AND SUSTAINABLE MATERIALS MANAGEMENT PROCESSES, INCLUDING PLANNING, DEVELOPMENT, AND IMPLEMENTATION ACTIVITIESAND 3: IDENTIFY AND/OR CONFIRM AREAS IN TANANA WHERE THERE IS FUEL CONTAMINATION AND PLAN FOR REMEDIATION/REMOVALAND AND 4: BUILD EFFICIENCY AND EFFECTIVENESS OF ADMINISTRATIVE CAPACITY IN THE IGAP PROGRAM. DELIVERABLES INCLUDE QUARTERLY PROGRESS REPORTING, BASELINE WATER QUALITY SAMPLING DATA, AND A PLAN FOR FUEL CONTAMINATION REMEDIATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J07901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF TANANA WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY, INCLUDING COMPILING BASELINE WATER QUALITY SAMPLING DATA, PROMOTING SUSTAINABILITY IN TANANA'S SOLID WASTE MANAGEMENT PROGRAM, ADVANCING THE EFFICIENCY AND EFFECTIVENESS OF ADMINISTRATIVE GRANTS MANAGEMENT, AND CONDUCTING COMMUNITY OUTREACH AND EDUCATION.\nACTIVITIES:PROGRAM ACTIVITIES WILL INCLUDE COMPILING BASELINE WATER QUALITY SAMPLING DATA COLLECTED SINCE 2012 INTO A SUMMARY REPORT AND WATER QUALITY MANAGEMENT PLAN, IMPROVING WASTE MANAGEMENT THROUGH PLANNING, PARTNERING, PROGRAM DEVELOPMENT, AND RESEARCH INTO NEW TECHNOLOGIES, ATTENDING RELEVANT CONFERENCES AND WEBINARS, UPDATING THE EPA-TRIBAL ENVIRONMENTAL PLAN, AND HOSTING EVENTS WHERE EDUCATIONAL MATERIALS ARE SHARED, ACTIVITIES ARE PROVIDED, AND THE COMMUNITY IS INVOLVED.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM NATIVER VILLAGER OF TANANA WILL INCLUDE PROGRESS REPORTS TO EPA, COPIES OF PRESENTATIONS, MEETING NOTES, FLYERS, ATTENDANCE LISTS, PHOTOS, AND TRIP REPORTS. EXPECTED OUTCOMES ARE A BETTER UNDERSTANDING OF WATER QUALITY ISSUES AND HOW TO SAFEGUARD THE WATERSHED, A CLEANER ENVIRONMENT AND BETTER HUMAN HEALTH THROUGH SUSTAINABLE WASTE MANAGEMENT, AND ENHANCED ADMINISTRATIVE GRANTS MANAGEMENT CAPACITY. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0035",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 42138.15,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0035",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 13135.94,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0035",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 321579.09,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3035024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 167764.96,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TANANA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TANANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3035024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 61174.25,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TANANA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TANANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0035",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 24661.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3035025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 200427.44,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TANANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TANANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3035025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 61160.45,
+      "start_date": "2025-02-12",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TANANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TANANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0215850",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 4041630.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0215850",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NATIVE VILLAGE OF TANANA",
+      "obligation": 121206.0,
+      "start_date": "2021-09-24",
+      "end_date": "2030-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 5707877.84,
+  "award_count": 12,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 892041.8400000001
+    },
+    "14.867": {
+      "count": 2,
+      "total": 4162836.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 519000.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 61160.45,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

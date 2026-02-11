@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000386",
   "tribe_name": "Village of Clarks Point",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J01301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CLARKS POINT VILLAGE COUNCIL",
+      "obligation": 509998.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "PURPOSE AND ACTIVITIES ARE TO BUILD TRIBAL CAPACITY TO DEVELOP AND MANAGE TRIBAL ENVIRONMENT PROGRAM DEVELOP AN ETEP COMMUNITY OUTREACH NETWORK WITH REGIONAL ORGANIZATIONS AND DEVELOP A COMPOSTING PROGRAM. ANTICIPATED DELIVERABLES AND OUTCOMES ARE TO DEVELOP ENVIRONMENTAL PROGRAM TECHNICAL AND ADMINISTRATIVE CAPABILITIES; PRODUCE AN EPA TRIBAL ENVIRONMENTAL PLAN AND COMMUNITY ENVIRONMENTAL OUTREACH MATERIALS; AND LEARN FROM PEER TO PEER MEETINGS AND ENVIRONMENTAL TRAININGS AND WORK WITH COMMUNITY TO DEVELOP SOLID WASTE REDUCTION/COMPOSTING PROGRAM.  INTENDED BENEFICIARY IS THE CLARK'S POINT VILLAGE AND TRIBAL MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 509998.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 509998.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 509998.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

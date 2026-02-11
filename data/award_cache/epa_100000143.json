@@ -1,9 +1,118 @@
 {
   "tribe_id": "epa_100000143",
   "tribe_name": "Lower Brule Sioux Tribe of the Lower Brule Reservation, South Dakota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV00688",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 195055.0,
+      "start_date": "2023-06-07",
+      "end_date": "2024-06-07",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01046",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 578699.0,
+      "start_date": "2024-07-01",
+      "end_date": "2026-08-31",
+      "description": "P.L. 93-638 TRIBAL CLIMATE RESILIENCY PROJECT GRANT WITH THE LOWER BRULE SIOUX TRIBE.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01206",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 181744.0,
+      "start_date": "2025-09-22",
+      "end_date": "2026-09-30",
+      "description": "P.L. 93-638 WASTEWATER LAGOON STUDY GRANT, A TRIBAL CLIMATE RESILIENCY PROJECT, WITH THE LOWER BRULE SIOUX TRIBE.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00826",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 4313439.63,
+      "start_date": "2016-10-01",
+      "end_date": "2031-12-31",
+      "description": "2017 FARM ROAD LOAN REPAYMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV01003",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 53316.54,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00469",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 40143.0,
+      "start_date": "2023-03-01",
+      "end_date": "2023-11-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00793",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 34858.97,
+      "start_date": "2023-07-05",
+      "end_date": "2024-02-29",
+      "description": "LBST - INTERSECTION SAFETY IMPROVEMENT DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01132",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOWER BRULE SIOUX TRIBE",
+      "obligation": 18704.9,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "P.L. 93-638 2% TRANSPORTATION PLANNING CONTRACT WITH THE LOWER BRULE SIOUX TRIBE.",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 5415961.04,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 955498.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 4460463.04
+    }
+  },
+  "yearly_obligations": {
+    "2022": 53316.54,
+    "2023": 270056.97,
+    "2024": 578699.0,
+    "2025": 200448.9,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

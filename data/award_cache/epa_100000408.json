@@ -1,9 +1,196 @@
 {
   "tribe_id": "epa_100000408",
   "tribe_name": "Louden Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01157",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 106440.0,
+      "start_date": "2025-09-06",
+      "end_date": "2028-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J70901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 509999.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THE TRIBE WILL MANAGE THE ENVIRONMENTAL OFFICE AND THE IGAP GRANT, BUILD CAPACITY THROUGH STAFF TRAINING AND EDUCATION, IMPROVE AIR QUALITY BY REDUCING THE IMPACT OF ROAD DUST IN THE COMMUNITY AND IMPROVING INDOOR AIR QUALITY, SAFELY MANAGE SOLID AND HAZARDOUS WASTE AND ASSIST THE CITY IN MAINTAINING THE LANDFILL, REMOVE NON-LANDFILLABLE WASTE FROM THE COMMUNITY THROUGH BACKHAUL, AND IDENTIFY AND BEGIN RECOVERING BROWNFIELD SITES IN THE COMMUNITY.   NOTE THAT YOU MAY NOT DRAW DOWN FUNDS FOR INDIRECT COSTS WITHOUT A CURRENT, APPROVED RATE IN PLACE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J73901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE LOUDEN TRIBE WILL USE FY25 GAP FUNDS TO MANAGE THE ENVIRONMENTAL OFFICE, BUILD ENVIRONMENTAL OFFICE CAPACITY AND PROMOTE INFORMATION SHARING, EXPAND ITS HEALTHY HOMES PROGRAM THROUGH INDOOR AIR QUALITY WORK, MANAGE SOLID WASTE, CONDUCT A BACKHAUL, AND CONDUCT WATER QUALITY SAMPLING. ACTIVITIES:THE TRIBE WILL MANAGE THE ENVIRONMENTAL OFFICE BY HIRING STAFF, COMPLETING REQUIRED REPORTING, OVERSEEING FINANCES, MAINTAINING RECORDS, AND PURCHASING SUPPLIES; BUILD ENVIRONMENTAL OFFICE CAPACITY AND PROMOTE INFORMATION SHARING BY ATTENDING TRAININGS, PRESENTING AT CONFERENCES, AND COLLABORATING WITH THE YUKON-KOYUKUK CONSORTIUM; EXPAND THE TRIBE'S HEALTHY HOMES PROGRAM BY INSTALLING PURPLE AIR SENSORS IN SELECTED ELDER HOMES TO MONITOR AIR QUALITY, VISITING A HIGH SCHOOL SCIENCE CLASS TO TALK ABOUT AIR QUALITY, INSTALLING AN AIR SENSOR WITH THE STUDENTS ON CAMPUS THAT THEY CAN CHECK AS A CLASS, AND MAINTAINING THE TRIBE'S AIR SENSORS; MANAGE SOLID WASTE BY OVERSEEING THE GALENA TRANSFER STATION, PROVIDING TECHNICAL SUPPORT TO THE CITY OF GALENA REGARDING LANDFILL OPERATIONS, NEGOTIATING AN MOA BETWEEN THE CITY OF GALENA AND LOUDEN TRIBAL COUNCIL TO SUPPORT A PART-TIME LANDFILL OPERATOR, AND CONDUCTING MONTHLY LANDFILL INSPECTIONS; CONDUCT A BACKHAUL WITH THE YUKON-KOYUKUK CONSORTIUM OF HAZARDOUS, SOLID, AND LIQUID WASTE, TO INCLUDE OBTAINING TRAINING ON FREON REMOVAL; AND CONDUCT WATER QUALITY SAMPLING WITH TRAINING FROM THE YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE QUARTERLY REPORTS, FINANCIAL REPORTS, CONFERENCE PRESENTATION MATERIALS, TRIP REPORTS, HAZWOPER TRAINING CERTIFICATE, PHOTOS OF AIR QUALITY MONITORING, LANDFILL, QUARTERLY LANDFILL INSPECTION REPORTS, AND PHOTOS OF THE BACKHAUL. ANTICIPATED OUTCOMES INCLUDE PROPER MANAGEMENT OF THE GRANT THROUGH REPORTING, PROJECT DEVELOPMENT/IMPLEMENTATION, AND FINANCIAL OVERSIGHT; PROPER EQUIPMENT, INFRASTRUCTURE, AND SUPPLIES TO MANAGE THE GRANT; COMPLIANCE WITH EPA-IGAP GRANT REQUIREMENTS; TRAINING AND NETWORKING OPPORTUNITIES FOR ENVIRONMENTAL OFFICE STAFF; COLLABORATION BETWEEN GAP PROGRAMS IN THE AREA; ENVIRONMENTAL EDUCATION AND INFORMATION SHARING IN THE COMMUNITY; EXPANSION OF THE GALENA HEALTHY HOMES PROGRAM; EMPLOYMENT OF A LANDFILL OPERATOR; IMPROVEMENTS TO THE TRANSFER STATION AND THE LANDFILL; REMOVAL OF SOLID, HAZARDOUS, AND LIQUID WASTE FROM THE COMMUNITY; AND IMPROVED UNDERSTANDING OF WATER QUALITY MONITORING. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0058",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 82380.2,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42220000K600AK0058",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 12500.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0058",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 7077.32,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0058",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 87189.35,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3058024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 75525.12,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: GALENA VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2024  :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GALENA VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3058024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 30346.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: GALENA VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2024  :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GALENA VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0058",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 11434.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3058025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 88659.33,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: GALENA VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GALENA VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3058025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 30327.11,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: GALENA VILLAGE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO GALENA VILLAGE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0209460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 3548954.0,
+      "start_date": "2012-01-06",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000169",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "LOUDEN TRIBE",
+      "obligation": 3250000.0,
+      "start_date": "2024-02-01",
+      "end_date": "2028-01-31",
+      "description": "COMMUNITY-SCALE SOLAR MICROGRID PROJECT IN GALENA, ALASKA",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 8108832.57,
+  "award_count": 14,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 106440.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 777999.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 425439.56999999995
+    },
+    "14.867": {
+      "count": 1,
+      "total": 3548954.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 3250000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 3250000.0,
+    "2025": 404767.11,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

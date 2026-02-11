@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000049",
   "tribe_name": "Coeur D'Alene Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10145",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "COEUR D'ALENE TRIBE",
+      "obligation": 50000.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "COEUR D'ALENE TRIBE CLIMATE RESILIENCE YOUTH ENGAGEMENT CAMP",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000101",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "COEUR D'ALENE TRIBE",
+      "obligation": 110759.39,
+      "start_date": "2018-10-01",
+      "end_date": "2022-04-30",
+      "description": "COEUR D'ALENE TRIBE SENIOR HOUSING COMPLEX ENERGY EFFICIENCY AND \nSOLAR ENERGY PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000166",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "COEUR D'ALENE TRIBE",
+      "obligation": 68129.0,
+      "start_date": "2022-08-01",
+      "end_date": "2025-07-31",
+      "description": "COEUR CENTER SOLAR PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 228888.39,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 50000.0
+    },
+    "81.087": {
+      "count": 2,
+      "total": 178888.39
+    }
+  },
+  "yearly_obligations": {
+    "2022": 68129.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

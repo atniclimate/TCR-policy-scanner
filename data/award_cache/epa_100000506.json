@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000506",
   "tribe_name": "Pitka's Point Traditional Council",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J06801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF PITKAS POINT",
+      "obligation": 125000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2024-09-30",
+      "description": "DESCRIPTION:THIS WORK PLAN CONTAINS TWO COMPONENTS. COMPONENT 1 FOCUSES ON CONTINUED DEVELOPMENT OF ADMINISTRATIVE CAPACITY TO MANAGE THE GAP GRANT. COMPONENT 2 FOCUSES ON IMPLEMENTATION OF TRIBAL WASTE MANAGEMENT.ACTIVITIES:OUTCOMES OF THESE EFFORTS DIRECTLY IMPACT THE COMMUNITY HEALTH AND ENVIRONMENT. STAFF WILL GAIN APPROPRIATE SKILLS TO MANAGE THE ENVIRONMENTAL PROGRAM. STAFF WILL INCREASE UNDERSTANDING OF HOW TO MANAGE GAP GRANT. SOLID WASTE WORK PROVIDES POLLUTION PREVENTION FOR A HEALTHIER CLEANER ENVIRONMENT, MAKING POSITIVE ENVIRONMENTAL CHANGES FOR OUR COMMUNITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES INCLUDE QUARTERLY REPORTS, TRIP REPORTS, TRAINING REPORTS, COPIES OF PLANS, SUMMARIES OF WEIGHT RECOVERED/DIVERTED FROM THE LANDFILL.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 125000.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 125000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 125000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

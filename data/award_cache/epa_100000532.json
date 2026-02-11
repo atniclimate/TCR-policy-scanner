@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000532",
   "tribe_name": "Native Village of Shungnak",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J60501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHUNGNAK",
+      "obligation": 369424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE NATIVE VILLAGE OF SHUNGNAK WILL BUILD CAPACITY IN FEDERAL GRANTS MANAGEMENT, ENVIRONMENTAL PROTECTION, PLANNING AND PRIORITIZING ENVIRONMENTAL ISSUES AFFECTING THE TRIBAL COMMUNITY. THE TRIBE WILL FOCUS ON SOLID AND HAZARDOUS WASTE CLEANUP, REMEDIATION, AND SOURCE REDUCTION. THE TRIBE WILL ORGANIZE DIALOGUE WITH THE NEARBY TRIBAL COMMUNITIES AND OTHER AGENCIES. RESULTING IN A CLEANER HEALTHIER COMMUNITY, AND TRIBAL RESIDENTIAL BEHAVIOR CHANGES THROUGH EDUCATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J52501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHUNGNAK",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF SHUNGNAK WILL CONTINUE TO BUILD CAPACITY IN GRANTS MANAGEMENT BY TRAINING IN FISCAL MANAGEMENT, GRANT WRITING AND DEVELOPING AN UPDATED EPA TRIBAL ENVIRONMENTAL PLAN. ACTIVITIES:THE TRIBE WILL DEVELOP THE EPA TRIBAL ENVIRONMENTAL PLAN AROUND DECREASING LANDFILL USE MASS BY DEVELOPING A RECYCLING CENTER. COMMUNICATING WITH TRIBAL LEADERSHIP AND MEMBERS, AND MEET CHALLENGES CREATING BEHAVIOR CHANGES AND TRIBAL ENVIRONMENTAL PROGRESS DURING THE NEXT FOUR YEAR PROGRAM AS IT DEVELOPS ENVIRONMENTAL CAPACITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:FOLLOW THROUGH ON LANDFILL PROJECTS AND DEMONSTRATIONS OF SUCCESS AND LESSONS LEARNED. THE TRIBAL COMMUNITY AND RESIDENTS OF THE NATIVE VILLAGE OF SHUNGNAK WILL HAVE A CLEANER VILLAGE, HEALTHIER HOMES, AND CHANGE IN BEHAVIORS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00859",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHUNGNAK",
+      "obligation": 827326.12,
+      "start_date": "2018-08-21",
+      "end_date": "2027-12-31",
+      "description": "A18AV00859",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00910",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHUNGNAK",
+      "obligation": 736098.61,
+      "start_date": "2018-08-24",
+      "end_date": "2027-12-31",
+      "description": "A18AV00910",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00886",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF SHUNGNAK",
+      "obligation": 507166.76,
+      "start_date": null,
+      "end_date": "2027-12-31",
+      "description": "A18AV00886",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2843015.49,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 772424.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 2070591.49
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 403000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

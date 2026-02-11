@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000300",
   "tribe_name": "Thlopthlocco Tribal Town",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F10901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "THLOPTHLOCCO TRIBAL TOWN",
+      "obligation": 510000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE THLOPTHLOCCO TRIBAL TOWN TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH TO TRIBAL AND COMMUNITY MEMBERS, IMPLEMENT POLLUTION PREVENTION PROGRAM, RECYCLING, AND CAPACITY DEVELOPMENT FOR MANAGING WATER QUALITY. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEMS AND GLOBAL POSITIONING SYSTEMS, QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE THLOPTHLOCCO TRIBAL TOWN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01F51101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "THLOPTHLOCCO TRIBAL TOWN",
+      "obligation": 460000.0,
+      "start_date": "2018-10-01",
+      "end_date": "2022-09-30",
+      "description": "THIS AWARD PROVIDES ASSISTANCE TO INDIAN TRIBAL GOVERNMENTS AND INTERTRIBAL CONSORTIA TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL REGULATORY PROGRAMS ON INDIAN LANDS, PROVIDE TECHNICAL ASSISTANCE FROM EPA TO INDIAN TRIBAL GOVERNMENTS, AND INTERTRIBAL CONSORTIA IN THE DEVELOPMENT OF MULTIMEDIA PROGRAMS TO ADDRESS ENVIRONMENTAL ISSUES ON INDIAN LANDS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT4029980",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "THLOPTHLOCCO TRIBAL TOWN",
+      "obligation": 5201848.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 6171848.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 970000.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 5201848.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 510000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

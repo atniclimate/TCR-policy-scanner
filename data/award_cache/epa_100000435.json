@@ -1,9 +1,129 @@
 {
   "tribe_id": "epa_100000435",
   "tribe_name": "Kasigluk Traditional Elders Council",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J29201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE KASIGLUK TRADITIONAL ELDERS COUNCIL IS BUILDING THIS 4-YEAR WORKPLAN ON THE ENVIRONMENTAL PRIORITIES LISTED IN THE ETEP, COMPLETE EACH PHASE OF THE WORKPLANS, RELY ON THE FLEXIBILITY OF THE ENVIRONMENTAL PROGRAM BUILDING A HEALTHIER, SAFER TRIBAL COMMUNITY. PLANNING PRIORITY PROJECTS THAT WILL SPAN THE 4-YEAR LIFE OF THIS PROGRAM. GUIDED BY THE ETEP REFLECTING REAL-TIME PRIORITIES AND ENVIRONMENTAL ISSUES AS REQUIRED. COMPLETE AN INTEGRATED WASTE MANAGEMENT PLAN FOR THE FUTURE STATE PERMITTING OF THE LANDFILL. EVALUATE CURRENT PRACTICES, FACILITIES, AND LANDFILL ISSUES IN THE COMMUNITY. THE ASSESSMENT WILL ASSIST THE TRIBE IN THE PARTNERSHIPS, RECOMMENDATIONS FOR RECYCLING, AND EDUCATE PEOPLE ON LANDFILL SEPARATION, REUSE, AND RECYCLING.\n\nACTIVITIES:CONDUCT A COMMUNITY GREEN UP CLEANUP AS A BI-ANNUAL EDUCATIONAL EVENT, EMPHASIZING SOURCE REDUCTION AND REUSE. EDUCATION AND SUPPORT WILL EVENTUALLY LEAD TO A FEE-BASED LANDFILL AND RECYCLING SYSTEM FOR THE BETTER HEALTH AND AESTHETIC VALUE OF THE TRIBAL COMMUNITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:COMPLETE AN INTEGRATED WASTE MANAGEMENT PLAN FOR THE FUTURE STATE PERMITTING OF THE LANDFILL. EVALUATE CURRENT PRACTICES, FACILITIES, AND LANDFILL ISSUES IN THE COMMUNITY. THE ASSESSMENT WILL ASSIST THE TRIBE IN THE PARTNERSHIPS, RECOMMENDATIONS FOR RECYCLING, AND EDUCATE PEOPLE ON LANDFILL SEPARATION, REUSE, AND RECYCLING. DEVELOP EVOLVING PRIORITIZED LISTS TO KEEP UP WITH CHANGES AND CHALLENGES TRIBAL MEMBERS AND THE COMMUNITY FACES IN THE FUTURE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0032",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 156902.63,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0032",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 11920.01,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0032",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 168406.1,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3032024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 149655.08,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  KASIGLUK TRADITIONAL ELDER'S COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KASIGLUK TRADITIONAL ELDER'S COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3032024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 62018.82,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  KASIGLUK TRADITIONAL ELDER'S COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KASIGLUK TRADITIONAL ELDER'S COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0032",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 22086.04,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3032025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 178527.79,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KASIGLUK TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KASIGLUK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3032025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASIGLUK TRADITIONAL ELDERS COUNCIL",
+      "obligation": 61976.46,
+      "start_date": "2025-04-15",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: KASIGLUK TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KASIGLUK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 1214492.93,
+  "award_count": 9,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 403000.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 811492.9299999999
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 403000.0,
+    "2025": 61976.46,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

@@ -1,9 +1,67 @@
 {
   "tribe_id": "epa_100000132",
   "tribe_name": "La Jolla Band of Luiseno Indians, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A22AV00473",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LA JOLLA BAND OF LUISENO INDIANS",
+      "obligation": 20326.48,
+      "start_date": "2022-01-01",
+      "end_date": "2023-12-31",
+      "description": "APPROVES THE YOUTH CLIMATE CHANGE PROJECT PROPOSAL & AWARDS FUNDS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00893",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LA JOLLA BAND OF LUISENO INDIANS",
+      "obligation": 695932.38,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "LA JOLLA BAND OF LUISENO INDIANS - 2023 TRIBAL TRANSPORTATION PROGRAM (TTP) AGREEMENT, AS AMENDED BY THE SURFACE TRANSPORTATION REAUTHORIZATION ACT OF 2021 (STRA-21), DIV. A OF PUB. L. 117-58",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000158",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "LA JOLLA BAND OF LUISENO INDIANS",
+      "obligation": 492240.0,
+      "start_date": "2022-11-01",
+      "end_date": "2025-12-31",
+      "description": "LA JOLLA TRIBAL GOVERNMENT RENEWABLE ENERGY DEVELOPMENT PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 1208498.86,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 20326.48
+    },
+    "20.205": {
+      "count": 1,
+      "total": 695932.38
+    },
+    "81.087": {
+      "count": 1,
+      "total": 492240.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 20326.48,
+    "2023": 1188172.38,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

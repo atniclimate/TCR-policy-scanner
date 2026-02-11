@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000116",
   "tribe_name": "Jena Band of Choctaw Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01F76101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 535000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE JENA BAND OF CHOCTAW INDIANS TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL DEVELOP AN AIR QUALITY ADVISORY SYSTEM, DEVELOP A CLIMATE CHANGE VULNERABILITY/RISK ASSESSMENT, UPDATE AND CREATE LAND CHARACTERIZATIONS, PERFORM ENVIRONMENTAL OUTREACH WITH THE COMMUNITY, AND BUILD CAPACITY OF STAFF THROUGH TRAININGS AND MEETINGS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F56401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 405000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE JENA BAND OF CHOCTAW INDIANS TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, CAPACITY DEVELOPMENT FOR DRINKING WATER SYSTEM, AND CAPACITY DEVELOPMENT FOR RESPONDING TO HAZARDOUS SUBSTANCES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP). THE INTENDED BENEFICIARY IS THE JENA BAND OF CHOCTAW INDIANS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00946",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 183381.42,
+      "start_date": "2016-08-29",
+      "end_date": "2025-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00830",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 652530.17,
+      "start_date": "2015-01-01",
+      "end_date": "2025-12-31",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01137",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 118836.32,
+      "start_date": "2019-01-01",
+      "end_date": "2025-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00995",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 464064.74,
+      "start_date": "2023-08-11",
+      "end_date": "2031-12-31",
+      "description": "POW WOW GROUNDS ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT2208830",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 1326077.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2208830",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "JENA BAND OF CHOCTAW INDIANS",
+      "obligation": 35007.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3719896.65,
+  "award_count": 8,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 940000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1418812.6500000001
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1361084.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 464064.74,
+    "2024": 0.0,
+    "2025": 405000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

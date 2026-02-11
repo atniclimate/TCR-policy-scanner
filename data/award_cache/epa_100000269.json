@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000269",
   "tribe_name": "Shakopee Mdewakanton Sioux Community of Minnesota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "DEIE0000205",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SHAKOPEE MDEWAKANTON SIOUX COMMUNITY",
+      "obligation": 1242616.0,
+      "start_date": "2025-02-01",
+      "end_date": "2028-01-31",
+      "description": "THE SHAKOPEE MDEWAKANTON SIOUX COMMUNITY (SMSC) WILL INSTALL INDEPENDENT, ROOFTOP SOLAR PHOTOVOLTAIC (PV) ENERGY SYSTEMS ON EXISTING SMSC OWNED BUILDINGS, LOCATED ON TRIBAL LANDS AROUND PRIOR LAKE, MINNESOTA. PV SYSTEMS WILL BE INSTALLED ON THE DAKOTAH SPORT AND FITNESS (DSF) CENTER, THE PLAYWORKS EVENT CENTER, AND TWO SHAKOPEE DAKOTA CONVENIENCE STORES. \nTHE PROPOSED PV SYSTEMS WERE STRATEGICALLY SELECTED TO HAVE THE GREATEST IMPACT TO THE SMSC AND ITS CARBON NEUTRALITY AND ENERGY INDEPENDENCE GOALS. TOGETHER, THE SYSTEMS WILL HAVE A RATED CAPACITY OF ROUGHLY 596 KILOWATTS (KW) AND GENERATE APPROXIMATELY 719,967 KILOWATT HOURS (KWH) PER YEAR, OFFSETTING ABOUT 12% OF ENERGY USAGE OF THE IMPACTED BUILDINGS AND AVOIDING APPROXIMATELY 31 MILLION POUNDS OF CO2 EMISSIONS OVER THE COURSE OF ABOUT 30 YEARS.",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 1242616.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "81.087": {
+      "count": 1,
+      "total": 1242616.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 1242616.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

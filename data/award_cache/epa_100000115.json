@@ -1,9 +1,67 @@
 {
   "tribe_id": "epa_100000115",
   "tribe_name": "Jamul Indian Village of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10185",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "JAMUL INDIAN VILLAGE",
+      "obligation": 102077.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-03-31",
+      "description": "JAMUL COMPREHENSIVE AND COLLABORATIVE ADAPTATION PLANNING PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2021-BR-096",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "JAMUL INDIAN VILLAGE",
+      "obligation": 92010.0,
+      "start_date": "2024-02-22",
+      "end_date": "2027-02-21",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "98T34001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "JAMUL INDIAN VILLAGE",
+      "obligation": 694262.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE JAMUL INDIAN VILLAGE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. DIRECT BENEFICIARIES ARE THE MEMBERS AND/OR RESIDENTS OF THE JAMUL INDIAN VILLAGE. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $170,431.ACTIVITIES:THE RECIPIENT WILL DEVELOP AND UPDATE OUTREACH AND EDUCATION MATERIALS, REVIEW AND UPDATE PLANS IN ORDER TO BOLSTER THE TRIBE'S SOLID WASTE MANAGEMENT AND ENVIRONMENT PROGRAMS, AND ATTEND MEETINGS AND TRAININGS AT FORUMS AND CONFERENCES TO INCREASE THEIR ENVIRONMENTAL PROGRAM CAPACITY IN AREAS OF SOLID WASTE, AIR QUALITY, AND WATER QUALITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE AN UPDATED ENVIRONMENTAL PROTECTION AGENCY AND TRIBAL ENVIRONMENTAL PLAN, INTEGRATED SOLID WASTE MANAGEMENT PLAN, AN EARTH DAY SUMMARY REPORT THAT MEASURES TRIBAL PARTICIPATION AND ASSESSES THE INCREASED KNOWLEDGE OF THE MEMBERS OF THE TRIBAL COMMUNITY AS WELL AS SUMMARIES DEPICTING THE INCREASE IN KNOWLEDGE GAINED BY ATTENDING MEETINGS AND TRAINING AT THE FOLLOWING FORUMS AND CONFERENCES: REGION 9 TRIBAL AND ENVIRONMENTAL PROTECTION AGENCY ANNUAL CONFERENCE, QUARTERLY REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS, THE TRIBAL LANDS AND ENVIRONMENT FORUM AND THE NATIONAL TRIBAL FORUM ON AIR QUALITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 888349.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 102077.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 92010.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 694262.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 694262.0,
+    "2024": 92010.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

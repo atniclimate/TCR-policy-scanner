@@ -1,9 +1,118 @@
 {
   "tribe_id": "epa_100000465",
   "tribe_name": "Native Village of Mekoryuk",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J42301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 490605.0,
+      "start_date": "2019-01-01",
+      "end_date": "2023-12-31",
+      "description": "THE NATIVE VILLAGE OF MEKOYRUK WILL BUILD TRIBAL ENVIRONMENTAL CAPACITY BY CONDUCTING SOLID AND HAZARDOUS WASTE MANAGMENT, RESEARCH ENVIRONMENTAL CHANGE AND EROSION, AND PROVIDE COMMUNITY ENVIRONMENTAL EDUCATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J30701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 393000.0,
+      "start_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF MEKORYUK WILL BUILD CAPACITY TO INCREASE KNOWLEDGE AND TECHNICAL SKILLS OF THE ENVIRONMENTAL STAFF FINANCIAL ADMINISTRATION INCLUDING IMPROVED COMMUNICATION BETWEEN EPA AND THE TRIBE. TRIBAL ADMINISTRATION STAFF WILL HAVE KNOWLEDGE AND SKILLS TO BUILD AND ASSIST IN TRAINING FOR FUTURE STAFF TO DEVELOP PROGRAMS AND PARTNERSHIPS THROUGH COMMUNICATIONS AND COLLABORATIONS WITH OTHER FEDERAL, STATE, AND LOCAL ENTITIES. THE TRIBE WILL REVIEW AND UPDATE, AS NECESSARY, ANY STANDARD OPERATING PROCEDURES, SOLID WASTE MANAGEMENT PLAN, ETEP'S AND/OR JOB DESCRIPTIONS WITHIN THE ENVIRONMENTAL DEPARTMENT. ACTIVITIES:BESIDES ADMINISTRATIVE KNOWLEDGE AND UPDATES FOR BETTER TRACKING OF FUNDS. FOR THE ENVIRONMENTAL ISSUES AND HEALTH OF THE COMMUNITY THE LAND IN AND AROUND TRIBAL COMMUNITY WILL BE CLEANED UP. RESIDENTS WILL LEARN THE IMPORTANCE OF WASTE (HOW TO RECYCLE, WHAT NOT TO THROW AND WHAT CAN BE PROPERLY DISPOSED). ENHANCED COMMUNITY KNOWLEDGE ON POLLUTION PREVENTION WILL LEAD TO A CLEANER AND HEALTHIER ENVIRONMENT. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:HAZARDOUS MATERIAL STAGING AND BACKHAUL WILL HAVE CONTINUOUS LONG TERM PLAN. THE TRIBAL COMMUNITY IS MORE AWARE OF MEASURES THEY CAN TAKE TO PREVENT POLLUTION, AVOID WASTE, AND CHANGE BEHAVIOR. THE TRIBAL COMMUNITY IS BECOMING CONTINUALLY AWARE OF THE IMPORTANCE OF PROPER WASTE DISPOSAL.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV01068",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 644511.73,
+      "start_date": "2019-08-16",
+      "end_date": "2026-12-31",
+      "description": "MEKORYUK A19AV01068 FY 2019 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00971",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 170603.18,
+      "start_date": "2018-09-03",
+      "end_date": "2024-12-31",
+      "description": "MEKORYUK FY18 6K1 PLANNING, FY18 66K 2%",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00799",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 153593.0,
+      "start_date": "2013-06-11",
+      "end_date": "2024-04-08",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00907",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 0.0,
+      "start_date": "2012-08-01",
+      "end_date": "2022-03-08",
+      "description": "WATER SOURCE ROAD CONSTRUCTION PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00783",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 17243.77,
+      "start_date": "2023-06-21",
+      "end_date": "2028-12-31",
+      "description": "MEKORYUK FY23 6V1 & 66V PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01065",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF MEKORYUK",
+      "obligation": 118677.26,
+      "start_date": "2025-08-01",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1988233.94,
+  "award_count": 8,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 883605.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 1104628.94
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 17243.77,
+    "2024": 393000.0,
+    "2025": 118677.26,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

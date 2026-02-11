@@ -1,9 +1,89 @@
 {
   "tribe_id": "epa_100000262",
   "tribe_name": "Sauk-Suiattle Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00220",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SAUK-SUIATTLE INDIAN TRIBE",
+      "obligation": 109903.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-07-01",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A05AV00078",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SAUK-SUIATTLE INDIAN TRIBE",
+      "obligation": 22552167.7,
+      "start_date": "2005-05-12",
+      "end_date": "2026-12-31",
+      "description": "SINGLE ACT AGREEMENT - TRIBAL PRIORITY ALLOCATION AND CONTRACT SUPPORT COSTS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00318",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAUK-SUIATTLE INDIAN TRIBE",
+      "obligation": 230000.0,
+      "start_date": "2024-12-16",
+      "end_date": "2027-12-31",
+      "description": "SAUK-SUIATTLE INDIAN TRIBE-NOAA SUBPART J CONSTRUCTION FUNDING ''POTABLE WELL WATER HEADBOX PROJECT''",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT5313880",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SAUK-SUIATTLE INDIAN TRIBE",
+      "obligation": 8808146.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5313880",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SAUK-SUIATTLE INDIAN TRIBE",
+      "obligation": 381367.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 32081583.7,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 22662070.7
+    },
+    "20.205": {
+      "count": 1,
+      "total": 230000.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 9189513.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 230000.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

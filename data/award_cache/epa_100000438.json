@@ -1,9 +1,192 @@
 {
   "tribe_id": "epa_100000438",
   "tribe_name": "Native Village of Kiana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00090",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF KLUTI-KAAH",
+      "obligation": 150000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J75001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF KLUTI-KAAH",
+      "obligation": 474939.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO NATIVE VILLAGE OF KLUTI-KAAH TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL MANAGE THE ENVIRONMENTAL OFFICE, MANAGE SOLID WASTE, PROMOTE HEALTHY HOMES INITIATIVE, AND EMERGENCY PREPAREDNESS",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01J91601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 250000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "THE NATIVE VILLAGE OF KIANA WILL BUILD ENVIRONMENTAL CAPACITY AND FINANCIAL CAPACITY WITH TRAINING DURING FY 2022 AND 2023. NATIVE VILLAGE OF KIANA INVESTIGATE WATER QUALITY AND HAZARDOUS WASTE ISSUES THE COMMUNITY FACES TODAY. THE TRIBE WILL RESEARCH METHODS OF ENVIRONMENTAL REMEDIATION TO BE SURE THAT NECESSARY PRECAUTIONS ARE FOLLOWED. HEALTH CONCERNS BEING DOCUMENTED INCLUDE LANDFILL SEPARATION, HUMAN WASTE CONTROL AND SEPARATION, AND HOME AIR QUALITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J72501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF KLUTI-KAAH",
+      "obligation": 267760.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE NATIVE VILLAGE OF KLUTI-KAAH TO BUILD ITS CAPACITY TO ADMINISTER AN ENVIRONMENTAL PROGRAM ON INDIAN LANDS IN FY25. THE TRIBE WILL MANAGE THE ADMINISTRATIVE AND FINANCIAL ASPECTS OF THE GRANT, MANAGE SOLID AND HAZARDOUS WASTE AND EMERGENCY PREPAREDNESS AND HEALTHY HOMES.ACTIVITIES:NATIVE VILLAGE OF KLUTI-KAAH WILL BUILD A STRONG ENVIRONMENTAL OFFICE WITH THE CAPACITY TO SUCCESSFULLY MANAGE THE GRANT AND HELP THE COMMUNITY RESOLVE ENVIRONMENTAL ISSUES; EDUCATE TRIBAL MEMBERS ON AIR QUALITY AND OTHER IMPORTANT WAYS TO SUSTAIN A HEALTHY HOME AND EMERGENCY PREPAREDNESS SO THAT INFORMED DECISIONS CAN BE MADE ABOUT NEXT STEPS TO ADDRESS THEM; AND BACKHAUL WHITE GOODS, E-WASTE, LEAD ACID BATTERIES, AND RECYCLABLE ITEMS OUT OF THE COMMUNITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE COPIES OF PRESENTATIONS AND HANDOUT MATERIALS, SUMMARY REPORT ON CLEANUP, CERTIFICATIONS, BACKHAUL LOGS, PHOTOS, TRIP REPORTS, MEETING NOTES, LISTS OF ONLINE LINKS AND QUARTERLY REPORTS. THE EXPECTED OUTCOMES INCLUDE A STRONG FOUNDATION IN GRANTS MANAGEMENT AND COLLABORATION WITH PARTNERS; TRIBAL MEMBERS' PARTICIPATION IN LOCAL ENVIRONMENTAL ACTIVITIES AND PROJECTS, COMMUNITY UNDERSTANDING AND INVOLVEMENT WITH SOLID WASTE ISSUES; A SMOOTHLY FUNCTIONING SOLID WASTE MANAGEMENT PROGRAM AND THE COMMUNITY BECOMES INFORMED AND PREPARED TO ADAPT TO EMERGENCY PREPAREDNESS.  THE INTENDED BENEFICIARIES ARE THE COMMUNITY OF NATIVE VILLAGE OF KLUTI-KAAH,",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00915",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 1042063.68,
+      "start_date": "2021-08-24",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638 CONTRACT, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00492",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 260274.4,
+      "start_date": "2020-10-01",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638 CONTRACT, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00977",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 182929.22,
+      "start_date": "2017-09-14",
+      "end_date": "2024-12-31",
+      "description": "A17AV00977",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00942",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 134067.44,
+      "start_date": "2017-09-11",
+      "end_date": "2024-12-31",
+      "description": "A17AV00942",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00154",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 0.0,
+      "start_date": "2009-07-30",
+      "end_date": "2022-06-30",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00578",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 316704.0,
+      "start_date": "2023-01-01",
+      "end_date": "2027-12-31",
+      "description": "P.L.93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00987",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 91766.23,
+      "start_date": "2023-08-01",
+      "end_date": "2028-12-31",
+      "description": "KIANA FY 2023 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00988",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 55000.0,
+      "start_date": "2023-08-01",
+      "end_date": "2028-12-31",
+      "description": "KIANA FY 2023 MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01172",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 81272.61,
+      "start_date": "2025-08-29",
+      "end_date": "2029-12-31",
+      "description": "NATIVE VILLAGE OF KIANA - TRANSIT OPERATIONS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEEE0007853",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "NATIVE VILLAGE OF KIANA",
+      "obligation": 439052.73,
+      "start_date": "2017-03-01",
+      "end_date": "2021-07-31",
+      "description": "RACEE: REDUCING ENERGY USE AND MAKING ENERGY EFFICIENT IN THE NATIVE VILLAGE OF KIANA",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 3745829.31,
+  "award_count": 14,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 150000.0
+    },
+    "66.926": {
+      "count": 3,
+      "total": 992699.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 2164077.58
+    },
+    "81.087": {
+      "count": 1,
+      "total": 439052.73
+    }
+  },
+  "yearly_obligations": {
+    "2022": 250000.0,
+    "2023": 463470.23,
+    "2024": 0.0,
+    "2025": 349032.61,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

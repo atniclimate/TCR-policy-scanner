@@ -1,9 +1,141 @@
 {
   "tribe_id": "epa_100000036",
   "tribe_name": "Chemehuevi Indian Tribe of the Chemehuevi Reservation, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMF-2018-PC-0005",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 109659.0,
+      "start_date": "2017-08-14",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "98T14501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 614408.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE CHEMEHUEVI INDIAN TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL DEVELOP AND IMPLEMENT A SOLID WASTE MANAGEMENT PROGRAM, CONDUCT GENERAL ADMINISTRATIVE AND FINANCIAL MANAGEMENT ACTIVITIES, PROVIDE AND EVALUATE LOCAL ENVIRONMENTAL OUTREACH EVENTS, ATTEND ENVIRONMENTAL TRAININGS AND MEETINGS, SUPPORT AN INDOOR AIR QUALITY PROGRAM, AND BUILD EMERGENCY RESPONSE CAPACITY.  THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $105,853.00.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T93901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 318636.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE CHEMEHUEVI INDIAN TRIBE. THE RECIPIENT WILL ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS COOPERATIVE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $160,444.00.\n\nACTIVITIES:THE ACTIVITIES INCLUDE DEVELOPING AND IMPLEMENTING A SOLID WASTE MANAGEMENT PROGRAM, CONDUCTING GENERAL ADMINISTRATIVE AND FINANCIAL MANAGEMENT ACTIVITIES, PROVIDING LOCAL ENVIRONMENTAL OUTREACH EVENTS, ATTENDING ENVIRONMENTAL TRAININGS, AND MEETINGS, AND BUILDING TECHNICAL CAPACITY IN RESPONSE TO AIR QUALITY CONCERNS.\n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE SUMMARY REPORTS OF MEETINGS, TRAININGS AND EVENTS, RESEARCHING STEPS NEEDED TO INCREASE RECYCLING AND DEVELOP A TRANSFER STATION, HOSTING AN EARTH DAY EVENT, AND RESEARCHING FUNDING OPPORTUNITIES BASED ON THE EPA-TRIBAL ENVIRONMENTAL PLAN. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE CHEMEHUEVI INDIAN TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "99T97601",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 435700.0,
+      "start_date": "2019-10-01",
+      "end_date": "2026-09-30",
+      "description": "THE PROPOSED PROJECT IS TO REPLACE WATERLINE INFRASTRUCTURE WITHIN THE ENTERPRISE MOBILE HOME PARK (MHP) ON THE CHEMEHUEVI INDIAN RESERVATION. WATER METERS WITH AUTOMATED METER READING CAPABILITY WILL ALSO BE INSTALLED AT EACH SERVICE LINE. THE NEW PIPE WILL PROVIDE SUSTAINABLE WATER SUPPLY TO THE COMMUNITY.  THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $435,700.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A10AV00436",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 198190.6,
+      "start_date": "2010-09-30",
+      "end_date": "2024-12-31",
+      "description": "TRANSPORATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "CA-2019-175",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 176720.0,
+      "start_date": "2019-09-18",
+      "end_date": "2026-06-30",
+      "description": "CHEMEHUEVI TRANSIT AUTHORITY (CTA)",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "CA-2024-165",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 434566.0,
+      "start_date": "2024-08-20",
+      "end_date": "2026-08-31",
+      "description": "APPLICATION PURPOSE: THIS GRANT WILL PROVIDE SUPPORT TO THE REHAB/REBUILD NEEDS OF THE CHEMEHUEVI TRANSIT FERRY BOAT.; ACTIVITIES PERFORMED: THIS BUDGET WILL SUPPORT THE MAINTENANCE AND REPAIR OF FERRY MECHANICAL SYSTEMS AND HVAC SYSTEMS; EXPECTED OUTCOMES: TO PROVIDE SAFE AND CONSISTENT FERRY TRANSIT SERVICES TO THE LOCAL POPULATION.; INTENDED BENEFICIARIES: THE PRIMARY BENEFICIARIES OF THIS PROJECT WILL BE PATRONS THAT USE THE FERRY TRANSIT AND THE TRIBAL MEMBERS THAT ALSO USE THIS FORM OF TRANSPORTATION.; SUBRECIPIENT ACTIVITIES: NONE",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0606580",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 15228827.0,
+      "start_date": "2012-01-06",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0606580",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHEMEHUEVI INDIAN TRIBE",
+      "obligation": 596858.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 18113564.6,
+  "award_count": 9,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 109659.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 933044.0
+    },
+    "66.468": {
+      "count": 1,
+      "total": 435700.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 809476.6
+    },
+    "14.867": {
+      "count": 2,
+      "total": 15825685.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 434566.0,
+    "2025": 318636.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

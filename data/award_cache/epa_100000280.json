@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000280",
   "tribe_name": "Skull Valley Band of Goshute Indians of Utah",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A16AV00947",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SKULL VALLEY BAND OF GOSHUTE INDIANS",
+      "obligation": 236999.48,
+      "start_date": "2016-08-29",
+      "end_date": "2026-09-30",
+      "description": "PROJECT SVIR 101(4)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00257",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SKULL VALLEY BAND OF GOSHUTE INDIANS",
+      "obligation": 127738.98,
+      "start_date": "2009-10-27",
+      "end_date": "2027-09-30",
+      "description": "ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00310",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SKULL VALLEY BAND OF GOSHUTE INDIANS",
+      "obligation": 28688.01,
+      "start_date": "2009-09-21",
+      "end_date": "2027-09-30",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4911300",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SKULL VALLEY BAND OF GOSHUTE INDIANS",
+      "obligation": 1140612.0,
+      "start_date": "2012-07-17",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4911300",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SKULL VALLEY BAND OF GOSHUTE INDIANS",
+      "obligation": 35007.0,
+      "start_date": "2022-07-26",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 1569045.47,
+  "award_count": 5,
+  "cfda_summary": {
+    "20.205": {
+      "count": 3,
+      "total": 393426.47000000003
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1175619.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 35007.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

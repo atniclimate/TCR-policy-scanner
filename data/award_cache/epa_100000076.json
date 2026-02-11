@@ -1,9 +1,277 @@
 {
   "tribe_id": "epa_100000076",
   "tribe_name": "Eastern Band of Cherokee Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10138",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 65000.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-01-31",
+      "description": "EBCI CLIMATE RESILIENCE PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01D15320",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 508000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS ACTION APPROVES FUNDING IN THE AMOUNT OF $110,00 TO THE EASTERN BAND OF CHEROKEE INDIANS TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL PURCHASE A HYDRO-MET MONITORING STATION AND A NEXT GENERATION AIR QUALITY MONITORING SYSTEM, AS WELL AS SUPPORTING TRAVEL TO A STORMWATER MANAGEMENT AND EROSION CONTROL TRAINING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01D15324",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 122410.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS ACTION PROVIDES FUNDING IN THE AMOUNT OF $122,410 TO THE EASTERN BAND OF CHEROKEE INDIANS (EBCI) FOR THE INDIAN GENERAL ASSISTANCE PROGRAM. THE PURPOSE OF THIS GRANT IS TO BUILD EBCI'S CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:THE RECIPIENT WILL CONTINUE TO IDENTIFY TRIBAL ENVIRONMENTAL PRIORITIES, SUPPORT AN ENVIRONMENTAL RESOURCES MANAGER POSITION, ENGAGE IN ENVIRONMENTAL RESTORATION THROUGH AQUATIC MONITORING AND STREAM BANK STABILIZATION, WATER QUALITY MONITORING IN ORDER TO MAKE DATA INFORMED DECISIONS ABOUT REGULATORY COMPLIANCE, AND TRAVEL TO CAPACITY BUILDING MEETINGS AND TRAINING SUCH AS THE REGIONAL TRIBAL OPERATIONS COMMITTEE AND THE ITEP TRIBAL LANDS AND ENVIRONMENT FORUM AMONG OTHERS TO BE DETERMINED.\nSUBRECIPIENT:SUPPORT TO OPERATE AND MAINTAIN U.S.G.S. AQUATIC GAUGE STATION LOCATED IN BIRDTOWN COMMUNITY.OUTCOMES:THE ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE ENHANCED ABILITY TO MANAGE MULTIPLE ENVIRONMENTAL PROGRAMS INCLUDING AIR QUALITY, WATER QUALITY, REGULATORY COMPLIANCE, AND CLIMATE RESILIENCY; ENHANCED ABILITY TO MONITOR AND RESTORE EBCI AQUATIC ECOSYSTEMS; EXPANDED CAPACITY FOR NATURAL RESOURCE DEPARTMENT (NRD) DEPARTMENTAL DATA MANAGEMENT AND WATER RESOURCE DECISION MAKING; IMPROVED COORDINATION WITH SOUTHEAST REGIONAL TRIBES AND EPA PROGRAMMING; IMPROVED COORDINATION AND COLLABORATION WITH TRIBES, NON-PROFITS, AND ENVIRONMENTAL AGENCIES, AND INCREASED KNOWLEDGE ON BIOTIC AND ABIOTIC AQUATIC RESOURCE MANAGEMENT NEEDS. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR RESIDENTS OF THE EASTERN BAND OF CHEROKEE INDIANS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "00D85219",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 649000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "THIS ACTION APPROVES AN AWARD IN THE AMOUNT OF $649,000 TO EASTERN BAND OF CHEROKEE INDIANS FOR THE PURPOSE REPLACING THE U.S.441 WATER MAIN LINE TO PROVIDE SAFE DRINKING WATER FOR 125 HOMES ON THE RESERVATION IN SWAIN COUNTY, NORTH CAROLINA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "05D45125",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 655000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING IN THE AMOUNT OF $655,000 TO EASTERN BAND OF CHEROKEE INDIANS UNDER THE SAFE DRINKING ACT: SECTION 1452 AND INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) (PL117-58).  THE PURPOSE OF THIS AGREEMENT IS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ADDRESS EMERGING CONTAMINANTS IN TRIBAL DRINKING WATER.  SPECIFICALLY, THE RECIPIENT WILL SAMPLE THE TREATED WATER SUPPLY COMING FROM THE 6 MGD CHEROKEE SURFACE WATER PLANT AND SAMPLE THE RAW WATER.\n\n\n\n\nACTIVITIES:THE ACTIVITIES INCLUDE SAMPLE THE RAW WATER AT NO LESS THAN 14 LOCATIONS UPSTREAM FROM THE INTAKE SCREEN TO SEARCH FOR THE WATER THAT RAISED POLYFLUOROALKYL SUBSTANCES (PFAS) LEVELS DURING THE PREVIOUS TESTING\n\n\n\n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE SAMPLING OF RAW WATER TO ADDRESS PFAS LEVELS AT 14 OR MORE INTAKES THROUGHOUT THE DISTRIBUTION SYSTEM.  THE EXPECTED OUTCOMES INCLUDE MINIMIZE OR ELIMINATE PFAS LEVELS IN THE DISTRIBUTION SYSTEM.  THE INTENDED BENEFICIARIES INCLUDE EASTERN BAND OF CHEROKEE INDIANS AND CITIZENS IN THE STATE OF NORTH CAROLINA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 2753047.96,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 798352.6,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 222065.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 2932211.64,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000ER02NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 774040.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NC3052024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 2584505.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: EASTERN BAND OF CHEROKEE INDIANS TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO EASTERN BAND OF CHEROKEE INDIANS UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17ANC3052024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 903309.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: EASTERN BAND OF CHEROKEE INDIANS TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO EASTERN BAND OF CHEROKEE INDIANS UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V170NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 891200.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NC3052024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 753180.5,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: EASTERN BAND OF CHEROKEE INDIANS TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO EASTERN BAND OF CHEROKEE INDIANS UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 384552.35,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NC3052025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 3071737.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: EASTERN BAND OF CHEROKEE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO EASTERN BAND OF CHEROKEE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177NC3052025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 752659.22,
+      "start_date": "2025-02-19",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: EASTERN BAND OF CHEROKEE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO EASTERN BAND OF CHEROKEE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000ER06NC0052",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 163438.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "EMERGENCY RELIEF FOR FEDERALLY OWNED LANDS",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT3705660",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 26593531.17,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3705660",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 2211783.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000086",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "EASTERN BAND OF CHEROKEE INDIANS",
+      "obligation": 997715.36,
+      "start_date": "2017-09-30",
+      "end_date": "2020-09-29",
+      "description": "DEPLOYMENT OF ENERGY EFFICIENCY AND CLEAN ENERGY ON INDIAN LANDS - A COMMUNITY SOLAR PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 48786739.04,
+  "award_count": 21,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 65000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 630410.0
+    },
+    "66.468": {
+      "count": 2,
+      "total": 1304000.0
+    },
+    "20.205": {
+      "count": 13,
+      "total": 16984299.509999998
+    },
+    "14.867": {
+      "count": 2,
+      "total": 28805314.17
+    },
+    "81.087": {
+      "count": 1,
+      "total": 997715.36
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 875069.22,
+    "2026": 655000.0
+  },
+  "trend": "new"
 }

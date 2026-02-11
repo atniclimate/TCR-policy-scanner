@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000546",
   "tribe_name": "Native Village of Tatitlek",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J93801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TATITLEK",
+      "obligation": 518954.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE NATIVE VILLAGE TATITLEK WILL BUILD TRIBAL ENVIRONMENTAL CAPACITY THROUGH ENVIRONMENTAL TRAININGAND EDUCATION AND OUTREACH AND IMPLANTING THE INTEGRATED WASTE MANAGEMENT PLAN.  ALL ADMINISTRATIVE AND PROGRAMMATIC TERMS AND CONDITIONS ARE UPDATED. THE UPDATED CONDITIONS DO NOT APPLY RETROACTIVELY TO FUNDS ALREADY EXPENDEDAND THEY APPLY ONLY TO UNEXPENDED FUNDS AND THE NEW MONIES ADDED TO THE AGREEMENT",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J01801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TATITLEK",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT ARE TO DEVELOP AND STRENGTHEN THE TRIBES' ADMINISTRATIVE AND PROGRAMMATIC CAPACITY, SOLID WASTE AND RECYCLING PROGRAM, AND COMMUNICATION CAPACITY.ACTIVITIES:SOME OF THE ACTIVITIES INCLUDE WRITING NEWSLETTER AND ANNOUNCEMENTS TO EDUCATE COMMUNITY ON RECYCLING AND OTHER ENVIRONMENTAL TOPICS, ATTENDING THE ALASKA TRIBAL CONFERENCE ON ENVIRONMENTAL MANAGEMENT AND ALASKA FORUM ON THE ENVIRONMENT CONFERENCES, MAINTAINING THEIR TRIBAL OFFICE OVERSEEING THE GAP PROGRAM ENSURING RECORD KEEPING AND FINANCIAL REPORTING AND CONTINUE TO COLLECT AND SEPARATE HOUSEHOLD HAZARDOUS WASTE AND PREPARE FOR SHIPPING.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:SOME ANTICIPATED DELIVERABLES ARE: ARTICLES AND/OR ADS TO EDITOR QUARTERLY, POST AND DISTRIBUTE SIGNS AND BROCHURES AS NECESSARY, COPIES OF NEWSLETTERS TO EPA AND COUNCIL WITH EACH QUARTERLY PERFORMANCE REPORT, WORK PLAN PROGRESS AND BUDGET-TO-ACTUAL ACCOUNTING STATEMENTS QUARTERLY, SUMMARIZE SPECIFIC ACTIVITIES CONDUCTED/ WORK PRODUCTS PRODUCED IN SUPPORT OF EACH TASK, AND FINANCIAL STATUS INFORMATION QUARTERLY, QUARTERLY PERFORMANCE REPORTS AND DELIVERABLES TO EPA TRIBAL COORDINATOR AND COUNCIL WITHIN 30 DAYS AFTER EACH FISCAL QUARTER, \nESTIMATE OF AMOUNTS RECYCLABLES COLLECTED AND SHIPPING COSTS ANNUALLY, PHOTOS OF RECYCLABLES, ESTIMATE OF APPROXIMATE AMOUNT OF VEHICLES, SCRAP METAL, WHITE APPLIANCES. \nTHE INTENDED BENEFICIARIES ARE THE NATIVE VILLAGE OF TATITLEK COMMUNITY MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00817",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TATITLEK",
+      "obligation": 153179.09,
+      "start_date": "2018-08-01",
+      "end_date": "2027-12-31",
+      "description": "A18AV00817",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00772",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TATITLEK",
+      "obligation": 90724.0,
+      "start_date": "2018-06-27",
+      "end_date": "2027-12-31",
+      "description": "A18AV00772",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 896857.09,
+  "award_count": 4,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 652954.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 243903.09
+    }
+  },
+  "yearly_obligations": {
+    "2022": 518954.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

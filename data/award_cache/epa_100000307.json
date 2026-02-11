@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000307",
   "tribe_name": "Tule River Indian Tribe of the Tule River Reservation, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00183",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULE RIVER INDIAN TRIBE OF THE TULE RIVER RESERVATION, CALIFORNIA",
+      "obligation": 10065.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T18501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TULE RIVER INDIAN TRIBE OF THE TULE RIVER RESERVATION, CALIFORNIA",
+      "obligation": 447143.0,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT IS TO PROVIDE ASSISTANCE TO THE TULE RIVER TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL MANAGE AN ENVIRONMENTAL OFFICE, DEVELOP OUTREACH MATERIALS AND CONDUCT EVENTS, ATTEND ENVIRONMENTAL MEETINGS, BUILD GIS TECHNICAL CAPACITY, AND DEVELOP A SOLID WASTE MANAGEMENT PROGRAM.\n\nTHIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $147,000. REFER TO TERMS AND CONDITIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 457208.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 10065.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 447143.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 447143.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000082",
   "tribe_name": "Ewiiaapaayp Band of Kumeyaay Indians, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AV00261",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EWIIAAPAAYP BAND OF KUMEYAAY INDIANS",
+      "obligation": 694787.02,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00411",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EWIIAAPAAYP BAND OF KUMEYAAY INDIANS",
+      "obligation": 612719.58,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE) CR1/CR2 AND CONTRACT SUPPORT CR#1 (14.21%) AND CR#2 (7.92%) OF 2019 ENACTED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00718",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EWIIAAPAAYP BAND OF KUMEYAAY INDIANS",
+      "obligation": 124963.45,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32540703",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EWIIAAPAAYP BAND OF KUMEYAAY INDIANS",
+      "obligation": 120000.0,
+      "start_date": "2025-08-06",
+      "end_date": "2029-09-30",
+      "description": "THE FY22 FY23 PROTECT PROGRAM THING VALLEY COMMUNITY ACCESS AND EVACUATION ROUTE PROJECT WILL ADDRESS THE TRANSPORTATION SAFETY DEFICIENCIES ON THE ONLY ACCESS ROUTE IN THE BIG EWIIAAPAAYP SECTION OF THE RESERVATION. THE ACCESS ROUTE IS A 3.79 MILE HEAVILY RUTTED STEEP DIRT ROAD REFERRED TO AS THING VALLEY ROAD. THIS ROAD HAS SHEER DROP OFFS ON THE EAST SIDE FOR OVER HALF OF ITS LENGTH AND IS FREQUENTLY CLOSED DURING SEASONAL STORMS DUE TO SIGNIFICANT EROSION. THE ROAD IS UNSAFE AND A HAZARD TO LAW ENFORCEMENT AND OTHER EMERGENCY VEHICLE ACCESS AND IMPEDES EVACUATION FROM THE\nRESERVATION IN THE EVENT OF WILDFIRE.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0609200",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "EWIIAAPAAYP BAND OF KUMEYAAY INDIANS",
+      "obligation": 1327370.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 2879840.05,
+  "award_count": 5,
+  "cfda_summary": {
+    "20.205": {
+      "count": 4,
+      "total": 1552470.05
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1327370.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 124963.45,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 120000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

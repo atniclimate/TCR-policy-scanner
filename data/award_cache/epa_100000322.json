@@ -1,9 +1,103 @@
 {
   "tribe_id": "epa_100000322",
   "tribe_name": "Wampanoag Tribe of Gay Head (Aquinnah)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "693JG42230000V600MA0094",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WAMPANOAG TRIBE OF GAY HEAD AQUINNAH",
+      "obligation": 240261.94,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600MA0094",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WAMPANOAG TRIBE OF GAY HEAD AQUINNAH",
+      "obligation": 19677.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600MA0094",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WAMPANOAG TRIBE OF GAY HEAD AQUINNAH",
+      "obligation": 256141.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602MA3094024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WAMPANOAG TRIBE OF GAY HEAD AQUINNAH",
+      "obligation": 225366.2,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: WAMPANOAG TRIBE OF GAY HEAD TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO WAMPANOAG TRIBE OF GAY HEAD UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176MA3094024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WAMPANOAG TRIBE OF GAY HEAD AQUINNAH",
+      "obligation": 79270.73,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: WAMPANOAG TRIBE OF GAY HEAD TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO WAMPANOAG TRIBE OF GAY HEAD UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602MA3094025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WAMPANOAG TRIBE OF GAY HEAD AQUINNAH",
+      "obligation": 267486.45,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: WAMPANOAG TRIBE OF GAY HEAD TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO WAMPANOAG TRIBE OF GAY HEAD UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177MA3094025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WAMPANOAG TRIBE OF GAY HEAD AQUINNAH",
+      "obligation": 79242.37,
+      "start_date": "2025-02-19",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: WAMPANOAG TRIBE OF GAY HEAD TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO WAMPANOAG TRIBE OF GAY HEAD UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 1167446.01,
+  "award_count": 7,
+  "cfda_summary": {
+    "20.205": {
+      "count": 7,
+      "total": 1167446.0099999998
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 79242.37,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

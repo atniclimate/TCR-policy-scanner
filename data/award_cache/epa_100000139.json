@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000139",
   "tribe_name": "Little Traverse Bay Bands of Odawa Indians, Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A12AV00899",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS",
+      "obligation": 10108415.0,
+      "start_date": "2012-06-01",
+      "end_date": "2025-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT2636440",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS",
+      "obligation": 13025720.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "00E98406",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS",
+      "obligation": 268000.0,
+      "start_date": "2021-04-01",
+      "end_date": "2025-04-30",
+      "description": "THE LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS (LTBB) SEEKS TO PROTECT AIR QUALITY AND INCREASE TRIBAL ENERGY SOVEREIGNTY ON THE RESERVATION THROUGH: INCREASED REGULATORY CAPACITY ON AIR QUALITY ISSUES; RESEARCH AND DEVELOPMENT OF CLIMATE CHANGE MITIGATION AND ADAPTATION STRATEGIES FOR LTBB GOVERNMENT OPERATIONS; PROVIDING INDOOR AIR QUALITY IMPROVEMENT INFORMATION TO TRIBAL CITIZENS; AND INCREASED COMMUNITY AWARENESS OF AIR QUALITY ISSUES AND CLIMATE CHANGE MITIGATION AND ADAPTATION STRATEGIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "00E98407",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS",
+      "obligation": 137000.0,
+      "start_date": "2025-05-01",
+      "end_date": "2027-04-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING FOR THE LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS TO PROTECT AIR QUALITY THROUGH ENHANCED REGULATORY CAPACITY ON AIR QUALITY ISSUES. LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS AIMS TO PROVIDE INDOOR AIR QUALITY IMPROVEMENT INFORMATION TO TRIBAL CITIZENS AND RAISE COMMUNITY AWARENESS OF AIR QUALITY ISSUES.ACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE DEVELOPING AIR QUALITY EDUCATIONAL TOOLS, COLLECTING LEAF LITTERFALL TO ANALYZE FOR MERCURY CONTENT, ATTENDING CONFERENCES ON AIR QUALITY ISSUES, DEVELOPING RECOMMENDATIONS ON AIR QUALITY ISSUES, AND PROVIDING TECHNICAL ASSISTANCE TO TRIBAL CITIZENS ON INDOOR AIR QUALITY ISSUES. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:FROM THESE ACTIVITIES, THE LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS ANTICIPATES CREATING TECHNICAL ASSISTANCE DOCUMENTS, MEETING AGENDAS, NEWSLETTER ARTICLES, DATA ON LOCAL MERCURY CONCENTRATIONS, AND PRESENTATIONS ON INDOOR AIR QUALITY ISSUES. EXPECTED OUTCOMES INCLUDE IMPROVED UNDERSTANDING OF LOCAL AIR QUALITY ISSUES, INCREASED AWARENESS AMONG TRIBAL CITIZENS, INCREASED PROTECTION AGAINST POTENTIAL HEALTH EFFECTS OF POOR INDOOR AIR, AND SUCCESSFUL COMPLETION OF AIR QUALITY PROJECTS. THE INTENDED BENEFICIARIES INCLUDE LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS TRIBAL CITIZENS, COMMUNITY MEMBERS, AND THE TRIBAL NATURAL RESOURCES STAFF.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 23539135.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "20.205": {
+      "count": 1,
+      "total": 10108415.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 13025720.0
+    },
+    "66.038": {
+      "count": 2,
+      "total": 405000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 137000.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

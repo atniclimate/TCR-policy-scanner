@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000075",
   "tribe_name": "Duckwater Shoshone Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T00801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 646624.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO DUCKWATER SHOSHONE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL IMPLEMENT ITS WASTE MANAGEMENT PROGRAM, ATTENDING TRAINING, ENGAGE LOCAL, STATE AND FEDERAL AGENCIES ON REGIONAL ENVIRONMENTAL ISSUES, CONDUCT OUTREACH EVENTS, SERVE AS A REPRESENTATIVE ON REGIONAL TRIBAL OPERATIONS COMMITTEE AND DEVELOP ITS PESTICIDE MANAGEMENT PROGRAM.  THIS COOPERATIVE AGREEMENT PROVIDES FULL FEDERAL FUNDING OF $166,260.  SEE TERMS AND CONDITIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T96301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 334960.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE DUCKWATER SHOSHONE TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $171,641. SEE TERMS AND CONDITIONS.ACTIVITIES:THE ACTIVITIES INCLUDE ATTEND TRAINING, REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS AND THE TRIBAL/EPA REGION 9 ANNUAL CONFERENCE, CONDUCT OUTREACH ACTIVITIES, AN EARTH DAY EVENT, A COMMUNITY CLEAN UP AND HAZARDOUS WASTE COLLECTION EVENTS, AND WORK WITH THE COMMUNITY ON WATER EFFICIENCY AND CONSERVATION MEASURES. \n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE SUMMARIES OF TRAINING AND MEETINGS, INFORMATION ON SOLID AND HAZARDOUS WASTE COLLECTED AND A SUMMARY ON THE WATER EFFICIENCY AND CONSERVATION PROGRAM ACTIVITIES. EXPECTED OUTCOMES INCLUDE KNOWLEDGEABLE ENVIRONMENTAL STAFF, IMPROVED COMMUNICATION WITH REGION 9, MORE EFFECTIVE WASTE MANAGEMENT PRACTICES AND MORE EFFICIENT USE OF WATER.  THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE DUCKWATER SHOSHONE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00291",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 2026202.85,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00304",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 2000320.0,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE) CR1/CR2; LAW ENFORCEMENT-638 TRIBAL (PROGRAM BASE) CR1/CR2 AND CONTRACT SUPPORT CR#1 (14.21%) AND CR#2 (7.92%) OF 2019 ENACTED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00278",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 1721823.0,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00541",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 1221252.44,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/LAW ENFORCEMENT SPECIAL INITIATIVES FUNDING IS BEING PROVIDED ON A ONE-TIME (NONRECURRING) BASIS TO MEET THE OPERATIONAL NEEDS OF TRIBALLY CONTRACTED OR COMPACTED LAW ENFORCEMENT AND/OR DETENTION/CORRECTIONS PROGRAMS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00717",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 126464.32,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT3200430",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "DUCKWATER SHOSHONE TRIBE",
+      "obligation": 8871225.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 16948871.61,
+  "award_count": 8,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 981584.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 7096062.609999999
+    },
+    "14.867": {
+      "count": 1,
+      "total": 8871225.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1848287.32,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 334960.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

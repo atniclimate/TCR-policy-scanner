@@ -1,9 +1,173 @@
 {
   "tribe_id": "epa_100000510",
   "tribe_name": "Native Village of Port Graham",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J86101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 500000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS PROJECT WILL ASSIST THE NATIVE VILLAGE OF PORT GRAHAM IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE ENVIRONMENT AND HEALTH.  TASKS INCLUDE MAINTAINING AN ENVIRONMENTAL OFFICE AND PROGRAM; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING WITH OTHER AGENCIES AND CONDUCTING OUTREACH AND CLEANUP EVENTS; CONDUCTING SOURCE SEPARATION AND RESOURCE RECOVERY ACTIVITIES; BUILDING KNOWLEDGE OF AIR, WATER, AND GIS, UPDATING THE INVENTORY, AND COLLECTING BASELINE OCEAN WATER QUALITY DATA.   NOTE: THE INDIRECT COST RATE AGREEMENT ON FILE WITH EPA EXPIRED 12/31/2019, YOU MAY NOT DRAW DOWN FUNDS FOR INDIRECT COSTS WITHOUT A CURRENT, APPROVED RATE IN PLACE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J85401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 250000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE NATIVE VILLAGE OF PORT GRAHAM IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3. BUILDING COMMUNICATIONS CAPACITY; 4. BUILDING SOLID AND HAZARDOUS WASTE MANAGEMENT CAPACITY; AND 5. BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES AND CONDUCTING COMMUNITY EDUCATION ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF AIR AND WATER QUALITY AND INVASIVE SPECIES; PLANNING FOR A NEW LANDFILL SITE; DEVELOPING AN ENVIRONMENTAL INVENTORY; AND COLLECTING BASELINE OCEAN WATER QUALITY DATA.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE NATIVE VILLAGE OF PORT GRAHAM, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; DECREASING AMOUNTS OF RECYCLABLES AND HAZARDOUS WASTES ENTERING LANDFILL; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; FINANCIAL REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; RECYCLING AND WASTE REPORTS; AN UPDATED ENVIRONMENTAL INVENTORY; AND DRINKING WATER AND INVASIVE SPECIES RECOMMENDATIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V170AK0087",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 1596088.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V600AK0087",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 237692.85,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170AK0087",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 2874893.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0087",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 231666.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AAK3087024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 5259177.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF PORT GRAHAM TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF PORT GRAHAM UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3087024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 200673.79,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF PORT GRAHAM TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF PORT GRAHAM UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3087024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 63595.87,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF PORT GRAHAM TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF PORT GRAHAM UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0087",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 30382.45,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271AK3087025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 1395940.0,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF PORT GRAHAM TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF PORT GRAHAM UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3087025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 235572.02,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF PORT GRAHAM TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF PORT GRAHAM UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3087025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PORT GRAHAM",
+      "obligation": 63586.05,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF PORT GRAHAM TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF PORT GRAHAM UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 12939267.24,
+  "award_count": 13,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 750000.0
+    },
+    "20.205": {
+      "count": 11,
+      "total": 12189267.239999996
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 1709526.05,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

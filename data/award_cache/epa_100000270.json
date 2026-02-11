@@ -1,9 +1,89 @@
 {
   "tribe_id": "epa_100000270",
   "tribe_name": "Shawnee Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F14201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SHAWNEE TRIBE",
+      "obligation": 305000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2024-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE SHAWNEE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PROMOTE RECYCLING, AND CAPACITY DEVELOPMENT FOR GEOSPATIAL SYSTEM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP). THE INTENDED BENEFICIARY IS THE SHAWNEE TRIBE AND SENECA-CAYUGA NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F57401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SHAWNEE TRIBE",
+      "obligation": 405000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE SHAWNEE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND RECYCLING, AND EMERGENCY MANAGEMENT PLANNING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP). THE INTENDED BENEFICIARY IS THE SHAWNEE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A23AV01174",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHAWNEE TRIBE",
+      "obligation": 363504.29,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD FOR FY22 AND FY23 TRIBAL TRANSPORTATION PROGRAM FAST ACT AND STRA-21 FUNDS. IN THE OVERALL AMOUNT OF $122,302.47",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4018490",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SHAWNEE TRIBE",
+      "obligation": 1175835.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4018490",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SHAWNEE TRIBE",
+      "obligation": 35007.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 2284346.29,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 710000.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": 363504.29
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1210842.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 305000.0,
+    "2024": 363504.29,
+    "2025": 405000.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

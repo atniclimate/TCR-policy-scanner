@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000499",
   "tribe_name": "Native Village of Paimiut",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV01065",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PAIMIUT NATIVE VILLAGE OF",
+      "obligation": 223546.0,
+      "start_date": "2024-09-23",
+      "end_date": "2028-12-31",
+      "description": "PAIMIUT FY23 TCR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J17501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PAIMIUT NATIVE VILLAGE OF",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS WORK PLAN CONTAINS FOUR COMPONENTS. COMPONENT 1 IS FOCUSED ON BUILDING THE CORE ADMINISTRATIVE CAPACITY TO MANAGE A TRIBAL ENVIRONMENTAL PROGRAM. COORDINATING WITH OTHER TRIBES IN THE AREA TO BUILD THE COMMUNITY'S ENVIRONMENTAL PRESENCE. COMPONENT 2 IS FOCUSED ON ESTABLISHING BASELINE NEEDS ASSESSMENT AND PUBLIC PARTICIPATION AS WELL AS TRAINING FOR STAFF. COMPONENT 3 IS FOCUSED ON BUILDING INFORMATION MANAGEMENT CAPACITY. COMPONENT 4 IS FOCUSED ON BUILDING THE COMMUNITY'S SOLID AND HAZARDOUS WASTE CAPACITIES AND SOURCE SEPARATION IMPLEMENTATION. ACTIVITIES:THE ACTIVITIES PERFORMED WILL INCLUDE DEVELOPING SYSTEMS FOR ADMINISTRATION OF THE GRANT, ATTENDING TRAINING TO LEARN ABOUT ENVIRONMENTAL ISSUES. STAFF WILL DEVELOP AN UPDATED INTEGRATED SOLID WASTE MANAGEMENT PLAN, FOCUSING ON PRIORITIES BASED ON FEEDBACK FROM THE COMMUNITY. MEMORANDUM OF AGREEMENTS WILL BE CREATED TO ALLOW THE TRIBAL AND CITY GOVERNMENTS TO WORK TOGETHER.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES INCLUDE QUARTERLY REPORTS, TRIP REPORTS, TRAINING REPORTS, COPIES OF PLANS, AND COPIES OF MEMORANDUMS. OUTCOMES OF THESE EFFORTS DIRECTLY IMPACT THE COMMUNITY HEALTH AND ENVIRONMENT AND WILL ENHANCE THE TRIBE'S ABILITY TO MAINTAIN ENVIRONMENTAL PRESENCE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00291",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAIMIUT NATIVE VILLAGE OF",
+      "obligation": 255830.06,
+      "start_date": "2017-01-31",
+      "end_date": "2023-12-31",
+      "description": "PAIMUIT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01078",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAIMIUT NATIVE VILLAGE OF",
+      "obligation": 79780.62,
+      "start_date": "2025-08-06",
+      "end_date": "2029-12-31",
+      "description": "PAIMIUT FY 2025 TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1087156.68,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 223546.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 528000.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 335610.68
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 528000.0,
+    "2024": 223546.0,
+    "2025": 79780.62,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

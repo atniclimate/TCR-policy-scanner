@@ -1,9 +1,280 @@
 {
   "tribe_id": "epa_100000267",
   "tribe_name": "Seneca Nation of Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00092",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 123200.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-11-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00201",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 6726.52,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98287018",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 1040423.0,
+      "start_date": "2018-10-01",
+      "end_date": "2023-12-31",
+      "description": "THIS GRANT AGREEMENT PROVIDES SUPPORT TO THE SENECA NATION OF INDIANS (SNI) TOWARDS A NEW WATER TREATMENT SYSTEM TARGETING HIGH LEVELS OF IRON AND MANGANESE. A NEW, LARGER WELL HOUSE WILL ACCOMMODATE NEW WATER TREATMENT EQUIPMENT, TANKS AND PUMPS. IN ADDITION, A WATER STORAGE SYSTEM WILL BE INSTALLED TO PROVIDE POTABLE WATER STORAGE AND FIRE PROTECTION. THE IMPROVEMENTS WILL IMPROVE OPERATION AND MAINTENANCE, REDUCE COSTS AND ALLOW CRITICAL INFRASTRUCTURE TO CONTINUE OPERATIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "96247500",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 473000.0,
+      "start_date": "2022-04-01",
+      "end_date": "2026-12-31",
+      "description": "DESCRIPTION:THE PROPOSED RENOVATION AT THE THOMAS INDIAN SCHOOL WASTEWATER TREATMENT FACILITY WILL REPLACE THE FAILING EXISTING MECHANICAL BAR SCREEN WITH A HEADWORKS SYSTEM THAT WILL BE LESS MAINTENANCE INTENSIVE, AND BE SAFE FOR THE OPERATORS.  THIS WILL ADDRESS THE POTENTIAL HEALTH RISKS OF OCCASIONAL UNTREATED SEWAGE CONTAMINATING THE SURROUNDING AREA AND  WILL INCREASE WASTEWATER TREATMENT.  THE INCREASED RELIABILITY AND REDUCTION OF MAINTENANCE AS WELL AS INCREASED SAFETY ALL IMPROVE SERVICE TO THE COMMUNITY.  ACTIVITIES:FOLLOWING THE NOW COMPLETED ENGINEERING DESIGN DIRECTED BY THE SENECA NATION A CONSTRUCTION CONTRACTOR WILL BE PROCURED TO INSTALL A NEW MECHANICAL BAR SCREEN AT THE WASTEWATER TREATMENT FACILITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE EXPECTED OUTCOMES WILL BE PROPER WASTEWATER TREATMENT, RELIABLE AND LESS COSTLY MAINTENANCE AND AN INCREASE IN SAFETY FOR OPERATORS.  THE BENEFICIARIES WILL BE THE RESIDENTS OF SENECA NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "96250500",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 56540.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-12-31",
+      "description": "THIS ASSISTANCE AGREEMENT PROVIDES FUNDING TO THE SENECA NATION OF INDIANS TO REPLACE EQUIPMENT AT ITS RICHARDSON ROAD WATER SYSTEM THAT MALFUNCTIONS DURING EXTREME HEAT CONDITIONS AND HIGH SYSTEM DEMAND. SPECIFICALLY, THE PROJECT WILL REPLACE VARIABLE FREQUENCY DRIVES AND UPGRADE THE CLIMATE CONTROL SYSTEM WITH TEMPERATURE PROBES WITHIN THE SYSTEM CABINET TO PREVENT MALFUNCTIONS DUE TO OVERHEATING. THESE EQUIPMENT UPGRADES WILL HELP THE TRIBE TO FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SAFE DRINKING WATER ACT BY ENSURING UNINTERRUPTED DELIVERY OF CLEAN AND SAFE DRINKING WATER FOR ITS CITIZENS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98235800",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 362000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO SENECA NATION OF INDIANS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA.  SPECIFICALLY, THE RECIPIENT WILL REPLACE AND INSTALL WATER MAINS AND SERVICE LINES TO IMPROVE THE RELIABILITY AND SERVICEABILITY OF THE COMMUNITY WATER SYSTEM ON THE CATTARAUGUS TERRITORY. ACTIVITIES:THE ACTIVITIES INCLUDE REPLACING AND INSTALLING 58,000 FEET OF 10-INCH PVC WATER MAIN, 71,000 FEET OF 8-INCH PVC WATER MAIN, 3,000 FEET OF WATER SERVICE LINES, AND ASSOCIATED VALVES, HYDRANTS, AND CONNECTIONS IN ORDER TO IMPROVE THE RELIABILITY AND SERVICEABILITY OF THE COMMUNITY WATER SYSTEM ON THE CATTARAUGUS TERRITORY. THE PROJECT WILL SERVE 1,038 HOMES AND 78 ADMINISTRATIVE BUILDINGS AND BUSINESSES WITH UPGRADED WATER FACILITIES. THROUGH EVALUATION AND WATER MODELING, THE WATER SYSTEM WAS IDENTIFIED TO HAVE MAJOR LEAKAGE FROM UNIDENTIFIED SOURCES IN EXCESS OF 20% OF THE TOTAL DAILY WATER PRODUCED BY THE SYSTEM WHICH IS AN INDIAN HEALTH SERVICE DEFICIENCY LEVEL 3. THE NATION WORKED WITH IHS TO PURSUE FEDERAL FUNDING BY LISTING THE PROPOSED PROJECT IN THE FY 2022 IHS SANITATION DEFICIENCY SYSTEM (SDS).\n\nTHIS GRANT WILL PARTIALLY FUND CONSTRUCTION OPERATIONS IN EARLY 2025. SPECIFICALLY, THIS GRANT WILL FUND 2,935 FT OF 10' PVC WATERMAIN (AT $82/LF) AND 1,556 FT OF 8' PVC WATERMAIN (AT $78/LF) FROM STATION 0+00 TO STATION 47+20 AS SHOWN ON THE CATTARAUGUS WATER SYSTEM IMPROVEMENTS-CONTRACT D PLANS (PAGES C-101 TO C-107). QUANTITIES MAY VARY DEPENDING ON THE BID PRICES RECEIVED\n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE UPGRADED WATER SERVICES TO TRIBAL MEMBERS, HOMES AND BUSINESSES IN THE CATTARAUGUS TERRITORY SERVED BY THE CATTARAUGUS COMMUNITY WATER SYSTEM.\n\nTHE EXPECTED OUTCOMES INCLUDE SAFE DRINKING WATER DELIVERED TO THE COMMUNITIES SERVED, REDUCED WATER LOSS AND INCREASED EFFICIENCY IN THE COMMUNITY WATER SYSTEM.\n\nTHE INTENDED BENEFICIARIES INCLUDE THE SENECA NATION OF INDIANS COMMUNITY, INCLUDING HOMES, BUSINESSES AND ADMINISTRATIVE BUILDINGS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "96277700",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 1439000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-04-30",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO SENECA NATION OF INDIANS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA.  SPECIFICALLY, THE RECIPIENT WILL REPLACE AND INSTALL WATER MAINS AND SERVICE LINES TO IMPROVE THE RELIABILITY AND SERVICEABILITY OF THE COMMUNITY WATER SYSTEM ON THE CATTARAUGUS TERRITORY.ACTIVITIES:THE ACTIVITIES INCLUDE REPLACING AND INSTALLING 58,000 FEET OF 10-INCH PVC WATER MAIN, 71,000 FEET OF 8-INCH PVC WATER MAIN, 3,000 FEET OF WATER SERVICE LINES, AND ASSOCIATED VALVES, HYDRANTS, AND CONNECTIONS IN ORDER TO IMPROVE THE RELIABILITY AND SERVICEABILITY OF THE COMMUNITY WATER SYSTEM ON THE CATTARAUGUS TERRITORY. THE PROJECT WILL SERVE 1,038 HOMES AND 78 ADMINISTRATIVE BUILDINGS AND BUSINESSES WITH UPGRADED WATER FACILITIES. THROUGH EVALUATION AND WATER MODELING, THE WATER SYSTEM WAS IDENTIFIED TO HAVE MAJOR LEAKAGE FROM UNIDENTIFIED SOURCES IN EXCESS OF 20% OF THE TOTAL DAILY WATER PRODUCED BY THE SYSTEM WHICH IS AN INDIAN HEALTH SERVICE DEFICIENCY LEVEL 3. THE NATION WORKED WITH IHS TO PURSUE FEDERAL FUNDING BY LISTING THE PROPOSED PROJECT IN THE FY 2022 IHS SANITATION DEFICIENCY SYSTEM (SDS).\n\nSPECIFICALLY, THIS GRANT WILL FUND 10,564 FT OF 8' PVC WATERMAIN (AT $83/LF) AND 5,020 FT OF 8' HDPE WATERMAIN (AT $112/LF) FROM STATION A47+20 TO STATION A99+00 AND STATION B0+00 TO B104+34 AS SHOWN ON THE CATTARAUGUS WATER SYSTEM IMPROVEMENTS-CONTRACT D PLANS (PAGES C-107 TO C-130). QUANTITIES ARE BASED ON ACTUAL BID PRICES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE UPGRADED WATER SERVICES TO TRIBAL MEMBERS, HOMES AND BUSINESSES IN THE CATTARAUGUS TERRITORY SERVED BY THE CATTARAUGUS COMMUNITY WATER SYSTEM.\n\nTHE EXPECTED OUTCOMES INCLUDE SAFE DRINKING WATER DELIVERED TO THE COMMUNITIES SERVED, REDUCED WATER LOSS AND INCREASED EFFICIENCY IN THE COMMUNITY WATER SYSTEM.\n\nTHE INTENDED BENEFICIARIES INCLUDE THE SENECA NATION OF INDIANS COMMUNITY, INCLUDING HOMES, BUSINESSES AND ADMINISTRATIVE BUILDINGS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 1117562.64,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 322045.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42220000K600NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 298000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 90079.17,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 2812503.6,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NY3095024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 1351951.58,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SENECA NATION OF INDIANS TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SENECA NATION OF INDIANS UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NY3095024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 311888.9,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SENECA NATION OF INDIANS TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SENECA NATION OF INDIANS UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 155464.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V601NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 1424115.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "CARBON REDUCTION PROGRAM FUNDING TRANSFERRED FROM NEW YORK DOT UNDER 202(A)(9)",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NY3095025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 1239981.94,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V30CNY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 550497.35,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRANSPORTATION ALTERNATIVES PROGRAM FUNDING TRANSFERRED FROM NEW YORK DOT UNDER 202(A)(9)",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177NY3095025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 311611.64,
+      "start_date": "2025-02-12",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000D300NY0095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 145269.65,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRANSPORTATION ALTERNATIVES PROGRAM FUNDING TRANSFERRED FROM NEW YORK DOT UNDER 202(A)(9)",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17ANY3095025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 100000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT3659420",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SENECA NATION OF INDIANS",
+      "obligation": 13724161.0,
+      "start_date": "2021-10-01",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 27456021.55,
+  "award_count": 22,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 129926.52
+    },
+    "66.468": {
+      "count": 5,
+      "total": 3370963.0
+    },
+    "20.205": {
+      "count": 14,
+      "total": 10230971.030000001
+    },
+    "14.867": {
+      "count": 1,
+      "total": 13724161.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 14197161.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 2112611.64,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

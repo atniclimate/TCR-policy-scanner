@@ -1,9 +1,48 @@
 {
   "tribe_id": "epa_100000131",
   "tribe_name": "Kootenai Tribe of Idaho",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "55IT1605900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KOOTENAI TRIBE OF IDAHO",
+      "obligation": 1900157.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH1605900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KOOTENAI TRIBE OF IDAHO",
+      "obligation": 57191.0,
+      "start_date": "2022-01-28",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 1957348.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "14.867": {
+      "count": 2,
+      "total": 1957348.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 57191.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

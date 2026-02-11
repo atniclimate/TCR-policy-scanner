@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000050",
   "tribe_name": "Cold Springs Rancheria of Mono Indians of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "97T14501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "COLD SPRINGS RANCHERIA",
+      "obligation": 105357.0,
+      "start_date": "2024-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE COLD SPRINGS RANCHERIA. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FUNDING IN THE AMOUNT OF $105,357.00. SEE TERMS AND CONDITIONS.ACTIVITIES:THE ACTIVITIES INCLUDE ATTEND TRAINING ON THE GENERAL ASSISTANCE PROGRAM AND ENVIRONMENTAL ISSUES, UPDATE THE EPA TRIBAL ENVIRONMENTAL PLAN, UPDATE THE TRIBE'S ADMINISTRATIVE AND FINANCIAL MANAGEMENT POLICIES AND PROCEDURES, AND PARTICIPATE IN THE REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS AND THE EPA TRIBAL CONFERENCE.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE AN UPDATED EPA TRIBAL ENVIRONMENTAL PLAN, SUMMARIES ON MEETINGS AND TRAININGS, INFORMATION ON TRIBAL ADMINISTRATIVE AND FINANCIAL POLICIES AND A SUMMARY OF THE IMPROVEMENTS IN THE TRIBES MANAGEMENT TRACKING SYSTEMS. THE EXPECTED OUTCOMES ARE THE IMPROVED EFFICIENCY OF FEDERAL GRANTS MANAGEMENT, IMPROVED KNOWLEDGE OF TRIBAL STAFF AND IDENTIFYING STRATEGIC GOALS TO GUIDE THE ENVIRONMENTAL PROGRAM.  THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE COLD SPRINGS RANCHERIA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0607720",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COLD SPRINGS RANCHERIA",
+      "obligation": 3815773.0,
+      "start_date": "2017-07-28",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0607720",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COLD SPRINGS RANCHERIA",
+      "obligation": 298070.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 4219200.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 105357.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 4113843.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 105357.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

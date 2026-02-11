@@ -1,9 +1,89 @@
 {
   "tribe_id": "epa_100000004",
   "tribe_name": "Alabama-Coushatta Tribe of Texas",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00110",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "ALABAMA COUSHATTA TRIBE OF TEXAS",
+      "obligation": 14817.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01F91101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ALABAMA COUSHATTA TRIBE OF TEXAS",
+      "obligation": 550000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE ALABAMA-COUSHATTA TRIBE OF TEXAS TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL PARTICIPATE IN ENVIRONMENTAL MEETINGS AND WORKGROUPS, ATTEND ENVIRONMENTAL TRAININGS, CONDUCT ENVIRONMENTAL OUTREACH, CREATE A CLIMATE CHANGE ADAPTATION PLAN, HOST TWO TIRE DISPOSAL EVENTS, AND CREATE A REPORT ON ROAD DUST IN THE COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F83401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ALABAMA COUSHATTA TRIBE OF TEXAS",
+      "obligation": 135000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE ALABAMA COUSHATTA TRIBE OF TX TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, AND CAPACITY DEVELOPMENT FOR DRINKING WATER SYSTEM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY REPORTS, ENVIRONMENTAL MANAGEMENT PLAN, TRAINING CERTIFICATES, POLLUTION PREVENTION THE INTENDED BENEFICIARY IS ALABAMA COUSHATTA TRIBE OF TEXAS",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00493",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALABAMA COUSHATTA TRIBE OF TEXAS",
+      "obligation": 22531.55,
+      "start_date": "2016-04-01",
+      "end_date": "2025-12-31",
+      "description": "ALABAMA-COUSHATTA TRIBE TX - TIP PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00440",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALABAMA COUSHATTA TRIBE OF TEXAS",
+      "obligation": 5062.67,
+      "start_date": "2022-03-15",
+      "end_date": "2025-12-31",
+      "description": "ALABAMA-COUSHATTA  TRIBE - TRANSPORTATION IMPROVEMENT PLANNING CONTRACT, NEW AWARD",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 727411.22,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 14817.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 685000.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 27594.22
+    }
+  },
+  "yearly_obligations": {
+    "2022": 555062.67,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 135000.0
+  },
+  "trend": "decreasing"
 }

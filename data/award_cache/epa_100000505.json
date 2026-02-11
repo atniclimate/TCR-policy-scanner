@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000505",
   "tribe_name": "Pilot Station Traditional Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J83901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PILOT STATION TRADITIONAL VILLAGE",
+      "obligation": 242331.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO PILOT STATION TRADITIONAL VILLAGE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THIS APPLICATION CONTAINS THREE COMPONENTS 1) CONTINUE TO BUILD TRIBAL SOLID WASTE MANAGEMENT CAPACITY 2) PARTICIPATE WITH YUKON RIVER INTERTRIBAL WATERSHED COUNCIL WATER QUALITY MANAGMENT 3) ADMINISTRATIVE GRANT MANAGEMENT AND TRAINING",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J87201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PILOT STATION TRADITIONAL VILLAGE",
+      "obligation": 293000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:PILOT STATION WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE GRANTS MANAGEMENT, SOLID WASTE, AND WATER QUALITY. ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES, BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. ACTIVITIES WILL INCLUDE GRANTS MANAGEMENT, INCLUDING REPORTING AND FINANCIAL OVERSIGHT; BACKHAUL, RECYCLING, A COMMUNITY CLEAN-UP DAY, CLEAN-UP OF TRADITIONAL USE AREAS, AND SOLID WASTE TRAININGS; WORKING WITH THE YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL TO MONITOR WATER QUALITY AND ATTENDING WATER QUALITY TRAINING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES WILL INCLUDE QUARTERLY PROGRESS REPORTS, TRIP REPORTS, FINANCIAL REPORTS, TRAINING CERTIFICATES, A BACKHAUL INVENTORY, AND PHOTOS OF CLEAN-UP ACTIVITIES. OUTCOMES WILL INCLUDE INCREASED STAFF AND COUNCIL KNOWLEDGE OF ENVIRONMENTAL ISSUES AND INCREASED FIELD WORK SKILLS, GREATER AWARENESS OF PROPER DISPOSAL OF ALL HOUSEHOLD PRODUCTS AND RECYCLING, AND INCREASED KNOWLEDGE AND CAPACITY TO IMPROVE WATER QUALITY TO INFORM FUTURE POLICY. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV01032",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PILOT STATION TRADITIONAL VILLAGE",
+      "obligation": 3608186.91,
+      "start_date": "2019-08-14",
+      "end_date": "2026-12-31",
+      "description": "PILOT STATION A19AV01032 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00230",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PILOT STATION TRADITIONAL VILLAGE",
+      "obligation": 795203.06,
+      "start_date": "2016-10-01",
+      "end_date": "2024-12-31",
+      "description": "PILOT STATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00852",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PILOT STATION TRADITIONAL VILLAGE",
+      "obligation": 378040.0,
+      "start_date": "2019-09-08",
+      "end_date": "2026-12-31",
+      "description": "PILOT STATION A19AV00852 FY19 TRANSIT FACILITIES FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01092",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PILOT STATION TRADITIONAL VILLAGE",
+      "obligation": 338004.4,
+      "start_date": "2023-08-28",
+      "end_date": "2028-12-31",
+      "description": "PILOT STATION FY23 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 5654765.37,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 535331.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 5119434.370000001
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 338004.4,
+    "2024": 0.0,
+    "2025": 293000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

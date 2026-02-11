@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000241",
   "tribe_name": "Pulikla Tribe of Yurok People",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10204",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PULIKLA TRIBE OF YUROK PEOPLE",
+      "obligation": 150000.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "BUILDING RESIGHINI RANCHERIA EXPERTISE AND DATA CAPACITY FOR CLIMATE RESILIENCY ANALYSIS AND FUTURE PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00154",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PULIKLA TRIBE OF YUROK PEOPLE",
+      "obligation": 14987.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T19001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PULIKLA TRIBE OF YUROK PEOPLE",
+      "obligation": 1244186.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE RESIGHINI RANCHERIA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL TRAIN STAFF, DEVELOP A QUALITY ASSURANCE PROJECT PLAN FOR RADON SAMPLING, DEVELOP A SOLID WASTE ORDINANCE, CONDUCT A WASTE STREAM ASSESSMENT, IDENTIFY ILLEGAL DUMPING AND TAKE ENFORCEMENT ACTIONS WHEN POSSIBLE, CONDUCT OUTREACH, AND CONDUCT A CLEANUP EVENT FOCUSING ON ELECTRONIC AND HAZARDOUS WASTES. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $297,869.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T36001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PULIKLA TRIBE OF YUROK PEOPLE",
+      "obligation": 262049.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE PULIKLA TRIBE OF YUROK PEOPLE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND/OR IMPLEMENT SOLID/HAZARDOUS WASTE ACTIVITIES. THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $262,049. SEE TERMS AND CONDITIONS. \nACTIVITIES:THE ACTIVITIES INCLUDE PRODUCING A BI-ANNUAL NEWSLETTER, ENGAGEMENT WITH AGENCIES ON KLAMATH RIVER BASIN ENVIRONMENTAL ISSUES, AND PATROLLING THE LAND FOR SOLID WASTE ORDINANCE VIOLATIONS. \n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE NEWSLETTERS, SUMMARIES OF MEETINGS ATTENDED, AND PATROL LOGS. THE EXPECTED OUTCOMES INCLUDE REDUCED ILLEGAL DUMPING AREAS, A MORE KNOWLEDGEABLE COMMUNITY ON ENVIRONMENTAL ISSUES, AND IMPROVED COMMUNICATION BETWEEN AGENCIES WORKING TO IMPROVE THE HEALTH OF THE KLAMATH BASIN. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE PULIKLA TRIBE OF YUROK PEOPLE.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 1671222.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 164987.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1506235.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1244186.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 262049.0
+  },
+  "trend": "decreasing"
 }

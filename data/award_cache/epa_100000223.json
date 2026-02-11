@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000223",
   "tribe_name": "Pueblo of Santa Ana, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV01027",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 211200.0,
+      "start_date": "2024-09-18",
+      "end_date": "2026-09-30",
+      "description": "TO DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01F75501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 230000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2022-10-31",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE SANTA ANA PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL  PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY TO MANAGE THE ENVIRONMENTAL OFFICE, TRAVEL AND TRAINING, OUTREACH, RECYCLING AND POLLUTION PREVENTION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600NM0029",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 335231.06,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NM0029",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 27546.11,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600NM0029",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 356582.89,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NM3029024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 313255.06,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF SANTA ANA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF SANTA ANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NM3029024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 96017.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF SANTA ANA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF SANTA ANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NM0029",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 46764.97,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NM3029025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 371670.36,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF SANTA ANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF SANTA ANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177NM3029025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF SANTA ANA",
+      "obligation": 95968.05,
+      "start_date": "2025-01-08",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PUEBLO OF SANTA ANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF SANTA ANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 2084235.71,
+  "award_count": 10,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 211200.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 230000.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 1643035.7100000002
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 211200.0,
+    "2025": 95968.05,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

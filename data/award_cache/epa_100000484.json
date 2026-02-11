@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000484",
   "tribe_name": "Native Village of Noatak",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00093",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 150000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00170",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 149928.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J00401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE NATIVE VILLAGE OF NOATAK SOLID WASTE ASSESSMENT DEVELOPED IN 2021 WILL ASSIST THE TRIBE IN PARTNERING WITH OTHER ENTITIES, DEVELOP RECOMMENDATIONS FOR RECYCLING, AND EDUCATE PEOPLE ON LANDFILL SEPARATION, REUSE, AND RECYCLING. THIS PROJECT IS MULTI-YEAR AS STAFF WILL CONTINUE EFFECTIVELY COLLABORATING WITH OTHER TRIBES, CONSORTIA, GOVERNMENT AGENCIES. WATER QUALITY AND TURBULENCE FOR THE DRINKING WATER SOURCE, FLOODING, AND EROSION ISSUES IDENTIFIED AS PART OF THE NEW EPA TRIBAL ENVIRONMENTAL PLAN.   A BASELINE NEEDS ASSESSMENT DEVELOPED UPDATING ENVIRONMENTAL PRIORITIES FOR THE ETEP.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J10501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2029-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF NOATAK WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE ESTABLISHING PUBLIC PARTICIPATION AND EDUCATION AND ADDRESSING SOLID WASTE MANAGEMENT ISSUES. ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM NATIVE VILLAGE OF NOATAK WILL INCLUDE BI-ANNUAL PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00143",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 488870.69,
+      "start_date": "2020-12-08",
+      "end_date": "2026-12-31",
+      "description": "P.L. 93-638, TRANSPORTATION CONTRACT , AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00538",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 264011.57,
+      "start_date": "2014-06-11",
+      "end_date": "2026-12-31",
+      "description": "NOATAK  ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00138",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 249241.36,
+      "start_date": "2020-12-05",
+      "end_date": "2026-12-31",
+      "description": "P.L. 93-638 PLANNING CONTRACT FOR NOATAK",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00537",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOATAK NATIVE VILLAGE OF",
+      "obligation": 207170.69,
+      "start_date": "2014-05-14",
+      "end_date": "2026-12-31",
+      "description": "NATIVE VILLAGE OF NOATAK",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2162222.31,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 299928.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1209294.31
+    }
+  },
+  "yearly_obligations": {
+    "2022": 519000.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

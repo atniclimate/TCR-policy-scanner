@@ -1,9 +1,129 @@
 {
   "tribe_id": "epa_100000436",
   "tribe_name": "Kenaitze Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J16201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 511000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE KENAITZE INDIAN TRIBE IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3) BUILDING COMMUNICATIONS CAPACITY; AND 4) BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES AND CONDUCTING COMMUNITY EDUCATION ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF WATER QUALITY AND CLIMATE CHANGE; DEVELOPING AN ENVIRONMENTAL EDUCATION PROGRAM; DEVELOPING AN ENVIRONMENTAL INVENTORY; AND SUPPORTING KENAI WATERSHED'S SURFACE WATER QUALITY MONITORING PROJECT.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE KENAITZE INDIAN TRIBE, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; FINANCIAL REPORTS; COPIES OF OUTREACH MATERIALS; AND EVENT SUMMARY REPORTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0106",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 291868.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0106",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 22461.77,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0106",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 311496.99,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3106024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 296562.83,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KENAITZE INDIAN TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KENAITZE INDIAN TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3106024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 104210.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KENAITZE INDIAN TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KENAITZE INDIAN TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0106",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 40852.07,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3106025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 350632.88,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KENAITZE INDIAN TRIBE FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED TO KENAITZE INDIAN TRIBE UNDER REFERENCED FUNDING AGREEMENTS.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3106025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KENAITZE INDIAN TRIBE",
+      "obligation": 103962.72,
+      "start_date": "2025-04-01",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: KENAITZE INDIAN TRIBE FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED TO KENAITZE INDIAN TRIBE UNDER REFERENCED FUNDING AGREEMENTS.",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 2033047.73,
+  "award_count": 9,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 511000.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 1522047.7300000002
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 511000.0,
+    "2024": 0.0,
+    "2025": 103962.72,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

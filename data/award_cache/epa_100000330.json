@@ -1,9 +1,107 @@
 {
   "tribe_id": "epa_100000330",
   "tribe_name": "Wyandotte Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AV00443",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WYANDOTTE NATION",
+      "obligation": 14192386.88,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DIST. OF CHILD CARE DEVELOPMENT FUNDS (DISCRETIONARY) - CORONAVIRUS RESPONSE AND RELIEF SUPPLEMENTAL ASSOCIATION (CRRSA) ALLOCATED FOR INCLUSION IN APPROVED P.L. 102-477 PLANS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00129",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WYANDOTTE NATION",
+      "obligation": 4400996.24,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS (TPA BASE) CR1 (17.53%) DISTRIBUTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WYANDOTTE NATION",
+      "obligation": 4224601.43,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "CR#1 DISTS. FOR LAW ENFORCEMENT-638 TRIBAL (PROGRAM BASE) AND \nSELF-GOVERNANCE COMPACTS (TPA BASE)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00049",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WYANDOTTE NATION",
+      "obligation": 3993411.17,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV01182",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "WYANDOTTE NATION",
+      "obligation": 425882.54,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR ADDITIONAL AND FINAL TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES AND PROJECTS DESCRIBED IN 23 USC 202(A)(1) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4033320",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WYANDOTTE NATION",
+      "obligation": 9897246.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXOK33320",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WYANDOTTE NATION",
+      "obligation": 3454914.0,
+      "start_date": "2025-01-03",
+      "end_date": "2029-12-28",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 40589438.26,
+  "award_count": 7,
+  "cfda_summary": {
+    "20.205": {
+      "count": 5,
+      "total": 27237278.259999998
+    },
+    "14.867": {
+      "count": 2,
+      "total": 13352160.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 4826878.78,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 3454914.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

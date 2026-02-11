@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000418",
   "tribe_name": "Native Village of Hooper Bay",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10237",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE HOOPER BAY",
+      "obligation": 137550.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-09-16",
+      "description": "NATIVE VILLAGE OF HOOPER BAY PERMAFROST RISK ASSESSMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00922",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE HOOPER BAY",
+      "obligation": 295206.0,
+      "start_date": "2023-08-10",
+      "end_date": "2026-12-31",
+      "description": "HOOPER BAY RMP (RELOCATION, MANAGED RETREAT, & PROTECT-IN-PLACE) COORDINATOR (ONE-TIME ONLY, NON-RECURRING)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J17601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE HOOPER BAY",
+      "obligation": 450819.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS WORK PLAN CONTAINS A SINGLE COMPONENT FOCUSED ON BUILDING THE ADMINISTRATIVE CAPACITY TO MANAGE A TRIBAL ENVIRONMENTAL PROGRAM. THE NEWLY HIRED STAFF WILL RECEIVE TRAINING FROM A MORE EXPERIENCED PEER AND BEGIN TO BUILD A FOUNDATION OF KNOWLEDGE OF ENVIRONMENTAL PROGRAMS.ACTIVITIES:THE ACTIVITIES PERFORMED WILL INCLUDE DEVELOPING SYSTEMS FOR ADMINISTRATION OF THE GRANT, ATTENDING TRAINING TO LEARN ABOUT ENVIRONMENTAL ISSUES. STAFF WILL DEVELOP AN UPDATED ETEP, FOCUSING ON TRIBAL PRIORITIES BASED ON FEEDBACK FROM THE COMMUNITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES INCLUDE QUARTERLY REPORTS, TRIP REPORTS, TRAINING REPORTS, COPIES OF PLANS. OUTCOMES OF THESE EFFORTS DIRECTLY IMPACT THE COMMUNITY HEALTH AND ENVIRONMENT AND WILL ENHANCE THE TRIBE'S ABILITY TO MAINTAIN ENVIRONMENTAL PRESENCE.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 883575.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 432756.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 450819.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 746025.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

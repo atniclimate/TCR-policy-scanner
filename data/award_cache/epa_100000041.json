@@ -1,9 +1,244 @@
 {
   "tribe_id": "epa_100000041",
   "tribe_name": "The Chickasaw Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10141",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 4790.68,
+      "start_date": "2021-08-16",
+      "end_date": "2023-08-15",
+      "description": "RIVERWARE RIVER SYSTEM MODELING TOOL IN ORDER TO DEVELOP SCIENCE BASED SUSTAINABILITY STRUCTURE WITHIN THE CHICKASAW NATION TREATY TERRITORY.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AP00181",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 53178.0,
+      "start_date": "2023-10-01",
+      "end_date": "2025-09-30",
+      "description": "TRCP FY 22",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMT-2022-BR-018",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 768717.0,
+      "start_date": "2023-11-08",
+      "end_date": "2026-11-07",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02F73301",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 510000.0,
+      "start_date": "2024-08-01",
+      "end_date": "2026-07-31",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO . . . [CHICKASAW] UNDER THE SAFE DRINKING WATER ACT (SDWA): SECTION 1452 AND INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) (PL 117-58). THE PURPOSE OF THIS AGREEMENT IS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA. SPECIFICALLY, THE RECIPIENT WILL [THIS GRANT IS TO FUND THE PLANNING OPTIONS FOR OBTAINING NEW WELLS FOR THE CHICKASAW AND CONSIDERING THE BEST LOCATION FOR THE AQUIFER. SURFACE WATER IN THE AREA IS NON-EXISTENT, EXCEPT FOR THE RED RIVER AND LAKE TEXOMA, WHICH ARE BOTH BRACKISH (WITH EXTREMELY HIGH TREATMENT COSTS NEEDED TO MAKE IT POTABLE). THE PROPOSED PROJECT INVOLVES THE IDENTIFICATION OF A PRODUCTIVE PART OF THE AQUIFER THAT DOES NOT AFFECT ANY EXISTING WELLS OWNED BY OTHERS. WELL SITE SELECTION WILL BE BASED ON SEVERAL FACTORS, INCLUDING DISTANCE TO THE FACILITY AND ESTIMATED AQUIFER PRODUCTIVITY FROM THE GROUNDWATER MODEL. THE CHOICE OF SITE(S) WILL BE CONFIRMED WITH AN ELECTRO-RESISTIVITY SURVEY (REMOTE SENSING OF THE GEOPHYSICAL PROPERTIES OF THE AQUIFER). FINALLY, A TEST WELL(S) WILL BE DRILLED, AND A PUMP TEST CONDUCTED, TO CONFIRM AQUIFER PRODUCTIVITY AND VERIFY WATER QUALITY. UPON SELECTING THE WELL FIELD SITE, PIPELINE, PUMP AND ASSOCIATED STRUCTURES WILL BE DESIGNED BY AN ACCREDITED ENGINEERING FIRM].\n. \nACTIVITIES:THE ACTIVITIES INCLUDE .\n\n1)\tUTILIZE THE 2023 HALFF ENGINEERING ANTLERS AQUIFER REPORT AND DESKTOP GEOLOGICAL EVALUATIONS TO LOCATE A HIGH PROBABILITY WATER SUPPLY AREA IN THE AQUIFER. $20,000\n-\tEVALUATE YIELD FROM EXISTING NEARBY WELLS.\n-\tDETERMINE POTENTIAL PRODUCTION FROM DEVELOPMENT OF WELL FIELD.\n-\tDETERMINE WELL FIELD LAND REQUIREMENTS AND COST ESTIMATE. \n-\tWELL FIELD CONFIGURATION, DESIGN, SPACING, ETC.\n2)\tPERFORM A ELECTRO-RESISTIVITY STUDY TO LOCATE PRIME WELL SITES. $90,000\n-\tESTIMATE HIGHEST YIELD LOCATIONS FROM SURVEY.\n-\tDETERMINE WATER WELL DRILL SITES.\n3)\tDRILL TEST WELL(S) TO DETERMINE YIELD AND ASCERTAIN WATER QUALITY. $250,000\n-\tDEVELOPMENT OF A QAPP FOR WATER WELL QUALITY ASSESSMENT \n-\tPERFORM WATER QUALITY TESTING. \n4)\tCOMPLETE PUMP TESTING. DESIGN PIPELINE AND PUMPS TO CONVEY WATER TO WINSTAR. $150,000\n-\tENGINEERING ANALYSIS FOR PIPELINE CONNECTION.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE . . . [IDENTIFY SUITABLE LOCATION FOR WELLS BY DRILLING TEST WELLS AND IDENTIFYING WATER QUALITY AND YIELD OF WELL]. \n\nTHE EXPECTED OUTCOMES INCLUDE . . . [WELL FIELD CONFIGURATION, DESIGN, SPACING, ETC.\nPERFORM A ELECTRO-RESISTIVITY STUDY TO LOCATE PRIME WELL SITES. ESTIMATE HIGHEST YIELD LOCATIONS FROM SURVEY FOR A DRINKING WATER SOURCE]. \n\nTHE INTENDED BENEFICIARIES INCLUDE . . . [CHICKASAW TRIBE AND ALL THOSE THAT USE THE DRINKING WATER ONSITE].\n\n \n.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600OK0046",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 8311883.72,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170OK0046",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 1516659.22,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600OK0046",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 757690.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600OK0046",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 8785193.08,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170OK0046",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 5518861.77,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602OK3046024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 7579801.74,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHICKASAW NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHICKASAW NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AOK3046024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 5809520.2,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHICKASAW NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHICKASAW NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176OK3046024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 2949850.27,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHICKASAW NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHICKASAW NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600OK0046",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 1152156.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602OK3046025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 8899977.68,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHICKASAW NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHICKASAW NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177OK3046025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 2946635.5,
+      "start_date": "2025-01-24",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: CHICKASAW NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHICKASAW NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271OK3046025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 2719303.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CHICKASAW NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CHICKASAW NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT4005860",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 195086383.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "R21AP10151",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "CHICKASAW NATION",
+      "obligation": 70635.99,
+      "start_date": "2020-10-01",
+      "end_date": "2023-06-30",
+      "description": "FY20 SWEP BOR-DO-20-F006",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 253441237.32,
+  "award_count": 18,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 57968.68
+    },
+    "97.047": {
+      "count": 1,
+      "total": 768717.0
+    },
+    "66.468": {
+      "count": 1,
+      "total": 510000.0
+    },
+    "20.205": {
+      "count": 12,
+      "total": 56947532.650000006
+    },
+    "14.867": {
+      "count": 1,
+      "total": 195086383.0
+    },
+    "15.507": {
+      "count": 1,
+      "total": 70635.99
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 1331895.0,
+    "2025": 2946635.5,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

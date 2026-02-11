@@ -1,9 +1,107 @@
 {
   "tribe_id": "epa_100000371",
   "tribe_name": "Chalkyitsik Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J79401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHALKYITSIK VILLAGE",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO CHALKYITSIK VILLAGE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL: 1) EXPAND ENVIRONMENTAL OFFICE ADMINISTRATIVE AND PROGRAMMATIC CAPACITY AND PROMOTE COMMUNITY ENVIRONMENTAL AWARENESS AND EDUCATION; 2) DEVELOP AND EXPAND THE EFFICIENCY AND SUSTAINABILITY OF THE SOLID WASTE MANAGEMENT PROGRAM; 3) CONTINUE CAPACITY BUILDING FOR CHALKYITSIK'S AIR AND WATER QUALITY PROGRAMS; AND 4) DEVELOP A SMALL COMMUNITY EMERGENCY RESPONSE PLAN THAT INCLUDES FLOOD PREPAREDNESS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J74001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHALKYITSIK VILLAGE",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE OBJECTIVES OF THIS PROJECT ARE TO IMPROVE GRANTS ADMINISTRATIVE AND PROGRAMMATIC FUNCTIONS, EXPAND THE WASTE MANAGEMENT PROGRAM, AND DEVELOP AIR AND WATER QUALITY PROGRAMS.ACTIVITIES:PROJECT ACTIVITIES WILL INCLUDE ATTENDING WEBINARS AND CONFERENCES AND CONDUCTING COMMUNITY ENVIRONMENTAL EVENTS, AS WELL AS WASTE MANAGEMENT WORK SUCH AS MAINTAINING THE LANDFILL AND ACCESS ROAD, REPAIRING LANDFILL EQUIPMENT, CHARTERING AN AIRPLANE FOR BACKHAUL OF MATERIALS, PURCHASING TOOLS AND SUPPLIES, AND HIRING WORK CREWS. AIR AND WATER QUALITY WORK WILL INCLUDE COLLABORATING WITH EXTERNAL PARTNERS TO ESTABLISH AIR AND WATER QUALITY PROGRAMS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE PROGRESS REPORTS, TRIP REPORTS, PHOTOS, PRESENTATIONS, MEETING NOTES, INVOICES, AND WASTE MANAGEMENT DATA. THE EXPECTED OUTCOME IS THAT A STRONG ENVIRONMENTAL PROGRAM FOCUSING ON WASTE MANAGEMENT AND AIR AND WATER QUALITY WILL PROMOTE BETTER HUMAN AND ENVIRONMENTAL HEALTH. THE INTENDED BENEFICIARIES ARE THE COMMUNITY MEMBERS AND ENVIRONMENT OF CHALKYITSIK.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00901",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHALKYITSIK VILLAGE",
+      "obligation": 959364.21,
+      "start_date": "2017-09-06",
+      "end_date": "2022-12-31",
+      "description": "CHALKYITSIK MAINTENANCE - FY2017",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00905",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHALKYITSIK VILLAGE",
+      "obligation": 390548.67,
+      "start_date": "2017-09-07",
+      "end_date": "2023-12-31",
+      "description": "CHALKYITSIK PLANNING - FY2017",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00135",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHALKYITSIK VILLAGE",
+      "obligation": 0.0,
+      "start_date": "2009-10-16",
+      "end_date": "2019-12-31",
+      "description": "PLANNING AND DESIGN ACTIVITIES ASSOCIATED WITH THE LANDFILL ACCESS ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01048",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHALKYITSIK VILLAGE",
+      "obligation": 813379.32,
+      "start_date": "2024-09-20",
+      "end_date": "2028-12-31",
+      "description": "CHALKYITSIK ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01043",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHALKYITSIK VILLAGE",
+      "obligation": 275249.55,
+      "start_date": "2024-09-19",
+      "end_date": "2028-12-31",
+      "description": "CHALKYITSIK PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 3216541.75,
+  "award_count": 7,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 778000.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 2438541.7499999995
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 1088628.8699999999,
+    "2025": 268000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

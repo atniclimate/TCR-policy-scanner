@@ -1,9 +1,229 @@
 {
   "tribe_id": "epa_100000479",
   "tribe_name": "Newtok Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00216",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 149736.0,
+      "start_date": "2018-09-01",
+      "end_date": "2019-09-30",
+      "description": "ADAPTATION PLANNING (INC DATA DEVELOPM)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00200",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 28842.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00942",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 399064.0,
+      "start_date": "2023-07-24",
+      "end_date": "2026-12-31",
+      "description": "NEWTOK TRIBAL CLIMATE RESILIENCE GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00605",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 27500000.0,
+      "start_date": "2024-04-03",
+      "end_date": "2027-12-31",
+      "description": "NEWTOK VILLAGE FY22/23/24 TCR CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00511",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 1250000.0,
+      "start_date": "2024-02-28",
+      "end_date": "2027-12-31",
+      "description": "NEWTOK TCR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01096",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 249986.0,
+      "start_date": "2025-08-14",
+      "end_date": "2028-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2018-PC-0012",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 514125.53,
+      "start_date": "2017-08-14",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01J63001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 367499.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "NEWTOK VILLAGE WILL BUILD TRIBAL ENVIRONMENTAL CAPACITY BY DEVELOPING A JOINT-EPA TRIBAL ENVIRONMENTAL PLAN, CONDUCT TRASH COLLECTION AND RECYCLING, AND COMMUNITY OUTREACH AND EDUCATION ABOUT PROPER SOLID AND HAZARDOUS WASTE DISPOSAL.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J33201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 385000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:NEWTOK WILL BUILD THIS 4-YEAR WORKPLAN ON THE ENVIRONMENTAL PRIORITIES LISTED IN THE EPA TRIBAL ENVIRONMENTAL PLAN, COMPLETE EACH PHASE OF THE WORKPLANS, RELY ON THE FLEXIBILITY OF THE ENVIRONMENTAL PROGRAM BUILDING A HEALTHIER, SAFER TRIBAL COMMUNITY. PROJECTS WILL SPAN THE 4-YEAR LIFE OF THIS PROGRAM, WRITTEN INTO EACH YEAR AS WELL AS NEW PROJECTS ALONG THE WAY. \nTHE PLAN WILL BE UPDATED ANNUALLY TO REFLECT REAL-TIME PRIORITIES AND ENVIRONMENTAL ISSUES THAT ARE PENDING AS REQUIRED. ACTIVITIES:BEGIN OUTREACH AND EDUCATION TO COMMUNITY MEMBERS ON THE IMPORTANCE OF PROPER WASTE DISPOSAL, INCLUDING INFORMATION ON SORTING HOUSEHOLD HAZARDOUS WASTE AND RECYCLABLES, BY HOLDING A COMMUNITY MEETING, SCHOOL OUTREACH EVENT, AND CREATING A RESOURCE MANUAL ON PROPER SOLID WASTE DISPOSAL.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ENVIRONMENTAL STAFF WILL GAIN EXPERIENCE ADMINISTERING EPA GRANTS. ENVIRONMENTAL STAFF WILL EDUCATE COMMUNITY AND PROVIDE SOLUTIONS TO ONGOING PROBLEMS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV01181",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 2734569.44,
+      "start_date": "2019-09-17",
+      "end_date": "2028-12-31",
+      "description": "NEWTOK A19AV01181 FY 2019 CONSTRUCTION FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00436",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 2605847.32,
+      "start_date": "2015-04-08",
+      "end_date": "2025-12-31",
+      "description": "CONSTRUCTION OF 1.3 MILES OF GRAVEL ROAD AIRPORT TO INTERSECTION 0230",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00980",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 898071.98,
+      "start_date": "2020-10-01",
+      "end_date": "2028-12-31",
+      "description": "ADD ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00415",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 621136.0,
+      "start_date": "2015-03-25",
+      "end_date": "2025-12-31",
+      "description": "ROAD MAINTENANCE FOR NEWTOK VILLAGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00454",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 286929.21,
+      "start_date": "2015-04-16",
+      "end_date": "2026-12-31",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00979",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 250941.14,
+      "start_date": "2020-10-01",
+      "end_date": "2028-12-31",
+      "description": "ADD PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00030",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 210000.0,
+      "start_date": "2018-10-22",
+      "end_date": "2025-12-31",
+      "description": "A19AV00030",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000103",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "NEWTOK VILLAGE",
+      "obligation": 0.0,
+      "start_date": "2019-03-01",
+      "end_date": "2023-02-28",
+      "description": "MERTARVIK HEAT RECOVERY PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 38451747.62,
+  "award_count": 17,
+  "cfda_summary": {
+    "15.156": {
+      "count": 6,
+      "total": 29577628.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 514125.53
+    },
+    "66.926": {
+      "count": 2,
+      "total": 752499.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 7607495.09
+    },
+    "81.087": {
+      "count": 1,
+      "total": 0.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 399064.0,
+    "2024": 29135000.0,
+    "2025": 249986.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

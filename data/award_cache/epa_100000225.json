@@ -1,9 +1,81 @@
 {
   "tribe_id": "epa_100000225",
   "tribe_name": "Pueblo of Taos, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AV00441",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF TAOS",
+      "obligation": 4736504.1,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DIST. OF CHILD CARE DEVELOPMENT FUNDS (DISCRETIONARY) - CORONAVIRUS RESPONSE AND RELIEF SUPPLEMENTAL ASSOCIATION (CRRSA) ALLOCATED FOR INCLUSION IN APPROVED P.L. 102-477 PLANS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00402",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF TAOS",
+      "obligation": 4574804.48,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE) CR1/CR2; LAW ENFORCEMENT-638 TRIBAL (PROGRAM BASE) CR1/CR2; ADULT DETENTION-638 TRIBAL (PROGRAM BASE) CR1/CR2; WELFARE ASSISTANCE INITIAL (14.7% BASED ON 2020 EST. NEED)/CR#2 (APPX 8.2% OF 2020 EST. NEED) AND CONTRACT SUPPORT CR#1 (14.21%) AND CR#2 (7.92%) OF 2019 ENACTED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00214",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF TAOS",
+      "obligation": 4468810.59,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00335",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF TAOS",
+      "obligation": 4415827.85,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00697",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF TAOS",
+      "obligation": 715900.03,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 18911847.05,
+  "award_count": 5,
+  "cfda_summary": {
+    "20.205": {
+      "count": 5,
+      "total": 18911847.05
+    }
+  },
+  "yearly_obligations": {
+    "2022": 5131727.88,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

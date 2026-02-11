@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000013",
   "tribe_name": "Bay Mills Indian Community, Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AV00912",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BAY MILLS INDIAN COMMUNITY",
+      "obligation": 3611855.06,
+      "start_date": "2020-08-01",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A02AV00019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BAY MILLS INDIAN COMMUNITY",
+      "obligation": 1801369.0,
+      "start_date": "2002-09-26",
+      "end_date": "2025-12-31",
+      "description": "FY 2013 TTP FUNDING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32440122",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BAY MILLS INDIAN COMMUNITY",
+      "obligation": 15000.0,
+      "start_date": "2023-12-19",
+      "end_date": "2026-07-17",
+      "description": "WHITEFISH BAY SCENIC BYWAY RESOURCE PROTECTION PROJECT",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH2623020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "BAY MILLS INDIAN COMMUNITY",
+      "obligation": 12664265.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "00E03511",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "BAY MILLS INDIAN COMMUNITY",
+      "obligation": 80000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS AWARD IS FOR THE BAY MILLS INDIAN COMMUNITY TO BUILD CAPACITY TO CHARACTERIZE AND ADDRESS AIR QUALITY CONCERNS ON TRIBAL LANDS.  ACTIVITIES:TRIBAL STAFF WILL COMPLETE AIR QUALITY TRAININGS VIA THE INSTITUTE FOR TRIBAL ENVIRONMENTAL PROFESSIONALS AND EPA'S AIR KNOWLEDGE CURRICULUM FOR AIR QUALITY PROFESSIONALS.  SPECIFIC ACTIVITIES INCLUDE COMPLETING AIR QUALITY BASELINE ASSESSMENTS THROUGH THE DEVELOPMENT OF AN EMISSIONS INVENTORY AND USE OF AIR SENSORS, REVIEWING DRAFT AIR PERMITS FOR SOURCES NEAR TRIBAL LANDS, INCREASING PUBLIC AWARENESS OF AMBIENT AND INDOOR AIR QUALITY ISSUES THROUGH COMMUNITY EDUCATION AND OUTREACH.  FURTHER, THE TRIBE WILL ASSESS THE NEED FOR AIR MONITORING ON TRIBAL LANDS VIA THE RESULTS OF ITS AIR EMISSIONS INVENTORY PROJECT AND INFORMATION COLLECTED FROM AIR QUALITY SENSORS.      SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES OF THIS PROJECT INCLUDE A BASELINE AIR QUALITY ASSESSMENT OF THE BAY MILLS INDIAN COMMUNITY VIA COMPLETION OF AN EMISSIONS INVENTORY, AND TRAINED AIR QUALITY STAFF TO PROVIDE THE TRIBAL COMMUNITY WITH GREATER KNOWLEDGE AND UNDERSTANDING OF LOCAL AMBIENT AND INDOOR AIR QUALITY ISSUES.  THE INTENDED BENEFICIARIES ARE THE RESIDENTS OF THE BAY MILLS INDIAN COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01E03511",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "BAY MILLS INDIAN COMMUNITY",
+      "obligation": 87483.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS AWARD IS FOR THE BAY MILLS INDIAN COMMUNITY TO BUILD CAPACITY TO CHARACTERIZE AND ADDRESS AIR QUALITY CONCERNS ON TRIBAL LANDS.ACTIVITIES:TRIBAL STAFF WILL COMPLETE AIR QUALITY TRAININGS VIA THE INSTITUTE FOR TRIBAL ENVIRONMENTAL PROFESSIONALS AND EPA'S AIR KNOWLEDGE CURRICULUM FOR AIR QUALITY PROFESSIONALS. SPECIFIC ACTIVITIES INCLUDE COMPLETING AIR QUALITY BASELINE ASSESSMENTS THROUGH THE DEVELOPMENT OF AN EMISSIONS INVENTORY AND USE OF AIR SENSORS, REVIEWING DRAFT AIR PERMITS FOR SOURCES NEAR TRIBAL LANDS, INCREASING PUBLIC AWARENESS OF AMBIENT AND INDOOR AIR QUALITY ISSUES THROUGH COMMUNITY EDUCATION AND OUTREACH.  FURTHER, THE TRIBE WILL ASSESS THE NEED FOR AIR MONITORING ON TRIBAL LANDS VIA THE RESULTS OF ITS AIR EMISSIONS INVENTORY PROJECT AND INFORMATION COLLECTED FROM AIR QUALITY SENSORS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES OF THIS PROJECT INCLUDE A BASELINE AIR QUALITY ASSESSMENT OF THE BAY MILLS INDIAN COMMUNITY VIA COMPLETION OF AN EMISSIONS INVENTORY, AND TRAINED AIR QUALITY STAFF TO PROVIDE THE TRIBAL COMMUNITY WITH GREATER KNOWLEDGE AND UNDERSTANDING OF LOCAL AMBIENT AND INDOOR AIR QUALITY ISSUES.  THE INTENDED BENEFICIARIES ARE THE RESIDENTS OF THE BAY MILLS INDIAN COMMUNITY.  NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 18259972.06,
+  "award_count": 6,
+  "cfda_summary": {
+    "20.205": {
+      "count": 3,
+      "total": 5428224.0600000005
+    },
+    "14.867": {
+      "count": 1,
+      "total": 12664265.0
+    },
+    "66.038": {
+      "count": 2,
+      "total": 167483.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 95000.0,
+    "2025": 0.0,
+    "2026": 87483.0
+  },
+  "trend": "stable"
 }

@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000446",
   "tribe_name": "Native Village of Kobuk",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J05801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF KOBUK",
+      "obligation": 509000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF KOBUK CONTINUES TO BUILD TRIBAL ENVIRONMENTAL CAPACITY WHILE TRAINING, PRESENTING TO THE COMMUNITY AND WORKING ON THE SOLID WASTE ISSUES AT THE LANDFILL AND THE AREAS SURROUNDING THE LANDFILL. THE TRIBE WILL FOCUS MORE ON THE CLIMATE CHANGE ISSUES DIRECTLY AFFECTING THE KOBUK RIVER CAUSING THE WATER TO BE TURBULENT AND EROSION HAS REACHED MORE EXTREME SHORELINE DEGRADATION. THIS ENVIRONMENTAL PROGRAM WILL CONTINUE TO BUILD A FINANCIAL STRUCTURE AND REVIEW FUNDING OPTIONS FROM ADDITIONAL FEDERAL, STATE, AND LOCAL ENTITIES FOR ASSISTANCE AND PARTNERSHIPS TO PROVIDE FOR AND ENVIRONMENTALLY PROTECT RESIDENTS CONTINUING TO BUILD A CLEANER AND HEALTHIER COMMUNITY. ACTIVITIES:THIS ENVIRONMENTAL PROGRAM WILL CONTINUE TO BUILD A FINANCIAL STRUCTURE AND REVIEW FUNDING OPTIONS FROM ADDITIONAL FEDERAL, STATE, AND LOCAL ENTITIES FOR ASSISTANCE AND PARTNERSHIPS TO PROVIDE FOR AND ENVIRONMENTALLY PROTECT RESIDENTS CONTINUING TO BUILD A CLEANER AND HEALTHIER COMMUNITY. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:A CLEANER HEALTHIER COMMUNITY IS ANTICIPATED AS THE TRIBE IDENTIFIES BEHAVIOR CHANGES, CLEAN UP REQUIREMENTS, AND CLIMATE CHANGE ADAPTATION PLANS FOR THE FUTURE. THE TRIBAL COMMUNITY WILL FOCUS ON AWARENESS, THROUGH EDUCATION AND PLANNING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A11AV00182",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KOBUK",
+      "obligation": 0.0,
+      "start_date": "2011-09-21",
+      "end_date": "2026-12-31",
+      "description": "TRANSIT FACILITY DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00156",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF KOBUK",
+      "obligation": 0.0,
+      "start_date": "2009-09-22",
+      "end_date": "2026-12-31",
+      "description": "DESIGN AND FACILITY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 509000.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 509000.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 0.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 509000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

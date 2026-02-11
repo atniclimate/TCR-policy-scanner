@@ -1,9 +1,174 @@
 {
   "tribe_id": "epa_100000224",
   "tribe_name": "Pueblo of Santa Clara, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00208",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 105917.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMT-2022-BR-033",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 2069537.0,
+      "start_date": "2024-03-02",
+      "end_date": "2027-03-01",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02F07801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 510000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO OF SANTA CLARA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, AND CAPACITY DEVELOPMENT FOR DRINKING WATER SYSTEM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FINAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PROGRAM (QMP) UPDATE. THE INTENDED BENEFICIARY IS THE PUEBLO OF SANTA CLARA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600NM0040",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 781749.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NM0040",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 64444.36,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600NM0040",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 830628.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NM3040024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 729705.74,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SANTA CLARA PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SANTA CLARA PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NM3040024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 225986.81,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SANTA CLARA PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SANTA CLARA PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NM0040",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 108934.88,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NM3040025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 865734.79,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SANTA CLARA PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SANTA CLARA PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177NM3040025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 225881.13,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: SANTA CLARA PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SANTA CLARA PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "24DG11030000038",
+      "cfda": "10.720",
+      "program_id": "usda_wildfire",
+      "recipient_name_raw": "SANTA CLARA PUEBLO",
+      "obligation": 228177.0,
+      "start_date": "2024-09-16",
+      "end_date": "2027-06-30",
+      "description": "SANTA CLARA COMMUNITY WILDFIRE PROTECTION PLAN UPDATE",
+      "awarding_agency": "Department of Agriculture"
+    }
+  ],
+  "total_obligation": 6746696.36,
+  "award_count": 12,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 105917.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 2069537.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 510000.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 3833065.36
+    },
+    "10.720": {
+      "count": 1,
+      "total": 228177.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 510000.0,
+    "2024": 2297714.0,
+    "2025": 225881.13,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

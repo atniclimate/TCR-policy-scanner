@@ -1,9 +1,151 @@
 {
   "tribe_id": "epa_100000197",
   "tribe_name": "Pawnee Nation of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F07001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 570000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PAWNEE NATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL PROVIDE AN ENVIRONMENTAL OFFICE, BUILD CAPACITY FOR PESTICIDE PROGRAM, SOLID/HAZARDOUS WASTE, OBTAIN TRAINING AND DEVELOP STAFF.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), PESTICIDES INVENTORY,  QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP). THE INTENDED BENEFICIARY IS THE PAWNEE NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600OK0007",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 975177.29,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170OK0007",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 500000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600OK0007",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 76514.86,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600OK0007",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 1041766.69,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602OK3007024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 918704.64,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PAWNEE NATION OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PAWNEE NATION OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176OK3007024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 331019.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PAWNEE NATION OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PAWNEE NATION OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600OK0007",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 136625.14,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271OK3007025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 4792400.0,
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PAWNEE NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PAWNEE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602OK3007025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 1086890.79,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PAWNEE NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PAWNEE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177OK3007025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PAWNEE NATION OF OKLAHOMA",
+      "obligation": 330804.02,
+      "start_date": "2025-03-26",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PAWNEE NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PAWNEE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 10759902.99,
+  "award_count": 11,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 570000.0
+    },
+    "20.205": {
+      "count": 10,
+      "total": 10189902.989999998
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 570000.0,
+    "2024": 0.0,
+    "2025": 330804.02,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

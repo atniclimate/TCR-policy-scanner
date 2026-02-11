@@ -1,9 +1,92 @@
 {
   "tribe_id": "epa_100000172",
   "tribe_name": "Nez Perce Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00181",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEZ PERCE TRIBE",
+      "obligation": 149958.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00174",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEZ PERCE TRIBE",
+      "obligation": 149396.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00101",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEZ PERCE TRIBE",
+      "obligation": 144460.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00185",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEZ PERCE TRIBE",
+      "obligation": 98269.0,
+      "start_date": "2018-09-01",
+      "end_date": "2019-09-30",
+      "description": "NEZPERCE-ADAPTATIONTRAINING&WORKSHOPS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00215",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEZ PERCE TRIBE",
+      "obligation": 68557.0,
+      "start_date": "2018-09-01",
+      "end_date": "2019-09-30",
+      "description": "ADAPTATION PLANNING (INC DATA DEVELOPM)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00169",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEZ PERCE TRIBE",
+      "obligation": 12703.0,
+      "start_date": "2018-08-28",
+      "end_date": "2019-09-30",
+      "description": "NEZPERCETRIBE_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 623343.0,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 6,
+      "total": 623343.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

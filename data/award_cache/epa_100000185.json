@@ -1,9 +1,181 @@
 {
   "tribe_id": "epa_100000185",
   "tribe_name": "The Osage Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMT-2020-BR-108-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 25875.0,
+      "start_date": "2022-02-03",
+      "end_date": "2025-02-02",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02F29601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 540000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF, UPDATE THE ENVIRONMENTAL PROTECTION AGENCY-TRIBAL ENVIRONMENTAL PLAN, ENVIRONMENTAL ASSESSMENT REPORT AND CREATE SOLID WASTE PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANNUAL PROGRESS REPORT, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, ROADSIDE DUMP, SALTWATER SCAR SOIL SAMPLING AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE OSAGE NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600OK0038",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 4761210.98,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170OK0038",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 474197.68,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600OK0038",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 434019.77,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600OK0038",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 5032331.91,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602OK3038024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 4351859.96,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: OSAGE NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO OSAGE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176OK3038024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 1462431.45,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: OSAGE NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO OSAGE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600OK0038",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 659977.96,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AOK3038024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 350000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: OSAGE NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO OSAGE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602OK3038025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 5098082.79,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: OSAGE NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO OSAGE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177OK3038025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 1461702.4,
+      "start_date": "2025-01-24",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: OSAGE NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO OSAGE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT4023120",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "OSAGE NATION",
+      "obligation": 34381032.0,
+      "start_date": "2011-10-18",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 59032721.9,
+  "award_count": 13,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 25875.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 540000.0
+    },
+    "20.205": {
+      "count": 10,
+      "total": 24085814.9
+    },
+    "14.867": {
+      "count": 1,
+      "total": 34381032.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 25875.0,
+    "2023": 0.0,
+    "2024": 540000.0,
+    "2025": 1461702.4,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

@@ -1,9 +1,140 @@
 {
   "tribe_id": "epa_100000568",
   "tribe_name": "Yakutat Tlingit Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J85401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 433360.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO AN ELIGIBLE RECIPIENT TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE YAKUTAT TLINGIT TRIBE WILL USE THESE FUNDS FOR BUILDING TRIBAL CAPACITY TO DEVELOP ENVIRONMENTAL PROGRAMS THROUGH THE FOLLOWING ACTIVITIES: ADMINISTRATIVE CAPACITY DEVELOPMENT, BASELINE WATER QUALITY DATA COLLECTION AND COMMUNITY COMPOSTING. SOME COMPONENTS ARE CONTINUED FROM PRIOR YEARS, AS BASELINE DATA HAS NOT BEEN COMPLETED AND STAFF REQUIRES TRAINING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J72401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 291426.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS PROJECT IS TO DEVELOP AND ENHANCE ADMINISTRATIVE CAPACITY OF ENVIRONMENTAL STAFF, MAINTAIN EARLY WARNING SYSTEM ON HABS AND SHELLFISH TOXINS TO PROTECT HUMAN HEALTH, PROVIDE BASELINE DATA AND OUTREACH INFORMATION TO YTT TRIBAL MEMBERS TO PROTECT HUMAN HEALTH AND THE IMPACTS OF CLIMATE CHANGE TO OUR OCEANS AND SUBSISTENCE RESOURCES, REDUCE SOLID WASTE IN THE COMMUNITY THROUGH ORGANIZING COMMUNITY AND BEACH CLEANUPS AND IDENTIFY TRADITIONAL SITES THAT HAVE BEEN USED FOR TRADITIONAL AND SUBSISTENCE PURPOSES.\n\n\n\nACTIVITIES:THE ACTIVITIES TO BE PERFORMED INCLUDE COLLECTING BIWEEKLY WATER SAMPLES AND SHELLFISH SAMPLES AND SHIP TO SITKA TRIBE OF ALASKA LAB FOR ANALYSIS, ADDING NEW SITES TO CONTINUE TO SUPPORT TRIBAL HARVESTER EFFORTS, MAINTAINING AN ENVIRONMENTAL OFFICE WITH A FULLTIME DIRECTOR AND ENVIRONMENTAL SPECIALISTS,  ENTERING DATA INTO THE PROJECT MANAGEMENT TOOL FOR TRACKING, CONTINUING TO ENTER QA SAMPLE COLLECTION AND RESULT DATA INTO SHARED QA DATABASE HOSTED BY SOUTHEAST ALASKA TRIBAL OCEAN RESEARCH, COLLECTING KEY BASELINE DATA ON FOOD WASTE AND EXISTING COMPOSTING EFFORTS, DEVELOPING A MAP OF HISTORICAL SITES USING LIDAR WITHIN TRIBE'S TRADITIONAL AREA THAT HAVE BEEN USED FOR SUBSISTENCE HARVESTING THAT MAY STILL BE IMPACTED BY CONTAMINANTS FROM MILITARY. (ES)(CONSULTANT).  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE LIST OF IDENTIFIED HISTORICAL SITES AND MAP, DATA REPORTS FROM DATA PLATFORM AND SAMPLES, MEETING MINUTES AND AGENDAS, CORRESPONDENCE, MEETING NOTES,  PRESENTATION AND OUTREACH MATERIALS AND FLYERS, FIELD DATASHEETS, PHOTOGRAPHS, POSTS ON WEBSITE AND SOCIAL MEDIA, ADMINISTRATIVE AND FINANCIAL REPORTS AND QUARTERLY PROGRESS REPORTS. THE INTENDED BENEFICIARIES ARE THE MEMBERS OF YAKUTAT TLINGIT TRIBE AND COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0070",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 173522.61,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0070",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 14727.39,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170AK0070",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 3088163.22,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0070",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 183476.97,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3070024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 158931.34,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YAKUTAT TLINGIT TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO YAKUTAT TLINGIT TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3070024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 57712.68,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YAKUTAT TLINGIT TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO YAKUTAT TLINGIT TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0070",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 24062.55,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3070025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YAKUTAT TLINGIT TRIBE",
+      "obligation": 186570.33,
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: YAKUTAT TLINGIT TRIBE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO YAKUTAT TLINGIT TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 4611953.09,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 724786.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 3887167.0900000003
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 291426.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

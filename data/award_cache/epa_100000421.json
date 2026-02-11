@@ -1,9 +1,126 @@
 {
   "tribe_id": "epa_100000421",
   "tribe_name": "Hydaburg Cooperative Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMS-2020-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 27000.0,
+      "start_date": "2018-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01J59301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 369201.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE HYDABURG COOPERATIVE ASSOCIATION WILL BUILD ENVIRONMENTAL CAPACITY THROUGH GATHERING BASELINE ENVIRONMENTAL INFORMATION, PARTICIPATING IN ENVIRONMENTAL EDUCATION AND OUTREACH AND WASTE REDUCTION ACTIVITIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J54601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 401582.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE WORK TO BE ACCOMPLISHED INCLUDE TO GATHER BASELINE DATA ON TOXIN PRODUCING ALGAE TO BETTER UNDERSTAND AND EDUCATE THE TRIBAL COMMUNITIES WITHIN SOUTHEAST ALASKA; EDUCATE COMMUNITY MEMBERS ABOUT THE IMPORTANCE OF ENVIRONMENTAL STEWARDSHIP; ADMINISTRATION SUPPORT AND CAPACITY AND PROGRAM DEVELOPMENT AND MAINTENANCE;  EDUCATE THE COMMUNITY  ON THE BENEFITS OF RECYCLING SOLID WASTE AND THE PROPER DISPOSAL OF HOUSEHOLD HAZARDOUS WASTE; AND MAINTAIN BACKHAUL PROGRAMS THAT REDUCE WASTE ENTERING THE LANDFILL AND ABANDONED AROUND THE COMMUNITY.\nACTIVITIES:THE COMMUNITY WILL HOLD ONE BACKHAUL EVENT WITH LOCAL GOVERNMENTAL ENTITIES(I.E. TRIBES AND MUNICIPALITIES) ON PRINCE OF WALES.  THE ENVIRONMENTAL PLANNER WILL AUTHOR, REVIEW, AND STAY IN COMPLIANCE WITH GRANTS THAT ADDRESS GRANTEES LOCAL PRIORITY NEEDS.   THE GRANTEE WILL PUBLISH BI-MONTHLY NEWSLETTERS TO INFORM THE COMMUNITY ON ISSUES THE TRIBE FACES AND TO DO ENVIRONMENTAL OUTREACH AND EDUCATION.   THE ENVIRONMENTAL TECHNICIAN WILL ALSO CONTINUE WEEKLY PHYTOPLANKTON BASELINE DATA COLLECTION, TOXIN ANALYSIS, AND DATA ENTRY INTO SEATT DATABASE.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED OUTCOMES INCLUDE VALUABLE OUTREACH TO TRIBAL CITIZENS ON HEALTH RISKS ASSOCIATED WITH SHELLFISH HARVESTING THROUGHOUT THE YEAR; EDUCATED COMMUNITY MEMBERS ABOUT THE IMPORTANCE OF ENVIRONMENTAL STEWARDSHIP; STAFF THAT HAVE  GOOD UNDERSTANDING OF WHAT THE LOCAL ISSUES ARE, WHO CAN ASSIST IN ADDRESSING THEM, AND WHERE THE FINANCIAL RESOURCES CAN BE ATTAINED TO APPLY TO OUR CAPACITY BUILDING EFFORTS; A LOCAL TRIBAL PROGRAM THAT ADDRESSES LOCAL PRIORITY ENVIRONMENTAL NEEDS AND WORKS TO BUILD CAPACITY AND PORTIONS OF THE SOLID WASTE STREAM WILL BE DIVERTED TO A RECYCLING CENTER AND HOUSEHOLD HAZARDOUS WASTE WILL BE COLLECTED AND PROPERLY STORED.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V170AK0053",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 7553339.26,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V600AK0053",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 1286775.24,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0053",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 107803.93,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0053",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 1771442.43,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0206980",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HYDABURG COOPERATIVE ASSOCIATION",
+      "obligation": 2170423.0,
+      "start_date": "2012-01-06",
+      "end_date": "2031-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 13687566.86,
+  "award_count": 8,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 27000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 770783.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 10719360.86
+    },
+    "14.867": {
+      "count": 1,
+      "total": 2170423.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 401582.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

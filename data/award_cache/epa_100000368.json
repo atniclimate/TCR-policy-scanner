@@ -1,9 +1,115 @@
 {
   "tribe_id": "epa_100000368",
   "tribe_name": "Native Village of Buckland",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00162",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF BUCKLAND",
+      "obligation": 99303.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2020-BR-153",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "NATIVE VILLAGE OF BUCKLAND",
+      "obligation": 271917.0,
+      "start_date": "2024-02-21",
+      "end_date": "2027-02-20",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01J72201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF BUCKLAND",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THE NATIVE VILLAGE OF BUCKLAND WILL CONTINUE BUILDING CAPACITY IN GRANTS MANAGEMENT AND ENVIRONMENTAL TRIBAL ENVIRONMENTAL PROGRAM PRIORITIES. THE TRIBE WILL PARTNER WITH CITY, STATE AND OTHER FEDERAL PARTNERS TO EXPAND THE ENVIRONMENTAL PROGRAM. THE TRIBE WILL AIR QUALITY AND SEARCH FOR FUNDS TO MAINTAIN DUST CONTROL & SAFETY FOR OUR TRIBAL MEMBERS AND COMMUNITY. LANDFILL OPERATIONS AND RECYCLING WILL CONTINUES AND THE TRIBE PLANS TO EDUCATE THE COMMUNITY ABOUT OUR RECYCLING PROGRAM. BACKHAUL RECYCLABLES AND SEND TO MANIILAQ ASSOCIATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J65501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF BUCKLAND",
+      "obligation": 536000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2028-09-30",
+      "description": "DESCRIPTION:THE TRIBE WILL BUILD CAPACITY IN CONTINUED RESEARCHING ADDITIONAL RESOURCES AND OPPORTUNITIES THAT WILL MAKE OUR PROGRAM SUSTAINABLE AND RECEIVE OTHER GRANT FUNDING. ADMINISTRATIVE CAPACITY DEVELOPED AND WILL CONTINUE TO BUILD THE ENVIRONMENTAL PROGRAM THROUGHOUT THE 4-YEAR WORKPLAN. THIS PROJECT WILL ADD SOLID WASTE WORK, CLEAN-UP GREEN UP EVENTS AND THE ROBUST PROGRAM WILL RESEARCH AND APPLY FOR ADDITIONAL FUNDS FROM LOCAL, STATE, AND OTHER FEDERAL PARTNERS.ACTIVITIES: THE EPA TRIBAL ENVIRONMENTAL PLAN WILL BE UPDATED AS CHANGES COME. THE NATIVE VILLAGE OF BUCKLAND WILL BUILD THE ENVIRONMENTAL PROGRAM FOR THE TRIBE, TRIBAL MEMBERS AND THE TRIBAL COMMUNITY THROUGH EDUCATION, AND PARTNERSHIPS WITH LOCAL, STATE AND FEDERAL ENTITIES.  GAP STAFF IS CHARGED WITH BRINGING COUNCIL APPROVED TRIBAL ENVIRONMENTAL ISSUES TO THE COMMUNITY, REQUESTING OPINIONS AND FURTHER ATTENTION TO PLANNING ASSISTANT WITH TRIBAL MEMBERS WHO HAVE HAD SIMILAR ENVIRONMENTAL ISSUES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:TRIBAL COUNCIL MEMBERS WILL HAVE A FULLY INFORMED LIST OF PRIORITIES, STAFF WHO WILL DO REPORTS FOR EPA AND TRIBAL COUNCIL. THE EPA TRIBAL ENVIRONMENTAL PLAN WILL BE UPDATED AS CHANGES COME.  THE NATIVE VILLAGE OF BUCKLAND WILL BUILD THE ENVIRONMENTAL PROGRAM FOR THE TRIBE, TRIBAL MEMBERS AND THE TRIBAL COMMUNITY THROUGH EDUCATION, AND PARTNERSHIPS WITH LOCAL, STATE AND FEDERAL ENTITIES.  GAP STAFF IS CHARGED WITH BRINGING COUNCIL APPROVED TRIBAL ENVIRONMENTAL ISSUES TO THE COMMUNITY, REQUESTING OPINIONS AND FURTHER ATTENTION TO PLANNING ASSISTANT WITH TRIBAL MEMBERS WHO HAVE HAD SIMILAR ENVIRONMENTAL ISSUES.E AND DELIVERED TO THE EPA WITH TRIBAL COUNCIL SUPPORT.  THE INTENDED BENEFICIARIES ARE THE MEMBERS OF NATIVE VILLAGE OF BUCKLAND.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A25AV01021",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF BUCKLAND",
+      "obligation": 317869.77,
+      "start_date": "2025-05-28",
+      "end_date": "2029-12-31",
+      "description": "NATIVE VILLAGE OF BUCKLAND",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00879",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF BUCKLAND",
+      "obligation": 27112.16,
+      "start_date": "2025-06-12",
+      "end_date": "2029-12-31",
+      "description": "NATIVE VILLAGE OF BUCKLAND ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01175",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF BUCKLAND",
+      "obligation": 11195.96,
+      "start_date": "2025-09-09",
+      "end_date": "2029-12-31",
+      "description": "NATIVE VILLAGE OF BUCKLAND - CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1773397.8900000001,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 99303.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 271917.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1046000.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 356177.89
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 271917.0,
+    "2025": 892177.89,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

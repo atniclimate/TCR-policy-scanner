@@ -1,9 +1,118 @@
 {
   "tribe_id": "epa_100000263",
   "tribe_name": "Sault Ste. Marie Tribe of Chippewa Indians, Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AV00260",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 9476531.57,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00323",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 9277389.01,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00288",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 9075229.57,
+      "start_date": "2017-10-01",
+      "end_date": "2024-09-30",
+      "description": "SAULT SAINTE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00269",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 8809177.48,
+      "start_date": "2018-10-01",
+      "end_date": "2022-09-30",
+      "description": "A19AV00269",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00581",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 8117602.25,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/LAW ENFORCEMENT SPECIAL INITIATIVES FUNDING IS BEING PROVIDED ON A ONE-TIME (NONRECURRING) BASIS TO MEET THE OPERATIONAL NEEDS OF TRIBALLY CONTRACTED OR COMPACTED LAW ENFORCEMENT AND/OR DETENTION/CORRECTIONS PROGRAMS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV01178",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 1320783.27,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR ADDITIONAL AND FINAL TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES AND PROJECTS DESCRIBED IN 23 USC 202(A)(1) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "04E01472",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 140000.0,
+      "start_date": "2022-04-01",
+      "end_date": "2024-03-31",
+      "description": "DESCRIPTION:\nTHE PURPOSE OF THIS GRANT IS TO PROVIDE ASSISTANCE TO THE SAULT SAINTE MARIE TRIBE OF CHIPPEWA INDIANS IN ITS EFFORTS TO IMPLEMENT AIR QUALITY PROGRAMS THROUGHOUT THE TRIBAL LANDS.\nACTIVITIES:\nTHE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE CLEAN AIR ACT SECTION 103 PROGRAM, INCLUDING: 1) BUILD TRIBAL CAPACITY TO ADDRESS A WIDE RANGE OF AIR QUALITY ISSUES, 2) REVIEW AND COMMENT ON AIR QUALITY PERMITS THAT MAY AFFECT THE TRIBE, 3) IMPLEMENT AN INDOOR AIR QUALITY MONITORING AND EDUCATION PROGRAM, 4) OPERATE A NATIONAL TRENDS NETWORK SITE 5) CARRY OUT AN OUTREACH PROGRAM FOR THE TRIBAL COMMUNITY ON AIR QUALITY AND HEALTH IMPACTS, AND 6) DEVELOP AN EMISSIONS INVENTORY FOR TRIBAL LANDS.\nOUTCOMES:\nOUTCOMES INCLUDE INCREASED TRIBAL CAPACITY TO ADDRESS AIR QUALITY ISSUES, AND IMPROVED AIR QUALITY ON TRIBAL LANDS. INTENDED BENEFICIARIES: DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE TRIBAL RESIDENTS, WHO WILL HAVE IMPROVED AIR QUALITY AND REDUCED LOCALIZED POLLUTION. \nSUBRECIPIENT:\nNO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "05E01472",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "SAULT STE MARIE TRIBE OF CHIPPEWA INDIANS",
+      "obligation": 160000.0,
+      "start_date": "2024-04-01",
+      "end_date": "2026-03-31",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS GRANT IS TO PROVIDE ASSISTANCE TO THE SAULT SAINTE MARIE TRIBE OF CHIPPEWA INDIANS IN ITS EFFORTS TO IMPLEMENT AIR QUALITY PROGRAMS THROUGHOUT THE TRIBAL LANDS.\nACTIVITIES:THE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE CLEAN AIR ACT SECTION 103 PROGRAM, INCLUDING: 1) BUILD TRIBAL CAPACITY TO ADDRESS A WIDE RANGE OF AIR QUALITY ISSUES, 2) REVIEW AND COMMENT ON AIR QUALITY PERMITS THAT MAY AFFECT THE TRIBE, 3) IMPLEMENT AN INDOOR AIR QUALITY MONITORING AND EDUCATION PROGRAM, 4) OPERATE A NATIONAL TRENDS NETWORK SITE 5) CARRY OUT AN OUTREACH PROGRAM FOR THE TRIBAL COMMUNITY ON AIR QUALITY AND HEALTH IMPACTS, 6) DEVELOP A WILDFIRE SMOKE PREPARATION CODE, AND 7) DEVELOP A FINAL EMISSION INVENTORY ON EACH SAULT TRIBE RESERVATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:OUTCOMES INCLUDE INCREASED TRIBAL CAPACITY TO ADDRESS AIR QUALITY ISSUES, AND IMPROVED AIR QUALITY ON TRIBAL LANDS. DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE TRIBAL RESIDENTS, WHO WILL HAVE IMPROVED AIR QUALITY AND REDUCED LOCALIZED POLLUTION.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 46376713.15,
+  "award_count": 8,
+  "cfda_summary": {
+    "20.205": {
+      "count": 6,
+      "total": 46076713.15
+    },
+    "66.038": {
+      "count": 2,
+      "total": 300000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 10738172.28,
+    "2023": 0.0,
+    "2024": 160000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

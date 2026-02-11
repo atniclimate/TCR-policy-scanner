@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000102",
   "tribe_name": "Hoh Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A11AV00328",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 15511648.62,
+      "start_date": "2011-02-23",
+      "end_date": "2024-09-30",
+      "description": "NATURAL RESOURCE PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00929",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 4000000.0,
+      "start_date": "2024-09-01",
+      "end_date": "2027-09-30",
+      "description": "106 HOH INDIAN TRIBE TCR RELOCATION PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00001",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 649997.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "106 HOH INDIAN TRIBE TCR C1 C2 FUNDS'",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2022-PD-0003",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 1650000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2021-PC-0016",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 62625.25,
+      "start_date": "2021-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2023-PD-0004",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 1968750.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "55IT5306640",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 2312129.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5306640",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HOH INDIAN TRIBE",
+      "obligation": 87080.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 26242229.869999997,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 20161645.619999997
+    },
+    "97.047": {
+      "count": 3,
+      "total": 3681375.25
+    },
+    "14.867": {
+      "count": 2,
+      "total": 2399209.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 62625.25,
+    "2023": 0.0,
+    "2024": 4649997.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

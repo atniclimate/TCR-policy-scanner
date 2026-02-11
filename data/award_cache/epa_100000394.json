@@ -1,9 +1,107 @@
 {
   "tribe_id": "epa_100000394",
   "tribe_name": "Douglas Indian Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J08701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "DOUGLAS INDIAN ASSOCIATION",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE DOUGLAS INDIAN ASSOCIATION (DIA) WILL CONTINUE TO BUILD THEIR ENVIRONMENTAL PROGRAM WITH A MULTI YEAR WORKPLAN THAT WILL BUILD A STRONG ENVIRONMENTAL OFFICE TO MANAGE THE GRANT; ADDRESS TRANSBOUNDARY MINING ISSUES; WORK WITH TRIBES AND RELEVANT AGENCIES AND ORGANIZATIONS ON SALMON HABITAT RESTORATION AND RESILIENCY; DIA ADDRESS ISSUES OF POOR SALMON RETURNS ON THE TAKU RIVER AND OTHER NATURAL RESOURCES INTEGRAL TO TRIBAL FOOD SYSTEMS; COORDINATE WITH LOCAL COMPOST PROGRAMS TO PARTICIPATE IN THE REDUCTION OF SOLID WASTE AT OUR LOCAL LANDFILL; WORK ON IDENTIFYING AND PROTECTING THE ENVIRONMENT FOR HISTORIC AND SACRED SITES WITHIN OUR TRADITIONAL TERRITORIESACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE THAT STAFF WILL ATTEND TRAINING TO UNDERSTAND GRANT MANAGEMENT; HOW TO OVERSEE THE FINANCIAL ASPECTS OF THE GRANT THROUGH REGULAR COMMUNICATION BETWEEN TRIBAL LEADERS, GAP STAFF, AND FINANCIAL DEPARTMENT AND COMPLETE REPORTING IN A TIMELY MANNER; DIA WILL WORK WITH TAKU RIVER TLINGIT FIRST NATIONS (TRTFN) TO COLLABORATE AND ADDRESS MINING ISSUES THAT IMPACT THE TAKU RIVER. EM WILL ORGANIZE DIA EPA COMMITTEE MEETINGS WHEN REQUIRED AND WORK WITH OTHER TRIBES ON CROSS-BORDER COOPERATION, ASSURING CONTAMINATION FROM MINES ARE ADDRESSED AND ON SALMON RESILIENCY ISSUES THAT IMPACT THE TAKU RIVER AND THE WATERSHED HABITAT; DIA STAFF WILL RESEARCH CLIMATE CHANGE IMPACTS TO SALMON AND HOW CLIMATE CHANGE SHAPES SALMON HABITAT; STAFF WILL DO RESEARCH ABOUT THE DIFFERENT TYPES OF COMPOSTING METHODS; EM, ETA, AND CULTURAL COMMITTEE, WILL INVITE ALL DIA TRIBAL ELDERS TO BE INVOLVED WITH IMPORTANT TRIBAL HISTORY KNOWLEDGE AND DECISIONS WITH IMPORTANT ENVIRONMENTAL ISSUES ON TRADITIONAL TERRITORIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:TRIP REPORTS, EPA QUARTERLY PROGRESS REPORTS; INCREASED UNDERSTANDING OF SALMON RESILIENCY AND ENVIRONMENTAL CONDITIONS THAT MAY CONTRIBUTE TO LOW SALMON RETURNS; INCREASED UNDERSTANDING OF HOW SALMON POPULATIONS ARE MOST VULNERABLE TO CLIMATE CHANGE, CHANGING FRESHWATER AND OCEAN ENVIRONMENTAL CONDITIONS; DIA WILL DEVELOP CORE INFORMATION OF COMPOSTING AND INCREASED UNDERSTANDING OF A TRIBAL WASTE MANAGEMENT PROGRAM; HABITAT AND CULTURAL SITE PROTECTION, SITE MONITORING REPORTS.  INTENDED BENEFICIARIES INCLUDE THE DOUGLAS INDIAN ASSOCIATION TRIBAL MEMBERS AND THE JUNEAU COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0085",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DOUGLAS INDIAN ASSOCIATION",
+      "obligation": 130919.6,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0085",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DOUGLAS INDIAN ASSOCIATION",
+      "obligation": 11310.64,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0085",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DOUGLAS INDIAN ASSOCIATION",
+      "obligation": 138624.03,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3085024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DOUGLAS INDIAN ASSOCIATION",
+      "obligation": 139931.28,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: DOUGLAS INDIAN ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO DOUGLAS INDIAN ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3085024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DOUGLAS INDIAN ASSOCIATION",
+      "obligation": 56458.28,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: DOUGLAS INDIAN ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO DOUGLAS INDIAN ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3085025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "DOUGLAS INDIAN ASSOCIATION",
+      "obligation": 145156.94,
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: DOUGLAS INDIAN ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO DOUGLAS INDIAN ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 1150400.77,
+  "award_count": 7,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 528000.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 622400.77
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 528000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

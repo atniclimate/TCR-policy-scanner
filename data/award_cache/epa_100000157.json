@@ -1,9 +1,331 @@
 {
   "tribe_id": "epa_100000157",
   "tribe_name": "Mescalero Apache Tribe of the Mescalero Reservation, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F11201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 479702.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO MESCALERO APACHE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:THE PRIMARY OBJECTIVE OF THIS GENERAL ASSISTANCE PROGRAM {GAP) PROJECT IS TO CONDUCT FURTHER UPGRADES TO THE TRIBE'S TRANSFER STATION SITE TO FACILITATE SOURCE SEPARATION AND RESOURCE RECOVERY AT THE SITE, AND ULTIMATELY PROMOTE MORE EFFECTIVE SOLID WASTE MANAGEMENT, PURSUANT TO THE TRIBE'S INTEGRATED SOLID WASTE MANAGEMENT PLAN. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:SEMI-ANNUAL PROGRESS REPORTS, ANNUAL FINAL FINANCIAL REPORTS, QUALITY MANAGEMENT PLAN, AND GEOLOGICAL INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS MESCALERO APACHE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A15AV00792",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 11499660.04,
+      "start_date": "2015-09-03",
+      "end_date": "2027-12-31",
+      "description": "BRIDGE RECONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01330",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 8196936.92,
+      "start_date": "2012-09-18",
+      "end_date": "2027-12-31",
+      "description": "SUPPLEMENTAL ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00668",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 2074737.49,
+      "start_date": "2013-09-12",
+      "end_date": "2027-12-31",
+      "description": "PUBLIC TRANSPORTATION PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01331",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 1684617.93,
+      "start_date": "2012-09-18",
+      "end_date": "2027-12-31",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00640",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 1156920.0,
+      "start_date": null,
+      "end_date": "2023-12-31",
+      "description": "DESIGN AND CONSTRUCTION WINDY POINT III",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01332",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 1075664.0,
+      "start_date": "2012-09-18",
+      "end_date": "2027-12-31",
+      "description": "RESERVATION WIDE SAFETY",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00068",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 961066.34,
+      "start_date": "2007-09-20",
+      "end_date": "2027-12-31",
+      "description": "EAGLE CREEK DRAINAGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01055",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 805848.11,
+      "start_date": "2019-08-06",
+      "end_date": "2026-12-31",
+      "description": "EAGLE DRIVE PROJECT - MESCALERO",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00064",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 674841.82,
+      "start_date": "2007-09-20",
+      "end_date": "2027-12-31",
+      "description": "M1 NOGAL CANYON ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00409",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 663464.0,
+      "start_date": "2021-04-01",
+      "end_date": "2027-12-31",
+      "description": "TTP M323 CHIRICAHUA PLAZA REHAB",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A01AV00009",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 610000.0,
+      "start_date": "2003-09-11",
+      "end_date": "2024-12-31",
+      "description": "SLIDE REPAIR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00218",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 50000.0,
+      "start_date": "2009-09-24",
+      "end_date": "2024-12-31",
+      "description": "ROAD INVENTORY ASSESSMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00049",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 0.0,
+      "start_date": "2008-09-25",
+      "end_date": "2024-12-31",
+      "description": "WINDY POINT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00067",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 0.0,
+      "start_date": "2007-09-20",
+      "end_date": "2024-12-31",
+      "description": "A07AV00067",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00066",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 0.0,
+      "start_date": "2007-09-20",
+      "end_date": "2024-12-31",
+      "description": "CARRIZO WALKING PATH",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00065",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 0.0,
+      "start_date": "2007-09-21",
+      "end_date": "2024-12-31",
+      "description": "TULIPI ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A00AV00004",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 0.0,
+      "start_date": "2000-06-06",
+      "end_date": "2024-12-31",
+      "description": "CIRICAHUA PLAZA",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00576",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 2315846.96,
+      "start_date": "2023-08-16",
+      "end_date": "2027-12-31",
+      "description": "DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00577",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 975136.11,
+      "start_date": "2023-08-16",
+      "end_date": "2027-12-31",
+      "description": "DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00573",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 878000.0,
+      "start_date": "2023-08-16",
+      "end_date": "2027-12-31",
+      "description": "DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00575",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 860000.0,
+      "start_date": "2023-08-16",
+      "end_date": "2027-12-31",
+      "description": "DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00574",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 805700.0,
+      "start_date": "2023-08-16",
+      "end_date": "2027-12-31",
+      "description": "DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32440745",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 480000.0,
+      "start_date": "2024-08-16",
+      "end_date": "2026-08-01",
+      "description": "THE PROPOSED PROJECT IS TO PREPARE A FEASIBILITY STUDY OF IMPACTS OF WILDLIFE VEHICLE COLLISIONS (WVCS) AND BEST PRACTICES TO REDUCE WVCS. MAT SEEKS TO PROVIDE IMPROVED SAFETY FOR THE GENERAL PUBLIC AND SAFE PASSAGE FOR WILDLIFE CROSSING CORRIDOR ALONG US-70.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "A25AV00900",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 715391.57,
+      "start_date": "2024-10-01",
+      "end_date": "2027-12-31",
+      "description": "FUNDING DISTRIBUTION - MESCALERO APACHE TRIBE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT3504200",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 25911700.51,
+      "start_date": "2016-07-20",
+      "end_date": "2032-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3504200",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MESCALERO APACHE TRIBE",
+      "obligation": 1592592.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 64467825.8,
+  "award_count": 27,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 479702.0
+    },
+    "20.205": {
+      "count": 24,
+      "total": 36483831.29
+    },
+    "14.867": {
+      "count": 2,
+      "total": 27504292.51
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 6314385.07,
+    "2024": 480000.0,
+    "2025": 715391.57,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

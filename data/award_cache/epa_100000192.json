@@ -1,9 +1,255 @@
 {
   "tribe_id": "epa_100000192",
   "tribe_name": "Pala Band of Mission Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00226",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 290275.0,
+      "start_date": "2019-08-01",
+      "end_date": "2023-04-01",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00058",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 149973.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10107",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 149966.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-08-15",
+      "description": "TRIBAL HEALTH & ADAPTATION ADVANCED TRAINING PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00186",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 149957.0,
+      "start_date": "2018-09-15",
+      "end_date": "2019-09-30",
+      "description": "PALABANDMIS-ADAPTATIONTRAINING&WORKSHOPS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00103",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 143265.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00096",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SAN PASQUAL BAND OF MISSION INDIANS",
+      "obligation": 142800.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10198",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 133430.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-08-15",
+      "description": "THREADING THROUGH CALIFORNIA INTERTRIBAL RESILIENCE DATA DEVELOPMENT PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AP00169",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 149592.0,
+      "start_date": "2023-07-24",
+      "end_date": "2025-07-23",
+      "description": "TRIBAL CLIMATE RESILIENCE FY22 PALA BAND",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2019-PC-0003",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 199407.35,
+      "start_date": "2018-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMF-2021-BR-085",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 286125.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMF-2020-BR-177",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 663900.0,
+      "start_date": "2024-05-04",
+      "end_date": "2027-05-03",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "98T35301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PAUMA BAND OF MISSION INDIANS",
+      "obligation": 364544.0,
+      "start_date": "2022-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PAUMA BAND OF MISSION INDIANS TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $86,685.ACTIVITIES:THE PAUMA BAND OF MISSION INDIANS WILL MANAGE AN ENVIRONMENTAL OFFICE; RESPOND TO AIR QUALITY CONCERNS; PARTICIPATE IN TRAVEL AND TRAINING OPPORTUNITIES; RESEARCH AND DEVELOP A CLIMATE ADAPTATION PLAN.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:EXPECTED DELIVERABLES INCLUDE SUMMARIES OF TRAVEL AND TRAININGS, TIMELY QUARTERLY REPORTS, AND DEVELOPMENT OF A CLIMATE ADAPTATION PLAN. DIRECT BENEFICIARIES ARE THE MEMBERS AND/OR RESIDENTS OF THE PAUMA BAND OF MISSION INDIANS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0626460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 10728164.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXCA26460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 5000000.0,
+      "start_date": "2025-01-16",
+      "end_date": "2026-12-31",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000147",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 3000000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2027-09-30",
+      "description": "PALA COMMUNITY MICROGRIDS PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000108",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SAN PASQUAL BAND OF MISSION INDIANS",
+      "obligation": 703716.0,
+      "start_date": "2018-10-01",
+      "end_date": "2023-10-31",
+      "description": "SPBMI MICROGRID",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "98T41801",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 111971.0,
+      "start_date": "2022-10-01",
+      "end_date": "2023-09-30",
+      "description": "DESCRIPTION:THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $111,971. THE PURPOSE OF THIS PROJECT IS TO BUILD THE TRIBE'S CAPACITY TO ASSESS AIR QUALITY CONDITIONS AND TO DEVELOP STRATEGIES TO ADDRESS AIR QUALITY ISSUES. THE TRIBE WILL CONTINUE STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING AIR EMISSIONS, RULEMAKING, AND OTHER PROGRAM ACTIVITIES. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE TRIBE'S AIR QUALITY. ACTIVITIES:THE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE SECTION 103 PROGRAM INCLUDING: STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING RESERVATION-WIDE AIR EMISSIONS, DEVELOPING AN AIR REGULATORY PROGRAM, PROVIDING COMMUNITY EDUCATION AND OUTREACH, AND PARTICIPATING IN REGIONAL AND NATIONAL INITIATIVES TO IMPROVE AIR QUALITY. THESE ACTIVITIES SUPPORT THE TRIBE'S GOAL TO PROTECT THE HEALTH OF THE TRIBAL COMMUNITY. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:EXPECTED DELIVERABLES INCLUDE COLLECTING AIR QUALITY DATA AND SUBMITTING RESULTS TO EPA'S NATIONAL AIR QUALITY DATABASE. OUTCOMES INCLUDE A BROADENED AWARENESS OF AIR QUALITY ISSUES AND ESTABLISH PROGRAMS TO ADDRESS THE ATTAINMENT AND MAINTENANCE OF NATIONAL AMBIENT AIR QUALITY STANDARDS (NAAQS) AS WELL AS IMMEDIATE AND EMERGING THREATS TO PUBLIC HEALTH AND WELFARE FROM AIR POLLUTION. INTENDED BENEFICIARIES: DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE THE PALA AREA RESIDENTS WHO WILL HAVE DECREASED EXPOSURE TO CRITERIA AND HAZARDOUS AIR POLLUTANTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T72101",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 143568.0,
+      "start_date": "2023-10-01",
+      "end_date": "2024-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS PROJECT IS TO BUILD THE TRIBE'S CAPACITY TO ASSESS AIR QUALITY CONDITIONS AND TO DEVELOP STRATEGIES TO ADDRESS AIR QUALITY ISSUES. THE TRIBE WILL CONTINUE STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING AIR EMISSIONS, RULEMAKING, AND OTHER PROGRAM ACTIVITIES. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE TRIBE'S AIR QUALITY.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $143,568.00.ACTIVITIES:THE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE CLEAN AIR ACT SECTION 103 PROGRAM INCLUDING: STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING RESERVATION-WIDE AIR EMISSIONS, DEVELOPING AN AIR REGULATORY PROGRAM, PROVIDING COMMUNITY EDUCATION AND OUTREACH, AND PARTICIPATING IN REGIONAL AND NATIONAL INITIATIVES TO IMPROVE AIR QUALITY. THESE ACTIVITIES SUPPORT THE TRIBE'S GOAL TO PROTECT THE HEALTH OF THE TRIBAL COMMUNITY.   SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:EXPECTED DELIVERABLES INCLUDE COLLECTING AIR QUALITY DATA AND SUBMITTING RESULTS TO EPA'S NATIONAL AIR QUALITY DATABASE. OUTCOMES INCLUDE A BROADENED AWARENESS OF AIR QUALITY ISSUES AND ESTABLISH PROGRAMS TO ADDRESS THE ATTAINMENT AND MAINTENANCE OF NATIONAL AMBIENT AIR QUALITY STANDARDS (NAAQS) AS WELL AS IMMEDIATE AND EMERGING THREATS TO PUBLIC HEALTH AND WELFARE FROM AIR POLLUTION. INTENDED BENEFICIARIES: DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE PALA TRIBE AREA RESIDENTS WHO WILL HAVE DECREASED EXPOSURE TO CRITERIA AND HAZARDOUS AIR POLLUTANTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T95801",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "PALA BAND OF MISSION INDIANS",
+      "obligation": 147568.0,
+      "start_date": "2024-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS PROJECT IS TO BUILD THE TRIBE'S CAPACITY TO ASSESS AIR QUALITY CONDITIONS AND TO DEVELOP STRATEGIES TO ADDRESS AIR QUALITY ISSUES. THE TRIBE WILL CONTINUE STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING AIR EMISSIONS, RULEMAKING, AND OTHER PROGRAM ACTIVITIES. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE TRIBE'S AIR QUALITY.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $147,568.ACTIVITIES:THE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE CLEAN AIR ACT SECTION 103 PROGRAM INCLUDING: STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING RESERVATION-WIDE AIR EMISSIONS, DEVELOPING AN AIR REGULATORY PROGRAM, PROVIDING COMMUNITY EDUCATION AND OUTREACH, AND PARTICIPATING IN REGIONAL AND NATIONAL INITIATIVES TO IMPROVE AIR QUALITY. THESE ACTIVITIES SUPPORT THE TRIBE'S GOAL TO PROTECT THE HEALTH OF THE TRIBAL COMMUNITY.   SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:EXPECTED DELIVERABLES INCLUDE COLLECTING AIR QUALITY DATA AND SUBMITTING RESULTS TO EPA'S NATIONAL AIR QUALITY DATABASE. OUTCOMES INCLUDE A BROADENED AWARENESS OF AIR QUALITY ISSUES AND ESTABLISH PROGRAMS TO ADDRESS THE ATTAINMENT AND MAINTENANCE OF NATIONAL AMBIENT AIR QUALITY STANDARDS (NAAQS) AS WELL AS IMMEDIATE AND EMERGING THREATS TO PUBLIC HEALTH AND WELFARE FROM AIR POLLUTION. INTENDED BENEFICIARIES: DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE PALA TRIBE AREA RESIDENTS WHO WILL HAVE DECREASED EXPOSURE TO CRITERIA AND HAZARDOUS AIR POLLUTANTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 22658221.35,
+  "award_count": 19,
+  "cfda_summary": {
+    "15.156": {
+      "count": 8,
+      "total": 1309258.0
+    },
+    "97.047": {
+      "count": 3,
+      "total": 1149432.35
+    },
+    "66.926": {
+      "count": 1,
+      "total": 364544.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 15728164.0
+    },
+    "81.087": {
+      "count": 2,
+      "total": 3703716.0
+    },
+    "66.038": {
+      "count": 3,
+      "total": 403107.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 3000000.0,
+    "2023": 626107.0,
+    "2024": 807468.0,
+    "2025": 5147568.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

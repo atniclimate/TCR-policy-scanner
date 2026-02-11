@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000527",
   "tribe_name": "Native Village of Selawik",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J04701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF SELAWIK",
+      "obligation": 500000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF SELAWIK WILL BUILD THIS 4-YEAR WORKPLAN ON THE ENVIRONMENTAL PRIORITIES LISTED IN THE EPA TRIBAL ENVIRONMENTAL PLAN (ETEP) WITHIN EACH PHASE OF WORKPLANS RELYING ON THE FLEXIBILITY OF THIS ENVIRONMENTAL PROGRAM ASSISTING IN BUILDING A HEALTHIER, SAFER, TRIBAL COMMUNITY. THE ETEP WILL BE UPDATED AS REQUIRED BY EPA TO REFLECT REAL-TIME PRIORITIES AND ENVIRONMENTAL ISSUES AND CHANGES THAT MAY OCCUR. ADMINISTRATIVE CAPACITY TO BUILD AND ASSIST IN TRAINING FUTURE STAFF WILL OCCUR IN THE NEAR TERM TO KEEP UP WITH ADMINISTRATIVE CHANGES OR CHALLENGES. THE NATIVE VILLAGE OF SELAWIK WILL CONTINUE TO SECURE OTHER FUNDING AND RESOURCES TO ADDRESS PRIORITIZED ENVIRONMENTAL ISSUES, PARTNERING WITH THE CITY, STATE, FEDERAL, AND LOCAL ENTITIES. TRIBAL ENVIRONMENTAL CAPACITY WILL CONTINUE TO BUILD WITH ATTENTION TO KNOWN TRIBAL ECOLOGICAL KNOWLEDGE. ACTIVITIES: \nTHE ETEP WILL BE UPDATED AS REQUIRED BY EPA TO REFLECT REAL-TIME PRIORITIES AND ENVIRONMENTAL ISSUES AND CHANGES THAT MAY OCCUR. ADMINISTRATIVE CAPACITY TO BUILD AND ASSIST IN TRAINING FUTURE STAFF WILL OCCUR IN THE NEAR TERM TO KEEP UP WITH ADMINISTRATIVE CHANGES OR CHALLENGES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:\nTHE NATIVE VILLAGE OF SELAWIK AND THE EPA EXPECT THE ENVIRONMENTAL PROGRAM CAPACITY TO EXPAND AND ENGAGE IN THE TRIBAL RESIDENTIAL COMMUNITY, WORKPLAN WORK WILL INVOLVE ADMINISTRATIVE CONTINUED CAPACITY BUILDING AS WELL AS TRIBAL ENVIRONMENTAL CAPACITY BUILDING. LANDFILL WORK, EROSION, SAFETY, AND CHANGING BEHAVIOR PATTERNS TO PROTECT THE HUMAN HEALTH AND THE ENVIRONMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00820",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF SELAWIK",
+      "obligation": 759534.7,
+      "start_date": "2017-08-08",
+      "end_date": "2025-12-31",
+      "description": "SELAWIK ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00326",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF SELAWIK",
+      "obligation": 267947.24,
+      "start_date": "2017-02-09",
+      "end_date": "2025-12-31",
+      "description": "SELAWIK PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01195",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF SELAWIK",
+      "obligation": 393192.78,
+      "start_date": "2023-09-13",
+      "end_date": "2028-12-31",
+      "description": "SELAWIK",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01185",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF SELAWIK",
+      "obligation": 133144.51,
+      "start_date": "2023-09-13",
+      "end_date": "2028-12-31",
+      "description": "SELAWIK",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2053819.23,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 500000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1553819.23
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 1026337.29,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,221 @@
 {
   "tribe_id": "epa_100000404",
   "tribe_name": "Native Village of Eyak (Cordova)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J95701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 518789.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE NATIVE VILLAGE OF EYAK WILL CONTINUE TO BUILD THEIR ENVIRONMENTAL PROGRAM TO ADDRESS TRIBAL ENVIRONMENTAL ISSUES THROUGH INCREASING ADMINISTRATIVE AND PROGRAMMATIC CAPACITY THROUGH THE FOLLOWINGAND RESPONDING TO TRIBAL MEMBERS ENVIRONMENTAL CONCERNSAND FULFILLING ALL GRANT ADMINISTRATIVE AND PROGRAMMATIC REQUIREMENTSAND PARTICIPATING IN REGIONAL ENVIRONMENTAL TRAININGAND CONTINUED DEVELOPMENT OF GIS PROGRAMAND GATHERING BASELINE DATA ON EROSION AND WATER QUALITYAND ORGANIZING YOUTH ENVIRONMENTAL ACTIVITIESAND PARTICIPATION IN LOCAL ENVIRONMENTAL WORKING GROUPSAND COLLABORATION WITH CORDOVA CITY GOVT ON SOLID WASTE ISSUES, INCLUDING MARINE DEBRIS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J99901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF EYAK WILL USE GENERAL ASSISTANCE PROGRAM (GAP) FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE ESTABLISHING PUBLIC PARTICIPATION AND EDUCATION, EMERGENCY PREPAREDNESS, WATER QUALITY MONITORING, AND ADDRESSING SOLID WASTE MANAGEMENT ISSUES.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM NATIVE VILLAGE OF EYAK WILL INCLUDE SEMIANNUAL PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. ALSO, THE NATIVE VILLAGE OF EYAK WITH DEVELOP QUALITY ASSURANCE PROJECT PLANS. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0010",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 271559.17,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0010",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 23711.66,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ32340470",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 85921275.0,
+      "start_date": "2023-07-13",
+      "end_date": "2028-09-30",
+      "description": "NSFLTP GRANT FUNDS TO AUTHORIZE PRE-AWARD COSTS UNDER A PLANNED GRANT AGREEMENT WITH NATIVE VILLAGE OF EYAK.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170AK0010",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 35033786.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0010",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 287784.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AAK3010024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 6132400.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EYAK TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF EYAK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3010024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 261168.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EYAK TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF EYAK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3010024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 119300.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EYAK TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF EYAK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0010",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 37742.2,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271AK3010025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 16742212.77,
+      "start_date": "2025-01-06",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EYAK FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED FOR FY 2025 UNDER THE TRIBAL TRANSPORTATION PROGRAM FUNDING AGREEMENT WITH THE NATIVE VILLAGE OF EYAK.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17AAK3010025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 1989035.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EYAK FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED FOR FY 2025 UNDER THE TRIBAL TRANSPORTATION PROGRAM FUNDING AGREEMENT WITH THE NATIVE VILLAGE OF EYAK.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3010025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 310571.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EYAK FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED FOR FY 2025 UNDER THE TRIBAL TRANSPORTATION PROGRAM FUNDING AGREEMENT WITH THE NATIVE VILLAGE OF EYAK.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3010025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 119277.26,
+      "start_date": "2025-01-06",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF EYAK FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED FOR FY 2025 UNDER THE TRIBAL TRANSPORTATION PROGRAM FUNDING AGREEMENT WITH THE NATIVE VILLAGE OF EYAK.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0204940",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 1601842.61,
+      "start_date": "2011-10-18",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0204940",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NATIVE VILLAGE OF EYAK",
+      "obligation": 85211.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 149589666.12,
+  "award_count": 17,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 652789.0
+    },
+    "20.205": {
+      "count": 13,
+      "total": 147249823.51
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1687053.61
+    }
+  },
+  "yearly_obligations": {
+    "2022": 518789.0,
+    "2023": 85921275.0,
+    "2024": 0.0,
+    "2025": 16861490.03,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

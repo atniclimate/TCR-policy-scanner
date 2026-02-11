@@ -1,9 +1,148 @@
 {
   "tribe_id": "epa_100000343",
   "tribe_name": "Akiachak Native Community",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J08401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:AKIACHAK NATIVE COMMUNITY WILL USE GAP FUNDING TO BUILD CAPACITY FOR MANAGEMENT OF THE ENVIRONMENTAL OFFICE; INCREASE ENVIRONMENTAL DEPARTMENT AND STAFF'S KNOWLEDGE AND AWARENESS OF PRIORITY ENVIRONMENTAL ISSUES; INCREASE COMMUNITY ENGAGEMENT ON SOLID WASTE AND AIR QUALITY ISSUES; IMPLEMENT SOLID WASTE MANAGEMENT PLANNING AND ACTIVITIES; AND LEAD OUTREACH AND EDUCATION ACTIVITIES ON ENVIRONMENTAL ISSUES IMPACTING THE REGION.ACTIVITIES:ACTIVITIES INCLUDE ATTENDING TELECONFERENCE CALLS. WEBINARS, LOCAL AND REGIONAL WORKSHOPS, MEETINGS, AND TRAININGS TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS; COLLECTING AND CONSOLIDATING TRASH AT THE LANDFILL; COORDINATING A CLEANUP EVENT AND PREPARING HAZARDOUS WASTE MATERIALS FOR BACKHAUL; ORGANIZING A CAMPAIGN TO COMBAT ROAD DUST ISSUES IN THE COMMUNITY; AND UPDATING AKIACHAK'S INTEGRATED WASTE MANAGEMENT PLAN (IWMP) WITH NEW PRIORITIES. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:\nANTICIPATED DELIVERABLES INCLUDE PHOTOS, SUMMARIES OF ACTIVITIES, PROGRESS REPORTED IN QUARTERLY REPORTS, TRIPS REPORTS, EDUCATIONAL BROCHURES, AND AN UPDATED INTEGRATED WASTE MANAGEMENT PLAN. EXPECTED OUTCOMES INCLUDE INCREASED AWARENESS OF ENVIRONMENTAL ISSUES AND ACTIONS TRIBAL MEMBERS MAY TAKE TO IMPROVE SOLID WASTE MANAGEMENT; AIR QUALITY, AND OVERALL ENVIRONMENTAL QUALITY, INCREASED COMMUNITY ENGAGEMENT, ENVIRONMENTAL AWARENESS, AND A STRONG TRIBAL ENVIRONMENTAL PROGRAM. THE INTENDED BENEFICIARIES ARE THE COMMUNITY MEMBERS OF AKIACHAK NATIVE COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00912",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 1339638.38,
+      "start_date": "2015-10-01",
+      "end_date": "2026-12-31",
+      "description": "AKIAKCHAK CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00416",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 953808.62,
+      "start_date": "2020-01-22",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00648",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 334556.58,
+      "start_date": "2019-04-18",
+      "end_date": "2025-12-31",
+      "description": "AKIACHAK FY19 PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01184",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 207144.0,
+      "start_date": "2023-09-15",
+      "end_date": "2028-12-31",
+      "description": "AKIACHAK FY13X FY12X CONSTRUCTION FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01213",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 165000.0,
+      "start_date": "2023-09-15",
+      "end_date": "2028-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01022",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 73500.0,
+      "start_date": "2025-07-11",
+      "end_date": "2031-12-31",
+      "description": "AKIACHAK FY 2025 6V1 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01028",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 38040.74,
+      "start_date": "2025-07-17",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT0200220",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 7710551.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000141",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "AKIACHAK NATIVE COMMUNITY",
+      "obligation": 123220.0,
+      "start_date": "2022-05-16",
+      "end_date": "2025-05-15",
+      "description": "AKIACHAK ENERGY EFFICIENCY RETROFIT PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 11473459.32,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 528000.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 3111688.3200000003
+    },
+    "14.867": {
+      "count": 1,
+      "total": 7710551.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 123220.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 123220.0,
+    "2023": 900144.0,
+    "2024": 0.0,
+    "2025": 111540.73999999999,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

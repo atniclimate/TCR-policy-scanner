@@ -1,9 +1,155 @@
 {
   "tribe_id": "epa_100000289",
   "tribe_name": "Standing Rock Sioux Tribe of North & South Dakota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AV00569",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 155911.04,
+      "start_date": "2017-10-01",
+      "end_date": "2022-12-31",
+      "description": "STANDING ROCK SIOUX TRIBE CANNON BALL COMMUNITY PATHWAY PE AWARD $66,000.58",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00254",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 3081877.99,
+      "start_date": "2017-07-24",
+      "end_date": "2024-09-30",
+      "description": "SRST TTP ADMINISTRATION COSTS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00886",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 551190.49,
+      "start_date": "2021-08-19",
+      "end_date": "2022-10-31",
+      "description": "P.L. 93-638 CONSTRUCTION CONTRACT FOR GRADE & DRAIN, GRAVEL CONSTRUCTION, PAVE CONSTRUCTION, INCIDENTAL CONSTRUCTION AND CONSTRUCTION MONITORING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV01060",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 331264.63,
+      "start_date": "2020-08-06",
+      "end_date": "2022-12-31",
+      "description": "P.L. 93-638 CONTRACT FOR THE BULLHEAD PATHWAY CONSTRUCTION CONTRACT.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV01103",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 194528.22,
+      "start_date": "2022-08-01",
+      "end_date": "2023-09-30",
+      "description": "WAKPALA PATHWAY TA MATCH",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00474",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 88058.48,
+      "start_date": "2017-10-01",
+      "end_date": "2024-09-30",
+      "description": "A18AV00474",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00934",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 39789.18,
+      "start_date": "2021-12-06",
+      "end_date": "2023-06-30",
+      "description": "P.L. 93-638 GRANT WITH THE STANDING ROCK SIOUX TRIBE'S BEAR SOLDIER COST SHARE.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 39759.38,
+      "start_date": "2024-09-18",
+      "end_date": "2024-12-31",
+      "description": "PAYMENT FOR CONTRACTUAL SERVICES",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00789",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 14253650.0,
+      "start_date": "2025-05-06",
+      "end_date": "2026-09-30",
+      "description": "P.L. 93-638 SUBPART J CONTRACT WITH THE STANDING ROCK SIOUX TRIBE.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000184",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 4000000.0,
+      "start_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "description": "STANDING ROCK SINGLE WIND TURBINE PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "95822102",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "STANDING ROCK SIOUX TRIBE",
+      "obligation": 140000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2024-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT WILL PROVIDE ASSISTANCE TO THE STANDING ROCK SIOUX TRIBE IN ITS EFFORTS TO IMPLEMENT THE CLEAN AIR ACT 103 REGULATION THROUGHOUT THE STANDING ROCK RESERVATION AND PROTECT ITS AIRSHED.ACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE THE MONITORING OF AIR QUALITY, DATA QUALITY CONTROL ACTIVITIES, ATTENDING ENVIRONMENTALLY-RELATED TRAININGS AND MEETINGS, CONDUCTING ENVIRONMENTAL OUTREACH AND GRANT WRITING, AND OTHER AIR PLANNING ACTIVITIES. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE PUBLIC'S AIR QUALITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES INCLUDE QUARTERLY PROGRESS REPORTS TO THE EPA, THE APPROPRIATE AND EFFECTIVE MANAGEMENT OF EPA FUNDING, AND MEASURES TO IMPROVE AND PROTECT HUMAN HEALTH AND THE ENVIRONMENT. THE INTENDED BENEFICIARIES OF THIS GRANT ARE THE CITIZENS AND RESIDENTS OF THE STANDING ROCK RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 22876029.41,
+  "award_count": 11,
+  "cfda_summary": {
+    "20.205": {
+      "count": 9,
+      "total": 18736029.41
+    },
+    "81.087": {
+      "count": 1,
+      "total": 4000000.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 140000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 234317.4,
+    "2023": 140000.0,
+    "2024": 4039759.38,
+    "2025": 14253650.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

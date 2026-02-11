@@ -1,9 +1,159 @@
 {
   "tribe_id": "epa_100000417",
   "tribe_name": "Hoonah Indian Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00135",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 147939.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00852",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 201795.0,
+      "start_date": "2024-07-18",
+      "end_date": "2026-09-30",
+      "description": "HOONAH TCR'",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J55401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 494407.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE HOONAH INDIAN ASSOCIATION WILL BUILD THEIR TRIBAL ENVIRONMENTAL PROGRAM BY: CONTINUING BASELINE WATER QUALITY DATA COLLECTION; ESTABLISHING A BACKHAUL, RECYCLING AND COMPOSTABLE PROGRAM; UPDATING THEIR ETEP AND TRACKING WORK COMPLETED AND PLANNING FUTURE PROJECTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J29001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 402970.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:IN THIS WORK PLAN, THE HOONAH INDIAN ASSOCIATION AIMS TO BUILD THE ENVIRONMENTAL CAPACITY OF THE TRIBE AND IGAP DEPARTMENT. THIS INCLUDES CONTINUING TO GATHER BASELINE DATA ON HABS, OCEAN ACIDIFICATION, AND NUTRIENTS, AS WELL AS CONTINUING THE STREAM TEMPERATURE MONITORING BASELINE STUDY. THE ETEP WILL BE UPDATED TO TRACK COMPLETED AND FUTURE PROJECTS. AN ENVIRONMENTAL PRESENCE WILL BE ESTABLISHED THROUGH THE CREATION OF A DIGITAL ARCHIVE OF TRADITIONAL ENVIRONMENTAL KNOWLEDGE SPECIFIC TO HIA. A WATER QUALITY BASELINE DATA COLLECTION PROGRAM WILL BE ESTABLISHED AND A CLIMATE ADAPTATION PLAN SPECIFIC TO HOONAH WILL BE CREATED. \nACTIVITIES:THE HOONAH INDIAN ASSOCIATION STAFF (HIA) WILL PUBLISH A QUARTERLY NEWSLETTER AND ATTEND IGAP TELECONFERENCES AND WEBINARS. THEY WILL ALSO PARTICIPATE IN THE SOUTHEAST TRIBAL ENVIRONMENTAL CONFERENCE AND HOONAH STEWARDSHIP COUNCIL MEETINGS. IN ADDITION, THEY WILL ATTEND TRAININGS ON PHYTOPLANKTON MONITORING, COLLECTION, AND ANALYSIS PROVIDED BY TRIBAL NOAA, AND UNIVERSITY STAFF. WEEKLY BASELINE DATA WILL BE COLLECTED, AND TOXIN ANALYSIS CONDUCTED, WITH THE RESULTING DATE ENTERED INTO THE SEATT DATABASE. FURTHERMORE, THE STREAM TEMPERATURE MONITORING EQUIPMENT WILL BE INSPECTED AND MAINTAINED, AND DATA WILL BE COLLECTED TWICE PER YEAR BY HIA STAFF. FINALLY, HIA IS BUILDING A GIS DATABASE OF TRADITIONAL AREAS WITH HIGH ECOLOGICAL AND CULTURAL IMPORTANCE. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE RESPONSIBILITIES INCLUDE CREATING NOTES, AGENDAS, AND SUMMARIES OF EVENTS. DATA IS ENTERED INTO THE SEATOR DATABASE AND PROGRESS REPORTS ARE GENERATED. A DRAFT CLIMATE ADAPTATION PLAN IS ALSO BEING DEVELOPED. THE INTENDED BENEFICIARIES OF THESE EFFORTS ARE THE HOONAH INDIAN ASSOCIATION AND THE COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0068",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 372026.69,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0068",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 31126.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3068024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 784828.48,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: HOONAH INDIAN ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO HOONAH INDIAN ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3068024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 106636.52,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: HOONAH INDIAN ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO HOONAH INDIAN ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3068025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 399556.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: HOONAH INDIAN ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO HOONAH INDIAN ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3068025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 106611.39,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: HOONAH INDIAN ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO HOONAH INDIAN ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0206620",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HOONAH INDIAN ASSOCIATION",
+      "obligation": 3697391.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 6745287.96,
+  "award_count": 11,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 349734.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 897377.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 1800785.9599999997
+    },
+    "14.867": {
+      "count": 1,
+      "total": 3697391.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 604765.0,
+    "2025": 106611.39,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

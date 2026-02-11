@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000477",
   "tribe_name": "New Stuyahok Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00187",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEW STUYAHOK VILLAGE",
+      "obligation": 43350.22,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2021-PC-0014",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "NEW STUYAHOK VILLAGE",
+      "obligation": 178976.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01J63201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEW STUYAHOK VILLAGE",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE WORK TO BE ACCOMPLISHED IS ORGANIZED INTO FOUR WORK PLAN COMPONENTS. COMPONENT 1 BUILDS TRIBAL ADMINISTRATIVE CAPACITY AND SUPPORTS STAFF TRAVEL TO ENVIRONMENTAL CONFERENCES. COMPONENT 2 SUPPORTS A TRIBAL SOLID AND HAZARDOUS WASTE AND RECYCLING PROGRAM. COMPONENT 3 CONTINUES A BASELINE WATER QUALITY ASSESSMENT IN ACCORDANCE WITH AN EPA APPROVED QAPP. COMPONENT 4 RESPONDS TO LOCAL AMBIENT AND INDOOR AIR QUALITY CONCERNS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J50901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEW STUYAHOK VILLAGE",
+      "obligation": 384670.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:BUILD ADMINISTRATIVE CAPACITY TO MAINTAIN ENVIRONMENTAL PROGRAMS. DEVELOP A SOLID WASTE MANAGEMENT PROGRAM. CONDUCT BASELINE WATER QUALITY ASSESSMENT OF LOCAL WATERSHEDS, IN ACCORDANCE WITH EPA APPROVED QUALITY ASSURANCE PROJECT PLAN.. BACKHAUL ELECTRONIC WASTE AND AUTOMOBILES TO BE SHIPPED TO ANCHORAGE OR SEATTLE.ACTIVITIES:INCREASE COMMUNITY AWARENESS OF ENVIRONMENTAL ISSUES. PROVIDE EDUCATION TO THE CITY OF NEW STUYAHOK ABOUT PROPER BURNING PROCEDURES, WASTE SEGREGATION AND HANDLING HAZARDOUS HOUSEHOLD WASTE. ESTABLISH BASELINE WATER QUALITY SAMPLING ON THE NUSHAGAK RIVER AND PANARQUKUK CREEK. HELP RESIDENTS OF NEW STUYAHOK WITH ENVIRONMENTAL MANAGEMENT BY GATHERING RECYCLABLES TO BE SHIPPED OUT WITH BARGE.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:INCREASE TRIBAL PROGRAMMATIC CAPACITY TO EFFECTIVELY ADDRESS LOCAL ENVIRONMENTAL ISSUES IN CITY OF NEW STUYAHOK. DECREASE POLLUTION OF AIR, WATER, AND SOIL IN NEW STUYAHOK FROM THE LANDFILL BY IMPROVING PROPER DISPOSAL OF SOLID WASTE. DETERMINE WATER QUALITY TRENDS ON THE NUSHAGAK RIVER AND PANARQUKUK CREEK TO HELP PROTECT NEW STUYAHOK'S LOCAL WATERSHEDS. REDUCE THE AMOUNT OF ELECTRONIC WASTE IN NEW STUYAHOK. THE INTENDED BENEFICIARY IS THE COMMUNITY OF NEW STUYAHOK.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 1101420.38,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 43350.22
+    },
+    "97.047": {
+      "count": 1,
+      "total": 178976.16
+    },
+    "66.926": {
+      "count": 2,
+      "total": 879094.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 384670.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

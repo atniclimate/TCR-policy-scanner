@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000219",
   "tribe_name": "Pueblo of Pojoaque, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F08801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF POJOAQUE",
+      "obligation": 126532.0,
+      "start_date": "2022-10-01",
+      "end_date": "2023-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO OF POJOAQUE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, AND TRAINING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FINAL FINANCIAL REPORT (FFR), QUALITY MANAGEMENT PLAN (QMP), AND GIS/GPS QUALITY ASSURANCE PROGRAM PLAN (QAPP). THE INTENDED BENEFICIARY IS THE PUEBLO OF POJOAQUE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JJ22440000Y602NM3119024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF POJOAQUE",
+      "obligation": 319635.25,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF POJOAQUE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF POJOAQUE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NM3119024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF POJOAQUE",
+      "obligation": 87224.24,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF POJOAQUE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF POJOAQUE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NM3119025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF POJOAQUE",
+      "obligation": 329954.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF POJOAQUE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF POJOAQUE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177NM3119025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF POJOAQUE",
+      "obligation": 87190.93,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PUEBLO OF POJOAQUE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF POJOAQUE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 950537.09,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 126532.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 824005.0899999999
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 126532.0,
+    "2024": 0.0,
+    "2025": 87190.93,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

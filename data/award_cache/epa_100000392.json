@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000392",
   "tribe_name": "Native Village of Diomede (aka Inalik)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00872",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF DIOMEDE",
+      "obligation": 232036.0,
+      "start_date": "2024-07-25",
+      "end_date": "2026-12-31",
+      "description": "NATIVE VILLAGE OF DIOMEDE FY 2023 TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J63701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF DIOMEDE",
+      "obligation": 393000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE NATIVE VILLAGE OF DIOMEDE IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH. THE PRIMARY PURPOSES OF THIS PROJECT INCLUDE:  BUILD CAPACITY TO DEVELOP AND MANAGE THE ENVIRONMENTAL PROGRAM; TO DEVELOP AND IMPLEMENT A SOLID AND HAZARDOUS WASTE MANAGEMENT PROGRAM TO CONTROL POLLUTION; TO COLLECT BASELINE WATER DATA RELATED TO KING CRAB MORPHOLOGY, MARINE BIOTOXINS, PHYTOPLANKTON IDENTIFICATION, OCEAN ACIDIFICATION, AND HARMFUL ALGAE COLLECTIONS.\nACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE THOSE RELATED TO INCREASED COORDINATION, TRAINING, AND OVERSIGHT OF SOLID AND HAZARDOUS WASTE MANAGEMENT SUCH AS COMMUNITY CLEAN-UP AND RECYCLING EVENTS AND BACKHAUL TO REMOVE SOLID WASTE AND RECYCLING MATERIALS.  THE TRIBE WILL ALSO CONDUCT RELATED RESEARCH INTO CERTAIN WASTE STREAM OFFSETS FOR HOUSEHOLD PRODUCTS.  THE TRIBE WILL DEVELOP SAMPLING PROTOCOLS AND COLLECT WATER QUALITY SAMPLES RELATED TO IMPACTS TO WATER QUALITY NEGATIVELY IMPACTING TRIBAL MEMBERS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE. OUTCOMES INCLUDE IMPROVING ENVIRONMENTAL HEALTH CONDITIONS OF THE DIOMEDE COMMUNITY. INCREASED CAPACITY TO CLEAN UP SOLID AND HAZARDOUS WASTES, WITH POLLUTION MINIMIZED THRU PROPER DISPOSAL AND RECYCLING. INCREASED KNOWLEDGE OF CLIMATE CHANGE IMPACTS TO SUBSISTENCE WILL INFORM FUTURE ADAPTATION STRATEGIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 625036.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 232036.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 393000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 625036.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

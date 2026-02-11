@@ -1,9 +1,155 @@
 {
   "tribe_id": "epa_100000112",
   "tribe_name": "Iowa Tribe of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMT-2020-BR-110-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 158130.0,
+      "start_date": "2022-02-03",
+      "end_date": "2025-02-02",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMT-2020-BR-110-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 21084.0,
+      "start_date": "2022-02-03",
+      "end_date": "2025-02-02",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01F92801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 535000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE IOWA TRIBE OF OKLAHOMA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, AND CAPACITY  DEVELOPMENT OF THE WATER QUALITY PROGRAM BY INCREASING TECHNICAL AND ANALYTICAL CAPABILITIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F84501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 331837.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE IOWA TRIBE OF OKLAHOMA TO IMPLEMENT ITS PROJECT TO DEVELOP TRIBAL ENVIRONMENTAL CAPACITY. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, AND CAPACITY DEVELOPMENT OF THE WATER QUALITY PROGRAM BY INCREASING TECHNICAL AND ANALYTICAL CAPABILITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN. THE INTENDED BENEFICIARY IS THE IOWA TRIBE OF OKLAHOMA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JJ22440000Y17AOK3116024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 3448500.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: IOWA TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO IOWA TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600OK0116",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 2766004.4,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V176OK0116",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 261680.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM SPECIAL APPROPRIATIONS",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602OK3116024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 70000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: IOWA TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO IOWA TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17AOK3116025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 2081900.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: IOWA TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO IOWA TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602OK3116025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 916282.08,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: IOWA TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO IOWA TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177OK3116025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "IOWA TRIBE OF OKLAHOMA",
+      "obligation": 261630.96,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: IOWA TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO IOWA TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 10852049.11,
+  "award_count": 11,
+  "cfda_summary": {
+    "97.047": {
+      "count": 2,
+      "total": 179214.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 866837.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 9805998.110000001
+    }
+  },
+  "yearly_obligations": {
+    "2022": 714214.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 261630.96,
+    "2026": 331837.0
+  },
+  "trend": "stable"
 }

@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000419",
   "tribe_name": "Hughes Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J83701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HUGHES VILLAGE",
+      "obligation": 385000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AWARD WILL ASSIST HUGHES VILLAGE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, TO BUILD ITS ADMINISTRATIVE AND FINANCIAL CAPACITIES, VISITING ANOTHER VILLAGE'S ENVIRONMENTAL PROGRAM AND UPDATING ITS EPA TRIBAL ENVIRONMENTAL PLAN.  THE RECIPIENT WILL ALSO MANAGE SOLID WASTE PROGRAM, RECYCLING, BACKHAUL OF HAZARDOUS WASTE AND UPDATING THE INTEGRATED SOLID WASTE MANAGEMENT PLAN. THE RECIPIENT WILL CONDUCT WATER QUALITY TESTING WITH THE YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL AND PREVENT DUMPING IN THE RIVER AND IDENTIFYING OLD MINING SITES THAT MAY BE IMPACTING WATER QUALITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J82901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HUGHES VILLAGE",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:HUGHES VILLAGE WILL USE FY25 GAP FUNDS TO MAINTAIN THE ENVIRONMENTAL PROGRAM AND MEET ALL GRANT REQUIREMENTS, REMOVE SOLID WASTE AND RECYCLING AND KEEP THE COMMUNITY CLEAN, HELP THE COMMUNITY WITH INDOOR AND OUTDOOR AIR QUALITY, AND REQUEST WATER QUALITY, RIVERBANK EROSION AND PERMAFROST TESTING BY THE YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL. ACTIVITIES:HUGHES VILLAGE WILL USE MAINTAIN THE ENVIRONMENTAL PROGRAM BY HIRING STAFF, COMPLETING QUARTERLY REPORTING, PURCHASING SUPPLIES, EDUCATING THE COMMUNITY ON ENVIRONMENTAL ISSUES, UPDATING THE SMALL COMMUNITY EMERGENCY RESPONSE PLAN (SCERP), HELPING TO DEVELOP A LOCAL EMERGENCY RESPONSE TEAM, AND ATTENDING THE ANNUAL GAP WORKSHOP; KEEPING THE COMMUNITY CLEAN THROUGH BACKHAUL AND RECYCLING, MAINTAINING THE LANDFILL, ATTENDING TRAININGS, WORKING WITH THE CITY OF HUGHES, EDUCATING RESIDENTS, CONTINUING TO CLEAN UP THE HUGHES TANK FARM, AND STARTING A USED OIL COLLECTION PROGRAM; HELP THE COMMUNITY WITH INDOOR AND OUTDOOR AIR QUALITY THROUGH EDUCATION AND WATERING DOWN THE ROADS TO REDUCE ROAD DUST; AND REQUESTING WATER QUALITY, RIVERBANK EROSION AND PERMAFROST TESTING BY THE YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES WILL INCLUDE QUARTERLY PROGRESS REPORTS, QUARTERLY NEWSLETTERS, AN APPLICATION TO AMERICORPS OR VISTA, TRIP REPORTS, A BACKHAUL INVENTORY, BEFORE AN AFTER PICTURES, AN UPDATED MAP OF THE LANDFILL, TRAINING CERTIFICATES, AND FLYERS. EXPECTED OUTCOMES INCLUDE AN ORGANIZED AND STRUCTURED RECORDS SYSTEM, IMPROVED COMMUNITY PARTICIPATION IN AND UNDERSTANDING OF ENVIRONMENTAL ISSUES, IMPROVED SAFETY FOR THE COMMUNITY, MORE KNOWLEDGEABLE STAFF, AND A CLEANER, HEALTHIER COMMUNITY. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A13AV00361",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUGHES VILLAGE",
+      "obligation": 125336.0,
+      "start_date": "2013-04-24",
+      "end_date": "2024-12-31",
+      "description": "DESIGN ACTIVITIES FOR PROJECT SUNNY LLANE, ROUTE 0003 AND SECTION 10 OF HUGHES VILLAGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00972",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUGHES VILLAGE",
+      "obligation": 40112.03,
+      "start_date": "2017-09-13",
+      "end_date": "2024-12-31",
+      "description": "A17AV00972",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00955",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUGHES VILLAGE",
+      "obligation": 166461.81,
+      "start_date": "2023-07-27",
+      "end_date": "2028-09-30",
+      "description": "HUGHES FY 2023 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00924",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUGHES VILLAGE",
+      "obligation": 161978.73,
+      "start_date": "2023-07-18",
+      "end_date": "2028-12-31",
+      "description": "HUGHES ADD FY23 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000037",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "HUGHES VILLAGE",
+      "obligation": 913310.0,
+      "start_date": "2016-08-01",
+      "end_date": "2023-12-31",
+      "description": "SUSTAINABLE SOLAR ENERGY FOR HUGHES VILLAGE (HUDOTL EEKKAAKK E TRIBE)",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 2060198.57,
+  "award_count": 7,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 493888.56999999995
+    },
+    "81.087": {
+      "count": 1,
+      "total": 913310.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 328440.54000000004,
+    "2024": 0.0,
+    "2025": 268000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

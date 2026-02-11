@@ -1,9 +1,185 @@
 {
   "tribe_id": "epa_100000281",
   "tribe_name": "Tolowa Dee-ni' Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10181",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 149902.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-12-31",
+      "description": "SHAA-XU?-XAT (ROWDY CREEK) FISHERIES RESTORATION PLANNING PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00136",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 149747.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00039",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 148658.96,
+      "start_date": "2018-10-01",
+      "end_date": "2022-09-30",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00088",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 0.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42230000V600CA0022",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 393760.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0022",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 391543.27,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ32440133",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 85000.0,
+      "start_date": "2024-07-16",
+      "end_date": "2028-09-30",
+      "description": "TOLOWA INTERPRETIVE CENTER ON SCENIC BYWAY HIGHWAY 101",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3022025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 404988.06,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TOLOWA DEE-NI NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO TOLOWA DEE-NI NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y176CA3022025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 138737.92,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TOLOWA DEE-NI NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO TOLOWA DEE-NI NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0634820",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 19320754.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0634820",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 593989.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000111",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 479606.72,
+      "start_date": "2018-10-01",
+      "end_date": "2021-09-30",
+      "description": "RENEWABLE SOLAR ENERGY FOR ROWDY CREEK FISH HATCHERY",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "23DG11052012174",
+      "cfda": "10.720",
+      "program_id": "usda_wildfire",
+      "recipient_name_raw": "TOLOWA DEE-NI NATION",
+      "obligation": 250000.0,
+      "start_date": "2023-07-27",
+      "end_date": "2025-09-30",
+      "description": "TOLOWA DEE NI NATION RESERVATION COMMUNITY WILDFIRE PROTECTION PLAN BIPARTISAN INFRASTRUCTURE LAW",
+      "awarding_agency": "Department of Agriculture"
+    }
+  ],
+  "total_obligation": 22506687.24,
+  "award_count": 13,
+  "cfda_summary": {
+    "15.156": {
+      "count": 4,
+      "total": 448307.95999999996
+    },
+    "20.205": {
+      "count": 5,
+      "total": 1414029.56
+    },
+    "14.867": {
+      "count": 2,
+      "total": 19914743.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 479606.72
+    },
+    "10.720": {
+      "count": 1,
+      "total": 250000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 250000.0,
+    "2024": 85000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

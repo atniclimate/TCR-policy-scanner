@@ -1,9 +1,259 @@
 {
   "tribe_id": "epa_100000227",
   "tribe_name": "Pueblo of Zia, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00194",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 0.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01F61401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 450000.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AWARD PROVIDES ASSISTANCE TO INDIAN TRIBAL GOVERNMENTS AND INTERTRIBAL CONSORTIA TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL REGULATORY PROGRAMS ON INDIAN LANDS, PROVIDE TECHNICAL ASSISTANCE FROM EPA TO INDIAN TRIBAL GOVERNMENTS, AND INTERTRIBAL CONSORTIA IN THE DEVELOPMENT OF MULTIMEDIA PROGRAMS TO ADDRESS ENVIRONMENTAL ISSUES ON INDIAN LANDS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F30301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 165000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF, DEVELOP EMERGENCY RESPONSE CAPABILITIES, AIR QUALITY, SOLID WASTE, RECYCLING, TRAVEL AND TRAINING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AIR QUALITY MONITORING QUALITY ASSURANCE PROJECT PLAN AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE PUEBLO OF ZIA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600NM0101",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 552357.15,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NM0101",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 45418.83,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "A09AV00234",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 0.0,
+      "start_date": "2009-09-24",
+      "end_date": "2022-12-31",
+      "description": "ZIA CHIP SEAL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00233",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 0.0,
+      "start_date": "2009-09-24",
+      "end_date": "2022-12-31",
+      "description": "ZIA CHIP SEAL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00232",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 0.0,
+      "start_date": "2009-09-24",
+      "end_date": "2022-12-31",
+      "description": "ZIA CHIP SEAL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00230",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 0.0,
+      "start_date": "2009-09-22",
+      "end_date": "2022-12-31",
+      "description": "PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00231",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": -125690.0,
+      "start_date": "2009-09-24",
+      "end_date": "2022-12-31",
+      "description": "BIA CHIP SEAL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00228",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": -537951.0,
+      "start_date": "2009-09-25",
+      "end_date": "2022-12-31",
+      "description": "CABEZON ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42330000V600NM0101",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 587373.91,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NM3101024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 415029.33,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ZIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ZIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NM0101",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 178137.99,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NM3101024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 160812.16,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ZIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ZIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT3506700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 4950605.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEEE0010171",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 250000.0,
+      "start_date": "2023-09-01",
+      "end_date": "2024-08-31",
+      "description": "THE PUEBLO OF ZIA WANT TO CONDUCT A NEW FEASIBILITY ANALYSIS ON SOLAR PV OPPORTUNITIES THAT COULD BENEFIT THE TRIBE BY PROVIDING LOWER UTILITY COSTS AND ECONOMIC BENEFITS. PUEBLO OF ZIA HAVE PARTNERED WITH THE INTERNATIONAL CENTER FOR APPROPRIATE AND SUSTAINABLE TECHNOLOGY (ICAST), A NATIONAL 501C3 NONPROFIT ORGANIZATION, TO HELP CONDUCT FEASIBILITY STUDY.",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "R21AP10004",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 0.0,
+      "start_date": "2022-03-09",
+      "end_date": "2024-03-31",
+      "description": "THE PUEBLO OF ZIA, LOCATED IN NORTHERN NEW MEXICO, WILL INSTALL 40 RADIO-READ METERS AT CURRENTLY  UNMETERED HOMES. THE PROJECT IS THE SECOND PHASE OF A LARGER METERING EFFORT AND WILL ALLOW THE  UTILITY TO ACCESS ACCURATE WATER USAGE DATA AND BEGIN AN APPROPRIATE FEE SCALE FOR SYSTEM WATER  USERS. THE PROJECT WILL ALSO ALLOW THE UTILITY TO BETTER IDENTIFY THE LOCATION AND EXTENT OF WATER  SYSTEM LOSSES. THE PROJECT IS PRIORITIZED BY A DRAFT UTILITY ORDINANCE EXPECTED TO BE ADOPTED BY  THE TRIBAL COUNCIL IN 2020.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01F35701",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "PUEBLO OF ZIA",
+      "obligation": 247189.0,
+      "start_date": "2017-10-01",
+      "end_date": "2022-09-30",
+      "description": "THE ZIA PUEBLO WILL CONDUCT AN EMISSIONS INVENTORY TO IDENTIFY SOURCES OF POLLUTION INTERNAL AND EXTERNAL TO TRIBAL LAND.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 7338282.37,
+  "award_count": 19,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 0.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 615000.0
+    },
+    "20.205": {
+      "count": 12,
+      "total": 1275488.3699999999
+    },
+    "14.867": {
+      "count": 1,
+      "total": 4950605.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 250000.0
+    },
+    "15.507": {
+      "count": 1,
+      "total": 0.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 247189.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 250000.0,
+    "2024": 165000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

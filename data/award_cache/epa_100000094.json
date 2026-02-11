@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000094",
   "tribe_name": "Grand Traverse Band of Ottawa and Chippewa Indians, Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AV00790",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GRAND TRAVERSE BAND OF OTTAWA AND CHIPPEWA INDIANS",
+      "obligation": 23598983.0,
+      "start_date": "2020-05-15",
+      "end_date": "2026-09-30",
+      "description": "TTP ROAD CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00119",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GRAND TRAVERSE BAND OF OTTAWA AND CHIPPEWA INDIANS",
+      "obligation": 6954892.21,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00142",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GRAND TRAVERSE BAND OF OTTAWA AND CHIPPEWA INDIANS",
+      "obligation": 5616269.03,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "CR#1 DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE); WELFARE ASSISTANCE \n(APPX. 14.7% OF 2020 EST. NEED) AND LAW ENFORCEMENT-638 TRIBAL (PROGRAM BASE)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00125",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GRAND TRAVERSE BAND OF OTTAWA AND CHIPPEWA INDIANS",
+      "obligation": 5389344.09,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE AND SELF GOVERNANCE COMPACTS FOR TPA BASE AT 80.27% OF THE CR ANNUAL RATE OF OPERATIONS OF THE TRIBAL PRIORITY ALLOCATION (TPA) PROGRAMS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT2625480",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "GRAND TRAVERSE BAND OF OTTAWA AND CHIPPEWA INDIANS",
+      "obligation": 25428881.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2625480",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "GRAND TRAVERSE BAND OF OTTAWA AND CHIPPEWA INDIANS",
+      "obligation": 864993.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 67853362.33,
+  "award_count": 6,
+  "cfda_summary": {
+    "20.205": {
+      "count": 4,
+      "total": 41559488.33
+    },
+    "14.867": {
+      "count": 2,
+      "total": 26293874.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 6954892.21,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

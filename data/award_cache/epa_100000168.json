@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000168",
   "tribe_name": "Muckleshoot Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "DEIE0000157",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "MUCKLESHOOT INDIAN TRIBE",
+      "obligation": 250197.0,
+      "start_date": "2022-09-01",
+      "end_date": "2025-08-31",
+      "description": "MUCKLESHOOT INDIAN TRIBE - ENERGY DEPLOYMENT(MIT-ED) PROJECT.",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 250197.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "81.087": {
+      "count": 1,
+      "total": 250197.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 250197.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

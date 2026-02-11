@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000234",
   "tribe_name": "Quinault Indian Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00210",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 110833.0,
+      "start_date": "2018-09-01",
+      "end_date": "2020-09-30",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00013",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 100000.0,
+      "start_date": "2018-10-01",
+      "end_date": "2021-10-31",
+      "description": "ADAPTATION PLANNING AND DATA DEVELOPMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00172",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 14682.0,
+      "start_date": "2018-08-28",
+      "end_date": "2019-09-30",
+      "description": "QUINAULTINDIANNATI_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00052",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 14652.0,
+      "start_date": "2018-10-01",
+      "end_date": "2020-10-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2022-PD-0004",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 1400000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2020-BR-137-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 95737.5,
+      "start_date": "2022-03-08",
+      "end_date": "2025-03-07",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2021-PC-0006",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 19656.05,
+      "start_date": "2021-05-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "DEIE0000148",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "QUINAULT INDIAN NATION",
+      "obligation": 201043.0,
+      "start_date": "2021-10-01",
+      "end_date": "2026-09-30",
+      "description": "TAHOLAH RELOCATION INTEGRATED ENERGY SYSTEM",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 1956603.55,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 4,
+      "total": 240167.0
+    },
+    "97.047": {
+      "count": 3,
+      "total": 1515393.55
+    },
+    "81.087": {
+      "count": 1,
+      "total": 201043.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 296780.5,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000378",
   "tribe_name": "Chignik Lake Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00159",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHIGNIK LAKE VILLAGE",
+      "obligation": 15000.0,
+      "start_date": "2018-08-28",
+      "end_date": "2019-09-30",
+      "description": "CHIGNIKLAKETRIBALC_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J57601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHIGNIK LAKE VILLAGE",
+      "obligation": 369424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "TRIBE WILL BUILD CAPACITY THROUGH TRAINING AND COMMUNITY EDUCATION; FOCUS ON SOLID WASTE MANAGEMENT IMPROVEMENTS; DEVELOP A WOOD DEBRIS WASTE MANAGEMENT PROJECT CAPACITY, INCLUDING EDUCATION ON WILDFIRE IMPACTS AND REUSE FOR PELLET STOVES; AND DEVELOP CHIGNIK LAKE COMMUNITY ACTION PLAN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00904",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK LAKE VILLAGE",
+      "obligation": 245221.4,
+      "start_date": "2017-09-07",
+      "end_date": "2022-12-31",
+      "description": "CHIGNIK LAKE MAINTENANCE - FY2017",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00795",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK LAKE VILLAGE",
+      "obligation": 141324.32,
+      "start_date": "2018-07-15",
+      "end_date": "2022-12-31",
+      "description": "A18AV00795",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00425",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK LAKE VILLAGE",
+      "obligation": 108946.0,
+      "start_date": "2013-06-07",
+      "end_date": "2023-07-17",
+      "description": "CHIGNIK LAKE  ROAD MAINTENANCE FY12/FY13",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00347",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK LAKE VILLAGE",
+      "obligation": 184536.52,
+      "start_date": "2023-12-08",
+      "end_date": "2029-12-31",
+      "description": "CHIGNIK LAKE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00348",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHIGNIK LAKE VILLAGE",
+      "obligation": 34648.81,
+      "start_date": "2023-12-08",
+      "end_date": "2029-12-31",
+      "description": "CHIGNIK LAKE",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1099101.05,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 15000.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 369424.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 714677.05
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 219185.33,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

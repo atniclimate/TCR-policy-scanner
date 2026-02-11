@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000491",
   "tribe_name": "Nunakauyarmiut Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00986",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NUNAKAUYARMIUT TRIBE",
+      "obligation": 126898.0,
+      "start_date": "2024-09-11",
+      "end_date": "2027-12-31",
+      "description": "NUNAKAUYARMIUT TCR COORDINATOR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J60601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NUNAKAUYARMIUT TRIBE",
+      "obligation": 369424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "NUNAKAUYARMIUT TRIBE WILL BUILD TRIBAL ENVIRONMENTAL CAPACITY BY CONDUCTING ENVIRONMENTAL OUTREACH IN THE COMMUNITY, COLLABORATING WITH THE CITY TO ADDRESS SOLID WASTE ISSUES WITH THE LANDFILL, CONDUCTING RECYCLING, AND UPDATING THE JOINT EPA-TRIBAL ENVIRONMENTAL PLAN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J36201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NUNAKAUYARMIUT TRIBE",
+      "obligation": 385000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:NUNAKAUYARMIUT TRIBE WILL PRESENT TO THE COMMUNITY A COMPREHENSIVE ENVIRONMENTAL PLAN, CONSISTING OF THE 2024-27 EPA TRIBAL ENVIRONMENTAL PLAN. DISCUSS TRIBAL COUNCIL APPROVALS AND RECOMMENDATIONS. FOLLOW THROUGH ON LANDFILL PROJECTS AND DEMONSTRATIONS OF SUCCESS AND LESSONS LEARNED. THE TRIBAL COMMUNITY AND RESIDENTS OF THE NATIVE VILLAGE OF NUNAPITCHUK WILL HAVE A CLEANER VILLAGE, HEALTHIER HOMES, AND CHANGE IN BEHAVIORS.ACTIVITIES:TRIBAL STAFF WILL ATTEND TRAINING AND FINALIZE A SOLID WASTE ACTION PLAN, BUILD EDUCATION AND RECOMMENDATIONS FOR RECYCLING, LANDFILL SEPARATION, AND REUSE OF MATERIALS. THE TRIBAL COMMUNITY HAS EXPERIENCED FLOODING AND SOME MOLD ISSUES DUE IN PART TO CLIMATE CHANGE, IDENTIFYING PROBLEMS, PRIORITIZING THEM, AND RECOMMENDING REMEDIATION METHODS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE TRIBE WILL DEVELOP THE EPA TRIBAL ENVIRONMENTAL PLAN AROUND DECREASING LANDFILL USE MASS BY DEVELOPING A RECYCLING CENTER. COMMUNICATING WITH TRIBAL LEADERSHIP AND MEMBERS, AND MEET CHALLENGES CREATING BEHAVIOR CHANGES AND TRIBAL ENVIRONMENTAL PROGRESS DURING THE NEXT FOUR YEAR PROGRAM AS IT DEVELOPS ENVIRONMENTAL CAPACITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV01175",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NUNAKAUYARMIUT TRIBE",
+      "obligation": 467868.84,
+      "start_date": "2019-09-17",
+      "end_date": "2026-12-31",
+      "description": "NUNAKAUYARMIUT A19AV01175 FY 2019 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00403",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NUNAKAUYARMIUT TRIBE",
+      "obligation": 322874.29,
+      "start_date": "2017-02-28",
+      "end_date": "2026-12-31",
+      "description": "NUNAKAUYARMIUT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00479",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NUNAKAUYARMIUT TRIBE",
+      "obligation": 137148.42,
+      "start_date": "2024-02-07",
+      "end_date": "2028-12-31",
+      "description": "NUNAKAUYARMIUT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01075",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NUNAKAUYARMIUT TRIBE",
+      "obligation": 34842.89,
+      "start_date": "2025-08-01",
+      "end_date": "2029-12-31",
+      "description": "NUNAKAUYARMIUT FY 2025 6V1 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1844056.44,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 126898.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 754424.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 962734.4400000001
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 649046.42,
+    "2025": 34842.89,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

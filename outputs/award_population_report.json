@@ -1,0 +1,187 @@
+{
+  "timestamp": "2026-02-11T15:31:58.582672+00:00",
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "queries": {
+    "cfda_count": 14,
+    "fy_count": 5,
+    "total_queries": 70
+  },
+  "fetched": {
+    "total_awards": 8973,
+    "after_dedup": 4293,
+    "duplicates_removed": 4680
+  },
+  "matching": {
+    "matched_awards": 2953,
+    "unmatched_awards": 1276,
+    "consortium_awards": 64,
+    "match_rate_pct": 68.8
+  },
+  "coverage": {
+    "total_tribes": 592,
+    "tribes_with_awards": 418,
+    "tribes_without_awards": 174,
+    "coverage_pct": 70.6,
+    "target_met": false
+  },
+  "top_unmatched": [
+    {
+      "name": "NAVAJO HOUSING AUTHORITY",
+      "total_obligation": 1841679154.0
+    },
+    {
+      "name": "COOK INLET HOUSING AUTHORITY",
+      "total_obligation": 281750386.0
+    },
+    {
+      "name": "LUMBEE LAND DEVELOPMENT, INC",
+      "total_obligation": 258945867.35
+    },
+    {
+      "name": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "total_obligation": 237354135.51
+    },
+    {
+      "name": "HOUSING AUTHORITY OF CHOCTAW NATIONS",
+      "total_obligation": 206067172.0
+    },
+    {
+      "name": "OGLALA LAKOTA HOUSING AUTHORITY",
+      "total_obligation": 188285852.0
+    },
+    {
+      "name": "TOHONO O'ODHAM KI KI ASSOCIATION",
+      "total_obligation": 157715081.0
+    },
+    {
+      "name": "INTERIOR REGIONAL HOUSING AUTHORITY",
+      "total_obligation": 154190848.71
+    },
+    {
+      "name": "WHITE MOUNTAIN APACHE HOUSING AUTHORITY",
+      "total_obligation": 152163822.0
+    },
+    {
+      "name": "HOPI TRIBAL HOUSING AUTHORITY",
+      "total_obligation": 135819692.0
+    },
+    {
+      "name": "TURTLE MOUNTAIN HOUSING AUTHORITY",
+      "total_obligation": 127035388.0
+    },
+    {
+      "name": "TLINGIT HAIDA REGIONAL HOUSING AUTHORITY",
+      "total_obligation": 126440348.0
+    },
+    {
+      "name": "SICANGU WICOTI AWAYANKAPE CORPORATION",
+      "total_obligation": 123412420.0
+    },
+    {
+      "name": "BLACKFEET HOUSING PROGRAM",
+      "total_obligation": 121631919.0
+    },
+    {
+      "name": "SAN CARLOS HOUSING AUTHORITY",
+      "total_obligation": 121425249.0
+    },
+    {
+      "name": "YAKAMA NATION HOUSING AUTHORITY",
+      "total_obligation": 120170062.0
+    },
+    {
+      "name": "BERING STRAITS REGIONAL HOUSING AUTHORITY",
+      "total_obligation": 109462034.0
+    },
+    {
+      "name": "CHEYENNE RIVER HOUSING AUTHORITY",
+      "total_obligation": 105945305.0
+    },
+    {
+      "name": "UMATILLA INDIAN RESERVATION",
+      "total_obligation": 97771046.38
+    },
+    {
+      "name": "STANDING ROCK HOUSING LOCAL DEVELOPMENT",
+      "total_obligation": 91132335.0
+    }
+  ],
+  "consortium_summary": [
+    {
+      "name": "WIND RIVER INTER-TRIBAL COUNCIL",
+      "total_obligation": 37851275.27
+    },
+    {
+      "name": "ASSOCIATION OF VILLAGE COUNCIL PRESIDENTS",
+      "total_obligation": 25968533.330000002
+    },
+    {
+      "name": "ALASKA NATIVE TRIBAL HEALTH CONSORTIUM",
+      "total_obligation": 7323412.42
+    },
+    {
+      "name": "YOMBA TRIBAL COUNCIL INC",
+      "total_obligation": 5307901.0
+    },
+    {
+      "name": "REGION 10 TRIBAL OPERATIONS COMMITTEE CONSORTIUM",
+      "total_obligation": 3952341.0
+    },
+    {
+      "name": "AHTNA INTERTRIBAL RESOURCE COMMISSION",
+      "total_obligation": 1489740.0
+    },
+    {
+      "name": "NAUGATUCK VALLEY COUNCIL OF GOVERNMENTS",
+      "total_obligation": 1200000.0
+    },
+    {
+      "name": "THE ASSOCIATION OF ALASKA HOUSING AUTHORITIES",
+      "total_obligation": 1000000.0
+    },
+    {
+      "name": "COLUMBIA RIVER INTER-TRIBAL FISH COMMISSION",
+      "total_obligation": 986528.28
+    },
+    {
+      "name": "AMERICAN INDIAN HIGHER EDUCATION CONSORTIUM",
+      "total_obligation": 906034.0
+    },
+    {
+      "name": "NELSON ISLAND CONSORTIUM",
+      "total_obligation": 895459.0
+    },
+    {
+      "name": "YUKON RIVER INTER-TRIBAL WATERSHED COUNC",
+      "total_obligation": 778000.0
+    },
+    {
+      "name": "COUNCIL OF ATHABASCAN TRIBAL GOVERNMENTS, INC.",
+      "total_obligation": 643000.0
+    },
+    {
+      "name": "INTER-TRIBAL COUNCIL OF ARIZONA INC",
+      "total_obligation": 525783.0
+    },
+    {
+      "name": "INTER-TRIBAL COUNCIL OF NEVADA,",
+      "total_obligation": 510847.0
+    },
+    {
+      "name": "NORTHWEST PORTLAND AREA INDIAN HEALTH BOARD",
+      "total_obligation": 507530.0
+    },
+    {
+      "name": "UPPER COLUMBIA UNITED TRIBES",
+      "total_obligation": 392916.0
+    },
+    {
+      "name": "NORTON BAY INTER-TRIBAL WATERSHED COUNCIL",
+      "total_obligation": 164980.0
+    }
+  ],
+  "dry_run": false
+}

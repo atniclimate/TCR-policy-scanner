@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000153",
   "tribe_name": "Match-e-be-nash-she-wish Band of Pottawatomi Indians of Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "DEIE0000180",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "MATCH-E-BE-NASH-SHE-WISH BAND OF POTTAWATOMI INDIAN",
+      "obligation": 270149.0,
+      "start_date": "2023-10-01",
+      "end_date": "2025-12-31",
+      "description": "JIJAK GISES PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 270149.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "81.087": {
+      "count": 1,
+      "total": 270149.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 270149.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

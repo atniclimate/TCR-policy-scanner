@@ -1,9 +1,155 @@
 {
   "tribe_id": "epa_100000370",
   "tribe_name": "Native Village of Chenega (aka Chanega)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00972",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 100140.0,
+      "start_date": "2024-09-09",
+      "end_date": "2027-12-31",
+      "description": "CHENEGAFY2023CATEGORY1FLOATINGWAVEBREAKWATER",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J17401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 313000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE NATIVE VILLAGE OF CHENEGA IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3) BUILDING COMMUNICATIONS CAPACITY; 4) BUILDING SOLID AND HAZARDOUS WASTE MANAGEMENT CAPACITY; AND 5) BUILDING TECHNICAL CAPACITY.ACTIVITIES:\nWORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES AND CONDUCTING COMMUNITY EDUCATION ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF AIR AND WATER QUALITY; DEVELOPING AN ENVIRONMENTAL INVENTORY; DEVELOPING AN EMERGENCY RESPONSE PROGRAM; AND COLLECTING BASELINE OCEAN WATER QUALITY DATA.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:\nTHE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE NATIVE VILLAGE OF CHENEGA, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; DECREASING AMOUNTS OF RECYCLABLES AND HAZARDOUS WASTES ENTERING LANDFILL; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.   ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; FINANCIAL REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; AN INTEGRATED WASTE MANAGEMENT REPORT; AND ROAD DUST MANAGEMENT RECOMMENDATIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A20AV00862",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 1417520.43,
+      "start_date": "2019-10-01",
+      "end_date": "2028-12-31",
+      "description": "CHENEGA FY2020 6K1 CONSTRUCTION FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00466",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 595682.86,
+      "start_date": "2017-10-01",
+      "end_date": "2028-12-31",
+      "description": "CHENEGA FY17 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00863",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 80958.84,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "CHENEGA FY 2020 6K1 DESIGN FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00104",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 65401.0,
+      "start_date": "2009-11-03",
+      "end_date": "2022-03-14",
+      "description": "CONSTRUCTION ACTIVITIES FOR NORTH HOUSING  SUBDIVISION ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00680",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 54108.0,
+      "start_date": "2013-04-23",
+      "end_date": "2025-12-31",
+      "description": "NATIVE VILLAGE OF CHENEGA TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00463",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 38534.23,
+      "start_date": "2017-10-01",
+      "end_date": "2026-12-31",
+      "description": "CHENEGA FY17 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00107",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 0.0,
+      "start_date": "2011-10-11",
+      "end_date": "2022-03-09",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01226",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 352108.67,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "CHENEGA FY23 MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01227",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHENEGA",
+      "obligation": 25816.73,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "CHENEGA FY23 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 3043270.76,
+  "award_count": 11,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 100140.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 313000.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 2630130.76
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 690925.3999999999,
+    "2024": 100140.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

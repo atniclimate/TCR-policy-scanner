@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000453",
   "tribe_name": "Organized Village of Kwethluk",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J59601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KWETHLUK",
+      "obligation": 425685.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE ORGANIZED VILLAGE OF KWETHLUK WILL USE THE FY20 GAP FUNDING TO COMPLETE THE FIRST STAGE OF LANDFILL CLOSURE; CONDUCT COMMUNITY OUTREACH ON BETTER SOLID WASTE PRACTICES; REDUCE ROAD DUST; AND BUILD ITS ADMINISTRATIVE, FINANCIAL, AND TECHNICAL CAPACITY TO OPERATE A GAP GRANT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J29501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KWETHLUK",
+      "obligation": 417000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE ORGANIZED VILLAGE OF KWETHLUK WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE IMPLEMENTING SOLID WASTE MANAGEMENT STRATEGIES AND ENHANCING COMMUNITY ENGAGEMENT THROUGH EDUCATION AND OUTREACH.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM ORGANIZED VILLAGE OF KWETHLUK WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF LANDFILL IMPROVEMENTS, ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00966",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KWETHLUK",
+      "obligation": 431666.42,
+      "start_date": "2017-10-01",
+      "end_date": "2025-12-31",
+      "description": "KWETHLUK FY17 & FY18 6K1 MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KWETHLUK",
+      "obligation": 238794.0,
+      "start_date": "2013-07-29",
+      "end_date": "2025-12-31",
+      "description": "CONSTRUCTION OF THE KWETHLUK BOARD WALKS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00928",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KWETHLUK",
+      "obligation": 21254.53,
+      "start_date": "2015-10-01",
+      "end_date": "2025-12-31",
+      "description": "KWETHLUK PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "21AH0208940",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KWETHLUK",
+      "obligation": 0.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 1534399.95,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 842685.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 691714.95
+    },
+    "14.867": {
+      "count": 1,
+      "total": 0.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 417000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

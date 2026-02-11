@@ -1,9 +1,141 @@
 {
   "tribe_id": "epa_100000169",
   "tribe_name": "The Muscogee (Creek) Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMT-2020-PC-0005",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 339739.13,
+      "start_date": "2020-07-27",
+      "end_date": "2023-06-26",
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMT-2021-BR-032-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 44444.61,
+      "start_date": "2022-12-21",
+      "end_date": "2025-12-20",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMT-2021-BR-032-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 13683.71,
+      "start_date": "2022-12-21",
+      "end_date": "2025-12-20",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMT-2021-BR-032",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 1148538.35,
+      "start_date": "2022-12-21",
+      "end_date": "2025-12-20",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02F94401",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 639880.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-03-31",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO THIS PROJECT FOR THE REPLACEMENT OF 4,040 LINEAR FEET OF 8-INCH CAST IRON WATER LINE FROM THE CITY OF BEGGS' DRINKING WATER TREATMENT PLANT (WTP) AND SERVES THE CITY. THE CITY REPLACED A SUBSTANTIAL PORTION OF THE LINE ON A PREVIOUS GRANT FUNDED BY THE OKLAHOMA DEPARTMENT OF COMMERCE THROUGH A CDBG-REAP GRANT IN 2022. THE NEW LINE PORTION WOULD BE AN 8-INCH PVC AND WOULD INCLUDE AIR RELEASE VALVES. THIS PROJECT IS SHOVEL-READY, AS IT HAS BEEN COMPLETELY ENGINEERED AND A PERMIT TO CONSTRUCT WAS ISSUED BY THE OKLAHOMA DEPARTMENT OF COMMERCE IN APRIL 2025.ACTIVITIES:THE ACTIVITIES INCLUDE REPLACEMENT OF 4,040 LINEAR FEET OF 8-INCH CAST IRON WATER LINE FROM THE CITY OF BEGGS'.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLE INCLUDES REPLACEMENT OF 4,040 LINEAR FEET OF 8-INCH CAST IRON WATER LINE FROM THE CITY OF BEGGS'.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT4007240",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 295083786.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4007240",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 11054813.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000195",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 2241892.0,
+      "start_date": "2025-07-01",
+      "end_date": "2028-06-30",
+      "description": "THE MUSCOGEE (CREEK) NATION (MCN OR “NATION”) WILL INSTALL APPROXIMATELY 1-MEGAWATT (MW) OF GROUND-MOUNTED SOLAR PHOTOVOLTAICS (PV) AT THE OKEMAH COMMUNITY HOSPITAL. THE ESTIMATED OUTPUT OF THE COMPLETED SYSTEM IS NEARLY 1.5 MILLION-KILOWATT-HOURS PER YEAR, OFFSETTING APPROXIMATELY 29% OF THE FACILITY’S CURRENT USAGE. ROUGHLY 92% OF THE POWER PRODUCED IS EXPECTED TO BE CONSUMED ONSITE, MAXIMIZING THE BENEFIT AT THE LOCATION RATHER THAN EXPORTING THE POWER TO THE GRID.\n\nTHE OKEMAH COMMUNITY HOSPITAL IS A 25 BED, 122,000 SQUARE FOOT COMMUNITY-FOCUSED HOSPITAL LOCATED IN OKEMAH, OKFUSKEE COUNTY, OKLAHOMA OWNED AND OPERATED BY THE MCN DEPARTMENT OF HEALTH. THE CAMPUS CONSISTS OF THE MAIN HOSPITAL, WHICH PROVIDES EMERGENCY MEDICAL CARE INCLUDING COMPUTED TOMOGRAPHY SCANS, MAGNETIC RESONANCE IMAGING, X-RAYS, LAB WORK AND OTHER IN-PATIENT SERVICES. THE ADJACENT MCN OKEMAH CLINIC PROVIDES TRADITIONAL OUTPATIENT CARE INCLUDING PRIMARY CARE, DENTAL, OPTOMETRY, BEHAVIORAL HEALTH, PUBLIC HEALTH NURSING AND PHYSICAL THERAPY. THIS FACILITY CURRENTLY USES OVER FIVE MILLION KILOWATT-HOURS PER YEAR WITH A PEAK DEMAND OF OVER 800-KILOWATTS OCCURRING DURING THE SUMMER MONTHS. \n\nTHE MCN AND THE MCN TRIBAL UTILITY AUTHORITY (TUA) BOTH SEEK TO EXERCISE MORE ENERGY SOVEREIGNTY AND INDEPENDENCE TO IMPROVE THE LIFE OF CITIZENS ON THE MCN RESERVATION. THIS WILL BE PARTIALLY ACCOMPLISHED THROUGH THE INCREASED USE OF RENEWABLES TO BOTH REDUCE PURCHASED POWER COSTS AND BE BETTER STEWARDS OF THE ENVIRONMENT. BY HAVING THIS SOLAR PV SYSTEM IN PLACE, THE OKEMAH COMMUNITY HOSPITAL WILL SEE REAL SAVINGS THAT HELP REDUCE THE OPERATING BURDEN OF PROVIDING CRITICAL HEALTH SERVICES IN ONE OF THE MOST IMPOVERISHED COUNTIES IN OKLAHOMA. ADDITIONALLY, THIS PROJECT WILL ALSO PROVIDE A REPLICABLE APPROACH AND SYSTEM THAT CAN BE SCALED FOR IMPLEMENTATION AT OTHER MCN FACILITIES.",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "01F98901",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "MUSCOGEE CREEK NATION",
+      "obligation": 163982.0,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AGREEMENT WILL PROVIDE ASSISTANCE TO THE MUSCOGEE (CREEK) NATION IN ITS EFFORTS TO ADDRESS AIR POLLUTION CONCERNS ON THE TRIBE'S RESERVATION AND SURROUNDING TRIBAL LANDS IN THE STATE OF OKLAHOMA. THIS COOPERATIVE AGREEMENT WILL CONDUCT AN EMISSIONS INVENTORY, CONDUCT A BASIC AIR QUALITY ASSESSMENT TO DETERMINE AIR MONITORING NEEDS, AND PROVIDE EDUCATION AND OUTREACH IN THE COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 310730758.8,
+  "award_count": 9,
+  "cfda_summary": {
+    "97.047": {
+      "count": 4,
+      "total": 1546405.8
+    },
+    "66.468": {
+      "count": 1,
+      "total": 639880.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 306138599.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 2241892.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 163982.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 163982.0,
+    "2023": 1206666.6700000002,
+    "2024": 0.0,
+    "2025": 2241892.0,
+    "2026": 639880.0
+  },
+  "trend": "increasing"
 }

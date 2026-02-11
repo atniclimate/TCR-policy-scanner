@@ -1,9 +1,170 @@
 {
   "tribe_id": "epa_100000373",
   "tribe_name": "Village of Chefornak",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00217",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 169590.09,
+      "start_date": "2019-08-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00178",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 147500.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01073",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 299708.0,
+      "start_date": "2023-08-23",
+      "end_date": "2027-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01020",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 298517.0,
+      "start_date": "2023-08-09",
+      "end_date": "2026-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J00301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO AN ELIGIBLE RECIPIENT TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  ALL ADMINISTRATIVE AND PROGRAMMATIC TERMS AND CONDITIONS ARE UPDATED. THE UPDATED CONDITIONS DO NOT APPLY RETROACTIVELY TO FUNDS ALREADY EXPENDED; THEY APPLY ONLY TO UNEXPENDED FUNDS AND THE NEW MONIES ADDED TO THE AGREEMENT.  SPECIFICALLY, THE VILLAGE OF CHEFORNAK WILL USE THESE FUNDS FOR BUILDING TRIBAL CAPACITY TO DEVELOP ENVIRONMENTAL PROGRAMS. THIS WORKPLAN WILL INCREASE TRIBAL ABILITY TO MANAGE FEDERAL ENVIRONMENTAL FUNDS; HELP BUILD SOLID WASTE AND SOURCE SEPARATION ACTIVITIES CAPACITY; INCREASE TRIBAL ENGAGEMENT IN THE STATE AND FEDERAL REGULATORY PROCESSES; DEVELOP COMMUNITY OUTREACHES ABOUT INDOOR/OUTDOOR AIR QUALITY; INCREASE AWARENESS OF ENVIRONMENTAL HAZARDS AND IDENTIFYING ISSUES AND ACTIONS NEEDED IN THE COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J98201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT INCLUDE: 1. PROGRESSIVE ADMINISTRATIVE AND PROGRAMMATIC CAPACITY DEVELOPMENT WILL STRENGTHEN THE TRIBE'S ENVIRONMENTAL PROGRAM; 2. WORKING WITH COMMUNITY PROVIDING OUTREACH AND EDUCATION BY EXPLORING A VARIETY OF ENVIRONMENTAL TOPICS AND ISSUES WITH COMMUNITY MEMBERS TO ENCOURAGE INVOLVEMENT IN ENVIRONMENTAL ISSUES AND PROJECTS. FOCUS ON THE PRIORITIES IN THE TRIBE'S ETEP AND CURRENT WORKPLAN; 3. INCREASE COMMUNITY KNOWLEDGE OF AIR QUALITY ISSUES TO HELP BE MORE AWARE OF HEALTHIER AIR QUALITY; 4. CONTINUE TO IMPROVE SOLID WASTE MANAGEMENT THROUGH COLLABORATION WITH PARTNERS, TRAINING FOR STAFF, AND COMMUNITY OUTREACH AND EDUCATION; AND EXPAND AND IMPROVE THE SOLID/HAZARDOUS WASTE MANAGEMENT PROGRAM USING OPTIMAL PRACTICES AND THE LATEST TECHNOLOGIES.ACTIVITIES: ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM THE VILLAGE OF CHEFORNAK WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00914",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 172370.62,
+      "start_date": "2017-09-07",
+      "end_date": "2025-12-31",
+      "description": "A17AV00914",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00861",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 77439.28,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "CHEFORNAK FY20 PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01014",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 6998343.0,
+      "start_date": "2023-08-15",
+      "end_date": "2028-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00719",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 151121.76,
+      "start_date": "2023-06-09",
+      "end_date": "2028-12-31",
+      "description": "CHEFORNAK FY 2023 6V1 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01155",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 17169.8,
+      "start_date": "2025-08-06",
+      "end_date": "2029-12-31",
+      "description": "CHEFORNAK FY 2025 6V1 & 66V TTP PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000153",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "VILLAGE OF CHEFORNAK",
+      "obligation": 854964.0,
+      "start_date": "2021-10-01",
+      "end_date": "2026-09-30",
+      "description": "VILLAGE OF CHEFORNAK BATTERY ENERGY STORAGE PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 9839723.55,
+  "award_count": 12,
+  "cfda_summary": {
+    "15.156": {
+      "count": 4,
+      "total": 915315.09
+    },
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 7416444.46
+    },
+    "81.087": {
+      "count": 1,
+      "total": 854964.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1373964.0,
+    "2023": 7747689.76,
+    "2024": 0.0,
+    "2025": 17169.8,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

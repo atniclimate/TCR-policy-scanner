@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000154",
   "tribe_name": "Mechoopda Indian Tribe of Chico Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "97T35601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "MECHOOPDA INDIAN TRIBE",
+      "obligation": 171005.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS AGREEMENT IS TO FUND THE MECHOOPDA INDIAN TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND/OR IMPLEMENT SOLID/HAZARDOUS WASTE ACTIVITIES.\n\nTHIS COOPERATIVE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $171,005.00.  ACTIVITIES:THE ACTIVITIES INCLUDE DEVELOPING OUTREACH AND EDUCATION MATERIALS, CONDUCTING OUTREACH AND EDUCATION, DEVELOPING A COMPOSTING PROGRAM, DRAFT AND FINALIZE AN EPA-TRIBAL ENVIRONMENTAL PLAN, AND COLLABORATE WITH LOCAL PARTNERS TO PREVENT ENVIRONMENTAL PROBLEMS AT MECHOOPDA INDIAN TRIBE. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE COPIES OF OUTREACH MATERIALS, SUMMARIES OF OUTREACH EVENTS, SUMMARIES OF PROGRESS ON COMPOSTING PROGRAM, A FINALIZED EPA-TRIBAL ENVIRONMENTAL PLAN, AND COLLABORATIVE EFFORTS TO PREVENT LOCAL ENVIRONMENTAL PROBLEMS. THE EXPECTED OUTCOMES INCLUDE ENVIRONMENTALLY AWARE COMMUNITY, AN ENVIRONMENTAL DEPARTMENT PLAN FOR FUTURE GRANT FUNDING, AND STRONGER RELATIONSHIPS WITH LOCAL ENTITIES TO PREVENT ENVIRONMENTAL ISSUES. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE MECHOOPDA INDIAN TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 171005.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 171005.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 171005.0
+  },
+  "trend": "new"
 }

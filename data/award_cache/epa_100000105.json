@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000105",
   "tribe_name": "Hopland Band of Pomo Indians, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T33701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HOPLAND BAND OF POMO INDIANS",
+      "obligation": 586673.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE HOPLAND BAND OF POMO INDIANS TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. THIS AWARD PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $162,581.ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL DEVELOP THE INDOOR AIR QUALITY PROGRAM WITH A FOCUS ON OUTREACH AND EDUCATION ABOUT THE IMPACTS OF INDOOR MOLDS, UPDATE THE TRIBE'S INTEGRATED RESOURCE MANAGEMENT PLAN, AND COORDINATE AND OVERSEE QUARTERLY RECYCLE AND/OR REPAIR EVENTS FOR THE TRIBAL COMMUNITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE AN UPDATED INTEGRATED RESOURCE MANAGEMENT PLAN, OUTREACH MATERIALS SUCH AS A HANDBOOK ABOUT INDOOR MOLDS AND INDOOR AIR QUALITY, AND REPORTING ON MATERIALS RECYCLED, RENEWED, REUSED, OR REPAIRED. TARGET BENEFICIARIES ARE THE MEMBERS AND/OR RESIDENTS OF THE HOPLAND BAND OF POMO INDIANS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 586673.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 586673.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 586673.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

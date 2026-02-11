@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000152",
   "tribe_name": "Mashpee Wampanoag Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A16AV00129",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MASHPEE WAMPANOAG TRIBE",
+      "obligation": 117895.24,
+      "start_date": "2015-11-16",
+      "end_date": "2026-09-30",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00092",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MASHPEE WAMPANOAG TRIBE",
+      "obligation": 4846005.21,
+      "start_date": "2008-09-25",
+      "end_date": "2025-12-31",
+      "description": "2% TRANSPORTATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00218",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MASHPEE WAMPANOAG TRIBE",
+      "obligation": 4234554.89,
+      "start_date": "2008-09-24",
+      "end_date": "2026-12-31",
+      "description": "ROAD MAINT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT2513810",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MASHPEE WAMPANOAG TRIBE",
+      "obligation": 15850965.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2513810",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MASHPEE WAMPANOAG TRIBE",
+      "obligation": 567944.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 25617364.34,
+  "award_count": 5,
+  "cfda_summary": {
+    "20.205": {
+      "count": 3,
+      "total": 9198455.34
+    },
+    "14.867": {
+      "count": 2,
+      "total": 16418909.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

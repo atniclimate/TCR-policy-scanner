@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000173",
   "tribe_name": "Nisqually Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J65301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 491545.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE NISQUALLY TRIBE WILL CONTINUE BUILDING TRIBAL CAPACITY THROUGH STAFF TRAINING AND PROFESSIONAL DEVELOPMENT OPPORTUNITIES. NISQUALLY WILL ADDRESS SOLID WASTE ISSUES AND IMPLEMENT SOLID WASTE REDUCTION PRACTICES, CONTINUE INTERGOVERNMENTAL PARTNERSHIPS WITH JOINT BASE LEWIS MCCORD, BONNEVILLE POWER ADMINISTRATION AND BUREAU OF INDIAN AFFAIRS (COOPERATIVE FEDERALISM) ON A POWER LINE RELOCATION PROJECT ON THE NISQUALLY INDIAN RESERVATION.  NISQUALLY WILL CONTINUE EMERGENCY PLANNING EFFORTS IN DEVELOPING A WILDFIRE HAZARD MITIGATION PLAN IN RESPONSE TO INCREASING WILDFIRE DANGERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J33101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 518000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT INCLUDE: PROGRESSIVE ADMINISTRATIVE AND PROGRAMMATIC CAPACITY DEVELOPMENT WILL STRENGTHEN THE TRIBE'S ENVIRONMENTAL PROGRAM; COMMUNITY OUTREACH AND EDUCATION: EXPLORE A VARIETY OF ENVIRONMENTAL TOPICS AND ISSUES WITH COMMUNITY MEMBERS TO ENCOURAGE INVOLVEMENT IN ENVIRONMENTAL ISSUES AND PROJECTS. FOCUS ON THE PRIORITIES IN THE TRIBE'S EPA TRIBAL ENVIRONMENTAL PLAN (ETEP) AND CURRENT WORKPLAN. CONTINUE TO IMPROVE KNOWLEDGE OF ENVIRONMENTAL CONDITIONS ON AND ADJACENT TO THE RESERVATION AND MAINTAIN INVOLVEMENT IN WORK GROUPS AND PLANNING COMMITTEES THAT INTERSECT WITH THE ENVIRONMENTAL PLANNING DEPARTMENT'S GOALS. ACTIVITIES:THIS WORK PLAN CONTAINS THREE MAJOR ELEMENTS. ELEMENT ONE IS FOCUSED ON THE EFFORT OF THE NISQUALLY TRIBE TO APPLY FOR TREATMENT AS SOVEREIGN OVER WATER QUALITY MANAGEMENT. CREATING A STAKEHOLDER WORK GROUP AND DEVELOPING REQUIRED APPLICATION DOCUMENTS. ELEMENT TWO IS KEEPING UP TO DATE WITH VARIOUS WORK GROUPS AND RESPONDING TO EMERGING ENVIRONMENTAL PROTECTION AND MANAGEMENT ISSUES. MONITORING PROPOSED PERMITS, RULE MAKING AND CHANGES TO POLICIES THAT MAY IMPACT THE TRIBE. ELEMENT THREE IS WORKING WITH THE NISQUALLY TRIBAL UTILITIES MANAGEMENT TO DETERMINE FEASIBILITY OF AN ON-RESERVATION RECYCLING PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED GRANT DELIVERABLES INCLUDE GRANT REPORTING. COPIES OF APPLICATIONS FOR TREATMENT AND SOVEREIGN. SUMMARIES OF MEETINGS AND COMMITTEE REPORTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A01AV00041",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 492578.0,
+      "start_date": "2001-09-05",
+      "end_date": "2027-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00880",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 285952.0,
+      "start_date": "2020-08-20",
+      "end_date": "2027-09-30",
+      "description": "NISQUALLY: PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00862",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 240962.0,
+      "start_date": "2017-09-15",
+      "end_date": "2027-09-30",
+      "description": "NISQUALLY INDIAN TRIBE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00883",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 12500.0,
+      "start_date": "2016-08-03",
+      "end_date": "2027-09-30",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT5310700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 11353360.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5310700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NISQUALLY INDIAN TRIBE",
+      "obligation": 370551.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 13765448.0,
+  "award_count": 8,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 1009545.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1031992.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 11723911.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 518000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

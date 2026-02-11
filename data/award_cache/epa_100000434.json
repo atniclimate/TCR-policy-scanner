@@ -1,9 +1,184 @@
 {
   "tribe_id": "epa_100000434",
   "tribe_name": "Organized Village of Kasaan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J74801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 499995.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO ORGANIZED VILLAGE OF KASAAN TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS.  SPECIFICALLY, THE RECIPIENT WILL GATHER BASELINE WATER QUALITY DATA, PROVIDE INFORMATION THE COMMUNITY, PROMOTE ENVIRONMENTAL STEWARDSHIP THROUGH EDUCATIONAL EVENTS; PREVENT POLLUTION THROUGH RECYCLING, PLANNING A BACKHAUL EVENT; AIR QUALITY EDUCATION AND CONTINUED ADMINISTRATIVE AND TECHNICAL CAPACITY BUILDING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01J47201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 497412.0,
+      "start_date": "2018-10-01",
+      "end_date": "2023-03-31",
+      "description": "THE PRINCE OF WALES TRIBAL STEWARDSHIP CONSORTIA WILL BUILD ENVIRONMENTAL CAPACITY TO ADDRESS ISSUES RELATED TO SOLID WASTE, CHILDREN'S ENVIRONMENTAL HEALTH AND TRIBAL FISH CONSUMPTION RATES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J22201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 473998.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRINCE OF WALES TRIBAL STEWARDSHIP CONSORTIA (POW-TSC) SERVES THE FOUR MEMBER TRIBES OF HYDABURG, CRAIG, KLAWOCK AND KASAAN ON PRINCE OF WALES ISLAND.  IN THIS MULTIYEAR WORKPLAN THE POW-TSC WILL CONDUCT EDUCATION AND OUTREACH REGARDING SOLID WASTE REDUCTION, INCLUDING RECYCLING, COMPOSTING, HOUSEHOLD HAZARDOUS WASTE, WHITE GOODS; UPDATE INTERGOVERNMENTAL AGREEMENT WITH MEMBER TRIBES AND MUNICIPAL GOVERNMENT TO CONTINUE ADDRESS SOLID WASTE REDUCTION; PROVIDE TRAININGS THAT REFLECTS PRIORITIES FOR THE POW TRIBAL ENVIRONMENTAL PROGRAMS; REGISTER AND COMPLETE AHERA PROGRAM TRAINING, AND OTHER APPLICABLE TRAININGS; POW-TSC WILL HOST TRIBAL ENVIRONMENTAL COALITION MEETINGS; PLANNER AND TECHNICIAN WILL REVIEW ETEPS FROM MEMBER TRIBES.ACTIVITIES:POW-TSC WILL ASSIST CREATING AN ILLEGAL DUMP AND DERELICT VEHICLE INVENTORY; AN INVENTORY OF SITES WITH LEAD-BASED PAINT; PROVIDE TRAINING; CREATE AND OUTREACH AND EDUCATION PROGRAM ON ASBESTOS AND LEAD BASED PAINTSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ILLEGAL DUMP AND DERELICT VEHICLE INVENTORY SHEET TO TRIBAL COUNCILS' AND EPA PROJECT OFFICER; COPIES OF TRAINING ADVERTISEMENTS AND CERTIFICATES OF COMPLETION; ALIGNED WORK PLAN AND ETEPS WILL BE PROVIDED TO EPA PROJECT OFFICER; INVENTORY OF SITES IN TRIBAL COMMUNITIES THAT CONTAIN ASBESTOS AND/OR LEAD-BASED PAINT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J74701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 290789.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE ORGANIZED VILLAGE OF KASAAN WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE INCLUDES CLIMATE CHANGE ADAPTATION, CONTINUING TO GATHER BASELINE DATA ON HABS, OCEAN ACIDIFICATION, AND WATER QUALITY, AS WELL AS SOLID WASTE ACTIVITIES. ACTIVITIES:THE ORGANIZED VILLAGE OF KASAAN WILL ATTEND GAP CALLS AND MEETING. THEY WILL ALSO PARTICIPATE IN THE SOUTHEAST TRIBAL ENVIRONMENTAL CONFERENCE. IN ADDITION, THEY WILL ATTEND TRAININGS ON PHYTOPLANKTON MONITORING, INVASIVE GREEN CRAB MONITORING, AND CLIMATE CHANGE ADAPTATION. WEEKLY BASELINE DATA WILL BE COLLECTED, AND TOXIN ANALYSIS CONDUCTED, WITH THE RESULTING DATE ENTERED INTO THE SEATT DATABASE. FURTHERMORE, AN ELECTRONICS RECYCLING BACKHAUL WITH TAKE PLACE.   .SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE RESPONSIBILITIES INCLUDE CREATING NEWSLETTERS, NOTES, AGENDAS, AND SUMMARIES OF EVENTS. DATA IS ENTERED INTO THE SEATOR DATABASE AND PROGRESS REPORTS ARE GENERATED. . THE DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 957081.95,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 80108.85,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170AK0024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 21399743.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION FACILITY BRIDGE PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 2262232.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3024024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 875655.37,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ORGANIZED VILLAGE OF KASAAN TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ORGANIZED VILLAGE OF KASAAN UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3024024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 277071.82,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ORGANIZED VILLAGE OF KASAAN TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ORGANIZED VILLAGE OF KASAAN UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 132576.14,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17AAK3024025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 4035000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ORGANIZED VILLAGE OF KASAAN TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ORGANIZED VILLAGE OF KASAAN UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3024025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 1027936.37,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ORGANIZED VILLAGE OF KASAAN TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ORGANIZED VILLAGE OF KASAAN UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3024025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ORGANIZED VILLAGE OF KASAAN",
+      "obligation": 277070.31,
+      "start_date": "2025-01-08",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: ORGANIZED VILLAGE OF KASAAN TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ORGANIZED VILLAGE OF KASAAN UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 33086670.37,
+  "award_count": 14,
+  "cfda_summary": {
+    "66.926": {
+      "count": 4,
+      "total": 1762194.0
+    },
+    "20.205": {
+      "count": 10,
+      "total": 31324476.37
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 473998.0,
+    "2024": 0.0,
+    "2025": 567859.31,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

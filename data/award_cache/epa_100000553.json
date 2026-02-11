@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000553",
   "tribe_name": "Tuluksak Native Community",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV00265",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULUKSAK NATIVE COMMUNITY",
+      "obligation": 215000.0,
+      "start_date": "2024-12-12",
+      "end_date": "2027-12-31",
+      "description": "TULUKSAK",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J62601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TULUKSAK NATIVE COMMUNITY",
+      "obligation": 244409.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "TULUKSAK NATIVE COMMUNITY WILL BUILD TRIBAL ENVIRONMENTAL CAPACITY BY RESEARCHING OPTIONS AND AGENCIES TO CLEAN UP OLD GENERATOR SITE, AND RESEARCHING OLD TULUKSAK MINE SITE AND POSSIBLE IMPACTS, AND CONDUCT BASELINE WATER QUALITY MONITORING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J29801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TULUKSAK NATIVE COMMUNITY",
+      "obligation": 401000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:TULUKSAK NATIVE COMMUNITY WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE AIR QUALITY, IMPLEMENTING SOLID WASTE MANAGEMENT STRATEGIES, AND ENHANCING COMMUNITY-BASED PLANNING THROUGH EDUCATION AND OUTREACH.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH REGIONAL TECHNICAL ASSISTANCE PROVIDERS AND EPA'S TRIBAL AIR PROGRAM, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM TULUKSAK NATIVE COMMUNITY WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY NEWSLETTERS, AND PLANNING DOCUMENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 860409.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 215000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 645409.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 401000.0,
+    "2025": 215000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

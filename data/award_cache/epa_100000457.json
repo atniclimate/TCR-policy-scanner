@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000457",
   "tribe_name": "Levelock Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00898",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 3623558.2,
+      "start_date": "2024-08-13",
+      "end_date": "2029-12-31",
+      "description": "LEVELOCK TEP",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00901",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 24233.8,
+      "start_date": "2024-08-13",
+      "end_date": "2029-12-31",
+      "description": "LEVELOCK TEP",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J90101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "CONTINUE TO BUILD CAPACITY TO MANAGE AND IMPLEMENT ENVIRONMENTAL PROGRAMS\nWATER QUALITY AND STREAM TEMPERATURE BASELINE ASSESSMENT\nSOLID AND HAZARDOUS WASTE\nEMERGENCY RESPONSE PLANNING AND DOCUMENTATION OF DISASTERS FOR UPDATING OUR TRIBAL HAZARD MITIGATION PLAN\nMONITORING CLIMATE CHANGE IMPACTS WITH EMPHASIS ON COASTAL HAZARD ASSESSMENT",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J21501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE LEVELOCK VILLAGE / LEVELOCK VILLAGE COUNCIL IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3. BUILDING COMMUNICATIONS CAPACITY; 4. BUILDING SOLID AND HAZARDOUS WASTE MANAGEMENT CAPACITY; AND 5. BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES; CONDUCTING COMMUNITY EDUCATION ACTIVITIES; CONDUCTING SOURCE SEPARATION AND RESOURCE RECOVERY ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF WATER, AIR, AND WASTE; DEVELOPING AN ENVIRONMENTAL INVENTORY; AND MONITORING EROSION.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE LEVELOCK VILLAGE, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; DECREASING AMOUNTS OF RECYCLABLES AND HAZARDOUS WASTES ENTERING LANDFILL; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; RECYCLING AND WASTE ACTIVITY REPORTS; AND AN ENVIRONMENTAL INVENTORY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A14AV00845",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 1545113.42,
+      "start_date": "2014-08-18",
+      "end_date": "2028-12-31",
+      "description": "LEVELOCK CONSTRUCTION CONTRACT - 3RD AND 7TH STREET IMPROVEMENTS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00072",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 1424960.0,
+      "start_date": "2013-08-11",
+      "end_date": "2025-12-31",
+      "description": "LEVELOCK A09AV00072 M5 - DESIGN OF MAIN STREET",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00920",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 313791.13,
+      "start_date": "2017-09-08",
+      "end_date": "2025-12-31",
+      "description": "LEVELOCK FY17 66K 2% PLANNING & 6K1 PLG",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00982",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 308620.65,
+      "start_date": "2018-10-01",
+      "end_date": "2024-12-31",
+      "description": "LEVELOCK A19AV00982 FY 2019 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01170",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 244344.06,
+      "start_date": "2023-09-12",
+      "end_date": "2028-12-31",
+      "description": "LEVELOCK FY23 6V1 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01171",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LEVELOCK VILLAGE",
+      "obligation": 157182.77,
+      "start_date": "2023-09-12",
+      "end_date": "2028-12-31",
+      "description": "LEVELOCK FY23 66V & 6V1 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 8294804.03,
+  "award_count": 10,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 3647792.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 3994012.03
+    }
+  },
+  "yearly_obligations": {
+    "2022": 519000.0,
+    "2023": 401526.82999999996,
+    "2024": 3647792.0,
+    "2025": 0.0,
+    "2026": 134000.0
+  },
+  "trend": "increasing"
 }

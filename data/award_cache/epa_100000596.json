@@ -1,9 +1,104 @@
 {
   "tribe_id": "epa_100000596",
   "tribe_name": "Upper Mattaponi Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10201",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UPPER MATTAPONI INDIAN TRIBE",
+      "obligation": 141600.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-01-31",
+      "description": "UPPER MATTAPONI HOLISTIC CLIMATE CHANGE VULNERABILITY ASSESSMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "96381501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "UPPER MATTAPONI INDIAN TRIBE",
+      "obligation": 569557.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THE GRANT PROVIDES FUNDING TO THE UPPER MATTAPONI INDIAN TRIBE TO BUILD ENVIRONMENTAL CAPACITY.THE FUNDS WILL BE USED TO DEVELOP A TRIBAL ENVIRONMENTAL PROGRAM, DEVELOP FOUNDATIONAL ENVIRONMENTAL DOCUMENTS AND ORGANIZE COMMUNITY EVENTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "953A0045",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "UPPER MATTAPONI INDIAN TRIBE",
+      "obligation": 477753.0,
+      "start_date": "2024-10-01",
+      "end_date": "2028-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS GRANT AGREEMENT IS FOR THE UPPER MATTAPONI TRIBE TO CONTINUE TO DEVELOP ENVIRONMENTAL CAPACITY BUILDING BY PROFESSIONAL DEVELOPMENT LIKE PARTICIPATION IN TRAININGS, WORKSHOPS, CONFERENCES, STAKEHOLDER GROUPS AND REGULATORY PROCESSES (CONSULTATIONS, PUBLIC MEETINGS, COMMITTEES, ETC.). THE UPPER MATTAPONI TRIBE WILL USE THIS GRANT AGREEMENT TO ADVOCATE FOR THE TRIBE'S INTERESTS AND CITIZENS' HUMAN HEALTH. THE FUNDS WILL SUPPORT THE TRIBE IN DEVELOPING THEIR WATER RESOURCES PROGRAM, AIR QUALITY PROGRAM AND ENVIRONMENTAL EDUCATION AND OUTREACH PROGRAM. \n\n\nACTIVITIES:THE ACTIVITIES THAT WILL BE PERFORMED INCLUDE HAVING COMMUNITY MEETINGS, ATTENDING TRAINING AND MEETINGS, DEVELOPING STRATEGIC PLANNING DOCUMENTS AND ADVOCATING FOR THE TRIBE'S INTERESTS. THE UPPER MATTAPONI TRIBE WILL DEVELOP THEIR WATER RESOURCES PROGRAM, AIR QUALITY PROGRAM AND ENVIRONMENTAL EDUCATION AND OUTREACH PROGRAM BY BUYING SUPPLIES AND EQUIPMENT AND TAKING TRAINING. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES ARE THE TRIBE WILL OPERATE THE ENVIRONMENTAL DEPARTMENT AND BUILD ENVIRONMENTAL CAPACITY THROUGH COMMUNITY OUTREACH AND EDUCATION, ATTEND TRAININGS, MEETINGS, AND NETWORKING OPPORTUNITIES. THE TRIBE WILL FOCUS ON WATER RESOURCES PROGRAM, AIR QUALITY PROGRAM AND ENVIRONMENTAL EDUCATION AND OUTREACH. THE ANTICIPATED DELIVERABLES ARE AN ACCOUNTING OF MEETINGS AND TRAININGS ATTENDED, AND STRATEGIC PLANNING DOCUMENTS DEVELOPED. THE EXPECTED OUTCOMES ARE IMPROVED ENVIRONMENTAL CAPACITY FOR THE TRIBE, A CLEAR SENSE OF STRATEGIC GOALS AND PRIORITIES, BETTER TRAINED ENVIRONMENTAL STAFF, AND A MORE VISIBLE ENVIRONMENTAL PRESENCE FOR THE TRIBE AT THE LOCAL, STATE AND NATIONAL LEVEL. THE BENEFICIARIES WILL BE THE UPPER MATTAPONI TRIBE, ITS CITIZENS AND THE SURROUNDING COMMUNITIES.\n\n FEDERAL FUNDS OF $401,879 ARE CONTINGENT UPON AVAILABILITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A25AV00632",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UPPER MATTAPONI INDIAN TRIBE",
+      "obligation": 767179.02,
+      "start_date": "2025-03-25",
+      "end_date": "2027-12-31",
+      "description": "UPPER MATTAPONI_22X-23X-24X_PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT5115520",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "UPPER MATTAPONI INDIAN TRIBE",
+      "obligation": 1937417.0,
+      "start_date": "2018-09-10",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5115520",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "UPPER MATTAPONI INDIAN TRIBE",
+      "obligation": 122075.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 4015581.02,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 141600.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1047310.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": 767179.02
+    },
+    "14.867": {
+      "count": 2,
+      "total": 2059492.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 1244932.02,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

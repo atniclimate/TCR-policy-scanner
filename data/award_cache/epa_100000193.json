@@ -1,9 +1,89 @@
 {
   "tribe_id": "epa_100000193",
   "tribe_name": "Pascua Yaqui Tribe of Arizona",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10173",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PASCUA YAQUI TRIBE",
+      "obligation": 57000.0,
+      "start_date": "2021-08-16",
+      "end_date": "2023-11-13",
+      "description": "PASCUA YAQUI TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10172",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PASCUA YAQUI TRIBE",
+      "obligation": 7158.0,
+      "start_date": "2021-08-16",
+      "end_date": "2023-11-13",
+      "description": "PASCUA YAQUI TRIBE TRAVEL FOR ADAPTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T02301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PASCUA YAQUI TRIBE",
+      "obligation": 453724.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE PASCUA YAQUI TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL MANAGE THE ENVIRONMENTAL PROGRAM; PARTICIPATE IN CAPACITY BUILDING BY ATTENDING TRAINING AND CONFERENCES; DEVELOPING A DRAFT CLIMATE CHANGE VULNERABILITY PLAN; CONTINUE TO DEVELOP THEIR SOLID WASTE PROGRAM; IMPLEMENTING COMMUNITY CLEANUP EVENTS, AND CONDUCTING EDUCATION AND OUTREACH ON A VARIETY OF ENVIRONMENTAL TOPICS.  THIS AWARD PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $101,610 FOR THE PERIOD OF 10/1/20 THROUGH 9/30/21.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T95401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PASCUA YAQUI TRIBE",
+      "obligation": 215361.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO THE PASCUA YAQUI TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $105,301.ACTIVITIES:THE ACTIVITIES INCLUDE COMPLETING RELEVANT CAPACITY BUILDING TRAININGS, ATTENDING ARIZONA TRIBAL ENVIRONMENTAL WORKGROUP MEETINGS, COORDINATING WASTE CHARACTERIZATION MEETINGS, IMPLEMENTING A VEHICLE REMOVAL PLAN, CONDUCTING COMMUNITY CLEAN-UP EVENTS, CONDUCTING AN AIR FLAG PROGRAM,  COLLABORATING WITH INTERNAL AND EXTERNAL ENVIRONMENTAL PROTECTION PARTNERS AND DEVELOPING AN AIR MONITORING STRATEGY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE TRAINING CERTIFICATES, SUMMARY MEETING REPORTS, REVISED SOLID WASTE ASSESSMENT FORM, DOCUMENTED REMOVAL OF 40 VEHICLES, TONNAGE REPORTS FROM COMMUNITY CLEANUP DAYS, SUMMARY REPORT ON THE FLAG PROGRAM AND DRAFT AIR MONITORING STRATEGY. \n\nTHE EXPECTED OUTCOMES INCLUDE IMPROVED TRIBAL CAPACITY TO PROTECT PUBLIC HEALTH AND THE ENVIRONMENT THROUGH DEVELOPING STAFF WITH APPROPRIATE SKILLS, KNOWLEDGE AND EXPERIENCE TO MANAGE THE ENVIRONMENTAL PROGRAM AND TO DEVELOPMENT OF LONG-TERM AIR QUALITY GOALS. \n\nTHE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE PASCUA YAQUI INDIAN RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0403020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PASCUA YAQUI TRIBE",
+      "obligation": 89705865.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 90439108.0,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 64158.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 669085.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 89705865.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 215361.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

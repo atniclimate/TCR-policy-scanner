@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000052",
   "tribe_name": "Comanche Nation, Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01228",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "COMANCHE NATION",
+      "obligation": 249946.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "COMANCHE NATION, TRIBAL COMMUNITY RESILIENCE GRANT - TO ADD FY24 ONE-TIME FUNDS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02F08501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "COMANCHE NATION",
+      "obligation": 115000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2023-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE COMANCHE NATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE COMMUNITY EDUCATIONS AND OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, RECYCLING AND SOLID WASTE CLEAN-UP ACTIVITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANNUAL PROGRESS REPORT, ANNUAL FINAL FEDERAL REPORT, QUALITY MANAGEMENT, INDOOR AIR QUALITY, LEAD BASED PAINT, SOIL AND WATER ASSESSMENT TOOL, MOLD, GEOGRAPHIC INFORMATION SYSTEMS/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE COMANCHE NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 364946.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 249946.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 115000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 115000.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 249946.0
+  },
+  "trend": "increasing"
 }

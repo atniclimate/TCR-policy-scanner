@@ -1,9 +1,115 @@
 {
   "tribe_id": "epa_100000083",
   "tribe_name": "Federated Indians of Graton Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10205",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "FEDERATED INDIANS OF GRATON RANCHERIA",
+      "obligation": 140800.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "GRATON RANCHERIA 2021 COASTAL SITES ADAPTATION PLAN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T34401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "FEDERATED INDIANS OF GRATON RANCHERIA",
+      "obligation": 512470.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:\nTHIS AGREEMENT PROVIDES ASSISTANCE TO FEDERATED INDIANS OF GRATON RANCHERIA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL ATTEND ENVIRONMENTAL TRAININGS AND WORKSHOPS, CONDUCT COMMUNITY EDUCATION AND OUTREACH, PARTICIPATE AT EPA CONFERENCES, IMPLEMENT SOLID WASTE ACTIVITIES, INCLUDING THE DEVELOPMENT OF A RECYCLING PROGRAM, AND DEVELOPMENT OF THE TRIBE'S CLEAN AIR PROGRAM THROUGH TRAINING AND WILDFIRE RESEARCH, PREPAREDNESS AND RESPONSE.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $112,049. PRE-AWARD COSTS ARE APPROVED BACK TO 10/01/2021.\nACTIVITIES:\nRECIPIENT WILL TRAVEL TO ENVIRONMENTAL TRAININGS AND WORKSHOPS, WILL DEVELOP EDUCATION AND OUTREACH MATERIALS AND WILL CONDUCT RESEARCH AND PLANNING RELATED TO INDOOR AIR QUALITY. \nOUTCOMES:\nDELIVERABLES ARE INCLUDED IN WORKPLAN ATTACHED AND INCLUDE: NOTES FROM MEETINGS AND TRAININGS ATTENDED, DRAFT ENVIRONMENTAL ORDINANCES AND POLICIES DEVELOPED, FINALIZED CLIMATE ADAPTATION PLAN, AND PICTURES AND DATA COLLECTED FROM RECYCLABLES AND WASTE COLLECTED. \n\n\nSUBRECIPIENT:\nNO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "99T59001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "FEDERATED INDIANS OF GRATON RANCHERIA",
+      "obligation": 267953.0,
+      "start_date": "2017-10-01",
+      "end_date": "2021-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE TRIBE'S ENVIRONMENTAL PROGRAM. THE TRIBE IS PURSUING ASSESSMENT AND PLANNING DOCUMENTS TO ADDRESS DROUGHT VULNERABILITY AND EMERGENCY RESPONSE, RESEARCHING AND APPLYING FOR ADDITIONAL SOURCES OF EXTERNAL FUNDING, DEVELOPING THE CAPACITY TO IMPLEMENT A WETLANDS PROGRAM, PILOTING AND FACILITATING THE DEVELOPMENT OF A MECHANISM FOR COLLECTING AND DISSEMINATING TRIBAL ACCOMPLISHMENTS, UPDATING THE TRIBAL ENVIRONMENTAL PLAN, AND ATTENDING TRAINING TO DEVELOP CAPACITY IN EACH OF THEIR ENVIRONMENTAL PROGRAMS.   THIS ASSISTANCE AMENDMENT PROVIDES FUNDING IN THE AMOUNT OF $238,500.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T34201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "FEDERATED INDIANS OF GRATON RANCHERIA",
+      "obligation": 124624.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE FEDERATED INDIANS OF GRATON RANCHERIA TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND/OR IMPLEMENT SOLID/HAZARDOUS WASTE.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $124,624.  SEE TERMS AND CONDITIONS.ACTIVITIES:THE ACTIVITIES INCLUDE ATTENDING MEETINGS AND TRAININGS, UPDATING THE DROUGHT CONTINGENCY PLAN, DEVELOPING PROTOCOLS FOR HAZARDOUS SUBSTANCE STORAGE AND UTILIZATION, AND COORDINATING WASTE MANAGEMENT OUTREACH EVENTS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES INCLUDE REPORTS OF MEETINGS AND TRAININGS, AN UPDATED DROUGHT CONTINGENCY PLAN, AND SUMMARY/DATA OF SOLID WASTE OUTREACH EVENTS. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR RESIDENTS OF THE FEDERATED INDIANS OF GRATON RANCHERIA TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0615020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "FEDERATED INDIANS OF GRATON RANCHERIA",
+      "obligation": 15553103.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0615020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "FEDERATED INDIANS OF GRATON RANCHERIA",
+      "obligation": 482939.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000088",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "FEDERATED INDIANS OF GRATON RANCHERIA",
+      "obligation": 1921335.81,
+      "start_date": "2017-09-30",
+      "end_date": "2023-04-30",
+      "description": "GRATON RENEWABLE ENERGY EFFICIENT NETWORK PROJECT (GREEN PROJECT)",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 19003224.81,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 140800.0
+    },
+    "66.926": {
+      "count": 3,
+      "total": 905047.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 16036042.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 1921335.81
+    }
+  },
+  "yearly_obligations": {
+    "2022": 512470.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 124624.0
+  },
+  "trend": "decreasing"
 }

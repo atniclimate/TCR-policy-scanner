@@ -1,9 +1,199 @@
 {
   "tribe_id": "epa_100000449",
   "tribe_name": "Village of Kotlik",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00180",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 149998.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00078",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 148110.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10116",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 111180.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-08-15",
+      "description": "VILLAGE OF KOTLIK ADAPTATION STRATEGY DEVELOPMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10115",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 93896.0,
+      "start_date": "2021-08-16",
+      "end_date": "2025-08-15",
+      "description": "VILLAGE OF KOTLIK EROSION PROTECTION FINAL DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00030",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 83875.0,
+      "start_date": "2018-10-01",
+      "end_date": "2020-10-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00168",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 14248.0,
+      "start_date": "2018-09-28",
+      "end_date": "2019-09-30",
+      "description": "NATIVVILLAGEKOTLIK_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J76001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO VILLAGE OF KOTLIK TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. CONTAINS 3 COMPONENTS 1)GRANTS MANAGEMENT. BUILD, ENHANCE AND IMPROVE TRIBAL ENVIRONMENTAL STAFF MANAGEMENT CAPACITY TO ADMINISTER AND INCREASE COMMUNITY INVOLVEMENT IN ENVIRONMENTAL PROGRAMS. 2)CONTINUE COLLABORATION WITH YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL AND ITS PROGRAMS TO PROMOTE HEALTH OF THE WATERSHED AND INDIGENOUS PEOPLE. 3)CONTINUE SOLID WASTE CONSOLIDATION EFFORTS TO PROTECT AND IMPROVE ENVIRONMENTAL AND HUMAN HEALTH THROUGH SOLID WASTE CONSOLIDATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J76401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 313000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE VILLAGE OF KOTLIK WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE ESTABLISHING PUBLIC PARTICIPATION AND EDUCATION THROUGH COMMUNITY ENGAGEMENT ON CLIMATE CHANGE AND EMERGENCY PREPAREDNESS AND ADDRESSING SOLID WASTE MANAGEMENT ISSUES. ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM THE VILLAGE OF KOTLIK WILL INCLUDE SEMI-ANNUAL PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A13AV00491",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 255051.21,
+      "start_date": "2013-07-16",
+      "end_date": "2022-03-25",
+      "description": "VILLAGE OF KOTLIK TRANSPORTATION PLANNING FY11-FY13",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00821",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 213003.77,
+      "start_date": "2018-08-03",
+      "end_date": "2025-12-31",
+      "description": "A18AV00821",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00824",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 198441.52,
+      "start_date": "2018-08-03",
+      "end_date": "2025-12-31",
+      "description": "A18AV00824",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00370",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 101778.41,
+      "start_date": "2014-06-20",
+      "end_date": "2022-03-25",
+      "description": "KOTLIK ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00128",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 0.0,
+      "start_date": "2011-03-07",
+      "end_date": "2025-12-31",
+      "description": "ROUTE 1001 BOARDWALK REHAB DESIGN PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00824",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 291788.51,
+      "start_date": "2024-01-01",
+      "end_date": "2029-12-31",
+      "description": "P.L. 93-638. 2023, 2024 RM FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01038",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF KOTLIK",
+      "obligation": 49880.3,
+      "start_date": "2024-01-01",
+      "end_date": "2029-12-31",
+      "description": "VILLAGE OF KOTLIK ? FY2021 6V2 SAFETY FU",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2534250.72,
+  "award_count": 15,
+  "cfda_summary": {
+    "15.156": {
+      "count": 6,
+      "total": 601307.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 823000.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 1109943.72
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 341668.81,
+    "2025": 313000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

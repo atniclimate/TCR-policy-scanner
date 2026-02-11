@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000550",
   "tribe_name": "Native Village of Tetlin",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J91501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 518967.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "TETLINS PROJECT HAS 5 COMPONENTS: 1. MAINTAIN IGAP PROGRAM ADMINISTRATIVE FUNCTIONSAND 2. CONTINUE TRAINING AND CAPACITY BUILDING FOR THE ENVIRONMENTAL OFFICE STAFF, FOCUSING ON ENVIRONMENTAL ISSUES THAT RELATE TO ETEP PRIORITIESAND 3. RAISE OVERALL COMMUNITY AWARENESS OF ENVIRONMENTAL HEALTH CONCERNS AND ISSUES, INCLUDING HOW CONTAMINATED SITES MAY IMPACT SUBSISTENCE USE, SOLID/HAZARDOUS WASTE PLANNING AND IMPLEMENTATION, AND EMERGENCY RESPONSEAND 4. CONTINUE THE EXPANSION AND IMPROVEMENT OF THE TETLIN SOLID WASTE MANAGEMENT PROGRAM GUIDED BY THE TETLIN SOLID WASTE MANAGEMENT PLAN, FOCUSING ON PROGRAM SUSTAINABILITY AND THE LATEST SOLID WASTE INNOVATIONSAND AND 5. CONTINUE TO EXPLORE ADDITIONAL FUNDING TO SUPPORT A TRADITIONAL GATHERING AND SUBSISTENCE LIFESTYLE WITHOUT FEAR OF CONTAMINATION OF AIR, LAND, AND WATER.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J04401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:PROJECT GOALS INCLUDE IMPROVING GENERAL ASSISTANCE PROGRAM (GAP) ADMINISTRATIVE FUNCTIONS, TRAINING AND CAPACITY BUILDING FOR GAP STAFF, RAISING COMMUNITY AWARENESS OF ENVIRONMENTAL ISSUES THROUGH COMMUNITY OUTREACH AND EDUCATION, AND EXPANDING AND IMPROVING TETLIN'S WASTE MANAGEMENT PROGRAM. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.ACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE PROGRESS REPORTING, UPDATING THE TETLIN VILLAGE COUNCIL ON GAP ACTIVITIES, REVIEWING AND UPDATING TETLIN'S EPA-TRIBAL ENVIRONMENTAL PLAN, ATTENDING ENVIRONMENTAL MANAGEMENT CONFERENCES AND TRAINING, HOSTING COMMUNITY MEETINGS QUARTERLY, AND PUBLISHING A MONTHLY NEWSLETTER. WASTE MANAGEMENT WORK WILL INCLUDE TRAINING FOR THE LANDFILL OPERATOR, HOLDING AN ANNUAL COMMUNITY SOLID WASTE MEETING, EXPANDING THE WASTE COLLECTION PROGRAM, AND AN ANNUAL REVIEW OF THE SOLID WASTE MANAGEMENT PLAN.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:EXPECTED DELIVERABLES AND OUTCOMES INCLUDE REPORTS, MEETING SIGN-IN SHEETS, PHOTOS, MEETING NOTES, PARTICIPATION CERTIFICATES, LIST OF WEBINARS ATTENDED, PRESENTATIONS, MEETING AGENDAS, FLYERS, AND NEWSLETTERS, AS WELL AS THE SOURCE, TYPE, AMOUNT, AND END DESTINATION OF WASTE AND RECYCLABLE MATERIALS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0013",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 251857.48,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0013",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 20812.06,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0013",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 271194.05,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3013024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 241314.85,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3013024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 108032.69,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3013025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 287813.79,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TETLIN FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE NATIVE VILLAGE OF TETLIN TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3013025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 108024.17,
+      "start_date": "2025-04-01",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TETLIN FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE NATIVE VILLAGE OF TETLIN TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "24DG11100106907",
+      "cfda": "10.720",
+      "program_id": "usda_wildfire",
+      "recipient_name_raw": "NATIVE VILLAGE OF TETLIN",
+      "obligation": 129000.0,
+      "start_date": "2024-09-16",
+      "end_date": "2026-10-15",
+      "description": "COMMUNITY WILDFIRE PROTECTION PLAN",
+      "awarding_agency": "Department of Agriculture"
+    }
+  ],
+  "total_obligation": 2071016.09,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 652967.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 1289049.09
+    },
+    "10.720": {
+      "count": 1,
+      "total": 129000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 518967.0,
+    "2023": 0.0,
+    "2024": 129000.0,
+    "2025": 108024.17,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000346",
   "tribe_name": "Village of Alakanuk",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00147",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF ALAKANUK",
+      "obligation": 145081.35,
+      "start_date": "2019-08-01",
+      "end_date": "2023-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01243",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF ALAKANUK",
+      "obligation": 150000.0,
+      "start_date": "2025-09-18",
+      "end_date": "2027-09-30",
+      "description": "ALAKANUK FY 2024 TRIBAL COMMUNITY RESILIENCE RMP COORDINATOR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J71101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF ALAKANUK",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS PROJECT PERIOD INCLUDES 4 COMPONENTS OF WORK. 1) BUILD CAPACITY WITHIN THE IGAP PROGRAM 2) CONDUCT BASELINE WATER QUALITY AND ENVIRONMENTAL MONITORING 3 )IMPLEMENT SOLID AND HAZARDOUS WASTE IMPROVEMENTS 4) LEARN MORE ABOUT BROWNFIELD SITES THAT ARE POTENTIAL IN THE COMMUNITY",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J66801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF ALAKANUK",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE VILLAGE OF ALAKANUK SEEKS TO MAINTAIN AN OFFICE AND STAFFING TO ACCOMPLISH GRANT ADMINISTRATION, TO INCLUDE TRAINING AS NEEDED. SOME KEY WORK TO BE ACCOMPLISHED UNDER THIS AWARD INCLUDES COLLECTION OF BASELINE WATER QUALITY DATA WILL PROVIDE THE COMMUNITY WITH IMPORTANT QUALITY INFORMATION AND WILL CONTRIBUTE TO LARGER WATERSHED DATA COLLECTION PROJECTS TO UNDERSTAND ENVIRONMENTAL IMPACTS. WASTE MINIMIZATION AND HAZARDOUS WASTE REMOVAL WORK WILL MINIMIZE THE IMPACTS OF WASTE AND SPILLS IN THE COMMUNITY. THE BROWNFIELDS INVENTORY TOOL WILL BE USED TO EVALUATE POTENTIAL SITES FOR REMEDIATION. EMERGENCY RESPONSE AND STORM IMPACTS TO SOLID AND HAZARDOUS WASTE IN THE COMMUNITY WILL BE REVIEWED TO DEVELOP PLANS FOR FUTURE EMERGENCIES. ACTIVITIES:ACTIVITIES PERFORMED UNDER THIS GRANT WILL FOCUS ON TECHNICAL TRAINING, TO BUILD AND DEVELOP ENVIRONMENTAL PROGRAM MANAGEMENT SKILLS. STAFF WILL DEVELOP PLANS, MAINTAIN LOGS AND REPORT OUT ON WORK ACCOMPLISHED. STAFF WILL COLLECT WATER QUALITY SAMPLES AND SHARE DATA WITH PARTNERS. STAFF WILL COMMUNICATE WITH THE COMMUNITY ABOUT THEIR WORK, DEVELOP AND PRESENT REPORTS TO COUNCIL. STAFF WILL COLLABORATE WITH PARTNERS SUCH AS YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL, KWIK'PAK FISHERIES AND NASA TO CONTINUE TO EXPAND KNOWLEDGE ABOUT AREA ENVIRONMENTAL IMPACTS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE TRIP REPORTS AND TRAINING REPORTS FOLLOWING TRAVEL AND TRAINING EVENTS. STAFF WILL PROVIDE COPIES OF PLANS, LOGS, REPORTS WITH EPA PROJECT OFFICER. STAFF WILL SHARE COPIES OF MOU AND AGREEMENTS AS PART OF THEIR REPORTING. STAFF WILL SHARE COPIES OF NEWSLETTERS, PHOTOS AND COMMUNITY PRESENTATIONS WITH THE EPA PROJECT OFFICER. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 1073081.35,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 295081.35
+    },
+    "66.926": {
+      "count": 2,
+      "total": 778000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 418000.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

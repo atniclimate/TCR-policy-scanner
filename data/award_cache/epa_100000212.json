@@ -1,9 +1,225 @@
 {
   "tribe_id": "epa_100000212",
   "tribe_name": "Pueblo of Acoma, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01F77901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 192500.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO OF ACOMA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD PROGRAM CAPACITY, ESTABLISH COMMUNICATION/EDUCATION, SOLID/HAZARDOUS WASTE, WATER QUALITY AND AIR CAPABILITIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F67501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 135000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF THROUGH TRAINING, ESTABLISH AIR AND WATER QUALITY PROGRAMS, SOLID AND HAZARDOUS WASTE AND UNDERGROUND STORAGE TANK CAPACITY. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND WATER QUALITY MONITORING AND SEDIMENT SAMPLING QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE PUEBLO OF ACOMA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600NM0026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 1861351.8,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NM0026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 153753.94,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42320000V92ANM0026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 2900000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600NM0026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 2433403.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170NM0026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 517049.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V172NM0026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 3254901.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NM3026024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 1736123.71,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ACOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ACOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NM3026024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 541394.45,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ACOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ACOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NM0026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 259133.79,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17BNM3026025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 100140415.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ACOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ACOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NM3026025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 2059761.65,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ACOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ACOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177NM3026025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 541180.57,
+      "start_date": "2025-01-08",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PUEBLO OF ACOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ACOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271NM3026025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 10241.0,
+      "start_date": "2025-01-08",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: PUEBLO OF ACOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ACOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "DEIE0000076",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 138516.11,
+      "start_date": "2017-09-01",
+      "end_date": "2019-12-31",
+      "description": "ENHANCEMENT OF PUEBLO OF ACOMA UTILITY AUTHORITY",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "R25AP00300",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "PUEBLO OF ACOMA",
+      "obligation": 350000.0,
+      "start_date": "2025-07-02",
+      "end_date": "2027-12-31",
+      "description": "THROUGH WATERSMART (SUSTAIN AND MANAGE AMERICAS RESOURCES FOR TOMORROW), RECLAMATION LEVERAGES FEDERAL AND NON-FEDERAL FUNDING TO WORK COOPERATIVELY WITH STATES, TRIBES, AND LOCAL ENTITIES AS THEY PLAN FOR AND IMPLEMENT ACTIONS TO INCREASE WATER SUPPLY SUSTAINABILITY THROUGH INVESTMENTS AND ATTENTION TO LOCAL WATER CONFLICTS.    THROUGH PLANNING AND PROJECT DESIGN GRANTS, RECLAMATION PROVIDES ASSISTANCE TO STATES, TRIBES, IRRIGATION DISTRICTS, WATER DISTRICTS, OTHER ENTITIES WITH WATER OR POWER DELIVERY AUTHORITY, AND NON-PROFIT CONSERVATION GROUPS TO CONDUCT PLANNING ACTIVITIES TO IMPROVE WATER SUPPLIES (E.G., WATER SUPPLIES TO DISADVANTAGED COMMUNITIES THAT DO NOT HAVE RELIABLE ACCESS TO WATER, WATER MARKETING, WATER CONSERVATION, DROUGHT RESILIENCE, AND ECOLOGICAL RESILIENCE) OR THE FINAL DESIGN OF ON THE GROUND WATER SUPPLY CONSTRUCTION (INCLUDING DOMESTIC WATER SUPPLY PROJECTS FOR TRIBES, INSULAR AREAS, AND DISADVANTAGED COMMUNITIES), WATER MANAGEMENT CONSTRUCTION AND RESTORATION PROJECTS. THE PUEBLO OF ACOMA, LOCATED IN CIBOLA COUNTY, NEW MEXICO, WILL DESIGN A NEW WELL, PIPELINE, WATER TREATMENT AND STORAGE FACILITY, AND PUMP SYSTEMS INTEGRATED WITH THE EXISTING BACA WELL TO ENHANCE THE RELIABILITY OF DOMESTIC WATER SUPPLIES OF THE PUEBLOS 5,000 ECONOMICALLY DISADVANTAGED RESIDENTS. PROLONGED DROUGHT CONDITIONS, INCLUDING REDUCED PRECIPITATION AND HIGHER EVAPORATION RATES, HAVE LED TO DECREASED SURFACE WATER AND GROUNDWATER SUPPLIES AND DECREASED WATER QUALITY THROUGH CONCENTRATION OF CONTAMINANTS. WITH COMPLETION OF THIS PROJECT, THE PUEBLO WILL HAVE RELIABLE DOMESTIC WATER SUPPLIES TO ENSURE A SUSTAINABLE SUPPLY OF CLEAN WATER TO MEET THE PUEBLOS CURRENT AND FUTURE WATER NEEDS. THIS PROJECT ALIGNS WITH THE GOALS OF THE PUEBLOS RIO SAN JOSE VALLEY WATER AND WASTEWATER MASTER PLAN.",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 117224725.2,
+  "award_count": 17,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 327500.0
+    },
+    "20.205": {
+      "count": 13,
+      "total": 116408709.09
+    },
+    "81.087": {
+      "count": 1,
+      "total": 138516.11
+    },
+    "15.507": {
+      "count": 1,
+      "total": 350000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 1036421.57,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

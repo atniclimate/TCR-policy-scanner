@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000142",
   "tribe_name": "Lovelock Paiute Tribe of the Lovelock Indian Colony, Nevada",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T96201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "LOVELOCK PAIUTE TRIBE",
+      "obligation": 95402.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO THE LOVELOCK PAIUTE TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \nACTIVITIES:THE ACTIVITIES INCLUDE DRAFTING A TRIBAL ENVIRONMENTAL PLAN, DEVELOPING OUTREACH AND EDUCATION MATERIALS, ATTENDING RELEVANT TRAINING, ATTENDING NEVADA ENVIRONMENTAL MANAGERS MEETINGS, AND ATTENDING REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS IN REGION 9.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE .AN UPDATED TRIBAL ENVIRONMENTAL PLAN, DEVELOPED OUTREACH MATERIALS, TRAINING CERTIFICATES, AND DOCUMENTED ACTION ITEMS AND SUCCESSES FROM MEETINGS AND TRAINING. THE EXPECTED OUTCOMES INCLUDE KNOWLEDGEABLE ENVIRONMENTAL STAFF, IMPROVED COMMUNICATION WITH REGION 9 TRIBES. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/ RESIDENTS OF THE LOVELOCK RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A08AV00109",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LOVELOCK PAIUTE TRIBE",
+      "obligation": -77746.0,
+      "start_date": "2008-09-17",
+      "end_date": "2022-05-31",
+      "description": "AMEND#1 (TRANSP/PLANNING GRANT)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT3201150",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LOVELOCK PAIUTE TRIBE",
+      "obligation": 3085552.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3201150",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LOVELOCK PAIUTE TRIBE",
+      "obligation": 91726.0,
+      "start_date": "2022-06-08",
+      "end_date": "2025-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3194934.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 95402.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": -77746.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 3177278.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 91726.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 95402.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

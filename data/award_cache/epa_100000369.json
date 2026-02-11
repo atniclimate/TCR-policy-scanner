@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000369",
   "tribe_name": "Native Village of Cantwell",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J95601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CANTWELL NATIVE VILLAGE OF",
+      "obligation": 519000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO AN ELIGIBLE RECIPIENT TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS SPECIFICALLY, THE CANTWELL NATIVE VILLAGE WILL USE THESE FUNDS FOR BUILDING TRIBAL CAPACITY TO DEVELOP ENVIRONMENTAL PROGRAMS THROUGH ENVIRONMENTAL TRAINING; CONTINUED WASTE REDUCTION ACTIVITIES; BEGINNING TO GATHER BASELINE WATER QUALITY DATA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J17501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CANTWELL NATIVE VILLAGE OF",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:PRIMARY PROGRAM OBJECTIVES INCLUDE ADVANCING ADMINISTRATIVE AND PROGRAMMATIC GRANTS MANAGEMENT CAPACITY BUILDING, EXPANDING CANTWELL'S WASTE MANAGEMENT/RECYCLING PROGRAM, AND CONDUCTING BASELINE WATER QUALITY SAMPLING.ACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE ATTENDING RELEVANT CONFERENCES, KEEPING A DAILY WORK LOG, PROGRESS REPORTING TO EPA, AND A POLICIES AND PROCEDURES REVIEW/UPDATE. WASTE MANAGEMENT WORK INCLUDES EXPANDING RECYCLING TO INCLUDE NEW WASTE STREAMS, PARTNERING WITH THE DENALI BOROUGH TO CONSTRUCT A PELLET PLANT OPERATION, RESEARCHING WASTE MANAGEMENT FUNDING OPTIONS IN ADDITION TO GAP, COLLECTING AND RECYCLING APPLIANCES, AND HOSTING AN ANNUAL COMMUNITY ENVIRONMENTAL EDUCATION EVENT. WATER QUALITY BASELINE SAMPLING WILL CONTINUE AT 8 SELECTED LOCATIONS AND COMMUNITY MEMBERS WILL LEARN ABOUT ENVIRONMENTAL AND WATER CONCERNS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE REPORTS ON CONFERENCES ATTENDED; WASTE SERVICE DELIVERY DATA SUCH AS SOURCE, TYPE, AMOUNT, AND FINAL DISPOSITION OF WASTE; REPORTS ON THE COLLABORATION TO BUILD A WOODSTOVE PELLET PLANT OPERATION; RESULTS OF RESEARCH ON ADDITIONAL WASTE MANAGEMENT FUNDING SOURCES; AND COPIES OF EVENT PARTICIPANT SHEETS AND NEWSLETTERS. EXPECTED OUTCOMES INCLUDE ESTABLISHING A STRONG FOUNDATION FOR SUCCESSFUL ENVIRONMENTAL WORK, IMPROVEMENT AND EXPANSION OF CANTWELL'S WASTE MANAGEMENT PROGRAM, AND UNDERSTANDING AND PREVENTING THE CAUSES OF POLLUTION IN STREAMS/RIVERS/LAKES. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A12AV00616",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CANTWELL NATIVE VILLAGE OF",
+      "obligation": 143635.0,
+      "start_date": "2013-04-27",
+      "end_date": "2025-12-31",
+      "description": "CANTWELL FY12 TRANSPORTATION PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00710",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CANTWELL NATIVE VILLAGE OF",
+      "obligation": 139874.19,
+      "start_date": "2018-06-26",
+      "end_date": "2025-12-31",
+      "description": "A18AV00710",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00673",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CANTWELL NATIVE VILLAGE OF",
+      "obligation": 80620.07,
+      "start_date": "2023-05-18",
+      "end_date": "2028-12-31",
+      "description": "CANTWELL FY23 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1017129.26,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 653000.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 364129.26
+    }
+  },
+  "yearly_obligations": {
+    "2022": 519000.0,
+    "2023": 80620.07,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

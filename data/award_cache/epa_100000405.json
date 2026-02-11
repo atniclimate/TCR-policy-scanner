@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000405",
   "tribe_name": "Native Village of False Pass",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A06AV00061",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF FALSE PASS",
+      "obligation": -17768.08,
+      "start_date": "2006-09-07",
+      "end_date": "2023-12-31",
+      "description": "FALSE PASS - DE-OBLIGATE PLANNING FY 2006 FUNDS",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": -17768.08,
+  "award_count": 1,
+  "cfda_summary": {
+    "20.205": {
+      "count": 1,
+      "total": -17768.08
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

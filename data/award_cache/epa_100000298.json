@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000298",
   "tribe_name": "Tejon Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "99T86501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TEJON INDIAN TRIBE",
+      "obligation": 495840.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE TRIBE'S ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE TRAINING STAFF, CONDUCTING COMMUNITY OUTREACH, ATTENDING THE REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS AND THE TRIBAL/ENVIRONMENTAL PROTECTION AGENCY ANNUAL CONFERENCE, DEVELOPING ENVIRONMENTAL PROGRAMS SUCH AS A COMMUNITY RESILIENCY PROGRAM, TRIBAL AIR PROGRAM AND A WATER PROGRAM.  THIS AGREEMENT PROVIDES FULL FUNDING IN THE AMOUNT OF $120,840.  SEE TERMS AND CONDITIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T54001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TEJON INDIAN TRIBE",
+      "obligation": 369030.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS ASSISTANCE AGREEMENT IS TO PROVIDE FUNDING TO THE TEJON INDIAN TRIBE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS AGREEMENT PROVIDES FULL FEDERAL FUNDS IN THE AMOUNT OF $125,000.00. ACTIVITIES:THE ACTIVITIES TO BE PERFORMED INCLUDE MANAGING AN ENVIRONMENTAL DEPARTMENT, CONDUCTING OUTREACH AND EDUCATION, ATTENDING ENVIRONMENTAL CAPACITY BUILDING TRAININGS AND MEETINGS, FURTHER DEVELOPING A WATER PROGRAM, AND COMPLETING A GREEN SPACE PILOT PROGRAM. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE SUMMARY REPORTS OF MEETINGS, TRAININGS AND EVENTS, ENVIRONMENTAL OUTREACH MATERIALS, PROVIDE RESULTS FROM RESEARCH ON WATER PROGRAM DEVELOPMENT, AND COMPLETE A GREEN SPACE PILOT PROGRAM WORKSHOP. \n\nDIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE TEJON INDIAN TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0637100",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TEJON INDIAN TRIBE",
+      "obligation": 943988.0,
+      "start_date": "2012-05-10",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 1808858.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 864870.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 943988.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 369030.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

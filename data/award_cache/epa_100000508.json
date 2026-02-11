@@ -1,9 +1,203 @@
 {
   "tribe_id": "epa_100000508",
   "tribe_name": "Native Village of Point Hope",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01266",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 400000.0,
+      "start_date": "2025-09-01",
+      "end_date": "2028-12-31",
+      "description": "TRIBAL COMMUNITY RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J74901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 134000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF POINT HOPE WILL BUILD CAPACITY IN UNDERSTANDING THE NOMENCLATURE, MAINTAINING AN ENVIRONMENTAL PRESENCE IN REGULATORY ACTIVITIES AFFECTING THE TRIBE AND HOW LOCAL AND ADJACENT PLANNING PROCESSES MAY IMPACT THE TRIBE. THE TRIBE WILL DEVELOP THE REQUIRED EPA TRIBAL ENVIRONMENTAL PLAN DURING THIS FIRST YEAR OF THE GAP GRANT. ACTIVITIES:THE ENVIRONMENTAL PROGRAM WILL LEARN TO REASONABLE LEARN ABOUT THE OUTLYING AREAS OF LAKES, MINING PROPERTIES AND REQUESTED AREAS OF CONCERN FOR SUBSISTENCE RESEARCH AND PLANNING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:CONTINUED CAPACITY BUILDING FOR THE NATIVE VILLAGE OF POINT HOPE STAFF, TRIBAL COUNCILS, AND TRIBAL MEMBERS. THE ABILITY TO APPROACH AND TO PARTICIPATE IN EPA RELATED DISCUSSIONS, POLICIES AND TO UNDERSTAND HOW THE TRIBE'S LOCAL LANDS ARE AFFECTED BY PRIVATE AND FEDERAL PLANNING ACTIVITIES. BUILD PROJECTS VIA THE EPA TRIBAL ENVIRONMENTAL PLAN.  THE INTENDED BENEFICIARIES ARE THE COMMUNITY MEMBERS OF NATIVE VILLAGE OF POINT HOPE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00780",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 1054106.99,
+      "start_date": "2016-10-01",
+      "end_date": "2024-12-31",
+      "description": "POINT HOPE TRANSPORTATION PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01276",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 543734.0,
+      "start_date": "2014-02-25",
+      "end_date": "2024-12-31",
+      "description": "POINT HOPE TRANSIT ACTIVITIES",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00808",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 352393.15,
+      "start_date": "2014-07-25",
+      "end_date": "2027-12-31",
+      "description": "NATIVE VILLAGE OF POINT HOPE TRANSIT PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01266",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 290719.0,
+      "start_date": "2014-02-25",
+      "end_date": "2024-12-31",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00781",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 179055.81,
+      "start_date": "2016-10-01",
+      "end_date": "2024-12-31",
+      "description": "POINT HOPE ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00147",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 0.0,
+      "start_date": "2009-11-06",
+      "end_date": "2024-12-31",
+      "description": "P.L. 93-638 CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00146",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 0.0,
+      "start_date": "2009-08-12",
+      "end_date": "2024-12-31",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00285",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": -90888.0,
+      "start_date": "2014-02-25",
+      "end_date": "2027-12-31",
+      "description": "POINT HOPE HIGH PRIORITY TRIBAL ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01042",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 531279.11,
+      "start_date": "2024-09-19",
+      "end_date": "2028-12-31",
+      "description": "POINT HOPE PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01044",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 186213.68,
+      "start_date": "2024-09-20",
+      "end_date": "2028-12-31",
+      "description": "POINT HOPE ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A10AV00144",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 0.0,
+      "start_date": "2010-09-20",
+      "end_date": "2024-12-31",
+      "description": "EXTEND POP TO 12/31/2023",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01118",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 129081.5,
+      "start_date": "2025-01-01",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT0212790",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NATIVE VILLAGE OF POINT HOPE",
+      "obligation": 6808776.0,
+      "start_date": "2012-02-17",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 10518471.24,
+  "award_count": 15,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 400000.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 134000.0
+    },
+    "20.205": {
+      "count": 12,
+      "total": 3175695.24
+    },
+    "14.867": {
+      "count": 1,
+      "total": 6808776.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 717492.79,
+    "2025": 663081.5,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

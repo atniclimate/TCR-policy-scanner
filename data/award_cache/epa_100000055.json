@@ -1,9 +1,239 @@
 {
   "tribe_id": "epa_100000055",
   "tribe_name": "Confederated Tribes of the Colville Reservation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00073",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 148830.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00116",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 14380.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00989",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 999341.0,
+      "start_date": "2019-07-24",
+      "end_date": "2025-09-30",
+      "description": "20.205 HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A04AV00023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 0.0,
+      "start_date": "2004-09-27",
+      "end_date": "2022-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01064",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 3824633.0,
+      "start_date": "2019-08-12",
+      "end_date": "2022-09-30",
+      "description": "20.205 HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV01036",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1311621.28,
+      "start_date": "2017-10-01",
+      "end_date": "2022-09-30",
+      "description": "COLVILLE KELLER COMMUNITY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01057",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1188673.0,
+      "start_date": "2019-08-23",
+      "end_date": "2022-09-30",
+      "description": "MALOTT HUD ROAD CONSTRUCTION PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV01037",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1060500.34,
+      "start_date": "2017-10-01",
+      "end_date": "2022-09-30",
+      "description": "COLVILLE COLUMBIA RIVER ROAD CHIP SEAL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00773",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1034685.01,
+      "start_date": "2019-08-08",
+      "end_date": "2025-09-30",
+      "description": "20.205 - HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00921",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 150000.0,
+      "start_date": "2018-09-12",
+      "end_date": "2022-09-30",
+      "description": "COLVILLE SURVEY/DESIGN OF 21 MILE BRIDGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00576",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 57488.0,
+      "start_date": "2018-04-11",
+      "end_date": "2022-09-30",
+      "description": "COLUMBIA RIVER ROAD GEOTECH MONITORING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV01010",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 41500.0,
+      "start_date": "2017-10-01",
+      "end_date": "2022-09-30",
+      "description": "COLVILLE SAFETY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00508",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1815223.25,
+      "start_date": "2023-03-09",
+      "end_date": "2027-12-31",
+      "description": "COLVILLE/NESPELEM SCHOOL LOOP PHASE 2 FY 2022 CONSTRUCTION FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00723",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1183376.28,
+      "start_date": "2023-08-08",
+      "end_date": "2026-09-30",
+      "description": "COLVILLE/ROCKY RIVER RD IMPROVEMENTS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00450",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1368302.25,
+      "start_date": "2024-03-05",
+      "end_date": "2026-09-30",
+      "description": "COLVILLE/LOWER AND UPPER LOOP ROADS/CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00322",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1200000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2028-09-30",
+      "description": "COLVILLE/ROAD MAINTENANCE/FERRY OPERATIONS/TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00546",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 981424.5,
+      "start_date": "2024-03-05",
+      "end_date": "2026-09-30",
+      "description": "COLVILLE/MUSHROOM CORNER HUD ROADS/CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00468",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 2700741.75,
+      "start_date": "2025-01-22",
+      "end_date": "2026-09-30",
+      "description": "COLVILLE/LONE PINE HUD ROAD/CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00764",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF COLVILLE RESERVATION",
+      "obligation": 1751637.0,
+      "start_date": "2025-04-14",
+      "end_date": "2026-09-30",
+      "description": "COLVILLE/MOUNTAIN RIDGE HOME ROADS IMPROVEMENT PROJECT/CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 20832356.66,
+  "award_count": 19,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 163210.0
+    },
+    "20.205": {
+      "count": 17,
+      "total": 20669146.66
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 2998599.5300000003,
+    "2024": 3549726.75,
+    "2025": 4452378.75,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

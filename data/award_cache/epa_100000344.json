@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000344",
   "tribe_name": "Akiak Native Community",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00164",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 149815.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00393",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 150000.0,
+      "start_date": "2023-01-25",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01058",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 300000.0,
+      "start_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "description": "AKIAK 2024 TCR CATEGORY 12",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J60401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "AKIAK WILL USE THIS GRANT TO BUILD PROGRAM KNOWLEDGE AND CAPACITY, PROTECT WATER QUALITY, ADAPT TO RECENT ENVIRONMENTAL CHANGES THAT HAVE BEEN CONTRIBUTING TO MASSIVE FLOODING IN THE COMMUNITY, AND BETTER MANAGE SOLID WASTE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J28101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:AKIAK NATIVE COMMUNITY WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE WATER QUALITY MONITORING, IMPLEMENTING SOLID WASTE MANAGEMENT STRATEGIES, AND ADDRESSING AIR QUALITY ISSUES THROUGH EDUCATION AND OUTREACH.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM AKIAK NATIVE COMMUNITY WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, EDUCATIONAL PAMPHLETS, WASTE INVENTORIES, AND WATER QUALITY MONITORING RESULTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A23AV01085",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 2706775.0,
+      "start_date": "2023-08-25",
+      "end_date": "2027-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00472",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 247418.92,
+      "start_date": "2023-01-01",
+      "end_date": "2027-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00522",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "AKIAK NATIVE COMMUNITY",
+      "obligation": 66721.67,
+      "start_date": "2023-03-14",
+      "end_date": "2028-12-31",
+      "description": "P.L. 93-638 AS AMENDED.",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 4518154.59,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 599815.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 897424.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 3020915.59
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 3170915.59,
+    "2024": 703000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

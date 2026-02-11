@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000240",
   "tribe_name": "Reno-Sparks Indian Colony, Nevada",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T18701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": 125885.0,
+      "start_date": "2021-09-01",
+      "end_date": "2023-08-31",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE RENO SPARKS INDIAN COLONY TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL EXPAND THEIR COMPOSTING AND RECYCLING PROGRAMS, PROVIDE ENVIRONMENTAL OUTREACH AND EDUCATION TO THE TRIBAL COMMUNITY, AND FINALIZE THEIR INTEGRATED SOLID WASTE MANAGEMENT PLAN.   THIS AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $125,885.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A14AV00881",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": 216578.72,
+      "start_date": "2014-08-21",
+      "end_date": "2026-03-31",
+      "description": "FY 2014 AWARD PROJECT RSIC 1(5); EXPIRATION DATE: 9/30/2015",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00306",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": 12351.89,
+      "start_date": "2009-09-22",
+      "end_date": "2015-09-30",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00308",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": -4366.0,
+      "start_date": "2022-04-20",
+      "end_date": "2022-04-20",
+      "description": "TRANSPORTATION PLANNING ASSESS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00305",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": -18100.0,
+      "start_date": "2009-09-22",
+      "end_date": "2022-03-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00307",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": -24115.75,
+      "start_date": "2013-10-25",
+      "end_date": "2015-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00837",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": -39382.7,
+      "start_date": "2014-09-22",
+      "end_date": "2021-12-06",
+      "description": "RSIC ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00304",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": -193950.53,
+      "start_date": "2009-09-22",
+      "end_date": "2022-04-27",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT3201510",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": 26297279.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3201510",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RENO-SPARKS INDIAN COLONY",
+      "obligation": 860058.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 27232237.63,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 125885.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": -50984.370000000024
+    },
+    "14.867": {
+      "count": 2,
+      "total": 27157337.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": -4366.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

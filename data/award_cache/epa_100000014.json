@@ -1,9 +1,159 @@
 {
   "tribe_id": "epa_100000014",
   "tribe_name": "Bear River Band of the Rohnerville Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00056",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 44242.0,
+      "start_date": "2018-10-01",
+      "end_date": "2021-12-31",
+      "description": "CAPACITY BUILDING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2018-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 133290.9,
+      "start_date": "2017-08-14",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "693JG42230000V600CA0056",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 112874.46,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600CA0056",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 9376.76,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0056",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 120951.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602CA3056024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 107536.06,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: BEAR RIVER BANK OF ROHNERVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BEAR RIVER BANK OF ROHNERVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176CA3056024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 49663.28,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: BEAR RIVER BANK OF ROHNERVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BEAR RIVER BANK OF ROHNERVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600CA0056",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 15862.5,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3056025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 118770.89,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: BEAR RIVER BAND OF ROHNERVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BEAR RIVER BAND OF ROHNERVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177CA3056025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 47266.62,
+      "start_date": "2025-05-23",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: BEAR RIVER BAND OF ROHNERVILLE RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BEAR RIVER BAND OF ROHNERVILLE RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0630740",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "BEAR RIVER BAND OF THE ROHNERVILLE RANCHERIA",
+      "obligation": 1610445.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 2370280.03,
+  "award_count": 11,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 44242.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 133290.9
+    },
+    "20.205": {
+      "count": 8,
+      "total": 582302.13
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1610445.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 47266.62,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

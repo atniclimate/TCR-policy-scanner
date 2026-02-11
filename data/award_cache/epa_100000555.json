@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000555",
   "tribe_name": "Native Village of Tununak",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J78701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TUNUNAK",
+      "obligation": 500000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE NATIVE VILLAGE OF TUNUNAK TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL PROVIDE COMMUNITY OUTREACH AND EDUCATION, RECYCLING AND BACKHAUL OF HAZARDOUS WASTES, UPDATE THE SOLID WASTE MANAGEMENT PLAN, ASSIST IN PROPER DISPOSAL OF ABANDONED VEHICLES, ORGANIZE THE LANDFILL AND PLACE TRASH BINS AROUND THE COMMUNITY, WORK  TO ADDRESS SAFE DRINKING WATER AND IMPROPER DUMPING, AND PROTECT SUBSISTENCE USE AREAS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J65101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TUNUNAK",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF TUNUNAK WILL BUILD CAPACITY TO INCREASE KNOWLEDGE AND TECHNICAL SKILLS OF THE ENVIRONMENTAL STAFF FINANCIAL ADMINISTRATION INCLUDING IMPROVED COMMUNICATION BETWEEN EPA AND THE TRIBE. TRIBAL ADMINISTRATION STAFF WILL HAVE KNOWLEDGE AND SKILLS TO BUILD AND ASSIST IN TRAINING FOR FUTURE STAFF TO DEVELOP PROGRAMS AND PARTNERSHIPS THROUGH COMMUNICATIONS AND COLLABORATIONS WITH OTHER FEDERAL, STATE, AND LOCAL ENTITIES. THE TRIBE WILL REVIEW AND UPDATE, AS NECESSARY, ANY STANDARD OPERATING PROCEDURES, SOLID WASTE MANAGEMENT PLAN, ETEP'S AND/OR JOB DESCRIPTIONS WITHIN THE ENVIRONMENTAL DEPARTMENT.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES: ANTICIPATED DELIVERABLES FROM THE NATIVE VILLAGE OF TUNUNAK WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00907",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TUNUNAK",
+      "obligation": 335519.66,
+      "start_date": "2017-09-07",
+      "end_date": "2024-12-31",
+      "description": "A17AV00907",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00826",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TUNUNAK",
+      "obligation": 186029.08,
+      "start_date": "2018-08-01",
+      "end_date": "2024-12-31",
+      "description": "A18AV00826",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00787",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TUNUNAK",
+      "obligation": 181592.28,
+      "start_date": "2023-06-22",
+      "end_date": "2028-12-31",
+      "description": "TUNUNAK FY 2023 6V1 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00785",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TUNUNAK",
+      "obligation": 70498.65,
+      "start_date": "2023-06-21",
+      "end_date": "2028-12-31",
+      "description": "TUNUNAK FY2023 66V 2% PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1541639.67,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 768000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 773639.67
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 252090.93,
+    "2024": 0.0,
+    "2025": 268000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

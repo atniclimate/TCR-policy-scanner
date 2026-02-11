@@ -1,9 +1,137 @@
 {
   "tribe_id": "epa_100000445",
   "tribe_name": "Knik Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00180",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 106604.0,
+      "start_date": "2019-08-01",
+      "end_date": "2021-03-15",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J63301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS PROJECT WILL ASSIST THE KNIK TRIBE IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  TASKS INCLUDE MAINTAINING AN ENVIRONMENTAL OFFICE AND PROGRAM; RESEARCHING ISSUES AND RESOURCES AND ATTENDING TRAINING; COLLABORATING WITH OTHER AGENCIES AND CONDUCTING OUTREACH; UPDATING THE ENVIRONMENTAL INVENTORY; DEVELOPING THE GIS PROGRAM; AND DEVELOPING A PLAN FOR SURFACE WATER QUALITY ASSESSMENT.    NOTE: THE INDIRECT COST RATE AGREEMENT ON FILE WITH EPA EXPIRED 09/30/2016, YOU MAY NOT DRAW DOWN FUNDS FOR INDIRECT COSTS WITHOUT A CURRENT, APPROVED RATE IN PLACE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J48601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 393000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE KNIK TRIBE IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3. BUILDING COMMUNICATIONS CAPACITY; AND 4. BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES AND CONDUCTING COMMUNITY EDUCATION ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF WATER QUALITY AND WETLANDS ISSUES; HOSTING WETLANDS AND CONSERVATION TRAININGS; DEVELOPING AN ENVIRONMENTAL INVENTORY; BUILDING A GEOGRAPHIC INFORMATION SYSTEMS PROGRAM; DEVELOPING AN AERIAL IMAGING PROJECT; AND PLANNING TO EXPAND A TRIBAL TECHNICAL ASSISTANCE PROGRAM.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE KNIK TRIBE, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; FINANCIAL REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; AN UPDATED ENVIRONMENTAL INVENTORY; REPRESENTATIVE SAMPLE MAPS; AND A QUALITY ASSURANCE PROJECT PLAN FOR AN AERIAL IMAGING PROJECT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00437",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 7531548.36,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DIST. OF CHILD CARE DEVELOPMENT FUNDS (DISCRETIONARY) - CORONAVIRUS RESPONSE AND RELIEF SUPPLEMENTAL ASSOCIATION (CRRSA) ALLOCATED FOR INCLUSION IN APPROVED P.L. 102-477 PLANS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00730",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 5113942.47,
+      "start_date": "2021-10-01",
+      "end_date": "2031-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00404",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 2132544.78,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE) CR1/CR2 AND CONTRACT SUPPORT CR#1 (14.21%) AND CR#2 (7.92%) OF 2019 ENACTED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00126",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 1878512.18,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DISTS. FOR SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE AND SELF GOVERNANCE COMPACTS FOR TPA BASE AT 80.27% OF THE CR ANNUAL RATE OF OPERATIONS OF THE TRIBAL PRIORITY ALLOCATION (TPA) PROGRAMS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00135",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 1550186.36,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS (TPA BASE) CR1 (17.53%) DISTRIBUTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT0291700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KNIK TRIBE",
+      "obligation": 25723426.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 44924188.15,
+  "award_count": 9,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 106604.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 887424.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 18206734.15
+    },
+    "14.867": {
+      "count": 1,
+      "total": 25723426.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 6664128.83,
+    "2023": 0.0,
+    "2024": 393000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

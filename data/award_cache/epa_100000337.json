@@ -1,9 +1,210 @@
 {
   "tribe_id": "epa_100000337",
   "tribe_name": "Ysleta del Sur Pueblo",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01F76601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 378442.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE YSLETA DEL SUR PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL CONDUCT ENVIRONMENTAL OUTREACH, TRACK SPECIAL WASTE AND RECYCLING COLLECTIONS, AND BUILD CAPACITY OF STAFF THROUGH RESEARCH AND TRAININGS RELATED TO ASTM, HAZWOPER, SOLID WASTE, ENERGY STAR PORTFOLIO MANAGER, EMISSIONS INVENTORIES, AND AIR QUALITY MONITORING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F56201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 236528.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE YSLETA DEL SUR PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY BY PROVIDING COMMUNITY OUTREACH, IMPLEMENT POLLUTION PREVENTION STRATEGIES, CONTINUE TO INCREASE AWARENESS ON ENERGY CONSUMPTION AND ATTEND ENVIRONMENTAL TRAININGS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FINAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM, QUALITY ASSESSMENT PROJECT PLAN. THE INTENDED BENEFICIARY IS THE YSLETA DEL SUR PUEBLO",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600TX0037",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 1184610.59,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600TX0037",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 96446.51,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600TX0037",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 1289674.9,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V172TX0037",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 1894517.3,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602TX3037024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 1170168.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YSLETA DEL SUR PUEBLO FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO YSLETA DEL SUR PUEBLO FOR FY 2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17ATX3037024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 378353.83,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YSLETA DEL SUR PUEBLO FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO YSLETA DEL SUR PUEBLO FOR FY 2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176TX3037024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 322546.52,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YSLETA DEL SUR PUEBLO FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO YSLETA DEL SUR PUEBLO FOR FY 2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600TX0037",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 169137.69,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17ATX3037025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 2610212.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YSLETA DEL SUR PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO YSLETA DEL SUR PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602TX3037025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 1426799.85,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YSLETA DEL SUR PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO YSLETA DEL SUR PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271TX3037025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 663320.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: YSLETA DEL SUR PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO YSLETA DEL SUR PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177TX3037025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 330784.42,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: YSLETA DEL SUR PUEBLO TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO YSLETA DEL SUR PUEBLO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT4853900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 31692305.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4853900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YSLETA DEL SUR PUEBLO",
+      "obligation": 1283839.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 45127686.14,
+  "award_count": 16,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 614970.0
+    },
+    "20.205": {
+      "count": 12,
+      "total": 11536572.14
+    },
+    "14.867": {
+      "count": 2,
+      "total": 32976144.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 567312.4199999999,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

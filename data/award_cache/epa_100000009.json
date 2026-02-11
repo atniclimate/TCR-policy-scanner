@@ -1,9 +1,269 @@
 {
   "tribe_id": "epa_100000009",
   "tribe_name": "Mi'kmaq Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00111",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 15000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00151",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 0.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "00A01563",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 34800.0,
+      "start_date": "2024-07-01",
+      "end_date": "2025-08-31",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO THE MI'KMAQ NATION TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA.  SPECIFICALLY, THE RECIPIENT WILL PERFORM DATA AND INFORMATION GATHERING ACTIVITIES NECESSARY TO DESIGN THE REPLACEMENT OF THE WATER DISTRIBUTION SYSTEM.ACTIVITIES:THE PRIMARY ACTIVITY OF THIS PROJECT IS TO SURVEY THE INTERIOR OF EXISTING WATER MAINS AND THE TOPOGRAPHY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THIS PROJECT IS ANTICIPATED TO GATHER ENGINEERING DATA, WHICH WILL ALLOW FOR THE DESIGN OF WATER MAIN REPLACEMENT. \nTHE INTENDED BENEFICIARIES INCLUDE THE TRIBAL MEMBERS BEING SERVED BY THE WATER SYSTEM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "00A01188",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 17104.0,
+      "start_date": "2024-01-01",
+      "end_date": "2025-06-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING UNDER THE INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) TO THE MI'KMAQ NATION TO DEVELOP AND IMPLEMENT LEAD SERVICE LINE IDENTIFICATION AND/OR REPLACEMENT ACTIVITIES IN TRIBAL COMMUNITIES.  SPECIFICALLY, THE RECIPIENT WILL VALIDATE THE CONCLUSIONS OF THE PRESQUE ISLE UTILITIES DISTRICT RECORD ASSESSMENT THROUGH THE CONDUCTING A LEAD SAMPLING EVENT FOR THE APPROXIMATELY 73 HOMES IT SERVES UTILIZING THE SDWA APPROVED FIRST AND FIFTH LITERS LEAD SAMPLING METHODOLOGY.\n\nACTIVITIES:THE ACTIVITIES INCLUDE PREPARATION OF THE QUALITY ASSURANCE PROJECT PLAN (QAPP) AND THE QUALITY MANAGEMENT PLAN (QMP), PUBLIC OUTREACH FOR THE SAMPLING EVENT AND LEAD EDUCATION, EHD STAFF CONDUCTING THE 1ST AND 5TH LITER SAMPLING FOR LCRR PROJECT OR PROVIDE TRAINING AND MATERIALS TO TENANTS FOR THOSE THAT EHD ARE UNABLE TO PERSONALLY CONDUCT.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE COMPLETED SAMPLED FOR THE 73 HOMES. \nTHE EXPECTED OUTCOMES INCLUDE A CONFIRMATION OF THE PRESENCE OR ABSENCE OF LEAD SERVICE LINES IN CONJUNCTION WITH A RECORDS REVIEW. \nTHE INTENDED BENEFICIARIES INCLUDE  THE RESIDENTS OF THE 73 HOMES TO BE SAMPLED.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00128",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 1318707.36,
+      "start_date": "2015-01-01",
+      "end_date": "2024-08-31",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00368",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 467200.67,
+      "start_date": "2018-10-01",
+      "end_date": "2024-09-30",
+      "description": "A19AV00368",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00831",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 454642.59,
+      "start_date": "2015-09-15",
+      "end_date": "2022-09-30",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 275573.76,
+      "start_date": "2018-01-01",
+      "end_date": "2023-09-30",
+      "description": "MICMAC_18X_PLANNING_NC",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00943",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 157270.33,
+      "start_date": "2016-08-01",
+      "end_date": "2025-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01304",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 23695.24,
+      "start_date": "2012-09-26",
+      "end_date": "2024-09-30",
+      "description": "POWERS RD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ22440000Y602ME3114024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 545418.24,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y604ME3114024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 530000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AME3114024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 295000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600ME0114",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 117155.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176ME3114024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 109301.34,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271ME3114025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 458500.0,
+      "start_date": "2025-01-16",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602ME3114025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 403429.65,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17AME3114025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 299230.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177ME3114025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 109211.46,
+      "start_date": "2025-01-16",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: MIKMAQ NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIKMAQ NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT2325020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 12534765.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXME25020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MI'KMAQ NATION",
+      "obligation": 4848516.0,
+      "start_date": "2025-01-17",
+      "end_date": "2028-05-01",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 23014521.2,
+  "award_count": 21,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 15000.0
+    },
+    "66.468": {
+      "count": 2,
+      "total": 51904.0
+    },
+    "20.205": {
+      "count": 15,
+      "total": 5564336.200000001
+    },
+    "14.867": {
+      "count": 2,
+      "total": 17383281.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 51904.0,
+    "2025": 5416227.46,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

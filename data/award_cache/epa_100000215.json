@@ -1,9 +1,159 @@
 {
   "tribe_id": "epa_100000215",
   "tribe_name": "Pueblo of Isleta, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AV00569",
+      "cfda": "15.124",
+      "program_id": "bia_tcr_awards",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 338912.0,
+      "start_date": "2019-01-01",
+      "end_date": "2022-12-31",
+      "description": "DISTRIBUTION OF CR 1 - 3 FUNDING.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMT-2018-PC-0007",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 52033.74,
+      "start_date": "2017-08-14",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01F76401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 500000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE ISLETA PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL  PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY TO MANAGE THE ENVIRONMENTAL OFFICE, TRAVEL AND TRAINING, OUTREACH, RECYCLING AND POLLUTION PREVENTION (LEAD BASED PAINT, ASBESTOS AND PESTICIDES",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F56301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 310000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE ISLETA PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY TO MANAGE THE ENVIRONMENTAL OFFICE, TRAVEL AND TRAINING, OUTREACH, THE GAP PROGRAM SHALL ALSO INCREASE THE ENVIRONMENT DEPARTMENT'S CAPABILITIES TO CONTINUOUSLY IMPROVE ITS ABILITIES TO REMEDIATE AREAS OF ENVIRONMENTAL CONCERN AND PROTECT AREAS MEETING ENVIRONMENTAL GOALS.ACTIVITIES:THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY TO MANAGE THE ENVIRONMENTAL OFFICE, TRAVEL AND TRAINING, OUTREACH, THE GAP PROGRAM SHALL ALSO INCREASE THE ENVIRONMENT DEPARTMENT'S CAPABILITIES TO CONTINUOUSLY IMPROVE ITS ABILITIES TO REMEDIATE AREAS OF ENVIRONMENTAL CONCERN AND PROTECT AREAS MEETING ENVIRONMENTAL GOALS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QA DOCUMENTS, REPORTING, MAINTAIN AND INCREASE ENVIRONMENTAL CAPACITIES THAT IMPACT PUEBLO",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600NM0043",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 1572334.64,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600NM0043",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 129528.42,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600NM0043",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 1677103.89,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602NM3043024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 1472461.63,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ISLETA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ISLETA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176NM3043024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 458462.84,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ISLETA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ISLETA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600NM0043",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 273348.05,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602NM3043025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUEBLO OF ISLETA",
+      "obligation": 375575.85,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PUEBLO OF ISLETA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ISLETA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 7159761.06,
+  "award_count": 11,
+  "cfda_summary": {
+    "15.124": {
+      "count": 1,
+      "total": 338912.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 52033.74
+    },
+    "66.926": {
+      "count": 2,
+      "total": 810000.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 5958815.319999999
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 310000.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

@@ -1,9 +1,140 @@
 {
   "tribe_id": "epa_100000158",
   "tribe_name": "Miami Tribe of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "693JG42230000V600OK0093",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 222920.72,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600OK0093",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 20320.89,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600OK0093",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 235614.65,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602OK3093024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 203286.63,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIAMI TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIAMI TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176OK3093024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 70441.65,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIAMI TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIAMI TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600OK0093",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 30900.29,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271OK3093025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 847000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIAMI TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIAMI TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602OK3093025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 238693.12,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: MIAMI TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIAMI TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177OK3093025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 70412.33,
+      "start_date": "2025-01-10",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: MIAMI TRIBE OF OKLAHOMA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO MIAMI TRIBE OF OKLAHOMA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT4020120",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MIAMI TRIBE OF OKLAHOMA",
+      "obligation": 1161160.0,
+      "start_date": "2012-02-10",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3100750.28,
+  "award_count": 10,
+  "cfda_summary": {
+    "20.205": {
+      "count": 9,
+      "total": 1939590.2800000003
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1161160.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 70412.33,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

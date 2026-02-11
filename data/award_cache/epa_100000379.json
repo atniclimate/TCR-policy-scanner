@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000379",
   "tribe_name": "Chilkat Indian Village (Klukwan)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00157",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHILKAT INDIAN VILLAGE",
+      "obligation": 149350.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01090",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHILKAT INDIAN VILLAGE",
+      "obligation": 589762.0,
+      "start_date": "2023-08-28",
+      "end_date": "2028-12-31",
+      "description": "CHILKAT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01011",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHILKAT INDIAN VILLAGE",
+      "obligation": 250000.0,
+      "start_date": "2025-06-25",
+      "end_date": "2027-09-30",
+      "description": "CHILKAT INDIAN VILLAGE (KLUKWAN)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J64901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHILKAT INDIAN VILLAGE",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE CHILKAT INDIAN VILLAGE WILL BUILD THEIR TRIBAL ENVIRONMENTAL PROGRAM THROUGH TRAINING, GATHERING BASELINE WATER QUALITY DATA, PARTICIPATING IN STATE AND FEDERAL PERMITTING PROCESSES, TRIBAL ENVIRONMENTAL EDUCATION AND CONTINUED IMPROVEMENTS TO SOLID WASTE MANAGEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J38801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHILKAT INDIAN VILLAGE",
+      "obligation": 394000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:IN THIS MULTI-YEAR WORKPLAN, THE CHILKAT INDIAN VILLAGE WILL CONTINUE TO BUILD ENVIRONMENTAL CAPACITY THROUGH MEETING THE GOALS IN THE GAP WORKPLAN.  THEY WILL CONTINUE TO EFFECTIVELY MANAGE THE GAP AWARD, KEEPING ALL RECORDS CURRENT AND SUBMITTED TO EPA IN A TIMELY MANNER.  THEY WILL GATHER BASELINE WATER QUALITY DATA UNDER AN EPA APPROVED QUALITY ASSURANCE PROJECT PLAN AND WILL BEGIN TO ADDRESS BOTH INDOOR AND OUTDOOR AIR QUALITY CONCERNS.  THE TRIBE WILL RESEARCH AND RESPOND TO FEDERAL AND STATE PERMITTING PROCESSES FOR LARGE PROJECTS THAT IMPACT TRIBAL RESOURCES.  THEY WILL ALSO CONTINUE TO ADDRESS SOLID WASTE ISSUES BY IMPROVING LANDFILL MANAGEMENT, MAINTAINING THE RECYCLING CENTER AND SECURING TRAINING FOR TRIBAL STAFF. THE BENEFICIARIES ARE THE MEMBERS OF THE CHILKAT INDIAN VILLAGE TRIBE IN KLUKWAN, ALASKA.  ACTIVITIES:TRIBAL ADMINISTRATOR AND ACCOUNTING STAFF WILL MANAGE ADMINISTRATIVE AND ACCOUNTING REQUIREMENTS OF THE GRANT.  CIV STAFF WILL RECEIVE TRAININGS TO BETTER DELIVER CORE ENVIRONMENTAL PROGRAM ACTIVITIES.  THE ENVIRONMENTAL PLANNER WILL WORK WITH THE WATER QUALITY CONTRACTOR TO GATHER BASELINE WATER QUALITY DATA TO PROTECT TRIBAL TRADITIONAL WATERS IN THE CHILKAT VALLEY. THE TRIBE WILL SEEK PARTNERSHIPS AND FUNDING FOR OVERALL AIR QUALITY TESTING AND DEVELOP STRATEGIES TO IMPROVE INDOOR/OUTDOOR AIR QUALITY. THE ENVIRONMENTAL SPECIALIST WILL WORK WITH THE WATER QUALITY CONTRACTOR ON BASELINE WATER QUALITY TESTING FOLLOWING TRIBE'S QUALITY ASSURANCE PROJECT PLAN.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:A REPORT WILL BE EMAILED TO PROJECT OFFICER EACH QUARTER AND BASELINE DATA RESULTS WILL BE UPLOADED TO EPA WQX DATABASE.  OTHER DELIVERABLES INCLUDE MEETING NOTES, OFFICIAL AGREEMENTS AND MEMORANDUMS OF UNDERSTANDING.  THE INTENDED BENEFICIARIES ARE THE COMMUNITY OF CHILKAT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0202600",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHILKAT INDIAN VILLAGE",
+      "obligation": 1345112.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3222648.0,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 989112.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 888424.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1345112.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 589762.0,
+    "2024": 394000.0,
+    "2025": 250000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

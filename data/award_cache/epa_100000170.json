@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000170",
   "tribe_name": "Narragansett Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A15AV00822",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NARRAGANSETT INDIAN TRIBE",
+      "obligation": 4514432.59,
+      "start_date": "2015-09-14",
+      "end_date": "2025-12-31",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV01033",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NARRAGANSETT INDIAN TRIBE",
+      "obligation": 607147.28,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00966",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NARRAGANSETT INDIAN TRIBE",
+      "obligation": 1156718.92,
+      "start_date": "2023-07-11",
+      "end_date": "2026-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4401600",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NARRAGANSETT INDIAN TRIBE",
+      "obligation": 5922983.6,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4401600",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NARRAGANSETT INDIAN TRIBE",
+      "obligation": 288640.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 12489922.389999999,
+  "award_count": 5,
+  "cfda_summary": {
+    "20.205": {
+      "count": 3,
+      "total": 6278298.79
+    },
+    "14.867": {
+      "count": 2,
+      "total": 6211623.6
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 1156718.92,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000383",
   "tribe_name": "Native Village of Chuathbaluk (Russian Mission, Kuskokwim)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00160",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 0.0,
+      "start_date": "2018-08-28",
+      "end_date": "2020-09-30",
+      "description": "CHUATHBALUKTRACOUN_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J05701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF CHUATHBALUK WILL USE FY23 GAP FUNDING TO MANAGE THE GRANT AND BUILD CAPACITY BY HANDLING ADMINISTRATIVE ASPECTS OF THE GRANT; ADDRESS SOLID WASTE PLANNING AND CAPACITY BUILDING BY IMPROVING MANAGEMENT OF HAZARDOUS WASTE, RECYCLABLES, AND BACKHAUL MATERIALS OUT OF CHUATHBALUK; EDUCATE COMMUNITY MEMBERS AND ENGAGE YOUTH THROUGH ENVIRONMENTAL OUTREACH AND LEADERSHIP ACTIVITIES, AND DEVELOP A STRATEGY FOR AIR QUALITY EDUCATION. ACTIVITIES:PROJECT ACTIVITIES INCLUDE SUBMITTING QUARTERLY REPORTS AND DELIVERABLES, COORDINATING A BACKHAUL EVENT, WRITING A TRIBE-CITY MEMORANDUM OF AGREEMENT ON SOLID WASTE MANAGEMENT, WRITING HANDOUTS TO EDUCATE THE COMMUNITY ON AIR QUALITY, ESTABLISHING A YOUTH PROGRAM TO IDENTIFY ENVIRONMENTAL PRIORITIES IN CHUATHBALUK, COLLECTING RECYCLABLES FROM RESIDENTS, AND FACILITATING OUTREACH FOR A COMMUNITY EARTH DAY EDUCATIONAL EVENT.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE: COPIES OF ENVIRONMENTAL EDUCATION HANDOUTS, NEWSLETTERS PUBLISHED IN CHUATHBALUK ANNOUNCEMENTS, PRESENTATION PICTURES, LISTS OF TRAININGS, TRIP REPORTS, AND AN INVENTORY SHEET OF ITEMS SHIPPED, DRIVEN, OR FREIGHTED OUT THAT WILL BE SENT TO EPA. THE EXPECTED OUTCOMES ARE THAT GAP STAFF WILL HAVE CAPACITY TO ADMINISTER THE ENVIRONMENTAL PROGRAM, EDUCATE THE COMMUNITY, AND PROVIDE SOLUTIONS TO ONGOING PROBLEMS TO THE COMMUNITY OF CHUATHBALUK.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01J48001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 505124.0,
+      "start_date": "2018-10-01",
+      "end_date": "2022-09-30",
+      "description": "THE NATIVE VILLAGE OF CHUATHBALUK WILL BUILD TRIBAL ENVIRONMENTAL CAPACITY BY CONDUCTING BASELINE WATER QUALITY MONITORING, HAZARDOUS WASTE BACKHAUL, RECYCLING, CONDUCT COMMUNITY AND YOUTH ENVIRONMENTAL EDUCATION, AND COLLABORATE WITH CITY GOVERNEMNT TO ADDRESS SOLID WASTE ISSUES AND UPDATE LANDFILL PLAN.THIS AMOUNT OF $126,404 IS FOR THE BASE GAP GRANT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00522",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 287508.24,
+      "start_date": "2017-10-01",
+      "end_date": "2024-12-31",
+      "description": "A18AV00522",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00401",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 210309.06,
+      "start_date": "2013-05-20",
+      "end_date": "2025-02-21",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00899",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 73846.2,
+      "start_date": "2018-07-02",
+      "end_date": "2023-12-31",
+      "description": "A18AV00899",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00807",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 125052.08,
+      "start_date": "2024-01-01",
+      "end_date": "2029-12-31",
+      "description": "P.L. 93638",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01005",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHUATHBALUK NATIVE VILLAGE OF",
+      "obligation": 15000.0,
+      "start_date": "2024-01-01",
+      "end_date": "2029-12-31",
+      "description": "CHUATHBALUK FY24 8V1 ROAD MAINTENANCE FU",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1744839.58,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 0.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1033124.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 711715.58
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 528000.0,
+    "2024": 140052.08000000002,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

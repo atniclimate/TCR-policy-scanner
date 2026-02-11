@@ -1,9 +1,129 @@
 {
   "tribe_id": "epa_100000495",
   "tribe_name": "Alutiiq Tribe of Old Harbor",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J18001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 442208.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE ALUTIIQ TRIBE OF OLD HARBOR  IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3) BUILDING COMMUNICATIONS CAPACITY; 4) BUILDING SOLID AND HAZARDOUS WASTE MANAGEMENT CAPACITY; AND 5) BUILDING TECHNICAL CAPACITY.ACTIVITIES:\nWORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES AND CONDUCTING COMMUNITY EDUCATION ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF AIR AND WATER QUALITY; DEVELOPING AN ENVIRONMENTAL INVENTORY; DEVELOPING AN EMERGENCY RESPONSE PROGRAM; AND COLLECTING BASELINE OCEAN WATER QUALITY DATA.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:\nTHE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE ALUTIIQ TRIBE OF OLD HARBOR, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; DECREASING AMOUNTS OF RECYCLABLES AND HAZARDOUS WASTES ENTERING LANDFILL; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.   ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; FINANCIAL REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; A LANDFILL ACTIVITY REPORT; AND ROAD DUST MANAGEMENT RECOMMENDATIONS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00837",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 235589.02,
+      "start_date": "2016-10-01",
+      "end_date": "2025-12-31",
+      "description": "OLD HARBOR FY17 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00846",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 172562.22,
+      "start_date": "2016-10-01",
+      "end_date": "2025-12-31",
+      "description": "OLD HARBOR FY17 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00697",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 147004.0,
+      "start_date": "2013-06-25",
+      "end_date": "2024-04-17",
+      "description": "OLD HARBOR A12AV00697 MOD 2",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00917",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 59513.36,
+      "start_date": "2016-10-01",
+      "end_date": "2025-12-31",
+      "description": "OLD HARBOR FY16/17 TRANSIT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00695",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 44636.0,
+      "start_date": "2013-08-11",
+      "end_date": "2024-04-17",
+      "description": "VILLAGE OF OLD HARBOR FY13 2% TRANSPORTATION PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01059",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 146718.53,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "OLD HARBOR FY23 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01058",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 106646.84,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "OLD HARBOR FY23 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01103",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALUTIIQ TRIBE OF OLD HARBOR",
+      "obligation": 5005.52,
+      "start_date": "2023-08-30",
+      "end_date": "2028-12-31",
+      "description": "ALUTIIQ TRIBE OF OLD HARBOR FY2023 TRANSIT OPERATIONS",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1359883.49,
+  "award_count": 9,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 442208.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 917675.49
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 700578.89,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

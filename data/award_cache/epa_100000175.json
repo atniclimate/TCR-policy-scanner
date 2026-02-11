@@ -1,9 +1,181 @@
 {
   "tribe_id": "epa_100000175",
   "tribe_name": "Northern Cheyenne Tribe of the Northern Cheyenne Indian Reservation, Montana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00236",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 119939.0,
+      "start_date": "2018-09-01",
+      "end_date": "2021-09-30",
+      "description": "ADAPTATION PLANNING (INCL DATA DEVELOP)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00808",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 45310.0,
+      "start_date": "2015-09-10",
+      "end_date": "2025-09-30",
+      "description": "CLIMATE CHANGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMD-2022-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 71471.26,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMD-2022-BR-014",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 1462649.0,
+      "start_date": "2023-11-28",
+      "end_date": "2026-11-27",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "693JG42230000V600MT0103",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 2658866.9,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600MT0103",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 216128.17,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600MT0103",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 3663481.03,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602MT3103024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 2480810.95,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NORTHERN CHEYENNE TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NORTHERN CHEYENNE TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600MT0103",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 1768376.01,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176MT3103024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 846635.39,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NORTHERN CHEYENNE TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NORTHERN CHEYENNE TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602MT3103025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 2942830.04,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NORTHERN CHEYENNE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NORTHERN CHEYENNE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177MT3103025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 846290.23,
+      "start_date": "2025-01-07",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NORTHERN CHEYENNE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NORTHERN CHEYENNE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "DEIE0000122",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBE",
+      "obligation": 3258514.0,
+      "start_date": "2019-10-01",
+      "end_date": "2027-12-30",
+      "description": "WHITE RIVER COMMUNITY SOLAR ON THE NORTHERN CHEYENNE RESERVATION",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 20381301.98,
+  "award_count": 13,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 165249.0
+    },
+    "97.047": {
+      "count": 2,
+      "total": 1534120.26
+    },
+    "20.205": {
+      "count": 8,
+      "total": 15423418.720000003
+    },
+    "81.087": {
+      "count": 1,
+      "total": 3258514.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 1462649.0,
+    "2025": 846290.23,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

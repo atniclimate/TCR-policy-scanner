@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000310",
   "tribe_name": "Tuolumne Band of Me-Wuk Indians of the Tuolumne Rancheria of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00190",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TUOLUMNE BAND OF ME-WUK INDIANS OF THE TUOLUMNE RANCHERIA OF CALIFORNIA",
+      "obligation": 100764.0,
+      "start_date": "2018-09-01",
+      "end_date": "2019-09-30",
+      "description": "TUOLUMNE-ADAPTATIONTRAINING&WORKSHOPS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00112",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TUOLUMNE BAND OF ME-WUK INDIANS OF THE TUOLUMNE RANCHERIA OF CALIFORNIA",
+      "obligation": 13770.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "99T84601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TUOLUMNE BAND OF ME-WUK INDIANS OF THE TUOLUMNE RANCHERIA OF CALIFORNIA",
+      "obligation": 457075.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE PURPOSE OF THIS GRANT IS TO SUPPORT THE TRIBE'S ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE DEVELOPING GIS MAPS OF FACILITIES WITH HAZARDOUS MATERIALS, CONDUCTING OUTREACH ACTIVITIES ON AIR QUALITY, WATER ISSUES AND RECYCLING, ORGANIZING AN EARTH DAY EVENT, CONDUCTING A YOUTH EDUCATION EVENT ON SUSTAINABLITY, DEVELOPING A TRANSFER STATION FEASIBILITY STUDY AND ATTENDING MEETINGS AND TRAINING IN ORDER TO DEVELOP CAPACITY IN THEIR ENVIRONMENTAL PROGRAMS.  THIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $96,464.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T62001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TUOLUMNE BAND OF ME-WUK INDIANS OF THE TUOLUMNE RANCHERIA OF CALIFORNIA",
+      "obligation": 449012.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO TUOLUMNE BAND OF ME-WUK INDIANS TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $187,200.ACTIVITIES:THE RECIPIENT WILL DEVELOP A TRANSFER STATION DESIGN, ATTEND REGIONAL MEETINGS ON ENVIRONMENTAL ISSUES, IMPLEMENT A SOLID WASTE MANAGEMENT PROGRAM INCLUDING THE COLLECTION OF MEDICAL WASTE AND CONDUCTING A COMPOSTING PROGRAM, ORGANIZING AN EARTH DAY EVENT, UPDATE ITS EPA TRIBAL ENVIRONMENTAL PLAN AND HIRE AND TRAIN AN ENVIRONMENTAL INTERN. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE A PROPOSED TRANSFER STATION DESIGN, AN UPDATED ENVIRONMENTAL PROTECTION AGENCY AND TRIBAL ENVIRONMENTAL PLAN,\nAN EARTH DAY SUMMARY AND INFORMATION ON THE TRIBE'S SOLID MANAGEMENT PROGRAM INCLUDING COMPOSTING AND COLLECTION OF MEDICAL WASTE. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE TUOLUMNE BAND OF ME-WUK INDIANS RESERVATION. .",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 1020621.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 114534.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 906087.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 449012.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

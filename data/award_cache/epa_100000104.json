@@ -1,9 +1,155 @@
 {
   "tribe_id": "epa_100000104",
   "tribe_name": "Hopi Tribe of Arizona",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00118",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": 0.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "97T35201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": 164813.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO THE HOPI TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $164,813.  SEE TERMS AND CONDITIONS.ACTIVITIES:THE ACTIVITIES INCLUDE COMPLETING RELEVANT CAPACITY BUILDING TRAININGS, EVALUATING AND REVISING MULTIPLE ENVIRONMENTAL ORDINANCES, ESTABLISHING AN ENVIRONMENTAL COMPLIANCE AND PLANNING OFFICE, CONDUCTING AN EARTH DAY EVENT, ENGAGING WITH THE TRIBAL COMMUNITY ON ENVIRONMENTAL PROTECTION ISSUES, COLLABORATING WITH INTERNAL AND EXTERNAL ENVIRONMENTAL PROTECTION PARTNERS AND DEVELOPING AN EPA TRIBAL ENVIRONMENTAL PLAN.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE TRAINING CERTIFICATES, SUMMARY MEETING REPORTS, REVISED TRIBAL ENVIRONMENTAL PROTECTION ORDINANCES, AND DRAFT EPA TRIBAL ENVIRONMENTAL PLAN. \n\nTHE EXPECTED OUTCOMES INCLUDE IMPROVED TRIBAL CAPACITY TO PROTECT PUBLIC HEALTH AND THE ENVIRONMENT THROUGH DEVELOPING STAFF WITH APPROPRIATE SKILLS, KNOWLEDGE AND EXPERIENCE TO MANAGE THE ENVIRONMENTAL PROGRAM AND TO DEVELOP LONG-TERM ENVIRONMENTAL QUALITY GOALS. \n\nTHE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE HOPI RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A09AV00314",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": 1530608.82,
+      "start_date": "2009-09-21",
+      "end_date": "2023-04-28",
+      "description": "ROAD MAINTENANCE PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00978",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": 80000.0,
+      "start_date": "2016-09-04",
+      "end_date": "2023-04-28",
+      "description": "PROJECT HIR 10(1) - SPIDER SPRINGS ROAD, H65-561",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00855",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": 0.0,
+      "start_date": "2014-08-16",
+      "end_date": "2022-04-22",
+      "description": "FY 2014 AWARD - HIR 2(12) LEUPP ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00244",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": -36635.33,
+      "start_date": "2011-09-23",
+      "end_date": "2023-04-28",
+      "description": "MOD 4 ISSUED TO RECONCILE ACCOUNTS & EXTEND POP TO 9/30/2016.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00422",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": -67014.03,
+      "start_date": "2011-09-29",
+      "end_date": "2023-04-28",
+      "description": "TRANSPORTATION PLANNING SERVICES",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00201",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": -75363.64,
+      "start_date": "2009-09-24",
+      "end_date": "2023-04-28",
+      "description": "MOD 5 ISSUED TO ADD FY 2014 TTP FUNDS & EXTEND PERFORMANCE TO 12/31/2014.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00423",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": -203304.06,
+      "start_date": "2011-09-29",
+      "end_date": "2023-04-28",
+      "description": "TRANSPORTATION PLANNING PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00243",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": -456631.78,
+      "start_date": "2011-09-23",
+      "end_date": "2023-04-28",
+      "description": "PROJ HIR 503(1) TRIBAL PROJECT MANAGEMENT AND CONSTRUCTION MONITORING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00242",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOPI TRIBE",
+      "obligation": -475215.86,
+      "start_date": "2011-09-23",
+      "end_date": "2023-04-28",
+      "description": "PROJECT HIR 501(3) BACAVI STREETS",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 461257.12000000005,
+  "award_count": 11,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 0.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 164813.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 296444.12
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 164813.0
+  },
+  "trend": "new"
 }

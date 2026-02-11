@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000106",
   "tribe_name": "Houlton Band of Maliseet Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00947",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HOULTON BAND OF MALISEET INDIANS",
+      "obligation": 133055.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "TRIBALCLIMATERESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00584",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOULTON BAND OF MALISEET INDIANS",
+      "obligation": 552678.89,
+      "start_date": "2019-03-05",
+      "end_date": "2023-09-30",
+      "description": "FOXCROFT ROAD ROUTE 602",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00845",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOULTON BAND OF MALISEET INDIANS",
+      "obligation": 284619.62,
+      "start_date": "2014-10-01",
+      "end_date": "2026-09-30",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00874",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOULTON BAND OF MALISEET INDIANS",
+      "obligation": 150539.0,
+      "start_date": null,
+      "end_date": "2023-09-30",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00964",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HOULTON BAND OF MALISEET INDIANS",
+      "obligation": 79490.33,
+      "start_date": "2021-08-01",
+      "end_date": "2025-10-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1200382.84,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 133055.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1067327.84
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 133055.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

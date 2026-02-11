@@ -1,9 +1,89 @@
 {
   "tribe_id": "epa_100000136",
   "tribe_name": "Lac Vieux Desert Band of Lake Superior Chippewa Indians of Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00795",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "LAC VIEUX DESERT BAND OF LAKE SUPERIOR CHIPPEWA INDIANS",
+      "obligation": 224781.0,
+      "start_date": "2024-07-01",
+      "end_date": "2026-12-31",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00970",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LAC VIEUX DESERT BAND OF LAKE SUPERIOR CHIPPEWA INDIANS",
+      "obligation": 4020547.0,
+      "start_date": "2020-08-26",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00435",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LAC VIEUX DESERT BAND OF LAKE SUPERIOR CHIPPEWA INDIANS",
+      "obligation": 2906540.0,
+      "start_date": "2009-07-13",
+      "end_date": "2026-09-30",
+      "description": "FY 2013 TTP CONSTRUCTION FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT2605010",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LAC VIEUX DESERT BAND OF LAKE SUPERIOR CHIPPEWA INDIANS",
+      "obligation": 4821507.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2605010",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LAC VIEUX DESERT BAND OF LAKE SUPERIOR CHIPPEWA INDIANS",
+      "obligation": 178140.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 12151515.0,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 224781.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 6927087.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 4999647.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 224781.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

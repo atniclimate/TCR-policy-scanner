@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000129",
   "tribe_name": "Kiowa Indian Tribe of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01131",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KIOWA TRIBE OF OKLAHOMA",
+      "obligation": 150000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2028-12-31",
+      "description": "KIOWA TRIBE OF OKLAHOMA - A25AV01091 - AGRICULTURE PROGRAM, NEW AWARD.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02F10701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KIOWA TRIBE OF OKLAHOMA",
+      "obligation": 470000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE KIOWA TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE COMMUNITY EDUCATION AND OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, GEOGRAPHIC INFORMATION SYSTEM (GIS) ACTIVITIES, AND COMMUNITY CLEAN-UP ACTIVITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), PESTICIDES INVENTORY,  QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP). THE INTENDED BENEFICIARY IS THE KIOWA TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A20AV00815",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KIOWA TRIBE OF OKLAHOMA",
+      "obligation": 1598026.82,
+      "start_date": "2020-07-14",
+      "end_date": "2025-12-31",
+      "description": "OBL NEW FUNDS-KIOWA TRIBE 2% PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00492",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KIOWA TRIBE OF OKLAHOMA",
+      "obligation": 134000.0,
+      "start_date": "2023-02-13",
+      "end_date": "2024-03-01",
+      "description": "KIOWA TRIBE A23AV00492, TO ADD FUNDS USING AI6V1 (22X) FOR KIOWA COMPLEX ROAD NEW 638 DESIGN PHASE CONTRACT.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00773",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KIOWA TRIBE OF OKLAHOMA",
+      "obligation": 5704443.45,
+      "start_date": "2024-07-12",
+      "end_date": "2026-03-31",
+      "description": "KIOWA TRIBE A24AV00773, NEW AWARD FOR KIOWA ROAD CONSTRUCTION CONTRACT.'",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00263",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KIOWA TRIBE OF OKLAHOMA",
+      "obligation": 230000.0,
+      "start_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "description": "KIOWA TRIBE - TRANSPORTATION IMPROVEMENT PLANNING PROGRAM- TO ADD FY18X 2% TRANSFER, FY19X 2% TRANSFER AND FY24X CR #1 FUNDING.",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 8286470.2700000005,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 150000.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 470000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 7666470.2700000005
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 604000.0,
+    "2024": 5934443.45,
+    "2025": 0.0,
+    "2026": 150000.0
+  },
+  "trend": "increasing"
 }

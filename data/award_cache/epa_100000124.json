@@ -1,9 +1,126 @@
 {
   "tribe_id": "epa_100000124",
   "tribe_name": "Keweenaw Bay Indian Community, Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00079",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 97304.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-03-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00570",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 9385.0,
+      "start_date": "2023-04-01",
+      "end_date": "2024-03-31",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00440",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 2124106.0,
+      "start_date": "2025-02-01",
+      "end_date": "2026-12-31",
+      "description": "TRIBAL COMMUNITY RESILIENCE\nSUSTAINABLE FISHERY RESTORATION ADAPTATION FOR CLIMATE CHANGE RESILIENCY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMC-2023-BR-011",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 393019.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "55IT2632680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 24365064.63,
+      "start_date": "2017-10-01",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2632680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 1358601.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "03E01009",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 35000.0,
+      "start_date": "2022-04-01",
+      "end_date": "2024-03-31",
+      "description": "DESCRIPTION:\nTHE PURPOSE OF THIS GRANT IS TO PROVIDE ASSISTANCE TO THE KEWEENAW BAY INDIAN COMMUNITY IN ITS EFFORTS TO IMPLEMENT AN AIR QUALITY SENSOR LOAN PROGRAM THROUGHOUT THE TRIBAL COMMUNITY.\nACTIVITIES:\nTHE ACTIVITIES KBIC WILL IMPLEMENT INCLUDE BUILDING TRIBAL CAPACITY TO ADDRESS AIR QUALITY ISSUES AND DEVELOPING AND IMPLEMENTING AN AIR QUALITY SENSOR MONITORING PROGRAM.\nOUTCOMES:\nOUTCOMES INCLUDE INCREASED TRIBAL CAPACITY TO ADDRESS AIR QUALITY ISSUES, OUTREACH AND EDUCATION, AND IMPROVE AIR QUALITY DATA ON TRIBAL LANDS. DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE TRIBAL RESIDENTS, STUDENTS, COMMUNITY, AND LOCAL ENVIRONMENTAL GROUPS.\nSUBRECIPIENT:\nNO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "04E01009",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "KEWEENAW BAY INDIAN COMMUNITY",
+      "obligation": 45000.0,
+      "start_date": "2024-04-01",
+      "end_date": "2026-03-31",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS GRANT IS TO PROVIDE ASSISTANCE TO THE KEWEENAW BAY INDIAN COMMUNITY IN ITS EFFORTS TO IMPLEMENT AN AIR QUALITY SENSOR LOAN PROGRAM THROUGHOUT THE TRIBAL COMMUNITY.ACTIVITIES:THE ACTIVITIES KBIC WILL IMPLEMENT INCLUDE BUILDING TRIBAL CAPACITY TO ADDRESS AIR QUALITY ISSUES AND DEVELOPING AND IMPLEMENTING AN AIR QUALITY SENSOR MONITORING PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:OUTCOMES INCLUDE INCREASED TRIBAL CAPACITY TO ADDRESS AIR QUALITY ISSUES, OUTREACH AND EDUCATION, AND IMPROVE AIR QUALITY DATA ON TRIBAL LANDS. DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE TRIBAL RESIDENTS, STUDENTS, COMMUNITY, AND LOCAL ENVIRONMENTAL GROUPS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 28427479.63,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 2230795.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 393019.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 25723665.63
+    },
+    "66.038": {
+      "count": 2,
+      "total": 80000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 35000.0,
+    "2023": 9385.0,
+    "2024": 45000.0,
+    "2025": 2517125.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

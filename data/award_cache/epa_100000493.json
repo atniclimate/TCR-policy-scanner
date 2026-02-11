@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000493",
   "tribe_name": "Native Village of Nunapitchuk",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV01051",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUNAPITCHUK",
+      "obligation": 2217314.0,
+      "start_date": "2023-08-17",
+      "end_date": "2028-12-31",
+      "description": "NUNAPITCHUK FY 2022 SUBPART J - TRIBAL CLIMATE CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J30801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUNAPITCHUK",
+      "obligation": 430898.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF NUNAPITCHUK WILL DEVELOP THE EPA TRIBAL ENVIRONMENTAL PLAN AROUND DECREASING LANDFILL USE MASS BY DEVELOPING A RECYCLING CENTER. COMMUNICATING WITH TRIBAL LEADERSHIP AND MEMBERS, DEVELOPING NEW ENVIRONMENTAL GOALS, AND TRAINING ON FEDERAL FUNDING AND RESEARCHING ADDITIONAL RESOURCES FROM OTHER FEDERAL, STATE, AND LOCAL ARENAS.ACTIVITIES:PRESENT TO THE COMMUNITY A COMPREHENSIVE ENVIRONMENTAL PLAN, CONSISTING OF THE 2024-27 EPA TRIBAL ENVIRONMENTAL PLAN. DISCUSS TRIBAL COUNCIL APPROVALS AND RECOMMENDATIONS. FOLLOW THROUGH ON LANDFILL PROJECTS AND DEMONSTRATIONS OF SUCCESS AND LESSONS LEARNED. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE TRIBAL COMMUNITY AND RESIDENTS OF THE NATIVE VILLAGE OF NUNAPITCHUK WILL HAVE A CLEANER VILLAGE, HEALTHIER HOMES, AND CHANGE IN BEHAVIORS. THE LANDFILL WILL BE CONTROLLED AND THERE WILL BE PLANS IN PLACE FOR PROGRESSING ENVIRONMENTAL PLANNING, CLEANER COMMUNITY. RESULTING IN BETTER TRIBAL RESIDENTS HEALTH AND WELL BEING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A23AV00603",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUNAPITCHUK",
+      "obligation": 375474.7,
+      "start_date": "2023-04-26",
+      "end_date": "2027-12-31",
+      "description": "NUNAPITCHUK ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00618",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUNAPITCHUK",
+      "obligation": 7703.85,
+      "start_date": "2023-05-05",
+      "end_date": "2027-12-31",
+      "description": "NUNAPITCHUK",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 3031390.55,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 2217314.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 430898.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 383178.55
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 2600492.5500000003,
+    "2024": 430898.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

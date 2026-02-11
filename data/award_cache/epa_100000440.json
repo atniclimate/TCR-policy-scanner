@@ -1,9 +1,59 @@
 {
   "tribe_id": "epa_100000440",
   "tribe_name": "King Salmon Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AV00376",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KING SALMON TRIBE",
+      "obligation": 214210.59,
+      "start_date": "2020-10-01",
+      "end_date": "2027-12-31",
+      "description": "P.L. 93-638 TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00378",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KING SALMON TRIBE",
+      "obligation": 172201.37,
+      "start_date": "2020-10-01",
+      "end_date": "2027-12-31",
+      "description": "P.L. 93-638 TRANSPORTATION ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00382",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KING SALMON TRIBE",
+      "obligation": 30068.0,
+      "start_date": "2014-02-20",
+      "end_date": "2023-12-31",
+      "description": "KING SALMON ROAD MAINTENANCE CONTRACT FY12 & FY13 FUNDS",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 416479.95999999996,
+  "award_count": 3,
+  "cfda_summary": {
+    "20.205": {
+      "count": 3,
+      "total": 416479.95999999996
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

@@ -1,9 +1,48 @@
 {
   "tribe_id": "epa_100000022",
   "tribe_name": "Bridgeport Indian Colony",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "55IT0604310",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "BRIDGEPORT INDIAN COLONY",
+      "obligation": 3947893.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0604310",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "BRIDGEPORT INDIAN COLONY",
+      "obligation": 143909.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "PURPOSE: THE INDIAN HOUSING BLOCK GRANTS (IHBG) PROGRAM IS AUTHORIZED UNDER THE NATIVE AMERICAN HOUSING ASSISTANCE AND SELF-DETERMINATION ACT OF 1996 (25 U.S.C. §4101 ET SEQ.) (NAHASDA). REGULATIONS FOR THE PROGRAM, WHICH ARE FOUND AT 24 CFR PART 1000, WERE WRITTEN BY HUD IN NEGOTIATION WITH TRIBES AND TRIBALLY DESIGNATED HOUSING ENTITIES (TDHES). THE GRANTS, WHICH ARE AWARDED BASED ON A FORMULA TO TRIBES AND TDHES, FUND A RANGE OF AFFORDABLE HOUSING ACTIVITIES THAT PRIMARILY BENEFIT LOW-INCOME AMERICAN INDIAN AND ALASKA NATIVE FAMILIES LIVING IN INDIAN COUNTRY AND INCLUDE ACTIVITIES THAT: 1) ASSIST AND PROMOTE AFFORDABLE HOUSING ACTIVITIES TO DEVELOP, MAINTAIN, AND OPERATE AFFORDABLE HOUSING IN SAFE AND HEALTHY ENVIRONMENTS ON INDIAN RESERVATIONS AND IN OTHER INDIAN AREAS FOR OCCUPANCY BY LOW-INCOME INDIAN FAMILIES; 2) COORDINATE ACTIVITIES TO PROVIDE HOUSING FOR INDIAN TRIBES AND THEIR MEMBERS AND TO PROMOTE SELF-SUFFICIENCY AND THEIR MEMBERS; 3) PLAN FOR AND INTEGRATE INFRASTRUCTURE RESOURCES FOR INDIAN TRIBES WITH HOUSING DEVELOPMENT FOR INDIAN TRIBES. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; ACTIVITIES TO BE PERFORMED: NO VALUE PROVIDED; EXPECTED OUTCOMES: NO VALUE PROVIDED; INTENDED BENEFICIARIES: THE PRIMARY BENEFICIARIES OF FUNDS ARE FAMILIES THAT MEET THE CRITERIA OF NAHASDA AND 24 CFR 1000.104. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; SUBRECIPIENT ACTIVITIES: NO VALUE PROVIDED",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 4091802.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "14.867": {
+      "count": 2,
+      "total": 4091802.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

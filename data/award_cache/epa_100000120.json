@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000120",
   "tribe_name": "Karuk Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10129",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 50000.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-05-15",
+      "description": "UUMKUN PA'AAVKAM VURAHEESH I FUTURE LEADERS) PROJECT: STRENGTHENING THE NEXT GENERATION OF KARUK ENVIRONMENTAL LEADERSHIP IN CLIMATE ADAPTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42230000V600CA0051",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 978717.4,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600CA0051",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 72575.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0051",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 1712036.86,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602CA3051024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 917851.39,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KARUK TRIBE OF CALIFORNIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KARUK TRIBE OF CALIFORNIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176CA3051024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 369885.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KARUK TRIBE OF CALIFORNIA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KARUK TRIBE OF CALIFORNIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600CA0051",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 136144.5,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3051025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 1086512.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: KARUK TRIBE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KARUK TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177CA3051025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 366822.4,
+      "start_date": "2025-02-12",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: KARUK TRIBE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO KARUK TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "DEIE0000160",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "KARUK TRIBE OF CALIFORNIA",
+      "obligation": 1990866.0,
+      "start_date": "2022-09-01",
+      "end_date": "2025-09-01",
+      "description": "COMMUNITY SCALE SOLAR ENERGY GENERATING SYSTEMS",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 7681411.7,
+  "award_count": 10,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 50000.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 5640545.700000001
+    },
+    "81.087": {
+      "count": 1,
+      "total": 1990866.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1990866.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 366822.4,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

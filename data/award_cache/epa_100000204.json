@@ -1,9 +1,247 @@
 {
   "tribe_id": "epa_100000204",
   "tribe_name": "Poarch Band of Creek Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02D14821",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 968000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2026-12-31",
+      "description": "THIS ACTION APPROVES AN AWARD IN THE AMOUNT OF $591,000 TO POARCH BAND OF CREEK INDIANS.  ACTIVITIES TO BE PERFORM INCLUDE WELL REHABILITATION; PURCHASE/INSTALLATION OF CONTAMINANT SAMPLING AND MONITORING EQUIPMENT; WATERLINE EXTENSIONS; AND SOFTWARE/HARDWARE COMPUTER UPGRADES.  THE ANTICIPATED DELIVERABLES INCLUDE QUARTERLY PERFORMANCE REPORTS, PAID INVOICES, BEFORE AND AFTER PICTURES OF CONSTRUCTION WORK, AND AN ENGINEER'S CERTIFICATE OF COMPLETION.  THE EXPECTED OUTCOMES ARE INCREASED WELL PRODUCTION RATES, ADDITIONAL CONTAMINANT SAMPLING POINTS, INCREASED WATER STORAGE AND REDUCED CYBER-SECURITY RISKS AND VULNERABILITIES. THE DIRECT BENEFICIARIES OF THE PROJECT ARE POARCH HOUSEHOLDS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02D14823",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 482000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-12-31",
+      "description": "DESCRIPTION:THIS ACTION PROVIDES FUNDING IN THE AMOUNT OF $482,000 TO POARCH BAND OF CREEK INDIANS UNDER THE SAFE DRINKING WATER ACT (SDWA): SECTION 1452 AND INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) (PL 117-58).  THE PURPOSE OF THIS AGREEMENT IS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SAFE DRINKING WATER ACT (SDWA). THE RECIPIENT WILL PROVIDE ADEQUATE, QUALITY DRINKING WATER AND FIRE PROTECTION TO THE CURRENT CUSTOMERS SERVED BY THE POARCH BAND OF CREEK INDIANS UTILITIES AUTHORITY AND FUTURE CUSTOMERS BY REHABILITATING AND UPGRADING THE EXISTING WEST WELL TO INCREASE THE PRODUCTION CAPACITY TO 800 GPM NEEDED TO BALANCE THE OVERALL WATER DISTRIBUTION SYSTEM, PROVIDE ADEQUATE FIRE PROTECTION FLOWS, SERVE EXISTING CUSTOMERS, PROVIDE A SUSTAINABLE WATER SYSTEM WHICH CAN MEET THE DEMANDS OF FUTURE GROWTH AND DEVELOPMENT IN THE AREA.\nTHIS PROJECT WILL BE USED TO INCREASE THE PRODUCTION OF THE WEST WELL TREATMENT FACILITY. THE PROJECT WILL BE COMPLETED USING BOTH DWIG-TSA BASE FY2022 NON-BIL PROGRAM AND DWIG-TSA SUPPLEMENTAL FY2022 BIL PROGRAM FUNDING. THE PROJECT WILL INCLUDE ENGINEERING SERVICES, PROCUREMENT, EQUIPMENT PURCHASE, EQUIPMENT INSTALLATION, ELECTRICAL IMPROVEMENTS AND OTHER CONSTRUCTION RELATED ACTIVITIES. SEE ATTACHED PER AND PROJECT PLANS.  \nTHE PROJECT WILL INCLUDE REPLACEMENT AND UPGRADES TO THE EXISTING PUMP BOWLS AND MOTOR AT THE DEEP WELL; INSTALLATION OF AN ADDITIONAL PRECIPITATOR; UPGRADES TO THE HIGH SERVICE PUMPS; AND REPLACEMENT AND UPGRADES TO THE BAG FILTERS, CHEMICAL FEED SYSTEMS (SODA ASH, CHLORINE, AND FLUORIDE), AND THE ELECTRICAL CONTROLS. SAFETY CONCERNS AND BUILDING REHAB WILL BE ADDRESSED AS IDENTIFIED DURING THE PROJECT'S IMPLEMENTATION. SPECIFIC EQUIPMENT SELECTION TO BE DETERMINED DURING THE DESIGN PHASE.  \nACTIVITIES:THE ACTIVITIES INCLUDE PROVIDING ADEQUATE, QUALITY DRINKING WATER AND FIRE PROTECTION TO THE CURRENT CUSTOMERS SERVED BY THE POARCH BAND OF CREEK INDIANS UTILITIES AUTHORITY AND FUTURE CUSTOMERS BY REHABILITATING AND UPGRADING THE EXISTING WEST WELL TO INCREASE THE PRODUCTION CAPACITY. THE PROJECT WILL INCLUDE ENGINEERING SERVICES, PROCUREMENT, EQUIPMENT PURCHASE, EQUIPMENT INSTALLATION, ELECTRICAL IMPROVEMENTS AND OTHER CONSTRUCTION RELATED ACTIVITIES. \nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE DELIVERABLES OF THIS GRANT INCLUDE CAPITALIZATION OF THE RECIPIENT'S DWSRF TO REPLACEMENT AND UPGRADE EXISTING PUMP BOWLS AND MOTOR AT THE DEEP WELL; INSTALLATION OF AN ADDITIONAL PRECIPITATOR; UPGRADES TO THE HIGH SERVICE PUMPS, AND REPLACEMENT AND UPGRADES TO THE BAG FILTERS, CHEMICAL FEED SYSTEMS (SODA ASH, CHLORINE, AND FLUORIDE), AND THE ELECTRICAL CONTROLS, AS WELL AS QUARTERLY AND FINAL REPORTS. THE OUTCOMES ARE INCREASED TECHNICAL, FINANCIAL AND MANAGERIAL CAPACITY OF PUBLIC WATER SYSTEMS, AND PROVIDE ASSURANCE OF A CLEANER AND SAFER POTABLE WATER SUPPLY BY FUNDING IMPROVEMENTS TO MULTIPLE WATER INFRASTRUCTURE PROJECTS. THE INTENDED BENEFICIARIES ARE CITIZENS IN THE POARCH BAND OF CREEK INDIANS RESERVATION AND THE STATE OF ALABAMA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00963",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 2259143.72,
+      "start_date": "2016-08-01",
+      "end_date": "2025-12-31",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00508",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 1446684.75,
+      "start_date": "2015-05-01",
+      "end_date": "2025-12-31",
+      "description": "ROAD MAINTENANCE TTP",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01286",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 914212.15,
+      "start_date": "2012-09-12",
+      "end_date": "2025-12-31",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00984",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 562372.57,
+      "start_date": "2016-08-01",
+      "end_date": "2025-12-31",
+      "description": "CONSOLIDATED TRIBAL GOVERNMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV01028",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 559292.09,
+      "start_date": "2020-10-01",
+      "end_date": "2025-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV01026",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 509655.8,
+      "start_date": "2020-10-01",
+      "end_date": "2025-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00608",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 64911.83,
+      "start_date": "2017-05-25",
+      "end_date": "2025-12-31",
+      "description": "PBCI_17X_BLACKSHER, CREEK RD, INDIAN SCHOOL AND POW WOW RD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00473",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 251791.29,
+      "start_date": "2015-05-01",
+      "end_date": "2025-12-31",
+      "description": "2% PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00780",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 87609.0,
+      "start_date": "2021-07-01",
+      "end_date": "2026-07-01",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV01032",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 25193.17,
+      "start_date": "2020-10-01",
+      "end_date": "2025-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01023",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 43000.0,
+      "start_date": "2023-09-01",
+      "end_date": "2026-09-01",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01022",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 40000.0,
+      "start_date": "2023-09-01",
+      "end_date": "2026-09-01",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00911",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 19995.51,
+      "start_date": "2023-07-25",
+      "end_date": "2026-06-01",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32540883",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 24145000.0,
+      "start_date": "2025-09-24",
+      "end_date": "2029-12-31",
+      "description": "THIS PROJECT INCLUDES THE ROAD IMPROVEMENTS/CONSTRUCTION OF THE JACK SPRINGS ROAD AND POARCH ROAD.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0118570",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 30332338.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "00D27415",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 194645.0,
+      "start_date": "2014-10-01",
+      "end_date": "2022-03-31",
+      "description": "THIS ACTION APPROVES AN AWARD IN THE AMOUNT OF $41,238 TO SUPPORT AN ONGOING PROGRAM TO BUILD CAPACITY/DEVELOP A TRIBAL AMBIENT AND INDOOR AIR PROGRA",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02D17622",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "POARCH BAND OF CREEK INDIANS",
+      "obligation": 51445.0,
+      "start_date": "2022-04-01",
+      "end_date": "2024-12-31",
+      "description": "DESCRIPTION:\nTHIS ACTION PROVIDES FUNDING TO THE POACH BAND OF CREEK INDIANS(PBCI) IN THE AMOUNT OF $27,218 IN FUNDING IN SUPPORT OF THE TRIBE'S EFFORTS TO CONTINUE BUILDING CAPACITY TO ESTABLISH A TRIBAL AIR QUALITY PROGRAM THAT MEETS THE NEEDS OF THE TRIBE AND IS PROTECTIVE OF HUMAN HEALTH AND THE ENVIRONMENT. THE PRIMARY OBJECTIVE OF THIS GRANT IS TO 1) CONDUCT INDOOR AIR QUALITY(IAQ) BUILDING WALK-THROUGHS TO ESTABLISH A BASELINE AND PROVIDE RECOMMENDATIONS ON ADDRESSING IAQ ISSUES ; 2) CONTINUE TO OPERATE AND MAINTAIN THE METEOROLOGICAL (MET) STATION TO COLLECT DATA TO POTENTIALLY BE USED IN AIR QUALITY DATA ANALYSIS, AND TO HELP PBCI OFFICES/DEPARTMENTS WITH THEIR WEATHER DATA NEEDS ; 3) COLLABORATE WITH THE TRIBAL HOUSING AUTHORITY TO PROVIDE ENERGY EFFICIENCY INFORMATION AND OUTREACH TO TRIBAL MEMBERS; AND 4) ATTEND NATIONAL AND REGIONAL TRAINING EVENTS TO OBTAIN KNOWLEDGE AND SKILLS TO ADMINISTER AND EXPAND THE TRIBAL AIR QUALITY PROGRAM.\n\nACTIVITIES:\nACTIVITIES TO BE PERFORMED: THE RECIPIENT WILL COLLECT QUALITY ASSURED METEOROLOGICAL DATA FOR PBCI DEPARTMENT/OFFICE USE AND SUBMIT RESULTS TO THE ENVIRONMENTAL PROTECTION AGENCY'S (EPA'S) NATIONAL AIR QUALITY DATABASE; CONDUCT INDOOR AIR QUALITY BUILDING WALK-THROUGHS TO ESTABLISH A BASELINE AND PROVIDE RECOMMENDATIONS ON ADDRESSING IAQ ISSUES; COLLABORATE WITH THE TRIBAL HOUSING AUTHORITY TO PROVIDE ENERGY EFFICIENCY INFORMATION AND OUTREACH TO TRIBAL MEMBERS; AND ATTEND NATIONAL AND REGIONAL TRAINING EVENTS TO OBTAIN KNOWLEDGE AND SKILLS TO ADMINISTER AND EXPAND THE TRIBAL AIR QUALITY PROGRAM.\nOUTCOMES:\nEXPECTED OUTCOMES: THE ANTICIPATED SHORT-TERM OUTCOME FOR THIS PROJECT IS AN INCREASE IN THE KNOWLEDGE OF TRIBAL MEMBERS REGARDING AIR QUALITY, AND THE BENEFITS OF IMPROVING ENERGY EFFICIENCY AND INDOOR AIR QUALITY AS IT RELATES TO HAVING A HEALTHY HOME. THE LONG-TERM OUTCOME, THROUGH ENVIRONMENTAL EDUCATION AND TRAINING IS TO ENSURE THAT THE NEEDS OF THE TRIBE ARE MET BY ESTABLISHING A TRIBAL AIR QUALITY PROGRAM WHICH IS PROTECTIVE OF HUMAN HEALTH AND THE ENVIRONMENT INTENDED BENEFICIARIES: DIRECT BENEFICIARIES OF THESE ACTIVITIES ARE THE PBCI TRIBAL MEMBERS LOCATED IN ATMORE, ALABAMA. \nSUBRECIPIENT:\nNO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 62957289.88,
+  "award_count": 19,
+  "cfda_summary": {
+    "66.468": {
+      "count": 2,
+      "total": 1450000.0
+    },
+    "20.205": {
+      "count": 14,
+      "total": 30928861.88
+    },
+    "14.867": {
+      "count": 1,
+      "total": 30332338.0
+    },
+    "66.038": {
+      "count": 2,
+      "total": 246090.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1019445.0,
+    "2023": 102995.51,
+    "2024": 482000.0,
+    "2025": 24145000.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000474",
   "tribe_name": "Native Village of Nelson Lagoon",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV01040",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF NELSON LAGOON",
+      "obligation": 9000000.0,
+      "start_date": "2024-09-19",
+      "end_date": "2029-12-31",
+      "description": "NELSON LAGOON - TCR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00417",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF NELSON LAGOON",
+      "obligation": 340195.0,
+      "start_date": "2024-01-09",
+      "end_date": "2026-12-31",
+      "description": "NELSON LAGOON ADD FY 2022X DEMONSTRATION PROJECT FUNDS, ONE-TIME ONLY FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J74901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF NELSON LAGOON",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE NATIVE VILLAGE OF NELSON LAGOON TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL DEVELOP A QAPP FOR BASELINE MONITORING, DEVELOP A LONG RANGE ENVIRONMENTAL PLAN, SOLID WASTE MANAGEMENT AND ABANDONED VEHICLE REMOVAL, CLIMATE CHANGE PREPAREDNESS, AND COASTAL EROSION BASELINE MONITORING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J71501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF NELSON LAGOON",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF NELSON LAGOON WILL CONTINUE TO ESTABLISH AN ENVIRONMENTAL PROGRAM. THEY WILL BUILD ADMINISTRATIVE AND PROGRAMMATIC CAPACITY FOR IMPROVED GRANT MANAGEMENT AND DAILY ENVIRONMENTAL PROGRAM OPERATIONS. A FOCUS AREA IS TO CONDUCT A RECYCLING EFFORT WITHIN THE LOCAL COMMUNITY, INCLUDING OUTREACH AND EDUCATION TO IMPROVE AWARENESS OF ENVIRONMENTAL STEWARDSHIP. THE TRIBE WILL CONDUCT A COLLABORATIVE SOLID WASTE IMPROVEMENT PROJECT AND BACKHAUL PLANNING PROJECT, AND INCREASE KNOWLEDGE/RESOURCES FOR HEALTHIER, MORE SUSTAINABLE COMMUNITY. ACTIVITIES:WORKPLAN ACTIVITIES WILL INVOLVE ADMINISTRATIVE CONTINUED CAPACITY BUILDING AS WELL AS TRIBAL ENVIRONMENTAL CAPACITY BUILDING. THE TRIBE WILL CONTINUE CRITICAL SOLID WASTE MANAGEMENT PROGRAMS BY PLANNING FOR BACKHAULING OF WASTES WHICH PREVENTS CONTAMINATION BY UNIVERSAL WASTES INTO WATERWAYS AND ON LAND. THIS WILL BE ACCOMPLISHED THRU ACTIVITIES TO INCLUDE COMMUNITY WIDE COLLECTION OF MATERIALS THAT CAN BE RECYCLED OR REPURPOSED TO REDUCE WASTE WITHIN THE COMMUNITY, EXTEND THE LIFE OF THE TRIBALLY OWNED LANDFILL, AND ASSIST IN THE IMPLEMENTATION OF STATE-REGULATED LANDFILL OPERATIONS. LOCAL IMPROVEMENTS WILL INVOLVE ACTIVITIES TO ADDRESS EDUCATION AND BEHAVIORAL CHANGE IN WASTE MANAGEMENT.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE NATIVE VILLAGE OF NELSON LAGOON AND THE EPA EXPECT THE ENVIRONMENTAL PROGRAM CAPACITY TO EXPAND BY ENGAGING THE TRIBAL RESIDENTIAL COMMUNITY. OUTCOMES WILL INVOLVE ADMINISTRATIVE CONTINUED CAPACITY BUILDING AS WELL AS TRIBAL ENVIRONMENTAL CAPACITY BUILDING. THE TRIBE WILL CONTINUE CRITICAL SOLID WASTE MANAGEMENT PROGRAMS BY RECYCLING WASTES WHICH PREVENTS CONTAMINATION BY UNIVERSAL WASTES INTO WATERWAYS AND ON LAND. AIR QUALITY ACTIVITIES WILL RESULT IN IMPROVED HEALTH AMONG TRIBAL MEMBERS THRU PROVEN STRATEGIES AND INITIATIVES. COMMUNITY OUTREACH AND EDUCATION IN SOLID WASTE MANAGEMENT AND AIR QUALITY PROGRAMS CHANGES BEHAVIOR PATTERNS, ENABLING BOTH EPA AND THE TRIBE TO PROTECT HUMAN HEALTH AND THE ENVIRONMENT. OVERALL, THESE EFFORTS WILL SERVE THE TRIBAL COMMUNITY FOR YEARS TO COME.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV01018",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NELSON LAGOON",
+      "obligation": 222426.75,
+      "start_date": "2021-09-09",
+      "end_date": "2028-12-31",
+      "description": "P.L. 93-638 CONTRACT, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00934",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NELSON LAGOON",
+      "obligation": 93009.0,
+      "start_date": "2014-06-03",
+      "end_date": "2028-12-31",
+      "description": "NELSON LAGOON TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00073",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NELSON LAGOON",
+      "obligation": 0.0,
+      "start_date": "2011-03-22",
+      "end_date": "2028-12-31",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 10433630.75,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 9340195.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 778000.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 315435.75
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 9340195.0,
+    "2025": 268000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

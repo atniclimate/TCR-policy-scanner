@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000251",
   "tribe_name": "Saint Regis Mohawk Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00189",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SAINT REGIS MOHAWK TRIBE",
+      "obligation": 150000.0,
+      "start_date": "2018-09-01",
+      "end_date": "2023-09-30",
+      "description": "STREGISMOHA-ADAPTATIONTRAINING&WORKSHOPS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMN-2021-BR-060-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SAINT REGIS MOHAWK TRIBE",
+      "obligation": 187403.02,
+      "start_date": "2022-09-01",
+      "end_date": "2025-08-31",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMN-2021-BR-060-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SAINT REGIS MOHAWK TRIBE",
+      "obligation": 21238.0,
+      "start_date": "2022-09-01",
+      "end_date": "2025-08-31",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "96258518",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SAINT REGIS MOHAWK TRIBE",
+      "obligation": 421757.0,
+      "start_date": "2018-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS PROJECT WILL ASSIST THE SAINT REGIS MOHAWK TRIBE WITH EXPANDING THE CAPACITY AND RELIABILITY OF THE WATER SYSTEM.  THE CURRENT WATER MAIN IS NOT CAPABLE OF HANDLING THE FLOW WATER WITHOUT BEING OVER PRESSURIZED, THEREFORE THE WATER MAIN SIZE NEEDS TO BE INCREASED TO ALLOW THE MAXIMUM CAPACITY DURING PEAK DEMAND PERIODS WITHOUT CAUSING DAMAGE TO THE DISTRIBUTION SYSTEM (ON GARROW ROAD AND MCGEE ROAD).",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 780398.02,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 150000.0
+    },
+    "97.047": {
+      "count": 2,
+      "total": 208641.02
+    },
+    "66.468": {
+      "count": 1,
+      "total": 421757.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 208641.02,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

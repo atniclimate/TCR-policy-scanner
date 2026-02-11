@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000397",
   "tribe_name": "Egegik Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A17AV00766",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EGEGIK VILLAGE",
+      "obligation": 2772792.2,
+      "start_date": "2016-11-25",
+      "end_date": "2027-12-31",
+      "description": "EGEGIK FY16 6K1 CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00765",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EGEGIK VILLAGE",
+      "obligation": 488143.13,
+      "start_date": "2016-11-25",
+      "end_date": "2027-12-31",
+      "description": "A17AV00765",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00093",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EGEGIK VILLAGE",
+      "obligation": 184702.49,
+      "start_date": "2015-10-01",
+      "end_date": "2027-12-31",
+      "description": "A17AV00093",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "21AH0204280",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "EGEGIK VILLAGE",
+      "obligation": 35007.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "PURPOSE: THE INDIAN HOUSING BLOCK GRANTS (IHBG) PROGRAM IS AUTHORIZED UNDER THE NATIVE AMERICAN HOUSING ASSISTANCE AND SELF-DETERMINATION ACT OF 1996 (25 U.S.C. §4101 ET SEQ.) (NAHASDA). REGULATIONS FOR THE PROGRAM, WHICH ARE FOUND AT 24 CFR PART 1000, WERE WRITTEN BY HUD IN NEGOTIATION WITH TRIBES AND TRIBALLY DESIGNATED HOUSING ENTITIES (TDHES). THE GRANTS, WHICH ARE AWARDED BASED ON A FORMULA TO TRIBES AND TDHES, FUND A RANGE OF AFFORDABLE HOUSING ACTIVITIES THAT PRIMARILY BENEFIT LOW-INCOME AMERICAN INDIAN AND ALASKA NATIVE FAMILIES LIVING IN INDIAN COUNTRY AND INCLUDE ACTIVITIES THAT: 1) ASSIST AND PROMOTE AFFORDABLE HOUSING ACTIVITIES TO DEVELOP, MAINTAIN, AND OPERATE AFFORDABLE HOUSING IN SAFE AND HEALTHY ENVIRONMENTS ON INDIAN RESERVATIONS AND IN OTHER INDIAN AREAS FOR OCCUPANCY BY LOW-INCOME INDIAN FAMILIES; 2) COORDINATE ACTIVITIES TO PROVIDE HOUSING FOR INDIAN TRIBES AND THEIR MEMBERS AND TO PROMOTE SELF-SUFFICIENCY AND THEIR MEMBERS; 3) PLAN FOR AND INTEGRATE INFRASTRUCTURE RESOURCES FOR INDIAN TRIBES WITH HOUSING DEVELOPMENT FOR INDIAN TRIBES. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; ACTIVITIES TO BE PERFORMED: NO VALUE PROVIDED; EXPECTED OUTCOMES: NO VALUE PROVIDED; INTENDED BENEFICIARIES: THE PRIMARY BENEFICIARIES OF FUNDS ARE FAMILIES THAT MEET THE CRITERIA OF NAHASDA AND 24 CFR 1000.104. AWARD DESCRIPTION SOURCE - ASSISTANCE LISTING FROM SAM.GOV; SUBRECIPIENT ACTIVITIES: NO VALUE PROVIDED",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3480644.8200000003,
+  "award_count": 4,
+  "cfda_summary": {
+    "20.205": {
+      "count": 3,
+      "total": 3445637.8200000003
+    },
+    "14.867": {
+      "count": 1,
+      "total": 35007.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

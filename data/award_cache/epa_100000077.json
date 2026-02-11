@@ -1,9 +1,129 @@
 {
   "tribe_id": "epa_100000077",
   "tribe_name": "Eastern Shawnee Tribe of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01F49901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ABSENTEE SHAWNEE TRIBE OF OKLAHOMA",
+      "obligation": 460000.0,
+      "start_date": "2018-10-01",
+      "end_date": "2022-09-30",
+      "description": "THIS AWARD PROVIDES ASSISTANCE TO INDIAN TRIBAL GOVERNMENTS AND INTERTRIBAL CONSORTIA TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL REGULATORY PROGRAMS ON INDIAN LANDS, PROVIDE TECHNICAL ASSISTANCE FROM EPA TO INDIAN TRIBAL GOVERNMENTS, AND INTERTRIBAL CONSORTIA IN THE DEVELOPMENT OF MULTIMEDIA PROGRAMS TO ADDRESS ENVIRONMENTAL ISSUES ON INDIAN LANDS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00535",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ABSENTEE SHAWNEE TRIBE OF OKLAHOMA",
+      "obligation": 3307597.08,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/LAW ENFORCEMENT SPECIAL INITIATIVES FUNDING IS BEING PROVIDED ON A ONE-TIME (NONRECURRING) BASIS TO MEET THE OPERATIONAL NEEDS OF TRIBALLY CONTRACTED OR COMPACTED LAW ENFORCEMENT AND/OR DETENTION/CORRECTIONS PROGRAMS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00278",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ABSENTEE SHAWNEE TRIBE OF OKLAHOMA",
+      "obligation": 3138310.43,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00542",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN SHAWNEE TRIBE",
+      "obligation": 2480004.3,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/LAW ENFORCEMENT SPECIAL INITIATIVES FUNDING IS BEING PROVIDED ON A ONE-TIME (NONRECURRING) BASIS TO MEET THE OPERATIONAL NEEDS OF TRIBALLY CONTRACTED OR COMPACTED LAW ENFORCEMENT AND/OR DETENTION/CORRECTIONS PROGRAMS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00219",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ABSENTEE SHAWNEE TRIBE OF OKLAHOMA",
+      "obligation": 2022587.09,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00694",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ABSENTEE SHAWNEE TRIBE OF OKLAHOMA",
+      "obligation": 1594027.4,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00101",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN SHAWNEE TRIBE",
+      "obligation": 1271940.23,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR THE FOLLOWING:  SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE; INITIAL WELFARE ASSISTANCE TO MEET APPX. 19.1% OF TRIBE'S FY2021 ESTIMATED NEED BASED ON METHOLOGY; LAW ENFORCEMENT-638 TRIBAL CR1 FOR PROGRAM BASE FUNDING @ FY2020 LEVEL AND SELF GOVERNANCE COMPACTS FOR TPA BASE AT 80.27% OF THE CR ANNUAL RATE OF OPERATIONS OF THE TRIBAL PRIORITY ALLOCATION (TPA) PROGRAMS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00114",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN SHAWNEE TRIBE",
+      "obligation": 983239.42,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00740",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "EASTERN SHAWNEE TRIBE",
+      "obligation": 132050.95,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 15389756.9,
+  "award_count": 9,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 460000.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 14929756.899999999
+    }
+  },
+  "yearly_obligations": {
+    "2022": 4731904.86,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

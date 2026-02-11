@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000071",
   "tribe_name": "Timbisha Shoshone Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T02101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TIMBISHA SHOSHONE TRIBE",
+      "obligation": 348515.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE TIMBISHA SHOSHONE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL PARTICIPATE IN ENVIRONMENTAL MANAGEMENT STRATEGIC PLANNING SESSIONS, UPDATE THEIR TRIBAL ENVIRONMENTAL PLAN,CONDUCT A COMMUNITY CLEAN-UP EVENT, DEVELOP AN AIR QUALITY NEEDS ASSESSMENT, AND IMPLEMENT A RECYCLING PROGRAM.  THIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $155,276.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T92301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TIMBISHA SHOSHONE TRIBE",
+      "obligation": 219400.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE TIMBISHA SHOSHONE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $90,400 TO THE TIMBISHA SHOSHONE TRIBE. ACTIVITIES:THE ACTIVITIES INCLUDE PROVIDING OUTREACH AND EDUCATIONAL INFORMATION ON CLIMATE CHANGE AND ENVIRONMENTAL ISSUES, WORKING ON DEVELOPMENT OF SOLID WASTE PROGRAM, DEVELOPMENT OF AN AIR QUALITY PROGRAM, ATTENDING RELEVANT TRAININGS, AND ATTENDING REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS IN REGION 9.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE DESCRIPTION OF OUTREACH EFFORTS, TRAINING CERTIFICATES, AND DOCUMENTED ACTION ITEMS AND SUCCESSES FROM MEETINGS AND TRAINING. THE EXPECTED OUTCOMES INCLUDE KNOWLEDGEABLE ENVIRONMENTAL STAFF, IMPROVED COMMUNICATION WITH REGION 9 TRIBES. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE TIMBISHA SHOSHONE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0637390",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TIMBISHA SHOSHONE TRIBE",
+      "obligation": 3263910.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3831825.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 567915.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 3263910.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 219400.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

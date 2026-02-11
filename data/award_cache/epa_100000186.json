@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000186",
   "tribe_name": "Ottawa Tribe of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV00379",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "OTTAWA INDIAN TRIBE OF OKLAHOMA",
+      "obligation": 244664.0,
+      "start_date": "2023-03-01",
+      "end_date": "2026-09-30",
+      "description": "FY22 ONE-TIME CLIMATE CONTROL/COOP LANDSCAPE CONSERVATION FUNDS IN THE AMOUNT OF $243,114.00.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00834",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OTTAWA INDIAN TRIBE OF OKLAHOMA",
+      "obligation": 105376.42,
+      "start_date": "2017-10-01",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL TRANSPORATION PROGRAM - PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00224",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OTTAWA INDIAN TRIBE OF OKLAHOMA",
+      "obligation": 12500.0,
+      "start_date": "2019-04-01",
+      "end_date": "2025-05-20",
+      "description": "TRIBAL TRANSPORTATION PROGRAM SAFETY FUNDS FOR THE DEVELOPMENT OF A SAFETY PLAN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01136",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OTTAWA INDIAN TRIBE OF OKLAHOMA",
+      "obligation": 14551.98,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD FOR THE TRIBAL TRANSPORTATION PROGRAM IN THE AMOUNT OF $4,681.18 AND $4,951.20. THESE ARE 2% PLANNING FUNDS.",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 377092.4,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 244664.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 132428.4
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 244664.0,
+    "2024": 14551.98,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

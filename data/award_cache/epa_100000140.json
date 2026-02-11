@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000140",
   "tribe_name": "Koi Nation of Northern California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "97T36201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KOI NATION OF NORTHERN CALIFORNIA",
+      "obligation": 180273.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO KOI NATION OF NORTHERN CALIFORNIA. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND DEVELOP AN ENVIRONMENTAL MANAGEMENT PROGRAM.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $180,273. SEE GENERAL TERMS AND CONDITIONS.\n\nACTIVITIES:THE ACTIVITIES INCLUDE DRAFTING THE TRIBE'S FIRST TRIBAL ENVIRONMENTAL PLAN, ATTENDING MEETINGS WITH LOCAL STAKEHOLDERS REGARDING REGIONAL ENVIRONMENTAL ISSUES, AND DEVELOPING THE TRIBE'S FIRST ENVIRONMENTAL PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE AN INITIAL DRAFT EPA TRIBAL ENVIRONMENTAL PLAN AND SUMMARIES OF MEETINGS AND LOCAL TRAININGS. THE EXPECTED OUTCOMES INCLUDE KNOWLEDGEABLE ENVIRONMENTAL STAFF AND AN INITIAL INVENTORY OF ENVIRONMENTALLY SENSITIVE AREAS. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE KOI NATION OF NORTHERN CALIFORNIA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0621350",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KOI NATION OF NORTHERN CALIFORNIA",
+      "obligation": 110531.0,
+      "start_date": "2024-12-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 290804.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 180273.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 110531.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 110531.0,
+    "2026": 180273.0
+  },
+  "trend": "new"
 }

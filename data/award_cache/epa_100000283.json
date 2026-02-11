@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000283",
   "tribe_name": "Soboba Band of Luiseno Indians, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMF-2020-PC-0013",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SOBOBA BAND OF LUISENO INDIANS",
+      "obligation": 86624.85,
+      "start_date": "2019-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "98T82001",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SOBOBA BAND OF LUISENO INDIANS",
+      "obligation": 1082400.0,
+      "start_date": "2023-10-01",
+      "end_date": "2025-12-31",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO THE SOBOBA BAND OF LUISENO INDIANS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA. SPECIFICALLY, THE RECIPIENT WILL REPLACE AGING ASBESTOS CEMENT (AC) DISTRIBUTION PIPELINES WITH PVC PIPES.THE AGREEMENT PROVIDES FUNDING TO THE SOBOBA BAND OF LUISENO INDIANS TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA. SPECIFICALLY, THE RECIPIENT WILL REPLACE AGING ASBESTOS CEMENT (AC) DISTRIBUTION PIPELINES WITH PVC PIPES. THIS AWARD PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $1,082,400.ACTIVITIES:AGING ASBESTOS CONCRETE PIPES WILL BE REPLACED WITH PVC PIPES. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE THE ASBESTOS CONCRETE PIPES BEING REPLACED WITH PVC PIPES. THE EXPECTED OUTCOMES ARE A DECREASE IN EXPOSURE TO INGESTED ASBESTOS. THE INTENDED BENEFICIARIES INCLUDE MEMBERS OF THE SOBOBA BAND OF LUISENO INDIANS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 1169024.85,
+  "award_count": 2,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 86624.85
+    },
+    "66.468": {
+      "count": 1,
+      "total": 1082400.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 1082400.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

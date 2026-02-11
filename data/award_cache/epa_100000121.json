@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000121",
   "tribe_name": "Kashia Band of Pomo Indians of the Stewarts Point Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AV00586",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASHIA BAND OF POMO INDIANS OF THE STEWARTS POINT RANCHERIA",
+      "obligation": 1676586.76,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DIST. FOR CRRSA HIGHWAY INFRASTRUCTURE PROGRAM FUNDING. ELIGIBLE ACTIVITIES INCLUDE THOSE ACTIVITIES THAT ARE ALSO ELIGIBLE UNDER THE TRIBAL TRANSPORTATION PROGRAM AS DESCRIBED IN 23 USC 202.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00210",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASHIA BAND OF POMO INDIANS OF THE STEWARTS POINT RANCHERIA",
+      "obligation": 512311.93,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV01173",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KASHIA BAND OF POMO INDIANS OF THE STEWARTS POINT RANCHERIA",
+      "obligation": 227223.07,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR ADDITIONAL AND FINAL TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES AND PROJECTS DESCRIBED IN 23 USC 202(A)(1) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT0636220",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KASHIA BAND OF POMO INDIANS OF THE STEWARTS POINT RANCHERIA",
+      "obligation": 11167452.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXCA36220",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KASHIA BAND OF POMO INDIANS OF THE STEWARTS POINT RANCHERIA",
+      "obligation": 2045397.0,
+      "start_date": "2025-01-15",
+      "end_date": "2026-10-31",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 15628970.76,
+  "award_count": 5,
+  "cfda_summary": {
+    "20.205": {
+      "count": 3,
+      "total": 2416121.76
+    },
+    "14.867": {
+      "count": 2,
+      "total": 13212849.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 227223.07,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 2045397.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

@@ -1,9 +1,151 @@
 {
   "tribe_id": "epa_100000519",
   "tribe_name": "Native Village of Ruby",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J73701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 506506.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THE NATIVE VILLAGE OF RUBY WILL USE THE GAP GRANT TO ADMNISTER THE GRANT AND BUILDING ADMINISTRATIVE AND ENVIRONMENTAL CAPACITY, MANAGE SOLID AND HAZARDOUS WASTE AND RECYCLING, AND PROVIDE ENVIRONMENTAL EDUCATION TO THE COMMUNITY.  NOTE: SPECIAL PAYMENT CONDITIONS APPLY TO THIS AWARD. SEE ADMINISTRATIVE TERM AND CONDITION D.  NOTE THAT YOU MAY NOT DRAW DOWN FUNDS FOR INDIRECT COSTS WITHOUT A CURRENT, APPROVED RATE IN PLACE",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J76501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 234000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE RUBY TRIBE WILL USE FY25 GAP FUNDS TO MANAGE THE GAP GRANT, MANAGE SOLID WASTE, AND EDUCATE THE COMMUNITY ABOUT ENVIRONMENTAL ISSUES. ACTIVITIES:THE TRIBE WILL SUBMIT CLOSEOUT REPORTING FOR FY24 AND QUARTERLY PROGRESS REPORTS FOR FY25, PURCHASE SUPPLIES, ATTEND TRAININGS, AND COLLABORATE WITH THE YUKON KOYUKUK CONSORTIUM; CONDUCT A SPRING COMMUNITY CLEAN-UP, MANAGE RECYCLING, CONDUCT A BACKHAUL, AND MANAGE THE LANDFILL; AND EDUCATE THE COMMUNITY ABOUT ENVIRONMENTAL ISSUES THROUGH YOUTH ACTIVITIES AND INVOLVEMENT, QUARTERLY NEWSLETTERS, AND A COMMUNITY MEETING.   SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES WILL INCLUDE FINAL PERFORMANCE AND FINANCIAL REPORTS, QUARTERLY REPORTS, TRIP REPORTS, TRAINING CERTIFICATES, PHOTOS OF EVENTS AND ACTIVITIES, AND A BACKHAUL INVENTORY. OUTCOMES  WILL INCLUDE INCREASED KNOWLEDGE ABOUT ENVIRONMENTAL ISSUES AND FEDERAL GRANT REQUIREMENTS, GREATER EFFICIENCIES THROUGH COLLABORATION WITH THE MEMBERS OF THE YUKON-KOYUKUK CONSORTIUM, AND CAREFUL MANAGEMENT OF THE FINANCIAL AND PROGRAMMATIC ASPECTS OF THE GRANT; A CLEANER AND SAFER COMMUNITY THROUGH PROPER SOLID WASTE MANAGEMENT; AND A BETTER UNDERSTANDING AMONG COMMUNITY MEMBERS OF LITTER, POLLUTING, RECYCLING, AND CLIMATE CHANGE. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0036",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 134667.3,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0036",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 11373.1,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42220000K600AK0036",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 7500.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0036",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 142337.58,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3036024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 123295.6,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF RUBY TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF RUBY UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3036024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 42662.05,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF RUBY TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF RUBY UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0036",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 18667.22,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3036025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 144737.34,
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF RUBY TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF RUBY UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3036025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF RUBY",
+      "obligation": 42652.51,
+      "start_date": "2025-02-12",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF RUBY TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF RUBY UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 1408398.7,
+  "award_count": 11,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 740506.0
+    },
+    "20.205": {
+      "count": 9,
+      "total": 667892.7
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 276652.51,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

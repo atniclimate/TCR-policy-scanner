@@ -1,9 +1,218 @@
 {
   "tribe_id": "epa_100000308",
   "tribe_name": "Tulalip Tribes of Washington",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00227",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 287404.1,
+      "start_date": "2019-08-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00019",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 146023.0,
+      "start_date": "2018-10-01",
+      "end_date": "2022-05-01",
+      "description": "ADAPTATION PLANNING AND DATA DEVELOPMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00134",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 145986.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00087",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 122246.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10178",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 89825.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-12-31",
+      "description": "TULALIP TRIBES OCEAN AND COASTAL MANAGEMENT PLANNING: PHASE 3 - BUILDING RESILIENCY THROUGH SOVEREIGN LEADERSHIP, TRAINING, AND PARTNERSHIP.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00040",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 30000.0,
+      "start_date": "2018-10-01",
+      "end_date": "2022-09-30",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2018-PC-0006",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 106604.66,
+      "start_date": "2017-08-14",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2021-BR-089-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 976974.0,
+      "start_date": "2023-06-07",
+      "end_date": "2026-06-06",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A22AV00337",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 8904016.76,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00216",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 8050897.15,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00692",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 5418832.64,
+      "start_date": "2021-10-01",
+      "end_date": "2026-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00574",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 4767745.33,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/LAW ENFORCEMENT SPECIAL INITIATIVES FUNDING IS BEING PROVIDED ON A ONE-TIME (NONRECURRING) BASIS TO MEET THE OPERATIONAL NEEDS OF TRIBALLY CONTRACTED OR COMPACTED LAW ENFORCEMENT AND/OR DETENTION/CORRECTIONS PROGRAMS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT5316280",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 57486991.0,
+      "start_date": "2012-01-06",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5316280",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 2289575.0,
+      "start_date": "2022-02-01",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "02J35101",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 449075.0,
+      "start_date": "2024-01-01",
+      "end_date": "2025-12-31",
+      "description": "DESCRIPTION:THE TULALIP TRIBES ARE REQUESTING CLEAN AIR ACT 103 FUNDS TO HOST THE TRIBAL HEALTHY HOMES NETWORK (THHN), A SUBAWARD, THAT WILL HELP REDUCE HEALTH RISKS BY IMPROVING INDOOR AIR QUALITY ON THE RESERVATION.\n\nACTIVITIES:SOME OF THE LISTED ACTIVITIES ARE AS FOLLOWS: THHN STAFF WILL PROCESS TOOLKIT ORDERS, WHICH INCLUDES INITIAL PHONE CONVERSATIONS TO CUSTOMIZE THE KITS, PROCESSING PAYMENTS, PURCHASING THE TOOLKIT ITEMS THROUGH SUPPLIERS, ASSEMBLING THE TOOLKITS, ADDING THE CUE CARDS, AND GREEN CLEANING RECIPES, THEN SHIPPING THE TOOLKITS.\nSUBRECIPIENT:THE ACTIVITIES IMPLEMENTED THROUGH THHN IS PREVENTING HOUSEHOLD AIR POLLUTION AND ADVERSE HEALTH OUTCOMES IN COMMUNITIES. THHN WORKS TOWARDS PREVENTION THROUGH THREE CORE SERVICES OF OUTREACH/EDUCATION, TRAINING/TECHNICAL ASSISTANCE, AND CUSTOMIZED TRIBAL INDOOR AIR QUALITY RESOURCES.\nOUTCOMES:\nTHE ANTICIPATED DELIVERABLES AND OUTCOMES ARE THE TRIBAL RESIDENTS WILL BE KNOWLEDGEABLE THROUGH VARIOUS CONFERENCES, WORKSHOPS, AND WEBINARS ON INDOOR AIR QUALITY (IAQ) AND TRIBAL HEALTHY HOMES NETWORK (THHN). TULALIP RESIDENTS WILL ALSO BE EDUCATED ON THE SMOKE MATTERS TOOLKITS ON HOW TO PROTECT THEMSELVES FROM HEALTH AND SAFETY HAZARDS CAUSED BY WILDFIRES.  \nTHE INTENDED BENEFICIARIES ARE THE RESIDENTS AND MEMBERS OF THE TULALIP TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J21301",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "TULALIP TRIBES OF WASHINGTON",
+      "obligation": 498838.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE TULALIP TRIBE IS REQUESTING CLEAN AIR ACT 103 FUNDS TO HOST THE TRIBAL HEALTHY HOMES NETWORK (THHN), A SUBAWARD THAT WILL HELP REDUCE HEALTH RISKS BY IMPROVING INDOOR AIR QUALITY ON THE RESERVATION.ACTIVITIES:A FEW OF THE LISTED ACTIVITIES ARE AS FOLLOWS: THHN WILL CONTINUE BUILDING TRIBAL CAPACITY BY PROVIDING FOUR TYPES OF SERVICES: CONFERENCE-BASED TRIBAL TRAININGS, WEBINAR-BASED TRIBAL TRAININGS, ON-SITE ('CIRCUIT-RIDER') TRIBAL TRAININGS AND TECHNICAL ASSISTANCE FOR TRIBES.SUBRECIPIENT:THHN WILL CONTINUE BUILDING TRIBAL CAPACITY BY PROVIDING FOUR TYPES OF SERVICES: CONFERENCE-BASED TRIBAL TRAININGS, WEBINAR-BASED TRIBAL TRAININGS, ON-SITE ('CIRCUIT-RIDER') TRIBAL TRAININGS AND TECHNICAL ASSISTANCE FOR TRIBES.OUTCOMES:THROUGH THE CORE OF THE TRAINING PROGRAMS, THHN IS ENSURING THAT ALL TRIBAL NEEDS AND INDOOR AIR QUALITIES ARE MET TO PROVIDE OUTREACH AND EDUCATION THROUGH THE SMOKEMATTERS TOOLKIT PROGRAM.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 89771033.64,
+  "award_count": 16,
+  "cfda_summary": {
+    "15.156": {
+      "count": 6,
+      "total": 821484.1
+    },
+    "97.047": {
+      "count": 2,
+      "total": 1083578.66
+    },
+    "20.205": {
+      "count": 4,
+      "total": 27141491.880000003
+    },
+    "14.867": {
+      "count": 2,
+      "total": 59776566.0
+    },
+    "66.038": {
+      "count": 2,
+      "total": 947913.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 16612424.399999999,
+    "2023": 976974.0,
+    "2024": 449075.0,
+    "2025": 0.0,
+    "2026": 498838.0
+  },
+  "trend": "decreasing"
 }

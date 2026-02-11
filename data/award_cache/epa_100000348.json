@@ -1,9 +1,37 @@
 {
   "tribe_id": "epa_100000348",
   "tribe_name": "Native Village of Aleknagik",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J09901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF ALEKNAGIK",
+      "obligation": 387922.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:-\tMAINTAIN ENVIRONMENTAL OFFICE AND BUILD ADMINISTRATION CAPACITY\n-\tCONDUCT ENVIRONMENTAL OUTREACH AND EDUCATION\n-\tADDRESS AIR QUALITY ISSUES IN THE COMMUNITY AND PREVENT CLIMATE CHANGE IMPACTS. ACTIVITIES:-\tOVERSEE DAY TO DAY ACTIVITIES FOR THE  ENVIRONMENTAL OFFICE AND REPORT ON A QUARTERLY BASIS ACTIVITIES AND FINANCES ASSOCIATED WITH GAP GRANT\n-\tWORK WITH COMMUNITY TO DEVELOP A BETTER UNDERSTANDING OF ENVIRONMENTAL ISSUES EFFECTING THE TRIBE\n-\tACCESS INDOOR AIR QUALITY OF HOUSEHOLDS WITHIN VILLAGE AND DEVELOP PREVENTIVE MANAGEMENT TO WILDFIRES TO DECREASE IMPACTS OF CLIMATE CHANGESUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:-\tQUARTERLY PROGRAMMATIC AND FINANCIAL REPORTS THAT ARE CONCISE COMPLETED ON TIME \n-\tENVIRONMENTAL OUTREACH AND EDUCATION CLASSES FOR VILLAGE MEMBERS OF ALL AGES LEADING TO AN ENVIRONMENTALLY INFORMED COMMUNITY\n-\tASSESSMENT OF INDOOR HOUSEHOLD AIR QUALITY WILL BE DELIVERED TO EPA.  CLIMATE CHANGE OBSERVATIONS AND ADAPTIVE FORESTRY MANAGEMENT TECHNIQUES WILL BE DOCUMENTED.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 387922.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 387922.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 387922.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

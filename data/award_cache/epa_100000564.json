@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000564",
   "tribe_name": "Village of Wainwright",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J71001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF WAINWRIGHT",
+      "obligation": 249992.0,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "VILLAGE OF WAINWRIGHT WILL BUILD CAPACITY TO PRIORITIZE AND EFFECTIVELY EXECUTE WORK PLANS COMMITMENTS, DEVELOPING THE DELIVERABLES AND MANAGE THE BUDGET. INCREASE STAFF CAPACITY IN HEALTH ISSUES IN THE TRIBAL COMMUNITY THROUGH AN AMBIENT AIR ASSESSMENT, AND PARTNER WITH LOCAL AND REGIONAL GOVERNMENT ENTITIES WITH PUBLIC ENVIRONMENTAL EDUCATION. A PLAN WILL BE DEVELOPED AND DETAILED. THE EPA TRIBAL ENVIRONMENTAL PLAN WILL BE UPDATED THROUGHOUT THE FISCAL YEAR.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A25AV01227",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF WAINWRIGHT",
+      "obligation": 212155.83,
+      "start_date": "2024-10-01",
+      "end_date": "2029-12-31",
+      "description": "WAINWRIGHT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01230",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF WAINWRIGHT",
+      "obligation": 121123.03,
+      "start_date": "2024-10-01",
+      "end_date": "2029-12-31",
+      "description": "WAINWRIGHT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01180",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF WAINWRIGHT",
+      "obligation": 45000.33,
+      "start_date": "2025-09-10",
+      "end_date": "2029-12-31",
+      "description": "WAINWRIGHT",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 628271.19,
+  "award_count": 4,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 249992.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 378279.19
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 378279.19,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

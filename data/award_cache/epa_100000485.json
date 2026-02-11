@@ -1,9 +1,166 @@
 {
   "tribe_id": "epa_100000485",
   "tribe_name": "Nome Eskimo Community",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J58301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 357986.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS PROJECT WILL ASSIST NOME ESKIMO COMMUNITY IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  TASKS INCLUDE MANAGING AN ENVIRONMENTAL OFFICE TO SUSTAIN A SUCCESSFUL TRIBAL ENVIRONMENTAL PROGRAM; CONTINUE DEVELOPING WATER QUALITY MONITORING CAPACITY; IMPLEMENT A RECYCLING AND COMMUNITY EDUCATION PROGRAM; AND WORK TO ESTABLISH PARTNERSHIPS TOWARDS DEVELOPING A SUSTAINABLE TRIBAL SOLID WASTE REMOVAL PROGRAM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J17201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE NOME ESKIMO COMMUNITY WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE DEVELOPMENT OF PHYTOPLANKTON AND HARMFUL ALGAL BLOOM TOXIN MONITORING, AND DEVELOPMENT OF TRIBAL ENVIRONMENTAL PROTECTION PRIORITIES.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, PERFORMING BASELINE WATER SAMPLING AND HARMFUL ALGAL BLOOM TOXIN ANALYSIS WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL AND SUBSISTENCE RESOURCE PROTECTION, INCLUDING CONNECTING WITH RESEARCH TEAMS AND TRAINING CAPACITY OF LOCAL TRIBAL ORGANIZATIONS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM NOME ESKIMO COMMUNITY WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, SUBMISSION AND COMPLETION OF A QUALITY ASSURANCE PROJECT PLAN FOR MARINE WATER SAMPLING, AND DOCUMENTATION OF COMMUNITY AND TRIBAL COUNCIL ENVIRONMENTAL PRIORITIES WILL RESULT FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0064",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 301071.15,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0064",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 24671.05,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0064",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 323295.4,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3064024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 922844.14,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NOME ESKIMO COMMUNITY TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NOME ESKIMO COMMUNITY UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3064024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 122358.29,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NOME ESKIMO COMMUNITY TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NOME ESKIMO COMMUNITY UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0064",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 42399.39,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3064025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 342067.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NOME ESKIMO COMMUNITY FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE NOME ESKIMO COMMUNITY TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3064025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 122248.84,
+      "start_date": "2025-04-01",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NOME ESKIMO COMMUNITY FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE NOME ESKIMO COMMUNITY TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0211420",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 14580064.0,
+      "start_date": "2012-02-07",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0211420",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NOME ESKIMO COMMUNITY",
+      "obligation": 593005.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 17866010.26,
+  "award_count": 12,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 491986.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 2200955.2600000002
+    },
+    "14.867": {
+      "count": 2,
+      "total": 15173069.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 122248.84,
+    "2026": 134000.0
+  },
+  "trend": "new"
 }

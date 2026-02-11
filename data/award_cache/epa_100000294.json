@@ -1,9 +1,114 @@
 {
   "tribe_id": "epa_100000294",
   "tribe_name": "Susanville Indian Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "693JG42230000V600CA0092",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 215424.98,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600CA0092",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 13810.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0092",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 223791.62,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602CA3092024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 198433.6,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SUSANVILLE INDIAN RANCHERIA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO SUSANVILLE INDIAN RANCHERIA FOR FY 2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176CA3092024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 84494.5,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SUSANVILLE INDIAN RANCHERIA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO SUSANVILLE INDIAN RANCHERIA FOR FY 2024 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600CA0092",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 29349.72,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3092025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 236882.98,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SUSANVILLE INDIAN RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SUSANVILLE INDIAN RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177CA3092025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA",
+      "obligation": 84379.08,
+      "start_date": "2025-01-10",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: SUSANVILLE INDIAN RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SUSANVILLE INDIAN RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 1086567.01,
+  "award_count": 8,
+  "cfda_summary": {
+    "20.205": {
+      "count": 8,
+      "total": 1086567.01
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 84379.08,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

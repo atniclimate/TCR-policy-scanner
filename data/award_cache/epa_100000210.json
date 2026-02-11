@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000210",
   "tribe_name": "Prairie Band Potawatomi Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00183",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PRAIRIE BAND POTAWATOMI NATION",
+      "obligation": 65000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00124",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PRAIRIE BAND POTAWATOMI NATION",
+      "obligation": 14770.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00809",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PRAIRIE BAND POTAWATOMI NATION",
+      "obligation": 237285.0,
+      "start_date": "2024-07-15",
+      "end_date": "2026-07-15",
+      "description": "PBPN, TRIBAL CLIMATE RESILIENCE ''FOOD SYSTEMS ADAPTATION PLAN'' - TO ADD FY2023 ONE-TIME NON-RECURRING FUNDING.'",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMK-2020-BR-009-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PRAIRIE BAND POTAWATOMI NATION",
+      "obligation": 26790.4,
+      "start_date": "2022-04-19",
+      "end_date": "2025-04-18",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMK-2021-BR-001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PRAIRIE BAND POTAWATOMI NATION",
+      "obligation": 750000.0,
+      "start_date": "2024-01-26",
+      "end_date": "2027-01-25",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMK-2020-BR-009",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PRAIRIE BAND POTAWATOMI NATION",
+      "obligation": -0.4,
+      "start_date": "2022-04-19",
+      "end_date": "2025-04-18",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "55IT2028540",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PRAIRIE BAND POTAWATOMI NATION",
+      "obligation": 5993415.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 7087260.0,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 317055.0
+    },
+    "97.047": {
+      "count": 3,
+      "total": 776790.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 5993415.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 26790.0,
+    "2023": 0.0,
+    "2024": 987285.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

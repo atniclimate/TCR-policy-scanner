@@ -1,9 +1,107 @@
 {
   "tribe_id": "epa_100000561",
   "tribe_name": "Native Village of Unga",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J05101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNGA",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:TRIBAL ENVIRONMENTAL PROGRAM DEVELOPMENT: BUILD ADMINISTRATIVE AND PROGRAMMATIC CAPACITY FOR IMPROVED GRANT MANAGEMENT AND DAILY ENVIRONMENTAL PROGRAM OPERATIONS. CONDUCT A LONG-TERM BEACH CLEAN-UP EFFORT WITHIN THE LOCAL COMMUNITY, INCLUDING OUTREACH AND EDUCATION TO IMPROVE AWARENESS OF ENVIRONMENTAL STEWARDSHIP. THE TRIBE WILL CONDUCT A COLLABORATIVE BACKHAUL WITH TWO OTHER TRIBES AND THE CITY OF SAND POINT, INCREASE KNOWLEDGE/RESOURCES FOR HEALTHIER, MORE SUSTAINABLE COMMUNITY. BUILD AIR AND WATER QUALITY TECHNICAL CAPACITY TO INFORM JOINT EPA-TRIBAL ENVIRONMENTAL PLAN (ETEP) REFINEMENT AND PRIORITY SETTING.ACTIVITIES:WORKPLAN ACTIVITIES WILL INVOLVE ADMINISTRATIVE CONTINUED CAPACITY BUILDING AS WELL AS TRIBAL ENVIRONMENTAL CAPACITY BUILDING. THE TRIBE WILL CONTINUE CRITICAL SOLID WASTE MANAGEMENT PROGRAMS BY BACKHAULING WASTES WHICH PREVENTS CONTAMINATION BY UNIVERSAL WASTES INTO WATERWAYS AND ON LAND. COMMUNITY OUTREACH AND EDUCATION CHANGES BEHAVIOR PATTERNS, ENABLING BOTH EPA AND THE TRIBE TO PROTECT THE HUMAN HEALTH AND THE ENVIRONMENT. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:\nTHE UNGA TRIBE AND THE EPA EXPECT THE ENVIRONMENTAL PROGRAM CAPACITY TO EXPAND BY ENGAGING THE TRIBAL RESIDENTIAL COMMUNITY. OUTCOMES WILL INVOLVE ADMINISTRATIVE CONTINUED CAPACITY BUILDING AS WELL AS TRIBAL ENVIRONMENTAL CAPACITY BUILDING. THE TRIBE WILL CONTINUE CRITICAL SOLID WASTE MANAGEMENT PROGRAMS BY BACKHAULING WASTES WHICH PREVENTS CONTAMINATION BY UNIVERSAL WASTES INTO WATERWAYS AND ON LAND. COMMUNITY OUTREACH AND EDUCATION CHANGES BEHAVIOR PATTERNS, ENABLING BOTH EPA AND THE TRIBE TO PROTECT THE HUMAN HEALTH AND THE ENVIRONMENT.  OVERALL, THESE EFFORTS WILL SERVE THE TRIBAL COMMUNITY FOR YEARS TO COME.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A13AV00561",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNGA",
+      "obligation": 760221.0,
+      "start_date": "2013-08-07",
+      "end_date": "2022-03-31",
+      "description": "CONSTUCTION  OF BOAT HARBOR ROAD CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00922",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNGA",
+      "obligation": 671645.22,
+      "start_date": "2015-10-01",
+      "end_date": "2027-12-31",
+      "description": "UNGA BRIDGES/STRUCTURES CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00565",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNGA",
+      "obligation": 193814.41,
+      "start_date": "2013-08-09",
+      "end_date": "2025-12-31",
+      "description": "TRANSPORTATION PLANNING CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01006",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNGA",
+      "obligation": 160081.45,
+      "start_date": "2018-08-22",
+      "end_date": "2027-12-31",
+      "description": "A18AV01006",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00564",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNGA",
+      "obligation": 60000.0,
+      "start_date": "2013-08-09",
+      "end_date": "2027-12-31",
+      "description": "SUPPLEMENTAL ROAD MAINTENANCE PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01148",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF UNGA",
+      "obligation": 24936.29,
+      "start_date": "2025-09-04",
+      "end_date": "2030-12-31",
+      "description": "UNGA FY25 66V & 6V1 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2398698.37,
+  "award_count": 7,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 528000.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 1870698.3699999999
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 528000.0,
+    "2024": 0.0,
+    "2025": 24936.29,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

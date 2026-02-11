@@ -1,9 +1,48 @@
 {
   "tribe_id": "epa_100000351",
   "tribe_name": "Native Village of Ambler",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01055",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF AMBLER",
+      "obligation": 144862.49,
+      "start_date": "2025-07-30",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01082",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF AMBLER",
+      "obligation": 105515.89,
+      "start_date": "2025-08-08",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638 AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 250378.38,
+  "award_count": 2,
+  "cfda_summary": {
+    "20.205": {
+      "count": 2,
+      "total": 250378.38
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 250378.38,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

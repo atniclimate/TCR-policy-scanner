@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000597",
   "tribe_name": "Little Shell Tribe of Chippewa Indians of Montana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV00678",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "LITTLE SHELL TRIBE OF CHIPPEWA INDIANS OF MONTANA",
+      "obligation": 86097.14,
+      "start_date": "2022-10-01",
+      "end_date": "2025-09-30",
+      "description": "LITTLE SHELL TRIBE OF CHIPPEWA INDIANS OF MONTANA CRRSAA 1-TIME GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "21AH3004840",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LITTLE SHELL TRIBE OF CHIPPEWA INDIANS OF MONTANA",
+      "obligation": 1349563.0,
+      "start_date": "2022-02-03",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "55IT3004840",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LITTLE SHELL TRIBE OF CHIPPEWA INDIANS OF MONTANA",
+      "obligation": 20208698.0,
+      "start_date": "2023-02-28",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 21644358.14,
+  "award_count": 3,
+  "cfda_summary": {
+    "20.205": {
+      "count": 1,
+      "total": 86097.14
+    },
+    "14.867": {
+      "count": 2,
+      "total": 21558261.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1349563.0,
+    "2023": 20294795.14,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000273",
   "tribe_name": "Shinnecock Indian Nation",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10194",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SHINNECOCK INDIAN NATION",
+      "obligation": 0.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-14",
+      "description": "SHINNECOCK TRIBAL CLIMATE RESILIENCE PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00444",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SHINNECOCK INDIAN NATION",
+      "obligation": 136259.0,
+      "start_date": "2025-01-16",
+      "end_date": "2027-09-30",
+      "description": "TCR_LIVING SHORELINE IMPROVEMENT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMN-2020-BR-066-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SHINNECOCK INDIAN NATION",
+      "obligation": 423853.0,
+      "start_date": "2021-12-27",
+      "end_date": "2022-09-30",
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMN-2020-BR-066-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SHINNECOCK INDIAN NATION",
+      "obligation": 47094.0,
+      "start_date": "2021-12-24",
+      "end_date": "2024-12-23",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    }
+  ],
+  "total_obligation": 607206.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 136259.0
+    },
+    "97.047": {
+      "count": 2,
+      "total": 470947.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 470947.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 136259.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000567",
   "tribe_name": "Wrangell Cooperative Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00148",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "WRANGELL COOPERATIVE ASSOCIATION",
+      "obligation": 8824.42,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00907",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "WRANGELL COOPERATIVE ASSOCIATION",
+      "obligation": 77680.0,
+      "start_date": "2023-07-11",
+      "end_date": "2025-12-31",
+      "description": "WRANGELL FY 2022 CATEGORY 6",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00851",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "WRANGELL COOPERATIVE ASSOCIATION",
+      "obligation": 222952.0,
+      "start_date": "2024-07-18",
+      "end_date": "2026-09-30",
+      "description": "WRANGELL CATEGORY 1 TCR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J55301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "WRANGELL COOPERATIVE ASSOCIATION",
+      "obligation": 494377.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE WRANGELL COOPERATIVE ASSOCIATION WILL BUILD ENVIRONMENTAL CAPACITY THROUGH CONTINUED ADMINISTRATIVE DEVELOPMENT; TRAINING; ENVIRONMENTAL OUTREACH AND EDUCATION; GATHERING BASELINE DATA AND PROVIDING EDUCATION TO REDUCE SOLID WASTE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J38001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "WRANGELL COOPERATIVE ASSOCIATION",
+      "obligation": 402984.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE WRANGELL COOPERATIVE ASSOCIATION, A FEDERALLY RECOGNIZED TRIBAL GOVERNMENT WILL CONTINUE TO BUILD ITS ENVIRONMENTAL PROGRAM TO ADDRESS IMPACTS OF CLIMATE CHANGE; ENVIRONMENTAL THREATS TO SUBSISTENCE FOODS. THEY WILL WORK TO MINIMIZE AND REDIRECT THE SOLID WASTE STREAM INTO COMPOST AND RECYCLING OPPORTUNITIES. THEY WILL ENCOURAGE WATER CONSERVATION AND CLEANLINESS.  THE STAFF WILL PARTICIPATE IN ENVIRONMENTAL EDUCATION AND NETWORKING WITH REGIONAL ENTITIES.ACTIVITIES:ENVIRONMENTAL STAFF WILL IGAP COORDINATOR WILL CONTINUE TO MAINTAIN DETAILED OFFICE MANAGEMENT AND ADMINISTRATOR PRACTICES; RESEARCH AND APPLY FOR APPROVED ENVIRONMENTAL GRANTS; ORGANIZE FILES/RESOURCES; SUPERVISE EMPLOYEES (I.E. LABORERS), PARTICIPATE IN REGIONAL AND LOCAL ENVIRONMENTAL TRAININGS, PARTICIPATE IN ENVIRONMENTAL RESEARCH EFFORTS; GATHER BASELINE DATA ON HARMFUL ALGAL BLOOMS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:REGULAR ASAP.GOV DRAWDOWNS AND DOCUMENTATION, TIMESHEETS, PAYROLL RECORDS, EMPLOYEE WORKLOGS AND EVALUATIONS; UPDATES WILL BE POSTED TO FB AND LOCAL BULLETIN BOARDS AND THE MONTHLY IGAP NEWSLETTER; WATER WISE TIPS -POST ON SOCIAL MEDIA AND RADIO; COPIES OF SOLID WASTE EDUCATIONAL AND OUTREACH MATERIALS, PHOTOS, WEIGHT\nLOGS AND COMPOSTING DRAFT PLANS WILL BE SUBMITTED VIA QUARTERLY REPORTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 1206817.42,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 309456.42
+    },
+    "66.926": {
+      "count": 2,
+      "total": 897361.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 77680.0,
+    "2024": 625936.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

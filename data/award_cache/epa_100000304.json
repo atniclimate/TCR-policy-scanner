@@ -1,9 +1,104 @@
 {
   "tribe_id": "epa_100000304",
   "tribe_name": "Tonkawa Tribe of Indians of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMT-2019-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "TONKAWA TRIBE",
+      "obligation": 1568.25,
+      "start_date": "2018-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01F62501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TONKAWA TRIBE",
+      "obligation": 495000.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AWARD PROVIDES ASSISTANCE TO INDIAN TRIBAL GOVERNMENTS AND INTERTRIBAL CONSORTIA TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL REGULATORY PROGRAMS ON INDIAN LANDS, PROVIDE TECHNICAL ASSISTANCE FROM EPA TO INDIAN TRIBAL GOVERNMENTS, AND INTERTRIBAL CONSORTIA IN THE DEVELOPMENT OF MULTIMEDIA PROGRAMS TO ADDRESS ENVIRONMENTAL ISSUES ON INDIAN LANDS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F31801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TONKAWA TRIBE",
+      "obligation": 405000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF, DEVELOP EMERGENCY RESPONSE CAPABILITIES, TRAINING AND REDUCE SOLID WASTE THROUGH RECYCLING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANNUAL PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE TONKAWA TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F98401",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "TONKAWA TRIBE",
+      "obligation": 2140.0,
+      "start_date": "2025-09-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES A CAPITALIZATION GRANT, FUNDED BY THE INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) (PL 117-58), FOR THE RECIPIENT'S DRINKING WATER STATE REVOLVING FUND (DWSRF) PROGRAM. FUNDS WILL BE USED FOR DWSRF - ELIGIBLE LEAD SERVICE LINE REPLACEMENT PROJECTS AND ASSOCIATED ACTIVITIES DIRECTLY CONNECTED TO THE IDENTIFICATION, PLANNING, DESIGN, AND REPLACEMENT OF LEAD SERVICE LINES. THE AWARD FURTHERS THE PUBLIC HEALTH PROTECTION OBJECTIVES OF THE SAFE DRINKING WATER ACT (SDWA).ACTIVITIES:THE RECIPIENT OF THESE FUNDS WILL PROVIDE LOW-INTEREST RATE FINANCING TO ELIGIBLE PUBLIC WATER SYSTEMS FOR THE COSTS ASSOCIATED WITH THE PLANNING, DESIGN, AND CONSTRUCTION OF ELIGIBLE DRINKING WATER IMPROVEMENT PROJECTS. THE RECIPIENT MAY ALSO USE SOME OF THE FUNDING FOR SPECIFIC SET-ASIDES. FUNDS WILL BE USED FOR DWSRF - ELIGIBLE LEAD SERVICE LINE REPLACEMENT PROJECTS AND ASSOCIATED ACTIVITIES DIRECTLY CONNECTED TO THE IDENTIFICATION, PLANNING, DESIGN, AND REPLACEMENT OF LEAD SERVICE LINES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE FINANCING, PLANNING, DESIGN, AND CONSTRUCTION OF ELIGIBLE LEAD SERVICE LINE PROJECTS AND ASSOCIATED ACTIVITIES. DELIVERABLES WILL ALSO BE USED TO INCREASE THE LEAD SERVICE LINE-RELATED TECHNICAL, MANAGERIAL, AND FINANCIAL CAPACITY OF PUBLIC WATER SYSTEMS. THE EXPECTED OUTCOME IS PUBLIC HEALTH PROTECTION. THE INTENDED BENEFICIARIES INCLUDE CITIZENS THROUGHOUT THE STATE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT4030200",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TONKAWA TRIBE",
+      "obligation": 10253323.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4030200",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TONKAWA TRIBE",
+      "obligation": 373709.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 11530740.25,
+  "award_count": 6,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 1568.25
+    },
+    "66.926": {
+      "count": 2,
+      "total": 900000.0
+    },
+    "66.468": {
+      "count": 1,
+      "total": 2140.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 10627032.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 405000.0,
+    "2025": 2140.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

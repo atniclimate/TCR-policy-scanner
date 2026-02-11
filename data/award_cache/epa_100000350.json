@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000350",
   "tribe_name": "Allakaket Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00149",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "ALLAKAKET VILLAGE",
+      "obligation": 85602.0,
+      "start_date": "2019-08-01",
+      "end_date": "2021-08-23",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01094",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "ALLAKAKET VILLAGE",
+      "obligation": 229291.0,
+      "start_date": "2025-06-25",
+      "end_date": "2026-09-30",
+      "description": "ALLAKAKET VILLAGE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J61301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ALLAKAKET VILLAGE",
+      "obligation": 369424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "ALLAKAKET WILL USE THE FY20 GAP GRANT TO BUILD ADMINISTRATIVE AND PROGRAMMATIC CAPACITY; REVIEW, AMEND, AND UPDATE EXISTING POLICIES, PROCEDURES, AND ORDINANCES; CONDUCT AIR QUALITY IMPLEMENTATION ACTIVITIES AND ASSESSMENTS TO ENSURE THE HEALTH AND SAFETY OF THE COMMUNITY; BUILD SOLID WASTE CAPACITY (I.E., HAVE A SUSTAINABLE SOLID WASTE MANAGEMENT/RECYCLING/BACKHAUL PROGRAM); REMOVE RECYCLABLES AND SOLID WASTE FROM THE COMMUNITY; AND CONDUCT WATER QUALITY ACTIVITIES AND ASSESSMENTS TO ENSURE THE HEALTH AND SAFETY OF THE COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J29601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ALLAKAKET VILLAGE",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:ALLAKAKET VILLAGE COUNCIL WILL USE THE FUNDS TOWARD ADMINISTRATIVE CAPACITY BUILDING, ENVIRONMENTAL EDUCATION, WATER QUALITY IMPROVEMENTS, SOLID WASTE CAPACITY BUILDING, AND SOLID WASTE IMPLEMENTATION. ACTIVITIES:THE TRIBE WILL MANAGE THE ADMINISTRATIVE AND FINANCIAL ASPECTS OF THE GRANT, ATTEND VIRTUAL AND IN-PERSON TRAININGS, UPDATE CRITICAL DOCUMENTS, EDUCATE THE COMMUNITY THROUGH NEWSLETTERS AND SOCIAL MEDIA, WORK TO INVOLVE YOUTH IN THE LOCAL ENVIRONMENTAL OBSERVATION NETWORK, ASSIST THE YUKON RIVER INTER-TRIBAL WATERSHED COUNCIL ON WATER QUALITY MONITORING, MANAGE SOLID AND HAZARDOUS WASTE AND RECYCLING, CONDUCT A COMMUNITY CLEAN-UP, MANAGE THE LANDFILL, AND ORDER A STORAGE CONTAINER FOR STORING GAP EQUIPMENT AND ITEMS FOR BACKHAUL. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES WILL INCLUDE PROGRESS REPORTS, TRIP REPORTS, UPDATED DOCUMENTS, NEWSLETTERS, SOCIAL MEDIA POSTS, PHOTOS, WATER QUALITY TEST RESULTS, TRAINING CERTIFICATES, BACKHAUL INVENTORY. EXPECTED OUTCOMES INCLUDE INCREASED ABILITY TO MANAGE FEDERAL FUNDS, INCREASED AWARENESS OF ENVIRONMENTAL ISSUES AND SOLUTIONS, INCREASED ABILITY TO AFFECT CHANGE IN THE COMMUNITY, COMMUNITY EDUCATION ON SOLID WASTE AND RECYCLING, COMMUNITY PARTICIPATION IN GAP ACTIVITIES, INCREASED AWARENESS ABOUT WATER CONTAMINANTS, REMOVAL OF RECYCLABLES AND SCRAP WASTE, LESS WASTE IN THE LANDFILL, PROPER DISPOSAL OF HAZARDOUS MATERIALS, AND STAFF TRAINING ON SOLID AND HAZARDOUS WASTE ISSUES. THE INTENDED BENEFICIARIES ARE THE MEMBERS OF THE ALLAKAKET TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A20AV00844",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALLAKAKET VILLAGE",
+      "obligation": 287627.22,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "ADD 2015, 2019, 2020 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00846",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALLAKAKET VILLAGE",
+      "obligation": 237702.25,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "ALLAKAKET FY15, FY19, & FY20 PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00848",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ALLAKAKET VILLAGE",
+      "obligation": 97889.52,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "ALLAKAKET FY15, FY19, & FY20 61E & 6K1 DESIGN FUNDS",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1710535.99,
+  "award_count": 7,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 314893.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 772424.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 623218.99
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 403000.0,
+    "2025": 229291.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

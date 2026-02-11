@@ -1,9 +1,122 @@
 {
   "tribe_id": "epa_100000311",
   "tribe_name": "Turtle Mountain Band of Chippewa Indians of North Dakota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMD-2018-PC-0008",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": -1.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "693JG42230000V600ND0006",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": 2514593.46,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600ND0006",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": 195239.25,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600ND0006",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": 2669508.07,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602ND3006024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": 2359859.87,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176ND3006024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": 903275.86,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600ND0006",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": 350099.42,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "23DG11010000011",
+      "cfda": "10.720",
+      "program_id": "usda_wildfire",
+      "recipient_name_raw": "TURTLE MOUNTAIN BAND OF CHIPPEWA INDIANS",
+      "obligation": 248924.0,
+      "start_date": "2023-07-21",
+      "end_date": "2028-04-30",
+      "description": "BIPARTISAN INFRASTRUCTURE LAW COMMUNITY WILDFIRE DEFENSE GRANTS FOR TURTLE MOUNTAIN COMPREHENSIVE WILDFIRE PROTECTION PLAN",
+      "awarding_agency": "Department of Agriculture"
+    }
+  ],
+  "total_obligation": 9241498.93,
+  "award_count": 8,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": -1.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 8992575.93
+    },
+    "10.720": {
+      "count": 1,
+      "total": 248924.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 248924.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

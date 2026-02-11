@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000249",
   "tribe_name": "Saginaw Chippewa Indian Tribe of Michigan",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMC-2018-PC-0003",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SAGINAW CHIPPEWA INDIAN TRIBE",
+      "obligation": 64433.2,
+      "start_date": "2017-08-14",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A20AV00911",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SAGINAW CHIPPEWA INDIAN TRIBE",
+      "obligation": 9315867.0,
+      "start_date": "2020-08-01",
+      "end_date": "2026-09-30",
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT2653420",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SAGINAW CHIPPEWA INDIAN TRIBE",
+      "obligation": 24705122.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2653420",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SAGINAW CHIPPEWA INDIAN TRIBE",
+      "obligation": 1102844.0,
+      "start_date": "2022-02-04",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 35188266.2,
+  "award_count": 4,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 64433.2
+    },
+    "20.205": {
+      "count": 1,
+      "total": 9315867.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 25807966.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1102844.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

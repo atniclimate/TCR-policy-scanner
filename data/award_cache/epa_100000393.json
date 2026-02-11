@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000393",
   "tribe_name": "Village of Dot Lake",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J08901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF DOT LAKE",
+      "obligation": 528000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT ARE TO CONDUCT SOLID WASTE RESEARCH, PLANNING, DEVELOPMENT, AND IMPLEMENTATION; TO ADVANCE ADMINISTRATIVE GRANTS MANAGEMENT BY UPDATING THE EPA TRIBAL ENVIRONMENTAL PLAN (ETEP), CONDUCTING A POLICY AND PROCEDURE REVIEW, AND FACILITATING STAFF CONFERENCE AND TRAINING ATTENDANCE; AND TO PROVIDE COMMUNITY ENVIRONMENTAL OUTREACH AND EDUCATION.\nACTIVITIES:THE ACTIVITIES TO BE PERFORMED UNDER COMPONENT 1 INCLUDE RESEARCHING FUNDING OPPORTUNITIES FOR SOLID WASTE ACTIVITIES, CONDUCTING A WASTE ASSESSMENT, AND DEVELOPING AN INTEGRATED WASTE MANAGEMENT PLAN. ADDITIONAL ACTIVITIES INCLUDE PURCHASING SIGNAGE, A BURN UNIT, AND A STORAGE CONTAINER FOR SORTING MATERIALS, AS WELL AS FENCING REPAIR, HIRING LANDFILL STAFF, AND PREPARING MATERIALS FOR TRANSPORT OUT OF THE COMMUNITY. COMPONENT 2 ACTIVITIES INCLUDE WEEKLY MEETINGS WITH THE COUNCIL TO DISCUSS PROGRAM ISSUES, ATTENDING CONFERENCES AND TRAINING, PURCHASING OFFICE EQUIPMENT AND SUPPLIES, AND UPDATING THE ETEP. COMPONENT 3 INVOLVES CONDUCTING OUTREACH AND EDUCATION THROUGH QUARTERLY NEWSLETTERS AND FLYERS, COMMUNITY ENVIRONMENTAL MEETINGS AND SCHOOL PRESENTATIONS, AND CONDUCTING ACTIVITIES SUCH AS A COMMUNITY CLEANUP.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE QUARTERLY PROGRESS REPORTS, TRIP REPORTS, MEETING NOTES, AN UPDATED ETEP, NEWSLETTERS, PRESENTATIONS, PARTICIPATION LISTS, AND PHOTOS. EXPECTED OUTCOMES INCLUDE THE REDUCTION AND SUSTAINABLE MANAGEMENT OF SOLID AND HAZARDOUS WASTE; TRAINED STAFF TO MAINTAIN AN EFFECTIVE ENVIRONMENTAL PROGRAM; AND COMMUNITY ENVIRONMENTAL AWARENESS AND STEWARDSHIP THAT WILL REDUCE HEALTH RISKS FOR GENERATIONS TO COME. THE INTENDED BENEFICIARIES ARE DOT LAKE'S COMMUNITY MEMBERS AND ENVIRONMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00687",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF DOT LAKE",
+      "obligation": 184319.2,
+      "start_date": "2018-06-15",
+      "end_date": "2025-12-31",
+      "description": "A18AV00687",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00690",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF DOT LAKE",
+      "obligation": 118566.86,
+      "start_date": "2018-06-15",
+      "end_date": "2025-12-31",
+      "description": "A18AV00690",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00892",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF DOT LAKE",
+      "obligation": 112511.51,
+      "start_date": "2023-07-11",
+      "end_date": "2028-12-31",
+      "description": "DOT LAKE ADD FY22 6V2 SAFETY, FY23 6V1, 66V PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00962",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF DOT LAKE",
+      "obligation": 45730.62,
+      "start_date": "2023-08-01",
+      "end_date": "2028-12-31",
+      "description": "DOT LAKE FY23 6V1 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 989128.1900000001,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 528000.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 461128.19
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 686242.13,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

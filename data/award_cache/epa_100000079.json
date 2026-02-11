@@ -1,9 +1,82 @@
 {
   "tribe_id": "epa_100000079",
   "tribe_name": "Elk Valley Rancheria, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00165",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "ELK VALLEY RANCHERIA",
+      "obligation": 4445.79,
+      "start_date": "2018-08-28",
+      "end_date": "2021-08-28",
+      "description": "ELKVALLEYRANCHERIA_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32440125",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ELK VALLEY RANCHERIA",
+      "obligation": 689500.0,
+      "start_date": "2024-03-01",
+      "end_date": "2026-09-30",
+      "description": "THIS PROJECT IS TO DESIGN AND CONSTRUCT A NETWORK OF PEDESTRIAN TRAILS, WILDLIFE VIEWING PLATFORMS AND INTERPRETIVE SIGNAGE ON TRIBAL LAND THAT IS LOCATED ADJACENT TO A CALIFORNIA STATE SCENIC SECTION OF U.S. HWY 101.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0611180",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ELK VALLEY RANCHERIA",
+      "obligation": 1292016.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "98T84701",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "ELK VALLEY RANCHERIA",
+      "obligation": 64360.0,
+      "start_date": "2023-10-01",
+      "end_date": "2024-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS PROJECT IS TO BUILD THE TRIBE'S CAPACITY TO ASSESS AIR QUALITY CONDITIONS AND TO DEVELOP STRATEGIES TO ADDRESS AIR QUALITY ISSUES. THE TRIBE WILL CONTINUE STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING AIR EMISSIONS, RULEMAKING, AND OTHER PROGRAM ACTIVITIES. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE TRIBE'S AIR QUALITY.ACTIVITIES:THE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE SECTION 103 PROGRAM INCLUDING: STRATEGIC PLANNING AND EVALUATION, COMPLIANCE ASSISTANCE, MONITORING RESERVATION-WIDE AIR EMISSIONS, DEVELOPING AN AIR REGULATORY PROGRAM, PROVIDING COMMUNITY EDUCATION AND OUTREACH, AND PARTICIPATING IN REGIONAL AND NATIONAL INITIATIVES TO IMPROVE AIR QUALITY. THESE ACTIVITIES SUPPORT THE TRIBE'S GOAL TO PROTECT THE HEALTH OF THE TRIBAL COMMUNITY.   SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:EXPECTED DELIVERABLES INCLUDE COLLECTING AIR QUALITY DATA AND SUBMITTING RESULTS TO EPA'S NATIONAL AIR QUALITY DATABASE. OUTCOMES INCLUDE A BROADENED AWARENESS OF AIR QUALITY ISSUES AND ESTABLISH PROGRAMS TO ADDRESS THE ATTAINMENT AND MAINTENANCE OF NATIONAL AMBIENT AIR QUALITY STANDARDS   (NAAQS) AS WELL AS IMMEDIATE AND EMERGING THREATS TO PUBLIC HEALTH AND WELFARE FROM AIR POLLUTION. INTENDED BENEFICIARIES: DIRECT BENEFICIARIES OF THIS PROGRAM INCLUDE ELK VALLEY RANCHERIA AREA RESIDENTS WHO WILL HAVE DECREASED EXPOSURE TO CRITERIA AND HAZARDOUS AIR POLLUTANTS.  THIS AWARD PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF 64,360.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 2050321.79,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 4445.79
+    },
+    "20.205": {
+      "count": 1,
+      "total": 689500.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1292016.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 64360.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 753860.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

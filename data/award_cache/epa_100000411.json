@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000411",
   "tribe_name": "Native Village of Goodnews Bay",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01233",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF GOODNEWS BAY",
+      "obligation": 4000000.0,
+      "start_date": "2025-01-01",
+      "end_date": "2029-12-31",
+      "description": "TCR - SUBPART J",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00779",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF GOODNEWS BAY",
+      "obligation": 249907.0,
+      "start_date": "2025-04-22",
+      "end_date": "2027-09-30",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00795",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF GOODNEWS BAY",
+      "obligation": 150000.0,
+      "start_date": "2025-05-01",
+      "end_date": "2027-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J92101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF GOODNEWS BAY",
+      "obligation": 510000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO AN ELIGIBLE RECIPIENT TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. INTENDED BENEFICIARY IS THE NATIVE VILLAGE OF GOODNEWS BAY. SPECIFICALLY, THEY WILL USE THESE FUNDS FOR BUILDING TRIBAL CAPACITY TO DEVELOP ENVIRONMENTAL PROGRAMS. THIS WORKPLAN WILL INCREASE MANAGEMENT OF THE ENVIRONMENTAL PROGRAM, TRIBAL ABILITY TO MANAGE FEDERAL ENVIRONMENTAL FUNDS; PROVIDE DIRECT ACCESS TO THE LANDFILL BY ELIMINATING THE POSSIBLE CHANCE OF CONTAMINATING ROADWAYS, TRAILS, HOMES, AND OTHER RESIDENCE; REDUCE INJURY TO GENERAL PUBLIC BY REMOVING DEBRIS AROUND ROADWAYS, TRAILS, AND HOMES TO PROVIDE A SAFE ROUTE TO HOMES AND BUSINESSES; BEGIN THE PROCESS TO UPDATE THE TRIBE'S EPA TRIBAL ENVIRONMENTAL PLAN; INCREASE TRIBAL ENGAGEMENT IN THE STATE AND FEDERAL REGULATORY PROCESSES; BEGIN TO PLAN TO ADAPT TO CLIMATE CHANGE AND DEVELOP AND CREATE A PLAN TO MAINTAIN A PRESERVE THE COASTLINE NEAR THE VILLAGE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J01601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF GOODNEWS BAY",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF GOODNEWS BAY WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE ESTABLISHING PUBLIC PARTICIPATION AND EDUCATION THROUGH COMMUNITY ENGAGEMENT PROJECTS.  ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING COMMUNITY PLANNING. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A12AV00785",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF GOODNEWS BAY",
+      "obligation": 90528.0,
+      "start_date": "2013-12-23",
+      "end_date": "2025-12-31",
+      "description": "GOODNEWS BAY TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 5134435.0,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 4399907.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 644000.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": 90528.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 510000.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 4399907.0,
+    "2026": 134000.0
+  },
+  "trend": "increasing"
 }

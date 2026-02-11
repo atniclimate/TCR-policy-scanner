@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000488",
   "tribe_name": "Northway Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J58901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NORTHWAY VILLAGE",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "NORTHWAY'S FY20 IGAP PROJECT OBJECTIVES ARE: CONTINUE TO EXPAND SOLID WASTE PLANNING, MANAGEMENT, AND IMPLEMENTATION CAPACITIES, TO DEVELOP A SUSTAINABLE SOLID WASTE MANAGEMENT PROGRAM;  ADMINISTRATIVE AND PROGRAMMATIC CAPACITY BUILDING AND ENVIRONMENTAL PROGRAM ADVANCEMENT;  COMMUNITY ENVIRONMENTAL EDUCATION AND OUTREACH WITH AN EMPHASIS ON ENVIRONMENTAL EMERGENCY RESPONSE PLANNING, AIR QUALITY, AND WATER QUALITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J27101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NORTHWAY VILLAGE",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:PRIMARY OBJECTIVES INCLUDE:  EXPAND SOLID WASTE PLANNING, PROGRAM DEVELOPMENT, AND IMPLEMENTATION BY COORDINATING WITH OTHER ORGANIZATIONS TO DEVELOP SUSTAINABLE STRATEGIES;  ADMINISTRATIVE AND PROGRAMMATIC DEVELOPMENT THROUGH PARTICIPATION IN CONFERENCES, WEBINARS, AND TRAINING;  COMMUNITY ENVIRONMENTAL EDUCATION, INCLUDING THE LATEST DEVELOPMENTS IN WATER QUALITY AND WASTE MANAGEMENT; AND COLLECT BASELINE WATER SAMPLES WITH EXPERT ASSISTANCE. ACTIVITIES:1. EXPAND NORTHWAY'S WASTE MANAGEMENT PROGRAM BY ADDING LANDFILL FENCING AND SIGNAGE, CONDUCTING TRENCH AND FILL OPERATIONS, PURCHASING A DUMP TRAILER, COORDINATING WITH PARTNERS, AND CONDUCTING BACKHAUL TRIPS. RECORD TYPES OF MATERIALS BACKHAULED AND PROGRAM INCOME RECEIVED. 2. EDUCATE STAFF THROUGH ATTENDING CONFERENCES, TRAINING, AND WEBINARS; REVIEW AND UPDATE POLICIES AND PROCEDURES AND THE EPA-TRIBAL ENVIRONMENTAL PLAN ANNUALLY. 3. PROVIDE COMMUNITY EDUCATION ON CONTAMINATED SITES, WATER QUALITY, AND SOLID WASTE ISSUES AT COUNCIL MEETINGS AND COMMUNITY EVENTS; POST INFORMATION ON SOCIAL MEDIA. 4. WORK WITH PARTNERS TO COLLECT, ANALYZE, AND REPORT WATER QUALITY SAMPLING DATA.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES INCLUDE COPIES OF PHOTOS, LANDFILL LOGS, SOLID WASTES STATISTICS, PROGRAM INCOME, MEETING NOTES, TRIP REPORTS, POLICIES AND PROCEDURES, PRESENTATIONS, ATTENDANCE LISTS, AND WATER QUALITY REPORTS AND STATISTICS. OUTCOMES INCLUDE PROTECTING HUMAN AND ENVIRONMENTAL HEALTH THROUGH EXPANDED WASTE MANAGEMENT, INCREASED KNOWLEDGE FOR STAFF, COMMUNITY ENVIRONMENTAL STEWARDSHIP, AND ESTABLISHMENT OF BASELINE WATER QUALITY DATA. BENEFICIARIES INCLUDE NORTHWAY COMMUNITY MEMBERS AND THE SURROUNDING ENVIRONMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV00975",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHWAY VILLAGE",
+      "obligation": 359457.31,
+      "start_date": "2019-06-30",
+      "end_date": "2025-12-31",
+      "description": "NORTHWAY A19AV00975 FY2019 TRANSIT FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00786",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHWAY VILLAGE",
+      "obligation": 116935.21,
+      "start_date": "2018-07-03",
+      "end_date": "2026-12-31",
+      "description": "A18AV00786",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00976",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHWAY VILLAGE",
+      "obligation": 87925.46,
+      "start_date": "2019-06-30",
+      "end_date": "2026-12-31",
+      "description": "NORTHWAY A19AV00976 FY 2019 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00104",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NORTHWAY VILLAGE",
+      "obligation": 0.0,
+      "start_date": "2007-08-03",
+      "end_date": "2022-03-17",
+      "description": "NORTHWAY 2009 TRANSPORTATION CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1461741.98,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 897424.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 564317.98
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 403000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

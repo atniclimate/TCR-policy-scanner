@@ -1,9 +1,155 @@
 {
   "tribe_id": "epa_100000551",
   "tribe_name": "Central Council of the Tlingit & Haida Indian Tribes",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00153",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 148358.0,
+      "start_date": "2019-08-01",
+      "end_date": "2021-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J75101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 510000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO AN ELIGIBLE RECIPIENT TO BUILD CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE CENTRAL COUNCIL OF TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA (CCTHITA) WILL USE THESE FUNDS FOR BUILDING TRIBAL CAPACITY TO DEVELOP ENVIRONMENTAL PROGRAMS BY SHARING RESOURCES AND ENVIRONMENTAL TRAININGS; EDUCATION ON TRANSBOUNDARY MINING; MAINTAINING ADMINISTRATIVE SKILLS; GATHERING BASELINE WATER QUALITY DATA; PARTICIPATING IN RTOC & HOSTING SE TRIBAL ENVIRONMENTAL CONFERENCE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J74301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 292999.0,
+      "start_date": "2024-10-01",
+      "end_date": "2028-09-30",
+      "description": "DESCRIPTION:THE CENTRAL COUNCIL OF TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA, A FEDERALLY RECOGNIZED TRIBE WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY AS WELL AS THROUGHOUT SOUTHEAST ALASKA; INCREASING SOUTHEAST TRIBAL COLLABORATION BY SHARING RESOURCES/EXPERTISE AND OFFERING ENVIRONMENTAL TRAININGS AND RESOURCES; ENVIRONMENTAL STAFF BUILD AND MAINTAIN ADMINISTRATIVE SKILLS TO EFFECTIVELY MANAGE THE GAP GRANT; GATHER BASELINE DATA ON HARMFUL ALGAL BLOOMS, OCEAN ACIDIFICATION, AND WATER QUALITY.  ACTIVITIES:THE CENTRAL COUNCIL OF TLINGIT AND HAIDA INDIAN TRIBES WILL CREATE WORKING GROUPS AMONG SOUTHEAST TRIBAL ENVIRONMENTAL STAFF TO MEET VIA TELECONFERENCES AND HAVE THE COMMITTEES REPORT TO AND DISTRIBUTE THEIR WORK TO THE REST OF THE TRIBAL STAFF; WILL PARTICIPATE IN PUBLIC EVENTS TO PROVIDE AND PROMOTE EDUCATION AND OUTREACH TO SOUTHEAST TRIBAL CITIZENS ON ENVIRONMENTAL ISSUES. BASELINE DATA WILL BE COLLECTED, AND TOXIN ANALYSIS CONDUCTED, WITH THE RESULTING DATE ENTERED INTO APPROPRIATE DATABASES; CREATION OF STANDARD OPERATING PROCEDURE FOR COLLECTING PER- AND POLYFLUOROALKYL SUBSTANCES. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:REPORTS SUBMITTED TO EPA ACCORDING TO GRANT AGREEMENT; FLYERS, FACTSHEETS AND HANDOUTS, TRAINING REPORTS, AGENDAS, NOTES, AND PHOTOS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0021",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 692243.26,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0021",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 59910.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0021",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 766618.82,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3021024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 676812.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3021024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 307196.46,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0021",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 100540.17,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3021025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 805228.92,
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3021025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CENTRAL COUNCIL TLINGIT AND HAIDA INDIAN TRIBES OF ALASKA",
+      "obligation": 305439.98,
+      "start_date": "2025-01-24",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 4665347.32,
+  "award_count": 11,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 148358.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 802999.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 3713990.32
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 598438.98,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000489",
   "tribe_name": "Native Village of Nuiqsut (aka Nooiksut)",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J74101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUIQSUT",
+      "obligation": 239828.0,
+      "start_date": "2024-10-01",
+      "end_date": "2028-09-30",
+      "description": "DESCRIPTION:THE NATIVE VILLAGE OF NUIQSUT WILL BUILD CAPACITY AND ACTIVELY IDENTIFY ENVIRONMENTAL ISSUES IN THE TRIBAL COMMUNITY. THE TRIBE WILL COMPLETE AN EPA TRIBAL ENVIRONMENTAL PLAN AND ATTEND TRAINING AS THE NUIQSUT ENVIRONMENTAL PROGRAM, AND OTHER TRAINING IN FINANCIAL MANAGEMENT. THE FIRST YEAR WILL PROVIDE THE OPPORTUNITY TO GATHER INFORMATION ON FEDERAL PROGRAMS AND FEDERAL FUNDING.  ACTIVITIES:BUILD CAPACITY IN ENVIRONMENTAL ISSUES AND REMEDIATION, IDENTIFY PRIORITIES OF THE TRIBE, DEVELOP THE CAPACITY TO APPLY FOR ADDITIONAL FUNDING WHEN AVAILABLE FOR THE ENVIRONMENTAL NEEDS OF THE TRIBE. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE NATIVE VILLAGE OF NUIQSUT WILL BUILD AN ENVIRONMENTAL PROGRAM FOR THE TRIBAL COUNCIL, TRIBAL MEMBERS AND THE NATIVE COMMUNITY IN THE VILLAGE. EPA TRIBAL ENVIRONMENTAL PLAN WILL BE COMPLETED AS A DELIVERABLE BENEFITTING THE PLANNING PROCESS TO MOVE FORWARD. THE TRIBAL COUNCIL WILL BE INFORMED OF ENVIRONMENTAL ISSUES AND BE ADVANCED TO REACT TO THOSE ISSUES  THE INTENDED BENEFICIARIES ARE THE COMMUNITY MEMBERS OF NATIVE VILLAGE OF NUIQSUT..",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A09AV00143",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUIQSUT",
+      "obligation": 1027204.11,
+      "start_date": "2013-07-24",
+      "end_date": "2026-12-31",
+      "description": "CONSTRUCTION OF COLVILLE RIVER ACCESS ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00415",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUIQSUT",
+      "obligation": 141086.0,
+      "start_date": "2013-05-31",
+      "end_date": "2026-12-31",
+      "description": "ROAD MAINTENANCE PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01070",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUIQSUT",
+      "obligation": 120000.0,
+      "start_date": "2018-09-18",
+      "end_date": "2026-12-31",
+      "description": "NUIQSUT FY18 6K1 ROAD MAINTENACNE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01071",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF NUIQSUT",
+      "obligation": 115595.5,
+      "start_date": "2018-09-18",
+      "end_date": "2026-12-31",
+      "description": "A18AV01071",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1643713.6099999999,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 239828.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 1403885.6099999999
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 239828.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

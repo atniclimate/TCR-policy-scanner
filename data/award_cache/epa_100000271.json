@@ -1,9 +1,48 @@
 {
   "tribe_id": "epa_100000271",
   "tribe_name": "Sherwood Valley Rancheria of Pomo Indians of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "99T82101",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SHERWOOD VALLEY RANCHERIA",
+      "obligation": 270500.0,
+      "start_date": "2018-10-01",
+      "end_date": "2025-02-28",
+      "description": "THE TRIBE WILL BE UPGRADING AND EXPANDING THEIR SOLAR PANEL ARRAY AND UPGRADING THEIR GENERATOR TO PROVIDE MORE RELIABLE POWER TO ENSURE CONTINUOUS USE OF THEIR WELL AND DISINFECTION.  THIS WILL IMPROVE WATER QUANTITY AND QUALITY. THIS AWARD PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $270,500.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T36301",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "SHERWOOD VALLEY RANCHERIA",
+      "obligation": 297511.0,
+      "start_date": "2025-04-15",
+      "end_date": "2025-12-30",
+      "description": "DESCRIPTION:THE AGREEMENT PROVIDES FUNDING TO THE SHERWOOD VALLEY RANCHERIA OF POMO INDIANS OF CALIFORNIA TO IMPLEMENT PROJECTS AND ACTIVITIES THAT ASSIST PUBLIC WATER SYSTEMS SERVING TRIBES TO COMPLY WITH NATIONAL PRIMARY DRINKING WATER REGULATIONS (NPDWRS) OR OTHERWISE FURTHER THE HEALTH PROTECTION OBJECTIVES OF THE SDWA. SPECIFICALLY, THE RECIPIENT WILL CONNECT THE WATER TREATMENT PLANT TO POWER SO THAT THE TRIBE IS ABLE TO CHLORINATE ITS DRINKING WATER. SINCE OLD SHERWOOD VALLEY IS OFF-GRID, THIS PROJECT WILL PROVIDE NEEDED POWER FOR TREATMENT PLANT OPERATION.ACTIVITIES:THE ACTIVITIES INCLUDE TRENCHING ELECTRICAL DISTRIBUTION LINES, INSTALLING CONDUIT LINES, SECURING GENERATOR STORAGE UNITS AND JUNCTION BOXES, AND ADDING SECURITY MEASURES TO THE POWER SOURCES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE QUARTERLY REPORTS DOCUMENTING PROJECT PROGRESS. THE EXPECTED OUTCOMES INCLUDE COMPLETE INSTALLATION OF THE ELECTRICAL DISTRIBUTION LINES AND SECURITY FOR THE TREATMENT PLANT'S POWER SOURCES. THE INTENDED BENEFICIARIES INCLUDE CUSTOMERS OF THE ORIGINAL SHERWOOD VALLEY RANCHERIA PUBLIC WATER SYSTEM.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 568011.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "66.468": {
+      "count": 2,
+      "total": 568011.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 297511.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000209",
   "tribe_name": "Potter Valley Tribe, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T01001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 493188.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE POTTER VALLEY TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL COLLABORATE WITH ENVIRONMENTAL PARTNERS, PROVIDE COMMUNITY OUTREACH ON ENVIRONMENTAL TOPICS, ATTEND TRAINING TO DEVELOP CAPACITY IN ITS ENVIRONMENTAL  PROGRAMS, INCREASE CAPACITY OF TRIBE TO PREVENT POLLUTION, EXPAND THE SOLID WASTE MANAGEMENT PROGRAM, AND BEGIN DEVELOPMENT OF A WATER QUALITY PROGRAM.   THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $100,591.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T94101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 340784.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE POTTER VALLEY TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $152,769. SEE TERMS AND CONDITIONS.ACTIVITIES:THE ACTIVITIES INCLUDE PLANNING AND COORDINATING THE ANNUAL INTER-TRIBAL ENVIRONMENTAL YOUTH CAMPOUT, DEVELOPING A PRESENTATION ABOUT INTEGRATED PEST MANAGEMENT TO BUILD CAPACITY TO ADDRESS POLLUTION PREVENTION, PLAN AND COORDINATE A COMMUNITY CLEANUP EVENT, AND UPDATE THE EPA/TRIBAL ENVIRONMENTAL PLAN. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE EVENT MATERIALS DEVELOPED, COPY OF INTEGRATED PEST MANAGEMENT PRESENTATION, REPORT ON RESULTS OF CLEANUP, AND A DRAFT EPA/TRIBAL ENVIRONMENTAL PLAN. THE EXPECTED OUTCOMES INCLUDE PROVIDE ENVIRONMENTAL EDUCATION OPPORTUNITIES TO TRIBAL YOUTH, INCREASE CAPACITY TO PREVENT POLLUTION, PROVIDE OUTREACH TO THE TRIBAL COMMUNITY, AND SATISFY GENERAL ASSISTANCE PROGRAM PROGRAM MANDATORY REQUIREMENTS BY DEVELOPING AN EPA/TRIBAL ENVIRONMENTAL PLAN. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE POTTER VALLEY TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600CA0091",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 66321.12,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600CA0091",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 5881.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600CA0091",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 69973.64,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602CA3091024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 69816.91,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: POTTER VALLEY TRIBE FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO POTTER VALLEY TRIBE FOR FY24 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176CA3091024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 21610.87,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: POTTER VALLEY TRIBE FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL FUNDS PROVIDED TO POTTER VALLEY TRIBE FOR FY24 UNDER THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602CA3091025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 71268.9,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177CA3091025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 21610.05,
+      "start_date": "2025-01-24",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT0628940",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "POTTER VALLEY RANCHERIA OF POMO INDIANS",
+      "obligation": 1092207.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 2252661.8,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 833972.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 326482.8
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1092207.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 362394.05,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

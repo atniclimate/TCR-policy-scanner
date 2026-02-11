@@ -1,9 +1,74 @@
 {
   "tribe_id": "epa_100000501",
   "tribe_name": "Pedro Bay Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J90701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PEDRO BAY VILLAGE",
+      "obligation": 514999.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "BUILD CONTINUING TRIBAL ADMINISTRATIVE CAPACITY\nMAINTAIN ONGOING LIAISON CAPABILITIES WITH MINING INDUSTRY OFFICIALS, STATE AND FEDERAL AGENCIES &AMPAND COMMUNICATE APPROPRIATE INFO TO TRIBE   \nMANAGE SOLID WASTE OPERATIONS AND SOURCE SEPARATION EFFORTS FOR THE PEDRO BAY TRANSFER FACILITY\nUPDATE PEDRO BAY&RSQUOANDS INTEGRATED SOLID WASTE MANAGEMENT PLAN (IWMP)\nDEVELOP PEDRO BAY FY22-FY25 EPA &NDASHAND TRIBAL ENVIRONMENTAL PLAN (ETEP)",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J18001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PEDRO BAY VILLAGE",
+      "obligation": 268000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE PEDRO BAY VILLAGE IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3. BUILDING COMMUNICATIONS CAPACITY; 4. BUILDING SOLID AND HAZARDOUS WASTE MANAGEMENT CAPACITY; AND 5. BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES; CONDUCTING COMMUNITY EDUCATION ACTIVITIES; CONDUCTING SOURCE SEPARATION AND RESOURCE RECOVERY ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF WATER, AIR, AND WASTE; DEVELOPING AN ENVIRONMENTAL INVENTORY; AND DEVELOPING SPILL RESPONSE CAPABILITIES.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE PEDRO BAY VILLAGE, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; DECREASING AMOUNTS OF RECYCLABLES AND HAZARDOUS WASTES ENTERING LANDFILL; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; RECYCLING AND WASTE ACTIVITY REPORTS; AND AN ENVIRONMENTAL INVENTORY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0212120",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PEDRO BAY VILLAGE",
+      "obligation": 1031231.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0212120",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PEDRO BAY VILLAGE",
+      "obligation": 35007.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 1849237.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 782999.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1066238.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 514999.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 268000.0
+  },
+  "trend": "decreasing"
 }

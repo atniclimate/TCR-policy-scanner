@@ -1,9 +1,130 @@
 {
   "tribe_id": "epa_100000187",
   "tribe_name": "Otoe-Missouria Tribe of Indians, Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMT-2022-BR-004",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 159578.25,
+      "start_date": "2024-05-20",
+      "end_date": "2027-05-19",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "02F08401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 430000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2025-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE OTOE-MISSOURIA TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY BY MANAGING THE ENVIRONMENTAL OFFICE, OUTREACH, AIR QUALITY AND RECYCLING.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FFR, QMP, AND GIS/GPS QAPP. THE INTENDED BENEFICIARY IS THE OTOE-MISSOURIA TRIBE OF OKLAHOMA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F97501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 270000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL MANAGE THE ENVIRONMENTAL OFFICE, PROVIDE OUTREACH, POLLUTION PREVENTION THROUGH RECYCLING, AND IMPROVE KNOWLEDGE OF AIR QUALITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE OTOE-MISSOURIA TRIBE OF INDIANS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV00679",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 348760.58,
+      "start_date": "2019-01-01",
+      "end_date": "2025-12-31",
+      "description": "OTOE-MISSOURIA TRANSPORTATION IMPROVEMENT PLANNING (TIP) NEW CONTRACT 2019",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00238",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 290615.23,
+      "start_date": "2022-01-01",
+      "end_date": "2027-12-31",
+      "description": "OTOE MISSOURIA TRIBE, TRANSPORTATION PLANNING IMPROVEMENT (TIP) CONTRACT RENEWAL.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4023140",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 6611830.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4023140",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 245405.0,
+      "start_date": "2022-06-02",
+      "end_date": "2025-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "01F63401",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "OTOE-MISSOURIA TRIBE",
+      "obligation": 239669.0,
+      "start_date": "2019-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT WILL PROVIDE ASSISTANCE TO THE OTOE-MISSOURIA TRIBE IN ITS EFFORTS TO ADDRESS AIR POLLUTION CONTROL CONCERNS ON THE TRIBAL RESERVATIONS IN THE STATE OF OKLAHOMA INCLUDING CONDUCTING AN EMISSIONS INVENTORY OF AIR SOURCES IMPACTING TRIBAL LANDS.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 8595858.06,
+  "award_count": 8,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 159578.25
+    },
+    "66.926": {
+      "count": 2,
+      "total": 700000.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 639375.81
+    },
+    "14.867": {
+      "count": 2,
+      "total": 6857235.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 239669.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 536020.23,
+    "2023": 430000.0,
+    "2024": 159578.25,
+    "2025": 0.0,
+    "2026": 270000.0
+  },
+  "trend": "decreasing"
 }

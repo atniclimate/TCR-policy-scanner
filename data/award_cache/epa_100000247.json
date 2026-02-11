@@ -1,9 +1,85 @@
 {
   "tribe_id": "epa_100000247",
   "tribe_name": "Sac & Fox Nation of Missouri in Kansas and Nebraska",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00209",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SAC & FOX NATION",
+      "obligation": 145571.0,
+      "start_date": "2018-09-01",
+      "end_date": "2023-09-30",
+      "description": "ADAPTATION PLANNING (INC DATA DEVELOPM)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00014",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SAC & FOX NATION OF MISSOURI IN KANSAS",
+      "obligation": 105264.12,
+      "start_date": "2019-12-10",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00173",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SAC & FOX NATION OF MISSOURI IN KANSAS",
+      "obligation": 14804.0,
+      "start_date": "2018-08-28",
+      "end_date": "2023-09-30",
+      "description": "SAC&FOXNATMISSOURI_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01F64001",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "SAC & FOX NATION",
+      "obligation": 136761.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AGREEMENT WILL PROVIDE ASSISTANCE TO THE SAC AND FOX NATION IN ITS EFFORTS TO ADDRESS AIR POLLUTION CONTROL CONCERNS ON THE PUEBLO'S RESERVATION IN THE STATE OF OKLAHOMA, INCLUDING CONDUCTING AN EMISSIONS INVENTORY OF AIR SOURCES IMPACTING TRIBAL LANDS AND INDOOR AIR QUALITY ASSESSMENTS IN RESIDENTIAL AS WELL AS TRIBAL GOVERNMENT BUILDINGS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "96722401",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "SAC & FOX NATION OF MISSOURI IN KANSAS",
+      "obligation": 127680.0,
+      "start_date": "2025-07-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:SAC AND FOX TRIBE OF MISSOURI IN KANSAS AND NEBRASKA WILL BE RESTARTING THEIR ENVIRONMENTAL AIR PROGRAM WITH AN EMPHASIS ON TRAINING NEW STAFF IN ENVIRONMENTAL REGULATIONS AND AIR MONITORING. THIS INITIAL PROJECT GRANT WILL BE FOR TRAINING, SOME OUTREACH AND SITE PREPARATION FOR AN AIR MONITORING STATION.ACTIVITIES:THIS FUNDING IS TO BEGIN TRAINING FOR AIR STAFF. STAFF WILL BE COMPLETING TRAINING ON A MONTHLY BASIS TO ENSURE DEVELOPMENT OF KNOWLEDGE AND SKILLS TO RUN AN AIR PROGRAM INCLUDING MONITORING.\nSTAFF WILL ADD AIR KNOWLEDGE TO OUTREACH EVENTS AND NEWSLETTERS THAT THE TRIBE SENDS OUT QUARTERLY.\nA SITE WILL BE SELECTED, AND A CONTRACTOR WILL BE HIRED TO PREPARE A SITE FOR AN AIR MONITORING STATION THAT MEETS 40 CFR 58 REQUIREMENTS AND TRIBAL INTERESTS.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:STAFF WILL BE TRAINED TO INFORM TRIBE MEMBERSHIP OF AIR QUALITY CONCERNS AND ANSWER QUESTIONS ON INDOOR AIR AND RADON EXPOSURE. THEY WILL GAIN KNOWLEDGE FOR RUNNING EXISTING AMBIENT AIR QUALITY EQUIPMENT AND USES FOR THE TRIBAL MEMBERS. AN AIR MONITORING SITE WILL ALLOW FOR FUTURE MONITORING OF PM2.5 AND METEOROLOGICAL DATA. OUTREACH ACTIVITIES WILL PROVIDE SAC AND FOX TRIBAL MEMBERS WITH KNOWLEDGE TO ENSURE CLEAN AIR FOR THEMSELVES AND THEIR COMMUNITIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 530080.12,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 265639.12
+    },
+    "66.038": {
+      "count": 2,
+      "total": 264441.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 127680.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

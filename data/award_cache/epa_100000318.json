@@ -1,9 +1,405 @@
 {
   "tribe_id": "epa_100000318",
   "tribe_name": "Ute Indian Tribe of the Uintah & Ouray Reservation, Utah",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV00476",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 214000.0,
+      "start_date": "2025-01-28",
+      "end_date": "2026-09-30",
+      "description": "UTE INDIAN TRIBE  NEW AWARD FY24 CLIMATE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "96891701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 293000.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AGREEMENT PROVIDES FUNDING TO THE UTE INDIAN TRIBE FOR OPERATION OF ITS CONTINUING ENVIRONMENTAL PROGRAM WHILE GIVING IT GREATER FLEXIBILITY TO ADDRESS ITS HIGHEST ENVIRONMENTAL PRIORITIES, IMPROVE ENVIRONMENTAL PERFORMANCE, ACHIEVE ADMINISTRATIVE SAVINGS AND STRENGTHEN THE PARTNERSHIP BETWEEN THE UTE INDIAN TRIBE AND THE US EPA. THIS AGREEMENT SUPPORTS RESERVATION-WIDE PROGRAMS TO RESPOND TO COMMUNITY MEMBER COMPLAINTS, COORDINATE WITH RESPECT TO ENVIRONMENTAL AFFAIRS AND TO PROCURE ADDITIONAL SOURCES OF FUNDING. THE UTE INDIAN TRIBE WILL USE GAP FUNDS TO PAY THE SALARY OF THE TRIBAL GAP COORDINATOR, MANAGE SOLID WASTE AND TO BUILD THE TRIBE'S CAPACITY TO RESPOND TO AND ADDRESS CHALLENGES TO HUMAN HEALTH AND ENVIRONMENT ON THE UINTAH AND OURAY RESERVATION. THE WORK INCLUDES OUTPUTS AND OUTCOMES ASSOCIATED WITH MANAGING CONTINUING ENVIRONMENTAL PROGRAMS, WHICH INCLUDE KEEPING THE TRIBAL LEADERSHIP INFORMED, COMMUNITY OUTREACH AND THE CREATION AND/OR REVIEW OF AN EPA-TRIBAL ENVIRON",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "96897301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 380000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE UTE INDIAN TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. THE PURPOSE OF THIS AWARD IS TO BUILD AND SUSTAIN THE ENVIRONMENTAL CAPACITY OF THE UTE INDIAN TRIBE.ACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE ADMINISTRATION OF THE GAP PROGRAM, SOLID WASTE MANAGEMENT, COMMUNICATION AND OUTREACH, HAZARDOUS WASTE MANAGEMENT, REGIONAL TRIBAL OPERATIONS COMMITTEE PARTICIPATION, DEVELOPMENT OF AN EPA-TRIBAL ENVIRONMENTAL PLAN AND SUPPORTING THE TRIBE'S DEVELOPMENT OF ITS WATER QUALITY AND BROWNFIELDS PROGRAMS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES INCLUDE QUARTERLY PROGRESS REPORTS TO THE EPA, THE APPROPRIATE AND EFFECTIVE MANAGEMENT OF EPA FUNDING, AND MEASURES TO IMPROVE AND PROTECT HUMAN HEALTH AND THE ENVIRONMENT. THE INTENDED BENEFICIARIES OF THIS GRANT ARE THE UTE INDIAN TRIBE AND RESIDENTS OF THE UINTA AND OURAY INDIAN RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "00I45500",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 299843.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE UTE INDIAN TRIBE TO DEVELOP AND IMPLEMENT LEAD SERVICE LINE IDENTIFICATION AND/OR REPLACEMENT ACTIVITIES IN TRIBAL COMMUNITIES.  SPECIFICALLY, THE RECIPIENT WILL REIMBURSE THE TRIBE FOR COSTS ALREADY INCURRED TO DEVELOP THE WATER SERVICE LINE BASELINE DATABASE AND CONTINUE TO INVESTIGATE THE MATERIAL TYPE OF THE WATER SERVICE LINES WITH UNKNOWN TYPE, AND TO DEVELOP A PLAN TO REPLACE NECESSARY SERVICE LINES.\n\n\nACTIVITIES:THE ACTIVITIES INCLUDE: 1. DATA COLLECTION AND PRELIMINARY DATABASE DEVELOPMENT, 2. INITIAL FIELD WORK AND SERVICE LINE VERIFICATION, 3. PUBLIC NOTIFICATION AND SUPPORT, 4. REPORTING, 5. DEVELOPMENT OF QUALITY ASSURANCE PROJECT PLAN (QAPP). 6. DATABASE VALIDATION, 7. FIELD INVESTIGATION, FIELD DATA ANALYSES, AND DATABASE FINALIZATION, 8. REPLACEMENT PLANNING, 9. PERFORMANCE AND FINAL REPORTING\n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE PROJECT REPLACEMENT PLAN, FUNDING PROPOSAL, QAPP, UPDATED BASELINE SERVICE LINE INVENTORY, AND SEMIANNUAL REPORTS AND FINAL REPORTS.\n\nTHE EXPECTED OUTCOMES INCLUDE CLEAN AND SAFE DRINKING WATER FOR ALL THE TRIBAL COMMUNITIES.\n\nTHE INTENDED BENEFICIARIES INCLUDE ALL TRIBAL COMMUNITIES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00467",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 9220718.0,
+      "start_date": "2016-02-08",
+      "end_date": "2026-09-30",
+      "description": "TTP PROJECT UOIR 7(2); PRECONSTRUCTION ACTIVITIES.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00112",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 6358027.03,
+      "start_date": "2008-09-17",
+      "end_date": "2027-09-30",
+      "description": "TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01347",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 5971514.11,
+      "start_date": "2012-09-24",
+      "end_date": "2026-09-30",
+      "description": "UTE TRIBE ROAD MAINTENCE GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00235",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 5099923.26,
+      "start_date": "2011-09-30",
+      "end_date": "2024-09-30",
+      "description": "ACKNOWLEDGE RECEIPT OF DESIGN DELIVERABLES & EXTEND POP TO 9/30/2017.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00233",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 3877557.0,
+      "start_date": "2011-09-30",
+      "end_date": "2025-09-30",
+      "description": "ROADS PROJECT UOIR 1(5)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00793",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 3445000.0,
+      "start_date": "2014-07-21",
+      "end_date": "2024-09-30",
+      "description": "PROJ UOIR CONSOL NO. 22, DATE OF AWARD TO 9/30/2015",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A10AV00197",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 3354992.98,
+      "start_date": "2010-09-29",
+      "end_date": "2026-09-30",
+      "description": "MOD NO 8 ISSUED TO ADD FY 2016 FUNDS & EXTEND POP TO 9/30/2017",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00790",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 2627300.0,
+      "start_date": "2014-07-21",
+      "end_date": "2022-09-30",
+      "description": "PROJECT UOIR 41(5), DATE OF AWARD TO 9/30/2015",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00934",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 2483088.91,
+      "start_date": "2017-09-15",
+      "end_date": "2027-09-30",
+      "description": "NEW AWARD_UOIR 45(1)_UTE INDIAN TRIBE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00466",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 2095000.0,
+      "start_date": "2016-02-08",
+      "end_date": "2026-09-30",
+      "description": "TTP PROJECT UOIR 22(3) - PRECONSTRUCTION ACTIVITIES",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00512",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 1944910.33,
+      "start_date": "2017-04-25",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD - PROJECT UOIR 47(5)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00085",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 1637251.68,
+      "start_date": "2008-09-17",
+      "end_date": "2022-09-30",
+      "description": "ROADS PROJECT UOIR 2(1)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00721",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 1441447.0,
+      "start_date": "2019-06-20",
+      "end_date": "2027-09-30",
+      "description": "UTE INDIAN TRIBE TTP PROJECT UOIR CONSOLIDATED NO. 24",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00956",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 1278561.0,
+      "start_date": "2016-08-31",
+      "end_date": "2026-09-30",
+      "description": "PROJECT UOIR 8350(1)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00957",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 1239424.0,
+      "start_date": "2016-08-31",
+      "end_date": "2026-09-30",
+      "description": "UOIR CONSOLIDATED NO. 23",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00876",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 973959.0,
+      "start_date": "2014-08-21",
+      "end_date": "2022-09-30",
+      "description": "FY 2014 AWARD - PROJECT UOIR 1033(1) GUSHER SUBDIVISION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00468",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 726406.0,
+      "start_date": "2016-03-08",
+      "end_date": "2026-09-30",
+      "description": "TTP PROJECT UOIR 49(4); PRECONSTRUCTION ACTIVITIES.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00720",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 651716.0,
+      "start_date": "2019-06-20",
+      "end_date": "2026-09-30",
+      "description": "UTE TRIBE - TTP ROAD PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00274",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 620000.0,
+      "start_date": "2009-09-21",
+      "end_date": "2024-09-30",
+      "description": "MOD 7 ISSUED TO ADD FY 2015 FUNDS, $620,000 & EXTEND POP TO 9/30/2016.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01410",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 223005.0,
+      "start_date": "2012-09-25",
+      "end_date": "2022-09-30",
+      "description": "ROAD GRANT FOR UOIR TRANSIT NO. 1 PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00469",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 158850.0,
+      "start_date": "2016-03-08",
+      "end_date": "2026-09-30",
+      "description": "TTP PROJECT UOIR 4500(1); PRECONSTRUCTION ACTIVITIES",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00456",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 120758.0,
+      "start_date": "2016-02-02",
+      "end_date": "2026-09-30",
+      "description": "PROJECT UOIR 1037(1), PRECONSTRUCTION; POP DATE OF AWARD TO 9/30/2016",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00732",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 95000.0,
+      "start_date": "2019-06-20",
+      "end_date": "2026-09-30",
+      "description": "UTE INDIAN TRIBE TTP ROAD PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00269",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 0.0,
+      "start_date": "2009-09-21",
+      "end_date": "2022-09-30",
+      "description": "MOD#2(TRIB/MGMT&CONST/UOIR 9(2",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00113",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 0.0,
+      "start_date": "2008-09-17",
+      "end_date": "2022-09-30",
+      "description": "EXTEND POP TO 9/30/2017.  NO COST ACTION.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01349",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": -24280.0,
+      "start_date": "2012-09-22",
+      "end_date": "2022-09-30",
+      "description": "AWARD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00123",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 85718.0,
+      "start_date": "2022-11-10",
+      "end_date": "2026-09-30",
+      "description": "NEW AWARD_UOIR 1035(2)_UTE INDIAN TRIBE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "R21AP10069",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 807858.0,
+      "start_date": "2021-06-07",
+      "end_date": "2025-06-30",
+      "description": "UTE INDIAN TRIBE WATER SYSTEM WATER METER REPLACEMENT PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "R21AP10185",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "UTE INDIAN TRIBE",
+      "obligation": 634595.0,
+      "start_date": "2021-01-01",
+      "end_date": "2024-12-31",
+      "description": "TRIBAL FISH HATCHERY O&M",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 58335143.3,
+  "award_count": 33,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 214000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 673000.0
+    },
+    "66.468": {
+      "count": 1,
+      "total": 299843.0
+    },
+    "20.205": {
+      "count": 27,
+      "total": 55705847.29999999
+    },
+    "15.507": {
+      "count": 2,
+      "total": 1442453.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 85718.0,
+    "2024": 380000.0,
+    "2025": 513843.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

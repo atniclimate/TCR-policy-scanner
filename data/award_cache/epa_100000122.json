@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000122",
   "tribe_name": "Kaw Nation, Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMT-2018-PC-0003",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "KAW NATION",
+      "obligation": 171150.0,
+      "start_date": "2017-08-14",
+      "end_date": "2021-03-21",
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01F74601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KAW NATION",
+      "obligation": 470000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE KAW NATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL  PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY TO MANAGE THE ENVIRONMENTAL OFFICE, TRAVEL AND TRAINING, OUTREACH, RECYCLING AND POLLUTION PREVENTION (LEAD BASED PAINT, ASBESTOS AND PESTICIDES)",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F55301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KAW NATION",
+      "obligation": 252538.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF, PROVIDE TRAVEL AND TRAINING, OUTREACH, RECYCLING AND HAZARDOUS WASTE CHARACTERIZATION. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANNUAL PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM, INDOOR AIR QUALITY, LEAD BASED PAINT, SOIL AND WATER ASSESSMENT AND MOLD QUALITY ASSURANCE PROJECT PLANS. THE INTENDED BENEFICIARY IS THE KAW NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 893688.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 171150.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 722538.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 252538.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

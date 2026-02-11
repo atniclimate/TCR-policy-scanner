@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000176",
   "tribe_name": "Northfork Rancheria of Mono Indians of California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMF-2022-BR-015",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "NORTHFORK RANCHERIA OF MONO INDIANS OF CALIFORNIA",
+      "obligation": 94766.4,
+      "start_date": "2024-05-22",
+      "end_date": "2027-05-21",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "99T84101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NORTHFORK RANCHERIA OF MONO INDIANS OF CALIFORNIA",
+      "obligation": 326322.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AGREEMENT PROVIDES FUNDING TO DEVELOP THE TRIBE'S ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE CONDUCTING A WASTE STREAM ASSESSMENT, DISCUSSING RECYCLING STRATEGIES WITH STAKEHOLDERS, ATTENDING EMERGENCY PLANNING AND COMMUNITY RIGHT-TO-KNOW ACT (EPCRA) TRAINING, ORGANIZING AN EARTH DAY EVENT, DEVELOPING NEW OUTREACH MATERIALS, MEETING WITH REGIONAL AND STATE WATER AGENCIES AND ATTENDING THE REGIONAL TRIBAL OPERATIONS COMMITTEE (RTOC) MEETINGS.   THIS AWARD PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $111,813.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T54501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NORTHFORK RANCHERIA OF MONO INDIANS OF CALIFORNIA",
+      "obligation": 333317.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO NORTH FORK RANCHERIA TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \n\nTHIS AGREEMENT PROVIDES FEDERAL FUNDING IN THE AMOUNT OF $127,835.ACTIVITIES:THE RECIPIENT WILL WILL ATTEND GIS AND GRANTS TRAINING, CONDUCT OUTREACH ON DRINKING WATER, SOLID WASTE AND EARTH DAY ACTIVITIES, PARTICIPATE IN REGIONAL ENVIRONMENTAL DISCUSSIONS, ATTEND THE EPA TRIBAL CONFERENCE AND RTOC AND UPDATE THE TRIBAL SOLID WASTE MANAGEMENT PLAN.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE INFORMATION ON TRAINING AND OUTREACH ACTIVITIES, SUMMARIES ON THE SOLID WASTE PROGRAM ACTIVITIES AND REGIONAL MEETINGS AND THE SUBMITTAL OF THE SOLID WASTE PLAN. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE NORTH FORK RANCHERIA TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 754405.4,
+  "award_count": 3,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 94766.4
+    },
+    "66.926": {
+      "count": 2,
+      "total": 659639.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 428083.4,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

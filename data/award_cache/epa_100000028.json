@@ -1,9 +1,104 @@
 {
   "tribe_id": "epa_100000028",
   "tribe_name": "Cahuilla Band of Indians",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01183",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CAHUILLA BAND OF INDIANS",
+      "obligation": 250000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "THE COOPERATIVE LANDSCAPE CONSERVATION (CLC) PROGRAM PROVIDES FUNDS AND TECHNICAL SUPPORT TO ENABLE TRIBAL GOVERNMENTS AND TRUST LAND MANAGERS TO BETTER UNDERSTAND POTENTIAL IMPACTS AND VULNERABILITIES OF COMMUNITIES, ECOSYSTEMS AND BUILT SYSTEMS TO CLIMATE-RELATED CHANGE, TO ENABLE THEM TO DEVELOP INFORMATION AND TOOLS TO SUPPORT PLANNING AND DECISION MAKING, TO IMPLEMENT STRATEGIES THAT IMPROVE THE PREPAREDNESS AND RESILIENCE OF COMMUNITIES IN THE FACE OF A CHANGING CLIMATE AND ADDRESS THE POTENTIAL FOR INCREASED PEAK WEATHER EVENTS. THE PROGRAM ALSO ENABLES TRIBAL PARTICIPATION IN OCEAN AND COASTAL PLANNING.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01242",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "RAMONA BAND OF CAHUILLA INDIANS",
+      "obligation": 231600.0,
+      "start_date": "2025-01-01",
+      "end_date": "2027-12-31",
+      "description": "APPROVES THE FY 2025 TCR INITIAL CONTRACT PROPOSAL, SCOPE OF WORK & BUDGET. AWARDS FY 2025 TCR FUNDS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMF-2022-BR-008",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CAHUILLA BAND OF INDIANS",
+      "obligation": 106763.36,
+      "start_date": "2024-07-31",
+      "end_date": "2027-07-30",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "98T39701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CAHUILLA BAND OF INDIANS",
+      "obligation": 682763.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE CAHUILLA TRIBE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.\n\nTHIS ACTION PROVIDES PARTIAL FUNDING IN THE AMOUNT OF $61,714. ACTIVITIES:THE RECIPIENT WILL HOST A COMMUNITY CLEANUP IN CONJUNCTION WITH THEIR EARTH DAY EVENT, ATTEND MEETINGS AND TRAINING, INCLUDING THE TRIBAL/EPA ANNUAL CONFERENCE AND QUARTERLY REGIONAL TRIBAL OPERATIONS COMMITTEE RTOC) MEETINGS, AND CONTINUE THEIR RECYCLING PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE UPDATED OUTREACH AND EDUCATION MATERIALS, A SUMMARY OF MEETINGS ATTENDED, INCLUDING ACTION ITEMS, AND DATA REPORTS SHOWING AMOUNT OF RECYCLING COLLECTED ON THE RESERVATION..  DIRECT BENEFICIARIES INCLUDE THE RESIDENTS OF THE CAHUILLA RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T33901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "RAMONA BAND OF CAHUILLA INDIANS",
+      "obligation": 537442.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE RAMONA BAND OF CAHUILLA MISSION INDIANS TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. DIRECT BENEFICIARIES ARE THE MEMBERS AND/OR RESIDENTS OF THE RAMONA BAND OF CAHUILLA MISSION INDIANS.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $124,854.00.\n\nACTIVITIES:THE RECIPIENT WILL DEVELOP AND UPDATE OUTREACH AND EDUCATION MATERIALS AND EVENTS, REVIEW AND UPDATE THEIR EMERGENCY RESPONSE PLAN,  AND ATTEND MEETINGS, TRAININGS AND CONFERENCES TO INCREASE THEIR ENVIRONMENTAL PROGRAM CAPACITY IN AREAS OF SOLID WASTE, AIR QUALITY, GIS AND WATER QUALITY.\n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE AN UPDATED EMERGENCY RESPONSE PLAN, SUMMARIES ON THE COMMUNITY OUTREACH AND EDUCATION EVENTS, AND SUMMARIES DEPICTING THE INCREASE IN KNOWLEDGE GAINED BY ATTENDING MEETINGS, TRAINING AND CONFERENCES LIKE THE REGION 9 TRIBAL AND ENVIRONMENTAL PROTECTION AGENCY ANNUAL CONFERENCE, REGIONAL TRIBAL OPERATIONS COMMITTEE MEETINGS, AND LOCAL MEETINGS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0629220",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RAMONA BAND OF CAHUILLA INDIANS",
+      "obligation": 1399317.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3207885.36,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 481600.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 106763.36
+    },
+    "66.926": {
+      "count": 2,
+      "total": 1220205.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 1399317.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 1220205.0,
+    "2024": 106763.36,
+    "2025": 231600.0,
+    "2026": 250000.0
+  },
+  "trend": "decreasing"
 }

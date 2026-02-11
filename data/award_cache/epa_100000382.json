@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000382",
   "tribe_name": "Native Village of Chitina",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00870",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHITINA",
+      "obligation": 244684.0,
+      "start_date": "2024-08-05",
+      "end_date": "2026-12-31",
+      "description": "CHITINA FY23 TCR",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J56201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHITINA",
+      "obligation": 458815.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "NATIVE VILLAGE OF CHITINA WILL CONTINUE ADMINISTRATIVE CAPACITY BUILDING BY MAINTAINING AND ENHANCING THEIR ENVIRONMENTAL OFFICE AND STAFF. IGAP STAFF WILL CONDUCT DRINKING WATER SAMPLES. IGAP STAFF WILL CONTINUE TO REMOVE SOLID WASTE AND RECYCLING FROM THE COMMUNITY. IGAP STAFF WILL RESEARCH AND IDENTIFY BROWNFIELDS AND DETERMINE WHAT CAN BE DONE WITH THEM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J28901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHITINA",
+      "obligation": 392917.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE MAIN PROJECT OBJECTIVES ARE TO IMPROVE ADMINISTRATIVE GRANTS MANAGEMENT, PROVIDE TRAINING AND CONFERENCE PARTICIPATION OPPORTUNITIES FOR STAFF, CONDUCT AN AIR POLLUTION CONCERN ASSESSMENT,  CLIMATE CHANGE ADAPTATION, CONTINUE BASELINE WATER SAMPLING AND CONTINUE SOLID AND HAZARDOUS WASTE MANAGEMENT ACTIVITIES TO DEVELOP A SELF-SUSTAINING PROGRAM\nACTIVITIES:PROJECT ACTIVITIES INCLUDE STAFF PARTICIPATION IN TRAINING AND CONFERENCES AND PROVIDING COMMUNITY ENVIRONMENTAL OUTREACH AND EDUCATION.  ACTIVITIES TO DEVELOP A SUSTAINABLE WASTE MANAGEMENT PROGRAM WILL INCLUDE HOSTING A COMMUNITY CLEANUP, NETWORKING TO DEVELOP STRATEGIES FOR SUSTAINABILITY, STAFF TRAINING, CONDUCTING RECYCLING AND BACKHAUL OPERATIONS. PLANNING AND DEVELOPMENT ACTIVITIES WILL BE CONDUCTED TO ESTABLISH AIR AND WATER QUALITY MANAGEMENT PROGRAMS USING  ANTHC PHASE I COMMUNITY AIR QUALITY ASSESSMENT TOOL AND UPDATING THEIR WATER QUALITY QAPP.   ACTIVITIES IN CLIMATE CHANGE ADAPTATION INCLUDE WORKING WITH ELDERS, TRADITION BEARERS, KNOWLEDGEABLE HUNTERS AND GATHERERS TO GATHER TRADITIONAL KNOWLEDGE OF PAST AND EXISTING ENVIRONMENTAL CONDITIONS, SUCH AS ICE CONDITIONS, LOCAL ANIMAL AND PLANT SPECIES, INVASIVE SPECIES AND OTHER INFORMATION THAT WILL HELP ESTABLISH THE BASELINE OF THE COMMUNITY.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES INCLUDE PROGRESS REPORTS, TRIPS REPORTS, MEETING NOTES, PHOTOS, BUDGET TRACKING SYSTEM SPREADSHEET, PRESENTATIONS, AGENDAS, WEEKLY WASTE OPERATIONS REPORTS. ANTICIPATED OUTCOMES INCLUDE INCREASED ENVIRONMENTAL STEWARDSHIP AND BETTER HUMAN AND ENVIRONMENTAL HEALTH EFFECTIVE GRANTS MANAGEMENT, DEVELOPING A SUSTAINABLE WASTE MANAGEMENT PROGRAM, AND BUILDING THE COMMUNITY'S ENVIRONMENTAL KNOWLEDGE BASE. THE BENEFICIARIES WILL BE THE COMMUNITY MEMBERS AND ENVIRONMENT OF NATIVE VILLAGE OF CHITINA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A20AV00998",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHITINA",
+      "obligation": 315756.57,
+      "start_date": "2019-10-01",
+      "end_date": "2027-12-31",
+      "description": "P.L. 93-638 TRANSPORTATION CONTRACT.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV01008",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHITINA",
+      "obligation": 20621.02,
+      "start_date": "2019-10-01",
+      "end_date": "2027-12-31",
+      "description": "P.L. 93-638 TRANSPORTATION PLANNING CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00544",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF CHITINA",
+      "obligation": 0.0,
+      "start_date": "2015-10-01",
+      "end_date": "2026-12-31",
+      "description": "CHITINA",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1432793.59,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 244684.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 851732.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 336377.59
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 637601.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

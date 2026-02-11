@@ -1,9 +1,221 @@
 {
   "tribe_id": "epa_100000085",
   "tribe_name": "Forest County Potawatomi Community, Wisconsin",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A09AV00166",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1960994.0,
+      "start_date": "2009-08-28",
+      "end_date": "2026-12-31",
+      "description": "FY 2013 TTP CONSTRUCTION & PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00891",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1066844.0,
+      "start_date": "2020-07-15",
+      "end_date": "2026-03-31",
+      "description": "TRIBAL TRANSPORTATION PROGRAM (TTP) ROAD CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42420000RA07WI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 9531340.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "RAISE PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600WI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1768978.82,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V17AWI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1054000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION FACILITY BRIDGE PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V176WI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 111865.14,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ32440124",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 30289.6,
+      "start_date": "2024-01-11",
+      "end_date": "2027-11-30",
+      "description": "THE FOREST COUNTY POTAWATOMI COMMUNITY (FCPC) WILL ENHANCE THEIR BIKING AND PEDESTRIAN TRAILS PROJECT BY DESIGNING AND CONSTRUCTING FOUR CULTURALLY INTERPRETIVE REST AREAS ALONG THE PATH, WHICH PARALLELS THE NICOLET-WOLF RIVER SCENIC BYWAY; ADDING CULTURAL ARTWORK TO THE BIKING/PEDESTRIAN UNDERPASS; AND PROVIDING APPROPRIATE WAYFINDING SIGNAGE.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V17BWI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 11991738.8,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V600WI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1286219.71,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V30CWI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1029571.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRANSPORTATION ALTERNATIVES PROGRAM FUNDING TRANSFERRED FROM WISCONSIN DOT UNDER 202(A)(9)",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V177WI0117",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 111813.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "DEIE0000120",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1724606.0,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-30",
+      "description": "COMMUNITY-SCALE SOLAR PHOTOVOLTAIC FOR THE FOREST COUNTY POTAWATOMI COMMUNITY",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000119",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 930288.0,
+      "start_date": "2019-10-01",
+      "end_date": "2025-04-30",
+      "description": "NEW COMMUNITY CENTER INTEGRATED EEMS AND SOLAR PHOTOVOLTAIC GENERATION SYSTEM IN THE FOREST COUNTY POTAWATOMI COMMUNITY",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000065",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 146466.0,
+      "start_date": "2017-08-01",
+      "end_date": "2022-04-30",
+      "description": "DEVELOPING RESIDENTIAL ENERGY USAGE BASELINES AND ENERGY EFFICIENCY OPTIONS",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000192",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 1605539.0,
+      "start_date": "2024-03-01",
+      "end_date": "2027-02-28",
+      "description": "THE FOREST COUNTY POTAWATOMI COMMUNITY (FCPC) PROJECT PROPOSES APPROXIMATELY NINE (9) ENERGY EFFICIENCY MEASURES (EEMS) FOCUSED ON THE HEATING, VENTILATION, AND COOLING SYSTEM (HVAC) AT THE MILWAUKEE POTAWATOMI HOTEL AND CASINO (PHC), WHICH, AT ROUGHLY 1.3 MILLION SQUARE FEET (SQ-FT), ACCOUNTS FOR OVER HALF OF THE TRIBE’S ENERGY USE. THE PROJECT AIMS TO PROMOTE ENERGY SOVEREIGNTY IN THE NEAR-TERM, WHILE ALSO MOVING FCPC CLOSER TO REACHING A LONG-TERM GOAL OF USING 100% CARBON NEUTRAL RENEWABLE ENERGY. \n\nTHE PHC USES 37,050 MEGAWATT-HOURS (MWH) AND 1,667,416 THERMS ANNUALLY, AND THE FIRST-YEAR ENERGY REDUCTION AS A RESULT OF THIS PROJECT IS ESTIMATED TO BE MORE THAN 959 MWH AND 263,000 THERMS. LIFETIME ENERGY SAVINGS ARE PROJECTED TO BE 13,488 MWH AND 4,288,000 THERMS VALUED AT MORE THAN $4.5 MILLION.",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "01E01976",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 65000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS GRANT IS TO PROVIDE ASSISTANCE TO THE FOREST COUNTY POTAWATOMI COMMUNITY TO ASSESS THE FEASIBILITY OF USING A GEOTHERMAL SYSTEM TO HEAT AND COOL THE TRIBE'S THIRD LARGEST ENERGY CONSUMING FACILITY. ACTIVITIES:THE RECIPIENT WILL HIRE A CONTRACTOR TO IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE CLEAN AIR ACT SECTION 103 PROGRAM, INCLUDING DRILLING A TEST BOREHOLE TO INVESTIGATE THE EXTENT TO WHICH REPLACING THE CURRENT HEATING, VENTILATION, AND AIR CONDITIONING SYSTEM WITH A GEOTHERMAL SYSTEM WILL IMPROVE AIR QUALITY BY REDUCING THE FACILITY'S DEPENDENCE ON NATURAL GAS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES ARE A QUALITY ASSURANCE PROJECT PLAN AND A REPORT THAT WILL INCLUDE RESULTS FROM THE ASSESSMENT, INCLUDING PHYSICAL DATA THAT CHARACTERIZES THE CURRENT GEOTHERMAL CONDITIONS AT THE FACILITY. EXPECTED OUTCOMES INCLUDE GREATER NUMBERS OF TRIBAL MEMBERS WITH INCREASED AWARENESS OF THE TRIBE'S EFFORTS TO INCLUDE INNOVATIVE APPROACHES TO DIVERSIFY THEIR ENERGY SOURCES AND REDUCE EMISSIONS. INTENDED BENEFICIARIES INCLUDE MEMBERS OF THE FOREST COUNTY POTAWATOMI COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "00E06021",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "FOREST COUNTY POTAWATOMI COMMUNITY",
+      "obligation": 85000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2028-09-30",
+      "description": "DESCRIPTION:THE PRIMARY PURPOSE OF THIS GRANT IS TO PROVIDE ASSISTANCE TO THE FOREST COUNTY POTAWATOMI COMMUNITY TO OPERATE A NATIONAL ATMOSPHERIC DEPOSITION PROGRAM (NADP) MONITORING SITE IN NORTHEAST WISCONSIN.ACTIVITIES:THE RECIPIENT WILL IMPLEMENT ACTIVITIES WITHIN THE SCOPE OF THE CLEAN AIR ACT SECTION 103 PROGRAM, INCLUDING COLLECTING SAMPLES FOR THE MERCURY DEPOSITION NETWORK, THE NATIONAL TRENDS NETWORK, AND THE MERCURY LITTERFALL NETWORK. IN ADDITION, THE RECIPIENT WILL SUBMIT THE SAMPLES FOR LABORATORY ANALYSIS AND WILL FOLLOW THE APPLICABLE NADP STANDARD OPERATING PROCEDURES AND QUALITY ASSURANCE PROJECT PLANS. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES OF THE GRANT ARE A WELL MAINTAINED AND OPERATIONAL NADP SITE, SUBMITTAL OF QUALITY-CONTROLLED SAMPLES, AND PUBLIC SHARING OF QUALITY ASSURED DATA. THE EXPECTED OUTCOMES INCLUDE CONTINUED OPERATION AND DATA COLLECTION AT THE NADP SITE, CONTRIBUTING TO A GREATER UNDERSTANDING OF LONG-TERM AIR QUALITY TRENDS IN THE AREA. THE INTENDED BENEFICIARIES OF THIS GRANT INCLUDE MEMBERS OF THE FOREST COUNTY POTAWATOMI COMMUNITY, THE PUBLIC, AND THE ENVIRONMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 34500553.25,
+  "award_count": 17,
+  "cfda_summary": {
+    "20.205": {
+      "count": 11,
+      "total": 29943654.25
+    },
+    "81.087": {
+      "count": 4,
+      "total": 4406899.0
+    },
+    "66.038": {
+      "count": 2,
+      "total": 150000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 1635828.6,
+    "2025": 65000.0,
+    "2026": 85000.0
+  },
+  "trend": "stable"
 }

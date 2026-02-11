@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000063",
   "tribe_name": "Coquille Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00171",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "COQUILLE INDIAN TRIBE",
+      "obligation": 49984.0,
+      "start_date": "2019-08-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32540125",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COQUILLE INDIAN TRIBE",
+      "obligation": 1490792.0,
+      "start_date": "2025-09-24",
+      "end_date": "2028-11-01",
+      "description": "REMOVAL AND REPLACEMENT OF FIVE CULVERTS AND REMOVAL OR MODIFICATION OF 8 7 WEIRS TO ADDRESS ACCESS BY ANADROMOUS FISH TO APPROXIMATELY 62 RIVER MILES IN THE LOWER UMPQUA RIVER WATERSHED. THESE PROJECTS WILL IMPROVE PASSAGE TO SPAWNING AND REARING HABITAT FOR ANADROMOUS POPULATIONS OF CHINOOK SALMON, OREGON COASTAL COHO SALMON (ESA LISTED, THREATENED), OREGON COAST STEELHEAD (BLM SENSITIVE), AND CUTTHROAT TROUT, PACIFIC LAMPREY (BLM SENSITIVE SPECIES) AS WELL AS RESIDENT POPULATIONS OF RAINBOW AND CUTTHROAT TROUT, WESTERN BROOK LAMPREY, AND OTHER NATIVE FISH SPECIES.",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 1540776.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 49984.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": 1490792.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 1490792.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

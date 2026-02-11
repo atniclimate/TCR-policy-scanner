@@ -1,9 +1,103 @@
 {
   "tribe_id": "epa_100000502",
   "tribe_name": "Native Village of Perryville",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A17AV00779",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PERRYVILLE",
+      "obligation": 284680.66,
+      "start_date": "2016-10-01",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638 CONTRACT - PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00566",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PERRYVILLE",
+      "obligation": 179181.62,
+      "start_date": "2016-10-01",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638 CONTRACT - KOKHANOK ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00777",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PERRYVILLE",
+      "obligation": 40000.0,
+      "start_date": "2018-07-06",
+      "end_date": "2026-12-31",
+      "description": "A18AV00777",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00778",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PERRYVILLE",
+      "obligation": 36060.07,
+      "start_date": "2018-06-29",
+      "end_date": "2025-12-31",
+      "description": "A18AV00778",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01048",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PERRYVILLE",
+      "obligation": 170158.14,
+      "start_date": "2023-08-16",
+      "end_date": "2028-12-31",
+      "description": "PERRYVILLE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01042",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PERRYVILLE",
+      "obligation": 148802.03,
+      "start_date": "2023-08-16",
+      "end_date": "2028-12-31",
+      "description": "PERRYVILLE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01049",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF PERRYVILLE",
+      "obligation": 32619.47,
+      "start_date": "2023-08-16",
+      "end_date": "2028-12-31",
+      "description": "PERRYVILLE TRANSIT",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 891501.99,
+  "award_count": 7,
+  "cfda_summary": {
+    "20.205": {
+      "count": 7,
+      "total": 891501.99
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 351579.64,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

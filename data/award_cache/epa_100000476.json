@@ -1,9 +1,118 @@
 {
   "tribe_id": "epa_100000476",
   "tribe_name": "New Koliganek Village Council",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J54901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 494424.0,
+      "start_date": "2020-01-01",
+      "end_date": "2023-12-31",
+      "description": "THE WORK TO BE ACCOMPLISHED IS SEPERATED INTO FIVE WORK PLAN COMPONENTS:1) BUILDS TRIBAL ADMINISTRATIVE CAPACITY AND SUPPORTS TRAVEL TO ENVIRONMENTAL CONFERENCES; 2) FURTHER DEVELOPS A TRIBAL SOLID AND HAZARDOUS WASTE AND RECYCLING PROGRAM; 3) FOCUSES ON TRIBAL ENVIRONMENTAL OUTREACH TO THE LOCAL COMMUNITY; 4) INCLUDES NETWORKING WITH LOCAL AND REGIONAL ENTITIES TO ADDRESS ENVIRONMENTAL ISSUES; 5) CONDUCTS A BASELINE SURFACE WATER QUALITY MONITORING PROJECT AND RESPONDS TO CLIMATE CHANGE CONCERNS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J51301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 403000.0,
+      "start_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "description": "DESCRIPTION:BUILD IGAP STAFF CAPACITY TO ENABLE MANAGEMENT OF AN ENVIRONMENTAL PROGRAM. IMPROVE TRIBAL WASTE MANAGEMENT CAPACITY IN ORDER TO MANAGE THE SOLID/HAZARDOUS WASTE AND RECYCLING PROGRAMS. CONDUCT BASELINE WATER QUALITY MONITORING PROJECT.\n\nACTIVITIES:MAINTAIN ENVIRONMENTAL OFFICE AT PRESENT STAFFING LEVEL AND STAY CURRENT WITH ENVIRONMENTAL ISSUES AND NEW INDIAN GENERAL ASSISTANCE PROGRAM (IGAP) REQUIREMENTS. ATTEND REGIONAL, STATEWIDE, AND NATIONAL CONFERENCES TO IMPROVE MANAGEMENT CAPABILITIES.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:INCREASE CAPACITY TO BUILD A STRONG, SELF-SUSTAINABLE ENVIRONMENTAL PROGRAM FOR NEW KOLIGANEK VILLAGE COUNCIL. MAKE SOLID WASTE OPERATIONS SELF-SUSTAINING WITHIN THE KOLIGANEK  COMMUNITY AND PROTECT HUMAN HEALTH AND ENVIRONMENT FROM IMPROPER WASTE MANAGEMENT PRACTICES. ESTABLISH WATER QUALITY BASELINE DATA ON KOLIGANEK CREEKS AND DRAINAGES. -\tDECREASE IN THE AMOUNT OF HOUSEHOLD HAZARDOUS WASTE AND USED OIL IN THE COMMUNITY THROUGH EDUCATION ON SOURCE SEPARATION, MINIMIZATION, AND RECYCLING EFFORTS. DECREASE THE AMOUNT OF RECYCLABLE GOODS IN THE SALVAGE OPEN PIT AREA THROUGH BACKHAULING EFFORTS. ELIMINATE SURFACE WATER DRAINAGE BY DIGGING APPROPRIATELY SIZED TRENCHES, PLACING COVER MATERIAL REGULARLY, AND PROPER GRADING TO CHANNEL WATER TO SAFE AREAS. EXTEND THE LIFE OF THE NEW KOLIGANEK VILLAGE SOLID WASTE FACILITY. COMPILE WATER QUALITY AND STREAM TEMPERATURE DATA THROUGH AN EPA APPROVED QUALITY ASSURANCE PROJECT PLAN FOR BASELINE WATER QUALITY AND COLIFORM. INCREASE WATER QUALITY DATA TO ASSESS ENVIRONMENTAL CONDITIONS AND ISSUES IN KOLIGANEK. THE BENEFICIARIES OF THIS WORK WILL BE THE NEW KOLIGANEK VILLAGE MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00582",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 869415.23,
+      "start_date": null,
+      "end_date": "2026-12-31",
+      "description": "NEW KOLIGANEK FY18 CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00501",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 229696.0,
+      "start_date": "2013-07-23",
+      "end_date": "2026-12-31",
+      "description": "NEW KOLIGANEK DESIGN FOR CEMETERY ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00596",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 74519.28,
+      "start_date": "2017-10-01",
+      "end_date": "2025-12-31",
+      "description": "NEW KOLIGANEK FY18 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00597",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 68768.6,
+      "start_date": "2017-10-01",
+      "end_date": "2025-12-31",
+      "description": "NEW KOLIGANEK FY18 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01220",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 81602.18,
+      "start_date": "2023-09-15",
+      "end_date": "2028-12-31",
+      "description": "NEW KOLIGANEK",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01209",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEW KOLIGANEK VILLAGE COUNCIL",
+      "obligation": 34099.37,
+      "start_date": "2023-09-14",
+      "end_date": "2028-12-31",
+      "description": "NEW KOLIGANEK",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2255524.66,
+  "award_count": 8,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 897424.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 1358100.6600000001
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 115701.54999999999,
+    "2024": 403000.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

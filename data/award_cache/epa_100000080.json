@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000080",
   "tribe_name": "Ely Shoshone Tribe of Nevada",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T19901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ELY SHOSHONE TRIBE",
+      "obligation": 696624.0,
+      "start_date": "2021-09-01",
+      "end_date": "2025-08-31",
+      "description": "THIS AGREEMENT PROVIDES FUNDING TO THE ELY SHOSHONE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. DIRECT BENEFICIARIES ARE THE MEMBERS AND RESIDENTS OF THE ELY SHOSHONE RESERVATION. THE RECIPIENT WILL IMPLEMENT A SOLID WASTE MANAGEMENT PROGRAM, ATTEND TRAINING, ENGAGE LOCAL, STATE AND FEDERAL AGENCIES ON ISSUES SUCH AS CLIMATE CHANGE, WATERSHED PROTECTION AND MINING RELATED IMPACTS AND THE UPDATE THE ENVIRONMENTAL PROTECTION AGENCY AND TRIBAL ENVIRONMENTAL PLAN.   \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $165,644.00.\n\nPRE-AWARD COSTS ARE APPROVED BACK TO 9/1/2021.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T35001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ELY SHOSHONE TRIBE",
+      "obligation": 156931.0,
+      "start_date": "2025-09-01",
+      "end_date": "2026-08-31",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING TO THE ELY SHOSHONE TRIBE. THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER AN EPA PROGRAM AND/OR IMPLEMENT SOLID/HAZARDOUS WASTE ACTIVITIES.\n\nTHIS AGREEMENT  PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $156,931. PREAWARD COSTS ARE APPROVED BACK TO 9/1/2025. REFER TO TERMS AND CONDITIONS.  ACTIVITIES:THE ACTIVITIES INCLUDE ATTENDING THE RTOC, COMPLETING TRAININGS RELATED TO GAP OR EPA PROGRAMS, PARTICIPATE IN THE NEVADA ENVIRONMENTAL MANAGERS MEETINGS AND LOCAL EMERGENCY RESPONSE PLANNING ACTIVITIES, IMPLEMENTING A SOLID WASTE MANAGEMENT PROGRAM AND CONDUCTING COMMUNITY OUTREACH EVENTS. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE SUMMARIES OF MEETINGS AND TRAININGS, INFORMATION ON SOLID WASTE COLLECTED AND OUTREACH ACTIVITIES. THE EXPECTED OUTCOMES INCLUDE IMPROVED KNOWLEDGE OF TRIBAL ENVIRONMENTAL STAFF AND THE TRIBE'S ABILITY TO ENGAGE WITH LOCAL, STATE AND FEDERAL STAKEHOLDERS. THE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR THE RESIDENTS OF THE ELY SHOSHONE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A22AV00280",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ELY SHOSHONE TRIBE",
+      "obligation": 1044681.36,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00293",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ELY SHOSHONE TRIBE",
+      "obligation": 879308.21,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00722",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ELY SHOSHONE TRIBE",
+      "obligation": 3568.34,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "TRIBAL TRANSPORTATION PLANNING DIST. FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT3200620",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ELY SHOSHONE TRIBE",
+      "obligation": 11836872.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 14617984.91,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 853555.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 1927557.91
+    },
+    "14.867": {
+      "count": 1,
+      "total": 11836872.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 1048249.7,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 156931.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

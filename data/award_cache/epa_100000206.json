@@ -1,9 +1,111 @@
 {
   "tribe_id": "epa_100000206",
   "tribe_name": "Ponca Tribe of Indians of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02F20101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "PONCA TRIBE OF OKLAHOMA",
+      "obligation": 508522.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO ADDRESS SOLID AND HAZARDOUS WASTE, ENVIRONMENTAL PLANNING, COMMUNICATION, MANAGE OFFICE, TRAVEL AND TRAINING. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, FLIERS, ATTENDANCE AND SIGN-IN SHEETS, RECYCLING ORDINANCE AND CODES, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM, GOOGLE, SOLID WASTE, AND THERMAL QUALITY ASSURANCE PROJECT PLANS. THE INTENDED BENEFICIARY IS THE PONCA TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00605",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PONCA TRIBE OF OKLAHOMA",
+      "obligation": 2982871.61,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/AID TO TRIBAL GOVERNMENT (TPA) (ART90) FUNDING DIST. THESE ARE GENERAL ASSISTANCE FUNDS THAT CAN BE USED TO SUPPORT TRIBAL GOVERNMENT SERVICES, SOCIAL SERVICES, CHILD WELFARE ASSISTANCE, PUBLIC SAFETY AND OTHER RELATED EXPENSES.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00394",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PONCA TRIBE OF OKLAHOMA",
+      "obligation": 1781436.93,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE) CR1/CR2; WELFARE ASSISTANCE INITIAL (14.7% BASED ON 2020 EST. NEED)/CR#2 (APPX 8.2% OF 2020 EST. NEED) AND CONTRACT SUPPORT CR#1 (14.21%) AND CR#2 (7.92%) OF 2019 ENACTED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00254",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PONCA TRIBE OF OKLAHOMA",
+      "obligation": 1597342.08,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00315",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PONCA TRIBE OF OKLAHOMA",
+      "obligation": 1331342.54,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00738",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PONCA TRIBE OF OKLAHOMA",
+      "obligation": 786330.29,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4024200",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PONCA TRIBE OF OKLAHOMA",
+      "obligation": 18346723.0,
+      "start_date": "2011-10-26",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 27334568.45,
+  "award_count": 7,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 508522.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 8479323.45
+    },
+    "14.867": {
+      "count": 1,
+      "total": 18346723.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 2117672.83,
+    "2023": 508522.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

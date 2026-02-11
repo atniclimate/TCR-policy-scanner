@@ -1,9 +1,140 @@
 {
   "tribe_id": "epa_100000547",
   "tribe_name": "Native Village of Tazlina",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "01J76401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 499387.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO NATIVE VILLAGE OF TAZLINA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE WORKPLAN HAS 3 COMPONENTS: MANAGEMENT OF ENVIRONMENTAL OFFICE, POLLUTION PREVENTION RECYCLING AND DEVELOPMENT OF QUALITY ASSURANCE PROJECT PLAN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J67801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT INCLUDE ADMINISTRATIVE AND PROGRAMMATIC CAPACITY DEVELOPMENT, PROVIDING COMMUNITY OUTREACH AND EDUCATION, IMPROVING WASTE MANAGEMENT THROUGH COLLABORATION WITH PARTNERS, AND ENHANCING CLIMATE CHANGE ADAPTATION PLANNING AND EMERGENCY RESPONSE PROGRAM DEVELOPMENT IN PARTNERSHIP WITH OTHER ORGANIZATIONS.ACTIVITIES:ACTIVITIES TO BE COMPLETED INCLUDE STAFF PARTICIPATION IN MEETINGS, WORKSHOPS, AND WEBINARS AND REMOVING SOLID WASTE ON TRIBAL LANDS LIKE LEAD ACID BATTERIES, ELECTRONICS, SCRAP METAL, WHITE GOODS, TIRES, AND VEHICLES. COMMUNITY OUTREACH AND EDUCATION WILL BE CONDUCTED THROUGH PUBLIC SERVICE ANNOUNCEMENTS DISTRIBUTING INFORMATION TO THE COMMUNITY, AND HOSTING SCHOOL PRESENTATIONS. SOLID WASTE ACTIVITIES INCLUDE CONDUCTING A COMMUNITY CLEANUP, OBTAINING STAFF HAZARDOUS MATERIALS CERTIFICATIONS, MAINTAINING A RE-USE AREA, AND PREPARING FOR AND CONDUCTING BACKHAUL. OTHER ACTIVITIES INCLUDE CLIMATE CHANGE ADAPTATION PLANNING AND DEVELOPING AN EMERGENCY RESPONSE PROGRAM.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE PRESENTATIONS, HANDOUT MATERIALS, A CLEANUP REPORT, CERTIFICATIONS, AN UPDATED INTEGRATED WASTE MANAGEMENT PLAN, BACKHAUL LOGS, PHOTOS AND TRIP REPORTS. EXPECTED OUTCOMES ARE THAT BY BUILDING A STRONG FOUNDATION IN GRANTS MANAGEMENT AND PROGRAMMATIC WORK ON WASTE MANAGEMENT, CLIMATE CHANGE, AND EMERGENCY RESPONSE PREPAREDNESS AND TRIBAL MEMBERS WILL HELP TO PROMOTE ENVIRONMENTAL STEWARDSHIP AND SUSTAINABILITY. THE INTENDED BENEFICIARIES ARE THE NATIVE VILLAGE OF TAZLINA COMMUNITY MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0079",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 249433.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0079",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 21833.35,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0079",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 267534.08,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3079024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 237948.23,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TAZLINA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TAZLINA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3079024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 109210.09,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TAZLINA TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TAZLINA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0079",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 35086.44,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3079025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 281294.42,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TAZLINA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TAZLINA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3079025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NATIVE VILLAGE OF TAZLINA",
+      "obligation": 108620.89,
+      "start_date": "2025-01-08",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NATIVE VILLAGE OF TAZLINA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NATIVE VILLAGE OF TAZLINA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 2078348.03,
+  "award_count": 10,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 767387.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 1310961.0299999998
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 376620.89,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

@@ -1,9 +1,93 @@
 {
   "tribe_id": "epa_100000595",
   "tribe_name": "Rappahannock Tribe, Inc.",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00774",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "RAPPAHANNOCK TRIBE",
+      "obligation": 221387.0,
+      "start_date": "2024-01-01",
+      "end_date": "2027-12-31",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "96376601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "RAPPAHANNOCK TRIBE",
+      "obligation": 404314.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THE GRANT PROVIDES FUNDING TO THE RAPPAHANNOCK TRIBE TO BUILD ENVIRONMENTAL CAPACITY. THE FUNDS WILL BE USED TO DEVELOP A TRIBAL ENVIRONMENTAL PROGRAM, DEVELOP FOUNDATIONAL ENVIRONMENTAL DOCUMENTS AND ORGANIZE COMMUNITY EVENTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "953A0008",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "RAPPAHANNOCK TRIBE",
+      "obligation": 235850.0,
+      "start_date": "2024-10-01",
+      "end_date": "2028-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS GRANT AGREEMENT IS FOR THE RAPPAHANNOCK INDIAN TRIBE TO CONTINUE TO DEVELOP ENVIRONMENTAL CAPACITY BUILDING BY TAKING TRAINING, BUYING SUPPLIES, AND FOCUSING ON ENVIRONMENTAL AREAS OF INTEREST.  THE RAPPAHANNOCK INDIAN TRIBE WILL USE THIS GRANT AGREEMENT TO ADVOCATE FOR THE TRIBE'S INTERESTS AND CITIZEN'S HUMAN HEALTH.  THE FUNDS WILL SUPPORT THE TRIBE IN PURSING THEIR ENVIRONMENTAL INTERESTS AND ALLOW THEM TO HAVE A MEANINGFUL PRESENCE IN THE ENVIRONMENTAL REGULATORY FRAMEWORK AT THE LOCAL, STATE, AND NATIONAL LEVEL.  THE TRIBE HAS A FOCUS ON BUILDING WATER QUALITY, THREATENED AND ENDANGERED SPECIES, NON-POINT SOURCE REDUCTION, AND SOLID WASTE PROGRAMS.  ACTIVITIES:THE ACTIVITIES THAT WILL BE PERFORMED INCLUDE HAVING COMMUNITY MEETINGS, ATTENDING TRAINING AND MEETINGS, DEVELOPING STRATEGIC PLANNING DOCUMENTS AND ADVOCATING FOR THE TRIBE'S INTERESTS.  THE RAPPAHANNOCK INDIAN TRIBE WILL DEVELOP A PLAN FOR THE WATER MONITORING PROGRAM, ORGANIZE CLEAN UP EVENTS ON TRIBAL LANDS AND WORK WITH EPA TO FACILITATE CLEANUPS OF DUMP SITES ON TRIBAL LANDS, EXECUTE CITIZEN OUTREACH AND EDUCATION ON WATER QUALITY AND SOLID WASTE MANAGEMENT.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES ARE THE TRIBE WILL OPERATE THE ENVIRONMENTAL DEPARTMENT AND BUILD ENVIRONMENTAL CAPACITY THROUGH COMMUNITY OUTREACH AND EDUCATION, ATTEND TRAININGS, MEETINGS, AND NETWORKING OPPORTUNITIES.  THE TRIBE WILL FOCUS ON SOLID WASTE, THREATENED AND ENDANGERED SPECIES, NON-POINT SOURCE REDUCTION, AND WATER QUALITY.  THE ANTICIPATED DELIVERABLES ARE AN ACCOUNTING OF MEETINGS AND TRAININGS ATTENDED, COMMUNITY MEETINGS HELD, AND STRATEGIC PLANNING DOCUMENTS DEVELOPED.  THE EXPECTED OUTCOMES ARE IMPROVED ENVIRONMENTAL CAPACITY FOR THE TRIBE, A CLEAR SENSE OF STRATEGIC GOALS AND PRIORITIES, BETTER TRAINED ENVIRONMENTAL STAFF, AND A MORE VISIBLE ENVIRONMENTAL PRESENCE FOR THE TRIBE AT THE LOCAL, STATE AND NATIONAL LEVEL.  THE BENEFICIARIES WILL BE THE RAPPAHANNOCK INDIAN TRIBE, ITS CITIZENS AND THE SURROUNDING COMMUNITIES.  \n\nFEDERAL FUNDS OF $309,819 ARE CONTINGENT UPON AVAILABILITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A25AV01027",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RAPPAHANNOCK TRIBE",
+      "obligation": 115838.67,
+      "start_date": "2025-01-01",
+      "end_date": "2027-12-31",
+      "description": "RAPPAHANNOCK TTP TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT5112770",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RAPPAHANNOCK TRIBE",
+      "obligation": 738591.0,
+      "start_date": "2018-09-10",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 1715980.67,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 221387.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 640164.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": 115838.67
+    },
+    "14.867": {
+      "count": 1,
+      "total": 738591.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 221387.0,
+    "2025": 351688.67,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

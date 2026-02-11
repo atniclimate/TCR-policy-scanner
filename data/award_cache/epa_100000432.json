@@ -1,9 +1,144 @@
 {
   "tribe_id": "epa_100000432",
   "tribe_name": "Native Village of Kanatak",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00061",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 146243.0,
+      "start_date": "2018-10-01",
+      "end_date": "2020-10-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10229",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 117234.0,
+      "start_date": "2021-08-16",
+      "end_date": "2023-08-15",
+      "description": "PROGRAM TO SUPPORT TRIBAL CLIMATE RESILIENCE GRANTS AND OCEAN AND COASTAL MANAGEMENT PLANNING GRANTS - 2021",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00048",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 13488.0,
+      "start_date": "2018-10-01",
+      "end_date": "2019-10-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "02J11901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 519000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT INCLUDE: 1. PROGRESSIVE ADMINISTRATIVE AND PROGRAMMATIC CAPACITY DEVELOPMENT WILL STRENGTHEN THE TRIBE'S ENVIRONMENTAL PROGRAM; 2. WORKING WITH COMMUNITY PROVIDING OUTREACH AND EDUCATION BY EXPLORING A VARIETY OF ENVIRONMENTAL TOPICS AND ISSUES WITH COMMUNITY MEMBERS TO ENCOURAGE INVOLVEMENT IN ENVIRONMENTAL ISSUES AND PROJECTS. FOCUS ON THE PRIORITIES IN THE TRIBE'S ETEP AND CURRENT WORKPLAN; 3. CONTINUE TO IMPROVE SOLID/HAZARDOUS WASTE MANAGEMENT THROUGH COLLABORATION WITH PARTNERS, TRAINING FOR STAFF, AND COMMUNITY OUTREACH AND EDUCATION. CONTINUE TO CONDUCT PUBLIC EDUCATION, AWARENESS, COMMUNITY ENGAGEMENT, AND INFORMATION EXCHANGE ON ISSUES RELATED TO HUMAN HEALTH AND THE ENVIRONMENT.ACTIVITIES:COMPONENT 1: ALASKA TRIBAL CONFERENCE ON ENVIRONMENTAL MANAGEMENT AND THE ALASKA FORUM ON THE ENVIRONMENT CONFERENCES WILL BE ATTENDED BY THE ENV. COORDINATOR AND ENV. ENVIRONMENTAL MEETINGS, WORKSHOPS, AND WEBINARS WILL ATTEND BY THE EC. THE ENVIRONMENTAL DEPARTMENT WILL COLLABORATE WITH OTHER ORGANIZATIONS ON WASTE MANAGEMENT, CLIMATE CHANGE, AND OTHER ENVIRONMENTAL ISSUES. THE EC WILL REVIEW THE EPA-TRIBAL ENVIRONMENTAL PLAN AND UPDATE IT AS NEEDED. ENVIRONMENTAL AND ADMIN STAFF AND COUNCIL MEMBERS WILL REVIEW/UPDATE POLICIES AND PROCEDURES.  COMPONENT 2: WORKING WITH COMMUNITY PROVIDING OUTREACH AND EDUCATION BY EXPLORING A VARIETY OF ENVIRONMENTAL TOPICS AND ISSUES WITH COMMUNITY MEMBERS TO ENCOURAGE INVOLVEMENT IN ENVIRONMENTAL ISSUES AND PROJECTS. LAND IN AND AROUND TRIBAL COMMUNITY WILL BE CLEANED UP IN ANNUAL SPRING CLEAN UP. \nCOMPONENT 3: BUILDING TRIBAL CAPACITY TO CO MANAGE REMOVAL SOLID AND HAZARDOUS WASTE / CONTINUING THE IMPLEMENTATION OF THE RECYCLING PROGRAMS. KNOWLEDGE AMONG COMMUNITY MEMBERS WILL BE INCREASED OF PROGRAMS.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ATTEND TRAININGS AND CONFERENCES ON ENVIRONMENTAL MANAGEMENT: AFE, ATCEM, GAP MANAGEMENT, AND OTHER NATIONAL CONFERENCES ON ENVIRONMENTAL ISSUES.\nWORK WITH CHIEF FINANCIAL OFFICER TO ENSURE ALL REQUIRED REPORTS ARE SUBMITTED IN A TIMELY MANNER.  REPORTS WILL BE GIVEN TO EPA AND OTHER FUNDING AGENCIES IN ACCORDANCE WITH THE GRANT AGREEMENT.  OUTREACH TO COMMUNITY REGARDING EVENT.  COMMUNITY WILL BE NOTIFIED THROUGH FLYERS, NEWSLETTER, VHF ANNOUNCEMENTS.  ENVIRONMENTAL STAFF WILL ORGANIZE START DATE/TIME.  PARTICIPANTS AND SPONSORS WILL BE ACKNOWLEDGED. IF DONATIONS ARE RECEIVED, PRIZES AND REFRESHMENTS WILL BE PROVIDED.  STAFF WILL PLAN AND HOLD THE EVENT. A HEALTH AND SAFETY BRIEFING WILL BE PROVIDED PRIOR TO THE CLEAN-UP EVENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A17AV00912",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 434001.74,
+      "start_date": "2017-09-07",
+      "end_date": "2025-12-31",
+      "description": "KWINHAGAK MAINTENANCE - FY2017",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00923",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 287157.27,
+      "start_date": "2017-09-08",
+      "end_date": "2025-12-31",
+      "description": "A17AV00923",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00402",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 226761.0,
+      "start_date": "2013-05-21",
+      "end_date": "2025-05-06",
+      "description": "KWINHAGAK TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00389",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 99339.0,
+      "start_date": "2013-05-09",
+      "end_date": "2025-03-27",
+      "description": "KWINHAGAK ROAD MAINTENANCE PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00706",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 251097.84,
+      "start_date": "2023-06-05",
+      "end_date": "2028-12-31",
+      "description": "KWINHAGAK - FY2023 6V1 TTP MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00697",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KWINHAGAK, NATIVE VILLAGE OF",
+      "obligation": 154853.48,
+      "start_date": "2023-06-02",
+      "end_date": "2028-12-31",
+      "description": "KWINHAGAK FY23 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2249175.33,
+  "award_count": 10,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 276965.0
+    },
+    "66.926": {
+      "count": 1,
+      "total": 519000.0
+    },
+    "20.205": {
+      "count": 6,
+      "total": 1453210.33
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 924951.32,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

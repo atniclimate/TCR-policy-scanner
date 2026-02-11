@@ -1,9 +1,199 @@
 {
   "tribe_id": "epa_100000533",
   "tribe_name": "Sitka Tribe of Alaska",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10225",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 149013.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "PROGRAM TO SUPPORT TRIBAL CLIMATE RESILIENCE GRANTS AND OCEAN AND COASTAL MANAGEMENT PLANNING GRANTS - 2021",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00212",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 141067.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00059",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 140553.32,
+      "start_date": "2020-06-01",
+      "end_date": "2023-04-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00237",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 98249.03,
+      "start_date": "2018-09-01",
+      "end_date": "2022-02-28",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00152",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 14890.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-07-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J74701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 499352.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO SITKA TRIBE OF ALASKA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL CONTINUE TO BUILD ADMINISTRATIVE CAPACITY, GATHER BASELINE WATER QUALITY DATA FOR HARMFUL ALGAL BLOOMS, BUILDING CAPACITY FOR FRESHWATER HAB DATA COLLECTION AND PROVIDE TECHNICAL ASSISTANCE TO OTHER TRIBAL GOVERNMENTS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J71001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 292812.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE SITKA TRIBE OF ALASKA WILL USE GAP FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE INCLUDES CONTINUING TO GATHER BASELINE DATA ON HABS, OCEAN ACIDIFICATION, AND WATER QUALITY, AS WELL AS AIR QUALITY MONITORING BASELINE STUDY. \nACTIVITIES:SITKA TRIBE OF ALASKA WILL ATTEND GAP CALLS AND MEETING. THEY WILL ALSO PARTICIPATE IN THE SOUTHEAST TRIBAL ENVIRONMENTAL CONFERENCE. IN ADDITION, THEY WILL ATTEND TRAININGS ON PHYTOPLANKTON MONITORING, COLLECTION, AND ANALYSIS PROVIDED BY TRIBAL NOAA, AND UNIVERSITY STAFF. WEEKLY BASELINE DATA WILL BE COLLECTED, AND TOXIN ANALYSIS CONDUCTED, WITH THE RESULTING DATE ENTERED INTO THE SEATT DATABASE. FURTHERMORE, AIR MONITORING BASELINE DATA COLLECTION WILL BE DEVELOPED.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE RESPONSIBILITIES INCLUDE CREATING NOTES, AGENDAS, AND SUMMARIES OF EVENTS. DATA IS ENTERED INTO THE SEATOR DATABASE AND PROGRESS REPORTS ARE GENERATED. A AIR QUALITY QAPP IS BEING DEVELOPED. THE DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0081",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 216881.78,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0081",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 16999.84,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0081",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 227096.96,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3081024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 201016.81,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SITKA TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SITKA TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3081024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 84174.8,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SITKA TRIBE TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SITKA TRIBE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0081",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 39783.21,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V600AK0081",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 961632.24,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V177AK0081",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SITKA TRIBE OF ALASKA",
+      "obligation": 84043.93,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 3167565.92,
+  "award_count": 15,
+  "cfda_summary": {
+    "15.156": {
+      "count": 5,
+      "total": 543772.35
+    },
+    "66.926": {
+      "count": 2,
+      "total": 792164.0
+    },
+    "20.205": {
+      "count": 8,
+      "total": 1831629.5699999998
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 292812.0,
+    "2026": 0.0
+  },
+  "trend": "new"
 }

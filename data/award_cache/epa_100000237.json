@@ -1,9 +1,133 @@
 {
   "tribe_id": "epa_100000237",
   "tribe_name": "Red Lake Band of Chippewa Indians, Minnesota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00014",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 116572.0,
+      "start_date": "2018-10-01",
+      "end_date": "2021-07-31",
+      "description": "ADAPTATION PLANNING AND DATA DEVELOPMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10140",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 84879.0,
+      "start_date": "2021-08-16",
+      "end_date": "2023-08-15",
+      "description": "RED LAKE BAND CONTINUOUS MONITORING TRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMC-2022-BR-025",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 722153.4,
+      "start_date": "2024-01-31",
+      "end_date": "2027-01-30",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A22AV00318",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 36312030.32,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00390",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 35781157.49,
+      "start_date": "2019-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE) CR1/CR2; LAW ENFORCEMENT-638 TRIBAL (PROGRAM BASE) CR1/CR2; ADULT DETENTION-638 TRIBAL (PROGRAM BASE) CR1/CR2; WELFARE ASSISTANCE INITIAL (14.7% BASED ON 2020 EST. NEED)/CR#2 (APPX 8.2% OF 2020 EST. NEED) AND CONTRACT SUPPORT CR#1 (14.21%) AND CR#2 (7.92%) OF 2019 ENACTED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00256",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 35640595.64,
+      "start_date": "2020-10-01",
+      "end_date": "2025-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00345",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 28171933.75,
+      "start_date": "2017-10-01",
+      "end_date": "2024-09-30",
+      "description": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00473",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 14326691.54,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "DIST. OF CHILD CARE DEVELOPMENT FUNDS (DISCRETIONARY) - CORONAVIRUS RESPONSE AND RELIEF SUPPLEMENTAL ASSOCIATION (CRRSA) ALLOCATED FOR INCLUSION IN APPROVED P.L. 102-477 PLANS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00690",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "RED LAKE BAND OF CHIPPEWA INDIANS",
+      "obligation": 11923807.31,
+      "start_date": "2021-10-01",
+      "end_date": "2031-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 163079820.45,
+  "award_count": 9,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 201451.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 722153.4
+    },
+    "20.205": {
+      "count": 6,
+      "total": 162156216.04999998
+    }
+  },
+  "yearly_obligations": {
+    "2022": 48235837.63,
+    "2023": 0.0,
+    "2024": 722153.4,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

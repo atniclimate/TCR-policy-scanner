@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000372",
   "tribe_name": "Cheesh-Na Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMS-2021-BR-072",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "CHEESH-NA TRIBE",
+      "obligation": 842178.0,
+      "start_date": "2023-11-29",
+      "end_date": "2026-11-28",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01J80001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHEESH-NA TRIBE",
+      "obligation": 494812.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO CHEESH'NA TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL: 1) CONTINUE TO BUILD ADMINISTRATIVE AND PROGRAMMATIC CAPACITY THROUGH A REVIEW AND UPDATE OF TRIBAL POLICIES AND PROCEDURES, STAFF ATTENDANCE AT TRAINING AND CONFERENCES, AND CONDUCTING COMMUNITY ENVIRONMENTAL OUTREACH AND EDUCATION; 2) PROMOTE SOLID WASTE MANAGEMENT PROGRAM ENHANCEMENT AND SUSTAINABILITY; AND 3) CONDUCT EDUCATION, RESEARCH, AND PLANNING TO PROTECT TRADITIONAL SUBSISTENCE RESOURCES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J72001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CHEESH-NA TRIBE",
+      "obligation": 267916.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT INCLUDE ADMINISTRATIVE AND PROGRAMMATIC CAPACITY DEVELOPMENT, PROVIDING COMMUNITY OUTREACH AND EDUCATION, IMPROVING WASTE MANAGEMENT THROUGH COLLABORATION WITH PARTNERS, AND ENHANCING CLIMATE CHANGE ADAPTATION PLANNING AND EMERGENCY RESPONSE PROGRAM DEVELOPMENT IN PARTNERSHIP WITH OTHER ORGANIZATIONS.ACTIVITIES:ACTIVITIES TO BE COMPLETED INCLUDE STAFF PARTICIPATION IN MEETINGS, WORKSHOPS, AND WEBINARS AND REMOVING SOLID WASTE ON TRIBAL LANDS LIKE LEAD ACID BATTERIES, ELECTRONICS, SCRAP METAL, WHITE GOODS, TIRES, AND VEHICLES. COMMUNITY OUTREACH AND EDUCATION WILL BE CONDUCTED THROUGH PUBLIC SERVICE ANNOUNCEMENTS DISTRIBUTING INFORMATION TO THE COMMUNITY, AND HOSTING SCHOOL PRESENTATIONS. SOLID WASTE ACTIVITIES INCLUDE CONDUCTING A COMMUNITY CLEANUP, OBTAINING STAFF HAZARDOUS MATERIALS CERTIFICATIONS, MAINTAINING A RE-USE AREA, AND PREPARING FOR AND CONDUCTING BACKHAUL. OTHER ACTIVITIES INCLUDE CLIMATE CHANGE ADAPTATION PLANNING AND DEVELOPING AN EMERGENCY RESPONSE PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE PRESENTATIONS, HANDOUT MATERIALS, A CLEANUP REPORT, CERTIFICATIONS, AN UPDATED INTEGRATED WASTE MANAGEMENT PLAN, BACKHAUL LOGS, PHOTOS AND TRIP REPORTS. EXPECTED OUTCOMES ARE THAT BY BUILDING A STRONG FOUNDATION IN GRANTS MANAGEMENT AND PROGRAMMATIC WORK ON WASTE MANAGEMENT, CLIMATE CHANGE, AND EMERGENCY RESPONSE PREPAREDNESS AND TRIBAL MEMBERS WILL HELP TO PROMOTE ENVIRONMENTAL STEWARDSHIP AND SUSTAINABILITY. THE INTENDED BENEFICIARIES ARE THE CHEESH'NA TRIBE COMMUNITY MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A21AV00132",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEESH-NA TRIBE",
+      "obligation": 403765.7,
+      "start_date": "2020-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE AND SELF GOVERNANCE COMPACTS FOR TPA BASE AT 80.27% OF THE CR ANNUAL RATE OF OPERATIONS OF THE TRIBAL PRIORITY ALLOCATION (TPA) PROGRAMS.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00095",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEESH-NA TRIBE",
+      "obligation": 386970.86,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00720",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CHEESH-NA TRIBE",
+      "obligation": 36553.2,
+      "start_date": "2021-10-01",
+      "end_date": "2022-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2432195.76,
+  "award_count": 6,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 842178.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 762728.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 827289.76
+    }
+  },
+  "yearly_obligations": {
+    "2022": 423524.06,
+    "2023": 0.0,
+    "2024": 842178.0,
+    "2025": 267916.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

@@ -1,9 +1,63 @@
 {
   "tribe_id": "epa_100000538",
   "tribe_name": "Stebbins Community Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J00501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "STEBBINS COMMUNITY ASSOCIATION",
+      "obligation": 124310.0,
+      "start_date": "2021-10-01",
+      "end_date": "2023-03-31",
+      "description": "THIS PROJECT WILL ASSIST THE STEBBINS COMMUNITY ASSOCIATION IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  TASKS INCLUDE MANAGING AN ENVIRONMENTAL OFFICE TO SUSTAIN A SUCCESSFUL TRIBAL ENVIRONMENTAL PROGRAM;  DEVELOPING CAPACITY FOR SOLID WASTE MANAGEMENT, SOURCE SEPARATION, POLLUTION PREVENTION/RECYCLING; AND ENVIRONMENTAL OUTREACH AND EDUCATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J46501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "STEBBINS COMMUNITY ASSOCIATION",
+      "obligation": 389889.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST STEBBINS COMMUNITY ASSOCIATION IN BUILDING CAPACITY AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH. THE PRIMARY PURPOSES OF THIS PROJECT INCLUDE:  BUILD CAPACITY TO DEVELOP AND MANAGE THE ENVIRONMENTAL PROGRAM; TO DEVELOP AND IMPLEMENT A WASTE PROGRAM; AND TO STORE AND SHIP E-WASTES FROM COMMUNITY.\nACTIVITIES:ACTIVITIES TO BE PERFORMED INCLUDE THOSE RELATED TO INCREASED COORDINATION, TRAINING, AND OVERSIGHT OF SOLID AND HAZARDOUS WASTE MANAGEMENT SUCH AS COMMUNITY CLEAN-UP AND RECYCLING EVENTS AND BACKHAUL TO REMOVE SOLID WASTE AND RECYCLING MATERIALS. ELECTRONIC WASTES WILL BE COLLECTED, PROPERLY STORED, AND REMOVED FROM THE COMMUNITY.  THE TRIBE WILL PROVIDE COMMUNITY ENVIRONMENTAL EDUCATION FOCUSING ON SOLID WASTE AND TRIBAL YOUTH.  THE TRIBE WILL ALSO UPDATE ITS ENVIRONMENTAL PLANNING DOCUMENT.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE. OUTCOMES AND INTENDED BENEFICIARIES INCLUDE A CLEANER COMMUNITY WITH REDUCED POLLUTANT WASTE, AND A CLEANER MORE ORGANIZED LANDFILL. EVOLVING ENVIRONMENTAL PRIORITIES WILL BE IDENTIFIED AND TRIBAL COMMUNITY ENGAGED.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0215300",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "STEBBINS COMMUNITY ASSOCIATION",
+      "obligation": 6076033.0,
+      "start_date": "2012-03-30",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 6590232.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "66.926": {
+      "count": 2,
+      "total": 514199.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 6076033.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 124310.0,
+    "2023": 0.0,
+    "2024": 389889.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

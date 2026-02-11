@@ -1,9 +1,141 @@
 {
   "tribe_id": "epa_100000355",
   "tribe_name": "Village of Aniak",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00150",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 98362.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J93101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 509998.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THE VILLAGE OF ANIAK WILL USE FY22 GAP FUNDING TO MANAGE THE GRANT AND BUILD CAPACITY BY ATTENDING TRAININGS, TELECONFERENCES, AND HANDLING ADMINISTRATIVE ASPECTS OF THE GRANT; ADDRESS SOLID WASTE PLANNING AND CAPACITY BUILDING BY IMPROVING MANAGEMENT OF SOLID WASTE, RECYCLABLES, AND BACKHAUL MATERIALS OUT OF ANIAK; DEVELOP A QUALITY ASSURANCE PROJECT PLAN FOR WATER QUALITY ASSESSMENT WORK; EDUCATE COMMUNITY MEMBERS ON AIR QUALITY ISSUES; AND DEVELOP A YOUTH ENVIRONMENTAL COUNCIL TO BUILD COMMUNITY AWARENESS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J02901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE VILLAGE OF ANIAK WILL USE GENERAL ASSISTANCE PROGRAM (GAP) FUNDING TO ADDRESS PRIORITY ENVIRONMENTAL CONCERNS IN THE COMMUNITY. ENVIRONMENTAL STAFF WILL FOCUS ON TECHNICAL TRAINING AND BUILDING MANAGEMENT CAPACITY, WITH THE GOAL OF ACHIEVING PROGRAMMATIC GROWTH TO MAINTAIN MEANINGFUL PARTICIPATION IN EPA PROGRAMS. KEY AREAS OF FOCUS INCLUDE IMPLEMENTING SOLID WASTE MANAGEMENT STRATEGIES AND ENHANCING AIR QUALITY THROUGH EDUCATION AND OUTREACH.ACTIVITIES:ACTIVITIES PERFORMED UNDER THE GRANT WILL FOCUS ON TECHNICAL TRAINING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL SKILLS RELEVANT TO THE TRIBE'S PRIORITIES. A KEY ELEMENT OF THIS PROGRAM INVOLVES BUILDING A PATH TOWARDS INCREASED COLLABORATION WITH MULTIPLE TRIBAL ENVIRONMENTAL PROGRAMS AND AGENCIES, ULTIMATELY ENHANCING MEANINGFUL PARTICIPATION IN EPA PROGRAMS. FINALLY, COMMUNITY OUTREACH AND EDUCATION WILL BE INSTRUMENTAL TO ACHIEVING ENVIRONMENTAL RESULTS, INCLUDING SOLID WASTE PLANNING AND IMPLEMENTATION.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES FROM THE VILLAGE OF ANIAK WILL INCLUDE QUARTERLY PROGRESS REPORTS TO EPA, OUTLINING PROGRESS TOWARDS ENVIRONMENTAL RESULTS IN PRIORITY AREAS. IN ADDITION, TRIP REPORTS WILL OUTLINE TECHNICAL CAPACITIES GAINED FROM ATTENDING RELEVANT TRAININGS AND CONFERENCES. FINALLY, PHOTOS OF ENVIRONMENTAL CLEAN-UPS, COMMUNITY TRAININGS AND EVENTS WILL DEMONSTRATE THE ACCOMPLISHMENTS RESULTING FROM THESE WORK PLAN COMMITMENTS. DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A20AV00324",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 257615.57,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "ANIAK FY19 6K1 AND 66K TTP FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00332",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 156826.52,
+      "start_date": "2019-10-01",
+      "end_date": "2025-12-31",
+      "description": "ANIAK FY 2019 ROAD MAINTENANCE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01029",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 47229.34,
+      "start_date": "2025-07-17",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01018",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 20198.0,
+      "start_date": "2025-07-08",
+      "end_date": "2029-12-31",
+      "description": "25 USC 5301 ET. SEQ.; PL 93-638, AS AMENDED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000152",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 167948.0,
+      "start_date": "2022-05-16",
+      "end_date": "2025-05-15",
+      "description": "ANIAK ENERGY EFFICIENCY RETROFIT PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "23DG11100106904",
+      "cfda": "10.720",
+      "program_id": "usda_wildfire",
+      "recipient_name_raw": "VILLAGE OF ANIAK",
+      "obligation": 217038.0,
+      "start_date": "2023-09-26",
+      "end_date": "2028-03-20",
+      "description": "COMMUNITY WILDFIRE PROTECTION PLAN",
+      "awarding_agency": "Department of Agriculture"
+    }
+  ],
+  "total_obligation": 1609215.43,
+  "award_count": 9,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 98362.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 643998.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 481869.42999999993
+    },
+    "81.087": {
+      "count": 1,
+      "total": 167948.0
+    },
+    "10.720": {
+      "count": 1,
+      "total": 217038.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 677946.0,
+    "2023": 217038.0,
+    "2024": 0.0,
+    "2025": 67427.34,
+    "2026": 134000.0
+  },
+  "trend": "decreasing"
 }

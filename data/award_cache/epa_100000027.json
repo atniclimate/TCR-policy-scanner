@@ -1,9 +1,67 @@
 {
   "tribe_id": "epa_100000027",
   "tribe_name": "Caddo Nation of Oklahoma",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV01028",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CADDO NATION OF OKLAHOMA",
+      "obligation": 9002.0,
+      "start_date": "2023-09-13",
+      "end_date": "2024-12-31",
+      "description": "CADDO NATION-TRIBAL CLIMATE RESILIENCE - TO ADD FY22 FUNDING FOR CATEGORY 3 TRAVEL SUPPORT FOR ADAPTATION PLANNING.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV01006",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CADDO NATION OF OKLAHOMA",
+      "obligation": 786216.19,
+      "start_date": "2021-09-08",
+      "end_date": "2028-12-31",
+      "description": "CADDO NATION, TRANSPORTATION IMPROVEMENT PLANNING PROGRAM - TOTAL BASE FUNDING IN THE AMOUNT OF $100,000 AND HIGHWAY INFRASTRUCTURE PROGRAMS UNDER PUBLIC LAW 116-260.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4004280",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CADDO NATION OF OKLAHOMA",
+      "obligation": 11565052.0,
+      "start_date": "2011-10-18",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 12360270.19,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 9002.0
+    },
+    "20.205": {
+      "count": 1,
+      "total": 786216.19
+    },
+    "14.867": {
+      "count": 1,
+      "total": 11565052.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 9002.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

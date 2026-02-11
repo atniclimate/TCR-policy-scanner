@@ -1,9 +1,93 @@
 {
   "tribe_id": "epa_100000242",
   "tribe_name": "Rincon Band of Luiseno Mission Indians of Rincon Reservation, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "98T34101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "RINCON BAND OF LUISENO INDIANS",
+      "obligation": 925596.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS COOPERATIVE AGREEMENT IS TO ASSIST THE RINCON BAND OF LUISENO INDIANS TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $186,721. \n\nACTIVITIES:THE RECIPIENT WILL CONDUCT IN COMMUNITY OUTREACH AND ENGAGEMENT THROUGH ONLINE PLATFORMS AND IN-PERSON EVENTS, ATTEND EPA SPONSORED REGIONAL AND NATIONAL CONFERENCES, UTILIZE THE TRANSFER STATION FOR WASTE DISPOSAL EVENTS, BEGIN A GOVERNMENT BUILDING COMPOSTING PILOT PROGRAM, BUILD GEOGRAPHIC INFORMATION SYSTEM (GIS) CAPACITY THROUGH MAPPING AND DEVELOPING SPATIAL DATABASES, AND ATTEND TRAININGS AND CONFERENCES RELATED TO WASTE MANAGEMENT, GIS, AND CLIMATE ADAPTATION. \n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE OUTREACH EVENTS, WEBSITE UPDATES, EVENT SUMMARIES, STRENGTHENED TRIBAL ENVIRONMENTAL PROGRAMS, REGISTRATION AND ATTENDANCE CONFIRMATION, CONFERENCE AND TRAINING SUMMARIES, WASTE DISPOSAL INVOICES, A REDUCTION IN THE GENERATED WASTE STREAM, A PILOT PROGRAM FOR PROGRAM SUMMARY REPORT, A REPORT OF GIS-RELATED INVENTORY DATA, AND INCREASED KNOWLEDGE ON TRIBAL ENVIRONMENTAL AND RESILIENCY PROGRAMS. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE RINCON BAND OF LUISENO INDIANS. NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T02101",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "RINCON BAND OF LUISENO INDIANS",
+      "obligation": 280962.0,
+      "start_date": "2024-06-01",
+      "end_date": "2026-05-31",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS GRANT IS TO PROVIDE FUNDING UNDER THE INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) TO RINCON BAND OF LUISENO INDIANS TO DEVELOP AND IMPLEMENT LEAD SERVICE LINE IDENTIFICATION AND/OR REPLACEMENT ACTIVITIES IN TRIBAL COMMUNITIES.  SPECIFICALLY, THE RECIPIENT WILL HIRE A CONTRACTOR TO PERFORM A RECORDS REVIEW AND POTHOLE SERVICE LINES TO IDENTIFY LEAD OR GALVANIZED REQUIRING REPLACEMENT (GRR) SERVICE LINES. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $280,962.00.\n\nACTIVITIES:THE ACTIVITIES INCLUDE PERFORMING A RECORDS REVIEW AND POTHOLING OF SERVICE LINES TO IDENTIFY LEAD OR GALVANIZED REQUIRING REPLACEMENT (GRR) SERVICE LINES. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE A COMPLETE SERVICE LINE INVENTORY. THE EXPECTED OUTCOMES INCLUDE A LIST IDENTIFYING MATERIALS USED IN THE SERVICE LINES TO DETERMINE WHETHER REPLACEMENT IS NECESSARY TO REDUCE LEAD EXPOSURE. THE INTENDED BENEFICIARIES INCLUDE RESIDENTS OF THE RINCON NORTHERN AND RINCON PARADISE CREEK PUBLIC WATER SYSTEMS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0630080",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RINCON BAND OF LUISENO INDIANS",
+      "obligation": 6170382.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000125",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "RINCON BAND OF LUISENO INDIANS",
+      "obligation": 3000000.0,
+      "start_date": "2019-09-01",
+      "end_date": "2025-08-31",
+      "description": "RINCON SOLAR MICROGRIDS",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000127",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "RINCON BAND OF LUISENO INDIANS",
+      "obligation": 1501938.0,
+      "start_date": "2021-04-01",
+      "end_date": "2027-07-31",
+      "description": "RINCON GOVERNMENT CENTER MICROGRID PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 11878878.0,
+  "award_count": 5,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 925596.0
+    },
+    "66.468": {
+      "count": 1,
+      "total": 280962.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 6170382.0
+    },
+    "81.087": {
+      "count": 2,
+      "total": 4501938.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 925596.0,
+    "2024": 280962.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

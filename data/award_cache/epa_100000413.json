@@ -1,9 +1,221 @@
 {
   "tribe_id": "epa_100000413",
   "tribe_name": "Gulkana Village Council",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00175",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 82038.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00155",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 12624.0,
+      "start_date": "2018-09-01",
+      "end_date": "2019-09-30",
+      "description": "VILLAGEOFILIAMNA_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J88701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 518873.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "TO EDUCATE AND ADDRESS THE IVC STAFF AND BOARD IN ENVIRONMENTAL ISSUES, ALSO FOR IGAP STAFF ATTEND TRAININGS THROUGHOUT THE YEAR FOR NEW GUIDELINES FOR 2022\nDEVELOP A WATER QUALITY MONITORING PROGRAM AND START CONDUCTING BASELINE WATER QUALITY ASSESSMENTS.\nORGANIZING AND KEEPING LANDFILL CLEAN\nDEVELOP AN AIR QUALITY MONITORING PROGRAM",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "01J59501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "GULKANA VILLAGE COUNCIL",
+      "obligation": 356159.0,
+      "start_date": "2019-10-01",
+      "end_date": "2024-09-30",
+      "description": "GULKANA VILLAGE COUNCIL WILL CONTINUE ADMINISTRATIVE CAPACITY BUILDING BY MAINTAINING AND ENHANCING THEIR ENVIRONMENTAL OFFICE AND STAFF. IGAP STAFF WILL CONTINUE TO REMOVE SOLID WASTE AND RECYCLING FROM THE COMMUNITY. AN ANNUAL CLEAN UP AND OUTREACH EVENT WILL BE HELD FOR THE COMMUNITY. A CARBOARD RECYCLING PROGRAM PLAN WITH BE DEVELOPED. IGAP STAFF WILL RESEARCH DEVELOPMENT OF A WATER QAPP FOR THE VILLAGE. IGAP STAFF WILL RESEARCH RENEWABLE ENERGY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J70801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "GULKANA VILLAGE COUNCIL",
+      "obligation": 263816.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PRIMARY OBJECTIVES OF THIS PROJECT ARE TO STRENGTHEN THE TRIBES' ADMINISTRATIVE CAPACITY, COMMUNITY OUTREACH AND SOLID WASTE AND RECYCLING PROGRAM AND DEVELOP WATER QUALITY ASSURANCE COLLABORATING WITH OTHER TRIBES IN THE REGION.   AN EMERGENCY PLAN AND RESPONSE WILL ALSO BE DEVELOPED AND MAINTAINED.\n\n.ACTIVITIES:SOME OF THE ACTIVITIES TO BE PERFORMED ARE TO PUBLISH THE SMALL COMMUNITY EMERGENCY RESPONSE PLAN (SCERP) PLAN ON THE GULKANA VILLAGE WEBSITE; COORDINATE RIVER WATER TESTING WITH CRNA REGIONAL COORDINATOR.; CONTINUE TO BACKHAUL WHITE GOODS, TIRES AND ELECTRONICS AND RECYCLE PLASTICS, ALUMINUM, AND PAPER;  UPDATE GULKANA VILLAGE COUNCIL WEBSITE AND FACEBOOK PAGE WITH IGAP INFORMATION, VIDEOS, AND PICTURES; AND PARTICIPATE IN THE YOUTH ENVIRONMENTAL SUMMIT CONFERENCE WHICH IS AN EVENT COLLABORATION WITH OTHER TRIBES IN THE NEARBY COMMUNITY.  YOUTH FROM GULKANA VILLAGE COUNCIL ALONG WITH OTHER YOUTHS FROM NEARBY TRIBES WILL PARTICIPATE. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES INCLUDE QUARTERLY PROGRESS REPORTS, TRIP REPORTS, MEETING NOTES, AN UPDATED EMERGENCY RESPONSE PLAN, NEWSLETTERS, PRESENTATIONS, PARTICIPATION LISTS, AND PHOTOS AND WATER QUALITY ASSURANCE. EXPECTED OUTCOMES INCLUDE SUSTAINABLE MANAGEMENT OF SOLID AND HAZARDOUS WASTE, TRAINED STAFF TO MAINTAIN AN EFFECTIVE ENVIRONMENTAL PROGRAM, AND COMMUNITY ENVIRONMENTAL AWARENESS AND STEWARDSHIP THAT WILL REDUCE HEALTH RISKS FOR GENERATIONS TO COME. THE INTENDED BENEFICIARIES ARE GULKANA VILLAGE COUNCIL'S COMMUNITY MEMBERS AND ENVIRONMENT.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J21401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 134000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS PROJECT WILL ASSIST THE ILIAMNA VILLAGE/ ILIAMNA VILLAGE COUNCIL IN BUILDING CAPACITIES AND DEVELOPING PROGRAMS TO PROTECT THE TRIBAL ENVIRONMENT AND HEALTH.  OBJECTIVES/WORKPLAN COMPONENTS INCLUDE: 1. BUILDING ADMINISTRATIVE CAPACITY; 2. BUILDING PROGRAMMATIC CAPACITY; 3. BUILDING COMMUNICATIONS CAPACITY; 4. BUILDING SOLID AND HAZARDOUS WASTE MANAGEMENT CAPACITY; AND 5. BUILDING TECHNICAL CAPACITY.ACTIVITIES:WORKPLAN ACTIVITIES/TASKS INCLUDE: MAINTAINING AN ENVIRONMENTAL OFFICE AND ADMINISTRATIVE AND PROGRAM MANAGEMENT FUNCTIONS; ATTENDING TRAINING AND RESEARCHING ISSUES AND RESOURCES; COMMUNICATING INTERNALLY AND EXTERNALLY ABOUT ISSUES; CONDUCTING COMMUNITY EDUCATION ACTIVITIES; CONDUCTING SOURCE SEPARATION AND RESOURCE RECOVERY ACTIVITIES; BUILDING TECHNICAL KNOWLEDGE OF WATER, AIR, AND WASTE; DEVELOPING AN ENVIRONMENTAL INVENTORY; AND BUILDING SURFACE WATER QUALITY MONITORING CAPACITY.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE INTENDED BENEFICIARIES OF THIS PROJECT ARE THE ILIAMNA VILLAGE, TRIBAL MEMBERS, AND THE LOCAL PUBLIC.  THE EXPECTED OUTCOMES OF THIS PROJECT INCLUDE: INCREASING TRIBAL ADMINISTRATIVE CAPACITY TO RESPOND TO LOCAL ENVIRONMENTAL CONCERNS; INCREASING TRIBAL PROGRAMMATIC CAPACITY TO ASSESS LOCAL ENVIRONMENTAL ISSUES; INCREASING COMMUNITY KNOWLEDGE OF ENVIRONMENTAL ISSUES AND ACTIONS PROTECTIVE OF THE ENVIRONMENT; DECREASING AMOUNTS OF RECYCLABLES AND HAZARDOUS WASTES ENTERING LANDFILL; AND INCREASING TRIBAL TECHNICAL CAPACITIES TO PRIORITIZE ENVIRONMENTAL NEEDS AND DEVELOP PROGRAMS TO ADDRESS THEM.  ANTICIPATED DELIVERABLES INCLUDE: PERFORMANCE REPORTS; COPIES OF OUTREACH MATERIALS; EVENT SUMMARY REPORTS; RECYCLING AND WASTE ACTIVITY REPORTS; AND AN ENVIRONMENTAL INVENTORY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0083",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 192182.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0083",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 14557.36,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "A12AV00909",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "GULKANA VILLAGE COUNCIL",
+      "obligation": 175359.0,
+      "start_date": "2014-01-06",
+      "end_date": "2022-03-11",
+      "description": "ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42330000V170AK0083",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 4383225.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0083",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 206105.2,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3083024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 183534.35,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ILIAMNA VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ILIAMNA VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3083024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 79199.41,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: ILIAMNA VILLAGE COUNCIL TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO ILIAMNA VILLAGE COUNCIL UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0083",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 27030.19,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271AK3083025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 3372926.0,
+      "start_date": "2025-04-01",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: VILLAGE OF ILIAMNA FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE VILLAGE OF ILIAMNA TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3083025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 218981.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: VILLAGE OF ILIAMNA FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE VILLAGE OF ILIAMNA TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3083025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "ILIAMNA VILLAGE COUNCIL",
+      "obligation": 79195.5,
+      "start_date": "2025-04-01",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: VILLAGE OF ILIAMNA FY2025 TRIBAL TRANSPORTATION PROGRAM FUNDING :::: PROJECT DESCRIPTION: ALL FY25 FUNDS TRANSFERRED UNDER THE VILLAGE OF ILIAMNA TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 10299806.01,
+  "award_count": 17,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 94662.0
+    },
+    "66.926": {
+      "count": 4,
+      "total": 1272848.0
+    },
+    "20.205": {
+      "count": 11,
+      "total": 8932296.01
+    }
+  },
+  "yearly_obligations": {
+    "2022": 518873.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 3715937.5,
+    "2026": 134000.0
+  },
+  "trend": "increasing"
 }

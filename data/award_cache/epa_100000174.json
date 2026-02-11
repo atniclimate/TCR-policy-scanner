@@ -1,9 +1,118 @@
 {
   "tribe_id": "epa_100000174",
   "tribe_name": "Nooksack Indian Tribe",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00011",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 150000.0,
+      "start_date": "2018-10-01",
+      "end_date": "2021-12-31",
+      "description": "ADAPTATION PLANNING AND DATA DEVELOPMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10206",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 149999.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-03-31",
+      "description": "\"DEVELOP A WATERSHED HYDROLOGY CLIMATE ADAPTATION AND RESILIENCE PLAN FOR THE UPPER NOOKSACK RIVER WATERSHED TO INCREASE LATE SUMMER STREAMFLOWS THAT WILL SUPPORT SALMON RECOVERY AND TRIBAL HARVEST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00182",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 149999.0,
+      "start_date": "2019-08-01",
+      "end_date": "2021-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00201",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 17957.0,
+      "start_date": "2018-09-01",
+      "end_date": "2021-12-31",
+      "description": "NOOKSACKIT-ADAPTATIONTRAINING&WORKSHOPS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00170",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 14900.0,
+      "start_date": "2018-08-28",
+      "end_date": "2020-09-30",
+      "description": "NOOKSACKINDIANTRIB_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A07AV00183",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 10423565.92,
+      "start_date": "2007-06-05",
+      "end_date": "2023-12-31",
+      "description": "NATURAL RESOURCES PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT5310760",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 13420706.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5310760",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NOOKSACK INDIAN TRIBE",
+      "obligation": 570876.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 24898002.92,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 6,
+      "total": 10906420.92
+    },
+    "14.867": {
+      "count": 2,
+      "total": 13991582.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

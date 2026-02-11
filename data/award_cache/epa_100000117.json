@@ -1,9 +1,70 @@
 {
   "tribe_id": "epa_100000117",
   "tribe_name": "Jicarilla Apache Nation, New Mexico",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A22AV01183",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JICARILLA APACHE NATION",
+      "obligation": 4483594.7,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "J365(1)2&4 HAWKS DR SECT 10",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00884",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JICARILLA APACHE NATION",
+      "obligation": 758242.65,
+      "start_date": "2021-10-01",
+      "end_date": "2028-12-31",
+      "description": "DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00997",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JICARILLA APACHE NATION",
+      "obligation": 4800912.48,
+      "start_date": "2024-09-13",
+      "end_date": "2027-09-30",
+      "description": "TO DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00815",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "JICARILLA APACHE NATION",
+      "obligation": 1200000.0,
+      "start_date": "2025-05-12",
+      "end_date": "2027-09-30",
+      "description": "TO DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 11242749.83,
+  "award_count": 4,
+  "cfda_summary": {
+    "20.205": {
+      "count": 4,
+      "total": 11242749.830000002
+    }
+  },
+  "yearly_obligations": {
+    "2022": 758242.65,
+    "2023": 4483594.7,
+    "2024": 4800912.48,
+    "2025": 1200000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

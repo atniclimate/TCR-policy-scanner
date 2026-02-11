@@ -1,9 +1,78 @@
 {
   "tribe_id": "epa_100000098",
   "tribe_name": "Habematolel Pomo of Upper Lake, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV01178",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HABEMATOLEL POMO OF UPPER LAKE",
+      "obligation": 250000.0,
+      "start_date": "2025-07-01",
+      "end_date": "2026-12-31",
+      "description": "AWARD HABEMATOLEL UPPER LAKE FY2024 TRIBAL CLIMATE RESILIENCE FUNDING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "99T85201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HABEMATOLEL POMO OF UPPER LAKE",
+      "obligation": 524204.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS COOPERATIVE AGREEMENT PROVIDES FUNDING TO DEVELOP THE TRIBE'S ENVIRONMENTAL PROGRAM. ACTIVITIES INCLUDE TRAINING STAFF, ATTENDING THE REGIONAL TRIBAL OPERATIONS COMMITTEE, ATTENDING THE TRIBAL/EPA ANNUAL CONFERENCE, ESTABLISHING A TRIBAL INTEGRATED SOLID WASTE MANAGEMENT PROGRAM, CONDUCTING COMMUNITY OUTREACH, DEVELOPING A GEOGRAPHIC INFORMATION SYSTEM PROGRAM, AND DEVELOPING A WATER PROGRAM.  THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $172,348.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T54601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HABEMATOLEL POMO OF UPPER LAKE",
+      "obligation": 336381.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE HABEMATOLEL POMO OF UPPER LAKE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. DIRECT BENEFICIARIES OF THIS PROGRAM ARE THE MEMBERS AND/OR RESIDENTS OF THE HABEMATOLEL POMO OF UPPER LAKE TRIBE.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $128,492.\n\nACTIVITIES:THE RECIPIENT WILL PROVIDE HAZMAT AND WATERSHED MANAGEMENT TRAINING TO ENVIRONMENTAL STAFF, CONDUCT OUTREACH THROUGH COMMUNITY EVENTS, NEWSLETTERS, FLIERS, AND SOCIAL MEDIA PUBLIC SAFETY ANNOUNCEMENTS, COMPLETE A HAZARDOUS WASTE ASSESSMENT, AND DRAFT PROCEDURES FOR NON-POINT SOURCE MANAGEMENT AND A DRAFT WETLAND PROGRAM PLAN.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE HAZWOPER AND WATERSHED MANAGEMENT CERTIFICATION FOR ENVIRONMENTAL STAFF, COPIES OF FLYERS AND OTHER OUTREACH PRODUCTS CREATED, A HAZARDOUS WASTE ASSESSMENT OF TRIBAL LANDS, FINALIZED PROTOCOL FOR NON-POINT SOURCE MANAGEMENT, AND A DRAFT WETLAND PROGRAM PLAN.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT0638560",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HABEMATOLEL POMO OF UPPER LAKE",
+      "obligation": 2723523.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 3834108.0,
+  "award_count": 4,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 250000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 860585.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 2723523.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 336381.0,
+    "2025": 250000.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

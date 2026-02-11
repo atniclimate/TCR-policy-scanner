@@ -1,9 +1,89 @@
 {
   "tribe_id": "epa_100000286",
   "tribe_name": "Spirit Lake Tribe, North Dakota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMD-2022-BR-017",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SPIRIT LAKE TRIBE",
+      "obligation": 1800000.0,
+      "start_date": null,
+      "end_date": "2026-12-18",
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A18AV00552",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SPIRIT LAKE TRIBE",
+      "obligation": 536690.0,
+      "start_date": "2018-02-01",
+      "end_date": "2026-12-31",
+      "description": "SPIRIT LAKE TRIBE, BIA 6 SILVER GRADING DESIGN/BUILD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00585",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SPIRIT LAKE TRIBE",
+      "obligation": 117899.29,
+      "start_date": "2015-10-01",
+      "end_date": "2022-09-30",
+      "description": "SPIRIT LAKE TRIBE 2% TRANSPORTATION PLANNING - AWARD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00007",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SPIRIT LAKE TRIBE",
+      "obligation": 0.0,
+      "start_date": "2009-08-28",
+      "end_date": "2024-09-30",
+      "description": "ERFO PHASE 2 - MOD #3",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000110",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SPIRIT LAKE TRIBE",
+      "obligation": 750000.0,
+      "start_date": "2019-05-01",
+      "end_date": "2025-10-31",
+      "description": "1.5 MW WIND TURBINE ON TRIBAL LAND NEAR FORT TOTTEN (1.5 MW \nCOMMUNITY WIND ENERGY PROJECT)",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 3204589.29,
+  "award_count": 5,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 1800000.0
+    },
+    "20.205": {
+      "count": 3,
+      "total": 654589.29
+    },
+    "81.087": {
+      "count": 1,
+      "total": 750000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "none"
 }

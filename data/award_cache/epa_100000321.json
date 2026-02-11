@@ -1,9 +1,126 @@
 {
   "tribe_id": "epa_100000321",
   "tribe_name": "Walker River Paiute Tribe of the Walker River Reservation, Nevada",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00109",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 14113.0,
+      "start_date": "2020-06-01",
+      "end_date": "2024-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00177",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 10000.0,
+      "start_date": "2018-08-28",
+      "end_date": "2020-12-31",
+      "description": "WALKERRIVERPAIUTET_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01034",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 247587.0,
+      "start_date": "2023-08-22",
+      "end_date": "2026-09-30",
+      "description": "VULNERABILITY ASSESSMENT FOR DROUGHT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "98T01901",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 482489.0,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE WALKER RIVER PAIUTE TRIBE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS.  SPECIFICALLY, THE RECIPIENT WILL DEVELOP NEW OUTREACH MATERIALS TO PRESENT TO THE TRIBAL COMMUNITY, DEVELOP AN INDOOR AIR PROGRAM, HOST A COMMUNITY CLEANUP DURING THEIR ANNUAL EARTH DAY  EVENT, AND EXPAND THEIR COMPOSTING PROGRAM.   THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $182,634 TO SUPPORT YEAR 1 OF WORKPLAN ACTIVITIES THROUGH SEPTEMBER 30, 2021.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T95301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 277124.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE RECIPIENT WILL BUILD ITS CAPACITY TO ADMINISTER MULTI-MEDIA ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES PARTIAL FEDERAL FUNDING IN THE AMOUNT OF $48,301. ACTIVITIES:THE ACTIVITIES INCLUDE HOSTING AN EARTH DAY EVENT IN CONJUNCTION WITH AN OUTREACH EVENT RELATED TO COMPOSTING, AND RECYCLING. WASTE MANAGEMENT ACTIVITIES THAT INCLUDE WEEKLY WASTE COLLECTION IN THE COMMUNITY, AND DEVELOPMENT OF A PESTICIDES PROGRAM. \n\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE A DRAFT PESTICIDES PLAN, A DRAFT COMPOSTING AND RECYCLING PLAN AND QUARTERLY TOTALS OF WASTE COLLECTED.\nTHE EXPECTED OUTCOMES INCLUDE A REDUCED WASTE STEAM THROUGH COMPOSTING AND RECYCLING. A SAFER COMMUNITY THROUGH PESTICIDE ALTERNATIVES WHEN AVAILABLE. \nTHE INTENDED BENEFICIARIES INCLUDE THE MEMBERS AND/OR RESIDENTS OF THE WALKER RIVER PAIUTE RESERVATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "98T82601",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 295161.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-06-30",
+      "description": "DESCRIPTION:AS PART OF A COMPREHENSIVE WATER SYSTEM IMPROVEMENT PROJECT, THE WALKER RIVER PAIUTE TRIBE WILL REPAIR THE 285,000 GAL WATER STORAGE TANK AND CONSTRUCT A NEW 410,000 GAL WATER STORAGE TANK ON THE WALKER RIVER PAIUTE RESERVATION. REPAIRS TO THE EXISTING TANK INCLUDE RE-COATING AREAS OF CORROSION, COATING, REPAIRING THE FOUNDATION, AND RESTORING THE DRAIN/OVERFLOW PAD. THIS WILL ENSURE A SAFE AND HEALTHY DRINKING WATER SYSTEM FOR THE WALKER RIVER PAIUTE TRIBE.\n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $ 295,161.ACTIVITIES:CONSTRUCTION OF A STEEL STORAGE TANK, CONNECTION OF PIPES TO EXISTING WRPT SUPPLY MAIN FROM THE EXISTING WATER TREATMENT TANK AND DRINKING WATER RESERVOIR TO THE VILLAGE WATER DISTRIBUTION SYSTEM, CONNECTION OF ELECTRICAL CONDUITS, DEVELOPMENT OF INSTRUMENTATION AND CONTROL INTEGRATION OF SIGNAL FROM THE NEW TANK, SITE MECHANICAL/ELECTRICAL/INSTRUMENTATION AND CONTROL, EXISTING STORAGE TANK GEOTECHNICAL REVIEW AND IMPROVEMENTS, EXISTING STORAGE TANK CORROSION CONTROL REVIEW AND IMPROVEMENTS, AND EXISTING TANK DRAIN OVERFLOW AND PAD REPAIR. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:WITH THE ADDITIONAL WATER STORAGE THE TRIBAL COMMUNITY WILL BE ABLE TO PUMP THE WATER WELLS LESS OFTEN DURING PEAK DEMAND TIMES. THIS WILL ALLOW THE TRIBE TO BE MORE SUSTAINABLE DURING THOSE MONTHS. FURTHER, THE TRIBE CAN PUMP THE WELLS DURING OFF HOURS TO DECREASE THEIR ENERGY CONSUMPTION DURING PEAK HOURS. INTENDED BENEFICIARIES ARE THE RESIDENTS OF WALKER RIVER PAIUTE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IT3201820",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 45219223.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3201820",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WALKER RIVER PAIUTE TRIBE",
+      "obligation": 1441797.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 47987494.0,
+  "award_count": 8,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 271700.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 759613.0
+    },
+    "66.468": {
+      "count": 1,
+      "total": 295161.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 46661020.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 247587.0,
+    "2024": 295161.0,
+    "2025": 277124.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

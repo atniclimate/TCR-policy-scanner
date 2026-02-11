@@ -1,9 +1,262 @@
 {
   "tribe_id": "epa_100000285",
   "tribe_name": "Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A25AV00438",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 4000000.0,
+      "start_date": "2025-01-01",
+      "end_date": "2028-12-31",
+      "description": "TO DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00449",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 250000.0,
+      "start_date": "2025-01-16",
+      "end_date": "2027-09-30",
+      "description": "TO DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMD-2020-BR-125-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 32000.0,
+      "start_date": "2021-12-18",
+      "end_date": "2024-12-17",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMD-2020-BR-125",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 4000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "A17AV01030",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 2440192.87,
+      "start_date": "2017-09-21",
+      "end_date": "2026-09-30",
+      "description": "SU180(1)2&4,CEDAR POINT RDS, SUIT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00498",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 2299907.52,
+      "start_date": "2021-04-01",
+      "end_date": "2027-09-30",
+      "description": "ROAD MAINTENANCE-SUPPLEMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A15AV00807",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 2087799.66,
+      "start_date": "2015-09-10",
+      "end_date": "2026-09-30",
+      "description": "RESERVATION WIDE SAFETY/ GUARDRAIL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00893",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 1420382.0,
+      "start_date": "2014-08-25",
+      "end_date": "2026-09-30",
+      "description": "CR517 INTERSECTION DESIGN AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00909",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 1002983.0,
+      "start_date": "2016-08-15",
+      "end_date": "2026-09-30",
+      "description": "SUI52 SECTION 10",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A08AV00056",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 504241.39,
+      "start_date": "2008-09-24",
+      "end_date": "2026-09-30",
+      "description": "SU169 NARROW GAUGE ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A99AV00001",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 451812.07,
+      "start_date": "1999-09-30",
+      "end_date": "2027-09-30",
+      "description": "TRIBAL TRANSPORTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV01310",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 250000.0,
+      "start_date": "2012-09-19",
+      "end_date": "2026-09-30",
+      "description": "END OF THE TRAIL ROAD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00702",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 180000.0,
+      "start_date": "2013-09-18",
+      "end_date": "2026-09-30",
+      "description": "SH172(1) TRAFFIC STUDY/INTERSECTION DESIGN",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01005",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 61745.75,
+      "start_date": null,
+      "end_date": "2026-09-30",
+      "description": "CONGRESSIONAL ROAD MAINTENANCE - SUIT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00458",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 937438.07,
+      "start_date": "2023-07-20",
+      "end_date": "2026-09-30",
+      "description": "DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00915",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 445805.3,
+      "start_date": "2024-08-22",
+      "end_date": "2027-09-30",
+      "description": "TODISTRIBUTEFUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00927",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 402999.9,
+      "start_date": "2024-08-26",
+      "end_date": "2027-09-30",
+      "description": "SUNORTHRIDGEHOUSINGSHAREDPATHWAYPROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00956",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 296200.81,
+      "start_date": "2024-08-23",
+      "end_date": "2027-09-30",
+      "description": "DISTRIBUTION OF FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "R24AP00231",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 651920.0,
+      "start_date": "2024-04-01",
+      "end_date": "2026-12-31",
+      "description": "THE NANNICE CANAL DIVERSION AND FISH PASSAGE PROJECT IS IN SOUTHWEST COLORADO ON THESOUTHERN UTE INDIAN RESERVATION IN IGNACIO- COLORADO. THE NANNICE CANAL IS PART OF THEPINE RIVER INDIAN IRRIGATION PROJECT- WHICH IS OWNED AND OPERATED BY BUREAU OF INDIANAFFAIRS FOR THE BENEFIT OF SOUTHERN UTE TRIBAL IRRIGATORS. THE NANNICE CANAL DIVERSION IS ALOW HEAD DAM THAT SWEEPS ACROSS THE LOS PINOS RIVER AND CREATES A SIGNIFICANT FISHBARRIER (FIGURE 1). DURING DROUGHT AND IRRIGATION SEASON- THE STRUCTURE DIVERTS THENANNICE CANALS DECREED 8 CUBIC FEET PER SECOND WHICH TYPICALLY PREVENTS FISH ANDEXCESS WATER IN LOS PINOS RIVER FROM PASSING THE STRUCTURE LEADING TO FISH ENTRAINMENTIN THE NANNICE CANAL. THE SOUTHERN UTE WATER RESOURCES DIVISION- IN PARTNERSHIP WITHSOUTHERN UTE WILDLIFE RESOURCE MANAGEMENT DIVISION- BUREAU OF INDIAN AFFAIRS- ANDTHE NATURE CONSERVANCY- IS PROPOSING A PROJECT TO CONSTRUCT A DIVERSION STRUCTURE TOIMPROVE RIVER CONNECTIVITY- IMPROVE FISH PASSAGE- AND ELIMINATE FISH ENTRAINMENT DURINGLOW FLOWS WHILE CONTINUING TO DIVERT NANNICE CANALS DECREED WATER. THE PROJECT INCLUDESENGINEERING AND MODIFYING A PORTION OF THE NANNICE CANAL HEADGATE STRUCTURE TOINCORPORATE A COANDA SCREEN AND FISH PASSAGE LADDER (SEE FIGURES 2 AND 3). THIS WILLALLOW FOR CONTROLLED BYPASS OF FLOWS THAT EXCEED THE DIVERSION AMOUNT DURING IRRIGATIONSEASON TO FLOW THROUGH THE STRUCTURE AND ALLOW ALL WATER TO FLOW PAST THE STRUCTURE DURINGTHE OFF-SEASON. THE PROJECTS COANDA SCREEN AND FISH LADDER DESIGN WILL IMPROVE FISHPASSAGE AND ELIMINATE FISH ENTRAINMENT EVEN DURING LOW FLOWS WHILE ALSO PROVIDING ASELF-CLEANING MECHANISM IMPROVING SAFETY- MAINTENANCE- AND OPERATION OF THE DIVERSIONSTRUCTURE.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "97849022",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN TRIBE",
+      "obligation": 108000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AGREEMENT WILL PROVIDE ASSISTANCE TO THE SOUTHERN UTE INDIAN TRIBE IN ITS EFFORTS TO IMPLEMENT AIR POLLUTION CONTROL PROGRAMS THROUGHOUT THE SOUTHERN UTE RESERVATION AND AIRSHED, INCLUDING CONTINUING DEVELOPMENT AND IMPLEMENTATION OF STATIONARY SOURCE REGULATIONSAND CONTINUING PROMULGATION AND UPDATE OF ENHANCED MOBILE SOURCE REGULATIONSAND IMPROVEMENT OF EMISSION INVENTORIES FOR MODELING SIMULATIONSAND OPERATING AN AIR MONITORING NETWORKAND AND OTHER AIR PLANNING ACTIVITIES. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE PUBLICS AIR QUALITY. THE PURPOSE OF THIS AWARD IS TO MONITOR AND IMPROVE AIR QUALITY ON THE SOUTHERN UTE RESERVATION. ACTIVITIES TO BE PERFORMED INCLUDE DEVELOPING AN AIR QUALITY EMISSIONS INVENTORY, MONITORING AIR QUALITY, ATTENDING ENVIRONMENTALLY RELATED TRAINING AND MEETINGS, CREATING A QUALITY ASSURANCE DOCUMENT, AND CONDUCTING ENVIRONMENTAL OUTREACH. ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES INCLUDE QUARTERLY PROGRESS REPORTS TO THE EPA, THE APPROPRIATE AND EFFECTIVE MANAGEMENT OF EPA FUNDING, AND MEASURES TO IMPROVE AND PROTECT HUMAN HEALTH AND THE ENVIRONMENT. THE INTENDED BENEFICIARIES OF THIS GRANT ARE THE CITIZENS AND RESIDENTS OF THE SOUTHERN UTE RESERVATION. NO SUBRECIPIENT ACTIVITIES ARE ANTICIPATED AT THE TIME OF THE AWARD.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 17827428.34,
+  "award_count": 20,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 4250000.0
+    },
+    "97.047": {
+      "count": 2,
+      "total": 36000.0
+    },
+    "20.205": {
+      "count": 14,
+      "total": 12781508.340000004
+    },
+    "15.507": {
+      "count": 1,
+      "total": 651920.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 108000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 140000.0,
+    "2023": 937438.07,
+    "2024": 1796926.01,
+    "2025": 4250000.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

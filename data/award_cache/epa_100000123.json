@@ -1,9 +1,89 @@
 {
   "tribe_id": "epa_100000123",
   "tribe_name": "Santo Domingo Pueblo",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00120",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SANTO DOMINGO PUEBLO",
+      "obligation": 14010.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV01037",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SANTO DOMINGO PUEBLO",
+      "obligation": 201304.0,
+      "start_date": "2024-09-19",
+      "end_date": "2027-09-30",
+      "description": "TO DISTRIBUTE FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01F81301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SANTO DOMINGO PUEBLO",
+      "obligation": 440000.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE SANTO DOMINGO PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL  PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD ENVIRONMENTAL CAPACITY TO MANAGE THE ENVIRONMENTAL OFFICE, TRAVEL AND TRAINING, OUTREACH, RECYCLING AND POLLUTION PREVENTION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F55201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SANTO DOMINGO PUEBLO",
+      "obligation": 463935.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION: THIS AGREEMENT PROVIDES ASSISTANCE TO THE PUEBLO TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAM ON INDIAN LANDS. \nTHE AGREEMENT WORKS TO BUILD SOLID WASTE CAPACITY AND ITS PUEBLOS OFFICE CAPACITY. WHICH ARE PRIORITY'S IN THE PUEBLOS ETEP (TRIBAL BUILDING CAPACITY BUILDING AND SOLID AND HAZARDOUS WASTE MANAGEMENT.) ACTIVITIES:THIS RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT HAZARDOUS/SOLID WASTE ON PUEBLO LAND. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:SEMI-ANNUAL PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT AND QUALITY MANAGEMENT PLAN. THE INTENDED BENEFICIARY IS THE PUEBLO OF SANTO DOMINGO.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "R24AP00511",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "SANTO DOMINGO PUEBLO",
+      "obligation": 299958.0,
+      "start_date": "2025-09-09",
+      "end_date": "2028-09-30",
+      "description": "THE SANTO DOMINGO PUEBLO IN NEW MEXICO WILL DEVELOP A STRATEGIC WATER MANAGEMENT PLAN TO IDENTIFY IMPROVEMENTS TO IRRIGATION INFRASTRUCTURE THAT WILL INCREASE WATER SUPPLY RELIABILITY FOR FARMERS AND IMPROVE WATERSHED HEALTH AND BIODIVERSITY. THE PUEBLO RECEIVES WATER DELIVERIES FROM THE MIDDLE RIO GRANDE WATER CONSERVANCY DISTRICT, A BUREAU OF RECLAMATION PROJECT.  INTENSIVE AGRICULTURAL WATER USE, COUPLED WITH EXTREME DROUGHT, HAVE DECREASED THE QUANTITY AND QUALITY OF WATER AVAILABLE FOR PEOPLE AND THE ENVIRONMENT ON THE MIDDLE RIO GRANDE RIVER. IN 2022, A LARGE STRETCH OF THE MIDDLE RIO GRANDE RIVER RAN DRY FOR THE FIRST TIME IN 40 YEARS, ALLOWING INVASIVE SPECIES TO FLOURISH, AND IMPACTING HABITAT FOR ENDANGERED SPECIES, INCLUDING THE RIO GRANDE SILVERY MINNOW. PLANNING EFFORTS WILL RELY ON MODERN SCIENCE AND TRADITIONAL KNOWLEDGE, AND WILL INCLUDE THE COLLECTION OF AERIAL IMAGERY, INVENTORY AND CREATION OF A DATABASE OF IRRIGATION FACILITIES ON PUEBLO LAND, DEVELOPMENT OF A WATER BALANCE MODEL, AND IDENTIFICATION OF PROJECTS TO IMPROVE WATER USE EFFICIENCY AND TO MAXIMIZE BENEFITS TO FARMERS AND THE ENVIRONMENT. THE PUEBLO WILL ENGAGE WITH THE MIDDLE RIO GRANDE CONSERVANCY DISTRICT, THE BUREAU OF INDIAN AFFAIRS, AND MULTIPLE STAKEHOLDERS WITHIN THE PUEBLO.",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 1419207.0,
+  "award_count": 5,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 215314.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 903935.0
+    },
+    "15.507": {
+      "count": 1,
+      "total": 299958.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 201304.0,
+    "2025": 763893.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

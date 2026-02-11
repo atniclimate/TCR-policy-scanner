@@ -1,9 +1,199 @@
 {
   "tribe_id": "epa_100000388",
   "tribe_name": "Craig Tribal Association",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A21AP10125",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 60713.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "CRAIG TRIBE CLIMATE ADAPTATION PLANNING AND CAPACITY BUILDING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00044",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 5228.69,
+      "start_date": "2018-10-01",
+      "end_date": "2019-10-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J61701",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 494424.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "THE CRAIG TRIBAL ASSOCIATION WILL BUILD ENVIRONMENTAL CAPACITY BY GATHERING BASELINE ENVIRONMENTAL DATA; PARTICIPATING WITH TRIBAL ENVIRONMENTAL ORGANIZATIONS; CONDUCTING ENVIRONMENTAL EDUCATION AND OUTREACH; SOLID WASTE REDUCTION, BACKHAUL, AND AIR QUALITY EDUCATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J33301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE CRAIG TRIBAL ASSOCIATION (CTA) WILL CONTINUE TO BUILD THEIR ENVIRONMENTAL PROGRAM BY ENSURING PROPER GRANT MANAGEMENT. THEY WILL DEVELOP AND PROVIDE COMMUNITY ENVIRONMENTAL EDUCATION AND CONTINUE TO GATHER BASELINE WATER QUALITY DATA.  IN ADDITION, THEY WILL WORK WITH ELDERS TO HELP PROTECT THE ENVIRONMENT OF TRADITIONAL HARVESTING AREAS. FINALLY, THEY WILL USE PURPLE AIR MONITORS TO GATHER BASELINE AIR QUALITY DATA.  ACTIVITIES:THE CRAIG TRIBE WILL SUBMIT QUARTERLY PROGRESS REPORTS, FEDERAL FINANCIAL REPORTS AND OTHER REQUIRED DOCUMENTATION TO EPA ACCORDING TO GRANT AGREEMENT. THEY WILL ENCOURAGE TRIBAL PARTICIPATION THROUGH COMMUNITY INVOLVEMENT AND EDUCATION ON ENVIRONMENTAL ISSUES AND CONTINUE ENVIRONMENTAL COLLABORATION WITH TRIBES, MUNICIPALITIES AND LOCAL AGENCIES. CTA WILL ASSIST IN EARTH DAY AND ELECTRONIC RECYCLING EVENTS. THEY WILL DEVELOP EDUCATIONAL MATERIALS ON TRADITIONAL HARVESTING METHODS AND PROCESSING TO EDUCATE YOUTH AND TRIBAL MEMBERSHIP WITH TRADITIONAL KNOWLEDGE ON THE IMPORTANCE OF SUSTAINING A HEALTHY ENVIRONMENT FOR TRADITIONAL RESOURCES. FINALLY, THEY WILL PROVIDE DATA TO THE NATIONAL PHYTOPLANKTON MONITORING NETWORK (NOAA) AND SEATOR; WILL REVIEW THE PURPLE AIR QAPP AND CONTINUE GATHERING ENVIRONMENTAL BASELINE DATA TO ENSURE THE HEALTH OF TRIBAL RESOURCES.  SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES AND OUTCOMES FROM CTA'S WORK INCLUDE SIGN UP LISTS/PHOTOS/PICTURES; NEWS ARTICLE AND WEIGHTS/AMOUNTS OF ELECTRONICS RECYCLED; ENVIRONMENTAL FACEBOOK PAGE POSTINGS, WEBSITE UPDATES, COMMUNITY CLEANUPS, FLYERS, CTA READER BOARD, AND TRIBAL NEWSLETTER. THEY WILL ALSO CREATE A LIST OF THE TOP 3-5 TRIBAL COUNCIL WATER QUALITY AREAS OF CONCERN. FINALLY, CTA WILL UPDATE AND REVIEW THEIR PURPLE AIR QAPP.  DIRECT BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AK0019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 631430.73,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42220000K600AK0019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 560583.94,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000K600AK0019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 53553.35,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AK0019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 667616.48,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AK3019024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 1588302.45,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  CRAIG TRIBAL ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CRAIG TRIBAL ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AK3019024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 209246.25,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE:  CRAIG TRIBAL ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CRAIG TRIBAL ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600AK0019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 87556.26,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V601AK0019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 4991500.82,
+      "start_date": null,
+      "end_date": null,
+      "description": "CARBON REDUCTION PROGRAM FUNDING TRANSFERRED FROM ALASKA DOT UNDER 202(A)(9)",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AK3019025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 678872.24,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: CRAIG TRIBAL ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CRAIG TRIBAL ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177AK3019025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 209215.01,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: CRAIG TRIBAL ASSOCIATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CRAIG TRIBAL ASSOCIATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42530000V30CAK0019",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CRAIG TRIBAL ASSOCIATION",
+      "obligation": 8499.18,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRANSPORTATION ALTERNATIVES PROGRAM FUNDING TRANSFERRED FROM ALASKA DOT UNDER 202(A)(9)",
+      "awarding_agency": "Department of Transportation"
+    }
+  ],
+  "total_obligation": 10649742.4,
+  "award_count": 15,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 65941.69
+    },
+    "66.926": {
+      "count": 2,
+      "total": 897424.0
+    },
+    "20.205": {
+      "count": 11,
+      "total": 9686376.71
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 403000.0,
+    "2025": 209215.01,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

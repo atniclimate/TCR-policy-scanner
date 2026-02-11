@@ -1,9 +1,137 @@
 {
   "tribe_id": "epa_100000420",
   "tribe_name": "Huslia Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A23AV01081",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 250000.0,
+      "start_date": "2023-08-24",
+      "end_date": "2025-09-30",
+      "description": "HUSLIA ADD FY 2022X TRIBAL CLIMATE RESILIENCE FUNDS, CATEGORY 11",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00289",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 5000000.0,
+      "start_date": "2024-12-16",
+      "end_date": "2029-12-31",
+      "description": "2022 TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J55501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 492839.0,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "HUSLIA WILL USE THE FY20 GAP GRANT TO MANAGE ITS ENVIRONMENTAL OFFICE; MANAGE SOLID WASTE, WORK TOWARD CLEANING UP CONTAMINATED SITES IN THE COMMUNITY; AND CONDUCT WATER QUALITY MONITORING.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J33801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 394000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE HUSLIA TRIBAL COUNCIL TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL USE THE GAP GRANT TO MANAGE THE ADMINISTRATIVE AND FINANCIAL ASPECTS OF THE GRANT, MANAGE SOLID WASTE, AND CONDUCT WATER QUALITY MONITORING. ACTIVITIES:IN FY24, GAP STAFF WILL ATTEND QUICKBOOKS AS WELL AS ENVIRONMENTAL TRAININGS, COMPLETE ALL REQUIRED REPORTING, PARTICIPATE IN THE YUKON-KOYUKUK CONSORTIUM, CONDUCT ENVIRONMENTAL EDUCATION, CREATE A GAP STAFF MANUAL, AND DEVELOP A SUCCESS STORY; MANAGE SOLID WASTE AND COLLECT SOLID WASTE FEES, WORK WITH THE CITY ON A LANDFILL CLEANUP, HOLD A COMMUNITY CLEAN-UP, WORK WITH THE YUKON-KOYUKUK INTER-TRIBAL WATERSHED COUNCIL ON DRUM CLEANUP, START A PROGRAM TO SHARE BABY ITEMS, INVOLVE YOUTH IN EARTH DAY AND A LITTER PATROL, AND CONDUCT A BACKHAUL; WORK WITH THE WATERSHED COUNCIL TO MONITOR WATER QUALITY AND RIVER EROSION, AND EDUCATE YOUTH ON WATER QUALITY MONITORING. IN FY25, THE TRIBE WILL ATTEND ENVIRONMENTAL TRAININGS, COMPLETE ALL REQUIRED REPORTING, PARTICIPATE IN THE YUKON-KOYUKUK CONSORTIUM, AND CONDUCT ENVIRONMENTAL EDUCATION; MANAGE SOLID WASTE, HOLD A COMMUNITY CLEAN-UP, HOLD A SPRING RUMMAGE SALE, CONTINUE TO WORK WITH THE YUKON-KOYUKUK INTER-TRIBAL WATERSHED COUNCIL ON DRUM CLEANUP, CREATE RECYCLING POSTERS WITH THE YOUTH, AND CONDUCT A BACKHAUL; WORK WITH THE WATERSHED COUNCIL TO MONITOR WATER QUALITY AND RIVER EROSION, AND CREATE A GRAPH WITH YOUTH OF DATA COLLECTED. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:DELIVERABLES WILL INCLUDE PROGRESS AND FINANCIAL REPORTS, NEWSLETTERS, POSTERS, FLIERS, TRIP REPORTS, TRAINING CERTIFICATES, BACKHAUL INVENTORY, A GRAPH, AND A SUCCESS STORY. EXPECTED OUTCOMES INCLUDE WORKING RELATIONSHIPS WITH OTHER ENTITIES, A SELF-SUSTAINING TRASH HAUL PROGRAM, AND A CLEANER, HEALTHIER COMMUNITY. THE TRIBAL COMMUNITY OF HUSLIA IS THE INTENDED BENEFICIARY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV01002",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 1178335.37,
+      "start_date": "2017-10-01",
+      "end_date": "2023-12-31",
+      "description": "A18AV001002",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV01003",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 324869.85,
+      "start_date": "2017-10-01",
+      "end_date": "2023-12-31",
+      "description": "A18AV01003",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01112",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 706869.44,
+      "start_date": "2023-08-31",
+      "end_date": "2028-12-31",
+      "description": "HUSLIA ADD FY22 6V2 & FY23 6V1 MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01152",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 333355.57,
+      "start_date": "2023-09-11",
+      "end_date": "2028-12-31",
+      "description": "HUSLIA ADD FY23 6V1 & 66V PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "DEIE0000091",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "HUSLIA VILLAGE",
+      "obligation": 361731.0,
+      "start_date": "2017-09-30",
+      "end_date": "2021-06-30",
+      "description": "HUSLIA TRIBAL COUNCIL BIOMASS PROJECT",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 9042000.23,
+  "award_count": 9,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 5250000.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 886839.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 2543430.23
+    },
+    "81.087": {
+      "count": 1,
+      "total": 361731.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 1290225.01,
+    "2024": 394000.0,
+    "2025": 5000000.0,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

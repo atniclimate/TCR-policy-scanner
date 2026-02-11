@@ -1,9 +1,52 @@
 {
   "tribe_id": "epa_100000167",
   "tribe_name": "Morongo Band of Mission Indians, California",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "EMF-2022-BR-011",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "MORONGO BAND OF MISSION INDIANS",
+      "obligation": 740033.86,
+      "start_date": "2024-07-18",
+      "end_date": "2027-07-17",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "97T10701",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "MORONGO BAND OF MISSION INDIANS",
+      "obligation": 375004.0,
+      "start_date": "2024-07-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING UNDER THE INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) TO MORONGO BAND OF MISSION INDIANS TO DEVELOP AND IMPLEMENT LEAD SERVICE LINE IDENTIFICATION ACTIVITIES IN TRIBAL COMMUNITIES. SPECIFICALLY, THE RECIPIENT WILL PERFORM A RECORDS REVIEW AND POTHOLE SERVICE LINES TO IDENTIFY LEAD OR GALVANIZED REQUIRING REPLACEMENT (GRR) SERVICE LINES. \n\nTHIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $375,004.00. PRE-AWARD HAVE BEEN APPROVED BACK TO 7/1/2024.ACTIVITIES:THE ACTIVITIES INCLUDE PERFORMING A RECORDS REVIEW AND POTHOLING OF SERVICE LINES TO IDENTIFY LEAD OR GALVANIZED REQUIRING REPLACEMENT (GRR) SERVICE LINES. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE A COMPLETE SERVICE LINE INVENTORY. THE EXPECTED OUTCOMES INCLUDE A LIST IDENTIFYING SERVICE LINE MATERIAL TO DETERMINE WHETHER REPLACEMENT IS NECESSARY TO REDUCE LEAD EXPOSURE. THE INTENDED BENEFICIARIES INCLUDE RESIDENTS OF THE MORONGO PUBLIC WATER SYSTEM.",
+      "awarding_agency": "Environmental Protection Agency"
+    }
+  ],
+  "total_obligation": 1115037.8599999999,
+  "award_count": 2,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 740033.86
+    },
+    "66.468": {
+      "count": 1,
+      "total": 375004.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 1115037.8599999999,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

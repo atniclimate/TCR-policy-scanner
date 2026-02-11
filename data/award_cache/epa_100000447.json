@@ -1,9 +1,166 @@
 {
   "tribe_id": "epa_100000447",
   "tribe_name": "Kokhanok Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A20AP00081",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 102951.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00179",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 50000.0,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00189",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 14009.0,
+      "start_date": "2020-06-01",
+      "end_date": "2022-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J79601",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 509999.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO KOKHANOK VILLAGE TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL BUILD ADMINISTRATIVE CAPACITY, MAINTAIN LANDFILL AND REFUSE CONTROL, AND BUILD TRIBAL EDUCATIONAL CAPACITY THROUGH THE ENVIRONMENTAL PROGRAM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J66301",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 268000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THE PURPOSE OF THIS ASSISTANCE AGREEMENT IS TO BUILD TRIBAL CAPACITY THROUGH  MANAGEMENT OF  THE ENVIRONMENTAL PROGRAM; MAINTENANCE OF LANDFILL AND REFUSE CONTROL, AND REDUCE ROAD DUST EMISSIONS TO IMPROVE AIR QUALITY FOR THE VILLAGE OF KOKHANOK.\n\nACTIVITIES:THE ACTIVITIES TO BE PERFORMED ARE QUARTERLY PROGRAMMATIC AND FINANCIAL REPORTING OF ENVIRONMENTAL PROGRAM.  DEVELOPMENT AND IMPLEMENTATION OF  A SOLID WASTE COLLECTION PROGRAM THAT WORKS WITH THE COMMUNITY TO PARTICIPATE IN THE IMPLEMENTATION OF THE SOLID WASTE COLLECTION PROGRAM.  THERE WILL BE  OUTREACH TO COMMUNITY ON AIR QUALITY AWARENESS AND REDUCE DUST BY USE OF A WATER TRUCK IN THE VILLAGE OF KOKHANOK.\nSUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES ARE QUARTERLY PROGRAMMATIC AND FINANCIAL REPORTS THAT ARE CLEAR, CONCISE AND DONE ON TIME. THE REPORTS WILL BE SHARED WITH ADMINISTRATION AND SUBMITTED TO EPA. DAILY REFUSE WILL BE HAULED AND DISPOSED ACCORDING TO REGULATIONS.  THERE WILL BE SEPARATION OF RECYCLABLES, WHITE GOODS AND E-WASTE. THERE WILL ALSO BE OUTREACH  ON AIR QUALITY AWARENESS AND THE REDUCTION OF DUST BY USE OF WATER TRUCK. THE INTENDED BENEFICIARIES ARE THE COMMUNITY MEMBERS OF THE VILLAGE OF KOKHANOK.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00896",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 552227.45,
+      "start_date": "2018-08-17",
+      "end_date": "2024-12-31",
+      "description": "A18AV00896",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00418",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 323845.33,
+      "start_date": "2013-06-04",
+      "end_date": "2019-12-31",
+      "description": "E01264D2",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01002",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 323764.2,
+      "start_date": "2018-10-01",
+      "end_date": "2024-12-31",
+      "description": "KOKHANOK A19AV01002 FY 2019 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A13AV00414",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 266858.28,
+      "start_date": "2012-09-28",
+      "end_date": "2025-02-28",
+      "description": "KOKHANOK TRANSPORTATION PLANNING FY11-FY13",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00925",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 76545.48,
+      "start_date": "2018-08-17",
+      "end_date": "2025-02-27",
+      "description": "A18AV00925",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00680",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 346131.48,
+      "start_date": "2024-05-23",
+      "end_date": "2029-12-31",
+      "description": "KOKHANOK'",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00813",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "KOKHANOK VILLAGE",
+      "obligation": 48340.23,
+      "start_date": "2025-05-09",
+      "end_date": "2030-12-31",
+      "description": "KOKHANOK",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 2882671.45,
+  "award_count": 12,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 166960.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 777999.0
+    },
+    "20.205": {
+      "count": 7,
+      "total": 1937712.45
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 346131.48,
+    "2025": 316340.23,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

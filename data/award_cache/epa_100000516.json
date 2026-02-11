@@ -1,9 +1,203 @@
 {
   "tribe_id": "epa_100000516",
   "tribe_name": "Qawalangin Tribe of Unalaska",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00222",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 163599.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00207",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 149143.0,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10213",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 148032.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "PROGRAM TO SUPPORT TRIBAL CLIMATE RESILIENCE GRANTS AND OCEAN AND COASTAL MANAGEMENT PLANNING GRANTS - 2021",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10233",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 49948.0,
+      "start_date": "2021-08-16",
+      "end_date": "2023-12-31",
+      "description": "PROGRAM TO SUPPORT TRIBAL CLIMATE RESILIENCE GRANTS AND OCEAN AND COASTAL MANAGEMENT PLANNING GRANTS - 2021",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10231",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 49401.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "PROGRAM TO SUPPORT TRIBAL CLIMATE RESILIENCE GRANTS AND OCEAN AND COASTAL MANAGEMENT PLANNING GRANTS - 2021",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10226",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 14958.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-14",
+      "description": "PROGRAM TO SUPPORT TRIBAL CLIMATE RESILIENCE GRANTS AND OCEAN AND COASTAL MANAGEMENT PLANNING GRANTS - 2021",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AP10218",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 13859.0,
+      "start_date": "2021-08-16",
+      "end_date": "2024-08-15",
+      "description": "PROGRAM TO SUPPORT TRIBAL CLIMATE RESILIENCE GRANTS AND OCEAN AND COASTAL MANAGEMENT PLANNING GRANTS - 2021",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AP00123",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 13673.06,
+      "start_date": "2020-06-01",
+      "end_date": "2023-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J77801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 509997.0,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO QAWALANGIN TRIBE OF UNALASKA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL DEVELOP A RECYCLING PROGRAM, CONDUCT COMMUNITY OUTREACH AND EDUCATION ON STEM, RECYCLING AND COASTAL RESILIENCE, LONG TERM ENVIRONMENTAL PLAN DEVELOPMENT, ESTABLISH LOCAL ENVIRONMENTAL OBSERVER NETWORK IN THE COMMUNITY.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J74201",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 402000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2027-09-30",
+      "description": "DESCRIPTION:THE QAWALANGIN TRIBE OF UNALASKA WILL CONTINUE TO ESTABLISH AN ENVIRONMENTAL PROGRAM. THEY WILL BUILD ADMINISTRATIVE AND PROGRAMMATIC CAPACITY FOR IMPROVED GRANT MANAGEMENT AND DAILY ENVIRONMENTAL PROGRAM OPERATIONS. A FOCUS AREA IS TO CONDUCT A RECYCLING AND BACKHAUL EFFORT, INCLUDING OUTREACH AND EDUCATION TO IMPROVE AWARENESS OF ENVIRONMENTAL STEWARDSHIP AND MATERIALS MANAGEMENT. THE TRIBE WILL CONDUCT A COLLABORATIVE SOLID WASTE IMPROVEMENT PROJECT WITH THE CITY AND CORPORATE PARTNERS, AND INCREASE KNOWLEDGE/RESOURCES FOR HEALTHIER COASTAL ECOSYSTEM THRU LEO NETWORK CLIMATE SURVEILLANCE. THE TRIBE WILL APPLY FOR AT LEAST ONE NEW SOURCE OF GRANT FUNDING, AND LEARN ABOUT ENVIRONMENTAL PROGRAM DEVELOPMENT THRU PARTICIPATION IN CONFERENCES.  THE TRIBE WILL DEVELOP A NEEDS ASSESSMENT OF WHAT NEW TRAINING IS NEEDED FOR ENVIRONMENTAL STAFF IN ORDER TO BETTER SERVE THE COMMUNITY.  THE TRIBE WILL ASSESS NEEDS FOR EVENTUALLY DEVELOPING A WATER QUALITY PROTECTION PROGRAM IN COMING YEARS. NO BASELINE DATA COLLECTION WILL OCCUR IN FY25.ACTIVITIES:WORKPLAN ACTIVITIES WILL INVOLVE ADMINISTRATIVE CONTINUED CAPACITY BUILDING AS WELL AS TRIBAL ENVIRONMENTAL CAPACITY BUILDING. THE TRIBE WILL CONTINUE CRITICAL SOLID WASTE MANAGEMENT PROGRAMS BY BACKHAULING WASTES WHICH PREVENTS CONTAMINATION BY UNIVERSAL WASTES INTO WATERWAYS AND ON LAND. THIS WILL BE ACCOMPLISHED THRU ACTIVITIES TO INCLUDE COMMUNITY WIDE COLLECTION OF MATERIALS THAT CAN BE RECYCLED OR REPURPOSED TO REDUCE WASTE WITHIN THE COMMUNITY, EXTEND THE LIFE OF THE TRIBALLY OWNED LANDFILL, AND ASSIST IN THE IMPLEMENTATION OF STATE-REGULATED LANDFILL OPERATIONS. COMMUNITY OUTREACH AND EDUCATION ACTIVITIES ARE INTEGRAL TO THIS PROJECT AND WILL TEACH KEY COMMUNITY MEMBERS ENVIRONMENTAL STEWARDSHIP THRU COMMUNITY SURVEILLANCE PROGRAMS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE QAWALANGIN TRIBE AND THE EPA EXPECT THE ENVIRONMENTAL PROGRAM CAPACITY TO EXPAND BY ENGAGING THE TRIBAL RESIDENTIAL COMMUNITY. OUTCOMES WILL INVOLVE ADMINISTRATIVE CONTINUED CAPACITY BUILDING AS WELL AS TRIBAL ENVIRONMENTAL CAPACITY BUILDING. THE TRIBE WILL CONTINUE CRITICAL SOLID WASTE MANAGEMENT PROGRAMS BY RECYCLING WASTES WHICH PREVENTS CONTAMINATION BY UNIVERSAL WASTES INTO WATERWAYS AND ON LAND. COMMUNITY OUTREACH AND EDUCATION IN SOLID WASTE MANAGEMENT AND CLIMATE CHANGE PROGRAMS CHANGE BEHAVIOR PATTERNS, ENABLING BOTH EPA AND THE TRIBE TO PROTECT HUMAN HEALTH AND THE ENVIRONMENT. FINALLY, THE TRIBE WILL LEARN FROM OTHER COMMUNITIES 'HOW TO' PLAN FOR AND ESTABLISH A BASELINE WATER QUALITY MONITORING PROGRAM, ALTHOUGH NO MONITORING WILL OCCUR IN FY25. OVERALL, THESE EFFORTS WILL SERVE THE TRIBAL COMMUNITY FOR YEARS TO COME.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A15AV00469",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 294744.98,
+      "start_date": "2015-04-29",
+      "end_date": "2025-12-31",
+      "description": "ROAD MAINTENANCE PROGRAM",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01161",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 624062.74,
+      "start_date": "2022-10-01",
+      "end_date": "2027-12-31",
+      "description": "QAWALANGIN FY23 ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01033",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 307880.47,
+      "start_date": "2022-10-01",
+      "end_date": "2028-12-31",
+      "description": "QAWALANGIN FY23 PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JJ32540411",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 2950740.62,
+      "start_date": "2025-09-04",
+      "end_date": "2028-06-30",
+      "description": "STRENGTHENING TRANSPORTATION RESILIENCE ON THE ISLAND OF UNALASKA UNDER THE PROMOTING RESILIENT OPERATIONS FOR TRANSFORMATIVE, EFFICIENT, AND COST-SAVING TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "DEEE0010151",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "QAWALANGIN TRIBE OF UNALASKA",
+      "obligation": 2500000.0,
+      "start_date": "2024-04-15",
+      "end_date": "2026-04-14",
+      "description": "ECONOMIC DEVELOPMENT ON THE ISLAND OF UNALASKA HAS BEEN SLOW DUE TO THE CITY OF UNALASKA’S STRETCHED TO CAPACITY ELECTRIC GRID.  IT IS IMPOSSIBLE, IN ITS CURRENT STATE, TO HAVE ADDITIONAL INDUSTRIES TAP INTO IT.  CURRENTLY, THE FISHING INDUSTRIES HAVE RESORTED TO CREATING THEIR OWN ELECTRICITY, TO THE ENVIRONMENTAL DETRIMENT OF THE LOCAL LANDS.  ADDITIONALLY, THE EXORBITANT COST OF ON ISLAND ELECTRICITY MAKES IT COST-PROHIBITIVE FOR OTHER INDUSTRY TO SET UP IN UNALASKA.  TO REALIZE THE ISLAND’S FULL ECONOMIC POTENTIAL AND CAPITALIZE ON ITS STRATEGIC LOCATION ON THE ALEUTIAN ISLAND CHAIN, ENERGY STABILIZATION IS NOT ONLY IMPERATIVE BUT COMMANDED.  THE MAKUSHIN GEOTHERMAL PROJECT’S (MGP) OVERARCHING GOAL IS TO BRING AFFORDABLE CLEAN ENERGY TO THE ISLAND OF UNALASKA, THAT WILL ALLOW FOR ECONOMIC DEVELOPMENT OUTSIDE OF, BUT COMPLEMENTARY TO THE FISHING INDUSTRY.  THE MGP WILL BRING NEW TECHNOLOGIES AND OPPORTUNITIES TO THE ISLAND.  AS SUCH, IT IS CRUCIAL THAT A COMPREHENSIVE WORKFORCE DEVELOPMENT PLAN AND COMMUNITY EDUCATION OUTREACH PROGRAM BE PLANNED, DEVELOPED, AND IMPLEMENTED TO EDUCATE, HIRE, AND TRAIN DISADVANTAGED AND DISPLACED POPULATIONS ON ALL ASPECTS OF THE GEOTHERMAL INDUSTRY, FROM PROJECT CONCEPTION TO MAINTENANCE.",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 8192038.87,
+  "award_count": 15,
+  "cfda_summary": {
+    "15.156": {
+      "count": 8,
+      "total": 602613.06
+    },
+    "66.926": {
+      "count": 2,
+      "total": 911997.0
+    },
+    "20.205": {
+      "count": 4,
+      "total": 4177428.81
+    },
+    "81.087": {
+      "count": 1,
+      "total": 2500000.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 931943.21,
+    "2024": 2500000.0,
+    "2025": 3352740.62,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

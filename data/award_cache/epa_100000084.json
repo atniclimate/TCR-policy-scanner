@@ -1,9 +1,100 @@
 {
   "tribe_id": "epa_100000084",
   "tribe_name": "Flandreau Santee Sioux Tribe of South Dakota",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A18AP00224",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "FLANDREAU SANTEE SIOUX TRIBE",
+      "obligation": 150000.0,
+      "start_date": "2018-09-01",
+      "end_date": "2019-09-30",
+      "description": "ADAPTATION PLANNING (INC DATA DEVELOPM)",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00170",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "FLANDREAU SANTEE SIOUX TRIBE",
+      "obligation": 132435.0,
+      "start_date": "2019-08-01",
+      "end_date": "2022-09-30",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00970",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "FLANDREAU SANTEE SIOUX TRIBE",
+      "obligation": 3814920.0,
+      "start_date": "2024-09-16",
+      "end_date": "2027-01-15",
+      "description": "FSST-FY24FORTRIBALCLIMATERESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMD-2021-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "FLANDREAU SANTEE SIOUX TRIBE",
+      "obligation": 27225.0,
+      "start_date": "2020-12-07",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMD-2022-BR-013",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "FLANDREAU SANTEE SIOUX TRIBE",
+      "obligation": 172200.0,
+      "start_date": "2024-05-08",
+      "end_date": "2027-05-07",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "DEIE0000118",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "FLANDREAU SANTEE SIOUX TRIBE",
+      "obligation": 340816.46,
+      "start_date": "2019-10-01",
+      "end_date": "2022-06-30",
+      "description": "SOLAR ENERGY DEVELOPMENT ON THE FSST RESERVATION",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 4637596.46,
+  "award_count": 6,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 4097355.0
+    },
+    "97.047": {
+      "count": 2,
+      "total": 199425.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 340816.46
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 3987120.0,
+    "2025": 0.0,
+    "2026": 0.0
+  },
+  "trend": "stable"
 }

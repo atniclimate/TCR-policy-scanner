@@ -1,9 +1,96 @@
 {
   "tribe_id": "epa_100000548",
   "tribe_name": "Telida Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "02J06501",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "TELIDA VILLAGE",
+      "obligation": 509100.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:TELIDA VILLAGE WILL USE GAP FUNDING TO BUILD ADMINISTRATIVE AND ENVIRONMENTAL PROGRAMMATIC CAPACITY, BUILD TRIBAL CAPACITY TO PREPARE FOR CLIMATE CHANGE IMPACTS THROUGH BASELINE MONITORING, ASSESSMENT, AND PLANNING; AND ESTABLISH COLLABORATIVE ENVIRONMENTAL RELATIONSHIPS WITH RESEARCH PARTNERS AND OTHER NATIVE ALASKAN TRIBES IN THE UPPER KUSKOKWIM REGION TO ENHANCE PARTNERSHIPS AND FACILITATE EDUCATION AND OUTREACH. ACTIVITIES:ACTIVITIES INCLUDE MAINTAINING TRIBAL ENVIRONMENTAL OFFICE AND COMPLETING GRANT ADMINISTRATIVE DUTIES, UPDATING TRIBAL ENVIRONMENTAL POLICIES AND PROCEDURES, ATTENDING RELEVANT TRAININGS, ESTABLISHING PERMAFROST STUDY SITES TO COMPLETE BASELINE CLIMATE CHANGE MONITORING IN ACCORDANCE WITH APPROVED QAPP, COMPLETING SITE VISITS TO COLLECT DATA, DISSEMINATING BASELINE DATA RESULTS TO COUNCIL AND EPA, CONNECTING WITH TRIBES AND OTHER ORGANIZATIONS TO IDENTIFY PARTNERSHIP OPPORTUNITIES, AND ATTENDING RELEVANT TRAININGS THAT ALIGN WITH TELIDA'S ETEP. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE OUTCOMES OF THIS PROJECT INCLUDE INCREASED TRIBAL PROGRAM CAPACITY TO ADDRESS LOCAL ENVIRONMENTAL ISSUES, INCREASED KNOWLEDGE OF CLIMATE CHANGE IMPACTS IN TELIDA VILLAGE THROUGH ESTABLISHING A BASELINE OR MECHANISMS (THAWING PERMAFROST, CHANGES IN VEGETATION, REDUCED POLLINATION) THAT HAVE ENVIRONMENTAL IMPACTS, AND RELATIONSHIPS ESTABLISHED WITH PARTNERS TO INCREASE COLLABORATION AND BUILD ENVIRONMENTAL PROGRAM CAPACITY. PROGRESS WILL BE REPORTED ON IN QUARTERLY REPORTS, AND DELIVERABLES INCLUDE LISTS OF CALLS/MEETINGS, RESEARCH DOCUMENTS, LISTS OF TRAININGS ATTENDED, UPDATED POLICIES AND PROCEDURES, TRIP REPORTS, BASELINE DATA RESULTS, CONSULTANT AGREEMENTS, AND PHOTOS. THE INTENDED BENEFICIARY IS TELIDA VILLAGE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A15AV00828",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TELIDA VILLAGE",
+      "obligation": 78778.76,
+      "start_date": "2015-09-14",
+      "end_date": "2026-12-31",
+      "description": "ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00397",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TELIDA VILLAGE",
+      "obligation": 31684.58,
+      "start_date": "2018-01-30",
+      "end_date": "2026-12-31",
+      "description": "A18AV00397",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00177",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TELIDA VILLAGE",
+      "obligation": 0.0,
+      "start_date": "2011-09-12",
+      "end_date": "2026-12-31",
+      "description": "DESIGN ACTIVITIES ASSOCIATED WITH APPROXIMATELY 8.2 MILES OF PROPOSED GRAVEL TRAIL",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01174",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TELIDA VILLAGE",
+      "obligation": 33119.81,
+      "start_date": "2025-09-09",
+      "end_date": "2029-12-31",
+      "description": "TELIDA",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01169",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "TELIDA VILLAGE",
+      "obligation": 32628.69,
+      "start_date": "2025-09-09",
+      "end_date": "2029-12-31",
+      "description": "TELIDA",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 685311.84,
+  "award_count": 6,
+  "cfda_summary": {
+    "66.926": {
+      "count": 1,
+      "total": 509100.0
+    },
+    "20.205": {
+      "count": 5,
+      "total": 176211.84
+    }
+  },
+  "yearly_obligations": {
+    "2022": 0.0,
+    "2023": 509100.0,
+    "2024": 0.0,
+    "2025": 65748.5,
+    "2026": 0.0
+  },
+  "trend": "decreasing"
 }

@@ -1,9 +1,177 @@
 {
   "tribe_id": "epa_100000478",
   "tribe_name": "Newhalen Village",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A19AP00210",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 53348.95,
+      "start_date": "2019-08-01",
+      "end_date": "2021-06-01",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "01J60101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 464222.0,
+      "start_date": "2020-01-01",
+      "end_date": "2023-09-30",
+      "description": "THE WORK TO BE ACCOMPLISHED IS ORGANIZED INTO THREE WORK PLAN COMPONENTS. COMPONENT 1 BUILDS TRIBAL ADMINISTRATIVE CAPACITY AND SUPPORTS STAFF TRAVEL TO ENVIRONMENTAL CONFERENCES. COMPONENT 2 SUPPORTS A TRIBAL SOLID AND HAZARDOUS WASTE AND RECYCLING PROGRAM. COMPONENT 3 DEVELOPS A TRIBAL WATER QUALITY MONITORING PROGRAM.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02J48401",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 403000.0,
+      "start_date": "2023-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:DEVELOP A TRIBAL ENVIRONMENTAL PROGRAM THAT FOCUSES ON SOLID WASTE MANAGEMENT AND AIR QUALITY.ACTIVITIES:DEVELOP AN ENVIRONMENTAL PROGRAM THAT IS CAPABLE TO MEET FEDERAL GRANT REQUIREMENTS. INCREASED KNOWLEDGE AND UNDERSTANDING OF POLLUTION ISSUES BY WEBINARS, TRAININGS FOR TRIBAL IGAP STAFF. STOP FURTHER POLLUTION OF THE RIVER AND RIVERBANK THROUGH OUTREACH/EDUCATION  OF TRIBAL MEMBERS. DEVELOP BETTER MANAGEMENT AND SECURITY OF LANDFILL. EDUCATE THE TRIBAL MEMBERS OF THE IMPORTANCE OF INDOOR AND OUTDOOR AIR QUALITY. PROVIDE TRIBAL MEMBERS WITH HANDOUTS ON HOW TO PURIFY HOME AIR QUALITY AND EDUCATE THEM ON AIR POLLUTION AND CONTAMINANTS IN HOMES. SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:INCREASED THE CAPACITY TO MANAGE A TRIBAL ENVIRONMENTAL PROGRAM. CLEAN AND PROTECT RIVER WATER/RIVERBANK AND BEACH TO SUSTAIN TRIBE WITH FISH, EDIBLE PLANTS AND ANIMALS THAT LIVE BY OR IN THE NEWHALEN RIVER.\tDECREASE POLLUTION OF AIR, WATER, AND SOIL FROM IMPROPER DISPOSAL OF SOLID WASTE AT LANDFILL. INCREASE THE PROTECTION AND QUALITY OF TRADITIONAL USE AREAS AND SUBSISTENCE RESOURCES FROM POLLUTANTS. INCREASE INDOOR AND OUTDOOR AIR QUALITY FOR NEWHALEN THROUGH EDUCATION AND TESTING. DEVELOP RULES TO CONTROL LANDFILL BURNING BY BURNING\nONLY BURNABLE ITEMS IN THE LANDFILL BURN BOX INSTEAD OF PLASTIC AND ALUMINUM CANS. THE INTENDED BENEFICIARIES OF THIS WORK ARE THE NEWHALEN TRIBAL MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A18AV00689",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 3956941.32,
+      "start_date": "2018-06-15",
+      "end_date": "2026-12-31",
+      "description": "A18AV00689",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00077",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 1015201.0,
+      "start_date": "2013-04-15",
+      "end_date": "2024-04-24",
+      "description": "NEWHALEN ROAD MAINTENANCE PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A17AV00796",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 940140.32,
+      "start_date": "2016-10-01",
+      "end_date": "2025-12-31",
+      "description": "P.L. 93-638 CONTRACT - ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00550",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 365135.59,
+      "start_date": "2014-05-20",
+      "end_date": "2024-04-24",
+      "description": "NEWHALEN TRANWSPORTATION PLANNING AND SAFETY",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV01116",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 340000.74,
+      "start_date": "2022-09-12",
+      "end_date": "2026-12-31",
+      "description": "NEWHALEN FY22 6K1 & 6V1 TRANSIT FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00812",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 278434.53,
+      "start_date": "2020-06-10",
+      "end_date": "2026-12-31",
+      "description": "NEWHALEN FY 2020 66K & 6K1 2%, TTP MANAGEMENT & PLANNING, TRANSPORTATION PLANNING FUNDS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A12AV00643",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 150000.0,
+      "start_date": "2013-07-22",
+      "end_date": "2024-05-03",
+      "description": "NEWHALEN TRANSIT FACILITY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A09AV00087",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": -674422.72,
+      "start_date": "2009-09-24",
+      "end_date": "2024-05-03",
+      "description": "NEWHALEN VILLAGE CONSTRUCTION PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00668",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 553353.91,
+      "start_date": "2024-05-30",
+      "end_date": "2029-12-31",
+      "description": "NEWHALEN ROAD MAINTENANCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV01138",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NEWHALEN VILLAGE",
+      "obligation": 44294.18,
+      "start_date": "2024-10-01",
+      "end_date": "2029-09-30",
+      "description": "NEWHALEN FY25 66V AND 6V1 PLANNING CONTR",
+      "awarding_agency": "Department of the Interior"
+    }
+  ],
+  "total_obligation": 7889649.82,
+  "award_count": 13,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 53348.95
+    },
+    "66.926": {
+      "count": 2,
+      "total": 867222.0
+    },
+    "20.205": {
+      "count": 10,
+      "total": 6969078.870000001
+    }
+  },
+  "yearly_obligations": {
+    "2022": 340000.74,
+    "2023": 0.0,
+    "2024": 956353.91,
+    "2025": 44294.18,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }

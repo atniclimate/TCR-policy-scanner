@@ -1,9 +1,273 @@
 {
   "tribe_id": "epa_100000065",
   "tribe_name": "Coushatta Tribe of Louisiana",
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "fiscal_year_range": {
+    "start": 2022,
+    "end": 2026
+  },
+  "awards": [
+    {
+      "award_id": "A24AV00825",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 470000.0,
+      "start_date": "2024-07-01",
+      "end_date": "2027-09-30",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMT-2020-PC-0008",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 278064.23,
+      "start_date": "2020-09-09",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01F91001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 408750.0,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE COUSHATTA TRIBE OF LOUISIANA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL CONDUCT ENVIRONMENTAL OUTREACH WITH TRIBAL YOUTH AND THE COMMUNITY, HOST AN EARTH DAY OUTREACH EVENT, CREATE A CLIMATE CHANGE ADAPTATION PLAN, BEGIN DEVELOPING A BASELINE INDOOR AIR TESTING PROGRAM, BEGIN DEVELOPING A WATER MANAGEMENT STRATEGY, UPDATE INTEGRATED WASTE MANAGEMENT PLAN, HOST A HOUSEHOLD HAZARDOUS WASTE COLLECTION EVENT, AND BEGIN DEVELOPING SOLID WASTE ORDINANCES.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "02F56101",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 270000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE COUSHATTA TRIBE OF LOUISIANA TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. COUSHATTA TRIBE IS DEDICATING THE PROJECT TO BUILD CAPACITY IN THE OFFICE, CONTINUE THEIR SOLID WASTE ACTIVITIES AND EDUCATE THE TRIBE ON ENVIRONMENTAL ISSUES. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO EDUCATE THE TRIBE ON ENVIRONMENTAL ISSUES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:SEMI-ANNUAL PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT, QUALITY MANAGEMENT PLAN, AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE COUSHATTA TRIBE OF LOUISANA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A19AV00408",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 938038.34,
+      "start_date": "2011-01-01",
+      "end_date": "2024-12-31",
+      "description": "A19AV00408",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00709",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 63628.73,
+      "start_date": "2021-08-24",
+      "end_date": "2024-12-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00409",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 18608.91,
+      "start_date": "2011-01-01",
+      "end_date": "2024-12-31",
+      "description": "A19AV00409",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42330000V170LA0113",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 1035000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600LA0113",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 789024.32,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17ALA3113024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 1894050.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: COUSHATTA TRIBE OF LOUISIANA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL TRIBAL TRANSPORTATION FUNDING PROVIDED TO COUSHATTA TRIBE OF LOUISIANA THROUGH THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600LA0113",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 1599824.89,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602LA3113024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 1533046.22,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: COUSHATTA TRIBE OF LOUISIANA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL TRIBAL TRANSPORTATION FUNDING PROVIDED TO COUSHATTA TRIBE OF LOUISIANA THROUGH THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000K600LA0113",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 1103510.67,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM AND SAFETY AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V172LA0113",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 874000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000G600LA0113",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 568534.31,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176LA3113024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 87491.39,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: COUSHATTA TRIBE OF LOUISIANA FY24 TRIBAL TRANSPORTATION FUNDING :::: PROJECT DESCRIPTION: ALL TRIBAL TRANSPORTATION FUNDING PROVIDED TO COUSHATTA TRIBE OF LOUISIANA THROUGH THE OTT TRIBAL TRANSPORTATION PROGRAM AGREEMENT.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271LA3113025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 2171900.0,
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: COUSHATTA TRIBE OF LOUISIANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO COUSHATTA TRIBE OF LOUISIANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602LA3113025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 566531.99,
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: COUSHATTA TRIBE OF LOUISIANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO COUSHATTA TRIBE OF LOUISIANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177LA3113025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 87486.45,
+      "start_date": "2025-03-26",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: COUSHATTA TRIBE OF LOUISIANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO COUSHATTA TRIBE OF LOUISIANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT2203800",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 866758.0,
+      "start_date": "2013-09-26",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2203800",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COUSHATTA TRIBE OF LOUISIANA",
+      "obligation": 35007.0,
+      "start_date": "2021-12-21",
+      "end_date": "2025-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 15659255.45,
+  "award_count": 21,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 470000.0
+    },
+    "97.047": {
+      "count": 1,
+      "total": 278064.23
+    },
+    "66.926": {
+      "count": 2,
+      "total": 678750.0
+    },
+    "20.205": {
+      "count": 15,
+      "total": 13330676.219999999
+    },
+    "14.867": {
+      "count": 2,
+      "total": 901765.0
+    }
+  },
+  "yearly_obligations": {
+    "2022": 443757.0,
+    "2023": 0.0,
+    "2024": 470000.0,
+    "2025": 357486.45,
+    "2026": 0.0
+  },
+  "trend": "increasing"
 }
