@@ -9,13 +9,9 @@ import json
 import logging
 import shutil
 from datetime import datetime, timezone
-from pathlib import Path
+from src.paths import ARCHIVE_DIR, CI_HISTORY_PATH, OUTPUTS_DIR
 
 logger = logging.getLogger(__name__)
-
-OUTPUTS_DIR = Path("outputs")
-ARCHIVE_DIR = OUTPUTS_DIR / "archive"
-CI_HISTORY_PATH = OUTPUTS_DIR / ".ci_history.json"
 
 
 class ReportGenerator:

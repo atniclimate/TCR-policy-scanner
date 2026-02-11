@@ -13,7 +13,17 @@ Example:
 """
 
 from datetime import date
-from pathlib import Path
+
+from src.paths import PROJECT_ROOT
+
+__all__ = [
+    "PROJECT_ROOT",
+    "FISCAL_YEAR_INT",
+    "FISCAL_YEAR_SHORT",
+    "FISCAL_YEAR_LONG",
+    "FISCAL_YEAR_END",
+    "FISCAL_YEAR_START",
+]
 
 
 def _compute_fiscal_year(today: date | None = None) -> int:
@@ -34,9 +44,6 @@ def _compute_fiscal_year(today: date | None = None) -> int:
         return today.year + 1
     return today.year
 
-
-PROJECT_ROOT: Path = Path(__file__).resolve().parent.parent
-"""Absolute path to the project root directory (one level above src/)."""
 
 FISCAL_YEAR_INT: int = _compute_fiscal_year()
 """Current fiscal year as integer (e.g., 2026)."""

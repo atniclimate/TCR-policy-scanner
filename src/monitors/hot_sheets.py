@@ -20,13 +20,11 @@ configurable threshold produce WARNING alerts.
 import json
 import logging
 from datetime import datetime, timezone
-from pathlib import Path
 
 from src.monitors import BaseMonitor, MonitorAlert
+from src.paths import MONITOR_STATE_PATH
 
 logger = logging.getLogger(__name__)
-
-MONITOR_STATE_PATH = Path("outputs/.monitor_state.json")
 
 
 class HotSheetsValidator(BaseMonitor):

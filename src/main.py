@@ -16,7 +16,6 @@ import asyncio
 import json
 import logging
 import sys
-from pathlib import Path
 
 from src.scrapers.federal_register import FederalRegisterScraper
 from src.scrapers.grants_gov import GrantsGovScraper
@@ -28,14 +27,15 @@ from src.graph.builder import GraphBuilder
 from src.reports.generator import ReportGenerator
 from src.monitors import MonitorRunner
 from src.analysis.decision_engine import DecisionEngine
-from src.config import PROJECT_ROOT
+from src.paths import (
+    GRAPH_SCHEMA_PATH,
+    LATEST_GRAPH_PATH,
+    LATEST_MONITOR_DATA_PATH,
+    PROGRAM_INVENTORY_PATH,
+    SCANNER_CONFIG_PATH,
+)
 
 logger = logging.getLogger(__name__)
-
-CONFIG_PATH = PROJECT_ROOT / "config" / "scanner_config.json"
-INVENTORY_PATH = PROJECT_ROOT / "data" / "program_inventory.json"
-GRAPH_OUTPUT_PATH = PROJECT_ROOT / "outputs" / "LATEST-GRAPH.json"
-MONITOR_OUTPUT_PATH = PROJECT_ROOT / "outputs" / "LATEST-MONITOR-DATA.json"
 
 SCRAPERS = {
     "federal_register": FederalRegisterScraper,
@@ -47,13 +47,13 @@ SCRAPERS = {
 
 def load_config() -> dict:
     """Load scanner configuration."""
-    with open(CONFIG_PATH, encoding="utf-8") as f:
+    with open(SCANNER_CONFIG_PATH, encoding="utf-8") as f:
         return json.load(f)
 
 
 def load_programs() -> list[dict]:
     """Load the program inventory."""
-    with open(INVENTORY_PATH, encoding="utf-8") as f:
+    with open(PROGRAM_INVENTORY_PATH, encoding="utf-8") as f:
         data = json.load(f)
     return data["programs"]
 
@@ -102,9 +102,8 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
         print(f"  - {q}")
 
     # Graph schema summary
-    schema_path = PROJECT_ROOT / "data" / "graph_schema.json"
-    if schema_path.exists():
-        with open(schema_path, encoding="utf-8") as f:
+    if GRAPH_SCHEMA_PATH.exists():
+        with open(GRAPH_SCHEMA_PATH, encoding="utf-8") as f:
             schema = json.load(f)
         print(f"\nKnowledge Graph schema:")
         print(f"  Authorities: {len(schema.get('authorities', []))}")
@@ -153,12 +152,12 @@ def build_graph(programs: list[dict], scored_items: list[dict]) -> dict:
     graph_data = graph.to_dict()
 
     # Write graph output (atomic)
-    GRAPH_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    tmp_path = GRAPH_OUTPUT_PATH.with_suffix(".tmp")
+    LATEST_GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = LATEST_GRAPH_PATH.with_suffix(".tmp")
     with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(graph_data, f, indent=2, default=str)
-    tmp_path.replace(GRAPH_OUTPUT_PATH)
-    logger.info("Knowledge graph written to %s", GRAPH_OUTPUT_PATH)
+    tmp_path.replace(LATEST_GRAPH_PATH)
+    logger.info("Knowledge graph written to %s", LATEST_GRAPH_PATH)
 
     return graph_data
 
@@ -206,12 +205,12 @@ def run_monitors_and_classify(
     }
 
     # Save monitor data for Phase 4 reporting (atomic)
-    MONITOR_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    tmp_path = MONITOR_OUTPUT_PATH.with_suffix(".tmp")
+    LATEST_MONITOR_DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = LATEST_MONITOR_DATA_PATH.with_suffix(".tmp")
     with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(monitor_data, f, indent=2, default=str)
-    tmp_path.replace(MONITOR_OUTPUT_PATH)
-    logger.info("Monitor data written to %s", MONITOR_OUTPUT_PATH)
+    tmp_path.replace(LATEST_MONITOR_DATA_PATH)
+    logger.info("Monitor data written to %s", LATEST_MONITOR_DATA_PATH)
 
     return alerts, classifications, monitor_data
 
@@ -255,13 +254,13 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
     )
 
     if graph_only:
-        print(f"\nGraph exported to {GRAPH_OUTPUT_PATH}")
+        print(f"\nGraph exported to {LATEST_GRAPH_PATH}")
         summary = graph_data["summary"]
         print(f"  Nodes: {summary['total_nodes']} ({summary['node_types']})")
         print(f"  Edges: {summary['total_edges']}")
         print(f"  Monitor alerts: {len(alerts)} ({monitor_data['summary']['critical_count']} critical)")
         print(f"  Advocacy goals: {len([c for c in classifications.values() if c.get('advocacy_goal')])} classified")
-        print(f"  Monitor data: {MONITOR_OUTPUT_PATH}")
+        print(f"  Monitor data: {LATEST_MONITOR_DATA_PATH}")
         return
 
     # Stage 5: Reporting
@@ -279,8 +278,8 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
     print(f"  Advocacy goals: {len([c for c in classifications.values() if c.get('advocacy_goal')])} classified")
     print(f"  Briefing: {paths['markdown']}")
     print(f"  JSON:     {paths['json']}")
-    print(f"  Graph:    {GRAPH_OUTPUT_PATH}")
-    print(f"  Monitor data: {MONITOR_OUTPUT_PATH}")
+    print(f"  Graph:    {LATEST_GRAPH_PATH}")
+    print(f"  Monitor data: {LATEST_MONITOR_DATA_PATH}")
 
 
 def main() -> None:

@@ -8,16 +8,16 @@ import json
 import logging
 from pathlib import Path
 
-logger = logging.getLogger(__name__)
+from src.paths import LATEST_RESULTS_PATH
 
-CACHE_FILE = Path("outputs/LATEST-RESULTS.json")
+logger = logging.getLogger(__name__)
 
 
 class ChangeDetector:
     """Detects changes between scan cycles."""
 
     def __init__(self, cache_path: Path | None = None):
-        self.cache_path = cache_path or CACHE_FILE
+        self.cache_path = cache_path or LATEST_RESULTS_PATH
 
     def detect_changes(self, current_items: list[dict]) -> dict:
         """Compare current items to the previous scan and return a change report."""

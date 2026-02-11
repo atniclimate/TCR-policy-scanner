@@ -14,7 +14,8 @@ import logging
 import re
 from pathlib import Path
 
-from src.config import FISCAL_YEAR_SHORT, PROJECT_ROOT
+from src.config import FISCAL_YEAR_SHORT
+from src.paths import GRAPH_SCHEMA_PATH
 from src.graph.schema import (
     ProgramNode, AuthorityNode, FundingVehicleNode,
     BarrierNode, AdvocacyLeverNode, ObligationNode, TrustSuperNode, Edge,
@@ -22,8 +23,6 @@ from src.graph.schema import (
 )
 
 logger = logging.getLogger(__name__)
-
-GRAPH_SCHEMA_PATH = PROJECT_ROOT / "data" / "graph_schema.json"
 
 # Patterns for detecting barriers in scraped text
 BARRIER_PATTERNS = [

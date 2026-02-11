@@ -11,9 +11,10 @@ import asyncio
 import logging
 import random
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
 import aiohttp
+
+from src.paths import CFDA_TRACKER_PATH
 
 logger = logging.getLogger(__name__)
 
@@ -103,8 +104,6 @@ class BaseScraper:
 
 
 # ── Zombie CFDA Detection ──
-
-CFDA_TRACKER_PATH = Path("outputs/.cfda_tracker.json")
 
 
 def check_zombie_cfda(cfda: str, result_count: int, tracker: dict) -> dict | None:
