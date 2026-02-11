@@ -28,6 +28,7 @@ from src.paths import (
     HAZARD_PROFILES_DIR,
     NRI_DIR,
     PROJECT_ROOT,
+    TRIBAL_COUNTY_WEIGHTS_PATH,
     USFS_DIR,
 )
 
@@ -109,6 +110,31 @@ def _resolve_path(raw_path: str) -> Path:
     return p
 
 
+def score_to_rating(score: float) -> str:
+    """Convert 0-100 percentile score to NRI rating string.
+
+    Uses quintile breakpoints as approximation of FEMA's methodology.
+    SOVI/RESL officially use quintiles. Risk/EAL officially use k-means
+    but quintiles are a defensible approximation for area-weighted derived scores.
+
+    Args:
+        score: Percentile score in range 0-100.
+
+    Returns:
+        NRI rating string from "Very Low" to "Very High".
+    """
+    if score >= 80:
+        return "Very High"
+    elif score >= 60:
+        return "Relatively High"
+    elif score >= 40:
+        return "Relatively Moderate"
+    elif score >= 20:
+        return "Relatively Low"
+    else:
+        return "Very Low"
+
+
 class HazardProfileBuilder:
     """Builds per-Tribe hazard profiles from FEMA NRI and USFS data.
 
@@ -156,6 +182,9 @@ class HazardProfileBuilder:
         self._tribe_to_geoids: dict[str, list[str]] = {}
         self._load_crosswalk()
 
+        # Load pre-computed area-weighted AIANNH-to-county crosswalk
+        self._area_weights: dict[str, list[dict]] = self._load_area_weights()
+
     def _load_crosswalk(self) -> None:
         """Load and invert the AIANNH-to-tribe_id crosswalk.
 
@@ -195,6 +224,44 @@ class HazardProfileBuilder:
             len(self._crosswalk),
             len(self._tribe_to_geoids),
         )
+
+    def _load_area_weights(self) -> dict[str, list[dict]]:
+        """Load pre-computed area-weighted AIANNH-to-county crosswalk.
+
+        Reads the JSON file produced by scripts/build_area_crosswalk.py.
+        Each AIANNH GEOID maps to a list of county entries with weights.
+
+        Returns:
+            Dict mapping AIANNH GEOID -> list of {county_fips, weight, overlap_area_sqkm}.
+            Empty dict if file not found.
+        """
+        if not TRIBAL_COUNTY_WEIGHTS_PATH.exists():
+            logger.warning(
+                "Area-weighted crosswalk not found at %s -- "
+                "falling back to unweighted aggregation. "
+                "Run scripts/build_area_crosswalk.py to generate.",
+                TRIBAL_COUNTY_WEIGHTS_PATH,
+            )
+            return {}
+
+        try:
+            with open(TRIBAL_COUNTY_WEIGHTS_PATH, encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.error(
+                "Failed to load area weights from %s: %s",
+                TRIBAL_COUNTY_WEIGHTS_PATH, exc,
+            )
+            return {}
+
+        crosswalk = data.get("crosswalk", {})
+        metadata = data.get("metadata", {})
+        logger.info(
+            "Loaded area-weighted crosswalk: %d AIANNH entities, %d total county links",
+            metadata.get("total_aiannh_entities", len(crosswalk)),
+            metadata.get("total_county_links", 0),
+        )
+        return crosswalk
 
     def _load_nri_county_data(self) -> dict[str, dict]:
         """Parse the NRI county-level CSV file.
@@ -401,19 +468,21 @@ class HazardProfileBuilder:
         county_data: dict[str, dict],
         tribal_counties: dict[str, list[str]],
     ) -> dict:
-        """Aggregate NRI data for a single Tribe.
+        """Aggregate NRI data for a single Tribe using area-weighted averaging.
 
         Resolution chain:
           1. tribe_id -> AIANNH GEOIDs (from crosswalk)
-          2. AIANNH GEOIDs -> county FIPS (from tribal relational data)
-          3. County FIPS -> NRI records (from county data)
+          2. AIANNH GEOIDs -> county FIPS + area weights (from area crosswalk)
+          3. Fallback: AIANNH GEOIDs -> county FIPS (from tribal relational CSV)
+          4. Fallback: state-level county matching (equal weights)
 
-        Aggregation strategy:
-          - Per-hazard risk_score: MAX across overlapping counties
-          - EAL total: SUM across overlapping counties
-          - SOVI score: MAX (worst social vulnerability)
-          - RESL score: MIN (worst community resilience)
-          - Top 3 hazards: ranked by aggregated risk score descending
+        Aggregation strategy (area-weighted):
+          - Percentile scores (risk_score, eal_score, sovi_score, resl_score):
+            weighted AVERAGE proportional to geographic overlap area
+          - Dollar amounts (eal_total): weighted SUM proportional to overlap area
+          - Rating strings: re-derived from weighted scores via score_to_rating()
+          - Non-zero hazards only: zero-score hazard types are omitted
+          - Top 5 hazards: ranked by risk_score descending
 
         Args:
             tribe_id: EPA tribe identifier.
@@ -427,22 +496,41 @@ class HazardProfileBuilder:
         if not county_data:
             return self._empty_nri_profile("NRI county data not loaded")
 
-        # Step 1: Find AIANNH GEOIDs for this tribe
+        # Step 1: Find AIANNH GEOIDs for this Tribe
         geoids = self._tribe_to_geoids.get(tribe_id, [])
 
-        # Step 2: Find county FIPS codes
+        # Step 2: Collect county weights from area-weighted crosswalk
+        county_weights: dict[str, float] = {}  # fips -> weight
         county_fips_set: set[str] = set()
-        if geoids and tribal_counties:
-            for geoid in geoids:
-                fips_list = tribal_counties.get(geoid, [])
-                county_fips_set.update(fips_list)
 
-        # Fallback: if no tribal relational data or no matches, use state-level
+        if geoids and self._area_weights:
+            for geoid in geoids:
+                entries = self._area_weights.get(geoid, [])
+                for entry in entries:
+                    fips = entry["county_fips"]
+                    weight = entry["weight"]
+                    # If same county appears via multiple GEOIDs, sum the weights
+                    county_weights[fips] = county_weights.get(fips, 0.0) + weight
+            county_fips_set = set(county_weights.keys())
+
+        # Fallback: relational CSV with equal weights
+        if not county_weights and geoids and tribal_counties:
+            for geoid in geoids:
+                for fips in tribal_counties.get(geoid, []):
+                    county_fips_set.add(fips)
+            if county_fips_set:
+                equal_w = 1.0 / len(county_fips_set)
+                county_weights = {fips: equal_w for fips in county_fips_set}
+
+        # Last resort: state-level fallback with equal weights
         if not county_fips_set:
             states = tribe.get("states", [])
             if states:
                 state_fips = self._get_state_county_fips(states, county_data)
                 county_fips_set.update(state_fips)
+                if county_fips_set:
+                    equal_w = 1.0 / len(county_fips_set)
+                    county_weights = {fips: equal_w for fips in county_fips_set}
 
         if not county_fips_set:
             return self._empty_nri_profile(
@@ -460,53 +548,73 @@ class HazardProfileBuilder:
                 f"Counties identified ({len(county_fips_set)}) but none found in NRI data"
             )
 
-        # Step 4: Aggregate composite scores
+        # Step 4: Area-weighted composite scores
+        # Normalize weights to matched counties only
+        total_w = sum(county_weights.get(c["fips"], 0.0) for c in matched_counties)
+        if total_w == 0:
+            total_w = len(matched_counties)  # Equal weight fallback
+            norm_weights = {c["fips"]: 1.0 / total_w for c in matched_counties}
+        else:
+            norm_weights = {
+                c["fips"]: county_weights.get(c["fips"], 0.0) / total_w
+                for c in matched_counties
+            }
+
+        # Percentile scores: weighted AVERAGE
         composite = {
-            "risk_score": max(c["risk_score"] for c in matched_counties),
-            "risk_rating": self._max_rating(
-                [c["risk_rating"] for c in matched_counties]
+            "risk_score": round(
+                sum(c["risk_score"] * norm_weights[c["fips"]] for c in matched_counties), 2
             ),
-            "eal_total": sum(c["eal_total"] for c in matched_counties),
-            "eal_score": max(c["eal_score"] for c in matched_counties),
-            "sovi_score": max(c["sovi_score"] for c in matched_counties),
-            "sovi_rating": self._max_rating(
-                [c["sovi_rating"] for c in matched_counties]
+            "eal_score": round(
+                sum(c["eal_score"] * norm_weights[c["fips"]] for c in matched_counties), 2
             ),
-            "resl_score": min(c["resl_score"] for c in matched_counties),
-            "resl_rating": self._min_rating(
-                [c["resl_rating"] for c in matched_counties]
+            "sovi_score": round(
+                sum(c["sovi_score"] * norm_weights[c["fips"]] for c in matched_counties), 2
+            ),
+            "resl_score": round(
+                sum(c["resl_score"] * norm_weights[c["fips"]] for c in matched_counties), 2
+            ),
+            # Dollar amounts: weighted SUM (proportional to overlap area)
+            "eal_total": round(
+                sum(c["eal_total"] * norm_weights[c["fips"]] for c in matched_counties), 2
             ),
         }
 
-        # Step 5: Aggregate per-hazard scores
+        # Re-derive ratings from weighted scores using quintile thresholds
+        composite["risk_rating"] = score_to_rating(composite["risk_score"])
+        composite["eal_rating"] = score_to_rating(composite["eal_score"])
+        composite["sovi_rating"] = score_to_rating(composite["sovi_score"])
+        composite["resl_rating"] = score_to_rating(composite["resl_score"])
+
+        # Step 5: Area-weighted per-hazard scores + non-zero filter
         all_hazards: dict[str, dict] = {}
         for code in NRI_HAZARD_CODES:
             hazard_records = [
-                c["hazards"][code] for c in matched_counties
+                (c["hazards"][code], norm_weights[c["fips"]])
+                for c in matched_counties
                 if code in c.get("hazards", {})
             ]
-            if hazard_records:
-                all_hazards[code] = {
-                    "risk_score": max(h["risk_score"] for h in hazard_records),
-                    "risk_rating": self._max_rating(
-                        [h["risk_rating"] for h in hazard_records]
-                    ),
-                    "eal_total": sum(h["eal_total"] for h in hazard_records),
-                    "annualized_freq": max(
-                        h["annualized_freq"] for h in hazard_records
-                    ),
-                    "num_events": sum(h["num_events"] for h in hazard_records),
-                }
-            else:
-                all_hazards[code] = {
-                    "risk_score": 0.0,
-                    "risk_rating": "",
-                    "eal_total": 0.0,
-                    "annualized_freq": 0.0,
-                    "num_events": 0.0,
-                }
+            if not hazard_records:
+                continue  # Skip -- only non-zero hazards stored
 
-        # Step 6: Top 3 hazards by risk score
+            weighted_risk = sum(h["risk_score"] * w for h, w in hazard_records)
+            weighted_eal = sum(h["eal_total"] * w for h, w in hazard_records)
+            weighted_freq = sum(h["annualized_freq"] * w for h, w in hazard_records)
+            total_events = sum(h["num_events"] * w for h, w in hazard_records)
+
+            # Only store if risk_score is non-zero
+            if weighted_risk <= 0:
+                continue
+
+            all_hazards[code] = {
+                "risk_score": round(weighted_risk, 2),
+                "risk_rating": score_to_rating(weighted_risk),
+                "eal_total": round(weighted_eal, 2),
+                "annualized_freq": round(weighted_freq, 4),
+                "num_events": round(total_events, 2),
+            }
+
+        # Step 6: Top 5 hazards by risk score
         sorted_hazards = sorted(
             all_hazards.items(),
             key=lambda x: x[1]["risk_score"],
@@ -520,11 +628,11 @@ class HazardProfileBuilder:
                 "risk_rating": data["risk_rating"],
                 "eal_total": data["eal_total"],
             }
-            for code, data in sorted_hazards[:3]
+            for code, data in sorted_hazards[:5]
         ]
 
         return {
-            "version": "1.20",
+            "version": "NRI_v1.20",
             "counties_analyzed": len(matched_counties),
             "composite": composite,
             "top_hazards": top_hazards,
@@ -541,7 +649,7 @@ class HazardProfileBuilder:
             Dict with null/zero values and a note field.
         """
         return {
-            "version": "1.20",
+            "version": "",
             "counties_analyzed": 0,
             "note": note,
             "composite": {
@@ -549,84 +657,15 @@ class HazardProfileBuilder:
                 "risk_rating": "",
                 "eal_total": 0.0,
                 "eal_score": 0.0,
+                "eal_rating": "",
                 "sovi_score": 0.0,
                 "sovi_rating": "",
                 "resl_score": 0.0,
                 "resl_rating": "",
             },
             "top_hazards": [],
-            "all_hazards": {
-                code: {
-                    "risk_score": 0.0,
-                    "risk_rating": "",
-                    "eal_total": 0.0,
-                    "annualized_freq": 0.0,
-                    "num_events": 0.0,
-                }
-                for code in NRI_HAZARD_CODES
-            },
+            "all_hazards": {},
         }
-
-    @staticmethod
-    def _max_rating(ratings: list[str]) -> str:
-        """Return the highest NRI risk rating from a list.
-
-        NRI ratings: Very Low < Relatively Low < Relatively Moderate
-                   < Relatively High < Very High
-
-        Args:
-            ratings: List of NRI rating strings.
-
-        Returns:
-            The highest rating found, or empty string if none.
-        """
-        order = [
-            "Very Low",
-            "Relatively Low",
-            "Relatively Moderate",
-            "Relatively High",
-            "Very High",
-        ]
-        best_idx = -1
-        best_val = ""
-        for r in ratings:
-            r_stripped = r.strip()
-            if r_stripped in order:
-                idx = order.index(r_stripped)
-                if idx > best_idx:
-                    best_idx = idx
-                    best_val = r_stripped
-        return best_val
-
-    @staticmethod
-    def _min_rating(ratings: list[str]) -> str:
-        """Return the lowest NRI rating from a list (worst resilience).
-
-        Used for community resilience where lower = worse.
-
-        Args:
-            ratings: List of NRI rating strings.
-
-        Returns:
-            The lowest rating found, or empty string if none.
-        """
-        order = [
-            "Very Low",
-            "Relatively Low",
-            "Relatively Moderate",
-            "Relatively High",
-            "Very High",
-        ]
-        best_idx = len(order)
-        best_val = ""
-        for r in ratings:
-            r_stripped = r.strip()
-            if r_stripped in order:
-                idx = order.index(r_stripped)
-                if idx < best_idx:
-                    best_idx = idx
-                    best_val = r_stripped
-        return best_val
 
     def _load_usfs_wildfire_data(self) -> dict[str, dict]:
         """Parse the USFS Wildfire Risk to Communities XLSX.

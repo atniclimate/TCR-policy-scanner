@@ -1025,7 +1025,7 @@ class TestHazardProfileBuilder:
         assert county_data["40001"]["hazards"]["DRGT"]["risk_score"] == 70.0
 
     def test_tribe_profile_aggregation(self, hazard_config: dict) -> None:
-        """Verify multi-county Tribes get max risk scores across counties."""
+        """Verify multi-county Tribes get area-weighted average scores."""
         from src.packets.hazards import HazardProfileBuilder
         builder = HazardProfileBuilder(hazard_config)
         county_data = builder._load_nri_county_data()
@@ -1034,16 +1034,16 @@ class TestHazardProfileBuilder:
         tribe = {"tribe_id": "epa_001", "name": "Alpha Tribe of Arizona", "states": ["AZ"]}
         profile = builder._build_tribe_nri_profile("epa_001", tribe, county_data, tribal_counties)
 
-        # epa_001 spans 04001 (85.5) and 04003 (70.0); MAX should be 85.5
-        assert profile["composite"]["risk_score"] == 85.5
         assert profile["counties_analyzed"] == 2
-        # WFIR: MAX of 88.0 and 92.0 = 92.0
-        assert profile["all_hazards"]["WFIR"]["risk_score"] == 92.0
-        # EAL for WFIR: SUM of 200000 + 300000 = 500000
-        assert profile["all_hazards"]["WFIR"]["eal_total"] == 500000.0
+        # epa_001 spans 04001 (85.5) and 04003 (70.0); weighted avg = 77.75
+        assert profile["composite"]["risk_score"] == 77.75
+        # WFIR: weighted avg of 88.0 and 92.0 = 90.0
+        assert profile["all_hazards"]["WFIR"]["risk_score"] == 90.0
+        # EAL for WFIR: weighted sum of 200000*0.5 + 300000*0.5 = 250000
+        assert profile["all_hazards"]["WFIR"]["eal_total"] == 250000.0
 
     def test_top_hazards_ranking(self, hazard_config: dict) -> None:
-        """Verify top 3 hazards are ordered by risk score descending."""
+        """Verify top 5 hazards are ordered by risk score descending."""
         from src.packets.hazards import HazardProfileBuilder
         builder = HazardProfileBuilder(hazard_config)
         county_data = builder._load_nri_county_data()
@@ -1053,11 +1053,12 @@ class TestHazardProfileBuilder:
         profile = builder._build_tribe_nri_profile("epa_001", tribe, county_data, tribal_counties)
 
         top = profile["top_hazards"]
+        # Only 3 non-zero hazard types in test data (WFIR, DRGT, HRCN)
         assert len(top) == 3
         # Scores should be descending
         assert top[0]["risk_score"] >= top[1]["risk_score"]
         assert top[1]["risk_score"] >= top[2]["risk_score"]
-        # WFIR should be highest (92.0)
+        # WFIR should be highest (weighted avg 90.0)
         assert top[0]["code"] == "WFIR"
         assert top[0]["type"] == "Wildfire"
 

@@ -464,25 +464,19 @@ class TribeRecord(BaseModel):
 class FundingRecord(BaseModel):
     """Individual USAspending award record for a Tribal Nation.
 
-    Currently a stub schema -- all 592 award_cache files have
-    award_count=0 and empty awards arrays. This model defines
-    the expected structure for when USAspending data is populated.
+    Populated by TribalAwardMatcher.match_all_awards() from live
+    USAspending API data. Each record represents a single matched
+    award with normalized fields.
 
-    Expected source: USAspending.gov API /api/v2/search/spending_by_award/
-    filtered by CFDA numbers from program_inventory.json and
-    recipient Tribal Nation names.
+    Source: USAspending.gov API /api/v2/search/spending_by_award/
+    filtered by CFDA numbers and Tribal government recipient type.
     """
 
     award_id: Optional[str] = Field(
         default=None,
-        description="USAspending internal award ID",
+        description="USAspending award ID (e.g., 'A18AP00211')",
     )
-    award_type: Optional[str] = Field(
-        default=None,
-        description="Award type (grant, contract, etc.)",
-        examples=["grant", "cooperative_agreement", "contract"],
-    )
-    cfda_number: Optional[str] = Field(
+    cfda: Optional[str] = Field(
         default=None,
         description="CFDA/Assistance Listing number for the award",
         examples=["15.156", "66.926"],
@@ -492,15 +486,14 @@ class FundingRecord(BaseModel):
         description="Mapped TCR program ID based on CFDA number",
         examples=["bia_tcr", "epa_gap"],
     )
-    amount: float = Field(
+    recipient_name_raw: Optional[str] = Field(
+        default=None,
+        description="Original recipient name from USAspending (before matching)",
+    )
+    obligation: float = Field(
         default=0.0,
         description="Total obligation amount in USD",
         examples=[150000.0, 2500000.0],
-    )
-    fiscal_year: Optional[str] = Field(
-        default=None,
-        description="Fiscal year of the obligation",
-        examples=["FY24", "FY25"],
     )
     description: Optional[str] = Field(
         default=None,
@@ -520,11 +513,26 @@ class FundingRecord(BaseModel):
     )
 
 
+class CFDASummaryEntry(BaseModel):
+    """Per-CFDA summary statistics within an award cache file."""
+
+    count: int = Field(default=0, ge=0, description="Number of awards for this CFDA")
+    total: float = Field(default=0.0, description="Total obligation for this CFDA")
+
+
+class FiscalYearRange(BaseModel):
+    """Fiscal year range for the award cache query window."""
+
+    start: int = Field(..., description="First fiscal year (e.g., 2022)")
+    end: int = Field(..., description="Last fiscal year (e.g., 2026)")
+
+
 class AwardCacheFile(BaseModel):
     """Per-Tribe award cache file structure.
 
     Maps to a complete award_cache/{tribe_id}.json file.
-    Contains the Tribe identity, award records, and summary statistics.
+    Contains the Tribe identity, award records, yearly obligation
+    breakdowns, CFDA summaries, and a funding trend indicator.
     """
 
     tribe_id: str = Field(
@@ -536,9 +544,13 @@ class AwardCacheFile(BaseModel):
         ...,
         description="Official Tribal Nation name",
     )
+    fiscal_year_range: Optional[FiscalYearRange] = Field(
+        default=None,
+        description="Fiscal year range of the award query window",
+    )
     awards: list[FundingRecord] = Field(
         default_factory=list,
-        description="List of USAspending award records (currently empty for all 592 Tribes)",
+        description="List of matched USAspending award records",
     )
     total_obligation: float = Field(
         default=0.0,
@@ -550,13 +562,21 @@ class AwardCacheFile(BaseModel):
         ge=0,
         description="Number of awards in the cache",
     )
-    cfda_summary: dict[str, float] = Field(
+    cfda_summary: dict[str, CFDASummaryEntry] = Field(
         default_factory=dict,
-        description="Obligation totals grouped by CFDA number",
+        description="Per-CFDA award count and obligation total",
+    )
+    yearly_obligations: Optional[dict[str, float]] = Field(
+        default=None,
+        description="Obligation totals by fiscal year (string keys)",
+    )
+    trend: Optional[str] = Field(
+        default=None,
+        description="Funding trend indicator: none, new, increasing, decreasing, stable",
     )
     no_awards_context: Optional[str] = Field(
         default=None,
-        description="Context message when no awards are found",
+        description="Context message when no awards are found (first-time applicant)",
     )
 
     @field_validator("tribe_id")
@@ -638,6 +658,10 @@ class NRIComposite(BaseModel):
         default=0.0,
         ge=0.0,
         description="EAL score (normalized)",
+    )
+    eal_rating: str = Field(
+        default="",
+        description="Expected Annual Loss rating",
     )
     sovi_score: float = Field(
         default=0.0,
