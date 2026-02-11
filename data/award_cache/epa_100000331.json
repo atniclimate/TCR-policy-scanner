@@ -16,14 +16,29 @@
       "end_date": "2027-09-30",
       "description": "DROUGHT ASSESSMENT AND ADAPTATION PLAN FOR THE YANKTON SIOUX TRIBE",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH4618920",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YANKTON SIOUX HOUSING AUTHORITY",
+      "obligation": 35291327.5,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 240100.0,
-  "award_count": 1,
+  "total_obligation": 35531427.5,
+  "award_count": 2,
   "cfda_summary": {
     "15.156": {
       "count": 1,
       "total": 240100.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 35291327.5
     }
   },
   "yearly_obligations": {

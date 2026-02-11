@@ -18,6 +18,50 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH5318320",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YAKAMA NATION HOUSING AUTHORITY",
+      "obligation": 108823651.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5318320",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YAKAMA NATION HOUSING AUTHORITY",
+      "obligation": 4325495.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXWA18320",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YAKAMA NATION HOUSING AUTHORITY",
+      "obligation": 6000000.0,
+      "start_date": "2025-01-24",
+      "end_date": "2028-03-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000175",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "YAKAMA NATION HOUSING AUTHORITY",
+      "obligation": 1020916.0,
+      "start_date": "2024-01-01",
+      "end_date": "2026-04-30",
+      "description": "WISHRAM GORGE VIEW COUNTRY LOOP PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
       "award_id": "23DG11062752136",
       "cfda": "10.720",
       "program_id": "usda_wildfire",
@@ -62,12 +106,20 @@
       "awarding_agency": "Department of the Interior"
     }
   ],
-  "total_obligation": 6822257.0,
-  "award_count": 5,
+  "total_obligation": 126992319.0,
+  "award_count": 9,
   "cfda_summary": {
     "15.156": {
       "count": 1,
       "total": 701740.0
+    },
+    "14.867": {
+      "count": 3,
+      "total": 119149146.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 1020916.0
     },
     "10.720": {
       "count": 1,
@@ -81,9 +133,9 @@
   "yearly_obligations": {
     "2022": 570965.0,
     "2023": 2700875.0,
-    "2024": 2848677.0,
-    "2025": 701740.0,
+    "2024": 3869593.0,
+    "2025": 6701740.0,
     "2026": 0.0
   },
-  "trend": "stable"
+  "trend": "increasing"
 }

@@ -40,6 +40,17 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH2017920",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KICKAPOO TRIBE HOUSING AUTHORITY",
+      "obligation": 14408964.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "97788801",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -51,8 +62,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 266012.93,
-  "award_count": 4,
+  "total_obligation": 14674976.93,
+  "award_count": 5,
   "cfda_summary": {
     "66.926": {
       "count": 1,
@@ -61,6 +72,10 @@
     "20.205": {
       "count": 2,
       "total": 51445.92999999999
+    },
+    "14.867": {
+      "count": 1,
+      "total": 14408964.0
     },
     "66.038": {
       "count": 1,

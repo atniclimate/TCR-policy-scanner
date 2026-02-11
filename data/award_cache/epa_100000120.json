@@ -18,6 +18,28 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "EMF-2022-PC-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "KARUK TRIBE HOUSING AUTHORITY",
+      "obligation": 810885.24,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMF-2022-BR-002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "KARUK TRIBE HOUSING AUTHORITY",
+      "obligation": 1078000.0,
+      "start_date": "2024-07-18",
+      "end_date": "2027-07-17",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
       "award_id": "693JG42230000V600CA0051",
       "cfda": "20.205",
       "program_id": "fhwa_ttp_safety",
@@ -106,6 +128,17 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH0617850",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KARUK TRIBE HOUSING AUTHORITY",
+      "obligation": 67589085.95,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "DEIE0000160",
       "cfda": "81.087",
       "program_id": "doe_indian_energy",
@@ -117,16 +150,24 @@
       "awarding_agency": "Department of Energy"
     }
   ],
-  "total_obligation": 7681411.7,
-  "award_count": 10,
+  "total_obligation": 77159382.89,
+  "award_count": 13,
   "cfda_summary": {
     "15.156": {
       "count": 1,
       "total": 50000.0
     },
+    "97.047": {
+      "count": 2,
+      "total": 1888885.24
+    },
     "20.205": {
       "count": 8,
       "total": 5640545.700000001
+    },
+    "14.867": {
+      "count": 1,
+      "total": 67589085.95
     },
     "81.087": {
       "count": 1,
@@ -136,7 +177,7 @@
   "yearly_obligations": {
     "2022": 1990866.0,
     "2023": 0.0,
-    "2024": 0.0,
+    "2024": 1078000.0,
     "2025": 366822.4,
     "2026": 0.0
   },

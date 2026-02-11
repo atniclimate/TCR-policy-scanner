@@ -95,6 +95,28 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH3201850",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WASHOE HOUSING AUTHORITY",
+      "obligation": 27663744.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXNV01850",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WASHOE HOUSING AUTHORITY",
+      "obligation": 5000000.0,
+      "start_date": "2025-01-15",
+      "end_date": "2027-12-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "97T17501",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -117,8 +139,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 7092470.53,
-  "award_count": 10,
+  "total_obligation": 39756214.53,
+  "award_count": 12,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -132,6 +154,10 @@
       "count": 4,
       "total": 5479003.98
     },
+    "14.867": {
+      "count": 2,
+      "total": 32663744.0
+    },
     "66.038": {
       "count": 2,
       "total": 97548.0
@@ -141,8 +167,8 @@
     "2022": 3021303.58,
     "2023": 0.0,
     "2024": 0.0,
-    "2025": 47548.0,
+    "2025": 5047548.0,
     "2026": 323933.0
   },
-  "trend": "decreasing"
+  "trend": "increasing"
 }

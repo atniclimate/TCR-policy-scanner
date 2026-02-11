@@ -7,6 +7,28 @@
   },
   "awards": [
     {
+      "award_id": "A20AP00205",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "POKAGON BAND OF POTAWATOMI",
+      "obligation": 75600.0,
+      "start_date": "2020-06-01",
+      "end_date": "2025-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00798",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "POKAGON BAND OF POTAWATOMI",
+      "obligation": 251898.0,
+      "start_date": "2024-08-01",
+      "end_date": "2026-07-31",
+      "description": "TRIBAL CLIMATE RESILIENCE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
       "award_id": "A19AV00569",
       "cfda": "15.124",
       "program_id": "bia_tcr_awards",
@@ -126,11 +148,37 @@
       "end_date": null,
       "description": "PROJECT TITLE: PUEBLO OF ISLETA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF ISLETA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT2650440",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "POKAGON BAND OF POTAWATOMI",
+      "obligation": 46480869.0,
+      "start_date": "2011-10-18",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2650440",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "POKAGON BAND OF POTAWATOMI",
+      "obligation": 1474353.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 7159761.06,
-  "award_count": 11,
+  "total_obligation": 55442481.06,
+  "award_count": 15,
   "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 327498.0
+    },
     "15.124": {
       "count": 1,
       "total": 338912.0
@@ -146,14 +194,18 @@
     "20.205": {
       "count": 7,
       "total": 5958815.319999999
+    },
+    "14.867": {
+      "count": 2,
+      "total": 47955222.0
     }
   },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 0.0,
-    "2024": 0.0,
+    "2024": 251898.0,
     "2025": 310000.0,
     "2026": 0.0
   },
-  "trend": "new"
+  "trend": "stable"
 }

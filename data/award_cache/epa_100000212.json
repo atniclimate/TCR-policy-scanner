@@ -172,6 +172,28 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH3500020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PUEBLO OF ACOMA HOUSING AUTHORITY",
+      "obligation": 22302126.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3500020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PUEBLO OF ACOMA HOUSING AUTHORITY",
+      "obligation": 709741.0,
+      "start_date": "2022-01-21",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "DEIE0000076",
       "cfda": "81.087",
       "program_id": "doe_indian_energy",
@@ -194,8 +216,8 @@
       "awarding_agency": "Department of the Interior"
     }
   ],
-  "total_obligation": 117224725.2,
-  "award_count": 17,
+  "total_obligation": 140236592.2,
+  "award_count": 19,
   "cfda_summary": {
     "66.926": {
       "count": 2,
@@ -204,6 +226,10 @@
     "20.205": {
       "count": 13,
       "total": 116408709.09
+    },
+    "14.867": {
+      "count": 2,
+      "total": 23011867.0
     },
     "81.087": {
       "count": 1,
@@ -215,11 +241,11 @@
     }
   },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 709741.0,
     "2023": 0.0,
     "2024": 0.0,
     "2025": 1036421.57,
     "2026": 0.0
   },
-  "trend": "new"
+  "trend": "increasing"
 }

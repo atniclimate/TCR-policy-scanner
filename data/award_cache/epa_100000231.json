@@ -5,10 +5,38 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "55IH5312700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "QUINAULT HOUSING AUTHORITY",
+      "obligation": 36149824.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5312700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "QUINAULT HOUSING AUTHORITY",
+      "obligation": 1366958.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 37516782.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "14.867": {
+      "count": 2,
+      "total": 37516782.0
+    }
+  },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 0.0,
@@ -16,6 +44,5 @@
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "none"
 }

@@ -38,14 +38,29 @@
       "end_date": "2025-05-01",
       "description": "TTP-SAFETY FUND",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH4023720",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PEORIA HOUSING AUTHORITY",
+      "obligation": 29400574.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 219839.72,
-  "award_count": 3,
+  "total_obligation": 29620413.72,
+  "award_count": 4,
   "cfda_summary": {
     "20.205": {
       "count": 3,
       "total": 219839.72
+    },
+    "14.867": {
+      "count": 1,
+      "total": 29400574.0
     }
   },
   "yearly_obligations": {

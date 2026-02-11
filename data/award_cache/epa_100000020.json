@@ -137,10 +137,32 @@
       "end_date": "2025-09-30",
       "description": "PROJECT TITLE: BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION OF MONTANA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO BLACKFEET TRIBE OF THE BLACKFEET INDIAN RESERVATION OF MONTANA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH3000680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "BLACKFEET HOUSING PROGRAM",
+      "obligation": 116934573.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3000680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "BLACKFEET HOUSING PROGRAM",
+      "obligation": 4697346.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 21040421.84,
-  "award_count": 12,
+  "total_obligation": 142672340.84,
+  "award_count": 14,
   "cfda_summary": {
     "15.156": {
       "count": 3,
@@ -149,6 +171,10 @@
     "20.205": {
       "count": 9,
       "total": 19470969.84
+    },
+    "14.867": {
+      "count": 2,
+      "total": 121631919.0
     }
   },
   "yearly_obligations": {

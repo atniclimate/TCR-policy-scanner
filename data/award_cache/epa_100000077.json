@@ -104,10 +104,32 @@
       "end_date": "2022-09-30",
       "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH4009160",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "EASTERN SHAWNEE TRIBAL HOUSING AUTHORITY",
+      "obligation": 1504993.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4009160",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "EASTERN SHAWNEE TRIBAL HOUSING AUTHORITY",
+      "obligation": 47527.0,
+      "start_date": "2022-02-16",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 15389756.9,
-  "award_count": 9,
+  "total_obligation": 16942276.9,
+  "award_count": 11,
   "cfda_summary": {
     "66.926": {
       "count": 1,
@@ -116,10 +138,14 @@
     "20.205": {
       "count": 8,
       "total": 14929756.899999999
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1552520.0
     }
   },
   "yearly_obligations": {
-    "2022": 4731904.86,
+    "2022": 4779431.86,
     "2023": 0.0,
     "2024": 0.0,
     "2025": 0.0,

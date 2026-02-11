@@ -93,14 +93,40 @@
       "end_date": "2025-09-30",
       "description": "PROJECT TITLE: SUSANVILLE INDIAN RANCHERIA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SUSANVILLE INDIAN RANCHERIA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH5315520",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SWINOMISH HOUSING AUTHORITY",
+      "obligation": 23376264.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "55IH0636680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SUSANVILLE INDIAN RANCHERIA HOUSING AUTHORITY",
+      "obligation": 15088625.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 1086567.01,
-  "award_count": 8,
+  "total_obligation": 39551456.01,
+  "award_count": 10,
   "cfda_summary": {
     "20.205": {
       "count": 8,
       "total": 1086567.01
+    },
+    "14.867": {
+      "count": 2,
+      "total": 38464889.0
     }
   },
   "yearly_obligations": {

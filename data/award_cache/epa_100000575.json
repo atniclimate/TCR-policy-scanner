@@ -5,10 +5,27 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "55IT2730940",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MILLE LACS BAND OF OJIBWE",
+      "obligation": 29874165.0,
+      "start_date": "2011-10-18",
+      "end_date": "2031-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 29874165.0,
+  "award_count": 1,
+  "cfda_summary": {
+    "14.867": {
+      "count": 1,
+      "total": 29874165.0
+    }
+  },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 0.0,
@@ -16,6 +33,5 @@
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "none"
 }

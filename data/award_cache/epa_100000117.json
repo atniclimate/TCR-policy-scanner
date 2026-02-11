@@ -49,14 +49,29 @@
       "end_date": "2027-09-30",
       "description": "TO DISTRIBUTE FUNDS",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH3503140",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "JICARILLA APACHE HOUSING AUTHORITY",
+      "obligation": 23298568.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 11242749.83,
-  "award_count": 4,
+  "total_obligation": 34541317.83,
+  "award_count": 5,
   "cfda_summary": {
     "20.205": {
       "count": 4,
       "total": 11242749.830000002
+    },
+    "14.867": {
+      "count": 1,
+      "total": 23298568.0
     }
   },
   "yearly_obligations": {

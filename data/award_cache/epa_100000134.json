@@ -38,10 +38,32 @@
       "end_date": "2026-09-30",
       "description": "TRIBAL TRANSPORTATION PROGRAM (TTP) ROAD CONSTRUCTION",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH5534180",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LAC COURTE OREILLES HOUSING AUTHORITY",
+      "obligation": 47434460.76,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5534180",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LAC COURTE OREILLES HOUSING AUTHORITY",
+      "obligation": 2219638.0,
+      "start_date": "2022-01-28",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 7349453.0,
-  "award_count": 3,
+  "total_obligation": 57003551.76,
+  "award_count": 5,
   "cfda_summary": {
     "97.047": {
       "count": 1,
@@ -50,14 +72,18 @@
     "20.205": {
       "count": 2,
       "total": 7273953.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 49654098.76
     }
   },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 2219638.0,
     "2023": 0.0,
     "2024": 75500.0,
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "stable"
+  "trend": "decreasing"
 }

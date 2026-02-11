@@ -5,17 +5,140 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "A20AP00176",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 150000.0,
+      "start_date": "2020-06-01",
+      "end_date": "2025-05-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00504",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 23369325.88,
+      "start_date": "2005-02-15",
+      "end_date": "2026-12-31",
+      "description": "UPPER SKAGIT TRIBE SINGLE ACT AGREEMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00250",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 3837208.0,
+      "start_date": "2024-10-01",
+      "end_date": "2029-09-30",
+      "description": "UPPER SKAGIT INDIAN TRIBE TCR CATEGORY 2 - IMPLEMENTATION\nFINAL DESIGN AND CONSTRUCTION OF POTABLE WATER INTERTIE TO MITIGATE CLIMATE CHANGE RISKS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "EMS-2019-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 773420.2,
+      "start_date": "2018-10-01",
+      "end_date": null,
+      "description": "PRE-DISASTER MITIGATION",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2020-BR-125-0002",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 499500.0,
+      "start_date": "2022-03-17",
+      "end_date": "2025-03-16",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2020-BR-125-0003",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 100500.0,
+      "start_date": "2022-03-17",
+      "end_date": "2025-03-16",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2020-BR-125-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 66666.0,
+      "start_date": "2022-03-17",
+      "end_date": "2025-03-16",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "EMS-2021-BR-048",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 665000.0,
+      "start_date": "2023-11-18",
+      "end_date": "2026-11-17",
+      "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "55IT5316570",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 20617204.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5316570",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "DOI TRB WA UPPER SKAGIT INDIAN TRIBE",
+      "obligation": 1017784.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 51096608.08,
+  "award_count": 10,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 27356533.88
+    },
+    "97.047": {
+      "count": 5,
+      "total": 2105086.2
+    },
+    "14.867": {
+      "count": 2,
+      "total": 21634988.0
+    }
+  },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 666666.0,
     "2023": 0.0,
-    "2024": 0.0,
-    "2025": 0.0,
+    "2024": 665000.0,
+    "2025": 3837208.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "increasing"
 }

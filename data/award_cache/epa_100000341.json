@@ -115,10 +115,32 @@
       "end_date": "2025-09-30",
       "description": "PROJECT TITLE: AGDAAGUX TRIBE OF KING COVE TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO AGDAAGUX TRIBE OF KING COVE UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH3506730",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ZUNI HOUSING AUTHORITY",
+      "obligation": 51681805.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3506730",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ZUNI HOUSING AUTHORITY",
+      "obligation": 1880246.0,
+      "start_date": "2022-02-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 1274484.32,
-  "award_count": 10,
+  "total_obligation": 54836535.32,
+  "award_count": 12,
   "cfda_summary": {
     "66.926": {
       "count": 2,
@@ -127,14 +149,18 @@
     "20.205": {
       "count": 8,
       "total": 352999.32
+    },
+    "14.867": {
+      "count": 2,
+      "total": 53562051.0
     }
   },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 1880246.0,
     "2023": 0.0,
     "2024": 427955.0,
     "2025": 29244.92,
     "2026": 0.0
   },
-  "trend": "stable"
+  "trend": "decreasing"
 }

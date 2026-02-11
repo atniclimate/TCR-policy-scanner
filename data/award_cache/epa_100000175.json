@@ -139,6 +139,17 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH3005720",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NORTHERN CHEYENNE TRIBAL HOUSING AUTHORITY",
+      "obligation": 47240133.0,
+      "start_date": "2012-02-07",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "DEIE0000122",
       "cfda": "81.087",
       "program_id": "doe_indian_energy",
@@ -150,8 +161,8 @@
       "awarding_agency": "Department of Energy"
     }
   ],
-  "total_obligation": 20381301.98,
-  "award_count": 13,
+  "total_obligation": 67621434.98,
+  "award_count": 14,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -164,6 +175,10 @@
     "20.205": {
       "count": 8,
       "total": 15423418.720000003
+    },
+    "14.867": {
+      "count": 1,
+      "total": 47240133.0
     },
     "81.087": {
       "count": 1,

@@ -126,10 +126,32 @@
       "end_date": "2025-09-30",
       "description": "PROJECT TITLE: PAWNEE NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PAWNEE NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH4023540",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PAWNEE NATION HOUSING AUTHORITY",
+      "obligation": 11179345.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4023540",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PAWNEE NATION HOUSING AUTHORITY",
+      "obligation": 393928.0,
+      "start_date": "2022-06-10",
+      "end_date": "2025-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 10759902.99,
-  "award_count": 11,
+  "total_obligation": 22333175.99,
+  "award_count": 13,
   "cfda_summary": {
     "66.926": {
       "count": 1,
@@ -138,10 +160,14 @@
     "20.205": {
       "count": 10,
       "total": 10189902.989999998
+    },
+    "14.867": {
+      "count": 2,
+      "total": 11573273.0
     }
   },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 393928.0,
     "2023": 570000.0,
     "2024": 0.0,
     "2025": 330804.02,

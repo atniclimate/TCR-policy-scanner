@@ -5,17 +5,48 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "55IH4613400",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "OGLALA LAKOTA HOUSING AUTHORITY",
+      "obligation": 187688198.0,
+      "start_date": "2012-02-07",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000172",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "OGLALA LAKOTA HOUSING AUTHORITY",
+      "obligation": 597654.0,
+      "start_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "description": "OGLALA OMASTE NUNPA",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 188285852.0,
+  "award_count": 2,
+  "cfda_summary": {
+    "14.867": {
+      "count": 1,
+      "total": 187688198.0
+    },
+    "81.087": {
+      "count": 1,
+      "total": 597654.0
+    }
+  },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 0.0,
-    "2024": 0.0,
+    "2024": 597654.0,
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "stable"
 }

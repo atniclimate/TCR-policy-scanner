@@ -139,6 +139,28 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH0405020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WHITE MOUNTAIN APACHE HOUSING AUTHORITY",
+      "obligation": 146163822.0,
+      "start_date": "2012-07-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXAZ05020",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WHITE MOUNTAIN APACHE HOUSING AUTHORITY",
+      "obligation": 6000000.0,
+      "start_date": "2025-01-14",
+      "end_date": "2029-12-28",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "98T41101",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -183,8 +205,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 45102612.6,
-  "award_count": 16,
+  "total_obligation": 197266434.6,
+  "award_count": 18,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -198,6 +220,10 @@
       "count": 9,
       "total": 43487076.599999994
     },
+    "14.867": {
+      "count": 2,
+      "total": 152163822.0
+    },
     "66.038": {
       "count": 4,
       "total": 334849.0
@@ -207,7 +233,7 @@
     "2022": 681079.87,
     "2023": 872503.0,
     "2024": 2733477.0,
-    "2025": 84784.0,
+    "2025": 6084784.0,
     "2026": 86205.0
   },
   "trend": "increasing"

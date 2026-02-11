@@ -71,10 +71,21 @@
       "end_date": "2022-09-30",
       "description": "TRIBAL TRANSPORTATION PLANNING DIST. FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH4020380",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "MODOC HOUSING AUTHORITY",
+      "obligation": 2356221.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 2810362.82,
-  "award_count": 6,
+  "total_obligation": 5166583.82,
+  "award_count": 7,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -87,6 +98,10 @@
     "20.205": {
       "count": 4,
       "total": 2199461.8200000003
+    },
+    "14.867": {
+      "count": 1,
+      "total": 2356221.0
     }
   },
   "yearly_obligations": {

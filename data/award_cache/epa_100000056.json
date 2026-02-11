@@ -18,6 +18,39 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "A18AP00162",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF GRAND RONDE",
+      "obligation": 14925.0,
+      "start_date": "2018-08-28",
+      "end_date": "2019-09-30",
+      "description": "CONTRIGRANDRONDECO_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00042",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF GRAND RONDE",
+      "obligation": 7715.0,
+      "start_date": "2018-10-01",
+      "end_date": "2019-10-31",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4105300",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF GRAND RONDE",
+      "obligation": 43185665.0,
+      "start_date": "2014-04-04",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "55IT4102720",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -26,6 +59,17 @@
       "start_date": "2012-01-06",
       "end_date": "2034-09-30",
       "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4105300",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CONFEDERATED TRIBES OF GRAND RONDE",
+      "obligation": 1943634.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
       "awarding_agency": "Department of Housing and Urban Development"
     },
     {
@@ -40,16 +84,16 @@
       "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 18087488.0,
-  "award_count": 3,
+  "total_obligation": 63239427.0,
+  "award_count": 7,
   "cfda_summary": {
     "15.156": {
-      "count": 1,
-      "total": 148621.0
+      "count": 3,
+      "total": 171261.0
     },
     "14.867": {
-      "count": 2,
-      "total": 17938867.0
+      "count": 4,
+      "total": 63068166.0
     }
   },
   "yearly_obligations": {

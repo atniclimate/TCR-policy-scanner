@@ -29,6 +29,39 @@
       "awarding_agency": "Environmental Protection Agency"
     },
     {
+      "award_id": "A21AV00314",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HO-CHUNK NATION TRANSPORTATION AUTHORITY",
+      "obligation": 43102540.36,
+      "start_date": "2021-01-15",
+      "end_date": "2027-09-30",
+      "description": "TRIBAL TRANSPORTATION PROGRAM - ROADS CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00942",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "HO-CHUNK NATION TRANSPORTATION AUTHORITY",
+      "obligation": 16215031.0,
+      "start_date": "2024-08-01",
+      "end_date": "2026-09-30",
+      "description": "TRIBALTRANSPORTATIONPROGRAM-ROADSCONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH5573180",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HO-CHUNK HOUSING & COMMUNITY DEVELOPMENT AGENCY",
+      "obligation": 75011307.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "24IXWI73180",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -62,16 +95,20 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 6795738.0,
-  "award_count": 5,
+  "total_obligation": 141124616.36,
+  "award_count": 8,
   "cfda_summary": {
     "66.926": {
       "count": 2,
       "total": 503000.0
     },
+    "20.205": {
+      "count": 2,
+      "total": 59317571.36
+    },
     "14.867": {
-      "count": 1,
-      "total": 6000000.0
+      "count": 2,
+      "total": 81011307.0
     },
     "66.038": {
       "count": 2,
@@ -81,7 +118,7 @@
   "yearly_obligations": {
     "2022": 154000.0,
     "2023": 243000.0,
-    "2024": 0.0,
+    "2024": 16215031.0,
     "2025": 6398738.0,
     "2026": 0.0
   },

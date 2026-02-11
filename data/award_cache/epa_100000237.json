@@ -104,10 +104,43 @@
       "end_date": "2031-09-30",
       "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC(C)(3).",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH2738580",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RED LAKE RESERVATION HOUSING",
+      "obligation": 81453489.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2738580",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RED LAKE RESERVATION HOUSING",
+      "obligation": 3147397.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXMN38580",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "RED LAKE RESERVATION HOUSING",
+      "obligation": 5000000.0,
+      "start_date": "2025-01-17",
+      "end_date": "2028-05-01",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 163079820.45,
-  "award_count": 9,
+  "total_obligation": 252680706.45,
+  "award_count": 12,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -120,13 +153,17 @@
     "20.205": {
       "count": 6,
       "total": 162156216.04999998
+    },
+    "14.867": {
+      "count": 3,
+      "total": 89600886.0
     }
   },
   "yearly_obligations": {
     "2022": 48235837.63,
     "2023": 0.0,
     "2024": 722153.4,
-    "2025": 0.0,
+    "2025": 5000000.0,
     "2026": 0.0
   },
   "trend": "decreasing"

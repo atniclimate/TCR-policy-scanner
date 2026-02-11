@@ -5,17 +5,184 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "99T99101",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 875000.0,
+      "start_date": "2019-11-01",
+      "end_date": "2024-09-30",
+      "description": "THE DRINKING WATER TRIBAL SET-ASIDE (DWTSA) FUNDS ARE BEING AWARDED TO THE NAVAJO NATION TO FUND THE OPERATOR CERTIFICATION PROGRAM.  THIS PROGRAM ENSURES WATER OPERATORS ARE CERTIFIED TO THE LEVEL REQUIRED OF THE PUBLIC WATER SYSTEM THEY OPERATE AND MAINTAIN.  TRAINING, EXAMINATIONS, AND TECHNICAL ASSISTANCE ARE PROVIDED BY THE NAVAJO OPERATOR CERTIFICATION PROGRAM.  THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $125,000.  PRE-AWARD COSTS APPROVED BACK TO NOVEMBER 1, 2019.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "97T16301",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 250000.0,
+      "start_date": "2024-10-01",
+      "end_date": "2029-12-31",
+      "description": "DESCRIPTION:THE DRINKING WATER TRIBAL SET-ASIDE (DWTSA) FUNDS ARE BEING AWARDED TO THE NAVAJO NATION TO FUND THE OPERATOR CERTIFICATION PROGRAM.  THIS PROGRAM ENSURES WATER OPERATORS ARE CERTIFIED TO THE LEVEL REQUIRED OF THE PUBLIC WATER SYSTEM THEY OPERATE AND MAINTAIN.  TRAINING, EXAMINATIONS, AND TECHNICAL ASSISTANCE ARE PROVIDED BY THE NAVAJO OPERATOR CERTIFICATION PROGRAM.  THIS ASSISTANCE AGREEMENT PROVIDES FULL FEDERAL FUNDING IN THE AMOUNT OF $250,000.  REFER TO TERMS AND CONDITIONS.  PRE-AWARD COSTS ARE APPROVED BACK TO OCTOBER 1, 2024.\n\nACTIVITIES:ADMINISTER AN OPERATOR CERTIFICATION PROGRAM AND CAPACITY DEVELOPMENT PROGRAM AND KEEP CERTIFICATIONS CURRENT BY TAKING MANDATORY TRAININGS.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND OUTCOMES INCLUDE SUBMITTAL OR RESUBMITTAL OF AN INITIAL APPLICATION TO EPA FOR RECOGNITION AS AN EPA-APPROVED STATE OPERATOR CERTIFICATION PROGRAM WITHIN FY25.  NAVAJO NATION ENVIRONMENTAL PROTECTION AGENCY (NNPEPA) ATTENDANCE OF EPA NATIONAL CAPACITY DEVELOPMENT AND OPERATOR CAPACITY WORKSHOP, EPA-OFFICE OF RESEARCH AND DEVELOPMENT SMALL SYSTEMS COMPLIANCE TECHNOLOGY WORKSHOP, AND PARTICIPATION IN COORDINATED REGIONAL STATE OPERATOR CERTIFICATION AND CAPACITY DEVELOPMENT PROGRAM CALLS. SUBMITTAL OF ANNUAL OPERATOR CERTIFICATION REPORT BY AUGUST 15TH EVERY YEAR. CONTINUE ACTIVE PARTICIPATION IN ASDWA INCLUDING ATTENDANCE OF THE ASSOCIATION OF STATE DRINKING WATER ADMINISTRATORS WINTER MEMBER MEETING AND/OR FALL CONFERENCE.  BENEFICIARIES INCLUDE THOSE RECIPIENTS OF DRINKING WATER WITHIN THE NAVAJO NATION AND STAFF AT NNEPA.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600AZ0028",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 60423929.85,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170AZ0028",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 1310315.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42220000K600AZ0028",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 981402.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600AZ0028",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 59043233.07,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602AZ3028024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 59585674.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NAVAJO NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NAVAJO NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176AZ3028024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 20773901.56,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NAVAJO NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NAVAJO NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AAZ3028024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 5817363.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: NAVAJO NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO NAVAJO NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V170AZ0028",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 4424079.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602AZ3028025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 11969237.0,
+      "start_date": "2025-09-03",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NAVAJO NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED TO NAVAJO NATION BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17BAZ3028025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO NATION TRIBAL GOVERNMENT",
+      "obligation": 11900000.0,
+      "start_date": "2025-09-03",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: NAVAJO NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED TO NAVAJO NATION BY FHWA TO UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH0402810",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NAVAJO HOUSING AUTHORITY",
+      "obligation": 1791883188.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0402810",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NAVAJO HOUSING AUTHORITY",
+      "obligation": 49795966.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 2079033289.51,
+  "award_count": 14,
+  "cfda_summary": {
+    "66.468": {
+      "count": 2,
+      "total": 1125000.0
+    },
+    "20.205": {
+      "count": 10,
+      "total": 236229135.51
+    },
+    "14.867": {
+      "count": 2,
+      "total": 1841679154.0
+    }
+  },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 0.0,
     "2024": 0.0,
-    "2025": 0.0,
+    "2025": 24119237.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "new"
 }

@@ -27,10 +27,32 @@
       "end_date": "2023-09-30",
       "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE COMANCHE NATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE COMMUNITY EDUCATIONS AND OUTREACH, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES AND STRATEGIES TO PREVENT ILLEGAL DUMPING, RECYCLING AND SOLID WASTE CLEAN-UP ACTIVITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANNUAL PROGRESS REPORT, ANNUAL FINAL FEDERAL REPORT, QUALITY MANAGEMENT, INDOOR AIR QUALITY, LEAD BASED PAINT, SOIL AND WATER ASSESSMENT TOOL, MOLD, GEOGRAPHIC INFORMATION SYSTEMS/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN. THE INTENDED BENEFICIARY IS THE COMANCHE NATION.",
       "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IH4006620",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COMANCHE NATION HOUSING AUTHORITY",
+      "obligation": 46538958.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXOK06620",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COMANCHE NATION HOUSING AUTHORITY",
+      "obligation": 6000000.0,
+      "start_date": "2025-01-03",
+      "end_date": "2029-12-28",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 364946.0,
-  "award_count": 2,
+  "total_obligation": 52903904.0,
+  "award_count": 4,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -39,13 +61,17 @@
     "66.926": {
       "count": 1,
       "total": 115000.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 52538958.0
     }
   },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 115000.0,
     "2024": 0.0,
-    "2025": 0.0,
+    "2025": 6000000.0,
     "2026": 249946.0
   },
   "trend": "increasing"

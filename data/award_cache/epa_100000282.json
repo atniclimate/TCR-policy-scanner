@@ -7,6 +7,17 @@
   },
   "awards": [
     {
+      "award_id": "55IH5314900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SPOKANE INDIAN HOUSING AUTHORITY",
+      "obligation": 47021730.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "55IT5314400",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -16,14 +27,51 @@
       "end_date": "2033-09-30",
       "description": "INDIAN HSG BLOCK GR",
       "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5314900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SPOKANE INDIAN HOUSING AUTHORITY",
+      "obligation": 1629790.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000131",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SPOKANE INDIAN HOUSING AUTHORITY",
+      "obligation": 2529474.0,
+      "start_date": "2021-06-01",
+      "end_date": "2025-12-31",
+      "description": "SPOKANE RESERVATION RESIDENTIAL SOLAR ENERGY PROJECT",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000093",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "SPOKANE INDIAN HOUSING AUTHORITY",
+      "obligation": 1000000.0,
+      "start_date": "2017-09-30",
+      "end_date": "2022-12-30",
+      "description": "CHILDREN OF THE SUN SOLAR ENERGY INITIATIVE",
+      "awarding_agency": "Department of Energy"
     }
   ],
-  "total_obligation": 5727971.0,
-  "award_count": 1,
+  "total_obligation": 57908965.0,
+  "award_count": 5,
   "cfda_summary": {
     "14.867": {
-      "count": 1,
-      "total": 5727971.0
+      "count": 3,
+      "total": 54379491.0
+    },
+    "81.087": {
+      "count": 2,
+      "total": 3529474.0
     }
   },
   "yearly_obligations": {

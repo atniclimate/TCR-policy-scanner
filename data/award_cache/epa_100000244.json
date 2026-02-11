@@ -227,6 +227,17 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH4614480",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SICANGU WICOTI AWAYANKAPE CORPORATION",
+      "obligation": 123412420.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "DEIE0000107",
       "cfda": "81.087",
       "program_id": "doe_indian_energy",
@@ -260,8 +271,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 36610856.03,
-  "award_count": 23,
+  "total_obligation": 160023276.03,
+  "award_count": 24,
   "cfda_summary": {
     "15.156": {
       "count": 5,
@@ -278,6 +289,10 @@
     "20.205": {
       "count": 13,
       "total": 31429824.499999996
+    },
+    "14.867": {
+      "count": 1,
+      "total": 123412420.0
     },
     "81.087": {
       "count": 1,

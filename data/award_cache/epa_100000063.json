@@ -27,10 +27,32 @@
       "end_date": "2028-11-01",
       "description": "REMOVAL AND REPLACEMENT OF FIVE CULVERTS AND REMOVAL OR MODIFICATION OF 8 7 WEIRS TO ADDRESS ACCESS BY ANADROMOUS FISH TO APPROXIMATELY 62 RIVER MILES IN THE LOWER UMPQUA RIVER WATERSHED. THESE PROJECTS WILL IMPROVE PASSAGE TO SPAWNING AND REARING HABITAT FOR ANADROMOUS POPULATIONS OF CHINOOK SALMON, OREGON COASTAL COHO SALMON (ESA LISTED, THREATENED), OREGON COAST STEELHEAD (BLM SENSITIVE), AND CUTTHROAT TROUT, PACIFIC LAMPREY (BLM SENSITIVE SPECIES) AS WELL AS RESIDENT POPULATIONS OF RAINBOW AND CUTTHROAT TROUT, WESTERN BROOK LAMPREY, AND OTHER NATIVE FISH SPECIES.",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH4102770",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COQUILLE INDIAN HOUSING AUTHORITY",
+      "obligation": 19796543.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4102770",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COQUILLE INDIAN HOUSING AUTHORITY",
+      "obligation": 810330.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 1540776.0,
-  "award_count": 2,
+  "total_obligation": 22147649.0,
+  "award_count": 4,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -39,6 +61,10 @@
     "20.205": {
       "count": 1,
       "total": 1490792.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 20606873.0
     }
   },
   "yearly_obligations": {

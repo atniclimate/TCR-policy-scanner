@@ -126,10 +126,21 @@
       "end_date": "2025-09-30",
       "description": "PROJECT TITLE: PUEBLO OF JEMEZ TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PUEBLO OF JEMEZ UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH3503060",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PUEBLO OF JEMEZ HOUSING AUTHORITY",
+      "obligation": 5324076.27,
+      "start_date": "2018-10-01",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 6331645.72,
-  "award_count": 11,
+  "total_obligation": 11655721.99,
+  "award_count": 12,
   "cfda_summary": {
     "66.926": {
       "count": 2,
@@ -138,6 +149,10 @@
     "20.205": {
       "count": 9,
       "total": 5686645.72
+    },
+    "14.867": {
+      "count": 1,
+      "total": 5324076.27
     }
   },
   "yearly_obligations": {

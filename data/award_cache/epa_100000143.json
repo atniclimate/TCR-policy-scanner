@@ -93,10 +93,21 @@
       "end_date": "2027-09-30",
       "description": "P.L. 93-638 2% TRANSPORTATION PLANNING CONTRACT WITH THE LOWER BRULE SIOUX TRIBE.",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH4610520",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "LOWER BRULE HOUSING AUTHORITY",
+      "obligation": 22477528.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 5415961.04,
-  "award_count": 8,
+  "total_obligation": 27893489.04,
+  "award_count": 9,
   "cfda_summary": {
     "15.156": {
       "count": 3,
@@ -105,6 +116,10 @@
     "20.205": {
       "count": 5,
       "total": 4460463.04
+    },
+    "14.867": {
+      "count": 1,
+      "total": 22477528.0
     }
   },
   "yearly_obligations": {

@@ -5,17 +5,162 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "A19AP00009",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 141540.38,
+      "start_date": "2018-10-01",
+      "end_date": "2021-10-31",
+      "description": "ADAPTATION PLANNING AND DATA DEVELOPMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AP00161",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 8118.02,
+      "start_date": "2018-08-28",
+      "end_date": "2019-09-30",
+      "description": "CONFTRIBES_UMATILL_TRAVELFUNDINGTRAINING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00173",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 500.61,
+      "start_date": "2019-08-01",
+      "end_date": "2020-12-31",
+      "description": "COOPERATIVE LANDSCAPE CONSERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A18AV00298",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 11452782.45,
+      "start_date": "2017-10-01",
+      "end_date": "2023-09-30",
+      "description": "CONFEDERATED TRIBES OF THE UMATILLA INDIAN RESERVATION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV00483",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 10042547.75,
+      "start_date": "2018-10-01",
+      "end_date": "2023-09-30",
+      "description": "TPA BASE CR1 DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00338",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 11466810.95,
+      "start_date": "2021-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A20AV00493",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 10934658.8,
+      "start_date": "2019-10-01",
+      "end_date": "2023-09-30",
+      "description": "DISTRIBUTIONS FOR SELF GOVERNANCE COMPACTS (TPA BASE) CR1/CR2; LAW ENFORCEMENT-638 TRIBAL (PROGRAM BASE) CR1/CR2; WELFARE ASSISTANCE INITIAL (14.7% BASED ON 2020 EST. NEED)/CR#2 (APPX 8.2% OF 2020 EST. NEED) AND CONTRACT SUPPORT CR#1 (14.21%) AND CR#2 (7.92%) OF 2019 ENACTED",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00217",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 10832762.83,
+      "start_date": "2020-10-01",
+      "end_date": "2024-09-30",
+      "description": "SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE DIST.",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A21AV00575",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 3732633.06,
+      "start_date": "2020-10-01",
+      "end_date": "2023-09-30",
+      "description": "AMERICAN RESCUE PLAN ACT 2021/LAW ENFORCEMENT SPECIAL INITIATIVES FUNDING IS BEING PROVIDED ON A ONE-TIME (NONRECURRING) BASIS TO MEET THE OPERATIONAL NEEDS OF TRIBALLY CONTRACTED OR COMPACTED LAW ENFORCEMENT AND/OR DETENTION/CORRECTIONS PROGRAMS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00695",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 3293692.53,
+      "start_date": "2021-10-01",
+      "end_date": "2026-09-30",
+      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4113810",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 34480847.0,
+      "start_date": "2013-04-15",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4113810",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "UMATILLA INDIAN RESERVATION",
+      "obligation": 1384152.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 97771046.38,
+  "award_count": 12,
+  "cfda_summary": {
+    "15.156": {
+      "count": 3,
+      "total": 150159.00999999998
+    },
+    "20.205": {
+      "count": 7,
+      "total": 61755888.370000005
+    },
+    "14.867": {
+      "count": 2,
+      "total": 35864999.0
+    }
+  },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 14760503.479999999,
     "2023": 0.0,
     "2024": 0.0,
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "decreasing"
 }

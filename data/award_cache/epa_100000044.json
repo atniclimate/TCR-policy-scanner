@@ -84,6 +84,17 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH2202900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHITIMACHA TRIBE HOUSING AUTHORITY",
+      "obligation": 2369180.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "24IXLA02900",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -95,8 +106,8 @@
       "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 17663914.35,
-  "award_count": 8,
+  "total_obligation": 20033094.35,
+  "award_count": 9,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -107,8 +118,8 @@
       "total": 7591121.35
     },
     "14.867": {
-      "count": 1,
-      "total": 3350000.0
+      "count": 2,
+      "total": 5719180.0
     }
   },
   "yearly_obligations": {

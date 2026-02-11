@@ -18,6 +18,17 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "A09AV00490",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 39035974.69,
+      "start_date": "2009-12-10",
+      "end_date": "2026-09-30",
+      "description": "SINGLE AGREEMENT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
       "award_id": "A25AV00444",
       "cfda": "15.156",
       "program_id": "bia_tcr",
@@ -49,26 +60,236 @@
       "end_date": "2024-12-23",
       "description": "BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
       "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "01J92001",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 750000.0,
+      "start_date": "2021-10-01",
+      "end_date": "2025-09-30",
+      "description": "THIS AGREEMENT PROVIDES ASSISTANCE TO THE SHOSHONE BANNOCK TRIBES OF THE FORT HALL RESERVATION TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. SPECIFICALLY, THE RECIPIENT WILL CONDUCT COMMUNITY EDUCATION AND OUTREACH ON INDOOR HAZARDS OF OZONE POLLUTION, REVIEW AND UPDATE THE TRIBES BIOASSESSMENT MONITORING PROGRAM, ASSESS METAL, FLUORIDE, AND RADIONUCLIDE IN FOOD CROPS, AMONG OTHER TASKS. ANTICIPATED OUTCOMES AND DELIVERABLES INCLUDE IMPROVED HEALTH OF THE FORT HALL RESERVATIONS STREAMS, FACTSHEETS AND PAMPHLETS OUTLINING AIR QUALITY HAZARDS AND GUIDANCE, AND INCREASED AWARENESS OF RADIONUCLIDES, METALS, AND FLUORIDE CONTAMINATION IN THE SOILS AND VEGETATION WITHIN THE FORT HALL RESERVATION. INTENDED BENEFICIARIES ARE TRIBAL MEMBERS.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "03J08801",
+      "cfda": "66.926",
+      "program_id": "epa_gap",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 170000.0,
+      "start_date": "2025-10-01",
+      "end_date": "2026-09-30",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING FOR THE OPERATION OF THE SHOSHONE-BANNOCK TRIBES CONTINUING ENVIRONMENTAL PROGRAMS WHILE GIVING IT GREATER FLEXIBILITY TO IMPROVE ENVIRONMENTAL PERFORMANCE, ACHIEVE ADMINISTRATIVE SAVINGS AND STRENGTHEN THE PARTNERSHIP BETWEEN THE TRIBE AND EPA. THE PRIMARY OBJECTIVES OF THIS PROJECT ARE TO INCREASE THE SHOSHONE-BANNOCK TRIBES CAPACITY TO ASSESS AND ADDRESS LOCAL ENVIRONMENTAL AIR, WATER, LAND, WASTE, AND EMERGENCY RESPONSE ISSUES, AND TO COLLABORATE WITH EPA AND OTHER FEDERAL, STATE, AND LOCAL AGENCIES IN IMPLEMENTING ENVIRONMENTAL PROTECTION PROGRAMS CONSISTENT WITH EPA'S STATUTORY AUTHORITIES.ACTIVITIES:ACTIVITIES TO BE PERFORMED UNDER THIS AGREEMENT INCLUDE, BUILDING ADMINISTRATIVE, PROGRAMMATIC, COMMUNICATIONS, SOLID AND HAZARDOUS WASTE, AND TECHNICAL CAPACITIES TO MANAGE ENVIRONMENTAL PROTECTION PROGRAMS IN IDAHO, DEVELOPING A LENTIC MONITORING PROGRAM FOR WATER QUALITY MANAGEMENT, AND ASSESSING AIR QUALITY EMISSIONS AND THEIR IMPACTS ON HUMAN HEALTH.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:ANTICIPATED DELIVERABLES AND EXPECTED OUTCOMES OF THIS GRANT INCLUDE A NEW INVENTORY OF LENTIC ECOSYSTEMS WITHIN THE FORT HALL RESERVATION, PREPARING A QUALITY ASSURANCE PROJECT PLAN (QAPP) FOR VARIOUS SAMPLING ACTIVITIES, AND COLLECTING AND ANALYZING PLANT TISSUE SAMPLES, AMONG OTHER DELIVERABLES AND OUTCOMES. INTENDED BENEFICIARIES OF THIS GRANT ARE MEMBERS OF THE TRIBE.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "693JG42230000V600ID0072",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 2004721.12,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42230000V170ID0072",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 480000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "A20AV00736",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 4747892.82,
+      "start_date": "2020-08-19",
+      "end_date": "2024-06-28",
+      "description": "638 SUBPART-J CONSTRUCTION CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42330000V600NV0015",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 2119539.77,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V600ID0072",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 1988809.47,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170NV0015",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 967068.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y604ID3072024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 3850000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SHOSHONE BANNOCK TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SHOSHONE BANNOCK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602ID3072024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 1739684.34,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SHOSHONE BANNOCK TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SHOSHONE BANNOCK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176ID3072024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 562573.8,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SHOSHONE BANNOCK TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SHOSHONE BANNOCK UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600ID0072",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 258860.26,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION BRIDGE AWARD",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602ID3072025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 2067888.45,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: SHOSHONE BANNOCK TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SHOSHONE BANNOCK  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y177ID3072025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 562293.1,
+      "start_date": "2025-01-21",
+      "end_date": "2025-09-30",
+      "description": "PROJECT TITLE: SHOSHONE BANNOCK TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO SHOSHONE BANNOCK  UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "R18AP00182",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 884819.0,
+      "start_date": "2019-09-20",
+      "end_date": "2024-09-30",
+      "description": "MICHAUD UNIT IRRIGATION WATER EFFICIENCY IMPROVEMENTS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "R19AP00200",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 62834.0,
+      "start_date": "2020-06-22",
+      "end_date": "2021-12-10",
+      "description": "SHOSHONE-BANNOCK TRIBES' MICHAUD SURFACE WATER MEASUREMENT TELEMETRY PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "R17AP00319",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 42887.0,
+      "start_date": "2018-09-13",
+      "end_date": "2020-09-30",
+      "description": "WATER SUPPLY BANK ENHANCEMENT PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "R21AP10078",
+      "cfda": "15.507",
+      "program_id": "usbr_watersmart",
+      "recipient_name_raw": "SHOSHONE BANNOCK TRIBES",
+      "obligation": 23996.0,
+      "start_date": "2021-03-08",
+      "end_date": "2023-03-31",
+      "description": "WATER MEASUREMENT TELEMETRY NETWORK PROJECT",
+      "awarding_agency": "Department of the Interior"
     }
   ],
-  "total_obligation": 607206.0,
-  "award_count": 4,
+  "total_obligation": 62927047.82,
+  "award_count": 23,
   "cfda_summary": {
     "15.156": {
-      "count": 2,
-      "total": 136259.0
+      "count": 3,
+      "total": 39172233.69
     },
     "97.047": {
       "count": 2,
       "total": 470947.0
+    },
+    "66.926": {
+      "count": 2,
+      "total": 920000.0
+    },
+    "20.205": {
+      "count": 12,
+      "total": 21349331.130000006
+    },
+    "15.507": {
+      "count": 4,
+      "total": 1014536.0
     }
   },
   "yearly_obligations": {
-    "2022": 470947.0,
+    "2022": 1220947.0,
     "2023": 0.0,
     "2024": 0.0,
-    "2025": 136259.0,
-    "2026": 0.0
+    "2025": 698552.1,
+    "2026": 170000.0
   },
   "trend": "decreasing"
 }

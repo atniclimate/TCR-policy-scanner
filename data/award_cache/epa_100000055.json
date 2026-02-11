@@ -214,10 +214,32 @@
       "end_date": "2026-09-30",
       "description": "COLVILLE/MOUNTAIN RIDGE HOME ROADS IMPROVEMENT PROJECT/CONSTRUCTION",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH5302900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COLVILLE INDIAN HOUSING AUTHORITY",
+      "obligation": 83039500.0,
+      "start_date": "2011-10-18",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5302900",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "COLVILLE INDIAN HOUSING AUTHORITY",
+      "obligation": 3722828.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 20832356.66,
-  "award_count": 19,
+  "total_obligation": 107594684.66,
+  "award_count": 21,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -226,6 +248,10 @@
     "20.205": {
       "count": 17,
       "total": 20669146.66
+    },
+    "14.867": {
+      "count": 2,
+      "total": 86762328.0
     }
   },
   "yearly_obligations": {

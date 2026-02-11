@@ -29,6 +29,28 @@
       "awarding_agency": "Department of Homeland Security"
     },
     {
+      "award_id": "55IH0608630",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "ROUND VALLEY INDIAN HOUSING AUTHORITY",
+      "obligation": 62030098.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "55IH2030680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HOUSING AUTHORITY OF SAC & FOX",
+      "obligation": 4105866.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "55IT1945820",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -117,16 +139,16 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 4303069.97,
-  "award_count": 10,
+  "total_obligation": 70439033.97,
+  "award_count": 12,
   "cfda_summary": {
     "97.047": {
       "count": 2,
       "total": 330370.97
     },
     "14.867": {
-      "count": 2,
-      "total": 3177479.0
+      "count": 4,
+      "total": 69313443.0
     },
     "81.087": {
       "count": 1,

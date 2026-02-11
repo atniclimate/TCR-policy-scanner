@@ -126,10 +126,21 @@
       "end_date": "2023-04-28",
       "description": "PROJECT HIR 501(3) BACAVI STREETS",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH0402180",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HOPI TRIBAL HOUSING AUTHORITY",
+      "obligation": 135819692.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 461257.12000000005,
-  "award_count": 11,
+  "total_obligation": 136280949.12,
+  "award_count": 12,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -142,6 +153,10 @@
     "20.205": {
       "count": 9,
       "total": 296444.12
+    },
+    "14.867": {
+      "count": 1,
+      "total": 135819692.0
     }
   },
   "yearly_obligations": {

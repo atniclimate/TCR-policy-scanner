@@ -29,6 +29,28 @@
       "awarding_agency": "Environmental Protection Agency"
     },
     {
+      "award_id": "55IH3202080",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YERINGTON PAIUTE TRIBAL HOUSING AUTHORITY",
+      "obligation": 14082714.0,
+      "start_date": "2012-05-25",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3202080",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "YERINGTON PAIUTE TRIBAL HOUSING AUTHORITY",
+      "obligation": 513883.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "98T41501",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -40,12 +62,16 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 417468.0,
-  "award_count": 3,
+  "total_obligation": 15014065.0,
+  "award_count": 5,
   "cfda_summary": {
     "66.926": {
       "count": 2,
       "total": 345468.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 14596597.0
     },
     "66.038": {
       "count": 1,

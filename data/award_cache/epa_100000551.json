@@ -126,10 +126,32 @@
       "end_date": "2025-09-30",
       "description": "PROJECT TITLE: CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO CENTRAL COUNCIL TLINGIT & HAIDA TRIBES OF ALASKA UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
       "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IH0216230",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TLINGIT HAIDA REGIONAL HOUSING AUTHORITY",
+      "obligation": 121911359.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH0216230",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TLINGIT HAIDA REGIONAL HOUSING AUTHORITY",
+      "obligation": 4528989.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 4665347.32,
-  "award_count": 11,
+  "total_obligation": 131105695.32,
+  "award_count": 13,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -142,6 +164,10 @@
     "20.205": {
       "count": 8,
       "total": 3713990.32
+    },
+    "14.867": {
+      "count": 2,
+      "total": 126440348.0
     }
   },
   "yearly_obligations": {

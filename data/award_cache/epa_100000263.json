@@ -73,6 +73,28 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH2654680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SAULT TRIBE HOUSING AUTHORITY",
+      "obligation": 77406752.39,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2654680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SAULT TRIBE HOUSING AUTHORITY",
+      "obligation": 3507499.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "04E01472",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -95,12 +117,16 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 46376713.15,
-  "award_count": 8,
+  "total_obligation": 127290964.54,
+  "award_count": 10,
   "cfda_summary": {
     "20.205": {
       "count": 6,
       "total": 46076713.15
+    },
+    "14.867": {
+      "count": 2,
+      "total": 80914251.39
     },
     "66.038": {
       "count": 2,

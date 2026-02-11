@@ -205,6 +205,17 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH0814620",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SOUTHERN UTE INDIAN HOUSING AUTHORITY",
+      "obligation": 23059501.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "R24AP00231",
       "cfda": "15.507",
       "program_id": "usbr_watersmart",
@@ -227,8 +238,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 17827428.34,
-  "award_count": 20,
+  "total_obligation": 40886929.34,
+  "award_count": 21,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -241,6 +252,10 @@
     "20.205": {
       "count": 14,
       "total": 12781508.340000004
+    },
+    "14.867": {
+      "count": 1,
+      "total": 23059501.0
     },
     "15.507": {
       "count": 1,

@@ -71,10 +71,32 @@
       "end_date": "2027-09-30",
       "description": "BEAR SPRINGS HATCHERY PROJECT",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH5312690",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "QUILEUTE HOUSING AUTHORITY",
+      "obligation": 10548585.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5312690",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "QUILEUTE HOUSING AUTHORITY",
+      "obligation": 448926.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 35918104.44,
-  "award_count": 6,
+  "total_obligation": 46915615.44,
+  "award_count": 8,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -87,6 +109,10 @@
     "20.205": {
       "count": 2,
       "total": 5272999.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 10997511.0
     }
   },
   "yearly_obligations": {

@@ -84,6 +84,17 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH3819760",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TURTLE MOUNTAIN HOUSING AUTHORITY",
+      "obligation": 127035388.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "23DG11010000011",
       "cfda": "10.720",
       "program_id": "usda_wildfire",
@@ -95,8 +106,8 @@
       "awarding_agency": "Department of Agriculture"
     }
   ],
-  "total_obligation": 9241498.93,
-  "award_count": 8,
+  "total_obligation": 136276886.93,
+  "award_count": 9,
   "cfda_summary": {
     "97.047": {
       "count": 1,
@@ -105,6 +116,10 @@
     "20.205": {
       "count": 6,
       "total": 8992575.93
+    },
+    "14.867": {
+      "count": 1,
+      "total": 127035388.0
     },
     "10.720": {
       "count": 1,

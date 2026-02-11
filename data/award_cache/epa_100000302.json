@@ -225,10 +225,32 @@
       "end_date": "2025-09-30",
       "description": "NEW AWARD_PIR ROAD  MAINTENANCE_TOHONO",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH0402920",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TOHONO O'ODHAM KI KI ASSOCIATION",
+      "obligation": 151715081.0,
+      "start_date": "2012-06-21",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXAZ02920",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "TOHONO O'ODHAM KI KI ASSOCIATION",
+      "obligation": 6000000.0,
+      "start_date": "2025-01-14",
+      "end_date": "2028-05-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 41199817.39,
-  "award_count": 20,
+  "total_obligation": 198914898.39,
+  "award_count": 22,
   "cfda_summary": {
     "66.926": {
       "count": 2,
@@ -237,14 +259,18 @@
     "20.205": {
       "count": 18,
       "total": 39291305.39
+    },
+    "14.867": {
+      "count": 2,
+      "total": 157715081.0
     }
   },
   "yearly_obligations": {
     "2022": 3102558.0300000003,
     "2023": 11079968.35,
     "2024": 10436379.71,
-    "2025": 0.0,
+    "2025": 6000000.0,
     "2026": 194104.0
   },
-  "trend": "decreasing"
+  "trend": "stable"
 }

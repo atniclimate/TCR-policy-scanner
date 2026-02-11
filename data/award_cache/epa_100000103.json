@@ -51,6 +51,17 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH0616820",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "HOOPA VALLEY HOUSING AUTHORITY",
+      "obligation": 33856467.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "98T41401",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -95,12 +106,16 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 651924.0,
-  "award_count": 8,
+  "total_obligation": 34508391.0,
+  "award_count": 9,
   "cfda_summary": {
     "15.156": {
       "count": 4,
       "total": 325104.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 33856467.0
     },
     "66.038": {
       "count": 4,

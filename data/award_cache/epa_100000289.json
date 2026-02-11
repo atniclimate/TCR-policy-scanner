@@ -106,6 +106,17 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH3818700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "STANDING ROCK HOUSING LOCAL DEVELOPMENT",
+      "obligation": 91132335.0,
+      "start_date": "2012-04-30",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "DEIE0000184",
       "cfda": "81.087",
       "program_id": "doe_indian_energy",
@@ -128,12 +139,16 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 22876029.41,
-  "award_count": 11,
+  "total_obligation": 114008364.41,
+  "award_count": 12,
   "cfda_summary": {
     "20.205": {
       "count": 9,
       "total": 18736029.41
+    },
+    "14.867": {
+      "count": 1,
+      "total": 91132335.0
     },
     "81.087": {
       "count": 1,

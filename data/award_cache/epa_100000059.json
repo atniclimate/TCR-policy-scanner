@@ -5,10 +5,53 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "A18AP00228",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CONFEDERATED TRIBES SILETZ INDIANS",
+      "obligation": 137853.0,
+      "start_date": "2018-09-01",
+      "end_date": "2020-09-30",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AP00043",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "CONFEDERATED TRIBES SILETZ INDIANS",
+      "obligation": 2183.0,
+      "start_date": "2018-10-01",
+      "end_date": "2020-09-30",
+      "description": "OCEAN AND COASTAL MNGMT PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT4112560",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CONFEDERATED TRIBES SILETZ INDIANS",
+      "obligation": 72380471.0,
+      "start_date": "2012-02-08",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 72520507.0,
+  "award_count": 3,
+  "cfda_summary": {
+    "15.156": {
+      "count": 2,
+      "total": 140036.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 72380471.0
+    }
+  },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 0.0,
@@ -16,6 +59,5 @@
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "none"
 }

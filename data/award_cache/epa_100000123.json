@@ -51,6 +51,28 @@
       "awarding_agency": "Environmental Protection Agency"
     },
     {
+      "award_id": "55IH3505460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SANTO DOMINGO TRIBAL HOUSING AUTHORITY",
+      "obligation": 17218377.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH3505460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SANTO DOMINGO TRIBAL HOUSING AUTHORITY",
+      "obligation": 546540.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "R24AP00511",
       "cfda": "15.507",
       "program_id": "usbr_watersmart",
@@ -62,8 +84,8 @@
       "awarding_agency": "Department of the Interior"
     }
   ],
-  "total_obligation": 1419207.0,
-  "award_count": 5,
+  "total_obligation": 19184124.0,
+  "award_count": 7,
   "cfda_summary": {
     "15.156": {
       "count": 2,
@@ -72,6 +94,10 @@
     "66.926": {
       "count": 2,
       "total": 903935.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 17764917.0
     },
     "15.507": {
       "count": 1,

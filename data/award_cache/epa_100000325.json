@@ -16,18 +16,44 @@
       "end_date": "2026-09-30",
       "description": "DESCRIPTION:THIS AGREEMENT PROVIDES ASSISTANCE TO THE WICHITA AND AFFILIATED TRIBES TO BUILD ITS CAPACITY TO ADMINISTER ENVIRONMENTAL PROGRAMS ON INDIAN LANDS. ACTIVITIES:SPECIFICALLY, THE RECIPIENT WILL BUILD CAPACITY OF OFFICE STAFF TO LEARN AND ADDRESS ENVIRONMENTAL ISSUES, PROVIDE EDUCATION AND OUTREACH TO TRIBAL COMMUNITY, IMPLEMENT SOLID WASTE MANAGEMENT PRACTICES, COMMUNITY CLEAN-UP AND RECYCLING ACTIVITIES, AND CAPACITY DEVELOPMENT FOR INDOOR AIR PROGRAM.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:QUARTERLY PROGRESS REPORTS, ANNUAL FEDERAL FINANCIAL REPORT (FFR), PESTICIDES INVENTORY,  QUALITY MANAGEMENT PLAN (QMP), AND GEOGRAPHIC INFORMATION SYSTEM/GLOBAL POSITIONING SYSTEM QUALITY ASSURANCE PROJECT PLAN (GIS/GPS QAPP). THE INTENDED BENEFICIARY IS THE WICHITA AND AFFILIATED TRIBES.",
       "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "55IH4032860",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WICHITA HOUSING AUTHORITY",
+      "obligation": 8747484.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH4032860",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "WICHITA HOUSING AUTHORITY",
+      "obligation": 318441.0,
+      "start_date": "2022-01-11",
+      "end_date": "2028-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 535000.0,
-  "award_count": 1,
+  "total_obligation": 9600925.0,
+  "award_count": 3,
   "cfda_summary": {
     "66.926": {
       "count": 1,
       "total": 535000.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 9065925.0
     }
   },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 318441.0,
     "2023": 535000.0,
     "2024": 0.0,
     "2025": 0.0,
