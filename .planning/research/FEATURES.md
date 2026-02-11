@@ -1,325 +1,608 @@
-# Feature Landscape: Tribe-Specific Advocacy Packet Generation
+# Feature Landscape: v1.2 Tech Debt Cleanup
 
-**Domain:** Per-Tribe congressional advocacy intelligence packets (DOCX) for 574 federally recognized Tribes
-**Researched:** 2026-02-10
-**Confidence:** MEDIUM overall (data source availability HIGH, domain patterns MEDIUM, batch performance LOW)
-
----
-
-## Table Stakes
-
-Features users expect. Missing any of these and the packet is not usable for its intended purpose (walking into a congressional office with a Tribe-specific document).
-
-### TS-01: Per-Tribe Document Identity
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each DOCX packet names the Tribe in its title, headers, and cover page. Congressional staff must see "Navajo Nation Climate Resilience Program Priorities" not a generic document. |
-| **Why Expected** | A congressional staffer receiving a generic "Tribal climate priorities" document will treat it as background noise. A document titled with the specific Tribe attending the meeting demands engagement. |
-| **Complexity** | Low |
-| **Dependencies** | Tribal Registry (new data layer mapping 574 Tribes to states, ecoregions) |
-| **Existing Assets** | None -- v1.0 produces a single shared briefing, not per-Tribe |
-
-### TS-02: Per-Program Hot Sheets with Tribe-Specific Data
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each of the 16 tracked programs gets a "Hot Sheet" section in the per-Tribe DOCX. Each Hot Sheet includes: program status (CI, advocacy goal), Tribe-specific award history, local hazard relevance, district economic impact, and congressional delegation. This is the core content unit. |
-| **Why Expected** | The existing Hot Sheets format (from Tribal advocacy conventions) is how Tribal policy staff consume program information. Each program gets its own page or section. The scanner must replicate this structure but populate it with Tribe-localized data. |
-| **Complexity** | High -- requires data assembly from 5 distinct sources per Tribe per program |
-| **Dependencies** | USASpending award matching (existing scraper), hazard profiling (new), economic impact (new), congressional mapping (new), program inventory (existing) |
-| **Existing Assets** | 16-program inventory with CI scores, advocacy goals, advocacy levers, tightened language, Hot Sheets status -- all reusable |
-
-### TS-03: Congressional Delegation Section
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each packet identifies the Tribe's senators (2 per state), House representative(s), and their committee assignments relevant to the 16 programs (e.g., Appropriations, Energy & Natural Resources, Indian Affairs). |
-| **Why Expected** | Advocacy packets exist to facilitate meetings with specific Members of Congress. If the packet does not name the Tribe's delegation and their committee power, the packet fails its primary purpose. |
-| **Complexity** | Medium |
-| **Dependencies** | Tribal Registry (state), Census TIGER (Tribe-to-district mapping), Congress.gov API (members/committees -- API key already available) |
-| **Existing Assets** | Congress.gov scraper (v1.0) already has API key and session management; needs new endpoint queries for members/committees |
-
-### TS-04: USASpending Award History Per Tribe Per Program
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | For each program Hot Sheet, show the Tribe's award history: total obligations, fiscal years, project descriptions. "Navajo Nation received $2.3M under BIA TCR across FY22-FY25 for drought adaptation planning." |
-| **Why Expected** | Congressional staff evaluate advocacy asks against a Tribe's track record. "We have successfully used this program before" is the most persuasive single sentence in an advocacy meeting. Absence of this data makes the packet purely aspirational rather than evidence-based. |
-| **Complexity** | High -- fuzzy name matching between USASpending recipient names and the 574 official Tribal names is the hardest data-quality problem in the system |
-| **Dependencies** | USASpending API (existing scraper, needs new recipient-search queries), Tribal Registry (canonical names + known aliases) |
-| **Existing Assets** | USASpendingScraper already queries by CFDA with retry logic; needs extension to query by recipient_search_text |
-| **Key Risk** | Tribal names in USASpending are inconsistently recorded. "Navajo Nation" vs "The Navajo Nation" vs "Navajo Tribal Utility Authority" vs "Navajo Nation Division of Natural Resources". Fuzzy matching must be conservative (prefer false negatives over false positives -- attributing the wrong Tribe's awards is worse than showing no data). |
-
-### TS-05: Advocacy Language Per Program
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each Hot Sheet includes ready-made advocacy language: what to ask, why it matters, and the structural frame (trust responsibility, sovereignty, climate justice). Derived from the decision engine's advocacy goal + the tightened language already in program_inventory.json. |
-| **Why Expected** | Tribal policy staff need talking points they can hand to a leader walking into a meeting. Raw data without framing is not actionable. The existing advocacy_lever, tightened_language, and Five Structural Asks provide the raw material. |
-| **Complexity** | Medium |
-| **Dependencies** | Decision engine classifications (existing), program inventory tightened_language (existing), Five Structural Asks (existing graph nodes) |
-| **Existing Assets** | ADVOCACY_GOALS mapping, per-program tightened_language, structural asks with ADVANCES edges |
-
-### TS-06: DOCX Output Format
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Output as Microsoft Word DOCX files. Not PDF, not Markdown, not HTML. Congressional offices work in Word. Tribal policy staff need to edit before distribution (add political context, adjust talking points for the specific meeting). |
-| **Why Expected** | Confirmed by domain requirements. Congressional offices print and share Word documents. Editability is essential -- these are drafts that a policy analyst reviews before distribution. |
-| **Complexity** | Medium -- python-docx is well-documented for programmatic generation, but achieving professional formatting (consistent styles, headers/footers, page breaks, tables) requires careful implementation |
-| **Dependencies** | python-docx library (new dependency) |
-| **Existing Assets** | None -- v1.0 generates Markdown and JSON only |
-
-### TS-07: Shared Strategic Overview Document (Document 2)
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | A single shared DOCX document covering the overall FY26 funding landscape: appropriations status, 7 ecoregion strategic priorities, science infrastructure threats, FEMA analysis, cross-cutting framework, and messaging guidance. Not per-Tribe -- used as a companion to the per-Tribe packet. |
-| **Why Expected** | The per-Tribe document answers "what matters to YOUR Tribe." The shared document answers "what is the overall landscape." Both are needed for effective advocacy. A Tribal leader needs context beyond their specific programs. |
-| **Complexity** | Medium |
-| **Dependencies** | Monitor data (existing), program inventory (existing), ecoregion framework (new static data), appropriations landscape (partially in existing CI data) |
-| **Existing Assets** | 14-section briefing already contains reconciliation watch, IIJA countdown, CI dashboard, advocacy goals, structural asks -- much of this content maps to Document 2 sections |
-
-### TS-08: Batch and Ad-Hoc Generation Modes
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | CLI supports two modes: (1) batch -- generate packets for all 574 Tribes; (2) ad-hoc -- generate a single Tribe's packet by name or ID. Batch is for pre-event preparation. Ad-hoc is for when a specific Tribe requests their packet. |
-| **Why Expected** | Before a mid-year advocacy event, staff run batch to prepare 574 packets. When a Tribal leader calls asking for their packet before a congressional meeting next week, staff run ad-hoc. Both use cases are routine. |
-| **Complexity** | Low (CLI flag routing) |
-| **Dependencies** | DOCX generation engine (TS-06), Tribal Registry (TS-01) |
-| **Existing Assets** | main.py CLI pattern with argparse; add --generate-packets and --tribe flags |
+**Domain:** Tech debt remediation for TCR Policy Scanner
+**Researched:** 2026-02-11
+**Confidence:** HIGH (all items verified against source code)
 
 ---
 
-## Differentiators
+## Overview
 
-Features that set this system apart from manual advocacy packet preparation. Not expected (nobody else automates this), but uniquely valuable.
-
-### DF-01: Hazard Profiling Per Tribe
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each Tribe's packet includes localized hazard data: top natural hazard risks from FEMA NRI (18 hazard types), wildfire risk from USFS, and climate projections. "Standing Rock Sioux Tribe: HIGH risk for drought, MODERATE risk for wildfire, inland flooding." |
-| **Value Proposition** | Transforms the packet from a funding document to a climate intelligence document. Congressional staff see that the ask is grounded in local risk data, not just generic climate concerns. No other Tribal advocacy tool combines federal hazard data with program-level funding asks. |
-| **Complexity** | High -- requires ingesting and cross-referencing FEMA NRI tribal datasets (shapefile/CSV), USFS wildfire risk data, and mapping Tribal areas to hazard zones. The data exists in downloadable form but is large and geospatially complex. |
-| **Dependencies** | FEMA NRI tribal datasets (free download, CSV/shapefile/geodatabase, 18 hazard types, v1.20 Dec 2025), USFS Wildfire Risk to Communities (free download, includes tribal areas in tabular spreadsheet), Tribal Registry (geographic mapping) |
-| **Data Availability** | HIGH confidence. FEMA NRI provides dedicated tribal datasets in multiple formats. USFS wildfire risk includes tribal areas in tabular downloads. Both are free, T0 public data. |
-
-### DF-02: District Economic Impact Framing
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | For each program, frame the economic impact in the congressional district: USASpending obligations multiplied by regional economic multipliers to show jobs/output impact, plus FEMA 4:1 benefit-cost ratio for pre-disaster mitigation. "BIA TCR funding to [Tribe] generated an estimated $X in economic activity in [District], supporting Y jobs." |
-| **Value Proposition** | Congressional staff think in district terms. A dollar spent in their district matters more than a dollar spent nationally. This reframes Tribal program funding as a district economic investment, which is the most persuasive framing for appropriations defense. |
-| **Complexity** | Medium-High |
-| **Dependencies** | USASpending obligation data (TS-04), congressional district mapping (TS-03), BEA regional multipliers or proxy multipliers |
-| **Key Risk** | BEA RIMS II multipliers cost $500 per region (as of Aug 2025). For 574 Tribes across potentially hundreds of regions, this is cost-prohibitive. **Recommendation:** Use published literature-based standard multipliers (2.0x for direct spending, 1.5x for indirect) plus FEMA's established 4:1 pre-disaster mitigation BCR rather than purchasing RIMS II data. This is standard practice in federal advocacy -- the exact multiplier matters less than the framing. Congressional staff are accustomed to standard multiplier ranges. |
-
-### DF-03: Change Tracking ("Since Last Packet" Diffs)
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each packet includes a "What Changed" section showing shifts since the last time that Tribe's packet was generated: CI status changes, new legislative threats, funding amount changes, new grant opportunities, advocacy goal reclassifications. |
-| **Value Proposition** | Tribal leaders attend multiple advocacy events per year. Without diff tracking, every packet looks the same and loses urgency. "Since your mid-year advocacy packet: FEMA BRIC status changed from AT_RISK to FLAGGED" creates immediate actionability. |
-| **Complexity** | Medium |
-| **Dependencies** | Per-Tribe packet state persistence (new -- store last-generated state per Tribe), change detection logic (existing ChangeDetector pattern adaptable) |
-| **Existing Assets** | ChangeDetector class compares scan-to-scan; needs adaptation for packet-to-packet comparison. CI history tracking (90-entry cap) provides trend data. |
-
-### DF-04: Ecoregion Priority Framework
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each Tribe is classified into one of 7 ecoregions. The packet sections and program prioritization reflect ecoregion-specific priorities (e.g., Arctic/subarctic Tribes prioritize permafrost and coastal erosion; Southwest Tribes prioritize drought and wildfire). |
-| **Value Proposition** | Avoids the trap of generic climate messaging. A Tribe in coastal Louisiana has fundamentally different climate priorities than a Tribe in interior Alaska. Ecoregion classification enables automatic prioritization without manual per-Tribe customization. |
-| **Complexity** | Medium |
-| **Dependencies** | Tribal Registry with ecoregion classification (new static data layer), ecoregion-to-program priority mapping (new static configuration) |
-| **Existing Assets** | 7 ecoregion framework referenced in project scope; needs encoding as data |
-
-### DF-05: Five Structural Asks Integration
-
-| Attribute | Value |
-|-----------|-------|
-| **Description** | Each packet weaves the Five Structural Asks (cross-cutting advocacy levers from the knowledge graph) into the per-program Hot Sheets, showing which structural asks advance which programs relevant to that Tribe. |
-| **Value Proposition** | Connects per-program advocacy to the broader strategic framework. A Tribal leader can say "we support Structural Ask #3 because it directly advances three programs that serve our community." |
-| **Complexity** | Low |
-| **Dependencies** | Knowledge graph ADVANCES edges (existing), Five Structural Asks nodes (existing) |
-| **Existing Assets** | 5 structural ask nodes, 26 ADVANCES edges, 9 MITIGATED_BY edges -- all in the existing graph |
+17 documented tech debt items across 5 categories: testing gaps, hardcoded values, code quality, data population, and documentation. Each item below includes what "done" looks like at minimum (table stakes), what a thorough fix looks like (gold standard), and what NOT to do (anti-patterns).
 
 ---
 
-## Anti-Features
+## Category 1: Testing Gaps (2 items)
 
-Features to explicitly NOT build. Common mistakes in this domain that would waste effort or cause harm.
+### TD-01: No Live Scraper Integration Tests
 
-### AF-01: DO NOT Build a Per-Tribe Data Collection Layer
+**Source:** v1.0 audit, Phase 01
+**Severity:** MEDIUM
+**Current state:** 4 scrapers (Federal Register, Grants.gov, Congress.gov, USASpending) validated via manual runs only. 287 unit/integration tests exist but none hit live APIs.
 
-| Anti-Feature | Tribal-specific sensitive data collection (enrollment data, internal governance documents, internal climate adaptation plans, cultural resource locations) |
-| **Why Avoid** | The project is classified T0 (Open) -- all data from public federal sources. Collecting Tribal-specific sensitive data would (a) violate data sovereignty principles, (b) require Tribal consent protocols that are outside this project's scope, (c) create security/privacy obligations the system is not designed for, (d) potentially expose sensitive cultural or governance information. |
-| **What to Do Instead** | Use only public federal data (USASpending, FEMA NRI, Census TIGER, Congress.gov) to construct Tribe-specific views. The Tribe's own data remains under Tribal control. The system tells Tribes what the federal government's data says about programs serving them -- not what the Tribe itself has shared. |
+**Table stakes (minimum fix):**
+- Create `tests/test_scrapers_live.py` with `@pytest.mark.live` marker
+- One test per scraper that verifies: connection succeeds, response parses, at least 1 item returned
+- `pytest.ini` or `conftest.py` excludes `live` marker by default (so CI does not fail on API rate limits)
+- Tests skip gracefully when API key missing (Congress.gov) or network unavailable
+- Each test has a 30-second timeout
 
-### AF-02: DO NOT Build an AI/LLM Text Generation Layer
+**Gold standard:**
+- Parametrized tests covering all 4 scrapers with shared fixtures
+- Response schema validation (verify returned dicts have expected keys: `source_id`, `title`, `source`, `published_date`)
+- CI workflow with manual dispatch (`workflow_dispatch`) for on-demand live testing
+- Smoke test mode: fetches 1 page per scraper (not full scan window)
+- Record/replay with `vcrpy` or `aioresponses` for deterministic CI runs alongside the live marker tests
 
-| Anti-Feature | Using an LLM to generate advocacy talking points, narrative summaries, or policy analysis text |
-| **Why Avoid** | (a) Hallucination risk in a domain where factual accuracy has legal and political consequences. A wrong dollar figure or misattributed program status in a congressional meeting damages credibility irreparably. (b) Tribal advocacy language carries cultural and political nuance that cannot be reliably generated by AI. (c) The existing tightened_language, advocacy_lever, and structural asks fields already provide human-authored advocacy framing. (d) Congressional offices are increasingly skeptical of AI-generated content. |
-| **What to Do Instead** | Use template-based text assembly from verified data fields. The decision engine and program inventory already contain human-authored advocacy language. Assemble, do not generate. |
+**Anti-patterns:**
+- Do NOT make live tests run in default `pytest` invocation -- they will break CI on every run
+- Do NOT hardcode API keys in test files
+- Do NOT assert exact item counts (API results vary daily)
+- Do NOT test full scan window (slow, rate-limited) -- limit to 1 page or minimal query
 
-### AF-03: DO NOT Build Real-Time Document Editing / Collaboration
+**Dependencies:** None. Can be done independently.
 
-| Anti-Feature | In-browser document editing, track changes review workflow, multi-user collaboration on packets |
-| **Why Avoid** | The system generates DOCX files that are opened in Microsoft Word for editing. Tribal policy staff already have Word-based review workflows. Building a parallel editing system (a) duplicates existing tools, (b) adds massive frontend complexity, (c) is not what users asked for. |
-| **What to Do Instead** | Generate clean, well-structured DOCX files that open correctly in Word. Let the existing Word-based review workflow handle editing. |
+---
 
-### AF-04: DO NOT Attempt Per-Tribe Customized Program Selection
+### TD-14: CONGRESS_API_KEY Optional (Graceful Degradation)
 
-| Anti-Feature | Automatically selecting which of the 16 programs to include based on a Tribe's characteristics (dropping "irrelevant" programs) |
-| **Why Avoid** | All 16 programs are relevant to all 574 Tribes at the policy advocacy level. A Tribe that has never received FEMA BRIC funding still advocates for the program because (a) they might apply in the future, (b) the program's policy status affects the broader funding ecosystem, (c) structural asks cross-cut all programs. Automatically dropping programs based on award history or geography would reduce advocacy surface area. |
-| **What to Do Instead** | Include all 16 programs in every packet. Vary the Tribe-specific data (some programs will show award history, others will show "No awards to date -- potential new program for [Tribe]"). The absence of data is itself informative. |
+**Source:** v1.0 audit, Phase 01
+**Severity:** LOW
+**Current state:** `CongressGovScraper.scan()` (line 53-55) already returns `[]` when key is missing and logs a warning. The "tech debt" is that this is undocumented behavior -- users see a warning but no guidance.
 
-### AF-05: DO NOT Build a Frontend Dashboard or Web UI
+**Table stakes (minimum fix):**
+- Add a note in README.md under a "Configuration" section explaining that `CONGRESS_API_KEY` is optional
+- Document what is lost without it (no legislative bill tracking from Congress.gov)
+- Add `--dry-run` output that shows "needs API key" status for congress_gov (already partially exists at line 88 of main.py)
 
-| Anti-Feature | A web application for browsing/generating packets |
-| **Why Avoid** | Explicitly out of scope per project constraints. The users are policy analysts running CLI tools on a schedule. A web UI adds deployment complexity (hosting, auth, CORS, etc.) that provides no value for the current user base. |
-| **What to Do Instead** | CLI with clear flags (--generate-packets --tribe "Navajo Nation" or --generate-packets --batch). Integrate with existing GitHub Actions for batch runs. |
+**Gold standard:**
+- Add a startup summary that reports which scrapers are active/skipped based on available keys
+- Test for graceful degradation: `test_congress_scraper_no_key` that verifies `[]` return and no exception
+- Consider: if key is empty string vs not set vs invalid -- all three cases degrade gracefully
 
-### AF-06: DO NOT Purchase BEA RIMS II Multiplier Data
+**Anti-patterns:**
+- Do NOT make the key required (breaks existing behavior)
+- Do NOT suppress the warning log (it is useful for operators to know Congress.gov is skipped)
 
-| Anti-Feature | Spending $500+ per region on official RIMS II multipliers for economic impact calculations |
-| **Why Avoid** | (a) Cost-prohibitive at scale (hundreds of regions). (b) The precision of RIMS II is not needed for advocacy framing -- congressional staff expect approximate multiplier ranges, not precise input-output coefficients. (c) Standard federal advocacy practice uses literature-based multiplier estimates. |
-| **What to Do Instead** | Use established, citable standard multipliers: ~2.0x total output multiplier for direct federal spending (published range for government grants), plus FEMA's documented 4:1 benefit-cost ratio for pre-disaster mitigation investments. Cite the sources (e.g., "FEMA estimates every $1 invested in pre-disaster mitigation saves $4 in future disaster costs"). |
+**Dependencies:** None.
+
+---
+
+## Category 2: Hardcoded Values (3 items)
+
+### TD-02: FY26 Dates Hardcoded in Config + DOCX Output
+
+**Source:** v1.0 audit Phase 02 + v1.1 audit H-04
+**Severity:** MEDIUM
+**Current state:**
+- `config/scanner_config.json` line 118: `"fy26_end": "2026-09-30"` -- used by IIJA sunset monitor
+- `src/packets/docx_sections.py` line 55: `"FY26 Climate Resilience Program Priorities"` -- cover page title
+- `src/packets/strategic_overview.py` lines 3, 182, 195, 227: `"FY26"` in headers and titles
+- `src/graph/builder.py` lines 176, 398: `"FY26"` in urgency labels and fiscal year fields
+- `data/policy_tracking.json`: `"FY26"` in policy tracking IDs and reasoning text
+- `src/monitors/iija_sunset.py`: `IIJA_FY26_PROGRAMS` dict name and docstrings (these are factual -- IIJA does expire in FY26)
+- `src/scrapers/usaspending.py` line 216: `"FY26 Obligation"` in title formatting
+
+**Table stakes (minimum fix):**
+- Add `"fiscal_year": "FY26"` and `"fiscal_year_end": "2026-09-30"` to the top level of `scanner_config.json`
+- Modify `docx_sections.py` cover page to read fiscal year from config: `f"{fiscal_year} Climate Resilience Program Priorities"`
+- Modify `strategic_overview.py` to use config-driven fiscal year in all document headings
+- Modify `iija_sunset.py` to read `fy26_end` from monitor config (already does this -- line 118 of config)
+- Pass fiscal year string through to any renderer that needs it (via config dict or as parameter)
+
+**Gold standard:**
+- Single source of truth: `config.fiscal_year` flows through entire pipeline
+- `graph/builder.py` uses `config["fiscal_year"]` for urgency and fiscal year fields
+- `usaspending.py` uses config for title formatting
+- Changing the config value from `"FY26"` to `"FY27"` makes the entire system update -- documents, monitors, graph labels
+- Note: `policy_tracking.json` and `program_inventory.json` contain FY26 in narrative text (ci_determination strings) -- these are authored content, not computed values. They should be updated manually when the fiscal year changes, not templated.
+
+**Anti-patterns:**
+- Do NOT template the narrative text in `program_inventory.json` (e.g., do not replace `"FY26 funded at $34.291M"` with `"{fiscal_year} funded at $34.291M"` -- this is authored policy analysis, not a computed string)
+- Do NOT rename `IIJA_FY26_PROGRAMS` -- the IIJA genuinely expires in FY26; this is a factual constant, not a configurable value
+- Do NOT over-abstract -- a simple string substitution in 4-5 renderer files is sufficient
+- Do NOT create a FiscalYear class or date calculation library
+
+**Dependencies:** Touches docx_sections, strategic_overview, graph builder, usaspending scraper. Low risk -- string substitutions only.
+
+---
+
+### TD-03: graph_schema.json Path Hardcoded
+
+**Source:** v1.1 audit D-02
+**Severity:** MEDIUM
+**Current state:** The path `"data/graph_schema.json"` appears hardcoded in 4 locations:
+- `src/main.py` line 104: `Path("data/graph_schema.json")` in dry_run display
+- `src/graph/builder.py` line 25: `GRAPH_SCHEMA_PATH = Path("data/graph_schema.json")`
+- `src/packets/orchestrator.py` line 537: `graph_path = Path("data/graph_schema.json")`
+- `src/packets/strategic_overview.py` line 84: `self._load_json("data/graph_schema.json")`
+
+**Table stakes (minimum fix):**
+- Add `"graph_schema_path": "data/graph_schema.json"` to `scanner_config.json`
+- Modify `graph/builder.py` to accept path from config (falling back to current default)
+- Modify `orchestrator.py` `_load_structural_asks()` to read path from `self.config`
+- Modify `strategic_overview.py` to read path from config
+- Modify `main.py` dry_run to read path from config
+
+**Gold standard:**
+- All data file paths centralized in config under a `"data_paths"` section:
+  ```json
+  "data_paths": {
+    "graph_schema": "data/graph_schema.json",
+    "program_inventory": "data/program_inventory.json",
+    "policy_tracking": "data/policy_tracking.json"
+  }
+  ```
+- Every module reads paths from config, never hardcodes them
+- Makes it possible to run with alternative data directories (useful for testing)
+
+**Anti-patterns:**
+- Do NOT create an environment variable for this -- config file is the right place
+- Do NOT create a PathResolver class -- a simple config key is sufficient
+- Do NOT move the actual file -- just make the path configurable
+
+**Dependencies:** Requires config changes. Low risk but touches 4 modules.
+
+---
+
+### TD-12: Stale ROADMAP Header Count
+
+**Source:** v1.0 audit, meta
+**Severity:** LOW
+**Current state:** v1.0 ROADMAP.md header says "31/31 requirements" but actual count is 30. This is in the archived milestone file at `.planning/milestones/v1.0-ROADMAP.md`.
+
+**Table stakes (minimum fix):**
+- Fix the header count in `v1.0-ROADMAP.md` from 31 to 30
+- One-line edit
+
+**Gold standard:**
+- Same as table stakes -- this is an archived milestone file, not a living document
+
+**Anti-patterns:**
+- Do NOT add automated count validation tooling for this -- it is a one-time typo fix in an archived file
+
+**Dependencies:** None. Standalone 1-line fix.
+
+---
+
+## Category 3: Code Quality (4 items)
+
+### TD-06: Logger Naming Inconsistency (economic.py)
+
+**Source:** v1.1 audit H-01
+**Severity:** LOW
+**Current state:** `src/packets/economic.py` line 15 uses `logging.getLogger(__name__)` which produces `src.packets.economic`. All other packets modules use explicit hierarchical names like `"tcr_scanner.packets.docx_hotsheet"`. The inconsistency means log filtering by `tcr_scanner.packets.*` would miss economic.py logs.
+
+**Table stakes (minimum fix):**
+- Change `economic.py` line 15 from `logging.getLogger(__name__)` to `logging.getLogger("tcr_scanner.packets.economic")`
+
+**Gold standard:**
+- Audit all logger names across the entire codebase for consistency
+- The v1.0 modules (scrapers, monitors, graph, analysis, reports) use `__name__` while v1.1 modules (packets/*) use explicit `"tcr_scanner.packets.*"` names. Two conventions coexist:
+  - v1.0: `__name__` pattern (produces `src.scrapers.base`, `src.monitors.iija_sunset`, etc.)
+  - v1.1: explicit `"tcr_scanner.packets.*"` pattern
+- Gold standard: pick one convention and apply it everywhere. Recommendation: explicit `"tcr_scanner.*"` names everywhere, because `src.*` is an implementation detail that leaks module structure into logs.
+- However: changing all v1.0 loggers is a larger scope change. For v1.2, just fix economic.py to match its siblings.
+
+**Anti-patterns:**
+- Do NOT change all v1.0 logger names in this milestone (scope creep)
+- Do NOT create a custom Logger factory class
+- Do NOT remove the logger -- it is used for legitimate warnings
+
+**Dependencies:** None. One-line change.
+
+---
+
+### TD-07: _format_dollars() Duplicated in 2 Files
+
+**Source:** v1.1 audit L-01
+**Severity:** LOW
+**Current state:** Identical function `_format_dollars(amount: float) -> str` exists in:
+- `src/packets/economic.py` line 386-395 (used by `EconomicImpactCalculator.format_impact_narrative`)
+- `src/packets/docx_hotsheet.py` line 110-112 (used by `HotSheetRenderer._add_award_history`, `_add_economic_impact`)
+
+Both return `f"${amount:,.0f}"`.
+
+**Table stakes (minimum fix):**
+- Remove `_format_dollars` from `docx_hotsheet.py`
+- Import it from `economic.py`: `from src.packets.economic import _format_dollars`
+- Or better: rename to `format_dollars` (drop underscore) since it is now a shared utility, and put it in economic.py as a public function
+
+**Gold standard:**
+- Create a small `src/packets/formatting.py` utility module with `format_dollars()` and any other shared formatting functions
+- Both `economic.py` and `docx_hotsheet.py` import from `formatting.py`
+- This avoids economic.py importing from docx_hotsheet.py or vice versa (keeps dependency direction clean)
+
+**Anti-patterns:**
+- Do NOT create a large `utils.py` kitchen-sink module
+- Do NOT leave both copies and add a comment "see also economic.py" -- actually deduplicate
+- Do NOT change the function signature or behavior -- it works fine, just consolidate it
+
+**Dependencies:** None. Safe refactor -- no behavior change.
+
+---
+
+### TD-08: Incomplete Program Fields (access_type/funding_type)
+
+**Source:** v1.1 audit M-03
+**Severity:** LOW
+**Current state:** All 16 programs in `program_inventory.json` actually DO have `access_type` and `funding_type` fields (verified by grep). The original tech debt note may have been about programs with `null` CFDA fields or about values that could be more specific. Let me verify:
+- `epa_tribal_air` has `"cfda": null` (line 354)
+- All 16 programs have non-null `access_type` and `funding_type`
+
+The actual gap is: some `access_type` values might not be fully populated or precise. The renderers handle missing values gracefully (empty string check before display).
+
+**Table stakes (minimum fix):**
+- Audit all 16 programs and verify `access_type` and `funding_type` are accurate
+- Fill in any null CFDAs where the Assistance Listing Number is known
+- Document which programs intentionally have null CFDA (e.g., `epa_tribal_air` may not have a single CFDA)
+
+**Gold standard:**
+- Add CFDA numbers for all programs where they exist on SAM.gov
+- Add a `"cfda_source"` field documenting where each CFDA was verified
+- Validate that CFDA numbers match SAM.gov current listings
+
+**Anti-patterns:**
+- Do NOT invent CFDA numbers -- if a program does not have one, null is correct
+- Do NOT add mandatory validation that rejects null CFDA -- some programs legitimately lack them
+- Do NOT restructure the program_inventory.json schema -- just fill in missing data
+
+**Dependencies:** None. Data file edit only.
+
+---
+
+### TD-13: No Circuit-Breaker Retry Pattern
+
+**Source:** v1.0 audit Phase 03
+**Severity:** LOW
+**Current state:** `BaseScraper._request_with_retry()` in `base.py` already has:
+- Exponential backoff (line 94: `BACKOFF_BASE ** attempt + random.uniform(0, 1)`)
+- 3 retries (MAX_RETRIES = 3)
+- 429 rate-limit handling with Retry-After header respect
+- 403 retry with backoff
+- Timeout handling
+
+What is missing is a **circuit breaker** -- if a source has failed N times across multiple calls in a scan, stop trying for the rest of the scan instead of retrying every individual request.
+
+**Table stakes (minimum fix):**
+- Add a simple per-scraper failure counter to `BaseScraper`
+- After N consecutive failures (e.g., 3 full retry cycles), mark the scraper as "tripped" and short-circuit remaining requests with a warning
+- Reset on successful request
+
+**Gold standard:**
+- Implement a lightweight `CircuitBreaker` class with three states: CLOSED (normal), OPEN (failing, reject fast), HALF_OPEN (try one request)
+- Configurable failure threshold and cooldown period
+- Log state transitions at WARNING level
+- Could be a simple 30-line class inside `base.py` -- no external library needed
+
+**Anti-patterns:**
+- Do NOT install a circuit-breaker library (e.g., `pybreaker`) for this -- the use case is simple enough for 30 lines of code
+- Do NOT add circuit breaker config to scanner_config.json unless there is a real need to tune thresholds
+- Do NOT break the existing retry logic -- circuit breaker wraps around it, not replaces it
+- Do NOT add state persistence (circuit breaker state should reset each scan run)
+
+**Dependencies:** Touches `base.py` only. All scrapers inherit from it. Low risk.
+
+---
+
+## Category 4: Data Population (2 items)
+
+### TD-04: Award Cache Requires Live API Run to Populate
+
+**Source:** v1.1 audit, Phase 06
+**Severity:** MEDIUM
+**Current state:** 592 award cache files exist in `data/award_cache/`, but they were seeded with empty or minimal structures during Phase 6 development. Real award data requires running `TribalAwardMatcher.run(scraper)` against the live USASpending API, which does full pagination across all CFDAs for all 592 Tribes.
+
+**Table stakes (minimum fix):**
+- Add a CLI command: `python -m src.main --populate-awards`
+- This triggers `TribalAwardMatcher` to run against USASpending for all 592 Tribes
+- Include progress output (N/592, elapsed time, errors)
+- Document in README.md under "Data Population" section
+- Handle graceful interruption (Ctrl+C saves progress so far)
+
+**Gold standard:**
+- Incremental population: `--populate-awards --since 2024-01-01` to fetch only recent awards
+- Resume support: if interrupted, re-running skips Tribes with recent cache files (check modified time)
+- Rate limiting: respect USASpending rate limits (no API key needed, but courtesy delays between requests)
+- Cache freshness tracking: each cache file includes `"fetched_at"` timestamp
+- Validation: after population, report summary (N Tribes with awards, total obligation, N empty)
+
+**Anti-patterns:**
+- Do NOT run population as part of the normal `--prep-packets` pipeline -- it should be a separate explicit step
+- Do NOT require population to succeed for all 592 Tribes before allowing packet generation (partial data is useful)
+- Do NOT store API responses raw -- continue using the normalized cache format
+- Do NOT run all 592 in parallel (will hit rate limits) -- sequential or small batches with delays
+
+**Dependencies:** Requires `src/packets/awards.py` (already built). CLI integration in `main.py`.
+
+---
+
+### TD-05: Hazard Profiles Require Manual Data Download
+
+**Source:** v1.1 audit, Phase 06
+**Severity:** MEDIUM
+**Current state:** 592 hazard profile files exist in `data/hazard_profiles/`, seeded during Phase 6. Real profiles require:
+1. Downloading FEMA NRI CSV (National Risk Index) from FEMA's data portal
+2. Downloading USFS Wildfire Risk to Communities XLSX from USFS portal
+3. Running `build_all_profiles()` to process and cache per-Tribe profiles
+
+**Table stakes (minimum fix):**
+- Add a CLI command: `python -m src.main --populate-hazards`
+- Document the manual download steps clearly in README.md:
+  - Step 1: Download NRI CSV from [FEMA NRI URL]
+  - Step 2: Download USFS XLSX from [USFS URL]
+  - Step 3: Place in `data/raw/` directory
+  - Step 4: Run `--populate-hazards`
+- Script processes the raw files into per-Tribe JSON profiles
+- Validate output: report how many Tribes got NRI data, how many got USFS data
+
+**Gold standard:**
+- Automated download via `--populate-hazards --download` that fetches the source files directly (if their URLs are stable and public)
+- Data validation: warn if NRI CSV has unexpected columns or USFS XLSX schema changed
+- Staleness check: track download dates and warn if data is older than 1 year
+- Incremental update: if only NRI or only USFS is available, update just that portion of each profile
+
+**Anti-patterns:**
+- Do NOT bundle the raw NRI/USFS data in the repository (too large, license concerns)
+- Do NOT assume download URLs are permanent -- document the manual fallback path
+- Do NOT block packet generation if hazard data is empty -- packets already handle missing hazard profiles gracefully
+- Do NOT parse NRI/USFS data at document generation time -- always pre-cache
+
+**Dependencies:** Requires `src/packets/hazards.py` (already built). CLI integration in `main.py`.
+
+---
+
+## Category 5: Documentation (7 items)
+
+### TD-09: Missing Phase 8 VERIFICATION.md
+
+**Source:** v1.1 audit, Phase 08
+**Severity:** LOW
+**Current state:** Phase 8 has 6 plan summaries (08-01 through 08-06) that serve as equivalent verification evidence, but no formal `08-VERIFICATION.md` file. All other phases (01-07) have verification files.
+
+**Table stakes (minimum fix):**
+- Create `.planning/phases/08-assembly-polish/08-VERIFICATION.md`
+- Follow the same format as other VERIFICATION files (e.g., `07-VERIFICATION.md`)
+- Reference the 6 plan summaries as evidence
+- Include test counts from Phase 8 (73 tests, 8 E2E integration tests)
+- Mark as retroactively verified
+
+**Gold standard:**
+- Same as table stakes -- this is a process artifact, not a code change
+
+**Anti-patterns:**
+- Do NOT re-run Phase 8 verification from scratch -- summarize existing evidence
+- Do NOT add new tests just to fill this file -- the 73 existing tests are sufficient
+
+**Dependencies:** None. Documentation only.
+
+---
+
+### TD-10: GitHub Pages Deployment Config Docs
+
+**Source:** v1.1 audit, Phase 08
+**Severity:** LOW
+**Current state:** The GitHub Pages deployment requires:
+1. Repository Settings > Pages enabled (source: `docs/web/` directory or GitHub Actions)
+2. Repository Secrets: `CONGRESS_API_KEY` and `SAM_API_KEY` for the Actions workflow
+3. Actions workflow file not yet in repo (`.github/workflows/` directory is empty or missing)
+
+README.md (line 274+) has a "Web Distribution" section but lacks step-by-step deployment instructions.
+
+**Table stakes (minimum fix):**
+- Add a "Deployment" section in README.md with:
+  - Step 1: Enable GitHub Pages in repository settings
+  - Step 2: Add repository secrets (CONGRESS_API_KEY, SAM_API_KEY)
+  - Step 3: Configure Pages source (docs/web directory)
+  - Step 4: Trigger first workflow run
+- Create `.github/workflows/generate-packets.yml` with the CI workflow (weekly cron + manual dispatch) described in Phase 8 plans
+
+**Gold standard:**
+- Include a `DEPLOYMENT.md` with complete deployment guide
+- GitHub Actions workflow tested and committed
+- Badge in README showing deployment status
+- Troubleshooting section for common issues (Pages not deploying, secrets missing, workflow permissions)
+
+**Anti-patterns:**
+- Do NOT assume the user knows GitHub Actions -- provide copy-paste-ready workflow YAML
+- Do NOT hardcode repository URLs in the workflow -- use `${{ github.repository }}` variable
+- Do NOT require manual packet generation before Pages works -- workflow should handle it
+
+**Dependencies:** TD-11 (SquareSpace URL) can be addressed in the same README edit.
+
+---
+
+### TD-11: SquareSpace Placeholder URL
+
+**Source:** v1.1 audit, Phase 08
+**Severity:** LOW
+**Current state:** `docs/web/index.html` line 45 has `src="https://yourusername.github.io/tcr-policy-scanner/"` as a placeholder in the SquareSpace embed comment.
+
+**Table stakes (minimum fix):**
+- This is intentionally a placeholder -- each deployment will have a different GitHub Pages URL
+- Add a note in README.md making it clear the user must replace `yourusername` with their actual GitHub username
+- Optionally: add a configuration variable or comment making the required edit obvious
+
+**Gold standard:**
+- Same as table stakes plus: add a deployment script or setup guide that prompts for the GitHub username and auto-generates the correct embed code
+
+**Anti-patterns:**
+- Do NOT hardcode a specific repository URL -- it must remain a template
+- Do NOT remove the placeholder -- it is useful documentation
+
+**Dependencies:** Can be addressed in same README edit as TD-10.
+
+---
+
+### TD-15: Missing v1.0 Phase Summaries
+
+**Source:** v1.0 audit, meta
+**Severity:** LOW
+**Current state:** v1.0 phases (01-04) DO have plan-level SUMMARY files (01-01-SUMMARY, 01-02-SUMMARY, etc.) -- they were created during execution. The audit noted that phases "executed before GSD verification workflow" -- meaning the VERIFICATION.md files were created after the fact. All 4 v1.0 phases already have VERIFICATION files. The actual gap may refer to the v1.0 milestone not having a formal `v1.0-REQUIREMENTS.md` before the audit created one.
+
+**Table stakes (minimum fix):**
+- Verify all v1.0 phase directories have VERIFICATION.md (they do: 01-, 02-, 03-, 04-)
+- Verify v1.0 milestone archive is complete (v1.0-ROADMAP.md, v1.0-REQUIREMENTS.md, v1.0-MILESTONE-AUDIT.md all exist)
+- If anything is missing, create it retroactively from existing evidence
+- Close this item as "already addressed" if no gaps found
+
+**Gold standard:**
+- Same as table stakes
+
+**Anti-patterns:**
+- Do NOT create elaborate retroactive documentation for a shipped milestone
+- Do NOT re-audit v1.0 -- just verify files exist
+
+**Dependencies:** None.
+
+---
+
+### TD-16: Stale PROJECT.md Counts
+
+**Source:** v1.0 audit, meta
+**Severity:** LOW
+**Current state:** PROJECT.md was last updated 2026-02-11 when v1.2 milestone started. The v1.0 audit noted stale counts: "21 authorities/14 barriers (actual 20/13), pipeline shows 5 stages (actual 6)". These were likely fixed during v1.1 but should be verified.
+
+**Table stakes (minimum fix):**
+- Verify current PROJECT.md counts match reality:
+  - graph_schema.json: count authorities, barriers, funding_vehicles
+  - Pipeline stages: Ingest -> Normalize -> Graph -> Monitors -> Decision Engine -> Reporting (6 stages)
+  - Source files, LOC, test counts
+- Fix any remaining stale numbers
+
+**Gold standard:**
+- Same as table stakes. PROJECT.md is a living document that gets updated with each milestone.
+
+**Anti-patterns:**
+- Do NOT add automated count verification -- just fix the numbers
+- Do NOT restructure PROJECT.md -- just update stale counts
+
+**Dependencies:** Should be done last (after all other items change counts).
+
+---
+
+### TD-17: MILESTONES.md Update
+
+**Source:** v1.0 audit, meta (extended)
+**Severity:** LOW
+**Current state:** MILESTONES.md last line says "Planning next milestone." -- should be updated to reflect v1.2 is in progress.
+
+**Table stakes (minimum fix):**
+- Update MILESTONES.md v1.1 section "What's next" to reference v1.2 Tech Debt Cleanup
+
+**Gold standard:**
+- Same as table stakes. Will get a full v1.2 section when the milestone ships.
+
+**Anti-patterns:**
+- Do NOT add the v1.2 section yet -- it has not shipped
+
+**Dependencies:** None.
 
 ---
 
 ## Feature Dependencies
 
 ```
-                       Tribal Registry (TS-01)
-                      /      |       |        \
-                     /       |       |         \
-         Congressional    USASpending  Hazard     Ecoregion
-         Mapping (TS-03)  Awards (TS-04)  Profiling   Framework
-              |               |         (DF-01)    (DF-04)
-              |               |            |           |
-              +-------+-------+-----+------+-----------+
-                      |             |
-                 DOCX Engine     Economic
-                 (TS-06)        Impact (DF-02)
-                      |             |
-              +-------+-------------+
-              |
-         Per-Program Hot Sheets (TS-02)
-              |
-         Advocacy Language (TS-05)
-              |
-         Structural Asks (DF-05)
-              |
-    +----+----+----+
-    |              |
- Document 1    Document 2
- Per-Tribe     Shared
- (TS-01)      (TS-07)
-    |              |
- Change Tracking (DF-03)
-    |
- Batch/Ad-Hoc CLI (TS-08)
+Independent clusters (can be done in any order):
+
+Cluster A: Code Quality (no dependencies between items)
+  TD-06 (logger naming)
+  TD-07 (_format_dollars dedup)
+  TD-08 (program fields)
+  TD-12 (ROADMAP header count)
+
+Cluster B: Configuration (should be done together)
+  TD-02 (FY26 hardcoding) --> TD-03 (graph_schema path)
+  These both modify scanner_config.json and multiple renderers.
+  Do TD-03 first (adds data_paths section), then TD-02 (adds fiscal_year).
+
+Cluster C: Testing + Resilience
+  TD-01 (scraper integration tests)
+  TD-13 (circuit breaker) --> TD-01 benefits from circuit breaker
+  TD-14 (CONGRESS_API_KEY docs)
+
+Cluster D: Data Population (should be done together)
+  TD-04 (award cache) --> TD-05 (hazard profiles)
+  Both add CLI commands to main.py. Similar patterns.
+
+Cluster E: Documentation (do last, after code changes)
+  TD-09 (Phase 8 VERIFICATION.md)
+  TD-10 (GitHub Pages deployment)
+  TD-11 (SquareSpace URL)
+  TD-15 (v1.0 phase summaries)
+  TD-16 (PROJECT.md counts) -- must be last
+  TD-17 (MILESTONES.md update)
 ```
 
-Critical path: Tribal Registry --> Congressional Mapping + USASpending Awards + Hazard Profiling --> DOCX Engine --> Hot Sheets Assembly --> CLI Integration
+**Recommended ordering:**
+1. Cluster A first (quick wins, build momentum)
+2. Cluster B second (config changes affect multiple modules)
+3. Cluster C third (testing infrastructure)
+4. Cluster D fourth (data population -- needs working CLI)
+5. Cluster E last (documentation reflects final state)
 
-### Dependency Details
+---
 
-| Feature | Hard Dependencies | Soft Dependencies |
-|---------|-------------------|-------------------|
-| TS-01 Per-Tribe Identity | Tribal Registry data | -- |
-| TS-02 Hot Sheets | TS-01, TS-03, TS-04, TS-05, TS-06 | DF-01, DF-02, DF-04, DF-05 |
-| TS-03 Congressional Delegation | Tribal Registry (state), Census TIGER, Congress.gov API | -- |
-| TS-04 USASpending Awards | Tribal Registry (names + aliases), USASpending API | -- |
-| TS-05 Advocacy Language | Decision engine (existing), program inventory (existing) | DF-05 structural asks |
-| TS-06 DOCX Engine | python-docx library | -- |
-| TS-07 Document 2 | TS-06, monitor data (existing) | DF-04 ecoregions |
-| TS-08 Batch/Ad-Hoc CLI | TS-01, TS-06 | All other features |
-| DF-01 Hazard Profiling | FEMA NRI data, USFS wildfire data, Tribal Registry | -- |
-| DF-02 Economic Impact | TS-04, TS-03, standard multipliers | -- |
-| DF-03 Change Tracking | Packet state persistence, TS-02 | -- |
-| DF-04 Ecoregion Framework | Tribal Registry with ecoregion classification | -- |
-| DF-05 Structural Asks | Knowledge graph (existing) | -- |
+## Complexity Estimates
+
+| Item | Complexity | Files Changed | Lines Changed (est.) |
+|------|-----------|---------------|---------------------|
+| TD-01 | Medium | 2-3 new test files | ~150 |
+| TD-02 | Medium | 5-6 source files + config | ~40 |
+| TD-03 | Low-Medium | 4 source files + config | ~25 |
+| TD-04 | Medium | 1-2 source files (main.py, awards.py) | ~80 |
+| TD-05 | Medium | 1-2 source files (main.py, hazards.py) | ~80 |
+| TD-06 | Trivial | 1 file | 1 |
+| TD-07 | Low | 2-3 files | ~15 |
+| TD-08 | Low | 1 data file | ~10 |
+| TD-09 | Low | 1 new file | ~30 |
+| TD-10 | Low-Medium | 1-2 files (README + workflow YAML) | ~80 |
+| TD-11 | Trivial | 1 file (README) | ~5 |
+| TD-12 | Trivial | 1 file | 1 |
+| TD-13 | Low-Medium | 1 file (base.py) | ~40 |
+| TD-14 | Low | 1-2 files | ~15 |
+| TD-15 | Trivial | 0-1 files | ~0-20 |
+| TD-16 | Trivial | 1 file | ~10 |
+| TD-17 | Trivial | 1 file | ~3 |
+
+**Total estimated:** ~585 lines changed across ~20 files
 
 ---
 
 ## MVP Recommendation
 
-For an MVP that delivers usable per-Tribe advocacy packets:
+**Must-have for v1.2 (all 17 items):**
+All items are scoped as tech debt cleanup. The whole point of this milestone is to close all 17. None should be deferred.
 
-### Phase 1: Foundation (Must Ship First)
+**If time-constrained, prioritize MEDIUM items first:**
+1. TD-02 (FY26 hardcoding) -- prevents the system from going stale when FY27 arrives
+2. TD-03 (graph_schema path) -- config hygiene
+3. TD-04 (award cache population) -- enables real data in packets
+4. TD-05 (hazard profile population) -- enables real data in packets
+5. TD-01 (scraper integration tests) -- testing confidence
+6. TD-13 (circuit breaker) -- resilience
 
-1. **Tribal Registry** (TS-01) -- 574 Tribes mapped to states, ecoregions, known aliases for USASpending matching. This is the data backbone everything else depends on.
-2. **DOCX Generation Engine** (TS-06) -- python-docx infrastructure for programmatic document construction. Styles, headers/footers, page breaks, tables.
-3. **Document 2: Shared Strategic Overview** (TS-07) -- Easier to build first because it draws primarily from existing data (CI dashboard, monitors, structural asks). Validates the DOCX engine before tackling per-Tribe complexity.
-
-### Phase 2: Per-Tribe Data Assembly
-
-4. **Congressional Mapping** (TS-03) -- Census TIGER + Congress.gov API for delegation per Tribe.
-5. **USASpending Award Matching** (TS-04) -- Per-Tribe per-program award history with conservative fuzzy matching.
-6. **Hazard Profiling** (DF-01) -- FEMA NRI + USFS wildfire data per Tribe.
-
-### Phase 3: Packet Assembly
-
-7. **Per-Program Hot Sheets** (TS-02) -- Assemble Tribe-specific data into 16-program Hot Sheet format.
-8. **Advocacy Language** (TS-05) -- Template-based talking points from existing program data.
-9. **Structural Asks Integration** (DF-05) -- Weave structural asks into Hot Sheets.
-10. **Document 1: Per-Tribe Program Priorities** (TS-01 + TS-02) -- Full per-Tribe DOCX.
-
-### Phase 4: Operations
-
-11. **Batch/Ad-Hoc CLI** (TS-08) -- Generation modes.
-12. **Economic Impact Framing** (DF-02) -- Standard multipliers applied to USASpending data.
-13. **Ecoregion Priority Framework** (DF-04) -- Priority ordering by ecoregion.
-14. **Change Tracking** (DF-03) -- Since-last-packet diffs.
-
-### Defer to Post-MVP
-
-- **EPA EJScreen integration**: EJScreen was removed from EPA's website on Feb 5, 2025. Reconstructed versions exist at screening-tools.com (PEDP) but stability is uncertain. FEMA NRI + USFS wildfire data provide adequate hazard coverage without EJScreen. Revisit if/when EPA restores official access.
-- **NOAA Climate Projections**: Native Climate (native-climate.com) provides tribal-specific projections for 633 tribally controlled areas using NASA NEX-GDDP-CMIP6 data. This is valuable but adds significant data integration complexity. FEMA NRI covers the essential hazard data; NOAA projections could enhance future versions.
-- **Interactive packet preview**: CLI-only for now. A preview mode could render packet sections to console for quick validation.
-
----
-
-## Data Source Availability Assessment
-
-| Source | Status | Format | Cost | Confidence |
-|--------|--------|--------|------|------------|
-| BIA Tribal List | Available | Federal Register notice, EPA xlsx | Free | HIGH |
-| Census TIGER | Available (2025 shapefiles released Sep 2025) | Shapefile | Free | HIGH |
-| Congress.gov API | Available (API key in hand) | REST JSON | Free | HIGH |
-| USASpending API | Available (already integrated) | REST JSON | Free | HIGH |
-| FEMA NRI v1.20 | Available (Dec 2025 release) | CSV/shapefile/geodatabase | Free | HIGH |
-| USFS Wildfire Risk | Available | Tabular spreadsheet, GIS | Free | HIGH |
-| BEA RIMS II | Available but cost-prohibitive | Purchase per region | $500/region | N/A (not recommended) |
-| EPA EJScreen | Removed from EPA Feb 2025 | Reconstructed at screening-tools.com | Free (unofficial) | LOW |
-| NOAA Climate Projections | Available | API + download | Free | MEDIUM |
-| Native Climate | Available | Open-access datasets | Free | MEDIUM |
+**LOW items are quick wins (do in bulk):**
+TD-06, TD-07, TD-08, TD-09, TD-10, TD-11, TD-12, TD-14, TD-15, TD-16, TD-17
 
 ---
 
 ## Sources
 
-### Authoritative
-
-- [FEMA National Risk Index Data](https://www.fema.gov/about/openfema/data-sets/national-risk-index-data) -- Tribal datasets in shapefile/CSV/geodatabase, 18 hazard types, v1.20 Dec 2025
-- [FEMA NRI Data Resources](https://hazards.fema.gov/nri/data-resources) -- Download portal (redirects to RAPT as of Feb 2026)
-- [USASpending API](https://api.usaspending.gov/) -- recipient_search_text filter, recipient_type_names filter
-- [USASpending API search filters](https://github.com/fedspendingtransparency/usaspending-api/blob/master/usaspending_api/api_contracts/search_filters.md) -- Documented filter parameters
-- [Census TIGER/Line Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) -- 2025 shapefiles with congressional districts and tribal areas
-- [Congress.gov API](https://gpo.congress.gov/) -- Members, committees, congressional districts
-- [BIA Tribal Leaders Directory](https://www.bia.gov/service/tribal-leaders-directory) -- Official tribal listing
-- [EPA Tribes Services](https://www.epa.gov/data/tribes-services) -- Tribe Entity Mapping Spreadsheet with BIA codes
-- [USFS Wildfire Risk to Communities](https://wildfirerisk.org/download/) -- Tabular data including tribal areas
-- [BEA RIMS II](https://apps.bea.gov/regional/rims/rimsii/) -- Regional multipliers ($500/region as of Aug 2025)
-- [Native Climate Projections](https://native-climate.com/projections/) -- Tribal-specific climate projections for 633 areas
-
-### Community/Research
-
-- [EJScreen removal and reconstruction](https://screening-tools.com/epa-ejscreen) -- PEDP reconstruction of EJScreen v2.3
-- [python-docx batch performance](https://github.com/python-openxml/python-docx/issues/158) -- Performance considerations for batch generation
-- Tribal advocacy organization impact days -- 2025 Tribal priorities including FY26 appropriations
+All findings verified directly against source code at `F:\tcr-policy-scanner`:
+- `src/scrapers/base.py` -- retry logic, circuit breaker gap
+- `src/packets/economic.py` -- logger naming, _format_dollars
+- `src/packets/docx_hotsheet.py` -- _format_dollars duplicate
+- `src/packets/docx_sections.py` -- FY26 hardcoding
+- `src/packets/orchestrator.py` -- graph_schema path
+- `src/packets/strategic_overview.py` -- FY26 hardcoding, graph_schema path
+- `src/graph/builder.py` -- FY26 hardcoding, graph_schema path
+- `src/main.py` -- graph_schema path, CLI entry point
+- `src/scrapers/congress_gov.py` -- CONGRESS_API_KEY handling
+- `config/scanner_config.json` -- FY26 date, monitor config
+- `data/program_inventory.json` -- access_type/funding_type fields
+- `docs/web/index.html` -- SquareSpace placeholder
+- `.planning/milestones/v1.0-MILESTONE-AUDIT.md` -- original tech debt list
+- `.planning/milestones/v1.1-MILESTONE-AUDIT.md` -- updated tech debt list
+- `.planning/PROJECT.md` -- stale counts
+- `.planning/MILESTONES.md` -- milestone tracking

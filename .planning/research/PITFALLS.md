@@ -1,501 +1,527 @@
-# Domain Pitfalls: Tribe-Specific Advocacy Packet Generation
+# Domain Pitfalls: Tech Debt Cleanup in a Production Python Async Pipeline
 
-**Domain:** Per-Tribe DOCX advocacy packet generation for 574 federally recognized Tribes
-**Project:** TCR Policy Scanner v1.1
-**Researched:** 2026-02-10
-**Confidence:** MEDIUM-HIGH (most findings verified against official API docs and issue trackers)
+**Domain:** Refactoring 17 tech debt items in a shipping Python 3.12 async pipeline
+**Project:** TCR Policy Scanner v1.2 (tech debt milestone)
+**Researched:** 2026-02-11
+**Confidence:** MEDIUM-HIGH (findings verified against codebase inspection, official Python docs, and community patterns)
+
+**Governing constraint:** 287 tests passing, daily scan workflow running on GitHub Actions, DOCX generation for 592 Tribes on weekly schedule. Every change must preserve all three.
 
 ---
 
 ## Critical Pitfalls
 
-Mistakes that cause incorrect data in advocacy documents, broken generation pipelines, or unusable outputs. These would block shipment or produce documents that undermine credibility with congressional offices.
+Mistakes that break the production pipeline, cause data loss, or require emergency rollbacks. These are the ones that turn a "cleanup" milestone into a firefight.
 
 ---
 
-### C-1: Tribal Name Matching Produces False Positives and Misattributed Awards
+### C-1: Circuit Breaker Interacts Badly with Existing Retry Logic in BaseScraper
 
-**What goes wrong:** Fuzzy-matching 574 BIA-listed Tribal names against USASpending recipient names produces incorrect matches. A Tribe gets credited with another Tribe's awards, or awards are missed entirely. For example:
-- "Cheyenne River Sioux Tribe" matches "Cheyenne and Arapaho Tribes" (partial overlap)
-- "Pueblo of Laguna" matches "Laguna Development Corporation" (subsidiary, not the Tribe)
-- "The Confederated Tribes of the Colville Reservation" in BIA list vs "Confederated Tribes Colville Reservation" in USASpending (leading article + prepositions stripped)
-- Multiple Tribes share substring tokens: "Sioux" appears in 8+ Tribe names, "Chippewa" in 6+, "Pueblo" in 19+
+**What goes wrong:** Adding a circuit breaker to `BaseScraper` that wraps `_request_with_retry` creates a double-fault-handling stack. The existing retry loop (3 attempts with exponential backoff + 429 handling) and the new circuit breaker compete for control. Specific failure modes:
 
-**Why it happens:** USASpending recipient names come from SAM.gov registrations where Tribes self-report. The BIA Federal Register list uses official legal names with articles ("The"), formal prepositions ("of the"), and parenthetical former names. These are two independent naming authorities that never agreed on a canonical form. Additionally, Tribal enterprises, subsidiaries, and housing authorities register as separate recipients but contain the Tribe's name as a substring.
+- The circuit breaker trips after seeing N failures, but those "failures" were retryable transient errors that `_request_with_retry` would have recovered from on attempt 2 or 3. The circuit opens prematurely, killing an entire scraper for the rest of the scan.
+- The circuit breaker counts 429 rate-limit responses as failures. But the existing code explicitly handles 429 with `Retry-After` headers and does NOT increment the attempt counter (line 74 of `base.py`: `continue # Do NOT increment attempt for server-requested delay`). If the circuit breaker sees 429s as failures, it will trip during normal rate-limited operation of USASpending and Congress.gov.
+- In half-open state, the circuit breaker allows one probe request. If that probe happens to be a 429 (which is normal during high-volume batch runs), the circuit re-opens for another full cooldown period, creating a cascading delay.
 
-**Consequences:** A document handed to a congressional office showing $2.3M in FEMA BRIC awards to a Tribe that actually received $0 destroys credibility instantly. False positives are worse than false negatives here -- better to show "no data available" than wrong data.
+**Why it happens:** Circuit breakers and retry-with-backoff solve overlapping problems at different layers. Retry handles transient failures within a single operation. Circuit breakers handle sustained service degradation across operations. Layering them naively creates a state machine that is hard to reason about.
+
+**Consequences:** Daily scans that previously succeeded with occasional retries now fail entirely because the circuit breaker opens after 2-3 transient errors. The USASpending scraper (which routinely returns 429s during batch Tribal award fetches) becomes unreliable. The `generate-packets.yml` weekly workflow times out because the circuit is open for extended periods.
 
 **Prevention:**
-1. Build a curated alias table mapping each of the 574 BIA names to known USASpending recipient name variants. Seed it with systematic transformations (strip "The ", normalize "of the" to "of", collapse whitespace) then manually verify the top 50 recipients by award volume.
-2. Use UEI (Unique Entity Identifier) as the primary matching key where possible -- it is deterministic. Fall back to fuzzy name matching only where UEI lookup fails.
-3. Use `rapidfuzz` (not `thefuzz`) with `token_sort_ratio` for fuzzy matching, but set a high threshold (>=85) and require manual review for matches between 85-95.
-4. Exclude known non-Tribal-government entities: filter out recipients containing "Corporation", "LLC", "Housing Authority", "Development", "Enterprise" unless they are in the curated alias table.
-5. Include a `match_confidence` field in every Tribe-award linkage, and surface LOW confidence matches in a validation report rather than silently including them.
+1. Place the circuit breaker OUTSIDE `_request_with_retry`, not inside it. The circuit breaker should see the final outcome of a retry sequence (success or exhausted retries), not intermediate retry attempts.
+2. Configure the circuit breaker to count only exhausted-retry failures (the exception raised on line 102 of `base.py`), NOT individual 429/timeout events within the retry loop.
+3. Use per-source circuit breakers, not a global one. A Federal Register outage should not block the Grants.gov scraper. The current `BaseScraper.__init__` takes `source_name` -- use this as the circuit breaker key.
+4. Set the failure threshold high enough for the daily scan pattern: the scanner makes roughly 50-80 requests per source. A threshold of 5 consecutive final-failures (not retries) is appropriate. Lower thresholds will trip on normal operation.
+5. In half-open state, exempt 429 responses from the "probe failed" determination. A 429 with `Retry-After` is a throttle signal, not a service failure.
+6. Provide a fallback in open-circuit state that returns cached data (the existing `ChangeDetector.load_cached()` pattern), not an empty result. The daily scan should degrade to "no new data from source X" rather than "source X produced 0 items."
 
-**Warning signs:** During testing, if >50 Tribes have 0 matched awards across all 16 programs, the matching logic is too strict. If any Tribe shows awards in programs they clearly do not participate in (e.g., a Southwest desert Tribe showing coastal flooding grants), matching is too loose.
+**Warning signs:** After adding circuit breaker, daily scan logs show `circuit open for <source>` messages. Scan results show 0 items from one or more sources that previously returned data. Batch packet generation takes 3x longer than before.
 
-**Detection:** Automated test: for each match, assert that the matched recipient's state overlaps with the Tribe's known state(s). Flag cross-state matches for manual review.
+**Detection:** Add a test that simulates the exact retry sequence from the existing codebase (2 failures, then success) and verify the circuit breaker does NOT trip. Add a test that simulates the 429 + Retry-After sequence and verify the circuit breaker does NOT count it as a failure.
 
-**Severity:** BLOCKS SHIPMENT -- incorrect financial data in congressional documents is unacceptable.
+**Severity:** BREAKS PRODUCTION if circuit opens during normal operation.
 
-**Phase:** Should be addressed in the earliest data pipeline phase. Build the alias table first and validate it before building anything downstream.
+**Affected items:** Circuit breaker addition to BaseScraper.
 
 ---
 
-### C-2: EPA EJScreen Data Source Is Unavailable -- Tool Was Removed in February 2025
+### C-2: Changing Logger Names Breaks Log Filtering and Monitoring
 
-**What goes wrong:** The project plan assumes EPA EJScreen as a data source for environmental justice indicators. EPA removed EJScreen from its website on February 5, 2025, as part of the administration's rollback of environmental justice programs. The EPA placed over 100 employees at the Office of Environmental Justice on leave. The official API endpoint is gone.
+**What goes wrong:** The codebase has two logger naming patterns:
+- **v1.0 modules** use `logging.getLogger(__name__)` (e.g., `src.scrapers.base`, `src.scrapers.federal_register`, `src.reports.generator`, `src.analysis.change_detector`)
+- **v1.1 modules** use hardcoded `logging.getLogger("tcr_scanner.packets.xxx")` (e.g., `tcr_scanner.packets.orchestrator`, `tcr_scanner.packets.docx_engine`)
 
-**Why it happens:** Executive policy changes eliminated the tool. This is not a temporary outage -- the institutional infrastructure behind the data was dismantled. While the underlying data (ACS demographics, EPA facility data, etc.) still exists in component sources, the pre-computed EJ indices at census-tract level are no longer served by EPA.
+Unifying these creates a breaking change either way:
+- If v1.0 modules switch to `"tcr_scanner.xxx"` format, the logger hierarchy changes. Any downstream log aggregation, filtering, or monitoring that looks for `src.scrapers.*` log patterns will stop matching.
+- If v1.1 modules switch to `__name__`, their logger names become `src.packets.xxx` instead of `tcr_scanner.packets.xxx`. This changes the logger hierarchy parent from `tcr_scanner` (non-existent root logger) to `src` (actual package root).
+- The root logger is configured in `main.py` line 305 with `logging.basicConfig()`. This configures the ROOT logger, which catches all loggers regardless of name. But if any external consumer (GitHub Actions log parsing, grep-based alerting) uses logger name patterns, changing names breaks them.
 
-**Consequences:** Any code written against `ejscreen.epa.gov` API endpoints will fail with 404/connection errors. The project loses one of its four planned hazard data sources, weakening the hazard profiling capability.
+**Why it happens:** v1.0 followed Python best practice (`__name__`). v1.1 used explicit names because the `src.packets` package was added later and the developer wanted a consistent `tcr_scanner.packets.*` prefix that matches the `main.py` root logger name `tcr_scanner`. Neither approach is wrong, but mixing them creates inconsistency that is tempting to "fix."
+
+**Consequences:** Moderate -- log filtering breaks silently. You do not get an error; you just stop seeing logs you expected. This is dangerous in production because a broken scraper might be silently failing and the log line that would alert you is now under a different logger name.
 
 **Prevention:**
-1. Use PEDP (Public Environmental Data Partners) reconstructed EJScreen data at `screening-tools.com` or `pedp-ejscreen.azurewebsites.net`. This is a Harvard/EDGI coalition that recreated EJScreen v2.3 using scraped data from before the shutdown.
-2. Design the hazard profiling module with a source-abstraction layer so that EJScreen data can come from PEDP, archived CSVs, or a future restoration of the official tool.
-3. Download and cache the PEDP EJScreen dataset locally rather than depending on their API availability (PEDP is a volunteer effort with no SLA).
-4. Consider whether FEMA NRI county-level data alone is sufficient for the hazard profile, with EJScreen as an enrichment layer rather than a required source.
-5. Document the data provenance clearly: "EJ indicators sourced from PEDP reconstruction of EPA EJScreen v2.3 (pre-Feb 2025 data)" so users know the data is not current.
+1. Pick ONE convention and apply it consistently, but do it in a SINGLE commit that changes ONLY logger names, nothing else. This makes it trivially revertable if problems appear.
+2. The recommended convention is `__name__` for all modules. This is Python standard practice, produces hierarchical logger names that match the package structure, and requires zero maintenance when modules move.
+3. Before changing, audit all places that reference logger names:
+   - `main.py` `logging.basicConfig()` -- uses root logger, unaffected.
+   - GitHub Actions workflow YAML -- no log filtering, unaffected.
+   - Any `grep` or monitoring scripts on the outputs -- check for logger name patterns.
+4. Update `basicConfig` in `main.py` to set the root logger name explicitly if needed, or add a `tcr_scanner` logger that propagates to root.
+5. Test by running `python -m src.main --dry-run --verbose` before and after, diff the log output to verify same messages appear under new names.
 
-**Warning signs:** Any HTTP request to `ejscreen.epa.gov` returning non-200 status. Any reference to EJScreen in code comments or docs that assumes the official EPA endpoint.
+**Warning signs:** After renaming, `--verbose` output appears different (different prefix on log lines). Monitoring dashboards show a drop in log volume.
 
-**Detection:** Integration test that validates all external data source URLs are reachable before starting a batch generation run.
+**Detection:** Before/after diff of `--dry-run --verbose` output capturing logger names.
 
-**Severity:** BLOCKS SHIPMENT if EJScreen is a required data source and no alternative is implemented.
+**Severity:** DEGRADES OBSERVABILITY -- silent failure, hard to detect.
 
-**Phase:** Must be resolved during the data source/hazard profiling phase. Cannot be deferred.
-
-**Sources:**
-- [EPA Removes EJScreen](https://envirodatagov.org/epa-removes-ejscreen-from-its-website/) (MEDIUM confidence)
-- [PEDP Screening Tools](https://screening-tools.com) (MEDIUM confidence)
-- [Harvard EJScreen Reconstruction](https://eelp.law.harvard.edu/tracker/epa-added-environmental-health-indicators-to-ejscreen/) (MEDIUM confidence)
+**Affected items:** Logger naming pattern fix.
 
 ---
 
-### C-3: BEA RIMS II Multipliers Are Paid ($500/region), Not Freely Available via API
+### C-3: Making FY26 Configurable Breaks Hardcoded References in 6+ Modules
 
-**What goes wrong:** The economic impact synthesis assumes BEA regional multipliers can be queried programmatically for each Tribe's county/region. In reality, RIMS II multipliers are a paid product ($500 per region as of August 2025, $150 per industry) ordered through the BEA website. There is no free public API. Purchasing multipliers for all relevant regions covering 574 Tribes across 50 states would cost thousands of dollars.
+**What goes wrong:** "FY26" is hardcoded in at least 6 locations across the codebase:
+- `usaspending.py` line 68: `"start_date": "2025-10-01", "end_date": "2026-09-30"` (API filter)
+- `usaspending.py` line 216: `f"FY26 Obligation: ..."` (display string in normalized output)
+- `graph/builder.py` line 176: `urgency="FY26"` (graph node property)
+- `graph/builder.py` line 398: `fiscal_year="FY26"` (graph node property)
+- `monitors/iija_sunset.py` line 53: `fy26_end` config key and `"2026-09-30"` default
+- `packets/strategic_overview.py` lines 182, 195, 227: `"FY26 Federal Funding Overview"` (DOCX text)
+- `packets/docx_sections.py` line 55: `"FY26 Climate Resilience Program Priorities"` (DOCX text)
+- `config/scanner_config.json` line 118: `"fy26_end": "2026-09-30"` (monitor config)
 
-**Why it happens:** BEA RIMS II is a commercial product, not an open data endpoint. The project description says "BEA regional multipliers" as if they were freely available like FEMA NRI data.
+Making FY configurable requires touching all of these locations. The risk is threefold:
+1. **Partial migration:** You move 5 of 6 locations to config but miss one. Now the pipeline produces mixed-FY data (e.g., USASpending queries FY27 data but the graph labels it FY26).
+2. **Display vs. query divergence:** The fiscal year date range (Oct 1 - Sep 30) and the display label ("FY26") are semantically coupled but stored separately. If config has `fiscal_year: 2027` but someone forgets to update `fy26_end` in the monitor config, the IIJA sunset monitor uses stale dates.
+3. **Test fixtures use hardcoded FY26:** The mock programs in `test_e2e_phase8.py` (line 41: `"ci_determination": "FY26 budget uncertainty."`) and other test files contain FY26 strings. If the configurable FY propagates to test assertions, existing tests break.
 
-**Consequences:** Either the project cannot include district-level economic multiplier framing (a key differentiator of the advocacy packets), or it must find an alternative methodology, or it must budget for RIMS II data purchases.
-
-**Prevention:**
-1. Use publicly available, defensible approximations instead of RIMS II:
-   - FEMA's standard 4:1 benefit-cost ratio for pre-disaster mitigation (this is already in the project spec and is free/public)
-   - IMPLAN multipliers if available through institutional access
-   - Published academic literature on federal spending multipliers by region type (rural/urban/tribal)
-2. Use a tiered approach: apply the FEMA 4:1 BCR as the primary framing ("every $1 of FEMA BRIC investment returns $4 in avoided disaster costs") and note it as the standard federal methodology.
-3. For employment multiplier estimates, use BLS county-level employment data (free) combined with published federal spending employment multiplier ranges from CBO or academic sources.
-4. Do NOT present approximations as if they are RIMS II outputs. Label the methodology clearly.
-
-**Warning signs:** Any code that attempts to call a BEA RIMS II API endpoint. Any test that assumes multiplier data is retrievable programmatically.
-
-**Detection:** Review economic impact module for data source assumptions during design review.
-
-**Severity:** DEGRADES QUALITY if no alternative is found. Does not block shipment if FEMA BCR is used as fallback.
-
-**Phase:** Must be resolved during economic impact synthesis design. The approach should be decided before code is written.
-
-**Sources:**
-- [BEA RIMS II Online Order System](https://apps.bea.gov/regional/rims/rimsii/) (HIGH confidence)
-- [BEA RIMS II Pricing Update](https://www.bea.gov/news/blog/2025-03-10/need-info-regional-impacts-rims-ii-you) (HIGH confidence)
-
----
-
-### C-4: Tribes Spanning Multiple States and Congressional Districts
-
-**What goes wrong:** The system assumes a simple 1:1 mapping of Tribe-to-congressional-district. In reality, many Tribes have lands in multiple congressional districts, and some span multiple states. The Navajo Nation has lands in 4 congressional districts across 3 states (Arizona, New Mexico, Utah). Other large reservations (Pine Ridge, Flathead, Yakama) also cross district boundaries. A CRS report (R48107, September 2024) documents this systematically.
-
-Additionally, Alaska has 229 federally recognized Tribes in a single at-large congressional district. The Census Bureau does not delimit Alaska Native Village boundaries -- it uses statistical areas (ANVSAs) instead. This means geographic intersection with TIGER shapefiles will not work for Alaska Tribes.
-
-**Why it happens:** Congressional districts are drawn by state legislatures without regard for Tribal boundaries. Tribal lands follow treaty boundaries, executive orders, and trust acquisitions that predate modern district maps. Alaska's at-large structure and ANCSA's unique land framework create a category of Tribes that cannot be geographically mapped to sub-state districts.
+**Why it happens:** FY26 was correctly hardcoded during initial development because the product has a specific fiscal year focus. Making it configurable is a reasonable improvement, but the hardcoded values have proliferated into test fixtures, display strings, graph properties, and API query parameters -- each with different update semantics.
 
 **Consequences:**
-- Advocacy packets for multi-district Tribes that only list one representative will be incomplete and potentially insulting ("you forgot my district")
-- Packets that duplicate the full Tribe's award data in each district's section will overcount
-- Alaska Native Villages with no geographic boundary data will have empty hazard profiles and no district mapping
+- Mixed-FY data in reports (some sections say FY26, others FY27)
+- IIJA sunset monitor miscalculates days remaining
+- USASpending queries wrong date range
+- Test suite breaks on FY transition
 
 **Prevention:**
-1. Model the Tribe-to-district relationship as many-to-many from day one. A Tribe can have multiple district mappings, each with an area proportion if geographic data allows.
-2. Use the CRS Table A-3 from R48107 as the authoritative Tribe-to-district mapping rather than computing it from scratch. This table lists every federally recognized Tribe with its state(s) and congressional district(s).
-3. For Alaska: all 229 Tribes map to the at-large district (AK-AL) with both senators. Do not attempt geographic intersection for Alaska Tribes.
-4. For multi-district Tribes: list ALL relevant representatives in the packet. Do not attempt to apportion award amounts across districts -- show the full Tribe-level total in each district's context.
-5. Design the data model with `List[DistrictMapping]` per Tribe, not a single `district` field.
+1. Create a single config key `fiscal_year` (integer: `2026`) and derive ALL dependent values from it:
+   - `fy_start_date = f"{fiscal_year - 1}-10-01"`
+   - `fy_end_date = f"{fiscal_year}-09-30"`
+   - `fy_label = f"FY{fiscal_year % 100:02d}"`
+   - `fy_end = fy_end_date` (for monitors)
+2. Create a `FiscalYear` utility class or module that computes all derived values. This prevents divergence.
+3. Use a grep/search to find EVERY instance of "FY26", "2025-10-01", "2026-09-30" in the codebase before starting. The list above has at least 8 locations but there may be more in test files and data files.
+4. For display strings in DOCX output, use `f"FY{fy % 100:02d}"` format consistently.
+5. Update test fixtures to either use the config value or hardcode a test-specific FY that is distinct from production (e.g., FY99) to make it obvious when a test is using a fixture vs. production config.
+6. Add a regression test: load config, verify all FY-dependent computed values are consistent with each other.
 
-**Warning signs:** Data model has a `congressional_district: str` field on the Tribe model (should be a list). Test Tribe count for Alaska is not 229.
+**Warning signs:** `grep -r "FY26" src/` still returns matches after the change. USASpending data looks empty (querying a future FY). IIJA sunset shows negative days remaining.
 
-**Detection:** Validate that the Navajo Nation maps to at least 3 states and 4 districts in the test suite. Validate that Alaska Tribe count matches BIA list.
+**Detection:** Post-migration: `grep -rn "FY26\|2025-10-01\|2026-09-30" src/ tests/` should return zero matches outside of test fixture comments.
 
-**Severity:** BLOCKS SHIPMENT for multi-district Tribes (their packets would be incomplete). DEGRADES QUALITY for Alaska Tribes.
+**Severity:** BREAKS DATA INTEGRITY if partial migration. Display-only issues are cosmetic; query issues are data-corrupting.
 
-**Phase:** Must be addressed in the Tribal Registry and Congressional Mapping phases. The data model decision cascades through everything downstream.
-
-**Sources:**
-- [CRS R48107: Selected Tribal Lands in 118th Congressional Districts](https://www.congress.gov/crs-product/R48107) (HIGH confidence)
-- [Census TIGER 2025 Technical Documentation](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf) (HIGH confidence)
+**Affected items:** FY26 configurability.
 
 ---
 
-### C-5: API Rate Limits and Throttling at Scale (574 Tribes x Multiple APIs)
+### C-4: Moving Hardcoded Paths to Config Changes Working Directory Assumptions
 
-**What goes wrong:** Batch generation for 574 Tribes requires thousands of API calls across multiple federal APIs. Without proper rate limiting, the system gets throttled (429), temporarily banned, or produces incomplete data with silent gaps.
+**What goes wrong:** The codebase uses 20+ relative paths as module-level constants:
+- `main.py`: `Path("config/scanner_config.json")`, `Path("data/program_inventory.json")`, `Path("outputs/LATEST-GRAPH.json")`
+- `base.py`: `Path("outputs/.cfda_tracker.json")`
+- `graph/builder.py`: `Path("data/graph_schema.json")`
+- `hot_sheets.py`: `Path("outputs/.monitor_state.json")`
+- `change_detector.py`: `Path("outputs/LATEST-RESULTS.json")`
+- All `packets/*.py` modules: various `data/` and `outputs/` paths
 
-Scale math:
-- **USASpending:** 574 Tribes x 12 CFDA numbers = 6,888 queries (current scraper does 12 queries total)
-- **FEMA NRI:** Downloadable as CSV -- not an API concern if pre-cached
-- **Congress.gov:** 574 Tribes x 1 member lookup each (but Tribes in multiple districts multiply this). Rate limit: 5,000 requests/hour.
-- **EPA EJScreen/PEDP:** Unknown rate limits on volunteer infrastructure
-- **Total:** Potentially 10,000+ API calls per batch run
+All of these are relative paths that resolve against the **current working directory** (CWD). This works because:
+- **Locally:** You run `python -m src.main` from `F:\tcr-policy-scanner`
+- **GitHub Actions:** The checkout action sets CWD to the repo root
 
-**Why it happens:** The existing v1.0 scraper architecture was designed for a single daily scan of ~50 queries total across 4 APIs. Scaling to per-Tribe data collection is a 100x increase in API volume that the current `asyncio.sleep(0.3)` rate limiting does not account for.
+Moving these to config introduces two failure modes:
+1. **Config file itself needs a path:** If all paths are in config, how do you find the config file? You need at least one hardcoded path to bootstrap. If that bootstrap path changes, everything breaks.
+2. **Relative paths in config resolve against CWD, not config file location:** If someone runs the scanner from a different directory (e.g., `cd /tmp && python -m src.main`), all the relative config paths resolve against `/tmp`, not the project root. This is a known Python pitfall.
+3. **Module-level `Path()` constants are evaluated at import time:** If you change `CFDA_TRACKER_PATH = Path("outputs/.cfda_tracker.json")` to `CFDA_TRACKER_PATH = Path(config["cfda_tracker_path"])`, you need the config to be loaded before the module is imported. This creates an import-order dependency that does not exist today.
+
+**Why it happens:** The current hardcoded relative paths work because of an implicit contract: CWD = project root. This contract is fragile but functional. Config-based paths are more flexible in theory but introduce resolution ambiguity.
 
 **Consequences:**
-- USASpending API starts returning 429s, causing incomplete award data for Tribes processed later in the batch
-- Congress.gov hits its 5,000/hour rate limit mid-batch, stopping member lookups
-- PEDP volunteer infrastructure gets overwhelmed by automated bulk queries, potentially getting the project's IP banned
-- Batch run that should take 20 minutes takes 4+ hours due to exponential backoff retries
+- `FileNotFoundError` on `config/scanner_config.json` when run from a different directory
+- Data files written to wrong directory (e.g., CFDA tracker in `/tmp/outputs/` instead of project `outputs/`)
+- GitHub Actions workflow breaks if checkout path changes or a step changes CWD
 
 **Prevention:**
-1. **Pre-cache static data:** Download FEMA NRI county CSV, CRS district mapping, and Congress.gov member lists as local data files. These change infrequently (NRI: annually, districts: every 2-10 years, members: every 2 years). Do not query APIs per-Tribe for data that is the same across Tribes.
-2. **Batch USASpending queries intelligently:** Instead of querying per-Tribe-per-CFDA, query per-CFDA with `recipient_type_names: ["tribal"]` filter to get ALL Tribal awards in one call per program. Then match locally. This reduces 6,888 calls to ~12 calls.
-3. **Implement adaptive rate limiting:** Replace the fixed `asyncio.sleep(0.3)` with a rate limiter that respects `Retry-After` headers and backs off dynamically. The existing `BaseScraper._request_with_retry` already handles 429s, but the caller loop needs a semaphore-based rate limiter.
-4. **Congress.gov:** Fetch the full member list for the current Congress once (`/member/congress/119`), cache it, and do local lookups per district. One API call instead of 574+.
-5. **Add progress reporting:** 574 Tribes x multiple data sources = long-running operation. Users need a progress bar or logging to know the batch is working, not hung.
+1. Establish a `PROJECT_ROOT` anchor early in `main.py` using `Path(__file__).resolve().parent.parent` (the `src/main.py` is two levels deep). All paths should resolve relative to this anchor, not CWD.
+2. Move paths to config as RELATIVE strings (e.g., `"outputs_dir": "outputs"`) and resolve them against `PROJECT_ROOT` at config-load time, not at module import time.
+3. Keep the config file path as the ONLY remaining hardcoded path, resolved relative to `PROJECT_ROOT`.
+4. Do NOT move module-level `Path()` constants to config if they are only used within that module. Internal implementation paths (like `CFDA_TRACKER_PATH`, `MONITOR_STATE_PATH`) can stay as module constants but should be resolved against `PROJECT_ROOT` instead of CWD.
+5. Test from a non-root directory: `cd /tmp && python -m src.main --dry-run` must still work after the change.
+6. Update both GitHub Actions workflows (`daily-scan.yml` and `generate-packets.yml`) if any path assumptions change.
 
-**Warning signs:** Batch run logs showing multiple 429 responses. Inconsistent award counts between ad-hoc (single Tribe) and batch (all Tribes) runs for the same Tribe. Batch runtime exceeding 30 minutes.
+**Warning signs:** Tests pass locally but GitHub Actions fails with `FileNotFoundError`. Running `--dry-run` from a subdirectory fails.
 
-**Detection:** Integration test that counts API calls during a batch run and asserts the count is below a threshold (e.g., <100 total external calls).
+**Detection:** Add a CI test that runs `python -m src.main --dry-run` from a temporary directory (not project root) to verify path resolution works.
 
-**Severity:** BLOCKS SHIPMENT if batch generation cannot complete reliably.
+**Severity:** BREAKS PRODUCTION if paths resolve incorrectly on Linux CI.
 
-**Phase:** Must be addressed in the data pipeline architecture phase, before per-Tribe data collection is implemented.
-
-**Sources:**
-- [Congress.gov API rate limit: 5,000/hour](https://github.com/LibraryOfCongress/api.congress.gov) (HIGH confidence)
-- [USASpending API search filters](https://github.com/fedspendingtransparency/usaspending-api/blob/master/usaspending_api/api_contracts/search_filters.md) (HIGH confidence)
-- [OpenFEMA API docs](https://www.fema.gov/about/openfema/api) (HIGH confidence)
+**Affected items:** Hardcoded paths to config migration.
 
 ---
 
 ## Moderate Pitfalls
 
-Mistakes that cause delays, technical debt, or subtle data quality issues. These degrade the product but do not necessarily block release.
+Mistakes that cause test failures, subtle bugs, or significant rework but do not break the production pipeline if caught during development.
 
 ---
 
-### M-1: python-docx Memory Consumption at Scale (574 Documents)
+### M-1: Deduplicating CFDA Mappings Creates an Import Dependency That Did Not Exist
 
-**What goes wrong:** Generating 574 DOCX documents in a single batch run consumes excessive memory. python-docx is known to use significantly more memory than the output file size suggests (a 3MB DOCX can consume 1.5GB in memory). Creating large tables (each Tribe doc has 16 program Hot Sheets with tables) exacerbates this. Memory is not reliably released between document creations due to reference cycles in the lxml-backed XML tree.
+**What goes wrong:** The CFDA-to-program mapping is defined in two places:
+- `grants_gov.py` line 23: `CFDA_NUMBERS = {"15.156": "bia_tcr", ...}` (12 entries)
+- `usaspending.py` line 21: `CFDA_TO_PROGRAM = {"15.156": "bia_tcr", ...}` (12 entries)
 
-**Why it happens:** python-docx builds the entire document XML tree in memory. Large tables with many cells create deep nested element trees. Python's garbage collector does not always collect lxml element trees promptly due to C-extension reference cycles. If 574 documents are created in a tight loop without explicit cleanup, memory grows monotonically.
+These are nearly identical but live in separate modules. The obvious deduplication is to create a shared `constants.py` or move one to `base.py`. However:
+
+1. `awards.py` already imports from `usaspending.py` (line 25: `from src.scrapers.usaspending import CFDA_TO_PROGRAM`). If you move `CFDA_TO_PROGRAM` to `base.py`, the `awards.py` import breaks.
+2. `main.py` imports from `grants_gov.py` (line 92: `from src.scrapers.grants_gov import CFDA_NUMBERS`). If you consolidate into `CFDA_TO_PROGRAM` only, the `main.py` import breaks.
+3. Creating a new `src/scrapers/constants.py` is clean but adds an import that did not exist. If any of the existing modules has a latent circular dependency (e.g., through `base.py` importing from a child module), the new shared import could trigger it.
+
+**Why it happens:** The two mappings were created independently in v1.0 during different phases. They serve the same semantic purpose but have different variable names reflecting their original context.
 
 **Prevention:**
-1. Create each document in a separate function scope. After `document.save()`, explicitly `del document` and call `gc.collect()` to free the XML tree.
-2. Process Tribes in configurable batches (e.g., 50 at a time) with explicit GC between batches.
-3. Monitor memory usage during batch runs. Add a memory high-water-mark log entry per batch.
-4. Keep per-document table sizes reasonable. If a program has no awards for a Tribe, show a compact "No awards in current FY" line instead of an empty table structure.
-5. Test with the full 574-Tribe batch on CI to catch memory issues before production.
+1. Create `src/constants.py` (project-level, not scraper-level) with `CFDA_PROGRAM_MAP` as the canonical name. This avoids any circular import risk because `constants.py` imports nothing from the project.
+2. Update all three import sites: `grants_gov.py`, `usaspending.py`, `awards.py`, and `main.py`.
+3. Keep backward-compatible aliases in the old locations for one release cycle:
+   ```python
+   # grants_gov.py
+   from src.constants import CFDA_PROGRAM_MAP as CFDA_NUMBERS  # deprecated alias
+   ```
+4. Run `pytest` after moving the constant but BEFORE changing any other code. Verify all 287 tests pass with just the move.
 
-**Warning signs:** Batch run memory usage exceeding 2GB. Later documents in the batch taking progressively longer to generate. OOM kills in GitHub Actions.
+**Warning signs:** `ImportError` on test run. Circular import traceback.
 
-**Detection:** Profile memory usage during a 574-Tribe batch run. GitHub Actions runners have limited memory (7GB for standard runners).
+**Detection:** `python -c "from src.scrapers.grants_gov import CFDA_NUMBERS"` succeeds after the change.
 
-**Severity:** DEGRADES QUALITY (batch may fail or require manual intervention).
+**Severity:** BREAKS TESTS (easily caught) but could create circular imports (harder to diagnose).
 
-**Phase:** DOCX generation engine phase. Should be tested with full batch before declaring phase complete.
-
-**Sources:**
-- [python-docx memory leak issue #1364](https://github.com/python-openxml/python-docx/issues/1364) (HIGH confidence)
-- [python-docx large table performance issue #174](https://github.com/python-openxml/python-docx/issues/174) (HIGH confidence)
-- [python-docx slow creation issue #158](https://github.com/python-openxml/python-docx/issues/158) (HIGH confidence)
+**Affected items:** Utility deduplication.
 
 ---
 
-### M-2: Font Rendering Differences Between Windows Development and Linux CI/Deployment
+### M-2: Integration Tests for Live Scrapers Create Flaky CI
 
-**What goes wrong:** Documents generated on Windows (development) look different from documents generated on Linux (GitHub Actions). Fonts like Calibri, Cambria, and Arial are proprietary Microsoft fonts not available on Linux by default. LibreOffice (if used for PDF conversion) substitutes different fonts, changing layout, line breaks, page counts, and table column widths.
+**What goes wrong:** Adding integration tests that call live federal APIs (Federal Register, Grants.gov, Congress.gov, USASpending) to the test suite makes CI unreliable:
 
-**Why it happens:** python-docx embeds font names in the DOCX XML but does NOT embed the font files themselves. The rendering application (Word, LibreOffice) must have the named fonts installed. Windows has Microsoft fonts; Linux does not. Even installing `ttf-mscorefonts-installer` on Linux only provides a subset of older Microsoft fonts (Arial, Times New Roman) but not Calibri or Cambria (introduced with Office 2007).
+1. **Rate limiting in CI:** GitHub Actions runners share IP ranges. If multiple repos run similar tests, the shared IP hits rate limits. Congress.gov has a 5,000/hour limit; the runner IP may already be partially consumed.
+2. **API availability:** Federal APIs have maintenance windows, unscheduled outages, and weekend/holiday reduced capacity. The weekly packet generation workflow runs Sunday mornings (line 6 of `generate-packets.yml`). If integration tests also run on push/PR, they hit the APIs frequently.
+3. **Data drift:** Live API results change daily. A test that asserts "Federal Register returns at least 5 results for 'tribal climate resilience'" may fail during slow news periods or pass with 50 results during active rulemaking.
+4. **Secrets in CI:** Congress.gov requires `CONGRESS_API_KEY`. If integration tests run on PRs from forks, the secret is not available (`${{ secrets.CONGRESS_API_KEY }}` is empty for fork PRs). The existing `congress_gov.py` already handles this (line 53: returns `[]` if no key), but tests asserting non-empty results will fail.
+5. **Test contamination:** Integration tests that write to `outputs/` or `data/` directories can contaminate the state used by unit tests that check for cached data absence.
 
-**Consequences:**
-- Documents generated in CI look different from those generated locally
-- If the project ever needs PDF output (common for print-ready advocacy docs), Linux-generated PDFs will have wrong fonts
-- Table column widths calculated based on font metrics may shift, breaking carefully designed layouts
+**Why it happens:** The 287 existing tests all use `tmp_path` fixtures with mock data and no network access. Adding live API tests changes the testing paradigm.
 
 **Prevention:**
-1. Use only fonts guaranteed available cross-platform, or use fonts that are visually identical cross-platform. Liberation Sans (Linux) is metrically compatible with Arial. Liberation Serif is compatible with Times New Roman.
-2. Specify all font properties explicitly in code (font name, size, bold/italic) at the Run level. Do not rely on document-level style defaults, which may resolve differently.
-3. Test document generation on both Windows and Linux. Compare page counts and visual layout.
-4. If Calibri/Cambria are required for brand consistency with existing congressional materials, install `microsoft-fonts` in the GitHub Actions workflow, or switch to a font that is already available on both platforms.
-5. Pin python-docx version to avoid XML serialization changes between versions.
+1. Mark integration tests with `@pytest.mark.integration` and exclude them from default `pytest` runs. Use `pytest -m integration` explicitly.
+2. Run integration tests on a schedule (weekly, matching the packet generation cadence) rather than on every push.
+3. Create a separate GitHub Actions workflow for integration tests that runs on `workflow_dispatch` and weekly schedule, not on `push` or `pull_request`.
+4. Assert structural properties, not specific data: "response has `results` key" not "results contain at least N items." Assert the scraper runs without exception, not that it returns specific data.
+5. Use `tmp_path` for all output files in integration tests. Never write to the real `outputs/` or `data/` directories.
+6. Handle missing API keys gracefully: `pytest.mark.skipif(not os.environ.get("CONGRESS_API_KEY"), reason="No API key")`.
 
-**Warning signs:** Locally generated documents look correct but CI-generated documents have wrong fonts or shifted layouts. Page counts differ between environments.
+**Warning signs:** CI becomes "red" intermittently. Tests pass locally but fail in Actions. Tests pass on weekdays but fail weekends.
 
-**Detection:** Add a CI step that generates a sample document and checks page count matches expected value.
+**Detection:** Check CI run history for intermittent failures correlated with time-of-day or day-of-week.
 
-**Severity:** DEGRADES QUALITY (documents look unprofessional with wrong fonts).
+**Severity:** DEGRADES CI RELIABILITY -- developers stop trusting test results and start ignoring failures.
 
-**Phase:** DOCX generation engine phase.
+**Affected items:** Integration tests for live scrapers.
 
 ---
 
-### M-3: Congressional Data Staleness -- Redistricting, Resignations, and Committee Changes
+### M-3: Populating Data Caches Creates Side Effects That Surprise Other Modules
 
-**What goes wrong:** The system caches congressional district boundaries and member assignments, but these change:
-- **Redistricting:** 5 states redrew boundaries for the 2024 elections (Alabama, Georgia, Louisiana, New York, North Carolina). More will change after the 2030 census.
-- **Member turnover:** Deaths, resignations, and special elections change who represents a district mid-Congress.
-- **Committee assignments:** Change at the start of each Congress and sometimes mid-session.
+**What goes wrong:** Some tech debt items involve populating data caches that currently require manual API runs (e.g., award caches in `data/award_cache/`, hazard profiles in `data/hazard_profiles/`). Making this automatic (e.g., a `--refresh-caches` CLI flag) creates side effects:
 
-If the system uses stale data, advocacy packets will name the wrong representative or wrong committee chair.
+1. **Cache-dependent modules see different data between runs:** The `PacketOrchestrator._load_tribe_cache()` method reads from `data/award_cache/{tribe_id}.json`. If a cache refresh runs concurrently with (or immediately before) packet generation, some Tribes get new data while others get stale data, producing inconsistent packets in the same batch.
+2. **Cache format changes are invisible:** If the cache refresh code writes a different JSON structure than what `_load_tribe_cache` expects (e.g., adds a new top-level key, changes `awards` to `award_records`), the loading code silently returns `{}` (line 213 of `orchestrator.py`: `except (json.JSONDecodeError, OSError)` catches the wrong error -- `KeyError` from accessing a missing key is NOT caught).
+3. **Cache files on disk are not versioned:** There is no schema version in the cache JSON. When cache format evolves, old cached files produce silently wrong results rather than clear errors.
 
-**Why it happens:** Congressional data has multiple temporal dimensions (redistricting cycle, election cycle, committee assignment cycle) that do not align. Caching "the current Congress" as static data assumes stability within a 2-year window, which is not always true.
+**Why it happens:** The cache layer was designed as a simple pass-through: scripts populate JSON files, orchestrator reads them. There is no contract enforcement between writer and reader.
 
 **Prevention:**
-1. Cache Congress.gov member data with an explicit `fetched_date` and display it in generated documents ("Congressional delegation as of [date]").
-2. Build a refresh mechanism that re-fetches member data monthly or on-demand before a batch generation run.
-3. For redistricting: use TIGER shapefiles with the year in the filename. When new redistricting occurs, updating the shapefile triggers a re-mapping of Tribe-to-district assignments.
-4. Log a WARNING when member data is older than 30 days at generation time.
-5. The CRS R48107 table (Tribe-to-district mapping) is updated periodically. Pin to a specific version and document when it was last checked.
+1. Add a `schema_version` key to all cache files. The reader checks the version and raises a clear error if it does not match the expected version, rather than silently returning empty data.
+2. When adding `--refresh-caches`, make it a separate CLI command that completes BEFORE packet generation starts (sequential, not concurrent). The existing `run_pipeline()` in `main.py` already runs stages sequentially -- follow this pattern.
+3. Add a `KeyError` to the exception tuple in `_load_tribe_cache` (line 213 of `orchestrator.py`): `except (json.JSONDecodeError, OSError, KeyError)`. Better yet, validate the structure after loading.
+4. Write cache files atomically (the existing tmp-file + `os.replace()` pattern is already used in `docx_engine.py` and `reports/generator.py` -- apply it consistently to all cache writers).
+5. Add a test that writes a cache file with the expected structure and verifies `_load_tribe_cache` returns the correct data. Then add a test with a WRONG structure and verify it returns `{}` with a warning log.
 
-**Warning signs:** Packets generated months apart show the same member data without any refresh. Users report a packet naming a representative who has since left office.
+**Warning signs:** Packet generation shows $0 awards for Tribes that have cached award data. Log shows "Failed to load cache" warnings after a cache refresh.
 
-**Detection:** Automated check: compare cached member data age against a threshold before batch generation.
+**Detection:** Add a `--validate-caches` flag that checks all cache files for schema conformance without generating packets.
 
-**Severity:** DEGRADES QUALITY (wrong representative named is embarrassing but packets are otherwise usable).
+**Severity:** DEGRADES DATA QUALITY -- silent incorrect results in generated packets.
 
-**Phase:** Congressional Mapping phase.
+**Affected items:** Cache population, data integrity.
 
 ---
 
-### M-4: USASpending Pagination Limits Causing Incomplete Award Data
+### M-4: Deduplicating Utility Functions Across Modules Can Break Subtle Behavioral Differences
 
-**What goes wrong:** The existing USASpending scraper uses `"limit": 10` in its queries, returning only the top 10 awards by amount per CFDA. For per-Tribe matching, this is catastrophically insufficient. If a CFDA program has 500+ awards to Tribal recipients, and the system only fetches the top 10, most Tribes will show $0 in awards.
+**What goes wrong:** Beyond CFDA mappings, there are utility patterns repeated across modules that look duplicated but have intentional differences:
 
-Additionally, the current scraper filters by fiscal year 2025-2026 hard-coded date range (`"2025-10-01"` to `"2026-09-30"`). Historical award data (previous fiscal years) is not captured, but the advocacy packets need multi-year funding history to show trends.
+1. **JSON write patterns:** Multiple modules implement atomic JSON write (tmp file + replace). The pattern in `reports/generator.py` uses `shutil.copy2` for archival, `base.py` uses `Path.replace()`, and `docx_engine.py` uses `os.replace()`. These are subtly different: `Path.replace()` and `os.replace()` are atomic on POSIX but not on Windows for cross-volume moves; `shutil.copy2` preserves metadata.
+2. **`_write_json` helper:** Both `test_e2e_phase8.py` and `test_packets.py` define identical `_write_json(path, data)` helper functions. Deduplicating these into a shared `tests/conftest.py` fixture is safe, but if you also add it to `src/` as a production utility, you need to handle the `encoding="utf-8"` parameter and atomic-write semantics differently than the test version.
+3. **`_load_json` patterns:** `orchestrator.py._load_tribe_cache()` and `strategic_overview.py._load_json()` both load JSON files with size limits and error handling, but with different size limits and different error handling behavior. Consolidating them requires parameterizing the size limit and error behavior, which may be more complex than the duplication.
 
-**Why it happens:** The v1.0 scraper was designed to get a sample of obligation activity for the daily briefing, not to be a comprehensive award database. The `limit: 10` was intentional for the original use case (top awards for the CI dashboard) but is wrong for the v1.1 use case.
-
-**Consequences:**
-- Most Tribes show $0 in awards because their specific awards were not in the top 10
-- Multi-year trend data is missing entirely
-- Award totals per program are understated
+**Why it happens:** Similar code is not always duplicate code. When two modules implement the same pattern with different error handling, size limits, or platform behavior, they are solving related but distinct problems.
 
 **Prevention:**
-1. For per-Tribe award matching, use paginated queries that fetch ALL results. USASpending supports pagination via `page` parameter. Iterate until results are exhausted.
-2. Alternatively, use the `recipient_type_names` filter to get all Tribal government awards in a single query per CFDA, then match locally. This is far more efficient than per-Tribe queries.
-3. Expand the date range to cover multiple fiscal years (FY22-FY26) for trend data, or use separate queries per FY.
-4. Consider using USASpending bulk download files instead of the API for historical data. Bulk downloads are available as CSV and do not have pagination limits.
-5. Do NOT modify the existing v1.0 scraper's `limit: 10` behavior -- it is correct for its purpose. Build a separate data collection module for per-Tribe award data.
+1. Before deduplicating, make a table of each "duplicated" function with its:
+   - Error handling behavior
+   - Return value on failure
+   - Platform-specific behavior (atomic writes on Windows vs. POSIX)
+   - Size limits or guards
+2. Only deduplicate functions that are truly identical in ALL dimensions. For functions that differ in parameters but share structure, create a parameterized utility only if 3+ call sites exist.
+3. For the atomic JSON write pattern, create a single `write_json_atomic(path, data, **kwargs)` that uses the `os.replace()` pattern (it works correctly on both platforms when source and destination are on the same volume, which they always are in this codebase).
+4. For test utilities, use `conftest.py` fixtures rather than shared modules. Test helpers should not leak into production code.
+5. Run the full test suite after EACH function consolidation, not after consolidating all of them. This makes it easy to identify which consolidation broke something.
 
-**Warning signs:** Award match rate <50% of Tribes for major programs like BIA TCR or FEMA BRIC. Per-Tribe totals that seem implausibly low.
+**Warning signs:** A consolidated utility works for module A but fails for module B because module B relied on a behavioral difference (e.g., different exception handling).
 
-**Detection:** Compare per-program total from paginated query against USASpending website totals. They should be within 5%.
+**Detection:** Diff the behavior of each "duplicate" pair before and after consolidation.
 
-**Severity:** DEGRADES QUALITY (packets show no data where data exists).
+**Severity:** BREAKS TESTS or DEGRADES RELIABILITY -- depends on which difference is lost.
 
-**Phase:** USASpending Award Matching phase. Must be designed before implementation starts.
-
-**Sources:**
-- [USASpending spending_by_award endpoint docs](https://github.com/fedspendingtransparency/usaspending-api/blob/master/usaspending_api/api_contracts/contracts/v2/search/spending_by_award.md) (HIGH confidence)
-- [USASpending result limits community question](https://onevoicecrm.my.site.com/usaspending/s/question/0D53d00000rVe5aCAC/result-limits-for-spending-by-award-api) (MEDIUM confidence)
+**Affected items:** Utility deduplication.
 
 ---
 
-### M-5: DOCX Programmatic Construction Without Templates Creates Brittle Layouts
+### M-5: Circuit Breaker State Persistence Across Daily Scan Runs
 
-**What goes wrong:** Building complex document layouts entirely in code (no template DOCX file) means every formatting detail -- margins, column widths, cell padding, header/footer styles, page breaks, section breaks -- must be specified programmatically. This creates:
-- Hundreds of lines of formatting code that is hard to review and maintain
-- Difficulty reproducing the look of the reference DOCX documents
-- No way for non-developer staff to adjust formatting without code changes
-- Subtle formatting bugs that only appear on certain page breaks or table sizes
+**What goes wrong:** A circuit breaker that lives only in memory resets every time the scanner runs. This is fine for the daily scan (fresh process each run). But for the weekly batch packet generation (`--prep-packets --all-tribes`), which is a single long-running process making thousands of API calls, the circuit breaker state must persist across the full run.
 
-**Why it happens:** The project spec explicitly chose "programmatic DOCX, no template files" to avoid template management complexity. This is a reasonable architectural decision, but the implementation cost of pixel-perfect formatting in code is often underestimated.
+The subtler problem: if the circuit breaker opens during a batch run at Tribe #200 of 592, what happens to Tribes #201-592? Options:
+- **Skip them:** Produces incomplete batch (200 packets instead of 592).
+- **Use cached data:** Produces packets with stale data for 392 Tribes -- which may be acceptable if the cache is recent, but misleading if caches are empty (first-time applicant Tribes show as having awards).
+- **Wait for cooldown:** Adds 5-30 minutes of dead time, potentially causing the `timeout-minutes: 30` in `generate-packets.yml` to expire.
+
+**Why it happens:** Circuit breaker design typically assumes a long-running service with continuous traffic, not a batch process that runs for 20 minutes weekly.
 
 **Prevention:**
-1. Create a `DocxStyles` class that centralizes ALL formatting constants (colors, fonts, sizes, margins, spacing). Changes to formatting should require editing one file, not hunting through document construction code.
-2. Build a visual regression test: generate a reference document, then compare future generations against it. If layout changes unexpectedly, the test fails.
-3. Invest time in studying the reference DOCX documents (`FY26_TCR_Program_Priorities.docx`, `FY26_Federal_Funding_Strategy.docx`) to catalog every formatting detail before writing code.
-4. Build the document structure iteratively: start with plain text content, add basic formatting, then refine. Do not try to match the reference document perfectly in the first pass.
-5. Consider a hybrid approach: create a minimal template DOCX with styles defined, then populate it programmatically. python-docx can open an existing DOCX and add content to it. This gives you template-defined styles with programmatic content.
+1. For the batch packet generation path, implement a "degrade gracefully" strategy: if the circuit opens, log a warning and continue generating packets using cached data, flagging which Tribes used stale data.
+2. Set the circuit breaker cooldown period to be short (30-60 seconds) for batch mode, long (5 minutes) for individual operations. The batch run can afford to pause briefly and retry.
+3. Do NOT persist circuit breaker state to disk between runs. Each daily scan and each batch run should start with fresh circuit breaker state (all circuits closed).
+4. Track which Tribes were affected by open circuits and emit a summary at the end of the batch run: "15 Tribes used cached data due to USASpending circuit open."
 
-**Warning signs:** DOCX generation code exceeds 500 lines of pure formatting logic. Formatting bugs that require changes in multiple places to fix.
+**Warning signs:** Batch run produces fewer packets than expected. Batch run fails with timeout in GitHub Actions.
 
-**Detection:** Side-by-side visual comparison of generated document against reference document during code review.
+**Detection:** Add a post-batch summary that reports circuit breaker trip counts per source.
 
-**Severity:** DEGRADES QUALITY (documents look unprofessional) and SLOWS DEVELOPMENT (formatting is time-consuming to debug).
+**Severity:** DEGRADES BATCH QUALITY -- partial or stale results.
 
-**Phase:** DOCX Generation Engine phase.
+**Affected items:** Circuit breaker + batch generation interaction.
 
 ---
 
-### M-6: Change Tracking Between Packet Generations Is Harder Than It Looks
+### M-6: Windows/Linux Path Separator in Newly Configurable Paths
 
-**What goes wrong:** The project requires tracking "what shifted between packet generations" for 574 Tribes. This sounds simple but involves comparing complex nested data structures across time:
-- Award amounts changed (new awards appeared, amounts modified)
-- Hazard profiles changed (NRI data updated)
-- Congressional delegation changed (new representative after special election)
-- Program CI status changed (from STABLE to AT_RISK)
-- District boundaries changed (redistricting)
+**What goes wrong:** The existing hardcoded `Path("data/award_cache")` works on both platforms because Python's `pathlib.Path` normalizes forward slashes. But if paths move to `scanner_config.json`:
 
-Naive approaches (diff the JSON, diff the DOCX) either produce too much noise or miss semantically important changes.
+```json
+"awards": {
+    "cache_dir": "data\\award_cache"
+}
+```
 
-**Why it happens:** The existing `ChangeDetector` is designed for scan-to-scan change detection on a flat list of scored items. Per-Tribe change tracking requires comparing structured, multi-dimensional Tribe snapshots across time, which is a fundamentally different problem.
+A config file edited on Windows might use backslashes. When this config is committed to git and deployed on Linux via GitHub Actions, `Path("data\\award_cache")` on Linux creates a single directory named `data\award_cache` (with a literal backslash in the name) instead of `data/award_cache` (nested directories).
+
+This is not hypothetical: the project has dual-platform development (Windows at `F:\tcr-policy-scanner`, Linux on GitHub Actions).
+
+**Why it happens:** JSON does not normalize path separators. `pathlib.Path` normalizes forward slashes to the platform separator, but does NOT convert backslashes on Linux (backslash is a valid filename character on Linux).
 
 **Prevention:**
-1. Define a `TribeSnapshot` data structure that captures all per-Tribe data at generation time. Store snapshots as JSON alongside generated DOCX files.
-2. Implement typed change detection: `AwardChange`, `DelegationChange`, `HazardChange`, `StatusChange` -- each with its own comparison logic and significance threshold.
-3. Use significance thresholds: a $100 change in a $5M award is not worth reporting. A new representative IS worth reporting.
-4. Store snapshots with generation timestamps. The "since last packet" diff compares the current snapshot against the most recent prior snapshot for that Tribe.
-5. Keep change history bounded (e.g., last 5 generations) to prevent unbounded storage growth. Follow the existing CI history 90-entry cap pattern from v1.0.
+1. Mandate forward slashes in all JSON config paths. Add a comment in `scanner_config.json`: `// All paths use forward slashes (works on both Windows and Linux)`.
+2. When loading paths from config, normalize them: `Path(config_path.replace("\\", "/"))`.
+3. Add a config validation step at startup that checks all configured paths for backslashes and warns.
+4. Better yet: store paths as lists of components and join them with `Path()`:
+   ```python
+   cache_dir = Path(*config["awards"]["cache_dir_parts"])  # ["data", "award_cache"]
+   ```
+   This is more verbose but platform-safe. However, it is a non-standard pattern that may confuse contributors.
+5. The simplest approach: keep forward slashes in config, add a one-line normalize on read.
 
-**Warning signs:** Change tracking produces hundreds of "changes" per Tribe that are mostly noise (rounding differences, timestamp updates). Change detection code duplicates logic from the existing `ChangeDetector` instead of extending it.
+**Warning signs:** GitHub Actions `FileNotFoundError` for a path that works locally. A directory with a backslash in its name appears on the Linux runner.
 
-**Detection:** Review change tracking output for a sample Tribe and verify that flagged changes are actually meaningful.
+**Detection:** CI test that validates all config paths resolve to existing directories (or can be created).
 
-**Severity:** DEGRADES QUALITY (noisy change reports are ignored; meaningful changes are missed).
+**Severity:** BREAKS CI if backslash paths are committed.
 
-**Phase:** Change Tracking phase (should be one of the later phases, after data pipelines are stable).
+**Affected items:** Hardcoded paths to config.
 
 ---
 
 ## Minor Pitfalls
 
-Mistakes that cause annoyance, rework, or minor issues but are straightforward to fix.
+Mistakes that cause rework, annoyance, or minor issues but are straightforward to fix once identified.
 
 ---
 
-### m-1: FEMA NRI County-Level Data Does Not Map Directly to Tribal Lands
+### m-1: Existing Tests Assume Exact Import Paths That Change During Deduplication
 
-**What goes wrong:** FEMA NRI provides hazard scores at the county level and census tract level. Tribal reservations do not align with county boundaries. A Tribe's reservation may span parts of multiple counties, or a county may contain multiple reservations. Assigning a single county's NRI score to a Tribe is an approximation that may be misleading.
+**What goes wrong:** Tests import directly from implementation modules:
+- `from src.scrapers.usaspending import CFDA_TO_PROGRAM` (in `awards.py` and potentially tests)
+- `from src.scrapers.grants_gov import CFDA_NUMBERS` (in `main.py`)
 
-**Prevention:**
-1. Use census tract-level NRI data where possible (finer granularity than county).
-2. For Tribes spanning multiple counties, aggregate NRI scores across relevant counties using area-weighted averaging or worst-case (maximum hazard score).
-3. Document the methodology clearly in the generated packet: "Hazard data based on FEMA NRI county-level scores for [County Name(s)]."
-4. Do not imply that the hazard score is specific to the reservation -- it represents the broader geographic area.
+When these constants move to a shared module, any test that imports them from the OLD location breaks with `ImportError` unless backward-compatible re-exports are maintained.
 
-**Severity:** MINOR DATA QUALITY (approximation, not error).
+**Prevention:** When moving a public constant, add a re-export in the old location: `from src.constants import CFDA_PROGRAM_MAP as CFDA_TO_PROGRAM`. Remove the re-export in a subsequent release, not in the same commit.
 
-**Phase:** Hazard Profiling phase.
+**Severity:** MINOR -- `ImportError` is immediately visible in test runs.
 
----
-
-### m-2: Existing Pipeline Integration -- New Modules Must Not Break Daily Scans
-
-**What goes wrong:** Adding new modules (Tribal registry, DOCX generator, hazard profiler) to the existing codebase introduces import errors, configuration conflicts, or runtime failures that break the daily scan pipeline that is already running in production via GitHub Actions.
-
-**Prevention:**
-1. New v1.1 modules should be in separate packages (e.g., `src/tribes/`, `src/packets/`) that are NOT imported by the existing `src/main.py` pipeline unless explicitly invoked via new CLI arguments.
-2. Add new CLI commands (e.g., `--generate-packets`, `--single-tribe`) rather than modifying the existing `--source` or `--report-only` flags.
-3. New data files (Tribal registry, NRI cache, etc.) should go in `data/tribes/` not in the existing `data/` directory root.
-4. Run the existing test suite (`pytest`) after every phase to verify no regressions.
-5. New dependencies (python-docx, rapidfuzz, geopandas) should be in a separate `requirements-packets.txt` or optional dependency group to keep the core scanner lightweight.
-
-**Warning signs:** Existing GitHub Actions workflow fails after a v1.1 commit. Import errors in `src/main.py` referencing new modules.
-
-**Detection:** CI pipeline green/red status. Add a "smoke test" that runs `python -m src.main --dry-run` as part of CI.
-
-**Severity:** MINOR (easily fixable but disruptive if it breaks production scans).
-
-**Phase:** Every phase must verify this. Should be a gate in each phase's verification checklist.
+**Affected items:** Utility deduplication.
 
 ---
 
-### m-3: Windows/Linux Path Handling in DOCX File I/O
+### m-2: asyncio.run() Cannot Be Called from Inside a Running Event Loop
 
-**What goes wrong:** Development happens on Windows (`F:\tcr-policy-scanner`), deployment on Linux (GitHub Actions at `/root/...`). Path handling differences cause:
-- Backslash paths in DOCX file references break on Linux
-- `Path.write_text()` without `encoding="utf-8"` produces locale-dependent encoding on Windows
-- Temporary file paths during DOCX generation may use OS-specific temp directories
+**What goes wrong:** If integration tests use `asyncio.run()` to call async scraper methods, they conflict with pytest-asyncio's event loop. The existing `main.py` uses `asyncio.run(run_scan(...))` at line 237, which works in the CLI context. But integration tests running under `pytest-asyncio` already have an event loop, and calling `asyncio.run()` inside it raises `RuntimeError: This event loop is already running`.
+
+**Why it happens:** Integration tests for async scrapers need to call the same `scan()` methods that production code calls. But the production entry point wraps them in `asyncio.run()`, which cannot be nested.
 
 **Prevention:**
-1. Use `pathlib.Path` consistently (the existing codebase already does this well).
-2. Always pass `encoding="utf-8"` to all file operations (the existing codebase already follows this pattern -- maintain it).
-3. Use `os.sep`-agnostic path construction. Never hard-code backslashes or forward slashes.
-4. For DOCX output paths, use a configurable output directory rather than hard-coded paths.
-5. Test document generation on both platforms in CI.
+1. Integration tests should use `@pytest.mark.asyncio` and `await scraper.scan()` directly, NOT `asyncio.run()`.
+2. Test the `run_scan()` coroutine from `main.py`, not `run_pipeline()` (which wraps it in `asyncio.run()`).
+3. If testing the CLI entry point end-to-end, use `subprocess.run(["python", "-m", "src.main", ...])` to invoke it in a separate process.
 
-**Warning signs:** Tests pass on Windows but fail on Linux, or vice versa. File not found errors in CI that do not reproduce locally.
+**Severity:** MINOR -- immediate `RuntimeError` with clear message.
 
-**Detection:** CI runs on Linux; local runs on Windows. Divergent results flag path issues.
-
-**Severity:** MINOR (well-understood fix patterns exist in the codebase).
-
-**Phase:** All phases.
+**Affected items:** Integration tests for live scrapers.
 
 ---
 
-### m-4: Tribal Names Containing Special Characters in DOCX Filenames
+### m-3: Circuit Breaker Library Choice Affects async Compatibility
 
-**What goes wrong:** Some Tribal names contain characters that are invalid in filenames on one or both platforms:
-- Apostrophes: "Ho-Chunk Nation" (hyphen is fine, but some names have apostrophes)
-- Long names: "Confederated Tribes of the Chehalis Reservation" (47 chars -- fine, but combined with prefix/suffix could exceed limits)
-- Accented characters: Not currently in the BIA list, but future additions could include them
-- Forward slashes: Some historical Tribal name references use "/" which is invalid on both platforms
+**What goes wrong:** Several circuit breaker libraries exist for Python:
+- `pybreaker`: Synchronous only. Will block the event loop if used in async code.
+- `aiobreaker`: Async-native, but has not been updated since 2022.
+- `circuitbreaker`: Synchronous decorator pattern. Not compatible with async/await.
+- `aiomisc.CircuitBreaker`: Part of the `aiomisc` utility library (actively maintained).
+
+Choosing a sync-only library for an async codebase (all scrapers use `aiohttp` with `async/await`) will silently work in tests but block the event loop in production, causing the entire scan to serialize instead of running concurrently.
 
 **Prevention:**
-1. Sanitize Tribal names for filenames using a consistent function: replace special characters, truncate to a maximum length, add a unique suffix (Tribe ID or hash) to prevent collisions.
-2. Use a predictable naming convention: `FY26_{tribe_id}_{sanitized_name}.docx`
-3. Keep the full Tribal name inside the document content and metadata, not in the filename.
-4. Test filename generation against all 574 Tribal names before the DOCX generation phase.
+1. Use an async-native circuit breaker: either `aiobreaker` or `aiomisc.CircuitBreaker`.
+2. Alternatively, implement a minimal circuit breaker in `base.py` itself (20-30 lines of async-compatible code). The pattern is simple: counter, threshold, timestamp, and three states. This avoids adding a dependency and gives full control over the 429-exemption behavior needed (see C-1).
+3. If implementing custom, test it with `asyncio.gather()` to verify it does not serialize concurrent requests.
 
-**Warning signs:** File creation errors on Windows for specific Tribes. Filename collisions when names are truncated.
+**Severity:** MINOR -- easy to detect in development (scan becomes slow), easy to fix.
 
-**Detection:** Unit test that generates filenames for all 574 Tribes and asserts no duplicates and no invalid characters.
+**Affected items:** Circuit breaker technology choice.
 
-**Severity:** MINOR (easy to fix once identified).
+---
 
-**Phase:** DOCX Generation Engine phase.
+### m-4: Test Count May Decrease When Deduplicating Test Helpers
+
+**What goes wrong:** Both `test_packets.py` and `test_e2e_phase8.py` define identical `_write_json()` helpers. Consolidating them into a shared `conftest.py` fixture is correct, but if you also remove tests that were implicitly testing the helper (e.g., a test that writes and reads JSON), the test count drops. The MEMORY.md records "287 tests" -- if the count drops below this, it looks like a regression.
+
+**Prevention:** Verify test count before and after deduplication: `pytest --co -q | tail -1` should show the same or higher count.
+
+**Severity:** MINOR -- cosmetic, but creates confusion about "did we lose coverage?"
+
+**Affected items:** Utility deduplication.
+
+---
+
+### m-5: Monitoring Configuration Keys Contain "fy26" Which Needs Migration
+
+**What goes wrong:** The config key path `monitors.iija_sunset.fy26_end` contains a hardcoded fiscal year in the KEY NAME itself (not just the value). Making FY configurable requires either:
+- Renaming the key (breaking change for anyone with a custom config)
+- Keeping the old key name but having it mean something generic (confusing: `fy26_end` actually means `fy_end`)
+
+**Prevention:** Rename to `fiscal_year_end` with the value `"2026-09-30"`, computed from the `fiscal_year` config. Add a deprecation check that reads `fy26_end` and warns if found (backward compatibility for one release).
+
+**Severity:** MINOR -- config is internal, not user-facing at scale.
+
+**Affected items:** FY26 configurability.
 
 ---
 
 ## Phase-Specific Warnings
 
-| Phase Topic | Likely Pitfall | Severity | Mitigation |
-|-------------|---------------|----------|------------|
-| Tribal Registry | C-4: Multi-state/multi-district Tribes + Alaska | CRITICAL | Many-to-many data model, CRS R48107 table, Alaska special case |
-| USASpending Award Matching | C-1: Name matching false positives | CRITICAL | UEI-first matching, curated alias table, high fuzzy threshold |
-| USASpending Award Matching | M-4: Pagination limits (limit:10) | MODERATE | Paginate fully or use recipient_type_names bulk filter |
-| Hazard Profiling | C-2: EJScreen unavailable | CRITICAL | PEDP alternative, local data cache, source abstraction |
-| Hazard Profiling | m-1: NRI county != tribal boundary | MINOR | Multi-county aggregation, clear methodology labeling |
-| Economic Impact | C-3: RIMS II is paid, not API-accessible | CRITICAL | FEMA 4:1 BCR as primary, published multiplier ranges |
-| Congressional Mapping | M-3: Data staleness (redistricting, turnover) | MODERATE | Refresh mechanism, fetched_date display, monthly cache refresh |
-| DOCX Generation | M-1: Memory at scale | MODERATE | Per-document GC, batch processing, memory monitoring |
-| DOCX Generation | M-2: Cross-platform font differences | MODERATE | Liberation fonts, explicit font specification, CI visual test |
-| DOCX Generation | M-5: Brittle programmatic layouts | MODERATE | Centralized style constants, reference doc analysis first |
-| DOCX Generation | m-4: Special characters in filenames | MINOR | Filename sanitization function, tribe_id in filename |
-| Change Tracking | M-6: Semantic diff complexity | MODERATE | Typed change detection, significance thresholds, bounded history |
-| Data Pipeline (all) | C-5: API rate limits at 574x scale | CRITICAL | Pre-cache static data, batch queries, adaptive rate limiting |
-| Integration | m-2: Breaking existing daily scans | MINOR | Separate packages, new CLI commands, regression testing |
-| All phases | m-3: Windows/Linux path handling | MINOR | pathlib, encoding="utf-8", no hard-coded paths |
+| Tech Debt Item | Likely Pitfall | Severity | Mitigation |
+|----------------|---------------|----------|------------|
+| Circuit breaker on BaseScraper | C-1: Interferes with existing retry + 429 handling | CRITICAL | Place outside retry loop, exempt 429s, per-source breakers |
+| Circuit breaker on BaseScraper | M-5: Batch run behavior when circuit opens | MODERATE | Degrade to cached data, short cooldown, summary report |
+| Circuit breaker on BaseScraper | m-3: Sync vs async library choice | MINOR | Use async-native or implement custom |
+| FY26 configurable | C-3: Partial migration leaves mixed-FY data | CRITICAL | Single source of truth, grep verification, derived values |
+| FY26 configurable | m-5: Config key name contains "fy26" | MINOR | Rename key, deprecation warning |
+| Hardcoded paths to config | C-4: CWD assumption breaks on different run directory | CRITICAL | PROJECT_ROOT anchor, resolve all paths against it |
+| Hardcoded paths to config | M-6: Backslash paths in JSON config on Linux | MODERATE | Mandate forward slashes, normalize on read |
+| Integration tests | M-2: Flaky CI from live API dependency | MODERATE | Separate workflow, structural assertions, skip markers |
+| Integration tests | m-2: asyncio.run() inside running event loop | MINOR | Use pytest-asyncio with await, not asyncio.run() |
+| Cache population | M-3: Schema-less caches cause silent data errors | MODERATE | Schema version, atomic writes, validation |
+| Utility deduplication (CFDA) | M-1: Import dependencies and circular imports | MODERATE | Project-level constants.py, backward-compatible aliases |
+| Utility deduplication (general) | M-4: Behavioral differences in "duplicate" code | MODERATE | Behavior comparison table before consolidating |
+| Utility deduplication (tests) | m-1: Import paths change, tests break | MINOR | Re-export aliases, single-commit moves |
+| Utility deduplication (tests) | m-4: Test count decrease | MINOR | Pre/post count verification |
+| Logger naming | C-2: Breaks log filtering and monitoring | CRITICAL | Single convention, single commit, before/after diff |
+
+---
+
+## Cross-Cutting Concerns
+
+### Regression Testing Strategy
+
+Every tech debt item touches code that is already covered by 287 tests. The safest approach:
+
+1. **One item per branch/PR.** Do not batch unrelated tech debt fixes. If the circuit breaker breaks something, you need to revert only the circuit breaker, not the circuit breaker + logger rename + FY26 config.
+2. **Run full test suite after each atomic change.** Not after all changes. After EACH change.
+3. **Smoke test the daily scan workflow.** After each PR merge, trigger `workflow_dispatch` on `daily-scan.yml` to verify the production pipeline still works.
+4. **Do not change behavior and structure simultaneously.** If moving a constant to a new module, that commit should produce IDENTICAL behavior. The commit that changes behavior (e.g., making FY configurable) should be separate.
+
+### Platform Parity Traps
+
+| Risk | Windows (dev) | Linux (CI) | Detection |
+|------|--------------|------------|-----------|
+| Path separators in config JSON | Works with `\` | Fails with `\` | CI failure on any path test |
+| `os.replace()` atomicity | NOT atomic cross-volume | Atomic same-filesystem | Tests with tmp_path are same-volume |
+| `NamedTemporaryFile` `delete=False` | Required (file locking) | Optional but harmless | Already handled in docx_engine.py |
+| `encoding` parameter | Locale-dependent default | Usually UTF-8 | Existing codebase already passes encoding="utf-8" |
+| `asyncio.run()` | ProactorEventLoop (default) | SelectorEventLoop (default) | aiohttp works on both, but edge cases exist |
+
+### Order of Operations Recommendation
+
+Based on dependency analysis and risk assessment:
+
+1. **Logger naming** (C-2) -- Zero functional impact, establishes consistent naming before other changes add new loggers.
+2. **Utility deduplication** (M-1, M-4, m-1) -- Structural cleanup, no behavior change, reduces noise for subsequent diffs.
+3. **FY26 configurable** (C-3, m-5) -- Data-level change, affects all modules, should be done before circuit breaker (which may add FY-dependent config).
+4. **Hardcoded paths to config** (C-4, M-6) -- Infrastructure change, affects all modules, should be done while config is being touched for FY.
+5. **Circuit breaker** (C-1, M-5, m-3) -- Highest-risk behavioral change, should be done last when all other structural changes are stable.
+6. **Integration tests** (M-2, m-2) -- Additive only (new tests), does not change production code, can be done in parallel with anything.
+7. **Cache population** (M-3) -- Additive functionality, depends on config paths being settled first.
 
 ---
 
 ## Sources
 
 ### Verified (HIGH confidence)
-- [USASpending API endpoint documentation](https://api.usaspending.gov/docs/endpoints)
-- [USASpending search filters](https://github.com/fedspendingtransparency/usaspending-api/blob/master/usaspending_api/api_contracts/search_filters.md)
-- [USASpending recipient endpoint](https://github.com/fedspendingtransparency/usaspending-api/blob/master/usaspending_api/api_contracts/contracts/v2/recipient.md)
-- [Congress.gov API GitHub](https://github.com/LibraryOfCongress/api.congress.gov) -- 5,000 requests/hour rate limit
-- [FEMA NRI data resources](https://hazards.fema.gov/nri/data-resources) -- CSV downloads, county + tract level
-- [OpenFEMA API documentation](https://www.fema.gov/about/openfema/api) -- no key required, 10k record limit per page
-- [BEA RIMS II ordering system](https://apps.bea.gov/regional/rims/rimsii/) -- $500/region, not free API
-- [Census TIGER 2025 shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)
-- [CRS R48107: Tribal Lands in Congressional Districts](https://www.congress.gov/crs-product/R48107)
-- [BIA Federal Register Tribal entities list](https://www.federalregister.gov/documents/2024/01/08/2024-00109/indian-entities-recognized-by-and-eligible-to-receive-services-from-the-united-states-bureau-of)
-- [python-docx memory issues](https://github.com/python-openxml/python-docx/issues/1364)
-- [python-docx large table performance](https://github.com/python-openxml/python-docx/issues/174)
-- [RapidFuzz documentation](https://rapidfuzz.github.io/RapidFuzz/)
+- Codebase inspection: `src/scrapers/base.py`, `src/main.py`, `src/scrapers/usaspending.py`, `src/scrapers/grants_gov.py`, `src/scrapers/congress_gov.py`, `src/scrapers/federal_register.py`, `src/reports/generator.py`, `src/packets/orchestrator.py`, `src/packets/docx_engine.py`, `src/packets/docx_styles.py`, `config/scanner_config.json`, `.github/workflows/daily-scan.yml`, `.github/workflows/generate-packets.yml`
+- [Python logging documentation](https://docs.python.org/3/library/logging.html) -- logger hierarchy and `__name__` behavior
+- [Python pathlib documentation](https://docs.python.org/3/library/pathlib.html) -- path separator normalization
 
 ### Partially verified (MEDIUM confidence)
-- [EPA EJScreen removal](https://envirodatagov.org/epa-removes-ejscreen-from-its-website/)
-- [PEDP EJScreen reconstruction](https://screening-tools.com)
-- [Cross-platform font issues](https://ask.libreoffice.org/t/cross-platform-font-incompatibility-across-windows-mac-and-linux/46122)
-- [USASpending data quality concerns (CRS R44027)](https://www.congress.gov/crs-product/R44027)
+- [aiobreaker (async circuit breaker for Python)](https://pypi.org/project/aiobreaker/) -- async-native circuit breaker library
+- [aiomisc circuit breaker docs](https://aiomisc.readthedocs.io/en/latest/circuit_breaker.html) -- asyncio circuit breaker with configurable error ratios
+- [pybreaker (Python circuit breaker)](https://pypi.org/project/pybreaker/) -- synchronous circuit breaker (not recommended for this codebase)
+- [Nautobot logging issue #3160](https://github.com/nautobot/nautobot/issues/3160) -- real-world logger naming migration discussion
+- [Python circular imports guide (DataCamp)](https://www.datacamp.com/tutorial/python-circular-import) -- circular dependency strategies
+- [Circuit Breaker and Retry patterns (Atomic Object)](https://spin.atomicobject.com/retry-circuit-breaker-patterns/) -- layering retry and circuit breaker patterns
 
 ### Training data only (LOW confidence -- needs validation)
-- Alaska Native Village boundary limitations (based on Census Bureau documentation patterns)
-- python-docx XML tree garbage collection behavior (based on known lxml patterns)
-- Specific Tribal name matching examples (based on domain knowledge of BIA naming conventions)
+- Half-open state behavior for aiohttp with federal API 429 patterns (inferred from general circuit breaker docs, not tested against these specific APIs)
+- Windows `os.replace()` atomicity behavior (known from POSIX specs, Windows behavior varies by filesystem)
+- pytest-asyncio event loop nesting behavior (known pattern, version-dependent)

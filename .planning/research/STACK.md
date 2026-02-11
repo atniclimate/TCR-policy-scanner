@@ -1,640 +1,626 @@
-# Technology Stack: Tribe-Specific Advocacy Packet Generation
+# Technology Stack: Tech Debt Cleanup
 
-**Project:** TCR Policy Scanner v1.1
-**Researched:** 2026-02-10
-**Scope:** NEW capabilities only (DOCX generation + 6 data layers)
+**Project:** TCR Policy Scanner v1.2
+**Researched:** 2026-02-11
+**Scope:** Patterns, libraries, and tools for 5 tech debt cleanup areas
+**Confidence:** HIGH (verified against PyPI, official docs, codebase analysis)
 
 ---
 
-## Existing Stack (DO NOT RE-ADD)
+## Existing Stack (DO NOT CHANGE)
 
-Already validated in v1.0 -- listed for integration context only:
+Already validated across v1.0 and v1.1 -- listed for integration context:
 
 | Technology | Version | Role |
 |---|---|---|
 | Python | 3.12 | Runtime |
-| aiohttp | >=3.9.0 | Async HTTP client (all scrapers use `BaseScraper._request_with_retry`) |
+| aiohttp | >=3.9.0 | Async HTTP client (BaseScraper pattern) |
 | python-dateutil | >=2.8.0 | Date parsing |
 | jinja2 | >=3.1.0 | Template rendering |
 | pytest | (dev) | Test framework |
+| python-docx | >=1.1.0 | DOCX generation |
+| rapidfuzz | >=3.14.0 | Fuzzy name matching |
+| openpyxl | >=3.1.0 | XLSX parsing (USFS data) |
+| pyyaml | >=6.0.0 | YAML support |
 
 ---
 
-## NEW Libraries to Add
+## Debt Area 1: Circuit-Breaker for Async Scrapers
 
-### 1. python-docx -- DOCX Document Generation
+### Current State
 
-| Attribute | Value |
-|---|---|
-| **Package** | `python-docx` |
-| **Pin** | `>=1.1.2,<2.0` |
-| **Latest verified** | 1.2.0 (released 2025-06-16) |
-| **License** | MIT |
-| **Python support** | >=3.9 (compatible with our 3.12) |
-| **PyPI downloads** | ~1.3M weekly |
-| **Confidence** | HIGH (PyPI verified) |
+`BaseScraper._request_with_retry()` (src/scrapers/base.py) implements exponential backoff with jitter and 429-aware retry. However, there is **no circuit-breaker** -- if an API is fully down, all 4 scrapers hammer it through all retries on every CFDA/query combination before moving on.
 
-**Why python-docx:** The only production-stable pure-Python library for creating .docx files. No alternatives worth considering -- Aspose is proprietary/paid, docx-template (docxtpl) wraps python-docx and adds Jinja2 templating but we already have Jinja2 and need fine-grained control over table formatting, merged cells, and conditional sections.
+Concrete impact: USASpending scraper iterates 12 CFDAs. If the API is down, that is `12 x 3 retries x exponential backoff` = ~3-5 minutes of wasted time hitting a dead endpoint, per scraper invocation.
 
-**Capabilities verified (from official docs):**
-- Tables with cell merging, column widths, row heights, and built-in Word styles
-- Headers and footers (per-section, different first page)
-- Page breaks (paragraph-level `page_break_before` style property)
-- Images (inline via `add_picture()` with width/height control)
-- Paragraph styles, character formatting (bold, italic, color, font size)
-- Section properties (page size, margins, orientation)
+### Recommendation: Hand-Roll a Minimal Circuit Breaker
 
-**What python-docx does NOT do (confirmed limitations):**
-- No mail merge / template variable substitution (use docxtpl if needed later)
-- No chart generation (would need `python-pptx` or pre-rendered images)
-- No PDF conversion (would need LibreOffice headless or similar)
-- Headers/footers cannot contain dynamically-added media other than images
+**Do NOT add a library.** Here is why:
 
-**Integration pattern:** Synchronous library. Call from report generation phase after all async data collection is complete. No need to wrap in asyncio -- document construction is CPU-bound, not I/O-bound, and takes <1s per document.
+| Library | Version | Async Support | Problem |
+|---|---|---|---|
+| circuitbreaker | 2.1.3 | Yes (decorator) | Only classifies Python 3.8-3.10; trivial to implement without it |
+| pybreaker | 1.4.1 | Tornado only, NO asyncio | Incompatible with aiohttp async/await |
+| aiobreaker | 1.1.0 | Yes (asyncio) | Last release unknown date; low maintenance signal |
+
+**Rationale:** The project has exactly 4 scrapers with a shared `BaseScraper`. A circuit breaker needs ~30 lines of code: a failure counter, a state enum (CLOSED/OPEN/HALF_OPEN), and a reset timeout. Adding a library dependency for this is over-engineering.
+
+### Implementation Pattern
 
 ```python
-from docx import Document
-from docx.shared import Inches, Pt, RGBColor
-from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from enum import Enum
+from datetime import datetime, timezone, timedelta
+
+class CircuitState(Enum):
+    CLOSED = "closed"       # Normal operation
+    OPEN = "open"           # Rejecting calls
+    HALF_OPEN = "half_open" # Testing one call
+
+class CircuitBreaker:
+    """Per-source circuit breaker for BaseScraper.
+
+    Opens after `fail_threshold` consecutive failures.
+    Resets after `reset_timeout` seconds.
+    """
+
+    def __init__(self, fail_threshold: int = 5, reset_timeout: int = 60):
+        self.fail_threshold = fail_threshold
+        self.reset_timeout = timedelta(seconds=reset_timeout)
+        self._state = CircuitState.CLOSED
+        self._failure_count = 0
+        self._last_failure: datetime | None = None
+
+    @property
+    def state(self) -> CircuitState:
+        if self._state == CircuitState.OPEN:
+            if self._last_failure and (
+                datetime.now(timezone.utc) - self._last_failure > self.reset_timeout
+            ):
+                self._state = CircuitState.HALF_OPEN
+        return self._state
+
+    def record_success(self) -> None:
+        self._failure_count = 0
+        self._state = CircuitState.CLOSED
+
+    def record_failure(self) -> None:
+        self._failure_count += 1
+        self._last_failure = datetime.now(timezone.utc)
+        if self._failure_count >= self.fail_threshold:
+            self._state = CircuitState.OPEN
+
+    @property
+    def allow_request(self) -> bool:
+        s = self.state
+        return s in (CircuitState.CLOSED, CircuitState.HALF_OPEN)
 ```
 
-### 2. rapidfuzz -- Fuzzy String Matching
+### Integration Points
 
-| Attribute | Value |
-|---|---|
-| **Package** | `rapidfuzz` |
-| **Pin** | `>=3.6.0,<4.0` |
-| **Latest verified** | 3.14.3 (released 2025-11-01) |
-| **License** | MIT |
-| **Python support** | >=3.10 (compatible with our 3.12) |
-| **Confidence** | HIGH (PyPI verified) |
+- Add a `CircuitBreaker` instance per scraper source (4 total) inside `BaseScraper.__init__`
+- Check `self._breaker.allow_request` before `_request_with_retry()`
+- Call `record_success()`/`record_failure()` based on outcome
+- When circuit is OPEN, immediately return empty results with a WARNING log
+- `fail_threshold=5` and `reset_timeout=60` are sane defaults for federal APIs
 
-**Why rapidfuzz over thefuzz:** rapidfuzz is the clear winner for this use case:
-- **Performance:** C++ core, 10-100x faster than thefuzz (critical when matching 575 Tribe names against potentially thousands of USASpending recipients)
-- **License:** MIT (thefuzz is GPL -- viral license risk)
-- **API-compatible:** Drop-in replacement for thefuzz/fuzzywuzzy
-- **Active maintenance:** Regular releases through 2025
+### Confidence: HIGH
 
-**Why NOT thefuzz:** GPL license is unacceptable for a project that may be distributed. thefuzz is also pure Python and prohibitively slow for batch matching.
-
-**Integration pattern:** Used in the USASpending award-matching layer to fuzzy-match tribal entity names against `Recipient Name` fields from the existing USASpending scraper.
-
-```python
-from rapidfuzz import fuzz, process
-
-# Match a Tribe name against USASpending recipients
-# Use token_sort_ratio to handle word-order differences
-# e.g. "Navajo Nation" vs "THE NAVAJO NATION"
-matches = process.extract(
-    tribe_name,
-    recipient_names,
-    scorer=fuzz.token_sort_ratio,
-    score_cutoff=80,
-    limit=5,
-)
-```
-
-### 3. censusgeocode (OPTIONAL -- evaluate vs. raw aiohttp)
-
-| Attribute | Value |
-|---|---|
-| **Package** | `censusgeocode` |
-| **Latest verified** | 0.6.0 (on PyPI) |
-| **License** | MIT |
-| **Confidence** | MEDIUM |
-
-**Recommendation: DO NOT ADD.** Use raw aiohttp calls to the Census Geocoder API instead. Reasons:
-- censusgeocode is synchronous (wraps `requests`), would need thread pool executor
-- Our existing `BaseScraper._request_with_retry` already handles the HTTP + retry pattern
-- One less dependency to maintain
-- Census API is simple enough (single GET endpoint) to not need a wrapper
+This pattern is well-established. No library needed. The existing `_request_with_retry` already handles per-request resilience; the circuit breaker adds per-source resilience.
 
 ---
 
-## Libraries Explicitly NOT Adding (and Why)
+## Debt Area 2: Dynamic Fiscal Year Configuration
 
-| Library | Why Not |
-|---|---|
-| `thefuzz` / `fuzzywuzzy` | GPL license; slower than rapidfuzz; no advantages |
-| `censusgeocode` | Sync-only; trivial to call Census API via aiohttp directly |
-| `geopandas` / `shapely` | Massive dependencies (GDAL, etc.); we don't need GIS operations -- just lat/lng lookups and FIPS code matching |
-| `openpyxl` | Not needed; we read XLSX once at build time, can vendor as CSV/JSON |
-| `docxtpl` | Adds Jinja2-in-DOCX templating; we already have Jinja2 for data prep and python-docx for document construction -- docxtpl adds complexity without benefit for our programmatic table/section generation |
-| `requests` | Already using aiohttp for all HTTP; adding requests creates two HTTP stacks |
-| `pandas` | Heavyweight for CSV parsing; stdlib `csv` module + list comprehensions suffice for our data volumes |
+### Current State
 
----
+FY26 is hardcoded in multiple locations:
 
-## Data Layer 1: Tribal Registry (575 Federally Recognized Tribes)
+| File | What is Hardcoded | Impact |
+|---|---|---|
+| `src/scrapers/usaspending.py:68` | `"start_date": "2025-10-01", "end_date": "2026-09-30"` | USASpending queries only FY26 |
+| `src/packets/docx_sections.py:55` | `"FY26 Climate Resilience Program Priorities"` | Cover page title |
+| `src/scrapers/usaspending.py:217` | `f"FY26 Obligation: ..."` | Normalized item titles |
+| `src/monitors/iija_sunset.py:53` | `monitor_config.get("fy26_end", "2026-09-30")` | Already config-driven (good) |
+| `config/scanner_config.json:118` | `"fy26_end": "2026-09-30"` | Only used by IIJA monitor |
 
-### Primary Source: Federal Register + EPA Tribes Names Service
+### Recommendation: Config-Driven FY with Utility Functions
 
-**CRITICAL UPDATE:** As of January 30, 2026, there are **575** federally recognized Tribes (not 574). The Lumbee Tribe of North Carolina was added following the FY2026 NDAA (December 18, 2025). Federal Register document 2026-01899.
+**Do NOT add the `fiscalyear` library.** The US federal fiscal year is dead simple: FY starts Oct 1 of the prior calendar year, ends Sep 30. The project needs a function, not a library.
 
-#### EPA Tribes Names Service API
+### Implementation Pattern
 
-| Attribute | Value |
-|---|---|
-| **Base URL** | `https://cdxapi.epa.gov/oms-tribes-rest-services` |
-| **Endpoints** | `GET /api/v1/tribes` (all tribes, basic data) |
-| | `GET /api/v1/tribeDetails` (detailed, filterable) |
-| | `GET /api/v1/tribeDetails/{epaTribalInternalId}` (single tribe) |
-| **Authentication** | **None required** (public API, no key) |
-| **Rate limits** | Not documented; use polite 0.3s delay per existing pattern |
-| **Response format** | JSON |
-| **Confidence** | HIGH (EPA official documentation verified) |
+Add to `scanner_config.json`:
 
-**Key fields returned:**
-- `epaTribalInternalId` -- unique EPA identifier
-- `currentName` -- official current tribal name
-- `currentBIATribalCode` -- BIA code (critical for cross-referencing)
-- `currentBIARecognizedFlag` -- federal recognition status
-- `epaLocations` -- state, EPA region (geographic placement)
-- `names` -- historical names with date ranges (useful for fuzzy matching aliases)
-- `biaTribalCodes` -- historical BIA codes
-
-**Integration strategy:**
-1. Fetch all 575 Tribes via `GET /api/v1/tribes` on first run
-2. Cache locally as JSON (tribes list changes ~1x/year)
-3. Use `currentName` + historical `names` as the fuzzy-match corpus for USASpending matching
-4. Use `epaLocations` for state-level geographic assignment
-
-#### BIA Tribal Leaders Directory (Supplementary)
-
-| Attribute | Value |
-|---|---|
-| **URL** | `https://www.bia.gov/service/tribal-leaders-directory` |
-| **Format** | Interactive web directory (no REST API) |
-| **Use** | Manual reference / validation only |
-| **Confidence** | HIGH (BIA official) |
-
-**Note:** The BIA directory is interactive/map-based with no documented REST API. The EPA Tribes Names Service is the programmatic source. For geographic coordinates of tribal lands, the best source is the Census TIGER/Line AIANNH (American Indian/Alaska Native/Native Hawaiian Areas) shapefile, but we should avoid GIS dependencies and instead use the state-level data from EPA + county FIPS matching.
-
-#### Federal Register (Official Authority)
-
-| Attribute | Value |
-|---|---|
-| **Document** | FR Doc 2026-01899 (January 30, 2026) |
-| **URL** | `https://www.federalregister.gov/documents/2026/01/30/2026-01899/...` |
-| **Use** | Authoritative count validation (575 entities) |
-| **Format** | PDF list -- not machine-readable |
-| **Confidence** | HIGH (legal authority) |
-
----
-
-## Data Layer 2: Congressional Mapping
-
-### Congress.gov API v3 (Members + Committees)
-
-The existing `CongressGovScraper` already authenticates and queries this API for bills. The member/committee endpoints use the same API key and base URL.
-
-| Attribute | Value |
-|---|---|
-| **Base URL** | `https://api.congress.gov/v3` |
-| **Auth** | API key via `X-Api-Key` header (already configured in existing scraper) |
-| **Rate limit** | 5,000 requests/hour |
-| **Response format** | JSON |
-| **Pagination** | 20 results default, max 250 per page, offset-based |
-| **Confidence** | HIGH (GitHub docs + existing working integration) |
-
-#### Member Endpoints
-
-| Endpoint | Purpose |
-|---|---|
-| `GET /member/congress/119/{stateCode}` | All members from a state in 119th Congress |
-| `GET /member/congress/119/{stateCode}/{district}` | Specific House member by state+district |
-| `GET /member/{bioguideId}` | Full member detail (terms, leadership, contact) |
-
-**Key fields returned:**
-- `bioguideId`, `name` (first, last, directOrder, inverted)
-- `state`, `district`, `partyName`
-- `terms` (array: chamber, congress, startYear, endYear, district, memberType)
-- `officialUrl`, `officeAddress`, `phoneNumber`
-- `depiction.imageUrl` (official portrait)
-- `sponsoredLegislation` / `cosponsoredLegislation` counts + URLs
-
-**IMPORTANT LIMITATION:** Member endpoint does NOT return committee assignments directly. Committee membership requires separate queries.
-
-#### Committee Endpoints
-
-| Endpoint | Purpose |
-|---|---|
-| `GET /committee/119/house` | All House committees in 119th Congress |
-| `GET /committee/119/senate` | All Senate committees in 119th Congress |
-| `GET /committee/{chamber}/{systemCode}` | Specific committee detail |
-
-**Note:** The committee endpoint does not directly return member rosters. To build a member-to-committee mapping, you must either:
-1. Query each committee and find members (if the API supports it -- documentation is ambiguous), OR
-2. Use the ProPublica Congress API (free, has `/members/{id}/committees`), OR
-3. Scrape committee membership from congress.gov pages
-
-**Recommendation:** Start with Congress.gov API for member data (already integrated). For committee assignments, build a static lookup table from congress.gov website data that updates per Congress (every 2 years). This avoids API complexity and rate limit pressure.
-
-### Census Geocoder API (Coordinate-to-District Mapping)
-
-| Attribute | Value |
-|---|---|
-| **Base URL** | `https://geocoding.geo.census.gov/geocoder` |
-| **Endpoint** | `GET /geographies/coordinates` |
-| **Auth** | **None required** |
-| **Rate limits** | Not documented; use polite delays |
-| **Response format** | JSON |
-| **Confidence** | HIGH (Census Bureau official, verified) |
-
-**Query format:**
-```
-GET /geographies/coordinates?x={longitude}&y={latitude}&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json
-```
-
-**Returns:** Congressional district (119th), state legislative districts, county FIPS, census tract -- all in one call.
-
-**Integration strategy:** For each Tribe, we need lat/lng coordinates. Options:
-1. If Tribe has a known reservation centroid (from AIANNH data), use that
-2. If Tribe is state-identified but not geographically specific, use state capital or known administrative location
-3. Map Tribe -> county FIPS -> congressional district
-
-**Batch API also available:** POST to `/geographies/addressbatch` with CSV upload for up to 10,000 addresses. Useful if we pre-compute all 575 Tribe locations.
-
----
-
-## Data Layer 3: USASpending Award Matching
-
-### Existing Infrastructure
-
-The `USASpendingScraper` already queries `https://api.usaspending.gov/api/v2/search/spending_by_award/` by CFDA number. It returns `Recipient Name` fields.
-
-### New Capability: Per-Tribe Fuzzy Matching
-
-**No new API endpoints needed.** The matching happens locally:
-
-1. Existing scraper pulls award data with `Recipient Name` field
-2. New matching layer uses `rapidfuzz` to match each `Recipient Name` against:
-   - Current EPA tribal names (575 entries)
-   - Historical tribal names (from EPA Tribes Names Service `names` array)
-   - Known abbreviations/variants (manually curated aliases)
-
-**USASpending Recipient Name Patterns for Tribes:**
-- "THE NAVAJO NATION" (uppercase, with "THE")
-- "MUSCOGEE (CREEK) NATION" (parenthetical alternate names)
-- "PUEBLO OF LAGUNA" (Pueblo naming convention)
-- "CONFEDERATED TRIBES OF THE COLVILLE RESERVATION" (long formal names)
-- "SITKA TRIBE OF ALASKA" (state qualifier)
-
-**Matching strategy:**
-```python
-from rapidfuzz import fuzz, process
-
-# Pre-process: build name corpus from EPA data
-tribe_names = {}  # Maps normalized name -> tribe_id
-for tribe in epa_tribes:
-    # Add current name
-    tribe_names[normalize(tribe["currentName"])] = tribe["epaTribalInternalId"]
-    # Add historical names
-    for hist in tribe.get("names", []):
-        tribe_names[normalize(hist["name"])] = tribe["epaTribalInternalId"]
-
-# Match recipients
-def match_recipient_to_tribe(recipient_name: str) -> tuple[str | None, int]:
-    """Returns (tribe_id, confidence_score) or (None, 0)."""
-    result = process.extractOne(
-        normalize(recipient_name),
-        tribe_names.keys(),
-        scorer=fuzz.token_sort_ratio,
-        score_cutoff=75,
-    )
-    if result:
-        matched_name, score, _ = result
-        return tribe_names[matched_name], score
-    return None, 0
-```
-
-**Score threshold recommendation:** 75 for `token_sort_ratio`. Below 75 produces too many false positives. Above 85 misses legitimate variations. Calibrate against known matches.
-
----
-
-## Data Layer 4: Hazard Profiling
-
-### 4A. FEMA National Risk Index (NRI)
-
-| Attribute | Value |
-|---|---|
-| **Data access** | **CSV download** (NOT available via OpenFEMA API) |
-| **Download URL** | `https://www.fema.gov/about/openfema/data-sets/national-risk-index-data` |
-| **Current version** | v1.20 (December 2025) |
-| **Geographic levels** | County, Census Tract, State, **Tribal Areas** |
-| **Format** | CSV, Shapefile, Geodatabase |
-| **Auth** | None (public download) |
-| **Confidence** | HIGH (FEMA official, verified December 2025 release) |
-
-**CRITICAL FINDING:** NRI data is marked "Files Only" on the OpenFEMA datasets page -- it is NOT available through the OpenFEMA REST API. This means we must download the CSV file(s) and embed/bundle them with the project rather than querying an API at runtime.
-
-**Data fields (per county/tribal area):**
-- Overall Risk Index (composite score + rating)
-- Expected Annual Loss (EAL) -- total and per-hazard for all 18 hazard types
-- Social Vulnerability score
-- Community Resilience score
-- Per-hazard scores: Annualized Frequency, Exposure, Historical Loss Ratio
-- FIPS codes for geographic join
-
-**18 Hazard Types:**
-Avalanche, Coastal Flooding, Cold Wave, Drought, Earthquake, Hail, Heat Wave, Hurricane, Ice Storm, Inland Flooding, Landslide, Lightning, Strong Wind, Tornado, Tsunami, Volcanic Activity, **Wildfire**, Winter Weather
-
-**Integration strategy:**
-1. Download NRI CSV at build time (or cache with monthly refresh)
-2. Parse with stdlib `csv` module into dict keyed by county FIPS
-3. For each Tribe, look up county FIPS -> NRI hazard profile
-4. Extract top 3-5 hazards by Expected Annual Loss for the advocacy packet
-5. File size: county-level CSV is manageable (~3,200 rows, ~50MB with all fields)
-
-### 4B. EPA EJScreen -- Environmental Justice Indicators
-
-| Attribute | Value |
-|---|---|
-| **Status** | **REMOVED from EPA website (Feb 5, 2025)** |
-| **Alternative access** | Data files preserved at multiple sources |
-| **Data URL (Zenodo)** | `https://zenodo.org/records/14767363` |
-| **Data URL (EPA FTP, may be down)** | `https://gaftp.epa.gov/EJScreen/` |
-| **Alternative tool** | `https://screening-tools.com/epa-ejscreen` (PEDP coalition) |
-| **Version** | 2.3 (2024 data, latest before removal) |
-| **Geographic level** | Census block group, Census tract |
-| **Format** | CSV, Geodatabase |
-| **Confidence** | MEDIUM (data preserved but official API unreliable) |
-
-**RISK FLAG:** EJScreen was removed from EPA's website in February 2025. The mapping API at `ejscreen.epa.gov` may be intermittently available or permanently down. **Do NOT depend on the EJScreen REST API for production use.**
-
-**Recommended approach:** Download the EJScreen v2.3 CSV data file from Zenodo archive and bundle it:
-- Block-group level data with 13 environmental indicators
-- EJ Index and Supplemental Index per indicator
-- Join to Tribal areas via census tract/block group FIPS codes
-
-**Key indicators relevant to Tribal climate resilience:**
-- Particulate Matter 2.5
-- Ozone
-- Diesel Particulate Matter
-- Proximity to Superfund sites (NPL)
-- Proximity to hazardous waste facilities (RMP)
-- Wastewater discharge indicator
-- Underground Storage Tanks
-- Low-Income percentage
-- Linguistic Isolation
-- Unemployment Rate
-
-**Integration strategy:**
-1. Download EJScreen CSV from Zenodo (one-time, ~200MB at block group level)
-2. Aggregate to census tract level for Tribal land areas
-3. Store as compressed JSON/CSV in project data directory
-4. Look up by census tract FIPS codes associated with each Tribe's geography
-
-### 4C. USFS Wildfire Risk to Communities
-
-| Attribute | Value |
-|---|---|
-| **Download URL** | `https://wildfirerisk.org/download/` |
-| **Direct file** | `https://wildfirerisk.org/wp-content/uploads/2025/05/wrc_download_202505.xlsx` |
-| **Version** | 2024 (LANDFIRE 2020 v2.2.0 fuels data) |
-| **Geographic levels** | Communities, **Tribal Areas**, Counties, States |
-| **Format** | XLSX spreadsheet |
-| **Auth** | None (public download) |
-| **Confidence** | HIGH (USFS official, direct download URL verified) |
-
-**Key data fields:**
-- Risk to Homes (national percentile rank)
-- Wildfire Likelihood (national percentile rank)
-- Risk Reduction Zones (Minimal/Indirect/Direct Exposure, Wildfire Transmission)
-- Fraction of buildings exposed (direct + indirect)
-
-**Why this is valuable:** It provides **Tribal area-specific** wildfire risk scores already computed. No need to intersect geographies -- the USFS dataset includes Tribal areas as a first-class geographic unit.
-
-**Integration strategy:**
-1. Download XLSX once at build time
-2. Convert to JSON/CSV at build time (use `openpyxl` in a one-time build script, or convert manually and commit the CSV)
-3. Index by Tribal area name for direct lookup
-4. XLSX is small (~5MB), so embedding in project is fine
-
-**Note on openpyxl:** We said "do not add openpyxl" to runtime dependencies. Correct -- use it only in a one-time data conversion script, OR pre-convert the XLSX to CSV manually and commit the CSV. The runtime code reads CSV only.
-
-### 4D. NOAA Climate Data (via ACIS Web Services)
-
-| Attribute | Value |
-|---|---|
-| **Base URL** | `http://data.rcc-acis.org/` |
-| **Endpoints** | `MultiStnData` (multiple stations by area) |
-| | `GridData` (gridded climate data) |
-| | `General` (geographic metadata) |
-| **Auth** | **None required** |
-| **Rate limits** | Not documented; use polite delays |
-| **Response format** | JSON |
-| **Confidence** | MEDIUM (ACIS docs verified, but county-level projection data availability unclear) |
-
-**Available climate elements:**
-- Maximum temperature (`maxt`), Minimum temperature (`mint`), Average temperature (`avgt`)
-- Precipitation (`pcpn`)
-- Snowfall (`snow`), Snow depth (`snwd`)
-- Cooling/Heating/Growing degree days (`cdd`, `hdd`, `gdd`)
-
-**Query by county FIPS:**
-```
-POST http://data.rcc-acis.org/MultiStnData
+```json
 {
-    "county": "36001",
-    "sdate": "2020-01-01",
-    "edate": "2025-12-31",
-    "elems": ["maxt", "mint", "pcpn"]
+  "fiscal_year": {
+    "current": 2026,
+    "label": "FY26",
+    "start_date": "2025-10-01",
+    "end_date": "2026-09-30"
+  }
 }
 ```
 
-**IMPORTANT LIMITATION:** ACIS provides **historical climate observations and normals**, NOT future climate projections. For projections, the source is the NOAA Climate Explorer (LOCA downscaled data), which does not have a documented REST API -- it uses ACIS internally but exposes data through its web UI and downloadable Jupyter notebooks.
+Add a utility module `src/fiscal.py` (~20 lines):
 
-**Recommendation for climate projections:**
-1. Use ACIS for historical climate normals (30-year averages) per county -- this is well-supported via API
-2. For forward-looking projections, download county-level projection data from Climate Explorer's data directory: `https://crt-climate-explorer.nemac.org/data/`
-3. Pre-download projection summaries for all US counties and bundle as static data
-4. This is a PHASE 2 enhancement -- historical normals are sufficient for MVP
+```python
+"""Fiscal year utilities.
+
+US federal fiscal year: Oct 1 (prior CY) through Sep 30.
+All FY values flow from scanner_config.json["fiscal_year"]["current"].
+"""
+
+from datetime import date
+
+
+def fy_start(fy: int) -> str:
+    """Return FY start date as ISO string (YYYY-MM-DD)."""
+    return f"{fy - 1}-10-01"
+
+
+def fy_end(fy: int) -> str:
+    """Return FY end date as ISO string (YYYY-MM-DD)."""
+    return f"{fy}-09-30"
+
+
+def fy_label(fy: int) -> str:
+    """Return human-readable FY label (e.g., 'FY26')."""
+    return f"FY{fy % 100}"
+
+
+def current_fy() -> int:
+    """Determine the current federal fiscal year from today's date.
+
+    Oct-Dec of year N = FY(N+1). Jan-Sep of year N = FY(N).
+    Example: Oct 2025 = FY26, Feb 2026 = FY26, Oct 2026 = FY27.
+    """
+    today = date.today()
+    return today.year + 1 if today.month >= 10 else today.year
+```
+
+**Important note on auto-detection:** An auto-detect `current_fy()` function is useful for development but the config value should be authoritative. The scanner is a policy tool -- you do NOT want it to silently roll to FY27 on October 1st without human review. The config `fiscal_year.current` is intentionally explicit.
+
+### Files to Update
+
+1. `config/scanner_config.json` -- add `fiscal_year` section
+2. `src/scrapers/usaspending.py` -- read FY dates from config
+3. `src/packets/docx_sections.py` -- use `fy_label()` for cover page
+4. `src/monitors/iija_sunset.py` -- already config-driven, just reference the shared FY end date
+
+### Confidence: HIGH
+
+This is a simple config extraction. No library needed.
 
 ---
 
-## Data Layer 5: Economic Impact
+## Debt Area 3: Integration Testing for Live API Scrapers
 
-### 5A. BEA Regional Economic Data (FREE Alternative to RIMS II)
+### Current State
 
-| Attribute | Value |
-|---|---|
-| **Base URL** | `https://apps.bea.gov/api/data` |
-| **Auth** | **Free API key required** (register at `apps.bea.gov/api/signup/`) |
-| **Rate limits** | Not documented; standard federal API etiquette |
-| **Response format** | JSON |
-| **Confidence** | HIGH (BEA official, verified) |
+The test suite (287 tests) is entirely unit tests using mock data. No test ever hits a real API. This is correct for CI, but there is no mechanism to:
+- Record real API responses for regression testing
+- Verify scraper normalization against real API schemas
+- Detect API contract changes (e.g., Grants.gov changing field names)
 
-**CRITICAL FINDING:** BEA RIMS II multipliers are **pay-per-use ($500/region or $150/industry)** with NO free API access. They are purchased through BEA staff, not available programmatically.
+### Recommendation: aioresponses for Unit Tests + VCR.py for Recorded Integration Tests
 
-**Recommended free alternative:** BEA Regional Data API provides county-level GDP and personal income data that can be used to derive simplified economic impact estimates:
+**Two-layer strategy:**
 
-| Table | Content | Use |
+| Layer | Library | Purpose | When to Run |
+|---|---|---|---|
+| Unit (existing) | Mock data (current) | Fast, deterministic | Every CI run |
+| Recorded Integration | aioresponses >=0.7.8 | Mock aiohttp at protocol level | Every CI run (replayed) |
+| Live Integration | VCR.py >=8.1.1 | Record/replay real HTTP cassettes | Manual, pre-release |
+
+### Library 1: aioresponses (dev dependency)
+
+**Version:** 0.7.8 (released January 2025)
+**Compatibility:** Python 3.12, aiohttp >=3.9.0
+**PyPI:** https://pypi.org/project/aioresponses/
+
+**Why aioresponses over alternatives:**
+
+| Option | Verdict | Reason |
 |---|---|---|
-| `CAGDP9` | Real GDP by county | County economic output for context |
-| `CAINC1` | Personal income summary by county | Per capita income for vulnerability context |
-| `CAINC5N` | Personal income by NAICS industry | Industry breakdown for impact narrative |
+| aioresponses | USE THIS | Purpose-built for aiohttp mocking, pytest-native |
+| responses | No | Only mocks `requests`, not `aiohttp` |
+| pytest-httpx | No | Only mocks `httpx`, not `aiohttp` |
+| unittest.mock | Fragile | Manual AsyncMock on aiohttp internals is brittle |
 
-**Query format:**
+**Usage pattern for scraper tests:**
+
+```python
+import pytest
+from aioresponses import aioresponses
+
+@pytest.fixture
+def mock_aiohttp():
+    with aioresponses() as m:
+        yield m
+
+@pytest.mark.asyncio
+async def test_usaspending_scraper(mock_aiohttp):
+    """Test USASpending scraper against real API response shape."""
+    mock_aiohttp.post(
+        "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+        payload={
+            "results": [
+                {
+                    "Award ID": "AWARD-123",
+                    "Recipient Name": "Navajo Nation",
+                    "Award Amount": 500000.00,
+                    "Awarding Agency": "Bureau of Indian Affairs",
+                    "Start Date": "2025-10-15",
+                }
+            ],
+            "page_metadata": {"hasNext": False},
+        },
+    )
+    scraper = USASpendingScraper(mock_config)
+    items = await scraper.scan()
+    assert len(items) == 1
+    assert items[0]["source"] == "usaspending"
 ```
-GET https://apps.bea.gov/api/data?UserID={key}&method=GetData&datasetname=Regional&TableName=CAGDP9&LineCode=1&GeoFIPS={county_fips}&Year=2023,2024&ResultFormat=JSON
+
+### Library 2: VCR.py (dev dependency, optional)
+
+**Version:** 8.1.1 (released January 2026)
+**Compatibility:** Python >=3.10 (includes 3.12), aiohttp supported
+**PyPI:** https://pypi.org/project/vcrpy/
+
+**Why VCR.py:**
+- Records real HTTP responses to YAML "cassettes" on first run
+- Replays cassettes on subsequent runs (no network needed)
+- Native aiohttp integration (verified in vcrpy/tests/integration/test_aiohttp.py)
+- Enables recording golden responses from each federal API for regression testing
+
+**Usage pattern:**
+
+```python
+import vcr
+
+@vcr.use_cassette("tests/cassettes/usaspending_tribal_awards.yaml")
+async def test_usaspending_real_response():
+    """Record and replay real USASpending response."""
+    scraper = USASpendingScraper(real_config)
+    async with scraper._create_session() as session:
+        items = await scraper._fetch_obligations(session, "15.156", "bia_tcr")
+    assert len(items) > 0
+    assert all("source" in item for item in items)
 ```
 
-**Integration with economic impact narrative:**
-Instead of RIMS II multipliers (which we cannot access for free), use a simplified approach:
-1. Pull county GDP and per-capita income from BEA
-2. Show grant amounts as % of county GDP for scale
-3. Use FEMA's published pre-calculated Benefit-Cost ratios for hazard mitigation projects (available in FEMA BCA documentation)
-4. FEMA's BCA Toolkit provides standard multiplier assumptions for Tribal hazard mitigation grants
+**Cassette management:**
+- Store cassettes in `tests/cassettes/` (git-tracked)
+- Record with `--record-mode=once` (first run hits network, subsequent replays)
+- Re-record periodically (monthly) to detect API schema changes
+- Add `tests/cassettes/` to `.gitignore` if cassettes contain sensitive data, or sanitize headers
 
-### 5B. FEMA Benefit-Cost Analysis (Streamlined)
+### What NOT to Use
 
-| Attribute | Value |
+| Library | Why Not |
 |---|---|
-| **Documentation** | `https://www.fema.gov/grants/tools/benefit-cost-analysis` |
-| **Methodology** | FEMA's published pre-calculated benefit-cost efficiencies |
-| **Discount rate** | 3.1% (reduced from 7% -- favorable for Tribal Nations) |
-| **Auth** | None (published methodology) |
-| **Confidence** | HIGH (FEMA official) |
+| pytest-recording | Wrapper around VCR.py; adds indirection without value for this project |
+| pytest-vcr | Older, less maintained than pytest-recording |
+| responses | Synchronous only (requests library) |
+| wiremock | Java-based, overkill |
+| moto | AWS service mocking, not relevant |
 
-FEMA publishes streamlined cost-effectiveness values for projects under $1M and offers BCA assistance specifically to Tribal Nations. These published values can be used as standard multipliers without purchasing RIMS II data:
-- Pre-calculated benefit-cost values per project type (flood, wind, fire)
-- Streamlined narrative methodology for Tribal projects under $1M
-- Standard economic parameters (discount rate, project useful life)
+### Installation
 
-**Integration strategy:**
-1. Embed FEMA's published BCA parameters as static config
-2. For each Tribe's grant amount, compute simplified BCR using FEMA's streamlined methodology
-3. Contextualize with BEA county GDP data
-4. Flag in the DOCX packet: "Economic impact calculated using FEMA streamlined BCA methodology"
+```bash
+pip install -D aioresponses>=0.7.8
+# Optional, for recorded integration tests:
+pip install -D vcrpy>=8.1.1
+```
+
+### Confidence: HIGH
+
+aioresponses is the standard tool for aiohttp test mocking. VCR.py v8.1.1 has verified aiohttp support. Both are actively maintained.
 
 ---
 
-## Data Layer 6: DOCX Document Generation
+## Debt Area 4: Config-Driven File Paths
 
-### Architecture Decision: Build Documents Programmatically
+### Current State
 
-**Decision: Use python-docx directly, NOT a template-based approach.**
+Hardcoded `Path()` strings scattered across 8+ files:
 
-**Rationale:**
-- Advocacy packets have highly dynamic content (variable number of hazards, programs, legislators)
-- Table row counts vary per Tribe (some have 3 relevant programs, some have 12)
-- Conditional sections (wildfire section only for fire-prone Tribes, coastal flooding only for coastal)
-- Template approaches (docxtpl) struggle with conditional table rows and dynamic section inclusion
-- python-docx's programmatic API gives full control over every element
-
-**Document structure (per Tribe):**
-```
-1. Cover page (Tribe name, date, TCR branding)
-2. Executive Summary (key stats, top recommendations)
-3. Tribal Profile (location, congressional reps, regional context)
-4. Hazard Profile (NRI data, top hazards, EAL figures)
-5. Funding Landscape (current obligations per CFDA, award amounts)
-6. Economic Impact (BCR estimates, county GDP context)
-7. Congressional Advocacy Guide (members, committees, talking points)
-8. Appendix: Data Sources and Methodology
-```
-
-**Performance estimate:** python-docx generates a 20-page document in <1 second. For 575 Tribes: ~10 minutes total for all packets. Parallelizable if needed (each packet is independent), but serial generation is sufficient.
-
----
-
-## Updated requirements.txt
-
-```
-# Existing (unchanged)
-aiohttp>=3.9.0
-python-dateutil>=2.8.0
-jinja2>=3.1.0
-
-# New for v1.1
-python-docx>=1.1.2,<2.0
-rapidfuzz>=3.6.0,<4.0
-```
-
-**That's it. Two new runtime dependencies.** All data APIs are accessed via the existing aiohttp stack. Static data files (NRI CSV, EJScreen CSV, Wildfire Risk CSV) are bundled as project data, not library dependencies.
-
----
-
-## API Summary Matrix
-
-| Data Source | Type | Auth | Rate Limit | Format | Async Compatible | Confidence |
-|---|---|---|---|---|---|---|
-| EPA Tribes Names | REST API | None | Undocumented | JSON | Yes (aiohttp) | HIGH |
-| Congress.gov Members | REST API | API key (existing) | 5,000/hr | JSON | Yes (aiohttp) | HIGH |
-| Census Geocoder | REST API | None | Undocumented | JSON | Yes (aiohttp) | HIGH |
-| USASpending Awards | REST API | None (existing) | Undocumented | JSON | Yes (existing scraper) | HIGH |
-| FEMA NRI | CSV download | None | N/A | CSV | N/A (static file) | HIGH |
-| EJScreen | CSV download | None | N/A | CSV | N/A (static file) | MEDIUM |
-| Wildfire Risk | XLSX download | None | N/A | XLSX->CSV | N/A (static file) | HIGH |
-| NOAA/ACIS Climate | REST API | None | Undocumented | JSON | Yes (aiohttp) | MEDIUM |
-| BEA Regional | REST API | Free API key | Undocumented | JSON | Yes (aiohttp) | HIGH |
-| FEMA BCA | Published values | None | N/A | Static config | N/A | HIGH |
-
----
-
-## Integration Architecture with Existing Stack
-
-```
-Existing Pipeline (v1.0)                New Data Layers (v1.1)
-========================                ======================
-
-BaseScraper (aiohttp)  --------+------> TribalRegistryScraper (EPA API)
-                               |------> CongressMemberScraper (Congress.gov API)
-                               |------> CensusDistrictScraper (Census Geocoder)
-                               |------> ClimateDataScraper (ACIS API)
-                               |------> BEARegionalScraper (BEA API)
-                               |
-USASpendingScraper ----+------> FuzzyMatcher (rapidfuzz) ---> per-Tribe awards
-                       |
-Static Data Loaders ---+------> NRILoader (CSV)
-                       |------> EJScreenLoader (CSV)
-                       |------> WildfireRiskLoader (CSV)
-                       |------> FEMABCAConfig (static params)
-                       |
-All data collected ----+------> DocxPacketGenerator (python-docx)
-                               |  -> 575 individual .docx files
-                               |  -> outputs/packets/{tribe_id}/{date}.docx
-```
-
-New scrapers extend `BaseScraper` to inherit retry logic, rate limiting, and User-Agent compliance. Static data loaders are simple file readers, not scrapers.
-
----
-
-## Risk Register
-
-| Risk | Severity | Mitigation |
+| File | Hardcoded Path | Should Come From |
 |---|---|---|
-| EJScreen data becomes fully unavailable | MEDIUM | Zenodo archive is durable; Harvard Dataverse backup exists; data is v2.3 frozen |
-| Census Geocoder rate-limits batch requests | LOW | Pre-compute all 575 Tribe->district mappings once, cache result |
-| NRI CSV format changes in future releases | LOW | Data dictionary versioned; pin to v1.20; check on quarterly refresh |
-| BEA API key registration blocked | LOW | Registration is instant/free; key is per-email; have backup email |
-| Climate projections need more granularity | MEDIUM | Phase 2: download LOCA county projections from Climate Explorer |
-| RIMS II multipliers needed for accurate impact | MEDIUM | FEMA BCA streamlined approach is sufficient for advocacy context |
-| Lumbee Tribe addition changes count to 575 | RESOLVED | Updated count; EPA API will reflect this when refreshed |
-| Congress.gov committee API doesn't return members | MEDIUM | Build static committee-member lookup; update per Congress |
+| `src/main.py:34` | `Path("config/scanner_config.json")` | CLI arg or env var (entry point, ok to hardcode) |
+| `src/main.py:35` | `Path("data/program_inventory.json")` | Config |
+| `src/main.py:36` | `Path("outputs/LATEST-GRAPH.json")` | Config |
+| `src/main.py:37` | `Path("outputs/LATEST-MONITOR-DATA.json")` | Config |
+| `src/main.py:104` | `Path("data/graph_schema.json")` | Config |
+| `src/reports/generator.py:16` | `Path("outputs")` | Config |
+| `src/analysis/change_detector.py:13` | `Path("outputs/LATEST-RESULTS.json")` | Config |
+| `src/graph/builder.py:25` | `Path("data/graph_schema.json")` | Config |
+| `src/scrapers/base.py:107` | `Path("outputs/.cfda_tracker.json")` | Config |
+| `src/monitors/hot_sheets.py:29` | `Path("outputs/.monitor_state.json")` | Config |
+| `src/packets/orchestrator.py:537` | `Path("data/graph_schema.json")` | Config |
+
+### Recommendation: Frozen Dataclass Config + scanner_config.json
+
+**Do NOT use pydantic, dynaconf, or any config library.** The project already has a working JSON config pattern. Extend it.
+
+### Implementation Pattern
+
+Add a `paths` section to `scanner_config.json`:
+
+```json
+{
+  "paths": {
+    "data_dir": "data",
+    "output_dir": "outputs",
+    "config_dir": "config",
+    "program_inventory": "data/program_inventory.json",
+    "graph_schema": "data/graph_schema.json",
+    "latest_graph": "outputs/LATEST-GRAPH.json",
+    "latest_results": "outputs/LATEST-RESULTS.json",
+    "latest_monitor_data": "outputs/LATEST-MONITOR-DATA.json",
+    "cfda_tracker": "outputs/.cfda_tracker.json",
+    "monitor_state": "outputs/.monitor_state.json"
+  }
+}
+```
+
+Add a frozen dataclass in `src/paths.py` (~40 lines):
+
+```python
+"""Centralized path configuration.
+
+All file paths flow from scanner_config.json["paths"].
+Each module reads from this config instead of hardcoding Path() literals.
+"""
+
+from dataclasses import dataclass
+from pathlib import Path
+
+
+@dataclass(frozen=True)
+class ProjectPaths:
+    """Immutable project path configuration."""
+
+    data_dir: Path
+    output_dir: Path
+    program_inventory: Path
+    graph_schema: Path
+    latest_graph: Path
+    latest_results: Path
+    latest_monitor_data: Path
+    cfda_tracker: Path
+    monitor_state: Path
+
+    @classmethod
+    def from_config(cls, config: dict, project_root: Path | None = None) -> "ProjectPaths":
+        """Build from scanner_config.json paths section."""
+        paths_cfg = config.get("paths", {})
+        root = project_root or Path.cwd()
+
+        def _resolve(key: str, default: str) -> Path:
+            return root / paths_cfg.get(key, default)
+
+        return cls(
+            data_dir=_resolve("data_dir", "data"),
+            output_dir=_resolve("output_dir", "outputs"),
+            program_inventory=_resolve("program_inventory", "data/program_inventory.json"),
+            graph_schema=_resolve("graph_schema", "data/graph_schema.json"),
+            latest_graph=_resolve("latest_graph", "outputs/LATEST-GRAPH.json"),
+            latest_results=_resolve("latest_results", "outputs/LATEST-RESULTS.json"),
+            latest_monitor_data=_resolve("latest_monitor_data", "outputs/LATEST-MONITOR-DATA.json"),
+            cfda_tracker=_resolve("cfda_tracker", "outputs/.cfda_tracker.json"),
+            monitor_state=_resolve("monitor_state", "outputs/.monitor_state.json"),
+        )
+```
+
+### Migration Strategy
+
+1. Add `paths` section to `scanner_config.json` (backward-compatible: defaults match current hardcoded values)
+2. Create `src/paths.py` with `ProjectPaths` dataclass
+3. Construct `ProjectPaths.from_config(config)` once in `main.py` after loading config
+4. Pass `ProjectPaths` instance (or individual paths) to components that need them
+5. Remove hardcoded `Path()` literals one module at a time
+6. Each module's constructor gains a path parameter with the current hardcoded value as default (backward-compatible)
+
+### What NOT to Do
+
+- Do NOT use environment variables for paths (this is a data pipeline, not a web app)
+- Do NOT use pydantic Settings (adds a heavy dependency for 10 paths)
+- Do NOT use dynaconf/python-decouple (adds dependency for something a dataclass handles)
+- Do NOT make paths CLI arguments (too many; config file is the right place)
+
+### Confidence: HIGH
+
+This is stdlib-only (dataclasses + pathlib). The pattern already exists in `src/packets/hazards.py` which uses `_resolve_path()` -- just needs to be formalized and centralized.
+
+---
+
+## Debt Area 5: Data Cache Population Automation
+
+### Current State
+
+Three data caches must be populated via manual scripts or live API calls before packet generation works:
+
+| Cache | Source | Current Method | Files |
+|---|---|---|---|
+| Award cache | USASpending API | `TribalAwardMatcher.run(scraper)` | data/award_cache/*.json (592 files) |
+| Hazard profiles | FEMA NRI CSV + USFS XLSX | `HazardProfileBuilder.build_all_profiles()` | data/hazard_profiles/*.json (592 files) |
+| Congressional cache | Congress.gov API | `scripts/build_congress_cache.py` | data/congressional_cache.json |
+
+The award cache requires a live USASpending API call (`fetch_all_tribal_awards()` -- paginates across 12 CFDAs). The hazard profiles require downloading FEMA NRI CSV and USFS XLSX files manually, then running the builder. There is no unified command to refresh all caches.
+
+### Recommendation: CLI Subcommand + Makefile Target
+
+**No new libraries needed.** The infrastructure already exists in `src/packets/awards.py` and `src/packets/hazards.py`. The gap is orchestration and CLI access.
+
+### Implementation Pattern
+
+Add a `--refresh-cache` CLI subcommand to `src/main.py`:
+
+```python
+parser.add_argument("--refresh-cache", type=str, nargs="?", const="all",
+                    choices=["all", "awards", "hazards", "congress"],
+                    help="Refresh data caches (awards, hazards, congress, or all)")
+```
+
+The handler calls existing code:
+
+```python
+if args.refresh_cache:
+    target = args.refresh_cache
+    if target in ("all", "awards"):
+        from src.packets.awards import TribalAwardMatcher
+        from src.scrapers.usaspending import USASpendingScraper
+        matcher = TribalAwardMatcher(config)
+        scraper = USASpendingScraper(config)
+        result = matcher.run(scraper)
+        print(f"Awards: {result}")
+
+    if target in ("all", "hazards"):
+        from src.packets.hazards import HazardProfileBuilder
+        builder = HazardProfileBuilder(config)
+        count = builder.build_all_profiles()
+        print(f"Hazard profiles: {count} files written")
+
+    if target in ("all", "congress"):
+        from scripts.build_congress_cache import main as build_congress
+        build_congress()
+        print("Congressional cache refreshed")
+    return
+```
+
+### Cache Freshness Tracking
+
+Add a metadata file `data/.cache_manifest.json`:
+
+```json
+{
+  "awards": {
+    "last_refreshed": "2026-02-11T00:00:00Z",
+    "files_count": 592,
+    "source": "USASpending API"
+  },
+  "hazards": {
+    "last_refreshed": "2026-02-11T00:00:00Z",
+    "files_count": 592,
+    "source": "FEMA NRI + USFS"
+  },
+  "congress": {
+    "last_refreshed": "2026-02-11T00:00:00Z",
+    "source": "Congress.gov API"
+  }
+}
+```
+
+The `--refresh-cache` command updates this manifest. The `--prep-packets` command checks it and warns if caches are stale (e.g., >30 days old).
+
+### Data Source Download Guidance
+
+For FEMA NRI and USFS data (which require manual download), add clear instructions:
+
+```
+# In --refresh-cache hazards output:
+"Hazard profiles require manual data downloads:
+  1. FEMA NRI: https://hazards.fema.gov/nri/data-resources
+     -> Download 'NRI Table: Counties' CSV -> data/nri/NRI_Table_Counties.csv
+     -> Download 'Tribal County Relational Database' CSV -> data/nri/
+  2. USFS: https://wildfirerisk.org/
+     -> Download XLSX -> data/usfs/
+
+Then run: python -m src.main --refresh-cache hazards"
+```
+
+### Confidence: HIGH
+
+The code already exists. This is pure orchestration wiring.
+
+---
+
+## Summary: What to Add vs What NOT to Add
+
+### ADD (dev dependencies only)
+
+| Package | Version | Purpose | Size |
+|---|---|---|---|
+| aioresponses | >=0.7.8 | Mock aiohttp in integration tests | Small |
+| vcrpy | >=8.1.1 | Record/replay HTTP cassettes (optional) | Small |
+
+### ADD (new source files, no dependencies)
+
+| File | Purpose | Lines |
+|---|---|---|
+| `src/circuit_breaker.py` | Per-source circuit breaker for BaseScraper | ~40 |
+| `src/fiscal.py` | FY date utilities (fy_start, fy_end, fy_label) | ~25 |
+| `src/paths.py` | Frozen dataclass for centralized path config | ~45 |
+
+### DO NOT ADD
+
+| Library | Why Not |
+|---|---|
+| circuitbreaker | Only 30 lines needed; library adds dependency for trivial code |
+| pybreaker | No asyncio support (Tornado only) |
+| aiobreaker | Low maintenance, uncertain compatibility |
+| fiscalyear | US federal FY is 3 lines of code; library is overkill |
+| pydantic | Heavy dependency for 10 path fields |
+| dynaconf | Config management library; project already has JSON config |
+| pytest-recording | Thin wrapper over VCR.py; use VCR.py directly |
+
+### MODIFY (existing files)
+
+| File | Change |
+|---|---|
+| `config/scanner_config.json` | Add `fiscal_year` and `paths` sections |
+| `src/scrapers/base.py` | Add circuit breaker integration |
+| `src/scrapers/usaspending.py` | Read FY dates from config |
+| `src/packets/docx_sections.py` | Use fy_label() for cover page |
+| `src/main.py` | Add --refresh-cache, construct ProjectPaths |
+| `src/graph/builder.py` | Accept graph_schema path from config |
+| `src/analysis/change_detector.py` | Accept cache path from config |
+| `src/reports/generator.py` | Accept output dir from config |
+| `src/monitors/hot_sheets.py` | Accept state path from config |
+| `requirements.txt` | No changes to production deps |
+
+---
+
+## Installation Changes
+
+```bash
+# Production dependencies: NO CHANGES
+# (circuit breaker and fiscal year are hand-rolled)
+
+# Dev dependencies (add to requirements-dev.txt or test extras):
+pip install aioresponses>=0.7.8
+pip install vcrpy>=8.1.1  # optional, for recorded integration tests
+```
+
+---
+
+## Phase Ordering Recommendation
+
+Based on dependency analysis:
+
+1. **Config-driven paths (Debt 4)** -- Foundation. Other changes need config access patterns.
+2. **Fiscal year config (Debt 2)** -- Depends on config pattern from step 1.
+3. **Circuit breaker (Debt 1)** -- Independent, but benefits from config for thresholds.
+4. **Integration tests (Debt 3)** -- Can test all the above changes.
+5. **Cache automation (Debt 5)** -- CLI wiring, builds on everything else.
+
+This order minimizes rework: each phase builds on the prior one.
 
 ---
 
 ## Sources
 
-### Verified (HIGH confidence)
-- [python-docx 1.2.0 on PyPI](https://pypi.org/project/python-docx/) -- version, license, Python support
-- [RapidFuzz 3.14.3 on PyPI](https://pypi.org/project/rapidfuzz/) -- version, license, Python support
-- [EPA Tribes Names Service](https://www.epa.gov/data/tribes-names-service) -- API endpoints, no-auth, fields
-- [Congress.gov API Member Endpoint](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/MemberEndpoint.md) -- endpoints, rate limits
-- [Congress.gov API Committee Endpoint](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/CommitteeEndpoint.md) -- committee structure
-- [OpenFEMA API Documentation](https://www.fema.gov/about/openfema/api) -- base URL, query format, no-auth
-- [FEMA NRI Data](https://www.fema.gov/about/openfema/data-sets/national-risk-index-data) -- CSV download, v1.20, December 2025
-- [Census Geocoder API](https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html) -- endpoint format, coordinates lookup
-- [USFS Wildfire Risk to Communities](https://wildfirerisk.org/download/) -- download URL, tribal area data
-- [Federal Register 2026-01899](https://www.federalregister.gov/documents/2026/01/30/2026-01899/) -- 575 Tribes, Lumbee addition
-- [BEA API Documentation](https://apps.bea.gov/API/docs/index.htm) -- free key, Regional dataset
-- [FEMA Benefit-Cost Analysis](https://www.fema.gov/grants/tools/benefit-cost-analysis) -- streamlined BCA, 3.1% discount rate
-
-### Partially Verified (MEDIUM confidence)
-- [ACIS Web Services](https://docs.rcc-acis.org/acisws/) -- endpoints verified, county-level projection availability unclear
-- [EJScreen Data on Zenodo](https://zenodo.org/records/14767363) -- archived data verified, long-term availability uncertain
-- [Climate Explorer](https://crt-climate-explorer.nemac.org/) -- data directory exists, programmatic access underdocumented
-- [BEA RIMS II pricing](https://apps.bea.gov/regional/rims/rimsii/) -- $500/region confirmed via search, no free API confirmed
+- [circuitbreaker 2.1.3 on PyPI](https://pypi.org/project/circuitbreaker/) -- Verified async support, Python 3.8-3.10 classifiers
+- [pybreaker on GitHub](https://github.com/danielfm/pybreaker) -- Confirmed Tornado-only async, no asyncio
+- [aiobreaker on GitHub](https://github.com/arlyon/aiobreaker) -- Fork of pybreaker for asyncio
+- [aioresponses on PyPI](https://pypi.org/project/aioresponses/) -- v0.7.8, aiohttp mock library
+- [aioresponses on GitHub](https://github.com/pnuckowski/aioresponses) -- Usage patterns and examples
+- [VCR.py on PyPI](https://pypi.org/project/vcrpy/) -- v8.1.1, Python >=3.10, aiohttp integration verified
+- [VCR.py aiohttp integration tests](https://github.com/kevin1024/vcrpy/blob/master/tests/integration/test_aiohttp.py) -- Confirmed aiohttp cassette support
+- [aiohttp testing docs](https://docs.aiohttp.org/en/stable/testing.html) -- Official testing guidance
+- [fiscalyear on PyPI](https://pypi.org/project/fiscalyear/) -- Evaluated and rejected (overkill)
+- [Dataclass config patterns](https://grueter.dev/blog/dataclass-patterns/) -- Frozen dataclass best practices
+- [Python pathlib docs](https://docs.python.org/3/library/pathlib.html) -- Official pathlib reference
+- Codebase analysis: `src/scrapers/base.py`, `src/main.py`, `config/scanner_config.json`, all 4 scrapers, `src/packets/orchestrator.py`, `src/packets/awards.py`, `src/packets/hazards.py`
