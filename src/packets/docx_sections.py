@@ -7,7 +7,12 @@ that are called by DocxEngine.generate() to assemble the full document.
 Each function renders directly into the provided python-docx Document,
 adding paragraphs and page breaks. No new Word sections are created
 (all content shares the same header/footer).
+
+Air gap: no organizational names or tool attribution appear in any
+rendered section content.
 """
+
+from __future__ import annotations
 
 import logging
 
@@ -34,26 +39,42 @@ def render_cover_page(
     document: Document,
     context: TribePacketContext,
     style_manager: StyleManager,
+    doc_type_config=None,
 ) -> None:
     """Render the cover page with Tribe identity and metadata.
 
     Adds title, Tribe name, delegation summary, geographic info,
-    congressional session, generation date, and confidentiality notice.
+    congressional session, generation date, and audience classification.
     Ends with a page break.
+
+    When ``doc_type_config`` is provided, the title and classification
+    notice are customized for the target audience.
 
     Args:
         document: python-docx Document to render into.
         context: TribePacketContext with all Tribe data.
         style_manager: StyleManager with registered custom styles.
+        doc_type_config: Optional DocumentTypeConfig for audience-aware
+            cover page rendering. When None, uses default FY26 title.
     """
     # Top spacing
     document.add_paragraph("")
 
-    # Main title
-    document.add_paragraph(
-        f"{FISCAL_YEAR_SHORT} Climate Resilience Program Priorities",
-        style="Heading 1",
-    )
+    # Confidentiality banner for internal docs (before title)
+    if doc_type_config is not None and doc_type_config.confidential:
+        banner_para = document.add_paragraph(
+            "CONFIDENTIAL -- FOR INTERNAL TRIBAL USE ONLY",
+            style="HS Small",
+        )
+        banner_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    # Main title -- use doc_type_config title or default
+    if doc_type_config is not None:
+        title_text = doc_type_config.title_template
+    else:
+        title_text = f"{FISCAL_YEAR_SHORT} Climate Resilience Program Priorities"
+
+    document.add_paragraph(title_text, style="Heading 1")
 
     # Tribe name subtitle
     document.add_paragraph(context.tribe_name, style="HS Title")
@@ -70,7 +91,9 @@ def render_cover_page(
         delegation_parts.append(
             f"{num_reps} Representative{'s' if num_reps != 1 else ''}"
         )
-    delegation_summary = ", ".join(delegation_parts) if delegation_parts else "No delegation data"
+    delegation_summary = (
+        ", ".join(delegation_parts) if delegation_parts else "No delegation data"
+    )
 
     document.add_paragraph(
         f"Prepared for the offices of: {delegation_summary}",
@@ -93,11 +116,13 @@ def render_cover_page(
     gen_date = context.generated_at[:10] if context.generated_at else "N/A"
     document.add_paragraph(f"Generated: {gen_date}", style="HS Body")
 
-    # Confidentiality notice (centered, small)
-    conf_para = document.add_paragraph(
-        "CONFIDENTIAL -- For Congressional Office Use Only",
-        style="HS Small",
-    )
+    # Audience classification notice (centered, small)
+    if doc_type_config is not None:
+        classification_text = doc_type_config.footer_template
+    else:
+        classification_text = "For Congressional Office Use"
+
+    conf_para = document.add_paragraph(classification_text, style="HS Small")
     conf_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     # Page break after cover

@@ -344,21 +344,22 @@ class TestDocxEngine:
         assert reopened is not None
 
     def test_engine_header_footer(self, tmp_path):
-        """Document sections have header and footer text."""
+        """Document sections have air-gap-compliant header and footer text."""
         engine = self._make_engine(tmp_path)
         doc, _ = engine.create_document()
 
         section = doc.sections[0]
 
-        # Header
+        # Header -- air gap clean (no tool name or org name)
         header_text = section.header.paragraphs[0].text
-        assert "TCR Policy Scanner" in header_text
-        assert "Tribal Advocacy Packet" in header_text
+        assert "FY26" in header_text
+        assert "Climate Resilience" in header_text
+        assert "TCR Policy Scanner" not in header_text
 
-        # Footer
+        # Footer -- air gap clean (no tool name or org name)
         footer_text = section.footer.paragraphs[0].text
-        assert "CONFIDENTIAL" in footer_text
-        assert "TCR Policy Scanner" in footer_text
+        assert "Congressional Office Use" in footer_text
+        assert "TCR Policy Scanner" not in footer_text
 
     def test_engine_output_dir_created(self, tmp_path):
         """Output directory is created if missing."""

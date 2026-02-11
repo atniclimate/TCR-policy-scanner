@@ -93,20 +93,23 @@ class TestTemplateBuilder:
         assert section.page_height == Inches(11)
 
     def test_build_header_text(self):
-        """Template header contains branding text."""
+        """Template header contains air-gap-compliant descriptive text."""
         builder = TemplateBuilder()
         doc = builder.build()
         header = doc.sections[0].header
         text = header.paragraphs[0].text
-        assert "TCR Policy Scanner" in text
+        assert "FY26" in text
+        assert "Climate Resilience" in text
+        assert "TCR Policy Scanner" not in text
 
     def test_build_footer_text(self):
-        """Template footer contains confidentiality notice."""
+        """Template footer contains air-gap-compliant audience notice."""
         builder = TemplateBuilder()
         doc = builder.build()
         footer = doc.sections[0].footer
         text = footer.paragraphs[0].text
-        assert "CONFIDENTIAL" in text
+        assert "Congressional Office Use" in text
+        assert "TCR Policy Scanner" not in text
 
     def test_build_normal_style_arial(self):
         """Normal style is set to Arial font."""
