@@ -13,9 +13,9 @@ import asyncio
 import json
 import logging
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
-from src.scrapers.base import BaseScraper, check_zombie_cfda, CFDA_TRACKER_PATH
+from src.scrapers.base import BaseScraper, check_zombie_cfda
+from src.paths import CFDA_TRACKER_PATH
 
 logger = logging.getLogger(__name__)
 

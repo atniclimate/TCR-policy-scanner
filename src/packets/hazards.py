@@ -18,11 +18,18 @@ Usage:
 """
 
 import csv
-import glob as glob_mod
 import json
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
+
+from src.paths import (
+    AIANNH_CROSSWALK_PATH,
+    HAZARD_PROFILES_DIR,
+    NRI_DIR,
+    PROJECT_ROOT,
+    USFS_DIR,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -47,14 +54,6 @@ NRI_HAZARD_CODES = {
     "WFIR": "Wildfire",
     "WNTW": "Winter Weather",
 }
-
-from src.paths import (
-    AIANNH_CROSSWALK_PATH,
-    HAZARD_PROFILES_DIR,
-    NRI_DIR,
-    PROJECT_ROOT,
-    USFS_DIR,
-)
 
 # US state abbreviation to FIPS prefix mapping for state-level fallback
 _STATE_FIPS_PREFIX = {

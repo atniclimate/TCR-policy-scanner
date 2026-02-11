@@ -6,7 +6,6 @@ default/no-match fallback, and secondary_rules transparency.
 Uses synthetic graph_data and program dicts to isolate each rule.
 """
 
-import pytest
 
 from src.analysis.decision_engine import DecisionEngine, ADVOCACY_GOALS
 

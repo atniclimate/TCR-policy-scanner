@@ -82,7 +82,7 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     print("Pipeline: Ingest -> Normalize -> Graph -> Monitors -> Decision Engine -> Reporting")
     print(f"Scan window: {config['scan_window_days']} days")
     print(f"Relevance threshold: {config['scoring']['relevance_threshold']}")
-    print(f"\nSources to scan:")
+    print("\nSources to scan:")
     for name in sources:
         src = config["sources"].get(name, {})
         key_needed = src.get("requires_key", False)
@@ -105,7 +105,7 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     if GRAPH_SCHEMA_PATH.exists():
         with open(GRAPH_SCHEMA_PATH, encoding="utf-8") as f:
             schema = json.load(f)
-        print(f"\nKnowledge Graph schema:")
+        print("\nKnowledge Graph schema:")
         print(f"  Authorities: {len(schema.get('authorities', []))}")
         print(f"  Funding vehicles: {len(schema.get('funding_vehicles', []))}")
         print(f"  Barriers: {len(schema.get('barriers', []))}")
@@ -113,7 +113,7 @@ def dry_run(config: dict, programs: list[dict], sources: list[str]) -> None:
     # Monitor configuration
     monitor_config = config.get("monitors", {})
     if monitor_config:
-        print(f"\nMonitor configuration:")
+        print("\nMonitor configuration:")
         for name, mc in monitor_config.items():
             print(f"  - {name}")
 
@@ -270,7 +270,7 @@ def run_pipeline(config: dict, programs: list[dict], sources: list[str],
         monitor_data=monitor_data,
         classifications=classifications,
     )
-    print(f"\nScan complete.")
+    print("\nScan complete.")
     print(f"  Items scored above threshold: {len(scored)}")
     print(f"  New since last scan: {changes['summary']['new_count']}")
     print(f"  Knowledge graph: {graph_data['summary']['total_nodes']} nodes, {graph_data['summary']['total_edges']} edges")

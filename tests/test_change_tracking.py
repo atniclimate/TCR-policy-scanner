@@ -6,7 +6,6 @@ atomic write cleanup, and DOCX rendering of the change tracking section.
 """
 
 import json
-import os
 from pathlib import Path
 from unittest.mock import MagicMock
 

@@ -255,7 +255,7 @@ class ReportGenerator:
             if program_names:
                 lines.append(f"**Programs:** {', '.join(program_names)}")
             if barrier_descs:
-                lines.append(f"**Mitigates:**")
+                lines.append("**Mitigates:**")
                 for bd in barrier_descs:
                     lines.append(f"- {bd}")
             lines.append("")

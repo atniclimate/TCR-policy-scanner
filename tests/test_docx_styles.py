@@ -5,7 +5,6 @@ apply_zebra_stripe, add_status_badge, format_header_row), and DocxEngine
 (create_document, save, header/footer, output directory creation).
 """
 
-import pytest
 from docx import Document
 from docx.oxml.ns import qn
 from docx.shared import Pt, RGBColor

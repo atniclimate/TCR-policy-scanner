@@ -14,18 +14,16 @@ from typing import Any
 from docx import Document
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
-from docx.shared import Inches, Pt, RGBColor
+from docx.shared import Pt
 
 from src.packets.context import TribePacketContext
 from src.utils import format_dollars
 from src.packets.docx_styles import (
-    CI_STATUS_LABELS,
     COLORS,
     StyleManager,
     add_status_badge,
     apply_zebra_stripe,
     format_header_row,
-    set_cell_shading,
 )
 from src.packets.economic import (
     METHODOLOGY_CITATION,

@@ -13,12 +13,10 @@ from docx import Document
 from src.packets.context import TribePacketContext
 from src.packets.docx_hotsheet import (
     FRAMING_BY_STATUS,
-    RELEVANT_COMMITTEE_KEYWORDS,
     HotSheetRenderer,
 )
 from src.packets.docx_styles import CI_STATUS_COLORS, StyleManager
 from src.packets.economic import (
-    EconomicImpactCalculator,
     ProgramEconomicImpact,
     TribeEconomicSummary,
 )

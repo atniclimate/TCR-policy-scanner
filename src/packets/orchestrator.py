@@ -180,7 +180,7 @@ class PacketOrchestrator:
             logger.error("Strategic overview failed: %s", exc)
 
         duration = time.monotonic() - start
-        print(f"\n--- Batch Complete ---")
+        print("\n--- Batch Complete ---")
         print(f"Total: {total} | Success: {success_count} | Errors: {error_count}")
         print(f"Duration: {duration:.0f}s")
         if error_tribes:
@@ -296,7 +296,7 @@ class PacketOrchestrator:
 
         # Ecoregion priority programs
         if context.ecoregions:
-            print(f"\n  Priority Programs by Ecoregion:")
+            print("\n  Priority Programs by Ecoregion:")
             for eco in context.ecoregions:
                 programs = self.ecoregion.get_priority_programs(eco)
                 prog_names = []
@@ -364,7 +364,7 @@ class PacketOrchestrator:
         Args:
             context: The TribePacketContext with awards data.
         """
-        print(f"\n  Award History:")
+        print("\n  Award History:")
         if not context.awards:
             print("    No federal climate resilience awards in tracked programs.")
             print("    First-time applicant opportunity.")
@@ -392,7 +392,7 @@ class PacketOrchestrator:
         Args:
             context: The TribePacketContext with hazard_profile data.
         """
-        print(f"\n  Climate Hazard Profile:")
+        print("\n  Climate Hazard Profile:")
 
         if not context.hazard_profile:
             print("    No hazard profile data available.")

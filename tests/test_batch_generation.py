@@ -7,9 +7,7 @@ All tests use tmp_path fixtures with mock data -- no network or real
 data files required.
 """
 
-import io
 import json
-import sys
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 

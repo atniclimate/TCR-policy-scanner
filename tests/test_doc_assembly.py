@@ -21,7 +21,6 @@ from src.packets.context import TribePacketContext
 from src.packets.docx_engine import DocxEngine
 from src.packets.economic import (
     EconomicImpactCalculator,
-    ProgramEconomicImpact,
     TribeEconomicSummary,
 )
 

@@ -14,8 +14,6 @@ Test categories:
 """
 
 import json
-import os
-from pathlib import Path
 
 import pytest
 from pydantic import ValidationError
@@ -23,11 +21,9 @@ from pydantic import ValidationError
 from src.paths import (
     AWARD_CACHE_DIR,
     CONGRESSIONAL_CACHE_PATH,
-    DATA_DIR,
     HAZARD_PROFILES_DIR,
     POLICY_TRACKING_PATH,
     PROGRAM_INVENTORY_PATH,
-    PROJECT_ROOT,
     TRIBAL_REGISTRY_PATH,
 )
 from src.schemas.models import (
@@ -41,7 +37,6 @@ from src.schemas.models import (
     HazardDetail,
     HazardProfile,
     HotSheetsStatus,
-    NRIComposite,
     NRISource,
     PolicyPosition,
     ProgramRecord,
@@ -115,7 +110,7 @@ class TestProgramRecordSchema:
                 ProgramRecord(**prog_data)
             except ValidationError as e:
                 errors.append(f"{prog_data.get('id', 'UNKNOWN')}: {e}")
-        assert not errors, f"Validation errors:\n" + "\n".join(errors)
+        assert not errors, "Validation errors:\n" + "\n".join(errors)
 
     def test_program_ids_unique(self, program_inventory):
         """All program IDs must be unique."""
@@ -222,7 +217,7 @@ class TestTribeRecordSchema:
                 TribeRecord(**tribe_data)
             except ValidationError as e:
                 errors.append(f"{tribe_data.get('tribe_id', 'UNKNOWN')}: {e}")
-        assert not errors, f"Validation errors:\n" + "\n".join(errors)
+        assert not errors, "Validation errors:\n" + "\n".join(errors)
 
     def test_tribe_ids_unique(self, tribal_registry):
         """All Tribe IDs must be unique."""
@@ -320,7 +315,7 @@ class TestAwardCacheSchema:
                 errors.append(
                     f"{f.name}: award_count={data['award_count']} but len(awards)={len(data['awards'])}"
                 )
-        assert not errors, f"Mismatched award counts:\n" + "\n".join(errors)
+        assert not errors, "Mismatched award counts:\n" + "\n".join(errors)
 
     def test_total_obligation_non_negative(self):
         """total_obligation must be >= 0 in every file."""
@@ -440,7 +435,7 @@ class TestPolicyPositionSchema:
                 PolicyPosition(**pos_data)
             except ValidationError as e:
                 errors.append(f"{pos_data.get('program_id', 'UNKNOWN')}: {e}")
-        assert not errors, f"Validation errors:\n" + "\n".join(errors)
+        assert not errors, "Validation errors:\n" + "\n".join(errors)
 
     def test_position_program_ids_match_inventory(self, policy_tracking, program_inventory):
         """All position program_ids must exist in program_inventory."""
@@ -508,7 +503,7 @@ class TestCongressionalSchema:
                 assert cd.bioguide_id == bioguide_id
             except ValidationError as e:
                 errors.append(f"{bioguide_id}: {e}")
-        assert not errors, f"Member validation errors:\n" + "\n".join(errors)
+        assert not errors, "Member validation errors:\n" + "\n".join(errors)
 
     def test_all_delegations_validate(self, congressional_cache):
         """All 501 delegations must pass CongressionalDelegation validation."""
@@ -521,7 +516,7 @@ class TestCongressionalSchema:
                 assert d.tribe_id == tribe_id
             except ValidationError as e:
                 errors.append(f"{tribe_id}: {e}")
-        assert not errors, f"Delegation validation errors:\n" + "\n".join(errors)
+        assert not errors, "Delegation validation errors:\n" + "\n".join(errors)
 
     def test_senators_are_senate_chamber(self, congressional_cache):
         """All senators in delegations must have chamber='Senate'."""
@@ -550,7 +545,7 @@ class TestCongressionalSchema:
                     CommitteeAssignment(**comm)
                 except ValidationError as e:
                     errors.append(f"{bioguide_id} committee[{i}]: {e}")
-        assert not errors, f"Committee validation errors:\n" + "\n".join(errors)
+        assert not errors, "Committee validation errors:\n" + "\n".join(errors)
 
     def test_district_mappings_validate(self, congressional_cache):
         """District mappings must pass DistrictMapping validation."""
@@ -561,7 +556,7 @@ class TestCongressionalSchema:
                     DistrictMapping(**dist)
                 except ValidationError as e:
                     errors.append(f"{tribe_id} district[{i}]: {e}")
-        assert not errors, f"District mapping validation errors:\n" + "\n".join(errors)
+        assert not errors, "District mapping validation errors:\n" + "\n".join(errors)
 
 
 # ── 7. Edge cases ──

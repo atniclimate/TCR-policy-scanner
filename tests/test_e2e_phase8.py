@@ -566,7 +566,6 @@ class TestE2EPhase8:
 
     def test_batch_produces_3_docx_plus_overview(self, phase8_env):
         """run_all_tribes() produces 3 DOCX files + strategic overview."""
-        from unittest.mock import MagicMock
 
         orch = _make_orchestrator(phase8_env)
 
@@ -753,7 +752,6 @@ class TestE2EPhase8:
 
     def test_batch_error_isolation(self, phase8_env):
         """Corrupt hazard file for one Tribe does not halt the batch."""
-        from unittest.mock import MagicMock
 
         # Corrupt one Tribe's hazard file
         hazard_dir = Path(phase8_env["config"]["packets"]["hazards"]["cache_dir"])

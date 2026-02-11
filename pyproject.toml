@@ -1,0 +1,10 @@
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+# Scripts use sys.path.insert() pattern (DEC-0902-01) requiring imports after path manipulation
+"scripts/*.py" = ["E402"]

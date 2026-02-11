@@ -22,10 +22,8 @@ from src.packets.docx_styles import (
     CI_STATUS_LABELS,
     COLORS,
     StyleManager,
-    add_status_badge,
     apply_zebra_stripe,
     format_header_row,
-    set_cell_shading,
 )
 from src.packets.economic import TribeEconomicSummary
 

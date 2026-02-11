@@ -17,7 +17,6 @@ Validates cross-file consistency across:
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
 
 try:
     from pydantic import ValidationError
@@ -126,12 +125,12 @@ def check_program_id_consistency(report: ValidationReport, inventory: dict, trac
 
     details = []
     if missing_in_inventory:
-        details.append(f"Program IDs in policy_tracking.json NOT found in program_inventory.json:")
+        details.append("Program IDs in policy_tracking.json NOT found in program_inventory.json:")
         for pid in sorted(missing_in_inventory):
             details.append(f"  - {pid}")
 
     if orphaned_in_inventory:
-        details.append(f"Program IDs in program_inventory.json NOT tracked in policy_tracking.json:")
+        details.append("Program IDs in program_inventory.json NOT tracked in policy_tracking.json:")
         for pid in sorted(orphaned_in_inventory):
             details.append(f"  - {pid}")
 

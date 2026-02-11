@@ -7,14 +7,13 @@ rendering to specialized renderers, and saves to the output directory.
 import logging
 import os
 import tempfile
-from datetime import datetime, timezone
 from pathlib import Path
 
 from src.paths import PACKETS_OUTPUT_DIR, PROJECT_ROOT
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.shared import Inches, Pt, RGBColor
+from docx.shared import Inches, Pt
 
 from src.packets.context import TribePacketContext
 from src.packets.docx_hotsheet import HotSheetRenderer

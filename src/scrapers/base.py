@@ -10,11 +10,10 @@ All scrapers inherit from this class to get:
 import asyncio
 import logging
 import random
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 import aiohttp
 
-from src.paths import CFDA_TRACKER_PATH
 
 logger = logging.getLogger(__name__)
 

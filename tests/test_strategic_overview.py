@@ -748,7 +748,6 @@ class TestOrchestratorIntegration:
         # The StrategicOverviewGenerator loads from project root by default,
         # so we need to ensure files are at the right locations.
         # Instead, we'll monkeypatch the _load_json in the generator.
-        import unittest.mock
 
         original_generate = orch.generate_strategic_overview
 
