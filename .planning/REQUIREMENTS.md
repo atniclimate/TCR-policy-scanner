@@ -12,8 +12,8 @@
 
 ### Code Quality
 
-- [ ] **QUAL-01**: All 16 programs in `program_inventory.json` have complete field coverage (cfda, access_type, funding_type)
-- [ ] **QUAL-02**: Dead code and unused imports removed codebase-wide (`ruff check` passes clean)
+- [x] **QUAL-01**: All 16 programs in `program_inventory.json` have complete field coverage (cfda, access_type, funding_type)
+- [x] **QUAL-02**: Dead code and unused imports removed codebase-wide (`ruff check` passes clean)
 
 ### API Resilience
 
@@ -90,8 +90,8 @@ These tech debt items were resolved during the research phase:
 |-------------|-------|--------|
 | CONF-01 | Phase 9 | Complete |
 | CONF-02 | Phase 9 | Complete |
-| QUAL-01 | Phase 10 | Pending |
-| QUAL-02 | Phase 10 | Pending |
+| QUAL-01 | Phase 10 | Complete |
+| QUAL-02 | Phase 10 | Complete |
 | RESL-01 | Phase 11 | Pending |
 | RESL-02 | Phase 11 | Pending |
 | RESL-03 | Phase 11 | Pending |
