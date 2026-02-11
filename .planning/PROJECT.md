@@ -30,29 +30,31 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 - ✓ 5-rule advocacy decision engine (52 TDD tests) — v1.0
 - ✓ 14-section briefing with Reconciliation Watch, IIJA Countdown, Advocacy Goals, Structural Asks, Hot Sheets sync, CI Score Trends — v1.0
 - ✓ Historical CI trend tracking with 90-entry cap — v1.0
+- ✓ 592-Tribe registry from EPA API with BIA codes, states, ecoregion classification — v1.1
+- ✓ Many-to-many congressional delegation mapping (Census CD119-AIANNH + Congress.gov API) — v1.1
+- ✓ Per-Tribe USASpending award matching with two-tier system (3,751 aliases + rapidfuzz >= 85) — v1.1
+- ✓ Multi-source hazard profiling (FEMA NRI 18 types + USFS wildfire risk) for all 592 Tribes — v1.1
+- ✓ District-level economic impact framing with published multipliers + FEMA 4:1 BCR — v1.1
+- ✓ Professional DOCX generation engine (DocxEngine + StyleManager + HotSheetRenderer) — v1.1
+- ✓ Document 1: per-Tribe DOCX (592 variants) with 8-section assembly — v1.1
+- ✓ Document 2: shared strategic overview DOCX with 7 sections — v1.1
+- ✓ Batch (all 592 Tribes) and ad-hoc (single Tribe) CLI generation modes — v1.1
+- ✓ Change tracking ("Since Last Packet" diffs between generations) — v1.1
+- ✓ GitHub Pages search widget (15KB) with Tribe autocomplete and DOCX download — v1.1
 
 ### Active
 
-**v1.1 — Tribe-Specific Advocacy Intelligence Packets:**
-
-- [x] Tribal Registry — 592 federally recognized Tribes with state, location, ecoregion classification (EPA API + BIA codes)
-- [x] Congressional Mapping — senators, House representatives, and committee assignments per Tribe (Census CD119-AIANNH + Congress.gov API)
-- [x] USASpending Award Matching — per-Tribe per-program funding history with two-tier name matching (alias table + rapidfuzz)
-- [x] Hazard Profiling — FEMA NRI 18 hazard types + USFS wildfire risk per Tribe (EPA EJScreen deferred, NOAA deferred)
-- [x] Economic Impact Synthesis — published multipliers + FEMA 4:1 BCR, avoided cost framing per Tribe per program
-- [x] DOCX Generation Engine — python-docx programmatic document construction with Hot Sheets, cover page, appendix
-- [x] Document 1: FY26 [Tribe Name] Climate Resilience Program Priorities — complete per-Tribe DOCX assembly with all sections
-- [x] Document 2: FY26 Federal Funding Overview & Strategy — shared DOCX with appropriations landscape, ecoregion strategic priorities
-- [x] CLI triggers — batch (all 592 Tribes) and ad-hoc (single Tribe) generation modes
-- [x] Change Tracking -- "since last packet" diffs showing what shifted between packet generations
-- [x] Web Distribution -- GitHub Pages search widget with Tribe autocomplete and DOCX download, embeddable via iframe in SquareSpace
+(None -- planning next milestone)
 
 ### Out of Scope
 
 - Tribal-specific or sensitive data collection -- T0 (Open) data only, public federal sources
 - Real-time streaming -- batch scan architecture, not live feeds
-- Non-climate Tribal policy domains -- v1 focused on TCR; config-driven design supports future expansion
-- ~~Frontend dashboard~~ -- **AF-05 Superseded**: lightweight static search+download widget on GitHub Pages (WEB-01/02/03); not a dashboard or editing UI. Pre-generated DOCX files served statically.
+- Non-climate Tribal policy domains -- focused on TCR; config-driven design supports future expansion
+- Interactive web dashboard -- AF-05 superseded by static search+download widget (shipped v1.1); not a dashboard or editing UI
+- EPA EJScreen integration -- removed from EPA Feb 2025; FEMA NRI + USFS cover core hazard needs
+- NOAA climate projections -- valuable but deferred; adds significant integration complexity beyond NRI
+- BEA RIMS II multipliers -- cost-prohibitive ($500/region); published multipliers + FEMA BCR sufficient
 
 ## Context
 
@@ -63,11 +65,16 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 **Server:** GitHub-hosted, developed locally at F:\tcr-policy-scanner
 **Local workspace:** F:\tcr-policy-scanner
 
-**Shipped v1.0 with 4,074 LOC Python across 46 source files.**
+**Shipped v1.1 with 18,546 LOC Python across 52 source files.**
 
 **Pipeline architecture:**
 ```
 Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decision Engine -> Reporting (14 sections)
+```
+
+**Packet architecture:**
+```
+CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards + Hazards + Economic -> DocxEngine -> DOCX
 ```
 
 **Data files:**
@@ -75,25 +82,16 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 - `data/program_inventory.json` — 16 programs with CI, advocacy levers, hot_sheets_status, access_type, funding_type
 - `data/policy_tracking.json` — FY26 positions with 7-tier CI thresholds
 - `data/graph_schema.json` — 20 authorities, 13 barriers, 8 funding vehicles, Five Structural Asks, Trust Super-Node
-
-**Strategic reference:** `docs/STRATEGIC-FRAMEWORK.md` — 15-item implementation checklist bridging scanner to Hot Sheets
-
-**v1.1 reference documents:**
-- FY26 TCR Program Priorities — per-Tribe DOCX template with 16 program Hot Sheets (see `C:\Users\PatrickFreeland\Desktop\FY26_TCR_Program_Priorities.docx`)
-- FY26 Federal Funding Overview & Strategy — inter-Tribal strategic landscape (see `C:\Users\PatrickFreeland\Desktop\FY26_Federal_Funding_Strategy.docx`)
-
-**v1.1 data sources:**
-- BIA Federal Register notice — list of 592 federally recognized Tribes
-- Census TIGER — congressional district boundaries for Tribe-to-district mapping
-- Congress.gov API — current members, committee assignments (already have API key)
-- FEMA National Risk Index — county-level hazard scores for 18 natural hazard types
-- EPA EJScreen — environmental justice indicators by geography
-- USFS wildfire risk — community wildfire risk data
-- NOAA climate projections — regional climate impact data
-- BEA regional input-output models — economic multipliers for district-level impact framing
-- FEMA benefit-cost ratios — pre-disaster mitigation returns (4:1 standard)
+- `data/ecoregion_config.json` — 7 NCA5 ecoregion definitions with program priority mappings
+- `data/tribal_registry.json` — 592 Tribes with BIA codes, states, name variants
+- `data/congressional_cache.json` — 538 members with committee assignments per Tribe
+- `data/tribal_aliases.json` — 3,751 USASpending name aliases for two-tier matching
+- `data/award_cache/*.json` — per-Tribe USASpending award histories (592 files)
+- `data/hazard_profiles/*.json` — per-Tribe FEMA NRI + USFS hazard profiles (592 files)
 
 **Test suite:** 287 tests across 11 modules (decision engine, integration, DOCX styles/hotsheet/sections/assembly, economic, strategic overview, batch generation, change tracking, web index, E2E)
+
+**Known tech debt (10 items, 0 critical):** Logger naming, FY26 hardcoding, _format_dollars duplication, graph_schema path hardcoding, incomplete program fields, data cache population requires live API runs, missing Phase 8 VERIFICATION.md, GitHub Pages deployment config, SquareSpace placeholder URL
 
 ## Constraints
 
@@ -122,28 +120,28 @@ Ingest (4 scrapers) -> Normalize -> Graph Construction -> Monitors (5) -> Decisi
 | HotSheetsValidator runs first | CI overrides must apply before decision engine | ✓ Good |
 | Always-render threat sections | "No threats" is valuable info for meeting prep | ✓ Good |
 | CI history 90-entry cap | ~3 months daily scans; prevents unbounded growth | ✓ Good |
-| DOCX output (not Markdown) | Congressional offices need printable/shareable documents | Good — DocxEngine + StyleManager operational |
-| Programmatic DOCX (no template files) | Build document structure in code for full control; no external template dependency | Good — python-docx with _ColorNamespace styles |
-| All 592 Tribes | Program scope serves all federally recognized Tribes nationally (EPA API returns 592) | Good — registry + caches for all 592 |
-| Multi-source hazard profiling | FEMA NRI + USFS wildfire (EJScreen deferred, NOAA deferred) | Good — 18 NRI hazard types + USFS wildfire |
-| Published multipliers for economic impact | Standard federal methodology makes framing defensible (not RIMS II at $500/region) | Good — FEMA BCR + published multipliers |
-| Scanner generates both documents | Document 1 (per-Tribe) and Document 2 (strategic overview) both auto-generated | Good -- DocxEngine + StrategicOverviewGenerator operational |
-| Web distribution widget | Static search+download on GitHub Pages, iframe embed for SquareSpace | Good -- 15KB bundle, autocomplete, WCAG 2.1 AA |
-| AF-05 superseded | Lightweight widget is not a dashboard; supersedes "no web UI" constraint | Good -- static file server, not interactive UI |
+| DOCX output (not Markdown) | Congressional offices need printable/shareable documents | ✓ Good — DocxEngine + StyleManager operational |
+| Programmatic DOCX (no template files) | Build document structure in code for full control; no external template dependency | ✓ Good — python-docx with _ColorNamespace styles |
+| All 592 Tribes | Program scope serves all federally recognized Tribes nationally (EPA API returns 592) | ✓ Good — registry + caches for all 592 |
+| Multi-source hazard profiling | FEMA NRI + USFS wildfire (EJScreen deferred, NOAA deferred) | ✓ Good — 18 NRI hazard types + USFS wildfire |
+| Published multipliers for economic impact | Standard federal methodology makes framing defensible (not RIMS II at $500/region) | ✓ Good — FEMA BCR + published multipliers |
+| Scanner generates both documents | Document 1 (per-Tribe) and Document 2 (strategic overview) both auto-generated | ✓ Good — DocxEngine + StrategicOverviewGenerator operational |
+| Web distribution widget | Static search+download on GitHub Pages, iframe embed for SquareSpace | ✓ Good — 15KB bundle, autocomplete, WCAG 2.1 AA |
+| AF-05 superseded | Lightweight widget is not a dashboard; supersedes "no web UI" constraint | ✓ Good — static file server, not interactive UI |
+| Census CD119-AIANNH for district mapping | Machine-readable, 119th Congress, area overlap data (CRS R48107 was 118th PDF) | ✓ Good — 550/577 Tribes matched (95.3%) |
+| Four-tier crosswalk matching | Normalization + variant generation + substring + fuzzy matching for Tribe-to-district | ✓ Good — overcame 60/577 initial match rate |
+| Two-tier award matching | Curated alias table primary + rapidfuzz fallback; false negatives over false positives | ✓ Good — 3,751 aliases with state-overlap validation |
+| Pre-cache all data before DOCX gen | Zero API calls during document construction | ✓ Good — 1,184+ cache files, fast render |
+| ProgramRelevanceFilter (8-12 per Tribe) | Supersedes AF-04; omitted programs in appendix | ✓ Good — focused packets, complete coverage |
+| Batch GC every 25 Tribes | Prevents memory buildup across 592 Tribe batch generation | ✓ Good — stable memory usage |
+| Change tracking with state persistence | Per-Tribe JSON state enables "Since Last Packet" diff sections | ✓ Good — 5 change types detected |
 
-## Current Milestone: v1.1 Tribe-Specific Advocacy Packets
+## Current State
 
-**Goal:** Generate per-Tribe congressional advocacy DOCX packets for all 592 federally recognized Tribes, with localized funding data, hazard profiling, economic impact framing, and congressional delegation mapping.
+**v1.0 MVP** shipped 2026-02-09 — policy intelligence pipeline with 4 scrapers, 5 monitors, decision engine, 14-section briefing.
+**v1.1 Tribe-Specific Advocacy Packets** shipped 2026-02-10 — per-Tribe DOCX generation for 592 Tribes with award history, hazard profiling, economic impact, congressional delegation, and web distribution widget.
 
-**Target features:**
-- Tribal Registry with 592 Tribes mapped to states, ecoregions, and congressional districts
-- Per-Tribe DOCX (Document 1) with 16 program Hot Sheets populated with Tribe-specific data
-- Shared strategic DOCX (Document 2) with appropriations landscape and ecoregion priorities
-- Multi-source hazard profiling (FEMA NRI, EPA EJScreen, USFS, NOAA)
-- Economic impact synthesis (USASpending obligations x BEA multipliers + FEMA BCR)
-- Congressional delegation mapping with committee assignments
-- Batch (all Tribes) and ad-hoc (single Tribe) generation modes
-- Change tracking between packet generations
+**Next milestone:** Not yet planned. Use `/gsd:new-milestone` to start.
 
 ---
-*Last updated: 2026-02-10 after Phase 8 complete (287 tests, 22/22 requirements complete, v1.1 milestone finished)*
+*Last updated: 2026-02-10 after v1.1 milestone complete*

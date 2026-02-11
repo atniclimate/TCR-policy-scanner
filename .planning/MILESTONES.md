@@ -25,28 +25,36 @@
 
 **Git range:** `38f3821` (initial upload) -> `8491e66` (pass 3 docs)
 
-**What's next:** v1.1 Tribe-Specific Advocacy Packets -- per-Tribe congressional advocacy DOCX packets for all 592 federally recognized Tribes.
+**What's next:** v1.1 Tribe-Specific Advocacy Packets (shipped 2026-02-10)
 
 ---
 
-## v1.1 Tribe-Specific Advocacy Packets (In Progress)
+## v1.1 Tribe-Specific Advocacy Packets (Shipped: 2026-02-10)
 
-**Status:** Phases 5-7 complete, Phase 8 remaining
-**Started:** 2026-02-10
+**Delivered:** Per-Tribe congressional advocacy DOCX packet generation for all 592 federally recognized Tribes, with localized USASpending award history, FEMA/USFS hazard profiling, economic impact framing, congressional delegation mapping, and a GitHub Pages search widget for distribution.
 
-**Progress:**
+**Phases completed:** 5-8 (17 plans total)
 
-- Phase 5 (Foundation): 4/4 plans, 5 requirements complete (REG-01..03, CONG-01..02)
-- Phase 6 (Data Acquisition): 3/3 plans, 4 requirements complete (AWARD-01..02, HAZ-01..02)
-- Phase 7 (Computation + DOCX): 4/4 plans, 5 requirements complete (ECON-01, DOC-01..04)
-- Phase 8 (Assembly + Polish): Not yet planned, 5 requirements remaining (DOC-05..06, OPS-01..03)
-- Systemic review: 9-agent, 3-wave review with 40 findings triaged, 10 fixes applied
+**Key accomplishments:**
 
-**Stats so far:**
+- Built 592-Tribe registry from EPA API with ecoregion classification and many-to-many congressional delegation mapping (Census CD119-AIANNH + Congress.gov API)
+- Implemented two-tier USASpending award matching (3,751-entry alias table + rapidfuzz >= 85 with state-overlap validation) with per-Tribe JSON caches
+- Created multi-source hazard profiling (FEMA NRI 18 hazard types + USFS wildfire risk) cached for all 592 Tribes
+- Built professional DOCX generation engine (DocxEngine + StyleManager + HotSheetRenderer) with programmatic python-docx construction and economic impact synthesis
+- Assembled complete Document 1 (per-Tribe, 592 variants with 8-section layout) and Document 2 (strategic overview with 7 sections) with batch + ad-hoc CLI modes
+- Deployed 15KB GitHub Pages search widget with Tribe autocomplete and DOCX download, embeddable via SquareSpace iframe
 
-- 14/19 requirements complete
-- 214 tests passing across 5 test modules
-- 11 plans executed across 3 phases
-- 3 systemic review passes (code quality, security, domain correctness)
+**Stats:**
+
+- 52 Python source files, 18,546 lines of Python (src + tests)
+- 4 phases, 17 plans, 22 requirements
+- 287 tests (31 + 23 + 108 + 73 + 52 baseline)
+- 87 commits, 1,314 files changed (includes 1,184+ data cache files)
+- 2 days from v1.0 ship to v1.1 ship (2026-02-09 to 2026-02-10)
+- 1 systemic review (9-agent, 3-wave, 40 findings triaged, 10 fixes applied)
+
+**Git range:** `8491e66` (v1.0 end) -> `bcd6635` (v1.1 end)
+
+**What's next:** Planning next milestone.
 
 ---
