@@ -97,12 +97,13 @@ Plans:
   2. Tribe matching uses a curated alias table first, then rapidfuzz fallback at >= 85 score for unmatched recipients
   3. 592 award cache JSON files contain real data (not placeholder/empty structures)
   4. 450+ Tribes have at least one non-zero award record with plausible obligation amounts
-**Plans**: 3 plans (2 waves: 12-01 and 12-02 parallel, then 12-03)
+**Plans**: 4 plans (2 waves: 12-01 and 12-02 parallel, then 12-03, then 12-04 gap closure)
 
 Plans:
-- [ ] 12-01-PLAN.md -- Extend USASpending scraper: per-FY batch queries, 14 CFDAs, expanded award type codes (02-06,10) + unit tests [Plan Wave 1]
-- [ ] 12-02-PLAN.md -- Extend TribalAwardMatcher: dedup by Award ID, year-by-year cache schema, consortium detection, trend computation + unit tests [Plan Wave 1]
-- [ ] 12-03-PLAN.md -- CLI script (scripts/populate_awards.py) wiring fetch+dedup+match+cache, run against live API, validate 450+ coverage [Plan Wave 2]
+- [x] 12-01-PLAN.md -- Extend USASpending scraper: per-FY batch queries, 14 CFDAs, expanded award type codes (02-06,10) + unit tests [Plan Wave 1]
+- [x] 12-02-PLAN.md -- Extend TribalAwardMatcher: dedup by Award ID, year-by-year cache schema, consortium detection, trend computation + unit tests [Plan Wave 1]
+- [x] 12-03-PLAN.md -- CLI script (scripts/populate_awards.py) wiring fetch+dedup+match+cache, run against live API, validate 450+ coverage [Plan Wave 2]
+- [ ] 12-04-PLAN.md -- Gap closure: housing authority alias mapping + re-population to reach 450+ coverage target [Plan Wave 3]
 
 ---
 
@@ -154,10 +155,10 @@ Plans:
 | 9 - Config Hardening | 2 | 2 | Complete | 2026-02-11 |
 | 10 - Code Quality | 2 | 2 | Complete | 2026-02-11 |
 | 11 - API Resilience | 2 | 2 | Complete | 2026-02-11 |
-| 12 - Award Population | 3 | 0 | Planned | -- |
+| 12 - Award Population | 4 | 3 | Gap Closure | -- |
 | 13 - Hazard Population | 3 | 0 | Pending | -- |
 | 14 - Integration & Validation | 3 | 0 | Pending | -- |
-| **Total** | **15** | **4** | -- | -- |
+| **Total** | **16** | **7** | -- | -- |
 
 ## Dependency & Wave Summary
 
@@ -205,4 +206,4 @@ Duplicates: 0
 *Depth: quick*
 *Coverage: 24/24 requirements mapped*
 *Phases: 6 (numbered 9-14, continuing from v1.1)*
-*Plans: 15 total*
+*Plans: 16 total*
