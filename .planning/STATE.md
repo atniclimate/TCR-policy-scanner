@@ -13,21 +13,21 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
 **Phase:** 14 - Integration & Validation
-**Plan:** 2 of 7 (14-01 + 14-02 complete)
+**Plan:** 3 of 7 (14-01 + 14-02 + 14-03 complete)
 **Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 14-01-PLAN.md (Hazard data activation + 8-region config)
+**Last activity:** 2026-02-11 -- Completed 14-03-PLAN.md (Content Filtering + Multi-Doc Generation)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [#########~]  94% IN PROGRESS (6 phases, 16 plans, 24 requirements)
+v1.2     [#########~]  95% IN PROGRESS (6 phases, 16 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
   Phase 12: Award Population     [##########] 100%  4/4 plans complete  DONE (gap closure)
   Phase 13: Hazard Population    [##########] 100%  3/3 plans complete  DONE
-  Phase 14: Integration          [##~~~~~~~~]  29%  2/7 plans complete  IN PROGRESS
+  Phase 14: Integration          [####~~~~~~]  43%  3/7 plans complete  IN PROGRESS
 ```
 
 ## Performance Metrics
@@ -39,9 +39,9 @@ v1.2     [#########~]  94% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 36 completed + 5 planned = 41 |
-| Total requirements | 57 completed + 19 planned = 76 |
-| Total tests | 647 |
+| Total plans | 37 completed + 4 planned = 41 |
+| Total requirements | 59 completed + 17 planned = 76 |
+| Total tests | 691 |
 | Total LOC | ~25,000 Python (est. +1,300 scripts + tests + HA aliases) |
 | Source files | 70 (+6: generate_ha_aliases.py, test_housing_authority_aliases.py, etc.) |
 
@@ -142,6 +142,11 @@ v1.2     [#########~]  94% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 - DEC-1402-01: Default doc_type_config is None (not DOC_B) for full backward compatibility
 - DEC-1402-02: Air gap covers all src/packets/ files including strategic_overview and docx_template
 - DEC-1402-03: Cover page shows "For Congressional Office Use" as default classification
+- DEC-1403-01: Section renderers use keyword argument doc_type_config=None for backward compatibility
+- DEC-1403-02: Congressional Key Ask uses program description instead of advocacy_lever for ASK line
+- DEC-1403-03: Orchestrator _has_complete_data checks awards AND hazards AND delegation
+- DEC-1403-04: Hazard alignment paragraph in economic impact for all doc types (factual, safe for congressional)
+- DEC-1403-05: Change tracking excluded from congressional docs (is_internal gate)
 
 ### Todos
 
@@ -156,11 +161,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 14-01-PLAN.md (Hazard data activation + 8-region config)
-**Next step:** Execute 14-03-PLAN.md (Content Filtering)
+**Stopped at:** Completed 14-03-PLAN.md (Content Filtering + Multi-Doc Generation)
+**Next step:** Execute 14-04-PLAN.md (Regional Documents)
 **Resume file:** None
 **Resume command:** `/gsd:execute-phase 14`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 14-01 completion (Phase 14 in progress, 2/7 plans: 14-01 + 14-02)*
+*Last updated: 2026-02-11 after 14-03 completion (Phase 14 in progress, 3/7 plans: 14-01 + 14-02 + 14-03)*
