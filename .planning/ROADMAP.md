@@ -63,8 +63,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 10-01-PLAN.md -- Complete program_inventory.json field coverage [Wave 1]
-- [ ] 10-02-PLAN.md -- Dead code removal and ruff-clean codebase [Wave 1]
+- [ ] 10-01-PLAN.md -- Complete 5 null CFDA fields in program_inventory.json [Wave 1]
+- [ ] 10-02-PLAN.md -- Create pyproject.toml ruff config, fix 70 violations, clean codebase [Wave 1]
 
 ---
 
