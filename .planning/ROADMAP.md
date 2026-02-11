@@ -27,7 +27,7 @@ Wave 3:  Phase 13 (Hazards) ─────┐
 - [x] **Phase 10: Code Quality** -- Codebase passes ruff clean with complete program inventory and no dead code
 - [x] **Phase 11: API Resilience** -- Pipeline survives API outages via circuit breakers and graceful cache fallback
 - [ ] **Phase 12: Award Population** -- 450+ Tribes have real USASpending award data in their cache files
-- [ ] **Phase 13: Hazard Population** -- 550+ Tribes have real FEMA NRI hazard scores and ranked risks
+- [x] **Phase 13: Hazard Population** -- 550+ Tribes have real FEMA NRI hazard scores and ranked risks
 - [ ] **Phase 14: Integration & Validation** -- End-to-end packets produce complete, data-backed documents for 400+ Tribes
 
 ## Phase Details
@@ -122,9 +122,9 @@ Plans:
 **Plans**: 3 plans (3 sequential waves: 13-01 then 13-02 then 13-03)
 
 Plans:
-- [ ] 13-01-PLAN.md -- NRI county CSV + shapefile download scripts, geopandas area-weighted crosswalk builder, paths.py constant [Plan Wave 1]
-- [ ] 13-02-PLAN.md -- Refactor hazards.py: MAX -> area-weighted aggregation, score_to_rating(), top-5 hazards, non-zero filtering + unit tests [Plan Wave 2]
-- [ ] 13-03-PLAN.md -- USFS wildfire download, USFS WFIR override, populate_hazards.py CLI, coverage report (JSON+MD) [Plan Wave 3]
+- [x] 13-01-PLAN.md -- NRI county CSV + shapefile download scripts, geopandas area-weighted crosswalk builder, paths.py constant [Plan Wave 1]
+- [x] 13-02-PLAN.md -- Refactor hazards.py: MAX -> area-weighted aggregation, score_to_rating(), top-5 hazards, non-zero filtering + unit tests [Plan Wave 2]
+- [x] 13-03-PLAN.md -- USFS wildfire download, USFS WFIR override, populate_hazards.py CLI, coverage report (JSON+MD) [Plan Wave 3]
 
 ---
 
@@ -156,9 +156,9 @@ Plans:
 | 10 - Code Quality | 2 | 2 | Complete | 2026-02-11 |
 | 11 - API Resilience | 2 | 2 | Complete | 2026-02-11 |
 | 12 - Award Population | 4 | 3 | Gap Closure | -- |
-| 13 - Hazard Population | 3 | 0 | Pending | -- |
+| 13 - Hazard Population | 3 | 3 | Complete | 2026-02-11 |
 | 14 - Integration & Validation | 3 | 0 | Pending | -- |
-| **Total** | **16** | **7** | -- | -- |
+| **Total** | **16** | **10** | -- | -- |
 
 ## Dependency & Wave Summary
 

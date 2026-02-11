@@ -31,12 +31,12 @@
 
 ### Hazard Data Population
 
-- [ ] **HZRD-01**: FEMA NRI county-level dataset downloaded and cached
-- [ ] **HZRD-02**: Tribe-to-county geographic crosswalk built (AIANNH + county boundaries)
-- [ ] **HZRD-03**: County NRI scores aggregated to Tribe level (area-weighted)
-- [ ] **HZRD-04**: Top 5 hazards per Tribe extracted and ranked
-- [ ] **HZRD-05**: USFS wildfire risk data populated for fire-prone Tribes (300+)
-- [ ] **HZRD-06**: Hazard profile files populated for 592 Tribes with real data
+- [x] **HZRD-01**: FEMA NRI county-level dataset downloaded and cached
+- [x] **HZRD-02**: Tribe-to-county geographic crosswalk built (AIANNH + county boundaries)
+- [x] **HZRD-03**: County NRI scores aggregated to Tribe level (area-weighted)
+- [x] **HZRD-04**: Top 5 hazards per Tribe extracted and ranked
+- [x] **HZRD-05**: USFS wildfire risk data populated for fire-prone Tribes (300+)
+- [x] **HZRD-06**: Hazard profile files populated for 592 Tribes with real data
 
 ### Integration & Validation
 
@@ -100,12 +100,12 @@ These tech debt items were resolved during the research phase:
 | AWRD-02 | Phase 12 | Pending |
 | AWRD-03 | Phase 12 | Pending |
 | AWRD-04 | Phase 12 | Pending |
-| HZRD-01 | Phase 13 | Pending |
-| HZRD-02 | Phase 13 | Pending |
-| HZRD-03 | Phase 13 | Pending |
-| HZRD-04 | Phase 13 | Pending |
-| HZRD-05 | Phase 13 | Pending |
-| HZRD-06 | Phase 13 | Pending |
+| HZRD-01 | Phase 13 | Complete |
+| HZRD-02 | Phase 13 | Complete |
+| HZRD-03 | Phase 13 | Complete |
+| HZRD-04 | Phase 13 | Complete |
+| HZRD-05 | Phase 13 | Complete |
+| HZRD-06 | Phase 13 | Complete |
 | INTG-01 | Phase 14 | Pending |
 | INTG-02 | Phase 14 | Pending |
 | INTG-03 | Phase 14 | Pending |
