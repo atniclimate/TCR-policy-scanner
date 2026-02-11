@@ -13,19 +13,19 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
 **Phase:** 12 - Award Population (in progress)
-**Plan:** 1 of 3
+**Plan:** 2 of 3
 **Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 12-01-PLAN.md (batch query engine)
+**Last activity:** 2026-02-11 -- Completed 12-02-PLAN.md (award matching enhancement)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [#######~~~]  47% IN PROGRESS (6 phases, 15 plans, 24 requirements)
+v1.2     [########~~]  53% IN PROGRESS (6 phases, 15 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
-  Phase 12: Award Population     [###~~~~~~~]  33%  1/3 plans complete  IN PROGRESS
+  Phase 12: Award Population     [######~~~~]  67%  2/3 plans complete  IN PROGRESS
   Phase 13: Hazard Population    [~~~~~~~~~~]   0%  Blocked on Wave 2
   Phase 14: Integration          [~~~~~~~~~~]   0%  Blocked on 11+12+13
 ```
@@ -39,11 +39,11 @@ v1.2     [#######~~~]  47% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 30 completed + 11 planned = 41 |
+| Total plans | 31 completed + 10 planned = 41 |
 | Total requirements | 55 completed + 21 planned = 76 |
-| Total tests | 432 (+15 batch query engine) |
-| Total LOC | ~20,700 Python (est. +~400 from batch query engine) |
-| Source files | 58 |
+| Total tests | 469 (+37 award matching) |
+| Total LOC | ~21,400 Python (est. +~660 tests) |
+| Source files | 59 (+1: tests/test_awards.py) |
 
 ## Accumulated Context
 
@@ -112,6 +112,8 @@ v1.2     [#######~~~]  47% IN PROGRESS (6 phases, 15 plans, 24 requirements)
 - DEC-1201-01: TRIBAL_AWARD_TYPE_CODES includes 06+10 (direct payments) alongside 02-05 (grants)
 - DEC-1201-02: Sequential not parallel querying to respect USASpending rate limits
 - DEC-1201-03: Page-100 safety break prevents infinite loop on large result sets
+- DEC-1202-01: Consortium patterns are case-insensitive substring matches; 'association of' requires 'of' suffix to avoid false positives
+- DEC-1202-02: Task 1 code bundled in 12-01 commit during parallel execution; Task 2 tests committed separately
 
 ### Todos
 
@@ -126,11 +128,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 12-01-PLAN.md (batch query engine for per-year multi-CFDA award queries)
-**Next step:** Execute 12-02-PLAN.md (award matching) to continue Phase 12
+**Stopped at:** Completed 12-02-PLAN.md (award matching enhancement with dedup, consortium detection, enhanced cache)
+**Next step:** Execute 12-03-PLAN.md (orchestration script) to complete Phase 12
 **Resume file:** None
-**Resume command:** `/gsd:execute-phase 12` (continues with plan 02)
+**Resume command:** `/gsd:execute-phase 12` (continues with plan 03)
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 12-01 plan execution (Phase 12, plan 1 of 3)*
+*Last updated: 2026-02-11 after 12-02 plan execution (Phase 12, plan 2 of 3)*
