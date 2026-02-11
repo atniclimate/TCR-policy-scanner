@@ -3,7 +3,13 @@
 Coordinates Tribe name resolution, ecoregion classification, and
 congressional delegation lookup into a unified TribePacketContext.
 Called from CLI via ``--prep-packets --tribe <name>`` or ``--prep-packets --all-tribes``.
+
+Supports multi-document generation per Tribe:
+  - Doc A (internal strategy) to ``internal/`` subdirectory
+  - Doc B (congressional overview) to ``congressional/`` subdirectory
 """
+
+from __future__ import annotations
 
 import json
 import logging
@@ -16,6 +22,7 @@ from dataclasses import asdict
 from src.packets.change_tracker import PacketChangeTracker
 from src.packets.context import TribePacketContext
 from src.packets.congress import CongressionalMapper
+from src.packets.doc_types import DOC_A, DOC_B, DocumentTypeConfig
 from src.packets.docx_engine import DocxEngine
 from src.packets.ecoregion import EcoregionMapper
 from src.packets.economic import EconomicImpactCalculator
@@ -560,6 +567,186 @@ class PacketOrchestrator:
 
         logger.info("Generated packet for %s: %s", context.tribe_name, path)
         return path
+
+    # ------------------------------------------------------------------
+    # Phase 14: Multi-document generation (INTG-02)
+    # ------------------------------------------------------------------
+
+    def _has_complete_data(self, context: TribePacketContext) -> bool:
+        """Check if a Tribe has sufficient data for full Doc A generation.
+
+        Complete data requires: awards, hazard profile, and congressional
+        delegation. Tribes with partial data get Doc B only.
+
+        Args:
+            context: TribePacketContext to check.
+
+        Returns:
+            True if context has enough data for internal strategy doc.
+        """
+        has_awards = bool(context.awards)
+        has_hazards = bool(context.hazard_profile)
+        has_delegation = bool(context.senators or context.representatives)
+        return has_awards and has_hazards and has_delegation
+
+    def _generate_single_doc(
+        self,
+        context: TribePacketContext,
+        tribe: dict,
+        doc_type_config: DocumentTypeConfig,
+        economic_summary=None,
+        relevant=None,
+        omitted=None,
+        structural_asks=None,
+        changes=None,
+        previous_date=None,
+    ) -> Path:
+        """Generate a single document of a specific type for a Tribe.
+
+        Creates a DocxEngine with the specified doc_type_config, saves
+        to the appropriate subdirectory (internal/ or congressional/).
+
+        Args:
+            context: Fully populated TribePacketContext.
+            tribe: Original tribe dict from registry.
+            doc_type_config: Document type configuration.
+            economic_summary: Pre-computed economic summary (optional).
+            relevant: Pre-filtered relevant programs (optional).
+            omitted: Pre-computed omitted programs (optional).
+            structural_asks: Pre-loaded structural asks (optional).
+            changes: Pre-computed changes (optional).
+            previous_date: Previous generation date (optional).
+
+        Returns:
+            Path to generated .docx file.
+        """
+        # Determine output subdirectory
+        base_dir = self._get_output_dir()
+        if doc_type_config.is_internal:
+            output_dir = base_dir / "internal"
+        else:
+            output_dir = base_dir / "congressional"
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Create config with overridden output dir
+        doc_config = dict(self.config)
+        doc_config["packets"] = dict(doc_config.get("packets", {}))
+        doc_config["packets"]["output_dir"] = str(output_dir)
+
+        engine = DocxEngine(
+            doc_config, self.programs, doc_type_config=doc_type_config
+        )
+        path = engine.generate(
+            context=context,
+            relevant_programs=relevant or [],
+            economic_summary=economic_summary,
+            structural_asks=structural_asks or [],
+            omitted_programs=omitted,
+            changes=changes,
+            previous_date=previous_date,
+            doc_type_config=doc_type_config,
+        )
+
+        logger.info(
+            "Generated %s doc for %s: %s",
+            doc_type_config.doc_type,
+            context.tribe_name,
+            path,
+        )
+        return path
+
+    def _get_output_dir(self) -> Path:
+        """Get the base output directory from config.
+
+        Returns:
+            Path to the packets output directory.
+        """
+        raw_dir = self.config.get("packets", {}).get("output_dir")
+        output_dir = Path(raw_dir) if raw_dir else PACKETS_OUTPUT_DIR
+        if not output_dir.is_absolute():
+            output_dir = PROJECT_ROOT / output_dir
+        return output_dir
+
+    def generate_tribal_docs(
+        self,
+        context: TribePacketContext,
+        tribe: dict,
+        doc_types: list[DocumentTypeConfig] | None = None,
+    ) -> list[Path]:
+        """Generate multiple document types for a single Tribe.
+
+        For complete-data Tribes (awards + hazards + delegation): generates
+        both Doc A (internal strategy) and Doc B (congressional overview).
+        For partial-data Tribes: generates Doc B only.
+
+        Args:
+            context: Fully populated TribePacketContext.
+            tribe: Original tribe dict from registry.
+            doc_types: Optional list of DocumentTypeConfig to generate.
+                If None, auto-selects based on data completeness.
+
+        Returns:
+            List of Paths to generated .docx files.
+        """
+        # Compute shared data once
+        economic_summary = self.economic_calculator.compute(
+            tribe_id=context.tribe_id,
+            tribe_name=context.tribe_name,
+            awards=context.awards,
+            districts=context.districts,
+            programs=self.programs,
+        )
+        context.economic_impact = asdict(economic_summary)
+
+        relevant = self.relevance_filter.filter_for_tribe(
+            hazard_profile=context.hazard_profile,
+            ecoregions=context.ecoregions,
+            ecoregion_mapper=self.ecoregion,
+        )
+        omitted = self.relevance_filter.get_omitted_programs(relevant)
+        structural_asks = self._load_structural_asks()
+
+        # Change tracking
+        raw_state = self.config.get("packets", {}).get("state_dir")
+        state_dir = Path(raw_state) if raw_state else PACKET_STATE_DIR
+        if not state_dir.is_absolute():
+            state_dir = PROJECT_ROOT / state_dir
+        tracker = PacketChangeTracker(state_dir=state_dir)
+        previous_state = tracker.load_previous(context.tribe_id)
+        current_state = tracker.compute_current(context, self.programs)
+
+        changes: list[dict] = []
+        previous_date: str | None = None
+        if previous_state is not None:
+            changes = tracker.diff(previous_state, current_state)
+            previous_date = previous_state.get("generated_at")
+
+        # Determine doc types to generate
+        if doc_types is None:
+            if self._has_complete_data(context):
+                doc_types = [DOC_A, DOC_B]
+            else:
+                doc_types = [DOC_B]
+
+        paths: list[Path] = []
+        for dtc in doc_types:
+            path = self._generate_single_doc(
+                context=context,
+                tribe=tribe,
+                doc_type_config=dtc,
+                economic_summary=economic_summary,
+                relevant=relevant,
+                omitted=omitted,
+                structural_asks=structural_asks,
+                changes=changes,
+                previous_date=previous_date,
+            )
+            paths.append(path)
+
+        # Persist current state after successful generation
+        tracker.save_current(context.tribe_id, current_state)
+
+        return paths
 
     def _load_structural_asks(self) -> list[dict]:
         """Load structural asks from graph_schema.json.
