@@ -11,6 +11,7 @@ Plus config integration with BaseScraper, per-source cache, and health checks.
 
 import json
 import logging
+import os
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
@@ -359,3 +360,161 @@ class TestSourceCache:
             _save_source_cache("test_source", [{"id": "1"}])
             tmp_files = list(tmp_path.glob("*.tmp"))
             assert len(tmp_files) == 0
+
+
+# ── Health check tests ──
+
+
+class TestHealthChecker:
+    """HealthChecker probe and formatting tests."""
+
+    def test_health_checker_format_report(self):
+        """format_report produces aligned output with all 4 sources."""
+        from src.health import format_report
+
+        results = {
+            "federal_register": {"status": "UP", "latency_ms": 237, "detail": "OK"},
+            "grants_gov": {"status": "UP", "latency_ms": 412, "detail": "OK"},
+            "congress_gov": {"status": "DOWN", "latency_ms": 0, "detail": "API key not configured"},
+            "usaspending": {"status": "DEGRADED", "latency_ms": 0, "detail": "cached data from 2026-02-10T14:30:00Z"},
+        }
+        report = format_report(results)
+        assert "API Health Check" in report
+        assert "federal_register" in report
+        assert "grants_gov" in report
+        assert "congress_gov" in report
+        assert "usaspending" in report
+        assert "UP" in report
+        assert "DOWN" in report
+        assert "DEGRADED" in report
+        assert "237ms" in report
+
+    def test_health_checker_up_result(self):
+        """Mock aiohttp response returning 200 -> UP status."""
+        import asyncio
+        from unittest.mock import AsyncMock, MagicMock
+
+        from src.health import HealthChecker
+
+        checker = HealthChecker({"sources": {}})
+
+        # Mock a successful GET response
+        mock_resp = AsyncMock()
+        mock_resp.status = 200
+        mock_resp.__aenter__ = AsyncMock(return_value=mock_resp)
+        mock_resp.__aexit__ = AsyncMock(return_value=False)
+
+        mock_session = AsyncMock()
+        mock_session.get = MagicMock(return_value=mock_resp)
+        mock_session.__aenter__ = AsyncMock(return_value=mock_session)
+        mock_session.__aexit__ = AsyncMock(return_value=False)
+
+        with patch("src.health.aiohttp.ClientSession", return_value=mock_session):
+            result = asyncio.run(checker._probe_one("federal_register", {
+                "url": "https://example.com/test",
+                "method": "GET",
+            }))
+
+        assert result["status"] == "UP"
+        assert "latency_ms" in result
+
+    def test_health_checker_down_result(self):
+        """Mock aiohttp raising timeout -> DOWN status."""
+        import asyncio
+        from unittest.mock import AsyncMock, MagicMock
+
+        from src.health import HealthChecker
+
+        checker = HealthChecker({"sources": {}})
+
+        mock_session = AsyncMock()
+        mock_session.get = MagicMock(side_effect=TimeoutError("connection timed out"))
+        mock_session.__aenter__ = AsyncMock(return_value=mock_session)
+        mock_session.__aexit__ = AsyncMock(return_value=False)
+
+        with patch("src.health.aiohttp.ClientSession", return_value=mock_session):
+            with patch("src.health.OUTPUTS_DIR", MagicMock()) as mock_dir:
+                mock_cache_path = MagicMock()
+                mock_cache_path.exists.return_value = False
+                mock_dir.__truediv__ = MagicMock(return_value=mock_cache_path)
+
+                result = asyncio.run(checker._probe_one("federal_register", {
+                    "url": "https://example.com/test",
+                    "method": "GET",
+                }))
+
+        assert result["status"] == "DOWN"
+        assert "timed out" in result["detail"]
+
+    def test_health_checker_degraded_with_cache(self, tmp_path):
+        """DOWN probe + existing cache file -> DEGRADED status."""
+        import asyncio
+        from unittest.mock import AsyncMock, MagicMock
+
+        from src.health import HealthChecker
+
+        checker = HealthChecker({"sources": {}})
+
+        # Create a cache file
+        cache_file = tmp_path / ".cache_usaspending.json"
+        cache_data = {
+            "source": "usaspending",
+            "cached_at": "2026-02-10T14:30:00+00:00",
+            "item_count": 5,
+            "items": [{"id": str(i)} for i in range(5)],
+        }
+        cache_file.write_text(json.dumps(cache_data), encoding="utf-8")
+
+        mock_session = AsyncMock()
+        mock_session.post = MagicMock(side_effect=TimeoutError("timeout"))
+        mock_session.__aenter__ = AsyncMock(return_value=mock_session)
+        mock_session.__aexit__ = AsyncMock(return_value=False)
+
+        with patch("src.health.aiohttp.ClientSession", return_value=mock_session):
+            with patch("src.health.OUTPUTS_DIR", tmp_path):
+                result = asyncio.run(checker._probe_one("usaspending", {
+                    "url": "https://example.com/test",
+                    "method": "POST",
+                    "json": {"test": True},
+                }))
+
+        assert result["status"] == "DEGRADED"
+        assert "cached data from" in result["detail"]
+        assert "2026-02-10" in result["detail"]
+
+    def test_health_check_cli_argument(self):
+        """argparse accepts --health-check flag."""
+        import argparse
+
+        # Build the same parser as main()
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--health-check", action="store_true")
+        args = parser.parse_args(["--health-check"])
+        assert args.health_check is True
+
+    def test_health_checker_congress_no_key(self):
+        """congress_gov without API key returns DOWN or DEGRADED."""
+        import asyncio
+        from unittest.mock import MagicMock
+
+        from src.health import HealthChecker
+
+        checker = HealthChecker({
+            "sources": {"congress_gov": {"key_env_var": "CONGRESS_API_KEY"}},
+        })
+        # Ensure no key is set
+        with patch.dict(os.environ, {}, clear=True):
+            with patch("src.health.OUTPUTS_DIR", MagicMock()) as mock_dir:
+                mock_cache_path = MagicMock()
+                mock_cache_path.exists.return_value = False
+                mock_dir.__truediv__ = MagicMock(return_value=mock_cache_path)
+
+                result = asyncio.run(
+                    checker._probe_one("congress_gov", {
+                        "url": "https://api.congress.gov/v3/bill?limit=1",
+                        "method": "GET",
+                        "requires_key": True,
+                    })
+                )
+        assert result["status"] == "DOWN"
+        assert "API key not configured" in result["detail"]

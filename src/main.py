@@ -394,6 +394,8 @@ def main() -> None:
                         help="Tribe name for single packet (used with --prep-packets)")
     parser.add_argument("--all-tribes", action="store_true",
                         help="Generate for all Tribes (used with --prep-packets)")
+    parser.add_argument("--health-check", action="store_true",
+                        help="Check API availability for all sources")
     args = parser.parse_args()
 
     log_level = logging.DEBUG if args.verbose else logging.INFO
@@ -405,6 +407,13 @@ def main() -> None:
 
     config = load_config()
     programs = load_programs()
+
+    if args.health_check:
+        from src.health import HealthChecker, format_report
+        checker = HealthChecker(config)
+        results = asyncio.run(checker.check_all())
+        print(format_report(results))
+        return
 
     if args.prep_packets:
         if not args.tribe and not args.all_tribes:
