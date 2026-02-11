@@ -14,3 +14,4 @@ outputs/archive/*.json
 !outputs/archive/.gitkeep
 outputs/packets/
 data/packet_state/
+data/nri/

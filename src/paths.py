@@ -76,6 +76,9 @@ NRI_DIR: Path = DATA_DIR / "nri"
 USFS_DIR: Path = DATA_DIR / "usfs"
 """USFS wildfire risk data cache."""
 
+TRIBAL_COUNTY_WEIGHTS_PATH: Path = NRI_DIR / "tribal_county_area_weights.json"
+"""Pre-computed area-weighted AIANNH-to-county crosswalk."""
+
 AWARD_CACHE_DIR: Path = DATA_DIR / "award_cache"
 """Per-Tribe USASpending award history JSON files (592 files)."""
 
