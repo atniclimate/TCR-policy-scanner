@@ -5,6 +5,15 @@ on:
     # Sunday 8AM Pacific (15:00 UTC during PST, 14:00 UTC during PDT)
     - cron: '0 15 * * 0'
   workflow_dispatch:
+    inputs:
+      skip_data_population:
+        description: 'Skip NRI/award data population (use cached)'
+        type: boolean
+        default: true
+      skip_regional:
+        description: 'Skip regional document generation'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -12,7 +21,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -27,7 +36,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate all packets
+      - name: Populate hazard data
+        if: ${{ github.event_name == 'schedule' || inputs.skip_data_population == false }}
+        run: |
+          python scripts/download_nri_data.py || echo "NRI download unavailable, using cached data"
+          python scripts/populate_hazards.py || echo "Hazard population incomplete, using cached data"
+        continue-on-error: true
+
+      - name: Generate advocacy packets
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
@@ -36,20 +52,31 @@ jobs:
       - name: Build web index
         run: python scripts/build_web_index.py
 
-      - name: Stage for GitHub Pages
+      - name: Validate data coverage
+        run: python scripts/validate_coverage.py
+        continue-on-error: true
+
+      - name: Deploy to docs/web
         run: |
-          mkdir -p docs/web/tribes docs/web/data
-          cp outputs/packets/*.docx docs/web/tribes/ || true
-          cp outputs/packets/STRATEGIC-OVERVIEW.docx docs/web/tribes/ || true
+          mkdir -p docs/web/tribes/internal
+          mkdir -p docs/web/tribes/congressional
+          mkdir -p docs/web/tribes/regional/internal
+          mkdir -p docs/web/tribes/regional/congressional
+          mkdir -p docs/web/data
+          cp outputs/packets/internal/*.docx docs/web/tribes/internal/ 2>/dev/null || true
+          cp outputs/packets/congressional/*.docx docs/web/tribes/congressional/ 2>/dev/null || true
+          cp outputs/packets/regional/internal/*.docx docs/web/tribes/regional/internal/ 2>/dev/null || true
+          cp outputs/packets/regional/congressional/*.docx docs/web/tribes/regional/congressional/ 2>/dev/null || true
 
       - name: Commit and push
         run: |
           git config user.name "TCR Policy Scanner"
           git config user.email "scanner@tcr-policy-scanner.local"
           git add docs/web/tribes/ docs/web/data/tribes.json
+          git add outputs/coverage_report.md || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "packets: generate $(date -u +%Y-%m-%d)"
+            git commit -m "chore: regenerate advocacy packets ($(date -u +%Y-%m-%d))"
             git push
           fi
