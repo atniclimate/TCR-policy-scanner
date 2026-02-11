@@ -88,36 +88,36 @@ These tech debt items were resolved during the research phase:
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CONF-01 | Pending | Pending |
-| CONF-02 | Pending | Pending |
-| QUAL-01 | Pending | Pending |
-| QUAL-02 | Pending | Pending |
-| RESL-01 | Pending | Pending |
-| RESL-02 | Pending | Pending |
-| RESL-03 | Pending | Pending |
-| RESL-04 | Pending | Pending |
-| AWRD-01 | Pending | Pending |
-| AWRD-02 | Pending | Pending |
-| AWRD-03 | Pending | Pending |
-| AWRD-04 | Pending | Pending |
-| HZRD-01 | Pending | Pending |
-| HZRD-02 | Pending | Pending |
-| HZRD-03 | Pending | Pending |
-| HZRD-04 | Pending | Pending |
-| HZRD-05 | Pending | Pending |
-| HZRD-06 | Pending | Pending |
-| INTG-01 | Pending | Pending |
-| INTG-02 | Pending | Pending |
-| INTG-03 | Pending | Pending |
-| INTG-04 | Pending | Pending |
-| INTG-05 | Pending | Pending |
-| INTG-06 | Pending | Pending |
+| CONF-01 | Phase 9 | Pending |
+| CONF-02 | Phase 9 | Pending |
+| QUAL-01 | Phase 10 | Pending |
+| QUAL-02 | Phase 10 | Pending |
+| RESL-01 | Phase 11 | Pending |
+| RESL-02 | Phase 11 | Pending |
+| RESL-03 | Phase 11 | Pending |
+| RESL-04 | Phase 11 | Pending |
+| AWRD-01 | Phase 12 | Pending |
+| AWRD-02 | Phase 12 | Pending |
+| AWRD-03 | Phase 12 | Pending |
+| AWRD-04 | Phase 12 | Pending |
+| HZRD-01 | Phase 13 | Pending |
+| HZRD-02 | Phase 13 | Pending |
+| HZRD-03 | Phase 13 | Pending |
+| HZRD-04 | Phase 13 | Pending |
+| HZRD-05 | Phase 13 | Pending |
+| HZRD-06 | Phase 13 | Pending |
+| INTG-01 | Phase 14 | Pending |
+| INTG-02 | Phase 14 | Pending |
+| INTG-03 | Phase 14 | Pending |
+| INTG-04 | Phase 14 | Pending |
+| INTG-05 | Phase 14 | Pending |
+| INTG-06 | Phase 14 | Pending |
 
 **Coverage:**
-- v1.2 requirements: 22 total (+ 4 already completed)
-- Mapped to phases: 0 (awaiting roadmap)
-- Unmapped: 22
+- v1.2 requirements: 24 total (+ 4 already completed by Fire Keeper)
+- Mapped to phases: 24/24
+- Orphaned: 0
 
 ---
 *Requirements defined: 2026-02-11*
-*Last updated: 2026-02-11 after milestone initialization*
+*Last updated: 2026-02-11 after roadmap creation*

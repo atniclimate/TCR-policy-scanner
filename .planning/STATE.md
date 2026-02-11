@@ -5,23 +5,29 @@
 See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.2 Tech Debt Cleanup
+**Current focus:** v1.2 Tech Debt Cleanup + Data Foundation
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, and per-Tribe DOCX advocacy packet generation.
 
 ## Current Position
 
-**Milestone:** v1.2 Tech Debt Cleanup
-**Phase:** Research complete, ready for roadmap definition
+**Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
+**Phase:** 9 - Config Hardening (ready for planning)
 **Plan:** --
-**Status:** Research Team findings delivered; 4 code fixes landed; 96 new tests; Pydantic schemas created
-**Last activity:** 2026-02-11 -- Research Team swarm completed
+**Status:** Roadmap defined, ready for Phase 9 planning
+**Last activity:** 2026-02-11 -- Roadmap created (6 phases, 15 plans, 24 requirements)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [##░░░░░░░░]  15% RESEARCH COMPLETE + 4 FIXES LANDED
+v1.2     [##~~~~~~~~]  20% ROADMAP DEFINED (6 phases, 15 plans, 24 requirements)
+  Phase  9: Config Hardening     [~~~~~~~~~~]   0%  Ready
+  Phase 10: Code Quality         [~~~~~~~~~~]   0%  Ready (Wave 1, parallel with 9)
+  Phase 11: API Resilience       [~~~~~~~~~~]   0%  Blocked on Wave 1
+  Phase 12: Award Population     [~~~~~~~~~~]   0%  Blocked on Wave 1
+  Phase 13: Hazard Population    [~~~~~~~~~~]   0%  Blocked on Wave 1
+  Phase 14: Integration          [~~~~~~~~~~]   0%  Blocked on 11+12+13
 ```
 
 ## Performance Metrics
@@ -31,9 +37,10 @@ v1.2     [##░░░░░░░░]  15% RESEARCH COMPLETE + 4 FIXES LANDED
 | v1.0 shipped | 2026-02-09 (4 phases, 9 plans, 30 requirements, 52 tests) |
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
-| Total phases | 8 |
-| Total plans | 26 |
-| Total requirements | 52 (30 + 22) |
+| v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
+| Total phases | 8 completed + 6 planned = 14 |
+| Total plans | 26 completed + 15 planned = 41 |
+| Total requirements | 52 completed + 24 planned = 76 |
 | Total tests | 383 (+96 from River Runner schemas) |
 | Total LOC | ~19,500 Python (est. +~950 from fixes + schemas + utils) |
 | Source files | 55 (+3: config.py, utils.py, schemas/models.py) |
@@ -77,6 +84,13 @@ v1.2     [##░░░░░░░░]  15% RESEARCH COMPLETE + 4 FIXES LANDED
 - Data completeness roadmap: 8 sources prioritized, 39% -> 91%
 - MILESTONE-NEXT.md: 6 phases, 29 story points
 
+### Key Decisions
+
+- Phase numbering continues from v1.1 (Phase 9 onward)
+- Wave parallelization: Phases 9+10 (Wave 1), 11+12 (Wave 2), 13+14 (Wave 3)
+- 24 v1.2 requirements (original count of 22 was undercounted; INTG-05 and INTG-06 were missed)
+- Quick depth: 2-3 plans per phase, 15 total plans
+
 ### Todos
 
 _None._
@@ -90,11 +104,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Research Team swarm completed; all 4 agents delivered findings
-**Next step:** Define v1.2 roadmap using MILESTONE-NEXT.md + team findings; `/gsd:new-milestone` or directly plan phases
-**Resume file:** .planning/MILESTONE-NEXT.md
-**Resume command:** `/gsd:plan-phase` (after roadmap defined)
+**Stopped at:** Roadmap created for v1.2 (6 phases, 15 plans, 24 requirements mapped)
+**Next step:** Plan Phase 9 (Config Hardening) -- `/gsd:plan-phase 9`
+**Resume file:** .planning/ROADMAP.md
+**Resume command:** `/gsd:plan-phase 9`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after Research Team swarm completed*
+*Last updated: 2026-02-11 after v1.2 roadmap creation*
