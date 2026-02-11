@@ -158,13 +158,20 @@ class PacketOrchestrator:
                 print(f"\n  DOCX generation failed: {exc}")
 
     def run_all_tribes(self) -> dict:
-        """Generate DOCX packets for all Tribes + strategic overview.
+        """Generate multi-doc packets for all Tribes, regional docs, and quality review.
+
+        Generates Doc A + Doc B per Tribe (based on data completeness),
+        Doc C + Doc D per region (8 regions), a strategic overview,
+        and runs automated quality review on all outputs.
 
         Returns:
-            dict with keys: success, errors, total, duration_s
+            dict with keys: success, errors, total, duration_s,
+            doc_a_count, doc_b_count, regional_results, quality_report_path
         """
         import gc
         import time
+
+        from src.packets.quality_review import DocumentQualityReviewer
 
         all_tribes = self.registry.get_all()
         total = len(all_tribes)
@@ -172,14 +179,23 @@ class PacketOrchestrator:
         success_count = 0
         error_count = 0
         error_tribes: list[str] = []
+        doc_a_count = 0
+        doc_b_count = 0
+        prebuilt_contexts: dict[str, "TribePacketContext"] = {}
 
         for i, tribe in enumerate(all_tribes, 1):
             elapsed = time.monotonic() - start
             print(f"[{i}/{total}] {tribe['name']}...", end="", flush=True)
             try:
                 context = self._build_context(tribe)
-                self.generate_packet_from_context(context, tribe)
-                print(f" OK ({elapsed:.0f}s)")
+                prebuilt_contexts[tribe["tribe_id"]] = context
+                paths = self.generate_tribal_docs(context, tribe)
+                for p in paths:
+                    if "internal" in str(p):
+                        doc_a_count += 1
+                    elif "congressional" in str(p):
+                        doc_b_count += 1
+                print(f" OK ({len(paths)} docs, {elapsed:.0f}s)")
                 success_count += 1
             except Exception as exc:
                 print(f" ERROR: {exc}")
@@ -190,6 +206,22 @@ class PacketOrchestrator:
                 if i % 25 == 0:
                     gc.collect()
 
+        # Regional documents (Doc C + Doc D)
+        print("\nGenerating Regional Documents...", flush=True)
+        regional_results = {}
+        try:
+            regional_results = self.generate_regional_docs(
+                prebuilt_contexts=prebuilt_contexts,
+            )
+            for region_id, paths in regional_results.items():
+                if paths:
+                    print(f"  {region_id}: {len(paths)} docs OK")
+                else:
+                    print(f"  {region_id}: FAILED")
+        except Exception as exc:
+            print(f"  Regional generation ERROR: {exc}")
+            logger.error("Regional generation failed: %s", exc)
+
         # Strategic overview
         print("\nGenerating Strategic Overview...", end="", flush=True)
         try:
@@ -199,9 +231,31 @@ class PacketOrchestrator:
             print(f" ERROR: {exc}")
             logger.error("Strategic overview failed: %s", exc)
 
+        # Quality review
+        output_dir = self._get_output_dir()
+        print("\nRunning Quality Review...", flush=True)
+        quality_report_path = None
+        try:
+            reviewer = DocumentQualityReviewer()
+            batch_result = reviewer.review_batch(output_dir)
+            report = reviewer.generate_report(batch_result)
+            quality_report_path = output_dir / "quality_report.md"
+            quality_report_path.write_text(report, encoding="utf-8")
+            print(
+                f"  Quality review: {batch_result.total_passed}/"
+                f"{batch_result.total_reviewed} passed "
+                f"({batch_result.critical_issues} critical, "
+                f"{batch_result.warning_issues} warnings)"
+            )
+        except Exception as exc:
+            print(f"  Quality review ERROR: {exc}")
+            logger.error("Quality review failed: %s", exc)
+
         duration = time.monotonic() - start
         print("\n--- Batch Complete ---")
         print(f"Total: {total} | Success: {success_count} | Errors: {error_count}")
+        print(f"Doc A (internal): {doc_a_count} | Doc B (congressional): {doc_b_count}")
+        print(f"Regional: {sum(1 for v in regional_results.values() if v)} regions")
         print(f"Duration: {duration:.0f}s")
         if error_tribes:
             print(f"Failed: {', '.join(error_tribes[:10])}")
@@ -213,6 +267,10 @@ class PacketOrchestrator:
             "errors": error_count,
             "total": total,
             "duration_s": duration,
+            "doc_a_count": doc_a_count,
+            "doc_b_count": doc_b_count,
+            "regional_results": regional_results,
+            "quality_report_path": quality_report_path,
         }
 
     def _load_tribe_cache(self, cache_dir: Path, tribe_id: str) -> dict:

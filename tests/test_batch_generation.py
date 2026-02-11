@@ -273,7 +273,11 @@ class TestBatchGeneration:
     """Tests for PacketOrchestrator.run_all_tribes() batch mode."""
 
     def test_batch_generates_docx_per_tribe(self, batch_config_3):
-        """run_all_tribes() generates one .docx per Tribe."""
+        """run_all_tribes() generates multi-doc packets per Tribe.
+
+        With no awards/hazards/delegation, each Tribe gets Doc B only
+        (congressional overview), placed in congressional/ subdirectory.
+        """
         orch = _make_orchestrator(batch_config_3)
 
         # Mock generate_strategic_overview to avoid needing full strategic data
@@ -284,13 +288,19 @@ class TestBatchGeneration:
         result = orch.run_all_tribes()
 
         output_dir = batch_config_3["output_dir"]
-        docx_files = list(output_dir.glob("*.docx")) if output_dir.exists() else []
+        congressional_dir = output_dir / "congressional"
+        docx_files = (
+            list(congressional_dir.glob("*.docx"))
+            if congressional_dir.exists()
+            else []
+        )
 
         assert len(docx_files) == 3, (
-            f"Expected 3 .docx files, found {len(docx_files)}: "
+            f"Expected 3 .docx files in congressional/, found {len(docx_files)}: "
             f"{[f.name for f in docx_files]}"
         )
         assert result["success"] == 3
+        assert result["doc_b_count"] == 3
 
     def test_batch_error_isolation(self, batch_config_3):
         """One Tribe failure does not halt others; return dict shows error count."""
@@ -299,18 +309,18 @@ class TestBatchGeneration:
             return_value=Path("STRATEGIC-OVERVIEW.docx")
         )
 
-        # Make the second Tribe fail by patching generate_packet_from_context
-        original_gen = orch.generate_packet_from_context
+        # Make the second Tribe fail by patching generate_tribal_docs
+        original_gen = orch.generate_tribal_docs
         call_count = 0
 
-        def failing_gen(context, tribe):
+        def failing_gen(context, tribe, doc_types=None):
             nonlocal call_count
             call_count += 1
             if call_count == 2:
                 raise RuntimeError("Simulated failure for Tribe 2")
-            return original_gen(context, tribe)
+            return original_gen(context, tribe, doc_types)
 
-        orch.generate_packet_from_context = failing_gen
+        orch.generate_tribal_docs = failing_gen
 
         result = orch.run_all_tribes()
 

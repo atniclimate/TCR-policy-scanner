@@ -565,7 +565,14 @@ class TestE2EPhase8:
     """End-to-end integration tests for the complete Phase 8 pipeline."""
 
     def test_batch_produces_3_docx_plus_overview(self, phase8_env):
-        """run_all_tribes() produces 3 DOCX files + strategic overview."""
+        """run_all_tribes() produces multi-doc packets + strategic overview.
+
+        With multi-doc flow:
+        - epa_001 (awards + hazards + delegation) -> Doc A + Doc B
+        - epa_002 (awards + hazards + delegation) -> Doc A + Doc B
+        - epa_003 (no awards) -> Doc B only
+        Total: 2 Doc A in internal/, 3 Doc B in congressional/
+        """
 
         orch = _make_orchestrator(phase8_env)
 
@@ -586,17 +593,31 @@ class TestE2EPhase8:
         result = orch.run_all_tribes()
 
         output_dir = phase8_env["output_dir"]
-        docx_files = sorted(output_dir.glob("*.docx"))
-        docx_names = [f.name for f in docx_files]
 
-        # 3 per-Tribe + 1 STRATEGIC-OVERVIEW
+        # 3 Tribes succeed, 0 errors
         assert result["success"] == 3, f"Expected 3 success, got {result}"
         assert result["errors"] == 0, f"Expected 0 errors, got {result}"
         assert result["total"] == 3
 
-        assert "epa_001.docx" in docx_names, f"Missing epa_001.docx in {docx_names}"
-        assert "epa_002.docx" in docx_names, f"Missing epa_002.docx in {docx_names}"
-        assert "epa_003.docx" in docx_names, f"Missing epa_003.docx in {docx_names}"
+        # Multi-doc: Doc A in internal/, Doc B in congressional/
+        internal_dir = output_dir / "internal"
+        congressional_dir = output_dir / "congressional"
+
+        internal_files = sorted(internal_dir.glob("*.docx")) if internal_dir.exists() else []
+        congressional_files = sorted(congressional_dir.glob("*.docx")) if congressional_dir.exists() else []
+
+        # epa_001 and epa_002 have complete data -> Doc A
+        assert len(internal_files) == 2, (
+            f"Expected 2 Doc A files in internal/, found {len(internal_files)}: "
+            f"{[f.name for f in internal_files]}"
+        )
+        # All 3 Tribes get Doc B
+        assert len(congressional_files) == 3, (
+            f"Expected 3 Doc B files in congressional/, found {len(congressional_files)}: "
+            f"{[f.name for f in congressional_files]}"
+        )
+        assert result["doc_a_count"] == 2
+        assert result["doc_b_count"] == 3
         assert overview_path.exists(), "STRATEGIC-OVERVIEW.docx not created"
 
     def test_single_tribe_complete_document(self, phase8_env):
