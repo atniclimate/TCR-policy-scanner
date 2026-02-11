@@ -28,6 +28,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from src.packets.context import TribePacketContext
+from src.paths import PACKET_STATE_DIR
 
 logger = logging.getLogger(__name__)
 
@@ -57,7 +58,7 @@ class PacketChangeTracker:
             state_dir: Directory for per-Tribe state JSON files.
                 Defaults to ``Path("data/packet_state")``.
         """
-        self.state_dir = state_dir or Path("data/packet_state")
+        self.state_dir = state_dir or PACKET_STATE_DIR
 
     def _safe_path(self, tribe_id: str) -> Path:
         """Build a safe file path for a tribe_id, preventing path traversal.

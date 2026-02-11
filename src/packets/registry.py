@@ -20,10 +20,9 @@ import json
 import logging
 from pathlib import Path
 
-logger = logging.getLogger(__name__)
+from src.paths import PROJECT_ROOT, TRIBAL_REGISTRY_PATH
 
-# Default path relative to project root
-_DEFAULT_DATA_PATH = "data/tribal_registry.json"
+logger = logging.getLogger(__name__)
 
 
 class TribalRegistry:
@@ -46,8 +45,10 @@ class TribalRegistry:
         """
         packets_cfg = config.get("packets", {})
         registry_cfg = packets_cfg.get("tribal_registry", {})
-        raw_path = registry_cfg.get("data_path", _DEFAULT_DATA_PATH)
-        self.data_path = Path(raw_path)
+        raw_path = registry_cfg.get("data_path")
+        self.data_path = Path(raw_path) if raw_path else TRIBAL_REGISTRY_PATH
+        if not self.data_path.is_absolute():
+            self.data_path = PROJECT_ROOT / self.data_path
 
         self._tribes: list[dict] = []
         self._loaded: bool = False

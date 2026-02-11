@@ -10,6 +10,8 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src.paths import PACKETS_OUTPUT_DIR, PROJECT_ROOT
+
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Inches, Pt, RGBColor
@@ -56,9 +58,10 @@ class DocxEngine:
         """
         self.config = config
         self.programs = programs
-        self.output_dir = Path(
-            config.get("packets", {}).get("output_dir", "outputs/packets")
-        )
+        raw_dir = config.get("packets", {}).get("output_dir")
+        self.output_dir = Path(raw_dir) if raw_dir else PACKETS_OUTPUT_DIR
+        if not self.output_dir.is_absolute():
+            self.output_dir = PROJECT_ROOT / self.output_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
         logger.debug("DocxEngine initialized, output_dir=%s", self.output_dir)
 

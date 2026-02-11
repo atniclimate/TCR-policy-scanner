@@ -19,7 +19,13 @@ from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Inches, Pt
 
-from src.config import FISCAL_YEAR_SHORT, PROJECT_ROOT
+from src.config import FISCAL_YEAR_SHORT
+from src.paths import (
+    GRAPH_SCHEMA_PATH,
+    LATEST_MONITOR_DATA_PATH,
+    POLICY_TRACKING_PATH,
+    PROJECT_ROOT,
+)
 from src.packets.docx_hotsheet import FRAMING_BY_STATUS
 from src.packets.docx_styles import (
     CI_STATUS_LABELS,
@@ -81,15 +87,9 @@ class StrategicOverviewGenerator:
         self.config = config
         self.programs = programs
         self.ecoregion = EcoregionMapper(config)
-        self.policy_tracking = self._load_json(
-            str(PROJECT_ROOT / "data" / "policy_tracking.json")
-        )
-        self.graph_schema = self._load_json(
-            str(PROJECT_ROOT / "data" / "graph_schema.json")
-        )
-        self.monitor_data = self._load_json(
-            str(PROJECT_ROOT / "outputs" / "LATEST-MONITOR-DATA.json")
-        )
+        self.policy_tracking = self._load_json(str(POLICY_TRACKING_PATH))
+        self.graph_schema = self._load_json(str(GRAPH_SCHEMA_PATH))
+        self.monitor_data = self._load_json(str(LATEST_MONITOR_DATA_PATH))
 
     def _load_json(self, path_str: str) -> dict:
         """Load a JSON file with size-limit guard and graceful fallback.

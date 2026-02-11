@@ -20,7 +20,14 @@ from src.packets.docx_engine import DocxEngine
 from src.packets.ecoregion import EcoregionMapper
 from src.packets.economic import EconomicImpactCalculator
 from src.packets.registry import TribalRegistry
-from src.config import PROJECT_ROOT
+from src.paths import (
+    AWARD_CACHE_DIR,
+    GRAPH_SCHEMA_PATH,
+    HAZARD_PROFILES_DIR,
+    PACKET_STATE_DIR,
+    PACKETS_OUTPUT_DIR,
+    PROJECT_ROOT,
+)
 from src.packets.relevance import ProgramRelevanceFilter
 
 logger = logging.getLogger(__name__)
@@ -55,12 +62,15 @@ class PacketOrchestrator:
 
         # Phase 6: Award and hazard cache directories
         packets_cfg = config.get("packets", {})
-        self.award_cache_dir = Path(
-            packets_cfg.get("awards", {}).get("cache_dir", "data/award_cache")
-        )
-        self.hazard_cache_dir = Path(
-            packets_cfg.get("hazards", {}).get("cache_dir", "data/hazard_profiles")
-        )
+        raw = packets_cfg.get("awards", {}).get("cache_dir")
+        self.award_cache_dir = Path(raw) if raw else AWARD_CACHE_DIR
+        if not self.award_cache_dir.is_absolute():
+            self.award_cache_dir = PROJECT_ROOT / self.award_cache_dir
+
+        raw = packets_cfg.get("hazards", {}).get("cache_dir")
+        self.hazard_cache_dir = Path(raw) if raw else HAZARD_PROFILES_DIR
+        if not self.hazard_cache_dir.is_absolute():
+            self.hazard_cache_dir = PROJECT_ROOT / self.hazard_cache_dir
 
         # Phase 7: DOCX generation components
         self.economic_calculator = EconomicImpactCalculator()
@@ -496,11 +506,10 @@ class PacketOrchestrator:
         structural_asks = self._load_structural_asks()
 
         # Change tracking (OPS-03)
-        state_dir = Path(
-            self.config.get("packets", {}).get(
-                "state_dir", "data/packet_state"
-            )
-        )
+        raw_state = self.config.get("packets", {}).get("state_dir")
+        state_dir = Path(raw_state) if raw_state else PACKET_STATE_DIR
+        if not state_dir.is_absolute():
+            state_dir = PROJECT_ROOT / state_dir
         tracker = PacketChangeTracker(state_dir=state_dir)
         previous_state = tracker.load_previous(context.tribe_id)
         current_state = tracker.compute_current(context, self.programs)
@@ -535,7 +544,7 @@ class PacketOrchestrator:
         Returns:
             List of structural ask dicts, or empty list on error.
         """
-        graph_path = PROJECT_ROOT / "data" / "graph_schema.json"
+        graph_path = GRAPH_SCHEMA_PATH
         if not graph_path.exists():
             return []
         try:
@@ -572,9 +581,10 @@ class PacketOrchestrator:
         """
         from src.packets.strategic_overview import StrategicOverviewGenerator
 
-        output_dir = Path(
-            self.config.get("packets", {}).get("output_dir", "outputs/packets")
-        )
+        raw_out = self.config.get("packets", {}).get("output_dir")
+        output_dir = Path(raw_out) if raw_out else PACKETS_OUTPUT_DIR
+        if not output_dir.is_absolute():
+            output_dir = PROJECT_ROOT / output_dir
         generator = StrategicOverviewGenerator(self.config, self.programs)
         path = generator.generate(output_dir)
 

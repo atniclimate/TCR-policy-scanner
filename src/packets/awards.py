@@ -22,13 +22,10 @@ import logging
 from pathlib import Path
 
 from src.packets.registry import TribalRegistry
+from src.paths import AWARD_CACHE_DIR, PROJECT_ROOT, TRIBAL_ALIASES_PATH
 from src.scrapers.usaspending import CFDA_TO_PROGRAM
 
 logger = logging.getLogger(__name__)
-
-# Default paths
-_DEFAULT_ALIAS_PATH = "data/tribal_aliases.json"
-_DEFAULT_CACHE_DIR = "data/award_cache"
 
 
 class TribalAwardMatcher:
@@ -59,8 +56,15 @@ class TribalAwardMatcher:
         packets_cfg = config.get("packets", {})
         awards_cfg = packets_cfg.get("awards", {})
 
-        alias_path = Path(awards_cfg.get("alias_path", _DEFAULT_ALIAS_PATH))
-        self.cache_dir = Path(awards_cfg.get("cache_dir", _DEFAULT_CACHE_DIR))
+        raw_alias = awards_cfg.get("alias_path")
+        alias_path = Path(raw_alias) if raw_alias else TRIBAL_ALIASES_PATH
+        if not alias_path.is_absolute():
+            alias_path = PROJECT_ROOT / alias_path
+
+        raw_cache = awards_cfg.get("cache_dir")
+        self.cache_dir = Path(raw_cache) if raw_cache else AWARD_CACHE_DIR
+        if not self.cache_dir.is_absolute():
+            self.cache_dir = PROJECT_ROOT / self.cache_dir
         self.fuzzy_threshold = awards_cfg.get("fuzzy_threshold", 85)
 
         # Load alias table

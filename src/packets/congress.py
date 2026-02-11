@@ -12,10 +12,9 @@ import json
 import logging
 from pathlib import Path
 
-logger = logging.getLogger(__name__)
+from src.paths import CONGRESSIONAL_CACHE_PATH, PROJECT_ROOT
 
-# Default path relative to project root
-_DEFAULT_CACHE_PATH = "data/congressional_cache.json"
+logger = logging.getLogger(__name__)
 
 # Target committees relevant to tribal affairs
 _TARGET_COMMITTEE_PREFIXES = ("SLIA", "SSAP", "SSEG", "SSCM", "HSII", "HSAP")
@@ -46,9 +45,10 @@ class CongressionalMapper:
         """
         packets_cfg = config.get("packets", {})
         cache_cfg = packets_cfg.get("congressional_cache", {})
-        self.data_path = Path(
-            cache_cfg.get("data_path", _DEFAULT_CACHE_PATH)
-        )
+        raw_path = cache_cfg.get("data_path")
+        self.data_path = Path(raw_path) if raw_path else CONGRESSIONAL_CACHE_PATH
+        if not self.data_path.is_absolute():
+            self.data_path = PROJECT_ROOT / self.data_path
         self._cache: dict = {}
         self._loaded: bool = False
 

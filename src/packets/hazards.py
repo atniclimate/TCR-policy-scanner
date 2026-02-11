@@ -48,11 +48,13 @@ NRI_HAZARD_CODES = {
     "WNTW": "Winter Weather",
 }
 
-# Default paths relative to project root
-_DEFAULT_CROSSWALK_PATH = "data/aiannh_tribe_crosswalk.json"
-_DEFAULT_NRI_DIR = "data/nri"
-_DEFAULT_USFS_DIR = "data/usfs"
-_DEFAULT_CACHE_DIR = "data/hazard_profiles"
+from src.paths import (
+    AIANNH_CROSSWALK_PATH,
+    HAZARD_PROFILES_DIR,
+    NRI_DIR,
+    PROJECT_ROOT,
+    USFS_DIR,
+)
 
 # US state abbreviation to FIPS prefix mapping for state-level fallback
 _STATE_FIPS_PREFIX = {
@@ -104,8 +106,7 @@ def _resolve_path(raw_path: str) -> Path:
     """
     p = Path(raw_path)
     if not p.is_absolute():
-        # Resolve relative to project root (grandparent of this file)
-        p = Path(__file__).resolve().parent.parent.parent / p
+        p = PROJECT_ROOT / p
     return p
 
 
@@ -135,18 +136,17 @@ class HazardProfileBuilder:
         packets_cfg = config.get("packets", {})
         hazards_cfg = packets_cfg.get("hazards", {})
 
-        self.crosswalk_path = _resolve_path(
-            hazards_cfg.get("crosswalk_path", _DEFAULT_CROSSWALK_PATH)
-        )
-        self.nri_dir = _resolve_path(
-            hazards_cfg.get("nri_dir", _DEFAULT_NRI_DIR)
-        )
-        self.usfs_dir = _resolve_path(
-            hazards_cfg.get("usfs_dir", _DEFAULT_USFS_DIR)
-        )
-        self.cache_dir = _resolve_path(
-            hazards_cfg.get("cache_dir", _DEFAULT_CACHE_DIR)
-        )
+        raw = hazards_cfg.get("crosswalk_path")
+        self.crosswalk_path = _resolve_path(raw) if raw else AIANNH_CROSSWALK_PATH
+
+        raw = hazards_cfg.get("nri_dir")
+        self.nri_dir = _resolve_path(raw) if raw else NRI_DIR
+
+        raw = hazards_cfg.get("usfs_dir")
+        self.usfs_dir = _resolve_path(raw) if raw else USFS_DIR
+
+        raw = hazards_cfg.get("cache_dir")
+        self.cache_dir = _resolve_path(raw) if raw else HAZARD_PROFILES_DIR
 
         # Load registry for tribe enumeration
         self._registry = TribalRegistry(config)

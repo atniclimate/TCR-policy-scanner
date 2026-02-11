@@ -8,10 +8,9 @@ import json
 import logging
 from pathlib import Path
 
-logger = logging.getLogger(__name__)
+from src.paths import ECOREGION_CONFIG_PATH, PROJECT_ROOT
 
-# Default path relative to project root
-_DEFAULT_CONFIG_PATH = "data/ecoregion_config.json"
+logger = logging.getLogger(__name__)
 
 
 class EcoregionMapper:
@@ -31,7 +30,8 @@ class EcoregionMapper:
         """
         packets_cfg = config.get("packets", {})
         eco_cfg = packets_cfg.get("ecoregion", {})
-        self._data_path = eco_cfg.get("data_path", _DEFAULT_CONFIG_PATH)
+        raw_path = eco_cfg.get("data_path")
+        self._data_path = raw_path if raw_path else str(ECOREGION_CONFIG_PATH)
         self._ecoregion_data: dict | None = None
         self._state_to_ecoregion: dict[str, str] | None = None
 
@@ -42,8 +42,7 @@ class EcoregionMapper:
 
         path = Path(self._data_path)
         if not path.is_absolute():
-            # Resolve relative to this file's grandparent (project root)
-            path = Path(__file__).resolve().parent.parent.parent / path
+            path = PROJECT_ROOT / path
 
         logger.debug("Loading ecoregion config from %s", path)
         with open(path, encoding="utf-8") as f:
