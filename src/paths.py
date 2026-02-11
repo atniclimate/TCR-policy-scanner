@@ -63,6 +63,9 @@ CONGRESSIONAL_CACHE_PATH: Path = DATA_DIR / "congressional_cache.json"
 ECOREGION_CONFIG_PATH: Path = DATA_DIR / "ecoregion_config.json"
 """Ecoregion-to-Tribe mapping for environmental context in packets."""
 
+REGIONAL_CONFIG_PATH: Path = DATA_DIR / "regional_config.json"
+"""8-region definitions for Doc C/D regional document generation."""
+
 AIANNH_CROSSWALK_PATH: Path = DATA_DIR / "aiannh_tribe_crosswalk.json"
 """AIANNH-to-Tribe crosswalk for geographic boundary resolution."""
 

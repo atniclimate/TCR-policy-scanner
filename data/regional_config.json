@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "description": "Regional groupings for Doc C/D document generation (8 regions)",
+  "regions": {
+    "pnw": {
+      "name": "Pacific Northwest / Columbia River Basin",
+      "short_name": "Pacific Northwest",
+      "states": ["WA", "OR", "ID", "MT"],
+      "core_frame": "Drought, fisheries, snowpack, wildfire, treaty salmon, flood",
+      "key_programs": ["bia_tcr", "noaa_tribal", "usda_wildfire", "epa_stag"],
+      "treaty_trust_angle": "Treaty fisheries, ceded lands, salmon recovery"
+    },
+    "alaska": {
+      "name": "Alaska",
+      "short_name": "Alaska",
+      "states": ["AK"],
+      "core_frame": "Permafrost, coastal erosion, displacement/relocation, infrastructure failure",
+      "key_programs": ["bia_tcr", "epa_stag", "hud_ihbg"],
+      "treaty_trust_angle": "Existential displacement, trust responsibility, ANCSA"
+    },
+    "plains": {
+      "name": "Great Plains / Northern Plains",
+      "short_name": "Great Plains",
+      "states": ["ND", "SD", "NE", "KS", "OK", "TX", "MN", "IA", "MO", "WY"],
+      "core_frame": "Drought, water scarcity, extreme heat, wind energy, rangeland",
+      "key_programs": ["usbr_watersmart", "usbr_tap", "doe_indian_energy", "bia_tcr"],
+      "treaty_trust_angle": "Water rights, treaty obligations, reserved rights"
+    },
+    "southwest": {
+      "name": "Southwest / Great Basin",
+      "short_name": "Southwest",
+      "states": ["AZ", "NM", "NV", "UT", "CO"],
+      "core_frame": "Drought, wildfire, extreme heat, water rights, solar energy",
+      "key_programs": ["usbr_watersmart", "doe_indian_energy", "usda_wildfire", "bia_tcr"],
+      "treaty_trust_angle": "Senior water rights, Colorado River, Winters doctrine"
+    },
+    "greatlakes": {
+      "name": "Great Lakes / Midwest",
+      "short_name": "Great Lakes",
+      "states": ["WI", "MI", "IL", "IN", "OH"],
+      "core_frame": "Flooding, invasive species, PFAS, algal blooms, treaty resources",
+      "key_programs": ["epa_gap", "epa_stag", "noaa_tribal", "bia_tcr"],
+      "treaty_trust_angle": "Treaty resources (wild rice, fisheries), ceded territories"
+    },
+    "southeast": {
+      "name": "Southeast / Gulf Coast / Five Tribes",
+      "short_name": "Southeast",
+      "states": ["FL", "AL", "MS", "LA", "AR", "TN", "NC", "SC", "GA", "VA"],
+      "core_frame": "Hurricanes, sea level rise, displacement, coastal resilience",
+      "key_programs": ["bia_tcr", "hud_ihbg", "noaa_tribal", "fema_tribal_mitigation"],
+      "treaty_trust_angle": "Coastal displacement, trust responsibility, removal history"
+    },
+    "northeast": {
+      "name": "Northeast / Mid-Atlantic / South and Eastern Tribes",
+      "short_name": "Northeast",
+      "states": ["ME", "NH", "VT", "MA", "CT", "RI", "NY", "NJ", "PA", "DE", "MD", "DC", "WV"],
+      "core_frame": "Coastal flooding, sea level rise, precipitation, recognition intersection",
+      "key_programs": ["noaa_tribal", "epa_gap", "epa_stag", "bia_tcr"],
+      "treaty_trust_angle": "Recognition/trust land intersection, colonial-era treaties"
+    },
+    "crosscutting": {
+      "name": "Cross-Cutting (All Regions)",
+      "short_name": "Cross-Cutting",
+      "states": [],
+      "core_frame": "Science infrastructure, NCAR, NSF, 638/CSC, structural policy",
+      "key_programs": ["bia_tcr", "epa_gap", "epa_stag", "fema_bric"],
+      "treaty_trust_angle": "All treaty/trust angles, self-governance, 638 contracting"
+    }
+  }
+}
