@@ -25,6 +25,7 @@ from src.paths import TRIBAL_ALIASES_PATH, TRIBAL_REGISTRY_PATH
 
 REGISTRY_PATH = TRIBAL_REGISTRY_PATH
 OUTPUT_PATH = TRIBAL_ALIASES_PATH
+HOUSING_AUTHORITY_ALIASES_PATH = REGISTRY_PATH.parent / "housing_authority_aliases.json"
 
 # US state names for suffix stripping
 _US_STATES = {
@@ -234,7 +235,36 @@ def build_aliases() -> dict[str, str]:
                 if shortened and shortened != alt_lower:
                     add_alias(aliases, shortened, tribe_id)
 
+    _merge_housing_authority_aliases(aliases)
+
     return aliases
+
+
+def _merge_housing_authority_aliases(aliases: dict[str, str]) -> None:
+    """Merge housing authority aliases from the curated HA alias file.
+
+    Reads ``data/housing_authority_aliases.json`` and adds each entry
+    to the aliases dict using ``add_alias`` (first-registration wins,
+    so official Tribe names from the registry take precedence).
+
+    Args:
+        aliases: Existing alias dict to merge into (mutated in place).
+    """
+    if not HOUSING_AUTHORITY_ALIASES_PATH.exists():
+        print(f"Housing authority aliases not found at {HOUSING_AUTHORITY_ALIASES_PATH}, skipping.")
+        return
+
+    with open(HOUSING_AUTHORITY_ALIASES_PATH, "r", encoding="utf-8") as f:
+        ha_data = json.load(f)
+
+    ha_aliases = ha_data.get("aliases", {})
+    added = 0
+    for key, tribe_id in ha_aliases.items():
+        if key not in aliases:
+            aliases[key] = tribe_id
+            added += 1
+
+    print(f"Merged {added} housing authority aliases (of {len(ha_aliases)} total in HA file).")
 
 
 def add_alias(aliases: dict[str, str], key: str, tribe_id: str) -> None:
