@@ -27,6 +27,7 @@ from src.paths import (
     AIANNH_CROSSWALK_PATH,
     HAZARD_PROFILES_DIR,
     NRI_DIR,
+    OUTPUTS_DIR,
     PROJECT_ROOT,
     TRIBAL_COUNTY_WEIGHTS_PATH,
     USFS_DIR,
@@ -185,6 +186,9 @@ class HazardProfileBuilder:
         # Load pre-computed area-weighted AIANNH-to-county crosswalk
         self._area_weights: dict[str, list[dict]] = self._load_area_weights()
 
+        # NRI dataset version -- detected dynamically in _load_nri_county_data()
+        self._nri_version: str = "NRI_v1.20"
+
     def _load_crosswalk(self) -> None:
         """Load and invert the AIANNH-to-tribe_id crosswalk.
 
@@ -263,6 +267,49 @@ class HazardProfileBuilder:
         )
         return crosswalk
 
+    @staticmethod
+    def _detect_nri_version(csv_path: Path) -> str:
+        """Detect NRI dataset version from file path or directory structure.
+
+        FEMA distributes NRI data from versioned URL paths like
+        ``/nri/v120/NRI_Table_Counties.zip``. The download script
+        saves to ``data/nri/``, so we check parent directory names
+        and ZIP filenames for version patterns.
+
+        Args:
+            csv_path: Path to the NRI county CSV file.
+
+        Returns:
+            Version string like "NRI_v1.20". Falls back to "NRI_v1.20"
+            if detection fails.
+        """
+        import re
+
+        default_version = "NRI_v1.20"
+
+        # Check for version in sibling ZIP filenames (e.g., NRI_v1.20_counties.zip)
+        nri_dir = csv_path.parent
+        for sibling in nri_dir.iterdir():
+            name_lower = sibling.name.lower()
+            # Look for patterns like "v1.20", "v120", "v1_20"
+            match = re.search(r"v(\d+)[._]?(\d+)", name_lower)
+            if match:
+                major = match.group(1)
+                minor = match.group(2)
+                if len(major) >= 2 and len(minor) >= 2:
+                    # "v120" -> "1.20"
+                    version = f"NRI_v{major[0]}.{major[1:]}"
+                else:
+                    version = f"NRI_v{major}.{minor}"
+                logger.debug("Detected NRI version %s from %s", version, sibling.name)
+                return version
+
+        logger.debug(
+            "NRI version not detected from %s, using default %s",
+            nri_dir, default_version,
+        )
+        return default_version
+
     def _load_nri_county_data(self) -> dict[str, dict]:
         """Parse the NRI county-level CSV file.
 
@@ -285,6 +332,11 @@ class HazardProfileBuilder:
 
         county_data: dict[str, dict] = {}
         logger.info("Loading NRI county data from %s", csv_path)
+
+        # Detect NRI version from directory structure or filename
+        # FEMA distributes as NRI_Table_Counties.zip from versioned URL paths
+        # e.g. .../nri/v120/NRI_Table_Counties.zip -> version "NRI_v1.20"
+        self._nri_version = self._detect_nri_version(csv_path)
 
         with open(csv_path, encoding="utf-8") as f:
             reader = csv.DictReader(f)
@@ -632,7 +684,7 @@ class HazardProfileBuilder:
         ]
 
         return {
-            "version": "NRI_v1.20",
+            "version": self._nri_version,
             "counties_analyzed": len(matched_counties),
             "composite": composite,
             "top_hazards": top_hazards,
@@ -879,7 +931,17 @@ class HazardProfileBuilder:
           1. Load NRI county data from CSV
           2. Load NRI tribal relational data (AIANNH -> county mapping)
           3. Load USFS wildfire data from XLSX
-          4. For each Tribe: build NRI profile + USFS match -> JSON cache
+          4. For each Tribe:
+             a. Build NRI profile (area-weighted)
+             b. Match USFS wildfire data
+             c. Override NRI WFIR with USFS conditional risk (if fire-prone)
+             d. Write JSON cache file
+          5. Generate coverage report (JSON + Markdown)
+
+        Single-writer-per-tribe_id assumption: this method writes one JSON
+        file per tribe_id sequentially. If called concurrently for the same
+        tribe_id, the last writer wins. Callers must serialize per-tribe
+        writes if concurrent execution is needed.
 
         Returns:
             Number of profile files written.
@@ -905,17 +967,39 @@ class HazardProfileBuilder:
         files_written = 0
         nri_matched = 0
         usfs_matched = 0
-        unmatched_tribes: list[str] = []
+        usfs_overrides = 0
+        unmatched_tribes: list[dict] = []  # [{name, tribe_id, states}]
+
+        # Per-state tracking for coverage report
+        state_stats: dict[str, dict] = {}  # state -> {total, nri_matched, usfs_matched, unmatched, tribe_names}
 
         for tribe in all_tribes:
             tribe_id = tribe["tribe_id"]
+            tribe_states = tribe.get("states", [])
+
+            # Initialize per-state tracking
+            for st in tribe_states:
+                if st not in state_stats:
+                    state_stats[st] = {
+                        "total": 0,
+                        "nri_matched": 0,
+                        "usfs_matched": 0,
+                        "unmatched": 0,
+                        "tribe_names": [],
+                    }
+                state_stats[st]["total"] += 1
+                state_stats[st]["tribe_names"].append(tribe["name"])
 
             # Build NRI profile
             nri_profile = self._build_tribe_nri_profile(
                 tribe_id, tribe, county_data, tribal_counties,
             )
-            if nri_profile.get("counties_analyzed", 0) > 0:
+            has_nri = nri_profile.get("counties_analyzed", 0) > 0
+            if has_nri:
                 nri_matched += 1
+                for st in tribe_states:
+                    if st in state_stats:
+                        state_stats[st]["nri_matched"] += 1
 
             # Match USFS wildfire data
             usfs_match = self._match_usfs_to_tribe(usfs_data, tribe)
@@ -924,15 +1008,60 @@ class HazardProfileBuilder:
                 usfs_matched += 1
                 usfs_profile = {
                     "risk_to_homes": usfs_match.get("risk_to_homes", 0.0),
+                    "conditional_risk_to_structures": usfs_match.get("risk_to_homes", 0.0),
                     "wildfire_likelihood": usfs_match.get("wildfire_likelihood", 0.0),
                     "source_name": usfs_match.get("name", ""),
                 }
                 if "additional_metrics" in usfs_match:
                     usfs_profile["additional_metrics"] = usfs_match["additional_metrics"]
+                for st in tribe_states:
+                    if st in state_stats:
+                        state_stats[st]["usfs_matched"] += 1
+
+            # USFS wildfire override: replace NRI WFIR when USFS data exists
+            # and Tribe is fire-prone (NRI WFIR score > 0)
+            if usfs_match and nri_profile.get("all_hazards", {}).get("WFIR"):
+                wfir_entry = nri_profile["all_hazards"]["WFIR"]
+                nri_wfir_original = wfir_entry.get("risk_score", 0.0)
+
+                # Override with USFS conditional risk to structures
+                usfs_risk = usfs_match.get("risk_to_homes", 0.0)
+                if usfs_risk > 0:
+                    wfir_entry["risk_score"] = usfs_risk
+                    wfir_entry["risk_rating"] = score_to_rating(usfs_risk)
+                    wfir_entry["source"] = "USFS"  # Mark the data source
+
+                    # Store original NRI value in usfs_wildfire section
+                    usfs_profile["nri_wfir_original"] = round(nri_wfir_original, 2)
+                    usfs_overrides += 1
+
+                    # Re-extract top 5 after USFS override (WFIR score changed)
+                    sorted_hazards = sorted(
+                        nri_profile["all_hazards"].items(),
+                        key=lambda x: x[1]["risk_score"],
+                        reverse=True,
+                    )
+                    nri_profile["top_hazards"] = [
+                        {
+                            "type": NRI_HAZARD_CODES.get(code, code),
+                            "code": code,
+                            "risk_score": data["risk_score"],
+                            "risk_rating": data["risk_rating"],
+                            "eal_total": data["eal_total"],
+                        }
+                        for code, data in sorted_hazards[:5]
+                    ]
 
             # Track unmatched
-            if nri_profile.get("counties_analyzed", 0) == 0 and not usfs_match:
-                unmatched_tribes.append(tribe["name"])
+            if not has_nri and not usfs_match:
+                unmatched_tribes.append({
+                    "name": tribe["name"],
+                    "tribe_id": tribe_id,
+                    "states": tribe_states,
+                })
+                for st in tribe_states:
+                    if st in state_stats:
+                        state_stats[st]["unmatched"] += 1
 
             # Combine into full profile
             profile = {
@@ -954,21 +1083,143 @@ class HazardProfileBuilder:
         # Log summary
         logger.info(
             "Hazard profile build complete: %d files written, "
-            "%d with NRI data, %d with USFS data, %d fully unmatched",
+            "%d with NRI data, %d with USFS data, %d USFS overrides, "
+            "%d fully unmatched",
             files_written,
             nri_matched,
             usfs_matched,
+            usfs_overrides,
             len(unmatched_tribes),
         )
 
         if unmatched_tribes:
+            names = [t["name"] for t in unmatched_tribes]
             logger.warning(
                 "%d Tribes have no hazard data (no crosswalk entry, "
                 "no state match, no USFS match): %s%s",
-                len(unmatched_tribes),
-                ", ".join(unmatched_tribes[:10]),
-                f"... and {len(unmatched_tribes) - 10} more"
-                if len(unmatched_tribes) > 10 else "",
+                len(names),
+                ", ".join(names[:10]),
+                f"... and {len(names) - 10} more"
+                if len(names) > 10 else "",
             )
 
+        # Generate coverage report
+        coverage_data = {
+            "total_profiles": files_written,
+            "nri_matched": nri_matched,
+            "usfs_matched": usfs_matched,
+            "usfs_overrides": usfs_overrides,
+            "scored_profiles": nri_matched,  # profiles with counties_analyzed > 0
+            "unmatched_count": len(unmatched_tribes),
+            "unmatched_tribes": unmatched_tribes,
+            "state_stats": state_stats,
+        }
+        self._generate_coverage_report(coverage_data)
+
         return files_written
+
+    def _generate_coverage_report(self, coverage_data: dict) -> None:
+        """Generate hazard coverage report in JSON and Markdown formats.
+
+        Writes two files to the outputs directory:
+          - hazard_coverage_report.json (machine-readable)
+          - hazard_coverage_report.md (human-readable with tables)
+
+        Args:
+            coverage_data: Dict with tracking data accumulated during
+                build_all_profiles(), including counts, unmatched list,
+                and per-state statistics.
+        """
+        OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+
+        total = coverage_data["total_profiles"]
+        nri = coverage_data["nri_matched"]
+        usfs = coverage_data["usfs_matched"]
+        usfs_overrides = coverage_data["usfs_overrides"]
+        scored = coverage_data["scored_profiles"]
+        unmatched_count = coverage_data["unmatched_count"]
+        unmatched_tribes = coverage_data["unmatched_tribes"]
+        state_stats = coverage_data["state_stats"]
+
+        # Build JSON report
+        report_json = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "summary": {
+                "total_profiles": total,
+                "nri_matched": nri,
+                "usfs_matched": usfs,
+                "usfs_overrides": usfs_overrides,
+                "scored_profiles": scored,
+                "unmatched_profiles": unmatched_count,
+                "scored_pct": round(scored / max(total, 1) * 100, 1),
+                "nri_pct": round(nri / max(total, 1) * 100, 1),
+                "usfs_pct": round(usfs / max(total, 1) * 100, 1),
+            },
+            "unmatched_tribes": [
+                {"name": t["name"], "tribe_id": t["tribe_id"], "states": t["states"]}
+                for t in unmatched_tribes
+            ],
+            "per_state": {
+                st: {
+                    "total": stats["total"],
+                    "nri_matched": stats["nri_matched"],
+                    "usfs_matched": stats["usfs_matched"],
+                    "unmatched": stats["unmatched"],
+                }
+                for st, stats in sorted(state_stats.items())
+            },
+        }
+
+        json_path = OUTPUTS_DIR / "hazard_coverage_report.json"
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(report_json, f, indent=2, ensure_ascii=False)
+        logger.info("Coverage report (JSON) written to %s", json_path)
+
+        # Build Markdown report
+        md_lines = [
+            "# Hazard Coverage Report",
+            "",
+            f"Generated: {report_json['generated_at']}",
+            "",
+            "## Summary",
+            "",
+            "| Metric | Value |",
+            "|--------|-------|",
+            f"| Total profiles | {total} |",
+            f"| NRI matched | {nri} ({report_json['summary']['nri_pct']}%) |",
+            f"| USFS matched | {usfs} ({report_json['summary']['usfs_pct']}%) |",
+            f"| USFS overrides (WFIR) | {usfs_overrides} |",
+            f"| Scored profiles | {scored} ({report_json['summary']['scored_pct']}%) |",
+            f"| Unmatched | {unmatched_count} |",
+            "",
+            "## Per-State Breakdown",
+            "",
+            "| State | Total Tribes | NRI Matched | USFS Matched | Unmatched |",
+            "|-------|-------------|-------------|--------------|-----------|",
+        ]
+
+        for st in sorted(state_stats.keys()):
+            stats = state_stats[st]
+            md_lines.append(
+                f"| {st} | {stats['total']} | {stats['nri_matched']} "
+                f"| {stats['usfs_matched']} | {stats['unmatched']} |"
+            )
+
+        md_lines.extend([
+            "",
+            "## Unmatched Tribes",
+            "",
+        ])
+
+        if unmatched_tribes:
+            for t in unmatched_tribes:
+                states_str = ", ".join(t["states"]) if t["states"] else "N/A"
+                md_lines.append(f"- {t['name']} ({t['tribe_id']}) -- {states_str}")
+        else:
+            md_lines.append("None -- all Tribes have hazard data.")
+
+        md_lines.append("")  # trailing newline
+
+        md_path = OUTPUTS_DIR / "hazard_coverage_report.md"
+        md_path.write_text("\n".join(md_lines), encoding="utf-8")
+        logger.info("Coverage report (Markdown) written to %s", md_path)

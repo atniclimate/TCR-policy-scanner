@@ -15,3 +15,5 @@ outputs/archive/*.json
 outputs/packets/
 data/packet_state/
 data/nri/
+data/usfs/
+data/hazard_profiles/
