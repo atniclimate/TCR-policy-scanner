@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-02-11T16:30:25.535618+00:00",
+  "summary": {
+    "total_profiles": 3,
+    "nri_matched": 3,
+    "usfs_matched": 0,
+    "usfs_overrides": 0,
+    "scored_profiles": 3,
+    "unmatched_profiles": 0,
+    "scored_pct": 100.0,
+    "nri_pct": 100.0,
+    "usfs_pct": 0.0
+  },
+  "unmatched_tribes": [],
+  "per_state": {
+    "AZ": {
+      "total": 1,
+      "nri_matched": 1,
+      "usfs_matched": 0,
+      "unmatched": 0
+    },
+    "NM": {
+      "total": 1,
+      "nri_matched": 1,
+      "usfs_matched": 0,
+      "unmatched": 0
+    },
+    "OK": {
+      "total": 1,
+      "nri_matched": 1,
+      "usfs_matched": 0,
+      "unmatched": 0
+    }
+  }
+}
