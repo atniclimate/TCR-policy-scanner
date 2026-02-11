@@ -573,8 +573,6 @@ class TestE2EPhase8:
         overview_path = phase8_env["output_dir"] / "STRATEGIC-OVERVIEW.docx"
         overview_path.parent.mkdir(parents=True, exist_ok=True)
 
-        original_overview = orch.generate_strategic_overview
-
         def mock_overview():
             # Create a minimal DOCX file for the overview
             from docx import Document

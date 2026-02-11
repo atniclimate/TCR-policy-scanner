@@ -749,8 +749,6 @@ class TestOrchestratorIntegration:
         # so we need to ensure files are at the right locations.
         # Instead, we'll monkeypatch the _load_json in the generator.
 
-        original_generate = orch.generate_strategic_overview
-
         def patched_generate():
             from src.packets.strategic_overview import StrategicOverviewGenerator
 

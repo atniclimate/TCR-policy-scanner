@@ -812,11 +812,9 @@ def build_committee_index(
             continue
 
         # Determine if this is a target committee or subcommittee thereof
-        parent_id = comm_id
         is_subcommittee = False
         for target in TARGET_COMMITTEES:
             if comm_id.startswith(target) and comm_id != target:
-                parent_id = target
                 is_subcommittee = True
                 break
 

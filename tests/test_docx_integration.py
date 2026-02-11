@@ -408,8 +408,6 @@ def _make_orchestrator(phase7):
 
     # Patch _load_structural_asks to read from our tmp_path
     graph_path = phase7["tmp_path"] / "graph_schema.json"
-    original_load = orch._load_structural_asks
-
     def patched_load():
         with open(graph_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -724,8 +722,8 @@ class TestFullSuiteNoRegression:
         else:
             # Fallback: count lines that look like test items
             test_lines = [
-                l for l in output.split("\n")
-                if "::" in l and "test_" in l
+                line for line in output.split("\n")
+                if "::" in line and "test_" in line
             ]
             assert len(test_lines) >= 214, (
                 f"Expected >= 214 test items, got {len(test_lines)}"

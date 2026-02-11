@@ -1082,7 +1082,7 @@ class TestHazardProfileBuilder:
         """Verify cache file is written with UTF-8 encoding for special characters."""
         from src.packets.hazards import HazardProfileBuilder
         builder = HazardProfileBuilder(hazard_config)
-        count = builder.build_all_profiles()
+        builder.build_all_profiles()
 
         # epa_003 has name with "Diacritics" -- verify it writes correctly
         cache_file = Path(hazard_config["packets"]["hazards"]["cache_dir"]) / "epa_003.json"

@@ -369,7 +369,7 @@ class TestDocxEngine:
             }
         }
         programs = {}
-        engine = DocxEngine(config, programs)
+        DocxEngine(config, programs)
         assert nested.exists()
 
     def test_engine_page_margins(self, tmp_path):

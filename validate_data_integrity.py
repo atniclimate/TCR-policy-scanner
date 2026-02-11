@@ -246,9 +246,7 @@ def check_barrier_mitigation_references(report: ValidationReport, graph_schema: 
                     errors.append(f"Barrier {barrier['id']}: references unknown ask '{mitigation_id}'")
             # lever_* IDs are validated by checking they follow the pattern lever_{program_id}
             elif mitigation_id.startswith("lever_"):
-                # Extract expected program_id
-                expected_prog_id = mitigation_id.replace("lever_", "")
-                # We'll mark this as valid pattern (builder creates these dynamically)
+                # Valid pattern (builder creates these dynamically)
                 pass
             else:
                 errors.append(f"Barrier {barrier['id']}: invalid mitigation ID format '{mitigation_id}' (must start with 'lever_' or 'ask_')")
