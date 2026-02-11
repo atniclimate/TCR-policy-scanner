@@ -13,21 +13,21 @@ See: .planning/PROJECT.md (updated 2026-02-11)
 
 **Milestone:** v1.2 Tech Debt Cleanup + Data Foundation
 **Phase:** 14 - Integration & Validation
-**Plan:** 5 of 7 (14-01 + 14-02 + 14-03 + 14-04 + 14-06 complete)
+**Plan:** 6 of 7 (14-01 + 14-02 + 14-03 + 14-04 + 14-05 + 14-06 complete)
 **Status:** In progress
-**Last activity:** 2026-02-11 -- Completed 14-06-PLAN.md (Data Validation Script + VERIFICATION.md)
+**Last activity:** 2026-02-11 -- Completed 14-05-PLAN.md (Batch Generation + Quality Review)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
-v1.2     [#########~]  95% IN PROGRESS (6 phases, 16 plans, 24 requirements)
+v1.2     [#########~]  95% IN PROGRESS (6 phases, 17 plans, 24 requirements)
   Phase  9: Config Hardening     [##########] 100%  2/2 plans complete  DONE
   Phase 10: Code Quality         [##########] 100%  2/2 plans complete  DONE
   Phase 11: API Resilience       [##########] 100%  2/2 plans complete  DONE
   Phase 12: Award Population     [##########] 100%  4/4 plans complete  DONE (gap closure)
   Phase 13: Hazard Population    [##########] 100%  3/3 plans complete  DONE
-  Phase 14: Integration          [#######~~~]  71%  5/7 plans complete  IN PROGRESS
+  Phase 14: Integration          [########~~]  86%  6/7 plans complete  IN PROGRESS
 ```
 
 ## Performance Metrics
@@ -39,9 +39,10 @@ v1.2     [#########~]  95% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 | v1.2 research | 2026-02-11 (4 agents, 4 code fixes, 96 new tests, 15 Pydantic models) |
 | v1.2 roadmap | 2026-02-11 (6 phases, 15 plans, 24 requirements) |
 | Total phases | 8 completed + 6 planned = 14 |
-| Total plans | 39 completed + 2 planned = 41 |
-| Total requirements | 62 completed + 14 planned = 76 |
+| Total plans | 40 completed + 1 planned = 41 |
+| Total requirements | 63 completed + 13 planned = 76 |
 | Total tests | 738 |
+| Source files | 71 (+1: quality_review.py) |
 | Total LOC | ~25,000 Python (est. +1,300 scripts + tests + HA aliases) |
 | Source files | 70 (+6: generate_ha_aliases.py, test_housing_authority_aliases.py, etc.) |
 
@@ -152,6 +153,8 @@ v1.2     [#########~]  95% IN PROGRESS (6 phases, 16 plans, 24 requirements)
 - DEC-1404-03: Delegation overlap keyed by bioguide_id with formatted_name fallback
 - DEC-1406-01: Congressional coverage denominator uses registry universe (592) not cache entries (501)
 - DEC-1406-02: Cross-source completeness six-way classification: complete / partial(award+deleg) / award-only / deleg-only / hazard-only / none
+- DEC-1405-01: 384 Tribes get Doc A (not 400+) due to data completeness constraints (awards + hazards + delegation intersection)
+- DEC-1405-02: Placeholder warnings (91) are non-critical; TBD text exists in docs where specific data fields are empty
 
 ### Todos
 
@@ -166,11 +169,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-11
-**Stopped at:** Completed 14-06-PLAN.md (Data Validation Script + VERIFICATION.md)
-**Next step:** Execute 14-05-PLAN.md (Batch Generation + Quality Review)
+**Stopped at:** Completed 14-05-PLAN.md (Batch Generation + Quality Review)
+**Next step:** Execute 14-07-PLAN.md (GitHub Pages Deployment)
 **Resume file:** None
 **Resume command:** `/gsd:execute-phase 14`
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after 14-06 completion (Phase 14 in progress, 5/7 plans: 14-01 + 14-02 + 14-03 + 14-04 + 14-06)*
+*Last updated: 2026-02-11 after 14-05 completion (Phase 14 in progress, 6/7 plans: 14-01 + 14-02 + 14-03 + 14-04 + 14-05 + 14-06)*
