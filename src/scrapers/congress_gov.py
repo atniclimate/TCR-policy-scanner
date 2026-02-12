@@ -233,6 +233,98 @@ class CongressGovScraper(BaseScraper):
 
         return [self._normalize(bill) for bill in all_bills]
 
+    async def _fetch_bill_detail(
+        self, session, congress: int, bill_type: str, bill_number: str,
+    ) -> dict:
+        """Fetch full bill detail including sponsors, actions, cosponsors, subjects, text.
+
+        Queries 4 sub-endpoints of the Congress.gov API v3 for a specific bill:
+        /actions, /cosponsors, /subjects, /text. The main bill record includes
+        sponsor info inline.
+
+        Args:
+            session: aiohttp ClientSession.
+            congress: Congress number (e.g., 119).
+            bill_type: Bill type code (hr, s, etc.) -- lowercase for URL.
+            bill_number: Bill number as string.
+
+        Returns:
+            Dict with keys: bill, actions, cosponsors, subjects, policy_area, text_versions.
+        """
+        base = f"{self.base_url}/bill/{congress}/{bill_type.lower()}/{bill_number}"
+
+        # Main bill detail (includes sponsor inline)
+        detail = await self._request_with_retry(session, "GET", base)
+        bill = detail.get("bill", {})
+
+        # Sub-endpoint fetches with individual error handling
+        actions = []
+        cosponsors = []
+        subjects = []
+        policy_area = {}
+        text_versions = []
+
+        try:
+            actions_data = await self._request_with_retry(
+                session, "GET", f"{base}/actions?limit=250"
+            )
+            actions = actions_data.get("actions", [])
+        except Exception:
+            logger.warning(
+                "Failed to fetch actions for %s-%s-%s",
+                congress, bill_type, bill_number,
+            )
+
+        await asyncio.sleep(0.3)
+
+        try:
+            cosponsors_data = await self._request_with_retry(
+                session, "GET", f"{base}/cosponsors?limit=250"
+            )
+            cosponsors = cosponsors_data.get("cosponsors", [])
+        except Exception:
+            logger.warning(
+                "Failed to fetch cosponsors for %s-%s-%s",
+                congress, bill_type, bill_number,
+            )
+
+        await asyncio.sleep(0.3)
+
+        try:
+            subjects_data = await self._request_with_retry(
+                session, "GET", f"{base}/subjects?limit=250"
+            )
+            subj = subjects_data.get("subjects", {})
+            subjects = subj.get("legislativeSubjects", [])
+            policy_area = subj.get("policyArea", {})
+        except Exception:
+            logger.warning(
+                "Failed to fetch subjects for %s-%s-%s",
+                congress, bill_type, bill_number,
+            )
+
+        await asyncio.sleep(0.3)
+
+        try:
+            text_data = await self._request_with_retry(
+                session, "GET", f"{base}/text?limit=20"
+            )
+            text_versions = text_data.get("textVersions", [])
+        except Exception:
+            logger.warning(
+                "Failed to fetch text for %s-%s-%s",
+                congress, bill_type, bill_number,
+            )
+
+        return {
+            "bill": bill,
+            "actions": actions,
+            "cosponsors": cosponsors,
+            "subjects": subjects,
+            "policy_area": policy_area,
+            "text_versions": text_versions,
+        }
+
     def _normalize(self, item: dict) -> dict:
         """Map Congress.gov fields to the standard schema."""
         bill_type = item.get("type", "")
