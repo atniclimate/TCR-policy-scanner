@@ -5,24 +5,24 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.3 Production Launch
+**Current focus:** v1.3 Production Launch -- Phase 15 (Congressional Intelligence Pipeline)
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
 ## Current Position
 
 **Milestone:** v1.3 Production Launch
-**Phase:** Not started (defining requirements)
-**Plan:** —
-**Status:** Defining requirements
-**Last activity:** 2026-02-12 — Milestone v1.3 started
+**Phase:** 15 of 18 (Congressional Intelligence Pipeline)
+**Plan:** --
+**Status:** Ready to plan
+**Last activity:** 2026-02-12 -- Roadmap created for v1.3
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [░░░░░░░░░░]   0% DEFINING REQUIREMENTS
+v1.3     [░░░░░░░░░░]   0% ROADMAP CREATED (4 phases, 39 requirements)
 ```
 
 ## Performance Metrics
@@ -32,10 +32,10 @@ v1.3     [░░░░░░░░░░]   0% DEFINING REQUIREMENTS
 | v1.0 shipped | 2026-02-09 (4 phases, 9 plans, 30 requirements, 52 tests) |
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
-| Total phases | 14 completed |
+| Total phases | 14 completed, 4 planned |
 | Total plans | 46 completed |
-| Total requirements | 76 completed |
-| Total tests | 743 |
+| Total requirements | 76 completed, 39 active |
+| Total tests | 743 (target: 900+ after Phase 15) |
 | Source files | 95 Python files |
 | Total LOC | ~37,900 Python |
 | Documents generated | 992 (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) |
@@ -51,27 +51,18 @@ v1.3     [░░░░░░░░░░]   0% DEFINING REQUIREMENTS
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
 - **API resilience:** Circuit breaker (CLOSED/OPEN/HALF_OPEN) wrapping all scrapers, cache fallback, health check CLI
 
-### v1.3 Workstreams
+### v1.3 Phase Structure
 
-1. **Data reliability** — scraper pagination fixes (3 of 4 silently truncate), Congress.gov bill detail fetching
-2. **DOCX Visual QA** — structural validation, visual sampling, targeted revisions (V1.3-OPERATIONS-PLAN.md Phase 1)
-3. **Website launch** — 4-agent review swarm + P0-P3 implementation + GitHub/SquareSpace deploy (V1.3-OPERATIONS-PLAN.md Phase 2)
-4. **Production hardening** — 4-agent bug hunt swarm with clone pairs (V1.3-OPERATIONS-PLAN.md Phase 3)
-5. **Document quality** — confidence scoring, trustworthiness improvements
+| Phase | Goal | Agent Swarm | Requirements |
+|-------|------|-------------|--------------|
+| 15 | Congressional intelligence + data reliability | Scout, Fire Keeper, Runner, Walker | 15 INTEL + 3 XCUT |
+| 16 | Document quality assurance | 5 audit agents | 6 DOCX |
+| 17 | Website deployment | 4 review agents | 10 WEB |
+| 18 | Production hardening | 4 bug hunt agents | 5 HARD |
 
-### Agent Swarms
+### Decisions
 
-**Website review agents** (`.planning/website/LAUNCH-SWARM.md`):
-- Web Wizard (perf/build), Mind Reader (UX/a11y), Keen Kerner (typography), Pipeline Professor (data)
-
-**Bug hunt agents** (`.planning/` agent defs):
-- Mr. Magoo (experiential feel), Cyclops (deep code inspection), Dale Gribble (security/sovereignty), Marie Kondo (code hygiene)
-
-### Key Planning Documents
-
-- `.planning/V1.3-OPERATIONS-PLAN.md` — detailed session structures, agent strategies, gate criteria
-- `.planning/website/` — draft website code (React/Vite/Tailwind/shadcn, 47 known issues)
-- `.planning/dale-gribble.md`, `cyclops.md`, `mr-magoo.md`, `marie-kondo.md` — bug hunt agent definitions
+None yet for v1.3.
 
 ### Todos
 
@@ -86,11 +77,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Defining v1.3 requirements
-**Next step:** Complete requirements and roadmap
+**Stopped at:** Roadmap created for v1.3 Production Launch
+**Next step:** Plan Phase 15 (Congressional Intelligence Pipeline)
 **Resume file:** None
-**Resume command:** /gsd:new-milestone
+**Resume command:** /gsd:plan-phase 15
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after v1.3 milestone initialization*
+*Last updated: 2026-02-12 after v1.3 roadmap creation*

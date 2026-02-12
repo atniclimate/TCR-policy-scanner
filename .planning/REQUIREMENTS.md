@@ -146,42 +146,42 @@ These requirements apply across ALL phases and are verified at each gate.
 
 | REQ-ID | Phase | Status |
 |--------|-------|--------|
-| INTEL-01 | — | Pending |
-| INTEL-02 | — | Pending |
-| INTEL-03 | — | Pending |
-| INTEL-04 | — | Pending |
-| INTEL-05 | — | Pending |
-| INTEL-06 | — | Pending |
-| INTEL-07 | — | Pending |
-| INTEL-08 | — | Pending |
-| INTEL-09 | — | Pending |
-| INTEL-10 | — | Pending |
-| INTEL-11 | — | Pending |
-| INTEL-12 | — | Pending |
-| INTEL-13 | — | Pending |
-| INTEL-14 | — | Pending |
-| INTEL-15 | — | Pending |
-| DOCX-01 | — | Pending |
-| DOCX-02 | — | Pending |
-| DOCX-03 | — | Pending |
-| DOCX-04 | — | Pending |
-| DOCX-05 | — | Pending |
-| DOCX-06 | — | Pending |
-| WEB-01 | — | Pending |
-| WEB-02 | — | Pending |
-| WEB-03 | — | Pending |
-| WEB-04 | — | Pending |
-| WEB-05 | — | Pending |
-| WEB-06 | — | Pending |
-| WEB-07 | — | Pending |
-| WEB-08 | — | Pending |
-| WEB-09 | — | Pending |
-| WEB-10 | — | Pending |
-| HARD-01 | — | Pending |
-| HARD-02 | — | Pending |
-| HARD-03 | — | Pending |
-| HARD-04 | — | Pending |
-| HARD-05 | — | Pending |
-| XCUT-01 | — | Pending |
-| XCUT-02 | — | Pending |
-| XCUT-03 | — | Pending |
+| INTEL-01 | Phase 15 | Pending |
+| INTEL-02 | Phase 15 | Pending |
+| INTEL-03 | Phase 15 | Pending |
+| INTEL-04 | Phase 15 | Pending |
+| INTEL-05 | Phase 15 | Pending |
+| INTEL-06 | Phase 15 | Pending |
+| INTEL-07 | Phase 15 | Pending |
+| INTEL-08 | Phase 15 | Pending |
+| INTEL-09 | Phase 15 | Pending |
+| INTEL-10 | Phase 15 | Pending |
+| INTEL-11 | Phase 15 | Pending |
+| INTEL-12 | Phase 15 | Pending |
+| INTEL-13 | Phase 15 | Pending |
+| INTEL-14 | Phase 15 | Pending |
+| INTEL-15 | Phase 15 | Pending |
+| DOCX-01 | Phase 16 | Pending |
+| DOCX-02 | Phase 16 | Pending |
+| DOCX-03 | Phase 16 | Pending |
+| DOCX-04 | Phase 16 | Pending |
+| DOCX-05 | Phase 16 | Pending |
+| DOCX-06 | Phase 16 | Pending |
+| WEB-01 | Phase 17 | Pending |
+| WEB-02 | Phase 17 | Pending |
+| WEB-03 | Phase 17 | Pending |
+| WEB-04 | Phase 17 | Pending |
+| WEB-05 | Phase 17 | Pending |
+| WEB-06 | Phase 17 | Pending |
+| WEB-07 | Phase 17 | Pending |
+| WEB-08 | Phase 17 | Pending |
+| WEB-09 | Phase 17 | Pending |
+| WEB-10 | Phase 17 | Pending |
+| HARD-01 | Phase 18 | Pending |
+| HARD-02 | Phase 18 | Pending |
+| HARD-03 | Phase 18 | Pending |
+| HARD-04 | Phase 18 | Pending |
+| HARD-05 | Phase 18 | Pending |
+| XCUT-01 | Phase 15 | Pending |
+| XCUT-02 | Phase 15 | Pending |
+| XCUT-03 | Phase 15 | Pending |
