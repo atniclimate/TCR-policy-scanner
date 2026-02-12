@@ -728,3 +728,62 @@ class TestFullSuiteNoRegression:
             assert len(test_lines) >= 214, (
                 f"Expected >= 214 test items, got {len(test_lines)}"
             )
+
+
+# ===========================================================================
+# Phase 16 critical coverage gap tests
+# ===========================================================================
+
+
+class TestRenderChangeTrackingFont:
+    """Verify render_change_tracking heading uses Arial font (GAP-002).
+
+    ACCURACY-006 found that document.add_heading() bypasses StyleManager
+    Arial override. Fix changed to document.add_paragraph(..., style='Heading 2').
+    This test verifies the heading font is correct.
+    """
+
+    def test_change_tracking_heading_uses_heading2_style(self, full_phase7_config):
+        """render_change_tracking heading uses Heading 2 style with Arial font."""
+        from src.packets.docx_sections import render_change_tracking
+        from src.packets.docx_styles import StyleManager
+
+        doc = Document()
+        sm = StyleManager(doc)
+
+        changes = [
+            {"type": "ci_status_change", "description": "BIA TCR moved from STABLE to AT_RISK"},
+            {"type": "new_award", "description": "New FEMA BRIC award: $250,000"},
+        ]
+
+        render_change_tracking(doc, changes, "2026-01-01T00:00:00Z", sm)
+
+        # Find the heading paragraph
+        heading_para = None
+        for para in doc.paragraphs:
+            if "Since Last Packet" in para.text:
+                heading_para = para
+                break
+
+        assert heading_para is not None, "Change tracking heading not found"
+
+        # Verify it uses the Heading 2 style (which StyleManager overrides to Arial)
+        assert heading_para.style.name == "Heading 2", (
+            f"Expected 'Heading 2' style, got '{heading_para.style.name}'"
+        )
+        assert heading_para.style.font.name == "Arial", (
+            f"Expected Arial font on Heading 2, got '{heading_para.style.font.name}'"
+        )
+
+    def test_change_tracking_empty_changes_not_rendered(self, full_phase7_config):
+        """render_change_tracking with empty changes list renders nothing."""
+        from src.packets.docx_sections import render_change_tracking
+        from src.packets.docx_styles import StyleManager
+
+        doc = Document()
+        sm = StyleManager(doc)
+
+        render_change_tracking(doc, [], "2026-01-01T00:00:00Z", sm)
+
+        # No paragraphs added (empty changes = no section)
+        assert all("Since Last Packet" not in p.text for p in doc.paragraphs)

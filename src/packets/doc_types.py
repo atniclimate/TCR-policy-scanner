@@ -185,7 +185,7 @@ DOC_D = DocumentTypeConfig(
     include_messaging_framework=False,
     structural_asks_framing="policy_recommendation",
     narrative_voice="objective",
-    filename_suffix="congressional_overview",
+    filename_suffix="regional_congressional_overview",
 )
 """Regional Congressional Overview -- factual, regional aggregate."""
 

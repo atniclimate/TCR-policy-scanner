@@ -134,14 +134,22 @@ class AgentReviewOrchestrator:
     This class handles Pass 2 collection and Pass 3 resolution.
     """
 
-    def __init__(self, enabled: bool = False) -> None:
+    def __init__(self, enabled: bool = True) -> None:
         """Initialize the orchestrator.
 
         Args:
             enabled: Whether agent review is active. When ``False``,
-                all methods are no-ops that return empty results.
+                check_quality_gate() returns ``passed=True`` with
+                ``enabled=False`` -- effectively bypassing the gate.
+                Defaults to ``True`` so the gate is active unless
+                explicitly disabled.
         """
         self.enabled = enabled
+        if not enabled:
+            logger.warning(
+                "AgentReviewOrchestrator initialized with enabled=False -- "
+                "quality gate will auto-pass without agent checks"
+            )
         self._critiques_by_agent: dict[str, list[Critique]] = {}
         self._completed_agents: set[str] = set()
         self._failed_agents: set[str] = set()

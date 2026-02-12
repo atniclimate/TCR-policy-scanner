@@ -466,10 +466,10 @@ class TestCritique:
 class TestAgentReviewOrchestrator:
     """Tests for the review orchestrator logic."""
 
-    def test_disabled_by_default(self):
-        """Orchestrator is disabled by default."""
+    def test_enabled_by_default(self):
+        """Orchestrator is enabled by default (GATE-001 fix)."""
         orch = AgentReviewOrchestrator()
-        assert not orch.enabled
+        assert orch.enabled
 
     def test_disabled_noop(self):
         """When disabled, all methods return empty results."""

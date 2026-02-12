@@ -1099,8 +1099,15 @@ def _render_talking_points(
 def _render_timing_note(
     document: Document,
     latest_action: dict | None,
+    doc_type_config: "DocumentTypeConfig | None" = None,
 ) -> None:
     """Render a timing/urgency note based on latest action recency.
+
+    **Doc A (internal) ONLY.** Contains strategy-adjacent language
+    ('Active movement', 'Monitoring') that must never appear in
+    congressional documents. When ``doc_type_config`` indicates a
+    congressional audience, this function returns immediately without
+    rendering anything.
 
     Categorizes bills by latest action date into immediate (< 30 days),
     active (30-90 days), or monitoring (> 90 days).
@@ -1108,7 +1115,12 @@ def _render_timing_note(
     Args:
         document: python-docx Document to render into.
         latest_action: Latest action dict with date and text fields.
+        doc_type_config: Optional DocumentTypeConfig. If congressional,
+            timing note is suppressed entirely.
     """
+    # Explicit audience guard: timing notes are Doc A only
+    if doc_type_config is not None and doc_type_config.is_congressional:
+        return
     if not latest_action:
         return
 
@@ -1387,8 +1399,11 @@ def render_change_tracking(
         return
 
     date_display = previous_date[:10] if previous_date else "unknown"
-    document.add_heading(
-        f"Since Last Packet (generated {date_display})", level=2
+    # Use add_paragraph with Heading 2 style (not add_heading) to ensure
+    # the StyleManager-configured Arial font is applied consistently.
+    # See ACCURACY-006: add_heading bypasses style overrides.
+    document.add_paragraph(
+        f"Since Last Packet (generated {date_display})", style="Heading 2"
     )
 
     type_labels = {

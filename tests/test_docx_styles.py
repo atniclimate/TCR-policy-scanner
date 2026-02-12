@@ -191,8 +191,8 @@ class TestStatusBadge:
         test_cases = {
             "FLAGGED": RGBColor(0xDC, 0x26, 0x26),
             "AT_RISK": RGBColor(0xDC, 0x26, 0x26),
-            "UNCERTAIN": RGBColor(0xF5, 0x9E, 0x0B),
-            "STABLE_BUT_VULNERABLE": RGBColor(0xF5, 0x9E, 0x0B),
+            "UNCERTAIN": RGBColor(0xB4, 0x53, 0x09),
+            "STABLE_BUT_VULNERABLE": RGBColor(0xB4, 0x53, 0x09),
             "STABLE": RGBColor(0x16, 0xA3, 0x4A),
             "SECURE": RGBColor(0x16, 0xA3, 0x4A),
         }

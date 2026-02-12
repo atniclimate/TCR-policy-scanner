@@ -260,6 +260,44 @@ class TestBillIntelligenceRendering:
         for word in forbidden:
             assert word not in text_lower, f"Doc B contains forbidden term: {word}"
 
+    def test_doc_b_no_audience_leakage_extended(self):
+        """Doc B bill section contains ZERO internal-audience language (GAP-001).
+
+        Extended check covering talking points headings, timing notes,
+        urgency language, and strategy-adjacent terms that must never
+        leak into congressional documents.
+        """
+        intel = {
+            "bills": [
+                _mock_bill(relevance_score=0.9),
+                _mock_bill(
+                    bill_id="119-HR-5678",
+                    relevance_score=0.7,
+                    bill_number=5678,
+                ),
+            ],
+            "scan_date": "2026-02-10",
+        }
+        text = _render_bill_section_to_text(intel, doc_type_config=DOC_B)
+        text_lower = text.lower()
+
+        # Extended forbidden terms for congressional documents
+        forbidden = [
+            "talking points",
+            "timing:",
+            "active movement",
+            "moderate activity",
+            "monitoring --",
+            "leverage",
+            "strategic",
+            "advocacy position",
+            "messaging framework",
+        ]
+        for term in forbidden:
+            assert term not in text_lower, (
+                f"Doc B audience leakage: found '{term}' in bill intelligence"
+            )
+
     def test_confidence_badge_appears(self):
         """Confidence badge [HIGH/MEDIUM/LOW] appears in heading."""
         intel = {"bills": [_mock_bill()], "scan_date": "2026-02-10"}

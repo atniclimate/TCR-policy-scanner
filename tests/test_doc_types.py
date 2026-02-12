@@ -218,9 +218,9 @@ class TestFormatFilename:
         assert result == "pnw_intertribal_strategy_fy26.docx"
 
     def test_format_filename_doc_d(self):
-        """DOC_D generates correct filename with congressional_overview suffix."""
+        """DOC_D generates correct filename with regional_congressional_overview suffix."""
         result = DOC_D.format_filename("plains")
-        assert result == "plains_congressional_overview_fy26.docx"
+        assert result == "plains_regional_congressional_overview_fy26.docx"
 
 
 class TestAirGapCompliance:
