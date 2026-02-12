@@ -35,7 +35,7 @@ v1.3     [██████████] 100% Phase 15 COMPLETE (7/7 plans, 15 
 | Total phases | 14 completed, 4 planned |
 | Total plans | 57 completed |
 | Total requirements | 76 completed, 39 active, 18 verified (Phase 15) |
-| Total tests | 951 (912 passing, 39 pre-existing failures) |
+| Total tests | 951 (all passing) |
 | Source files | 96 Python files |
 | Total LOC | ~37,900 Python |
 | Documents generated | 992 (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) |
@@ -80,6 +80,8 @@ v1.3     [██████████] 100% Phase 15 COMPLETE (7/7 plans, 15 
 | DEC-1505-01 | Bills-first ordering (position 4 before delegation at position 5) | 15-05 |
 | DEC-1505-02 | Doc B relevance threshold 0.5 for bill inclusion | 15-05 |
 | DEC-1505-03 | Regional bill aggregation uses combined_relevance (sum of per-Tribe scores) | 15-05 |
+| DEC-1506-01 | Use asyncio.run() not get_event_loop() for scraper pagination tests (pytest-anyio compat) | 15-06 |
+| DEC-1506-02 | Regional rendering tests extract text from paragraphs AND table cells | 15-06 |
 | DEC-1507-01 | Air gap exemptions: quality_review.py, doc_types.py, main.py, generator.py | 15-07 |
 | DEC-1507-02 | FY hardcoding check scoped to Phase 15 files (pre-existing in doc_types.py) | 15-07 |
 
@@ -103,4 +105,4 @@ _None._
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 15-07 completion (Phase 15 complete)*
+*Last updated: 2026-02-12 after 15-06 execution (167 new tests, 951 total)*
