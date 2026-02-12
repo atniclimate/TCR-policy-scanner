@@ -29,6 +29,7 @@ from docx.shared import Pt
 
 from src.config import FISCAL_YEAR_SHORT
 from src.packets.context import TribePacketContext
+from src.packets.confidence import confidence_level, section_confidence
 from src.packets.docx_hotsheet import RELEVANT_COMMITTEE_KEYWORDS
 from src.utils import format_dollars
 from src.packets.docx_styles import (
@@ -365,6 +366,7 @@ def render_delegation_section(
     for senator in senators:
         name = senator.get("formatted_name", "Unknown")
         state = senator.get("state", "")
+        bioguide = senator.get("bioguide_id", "")
         # Filter committees by relevant keywords
         committees = senator.get("committees", [])
         matching = _filter_relevant_committees(committees)
@@ -374,12 +376,14 @@ def render_delegation_section(
             "state": state,
             "district": "At-Large",
             "committees": "; ".join(matching),
+            "bioguide_id": bioguide,
         })
 
     for rep in representatives:
         name = rep.get("formatted_name", "Unknown")
         state = rep.get("state", "")
         district = rep.get("district", "")
+        bioguide = rep.get("bioguide_id", "")
         committees = rep.get("committees", [])
         matching = _filter_relevant_committees(committees)
         all_members.append({
@@ -388,6 +392,7 @@ def render_delegation_section(
             "state": state,
             "district": str(district) if district else "",
             "committees": "; ".join(matching),
+            "bioguide_id": bioguide,
         })
 
     # Create table
@@ -413,6 +418,41 @@ def render_delegation_section(
         f"{members_with_committees} members with relevant committee assignments",
         style="HS Body",
     )
+
+    # Congressional intel: committee assignments and bill sponsorship activity
+    delegation_activity = context.congressional_intel.get(
+        "delegation_activity", {}
+    )
+    if delegation_activity:
+        document.add_paragraph(
+            "Delegation Legislative Activity", style="HS Section"
+        )
+        for member in all_members:
+            member_key = member.get("bioguide_id", member["name"])
+            activity = delegation_activity.get(member_key, {})
+            sponsored = activity.get("sponsored", [])
+            cosponsored = activity.get("cosponsored", [])
+            relevant_committees = activity.get("committees", [])
+
+            activity_parts: list[str] = []
+            if sponsored:
+                bill_labels = [b.get("bill_id", "") for b in sponsored[:3]]
+                labels_str = ", ".join(b for b in bill_labels if b)
+                if labels_str:
+                    activity_parts.append(f"Sponsored: {labels_str}")
+            if cosponsored:
+                activity_parts.append(
+                    f"{len(cosponsored)} bill(s) cosponsored"
+                )
+            if relevant_committees:
+                activity_parts.append(
+                    f"Committees: {'; '.join(relevant_committees[:3])}"
+                )
+            if activity_parts:
+                document.add_paragraph(
+                    f"{member['name']}: {' | '.join(activity_parts)}",
+                    style="HS Body",
+                )
 
     # Internal-only: STRATEGIC NOTES subsection
     is_internal = (
@@ -683,6 +723,420 @@ def render_structural_asks_section(
         len(structural_asks),
         context.tribe_name,
     )
+
+
+def render_bill_intelligence_section(
+    document: Document,
+    context: TribePacketContext,
+    style_manager: StyleManager,
+    doc_type_config: DocumentTypeConfig | None = None,
+) -> None:
+    """Render the congressional bill intelligence section.
+
+    Displays tracked legislation relevant to the Tribe's programs with
+    audience-differentiated content:
+
+      - Doc A (internal): Full briefing for top 2-3 bills with talking
+        points, timing, and strategy notes. Remaining bills get compact
+        cards. This is the advocacy preparation version.
+      - Doc B (congressional): Facts-only bill listing with zero strategy
+        language. Filtered to bills with relevance_score >= 0.5.
+      - Default (no dtc): Renders compact cards for all bills.
+
+    Confidence badge (HIGH/MEDIUM/LOW) appears after the section heading
+    based on data freshness from congressional_intel scan_date.
+
+    Ends with a page break.
+
+    Args:
+        document: python-docx Document to render into.
+        context: TribePacketContext with congressional_intel data.
+        style_manager: StyleManager with registered custom styles.
+        doc_type_config: Optional DocumentTypeConfig for audience-aware
+            rendering.
+    """
+    is_internal = doc_type_config is not None and doc_type_config.is_internal
+    is_congressional = (
+        doc_type_config is not None and doc_type_config.is_congressional
+    )
+
+    # Section heading with audience differentiation
+    if is_internal:
+        heading_text = "Legislation Affecting Your Programs"
+    elif is_congressional:
+        heading_text = "Relevant Legislation"
+    else:
+        heading_text = "Relevant Legislation"
+
+    heading_para = document.add_paragraph(heading_text, style="Heading 2")
+
+    # Confidence badge after heading
+    intel = context.congressional_intel or {}
+    scan_date = intel.get("scan_date") or intel.get("metadata", {}).get(
+        "built_at", ""
+    )
+    conf = section_confidence("congress_gov", scan_date)
+    badge_text = f" [{conf['level']}]"
+    badge_run = heading_para.add_run(badge_text)
+    badge_run.font.size = Pt(8)
+    badge_run.font.color.rgb = COLORS.muted
+
+    # Get bills
+    bills = intel.get("bills", [])
+    if not bills:
+        document.add_paragraph(
+            "No tracked legislation identified in the current session.",
+            style="HS Body",
+        )
+        document.add_page_break()
+        logger.debug(
+            "Bill intelligence: no bills for %s", context.tribe_name
+        )
+        return
+
+    # Sort by relevance_score descending
+    sorted_bills = sorted(
+        bills,
+        key=lambda b: b.get("relevance_score", 0),
+        reverse=True,
+    )
+
+    if is_congressional:
+        # Doc B: facts only, filtered to relevance >= 0.5
+        filtered = [
+            b for b in sorted_bills if b.get("relevance_score", 0) >= 0.5
+        ]
+        if not filtered:
+            document.add_paragraph(
+                "No legislation with direct program relevance identified "
+                "in the current session.",
+                style="HS Body",
+            )
+        else:
+            for bill in filtered:
+                _render_bill_facts_only(document, bill)
+    elif is_internal:
+        # Doc A: top 2-3 get full briefing, rest get compact cards
+        full_count = min(3, len(sorted_bills))
+        for bill in sorted_bills[:full_count]:
+            _render_bill_full_briefing(document, bill, context)
+
+        remaining = sorted_bills[full_count:]
+        if remaining:
+            document.add_paragraph(
+                "Additional Tracked Legislation", style="HS Section"
+            )
+            for bill in remaining:
+                _render_bill_compact_card(document, bill)
+    else:
+        # Default (no doc_type_config): compact cards for all
+        for bill in sorted_bills:
+            _render_bill_compact_card(document, bill)
+
+    document.add_page_break()
+
+    logger.info(
+        "Rendered bill intelligence (%d bills) for %s",
+        len(sorted_bills),
+        context.tribe_name,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Bill rendering helpers (internal to this module)
+# ---------------------------------------------------------------------------
+
+
+def _render_bill_full_briefing(
+    document: Document,
+    bill: dict,
+    context: TribePacketContext,
+) -> None:
+    """Render a full briefing card for a high-relevance bill (Doc A).
+
+    Includes bill number/title, status, sponsor, cosponsors, committees,
+    affected programs, talking points, and timing/urgency note.
+
+    Args:
+        document: python-docx Document to render into.
+        bill: Bill dict from congressional_intel.
+        context: TribePacketContext for program/hazard cross-references.
+    """
+    bill_id = bill.get("bill_id", "")
+    title = bill.get("title", "Unknown")
+    bill_type = bill.get("bill_type", "")
+    bill_number = bill.get("bill_number", "")
+
+    # Build display label (e.g. "HR 1234" or use bill_id)
+    if bill_type and bill_number:
+        display_label = f"{bill_type} {bill_number}"
+    else:
+        display_label = bill_id
+
+    # Subheading: bold bill number + title
+    sub_para = document.add_paragraph(style="HS Body")
+    sub_run = sub_para.add_run(f"{display_label}: {title}")
+    sub_run.bold = True
+
+    # Status line
+    latest_action = bill.get("latest_action")
+    if latest_action:
+        action_date = latest_action.get("date", "")
+        action_text = latest_action.get("text", "")
+        if action_date:
+            action_date = action_date[:10]  # date portion only
+        document.add_paragraph(
+            f"Status: {action_text} ({action_date})" if action_date
+            else f"Status: {action_text}",
+            style="HS Body",
+        )
+
+    # Sponsor + cosponsor count
+    sponsor = bill.get("sponsor")
+    cosponsor_count = bill.get("cosponsor_count", 0)
+    if sponsor:
+        sponsor_name = sponsor.get("name", "Unknown")
+        sponsor_party = sponsor.get("party", "")
+        sponsor_state = sponsor.get("state", "")
+        sponsor_parts = [sponsor_name]
+        if sponsor_party:
+            sponsor_parts.append(f"({sponsor_party})")
+        if sponsor_state:
+            sponsor_parts.append(f"- {sponsor_state}")
+        document.add_paragraph(
+            f"Sponsor: {' '.join(sponsor_parts)} | "
+            f"{cosponsor_count} cosponsor(s)",
+            style="HS Body",
+        )
+
+    # Committee referral
+    committees = bill.get("committees", [])
+    if committees:
+        committee_names = [
+            c.get("name", c.get("committee_name", "")) for c in committees
+        ]
+        committee_names = [n for n in committee_names if n]
+        if committee_names:
+            document.add_paragraph(
+                f"Committees: {'; '.join(committee_names)}",
+                style="HS Body",
+            )
+
+    # Affected programs
+    matched = bill.get("matched_programs", [])
+    if matched:
+        document.add_paragraph(
+            f"Affected Programs: {', '.join(matched)}",
+            style="HS Body",
+        )
+
+    # Talking points (Doc A only -- derived from subjects + program relevance)
+    subjects = bill.get("subjects", [])
+    _render_talking_points(document, bill, subjects, context)
+
+    # Timing/urgency note
+    _render_timing_note(document, latest_action)
+
+
+def _render_bill_facts_only(document: Document, bill: dict) -> None:
+    """Render a facts-only bill entry for Doc B (congressional).
+
+    Shows bill number, title, status, sponsor, and affected programs.
+    Contains ZERO strategy, talking points, timing, or urgency language.
+
+    Args:
+        document: python-docx Document to render into.
+        bill: Bill dict from congressional_intel.
+    """
+    bill_type = bill.get("bill_type", "")
+    bill_number = bill.get("bill_number", "")
+    title = bill.get("title", "Unknown")
+    bill_id = bill.get("bill_id", "")
+
+    if bill_type and bill_number:
+        display_label = f"{bill_type} {bill_number}"
+    else:
+        display_label = bill_id
+
+    # Bill number + title
+    name_para = document.add_paragraph(style="HS Body")
+    name_run = name_para.add_run(f"{display_label}: {title}")
+    name_run.bold = True
+
+    # Status
+    latest_action = bill.get("latest_action")
+    if latest_action:
+        action_date = latest_action.get("date", "")
+        action_text = latest_action.get("text", "")
+        if action_date:
+            action_date = action_date[:10]
+        status_text = (
+            f"Status: {action_text} ({action_date})" if action_date
+            else f"Status: {action_text}"
+        )
+        document.add_paragraph(status_text, style="HS Body")
+
+    # Sponsor name
+    sponsor = bill.get("sponsor")
+    if sponsor:
+        document.add_paragraph(
+            f"Sponsor: {sponsor.get('name', 'Unknown')}",
+            style="HS Body",
+        )
+
+    # Affected programs
+    matched = bill.get("matched_programs", [])
+    if matched:
+        document.add_paragraph(
+            f"Affected Programs: {', '.join(matched)}",
+            style="HS Body",
+        )
+
+
+def _render_bill_compact_card(document: Document, bill: dict) -> None:
+    """Render a compact single-card bill entry.
+
+    Shows bill number + title (bold), status + affected programs on one
+    line, and a one-sentence impact summary.
+
+    Args:
+        document: python-docx Document to render into.
+        bill: Bill dict from congressional_intel.
+    """
+    bill_type = bill.get("bill_type", "")
+    bill_number = bill.get("bill_number", "")
+    title = bill.get("title", "Unknown")
+    bill_id = bill.get("bill_id", "")
+
+    if bill_type and bill_number:
+        display_label = f"{bill_type} {bill_number}"
+    else:
+        display_label = bill_id
+
+    # Bill number + title (bold)
+    name_para = document.add_paragraph(style="HS Body")
+    name_run = name_para.add_run(f"{display_label}: {title}")
+    name_run.bold = True
+
+    # Status + affected programs (single line)
+    parts = []
+    latest_action = bill.get("latest_action")
+    if latest_action:
+        action_text = latest_action.get("text", "")
+        if action_text:
+            parts.append(action_text)
+    matched = bill.get("matched_programs", [])
+    if matched:
+        parts.append(f"Programs: {', '.join(matched)}")
+    if parts:
+        document.add_paragraph(" | ".join(parts), style="HS Small")
+
+    # Impact summary from subjects
+    subjects = bill.get("subjects", [])
+    if subjects:
+        document.add_paragraph(
+            f"Subject areas: {', '.join(subjects[:5])}",
+            style="HS Small",
+        )
+
+
+def _render_talking_points(
+    document: Document,
+    bill: dict,
+    subjects: list[str],
+    context: TribePacketContext,
+) -> None:
+    """Render 2-3 talking points derived from bill subjects and Tribe context.
+
+    Doc A internal only -- these talking points help Tribal leadership
+    prepare for congressional engagement around this legislation.
+
+    Args:
+        document: python-docx Document to render into.
+        bill: Bill dict with matched_programs and subjects.
+        subjects: Bill subject area list.
+        context: TribePacketContext for hazard/program cross-references.
+    """
+    points: list[str] = []
+
+    # Point 1: program alignment
+    matched = bill.get("matched_programs", [])
+    if matched:
+        points.append(
+            f"This bill directly affects {', '.join(matched[:3])}, "
+            f"programs that {context.tribe_name} relies on for climate "
+            f"resilience funding."
+        )
+
+    # Point 2: hazard relevance
+    hazard_profile = context.hazard_profile or {}
+    fema_nri = hazard_profile.get("fema_nri") or hazard_profile.get(
+        "sources", {}
+    ).get("fema_nri", {})
+    top_hazards = fema_nri.get("top_hazards", []) if fema_nri else []
+    if top_hazards:
+        top_hazard = top_hazards[0].get("type", "")
+        if top_hazard:
+            points.append(
+                f"{context.tribe_name}'s top hazard exposure "
+                f"({top_hazard}) underscores the importance of "
+                f"sustained federal investment in these programs."
+            )
+
+    # Point 3: subject area context
+    if subjects:
+        points.append(
+            f"Key subject areas ({', '.join(subjects[:3])}) align with "
+            f"the Tribe's priority program areas."
+        )
+
+    if points:
+        document.add_paragraph("Talking Points", style="HS Section")
+        for point in points[:3]:
+            document.add_paragraph(point, style="HS Body")
+
+
+def _render_timing_note(
+    document: Document,
+    latest_action: dict | None,
+) -> None:
+    """Render a timing/urgency note based on latest action recency.
+
+    Categorizes bills by latest action date into immediate (< 30 days),
+    active (30-90 days), or monitoring (> 90 days).
+
+    Args:
+        document: python-docx Document to render into.
+        latest_action: Latest action dict with date and text fields.
+    """
+    if not latest_action:
+        return
+
+    action_date = latest_action.get("date", "")
+    if not action_date:
+        return
+
+    try:
+        from datetime import datetime, timezone
+
+        action_dt = datetime.fromisoformat(action_date)
+        if action_dt.tzinfo is None:
+            action_dt = action_dt.replace(tzinfo=timezone.utc)
+        now = datetime.now(timezone.utc)
+        days_ago = (now - action_dt).days
+
+        if days_ago < 30:
+            note = "Active movement -- recent action within 30 days."
+        elif days_ago < 90:
+            note = "Moderate activity -- last action within 90 days."
+        else:
+            note = "Monitoring -- no recent movement."
+
+        timing_para = document.add_paragraph(style="HS Small")
+        timing_run = timing_para.add_run(f"Timing: {note}")
+        timing_run.italic = True
+    except (ValueError, TypeError):
+        pass
 
 
 # ---------------------------------------------------------------------------
