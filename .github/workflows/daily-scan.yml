@@ -31,6 +31,12 @@ jobs:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
         run: python -m src.main --verbose
 
+      - name: Congressional intelligence scan
+        run: |
+          python scripts/build_congressional_intel.py --verbose || echo "Congressional intel scan completed with warnings"
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+
       - name: Commit and push results
         run: |
           git config user.name "TCR Policy Scanner"

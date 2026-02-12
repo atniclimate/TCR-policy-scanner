@@ -43,6 +43,14 @@ jobs:
           python scripts/populate_hazards.py || echo "Hazard population incomplete, using cached data"
         continue-on-error: true
 
+      - name: Load congressional intelligence
+        run: |
+          if [ -f data/congressional_intel.json ]; then
+            echo "Congressional intel data found ($(wc -c < data/congressional_intel.json) bytes)"
+          else
+            echo "WARNING: No congressional intel data found, packets will have empty congressional sections"
+          fi
+
       - name: Generate advocacy packets
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
