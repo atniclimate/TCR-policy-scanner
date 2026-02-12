@@ -114,7 +114,11 @@ Plans:
   3. Quality gates enforce priority hierarchy (accuracy > audience > political > design > copy), MAX_PAGES limits, air gap regex patterns, and zero audience leakage between internal (Doc A/C) and congressional (Doc B/D) documents
   4. A test coverage gap analysis maps function-level coverage, identifies untested edge cases across all 4 doc types, and produces actionable findings in machine-readable JSON
 
-**Plans**: TBD
+**Plans:** 2 plans in 2 waves
+
+Plans:
+- [ ] 16-01-PLAN.md -- Wave 1 Audit: structural validation script + 5 parallel audit agents (DOCX-01 through DOCX-06)
+- [ ] 16-02-PLAN.md -- Wave 2 Fix + Verify: fix P0/P1 defects, add critical tests, re-validate, produce SYNTHESIS.md quality certificate
 
 ---
 
