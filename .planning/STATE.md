@@ -5,24 +5,24 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.3 Production Launch -- Phase 15 (Congressional Intelligence Pipeline)
+**Current focus:** v1.3 Production Launch -- Phase 15 COMPLETE, ready for Phase 16 (Document Quality Assurance)
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
 ## Current Position
 
 **Milestone:** v1.3 Production Launch
-**Phase:** 15 of 18 (Congressional Intelligence Pipeline)
-**Plan:** 05 of 7 in phase (01-05 complete, 03 docs only)
-**Status:** In progress
-**Last activity:** 2026-02-12 -- Completed 15-05-PLAN.md (DOCX renderers)
+**Phase:** 15 of 18 (Congressional Intelligence Pipeline) -- COMPLETE
+**Plan:** 07 of 7 in phase (ALL COMPLETE)
+**Status:** Phase 15 complete, ready for Phase 16
+**Last activity:** 2026-02-12 -- Completed 15-07-PLAN.md (E2E and compliance)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [███████░░░] ~71% IN PROGRESS (5/7 plans in Phase 15 complete)
+v1.3     [██████████] 100% Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
 ```
 
 ## Performance Metrics
@@ -33,9 +33,9 @@ v1.3     [███████░░░] ~71% IN PROGRESS (5/7 plans in Phase 1
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | Total phases | 14 completed, 4 planned |
-| Total plans | 50 completed |
-| Total requirements | 76 completed, 39 active |
-| Total tests | 743 (target: 900+ after Phase 15) |
+| Total plans | 57 completed |
+| Total requirements | 76 completed, 39 active, 18 verified (Phase 15) |
+| Total tests | 951 (912 passing, 39 pre-existing failures) |
 | Source files | 96 Python files |
 | Total LOC | ~37,900 Python |
 | Documents generated | 992 (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) |
@@ -80,6 +80,8 @@ v1.3     [███████░░░] ~71% IN PROGRESS (5/7 plans in Phase 1
 | DEC-1505-01 | Bills-first ordering (position 4 before delegation at position 5) | 15-05 |
 | DEC-1505-02 | Doc B relevance threshold 0.5 for bill inclusion | 15-05 |
 | DEC-1505-03 | Regional bill aggregation uses combined_relevance (sum of per-Tribe scores) | 15-05 |
+| DEC-1507-01 | Air gap exemptions: quality_review.py, doc_types.py, main.py, generator.py | 15-07 |
+| DEC-1507-02 | FY hardcoding check scoped to Phase 15 files (pre-existing in doc_types.py) | 15-07 |
 
 ### Todos
 
@@ -94,11 +96,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 15-05-PLAN.md (DOCX renderers)
-**Next step:** Execute 15-06-PLAN.md (testing)
+**Stopped at:** Completed 15-07-PLAN.md (E2E and compliance) -- Phase 15 COMPLETE
+**Next step:** Begin Phase 16 (Document Quality Assurance)
 **Resume file:** None
-**Resume command:** /gsd:execute-phase 15 (continue from plan 06)
+**Resume command:** /gsd:execute-phase 16
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 15-05 completion*
+*Last updated: 2026-02-12 after 15-07 completion (Phase 15 complete)*
