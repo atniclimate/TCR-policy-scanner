@@ -27,21 +27,21 @@ trustworthy document quality. Target: 100-200 concurrent users over 48-hour laun
 
 **Coordination rule:** Scout and Fire Keeper must agree on data model BEFORE either builds.
 
-- [ ] **INTEL-01**: Congress.gov bill detail fetcher returns complete records with sponsors, committees, actions, subjects, and text URLs for Tribal-relevant legislation in the 119th Congress
-- [ ] **INTEL-02**: All 4 scrapers (Federal Register, Grants.gov, Congress.gov, USASpending) paginate to completion with zero silent truncation — `fetched == total` or explicit WARNING logged with gap count
-- [ ] **INTEL-03**: Congressional-to-program mapping links bills to tracked program ALNs with relevance scores (0.0-1.0), action types, and urgency ratings, output as `congressional_intel.json`
-- [ ] **INTEL-04**: Delegation data enhanced with live committee assignments, voting records on Tribal-relevant legislation, and co-sponsorship of tracked bills
-- [ ] **INTEL-05**: Congressional Pydantic models (Legislator, VoteRecord, BillIntelligence, BillAction, CongressionalIntelReport) validate all Scout output as the contract between ingestion and rendering
-- [ ] **INTEL-06**: TribePacketContext extended with CongressionalContext (delegation, relevant_bills, committee_activity, appropriations_status, scan_date, confidence)
-- [ ] **INTEL-07**: DOCX section renderers produce congressional content for all 4 doc types: Doc A (delegation + bills + talking points + timing), Doc B (delegation + bills, facts only, zero strategy), Doc C/D (regional aggregation)
-- [ ] **INTEL-08**: Confidence scoring system produces per-section scores using source weights (congress_gov_api: 1.0 down to inferred: 0.50) and freshness decay (today: 1.0 down to 365 days: 0.30)
-- [ ] **INTEL-09**: Pagination tests for all 4 scrapers and congressional model validation tests against real API response shapes reach 900+ total test count (from 743)
-- [ ] **INTEL-10**: End-to-end pipeline test traces congressional data from `congressional_intel.json` through context building through DOCX rendering through structural validation for all 4 doc types
-- [ ] **INTEL-11**: CI pipeline extended with congressional intelligence scan and DOCX validation in GitHub Actions workflows
-- [ ] **INTEL-12**: Congressional alert system architecture fully specified in ENH-001 with change detection engine, alert classification (CRITICAL/HIGH/MEDIUM/LOW), per-Tribe routing, and 21 story points decomposed across 3 sprints
-- [ ] **INTEL-13**: v1.3 Phase Integration Map documents every handoff from Congress.gov API through DOCX agents through website agents through bug hunters to Tribal Leader's hands
-- [ ] **INTEL-14**: Knowledge graph schema extended with congressional nodes (Bill, Legislator, Committee, Vote) and edges (AFFECTS_PROGRAM, SPONSORED_BY, REFERRED_TO, REPRESENTS, VOTED_ON, MEMBER_OF) with query examples in ENH-002
-- [ ] **INTEL-15**: Data completeness roadmap updated with congressional sources, confidence scores per program, and gap prioritization across all 8 data sources
+- [x] **INTEL-01**: Congress.gov bill detail fetcher returns complete records with sponsors, committees, actions, subjects, and text URLs for Tribal-relevant legislation in the 119th Congress
+- [x] **INTEL-02**: All 4 scrapers (Federal Register, Grants.gov, Congress.gov, USASpending) paginate to completion with zero silent truncation — `fetched == total` or explicit WARNING logged with gap count
+- [x] **INTEL-03**: Congressional-to-program mapping links bills to tracked program ALNs with relevance scores (0.0-1.0), action types, and urgency ratings, output as `congressional_intel.json`
+- [x] **INTEL-04**: Delegation data enhanced with live committee assignments, voting records on Tribal-relevant legislation, and co-sponsorship of tracked bills
+- [x] **INTEL-05**: Congressional Pydantic models (Legislator, VoteRecord, BillIntelligence, BillAction, CongressionalIntelReport) validate all Scout output as the contract between ingestion and rendering
+- [x] **INTEL-06**: TribePacketContext extended with CongressionalContext (delegation, relevant_bills, committee_activity, appropriations_status, scan_date, confidence)
+- [x] **INTEL-07**: DOCX section renderers produce congressional content for all 4 doc types: Doc A (delegation + bills + talking points + timing), Doc B (delegation + bills, facts only, zero strategy), Doc C/D (regional aggregation)
+- [x] **INTEL-08**: Confidence scoring system produces per-section scores using source weights (congress_gov_api: 1.0 down to inferred: 0.50) and freshness decay (today: 1.0 down to 365 days: 0.30)
+- [x] **INTEL-09**: Pagination tests for all 4 scrapers and congressional model validation tests against real API response shapes reach 900+ total test count (from 743)
+- [x] **INTEL-10**: End-to-end pipeline test traces congressional data from `congressional_intel.json` through context building through DOCX rendering through structural validation for all 4 doc types
+- [x] **INTEL-11**: CI pipeline extended with congressional intelligence scan and DOCX validation in GitHub Actions workflows
+- [x] **INTEL-12**: Congressional alert system architecture fully specified in ENH-001 with change detection engine, alert classification (CRITICAL/HIGH/MEDIUM/LOW), per-Tribe routing, and 21 story points decomposed across 3 sprints
+- [x] **INTEL-13**: v1.3 Phase Integration Map documents every handoff from Congress.gov API through DOCX agents through website agents through bug hunters to Tribal Leader's hands
+- [x] **INTEL-14**: Knowledge graph schema extended with congressional nodes (Bill, Legislator, Committee, Vote) and edges (AFFECTS_PROGRAM, SPONSORED_BY, REFERRED_TO, REPRESENTS, VOTED_ON, MEMBER_OF) with query examples in ENH-002
+- [x] **INTEL-15**: Data completeness roadmap updated with congressional sources, confidence scores per program, and gap prioritization across all 8 data sources
 
 ### Document Quality (DOCX)
 
@@ -116,9 +116,9 @@ trustworthy document quality. Target: 100-200 concurrent users over 48-hour laun
 
 These requirements apply across ALL phases and are verified at each gate.
 
-- [ ] **XCUT-01**: Air gap compliance — zero references to ATNI, ATNI Climate Resilience Committee, NCAI, NCAI Climate Action Task Force, or "TCR Policy Scanner" in any rendered DOCX content or website-facing text; `grep -rn` audit returns zero hits
-- [ ] **XCUT-02**: Indigenous data sovereignty — zero third-party tracking scripts, zero external analytics, zero non-essential cookies, zero PII in URLs; CARE Principles and TSDF T0 classification maintained throughout
-- [ ] **XCUT-03**: v1.2 fix verification — all Four Fixes confirmed clean: logger naming (zero hardcoded strings), FY hardcoding (zero string literals), format_dollars (one canonical function), graph_schema paths (all pathlib)
+- [x] **XCUT-01**: Air gap compliance — zero references to ATNI, ATNI Climate Resilience Committee, NCAI, NCAI Climate Action Task Force, or "TCR Policy Scanner" in any rendered DOCX content or website-facing text; `grep -rn` audit returns zero hits
+- [x] **XCUT-02**: Indigenous data sovereignty — zero third-party tracking scripts, zero external analytics, zero non-essential cookies, zero PII in URLs; CARE Principles and TSDF T0 classification maintained throughout
+- [x] **XCUT-03**: v1.2 fix verification — all Four Fixes confirmed clean: logger naming (zero hardcoded strings), FY hardcoding (zero string literals), format_dollars (one canonical function), graph_schema paths (all pathlib)
 
 ---
 
@@ -146,21 +146,21 @@ These requirements apply across ALL phases and are verified at each gate.
 
 | REQ-ID | Phase | Status |
 |--------|-------|--------|
-| INTEL-01 | Phase 15 | Pending |
-| INTEL-02 | Phase 15 | Pending |
-| INTEL-03 | Phase 15 | Pending |
-| INTEL-04 | Phase 15 | Pending |
-| INTEL-05 | Phase 15 | Pending |
-| INTEL-06 | Phase 15 | Pending |
-| INTEL-07 | Phase 15 | Pending |
-| INTEL-08 | Phase 15 | Pending |
-| INTEL-09 | Phase 15 | Pending |
-| INTEL-10 | Phase 15 | Pending |
-| INTEL-11 | Phase 15 | Pending |
-| INTEL-12 | Phase 15 | Pending |
-| INTEL-13 | Phase 15 | Pending |
-| INTEL-14 | Phase 15 | Pending |
-| INTEL-15 | Phase 15 | Pending |
+| INTEL-01 | Phase 15 | Complete |
+| INTEL-02 | Phase 15 | Complete |
+| INTEL-03 | Phase 15 | Complete |
+| INTEL-04 | Phase 15 | Complete |
+| INTEL-05 | Phase 15 | Complete |
+| INTEL-06 | Phase 15 | Complete |
+| INTEL-07 | Phase 15 | Complete |
+| INTEL-08 | Phase 15 | Complete |
+| INTEL-09 | Phase 15 | Complete |
+| INTEL-10 | Phase 15 | Complete |
+| INTEL-11 | Phase 15 | Complete |
+| INTEL-12 | Phase 15 | Complete |
+| INTEL-13 | Phase 15 | Complete |
+| INTEL-14 | Phase 15 | Complete |
+| INTEL-15 | Phase 15 | Complete |
 | DOCX-01 | Phase 16 | Pending |
 | DOCX-02 | Phase 16 | Pending |
 | DOCX-03 | Phase 16 | Pending |
@@ -182,6 +182,6 @@ These requirements apply across ALL phases and are verified at each gate.
 | HARD-03 | Phase 18 | Pending |
 | HARD-04 | Phase 18 | Pending |
 | HARD-05 | Phase 18 | Pending |
-| XCUT-01 | Phase 15 | Pending |
-| XCUT-02 | Phase 15 | Pending |
-| XCUT-03 | Phase 15 | Pending |
+| XCUT-01 | Phase 15 | Complete |
+| XCUT-02 | Phase 15 | Complete |
+| XCUT-03 | Phase 15 | Complete |

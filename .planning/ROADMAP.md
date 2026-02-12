@@ -77,13 +77,13 @@ See `.planning/milestones/v1.2-ROADMAP.md` for phase details.
 **Plans:** 7 plans in 4 waves
 
 Plans:
-- [ ] 15-01-PLAN.md -- Data model contract: Pydantic models, context extension, confidence scoring, KG schema (Wave 1, Fire Keeper)
-- [ ] 15-02-PLAN.md -- Scraper pagination hardening: all 4 scrapers paginate to completion (Wave 1, Sovereignty Scout)
-- [ ] 15-03-PLAN.md -- Documentation: alert system spec, integration map, KG spec, data roadmap (Wave 1, Horizon Walker)
-- [ ] 15-04-PLAN.md -- Bill detail fetcher + bill-to-program mapping + config (Wave 2, Sovereignty Scout)
-- [ ] 15-05-PLAN.md -- DOCX renderers + orchestrator wiring + regional sections (Wave 3, Fire Keeper)
-- [ ] 15-06-PLAN.md -- Test suite: models, pagination, confidence, rendering (Wave 4, River Runner)
-- [ ] 15-07-PLAN.md -- E2E test + CI pipeline + XCUT compliance verification (Wave 4, River Runner)
+- [x] 15-01-PLAN.md -- Data model contract: Pydantic models, context extension, confidence scoring, KG schema (Wave 1, Fire Keeper)
+- [x] 15-02-PLAN.md -- Scraper pagination hardening: all 4 scrapers paginate to completion (Wave 1, Sovereignty Scout)
+- [x] 15-03-PLAN.md -- Documentation: alert system spec, integration map, KG spec, data roadmap (Wave 1, Horizon Walker)
+- [x] 15-04-PLAN.md -- Bill detail fetcher + bill-to-program mapping + config (Wave 2, Sovereignty Scout)
+- [x] 15-05-PLAN.md -- DOCX renderers + orchestrator wiring + regional sections (Wave 3, Fire Keeper)
+- [x] 15-06-PLAN.md -- Test suite: models, pagination, confidence, rendering (Wave 4, River Runner)
+- [x] 15-07-PLAN.md -- E2E test + CI pipeline + XCUT compliance verification (Wave 4, River Runner)
 
 ---
 
@@ -190,7 +190,7 @@ Plans:
 | 1-4 | v1.0 | 9/9 | Complete | 2026-02-09 |
 | 5-8 | v1.1 | 17/17 | Complete | 2026-02-10 |
 | 9-14 | v1.2 | 20/20 | Complete | 2026-02-11 |
-| 15 - Congressional Intelligence | v1.3 | 0/7 | Planned | - |
+| 15 - Congressional Intelligence | v1.3 | 7/7 | Complete | 2026-02-12 |
 | 16 - Document Quality | v1.3 | 0/TBD | Not started | - |
 | 17 - Website Deployment | v1.3 | 0/TBD | Not started | - |
 | 18 - Production Hardening | v1.3 | 0/TBD | Not started | - |
