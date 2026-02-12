@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 <title>Tribal Climate Resilience - Program Priorities</title>
 <meta name="description" content="Search and download Tribal Climate Resilience advocacy documents for federally recognized Tribal Nations.">
-<link rel="stylesheet" href="css/awesomplete.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,17 +14,31 @@
   <p class="subtitle">Program Priorities</p>
 </header>
 <main role="main">
-  <section class="search-container" aria-label="Tribe search">
+  <section class="search-container" aria-label="Search for a Tribal Nation">
     <label for="tribe-search" class="search-label">Find your Tribal Nation</label>
     <input type="text" id="tribe-search" class="search-input"
       placeholder="Start typing a Tribe name..."
-      role="combobox" aria-label="Search for a Tribal Nation"
-      aria-expanded="false" aria-autocomplete="list" autocomplete="off" disabled>
+      role="combobox"
+      aria-label="Search for a Tribal Nation"
+      aria-expanded="false"
+      aria-autocomplete="list"
+      aria-controls="tribe-listbox"
+      aria-activedescendant=""
+      autocomplete="off"
+      disabled>
+    <ul role="listbox" id="tribe-listbox" class="listbox" aria-label="Search results" hidden></ul>
+    <div id="search-status" class="sr-only" role="status" aria-live="polite"></div>
+    <div class="filter-row">
+      <label for="state-filter" class="filter-label">Or browse by state</label>
+      <select id="state-filter" class="state-select" disabled>
+        <option value="">All states</option>
+      </select>
+    </div>
   </section>
   <div id="loading" class="status-message" role="status" aria-live="polite">Loading Tribe data...</div>
   <div id="error" class="status-message error-message" role="alert" hidden>Failed to load Tribe data. Please try again later.</div>
   <section id="tribe-card" class="tribe-card" hidden aria-label="Tribe information">
-    <h2 id="tribe-name" class="card-title"></h2>
+    <h2 id="tribe-name" class="card-title"><span id="tribe-freshness" class="badge" aria-label=""></span></h2>
     <dl class="card-details">
       <div class="detail-row"><dt>State(s)</dt><dd id="tribe-states"></dd></div>
       <div class="detail-row"><dt>Ecoregion</dt><dd id="tribe-ecoregion"></dd></div>
@@ -32,6 +46,10 @@
     <div class="card-actions" id="tribe-actions">
       <p id="packet-status" class="packet-status" aria-live="polite"></p>
     </div>
+  </section>
+  <section id="state-results" class="state-results" hidden aria-label="Tribes in selected state">
+    <h2 id="state-results-title" class="section-title"></h2>
+    <div id="state-results-list" class="state-results-list"></div>
   </section>
   <section id="regions-section" class="regions-section" hidden aria-label="Regional documents">
     <h2 class="section-title">Regional Documents</h2>
@@ -42,10 +60,15 @@
 <footer role="contentinfo">
   <p class="footer-credit">Tribal Climate Resilience Program</p>
 </footer>
-<script src="js/awesomplete.min.js"></script>
-<script src="js/app.js" defer></script>
-<!-- Embed: Add a Code block with this iframe:
-<div style="width:100%;max-width:800px;margin:0 auto;"><iframe src="https://atniclimate.github.io/TCR-policy-scanner/" width="100%" height="700" frameborder="0" style="border:1px solid #e0e0e0;border-radius:8px;" title="Tribal Climate Resilience - Program Priorities" loading="lazy"></iframe></div>
-iframe title required for WCAG 2.1 AA. -->
+<script src="js/fuse.min.js"></script>
+<script src="js/combobox.js"></script>
+<script src="js/app.js"></script>
+<!-- Embed in SquareSpace: Add a Code block with this iframe:
+<iframe src="https://atniclimate.github.io/TCR-policy-scanner/"
+  width="100%" height="700" frameborder="0"
+  sandbox="allow-scripts allow-same-origin allow-downloads allow-popups"
+  style="border:1px solid #e0e0e0;border-radius:8px;"
+  title="Tribal Climate Resilience - Program Priorities"
+  loading="lazy"></iframe> -->
 </body>
 </html>
