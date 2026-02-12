@@ -117,8 +117,8 @@ Plans:
 **Plans:** 2 plans in 2 waves
 
 Plans:
-- [ ] 16-01-PLAN.md -- Wave 1 Audit: structural validation script + 5 parallel audit agents (DOCX-01 through DOCX-06)
-- [ ] 16-02-PLAN.md -- Wave 2 Fix + Verify: fix P0/P1 defects, add critical tests, re-validate, produce SYNTHESIS.md quality certificate
+- [x] 16-01-PLAN.md -- Wave 1 Audit: structural validation script + 5 parallel audit agents (DOCX-01 through DOCX-06)
+- [x] 16-02-PLAN.md -- Wave 2 Fix + Verify: fix P0/P1 defects, add critical tests, re-validate, produce SYNTHESIS.md quality certificate
 
 ---
 
@@ -195,7 +195,7 @@ Plans:
 | 5-8 | v1.1 | 17/17 | Complete | 2026-02-10 |
 | 9-14 | v1.2 | 20/20 | Complete | 2026-02-11 |
 | 15 - Congressional Intelligence | v1.3 | 7/7 | Complete | 2026-02-12 |
-| 16 - Document Quality | v1.3 | 0/TBD | Not started | - |
+| 16 - Document Quality | v1.3 | 2/2 | Complete | 2026-02-12 |
 | 17 - Website Deployment | v1.3 | 0/TBD | Not started | - |
 | 18 - Production Hardening | v1.3 | 0/TBD | Not started | - |
 

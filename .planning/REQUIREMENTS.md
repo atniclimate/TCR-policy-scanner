@@ -58,12 +58,12 @@ trustworthy document quality. Target: 100-200 concurrent users over 48-hour laun
 **Priority hierarchy:** accuracy > audience > political > design > copy
 **Output:** `outputs/docx_review/{agent}_findings.json` per agent
 
-- [ ] **DOCX-01**: DOCX structural validation script (`scripts/validate_docx_structure.py`) checks heading hierarchy, table population, page count ranges, Tribe name in header, placeholder text absence, font consistency, and broken images across all 992 documents in under 60 seconds
-- [ ] **DOCX-02**: Design & layout audit identifies color/contrast issues, font size hierarchy violations, style system integrity gaps, and template pre-baking problems across all 4 doc types
-- [ ] **DOCX-03**: Content accuracy verification confirms dollar amounts trace to source data, Tribe names match federal register spelling, program names match inventory, and congressional data freshness matches scan_date
-- [ ] **DOCX-04**: Pipeline integrity audit verifies TribePacketContext completeness, cache/file loading safety, economic calculation correctness, relevance filtering accuracy, and concurrency handling
-- [ ] **DOCX-05**: Quality gate enforcement audit verifies priority hierarchy (accuracy > audience > political > design > copy), MAX_PAGES enforcement, air gap regex patterns, and audience leakage detection between Doc A/B and Doc C/D
-- [ ] **DOCX-06**: Test coverage gap analysis maps function-level coverage, identifies untested edge cases, verifies doc type coverage for all 4 types, and assesses assertion depth beyond surface-level checks
+- [x] **DOCX-01**: DOCX structural validation script (`scripts/validate_docx_structure.py`) checks heading hierarchy, table population, page count ranges, Tribe name in header, placeholder text absence, font consistency, and broken images across all 992 documents (208s at ~208ms/doc; DEC-1601-01 relaxed 60s budget)
+- [x] **DOCX-02**: Design & layout audit identifies color/contrast issues, font size hierarchy violations, style system integrity gaps, and template pre-baking problems across all 4 doc types
+- [x] **DOCX-03**: Content accuracy verification confirms dollar amounts trace to source data, Tribe names match federal register spelling, program names match inventory, and congressional data freshness matches scan_date
+- [x] **DOCX-04**: Pipeline integrity audit verifies TribePacketContext completeness, cache/file loading safety, economic calculation correctness, relevance filtering accuracy, and concurrency handling
+- [x] **DOCX-05**: Quality gate enforcement audit verifies priority hierarchy (accuracy > audience > political > design > copy), MAX_PAGES enforcement, air gap regex patterns, and audience leakage detection between Doc A/B and Doc C/D
+- [x] **DOCX-06**: Test coverage gap analysis maps function-level coverage, identifies untested edge cases, verifies doc type coverage for all 4 types, and assesses assertion depth beyond surface-level checks
 
 ### Website (WEB)
 
@@ -161,12 +161,12 @@ These requirements apply across ALL phases and are verified at each gate.
 | INTEL-13 | Phase 15 | Complete |
 | INTEL-14 | Phase 15 | Complete |
 | INTEL-15 | Phase 15 | Complete |
-| DOCX-01 | Phase 16 | Pending |
-| DOCX-02 | Phase 16 | Pending |
-| DOCX-03 | Phase 16 | Pending |
-| DOCX-04 | Phase 16 | Pending |
-| DOCX-05 | Phase 16 | Pending |
-| DOCX-06 | Phase 16 | Pending |
+| DOCX-01 | Phase 16 | Complete |
+| DOCX-02 | Phase 16 | Complete |
+| DOCX-03 | Phase 16 | Complete |
+| DOCX-04 | Phase 16 | Complete |
+| DOCX-05 | Phase 16 | Complete |
+| DOCX-06 | Phase 16 | Complete |
 | WEB-01 | Phase 17 | Pending |
 | WEB-02 | Phase 17 | Pending |
 | WEB-03 | Phase 17 | Pending |
