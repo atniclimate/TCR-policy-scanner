@@ -13,16 +13,16 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Milestone:** v1.3 Production Launch
 **Phase:** 15 of 18 (Congressional Intelligence Pipeline)
-**Plan:** 02 of 7 in phase (01-02 complete, 03 docs complete)
+**Plan:** 04 of 7 in phase (01-04 complete, 03 docs only)
 **Status:** In progress
-**Last activity:** 2026-02-12 -- Completed 15-02-PLAN.md (scraper pagination)
+**Last activity:** 2026-02-12 -- Completed 15-04-PLAN.md (bill detail fetcher)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [███░░░░░░░] ~14% IN PROGRESS (3/7 plans in Phase 15 complete)
+v1.3     [█████░░░░░] ~57% IN PROGRESS (4/7 plans in Phase 15 complete)
 ```
 
 ## Performance Metrics
@@ -33,7 +33,7 @@ v1.3     [███░░░░░░░] ~14% IN PROGRESS (3/7 plans in Phase 1
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | Total phases | 14 completed, 4 planned |
-| Total plans | 48 completed |
+| Total plans | 49 completed |
 | Total requirements | 76 completed, 39 active |
 | Total tests | 743 (target: 900+ after Phase 15) |
 | Source files | 96 Python files |
@@ -74,6 +74,9 @@ v1.3     [███░░░░░░░] ~14% IN PROGRESS (3/7 plans in Phase 1
 | DEC-1502-01 | Grants.gov uses startRecordNum offset not page number | 15-02 |
 | DEC-1502-02 | USASpending _fetch_obligations upgraded to limit=100 with full pagination | 15-02 |
 | DEC-1502-03 | Safety caps vary by scraper (2500/1000/1000/5000) | 15-02 |
+| DEC-1504-01 | Bill relevance: 4 weighted components (subject 0.30, CFDA 0.25, committee 0.20, keyword 0.25) | 15-04 |
+| DEC-1504-02 | Two-phase relevance scoring: quick title scan then full detail scoring | 15-04 |
+| DEC-1504-03 | Voting records deferred pending Senate API availability | 15-04 |
 
 ### Todos
 
@@ -88,11 +91,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 15-02-PLAN.md (scraper pagination)
-**Next step:** Execute 15-04-PLAN.md (next executable plan)
+**Stopped at:** Completed 15-04-PLAN.md (bill detail fetcher)
+**Next step:** Execute 15-05-PLAN.md (DOCX renderers)
 **Resume file:** None
-**Resume command:** /gsd:execute-phase 15 (continue from plan 04)
+**Resume command:** /gsd:execute-phase 15 (continue from plan 05)
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 15-02 completion*
+*Last updated: 2026-02-12 after 15-04 completion*
