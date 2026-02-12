@@ -153,11 +153,11 @@ Plans:
 **Plans:** 5 plans in 3 waves
 
 Plans:
-- [ ] 17-01-PLAN.md -- Data pipeline: build_web_index.py alias embedding + Fuse.js self-hosting (Wave 1)
-- [ ] 17-02-PLAN.md -- HTML + CSS: ARIA combobox markup, dark mode, CRT effect, type scale, mobile (Wave 1)
-- [ ] 17-03-PLAN.md -- JavaScript: ARIA combobox + Fuse.js search + state filter + card rendering (Wave 2)
-- [ ] 17-04-PLAN.md -- Deployment: deploy-website.yml + generate-packets.yml update + manifest (Wave 2)
-- [ ] 17-05-PLAN.md -- Review: 4-agent website review synthesis + human verification (Wave 3)
+- [x] 17-01-PLAN.md -- Data pipeline: build_web_index.py alias embedding + Fuse.js self-hosting (Wave 1)
+- [x] 17-02-PLAN.md -- HTML + CSS: ARIA combobox markup, dark mode, CRT effect, type scale, mobile (Wave 1)
+- [x] 17-03-PLAN.md -- JavaScript: ARIA combobox + Fuse.js search + state filter + card rendering (Wave 2)
+- [x] 17-04-PLAN.md -- Deployment: deploy-website.yml + generate-packets.yml update + manifest (Wave 2)
+- [x] 17-05-PLAN.md -- Review: 4-agent website review synthesis + human verification (Wave 3)
 
 ---
 
@@ -202,7 +202,7 @@ Plans:
 | 9-14 | v1.2 | 20/20 | Complete | 2026-02-11 |
 | 15 - Congressional Intelligence | v1.3 | 7/7 | Complete | 2026-02-12 |
 | 16 - Document Quality | v1.3 | 2/2 | Complete | 2026-02-12 |
-| 17 - Website Deployment | v1.3 | 0/5 | Planned | - |
+| 17 - Website Deployment | v1.3 | 5/5 | Complete | 2026-02-12 |
 | 18 - Production Hardening | v1.3 | 0/TBD | Not started | - |
 
 ## Coverage

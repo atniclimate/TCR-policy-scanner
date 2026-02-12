@@ -81,16 +81,16 @@ trustworthy document quality. Target: 100-200 concurrent users over 48-hour laun
 **Stack:** React 18 + Vite 6 + Tailwind CSS v4 + shadcn/ui
 **Output:** `outputs/website_review/{agent}_findings.json`, synthesized into `SYNTHESIS.md`
 
-- [ ] **WEB-01**: Real DOCX download infrastructure replaces fake text blob generation with actual packet files served from GitHub Pages, with manifest.json listing all available packets and metadata
-- [ ] **WEB-02**: Full 592-Tribe coverage replaces 46-Tribe hardcoded mock list with EPA registry data, with accurate state and ecoregion mapping and fuzzy search autocomplete
-- [ ] **WEB-03**: SquareSpace iframe embedding tested and documented with `sandbox="allow-scripts allow-same-origin allow-downloads allow-popups"`, including cross-origin download verification on actual SquareSpace environment
-- [ ] **WEB-04**: Performance optimization achieves <500KB gzipped bundle, Core Web Vitals targets (LCP <2.5s, CLS <0.1), canvas particle system <5ms/frame, and non-render-blocking font loading
-- [ ] **WEB-05**: WCAG 2.1 AA accessibility compliance with keyboard navigation, screen reader ARIA roles (combobox, listbox, dialog), color contrast 4.5:1 minimum, focus management, and `prefers-reduced-motion` support
-- [ ] **WEB-06**: Typography rationalized with consistent type scale (CSS custom properties), letter-spacing reduced from 0.15em to 0.06em for titles, line-height documented, and line length limited to 45-75 characters
-- [ ] **WEB-07**: Data freshness indicators display packet generation date and underlying data currency date, with visual badges (green/yellow/red) for data age and accessible tooltips
-- [ ] **WEB-08**: Mobile browser compatibility verified on iOS Safari (375px) and Android Chrome (360px) with 44px minimum touch targets, no horizontal scroll, and functional download dialogs
-- [ ] **WEB-09**: GitHub Pages deployment pipeline automates Vite build, asset deployment, manifest generation, and SPA routing via 404.html redirect, triggered on merge to main
-- [ ] **WEB-10**: Website review synthesis document (`outputs/website_review/SYNTHESIS.md`) aggregates all 4 agents' findings into priority matrix (P0/P1/P2/P3), cross-agent themes, and implementation roadmap
+- [x] **WEB-01**: Real DOCX download infrastructure replaces fake text blob generation with actual packet files served from GitHub Pages, with manifest.json listing all available packets and metadata
+- [x] **WEB-02**: Full 592-Tribe coverage replaces 46-Tribe hardcoded mock list with EPA registry data, with accurate state and ecoregion mapping and fuzzy search autocomplete
+- [x] **WEB-03**: SquareSpace iframe embedding tested and documented with `sandbox="allow-scripts allow-same-origin allow-downloads allow-popups"`, including cross-origin download verification on actual SquareSpace environment
+- [x] **WEB-04**: Performance optimization achieves <500KB gzipped bundle, Core Web Vitals targets (LCP <2.5s, CLS <0.1), canvas particle system <5ms/frame, and non-render-blocking font loading
+- [x] **WEB-05**: WCAG 2.1 AA accessibility compliance with keyboard navigation, screen reader ARIA roles (combobox, listbox, dialog), color contrast 4.5:1 minimum, focus management, and `prefers-reduced-motion` support
+- [x] **WEB-06**: Typography rationalized with consistent type scale (CSS custom properties), letter-spacing reduced from 0.15em to 0.06em for titles, line-height documented, and line length limited to 45-75 characters
+- [x] **WEB-07**: Data freshness indicators display packet generation date and underlying data currency date, with visual badges (green/yellow/red) for data age and accessible tooltips
+- [x] **WEB-08**: Mobile browser compatibility verified on iOS Safari (375px) and Android Chrome (360px) with 44px minimum touch targets, no horizontal scroll, and functional download dialogs
+- [x] **WEB-09**: GitHub Pages deployment pipeline automates Vite build, asset deployment, manifest generation, and SPA routing via 404.html redirect, triggered on merge to main
+- [x] **WEB-10**: Website review synthesis document (`outputs/website_review/SYNTHESIS.md`) aggregates all 4 agents' findings into priority matrix (P0/P1/P2/P3), cross-agent themes, and implementation roadmap
 
 ### Production Hardening (HARD)
 
@@ -167,16 +167,16 @@ These requirements apply across ALL phases and are verified at each gate.
 | DOCX-04 | Phase 16 | Complete |
 | DOCX-05 | Phase 16 | Complete |
 | DOCX-06 | Phase 16 | Complete |
-| WEB-01 | Phase 17 | Pending |
-| WEB-02 | Phase 17 | Pending |
-| WEB-03 | Phase 17 | Pending |
-| WEB-04 | Phase 17 | Pending |
-| WEB-05 | Phase 17 | Pending |
-| WEB-06 | Phase 17 | Pending |
-| WEB-07 | Phase 17 | Pending |
-| WEB-08 | Phase 17 | Pending |
-| WEB-09 | Phase 17 | Pending |
-| WEB-10 | Phase 17 | Pending |
+| WEB-01 | Phase 17 | Complete |
+| WEB-02 | Phase 17 | Complete |
+| WEB-03 | Phase 17 | Complete |
+| WEB-04 | Phase 17 | Complete |
+| WEB-05 | Phase 17 | Complete |
+| WEB-06 | Phase 17 | Complete |
+| WEB-07 | Phase 17 | Complete |
+| WEB-08 | Phase 17 | Complete |
+| WEB-09 | Phase 17 | Complete |
+| WEB-10 | Phase 17 | Complete |
 | HARD-01 | Phase 18 | Pending |
 | HARD-02 | Phase 18 | Pending |
 | HARD-03 | Phase 18 | Pending |

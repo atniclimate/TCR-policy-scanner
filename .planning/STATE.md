@@ -98,7 +98,11 @@ v1.3     [█████████░] 90% Phase 17 IN PROGRESS (4/5 plans, 1
 
 ### Todos
 
-_None._
+- **Future milestone: DOCX layout & content improvements**
+  - Page layout and presentation redesign (spacing, visual hierarchy, information density)
+  - Add extreme weather vulnerability data (drought, flood, wildfire, heat, storm severity)
+  - Integrate climate-related risk, impact, and vulnerability assessments per Tribe
+  - Source candidates: FEMA NRI (already have county-level), NOAA climate projections, EPA EJScreen, CDC/ATSDR Social Vulnerability Index
 
 ### Blockers
 
@@ -109,11 +113,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 17-03-PLAN.md (ARIA combobox + Fuse.js application logic)
-**Next step:** Execute 17-05 (integration testing and deployment)
+**Stopped at:** Wave 2 complete (17-01, 17-02, 17-03, 17-04 done). User paused before Wave 3.
+**Next step:** `/gsd:execute-phase 17` -- will pick up 17-05 (Wave 3: 4-agent review synthesis + human checkpoint)
 **Resume file:** None
 **Quality gate:** SYNTHESIS.md PASS at outputs/docx_review/SYNTHESIS.md
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 17-03 execution (W3C APG ARIA combobox + Fuse.js app.js rewrite)*
+*Last updated: 2026-02-12 after 17-04 execution (Waves 1+2 complete, Wave 3 pending)*
