@@ -2,26 +2,27 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-02-11)
+See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** Planning next milestone (v1.3 candidates available)
+**Current focus:** v1.3 Production Launch
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
 ## Current Position
 
-**Milestone:** v1.2 COMPLETE -- awaiting v1.3 planning
-**Phase:** N/A
-**Plan:** N/A
-**Status:** MILESTONE COMPLETE -- ready for /gsd:new-milestone
-**Last activity:** 2026-02-11 -- v1.2 milestone completed and archived
+**Milestone:** v1.3 Production Launch
+**Phase:** Not started (defining requirements)
+**Plan:** —
+**Status:** Defining requirements
+**Last activity:** 2026-02-12 — Milestone v1.3 started
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
+v1.3     [░░░░░░░░░░]   0% DEFINING REQUIREMENTS
 ```
 
 ## Performance Metrics
@@ -50,14 +51,27 @@ v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
 - **API resilience:** Circuit breaker (CLOSED/OPEN/HALF_OPEN) wrapping all scrapers, cache fallback, health check CLI
 
-### v1.3 Candidates (from Horizon Walker research)
+### v1.3 Workstreams
 
-- Congressional alert system (21 story points, 3 sprints)
-- Confidence scoring for intelligence products
-- Interactive knowledge graph visualization (D3.js)
-- Data completeness roadmap (8 sources prioritized)
-- Scraper pagination fixes (3 of 4 silently truncate)
-- Congress.gov bill detail fetching
+1. **Data reliability** — scraper pagination fixes (3 of 4 silently truncate), Congress.gov bill detail fetching
+2. **DOCX Visual QA** — structural validation, visual sampling, targeted revisions (V1.3-OPERATIONS-PLAN.md Phase 1)
+3. **Website launch** — 4-agent review swarm + P0-P3 implementation + GitHub/SquareSpace deploy (V1.3-OPERATIONS-PLAN.md Phase 2)
+4. **Production hardening** — 4-agent bug hunt swarm with clone pairs (V1.3-OPERATIONS-PLAN.md Phase 3)
+5. **Document quality** — confidence scoring, trustworthiness improvements
+
+### Agent Swarms
+
+**Website review agents** (`.planning/website/LAUNCH-SWARM.md`):
+- Web Wizard (perf/build), Mind Reader (UX/a11y), Keen Kerner (typography), Pipeline Professor (data)
+
+**Bug hunt agents** (`.planning/` agent defs):
+- Mr. Magoo (experiential feel), Cyclops (deep code inspection), Dale Gribble (security/sovereignty), Marie Kondo (code hygiene)
+
+### Key Planning Documents
+
+- `.planning/V1.3-OPERATIONS-PLAN.md` — detailed session structures, agent strategies, gate criteria
+- `.planning/website/` — draft website code (React/Vite/Tailwind/shadcn, 47 known issues)
+- `.planning/dale-gribble.md`, `cyclops.md`, `mr-magoo.md`, `marie-kondo.md` — bug hunt agent definitions
 
 ### Todos
 
@@ -71,12 +85,12 @@ _None._
 
 ### Last Session
 
-**Date:** 2026-02-11
-**Stopped at:** v1.2 milestone completed and archived
-**Next step:** /gsd:new-milestone for v1.3 planning
+**Date:** 2026-02-12
+**Stopped at:** Defining v1.3 requirements
+**Next step:** Complete requirements and roadmap
 **Resume file:** None
 **Resume command:** /gsd:new-milestone
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-11 after v1.2 milestone completion and archival*
+*Last updated: 2026-02-12 after v1.3 milestone initialization*

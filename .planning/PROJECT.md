@@ -65,9 +65,19 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 
 ### Active
 
-*No active requirements — next milestone not yet defined.*
+*See `.planning/REQUIREMENTS.md` for v1.3 Production Launch requirements.*
 
-See `.planning/milestones/` for archived milestone requirements.
+## Current Milestone: v1.3 Production Launch
+
+**Goal:** Ship production-ready website delivering real DOCX advocacy packets to 592 Tribal Nations, backed by reliable scrapers and trustworthy document quality.
+
+**Target features:**
+- Data reliability: scraper pagination fixes, Congress.gov bill detail fetching
+- DOCX visual QA: structural validation, visual sampling, targeted revisions
+- Website launch: 4-agent review swarm, P0-P3 implementation, GitHub Pages + SquareSpace integration
+- Production hardening: 4-agent bug hunt swarm with clone pairs, merge-sort QA strategy
+- Document quality: confidence scoring, better sourcing for more trustworthy packets
+- Surface-level congressional intelligence improvements
 
 ### Out of Scope
 
@@ -182,7 +192,7 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 **v1.1 Tribe-Specific Advocacy Packets** shipped 2026-02-10 — per-Tribe DOCX generation for 592 Tribes with award history, hazard profiling, economic impact, congressional delegation, and web distribution widget.
 **v1.2 Tech Debt Cleanup + Data Foundation** shipped 2026-02-11 — API resilience, real award/hazard data population, 4 document types with audience differentiation, regional aggregation, quality review, and GitHub Pages deployment. 992 documents generated (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D). Data completeness: ~87% (up from ~39%).
 
-**Next milestone:** Planning (v1.3 candidates in .planning/milestones/v1.2-REQUIREMENTS.md Future Requirements section)
+**Current milestone:** v1.3 Production Launch — data hardening, website deployment, document quality, production readiness for 100–200 users over 48 hours.
 
 ---
-*Last updated: 2026-02-11 after v1.2 milestone completion*
+*Last updated: 2026-02-12 after v1.3 milestone initialization*
