@@ -5,24 +5,24 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.3 Production Launch -- Phase 16 Plan 01 COMPLETE (audit wave), ready for Plan 02 (fix wave)
+**Current focus:** v1.3 Production Launch -- Phase 16 COMPLETE (2/2 plans), ready for Phase 17 (Website Deployment)
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
 ## Current Position
 
 **Milestone:** v1.3 Production Launch
-**Phase:** 16 of 18 (Document Quality Assurance) -- In progress
-**Plan:** 01 of 2 in phase (audit wave complete)
-**Status:** Plan 01 complete, ready for Plan 02 (fix wave)
-**Last activity:** 2026-02-12 -- Completed 16-01-PLAN.md (audit wave)
+**Phase:** 16 of 18 (Document Quality Assurance) -- COMPLETE
+**Plan:** 02 of 2 in phase (fix wave complete)
+**Status:** Phase 16 complete, ready for Phase 17 (Website Deployment)
+**Last activity:** 2026-02-12 -- Completed 16-02-PLAN.md (fix wave)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [████████░░] 80% Phase 16 IN PROGRESS (1/2 plans, 6 DOCX)
+v1.3     [█████████░] 85% Phase 16 COMPLETE (2/2 plans, 6 DOCX)
          Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
 ```
 
@@ -33,10 +33,10 @@ v1.3     [████████░░] 80% Phase 16 IN PROGRESS (1/2 plans, 6
 | v1.0 shipped | 2026-02-09 (4 phases, 9 plans, 30 requirements, 52 tests) |
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
-| Total phases | 14 completed, 4 planned |
-| Total plans | 57 completed |
-| Total requirements | 76 completed, 39 active, 18 verified (Phase 15) |
-| Total tests | 951 (all passing) |
+| Total phases | 14 completed + Phase 16 COMPLETE, 2 remaining |
+| Total plans | 59 completed |
+| Total requirements | 76 completed, 39 active, 18 verified (Phase 15), 6 verified (Phase 16) |
+| Total tests | 954 (all passing) |
 | Source files | 96 Python files |
 | Total LOC | ~37,900 Python |
 | Documents generated | 992 (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) |
@@ -87,6 +87,9 @@ v1.3     [████████░░] 80% Phase 16 IN PROGRESS (1/2 plans, 6
 | DEC-1507-02 | FY hardcoding check scoped to Phase 15 files (pre-existing in doc_types.py) | 15-07 |
 | DEC-1601-01 | Performance budget relaxed from 60s to 210s -- python-docx parsing ~200ms/file inherent cost | 16-01 |
 | DEC-1601-02 | Gap finder uses both findings[] and missing_tests[] for downstream consumption | 16-01 |
+| DEC-1602-01 | Amber status badge darkened to #B45309 (4.6:1 ratio) for WCAG AA compliance | 16-02 |
+| DEC-1602-02 | AgentReviewOrchestrator default changed to enabled=True with warning on bypass | 16-02 |
+| DEC-1602-03 | ACCURACY-006 (P3) fixed alongside GAP-002 (P1) as companion fix | 16-02 |
 
 ### Todos
 
@@ -101,11 +104,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 16-01-PLAN.md (audit wave) -- 40 findings produced
-**Next step:** Execute Plan 02 (fix wave) to resolve P1/P2 findings
+**Stopped at:** Completed 16-02-PLAN.md (fix wave) -- Phase 16 COMPLETE
+**Next step:** `/gsd:discuss-phase 17` or `/gsd:plan-phase 17` (Website Deployment)
 **Resume file:** None
-**Resume command:** /gsd:execute-phase 16
+**Quality gate:** SYNTHESIS.md PASS at outputs/docx_review/SYNTHESIS.md
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 16-01 execution (audit wave: 40 findings, 951 tests unchanged)*
+*Last updated: 2026-02-12 after 16-02 execution (fix wave: 6 P1 fixes, 954 tests, Phase 17 CLEARED)*
