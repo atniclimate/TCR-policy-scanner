@@ -1,0 +1,84 @@
+name: Deploy Website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/web/**'
+      - 'scripts/build_web_index.py'
+      - 'data/tribal_registry.json'
+      - 'data/tribal_aliases.json'
+      - 'config/regional_config.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build web index (tribes.json with aliases)
+        run: python scripts/build_web_index.py
+
+      - name: Copy DOCX files to docs/web/tribes/
+        run: |
+          mkdir -p docs/web/tribes/internal
+          mkdir -p docs/web/tribes/congressional
+          mkdir -p docs/web/tribes/regional/internal
+          mkdir -p docs/web/tribes/regional/congressional
+          cp outputs/packets/internal/*.docx docs/web/tribes/internal/ 2>/dev/null || true
+          cp outputs/packets/congressional/*.docx docs/web/tribes/congressional/ 2>/dev/null || true
+          cp outputs/packets/regional/internal/*.docx docs/web/tribes/regional/internal/ 2>/dev/null || true
+          cp outputs/packets/regional/congressional/*.docx docs/web/tribes/regional/congressional/ 2>/dev/null || true
+
+      - name: Generate manifest.json
+        run: |
+          python3 -c "
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          tribes_dir = Path('docs/web/tribes')
+          counts = {
+              'internal': len(list((tribes_dir / 'internal').glob('*.docx'))) if (tribes_dir / 'internal').is_dir() else 0,
+              'congressional': len(list((tribes_dir / 'congressional').glob('*.docx'))) if (tribes_dir / 'congressional').is_dir() else 0,
+              'regional_internal': len(list((tribes_dir / 'regional/internal').glob('*.docx'))) if (tribes_dir / 'regional/internal').is_dir() else 0,
+              'regional_congressional': len(list((tribes_dir / 'regional/congressional').glob('*.docx'))) if (tribes_dir / 'regional/congressional').is_dir() else 0,
+          }
+          manifest = {
+              'deployed_at': datetime.now(timezone.utc).isoformat(),
+              'document_counts': counts,
+              'total_documents': sum(counts.values()),
+          }
+          Path('docs/web/data').mkdir(parents=True, exist_ok=True)
+          with open('docs/web/data/manifest.json', 'w', encoding='utf-8') as f:
+              json.dump(manifest, f, indent=2)
+          print(f'Manifest: {manifest[\"total_documents\"]} documents deployed')
+          "
+
+      - name: Commit and push
+        run: |
+          git config user.name "TCR Policy Scanner"
+          git config user.email "scanner@tcr-policy-scanner.local"
+          git add docs/web/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: deploy website ($(date -u +%Y-%m-%d))"
+            git push
+          fi
