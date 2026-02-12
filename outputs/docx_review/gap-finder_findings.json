@@ -1,0 +1,326 @@
+{
+  "agent": "The Gap Finder",
+  "timestamp": "2026-02-12T09:30:00Z",
+  "files_audited": [
+    {"file": "tests/test_docx_hotsheet.py", "loc": 35, "type": "test"},
+    {"file": "tests/test_docx_integration.py", "loc": 21, "type": "test"},
+    {"file": "tests/test_docx_styles.py", "loc": 26, "type": "test"},
+    {"file": "tests/test_docx_template.py", "loc": 56, "type": "test"},
+    {"file": "tests/test_packets.py", "loc": 54, "type": "test"},
+    {"file": "tests/test_regional.py", "type": "test"},
+    {"file": "tests/test_congressional_rendering.py", "type": "test"},
+    {"file": "tests/test_e2e_congressional.py", "type": "test"},
+    {"file": "tests/test_doc_types.py", "type": "test"},
+    {"file": "tests/test_audience_filtering.py", "type": "test"},
+    {"file": "tests/test_quality_review.py", "type": "test"},
+    {"file": "src/packets/docx_hotsheet.py", "loc": 803, "type": "source"},
+    {"file": "src/packets/docx_sections.py", "loc": 1429, "type": "source"},
+    {"file": "src/packets/docx_regional_sections.py", "loc": 652, "type": "source"},
+    {"file": "src/packets/orchestrator.py", "loc": 1336, "type": "source"},
+    {"file": "src/packets/agent_review.py", "loc": 434, "type": "source"},
+    {"file": "src/packets/quality_review.py", "loc": 498, "type": "source"},
+    {"file": "src/packets/economic.py", "loc": 383, "type": "source"},
+    {"file": "src/packets/docx_engine.py", "loc": 406, "type": "source"},
+    {"file": "src/packets/docx_styles.py", "loc": 290, "type": "source"},
+    {"file": "src/packets/docx_template.py", "loc": 581, "type": "source"},
+    {"file": "src/packets/relevance.py", "loc": 331, "type": "source"},
+    {"file": "src/packets/context.py", "loc": 87, "type": "source"},
+    {"file": "src/packets/doc_types.py", "loc": 199, "type": "source"}
+  ],
+  "coverage_map": {
+    "src/packets/docx_hotsheet.py": {
+      "functions_total": 14,
+      "functions_tested": 12,
+      "functions_untested": ["_get_evidence_for_ask", "_normalize_cfda"],
+      "coverage_percentage": 86,
+      "notes": "35 dedicated tests in test_docx_hotsheet.py cover render_hotsheet, render_all_hotsheets, title/status, award history (with/without), hazard relevance, economic impact, advocacy language, key ask, structural asks, delegation, methodology. Edge cases for all CI statuses covered."
+    },
+    "src/packets/docx_sections.py": {
+      "functions_total": 16,
+      "functions_tested": 10,
+      "functions_untested": [
+        "_render_bill_full_briefing",
+        "_render_bill_facts_only",
+        "_render_bill_compact_card",
+        "_render_talking_points",
+        "_render_timing_note",
+        "_build_ask_evidence"
+      ],
+      "coverage_percentage": 63,
+      "notes": "Section renderers covered through integration tests. Bill intelligence rendering functions have dedicated tests in test_congressional_rendering.py. Private helpers _render_talking_points and _render_timing_note are exercised indirectly but lack targeted unit tests."
+    },
+    "src/packets/docx_regional_sections.py": {
+      "functions_total": 8,
+      "functions_tested": 7,
+      "functions_untested": ["_pct"],
+      "coverage_percentage": 88,
+      "notes": "Regional renderers tested in test_regional.py and test_e2e_congressional.py. The _pct helper is trivial and tested implicitly through section renderers."
+    },
+    "src/packets/orchestrator.py": {
+      "functions_total": 7,
+      "functions_tested": 5,
+      "functions_untested": ["generate_strategic_overview", "generate_regional_docs"],
+      "coverage_percentage": 71,
+      "notes": "Core paths tested. generate_strategic_overview is tested in test_e2e_congressional.py. generate_regional_docs tested in test_regional.py. Some error paths in run_all_tribes not specifically targeted."
+    },
+    "src/packets/agent_review.py": {
+      "functions_total": 7,
+      "functions_tested": 7,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "All public functions tested in test_docx_template.py including conflict resolution, quality gate edge cases (2/5, 3/5, 5/5 agents), and resolution logging."
+    },
+    "src/packets/quality_review.py": {
+      "functions_total": 3,
+      "functions_tested": 3,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "review_document, review_batch, and generate_report all tested in test_quality_review.py."
+    },
+    "src/packets/economic.py": {
+      "functions_total": 3,
+      "functions_tested": 3,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "compute(), format_impact_narrative(), format_bcr_narrative() all tested with multiple scenarios including zero-award, benchmark, multi-district, and BCR calculations."
+    },
+    "src/packets/docx_engine.py": {
+      "functions_total": 3,
+      "functions_tested": 3,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "create_document, save (with atomic write verification), and generate all tested."
+    },
+    "src/packets/docx_styles.py": {
+      "functions_total": 5,
+      "functions_tested": 5,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "StyleManager, set_cell_shading, apply_zebra_stripe, add_status_badge, format_header_row all tested."
+    },
+    "src/packets/docx_template.py": {
+      "functions_total": 8,
+      "functions_tested": 8,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "TemplateBuilder.build/save, create_two_column_grid, create_info_box, add_horizontal_rule, mark_header_row, add_page_number_field, build_template all tested."
+    },
+    "src/packets/relevance.py": {
+      "functions_total": 2,
+      "functions_tested": 2,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "filter_for_tribe and get_omitted_programs tested in test_packets.py."
+    },
+    "src/packets/context.py": {
+      "functions_total": 1,
+      "functions_tested": 1,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "to_dict() tested in test_packets.py."
+    },
+    "src/packets/doc_types.py": {
+      "functions_total": 6,
+      "functions_tested": 6,
+      "functions_untested": [],
+      "coverage_percentage": 100,
+      "notes": "All properties and methods tested in test_doc_types.py."
+    }
+  },
+  "findings": [
+    {
+      "id": "GAP-001",
+      "severity": "P1",
+      "category": "test-gap",
+      "file": "tests/test_congressional_rendering.py",
+      "line": 1,
+      "description": "No test explicitly verifies that Doc B bill intelligence section contains ZERO talking points, timing notes, or urgency language. Tests verify the section renders but do not assert absence of internal content. If the is_congressional guard in render_bill_intelligence_section is accidentally inverted, talking points would leak into congressional documents for all 592 Tribes.",
+      "fix_recommendation": "Render bill intelligence with DOC_B config, assert 'Talking Points' heading absent, assert 'Timing:' absent, assert 'Active movement' absent."
+    },
+    {
+      "id": "GAP-002",
+      "severity": "P1",
+      "category": "test-gap",
+      "file": "tests/test_docx_integration.py",
+      "line": 1,
+      "description": "render_change_tracking uses document.add_heading() which may bypass StyleManager Arial override. No test verifies the heading font. This is tied to ACCURACY-006. Heading may render in Calibri instead of Arial, breaking font consistency in internal docs.",
+      "fix_recommendation": "Render change tracking section, verify the heading paragraph uses Arial font via style or direct run.font.name check."
+    },
+    {
+      "id": "GAP-003",
+      "severity": "P2",
+      "category": "test-gap",
+      "file": "tests/test_docx_integration.py",
+      "line": 1,
+      "description": "No test verifies that 'Hazard profile data pending' does NOT appear in congressional docs. The exec summary uses 'data pending' for Tribes without hazard data. Congressional documents show internal process language. Affects Tribes without hazard profiles (19 of 592).",
+      "fix_recommendation": "Render executive summary with DOC_B and empty hazard_profile, assert 'pending' NOT in rendered text."
+    },
+    {
+      "id": "GAP-004",
+      "severity": "P2",
+      "category": "test-gap",
+      "file": "tests/test_docx_hotsheet.py",
+      "line": 1,
+      "description": "Award history table test checks table existence but does not verify first column content. The column shows program_id (e.g., 'bia_tcr') instead of human-readable name. Award tables in all docs show internal identifiers instead of program names.",
+      "fix_recommendation": "Render award history, verify first data row cell[0] contains human-readable program name not raw program_id."
+    },
+    {
+      "id": "GAP-005",
+      "severity": "P2",
+      "category": "test-gap",
+      "file": "tests/test_regional.py",
+      "line": 1,
+      "description": "render_regional_congressional_section truncates bill titles at 80 chars with bare string slice. No test verifies truncation behavior or word boundary handling. Regional Doc C/D tables show mid-word truncation in bill titles.",
+      "fix_recommendation": "Render regional congressional section with a bill having a 100-char title, verify cell text ends at a word boundary or with '...'."
+    },
+    {
+      "id": "GAP-006",
+      "severity": "P3",
+      "category": "test-gap",
+      "file": "tests/test_quality_review.py",
+      "line": 1,
+      "description": "MAX_PAGES=2 check in quality_review.py fires for the entire document, not per Hot Sheet. No test verifies this check produces useful signal on multi-section documents. Quality review produces noise warnings on every real document, potentially masking real issues.",
+      "fix_recommendation": "Review a realistic multi-section doc, verify page_count warning fires, document that this is expected noise."
+    },
+    {
+      "id": "GAP-007",
+      "severity": "P3",
+      "category": "test-gap",
+      "file": "tests/test_quality_review.py",
+      "line": 1,
+      "description": "Air gap patterns use exact string matching. No test verifies detection of abbreviated forms like 'A.T.N.I.' or 'N.C.A.I.'. Low risk since current code does not generate these patterns, but future additions could.",
+      "fix_recommendation": "Create a doc containing 'A.T.N.I.' in a paragraph, verify air_gap violation is detected."
+    }
+  ],
+  "missing_tests": [
+    {
+      "id": "GAP-001",
+      "severity": "P1",
+      "priority": "critical",
+      "test_name": "test_bill_intelligence_doc_b_no_strategy_language",
+      "file": "tests/test_congressional_rendering.py",
+      "description": "No test explicitly verifies that Doc B bill intelligence section contains ZERO talking points, timing notes, or urgency language. Tests verify the section renders but do not assert absence of internal content.",
+      "risk": "If the is_congressional guard in render_bill_intelligence_section is accidentally inverted, talking points would leak into congressional documents for all 592 Tribes.",
+      "source_function": "src/packets/docx_sections.py:render_bill_intelligence_section",
+      "test_sketch": "Render bill intelligence with DOC_B config, assert 'Talking Points' heading absent, assert 'Timing:' absent, assert 'Active movement' absent."
+    },
+    {
+      "id": "GAP-002",
+      "severity": "P1",
+      "priority": "critical",
+      "test_name": "test_render_change_tracking_uses_heading2_style_not_add_heading",
+      "file": "tests/test_docx_integration.py",
+      "description": "render_change_tracking uses document.add_heading() which may bypass StyleManager Arial override. No test verifies the heading font. This is tied to ACCURACY-006.",
+      "risk": "Heading renders in Calibri instead of Arial, breaking font consistency in internal docs.",
+      "source_function": "src/packets/docx_sections.py:render_change_tracking",
+      "test_sketch": "Render change tracking section, verify the heading paragraph uses Arial font via style or direct run.font.name check."
+    },
+    {
+      "id": "GAP-003",
+      "severity": "P2",
+      "priority": "high",
+      "test_name": "test_executive_summary_no_data_pending_in_congressional",
+      "file": "tests/test_docx_integration.py",
+      "description": "No test verifies that 'Hazard profile data pending' does NOT appear in congressional docs. The exec summary uses 'data pending' for Tribes without hazard data.",
+      "risk": "Congressional documents show internal process language. Affects Tribes without hazard profiles (19 of 592).",
+      "source_function": "src/packets/docx_sections.py:render_executive_summary",
+      "test_sketch": "Render executive summary with DOC_B and empty hazard_profile, assert 'pending' NOT in rendered text."
+    },
+    {
+      "id": "GAP-004",
+      "severity": "P2",
+      "priority": "high",
+      "test_name": "test_hotsheet_award_table_shows_human_readable_names",
+      "file": "tests/test_docx_hotsheet.py",
+      "description": "Award history table test checks table existence but does not verify first column content. The column shows program_id (e.g., 'bia_tcr') instead of human-readable name.",
+      "risk": "Award tables in all docs show internal identifiers instead of program names.",
+      "source_function": "src/packets/docx_hotsheet.py:_add_award_history",
+      "test_sketch": "Render award history, verify first data row cell[0] contains human-readable program name not raw program_id."
+    },
+    {
+      "id": "GAP-005",
+      "severity": "P2",
+      "priority": "high",
+      "test_name": "test_regional_bill_title_truncation_word_boundary",
+      "file": "tests/test_regional.py",
+      "description": "render_regional_congressional_section truncates bill titles at 80 chars with bare string slice. No test verifies truncation behavior or word boundary handling.",
+      "risk": "Regional Doc C/D tables show mid-word truncation in bill titles.",
+      "source_function": "src/packets/docx_regional_sections.py:render_regional_congressional_section",
+      "test_sketch": "Render regional congressional section with a bill having a 100-char title, verify cell text ends at a word boundary or with '...'."
+    },
+    {
+      "id": "GAP-006",
+      "severity": "P3",
+      "priority": "medium",
+      "test_name": "test_quality_review_max_pages_fires_for_real_docs",
+      "file": "tests/test_quality_review.py",
+      "description": "MAX_PAGES=2 check in quality_review.py fires for the entire document, not per Hot Sheet. No test verifies this check produces useful signal on multi-section documents.",
+      "risk": "Quality review produces noise warnings on every real document, potentially masking real issues.",
+      "source_function": "src/packets/quality_review.py:review_document",
+      "test_sketch": "Review a realistic multi-section doc, verify page_count warning fires, document that this is expected noise."
+    },
+    {
+      "id": "GAP-007",
+      "severity": "P3",
+      "priority": "medium",
+      "test_name": "test_air_gap_regex_catches_dotted_abbreviations",
+      "file": "tests/test_quality_review.py",
+      "description": "Air gap patterns use exact string matching. No test verifies detection of abbreviated forms like 'A.T.N.I.' or 'N.C.A.I.'.",
+      "risk": "Air gap check misses abbreviation variants. Low risk since current code does not generate these patterns, but future additions could.",
+      "source_function": "src/packets/quality_review.py:review_document",
+      "test_sketch": "Create a doc containing 'A.T.N.I.' in a paragraph, verify air_gap violation is detected."
+    }
+  ],
+  "fixture_assessment": {
+    "realism_score": 7,
+    "issues": [
+      "Some test fixtures use 2-3 programs when production range is 8-12",
+      "Award amounts in fixtures tend to cluster around round numbers ($100,000, $500,000)",
+      "Congressional intel fixtures are simplified compared to production data (fewer bills, committees)"
+    ],
+    "recommendations": [
+      "Create a shared fixture module with production-representative data for 3-4 reference Tribes",
+      "Include at least one fixture with 10+ programs, multiple awards, full hazard profile",
+      "Add a fixture representing a zero-data Tribe (no awards, no hazards, no delegation)"
+    ]
+  },
+  "assertion_depth_assessment": {
+    "no_crash_only_tests": [
+      "test_docx_integration.py::TestFullSuiteNoRegression (runs 214+ tests but many are 'no crash' assertions)",
+      "Some test_regional.py tests verify render completes without checking content"
+    ],
+    "content_verifying_tests": [
+      "test_docx_hotsheet.py tests verify actual paragraph text, table cell content, dollar formatting",
+      "test_audience_filtering.py verifies absence of strategy language in Doc B",
+      "test_doc_types.py verifies all flag values and property correctness",
+      "test_congressional_rendering.py verifies bill card content and confidence badges"
+    ],
+    "ratio": "Approximately 65% of tests verify content, 35% verify no crash only"
+  },
+  "recommended_test_additions": {
+    "critical": [
+      "GAP-001: Doc B bill intelligence audience leakage assertion",
+      "GAP-002: render_change_tracking font verification"
+    ],
+    "high": [
+      "GAP-003: Congressional exec summary 'data pending' absence check",
+      "GAP-004: Award table human-readable program name verification",
+      "GAP-005: Regional bill title word-boundary truncation test"
+    ],
+    "medium": [
+      "GAP-006: MAX_PAGES check signal-to-noise test",
+      "GAP-007: Air gap dotted abbreviation detection test"
+    ],
+    "low": [
+      "Upgrade no-crash integration tests to verify at least one content element per section",
+      "Add production-representative fixtures with 10+ programs"
+    ]
+  },
+  "summary": {
+    "total": 7,
+    "p0": 0,
+    "p1": 2,
+    "p2": 3,
+    "p3": 2
+  }
+}

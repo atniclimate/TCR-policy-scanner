@@ -1,0 +1,140 @@
+{
+  "agent": "The Gatekeeper",
+  "timestamp": "2026-02-12T09:30:00Z",
+  "files_audited": [
+    {"file": "src/packets/agent_review.py", "loc": 434},
+    {"file": "src/packets/quality_review.py", "loc": 498},
+    {"file": "src/packets/doc_types.py", "loc": 199}
+  ],
+  "findings": [
+    {
+      "id": "GATE-001",
+      "severity": "P1",
+      "category": "gate-logic",
+      "file": "src/packets/agent_review.py",
+      "line": 137,
+      "description": "When AgentReviewOrchestrator is initialized with enabled=False (the default), check_quality_gate() returns {'passed': True, 'enabled': False}. This means the gate auto-passes when agent review is disabled. While documented, this creates a bypass path where ALL documents pass quality review without any agent checks -- the gate is decorative when disabled.",
+      "exploit": "Any document generated with enable_agent_review=False (the default) bypasses all quality gate checks. Since this is the default configuration, the gate effectively never fires in production.",
+      "fix_recommendation": "Document this bypass prominently. Consider requiring explicit opt-out (enabled=True by default) or making the quality gate run automated checks (quality_review.py) even when agent review is disabled."
+    },
+    {
+      "id": "GATE-002",
+      "severity": "P2",
+      "category": "air-gap-regex",
+      "file": "src/packets/quality_review.py",
+      "line": 129,
+      "description": "AIR_GAP_VIOLATIONS list uses exact string matching (pattern.lower() in all_text_lower) which catches case variations but misses: (1) abbreviated forms like 'A.T.N.I.' or 'N.C.A.I.', (2) partial matches with surrounding text like 'ATNI-affiliated', (3) Unicode homoglyph attacks. The current 12 patterns are a good start but have gaps.",
+      "exploit": "A rendered string containing 'A.T.N.I.' or 'the ATNI-led initiative' would pass the air gap check. While unlikely from current code, any future template string additions should be audited.",
+      "fix_recommendation": "Add regex patterns for abbreviated forms: r'A\\.?T\\.?N\\.?I\\.?', r'N\\.?C\\.?A\\.?I\\.?'. Also add 'Indigenous Access' (without 'ACCESS' capitalization) to catch partial matches."
+    },
+    {
+      "id": "GATE-003",
+      "severity": "P2",
+      "category": "page-limit",
+      "file": "src/packets/quality_review.py",
+      "line": 265,
+      "description": "MAX_PAGES enforcement in review_document uses page_breaks + 1 to estimate total pages for the ENTIRE document, not per Hot Sheet. The check fires when estimated_pages > 2, but full advocacy packets are 20-60+ pages. This check always fires for any real document, making it meaningless noise. The MAX_PAGES=2 from agent_review.py is meant per-Hot Sheet, not per-document.",
+      "exploit": "Every single production document (992 of 992) would trigger this warning, drowning out real issues. The check provides zero signal.",
+      "fix_recommendation": "Either (a) remove the per-document page check since it's meaningless for multi-section documents, or (b) implement per-Hot Sheet page counting by finding page breaks between Hot Sheet title paragraphs."
+    },
+    {
+      "id": "GATE-004",
+      "severity": "P3",
+      "category": "doc-type-config",
+      "file": "src/packets/doc_types.py",
+      "line": 120,
+      "description": "DOC_A and DOC_B title_template strings contain 'FY26' -- this is a display string for the document title, not a fiscal year calculation. CLAUDE.md Rule 1 says 'NEVER hardcode fiscal years' but these are template strings that correctly use FISCAL_YEAR_SHORT from config in the render functions. The title_template is used as-is on cover pages. Verified that docx_sections.py render_cover_page uses doc_type_config.title_template which contains the FY26 string from these constants.",
+      "exploit": "When fiscal year changes to FY27, all four DOC_* title_templates must be updated manually. But FISCAL_YEAR_SHORT is already used elsewhere -- these template strings should reference it.",
+      "fix_recommendation": "Replace 'FY26' in title_template strings with a placeholder like '{fy}' and substitute FISCAL_YEAR_SHORT at render time in render_cover_page."
+    },
+    {
+      "id": "GATE-005",
+      "severity": "P1",
+      "category": "doc-type-config",
+      "file": "src/packets/doc_types.py",
+      "line": 113,
+      "description": "DOC_D.filename_suffix is 'congressional_overview' -- identical to DOC_B.filename_suffix. Since Doc B files go to congressional/ and Doc D files go to regional/congressional/, there is no filename collision. However, if both were in the same directory, files would overwrite each other. The identical suffix also makes it impossible to distinguish Doc B from Doc D by filename alone without checking the parent directory.",
+      "exploit": "If the output directory structure changes or files are moved/copied, Doc B and Doc D files become indistinguishable.",
+      "fix_recommendation": "Change DOC_D.filename_suffix to 'regional_congressional_overview' to make filenames self-documenting."
+    },
+    {
+      "id": "GATE-006",
+      "severity": "P2",
+      "category": "audience-leak",
+      "file": "src/packets/quality_review.py",
+      "line": 105,
+      "description": "INTERNAL_ONLY_PATTERNS has 18 patterns but misses several strategy-adjacent terms that appear in Doc A renderers: 'first-time applicant advantage' (from docx_hotsheet.py line 379), 'coverage gap' (from regional exec summary), 'coordinated engagement' and 'amplifies regional voice' (from docx_regional_sections.py). These phrases have strategic connotations that could leak to congressional docs if renderers are restructured.",
+      "exploit": "Current renderers correctly guard these behind doc_type_config checks. But the quality review safety net would not catch them if a guard were accidentally removed.",
+      "fix_recommendation": "Add patterns: 'coverage gap', 'coordinated engagement', 'amplifies.*voice', 'shared leverage' to INTERNAL_ONLY_PATTERNS."
+    },
+    {
+      "id": "GATE-007",
+      "severity": "P3",
+      "category": "data-structure",
+      "file": "src/packets/agent_review.py",
+      "line": 41,
+      "description": "VALID_SEVERITIES uses {'critical', 'major', 'minor'} as the severity scale, but the Phase 16 audit uses P0/P1/P2/P3. The agent review system and the quality audit system use different severity taxonomies. This is not a bug but a documentation gap.",
+      "exploit": "No exploit -- the two systems are separate. But confusion could arise when mapping findings between them.",
+      "fix_recommendation": "Document the mapping: critical=P0/P1, major=P2, minor=P3 in the agent_review.py docstring."
+    }
+  ],
+  "air_gap_regex_audit": {
+    "patterns_defined": [
+      "TCR Policy Scanner", "ATNI", "NCAI", "IndigenousACCESS",
+      "Affiliated Tribes of Northwest Indians", "NCAI Climate Action Task Force",
+      "ATNI Climate Resilience Committee", "Tribal Advocacy Packet",
+      "Generated by", "Prepared by", "our organization",
+      "the Task Force", "the Committee"
+    ],
+    "patterns_missing": [
+      "A.T.N.I. (dotted abbreviation)",
+      "N.C.A.I. (dotted abbreviation)",
+      "Indigenous Access (partial match without full caps)",
+      "NW Climate Adaptation Science Center",
+      "Hot Sheet Generator"
+    ],
+    "false_positive_risks": [
+      "'the Committee' could match legitimate congressional committee references like 'the Committee on Indian Affairs'. Current pattern is too broad for congressional docs.",
+      "'the Task Force' could match legitimate references to federal task forces."
+    ]
+  },
+  "gate_scenario_analysis": [
+    {
+      "scenario": "5/5 agents complete, 0 critiques",
+      "expected_result": "PASS",
+      "actual_result": "PASS (enough_agents=True, all_critical_resolved=True, unresolved_accuracy=0)",
+      "correct": true
+    },
+    {
+      "scenario": "3/5 agents complete, 2 fail, 0 critiques",
+      "expected_result": "PASS",
+      "actual_result": "PASS (enough_agents=True, all_critical_resolved=True, unresolved_accuracy=0)",
+      "correct": true
+    },
+    {
+      "scenario": "2/5 agents complete, 3 fail",
+      "expected_result": "FAIL",
+      "actual_result": "FAIL (enough_agents=False, reason: 'Only 2/3 agents completed')",
+      "correct": true
+    },
+    {
+      "scenario": "3/5 agents, 1 critical from accuracy unresolved",
+      "expected_result": "FAIL",
+      "actual_result": "FAIL (unresolved_accuracy=1)",
+      "correct": true
+    },
+    {
+      "scenario": "enabled=False (default)",
+      "expected_result": "PASS (bypass)",
+      "actual_result": "PASS with enabled=False -- gate is bypassed",
+      "correct": false
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "p0": 0,
+    "p1": 2,
+    "p2": 3,
+    "p3": 2
+  }
+}

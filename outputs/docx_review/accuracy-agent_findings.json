@@ -1,0 +1,154 @@
+{
+  "agent": "The Accuracy Agent",
+  "timestamp": "2026-02-12T09:30:00Z",
+  "files_audited": [
+    {"file": "src/packets/docx_hotsheet.py", "loc": 803},
+    {"file": "src/packets/docx_sections.py", "loc": 1429},
+    {"file": "src/packets/docx_regional_sections.py", "loc": 652}
+  ],
+  "findings": [
+    {
+      "id": "ACCURACY-001",
+      "severity": "P2",
+      "category": "formatting",
+      "file": "src/packets/docx_hotsheet.py",
+      "line": 352,
+      "description": "In _add_award_history, row.cells[0].text sets program_id as bare string (e.g., 'bia_tcr') instead of the human-readable program name. While technically correct as an identifier, a Tribal Leader reading the table sees 'bia_tcr' instead of 'BIA Tribal Climate Resilience'.",
+      "evidence": "row.cells[0].text = award.get('program_id', program_id)",
+      "impact": "Award history tables show internal program IDs instead of user-friendly names in the first column across all 992 documents with awards.",
+      "affected_doc_types": ["A", "B", "C", "D"],
+      "fix_recommendation": "Look up the human-readable program name from the program inventory using program_id, falling back to program_id if not found."
+    },
+    {
+      "id": "ACCURACY-002",
+      "severity": "P3",
+      "category": "edge-case",
+      "file": "src/packets/docx_hotsheet.py",
+      "line": 557,
+      "description": "In _add_advocacy_language fallback path, the text 'prefix + advocacy_lever + description' can produce awkward double periods if description ends with a period and the code appends another.",
+      "evidence": "fallback_text = f\"{prefix} {advocacy_lever}. {description}\".strip()\nif fallback_text.endswith('.'):\n    pass",
+      "impact": "Minor formatting issue in internal docs (Doc A) only. Affects Tribes where tightened_language is not set.",
+      "affected_doc_types": ["A"],
+      "fix_recommendation": "Strip trailing period from description before concatenation, then add single period at end."
+    },
+    {
+      "id": "ACCURACY-003",
+      "severity": "P3",
+      "category": "edge-case",
+      "file": "src/packets/docx_hotsheet.py",
+      "line": 517,
+      "description": "Multi-district economic impact allocation checks 'if overlap and overlap > 0' but overlap_pct could be a float very close to zero (e.g., 0.001). The allocation would show misleadingly small dollar amounts for districts with near-zero overlap.",
+      "evidence": "overlap = district_info.get('overlap_pct', 0.0)\nif overlap and overlap > 0:",
+      "impact": "Very rare edge case. Affects only Tribes with districts having fractional percentage overlap. Dollar amounts would be technically correct but potentially confusing.",
+      "affected_doc_types": ["A", "B"],
+      "fix_recommendation": "Add a minimum threshold (e.g., overlap > 1.0) to suppress near-zero allocations."
+    },
+    {
+      "id": "ACCURACY-004",
+      "severity": "P2",
+      "category": "audience-leak",
+      "file": "src/packets/docx_sections.py",
+      "line": 260,
+      "description": "render_executive_summary outputs 'Hazard profile data pending.' when top_hazards is empty. The word 'pending' implies internal process state and could be seen as a placeholder in congressional docs (Doc B/D).",
+      "evidence": "document.add_paragraph('Hazard profile data pending.', style='HS Body')",
+      "impact": "Congressional documents for Tribes without hazard data show 'data pending' -- an internal process term that should not appear in documents handed to congressional offices.",
+      "affected_doc_types": ["B", "D"],
+      "fix_recommendation": "For congressional docs, use 'Hazard profile data not currently available.' instead of 'pending'. Keep 'pending' for internal docs only."
+    },
+    {
+      "id": "ACCURACY-005",
+      "severity": "P3",
+      "category": "oxml-safety",
+      "file": "src/packets/docx_hotsheet.py",
+      "line": 120,
+      "description": "_add_paragraph_shading creates a fresh OxmlElement per call as documented. This is correct and avoids the element-reuse bug. No issue found -- documenting as verified safe.",
+      "evidence": "shd = OxmlElement('w:shd')  # Fresh per call",
+      "impact": "None -- this is correctly implemented.",
+      "affected_doc_types": ["A", "B", "C", "D"],
+      "fix_recommendation": "No fix needed. The fresh-per-call pattern is correct."
+    },
+    {
+      "id": "ACCURACY-006",
+      "severity": "P3",
+      "category": "formatting",
+      "file": "src/packets/docx_sections.py",
+      "line": 1391,
+      "description": "render_change_tracking uses document.add_heading(..., level=2) instead of document.add_paragraph(..., style='Heading 2'). Both work but add_heading creates a new Heading style instance rather than reusing the StyleManager-configured one. The font may default to Calibri instead of Arial.",
+      "evidence": "document.add_heading(f\"Since Last Packet (generated {date_display})\", level=2)",
+      "impact": "The 'Since Last Packet' heading may render in Calibri instead of Arial, inconsistent with all other headings.",
+      "affected_doc_types": ["A"],
+      "fix_recommendation": "Change to document.add_paragraph(..., style='Heading 2') to ensure Arial font is used consistently."
+    },
+    {
+      "id": "ACCURACY-007",
+      "severity": "P2",
+      "category": "audience-leak",
+      "file": "src/packets/docx_sections.py",
+      "line": 1094,
+      "description": "_render_talking_points is called from _render_bill_full_briefing which is Doc A only. However, there is no explicit guard checking doc_type_config -- the guard is implicit via the if/elif chain in render_bill_intelligence_section. If _render_bill_full_briefing were ever called directly for a congressional doc, talking points would leak.",
+      "evidence": "# Talking points (Doc A only -- derived from subjects + program relevance)\n_render_talking_points(document, bill, subjects, context)",
+      "impact": "Currently safe because the call chain enforces Doc A only. But the lack of explicit guard is fragile.",
+      "affected_doc_types": ["A"],
+      "fix_recommendation": "Add an explicit is_internal guard inside _render_bill_full_briefing or accept doc_type_config parameter to make the audience contract explicit."
+    },
+    {
+      "id": "ACCURACY-008",
+      "severity": "P1",
+      "category": "audience-leak",
+      "file": "src/packets/docx_sections.py",
+      "line": 1129,
+      "description": "_render_timing_note produces urgency language ('Active movement -- recent action within 30 days') that carries strategic implications. This is called from _render_bill_full_briefing (Doc A only) but the function itself has no audience guard. The timing note text uses strategy-adjacent language ('Active movement', 'Monitoring') that should never appear in congressional docs.",
+      "evidence": "note = 'Active movement -- recent action within 30 days.'",
+      "impact": "Currently safe because call chain is Doc A only. But if the render chain is ever restructured, timing notes could leak to congressional docs.",
+      "affected_doc_types": ["A"],
+      "fix_recommendation": "Add doc_type_config parameter to _render_timing_note and skip rendering for congressional docs, or add comment documenting the Doc A-only contract."
+    },
+    {
+      "id": "ACCURACY-009",
+      "severity": "P2",
+      "category": "data-source",
+      "file": "src/packets/docx_regional_sections.py",
+      "line": 584,
+      "description": "In render_regional_congressional_section, the title column truncates at 80 characters and status at 60 characters using Python string slicing. This can cut words mid-syllable (e.g., 'Infrastructure Investme' instead of 'Infrastructure Investment').",
+      "evidence": "row.cells[1].text = (bill.get('title', '') or '')[:80]\nrow.cells[2].text = (latest.get('text', '') or '')[:60]",
+      "impact": "Regional Doc C/D tables may show truncated bill titles and status text. Affects 8 regional documents.",
+      "affected_doc_types": ["C", "D"],
+      "fix_recommendation": "Use word-boundary truncation: truncate to the last space before the character limit and append '...' if truncated."
+    },
+    {
+      "id": "ACCURACY-010",
+      "severity": "P3",
+      "category": "air-gap",
+      "file": "src/packets/docx_sections.py",
+      "line": 1,
+      "description": "Full scan of all three renderer files for air gap violations. No organizational names (ATNI, NCAI, etc.) or tool names (TCR Policy Scanner, Hot Sheet Generator) found in any rendered string literals. All methodology references are generic ('federal program analysis'). Air gap is clean.",
+      "evidence": "Scanned all string literals in docx_hotsheet.py (803 LOC), docx_sections.py (1429 LOC), docx_regional_sections.py (652 LOC)",
+      "impact": "None -- air gap is maintained.",
+      "affected_doc_types": ["A", "B", "C", "D"],
+      "fix_recommendation": "No fix needed. Air gap compliance verified."
+    }
+  ],
+  "air_gap_scan": {
+    "leaked_names_found": [],
+    "files_clean": [
+      "src/packets/docx_hotsheet.py",
+      "src/packets/docx_sections.py",
+      "src/packets/docx_regional_sections.py"
+    ]
+  },
+  "audience_crosscheck": {
+    "internal_content_in_congressional": [
+      "ACCURACY-004: 'data pending' language in congressional exec summary",
+      "ACCURACY-007: _render_talking_points lacks explicit audience guard (safe via call chain)",
+      "ACCURACY-008: _render_timing_note uses strategy-adjacent language (safe via call chain)"
+    ],
+    "doc_type_flag_usage": "Content flags from doc_types.py are consistently checked: include_advocacy_lever controls Hot Sheet advocacy section, include_member_approach controls delegation strategic notes, include_messaging_framework controls messaging section, structural_asks_framing controls intro voice. All checks use positive assertions (is_internal, is_congressional) with correct logic."
+  },
+  "summary": {
+    "total": 10,
+    "p0": 0,
+    "p1": 1,
+    "p2": 4,
+    "p3": 5
+  }
+}

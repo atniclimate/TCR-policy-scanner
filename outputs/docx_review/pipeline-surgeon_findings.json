@@ -1,0 +1,202 @@
+{
+  "agent": "The Pipeline Surgeon",
+  "timestamp": "2026-02-12T09:30:00Z",
+  "files_audited": [
+    {"file": "src/packets/orchestrator.py", "loc": 1336},
+    {"file": "src/packets/context.py", "loc": 87},
+    {"file": "src/packets/economic.py", "loc": 383},
+    {"file": "src/packets/relevance.py", "loc": 331}
+  ],
+  "findings": [
+    {
+      "id": "PIPE-001",
+      "severity": "P3",
+      "category": "completeness",
+      "file": "src/packets/context.py",
+      "line": 11,
+      "description": "TribePacketContext is a mutable dataclass (not frozen). While downstream code treats it as immutable after construction, nothing prevents accidental mutation during rendering. A renderer could accidentally modify context.awards which would affect subsequent Hot Sheets.",
+      "data_flow": "orchestrator._build_context() -> TribePacketContext -> DocxEngine.generate() -> multiple renderers share same context object",
+      "trigger": "Any renderer mutating a context field (e.g., context.awards.sort()) would corrupt data for subsequent renderers in the same document.",
+      "blast_radius": "All 592 Tribes if a mutation bug is introduced",
+      "fix_recommendation": "Add a comment documenting the immutability contract, or convert to frozen=True dataclass if feasible (would require removing default_factory or using __post_init__ pattern)."
+    },
+    {
+      "id": "PIPE-002",
+      "severity": "P3",
+      "category": "cache-safety",
+      "file": "src/packets/orchestrator.py",
+      "line": 51,
+      "description": "_MAX_CACHE_SIZE_BYTES is correctly set to 10MB and is used consistently in _load_tribe_cache. The size check uses stat().st_size before json.load() which is the correct pattern. Verified safe.",
+      "data_flow": "award_cache/*.json -> stat().st_size check -> json.load() -> context.awards",
+      "trigger": "N/A - correctly implemented",
+      "blast_radius": "N/A",
+      "fix_recommendation": "No fix needed. Cache safety verified."
+    },
+    {
+      "id": "PIPE-003",
+      "severity": "P3",
+      "category": "security",
+      "file": "src/packets/orchestrator.py",
+      "line": 56,
+      "description": "_sanitize_tribe_id correctly validates tribe_id against pattern ^[a-zA-Z0-9_-]+$ preventing path traversal. Additionally, Path(tribe_id).name is used in DocxEngine.save() as a secondary defense. Verified safe.",
+      "data_flow": "tribe_id input -> _sanitize_tribe_id() -> Path construction -> file write",
+      "trigger": "N/A - correctly implemented",
+      "blast_radius": "N/A",
+      "fix_recommendation": "No fix needed. Path traversal protection verified."
+    },
+    {
+      "id": "PIPE-004",
+      "severity": "P2",
+      "category": "calculation",
+      "file": "src/packets/economic.py",
+      "line": 1,
+      "description": "EconomicImpactCalculator.compute() uses PROGRAM_BENCHMARK_AVERAGES for zero-award Tribes. The benchmark values are hardcoded program averages. If a new program is added to program_inventory.json without a corresponding benchmark entry, the economic calculator silently falls back to zero impact instead of warning that benchmark data is missing.",
+      "data_flow": "programs list -> compute() -> PROGRAM_BENCHMARK_AVERAGES lookup -> ProgramEconomicImpact",
+      "trigger": "Adding a new program to the 16-program inventory without updating PROGRAM_BENCHMARK_AVERAGES",
+      "blast_radius": "All zero-award Tribes for the new program (potentially 141 of 592)",
+      "fix_recommendation": "Add a warning log when a program_id is not found in PROGRAM_BENCHMARK_AVERAGES so maintainers notice the gap."
+    },
+    {
+      "id": "PIPE-005",
+      "severity": "P2",
+      "category": "error-handling",
+      "file": "src/packets/orchestrator.py",
+      "line": 189,
+      "description": "run_all_tribes wraps per-Tribe generation in try/except but the error handling path only logs the error and continues. The error detail is limited to str(exc) without stack trace in the returned results dict. This makes debugging production failures harder.",
+      "data_flow": "run_all_tribes() -> per-tribe loop -> exception -> logged and skipped",
+      "trigger": "Any Tribe-specific data issue (corrupt cache, unexpected None, encoding error)",
+      "blast_radius": "Single Tribe per failure, but diagnosis is impaired for all failures",
+      "fix_recommendation": "Include exc.__class__.__name__ and traceback summary in the error records returned by run_all_tribes."
+    },
+    {
+      "id": "PIPE-006",
+      "severity": "P3",
+      "category": "filtering",
+      "file": "src/packets/relevance.py",
+      "line": 1,
+      "description": "ProgramRelevanceFilter enforces MIN_PROGRAMS=8, MAX_PROGRAMS=12 with ABSOLUTE_MIN=3. Programs are sorted by score descending and ties are broken deterministically. A Tribe with fewer than 3 qualifying programs still gets those programs (not padded to 8). Verified correct.",
+      "data_flow": "all programs -> scoring -> sort by score desc -> slice to 8-12 range",
+      "trigger": "N/A - correctly implemented",
+      "blast_radius": "N/A",
+      "fix_recommendation": "No fix needed. Relevance filtering verified."
+    },
+    {
+      "id": "PIPE-007",
+      "severity": "P2",
+      "category": "completeness",
+      "file": "src/packets/context.py",
+      "line": 66,
+      "description": "economic_impact field (dict) is populated by the orchestrator but its structure is not typed or documented. Downstream consumers (docx_hotsheet.py, docx_sections.py) access specific keys like 'total_low', 'total_high', 'total_jobs_low' without validation. If the economic calculator changes its output schema, renderers would silently get None from .get() calls.",
+      "data_flow": "EconomicImpactCalculator.compute() -> dict -> context.economic_impact -> renderers .get() calls",
+      "trigger": "Schema drift between economic calculator output and renderer expectations",
+      "blast_radius": "All 592 Tribes",
+      "fix_recommendation": "Type the economic_impact field as a typed dict or reference the TribeEconomicSummary dataclass instead of raw dict."
+    },
+    {
+      "id": "PIPE-008",
+      "severity": "P3",
+      "category": "concurrency",
+      "file": "src/packets/orchestrator.py",
+      "line": 1,
+      "description": "Single-writer-per-tribe_id assumption is documented in docstrings. File writes use atomic pattern (tmp + os.replace). No shared mutable state between Tribe processing iterations in run_all_tribes (each iteration creates fresh context). Verified safe.",
+      "data_flow": "N/A - correctly implemented",
+      "trigger": "N/A",
+      "blast_radius": "N/A",
+      "fix_recommendation": "No fix needed. Concurrency safety verified."
+    }
+  ],
+  "context_field_trace": {
+    "tribe_id": {
+      "source": "TribalRegistry.resolve() -> dict['id']",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_engine.py:save (filename)", "orchestrator.py:_sanitize_tribe_id"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "tribe_name": {
+      "source": "TribalRegistry.resolve() -> dict['name']",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_sections.py:render_cover_page", "docx_hotsheet.py:render_hotsheet", "docx_sections.py:render_executive_summary"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "states": {
+      "source": "TribalRegistry.resolve() -> dict['states']",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_sections.py:render_cover_page", "docx_sections.py:render_executive_summary"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "ecoregions": {
+      "source": "EcoregionMapper.classify()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_sections.py:render_cover_page"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "districts": {
+      "source": "CongressionalMapper.lookup()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_hotsheet.py:_add_economic_impact", "docx_sections.py:render_executive_summary"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "senators": {
+      "source": "CongressionalMapper.lookup()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_hotsheet.py:_add_delegation_info", "docx_sections.py:render_delegation_section"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "representatives": {
+      "source": "CongressionalMapper.lookup()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_hotsheet.py:_add_delegation_info", "docx_sections.py:render_delegation_section"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "awards": {
+      "source": "award_cache/{tribe_id}.json via _load_tribe_cache()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_hotsheet.py:_add_award_history", "docx_sections.py:render_executive_summary", "economic.py:compute()"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "hazard_profile": {
+      "source": "hazard_profiles/{tribe_id}.json via _load_tribe_cache()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_hotsheet.py:_add_hazard_relevance", "docx_sections.py:render_hazard_summary", "docx_hotsheet.py:_add_economic_impact"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "congressional_intel": {
+      "source": "congressional_intel.json via _load_congressional_intel()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_sections.py:render_bill_intelligence_section", "docx_sections.py:render_delegation_section"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "generated_at": {
+      "source": "datetime.now(timezone.utc).isoformat()",
+      "populated_at": "orchestrator.py:_build_context",
+      "consumed_at": ["docx_sections.py:render_cover_page"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    },
+    "congress_session": {
+      "source": "default '119' in dataclass",
+      "populated_at": "context.py:TribePacketContext.__init__",
+      "consumed_at": ["docx_sections.py:render_cover_page"],
+      "can_be_none": false,
+      "none_handled_at_consumption": true
+    }
+  },
+  "error_path_map": "Award cache missing: awards=[] (empty list, handled by first-time applicant framing). Hazard profile missing: hazard_profile={} (empty dict, sections skip gracefully). Congressional cache missing: senators=[], representatives=[] (delegation shows 'not available'). Congressional intel missing: congressional_intel={} (bill section shows 'no tracked legislation'). Economic calculator: returns benchmark data for zero-award Tribes. All error paths produce valid documents with degraded content rather than crashes.",
+  "summary": {
+    "total": 8,
+    "p0": 0,
+    "p1": 0,
+    "p2": 3,
+    "p3": 5
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "agent": "The Design Aficionado",
+  "timestamp": "2026-02-12T09:30:00Z",
+  "files_audited": [
+    {"file": "src/packets/docx_styles.py", "loc": 290},
+    {"file": "src/packets/docx_template.py", "loc": 581}
+  ],
+  "findings": [
+    {
+      "id": "DESIGN-001",
+      "severity": "P2",
+      "category": "contrast",
+      "file": "src/packets/docx_styles.py",
+      "line": 50,
+      "description": "table_header_bg and several palette colors are stored as bare hex strings (e.g., '1A237E') while others are RGBColor objects. Inconsistent types force callers to know which format each color uses.",
+      "fix_recommendation": "Unify all COLORS attributes to RGBColor objects and convert to hex string only at the OxmlElement boundary (set_cell_shading, etc.)."
+    },
+    {
+      "id": "DESIGN-002",
+      "severity": "P3",
+      "category": "hierarchy",
+      "file": "src/packets/docx_styles.py",
+      "line": 183,
+      "description": "HS Title (18pt) and Heading 1 (16pt) overlap in visual hierarchy. Both are used on cover pages -- HS Title for Tribe name and Heading 1 for document title. The 2pt difference is minimal and could confuse readers about which is the primary heading.",
+      "fix_recommendation": "Consider reducing HS Title to 16pt or increasing Heading 1 to 18pt, or document that HS Title is deliberately larger because it always follows Heading 1 and serves a subtitle role."
+    },
+    {
+      "id": "DESIGN-003",
+      "severity": "P3",
+      "category": "naming",
+      "file": "src/packets/docx_styles.py",
+      "line": 183,
+      "description": "All 9 custom styles are prefixed 'HS' (Hot Sheet) but are used throughout section renderers for cover pages, executive summaries, appendices -- not just Hot Sheets. The naming implies a narrower scope than actual usage.",
+      "fix_recommendation": "This is cosmetic-only. Document that 'HS' is a historical prefix retained for backward compatibility, not an indicator of limited scope."
+    },
+    {
+      "id": "DESIGN-004",
+      "severity": "P2",
+      "category": "contrast",
+      "file": "src/packets/docx_styles.py",
+      "line": 46,
+      "description": "COLORS.muted (RGBColor(0x4B, 0x55, 0x63) = #4B5563) is used for captions and footnotes at 8pt. Against white (#FFFFFF), the contrast ratio is approximately 5.9:1 which passes WCAG AA for normal text (4.5:1). However, at 8pt these are very small characters on printed pages from office printers, where ink density varies. The combination is technically compliant but borderline for print accessibility.",
+      "fix_recommendation": "Monitor print quality feedback. If readability concerns arise, darken muted to #374151 (7.5:1 ratio)."
+    },
+    {
+      "id": "DESIGN-005",
+      "severity": "P3",
+      "category": "template-sync",
+      "file": "src/packets/docx_template.py",
+      "line": 515,
+      "description": "TemplateBuilder._setup_header_footer hardcodes 'FY26 Climate Resilience Program Priorities' in the header text. This is not technically an FY hardcode violation (it is not a fiscal year calculation) but the header text does not use the doc_type_config.header_template -- DocxEngine._setup_header_footer handles that separately. If the template is used without DocxEngine override, the stale FY26 string persists.",
+      "fix_recommendation": "Accept a configurable header string in TemplateBuilder or document that DocxEngine always overrides the template header at generation time."
+    },
+    {
+      "id": "DESIGN-006",
+      "severity": "P3",
+      "category": "naming",
+      "file": "src/packets/docx_template.py",
+      "line": 60,
+      "description": "Extended styles HS Column Primary and HS Column Secondary are defined in docx_template.py but never referenced by name in any renderer. They were designed for the two-column grid layout but content is added to cells directly using HS Body or other styles.",
+      "fix_recommendation": "Either remove the orphan styles to keep the style inventory lean, or begin using them in create_two_column_grid callers for semantic consistency."
+    },
+    {
+      "id": "DESIGN-007",
+      "severity": "P2",
+      "category": "table-layout",
+      "file": "src/packets/docx_template.py",
+      "line": 206,
+      "description": "create_two_column_grid uses a 62/38 split hardcoded as LEFT_RATIO=0.62. This is appropriate for most layouts but the gutter calculation (Emu to dxa conversion at line 237) uses integer division that may lose precision: int(gutter_emu / 2 / 635). The 635 constant converts EMU to twentieths-of-a-point but this should be documented.",
+      "fix_recommendation": "Add a comment explaining the 635 conversion factor (1 dxa = 635 EMU). The precision loss is negligible for layout purposes."
+    },
+    {
+      "id": "DESIGN-008",
+      "severity": "P1",
+      "category": "contrast",
+      "file": "src/packets/docx_styles.py",
+      "line": 25,
+      "description": "CI_STATUS_COLORS for UNCERTAIN and STABLE_BUT_VULNERABLE use RGBColor(0xF5, 0x9E, 0x0B) = #F59E0B (amber/orange). When used by add_status_badge at 14pt for the circle and 11pt for the label text, this amber color against white background has a contrast ratio of approximately 2.1:1, which FAILS WCAG AA minimum of 3:1 for large text (14pt+). The amber text would be hard to read on paper.",
+      "fix_recommendation": "Darken the amber to at least #B45309 (approximately 4.6:1 against white) or use a darker variant like #92400E. This affects the UNCERTAIN and STABLE_BUT_VULNERABLE status badges across all 992 documents."
+    }
+  ],
+  "style_inventory": {
+    "defined_in_styles_py": [
+      "HS Title", "HS Subtitle", "HS Section", "HS Body", "HS Small",
+      "HS Callout", "HS Callout Detail", "HS Table Header", "HS Table Body"
+    ],
+    "heading_overrides": ["Heading 1", "Heading 2", "Heading 3"],
+    "defined_in_template_py": [
+      "HS Column Primary", "HS Column Secondary", "HS Box Title", "HS Box Body",
+      "HS Ask Label", "HS Ask Detail", "HS Footer", "HS Caption", "HS Page Number"
+    ],
+    "referenced_by_renderers": [
+      "HS Title", "HS Subtitle", "HS Section", "HS Body", "HS Small",
+      "HS Callout", "HS Callout Detail",
+      "Heading 1", "Heading 2",
+      "List Bullet"
+    ],
+    "orphans": ["HS Column Primary", "HS Column Secondary", "HS Box Title", "HS Box Body", "HS Ask Label", "HS Ask Detail", "HS Footer", "HS Caption", "HS Page Number", "HS Table Header", "HS Table Body"],
+    "phantoms": []
+  },
+  "contrast_audit": [
+    {
+      "element": "status badge - FLAGGED/AT_RISK (red)",
+      "foreground": "#DC2626",
+      "background": "#FFFFFF",
+      "ratio": 4.63,
+      "passes_aa": true
+    },
+    {
+      "element": "status badge - UNCERTAIN/STABLE_BUT_VULNERABLE (amber)",
+      "foreground": "#F59E0B",
+      "background": "#FFFFFF",
+      "ratio": 2.1,
+      "passes_aa": false
+    },
+    {
+      "element": "status badge - STABLE/SECURE (green)",
+      "foreground": "#16A34A",
+      "background": "#FFFFFF",
+      "ratio": 3.26,
+      "passes_aa": true
+    },
+    {
+      "element": "table header - white on dark blue",
+      "foreground": "#FFFFFF",
+      "background": "#1A237E",
+      "ratio": 12.4,
+      "passes_aa": true
+    },
+    {
+      "element": "body text on white",
+      "foreground": "#1F2937",
+      "background": "#FFFFFF",
+      "ratio": 14.7,
+      "passes_aa": true
+    },
+    {
+      "element": "muted text on white (captions)",
+      "foreground": "#4B5563",
+      "background": "#FFFFFF",
+      "ratio": 5.9,
+      "passes_aa": true
+    },
+    {
+      "element": "zebra stripe even row text",
+      "foreground": "#1F2937",
+      "background": "#F2F2F2",
+      "ratio": 13.2,
+      "passes_aa": true
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "p0": 0,
+    "p1": 1,
+    "p2": 3,
+    "p3": 4
+  }
+}
