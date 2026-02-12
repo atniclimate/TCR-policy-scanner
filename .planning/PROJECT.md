@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Automated policy intelligence pipeline for Tribal Climate Resilience advocacy. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending), scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces advocacy intelligence products for Tribal Leaders advocating for FY26 climate resilience funding. v1.1 adds Tribe-specific congressional advocacy packet generation for all 592 federally recognized Tribes, with per-program award history, hazard profiling, economic impact framing, and congressional delegation mapping — output as print-ready DOCX documents.
+Automated policy intelligence pipeline for Tribal Climate Resilience advocacy. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending), scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces advocacy intelligence products for Tribal Leaders advocating for FY26 climate resilience funding. Generates 4 document types — Tribal internal strategy (Doc A), Tribal congressional overview (Doc B), regional InterTribal strategy (Doc C), and regional congressional overview (Doc D) — for all 592 federally recognized Tribes across 8 regions, backed by real USASpending award data and FEMA NRI hazard profiles.
 
 Built for the Tribal Climate Resilience program, serving 592 federally recognized Tribal Nations.
 
@@ -45,20 +45,29 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 - ✓ Config-driven `graph_schema.json` path (PROJECT_ROOT via pathlib) — v1.2
 - ✓ Deduplicated `format_dollars` (`src/utils.py` single source of truth) — v1.2
 - ✓ Logger naming fixed to `__name__` across 14 files — v1.2
+- ✓ Centralized path constants module (`src/paths.py`) with 25 constants, 47 files migrated — v1.2
+- ✓ All 16 programs have complete metadata (cfda, access_type, funding_type) — v1.2
+- ✓ Ruff-clean codebase (pyproject.toml, zero violations) — v1.2
+- ✓ Circuit breaker pattern (CLOSED/OPEN/HALF_OPEN) wrapping all 4 scrapers — v1.2
+- ✓ Configurable retry/backoff + cache fallback for API resilience — v1.2
+- ✓ Health check CLI (--health-check) reports API availability — v1.2
+- ✓ Batch USASpending award population (14 CFDAs x 5 FYs, 451/592 Tribes matched) — v1.2
+- ✓ Two-tier award matching with 18,776 aliases (including housing authority mappings) — v1.2
+- ✓ FEMA NRI county-level hazard data with area-weighted Tribe-to-county crosswalk — v1.2
+- ✓ USFS wildfire risk override for fire-prone Tribes — v1.2
+- ✓ 592 hazard profiles populated with real NRI + USFS data — v1.2
+- ✓ 4 document types: Doc A (Tribal internal), Doc B (congressional), Doc C (regional internal), Doc D (regional congressional) — v1.2
+- ✓ Audience differentiation with air gap enforcement (no strategy/leverage in congressional docs) — v1.2
+- ✓ Regional aggregation across 8 regions with Doc C/D generation — v1.2
+- ✓ Quality review automation (audience leakage, air gap, placeholder detection) — v1.2
+- ✓ Data validation script with coverage reporting across all cache types — v1.2
+- ✓ GitHub Pages deployment with production URLs (atniclimate.github.io) — v1.2
 
 ### Active
 
-**Current Milestone: v1.2 Tech Debt Cleanup + Data Foundation**
+*No active requirements — next milestone not yet defined.*
 
-**Goal:** Eliminate remaining tech debt, add API resilience, and populate all data caches so every Tribe's advocacy packet has real federal data — not placeholders.
-
-**22 requirements across 6 categories:**
-- Config hardening (structural asks path, centralized path constants)
-- Code quality (program fields, dead code removal)
-- API resilience (circuit breaker, retry, graceful degradation, health check)
-- Award data population (USASpending batch queries for 592 Tribes)
-- Hazard data population (FEMA NRI + USFS wildfire for 592 Tribes)
-- Integration & validation (economic impact activation, E2E testing, docs)
+See `.planning/milestones/` for archived milestone requirements.
 
 ### Out of Scope
 
@@ -69,6 +78,8 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 - EPA EJScreen integration -- removed from EPA Feb 2025; FEMA NRI + USFS cover core hazard needs
 - NOAA climate projections -- valuable but deferred; adds significant integration complexity beyond NRI
 - BEA RIMS II multipliers -- cost-prohibitive ($500/region); published multipliers + FEMA BCR sufficient
+- Scraper pagination fixes -- important but separate concern; v1.3 candidate
+- Congress.gov bill detail fetching -- v1.3 candidate
 
 ## Context
 
@@ -79,7 +90,7 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 **Server:** GitHub-hosted, developed locally at F:\tcr-policy-scanner
 **Local workspace:** F:\tcr-policy-scanner
 
-**Shipped v1.1 with 18,546 LOC Python across 52 source files.**
+**Shipped v1.2 with ~37,900 LOC Python across 95 source files.**
 
 **Pipeline architecture:**
 ```
@@ -99,13 +110,20 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 - `data/ecoregion_config.json` — 7 NCA5 ecoregion definitions with program priority mappings
 - `data/tribal_registry.json` — 592 Tribes with BIA codes, states, name variants
 - `data/congressional_cache.json` — 538 members with committee assignments per Tribe
-- `data/tribal_aliases.json` — 3,751 USASpending name aliases for two-tier matching
-- `data/award_cache/*.json` — per-Tribe USASpending award histories (592 files)
-- `data/hazard_profiles/*.json` — per-Tribe FEMA NRI + USFS hazard profiles (592 files)
+- `data/tribal_aliases.json` — 18,776 USASpending name aliases for two-tier matching (including housing authority mappings)
+- `data/housing_authority_aliases.json` — 15,027 housing authority aliases for award matching
+- `data/award_cache/*.json` — per-Tribe USASpending award histories (592 files, 451 with real data)
+- `data/hazard_profiles/*.json` — per-Tribe FEMA NRI + USFS hazard profiles (592 files, all with real data)
+- `data/regional_config.json` — 8 NCA5-based regional definitions with Tribe-to-region mapping
 
-**Test suite:** 287 tests across 11 modules (decision engine, integration, DOCX styles/hotsheet/sections/assembly, economic, strategic overview, batch generation, change tracking, web index, E2E)
+**Test suite:** 743 tests across 20+ modules (circuit breaker, hazard aggregation, USFS override, housing authority aliases, document types, audience filtering, regional aggregation, quality review, coverage validation, plus all v1.0/v1.1 modules)
 
-**Known tech debt (10 items, 0 critical):** Logger naming, FY26 hardcoding, _format_dollars duplication, graph_schema path hardcoding, incomplete program fields, data cache population requires live API runs, missing Phase 8 VERIFICATION.md, GitHub Pages deployment config, SquareSpace placeholder URL
+**Known tech debt (8 items, 0 critical):**
+- 4 circuit breaker behaviors need human E2E verification (network manipulation tests)
+- Non-atomic write_text() for award cache files (re-runnable, low risk)
+- 141 Tribes with zero awards (remaining housing authority gaps)
+- 91 placeholder warnings in docs (TBD where data fields empty)
+- Doc A coverage limited to 384/592 (data completeness constraint)
 
 ## Constraints
 
@@ -149,13 +167,22 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 | ProgramRelevanceFilter (8-12 per Tribe) | Supersedes AF-04; omitted programs in appendix | ✓ Good — focused packets, complete coverage |
 | Batch GC every 25 Tribes | Prevents memory buildup across 592 Tribe batch generation | ✓ Good — stable memory usage |
 | Change tracking with state persistence | Per-Tribe JSON state enables "Since Last Packet" diff sections | ✓ Good — 5 change types detected |
+| Centralized src/paths.py | Single source of truth for all file paths, imports only pathlib | ✓ Good — 25 constants, 47 consumers |
+| Circuit breaker wraps retry loop | Trips only when ALL retries exhausted, not per-attempt | ✓ Good — injectable clock for testing |
+| Batch CFDA queries (not per-Tribe) | 70 API calls vs 592; respects rate limits | ✓ Good — 14 CFDAs x 5 FYs |
+| Housing authority alias curation | 6 rounds programmatic + curated overrides | ✓ Good — 418 → 451 coverage |
+| Area-weighted hazard aggregation | Weighted avg for percentiles, weighted sum for EAL | ✓ Good — dual-CRS (EPSG:5070 + EPSG:3338) |
+| 4 document types with air gap | Doc A/C internal, Doc B/D congressional; no strategy leakage | ✓ Good — quality review enforces |
+| Regional aggregation (8 regions) | NCA5-based regions with crosscutting region for all 592 | ✓ Good — Doc C/D per region |
+| DOM methods for web widget (not innerHTML) | XSS prevention in client-side JavaScript | ✓ Good — security best practice |
 
 ## Current State
 
 **v1.0 MVP** shipped 2026-02-09 — policy intelligence pipeline with 4 scrapers, 5 monitors, decision engine, 14-section briefing.
 **v1.1 Tribe-Specific Advocacy Packets** shipped 2026-02-10 — per-Tribe DOCX generation for 592 Tribes with award history, hazard profiling, economic impact, congressional delegation, and web distribution widget.
+**v1.2 Tech Debt Cleanup + Data Foundation** shipped 2026-02-11 — API resilience, real award/hazard data population, 4 document types with audience differentiation, regional aggregation, quality review, and GitHub Pages deployment. 992 documents generated (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D). Data completeness: ~87% (up from ~39%).
 
-**Next milestone:** v1.2 Tech Debt Cleanup (started 2026-02-11)
+**Next milestone:** Planning (v1.3 candidates in .planning/milestones/v1.2-REQUIREMENTS.md Future Requirements section)
 
 ---
-*Last updated: 2026-02-11 after v1.2 requirements defined*
+*Last updated: 2026-02-11 after v1.2 milestone completion*

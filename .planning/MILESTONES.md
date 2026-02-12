@@ -1,5 +1,35 @@
 # Project Milestones: TCR Policy Scanner
 
+## v1.2 Tech Debt Cleanup + Data Foundation (Shipped: 2026-02-11)
+
+**Delivered:** Eliminated tech debt, added API resilience with circuit breakers and cache fallback, populated real USASpending award data (451/592 Tribes) and FEMA NRI hazard profiles (592/592 Tribes), built 4-document-type system with audience differentiation and air gap enforcement, regional aggregation across 8 regions, quality review automation, and GitHub Pages deployment — producing 992 data-backed advocacy documents.
+
+**Phases completed:** 9-14 (20 plans total)
+
+**Key accomplishments:**
+
+- Centralized all file paths in src/paths.py (25 constants, 47 files migrated) and achieved ruff-clean codebase
+- Built circuit breaker pattern (CLOSED/OPEN/HALF_OPEN) with configurable retry/backoff and cache fallback for API resilience across all 4 scrapers
+- Populated award caches for 451/592 Tribes (76.2%) via batch CFDA queries and 6-round housing authority alias curation (18,776 total aliases)
+- Populated hazard profiles for all 592 Tribes with area-weighted FEMA NRI data (dual-CRS crosswalk) and USFS wildfire risk override
+- Built 4-document-type system (Doc A/B/C/D) with audience differentiation, air gap enforcement, and quality review automation
+- Deployed regional aggregation (8 NCA5 regions), data validation, and GitHub Pages with production URLs
+
+**Stats:**
+
+- 95 Python source files, ~37,900 lines of Python (src + tests)
+- 6 phases, 20 plans, 24 requirements
+- 743 tests (456 new: circuit breaker, hazard aggregation, audience filtering, regional, quality review, etc.)
+- 97 commits, 1,368 files changed (+194,056 / -57,448 lines, includes 1,184+ regenerated data cache files)
+- 1 day from v1.1 ship to v1.2 ship (2026-02-11)
+- 4 research agents deployed (Sovereignty Scout, Fire Keeper, River Runner, Horizon Walker)
+
+**Git range:** `bcd6635` (v1.1 end) -> `8f96850` (v1.2 end)
+
+**What's next:** Planning v1.3 (congressional alerts, confidence scoring, scraper pagination)
+
+---
+
 ## v1.0 MVP (Shipped: 2026-02-09)
 
 **Delivered:** Automated policy intelligence pipeline scanning 4 federal APIs, scoring relevance against 16 Tribal climate resilience programs, running 5 threat/signal monitors, classifying advocacy goals, and producing a 14-section advocacy intelligence briefing for Tribal Leaders.
