@@ -10,11 +10,10 @@ quality gate, resolution logging).
 import pytest
 from docx import Document
 from docx.oxml.ns import qn
-from docx.shared import Inches, Pt
+from docx.shared import Inches
 
 from src.packets.docx_template import (
     BOX_SCHEMES,
-    LEFT_RATIO,
     MARGIN_LEFT,
     MARGIN_RIGHT,
     PAGE_WIDTH,
@@ -30,7 +29,6 @@ from src.packets.agent_review import (
     AGENT_PRIORITY,
     AgentReviewOrchestrator,
     Critique,
-    MIN_AGENTS_FOR_QUALITY_GATE,
 )
 
 

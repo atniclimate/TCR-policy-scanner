@@ -15,24 +15,13 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import pytest
 from docx import Document as DocxDocument
 
 from src.packets.context import TribePacketContext
-from src.packets.doc_types import DOC_A, DOC_B, DOC_C, DOC_D
+from src.packets.doc_types import DOC_A, DOC_B
 from src.packets.docx_engine import DocxEngine
-from src.packets.docx_hotsheet import HotSheetRenderer
-from src.packets.docx_sections import (
-    render_delegation_section,
-    render_executive_summary,
-    render_hazard_summary,
-    render_messaging_framework,
-    render_structural_asks_section,
-)
-from src.packets.docx_styles import StyleManager
 from src.packets.economic import (
     EconomicImpactCalculator,
-    ProgramEconomicImpact,
     TribeEconomicSummary,
 )
 

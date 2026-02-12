@@ -5,7 +5,6 @@ This script is run once during plan 12-04 execution and should be deleted after.
 """
 
 import json
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
 

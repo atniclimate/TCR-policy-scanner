@@ -7,18 +7,14 @@ clean document pass, and batch review aggregation.
 Uses python-docx to create small mock DOCX files with targeted content.
 """
 
-import tempfile
 from pathlib import Path
 
-import pytest
 from docx import Document
 
 from src.packets.doc_types import DOC_A, DOC_B, DOC_C, DOC_D
 from src.packets.quality_review import (
     BatchReviewResult,
     DocumentQualityReviewer,
-    ReviewIssue,
-    ReviewResult,
 )
 
 

@@ -19,11 +19,10 @@ from typing import TYPE_CHECKING
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.shared import Pt
 
 from src.config import FISCAL_YEAR_SHORT
+from src.utils import format_dollars
 from src.packets.docx_styles import (
-    COLORS,
     StyleManager,
     apply_zebra_stripe,
     format_header_row,
@@ -149,7 +148,7 @@ def render_regional_executive_summary(
     if ctx.total_awards > 0:
         doc.add_paragraph(
             f"Total Federal Climate Resilience Investment: "
-            f"${ctx.total_awards:,.0f} across {ctx.award_coverage} "
+            f"{format_dollars(ctx.total_awards)} across {ctx.award_coverage} "
             f"Tribal Nations",
             style="HS Body",
         )
@@ -165,8 +164,8 @@ def render_regional_executive_summary(
     if econ.get("total_high", 0) > 0:
         doc.add_paragraph(
             f"Aggregate Economic Impact: "
-            f"${econ.get('total_low', 0):,.0f} to "
-            f"${econ.get('total_high', 0):,.0f}",
+            f"{format_dollars(econ.get('total_low', 0))} to "
+            f"{format_dollars(econ.get('total_high', 0))}",
             style="HS Body",
         )
         jobs_low = econ.get("total_jobs_low", 0)
@@ -323,7 +322,7 @@ def render_regional_award_landscape(
     # Aggregate summary
     doc.add_paragraph(
         f"Total Federal Climate Resilience Awards: "
-        f"${ctx.total_awards:,.0f}",
+        f"{format_dollars(ctx.total_awards)}",
         style="HS Body",
     )
     doc.add_paragraph(

@@ -22,7 +22,6 @@ from src.packets.hazards import (
     score_to_rating,
 )
 
-import math
 
 
 # ============================================================================

@@ -26,7 +26,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Inches, Pt
 
 from src.packets.context import TribePacketContext
-from src.packets.doc_types import DOC_B, DocumentTypeConfig
+from src.packets.doc_types import DocumentTypeConfig
 from src.packets.docx_hotsheet import HotSheetRenderer
 from src.packets.docx_sections import (
     render_appendix,

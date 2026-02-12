@@ -281,18 +281,17 @@ class AgentReviewOrchestrator:
                         applied_critique=sorted_critiques[0],
                     ))
 
-            # Approve all critiques from the winning agent(s)
-            # and non-conflicting critiques from lower-priority agents
-            approved_agents = set()
+            # Approve one critique per agent (highest priority first)
+            approved_agents_in_section: set[str] = set()
             for c in sorted_critiques:
-                if c.agent not in approved_agents or len(agents_in_section) == 1:
+                if c.agent not in approved_agents_in_section:
                     self._revisions.append(AppliedRevision(
                         source_agent=c.agent,
                         section=c.section,
                         severity=c.severity,
                         critique=c,
                     ))
-                    approved_agents.add(c.agent)
+                    approved_agents_in_section.add(c.agent)
 
         self._resolved = True
         logger.info(

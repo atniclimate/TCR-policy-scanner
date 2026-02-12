@@ -22,7 +22,6 @@ from typing import TYPE_CHECKING, Any
 from docx import Document
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
-from docx.shared import Pt
 
 from src.packets.context import TribePacketContext
 from src.utils import format_dollars
@@ -33,6 +32,7 @@ from src.packets.docx_styles import (
     apply_zebra_stripe,
     format_header_row,
 )
+from src.packets.docx_template import add_horizontal_rule
 from src.packets.economic import (
     METHODOLOGY_CITATION,
     EconomicImpactCalculator,
@@ -118,7 +118,12 @@ def _normalize_cfda(cfda: Any) -> list[str]:
 
 
 def _add_paragraph_shading(paragraph, color_hex: str) -> None:
-    """Apply background shading to a paragraph via XML manipulation."""
+    """Apply background shading to a paragraph via XML manipulation.
+
+    Creates a FRESH OxmlElement each call. Do NOT cache or reuse the
+    shading element across paragraphs -- OxmlElement.append() moves
+    the node, so only the last paragraph would receive the shading.
+    """
     pPr = paragraph._p.get_or_add_pPr()
     shd = OxmlElement("w:shd")
     shd.set(qn("w:fill"), color_hex)
@@ -736,13 +741,7 @@ class HotSheetRenderer:
 
     def _add_methodology_footnote(self) -> None:
         """Add methodology citation as footnote with horizontal rule."""
-        # Thin horizontal rule
-        rule_para = self.document.add_paragraph()
-        rule_run = rule_para.add_run(
-            "\u2500" * 40
-        )  # Box-drawing horizontal line
-        rule_run.font.size = Pt(6)
-        rule_run.font.color.rgb = COLORS.muted
+        add_horizontal_rule(self.document, color="D1D5DB", weight=2)
 
         # Citation text
         self.document.add_paragraph(METHODOLOGY_CITATION, style="HS Small")

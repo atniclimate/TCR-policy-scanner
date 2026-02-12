@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -29,7 +30,7 @@ from src.packets.congress import CongressionalMapper
 from src.packets.doc_types import DOC_A, DOC_B, DocumentTypeConfig
 from src.packets.docx_engine import DocxEngine
 from src.packets.ecoregion import EcoregionMapper
-from src.packets.economic import EconomicImpactCalculator
+from src.packets.economic import EconomicImpactCalculator, TribeEconomicSummary
 from src.packets.registry import TribalRegistry
 from src.paths import (
     AWARD_CACHE_DIR,
@@ -39,12 +40,35 @@ from src.paths import (
     PACKETS_OUTPUT_DIR,
     PROJECT_ROOT,
 )
+from src.utils import format_dollars
 from src.packets.agent_review import AgentReviewOrchestrator
 from src.packets.relevance import ProgramRelevanceFilter
 
 logger = logging.getLogger(__name__)
 
 _MAX_CACHE_SIZE_BYTES: int = 10 * 1024 * 1024  # 10 MB
+
+_TRIBE_ID_PATTERN = re.compile(r"^[a-zA-Z0-9_-]+$")
+
+
+def _sanitize_tribe_id(tribe_id: str) -> str:
+    """Validate tribe_id contains only safe characters for file paths.
+
+    Args:
+        tribe_id: Tribe identifier to validate.
+
+    Returns:
+        The validated tribe_id.
+
+    Raises:
+        ValueError: If tribe_id contains unsafe characters.
+    """
+    if not _TRIBE_ID_PATTERN.match(tribe_id):
+        raise ValueError(
+            f"Invalid tribe_id '{tribe_id}': must contain only "
+            f"alphanumeric characters, underscores, and hyphens"
+        )
+    return tribe_id
 
 
 class PacketOrchestrator:
@@ -283,6 +307,7 @@ class PacketOrchestrator:
         Returns:
             Parsed JSON dict, or empty dict on missing/corrupt files.
         """
+        tribe_id = _sanitize_tribe_id(tribe_id)
         cache_file = cache_dir / f"{tribe_id}.json"
         if not cache_file.exists():
             return {}
@@ -312,7 +337,7 @@ class PacketOrchestrator:
         Returns:
             Fully populated TribePacketContext.
         """
-        tribe_id = tribe["tribe_id"]
+        tribe_id = _sanitize_tribe_id(tribe["tribe_id"])
         states = tribe.get("states", [])
 
         # Ecoregion classification
@@ -450,7 +475,7 @@ class PacketOrchestrator:
 
         total_obligation = sum(a.get("obligation", 0.0) for a in context.awards)
         count = len(context.awards)
-        print(f"    Total Obligation: ${total_obligation:,.0f} across {count} awards")
+        print(f"    Total Obligation: {format_dollars(total_obligation)} across {count} awards")
 
         # Group by program/CFDA
         program_totals: dict[str, float] = {}
@@ -461,7 +486,7 @@ class PacketOrchestrator:
         if program_totals:
             prog_strs = []
             for prog, total in sorted(program_totals.items(), key=lambda x: -x[1]):
-                prog_strs.append(f"{prog} (${total:,.0f})")
+                prog_strs.append(f"{prog} ({format_dollars(total)})")
             print(f"    Programs: {', '.join(prog_strs)}")
 
     def _display_hazard_summary(self, context: TribePacketContext) -> None:
@@ -498,7 +523,7 @@ class PacketOrchestrator:
                 haz_type = h.get("type", "Unknown")
                 haz_score = h.get("risk_score", 0.0)
                 haz_eal = h.get("eal_total", 0.0)
-                print(f"      {i}. {haz_type} (score: {haz_score:.1f}, EAL: ${haz_eal:,.0f})")
+                print(f"      {i}. {haz_type} (score: {haz_score:.1f}, EAL: {format_dollars(haz_eal)})")
 
         # USFS wildfire section
         usfs = context.hazard_profile.get("usfs_wildfire", {})
@@ -543,6 +568,30 @@ class PacketOrchestrator:
         context = self._build_context(tribe)
         return self.generate_packet_from_context(context, tribe)
 
+    def _enrich_context_with_economics(
+        self, context: TribePacketContext
+    ) -> TribeEconomicSummary:
+        """Compute economic impact and store in context.
+
+        Shared between generate_packet_from_context() and
+        generate_tribal_docs() to avoid duplicating the computation.
+
+        Args:
+            context: TribePacketContext to enrich (modified in-place).
+
+        Returns:
+            The computed TribeEconomicSummary.
+        """
+        economic_summary = self.economic_calculator.compute(
+            tribe_id=context.tribe_id,
+            tribe_name=context.tribe_name,
+            awards=context.awards,
+            districts=context.districts,
+            programs=self.programs,
+        )
+        context.economic_impact = asdict(economic_summary)
+        return economic_summary
+
     def generate_packet_from_context(
         self, context: TribePacketContext, tribe: dict
     ) -> Path:
@@ -558,17 +607,7 @@ class PacketOrchestrator:
         Returns:
             Path to generated .docx file.
         """
-        # Compute economic impact
-        economic_summary = self.economic_calculator.compute(
-            tribe_id=context.tribe_id,
-            tribe_name=context.tribe_name,
-            awards=context.awards,
-            districts=context.districts,
-            programs=self.programs,
-        )
-
-        # Store economic impact in context
-        context.economic_impact = asdict(economic_summary)
+        economic_summary = self._enrich_context_with_economics(context)
 
         # Filter relevant programs
         relevant = self.relevance_filter.filter_for_tribe(
@@ -751,14 +790,7 @@ class PacketOrchestrator:
             List of Paths to generated .docx files.
         """
         # Compute shared data once
-        economic_summary = self.economic_calculator.compute(
-            tribe_id=context.tribe_id,
-            tribe_name=context.tribe_name,
-            awards=context.awards,
-            districts=context.districts,
-            programs=self.programs,
-        )
-        context.economic_impact = asdict(economic_summary)
+        economic_summary = self._enrich_context_with_economics(context)
 
         relevant = self.relevance_filter.filter_for_tribe(
             hazard_profile=context.hazard_profile,
@@ -920,6 +952,14 @@ class PacketOrchestrator:
             try:
                 # Get Tribe IDs for this region
                 tribe_ids = aggregator.get_tribe_ids_for_region(region_id)
+                skipped = [
+                    tid for tid in tribe_ids if tid not in all_contexts
+                ]
+                if skipped:
+                    logger.warning(
+                        "Region %s: skipping %d Tribes with missing context: %s",
+                        region_id, len(skipped), skipped[:5],
+                    )
                 region_contexts = [
                     all_contexts[tid]
                     for tid in tribe_ids

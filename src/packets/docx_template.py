@@ -204,7 +204,7 @@ def _set_cell_border(cell, color_hex: str, size: int = 4) -> None:
 
 
 def create_two_column_grid(document: Document,
-                           left_ratio: float = LEFT_RATIO) -> "Table":
+                           left_ratio: float = LEFT_RATIO):
     """Create a borderless 2-column asymmetric table (default 62/38 split).
 
     Uses invisible borders for a clean layout grid.  Column widths are
@@ -473,10 +473,18 @@ class TemplateBuilder:
             if "left_indent" in spec:
                 fmt.left_indent = spec["left_indent"]
 
-            # Body text defaults: rag-right, widow control, 1.15 line spacing
-            fmt.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            fmt.widow_control = True
-            fmt.line_spacing = 1.15
+            # Body text defaults based on style purpose
+            centered_styles = {"HS Footer", "HS Page Number"}
+            if name in centered_styles:
+                fmt.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            else:
+                fmt.alignment = WD_ALIGN_PARAGRAPH.LEFT
+
+            # Widow control and line spacing for multi-line body styles only
+            single_line_styles = {"HS Footer", "HS Page Number", "HS Box Title"}
+            if name not in single_line_styles:
+                fmt.widow_control = True
+                fmt.line_spacing = 1.15
 
             existing_names.add(name)
 

@@ -30,6 +30,7 @@ from docx.shared import Pt
 from src.config import FISCAL_YEAR_SHORT
 from src.packets.context import TribePacketContext
 from src.packets.docx_hotsheet import RELEVANT_COMMITTEE_KEYWORDS
+from src.utils import format_dollars
 from src.packets.docx_styles import (
     CI_STATUS_LABELS,
     COLORS,
@@ -266,7 +267,7 @@ def render_executive_summary(
 
     if total_obligation > 0:
         document.add_paragraph(
-            f"Total Federal Climate Resilience Funding: ${total_obligation:,.0f}",
+            f"Total Federal Climate Resilience Funding: {format_dollars(total_obligation)}",
             style="HS Body",
         )
     else:
@@ -538,7 +539,7 @@ def render_hazard_summary(
             row.cells[1].text = f"{risk_score:.1f}" if risk_score is not None else "N/A"
             row.cells[2].text = hazard.get("risk_rating", "N/A")
             eal = hazard.get("eal_total")
-            row.cells[3].text = f"${eal:,.0f}" if eal is not None else "N/A"
+            row.cells[3].text = format_dollars(eal) if eal is not None else "N/A"
 
         apply_zebra_stripe(table)
 

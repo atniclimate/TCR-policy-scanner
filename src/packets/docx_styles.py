@@ -46,7 +46,7 @@ class _ColorNamespace:
     primary_dark = RGBColor(0x1A, 0x23, 0x7E)
     heading = RGBColor(0x37, 0x41, 0x51)
     body_text = RGBColor(0x1F, 0x29, 0x37)
-    muted = RGBColor(0x6B, 0x72, 0x80)
+    muted = RGBColor(0x4B, 0x55, 0x63)
     table_header_bg = "1A237E"
     table_stripe_even = "F2F2F2"
     table_stripe_odd = "FFFFFF"
@@ -128,7 +128,8 @@ def format_header_row(table, headers: list[str]) -> None:
     """Style the first row of a table as a dark header with white text.
 
     Applies dark background (``COLORS.table_header_bg``) and white bold
-    Arial 9pt text to each cell in the first row.
+    Arial 9pt text to each cell in the first row. Also sets the
+    ``w:tblHeader`` property for Section 508 screen reader accessibility.
 
     Args:
         table: A python-docx Table object.
@@ -145,6 +146,11 @@ def format_header_row(table, headers: list[str]) -> None:
             run.font.bold = True
             run.font.size = Pt(9)
             run.font.name = "Arial"
+
+    # Section 508: mark header row for screen readers
+    trPr = header_row._tr.get_or_add_trPr()
+    tblHeader = OxmlElement("w:tblHeader")
+    trPr.append(tblHeader)
 
 
 # ---------------------------------------------------------------------------
@@ -184,7 +190,7 @@ class StyleManager:
             },
             {
                 "name": "HS Subtitle",
-                "size": Pt(12),
+                "size": Pt(11),
                 "bold": False,
                 "color": COLORS.heading,
                 "space_after": Pt(4),
@@ -226,6 +232,20 @@ class StyleManager:
                 "color": COLORS.body_text,
                 "left_indent": Inches(0.3),
                 "space_after": Pt(2),
+            },
+            {
+                "name": "HS Table Header",
+                "size": Pt(9),
+                "bold": True,
+                "color": RGBColor(0xFF, 0xFF, 0xFF),
+                "space_after": Pt(0),
+            },
+            {
+                "name": "HS Table Body",
+                "size": Pt(9),
+                "bold": False,
+                "color": COLORS.body_text,
+                "space_after": Pt(0),
             },
         ]
 

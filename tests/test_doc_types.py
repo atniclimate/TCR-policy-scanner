@@ -12,7 +12,6 @@ from src.packets.doc_types import (
     DOC_C,
     DOC_D,
     DOC_TYPES,
-    DocumentTypeConfig,
 )
 
 
