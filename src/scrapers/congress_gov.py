@@ -92,43 +92,146 @@ class CongressGovScraper(BaseScraper):
         logger.info("Congress.gov: collected %d unique items", len(all_items))
         return all_items
 
+    # Pagination constants
+    _PAGE_LIMIT = 250        # Congress.gov API max per page
+    _SAFETY_CAP = 2500       # 10 pages max per query
+    _PAGE_DELAY = 0.3        # seconds between page fetches
+
     async def _search_congress(
         self, session, term: str,
         bill_type: str = "", congress: int = 119,
     ) -> list[dict]:
-        """Search for bills in a specific Congress and bill type."""
+        """Search for bills in a specific Congress and bill type.
+
+        Paginates through all available results using offset-based pagination.
+        Safety cap at 2,500 results (10 pages) to prevent runaway queries.
+        """
         from_date = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
-        params = {
-            "query": term,
-            "fromDateTime": from_date,
-            "sort": "updateDate+desc",
-            "limit": 50,
-        }
 
         # Congress-specific bill endpoint
         endpoint = f"{self.base_url}/bill/{congress}"
         if bill_type:
             endpoint = f"{endpoint}/{bill_type}"
-        url = f"{endpoint}?{urlencode(params)}"
 
-        data = await self._request_with_retry(session, "GET", url)
-        bills = data.get("bills", [])
-        return [self._normalize(bill) for bill in bills]
+        all_bills: list[dict] = []
+        offset = 0
+        total_count = None
+
+        while True:
+            params = {
+                "query": term,
+                "fromDateTime": from_date,
+                "sort": "updateDate+desc",
+                "limit": self._PAGE_LIMIT,
+                "offset": offset,
+            }
+            url = f"{endpoint}?{urlencode(params)}"
+
+            data = await self._request_with_retry(session, "GET", url)
+            bills = data.get("bills", [])
+
+            # Extract total count from pagination metadata
+            pagination = data.get("pagination", {})
+            if total_count is None:
+                total_count = pagination.get("count", len(bills))
+
+            all_bills.extend(bills)
+
+            # Safety cap check
+            if len(all_bills) >= self._SAFETY_CAP:
+                logger.warning(
+                    "Congress.gov: safety cap %d reached for '%s' (%s), "
+                    "truncating %d -> %d",
+                    self._SAFETY_CAP, term, bill_type,
+                    total_count or len(all_bills), len(all_bills),
+                )
+                break
+
+            # Check if more pages exist
+            if not pagination.get("next") or len(bills) < self._PAGE_LIMIT:
+                break
+
+            offset += self._PAGE_LIMIT
+            await asyncio.sleep(self._PAGE_DELAY)
+
+        if total_count is None:
+            total_count = len(all_bills)
+
+        logger.info(
+            "Congress.gov: fetched %d/%d bills for '%s' (%s)",
+            len(all_bills), total_count, term, bill_type or "all",
+        )
+        if len(all_bills) < total_count and len(all_bills) < self._SAFETY_CAP:
+            logger.warning(
+                "Congress.gov: truncated %d -> %d for '%s'",
+                total_count, len(all_bills), term,
+            )
+
+        return [self._normalize(bill) for bill in all_bills]
 
     async def _search(self, session, query: str) -> list[dict]:
-        """Execute a broad search query against the bill endpoint."""
-        from_date = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
-        params = {
-            "query": query,
-            "fromDateTime": from_date,
-            "sort": "updateDate+desc",
-            "limit": 50,
-        }
-        url = f"{self.base_url}/bill?{urlencode(params)}"
+        """Execute a broad search query against the bill endpoint.
 
-        data = await self._request_with_retry(session, "GET", url)
-        bills = data.get("bills", [])
-        return [self._normalize(bill) for bill in bills]
+        Paginates through all available results using offset-based pagination.
+        Safety cap at 2,500 results (10 pages) to prevent runaway queries.
+        """
+        from_date = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%Y-%m-%dT00:00:00Z")
+
+        all_bills: list[dict] = []
+        offset = 0
+        total_count = None
+
+        while True:
+            params = {
+                "query": query,
+                "fromDateTime": from_date,
+                "sort": "updateDate+desc",
+                "limit": self._PAGE_LIMIT,
+                "offset": offset,
+            }
+            url = f"{self.base_url}/bill?{urlencode(params)}"
+
+            data = await self._request_with_retry(session, "GET", url)
+            bills = data.get("bills", [])
+
+            # Extract total count from pagination metadata
+            pagination = data.get("pagination", {})
+            if total_count is None:
+                total_count = pagination.get("count", len(bills))
+
+            all_bills.extend(bills)
+
+            # Safety cap check
+            if len(all_bills) >= self._SAFETY_CAP:
+                logger.warning(
+                    "Congress.gov: safety cap %d reached for '%s', "
+                    "truncating %d -> %d",
+                    self._SAFETY_CAP, query,
+                    total_count or len(all_bills), len(all_bills),
+                )
+                break
+
+            # Check if more pages exist
+            if not pagination.get("next") or len(bills) < self._PAGE_LIMIT:
+                break
+
+            offset += self._PAGE_LIMIT
+            await asyncio.sleep(self._PAGE_DELAY)
+
+        if total_count is None:
+            total_count = len(all_bills)
+
+        logger.info(
+            "Congress.gov: fetched %d/%d bills for '%s'",
+            len(all_bills), total_count, query,
+        )
+        if len(all_bills) < total_count and len(all_bills) < self._SAFETY_CAP:
+            logger.warning(
+                "Congress.gov: truncated %d -> %d for '%s'",
+                total_count, len(all_bills), query,
+            )
+
+        return [self._normalize(bill) for bill in all_bills]
 
     def _normalize(self, item: dict) -> dict:
         """Map Congress.gov fields to the standard schema."""

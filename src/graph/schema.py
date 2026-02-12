@@ -102,6 +102,48 @@ class CongressionalDistrictNode:
     party: str = ""
 
 
+@dataclass
+class BillNode:
+    """Congressional bill tracked for Tribal relevance.
+
+    Represents a bill in the knowledge graph with edges to its sponsor
+    (SPONSORED_BY), committees (REFERRED_TO), and affected programs
+    (AFFECTS_PROGRAM). Created by the congressional intelligence pipeline.
+    """
+    id: str              # e.g., "bill_119_hr_1234"
+    congress: int
+    bill_type: str
+    bill_number: int
+    title: str = ""
+    status: str = ""
+    relevance_score: float = 0.0
+    sponsor_id: str = ""
+    introduced_date: str = ""
+
+
+@dataclass
+class LegislatorNode:
+    """Congressional member with Tribal advocacy relevance.
+
+    Represents a legislator in the knowledge graph with edges from bills
+    (SPONSORED_BY) and from Tribal Nations (DELEGATES_TO). Tracks
+    committee membership and party affiliation for advocacy targeting.
+    """
+    id: str              # bioguide_id
+    name: str
+    chamber: str = ""
+    state: str = ""
+    district: str = ""
+    party: str = ""
+
+
+# ── Congressional Edge Types ──
+# SPONSORED_BY:    BillNode -> LegislatorNode
+# REFERRED_TO:     BillNode -> committee_id (str)
+# AFFECTS_PROGRAM: BillNode -> ProgramNode (metadata: relevance_score)
+# DELEGATES_TO:    TribeNode -> LegislatorNode (metadata: overlap_pct)
+
+
 # ── Edge Types ──
 
 @dataclass

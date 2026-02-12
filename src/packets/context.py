@@ -34,6 +34,12 @@ class TribePacketContext:
     Phase 7 stubs:
         economic_impact: Economic multiplier calculations.
 
+    Congressional intelligence (INTEL-06):
+        congressional_intel: Dict carrying bill intelligence, enhanced
+            delegation, committee activity, appropriations status, scan_date,
+            and confidence scores. Populated by PacketOrchestrator from
+            congressional_intel.json.
+
     Metadata:
         generated_at: ISO timestamp of packet generation.
         congress_session: Congressional session (default "119").
@@ -58,6 +64,12 @@ class TribePacketContext:
 
     # Phase 7 stubs
     economic_impact: dict = field(default_factory=dict)
+
+    # Congressional intelligence (INTEL-06)
+    # Dict carrying bill intelligence, enhanced delegation, committee activity,
+    # appropriations status, scan_date, and confidence scores. Populated by
+    # PacketOrchestrator from congressional_intel.json.
+    congressional_intel: dict = field(default_factory=dict)
 
     # Metadata
     generated_at: str = ""

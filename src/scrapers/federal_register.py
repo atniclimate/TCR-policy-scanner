@@ -40,6 +40,11 @@ AGENCY_SLUGS = [
 class FederalRegisterScraper(BaseScraper):
     """Scrapes the Federal Register API for policy documents."""
 
+    # Pagination constants
+    _PER_PAGE = 50           # Federal Register default page size
+    _MAX_PAGES = 20          # Safety cap: 20 pages = 1,000 results max
+    _PAGE_DELAY = 0.3        # seconds between page fetches
+
     def __init__(self, config: dict):
         super().__init__("federal_register", config=config)
         self.base_url = config["sources"]["federal_register"]["base_url"]
@@ -80,43 +85,138 @@ class FederalRegisterScraper(BaseScraper):
         return all_items
 
     async def _search(self, session, query: str, start_date: str) -> list[dict]:
-        """Execute a single search query."""
-        params = {
-            "conditions[term]": query,
-            "conditions[publication_date][gte]": start_date,
-            "conditions[type][]": DOC_TYPES,
-            "per_page": 50,
-            "order": "newest",
-            "fields[]": [
-                "title", "abstract", "document_number", "type",
-                "publication_date", "agencies", "html_url", "pdf_url",
-                "action", "dates", "cfr_references", "regulation_id_numbers",
-            ],
-        }
-        url = f"{self.base_url}/documents.json?{urlencode(params, doseq=True)}"
-        data = await self._request_with_retry(session, "GET", url)
-        results = data.get("results", [])
-        return [self._normalize(item) for item in results]
+        """Execute a single search query with full pagination.
+
+        Loops through all pages returned by the Federal Register API.
+        Safety cap at 20 pages (1,000 results) to prevent runaway queries.
+        """
+        all_items: list[dict] = []
+        page = 1
+        total_pages = None
+        total_count = None
+
+        while True:
+            params = {
+                "conditions[term]": query,
+                "conditions[publication_date][gte]": start_date,
+                "conditions[type][]": DOC_TYPES,
+                "per_page": self._PER_PAGE,
+                "page": page,
+                "order": "newest",
+                "fields[]": [
+                    "title", "abstract", "document_number", "type",
+                    "publication_date", "agencies", "html_url", "pdf_url",
+                    "action", "dates", "cfr_references", "regulation_id_numbers",
+                ],
+            }
+            url = f"{self.base_url}/documents.json?{urlencode(params, doseq=True)}"
+            data = await self._request_with_retry(session, "GET", url)
+
+            results = data.get("results", [])
+            all_items.extend(self._normalize(item) for item in results)
+
+            # Extract pagination metadata from response
+            if total_pages is None:
+                total_pages = data.get("total_pages", 1)
+                total_count = data.get("count", len(results))
+
+            logger.info(
+                "Federal Register: fetched %d/%d items (page %d/%d) for '%s'",
+                len(all_items), total_count or len(all_items),
+                page, total_pages or 1, query,
+            )
+
+            # Safety cap check
+            if page >= self._MAX_PAGES:
+                logger.warning(
+                    "Federal Register: safety cap %d pages reached for '%s', "
+                    "truncating %d -> %d",
+                    self._MAX_PAGES, query,
+                    total_count or len(all_items), len(all_items),
+                )
+                break
+
+            # Check if more pages exist
+            if page >= (total_pages or 1) or not results:
+                break
+
+            page += 1
+            await asyncio.sleep(self._PAGE_DELAY)
+
+        if total_count and len(all_items) < total_count and page < self._MAX_PAGES:
+            logger.warning(
+                "Federal Register: truncated %d -> %d for '%s'",
+                total_count, len(all_items), query,
+            )
+
+        return all_items
 
     async def _search_by_agencies(self, session, start_date: str) -> list[dict]:
-        """Sweep key agencies for any Rule/Notice mentioning Tribal terms."""
-        params = {
-            "conditions[term]": "tribal",
-            "conditions[agencies][]": AGENCY_SLUGS,
-            "conditions[publication_date][gte]": start_date,
-            "conditions[type][]": ["RULE", "PRORULE", "NOTICE"],
-            "per_page": 50,
-            "order": "newest",
-            "fields[]": [
-                "title", "abstract", "document_number", "type",
-                "publication_date", "agencies", "html_url", "pdf_url",
-                "action", "dates", "cfr_references", "regulation_id_numbers",
-            ],
-        }
-        url = f"{self.base_url}/documents.json?{urlencode(params, doseq=True)}"
-        data = await self._request_with_retry(session, "GET", url)
-        results = data.get("results", [])
-        return [self._normalize(item) for item in results]
+        """Sweep key agencies for any Rule/Notice mentioning Tribal terms.
+
+        Paginates through all pages. Safety cap at 20 pages (1,000 results).
+        """
+        all_items: list[dict] = []
+        page = 1
+        total_pages = None
+        total_count = None
+
+        while True:
+            params = {
+                "conditions[term]": "tribal",
+                "conditions[agencies][]": AGENCY_SLUGS,
+                "conditions[publication_date][gte]": start_date,
+                "conditions[type][]": ["RULE", "PRORULE", "NOTICE"],
+                "per_page": self._PER_PAGE,
+                "page": page,
+                "order": "newest",
+                "fields[]": [
+                    "title", "abstract", "document_number", "type",
+                    "publication_date", "agencies", "html_url", "pdf_url",
+                    "action", "dates", "cfr_references", "regulation_id_numbers",
+                ],
+            }
+            url = f"{self.base_url}/documents.json?{urlencode(params, doseq=True)}"
+            data = await self._request_with_retry(session, "GET", url)
+
+            results = data.get("results", [])
+            all_items.extend(self._normalize(item) for item in results)
+
+            # Extract pagination metadata from response
+            if total_pages is None:
+                total_pages = data.get("total_pages", 1)
+                total_count = data.get("count", len(results))
+
+            logger.info(
+                "Federal Register: fetched %d/%d agency-sweep items (page %d/%d)",
+                len(all_items), total_count or len(all_items),
+                page, total_pages or 1,
+            )
+
+            # Safety cap check
+            if page >= self._MAX_PAGES:
+                logger.warning(
+                    "Federal Register: safety cap %d pages reached for agency sweep, "
+                    "truncating %d -> %d",
+                    self._MAX_PAGES,
+                    total_count or len(all_items), len(all_items),
+                )
+                break
+
+            # Check if more pages exist
+            if page >= (total_pages or 1) or not results:
+                break
+
+            page += 1
+            await asyncio.sleep(self._PAGE_DELAY)
+
+        if total_count and len(all_items) < total_count and page < self._MAX_PAGES:
+            logger.warning(
+                "Federal Register: agency sweep truncated %d -> %d",
+                total_count, len(all_items),
+            )
+
+        return all_items
 
     def _normalize(self, item: dict) -> dict:
         """Map Federal Register fields to the standard schema."""
