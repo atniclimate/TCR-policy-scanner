@@ -19,6 +19,7 @@ import json
 import logging
 import os
 import sys
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,6 +32,7 @@ if str(_PROJECT_ROOT) not in sys.path:
 from src.paths import (
     PACKETS_OUTPUT_DIR,
     REGIONAL_CONFIG_PATH,
+    TRIBAL_ALIASES_PATH,
     TRIBAL_REGISTRY_PATH,
     TRIBES_INDEX_PATH,
 )
@@ -41,8 +43,102 @@ DEFAULT_REGISTRY = TRIBAL_REGISTRY_PATH
 DEFAULT_PACKETS = PACKETS_OUTPUT_DIR
 DEFAULT_OUTPUT = TRIBES_INDEX_PATH
 DEFAULT_REGIONAL_CONFIG = REGIONAL_CONFIG_PATH
+DEFAULT_ALIASES = TRIBAL_ALIASES_PATH
 
 MAX_REGISTRY_SIZE = 10 * 1024 * 1024  # 10 MB
+MAX_ALIASES_SIZE = 10 * 1024 * 1024  # 10 MB
+
+
+def _load_filtered_aliases(
+    aliases_path: Path, max_per_tribe: int = 10
+) -> dict[str, list[str]]:
+    """Load tribal aliases and return filtered per-Tribe alias lists.
+
+    Reads data/tribal_aliases.json, builds a reverse mapping from tribe_id
+    to alias strings, filters out housing authority variants, sorts by
+    string length (shortest first), and caps at max_per_tribe per Tribe.
+
+    Args:
+        aliases_path: Path to tribal_aliases.json.
+        max_per_tribe: Maximum aliases to keep per Tribe (default 10).
+
+    Returns:
+        Dict mapping tribe_id to list of filtered alias strings.
+        Returns empty dict if file missing or exceeds size limit.
+    """
+    if not aliases_path.is_file():
+        logger.warning("Aliases file not found: %s", aliases_path)
+        return {}
+
+    # Size guard consistent with MAX_REGISTRY_SIZE pattern
+    file_size = aliases_path.stat().st_size
+    if file_size > MAX_ALIASES_SIZE:
+        logger.warning(
+            "Aliases file too large: %s bytes (limit: %s)",
+            file_size,
+            MAX_ALIASES_SIZE,
+        )
+        return {}
+
+    with open(aliases_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    raw_aliases = data.get("aliases", {})
+
+    # Build reverse mapping: tribe_id -> [alias1, alias2, ...]
+    reverse: dict[str, list[str]] = defaultdict(list)
+    for alias_str, tribe_id in raw_aliases.items():
+        # Filter out housing authority variants (not useful for search)
+        if "housing" in alias_str.lower():
+            continue
+        reverse[tribe_id].append(alias_str)
+
+    # Sort by length (shortest first) and cap at max_per_tribe
+    result: dict[str, list[str]] = {}
+    for tribe_id, aliases in reverse.items():
+        aliases.sort(key=len)
+        result[tribe_id] = aliases[:max_per_tribe]
+
+    logger.info(
+        "Loaded aliases: %d Tribes with aliases (from %d total entries)",
+        len(result),
+        len(raw_aliases),
+    )
+    return result
+
+
+def _get_tribe_generated_at(
+    tribe_id: str, packets_dir: Path
+) -> str | None:
+    """Get the most recent DOCX modification time for a Tribe.
+
+    Checks internal/ and congressional/ subdirectories for the Tribe's
+    DOCX files and returns the most recent modification time as an
+    ISO 8601 timestamp.
+
+    Args:
+        tribe_id: The Tribe's unique identifier (e.g. "epa_100000001").
+        packets_dir: Root packets directory.
+
+    Returns:
+        ISO 8601 timestamp string or None if no DOCX files exist.
+    """
+    mtimes: list[float] = []
+    for subdir in ("internal", "congressional"):
+        docx_path = packets_dir / subdir / f"{tribe_id}.docx"
+        if docx_path.is_file():
+            mtimes.append(docx_path.stat().st_mtime)
+
+    # Also check flat directory for backward compatibility
+    flat_path = packets_dir / f"{tribe_id}.docx"
+    if flat_path.is_file():
+        mtimes.append(flat_path.stat().st_mtime)
+
+    if not mtimes:
+        return None
+
+    latest = max(mtimes)
+    return datetime.fromtimestamp(latest, tz=timezone.utc).isoformat()
 
 
 def _scan_doc_files(directory: Path) -> dict[str, float]:
@@ -61,12 +157,15 @@ def build_index(
     packets_dir: Path,
     output_path: Path,
     regional_config_path: Path | None = None,
+    aliases_path: Path | None = None,
 ) -> dict:
     """Build tribes.json with searchable index and packet metadata.
 
     Reads the Tribal registry, scans the packets directory for DOCX files
     across internal/ and congressional/ subdirectories, and writes a JSON
-    index suitable for the web widget autocomplete.
+    index suitable for the web widget autocomplete.  Embeds per-Tribe
+    aliases (for fuzzy search) and per-Tribe generated_at timestamps
+    (for freshness badges).
 
     Args:
         registry_path: Path to tribal_registry.json.
@@ -74,6 +173,9 @@ def build_index(
             internal/ and congressional/ subdirectories.
         output_path: Where to write tribes.json.
         regional_config_path: Path to regional_config.json (optional).
+        aliases_path: Path to tribal_aliases.json (optional).  When
+            provided, each Tribe entry gets an ``aliases`` list of up
+            to 10 alternate names for fuzzy search.
 
     Returns:
         The index dict that was written.
@@ -82,6 +184,11 @@ def build_index(
         ValueError: If registry file exceeds 10 MB size limit.
         FileNotFoundError: If registry file does not exist.
     """
+    # Load filtered aliases for fuzzy search embedding
+    if aliases_path is None:
+        aliases_path = DEFAULT_ALIASES
+    filtered_aliases = _load_filtered_aliases(aliases_path)
+
     # Size guard before loading
     size = registry_path.stat().st_size
     if size > MAX_REGISTRY_SIZE:
@@ -138,10 +245,12 @@ def build_index(
         entry = {
             "id": tribe_id,
             "name": tribe.get("name", ""),
+            "aliases": filtered_aliases.get(tribe_id, []),
             "states": tribe.get("states", []),
             "ecoregion": tribe.get("ecoregion", ""),
             "documents": documents,
             "has_complete_data": has_internal and has_congressional,
+            "generated_at": _get_tribe_generated_at(tribe_id, packets_dir),
         }
         tribes_index.append(entry)
 
@@ -280,11 +389,21 @@ def main() -> None:
         default=DEFAULT_REGIONAL_CONFIG,
         help=f"Path to regional_config.json (default: {DEFAULT_REGIONAL_CONFIG})",
     )
+    parser.add_argument(
+        "--aliases",
+        type=Path,
+        default=DEFAULT_ALIASES,
+        help=f"Path to tribal_aliases.json (default: {DEFAULT_ALIASES})",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     index = build_index(
-        args.registry, args.packets, args.output, args.regional_config
+        args.registry,
+        args.packets,
+        args.output,
+        args.regional_config,
+        args.aliases,
     )
     meta = index["metadata"]
     print(

@@ -5,9 +5,11 @@ Tests cover the updated 4-document-type format:
   - Regions section with Doc C/D
   - Metadata section with per-type doc counts
   - Backward compatibility with flat packet directory
+  - Alias embedding and per-Tribe timestamps
 """
 
 import json
+import time
 from pathlib import Path
 
 
@@ -361,3 +363,210 @@ class TestBuildIndex:
         pnw = result["regions"][0]
         assert pnw["documents"]["internal_strategy"] == "regional/internal/pnw.docx"
         assert pnw["documents"]["congressional_overview"] == "regional/congressional/pnw.docx"
+
+
+def _mock_aliases(tribe_ids: list[str] | None = None) -> dict:
+    """Create a mock aliases file with housing variants for filtering tests."""
+    if tribe_ids is None:
+        tribe_ids = ["epa_000000001"]
+    aliases = {}
+    for tid in tribe_ids:
+        aliases[f"{tid} short name"] = tid
+        aliases[f"{tid} longer alternate name"] = tid
+        aliases[f"{tid} medium name here"] = tid
+        aliases[f"{tid} housing authority"] = tid  # Should be filtered
+        aliases[f"{tid} housing program"] = tid  # Should be filtered
+    return {"aliases": aliases}
+
+
+class TestAliasEmbedding:
+    """Tests for _load_filtered_aliases and alias embedding in tribes.json."""
+
+    def test_aliases_embedded_in_tribe_entries(self, tmp_path):
+        """Each Tribe entry contains an aliases list."""
+        from scripts.build_web_index import build_index
+
+        registry_path = tmp_path / "registry.json"
+        _write_json(registry_path, _mock_registry(2))
+        aliases_path = tmp_path / "aliases.json"
+        _write_json(aliases_path, _mock_aliases(["epa_000000001"]))
+        packets_dir = tmp_path / "packets"
+        packets_dir.mkdir()
+        output_path = tmp_path / "tribes.json"
+
+        result = build_index(
+            registry_path, packets_dir, output_path, aliases_path=aliases_path
+        )
+
+        tribe_map = {t["id"]: t for t in result["tribes"]}
+
+        # Tribe 1 has aliases
+        t1 = tribe_map["epa_000000001"]
+        assert isinstance(t1["aliases"], list)
+        assert len(t1["aliases"]) > 0
+
+        # Tribe 2 has empty aliases (no alias data for it)
+        t2 = tribe_map["epa_000000002"]
+        assert t2["aliases"] == []
+
+    def test_housing_aliases_filtered_out(self, tmp_path):
+        """Aliases containing 'housing' are excluded."""
+        from scripts.build_web_index import _load_filtered_aliases
+
+        aliases_path = tmp_path / "aliases.json"
+        _write_json(aliases_path, _mock_aliases(["epa_000000001"]))
+
+        result = _load_filtered_aliases(aliases_path)
+        aliases = result.get("epa_000000001", [])
+
+        for alias in aliases:
+            assert "housing" not in alias.lower()
+        # 5 total aliases minus 2 housing = 3 remaining
+        assert len(aliases) == 3
+
+    def test_aliases_sorted_by_length_shortest_first(self, tmp_path):
+        """Aliases are sorted by string length, shortest first."""
+        from scripts.build_web_index import _load_filtered_aliases
+
+        aliases_path = tmp_path / "aliases.json"
+        _write_json(aliases_path, _mock_aliases(["epa_000000001"]))
+
+        result = _load_filtered_aliases(aliases_path)
+        aliases = result["epa_000000001"]
+
+        lengths = [len(a) for a in aliases]
+        assert lengths == sorted(lengths)
+
+    def test_aliases_capped_at_max_per_tribe(self, tmp_path):
+        """No more than max_per_tribe aliases per Tribe."""
+        from scripts.build_web_index import _load_filtered_aliases
+
+        # Create 20 non-housing aliases
+        tid = "epa_000000001"
+        raw = {f"alias variant {i:03d}": tid for i in range(20)}
+        aliases_path = tmp_path / "aliases.json"
+        _write_json(aliases_path, {"aliases": raw})
+
+        result = _load_filtered_aliases(aliases_path, max_per_tribe=10)
+        assert len(result[tid]) == 10
+
+        result5 = _load_filtered_aliases(aliases_path, max_per_tribe=5)
+        assert len(result5[tid]) == 5
+
+    def test_missing_aliases_file_returns_empty(self, tmp_path):
+        """Missing aliases file produces empty dict, no crash."""
+        from scripts.build_web_index import _load_filtered_aliases
+
+        result = _load_filtered_aliases(tmp_path / "nonexistent.json")
+        assert result == {}
+
+    def test_oversized_aliases_file_returns_empty(self, tmp_path):
+        """Aliases file exceeding 10MB returns empty dict."""
+        from scripts.build_web_index import MAX_ALIASES_SIZE, _load_filtered_aliases
+
+        # Create a file just over the limit
+        aliases_path = tmp_path / "huge_aliases.json"
+        aliases_path.write_bytes(b"x" * (MAX_ALIASES_SIZE + 1))
+
+        result = _load_filtered_aliases(aliases_path)
+        assert result == {}
+
+    def test_missing_aliases_file_graceful_in_build_index(self, tmp_path):
+        """build_index with missing aliases file still produces valid output."""
+        from scripts.build_web_index import build_index
+
+        registry_path = tmp_path / "registry.json"
+        _write_json(registry_path, _mock_registry(2))
+        packets_dir = tmp_path / "packets"
+        packets_dir.mkdir()
+        output_path = tmp_path / "tribes.json"
+
+        result = build_index(
+            registry_path,
+            packets_dir,
+            output_path,
+            aliases_path=tmp_path / "nonexistent.json",
+        )
+
+        # All tribes should have empty aliases
+        for tribe in result["tribes"]:
+            assert tribe["aliases"] == []
+
+
+class TestPerTribeTimestamp:
+    """Tests for per-Tribe generated_at timestamps."""
+
+    def test_generated_at_from_docx_mtime(self, tmp_path):
+        """generated_at uses most recent DOCX file modification time."""
+        from scripts.build_web_index import build_index
+
+        registry_path = tmp_path / "registry.json"
+        _write_json(registry_path, _mock_registry(1))
+        packets_dir = tmp_path / "packets"
+        internal_dir = packets_dir / "internal"
+        internal_dir.mkdir(parents=True)
+        (internal_dir / "epa_000000001.docx").write_bytes(b"PK mock")
+
+        output_path = tmp_path / "tribes.json"
+        result = build_index(
+            registry_path,
+            packets_dir,
+            output_path,
+            aliases_path=tmp_path / "no_aliases.json",
+        )
+
+        tribe = result["tribes"][0]
+        assert tribe["generated_at"] is not None
+        # Should be ISO 8601 with timezone
+        assert "+" in tribe["generated_at"] or "Z" in tribe["generated_at"]
+
+    def test_generated_at_null_when_no_docx(self, tmp_path):
+        """generated_at is null when no DOCX files exist for the Tribe."""
+        from scripts.build_web_index import build_index
+
+        registry_path = tmp_path / "registry.json"
+        _write_json(registry_path, _mock_registry(1))
+        packets_dir = tmp_path / "packets"
+        packets_dir.mkdir()
+
+        output_path = tmp_path / "tribes.json"
+        result = build_index(
+            registry_path,
+            packets_dir,
+            output_path,
+            aliases_path=tmp_path / "no_aliases.json",
+        )
+
+        tribe = result["tribes"][0]
+        assert tribe["generated_at"] is None
+
+    def test_generated_at_uses_latest_mtime(self, tmp_path):
+        """generated_at picks the most recent file across subdirectories."""
+        from scripts.build_web_index import _get_tribe_generated_at
+
+        packets_dir = tmp_path / "packets"
+        internal_dir = packets_dir / "internal"
+        internal_dir.mkdir(parents=True)
+        congressional_dir = packets_dir / "congressional"
+        congressional_dir.mkdir(parents=True)
+
+        # Create internal file first
+        internal_file = internal_dir / "epa_000000001.docx"
+        internal_file.write_bytes(b"PK older")
+
+        # Small delay then create congressional file (newer)
+        time.sleep(0.05)
+        congressional_file = congressional_dir / "epa_000000001.docx"
+        congressional_file.write_bytes(b"PK newer")
+
+        result = _get_tribe_generated_at("epa_000000001", packets_dir)
+        assert result is not None
+
+        # The congressional file mtime should be the one used (newer)
+        from datetime import datetime, timezone
+
+        expected_mtime = congressional_file.stat().st_mtime
+        expected_ts = datetime.fromtimestamp(
+            expected_mtime, tz=timezone.utc
+        ).isoformat()
+        assert result == expected_ts
