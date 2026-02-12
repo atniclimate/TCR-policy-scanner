@@ -976,3 +976,285 @@ class CongressionalDelegation(BaseModel):
         if not v.startswith("epa_"):
             raise ValueError(f"tribe_id must start with 'epa_', got '{v}'")
         return v
+
+
+# ── Congressional Bill Intelligence (INTEL-05) ──
+
+# Valid Congress.gov bill type codes
+BILL_TYPE_CODES = frozenset({
+    "HR",      # House Bill
+    "S",       # Senate Bill
+    "HJRES",   # House Joint Resolution
+    "SJRES",   # Senate Joint Resolution
+    "HCONRES", # House Concurrent Resolution
+    "SCONRES", # Senate Concurrent Resolution
+    "HRES",    # House Simple Resolution
+    "SRES",    # Senate Simple Resolution
+})
+
+
+class BillAction(BaseModel):
+    """Single legislative action on a congressional bill.
+
+    Represents one step in a bill's legislative history, such as
+    introduction, committee referral, floor vote, or signing.
+    """
+
+    action_date: str = Field(
+        ...,
+        description="Date of action in YYYY-MM-DD format",
+        examples=["2025-01-15"],
+    )
+    text: str = Field(
+        ...,
+        description="Description of the legislative action taken",
+        examples=["Referred to the Committee on Natural Resources."],
+    )
+    action_type: str = Field(
+        default="",
+        description="Action type classification",
+        examples=["IntroReferral", "Committee", "Floor"],
+    )
+    chamber: str = Field(
+        default="",
+        description="Chamber where action occurred",
+        examples=["House", "Senate"],
+    )
+
+
+class BillIntelligence(BaseModel):
+    """Congressional bill intelligence record for Tribal advocacy.
+
+    Captures bill metadata, sponsorship, committee activity, subjects,
+    and relevance scoring for a single bill tracked by the scanner.
+    Used by the congressional intelligence pipeline to surface bills
+    affecting Tribal climate resilience programs.
+    """
+
+    bill_id: str = Field(
+        ...,
+        description="Composite bill identifier (congress-type-number)",
+        examples=["119-HR-1234", "119-S-567"],
+    )
+    congress: int = Field(
+        ...,
+        description="Congress number (e.g., 119 for 119th Congress)",
+        examples=[119],
+    )
+    bill_type: str = Field(
+        ...,
+        description="Bill type code from Congress.gov",
+        examples=["HR", "S", "HJRES"],
+    )
+    bill_number: int = Field(
+        ...,
+        description="Bill number within its type",
+        examples=[1234, 567],
+    )
+    title: str = Field(
+        ...,
+        description="Short title or official title of the bill",
+    )
+    sponsor: Optional[dict] = Field(
+        default=None,
+        description="Primary sponsor info (bioguide_id, name, party, state)",
+    )
+    cosponsors: list[dict] = Field(
+        default_factory=list,
+        description="List of cosponsor info dicts",
+    )
+    cosponsor_count: int = Field(
+        default=0,
+        ge=0,
+        description="Total number of cosponsors",
+    )
+    actions: list[BillAction] = Field(
+        default_factory=list,
+        description="Legislative actions in chronological order",
+    )
+    latest_action: Optional[BillAction] = Field(
+        default=None,
+        description="Most recent legislative action on the bill",
+    )
+    committees: list[dict] = Field(
+        default_factory=list,
+        description="Committees to which the bill has been referred",
+    )
+    subjects: list[str] = Field(
+        default_factory=list,
+        description="Legislative subject terms assigned to the bill",
+    )
+    policy_area: str = Field(
+        default="",
+        description="Primary policy area classification",
+        examples=["Native Americans", "Environmental Protection"],
+    )
+    text_url: str = Field(
+        default="",
+        description="URL to the bill text on Congress.gov",
+    )
+    congress_url: str = Field(
+        default="",
+        description="URL to the bill page on Congress.gov",
+    )
+    relevance_score: float = Field(
+        default=0.0,
+        ge=0.0,
+        le=1.0,
+        description="Computed relevance to Tribal climate programs (0.0-1.0)",
+    )
+    matched_programs: list[str] = Field(
+        default_factory=list,
+        description="TCR program IDs this bill is relevant to",
+        examples=[["bia_tcr", "fema_bric"]],
+    )
+    update_date: str = Field(
+        default="",
+        description="Last update date from Congress.gov (YYYY-MM-DD)",
+    )
+    introduced_date: str = Field(
+        default="",
+        description="Date the bill was introduced (YYYY-MM-DD)",
+    )
+
+    @field_validator("bill_type")
+    @classmethod
+    def validate_bill_type(cls, v: str) -> str:
+        if v not in BILL_TYPE_CODES:
+            raise ValueError(
+                f"Invalid bill_type '{v}'. Must be one of: {sorted(BILL_TYPE_CODES)}"
+            )
+        return v
+
+
+class VoteRecord(BaseModel):
+    """Congressional vote record linked to a bill.
+
+    Captures roll call vote results including chamber, date,
+    outcome, and vote tallies.
+    """
+
+    vote_id: str = Field(
+        ...,
+        description="Unique vote identifier",
+        examples=["119-H-42", "119-S-15"],
+    )
+    bill_id: str = Field(
+        default="",
+        description="Associated bill identifier (congress-type-number)",
+    )
+    chamber: str = Field(
+        default="",
+        description="Chamber where vote occurred",
+        examples=["House", "Senate"],
+    )
+    vote_date: str = Field(
+        default="",
+        description="Date of the vote (YYYY-MM-DD)",
+    )
+    result: str = Field(
+        default="",
+        description="Vote outcome",
+        examples=["Passed", "Failed", "Agreed to"],
+    )
+    yea_count: int = Field(
+        default=0,
+        description="Number of yea votes",
+    )
+    nay_count: int = Field(
+        default=0,
+        description="Number of nay votes",
+    )
+
+
+class Legislator(BaseModel):
+    """Congressional member record for bill intelligence context.
+
+    Lightweight legislator reference used within BillIntelligence
+    and CongressionalIntelReport for sponsor/cosponsor tracking.
+    Distinct from the full CongressionalDelegate model which
+    includes committee assignments and contact info.
+    """
+
+    bioguide_id: str = Field(
+        ...,
+        description="Biographical Directory of Congress ID",
+        examples=["C001120", "M001153"],
+    )
+    name: str = Field(
+        ...,
+        description="Display name",
+        examples=["Dan Crenshaw", "Lisa Murkowski"],
+    )
+    state: str = Field(
+        default="",
+        description="Two-letter state abbreviation",
+    )
+    district: str = Field(
+        default="",
+        description="Congressional district (empty for Senators)",
+    )
+    party: str = Field(
+        default="",
+        description="Party affiliation",
+        examples=["Republican", "Democratic"],
+    )
+    chamber: str = Field(
+        default="",
+        description="Legislative chamber",
+        examples=["House", "Senate"],
+    )
+    committees: list[dict] = Field(
+        default_factory=list,
+        description="Committee assignments",
+    )
+    sponsored_bills: list[str] = Field(
+        default_factory=list,
+        description="Bill IDs sponsored by this member",
+    )
+    cosponsored_bills: list[str] = Field(
+        default_factory=list,
+        description="Bill IDs cosponsored by this member",
+    )
+
+
+class CongressionalIntelReport(BaseModel):
+    """Aggregated congressional intelligence report for a Tribal Nation.
+
+    Top-level container produced by the Scout agent and consumed by
+    Fire Keeper for DOCX rendering. Carries all bill intelligence,
+    delegation enhancement status, confidence scores, and scan metadata.
+    """
+
+    tribe_id: str = Field(
+        ...,
+        description="EPA Tribal identifier",
+        examples=["epa_100000001"],
+    )
+    generated_at: str = Field(
+        ...,
+        description="ISO 8601 timestamp of report generation",
+    )
+    bills: list[BillIntelligence] = Field(
+        default_factory=list,
+        description="Bills relevant to this Tribal Nation's programs",
+    )
+    delegation_enhanced: bool = Field(
+        default=False,
+        description="Whether delegation data includes committee activity intel",
+    )
+    confidence: dict = Field(
+        default_factory=dict,
+        description="Per-section confidence scores (source, score, level)",
+    )
+    scan_date: str = Field(
+        default="",
+        description="Date of the congressional scan (YYYY-MM-DD)",
+    )
+
+    @field_validator("tribe_id")
+    @classmethod
+    def validate_tribe_id_format(cls, v: str) -> str:
+        if not v.startswith("epa_"):
+            raise ValueError(f"tribe_id must start with 'epa_', got '{v}'")
+        return v
