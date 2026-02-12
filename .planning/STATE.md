@@ -13,16 +13,16 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Milestone:** v1.3 Production Launch
 **Phase:** 15 of 18 (Congressional Intelligence Pipeline)
-**Plan:** 04 of 7 in phase (01-04 complete, 03 docs only)
+**Plan:** 05 of 7 in phase (01-05 complete, 03 docs only)
 **Status:** In progress
-**Last activity:** 2026-02-12 -- Completed 15-04-PLAN.md (bill detail fetcher)
+**Last activity:** 2026-02-12 -- Completed 15-05-PLAN.md (DOCX renderers)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [█████░░░░░] ~57% IN PROGRESS (4/7 plans in Phase 15 complete)
+v1.3     [███████░░░] ~71% IN PROGRESS (5/7 plans in Phase 15 complete)
 ```
 
 ## Performance Metrics
@@ -33,7 +33,7 @@ v1.3     [█████░░░░░] ~57% IN PROGRESS (4/7 plans in Phase 1
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | Total phases | 14 completed, 4 planned |
-| Total plans | 49 completed |
+| Total plans | 50 completed |
 | Total requirements | 76 completed, 39 active |
 | Total tests | 743 (target: 900+ after Phase 15) |
 | Source files | 96 Python files |
@@ -77,6 +77,9 @@ v1.3     [█████░░░░░] ~57% IN PROGRESS (4/7 plans in Phase 1
 | DEC-1504-01 | Bill relevance: 4 weighted components (subject 0.30, CFDA 0.25, committee 0.20, keyword 0.25) | 15-04 |
 | DEC-1504-02 | Two-phase relevance scoring: quick title scan then full detail scoring | 15-04 |
 | DEC-1504-03 | Voting records deferred pending Senate API availability | 15-04 |
+| DEC-1505-01 | Bills-first ordering (position 4 before delegation at position 5) | 15-05 |
+| DEC-1505-02 | Doc B relevance threshold 0.5 for bill inclusion | 15-05 |
+| DEC-1505-03 | Regional bill aggregation uses combined_relevance (sum of per-Tribe scores) | 15-05 |
 
 ### Todos
 
@@ -91,11 +94,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 15-04-PLAN.md (bill detail fetcher)
-**Next step:** Execute 15-05-PLAN.md (DOCX renderers)
+**Stopped at:** Completed 15-05-PLAN.md (DOCX renderers)
+**Next step:** Execute 15-06-PLAN.md (testing)
 **Resume file:** None
-**Resume command:** /gsd:execute-phase 15 (continue from plan 05)
+**Resume command:** /gsd:execute-phase 15 (continue from plan 06)
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 15-04 completion*
+*Last updated: 2026-02-12 after 15-05 completion*
