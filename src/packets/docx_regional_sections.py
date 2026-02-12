@@ -20,9 +20,13 @@ from typing import TYPE_CHECKING
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
+from docx.shared import Pt
+
 from src.config import FISCAL_YEAR_SHORT
+from src.packets.confidence import section_confidence
 from src.utils import format_dollars
 from src.packets.docx_styles import (
+    COLORS,
     StyleManager,
     apply_zebra_stripe,
     format_header_row,
@@ -478,6 +482,160 @@ def render_regional_appendix(
         "Rendered regional appendix for %s with %d Tribes",
         ctx.region_name,
         ctx.tribe_count,
+    )
+
+
+def render_regional_congressional_section(
+    doc: Document,
+    ctx: RegionalContext,
+    sm: StyleManager,
+    doc_type_config: DocumentTypeConfig | None = None,
+) -> None:
+    """Render the regional congressional legislation section for Doc C/D.
+
+    Aggregates bills across all Tribes in the region, groups by bill_id
+    so shared bills appear once with affected Tribe count, and shows the
+    top 5 bills by combined relevance. Includes per-state delegation
+    summary of members who sponsored relevant bills.
+
+    Confidence badge (HIGH/MEDIUM/LOW) appears after the section heading.
+
+    Ends with a page break.
+
+    Args:
+        doc: python-docx Document to render into.
+        ctx: RegionalContext with aggregated region data (must have
+            per-Tribe congressional_intel available through tribes list).
+        sm: StyleManager with registered custom styles.
+        doc_type_config: DocumentTypeConfig for audience differentiation.
+    """
+    heading_para = doc.add_paragraph(
+        "Regional Legislation Overview", style="Heading 2"
+    )
+
+    # Confidence badge -- use earliest scan_date from region's intel
+    scan_date = ""
+    for tribe_info in ctx.tribes:
+        tribe_intel = tribe_info.get("congressional_intel", {})
+        td = tribe_intel.get("scan_date", "")
+        if td and (not scan_date or td < scan_date):
+            scan_date = td
+
+    conf = section_confidence("congress_gov", scan_date)
+    badge_run = heading_para.add_run(f" [{conf['level']}]")
+    badge_run.font.size = Pt(8)
+    badge_run.font.color.rgb = COLORS.muted
+
+    # Aggregate bills across Tribes, deduplicating by bill_id
+    bill_agg: dict[str, dict] = {}  # bill_id -> aggregated info
+    for tribe_info in ctx.tribes:
+        tribe_intel = tribe_info.get("congressional_intel", {})
+        for bill in tribe_intel.get("bills", []):
+            bid = bill.get("bill_id", "")
+            if not bid:
+                continue
+            if bid not in bill_agg:
+                bill_agg[bid] = {
+                    "bill": bill,
+                    "tribe_count": 0,
+                    "combined_relevance": 0.0,
+                }
+            bill_agg[bid]["tribe_count"] += 1
+            bill_agg[bid]["combined_relevance"] += bill.get(
+                "relevance_score", 0
+            )
+
+    if not bill_agg:
+        doc.add_paragraph(
+            "No tracked legislation identified for Tribal Nations in "
+            "this region during the current session.",
+            style="HS Body",
+        )
+        doc.add_page_break()
+        return
+
+    # Sort by combined relevance, take top 5
+    ranked = sorted(
+        bill_agg.values(),
+        key=lambda x: x["combined_relevance"],
+        reverse=True,
+    )[:5]
+
+    # Render table
+    headers = [
+        "Bill",
+        "Title",
+        "Status",
+        "Tribes Affected",
+        "Relevance",
+    ]
+    table = doc.add_table(rows=1 + len(ranked), cols=5)
+    format_header_row(table, headers)
+
+    for i, entry in enumerate(ranked, start=1):
+        bill = entry["bill"]
+        row = table.rows[i]
+        bill_type = bill.get("bill_type", "")
+        bill_number = bill.get("bill_number", "")
+        if bill_type and bill_number:
+            row.cells[0].text = f"{bill_type} {bill_number}"
+        else:
+            row.cells[0].text = bill.get("bill_id", "")
+        row.cells[1].text = (bill.get("title", "") or "")[:80]
+        latest = bill.get("latest_action")
+        if latest:
+            row.cells[2].text = (latest.get("text", "") or "")[:60]
+        else:
+            row.cells[2].text = "N/A"
+        row.cells[3].text = str(entry["tribe_count"])
+        row.cells[4].text = f"{entry['combined_relevance']:.2f}"
+
+    apply_zebra_stripe(table)
+
+    # Per-state delegation summary: members who sponsored relevant bills
+    is_internal = (
+        doc_type_config is not None and doc_type_config.is_internal
+    )
+    sponsor_activity: dict[str, set[str]] = {}  # state -> set of names
+    for entry in ranked:
+        bill = entry["bill"]
+        sponsor = bill.get("sponsor", {}) or {}
+        sp_state = sponsor.get("state", "")
+        sp_name = sponsor.get("name", "")
+        if sp_state and sp_name:
+            sponsor_activity.setdefault(sp_state, set()).add(sp_name)
+
+    if sponsor_activity:
+        doc.add_paragraph(
+            "Delegation Sponsorship Activity", style="HS Section"
+        )
+        for state in sorted(sponsor_activity):
+            if state in set(ctx.states):
+                names = sorted(sponsor_activity[state])
+                doc.add_paragraph(
+                    f"{state}: {', '.join(names)}",
+                    style="HS Body",
+                )
+
+    if is_internal:
+        # Doc C: coordination note
+        shared_count = sum(
+            1 for e in ranked if e["tribe_count"] > 1
+        )
+        if shared_count > 0:
+            doc.add_paragraph(
+                f"{shared_count} of {len(ranked)} top bills affect "
+                f"multiple Tribal Nations in this region. Coordinated "
+                f"engagement on shared legislation amplifies regional "
+                f"voice with congressional offices.",
+                style="HS Body",
+            )
+
+    doc.add_page_break()
+    logger.debug(
+        "Rendered regional congressional section for %s (%d bills)",
+        ctx.region_name,
+        len(ranked),
     )
 
 

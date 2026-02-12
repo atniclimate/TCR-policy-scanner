@@ -25,6 +25,7 @@ from pathlib import Path
 from dataclasses import asdict
 
 from src.packets.change_tracker import PacketChangeTracker
+from src.packets.confidence import section_confidence
 from src.packets.context import TribePacketContext
 from src.packets.congress import CongressionalMapper
 from src.packets.doc_types import DOC_A, DOC_B, DocumentTypeConfig
@@ -34,6 +35,7 @@ from src.packets.economic import EconomicImpactCalculator, TribeEconomicSummary
 from src.packets.registry import TribalRegistry
 from src.paths import (
     AWARD_CACHE_DIR,
+    CONGRESSIONAL_INTEL_PATH,
     GRAPH_SCHEMA_PATH,
     HAZARD_PROFILES_DIR,
     PACKET_STATE_DIR,
@@ -119,6 +121,9 @@ class PacketOrchestrator:
         # Phase 7: DOCX generation components
         self.economic_calculator = EconomicImpactCalculator()
         self.relevance_filter = ProgramRelevanceFilter(self.programs)
+
+        # Phase 15: Congressional intelligence cache (lazy-loaded)
+        self._congressional_intel: dict | None = None
 
     def run_single_tribe(self, tribe_name: str) -> None:
         """Resolve a single Tribe by name and display its packet context.
@@ -373,11 +378,25 @@ class PacketOrchestrator:
             congress_session=self.congress.get_congress_session(),
         )
 
+        # Phase 15: Populate congressional intelligence
+        intel = self._load_congressional_intel()
+        if intel:
+            tribe_bills = self._filter_bills_for_tribe(context)
+            delegation_activity = self._get_delegation_activity(context)
+            metadata = intel.get("metadata", {})
+            context.congressional_intel = {
+                "bills": tribe_bills,
+                "delegation_activity": delegation_activity,
+                "scan_date": metadata.get("built_at", ""),
+                "congress": metadata.get("congress", 119),
+            }
+
         logger.debug("Built context for %s: %d districts, %d senators, %d reps, "
-                      "%d awards, %d hazard sources",
+                      "%d awards, %d hazard sources, %d bills",
                       tribe["name"], len(districts), len(senators),
                       len(representatives), len(awards),
-                      len(hazard_profile))
+                      len(hazard_profile),
+                      len(context.congressional_intel.get("bills", [])))
         return context
 
     def _display_tribe_info(self, context: TribePacketContext) -> None:
@@ -533,6 +552,207 @@ class PacketOrchestrator:
             if risk_to_homes or likelihood:
                 print(f"    Wildfire Risk (USFS): Risk to Homes: {risk_to_homes:.2f}, "
                       f"Likelihood: {likelihood:.4f}")
+
+    # ------------------------------------------------------------------
+    # Phase 15: Congressional intelligence wiring
+    # ------------------------------------------------------------------
+
+    def _load_congressional_intel(self) -> dict:
+        """Load congressional_intel.json with lazy caching.
+
+        Reads from CONGRESSIONAL_INTEL_PATH on first call, caches the result
+        for subsequent calls. Handles missing file gracefully.
+
+        Returns:
+            Dict with ``metadata`` and ``bills`` keys, or empty dict on
+            missing/corrupt data.
+        """
+        if self._congressional_intel is not None:
+            return self._congressional_intel
+
+        if not CONGRESSIONAL_INTEL_PATH.exists():
+            logger.warning(
+                "Congressional intel file not found: %s",
+                CONGRESSIONAL_INTEL_PATH,
+            )
+            self._congressional_intel = {}
+            return self._congressional_intel
+
+        try:
+            file_size = CONGRESSIONAL_INTEL_PATH.stat().st_size
+        except OSError:
+            self._congressional_intel = {}
+            return self._congressional_intel
+
+        if file_size > _MAX_CACHE_SIZE_BYTES:
+            logger.warning(
+                "Congressional intel file exceeds size limit "
+                "(%d bytes > %d), skipping",
+                file_size,
+                _MAX_CACHE_SIZE_BYTES,
+            )
+            self._congressional_intel = {}
+            return self._congressional_intel
+
+        try:
+            with open(
+                CONGRESSIONAL_INTEL_PATH, "r", encoding="utf-8"
+            ) as f:
+                self._congressional_intel = json.load(f)
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning(
+                "Failed to load congressional intel: %s", exc
+            )
+            self._congressional_intel = {}
+
+        return self._congressional_intel
+
+    def _filter_bills_for_tribe(
+        self,
+        context: TribePacketContext,
+        relevant_program_ids: list[str] | None = None,
+    ) -> list[dict]:
+        """Filter congressional bills relevant to a specific Tribe.
+
+        Includes bills matching any of:
+          - matched_programs overlap with the Tribe's relevant programs
+          - sponsor/cosponsor includes Tribe's delegation members
+          - bill affects the Tribe's state(s)
+
+        Args:
+            context: TribePacketContext with delegation and state data.
+            relevant_program_ids: Optional list of program IDs the Tribe
+                is tracked against. If None, all bills are candidates.
+
+        Returns:
+            List of bill dicts sorted by relevance_score descending.
+        """
+        intel = self._load_congressional_intel()
+        all_bills = intel.get("bills", [])
+        if not all_bills:
+            return []
+
+        # Build sets for fast lookup
+        tribe_states = set(context.states or [])
+        tribe_bioguides: set[str] = set()
+        for senator in (context.senators or []):
+            bg = senator.get("bioguide_id", "")
+            if bg:
+                tribe_bioguides.add(bg)
+        for rep in (context.representatives or []):
+            bg = rep.get("bioguide_id", "")
+            if bg:
+                tribe_bioguides.add(bg)
+
+        relevant_ids = set(relevant_program_ids or [])
+
+        matched_bills: list[dict] = []
+        for bill in all_bills:
+            # Check program overlap
+            bill_programs = set(bill.get("matched_programs", []))
+            has_program_match = bool(
+                relevant_ids and bill_programs & relevant_ids
+            )
+
+            # Check sponsor/cosponsor overlap
+            has_delegation_match = False
+            sponsor = bill.get("sponsor", {}) or {}
+            if sponsor.get("bioguide_id") in tribe_bioguides:
+                has_delegation_match = True
+            if not has_delegation_match:
+                for cs in bill.get("cosponsors", []):
+                    if cs.get("bioguide_id") in tribe_bioguides:
+                        has_delegation_match = True
+                        break
+
+            # Check state overlap
+            sponsor_state = sponsor.get("state", "")
+            has_state_match = sponsor_state in tribe_states
+
+            if has_program_match or has_delegation_match or has_state_match:
+                matched_bills.append(bill)
+
+        # Sort by relevance_score descending
+        matched_bills.sort(
+            key=lambda b: b.get("relevance_score", 0), reverse=True
+        )
+        return matched_bills
+
+    def _get_delegation_activity(
+        self, context: TribePacketContext
+    ) -> dict:
+        """Cross-reference Tribe's delegation with tracked bills.
+
+        Checks which of the Tribe's senators and representatives have
+        sponsored or cosponsored tracked bills, and returns activity
+        keyed by bioguide_id.
+
+        Args:
+            context: TribePacketContext with delegation data.
+
+        Returns:
+            Dict mapping bioguide_id to {sponsored: [...], cosponsored: [...]}.
+        """
+        intel = self._load_congressional_intel()
+        all_bills = intel.get("bills", [])
+        if not all_bills:
+            return {}
+
+        # Collect bioguide IDs for Tribe's delegation
+        tribe_members: dict[str, dict] = {}
+        for senator in (context.senators or []):
+            bg = senator.get("bioguide_id", "")
+            if bg:
+                tribe_members[bg] = {
+                    "name": senator.get("formatted_name", "Unknown"),
+                    "sponsored": [],
+                    "cosponsored": [],
+                    "committees": [
+                        c.get("committee_name", "")
+                        for c in senator.get("committees", [])
+                        if c.get("committee_name")
+                    ],
+                }
+        for rep in (context.representatives or []):
+            bg = rep.get("bioguide_id", "")
+            if bg:
+                tribe_members[bg] = {
+                    "name": rep.get("formatted_name", "Unknown"),
+                    "sponsored": [],
+                    "cosponsored": [],
+                    "committees": [
+                        c.get("committee_name", "")
+                        for c in rep.get("committees", [])
+                        if c.get("committee_name")
+                    ],
+                }
+
+        if not tribe_members:
+            return {}
+
+        # Scan all bills for sponsor/cosponsor matches
+        for bill in all_bills:
+            bill_ref = {
+                "bill_id": bill.get("bill_id", ""),
+                "title": bill.get("title", ""),
+            }
+            sponsor = bill.get("sponsor", {}) or {}
+            sp_bg = sponsor.get("bioguide_id", "")
+            if sp_bg in tribe_members:
+                tribe_members[sp_bg]["sponsored"].append(bill_ref)
+
+            for cs in bill.get("cosponsors", []):
+                cs_bg = cs.get("bioguide_id", "")
+                if cs_bg in tribe_members:
+                    tribe_members[cs_bg]["cosponsored"].append(bill_ref)
+
+        # Filter to members with any activity
+        result: dict[str, dict] = {}
+        for bg, info in tribe_members.items():
+            if info["sponsored"] or info["cosponsored"] or info["committees"]:
+                result[bg] = info
+
+        return result
 
     # ------------------------------------------------------------------
     # Phase 7: DOCX generation
@@ -1022,6 +1242,7 @@ class PacketOrchestrator:
         from src.packets.docx_regional_sections import (
             render_regional_appendix,
             render_regional_award_landscape,
+            render_regional_congressional_section,
             render_regional_cover_page,
             render_regional_delegation,
             render_regional_executive_summary,
@@ -1060,6 +1281,9 @@ class PacketOrchestrator:
             document, regional_ctx, style_manager, doc_type_config
         )
         render_regional_executive_summary(
+            document, regional_ctx, style_manager, doc_type_config
+        )
+        render_regional_congressional_section(
             document, regional_ctx, style_manager, doc_type_config
         )
         render_regional_hazard_synthesis(

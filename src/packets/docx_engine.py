@@ -30,6 +30,7 @@ from src.packets.doc_types import DocumentTypeConfig
 from src.packets.docx_hotsheet import HotSheetRenderer
 from src.packets.docx_sections import (
     render_appendix,
+    render_bill_intelligence_section,
     render_change_tracking,
     render_cover_page,
     render_delegation_section,
@@ -278,12 +279,13 @@ class DocxEngine:
         previous_date: str | None = None,
         doc_type_config: DocumentTypeConfig | None = None,
     ) -> Path:
-        """Generate a complete 9-section advocacy packet DOCX for a single Tribe.
+        """Generate a complete 10-section advocacy packet DOCX for a single Tribe.
 
         Assembles the full document in order: cover page, table of contents,
-        executive summary, congressional delegation, Hot Sheet pages for each
-        relevant program, hazard profile summary, structural policy asks,
-        change tracking (if changes exist), and appendix of omitted programs.
+        executive summary, bill intelligence, congressional delegation, Hot
+        Sheet pages for each relevant program, hazard profile summary,
+        structural policy asks, change tracking (if changes exist), and
+        appendix of omitted programs.
 
         Args:
             context: TribePacketContext with all Tribe data.
@@ -336,42 +338,47 @@ class DocxEngine:
             style_manager, doc_type_config=dtc,
         )
 
-        # 4. Congressional delegation
+        # 4. Bill intelligence (bills-first ordering per CONTEXT.md)
+        render_bill_intelligence_section(
+            document, context, style_manager, doc_type_config=dtc
+        )
+
+        # 5. Congressional delegation
         render_delegation_section(
             document, context, style_manager, doc_type_config=dtc
         )
 
-        # 5. Hot Sheets for all relevant programs (8-12 per Tribe)
+        # 6. Hot Sheets for all relevant programs (8-12 per Tribe)
         renderer = HotSheetRenderer(document, style_manager)
         renderer.render_all_hotsheets(
             context, relevant_programs, economic_summary, structural_asks,
             doc_type_config=dtc,
         )
 
-        # 6. Hazard profile summary
+        # 7. Hazard profile summary
         document.add_page_break()
         render_hazard_summary(
             document, context, style_manager, doc_type_config=dtc
         )
 
-        # 7. Structural asks standalone
+        # 8. Structural asks standalone
         render_structural_asks_section(
             document, structural_asks, context, style_manager,
             doc_type_config=dtc,
         )
 
-        # 8. Messaging framework (Doc A only -- internal with messaging flag)
+        # 9. Messaging framework (Doc A only -- internal with messaging flag)
         if dtc is not None and dtc.include_messaging_framework:
             render_messaging_framework(document, context, style_manager)
 
-        # 9. Change tracking (OPS-03, internal only, if changes exist)
+        # 10. Change tracking (OPS-03, internal only, if changes exist)
         if changes and (dtc is None or dtc.is_internal):
             document.add_page_break()
             render_change_tracking(
                 document, changes, previous_date, style_manager
             )
 
-        # 10. Appendix (omitted programs or "all included" note)
+        # 11. Appendix (omitted programs or "all included" note)
         render_appendix(
             document, omitted_programs or [], context, style_manager,
             doc_type_config=dtc,

@@ -225,12 +225,13 @@ class RegionalAggregator:
         # Coverage gaps
         no_awards, no_hazards, no_delegation = self._identify_gaps(tribe_contexts)
 
-        # Tribe summaries
+        # Tribe summaries (include congressional_intel for regional bill aggregation)
         tribes_list = [
             {
                 "tribe_id": ctx.tribe_id,
                 "tribe_name": ctx.tribe_name,
                 "states": ctx.states,
+                "congressional_intel": ctx.congressional_intel,
             }
             for ctx in tribe_contexts
         ]
