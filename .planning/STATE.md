@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.3 Production Launch -- Phase 17 IN PROGRESS (2/5 plans complete: 17-01, 17-02)
+**Current focus:** v1.3 Production Launch -- Phase 17 IN PROGRESS (4/5 plans complete: 17-01, 17-02, 17-03, 17-04)
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
@@ -13,16 +13,16 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Milestone:** v1.3 Production Launch
 **Phase:** 17 of 18 (Website Deployment) -- IN PROGRESS
-**Plan:** 01 of 5 in phase (data pipeline enhancement complete)
-**Status:** Plans 17-01 and 17-02 complete, 17-03/04/05 remaining
-**Last activity:** 2026-02-12 -- Completed 17-01-PLAN.md (alias embedding + Fuse.js)
+**Plan:** 04 of 5 in phase (CI/CD pipeline complete)
+**Status:** Plans 17-01, 17-02, and 17-04 complete, 17-03/05 remaining
+**Last activity:** 2026-02-12 -- Completed 17-04-PLAN.md (deploy-website.yml + manifest generation)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [█████████░] 90% Phase 17 IN PROGRESS (2/5 plans, 10 WEB)
+v1.3     [█████████░] 90% Phase 17 IN PROGRESS (3/5 plans, 10 WEB)
          Phase 16 COMPLETE (2/2 plans, 6 DOCX)
          Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
 ```
@@ -49,7 +49,7 @@ v1.3     [█████████░] 90% Phase 17 IN PROGRESS (2/5 plans, 1
 - **Pipeline flow:** Ingest (4 async scrapers) -> Normalize -> Graph Construction -> Monitors -> Decision Engine -> Reporting
 - **Packet flow:** CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards + Hazards + Economic -> DocxEngine -> DOCX (4 types)
 - **Stack:** Python 3.12, aiohttp, python-dateutil, jinja2, pytest, python-docx, rapidfuzz, openpyxl, geopandas
-- **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific) + generate-packets.yml
+- **Deployment:** GitHub Actions daily-scan.yml (weekday 6 AM Pacific) + generate-packets.yml + deploy-website.yml
 - **Dual workspace:** F:\tcr-policy-scanner (Windows dev), GitHub Actions (Linux deploy)
 - **API resilience:** Circuit breaker (CLOSED/OPEN/HALF_OPEN) wrapping all scrapers, cache fallback, health check CLI
 
@@ -109,11 +109,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 17-01-PLAN.md (alias embedding + Fuse.js self-hosting)
-**Next step:** Execute 17-03 (JavaScript app.js rewrite), 17-04 (data pipeline), or 17-05 (deploy)
+**Stopped at:** Completed 17-04-PLAN.md (deploy-website.yml + manifest generation)
+**Next step:** Execute 17-03 (JavaScript app.js rewrite) or 17-05 (integration testing)
 **Resume file:** None
 **Quality gate:** SYNTHESIS.md PASS at outputs/docx_review/SYNTHESIS.md
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 17-01 execution (alias embedding, per-Tribe timestamps, Fuse.js 7.1.0 self-hosted, Awesomplete removed)*
+*Last updated: 2026-02-12 after 17-04 execution (deploy-website.yml workflow, manifest.json in both workflows)*
