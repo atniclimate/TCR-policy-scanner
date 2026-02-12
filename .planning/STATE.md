@@ -13,16 +13,16 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Milestone:** v1.3 Production Launch
 **Phase:** 15 of 18 (Congressional Intelligence Pipeline)
-**Plan:** --
-**Status:** Ready to plan
-**Last activity:** 2026-02-12 -- Roadmap created for v1.3
+**Plan:** 03 of 7 in phase
+**Status:** In progress
+**Last activity:** 2026-02-12 -- Completed 15-03-PLAN.md (documentation artifacts)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [░░░░░░░░░░]   0% ROADMAP CREATED (4 phases, 39 requirements)
+v1.3     [█░░░░░░░░░]  ~4% IN PROGRESS (1/7 plans in Phase 15 complete)
 ```
 
 ## Performance Metrics
@@ -62,7 +62,12 @@ v1.3     [░░░░░░░░░░]   0% ROADMAP CREATED (4 phases, 39 req
 
 ### Decisions
 
-None yet for v1.3.
+| ID | Decision | Phase |
+|----|----------|-------|
+| DEC-1503-01 | Alert severity uses 4 tiers (CRITICAL/HIGH/MEDIUM/LOW) with escalation rules | 15-03 |
+| DEC-1503-02 | Knowledge graph uses deterministic IDs from source data (bioguide, system codes) | 15-03 |
+| DEC-1503-03 | Confidence scoring uses weighted average with per-program weight adjustments | 15-03 |
+| DEC-1503-04 | VoteNode deferred pending Senate.gov structured vote data availability | 15-03 |
 
 ### Todos
 
@@ -77,11 +82,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Roadmap created for v1.3 Production Launch
-**Next step:** Plan Phase 15 (Congressional Intelligence Pipeline)
+**Stopped at:** Completed 15-03-PLAN.md (documentation artifacts)
+**Next step:** Execute 15-04-PLAN.md (next plan in Phase 15)
 **Resume file:** None
-**Resume command:** /gsd:plan-phase 15
+**Resume command:** /gsd:execute-phase 15 (continue from plan 04)
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after v1.3 roadmap creation*
+*Last updated: 2026-02-12 after 15-03 completion*
