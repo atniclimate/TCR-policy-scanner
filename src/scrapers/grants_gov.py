@@ -47,6 +47,11 @@ TRIBAL_ELIGIBILITY_CODES = [
 class GrantsGovScraper(BaseScraper):
     """Scrapes the Grants.gov API for grant opportunities."""
 
+    # Pagination constants
+    _ROWS_PER_PAGE = 50      # Grants.gov rows per request
+    _SAFETY_CAP = 1000       # Max results per query (20 pages)
+    _PAGE_DELAY = 0.3        # seconds between page fetches
+
     def __init__(self, config: dict):
         super().__init__("grants_gov", config=config)
         self.base_url = config["sources"]["grants_gov"]["base_url"]
@@ -106,34 +111,128 @@ class GrantsGovScraper(BaseScraper):
         return self._zombie_warnings
 
     async def _search_cfda(self, session, cfda: str, program_id: str) -> list[dict]:
-        """Search by CFDA / Assistance Listing number."""
-        payload = {
-            "aln": cfda,
-            "oppStatuses": "forecasted|posted",
-            "sortBy": "openDate|desc",
-            "rows": 25,
-        }
+        """Search by CFDA / Assistance Listing number with full pagination.
+
+        Paginates through all results using startRecordNum offset.
+        Safety cap at 1,000 results to prevent runaway queries.
+        """
         url = f"{self.base_url}/api/search2"
-        resp = await self._request_with_retry(session, "POST", url, json=payload)
-        data = resp.get("data", resp)
-        results = data.get("oppHits", [])
-        return [self._normalize(item, cfda=cfda, matched_program=program_id) for item in results]
+        all_results: list[dict] = []
+        start_record = 0
+        hit_count = None
+
+        while True:
+            payload = {
+                "aln": cfda,
+                "oppStatuses": "forecasted|posted",
+                "sortBy": "openDate|desc",
+                "rows": self._ROWS_PER_PAGE,
+                "startRecordNum": start_record,
+            }
+            resp = await self._request_with_retry(session, "POST", url, json=payload)
+            data = resp.get("data", resp)
+            results = data.get("oppHits", [])
+
+            # Extract total hit count
+            if hit_count is None:
+                hit_count = data.get("hitCount", len(results))
+
+            all_results.extend(results)
+
+            # Safety cap check
+            if len(all_results) >= self._SAFETY_CAP:
+                logger.warning(
+                    "Grants.gov: safety cap %d reached for CFDA %s, "
+                    "truncating %d -> %d",
+                    self._SAFETY_CAP, cfda,
+                    hit_count or len(all_results), len(all_results),
+                )
+                break
+
+            # Check if all results fetched
+            if not results or len(all_results) >= (hit_count or 0):
+                break
+
+            start_record += self._ROWS_PER_PAGE
+            await asyncio.sleep(self._PAGE_DELAY)
+
+        if hit_count is None:
+            hit_count = len(all_results)
+
+        logger.info(
+            "Grants.gov: fetched %d/%d opportunities for CFDA %s",
+            len(all_results), hit_count, cfda,
+        )
+        if len(all_results) < hit_count and len(all_results) < self._SAFETY_CAP:
+            logger.warning(
+                "Grants.gov: truncated %d -> %d for CFDA %s",
+                hit_count, len(all_results), cfda,
+            )
+
+        return [self._normalize(item, cfda=cfda, matched_program=program_id) for item in all_results]
 
     async def _search(self, session, query: str) -> list[dict]:
-        """Execute a keyword search query."""
+        """Execute a keyword search query with full pagination.
+
+        Paginates through all results using startRecordNum offset.
+        Safety cap at 1,000 results to prevent runaway queries.
+        """
         posted_from = (datetime.now(timezone.utc) - timedelta(days=self.scan_window)).strftime("%m/%d/%Y")
-        payload = {
-            "keyword": query,
-            "oppStatuses": "forecasted|posted",
-            "sortBy": "openDate|desc",
-            "rows": 50,
-            "postedFrom": posted_from,
-        }
         url = f"{self.base_url}/api/search2"
-        resp = await self._request_with_retry(session, "POST", url, json=payload)
-        data = resp.get("data", resp)
-        results = data.get("oppHits", [])
-        return [self._normalize(item) for item in results]
+        all_results: list[dict] = []
+        start_record = 0
+        hit_count = None
+
+        while True:
+            payload = {
+                "keyword": query,
+                "oppStatuses": "forecasted|posted",
+                "sortBy": "openDate|desc",
+                "rows": self._ROWS_PER_PAGE,
+                "startRecordNum": start_record,
+                "postedFrom": posted_from,
+            }
+            resp = await self._request_with_retry(session, "POST", url, json=payload)
+            data = resp.get("data", resp)
+            results = data.get("oppHits", [])
+
+            # Extract total hit count
+            if hit_count is None:
+                hit_count = data.get("hitCount", len(results))
+
+            all_results.extend(results)
+
+            # Safety cap check
+            if len(all_results) >= self._SAFETY_CAP:
+                logger.warning(
+                    "Grants.gov: safety cap %d reached for '%s', "
+                    "truncating %d -> %d",
+                    self._SAFETY_CAP, query,
+                    hit_count or len(all_results), len(all_results),
+                )
+                break
+
+            # Check if all results fetched
+            if not results or len(all_results) >= (hit_count or 0):
+                break
+
+            start_record += self._ROWS_PER_PAGE
+            await asyncio.sleep(self._PAGE_DELAY)
+
+        if hit_count is None:
+            hit_count = len(all_results)
+
+        logger.info(
+            "Grants.gov: fetched %d/%d opportunities for '%s'",
+            len(all_results), hit_count, query,
+        )
+        if len(all_results) < hit_count and len(all_results) < self._SAFETY_CAP:
+            logger.warning(
+                "Grants.gov: truncated %d -> %d for '%s'",
+                hit_count, len(all_results), query,
+            )
+
+        return [self._normalize(item) for item in all_results]
 
     def _normalize(self, item: dict, cfda: str = "", matched_program: str = "") -> dict:
         """Map Grants.gov fields to the standard schema.

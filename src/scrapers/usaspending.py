@@ -81,36 +81,78 @@ class USASpendingScraper(BaseScraper):
         logger.info("USASpending: collected %d obligation records", len(all_items))
         return all_items
 
+    # Pagination constants for obligation scan
+    _OBLIGATION_LIMIT = 100   # Results per page for obligation queries
+    _OBLIGATION_SAFETY_CAP = 5000  # Max results per CFDA (50 pages)
+    _OBLIGATION_DELAY = 0.3   # seconds between page fetches
+
     async def _fetch_obligations(
         self, session: aiohttp.ClientSession, cfda: str, program_id: str,
     ) -> list[dict]:
-        """Fetch spending by CFDA using the spending_by_award endpoint."""
-        payload = {
-            "filters": {
-                "time_period": [{"start_date": FISCAL_YEAR_START, "end_date": FISCAL_YEAR_END}],
-                "award_type_codes": ["02", "03", "04", "05"],  # Grants
-                "program_numbers": [cfda],
-            },
-            "fields": [
-                "Award ID", "Recipient Name", "Award Amount",
-                "Awarding Agency", "Start Date",
-            ],
-            "subawards": False,
-            "page": 1,
-            "limit": 10,
-            "sort": "Award Amount",
-            "order": "desc",
-        }
+        """Fetch spending by CFDA using the spending_by_award endpoint.
+
+        Paginates through all results using page-based pagination.
+        Safety cap at 5,000 results (50 pages) to prevent runaway queries.
+        """
         url = f"{self.base_url}/search/spending_by_award/"
+        all_results: list[dict] = []
+        page = 1
 
-        try:
-            data = await self._request_with_retry(session, "POST", url, json=payload)
-        except Exception:
-            logger.warning("USASpending: could not fetch CFDA %s, skipping", cfda)
-            return []
+        while True:
+            payload = {
+                "filters": {
+                    "time_period": [{"start_date": FISCAL_YEAR_START, "end_date": FISCAL_YEAR_END}],
+                    "award_type_codes": ["02", "03", "04", "05"],  # Grants
+                    "program_numbers": [cfda],
+                },
+                "fields": [
+                    "Award ID", "Recipient Name", "Award Amount",
+                    "Awarding Agency", "Start Date",
+                ],
+                "subawards": False,
+                "page": page,
+                "limit": self._OBLIGATION_LIMIT,
+                "sort": "Award Amount",
+                "order": "desc",
+            }
 
-        results = data.get("results", [])
-        return [self._normalize(item, cfda, program_id) for item in results]
+            try:
+                data = await self._request_with_retry(session, "POST", url, json=payload)
+            except Exception:
+                logger.warning("USASpending: could not fetch CFDA %s page %d, skipping", cfda, page)
+                break
+
+            results = data.get("results", [])
+            if not results:
+                break
+
+            all_results.extend(results)
+
+            # Check for more pages
+            page_meta = data.get("page_metadata", {})
+            has_next = page_meta.get("hasNext", False)
+
+            if not has_next:
+                break
+
+            # Safety cap check
+            if len(all_results) >= self._OBLIGATION_SAFETY_CAP:
+                logger.warning(
+                    "USASpending: safety cap %d reached for CFDA %s obligations, "
+                    "results may be truncated",
+                    self._OBLIGATION_SAFETY_CAP, cfda,
+                )
+                break
+
+            page += 1
+            await asyncio.sleep(self._OBLIGATION_DELAY)
+
+        logger.info(
+            "USASpending: fetched %d obligation records for CFDA %s",
+            len(all_results), cfda,
+        )
+
+        return [self._normalize(item, cfda, program_id) for item in all_results]
 
     async def fetch_tribal_awards_for_cfda(
         self, session: aiohttp.ClientSession, cfda: str,
