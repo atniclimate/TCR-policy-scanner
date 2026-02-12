@@ -140,9 +140,8 @@ Plans:
 | Keen Kerner | via `F:\tcr-policy-scanner\.planning\LAUNCH-SWARM.md` | Typography, type scale, letter-spacing, readability |
 | Pipeline Professor | via `F:\tcr-policy-scanner\.planning\LAUNCH-SWARM.md` | Data pipeline, deployment, SquareSpace integration |
 
-**Known issues:** 47 across P0-P3 in `.planning/website/`
-**Stack:** React 18 + Vite 6 + Tailwind CSS v4 + shadcn/ui
-**Output:** `outputs/website_review/{agent}_findings.json`, synthesized into `SYNTHESIS.md`
+**Stack:** Enhanced vanilla HTML/JS/CSS + Fuse.js 7.1.0 (self-hosted)
+**Output:** `outputs/website_review/SYNTHESIS.md`
 
 **Success Criteria** (what must be TRUE):
   1. A Tribal staff member can type a misspelled Tribe name into the search box and find their Nation via fuzzy matching across all 592 federally recognized Tribes (not 46 hardcoded mocks), then download a real DOCX file that opens in Microsoft Word
@@ -151,7 +150,14 @@ Plans:
   4. WCAG 2.1 AA compliance is verified: keyboard-only search-to-download flow works, ARIA combobox roles are present, color contrast meets 4.5:1, and `prefers-reduced-motion` is respected
   5. GitHub Pages deployment pipeline automates build, asset deployment, manifest generation, and SPA routing, triggered on merge to main
 
-**Plans**: TBD
+**Plans:** 5 plans in 3 waves
+
+Plans:
+- [ ] 17-01-PLAN.md -- Data pipeline: build_web_index.py alias embedding + Fuse.js self-hosting (Wave 1)
+- [ ] 17-02-PLAN.md -- HTML + CSS: ARIA combobox markup, dark mode, CRT effect, type scale, mobile (Wave 1)
+- [ ] 17-03-PLAN.md -- JavaScript: ARIA combobox + Fuse.js search + state filter + card rendering (Wave 2)
+- [ ] 17-04-PLAN.md -- Deployment: deploy-website.yml + generate-packets.yml update + manifest (Wave 2)
+- [ ] 17-05-PLAN.md -- Review: 4-agent website review synthesis + human verification (Wave 3)
 
 ---
 
@@ -196,7 +202,7 @@ Plans:
 | 9-14 | v1.2 | 20/20 | Complete | 2026-02-11 |
 | 15 - Congressional Intelligence | v1.3 | 7/7 | Complete | 2026-02-12 |
 | 16 - Document Quality | v1.3 | 2/2 | Complete | 2026-02-12 |
-| 17 - Website Deployment | v1.3 | 0/TBD | Not started | - |
+| 17 - Website Deployment | v1.3 | 0/5 | Planned | - |
 | 18 - Production Hardening | v1.3 | 0/TBD | Not started | - |
 
 ## Coverage
