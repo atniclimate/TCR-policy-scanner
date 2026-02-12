@@ -13,16 +13,16 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Milestone:** v1.3 Production Launch
 **Phase:** 17 of 18 (Website Deployment) -- IN PROGRESS
-**Plan:** 04 of 5 in phase (CI/CD pipeline complete)
-**Status:** Plans 17-01, 17-02, and 17-04 complete, 17-03/05 remaining
-**Last activity:** 2026-02-12 -- Completed 17-04-PLAN.md (deploy-website.yml + manifest generation)
+**Plan:** 04 of 5 in phase (JavaScript application logic complete)
+**Status:** Plans 17-01, 17-02, 17-03, and 17-04 complete, 17-05 remaining
+**Last activity:** 2026-02-12 -- Completed 17-03-PLAN.md (ARIA combobox + Fuse.js app.js)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [█████████░] 90% Phase 17 IN PROGRESS (3/5 plans, 10 WEB)
+v1.3     [█████████░] 90% Phase 17 IN PROGRESS (4/5 plans, 10 WEB)
          Phase 16 COMPLETE (2/2 plans, 6 DOCX)
          Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
 ```
@@ -35,7 +35,7 @@ v1.3     [█████████░] 90% Phase 17 IN PROGRESS (3/5 plans, 1
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | Total phases | 14 completed + Phase 16 COMPLETE, Phase 17 in progress, 1 remaining |
-| Total plans | 61 completed |
+| Total plans | 62 completed |
 | Total requirements | 76 completed, 39 active, 18 verified (Phase 15), 6 verified (Phase 16) |
 | Total tests | 964 (all passing) |
 | Source files | 96 Python files |
@@ -109,11 +109,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 17-04-PLAN.md (deploy-website.yml + manifest generation)
-**Next step:** Execute 17-03 (JavaScript app.js rewrite) or 17-05 (integration testing)
+**Stopped at:** Completed 17-03-PLAN.md (ARIA combobox + Fuse.js application logic)
+**Next step:** Execute 17-05 (integration testing and deployment)
 **Resume file:** None
 **Quality gate:** SYNTHESIS.md PASS at outputs/docx_review/SYNTHESIS.md
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 17-04 execution (deploy-website.yml workflow, manifest.json in both workflows)*
+*Last updated: 2026-02-12 after 17-03 execution (W3C APG ARIA combobox + Fuse.js app.js rewrite)*
