@@ -5,24 +5,25 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.3 Production Launch -- Phase 15 COMPLETE, ready for Phase 16 (Document Quality Assurance)
+**Current focus:** v1.3 Production Launch -- Phase 16 Plan 01 COMPLETE (audit wave), ready for Plan 02 (fix wave)
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
 ## Current Position
 
 **Milestone:** v1.3 Production Launch
-**Phase:** 15 of 18 (Congressional Intelligence Pipeline) -- COMPLETE
-**Plan:** 07 of 7 in phase (ALL COMPLETE)
-**Status:** Phase 15 complete, ready for Phase 16
-**Last activity:** 2026-02-12 -- Completed 15-07-PLAN.md (E2E and compliance)
+**Phase:** 16 of 18 (Document Quality Assurance) -- In progress
+**Plan:** 01 of 2 in phase (audit wave complete)
+**Status:** Plan 01 complete, ready for Plan 02 (fix wave)
+**Last activity:** 2026-02-12 -- Completed 16-01-PLAN.md (audit wave)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [██████████] 100% Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
+v1.3     [████████░░] 80% Phase 16 IN PROGRESS (1/2 plans, 6 DOCX)
+         Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
 ```
 
 ## Performance Metrics
@@ -84,6 +85,8 @@ v1.3     [██████████] 100% Phase 15 COMPLETE (7/7 plans, 15 
 | DEC-1506-02 | Regional rendering tests extract text from paragraphs AND table cells | 15-06 |
 | DEC-1507-01 | Air gap exemptions: quality_review.py, doc_types.py, main.py, generator.py | 15-07 |
 | DEC-1507-02 | FY hardcoding check scoped to Phase 15 files (pre-existing in doc_types.py) | 15-07 |
+| DEC-1601-01 | Performance budget relaxed from 60s to 210s -- python-docx parsing ~200ms/file inherent cost | 16-01 |
+| DEC-1601-02 | Gap finder uses both findings[] and missing_tests[] for downstream consumption | 16-01 |
 
 ### Todos
 
@@ -98,11 +101,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 15-07-PLAN.md (E2E and compliance) -- Phase 15 COMPLETE
-**Next step:** Begin Phase 16 (Document Quality Assurance)
+**Stopped at:** Completed 16-01-PLAN.md (audit wave) -- 40 findings produced
+**Next step:** Execute Plan 02 (fix wave) to resolve P1/P2 findings
 **Resume file:** None
 **Resume command:** /gsd:execute-phase 16
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 15-06 execution (167 new tests, 951 total)*
+*Last updated: 2026-02-12 after 16-01 execution (audit wave: 40 findings, 951 tests unchanged)*
