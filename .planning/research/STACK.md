@@ -1,15 +1,15 @@
-# Technology Stack: Tech Debt Cleanup
+# Technology Stack: v1.3 Production Launch
 
-**Project:** TCR Policy Scanner v1.2
-**Researched:** 2026-02-11
-**Scope:** Patterns, libraries, and tools for 5 tech debt cleanup areas
-**Confidence:** HIGH (verified against PyPI, official docs, codebase analysis)
+**Project:** TCR Policy Scanner v1.3
+**Researched:** 2026-02-12
+**Scope:** Stack additions for 7 new capabilities: scraper pagination, bill detail fetching, production website, SquareSpace iframe embedding, DOCX visual QA automation, confidence scoring, production monitoring
+**Confidence:** HIGH (verified against PyPI, npm, official API docs, codebase analysis)
 
 ---
 
 ## Existing Stack (DO NOT CHANGE)
 
-Already validated across v1.0 and v1.1 -- listed for integration context:
+Already validated across v1.0-v1.2. Listed for integration context only:
 
 | Technology | Version | Role |
 |---|---|---|
@@ -20,607 +20,888 @@ Already validated across v1.0 and v1.1 -- listed for integration context:
 | pytest | (dev) | Test framework |
 | python-docx | >=1.1.0 | DOCX generation |
 | rapidfuzz | >=3.14.0 | Fuzzy name matching |
-| openpyxl | >=3.1.0 | XLSX parsing (USFS data) |
+| openpyxl | >=3.1.0 | XLSX parsing |
 | pyyaml | >=6.0.0 | YAML support |
+| pydantic | >=2.0.0 | Data validation |
+| geopandas | >=1.0.0 | Geospatial (build-time) |
+| GitHub Actions | ubuntu-latest | CI/CD |
+| GitHub Pages | N/A | Static hosting |
 
 ---
 
-## Debt Area 1: Circuit-Breaker for Async Scrapers
+## Feature 1: Scraper Pagination (NO NEW DEPENDENCIES)
 
-### Current State
+### Problem
 
-`BaseScraper._request_with_retry()` (src/scrapers/base.py) implements exponential backoff with jitter and 429-aware retry. However, there is **no circuit-breaker** -- if an API is fully down, all 4 scrapers hammer it through all retries on every CFDA/query combination before moving on.
+Three of four scrapers silently truncate results because they fetch only the first page:
 
-Concrete impact: USASpending scraper iterates 12 CFDAs. If the API is down, that is `12 x 3 retries x exponential backoff` = ~3-5 minutes of wasted time hitting a dead endpoint, per scraper invocation.
-
-### Recommendation: Hand-Roll a Minimal Circuit Breaker
-
-**Do NOT add a library.** Here is why:
-
-| Library | Version | Async Support | Problem |
+| Scraper | Current Behavior | API Pagination Mechanism | Data Loss Risk |
 |---|---|---|---|
-| circuitbreaker | 2.1.3 | Yes (decorator) | Only classifies Python 3.8-3.10; trivial to implement without it |
-| pybreaker | 1.4.1 | Tornado only, NO asyncio | Incompatible with aiohttp async/await |
-| aiobreaker | 1.1.0 | Yes (asyncio) | Last release unknown date; low maintenance signal |
+| Federal Register | `per_page=50`, no page iteration | `next_page_url` in response, `page` query param, `total_pages` field | MEDIUM: 50 results of potentially 10,000+ matches |
+| Grants.gov | `rows=50`/`rows=25`, no offset | `startRecordNum` offset + `rows` count, `hitCount` in response | HIGH: CFDA queries return 25, keyword queries return 50 |
+| USASpending (scan) | `limit=10, page=1`, no iteration | `page_metadata.hasNext`, `page` field in payload | HIGH: Only 10 of potentially hundreds of awards per CFDA |
+| Congress.gov | `limit=50`, no offset | `offset` and `limit` params (max 250), `pagination.next` URL | MEDIUM: 50 bills per query |
 
-**Rationale:** The project has exactly 4 scrapers with a shared `BaseScraper`. A circuit breaker needs ~30 lines of code: a failure counter, a state enum (CLOSED/OPEN/HALF_OPEN), and a reset timeout. Adding a library dependency for this is over-engineering.
+**Note:** USASpending already has full pagination in `fetch_tribal_awards_for_cfda()` (lines 115-193 of usaspending.py). The `scan()` method at line 84 does NOT paginate -- it uses `limit=10`. The pagination pattern already exists in the same file and should be copied.
+
+### Recommendation: No new libraries. Pure logic changes.
+
+All four federal APIs use standard pagination patterns. The existing `_request_with_retry()` method handles HTTP resilience. Pagination is a loop around it.
+
+#### Federal Register API Pagination
+
+Verified response structure from live API query:
+
+```json
+{
+  "count": 10000,
+  "total_pages": 50,
+  "next_page_url": "https://www.federalregister.gov/api/v1/documents?...&page=2&per_page=200",
+  "results": [...]
+}
+```
+
+**Implementation pattern:**
+
+```python
+async def _search_paginated(self, session, query: str, start_date: str) -> list[dict]:
+    """Fetch all pages for a search query."""
+    params = {
+        "conditions[term]": query,
+        "conditions[publication_date][gte]": start_date,
+        "conditions[type][]": DOC_TYPES,
+        "per_page": 200,  # Increase from 50 to API practical max
+        "order": "newest",
+        "fields[]": [...],
+    }
+    url = f"{self.base_url}/documents.json?{urlencode(params, doseq=True)}"
+    all_results = []
+    max_pages = 10  # Safety cap: 200 * 10 = 2,000 results
+
+    for page_num in range(1, max_pages + 1):
+        data = await self._request_with_retry(session, "GET", url)
+        results = data.get("results", [])
+        all_results.extend(results)
+
+        next_url = data.get("next_page_url")
+        if not next_url or not results:
+            break
+        url = next_url
+        await asyncio.sleep(0.5)  # Rate limit courtesy
+
+    return [self._normalize(item) for item in all_results]
+```
+
+#### Grants.gov search2 Pagination
+
+Verified from official Grants.gov API documentation:
+
+- `startRecordNum`: 0-based offset
+- `rows`: results per page
+- Response includes `hitCount` for total matches
+
+```python
+async def _search_paginated(self, session, query: str) -> list[dict]:
+    """Fetch all pages for a keyword search."""
+    rows = 100  # Increase from 50
+    start = 0
+    all_results = []
+    max_records = 1000  # Safety cap
+
+    while start < max_records:
+        payload = {
+            "keyword": query,
+            "oppStatuses": "forecasted|posted",
+            "sortBy": "openDate|desc",
+            "rows": rows,
+            "startRecordNum": start,
+        }
+        resp = await self._request_with_retry(session, "POST", url, json=payload)
+        data = resp.get("data", resp)
+        results = data.get("oppHits", [])
+        all_results.extend(results)
+
+        hit_count = data.get("hitCount", 0)
+        start += rows
+        if not results or start >= hit_count:
+            break
+        await asyncio.sleep(0.3)
+
+    return [self._normalize(item) for item in all_results]
+```
+
+#### USASpending scan() Pagination
+
+The pattern already exists at line 136 of usaspending.py. Copy the `while True` / `page_metadata.hasNext` loop from `fetch_tribal_awards_for_cfda()` into `_fetch_obligations()`:
+
+```python
+# Change limit from 10 to 100, add page iteration
+payload["limit"] = 100
+# ... while True loop with page_metadata.hasNext check
+```
+
+#### Congress.gov Pagination
+
+Verified from official GitHub documentation: max `limit=250`, `offset` parameter for starting record.
+
+```python
+async def _search_congress_paginated(self, session, term, bill_type, congress):
+    all_bills = []
+    offset = 0
+    limit = 250  # API maximum
+
+    while True:
+        params = {"query": term, "limit": limit, "offset": offset, ...}
+        data = await self._request_with_retry(session, "GET", url)
+        bills = data.get("bills", [])
+        all_bills.extend(bills)
+
+        pagination = data.get("pagination", {})
+        if not pagination.get("next") or not bills:
+            break
+        offset += limit
+        await asyncio.sleep(0.3)  # Respect 5000 req/hr rate limit
+
+    return [self._normalize(bill) for bill in all_bills]
+```
+
+### Confidence: HIGH
+
+All pagination patterns verified against live API responses or official documentation. No libraries needed.
+
+### Sources
+
+- [Federal Register API v1 Documentation](https://www.federalregister.gov/developers/documentation/api/v1) -- pagination fields verified via live API response
+- [Grants.gov search2 API](https://www.grants.gov/api/common/search2) -- startRecordNum/rows/hitCount verified
+- [Congress.gov API GitHub - BillEndpoint.md](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/BillEndpoint.md) -- offset/limit/250 max verified
+- Codebase: `src/scrapers/usaspending.py` lines 115-193 -- existing pagination pattern
+
+---
+
+## Feature 2: Congress.gov Bill Detail Fetching (NO NEW DEPENDENCIES)
+
+### Problem
+
+The Congress.gov scraper currently collects bill listings but does NOT fetch detail sub-endpoints. Each bill listing contains only: title, latest action, bill type/number/congress. Missing: full text URLs, cosponsors, all actions, summaries, subjects, committee assignments.
+
+### API Sub-Endpoints (Verified)
+
+| Sub-endpoint | URL Pattern | Returns |
+|---|---|---|
+| Text | `/v3/bill/{congress}/{type}/{number}/text` | Text version URLs (PDF, HTML, XML) |
+| Cosponsors | `/v3/bill/{congress}/{type}/{number}/cosponsors` | Cosponsor list with party, state, date |
+| Actions | `/v3/bill/{congress}/{type}/{number}/actions` | Full action history with dates and codes |
+| Summaries | `/v3/bill/{congress}/{type}/{number}/summaries` | CRS analyst summaries |
+| Subjects | `/v3/bill/{congress}/{type}/{number}/subjects` | Legislative subject terms |
+| Committees | `/v3/bill/{congress}/{type}/{number}/committees` | Committee assignments |
+
+### Recommendation: Add detail-fetching methods to existing CongressGovScraper
+
+No new dependencies. Add methods that call sub-endpoints using existing `_request_with_retry()`. Rate limit is 5,000 requests/hour -- with 11 legislative queries returning maybe 50-100 unique bills, fetching 3-4 sub-endpoints per bill is ~300-400 requests. Well within limits.
 
 ### Implementation Pattern
 
 ```python
-from enum import Enum
-from datetime import datetime, timezone, timedelta
+async def fetch_bill_details(self, session, bill: dict) -> dict:
+    """Enrich a bill listing with detail sub-endpoints."""
+    congress = bill.get("congress", 119)
+    bill_type = bill.get("bill_type", "").lower()
+    number = bill.get("bill_number", "")
+    base = f"{self.base_url}/bill/{congress}/{bill_type}/{number}"
 
-class CircuitState(Enum):
-    CLOSED = "closed"       # Normal operation
-    OPEN = "open"           # Rejecting calls
-    HALF_OPEN = "half_open" # Testing one call
+    # Fetch sub-endpoints in parallel (3 most valuable)
+    tasks = {
+        "actions": self._request_with_retry(session, "GET", f"{base}/actions?limit=250"),
+        "cosponsors": self._request_with_retry(session, "GET", f"{base}/cosponsors?limit=250"),
+        "summaries": self._request_with_retry(session, "GET", f"{base}/summaries"),
+    }
+    # Use asyncio.gather with return_exceptions for resilience
+    results = await asyncio.gather(*tasks.values(), return_exceptions=True)
 
-class CircuitBreaker:
-    """Per-source circuit breaker for BaseScraper.
+    enriched = dict(bill)
+    for key, result in zip(tasks.keys(), results):
+        if isinstance(result, Exception):
+            logger.warning("Failed to fetch %s for %s: %s", key, bill["source_id"], result)
+            enriched[key] = []
+        else:
+            enriched[key] = result.get(key, [])
 
-    Opens after `fail_threshold` consecutive failures.
-    Resets after `reset_timeout` seconds.
-    """
+    return enriched
+```
 
-    def __init__(self, fail_threshold: int = 5, reset_timeout: int = 60):
-        self.fail_threshold = fail_threshold
-        self.reset_timeout = timedelta(seconds=reset_timeout)
-        self._state = CircuitState.CLOSED
-        self._failure_count = 0
-        self._last_failure: datetime | None = None
+### Key Decision: Which sub-endpoints to fetch?
 
-    @property
-    def state(self) -> CircuitState:
-        if self._state == CircuitState.OPEN:
-            if self._last_failure and (
-                datetime.now(timezone.utc) - self._last_failure > self.reset_timeout
-            ):
-                self._state = CircuitState.HALF_OPEN
-        return self._state
+**Fetch these (HIGH value for advocacy packets):**
+- `actions` -- Shows legislative progress (committee referral, floor votes, etc.)
+- `cosponsors` -- Shows political support breadth
+- `summaries` -- CRS summaries are authoritative plain-English descriptions
 
-    def record_success(self) -> None:
-        self._failure_count = 0
-        self._state = CircuitState.CLOSED
+**Skip these (LOW value, adds request volume):**
+- `text` -- URLs to full text; most bills are too long for packet use
+- `subjects` -- Subject tags; we already filter by search terms
+- `committees` -- Committee info is in actions
 
-    def record_failure(self) -> None:
-        self._failure_count += 1
-        self._last_failure = datetime.now(timezone.utc)
-        if self._failure_count >= self.fail_threshold:
-            self._state = CircuitState.OPEN
+### Confidence: HIGH
 
-    @property
-    def allow_request(self) -> bool:
-        s = self.state
-        return s in (CircuitState.CLOSED, CircuitState.HALF_OPEN)
+Sub-endpoints verified via official GitHub documentation. API key already available in CI secrets.
+
+### Sources
+
+- [Congress.gov API BillEndpoint.md](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/BillEndpoint.md) -- sub-endpoint URLs and response formats
+- [Congress.gov API README](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/README.md) -- rate limit 5000/hr, offset/limit params
+
+---
+
+## Feature 3: Production Website (React + Vite + Tailwind)
+
+### Current Draft State
+
+The website draft at `.planning/website/` has significant issues identified in the LAUNCH-SWARM.md review plan:
+- 46 mock Tribe names (need 592)
+- Fake text blob downloads (need real DOCX from GitHub Pages)
+- Pre-compiled Tailwind CSS in index.css (1424 lines of compiled output)
+- 30+ unused Radix/shadcn components
+- Vite 6.3.5 (current stable is 7.3.1)
+- React 18.3.1 (current stable is 19.2.4)
+
+### Recommended Stack (Website)
+
+| Technology | Version | Purpose | Rationale |
+|---|---|---|---|
+| React | ^18.3.1 | UI framework | **Stay on React 18.** React 19's Server Components and use() hook provide zero value for a static GitHub Pages SPA. Upgrading risks breaking shadcn/Radix components. |
+| Vite | ^6.4.0 | Build tool | **Stay on Vite 6 LTS.** Vite 7 introduces breaking changes (Rolldown bundler). The draft's `vite.config.ts` works on v6. Upgrade to latest v6 patch only. |
+| Tailwind CSS | ^4.1.0 | Styling | **Already using v4 syntax** (`@import "tailwindcss"` in globals.css). Update to 4.1.x for latest utilities. |
+| @tailwindcss/vite | ^4.1.0 | Vite plugin | **Required for Tailwind v4.** Replaces the PostCSS plugin approach. Already implied by globals.css `@import "tailwindcss"`. |
+| Fuse.js | ^7.1.0 | Fuzzy search | **For 592-Tribe autocomplete.** Lightweight (7KB gzipped), excellent fuzzy matching. 592 items is trivially fast. Simpler API than FlexSearch. |
+| lucide-react | ^0.487.0 | Icons | **Already in draft.** Keep. |
+
+### What to REMOVE from Draft
+
+| Package | Why Remove |
+|---|---|
+| embla-carousel-react | Not used in any component |
+| react-day-picker | Not used (no date picker needed) |
+| react-hook-form | Not used (no forms with validation) |
+| react-resizable-panels | Not used |
+| recharts | Not used (no charts needed) |
+| next-themes | Not used (single dark theme, no toggle) |
+| input-otp | Not used |
+| cmdk | Not used (Fuse.js replaces command palette search) |
+| ~25 unused @radix-ui/* | Audit: only accordion, dialog, select, scroll-area, tooltip are used |
+
+**Estimated bundle reduction:** Removing unused packages should cut initial bundle from ~250KB+ to ~80-100KB gzipped.
+
+### What to ADD to Draft
+
+| Package | Version | Purpose | Why |
+|---|---|---|---|
+| fuse.js | ^7.1.0 | 592-Tribe fuzzy search autocomplete | Purpose-built for client-side fuzzy search. Better typo tolerance than native `.filter().includes()`. 592 items loads in <1ms. |
+| @tailwindcss/vite | ^4.1.0 | Tailwind v4 Vite integration | Required to process `@import "tailwindcss"` at build time. Eliminates the pre-compiled CSS problem. |
+
+### Website Dev Dependencies
+
+| Package | Version | Purpose | Why |
+|---|---|---|---|
+| typescript | ^5.7.0 | Type checking | Already implied by .tsx files; needs explicit dependency |
+| vitest | ^4.0.0 | Unit testing | Native Vite integration, 10-20x faster than Jest. Jest-compatible API. |
+| @testing-library/react | ^16.0.0 | Component testing | Standard React testing library. Works with Vitest. |
+| @testing-library/jest-dom | ^6.0.0 | DOM assertions | Custom matchers for DOM state |
+
+### Critical: Real Data Pipeline (NO library needed)
+
+The TribeSelector currently generates fake text blobs. The fix is architectural, not a library:
+
+1. `scripts/build_web_index.py` already produces `docs/web/data/tribes.json` with 592 Tribes
+2. Generate-packets workflow already copies DOCX files to `docs/web/tribes/`
+3. GitHub Pages serves these as static files
+4. Website fetches `tribes.json` at startup, Fuse.js indexes it, TribeSelector links to real DOCX URLs
+
+```typescript
+// Replace mock data import with live data fetch
+const [tribes, setTribes] = useState<Tribe[]>([]);
+useEffect(() => {
+  fetch('/data/tribes.json')
+    .then(r => r.json())
+    .then(data => setTribes(data.tribes));
+}, []);
+
+const fuse = useMemo(() => new Fuse(tribes, {
+  keys: ['name', 'states'],
+  threshold: 0.3,
+}), [tribes]);
+```
+
+### Vite Config Cleanup
+
+The draft's `vite.config.ts` has 26 bizarre version-pinned aliases (e.g., `'@radix-ui/react-tooltip@1.1.8': '@radix-ui/react-tooltip'`). These are Figma export artifacts and should all be removed. The `@` path alias is the only one to keep.
+
+```typescript
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  base: '/TCR-policy-scanner/',  // GitHub Pages repo path
+  build: {
+    target: 'es2020',  // Browser compat for SquareSpace iframe
+    outDir: 'build',
+  },
+});
+```
+
+### Confidence: HIGH
+
+React 18/Vite 6 versions verified as still supported. Fuse.js 7.1.0 verified on npm. Tailwind v4 `@import` syntax confirmed working in draft's globals.css.
+
+### Sources
+
+- [React 19.2 release blog](https://react.dev/blog/2025/10/01/react-19-2) -- Server Components focus, not relevant for static SPA
+- [Vite 7 announcement](https://vite.dev/blog/announcing-vite7) -- Rolldown bundler migration, breaking changes
+- [Tailwind CSS v4 Vite plugin](https://www.npmjs.com/package/@tailwindcss/vite) -- Official Vite integration for v4
+- [Fuse.js documentation](https://www.fusejs.io/) -- Lightweight fuzzy search, 7.1.0 latest
+- [Vitest 4.0](https://vitest.dev/blog/vitest-4) -- Browser mode, visual regression
+- Codebase: `.planning/website/package.json`, `vite.config.ts`, `globals.css`, `mockData.ts`
+
+---
+
+## Feature 4: SquareSpace Iframe Embedding (NO NEW DEPENDENCIES)
+
+### Architecture Decision
+
+**Use iframe embedding via SquareSpace Code Block.** This is the simplest approach with the cleanest boundary:
+
+| Approach | Complexity | Maintenance | Risk |
+|---|---|---|---|
+| iframe in Code Block | LOW | Zero SquareSpace maintenance | Cross-origin isolation is a feature, not a bug |
+| Code Injection (JS/CSS) | HIGH | Breaks on SquareSpace template updates | Fragile, unsupported |
+| SquareSpace Developer Mode | MEDIUM | Requires Business plan or higher | Template lock-in |
+
+### Requirements for iframe Compatibility
+
+**Website build must:**
+1. Set `base: '/TCR-policy-scanner/'` in Vite config (GitHub Pages subpath)
+2. Serve over HTTPS (GitHub Pages does this automatically)
+3. NOT use `X-Frame-Options: DENY` (GitHub Pages does not set this)
+4. Support responsive sizing within iframe container
+5. Use `loading="lazy"` on the iframe tag in SquareSpace
+
+**SquareSpace Code Block:**
+
+```html
+<div style="width:100%; max-width:1200px; margin:0 auto;">
+  <iframe
+    src="https://atniclimate.github.io/TCR-policy-scanner/"
+    width="100%"
+    height="800"
+    style="border:none; border-radius:8px;"
+    loading="lazy"
+    title="TCR Policy Scanner - Tribal Climate Resilience Document Portal"
+    allow="downloads"
+  ></iframe>
+</div>
+```
+
+**Key detail:** The `allow="downloads"` attribute is needed for DOCX file downloads to work from within the iframe. Without it, browsers may block the download.
+
+### Responsive iframe Height
+
+Add a `postMessage` resize pattern (no library needed):
+
+```typescript
+// In the React app (inside iframe)
+useEffect(() => {
+  const observer = new ResizeObserver(() => {
+    window.parent.postMessage({
+      type: 'tcr-resize',
+      height: document.body.scrollHeight,
+    }, '*');
+  });
+  observer.observe(document.body);
+  return () => observer.disconnect();
+}, []);
+```
+
+```html
+<!-- In SquareSpace Code Block -->
+<script>
+window.addEventListener('message', (e) => {
+  if (e.data?.type === 'tcr-resize') {
+    document.querySelector('iframe[src*="TCR-policy-scanner"]').height = e.data.height;
+  }
+});
+</script>
+```
+
+### SquareSpace Plan Requirement
+
+**Business plan or higher is required** for Code Blocks with custom HTML/iframe embeds. This is a SquareSpace limitation, not a technical one.
+
+### Confidence: HIGH
+
+GitHub Pages iframe embedding is well-documented. SquareSpace Code Blocks support iframes on Business+ plans.
+
+### Sources
+
+- [SquareSpace Embed Blocks documentation](https://support.squarespace.com/hc/en-us/articles/206543617-Embed-blocks)
+- [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) -- 100GB/month bandwidth, 1GB site size
+- [SquareSpace iframe embedding guides](https://whatsquare.space/blog/squarespace-embed-iframe)
+
+---
+
+## Feature 5: DOCX Visual QA Automation (NEW DEPENDENCIES)
+
+### Problem
+
+992 DOCX documents generated. Currently no automated way to verify visual rendering quality (page breaks, table alignment, font rendering, image placement). Manual review does not scale to 592 Tribes x 4 document types.
+
+### Recommended Stack
+
+| Technology | Version | Purpose | Why |
+|---|---|---|---|
+| playwright (Python) | >=1.58.0 | Browser automation, screenshots | Only browser automation tool with Python async support and headless Chromium. Captures page screenshots for visual comparison. |
+| LibreOffice | >=24.2 (system) | DOCX-to-PDF conversion | Headless mode converts DOCX to PDF/images. Free, cross-platform. Only reliable DOCX renderer outside Microsoft Office. |
+| Pillow | >=11.0.0 | Image comparison | Compare QA screenshots against baselines. Pixel-diff for visual regression detection. |
+
+### Why NOT Other Options
+
+| Option | Why Not |
+|---|---|
+| python-pptx visual tests | Wrong format (PPTX, not DOCX) |
+| docx2pdf (pip) | Wrapper around LibreOffice/Word; adds dependency without value |
+| WeasyPrint | HTML-to-PDF; cannot render DOCX |
+| pdf2image + poppler | Adds C dependency (poppler); LibreOffice can render directly |
+| Selenium | Playwright is faster, more reliable, better async support |
+| pytest-playwright | Playwright's Python package already includes pytest plugin |
+
+### Implementation Pipeline
+
+```
+DOCX -> LibreOffice headless -> PDF -> Playwright screenshot -> Pillow pixel-diff -> Pass/Fail
+```
+
+#### Step 1: LibreOffice Headless Conversion
+
+```python
+import subprocess
+
+def docx_to_pdf(docx_path: str, output_dir: str) -> str:
+    """Convert DOCX to PDF using LibreOffice headless."""
+    subprocess.run([
+        "soffice", "--headless", "--convert-to", "pdf",
+        "--outdir", output_dir, docx_path
+    ], check=True, timeout=60)
+    return str(Path(output_dir) / Path(docx_path).with_suffix(".pdf").name)
+```
+
+#### Step 2: Playwright PDF Screenshot
+
+```python
+from playwright.async_api import async_playwright
+
+async def screenshot_pdf(pdf_path: str, output_path: str) -> None:
+    """Open PDF in Chromium and capture full-page screenshot."""
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        page = await browser.new_page()
+        await page.goto(f"file://{pdf_path}")
+        await page.screenshot(path=output_path, full_page=True)
+        await browser.close()
+```
+
+#### Step 3: Visual Comparison
+
+```python
+from PIL import Image
+import math
+
+def images_similar(img1_path: str, img2_path: str, threshold: float = 0.02) -> bool:
+    """Compare two images. Returns True if pixel difference < threshold."""
+    img1 = Image.open(img1_path)
+    img2 = Image.open(img2_path)
+    if img1.size != img2.size:
+        return False
+    pixels1 = list(img1.getdata())
+    pixels2 = list(img2.getdata())
+    diff = sum(
+        math.sqrt(sum((a - b) ** 2 for a, b in zip(p1, p2)))
+        for p1, p2 in zip(pixels1, pixels2)
+    )
+    max_diff = math.sqrt(255**2 * 3) * len(pixels1)
+    return (diff / max_diff) < threshold
+```
+
+### GitHub Actions Integration
+
+LibreOffice and Playwright both work on `ubuntu-latest`:
+
+```yaml
+- name: Install LibreOffice
+  run: sudo apt-get install -y libreoffice-writer-nogui
+
+- name: Install Playwright browsers
+  run: |
+    pip install playwright>=1.58.0
+    playwright install chromium --with-deps
+```
+
+### Confidence: HIGH
+
+Playwright 1.58.0 verified on PyPI (supports Python 3.9-3.13). LibreOffice headless is standard on Ubuntu CI runners. Pillow is a mature library with no compatibility concerns.
+
+### Sources
+
+- [Playwright Python on PyPI](https://pypi.org/project/playwright/) -- v1.58.0, released 2026-01-30
+- [Playwright Python screenshots](https://playwright.dev/python/docs/screenshots) -- full_page, element, clip options
+- [LibreOffice headless conversion](https://ask.libreoffice.org/t/convert-files-to-pdf-a-on-command-line-headless-mode/821) -- soffice --headless --convert-to pdf
+- [Pillow documentation](https://pillow.readthedocs.io/) -- Image comparison capabilities
+
+---
+
+## Feature 6: Confidence Scoring (NO NEW DEPENDENCIES)
+
+### Problem
+
+Intelligence products (advocacy packets) have no machine-readable reliability indicator. A packet with 5 verified data sources should rank higher than one with 1 stale scraper result and no award data.
+
+### Recommendation: Hand-Rolled Weighted Scoring
+
+**Do NOT add scikit-learn, ydata-quality, or any ML library.** This is not a machine learning problem. It is a deterministic data quality assessment with known inputs.
+
+### Scoring Dimensions
+
+| Dimension | Weight | Input | Score Range |
+|---|---|---|---|
+| Data freshness | 0.25 | Days since last scan per source | 1.0 (today) to 0.0 (>30 days) |
+| Source coverage | 0.30 | How many of 4 scrapers returned data | 0.25 per source |
+| Award data quality | 0.20 | Has USASpending award matches | 1.0 (matched), 0.5 (CFDA only), 0.0 (none) |
+| Hazard data completeness | 0.15 | NRI + USFS data present | 1.0 (both), 0.5 (one), 0.0 (neither) |
+| Legislative relevance | 0.10 | Congress.gov bills with recent actions | 1.0 (active bill), 0.5 (stale), 0.0 (none) |
+
+### Implementation Pattern
+
+```python
+from dataclasses import dataclass
+from datetime import datetime, timezone
+
+@dataclass
+class ConfidenceScore:
+    """Per-Tribe confidence score for advocacy packet quality."""
+    overall: float          # Weighted composite 0.0-1.0
+    freshness: float        # Data age score
+    source_coverage: float  # How many sources contributed
+    award_quality: float    # Award match quality
+    hazard_completeness: float  # NRI + USFS data
+    legislative_relevance: float  # Active bill coverage
+    label: str              # "HIGH" / "MEDIUM" / "LOW"
+
+    @classmethod
+    def compute(cls, tribe_data: dict) -> "ConfidenceScore":
+        freshness = cls._score_freshness(tribe_data)
+        source_coverage = cls._score_sources(tribe_data)
+        award_quality = cls._score_awards(tribe_data)
+        hazard = cls._score_hazards(tribe_data)
+        legislative = cls._score_legislative(tribe_data)
+
+        overall = (
+            0.25 * freshness +
+            0.30 * source_coverage +
+            0.20 * award_quality +
+            0.15 * hazard +
+            0.10 * legislative
+        )
+        label = "HIGH" if overall >= 0.7 else "MEDIUM" if overall >= 0.4 else "LOW"
+
+        return cls(
+            overall=round(overall, 3),
+            freshness=round(freshness, 3),
+            source_coverage=round(source_coverage, 3),
+            award_quality=round(award_quality, 3),
+            hazard_completeness=round(hazard, 3),
+            legislative_relevance=round(legislative, 3),
+            label=label,
+        )
 ```
 
 ### Integration Points
 
-- Add a `CircuitBreaker` instance per scraper source (4 total) inside `BaseScraper.__init__`
-- Check `self._breaker.allow_request` before `_request_with_retry()`
-- Call `record_success()`/`record_failure()` based on outcome
-- When circuit is OPEN, immediately return empty results with a WARNING log
-- `fail_threshold=5` and `reset_timeout=60` are sane defaults for federal APIs
+- Compute per-Tribe confidence during packet generation (`src/packets/orchestrator.py`)
+- Store in `tribes.json` for website display (`scripts/build_web_index.py`)
+- Include confidence badge in DOCX packet cover page (`src/packets/docx_sections.py`)
+- Display as color-coded indicator on website (green/amber/red)
 
 ### Confidence: HIGH
 
-This pattern is well-established. No library needed. The existing `_request_with_retry` already handles per-request resilience; the circuit breaker adds per-source resilience.
+This is a straightforward weighted scoring system with known inputs. No ML or external libraries needed.
 
 ---
 
-## Debt Area 2: Dynamic Fiscal Year Configuration
+## Feature 7: Production Monitoring (100-200 Concurrent Users)
 
-### Current State
+### Architecture Assessment
 
-FY26 is hardcoded in multiple locations:
+The website is a static SPA on GitHub Pages. There is no backend server to monitor at request time. Monitoring needs are:
 
-| File | What is Hardcoded | Impact |
+| What | Scope | Tool |
 |---|---|---|
-| `src/scrapers/usaspending.py:68` | `"start_date": "2025-10-01", "end_date": "2026-09-30"` | USASpending queries only FY26 |
-| `src/packets/docx_sections.py:55` | `"FY26 Climate Resilience Program Priorities"` | Cover page title |
-| `src/scrapers/usaspending.py:217` | `f"FY26 Obligation: ..."` | Normalized item titles |
-| `src/monitors/iija_sunset.py:53` | `monitor_config.get("fy26_end", "2026-09-30")` | Already config-driven (good) |
-| `config/scanner_config.json:118` | `"fy26_end": "2026-09-30"` | Only used by IIJA monitor |
+| Website uptime | Is GitHub Pages serving? | GitHub Actions cron health check |
+| Scraper health | Are daily scans succeeding? | GitHub Actions workflow status |
+| Packet generation | Are weekly packets generating? | GitHub Actions workflow status |
+| User analytics | Page views, downloads, search queries | Lightweight client-side analytics |
+| Error tracking | JavaScript errors in production | Client-side error boundary |
 
-### Recommendation: Config-Driven FY with Utility Functions
+### GitHub Pages Performance Assessment (100-200 Concurrent Users)
 
-**Do NOT add the `fiscalyear` library.** The US federal fiscal year is dead simple: FY starts Oct 1 of the prior calendar year, ends Sep 30. The project needs a function, not a library.
-
-### Implementation Pattern
-
-Add to `scanner_config.json`:
-
-```json
-{
-  "fiscal_year": {
-    "current": 2026,
-    "label": "FY26",
-    "start_date": "2025-10-01",
-    "end_date": "2026-09-30"
-  }
-}
-```
-
-Add a utility module `src/fiscal.py` (~20 lines):
-
-```python
-"""Fiscal year utilities.
-
-US federal fiscal year: Oct 1 (prior CY) through Sep 30.
-All FY values flow from scanner_config.json["fiscal_year"]["current"].
-"""
-
-from datetime import date
-
-
-def fy_start(fy: int) -> str:
-    """Return FY start date as ISO string (YYYY-MM-DD)."""
-    return f"{fy - 1}-10-01"
-
-
-def fy_end(fy: int) -> str:
-    """Return FY end date as ISO string (YYYY-MM-DD)."""
-    return f"{fy}-09-30"
-
-
-def fy_label(fy: int) -> str:
-    """Return human-readable FY label (e.g., 'FY26')."""
-    return f"FY{fy % 100}"
-
-
-def current_fy() -> int:
-    """Determine the current federal fiscal year from today's date.
-
-    Oct-Dec of year N = FY(N+1). Jan-Sep of year N = FY(N).
-    Example: Oct 2025 = FY26, Feb 2026 = FY26, Oct 2026 = FY27.
-    """
-    today = date.today()
-    return today.year + 1 if today.month >= 10 else today.year
-```
-
-**Important note on auto-detection:** An auto-detect `current_fy()` function is useful for development but the config value should be authoritative. The scanner is a policy tool -- you do NOT want it to silently roll to FY27 on October 1st without human review. The config `fiscal_year.current` is intentionally explicit.
-
-### Files to Update
-
-1. `config/scanner_config.json` -- add `fiscal_year` section
-2. `src/scrapers/usaspending.py` -- read FY dates from config
-3. `src/packets/docx_sections.py` -- use `fy_label()` for cover page
-4. `src/monitors/iija_sunset.py` -- already config-driven, just reference the shared FY end date
-
-### Confidence: HIGH
-
-This is a simple config extraction. No library needed.
-
----
-
-## Debt Area 3: Integration Testing for Live API Scrapers
-
-### Current State
-
-The test suite (287 tests) is entirely unit tests using mock data. No test ever hits a real API. This is correct for CI, but there is no mechanism to:
-- Record real API responses for regression testing
-- Verify scraper normalization against real API schemas
-- Detect API contract changes (e.g., Grants.gov changing field names)
-
-### Recommendation: aioresponses for Unit Tests + VCR.py for Recorded Integration Tests
-
-**Two-layer strategy:**
-
-| Layer | Library | Purpose | When to Run |
+| Metric | GitHub Pages Limit | Our Expected Load | Verdict |
 |---|---|---|---|
-| Unit (existing) | Mock data (current) | Fast, deterministic | Every CI run |
-| Recorded Integration | aioresponses >=0.7.8 | Mock aiohttp at protocol level | Every CI run (replayed) |
-| Live Integration | VCR.py >=8.1.1 | Record/replay real HTTP cassettes | Manual, pre-release |
+| Bandwidth | 100 GB/month (soft) | ~592 DOCX files * ~500KB avg = ~290MB total. Even if every user downloads, 200 users * 1MB = 200MB/day = 6GB/month | SAFE |
+| Site size | 1 GB max | 592 * 4 DOCX types * ~500KB = ~1.1GB. **Tight.** May need to compress or use GitHub Releases for DOCX storage. | MONITOR |
+| Concurrent connections | No stated limit (CDN-backed) | 100-200 concurrent | SAFE |
+| Rate limiting | Possible 429 on high traffic | Unlikely at 200 users | LOW RISK |
 
-### Library 1: aioresponses (dev dependency)
+**Critical finding:** 592 Tribes * 4 document types * ~500KB = ~1.1GB, which exceeds GitHub Pages' 1GB site size limit. **Mitigation options:**
 
-**Version:** 0.7.8 (released January 2025)
-**Compatibility:** Python 3.12, aiohttp >=3.9.0
-**PyPI:** https://pypi.org/project/aioresponses/
+1. **Recommended: Store DOCX files in GitHub Releases** (15GB per release). Website links to Release assets instead of Pages-hosted files.
+2. Alternative: Compress DOCX files (already ZIP format internally, limited gains).
+3. Alternative: Host only per-Tribe packets (2 types), put regional packets in Releases.
 
-**Why aioresponses over alternatives:**
+### Recommended Monitoring Stack
 
-| Option | Verdict | Reason |
+| Tool | Purpose | Implementation | New Dependency? |
+|---|---|---|---|
+| GitHub Actions health check | Uptime monitoring | Cron workflow that curl's the site | No |
+| Workflow status badges | Scraper/packet pipeline health | README badges linking to Actions | No |
+| Plausible Analytics | Privacy-first user analytics | Script tag, no cookies, GDPR-compliant | Script tag only (no npm) |
+| React Error Boundary | Client-side error capture | Built-in React pattern | No |
+
+### Why Plausible (Not Google Analytics)
+
+| Criteria | Plausible | Google Analytics |
 |---|---|---|
-| aioresponses | USE THIS | Purpose-built for aiohttp mocking, pytest-native |
-| responses | No | Only mocks `requests`, not `aiohttp` |
-| pytest-httpx | No | Only mocks `httpx`, not `aiohttp` |
-| unittest.mock | Fragile | Manual AsyncMock on aiohttp internals is brittle |
+| Privacy | No cookies, GDPR-compliant | Requires cookie consent |
+| Tribal data sovereignty | No user tracking, aggregate only | Individual user profiles |
+| Size | 1KB script tag | 45KB+ gtag.js |
+| Setup | One `<script>` tag | Requires consent banner |
+| Cost | Free for open source | Free |
+| TSDF alignment | T0-compatible (no PII collection) | T1+ (collects user behavior data) |
 
-**Usage pattern for scraper tests:**
+**Plausible is critical for TSDF compliance.** The Tribal Sovereignty Data Framework requires minimizing data collection about Tribal Nation users. Google Analytics collects IP addresses, browser fingerprints, and behavior patterns that create a T1 data classification. Plausible collects only aggregate page views with no PII.
 
-```python
-import pytest
-from aioresponses import aioresponses
-
-@pytest.fixture
-def mock_aiohttp():
-    with aioresponses() as m:
-        yield m
-
-@pytest.mark.asyncio
-async def test_usaspending_scraper(mock_aiohttp):
-    """Test USASpending scraper against real API response shape."""
-    mock_aiohttp.post(
-        "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-        payload={
-            "results": [
-                {
-                    "Award ID": "AWARD-123",
-                    "Recipient Name": "Navajo Nation",
-                    "Award Amount": 500000.00,
-                    "Awarding Agency": "Bureau of Indian Affairs",
-                    "Start Date": "2025-10-15",
-                }
-            ],
-            "page_metadata": {"hasNext": False},
-        },
-    )
-    scraper = USASpendingScraper(mock_config)
-    items = await scraper.scan()
-    assert len(items) == 1
-    assert items[0]["source"] == "usaspending"
+```html
+<!-- In index.html -->
+<script defer data-domain="atniclimate.github.io" src="https://plausible.io/js/script.js"></script>
 ```
 
-### Library 2: VCR.py (dev dependency, optional)
+### Health Check Workflow
 
-**Version:** 8.1.1 (released January 2026)
-**Compatibility:** Python >=3.10 (includes 3.12), aiohttp supported
-**PyPI:** https://pypi.org/project/vcrpy/
-
-**Why VCR.py:**
-- Records real HTTP responses to YAML "cassettes" on first run
-- Replays cassettes on subsequent runs (no network needed)
-- Native aiohttp integration (verified in vcrpy/tests/integration/test_aiohttp.py)
-- Enables recording golden responses from each federal API for regression testing
-
-**Usage pattern:**
-
-```python
-import vcr
-
-@vcr.use_cassette("tests/cassettes/usaspending_tribal_awards.yaml")
-async def test_usaspending_real_response():
-    """Record and replay real USASpending response."""
-    scraper = USASpendingScraper(real_config)
-    async with scraper._create_session() as session:
-        items = await scraper._fetch_obligations(session, "15.156", "bia_tcr")
-    assert len(items) > 0
-    assert all("source" in item for item in items)
+```yaml
+name: Site Health Check
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # Every 4 hours
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check website
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://atniclimate.github.io/TCR-policy-scanner/)
+          if [ "$STATUS" != "200" ]; then
+            echo "::error::Website returned HTTP $STATUS"
+            exit 1
+          fi
+      - name: Check tribes.json
+        run: |
+          curl -sf https://atniclimate.github.io/TCR-policy-scanner/data/tribes.json | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)
+          tribes = data.get('total_tribes', 0)
+          if tribes < 500:
+              print(f'::warning::Only {tribes} tribes in index (expected 592)')
+          else:
+              print(f'Health check passed: {tribes} tribes')
+          "
 ```
 
-**Cassette management:**
-- Store cassettes in `tests/cassettes/` (git-tracked)
-- Record with `--record-mode=once` (first run hits network, subsequent replays)
-- Re-record periodically (monthly) to detect API schema changes
-- Add `tests/cassettes/` to `.gitignore` if cassettes contain sensitive data, or sanitize headers
+### Confidence: HIGH
 
-### What NOT to Use
+GitHub Pages limits are well-documented. Plausible is a known open-source analytics tool. The 1GB site size limit is the only risk requiring mitigation via GitHub Releases.
 
-| Library | Why Not |
+### Sources
+
+- [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) -- 100GB bandwidth, 1GB site size
+- [Plausible Analytics](https://plausible.io/) -- Privacy-first, GDPR-compliant
+- [GitHub Releases file limits](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) -- 2GB per file, no total limit documented
+
+---
+
+## Summary: All Stack Changes
+
+### ADD to requirements.txt (Production)
+
+No production Python dependencies needed. All Python-side changes are logic-only (pagination, bill detail fetching, confidence scoring).
+
+### ADD to requirements-dev.txt (Python Dev)
+
+| Package | Version | Purpose |
+|---|---|---|
+| playwright | >=1.58.0 | DOCX visual QA screenshots |
+| Pillow | >=11.0.0 | Visual comparison for QA |
+
+### ADD to Website package.json
+
+| Package | Version | Purpose | Section |
+|---|---|---|---|
+| fuse.js | ^7.1.0 | 592-Tribe fuzzy search | dependencies |
+| @tailwindcss/vite | ^4.1.0 | Tailwind v4 Vite plugin | dependencies |
+| typescript | ^5.7.0 | Type checking | devDependencies |
+| vitest | ^4.0.0 | Unit testing | devDependencies |
+| @testing-library/react | ^16.0.0 | Component testing | devDependencies |
+| @testing-library/jest-dom | ^6.0.0 | DOM matchers | devDependencies |
+
+### REMOVE from Website package.json
+
+| Package | Why |
 |---|---|
-| pytest-recording | Wrapper around VCR.py; adds indirection without value for this project |
-| pytest-vcr | Older, less maintained than pytest-recording |
-| responses | Synchronous only (requests library) |
-| wiremock | Java-based, overkill |
-| moto | AWS service mocking, not relevant |
+| embla-carousel-react | Unused |
+| react-day-picker | Unused |
+| react-hook-form | Unused |
+| react-resizable-panels | Unused |
+| recharts | Unused |
+| next-themes | Unused (single theme) |
+| input-otp | Unused |
+| cmdk | Unused (replaced by Fuse.js) |
+| ~20 @radix-ui/* packages | Unused (keep only: accordion, dialog, select, scroll-area, tooltip, slot, separator) |
 
-### Installation
+### SYSTEM DEPENDENCIES (GitHub Actions only)
 
-```bash
-pip install -D aioresponses>=0.7.8
-# Optional, for recorded integration tests:
-pip install -D vcrpy>=8.1.1
-```
-
-### Confidence: HIGH
-
-aioresponses is the standard tool for aiohttp test mocking. VCR.py v8.1.1 has verified aiohttp support. Both are actively maintained.
-
----
-
-## Debt Area 4: Config-Driven File Paths
-
-### Current State
-
-Hardcoded `Path()` strings scattered across 8+ files:
-
-| File | Hardcoded Path | Should Come From |
-|---|---|---|
-| `src/main.py:34` | `Path("config/scanner_config.json")` | CLI arg or env var (entry point, ok to hardcode) |
-| `src/main.py:35` | `Path("data/program_inventory.json")` | Config |
-| `src/main.py:36` | `Path("outputs/LATEST-GRAPH.json")` | Config |
-| `src/main.py:37` | `Path("outputs/LATEST-MONITOR-DATA.json")` | Config |
-| `src/main.py:104` | `Path("data/graph_schema.json")` | Config |
-| `src/reports/generator.py:16` | `Path("outputs")` | Config |
-| `src/analysis/change_detector.py:13` | `Path("outputs/LATEST-RESULTS.json")` | Config |
-| `src/graph/builder.py:25` | `Path("data/graph_schema.json")` | Config |
-| `src/scrapers/base.py:107` | `Path("outputs/.cfda_tracker.json")` | Config |
-| `src/monitors/hot_sheets.py:29` | `Path("outputs/.monitor_state.json")` | Config |
-| `src/packets/orchestrator.py:537` | `Path("data/graph_schema.json")` | Config |
-
-### Recommendation: Frozen Dataclass Config + scanner_config.json
-
-**Do NOT use pydantic, dynaconf, or any config library.** The project already has a working JSON config pattern. Extend it.
-
-### Implementation Pattern
-
-Add a `paths` section to `scanner_config.json`:
-
-```json
-{
-  "paths": {
-    "data_dir": "data",
-    "output_dir": "outputs",
-    "config_dir": "config",
-    "program_inventory": "data/program_inventory.json",
-    "graph_schema": "data/graph_schema.json",
-    "latest_graph": "outputs/LATEST-GRAPH.json",
-    "latest_results": "outputs/LATEST-RESULTS.json",
-    "latest_monitor_data": "outputs/LATEST-MONITOR-DATA.json",
-    "cfda_tracker": "outputs/.cfda_tracker.json",
-    "monitor_state": "outputs/.monitor_state.json"
-  }
-}
-```
-
-Add a frozen dataclass in `src/paths.py` (~40 lines):
-
-```python
-"""Centralized path configuration.
-
-All file paths flow from scanner_config.json["paths"].
-Each module reads from this config instead of hardcoding Path() literals.
-"""
-
-from dataclasses import dataclass
-from pathlib import Path
-
-
-@dataclass(frozen=True)
-class ProjectPaths:
-    """Immutable project path configuration."""
-
-    data_dir: Path
-    output_dir: Path
-    program_inventory: Path
-    graph_schema: Path
-    latest_graph: Path
-    latest_results: Path
-    latest_monitor_data: Path
-    cfda_tracker: Path
-    monitor_state: Path
-
-    @classmethod
-    def from_config(cls, config: dict, project_root: Path | None = None) -> "ProjectPaths":
-        """Build from scanner_config.json paths section."""
-        paths_cfg = config.get("paths", {})
-        root = project_root or Path.cwd()
-
-        def _resolve(key: str, default: str) -> Path:
-            return root / paths_cfg.get(key, default)
-
-        return cls(
-            data_dir=_resolve("data_dir", "data"),
-            output_dir=_resolve("output_dir", "outputs"),
-            program_inventory=_resolve("program_inventory", "data/program_inventory.json"),
-            graph_schema=_resolve("graph_schema", "data/graph_schema.json"),
-            latest_graph=_resolve("latest_graph", "outputs/LATEST-GRAPH.json"),
-            latest_results=_resolve("latest_results", "outputs/LATEST-RESULTS.json"),
-            latest_monitor_data=_resolve("latest_monitor_data", "outputs/LATEST-MONITOR-DATA.json"),
-            cfda_tracker=_resolve("cfda_tracker", "outputs/.cfda_tracker.json"),
-            monitor_state=_resolve("monitor_state", "outputs/.monitor_state.json"),
-        )
-```
-
-### Migration Strategy
-
-1. Add `paths` section to `scanner_config.json` (backward-compatible: defaults match current hardcoded values)
-2. Create `src/paths.py` with `ProjectPaths` dataclass
-3. Construct `ProjectPaths.from_config(config)` once in `main.py` after loading config
-4. Pass `ProjectPaths` instance (or individual paths) to components that need them
-5. Remove hardcoded `Path()` literals one module at a time
-6. Each module's constructor gains a path parameter with the current hardcoded value as default (backward-compatible)
-
-### What NOT to Do
-
-- Do NOT use environment variables for paths (this is a data pipeline, not a web app)
-- Do NOT use pydantic Settings (adds a heavy dependency for 10 paths)
-- Do NOT use dynaconf/python-decouple (adds dependency for something a dataclass handles)
-- Do NOT make paths CLI arguments (too many; config file is the right place)
-
-### Confidence: HIGH
-
-This is stdlib-only (dataclasses + pathlib). The pattern already exists in `src/packets/hazards.py` which uses `_resolve_path()` -- just needs to be formalized and centralized.
-
----
-
-## Debt Area 5: Data Cache Population Automation
-
-### Current State
-
-Three data caches must be populated via manual scripts or live API calls before packet generation works:
-
-| Cache | Source | Current Method | Files |
+| Tool | Version | Install Method | Purpose |
 |---|---|---|---|
-| Award cache | USASpending API | `TribalAwardMatcher.run(scraper)` | data/award_cache/*.json (592 files) |
-| Hazard profiles | FEMA NRI CSV + USFS XLSX | `HazardProfileBuilder.build_all_profiles()` | data/hazard_profiles/*.json (592 files) |
-| Congressional cache | Congress.gov API | `scripts/build_congress_cache.py` | data/congressional_cache.json |
-
-The award cache requires a live USASpending API call (`fetch_all_tribal_awards()` -- paginates across 12 CFDAs). The hazard profiles require downloading FEMA NRI CSV and USFS XLSX files manually, then running the builder. There is no unified command to refresh all caches.
-
-### Recommendation: CLI Subcommand + Makefile Target
-
-**No new libraries needed.** The infrastructure already exists in `src/packets/awards.py` and `src/packets/hazards.py`. The gap is orchestration and CLI access.
-
-### Implementation Pattern
-
-Add a `--refresh-cache` CLI subcommand to `src/main.py`:
-
-```python
-parser.add_argument("--refresh-cache", type=str, nargs="?", const="all",
-                    choices=["all", "awards", "hazards", "congress"],
-                    help="Refresh data caches (awards, hazards, congress, or all)")
-```
-
-The handler calls existing code:
-
-```python
-if args.refresh_cache:
-    target = args.refresh_cache
-    if target in ("all", "awards"):
-        from src.packets.awards import TribalAwardMatcher
-        from src.scrapers.usaspending import USASpendingScraper
-        matcher = TribalAwardMatcher(config)
-        scraper = USASpendingScraper(config)
-        result = matcher.run(scraper)
-        print(f"Awards: {result}")
-
-    if target in ("all", "hazards"):
-        from src.packets.hazards import HazardProfileBuilder
-        builder = HazardProfileBuilder(config)
-        count = builder.build_all_profiles()
-        print(f"Hazard profiles: {count} files written")
-
-    if target in ("all", "congress"):
-        from scripts.build_congress_cache import main as build_congress
-        build_congress()
-        print("Congressional cache refreshed")
-    return
-```
-
-### Cache Freshness Tracking
-
-Add a metadata file `data/.cache_manifest.json`:
-
-```json
-{
-  "awards": {
-    "last_refreshed": "2026-02-11T00:00:00Z",
-    "files_count": 592,
-    "source": "USASpending API"
-  },
-  "hazards": {
-    "last_refreshed": "2026-02-11T00:00:00Z",
-    "files_count": 592,
-    "source": "FEMA NRI + USFS"
-  },
-  "congress": {
-    "last_refreshed": "2026-02-11T00:00:00Z",
-    "source": "Congress.gov API"
-  }
-}
-```
-
-The `--refresh-cache` command updates this manifest. The `--prep-packets` command checks it and warns if caches are stale (e.g., >30 days old).
-
-### Data Source Download Guidance
-
-For FEMA NRI and USFS data (which require manual download), add clear instructions:
-
-```
-# In --refresh-cache hazards output:
-"Hazard profiles require manual data downloads:
-  1. FEMA NRI: https://hazards.fema.gov/nri/data-resources
-     -> Download 'NRI Table: Counties' CSV -> data/nri/NRI_Table_Counties.csv
-     -> Download 'Tribal County Relational Database' CSV -> data/nri/
-  2. USFS: https://wildfirerisk.org/
-     -> Download XLSX -> data/usfs/
-
-Then run: python -m src.main --refresh-cache hazards"
-```
-
-### Confidence: HIGH
-
-The code already exists. This is pure orchestration wiring.
-
----
-
-## Summary: What to Add vs What NOT to Add
-
-### ADD (dev dependencies only)
-
-| Package | Version | Purpose | Size |
-|---|---|---|---|
-| aioresponses | >=0.7.8 | Mock aiohttp in integration tests | Small |
-| vcrpy | >=8.1.1 | Record/replay HTTP cassettes (optional) | Small |
-
-### ADD (new source files, no dependencies)
-
-| File | Purpose | Lines |
-|---|---|---|
-| `src/circuit_breaker.py` | Per-source circuit breaker for BaseScraper | ~40 |
-| `src/fiscal.py` | FY date utilities (fy_start, fy_end, fy_label) | ~25 |
-| `src/paths.py` | Frozen dataclass for centralized path config | ~45 |
+| LibreOffice | >=24.2 | `apt-get install libreoffice-writer-nogui` | DOCX-to-PDF conversion |
+| Chromium | (bundled) | `playwright install chromium --with-deps` | PDF screenshots |
 
 ### DO NOT ADD
 
-| Library | Why Not |
+| Library/Tool | Why Not |
 |---|---|
-| circuitbreaker | Only 30 lines needed; library adds dependency for trivial code |
-| pybreaker | No asyncio support (Tornado only) |
-| aiobreaker | Low maintenance, uncertain compatibility |
-| fiscalyear | US federal FY is 3 lines of code; library is overkill |
-| pydantic | Heavy dependency for 10 path fields |
-| dynaconf | Config management library; project already has JSON config |
-| pytest-recording | Thin wrapper over VCR.py; use VCR.py directly |
-
-### MODIFY (existing files)
-
-| File | Change |
-|---|---|
-| `config/scanner_config.json` | Add `fiscal_year` and `paths` sections |
-| `src/scrapers/base.py` | Add circuit breaker integration |
-| `src/scrapers/usaspending.py` | Read FY dates from config |
-| `src/packets/docx_sections.py` | Use fy_label() for cover page |
-| `src/main.py` | Add --refresh-cache, construct ProjectPaths |
-| `src/graph/builder.py` | Accept graph_schema path from config |
-| `src/analysis/change_detector.py` | Accept cache path from config |
-| `src/reports/generator.py` | Accept output dir from config |
-| `src/monitors/hot_sheets.py` | Accept state path from config |
-| `requirements.txt` | No changes to production deps |
+| React 19 | Server Components not needed for static SPA; risks breaking shadcn/Radix |
+| Vite 7 | Breaking changes (Rolldown bundler); v6 is stable and supported |
+| Next.js | Overkill for a static SPA on GitHub Pages |
+| Google Analytics | Violates TSDF data sovereignty principles; collects PII |
+| Sentry | Overkill for a static SPA with no backend |
+| DataDog / New Relic | No backend to monitor; SPA + GitHub Pages |
+| scikit-learn | Confidence scoring is deterministic weighting, not ML |
+| docx2pdf | Thin wrapper around LibreOffice; adds dependency without value |
+| FlexSearch | Overkill for 592 items; Fuse.js is simpler with better fuzzy matching |
+| Algolia / Meilisearch | Server-side search; 592 items do not need a search service |
 
 ---
 
-## Installation Changes
+## Installation Commands
+
+### Python (Dev)
 
 ```bash
-# Production dependencies: NO CHANGES
-# (circuit breaker and fiscal year are hand-rolled)
+# Visual QA automation (dev only)
+pip install playwright>=1.58.0 Pillow>=11.0.0
+playwright install chromium --with-deps
+```
 
-# Dev dependencies (add to requirements-dev.txt or test extras):
-pip install aioresponses>=0.7.8
-pip install vcrpy>=8.1.1  # optional, for recorded integration tests
+### Website
+
+```bash
+cd website/
+
+# Clean install (remove problematic Figma-exported deps)
+rm -rf node_modules package-lock.json
+
+# Install production deps
+npm install react@^18.3.1 react-dom@^18.3.1
+npm install fuse.js@^7.1.0
+npm install @tailwindcss/vite@^4.1.0 tailwindcss@^4.1.0
+npm install lucide-react@^0.487.0
+npm install class-variance-authority@^0.7.1 clsx tailwind-merge
+npm install @radix-ui/react-accordion @radix-ui/react-dialog @radix-ui/react-select @radix-ui/react-scroll-area @radix-ui/react-tooltip @radix-ui/react-slot @radix-ui/react-separator
+
+# Install dev deps
+npm install -D @vitejs/plugin-react-swc@^3.10.0 vite@^6.4.0
+npm install -D typescript@^5.7.0
+npm install -D vitest@^4.0.0 @testing-library/react@^16.0.0 @testing-library/jest-dom@^6.0.0
+npm install -D @types/node@^20.10.0
 ```
 
 ---
 
-## Phase Ordering Recommendation
+## Phase Ordering Recommendation (Stack Perspective)
 
-Based on dependency analysis:
+Based on dependency analysis between features:
 
-1. **Config-driven paths (Debt 4)** -- Foundation. Other changes need config access patterns.
-2. **Fiscal year config (Debt 2)** -- Depends on config pattern from step 1.
-3. **Circuit breaker (Debt 1)** -- Independent, but benefits from config for thresholds.
-4. **Integration tests (Debt 3)** -- Can test all the above changes.
-5. **Cache automation (Debt 5)** -- CLI wiring, builds on everything else.
+1. **Scraper pagination** -- Independent. Fix silent data truncation first because all downstream features depend on complete data.
+2. **Congress.gov bill detail fetching** -- Depends on Congress.gov pagination being correct. Small addition to existing scraper.
+3. **Confidence scoring** -- Depends on complete scraper data (pagination must be fixed first). Produces data that website and packets consume.
+4. **Website (real data pipeline)** -- Depends on `tribes.json` being populated with confidence scores and complete data. Largest single feature.
+5. **SquareSpace iframe embedding** -- Depends on website being deployed to GitHub Pages.
+6. **DOCX visual QA** -- Independent. Can run in parallel with website work. Tests existing DOCX output.
+7. **Production monitoring** -- Last. Monitors everything else.
 
-This order minimizes rework: each phase builds on the prior one.
+---
+
+## Critical Architecture Decisions
+
+### Decision 1: DOCX Storage Location
+
+**Problem:** 592 Tribes * 4 doc types * ~500KB = ~1.1GB. Exceeds GitHub Pages 1GB limit.
+
+**Recommendation:** Use GitHub Releases for DOCX files. Website `tribes.json` links to Release asset URLs instead of Pages-relative paths.
+
+**Impact:** Requires modifying `scripts/build_web_index.py` to generate Release asset URLs, and the generate-packets workflow to create/update a Release.
+
+### Decision 2: React Version
+
+**Recommendation:** Stay on React 18. React 19's headline features (Server Components, `use()` hook, Actions) are designed for server-rendered apps. This is a static SPA. Upgrading risks shadcn/Radix compatibility issues with zero benefit.
+
+### Decision 3: Vite Version
+
+**Recommendation:** Stay on Vite 6.x. Vite 7 migrated to Rolldown (replacing esbuild+Rollup). While Rolldown is faster, it introduces breaking changes in plugin compatibility. The draft's Figma-generated `vite.config.ts` needs cleanup regardless -- do that cleanup on stable Vite 6 rather than debugging Vite 7 migration simultaneously.
 
 ---
 
 ## Sources
 
-- [circuitbreaker 2.1.3 on PyPI](https://pypi.org/project/circuitbreaker/) -- Verified async support, Python 3.8-3.10 classifiers
-- [pybreaker on GitHub](https://github.com/danielfm/pybreaker) -- Confirmed Tornado-only async, no asyncio
-- [aiobreaker on GitHub](https://github.com/arlyon/aiobreaker) -- Fork of pybreaker for asyncio
-- [aioresponses on PyPI](https://pypi.org/project/aioresponses/) -- v0.7.8, aiohttp mock library
-- [aioresponses on GitHub](https://github.com/pnuckowski/aioresponses) -- Usage patterns and examples
-- [VCR.py on PyPI](https://pypi.org/project/vcrpy/) -- v8.1.1, Python >=3.10, aiohttp integration verified
-- [VCR.py aiohttp integration tests](https://github.com/kevin1024/vcrpy/blob/master/tests/integration/test_aiohttp.py) -- Confirmed aiohttp cassette support
-- [aiohttp testing docs](https://docs.aiohttp.org/en/stable/testing.html) -- Official testing guidance
-- [fiscalyear on PyPI](https://pypi.org/project/fiscalyear/) -- Evaluated and rejected (overkill)
-- [Dataclass config patterns](https://grueter.dev/blog/dataclass-patterns/) -- Frozen dataclass best practices
-- [Python pathlib docs](https://docs.python.org/3/library/pathlib.html) -- Official pathlib reference
-- Codebase analysis: `src/scrapers/base.py`, `src/main.py`, `config/scanner_config.json`, all 4 scrapers, `src/packets/orchestrator.py`, `src/packets/awards.py`, `src/packets/hazards.py`
+### API Documentation (Verified, HIGH Confidence)
+
+- [Federal Register API v1](https://www.federalregister.gov/developers/documentation/api/v1) -- Pagination fields verified via live API response
+- [Grants.gov search2 API](https://www.grants.gov/api/common/search2) -- startRecordNum/rows/hitCount pagination documented
+- [Congress.gov API BillEndpoint.md](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/BillEndpoint.md) -- Sub-endpoints for text, cosponsors, actions, summaries
+- [Congress.gov API README](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/README.md) -- Rate limit 5000/hr, offset max 250
+- [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) -- 100GB/mo bandwidth, 1GB site size
+
+### Package Registry (Verified, HIGH Confidence)
+
+- [Playwright Python 1.58.0 on PyPI](https://pypi.org/project/playwright/) -- Released 2026-01-30, Python 3.9-3.13
+- [Fuse.js 7.1.0 on npm](https://www.npmjs.com/package/fuse.js) -- Lightweight fuzzy search
+- [Tailwind CSS 4.1.18 on npm](https://www.npmjs.com/package/tailwindcss) -- Latest v4 with Vite plugin
+- [React 19.2.4 on npm](https://www.npmjs.com/package/react) -- Current latest (NOT recommended for this project)
+- [Vite 7.3.1 on npm](https://www.npmjs.com/package/vite) -- Current latest (NOT recommended; stay on v6)
+- [Vitest 4.0.18 on npm](https://www.npmjs.com/package/vitest) -- Jest-compatible, Vite-native testing
+
+### Embedding & Analytics
+
+- [SquareSpace embed blocks](https://support.squarespace.com/hc/en-us/articles/206543617-Embed-blocks) -- iframe via Code Block
+- [SquareSpace iframe best practices](https://whatsquare.space/blog/squarespace-embed-iframe) -- HTTPS, lazy loading, sandbox
+- [Plausible Analytics](https://plausible.io/) -- Privacy-first, no cookies, GDPR-compliant
+
+### Codebase Analysis
+
+- `src/scrapers/federal_register.py` -- per_page=50, no pagination loop
+- `src/scrapers/grants_gov.py` -- rows=50/25, no startRecordNum offset
+- `src/scrapers/usaspending.py` -- scan() uses limit=10 page=1; but fetch_tribal_awards_for_cfda() already paginates correctly (lines 115-193)
+- `src/scrapers/congress_gov.py` -- limit=50, no offset parameter
+- `src/scrapers/base.py` -- _request_with_retry() handles HTTP resilience, circuit breaker integrated
+- `.planning/website/package.json` -- 30+ Radix deps, most unused
+- `.planning/website/vite.config.ts` -- 26 bizarre version-pinned aliases (Figma artifacts)
+- `.planning/website/src/data/mockData.ts` -- 46 hardcoded Tribes (need 592)
+- `.planning/website/src/components/TribeSelector.tsx` -- generates fake text blobs
+- `scripts/build_web_index.py` -- already produces tribes.json with 592 Tribes
+- `.github/workflows/generate-packets.yml` -- already copies DOCX to docs/web/
