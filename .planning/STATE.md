@@ -13,16 +13,16 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Milestone:** v1.3 Production Launch
 **Phase:** 15 of 18 (Congressional Intelligence Pipeline)
-**Plan:** 01 of 7 in phase (01 complete, 03 docs complete)
+**Plan:** 02 of 7 in phase (01-02 complete, 03 docs complete)
 **Status:** In progress
-**Last activity:** 2026-02-12 -- Completed 15-01-PLAN.md (data model contract)
+**Last activity:** 2026-02-12 -- Completed 15-02-PLAN.md (scraper pagination)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [██░░░░░░░░]  ~8% IN PROGRESS (2/7 plans in Phase 15 complete)
+v1.3     [███░░░░░░░] ~14% IN PROGRESS (3/7 plans in Phase 15 complete)
 ```
 
 ## Performance Metrics
@@ -33,7 +33,7 @@ v1.3     [██░░░░░░░░]  ~8% IN PROGRESS (2/7 plans in Phase 1
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | Total phases | 14 completed, 4 planned |
-| Total plans | 47 completed |
+| Total plans | 48 completed |
 | Total requirements | 76 completed, 39 active |
 | Total tests | 743 (target: 900+ after Phase 15) |
 | Source files | 96 Python files |
@@ -71,6 +71,9 @@ v1.3     [██░░░░░░░░]  ~8% IN PROGRESS (2/7 plans in Phase 1
 | DEC-1501-01 | Legislator model kept lightweight vs full CongressionalDelegate | 15-01 |
 | DEC-1501-02 | Confidence decay_rate=0.01 (~69 day half-life) for congressional data | 15-01 |
 | DEC-1501-03 | DEFAULT_SOURCE_WEIGHTS as module-level dict for override flexibility | 15-01 |
+| DEC-1502-01 | Grants.gov uses startRecordNum offset not page number | 15-02 |
+| DEC-1502-02 | USASpending _fetch_obligations upgraded to limit=100 with full pagination | 15-02 |
+| DEC-1502-03 | Safety caps vary by scraper (2500/1000/1000/5000) | 15-02 |
 
 ### Todos
 
@@ -85,11 +88,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-12
-**Stopped at:** Completed 15-01-PLAN.md (data model contract)
-**Next step:** Execute 15-02-PLAN.md (Congress.gov API client)
+**Stopped at:** Completed 15-02-PLAN.md (scraper pagination)
+**Next step:** Execute 15-04-PLAN.md (next executable plan)
 **Resume file:** None
-**Resume command:** /gsd:execute-phase 15 (continue from plan 02)
+**Resume command:** /gsd:execute-phase 15 (continue from plan 04)
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 15-01 completion*
+*Last updated: 2026-02-12 after 15-02 completion*
