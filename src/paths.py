@@ -69,6 +69,9 @@ REGIONAL_CONFIG_PATH: Path = DATA_DIR / "regional_config.json"
 AIANNH_CROSSWALK_PATH: Path = DATA_DIR / "aiannh_tribe_crosswalk.json"
 """AIANNH-to-Tribe crosswalk for geographic boundary resolution."""
 
+CONGRESSIONAL_INTEL_PATH: Path = DATA_DIR / "congressional_intel.json"
+"""Congressional intelligence cache with bill detail and relevance scores."""
+
 # ---------------------------------------------------------------------------
 # -- Data Paths (subdirectories) --
 # ---------------------------------------------------------------------------

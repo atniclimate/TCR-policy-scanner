@@ -175,5 +175,13 @@
       "enabled": true,
       "output_dir": "outputs/packets"
     }
+  },
+  "congressional_intel": {
+    "data_path": "data/congressional_intel.json",
+    "relevance_threshold": 0.30,
+    "max_bills_detail": 50,
+    "congress": 119,
+    "detail_delay_seconds": 0.3,
+    "bill_types": ["hr", "s", "hjres", "sjres"]
   }
 }
