@@ -5,24 +5,25 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.3 Production Launch -- Phase 17 IN PROGRESS (4/5 plans complete: 17-01, 17-02, 17-03, 17-04)
+**Current focus:** v1.3 Production Launch -- Phase 18 IN PROGRESS (1/3 plans complete: 18-01)
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
 ## Current Position
 
 **Milestone:** v1.3 Production Launch
-**Phase:** 17 of 18 (Website Deployment) -- IN PROGRESS
-**Plan:** 04 of 5 in phase (JavaScript application logic complete)
-**Status:** Plans 17-01, 17-02, 17-03, and 17-04 complete, 17-05 remaining
-**Last activity:** 2026-02-12 -- Completed 17-03-PLAN.md (ARIA combobox + Fuse.js app.js)
+**Phase:** 18 of 18 (Production Hardening) -- IN PROGRESS
+**Plan:** 01 of 3 in phase (Pre-flight fixes + adversarial audit complete)
+**Status:** Plan 18-01 complete, 18-02 and 18-03 remaining
+**Last activity:** 2026-02-13 -- Completed 18-01-PLAN.md (pre-flight fixes + 4-agent adversarial audit)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [█████████░] 90% Phase 17 IN PROGRESS (4/5 plans, 10 WEB)
+v1.3     [█████████░] 95% Phase 18 IN PROGRESS (1/3 plans, 5 HARD)
+         Phase 17 COMPLETE (5/5 plans, 10 WEB)
          Phase 16 COMPLETE (2/2 plans, 6 DOCX)
          Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
 ```
@@ -34,9 +35,9 @@ v1.3     [█████████░] 90% Phase 17 IN PROGRESS (4/5 plans, 1
 | v1.0 shipped | 2026-02-09 (4 phases, 9 plans, 30 requirements, 52 tests) |
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
-| Total phases | 14 completed + Phase 16 COMPLETE, Phase 17 in progress, 1 remaining |
-| Total plans | 62 completed |
-| Total requirements | 76 completed, 39 active, 18 verified (Phase 15), 6 verified (Phase 16) |
+| Total phases | 14 completed + Phase 15-17 COMPLETE, Phase 18 in progress |
+| Total plans | 63 completed |
+| Total requirements | 76 completed, 39 active, 18 verified (Phase 15), 6 verified (Phase 16), 10 verified (Phase 17) |
 | Total tests | 964 (all passing) |
 | Source files | 96 Python files |
 | Total LOC | ~37,900 Python |
@@ -112,12 +113,12 @@ _None._
 
 ### Last Session
 
-**Date:** 2026-02-12
-**Stopped at:** Wave 2 complete (17-01, 17-02, 17-03, 17-04 done). User paused before Wave 3.
-**Next step:** `/gsd:execute-phase 17` -- will pick up 17-05 (Wave 3: 4-agent review synthesis + human checkpoint)
+**Date:** 2026-02-13
+**Stopped at:** Plan 18-01 complete (pre-flight fixes + adversarial audit). Plans 18-02 and 18-03 remaining.
+**Next step:** Continue Phase 18 execution -- 18-02 (Wave 2: fix P0/P1 findings + hygiene) then 18-03 (Wave 3: synthesis + go/no-go)
 **Resume file:** None
-**Quality gate:** SYNTHESIS.md PASS at outputs/docx_review/SYNTHESIS.md
+**Quality gate:** 4-agent adversarial audit complete at outputs/bug_hunt/; 0 P0, 3 P1, 54 cosmetic findings
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-12 after 17-04 execution (Waves 1+2 complete, Wave 3 pending)*
+*Last updated: 2026-02-13 after 18-01 execution (Wave 1 complete, Waves 2+3 pending)*
