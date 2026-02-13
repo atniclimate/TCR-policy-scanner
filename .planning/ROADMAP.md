@@ -187,12 +187,15 @@ Plans:
   3. Mr. Magoo experiential testing (navigating as a non-technical Tribal staff member without reading source code) reports a trust_score of 7+ out of 10 across the 12-item user experience checklist, with zero download failures and zero confusing UI states
   4. Go/no-go launch decision confirms zero P0 critical issues, all P1 issues have documented workarounds, and the combined agent assessment supports a 100-200 concurrent user launch
 
-**Plans:** 3 plans in 3 waves
+**Plans:** 6 plans in 6 waves
 
 Plans:
-- [ ] 18-01-PLAN.md -- Pre-flight fixes (inherited P1/P2/P3) + 4-agent adversarial audit (Wave 1)
-- [ ] 18-02-PLAN.md -- Fix P0/P1 findings + apply low-risk Marie Kondo hygiene + re-verify (Wave 2)
-- [ ] 18-03-PLAN.md -- Synthesis report + human go/no-go launch decision checkpoint (Wave 3)
+- [x] 18-01-PLAN.md -- Pre-flight fixes (inherited P1/P2/P3) + 4-agent adversarial audit (Wave 1)
+- [x] 18-02-PLAN.md -- Fix P0/P1 findings + apply low-risk Marie Kondo hygiene + re-verify (Wave 2)
+- [x] 18-03-PLAN.md -- Initial synthesis report + human go/no-go checkpoint (Wave 3) -- NO-GO, fix P2/P3
+- [ ] 18-04-PLAN.md -- Fix all actionable P2/P3 findings: UX, security, code hygiene (Wave 4)
+- [ ] 18-05-PLAN.md -- 4-agent re-audit validating P2/P3 fixes (Wave 5)
+- [ ] 18-06-PLAN.md -- Updated synthesis + final go/no-go launch decision (Wave 6)
 
 ---
 
@@ -208,7 +211,7 @@ Plans:
 | 15 - Congressional Intelligence | v1.3 | 7/7 | Complete | 2026-02-12 |
 | 16 - Document Quality | v1.3 | 2/2 | Complete | 2026-02-12 |
 | 17 - Website Deployment | v1.3 | 5/5 | Complete | 2026-02-12 |
-| 18 - Production Hardening | v1.3 | 0/3 | Not started | - |
+| 18 - Production Hardening | v1.3 | 3/6 | In progress | - |
 
 ## Coverage
 
