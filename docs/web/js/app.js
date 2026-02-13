@@ -49,7 +49,11 @@
    * Initialize the application: fetch data, build search index, wire UI.
    */
   function init() {
-    fetch(TRIBES_URL).then(function(response) {
+    var controller = new AbortController();
+    var timeoutId = setTimeout(function() { controller.abort(); }, 15000);
+
+    fetch(TRIBES_URL, { signal: controller.signal }).then(function(response) {
+      clearTimeout(timeoutId);
       if (!response.ok) {
         throw new Error("HTTP " + response.status);
       }
@@ -100,7 +104,12 @@
       loadingEl.hidden = true;
 
     }).catch(function(err) {
-      showError("Failed to load Tribe data. Please try again later.");
+      clearTimeout(timeoutId);
+      if (err.name === "AbortError") {
+        showError("Loading timed out. Please refresh the page or try again in a few minutes.");
+      } else {
+        showError("Failed to load Tribe data. Please try again later.");
+      }
       if (typeof console !== "undefined") {
         console.error("Failed to load tribes.json:", err);
       }
