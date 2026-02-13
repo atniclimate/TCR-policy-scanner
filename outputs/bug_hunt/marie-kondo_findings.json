@@ -2,6 +2,7 @@
   "agent": "Marie Kondo",
   "clone_id": "frontend|pipeline",
   "timestamp": "2026-02-13T22:55:00Z",
+  "fix_verification_timestamp": "2026-02-13T23:05:00Z",
   "inventory": {
     "dependencies": {
       "total": 13,
@@ -15,7 +16,8 @@
           "imported_by": ["src/scrapers/base.py", "src/scrapers/usaspending.py", "src/health.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for enabling concurrent API scraping across 4 federal data sources."
+          "gratitude": "Thank you for enabling concurrent API scraping across 4 federal data sources.",
+          "fix_status": "deferred"
         },
         {
           "name": "pydantic",
@@ -23,7 +25,8 @@
           "imported_by": ["src/packets/models.py", "src/packets/confidence.py", "src/packets/context.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for providing structured validation for congressional intelligence models."
+          "gratitude": "Thank you for providing structured validation for congressional intelligence models.",
+          "fix_status": "deferred"
         },
         {
           "name": "python-dateutil",
@@ -31,7 +34,8 @@
           "imported_by": ["src/analysis/change_detector.py", "src/scrapers/base.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for flexible date parsing across inconsistent federal API date formats."
+          "gratitude": "Thank you for flexible date parsing across inconsistent federal API date formats.",
+          "fix_status": "deferred"
         },
         {
           "name": "jinja2",
@@ -39,7 +43,8 @@
           "imported_by": ["src/reports/generator.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for templating the markdown briefing reports."
+          "gratitude": "Thank you for templating the markdown briefing reports.",
+          "fix_status": "deferred"
         },
         {
           "name": "rapidfuzz",
@@ -47,7 +52,8 @@
           "imported_by": ["src/packets/registry.py", "scripts/populate_awards.py", "scripts/generate_ha_aliases.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for enabling 85% fuzzy matching threshold for Tribal name resolution across 592 Nations."
+          "gratitude": "Thank you for enabling 85% fuzzy matching threshold for Tribal name resolution across 592 Nations.",
+          "fix_status": "deferred"
         },
         {
           "name": "pyyaml",
@@ -55,7 +61,8 @@
           "imported_by": ["src/monitors/base.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "evaluate -- used only in monitor base class for YAML config parsing; could use json if config files were converted",
-          "gratitude": "Thank you for readable monitor configuration. You served well during Phase 4."
+          "gratitude": "Thank you for readable monitor configuration. You served well during Phase 4.",
+          "fix_status": "deferred"
         },
         {
           "name": "python-docx",
@@ -63,7 +70,8 @@
           "imported_by": ["src/packets/docx_engine.py", "src/packets/docx_sections.py", "src/packets/docx_hotsheet.py", "src/packets/docx_styles.py", "src/packets/docx_regional_sections.py", "scripts/validate_docx_structure.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for generating 992 DOCX advocacy packets that serve 592 Tribal Nations."
+          "gratitude": "Thank you for generating 992 DOCX advocacy packets that serve 592 Tribal Nations.",
+          "fix_status": "deferred"
         },
         {
           "name": "openpyxl",
@@ -71,7 +79,8 @@
           "imported_by": ["src/reports/generator.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for Excel report generation in the reporting pipeline."
+          "gratitude": "Thank you for Excel report generation in the reporting pipeline.",
+          "fix_status": "deferred"
         },
         {
           "name": "requests",
@@ -79,7 +88,8 @@
           "imported_by": ["scripts/download_nri_data.py", "scripts/download_usfs_data.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "evaluate -- used only in two download scripts; the main pipeline uses aiohttp exclusively. Could use urllib.request for simple GET downloads to eliminate the dependency",
-          "gratitude": "Thank you for simple synchronous downloads of NRI and USFS data files."
+          "gratitude": "Thank you for simple synchronous downloads of NRI and USFS data files.",
+          "fix_status": "deferred"
         },
         {
           "name": "geopandas",
@@ -87,7 +97,8 @@
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
           "recommendation": "keep -- build-time dependency for geographic area calculations",
-          "gratitude": "Thank you for enabling AIANNH-to-county area weight calculations."
+          "gratitude": "Thank you for enabling AIANNH-to-county area weight calculations.",
+          "fix_status": "deferred"
         },
         {
           "name": "shapely",
@@ -95,7 +106,8 @@
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
           "recommendation": "keep -- transitive dependency of geopandas",
-          "gratitude": "Thank you for geometric intersection calculations."
+          "gratitude": "Thank you for geometric intersection calculations.",
+          "fix_status": "deferred"
         },
         {
           "name": "pyproj",
@@ -103,7 +115,8 @@
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
           "recommendation": "keep -- transitive dependency of geopandas",
-          "gratitude": "Thank you for coordinate reference system transformations."
+          "gratitude": "Thank you for coordinate reference system transformations.",
+          "fix_status": "deferred"
         },
         {
           "name": "pyogrio",
@@ -111,7 +124,8 @@
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
           "recommendation": "keep -- fast I/O backend for geopandas",
-          "gratitude": "Thank you for fast reading of shapefiles."
+          "gratitude": "Thank you for fast reading of shapefiles.",
+          "fix_status": "deferred"
         }
       ]
     },
@@ -120,87 +134,107 @@
       "items": [
         {
           "name": "scripts/_add_curated_aliases_round3.py",
-          "status": "unused",
+          "status": "removed",
           "file": "scripts/_add_curated_aliases_round3.py",
           "recommendation": "remove -- one-time migration script, already applied",
-          "gratitude": "Thank you for adding the third round of curated Tribal aliases. Your work lives on in data/tribal_aliases.json."
+          "gratitude": "Thank you for adding the third round of curated Tribal aliases. Your work lives on in data/tribal_aliases.json.",
+          "fix_status": "applied",
+          "fix_applied": "File deleted. One-time migration script that had already been applied to data/tribal_aliases.json.",
+          "fix_verified_at": "2026-02-13T23:05:00Z"
         },
         {
           "name": "scripts/_add_curated_aliases_round4.py",
-          "status": "unused",
+          "status": "removed",
           "file": "scripts/_add_curated_aliases_round4.py",
           "recommendation": "remove -- one-time migration script, already applied",
-          "gratitude": "Thank you for the fourth round of alias curation."
+          "gratitude": "Thank you for the fourth round of alias curation.",
+          "fix_status": "applied",
+          "fix_applied": "File deleted. One-time migration script that had already been applied.",
+          "fix_verified_at": "2026-02-13T23:05:00Z"
         },
         {
           "name": "scripts/_add_curated_aliases_round5.py",
-          "status": "unused",
+          "status": "removed",
           "file": "scripts/_add_curated_aliases_round5.py",
           "recommendation": "remove -- one-time migration script, already applied",
-          "gratitude": "Thank you for the fifth and final round of alias refinement."
+          "gratitude": "Thank you for the fifth and final round of alias refinement.",
+          "fix_status": "applied",
+          "fix_applied": "File deleted. One-time migration script that had already been applied.",
+          "fix_verified_at": "2026-02-13T23:05:00Z"
         },
         {
           "name": "scripts/_add_curated_aliases_tmp.py",
-          "status": "unused",
+          "status": "removed",
           "file": "scripts/_add_curated_aliases_tmp.py",
           "recommendation": "remove -- temporary script, no longer needed",
-          "gratitude": "Thank you for your temporary service during alias development."
+          "gratitude": "Thank you for your temporary service during alias development.",
+          "fix_status": "applied",
+          "fix_applied": "File deleted. Temporary script no longer needed.",
+          "fix_verified_at": "2026-02-13T23:05:00Z"
         },
         {
           "name": "CFDA_TO_PROGRAM duplication",
           "status": "used",
           "file": "src/scrapers/usaspending.py and src/scrapers/grants_gov.py",
           "recommendation": "refactor -- CFDA_NUMBERS dict in grants_gov.py and CFDA_TO_PROGRAM dict in usaspending.py are near-duplicates (12 of 14 entries overlap). Consider extracting to a shared module (e.g., src/scrapers/cfda_map.py)",
-          "gratitude": "Thank you both for independently tracking CFDA numbers. It is time to consolidate."
+          "gratitude": "Thank you both for independently tracking CFDA numbers. It is time to consolidate.",
+          "fix_status": "deferred"
         },
         {
           "name": "TRIBAL_AWARD_TYPE_CODES flat list",
           "status": "used",
           "file": "src/scrapers/usaspending.py",
           "recommendation": "evaluate -- TRIBAL_AWARD_TYPE_CODES (flat list) exists alongside TRIBAL_AWARD_TYPE_CODE_GROUPS (nested list). The flat list is documented as 'backward compatibility' but no external code imports it. Could be derived: [code for group in GROUPS for code in group]",
-          "gratitude": "Thank you for documenting the award type taxonomy. The flat list may still serve external reference."
+          "gratitude": "Thank you for documenting the award type taxonomy. The flat list may still serve external reference.",
+          "fix_status": "deferred"
         },
         {
           "name": "docs/web/404.html",
           "status": "used",
           "file": "docs/web/404.html",
           "recommendation": "keep -- SPA routing fallback for GitHub Pages",
-          "gratitude": "Thank you for handling deep link navigation on GitHub Pages."
+          "gratitude": "Thank you for handling deep link navigation on GitHub Pages.",
+          "fix_status": "deferred"
         },
         {
           "name": "Unused import check: asyncio in congress_gov.py",
           "status": "used",
           "file": "src/scrapers/congress_gov.py",
           "recommendation": "keep -- asyncio.sleep is used for rate limiting between API calls",
-          "gratitude": "Thank you for rate-limiting API requests to be a good citizen."
+          "gratitude": "Thank you for rate-limiting API requests to be a good citizen.",
+          "fix_status": "deferred"
         },
         {
           "name": "Re-exported PROJECT_ROOT in config.py",
           "status": "used",
           "file": "src/config.py",
           "recommendation": "evaluate -- config.py re-exports PROJECT_ROOT from paths.py via __all__. This creates an import alias: both src.config.PROJECT_ROOT and src.paths.PROJECT_ROOT resolve to the same value. The re-export exists for backward compatibility with older code that imported from config. New code should import from paths directly.",
-          "gratitude": "Thank you for maintaining backward compatibility. But we should gradually migrate imports."
+          "gratitude": "Thank you for maintaining backward compatibility. But we should gradually migrate imports.",
+          "fix_status": "deferred"
         },
         {
           "name": "pyyaml import",
           "status": "used",
           "file": "src/monitors/base.py",
           "recommendation": "evaluate -- pyyaml is imported in only 1 file. Monitor configs could be JSON instead of YAML to eliminate this dependency. Low priority since pyyaml is lightweight.",
-          "gratitude": "Thank you for readable YAML configuration in the monitor framework."
+          "gratitude": "Thank you for readable YAML configuration in the monitor framework.",
+          "fix_status": "deferred"
         },
         {
           "name": "requests import",
           "status": "used",
           "file": "scripts/download_nri_data.py, scripts/download_usfs_data.py",
           "recommendation": "evaluate -- requests is used only in 2 download scripts for simple synchronous GET requests. urllib.request from stdlib could replace it. Low priority since requests is widely installed.",
-          "gratitude": "Thank you for reliable HTTP downloads of NRI and USFS data."
+          "gratitude": "Thank you for reliable HTTP downloads of NRI and USFS data.",
+          "fix_status": "deferred"
         },
         {
           "name": "Workflow step duplication",
           "status": "used",
           "file": ".github/workflows/deploy-website.yml, .github/workflows/generate-packets.yml",
           "recommendation": "note -- manifest.json generation code is duplicated between two workflows (~20 identical lines). Could extract to a shared script. Acceptable for CI readability per SYNTHESIS.md.",
-          "gratitude": "Thank you for clear, self-contained workflow definitions."
+          "gratitude": "Thank you for clear, self-contained workflow definitions.",
+          "fix_status": "deferred"
         }
       ]
     },
@@ -212,26 +246,29 @@
           "status": "used",
           "file": "docs/web/data/",
           "recommendation": "keep -- contains tribes.json (search index) and manifest.json (deployment metadata)",
-          "gratitude": "Thank you for organizing web data in a dedicated directory."
+          "gratitude": "Thank you for organizing web data in a dedicated directory.",
+          "fix_status": "deferred"
         },
         {
           "name": "docs/web/tribes/ directory",
           "status": "used",
           "file": "docs/web/tribes/",
           "recommendation": "keep -- contains DOCX files organized by type (internal/, congressional/, regional/)",
-          "gratitude": "Thank you for organizing documents by audience."
+          "gratitude": "Thank you for organizing documents by audience.",
+          "fix_status": "deferred"
         },
         {
           "name": ".planning/ directory",
           "status": "used",
           "file": ".planning/",
           "recommendation": "keep -- active planning and state tracking for GSD workflow",
-          "gratitude": "Thank you for structured milestone planning that brought this project from 0 to 964 tests."
+          "gratitude": "Thank you for structured milestone planning that brought this project from 0 to 964 tests.",
+          "fix_status": "deferred"
         }
       ]
     }
   },
   "joy_score": 8,
   "joy_score_potential": 9,
-  "joy_analysis": "This codebase sparks significant joy. 47 Python source files, 32 test files, ~37,900 LOC -- everything has a purpose. The architecture is clean: scrapers, analysis, graph, monitors, packets, reports. Each module owns its domain. The web frontend is 4 files totaling ~67KB. The only clutter: 4 one-time alias migration scripts (prefixed with _) that have completed their purpose and can be released with gratitude. The CFDA duplication between scrapers is a minor consolidation opportunity. After tidying: 9/10 joy -- a codebase that serves 592 Tribal Nations with exactly what they need and nothing more."
+  "joy_analysis": "This codebase sparks significant joy. 47 Python source files, 32 test files, ~37,900 LOC -- everything has a purpose. The architecture is clean: scrapers, analysis, graph, monitors, packets, reports. Each module owns its domain. The web frontend is 4 files totaling ~67KB. The 4 one-time alias migration scripts (prefixed with _) that had completed their purpose have been released with gratitude. The CFDA duplication between scrapers is a minor consolidation opportunity for future work. After tidying: 9/10 joy -- a codebase that serves 592 Tribal Nations with exactly what they need and nothing more."
 }

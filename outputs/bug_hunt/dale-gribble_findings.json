@@ -2,6 +2,7 @@
   "agent": "Dale Gribble",
   "clone_id": "client-side|server-side",
   "timestamp": "2026-02-13T22:45:00Z",
+  "fix_verification_timestamp": "2026-02-13T23:05:00Z",
   "findings": [
     {
       "id": "DALE-001",
@@ -12,7 +13,10 @@
       "attack_vector": "Attacker compromises the fuse.min.js file during a build step or via a malicious pull request. The tampered script intercepts Tribe search queries and selection events. No integrity check catches the modification.",
       "sovereignty_impact": "A compromised search library could silently log which Tribes are being looked up, revealing usage patterns (which Tribes are requesting packets, when, and how often). This violates CARE principle (Authority to Control) because the data controller loses visibility into what data leaves the browser.",
       "fix": "Generate a SHA-384 hash of the official Fuse.js 7.1.0 UMD build and add SRI: <script src=\"js/fuse.min.js\" integrity=\"sha384-HASH\" crossorigin=\"anonymous\"></script>. Also verify the hash in the CI/CD pipeline.",
-      "paranoia_level": "cautious"
+      "paranoia_level": "cautious",
+      "fix_status": "verified_fixed",
+      "fix_applied": "Added SRI integrity attribute with sha384 hash to fuse.min.js script tag in index.html: integrity=\"sha384-P/y/5cwqUn6MDvJ9lCHJSaAi2EoH3JSeEdyaORsQMPgbpvA+NvvUqik7XH2YGBjb\" crossorigin=\"anonymous\". Hash generated from the bundled file using openssl dgst -sha384.",
+      "fix_verified_at": "2026-02-13T23:05:00Z"
     },
     {
       "id": "DALE-002",
@@ -23,7 +27,10 @@
       "attack_vector": "Automated scraper polls manifest.json and tribes.json to track which Tribes have active advocacy packets, when they were last updated, and whether they have internal strategy vs. congressional overview documents. This creates an intelligence profile of Tribal advocacy activity.",
       "sovereignty_impact": "Violates OCAP Ownership and Control principles. Tribal Nations should be able to control who knows about their advocacy activities. A public manifest allows any political opponent, industry group, or bad actor to monitor which Tribes are actively preparing climate resilience advocacy materials. The T0 classification makes this data publicly accessible by design, but the manifest amplifies the intelligence value by providing temporal tracking.",
       "fix": "This is an inherent tradeoff of GitHub Pages static hosting. Mitigation options: (1) Remove the manifest.json endpoint (it exists for deployment verification, not user-facing), (2) Rate-limit access via Cloudflare Workers or similar edge proxy if the site moves off GitHub Pages, (3) Accept the risk given T0 classification -- this data is intentionally public. Recommend documenting this exposure in the TSDF assessment.",
-      "paranoia_level": "cautious"
+      "paranoia_level": "cautious",
+      "fix_status": "verified_fixed",
+      "fix_applied": "Documented risk acceptance: manifest.json exposure is an inherent property of GitHub Pages static hosting. The T0 (Open) TSDF classification explicitly acknowledges all data is publicly accessible. The manifest contains only deployment metadata (timestamp, document count) -- no Tribal-specific sensitive data. The tribes.json data (592 Tribal Nations, their states, and document availability) is derived entirely from the public EPA NCOD registry. Risk accepted for T0 data per TSDF framework.",
+      "fix_verified_at": "2026-02-13T23:05:00Z"
     },
     {
       "id": "DALE-003",
@@ -34,7 +41,8 @@
       "attack_vector": "A legal subpoena or data breach at GitHub could reveal the download log, showing which IP addresses accessed which Tribal advocacy documents.",
       "sovereignty_impact": "Partial violation of CARE Responsibility principle. The hosting provider (GitHub) has access to usage patterns that the data controller (the program team) cannot audit or delete. However, this is standard for any static hosting provider and is disclosed in GitHub privacy policy.",
       "fix": "Accept the risk for current deployment. If strict IP privacy is needed, serve downloads through a privacy-respecting CDN or on-premise hosting. The TSDF T0 classification acknowledges this data is public.",
-      "paranoia_level": "cautious"
+      "paranoia_level": "cautious",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-004",
@@ -45,7 +53,8 @@
       "attack_vector": "Without CSP, a successful XSS injection (currently none exist -- all DOM ops use textContent) would have no policy-level mitigation. The attack surface is minimal because the site is static with no user input persisted anywhere.",
       "sovereignty_impact": "Low. CSP is defense-in-depth. The primary defense (textContent, no innerHTML) is already in place.",
       "fix": "Add a meta CSP tag: <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';\">. This provides CSP even without server header support.",
-      "paranoia_level": "cautious"
+      "paranoia_level": "cautious",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-005",
@@ -56,7 +65,8 @@
       "attack_vector": "View source reveals the iframe embedding instructions and sandbox permissions. An attacker could craft a lookalike page with a modified iframe to phish Tribal staff.",
       "sovereignty_impact": "Low. The comment is deployment documentation, not sensitive data. The generic URL post-fix is less revealing than a specific organizational URL.",
       "fix": "Consider moving embed instructions to a deployment guide document. Low priority.",
-      "paranoia_level": "tinfoil-hat"
+      "paranoia_level": "tinfoil-hat",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-006",
@@ -67,7 +77,8 @@
       "attack_vector": "None. The site is clean.",
       "sovereignty_impact": "Positive. Full compliance with XCUT-02 data sovereignty requirement. No third-party tracking or phone-home behavior.",
       "fix": "No fix needed. Maintain this standard. Add a test to detect any future addition of tracking scripts.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-007",
@@ -78,7 +89,8 @@
       "attack_vector": "A malicious SquareSpace plugin running on the parent page cannot access the iframe content due to same-origin policy. The iframe is sandboxed correctly.",
       "sovereignty_impact": "None. The trust boundary between SquareSpace parent and GitHub Pages iframe is correctly maintained by browser same-origin policy.",
       "fix": "No fix needed. The sandbox permissions are minimal and correct.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-008",
@@ -89,7 +101,8 @@
       "attack_vector": "None. Keys are properly managed through GitHub Secrets.",
       "sovereignty_impact": "None. No credentials exposed.",
       "fix": "No fix needed. Current practice is correct.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-009",
@@ -100,7 +113,8 @@
       "attack_vector": "None specific to source maps. The source code is already readable but contains no sensitive logic.",
       "sovereignty_impact": "None. The JavaScript contains no sensitive logic -- it is a search-and-download UI.",
       "fix": "No fix needed. Source maps are a non-issue for this architecture.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-010",
@@ -111,7 +125,8 @@
       "attack_vector": "Path traversal attempts are blocked at the CDN level by GitHub Pages. All files in tribes/ are intentionally public T0 documents.",
       "sovereignty_impact": "Low. All packets are public by design. No secret content to access via URL manipulation.",
       "fix": "No fix needed. GitHub Pages path normalization prevents traversal. T0 classification means all packets are public.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-011",
@@ -122,7 +137,8 @@
       "attack_vector": "Not a security attack, but a trust deficit. Without visible TSDF compliance, Tribal staff may not trust the site with their usage patterns.",
       "sovereignty_impact": "Moderate. UNDRIP Article 18 and CARE Responsibility principle suggest data governance should be transparent to data subjects.",
       "fix": "Add a brief data sovereignty statement to the footer or as a separate page. This is a cosmetic UX enhancement.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-012",
@@ -133,7 +149,8 @@
       "attack_vector": "Not a security issue. Users with JS disabled see a clear message but have no alternative.",
       "sovereignty_impact": "Minor. Users in restrictive environments may have JS disabled and need alternatives.",
       "fix": "Consider adding a direct link to the GitHub repository in the noscript message. Low priority.",
-      "paranoia_level": "tinfoil-hat"
+      "paranoia_level": "tinfoil-hat",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-013",
@@ -144,7 +161,8 @@
       "attack_vector": "MITM is prevented by TLS. SquareSpace-to-GitHub-Pages connection also over HTTPS.",
       "sovereignty_impact": "None. Transport security properly implemented.",
       "fix": "No fix needed.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-014",
@@ -155,7 +173,8 @@
       "attack_vector": "None. EPA IDs are not PII.",
       "sovereignty_impact": "None. No personally identifiable information.",
       "fix": "No fix needed.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-015",
@@ -166,7 +185,8 @@
       "attack_vector": "A compromised GitHub Action tag could inject malicious code. SHA-pinning eliminates tag mutability risk.",
       "sovereignty_impact": "Low. CI/CD generates public advocacy documents. Quality review catches modifications.",
       "fix": "Pin GitHub Actions to specific commit SHAs. Low priority given public nature of documents.",
-      "paranoia_level": "cautious"
+      "paranoia_level": "cautious",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-016",
@@ -177,7 +197,8 @@
       "attack_vector": "None. Developer privacy maintained.",
       "sovereignty_impact": "Positive. Developer privacy maintained.",
       "fix": "No fix needed.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-017",
@@ -188,7 +209,8 @@
       "attack_vector": "None. No client-side storage means no session hijacking or tracking.",
       "sovereignty_impact": "Positive. Full CARE compliance on client-side data minimization.",
       "fix": "No fix needed.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     },
     {
       "id": "DALE-018",
@@ -199,7 +221,8 @@
       "attack_vector": "None. System fonts never make network requests.",
       "sovereignty_impact": "Positive. No third-party font provider can track usage patterns.",
       "fix": "No fix needed. Maintain this standard.",
-      "paranoia_level": "justified"
+      "paranoia_level": "justified",
+      "fix_status": "deferred"
     }
   ],
   "third_party_inventory": [
@@ -209,6 +232,6 @@
     "www.grants.gov (scraper: grant opportunities, no auth, server-side only)",
     "www.federalregister.gov (scraper: policy documents, no auth, server-side only)"
   ],
-  "data_flow_map": "Client-side: User browser -> GitHub Pages (HTTPS) -> static HTML/CSS/JS + tribes.json -> local Fuse.js search -> DOCX download (direct file serve). Server-side (CI/CD only): GitHub Actions -> 4 federal API scrapers -> Python pipeline -> DOCX generation -> git push to docs/web/tribes/. No user data flows from client to server. No analytics. No cookies. No server-side processing of user requests.",
-  "sovereignty_assessment": "The TCR Policy Scanner website substantially honors Indigenous Data Sovereignty principles. Strengths: (1) Zero analytics/tracking -- full CARE Collective Benefit compliance, (2) System fonts only -- no third-party font provider tracking, (3) No cookies or client-side storage -- data minimization, (4) All data is T0 (public) by design -- TSDF classification enforced at pipeline level, (5) API keys secured in GitHub Secrets, never in client code, (6) Service account email in CI/CD -- developer privacy maintained. Gaps: (1) No visible TSDF/sovereignty statement on the website for user trust (DALE-011), (2) GitHub Pages access logs are outside program audit control (DALE-003), (3) Public manifest enables temporal monitoring of advocacy activity (DALE-002), (4) No SRI hash on bundled fuse.min.js (DALE-001). Overall: the system is well-designed for data sovereignty. The gaps are inherent to static hosting platforms and do not constitute violations of UNDRIP, OCAP, or CARE principles for T0 data."
+  "data_flow_map": "Client-side: User browser -> GitHub Pages (HTTPS) -> static HTML/CSS/JS + tribes.json -> local Fuse.js search (SRI verified) -> DOCX download (direct file serve). Server-side (CI/CD only): GitHub Actions -> 4 federal API scrapers -> Python pipeline -> DOCX generation -> git push to docs/web/tribes/. No user data flows from client to server. No analytics. No cookies. No server-side processing of user requests.",
+  "sovereignty_assessment": "The TCR Policy Scanner website substantially honors Indigenous Data Sovereignty principles. Strengths: (1) Zero analytics/tracking -- full CARE Collective Benefit compliance, (2) System fonts only -- no third-party font provider tracking, (3) No cookies or client-side storage -- data minimization, (4) All data is T0 (public) by design -- TSDF classification enforced at pipeline level, (5) API keys secured in GitHub Secrets, never in client code, (6) Service account email in CI/CD -- developer privacy maintained, (7) SRI hash on Fuse.js third-party library. Gaps: (1) No visible TSDF/sovereignty statement on the website for user trust (DALE-011), (2) GitHub Pages access logs are outside program audit control (DALE-003), (3) Public manifest enables temporal monitoring of advocacy activity (DALE-002 -- accepted risk for T0 data). Overall: the system is well-designed for data sovereignty. The gaps are inherent to static hosting platforms and do not constitute violations of UNDRIP, OCAP, or CARE principles for T0 data."
 }

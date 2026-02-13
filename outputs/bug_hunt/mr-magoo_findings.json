@@ -2,6 +2,7 @@
   "agent": "Mr. Magoo",
   "clone_id": "desktop|mobile",
   "timestamp": "2026-02-13T22:50:00Z",
+  "fix_verification_timestamp": "2026-02-13T23:05:00Z",
   "findings": [
     {
       "id": "MAGOO-001",
@@ -11,7 +12,8 @@
       "what_i_expected": "I expected the search box to be immediately available, or at least a clear loading indicator that explains why I need to wait.",
       "how_i_got_here": "Opened the page for the first time.",
       "how_it_felt": "Slightly confusing. The 'Loading Tribe data...' text is small and easy to miss. I noticed the disabled search box first.",
-      "suggestion": "Make the loading indicator more prominent -- perhaps a spinner or a larger message. Or show a skeleton loading state in the search area."
+      "suggestion": "Make the loading indicator more prominent -- perhaps a spinner or a larger message. Or show a skeleton loading state in the search area.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-002",
@@ -21,7 +23,8 @@
       "what_i_expected": "That misspellings would still find the right Tribe.",
       "how_i_got_here": "Typed in the search box.",
       "how_it_felt": "Pleasantly surprised. The search is forgiving and helpful. The 'Also known as' hint is a nice touch when searching by an alias name.",
-      "suggestion": "No improvement needed for search functionality. It works very well."
+      "suggestion": "No improvement needed for search functionality. It works very well.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-003",
@@ -31,7 +34,8 @@
       "what_i_expected": "A brief description of what each document contains, or at least a tooltip explaining the difference.",
       "how_i_got_here": "Selected a Tribe from the search results. The card appeared with download buttons.",
       "how_it_felt": "Slightly uncertain. I would probably download both just to be safe, but I should not have to guess what I am getting.",
-      "suggestion": "Add a one-line description under each button or a small 'What is this?' link. For example: 'Internal Strategy: Detailed analysis with talking points for your team' and 'Congressional Overview: Facts-only briefing for congressional offices'."
+      "suggestion": "Add a one-line description under each button or a small 'What is this?' link. For example: 'Internal Strategy: Detailed analysis with talking points for your team' and 'Congressional Overview: Facts-only briefing for congressional offices'.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-004",
@@ -41,7 +45,8 @@
       "what_i_expected": "When I start a new search, the previous Tribe card should disappear or be clearly replaced.",
       "how_i_got_here": "Downloaded a document, then wanted to search for a different Tribe.",
       "how_it_felt": "Minor friction. Once I selected the new Tribe, the card updated correctly. The brief moment of overlap was disorienting.",
-      "suggestion": "Consider hiding the Tribe card when the user starts typing in the search box again. Or add a visual transition that clearly shows the card is updating."
+      "suggestion": "Consider hiding the Tribe card when the user starts typing in the search box again. Or add a visual transition that clearly shows the card is updating.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-005",
@@ -51,7 +56,8 @@
       "what_i_expected": "Acceptable performance.",
       "how_i_got_here": "Used the entire application from start to finish.",
       "how_it_felt": "Smooth and responsive. The CRT scan-line effect is a subtle touch that gives the page character without being distracting.",
-      "suggestion": "No improvement needed. Performance is excellent."
+      "suggestion": "No improvement needed. Performance is excellent.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-006",
@@ -61,7 +67,8 @@
       "what_i_expected": "A message that tells me what to do next, like 'Please refresh the page or try again in a few minutes.'",
       "how_i_got_here": "Simulated a data loading failure.",
       "how_it_felt": "Slightly helpless. The message is polite but not actionable.",
-      "suggestion": "Add a refresh link or button: 'Failed to load Tribe data. Try refreshing the page or come back in a few minutes.'"
+      "suggestion": "Add a refresh link or button: 'Failed to load Tribe data. Try refreshing the page or come back in a few minutes.'",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-007",
@@ -71,7 +78,8 @@
       "what_i_expected": "Some indication that this is a trusted tool -- perhaps a brief statement about privacy and data sovereignty.",
       "how_i_got_here": "Scrolled to the bottom of the page looking for trust indicators.",
       "how_it_felt": "Neutral. I trust the site because it looks professional, but an explicit privacy statement would increase confidence.",
-      "suggestion": "Add a one-line data sovereignty note in the footer: 'No tracking. No cookies. Your searches stay on your device.' This would immediately build trust with Tribal staff who are concerned about data privacy."
+      "suggestion": "Add a one-line data sovereignty note in the footer: 'No tracking. No cookies. Your searches stay on your device.' This would immediately build trust with Tribal staff who are concerned about data privacy.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-008",
@@ -81,7 +89,8 @@
       "what_i_expected": "Everything to work on mobile.",
       "how_i_got_here": "Viewed the page on a narrow viewport.",
       "how_it_felt": "Good. The mobile layout is well thought out. Touch targets are large enough (minimum 44px, with 48px on mobile). Nothing feels cramped.",
-      "suggestion": "No improvement needed for mobile layout."
+      "suggestion": "No improvement needed for mobile layout.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-009",
@@ -91,7 +100,8 @@
       "what_i_expected": "That I could share a link directly to a specific Tribe's card.",
       "how_i_got_here": "Selected a Tribe, then looked at the URL bar.",
       "how_it_felt": "Slightly disappointing. If I found the right Tribe for my colleague, I would need to tell them the name and have them search it themselves.",
-      "suggestion": "Consider adding hash-based URLs (e.g., #tribe=Navajo+Nation) so that selecting a Tribe updates the URL and the page can restore that selection from the URL on load. This is a nice-to-have, not essential."
+      "suggestion": "Consider adding hash-based URLs (e.g., #tribe=Navajo+Nation) so that selecting a Tribe updates the URL and the page can restore that selection from the URL on load. This is a nice-to-have, not essential.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-010",
@@ -101,7 +111,8 @@
       "what_i_expected": "The state filter to work.",
       "how_i_got_here": "Used the state filter dropdown.",
       "how_it_felt": "Smooth. The state filter is a nice alternative to searching by name, especially for users who know their state but not the exact Tribe name.",
-      "suggestion": "No improvement needed."
+      "suggestion": "No improvement needed.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-011",
@@ -111,7 +122,8 @@
       "what_i_expected": "A professional, trustworthy appearance.",
       "how_i_got_here": "Assessed the overall visual design.",
       "how_it_felt": "Confident. This looks like a legitimate government resource. The design communicates competence and respect.",
-      "suggestion": "The design is strong. Consider adding a small logo or seal for additional visual authority."
+      "suggestion": "The design is strong. Consider adding a small logo or seal for additional visual authority.",
+      "fix_status": "deferred"
     },
     {
       "id": "MAGOO-012",
@@ -121,7 +133,8 @@
       "what_i_expected": "Council-ready presentation.",
       "how_i_got_here": "Evaluated the overall experience from a Tribal Leader's perspective.",
       "how_it_felt": "Confident. This is a tool that respects the user's time and intelligence.",
-      "suggestion": "The only enhancement would be the document descriptions (MAGOO-003) so a council member knows exactly what they are downloading without guessing."
+      "suggestion": "The only enhancement would be the document descriptions (MAGOO-003) so a council member knows exactly what they are downloading without guessing.",
+      "fix_status": "deferred"
     }
   ],
   "overall_impression": "This is a well-built, respectful tool. The search works beautifully with fuzzy matching and alias hints. The download process is clear. The mobile experience is good. The visual design communicates professionalism and trust. The few issues I found are minor polish items: loading state clarity, document type descriptions, and the inability to share direct links to specific Tribes. I would confidently recommend this to a colleague at another Tribal Nation.",
