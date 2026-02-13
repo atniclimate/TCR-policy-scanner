@@ -1,0 +1,129 @@
+{
+  "agent": "Mr. Magoo",
+  "clone_id": "desktop|mobile",
+  "timestamp": "2026-02-13T22:50:00Z",
+  "findings": [
+    {
+      "id": "MAGOO-001",
+      "severity": "cosmetic",
+      "category": "confusion",
+      "what_happened": "When I first land on the page, the search box says 'Start typing a Tribe name...' but it is grayed out. There is a brief moment where I think the page is broken because I cannot type. Then the loading message disappears and the search box becomes active. But for a second or two, it feels like nothing is working.",
+      "what_i_expected": "I expected the search box to be immediately available, or at least a clear loading indicator that explains why I need to wait.",
+      "how_i_got_here": "Opened the page for the first time.",
+      "how_it_felt": "Slightly confusing. The 'Loading Tribe data...' text is small and easy to miss. I noticed the disabled search box first.",
+      "suggestion": "Make the loading indicator more prominent -- perhaps a spinner or a larger message. Or show a skeleton loading state in the search area."
+    },
+    {
+      "id": "MAGOO-002",
+      "severity": "cosmetic",
+      "category": "friction",
+      "what_happened": "I searched for 'Navaho' (common misspelling of Navajo). The search found the Navajo Nation correctly through fuzzy matching. I also tried 'Standing Rock' and found 'Standing Rock Sioux Tribe'. Partial searches like 'Syc' found 'Sycuan Band of the Kumeyaay Nation'. The fuzzy search works well.",
+      "what_i_expected": "That misspellings would still find the right Tribe.",
+      "how_i_got_here": "Typed in the search box.",
+      "how_it_felt": "Pleasantly surprised. The search is forgiving and helpful. The 'Also known as' hint is a nice touch when searching by an alias name.",
+      "suggestion": "No improvement needed for search functionality. It works very well."
+    },
+    {
+      "id": "MAGOO-003",
+      "severity": "cosmetic",
+      "category": "unclear",
+      "what_happened": "After selecting a Tribe, I see two download buttons: 'Internal Strategy' and 'Congressional Overview'. I am not sure what the difference is. Which one should I download? What is an 'Internal Strategy' vs a 'Congressional Overview'? There is no explanation.",
+      "what_i_expected": "A brief description of what each document contains, or at least a tooltip explaining the difference.",
+      "how_i_got_here": "Selected a Tribe from the search results. The card appeared with download buttons.",
+      "how_it_felt": "Slightly uncertain. I would probably download both just to be safe, but I should not have to guess what I am getting.",
+      "suggestion": "Add a one-line description under each button or a small 'What is this?' link. For example: 'Internal Strategy: Detailed analysis with talking points for your team' and 'Congressional Overview: Facts-only briefing for congressional offices'."
+    },
+    {
+      "id": "MAGOO-004",
+      "severity": "cosmetic",
+      "category": "friction",
+      "what_happened": "I downloaded the wrong Tribe's document by accident. To try again, I had to clear the search box and type a new name. The previous Tribe's card stayed visible while I was searching for the new one, which was briefly confusing -- I was not sure if I was looking at the old result or a new one.",
+      "what_i_expected": "When I start a new search, the previous Tribe card should disappear or be clearly replaced.",
+      "how_i_got_here": "Downloaded a document, then wanted to search for a different Tribe.",
+      "how_it_felt": "Minor friction. Once I selected the new Tribe, the card updated correctly. The brief moment of overlap was disorienting.",
+      "suggestion": "Consider hiding the Tribe card when the user starts typing in the search box again. Or add a visual transition that clearly shows the card is updating."
+    },
+    {
+      "id": "MAGOO-005",
+      "severity": "cosmetic",
+      "category": "slow",
+      "what_happened": "Everything feels fast. The search results appear instantly as I type. The Tribe card appears immediately when I select a result. Download starts without delay. The page loads quickly. No jank or stuttering anywhere.",
+      "what_i_expected": "Acceptable performance.",
+      "how_i_got_here": "Used the entire application from start to finish.",
+      "how_it_felt": "Smooth and responsive. The CRT scan-line effect is a subtle touch that gives the page character without being distracting.",
+      "suggestion": "No improvement needed. Performance is excellent."
+    },
+    {
+      "id": "MAGOO-006",
+      "severity": "cosmetic",
+      "category": "unclear",
+      "what_happened": "The error message when loading fails says 'Failed to load Tribe data. Please try again later.' This is clear but does not tell me what to do -- should I refresh? Come back tomorrow? Call someone?",
+      "what_i_expected": "A message that tells me what to do next, like 'Please refresh the page or try again in a few minutes.'",
+      "how_i_got_here": "Simulated a data loading failure.",
+      "how_it_felt": "Slightly helpless. The message is polite but not actionable.",
+      "suggestion": "Add a refresh link or button: 'Failed to load Tribe data. Try refreshing the page or come back in a few minutes.'"
+    },
+    {
+      "id": "MAGOO-007",
+      "severity": "cosmetic",
+      "category": "unclear",
+      "what_happened": "I do not see any TSDF disclaimer or data sovereignty statement on the page. There is no mention of how my data is handled, whether my search is tracked, or what happens to the information I access. The footer just says 'Tribal Climate Resilience Program' with no additional context.",
+      "what_i_expected": "Some indication that this is a trusted tool -- perhaps a brief statement about privacy and data sovereignty.",
+      "how_i_got_here": "Scrolled to the bottom of the page looking for trust indicators.",
+      "how_it_felt": "Neutral. I trust the site because it looks professional, but an explicit privacy statement would increase confidence.",
+      "suggestion": "Add a one-line data sovereignty note in the footer: 'No tracking. No cookies. Your searches stay on your device.' This would immediately build trust with Tribal staff who are concerned about data privacy."
+    },
+    {
+      "id": "MAGOO-008",
+      "severity": "cosmetic",
+      "category": "broken",
+      "what_happened": "On a narrow mobile screen (375px), the state filter dropdown expands to full width correctly. The search results list is readable. The Tribe card fits within the screen. Download buttons stack vertically and are large enough to tap. The regional documents section also stacks properly.",
+      "what_i_expected": "Everything to work on mobile.",
+      "how_i_got_here": "Viewed the page on a narrow viewport.",
+      "how_it_felt": "Good. The mobile layout is well thought out. Touch targets are large enough (minimum 44px, with 48px on mobile). Nothing feels cramped.",
+      "suggestion": "No improvement needed for mobile layout."
+    },
+    {
+      "id": "MAGOO-009",
+      "severity": "cosmetic",
+      "category": "confusion",
+      "what_happened": "If I copy the page URL to share with a colleague, they will land on the same page but with no Tribe pre-selected. The URL does not change when I select a Tribe. My colleague would need to search again from scratch.",
+      "what_i_expected": "That I could share a link directly to a specific Tribe's card.",
+      "how_i_got_here": "Selected a Tribe, then looked at the URL bar.",
+      "how_it_felt": "Slightly disappointing. If I found the right Tribe for my colleague, I would need to tell them the name and have them search it themselves.",
+      "suggestion": "Consider adding hash-based URLs (e.g., #tribe=Navajo+Nation) so that selecting a Tribe updates the URL and the page can restore that selection from the URL on load. This is a nice-to-have, not essential."
+    },
+    {
+      "id": "MAGOO-010",
+      "severity": "cosmetic",
+      "category": "broken",
+      "what_happened": "The 'Browse by state' dropdown works well. Selecting a state shows all Tribes in that state with their state codes. Clicking a Tribe from the state list opens the same card as searching. Everything functions correctly.",
+      "what_i_expected": "The state filter to work.",
+      "how_i_got_here": "Used the state filter dropdown.",
+      "how_it_felt": "Smooth. The state filter is a nice alternative to searching by name, especially for users who know their state but not the exact Tribe name.",
+      "suggestion": "No improvement needed."
+    },
+    {
+      "id": "MAGOO-011",
+      "severity": "cosmetic",
+      "category": "unclear",
+      "what_happened": "The visual design is clean, professional, and respectful. The color scheme (dark blue primary) feels governmental and trustworthy. The CRT scan-line effect adds personality without being gimmicky. The freshness badges (Current, Recent, Needs Update) provide useful context. The typography is readable with good hierarchy.",
+      "what_i_expected": "A professional, trustworthy appearance.",
+      "how_i_got_here": "Assessed the overall visual design.",
+      "how_it_felt": "Confident. This looks like a legitimate government resource. The design communicates competence and respect.",
+      "suggestion": "The design is strong. Consider adding a small logo or seal for additional visual authority."
+    },
+    {
+      "id": "MAGOO-012",
+      "severity": "cosmetic",
+      "category": "unclear",
+      "what_happened": "Would a Tribal Leader feel comfortable showing this to their council? Yes. The site is professional, clean, and focused on the task. There is no clutter, no ads, no distracting elements. The information is presented clearly. The download process is straightforward. A council member could navigate this in a meeting without embarrassment.",
+      "what_i_expected": "Council-ready presentation.",
+      "how_i_got_here": "Evaluated the overall experience from a Tribal Leader's perspective.",
+      "how_it_felt": "Confident. This is a tool that respects the user's time and intelligence.",
+      "suggestion": "The only enhancement would be the document descriptions (MAGOO-003) so a council member knows exactly what they are downloading without guessing."
+    }
+  ],
+  "overall_impression": "This is a well-built, respectful tool. The search works beautifully with fuzzy matching and alias hints. The download process is clear. The mobile experience is good. The visual design communicates professionalism and trust. The few issues I found are minor polish items: loading state clarity, document type descriptions, and the inability to share direct links to specific Tribes. I would confidently recommend this to a colleague at another Tribal Nation.",
+  "trust_score": 8
+}
