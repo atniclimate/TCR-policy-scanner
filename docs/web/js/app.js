@@ -266,6 +266,7 @@
       var internalBtn = document.createElement("a");
       internalBtn.href = "tribes/" + docs.internal_strategy;
       internalBtn.download = safeName + "_Internal_Strategy.docx";
+      internalBtn.rel = "noopener";
       internalBtn.className = "btn-download btn-internal";
       internalBtn.setAttribute("aria-label", "Download Internal Strategy for " + tribe.name);
       internalBtn.textContent = "Internal Strategy";
@@ -276,6 +277,7 @@
       var congressionalBtn = document.createElement("a");
       congressionalBtn.href = "tribes/" + docs.congressional_overview;
       congressionalBtn.download = safeName + "_Congressional_Overview.docx";
+      congressionalBtn.rel = "noopener";
       congressionalBtn.className = "btn-download btn-congressional";
       congressionalBtn.setAttribute("aria-label", "Download Congressional Overview for " + tribe.name);
       congressionalBtn.textContent = "Congressional Overview";
@@ -326,8 +328,9 @@
     cardEl.offsetHeight; // eslint-disable-line no-unused-expressions
     cardEl.setAttribute("data-visible", "");
 
-    // Scroll card into view smoothly
-    cardEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    // Scroll card into view (respect reduced motion preference: P2-04)
+    var motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    cardEl.scrollIntoView({ behavior: motionOK ? "smooth" : "auto", block: "nearest" });
   }
 
   /**
@@ -394,6 +397,7 @@
     var a1 = document.createElement("a");
     a1.href = "tribes/" + docAPath;
     a1.download = safeName + "_Internal_Strategy.docx";
+    a1.rel = "noopener";
     document.body.appendChild(a1);
     a1.click();
     document.body.removeChild(a1);
@@ -402,6 +406,7 @@
       var a2 = document.createElement("a");
       a2.href = "tribes/" + docBPath;
       a2.download = safeName + "_Congressional_Overview.docx";
+      a2.rel = "noopener";
       document.body.appendChild(a2);
       a2.click();
       document.body.removeChild(a2);
@@ -457,6 +462,7 @@
         var internalBtn = document.createElement("a");
         internalBtn.href = "tribes/" + docs.internal_strategy;
         internalBtn.download = regionSafeName + "_Internal_Strategy.docx";
+        internalBtn.rel = "noopener";
         internalBtn.className = "btn-download btn-internal btn-sm";
         internalBtn.setAttribute("aria-label", "Download Internal Strategy for " + r.region_name);
         internalBtn.textContent = "Internal Strategy";
@@ -467,6 +473,7 @@
         var congressionalBtn = document.createElement("a");
         congressionalBtn.href = "tribes/" + docs.congressional_overview;
         congressionalBtn.download = regionSafeName + "_Congressional_Overview.docx";
+        congressionalBtn.rel = "noopener";
         congressionalBtn.className = "btn-download btn-congressional btn-sm";
         congressionalBtn.setAttribute("aria-label", "Download Congressional Overview for " + r.region_name);
         congressionalBtn.textContent = "Congressional Overview";

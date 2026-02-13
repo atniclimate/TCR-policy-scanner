@@ -14,7 +14,7 @@
   --tcr-card: #fff;
   --tcr-border: #dee2e6;
   --tcr-error: #c0392b;
-  --tcr-muted: #6c757d;
+  --tcr-muted: #636b73;   /* Darkened from #6c757d for WCAG AA 4.78:1 on #f8f9fa: P2-01 */
   --tcr-dis: #e9ecef;
   --tcr-success: #2c6e49;
   --tcr-amber: #b45309;   /* WCAG AA verified: DEC-1602-01 */
@@ -48,6 +48,24 @@
     --tcr-amber: #f39c12;
   }
   header { background: #0f3460; }
+
+  /* P1-01: Dark mode button contrast -- #1a5276 on #fff = 8.36:1 PASS */
+  .btn-download { background: #1a5276; }
+  .btn-download:hover { background: #1f6d9b; }
+  .btn-congressional { background: #1a5276; }
+  .btn-congressional:hover { background: #1f6d9b; }
+
+  /* P1-02: Dark mode badge contrast -- all 4.5:1+ with #fff text */
+  .badge-fresh { background: #1e7a3d; }
+  .badge-aging { background: #b45309; }
+  .badge-stale { background: #a93226; }
+  .badge-unknown { background: #5a6268; }
+
+  /* P1-03: Dark mode selected option contrast -- 8.36:1 PASS */
+  .listbox li[role="option"][aria-selected="true"] {
+    background: #1a5276;
+    color: #fff;
+  }
 }
 
 /* --- Reset --- */
@@ -163,7 +181,7 @@ header h1 {
   border-bottom: 1px solid var(--tcr-bg);
 }
 .listbox li[role="option"][aria-selected="true"] {
-  background: var(--tcr-accent);
+  background: var(--tcr-primary);  /* P2-05: #1a5276 on #fff = 8.36:1 PASS */
   color: #fff;
 }
 .listbox li[role="option"]:hover {
@@ -174,6 +192,12 @@ header h1 {
   color: var(--tcr-muted);
   margin-left: 0.5rem;
   flex-shrink: 0;
+}
+.option-alias {
+  display: block;
+  font-size: var(--tcr-fs-xs);
+  color: var(--tcr-muted);
+  font-style: italic;
 }
 
 /* --- State Filter --- */
@@ -359,7 +383,6 @@ header h1 {
   color: var(--tcr-primary);
 }
 .section-desc {
-  max-width: var(--tcr-max-w);
   margin: 0 auto 1rem;
   padding: 0 1rem;
   font-size: var(--tcr-fs-sm);
@@ -418,7 +441,6 @@ footer {
 .footer-credit {
   margin: 0.5rem 0 0;
   font-size: var(--tcr-fs-xs);
-  opacity: 0.7;
 }
 
 /* --- Screen Reader Only --- */
