@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** v1.3 Production Launch -- Phase 18 IN PROGRESS (1/3 plans complete: 18-01)
+**Current focus:** v1.3 Production Launch -- Phase 18 IN PROGRESS (2/3 plans complete: 18-01, 18-02)
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
@@ -13,16 +13,16 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Milestone:** v1.3 Production Launch
 **Phase:** 18 of 18 (Production Hardening) -- IN PROGRESS
-**Plan:** 01 of 3 in phase (Pre-flight fixes + adversarial audit complete)
-**Status:** Plan 18-01 complete, 18-02 and 18-03 remaining
-**Last activity:** 2026-02-13 -- Completed 18-01-PLAN.md (pre-flight fixes + 4-agent adversarial audit)
+**Plan:** 02 of 3 in phase (Fix cycle complete, synthesis remaining)
+**Status:** Plans 18-01 and 18-02 complete, 18-03 remaining
+**Last activity:** 2026-02-13 -- Completed 18-02-PLAN.md (Wave 2: fix P0/P1 findings + hygiene)
 
 **Progress:**
 ```
 v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
-v1.3     [█████████░] 95% Phase 18 IN PROGRESS (1/3 plans, 5 HARD)
+v1.3     [█████████░] 97% Phase 18 IN PROGRESS (2/3 plans, 5 HARD)
          Phase 17 COMPLETE (5/5 plans, 10 WEB)
          Phase 16 COMPLETE (2/2 plans, 6 DOCX)
          Phase 15 COMPLETE (7/7 plans, 15 INTEL + 3 XCUT)
@@ -36,7 +36,7 @@ v1.3     [█████████░] 95% Phase 18 IN PROGRESS (1/3 plans, 5
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | Total phases | 14 completed + Phase 15-17 COMPLETE, Phase 18 in progress |
-| Total plans | 63 completed |
+| Total plans | 64 completed |
 | Total requirements | 76 completed, 39 active, 18 verified (Phase 15), 6 verified (Phase 16), 10 verified (Phase 17) |
 | Total tests | 964 (all passing) |
 | Source files | 96 Python files |
@@ -96,6 +96,7 @@ v1.3     [█████████░] 95% Phase 18 IN PROGRESS (1/3 plans, 5
 | DEC-1702-02 | Tribe card uses opacity transition with data-visible attribute for JS-controlled fade-in | 17-02 |
 | DEC-1701-01 | Housing alias filtering uses case-insensitive substring match | 17-01 |
 | DEC-1701-02 | Aliases sorted by string length, shortest first | 17-01 |
+| DEC-1802-01 | Accept manifest.json public exposure as T0 risk (inherent to GitHub Pages, all data public by TSDF) | 18-02 |
 
 ### Todos
 
@@ -114,11 +115,11 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-13
-**Stopped at:** Plan 18-01 complete (pre-flight fixes + adversarial audit). Plans 18-02 and 18-03 remaining.
-**Next step:** Continue Phase 18 execution -- 18-02 (Wave 2: fix P0/P1 findings + hygiene) then 18-03 (Wave 3: synthesis + go/no-go)
+**Stopped at:** Plan 18-02 complete (fix cycle). Plan 18-03 remaining (synthesis + go/no-go).
+**Next step:** Execute 18-03 (Wave 3: synthesis, go/no-go decision, launch readiness)
 **Resume file:** None
-**Quality gate:** 4-agent adversarial audit complete at outputs/bug_hunt/; 0 P0, 3 P1, 54 cosmetic findings
+**Quality gate:** 0 P0, 0 P1 findings remaining. 964 tests passing. All agent findings verified clean.
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-13 after 18-01 execution (Wave 1 complete, Waves 2+3 pending)*
+*Last updated: 2026-02-13 after 18-02 execution (Waves 1+2 complete, Wave 3 pending)*
