@@ -1,0 +1,366 @@
+{
+  "agent": "ranger",
+  "domain": "organization and completeness",
+  "audit_date": "2026-02-13",
+  "findings": [
+    {
+      "id": "RNG-001",
+      "severity": "P1",
+      "category": "missing_document",
+      "description": "v1.3 MILESTONE-AUDIT.md exists at .planning/v1.3-MILESTONE-AUDIT.md (top level) but NOT in .planning/milestones/ subfolder. Every prior milestone (v1.0, v1.1, v1.2) has its audit archived at milestones/v1.X-MILESTONE-AUDIT.md. The v1.3 file must be copied to milestones/v1.3-MILESTONE-AUDIT.md to complete the pattern.",
+      "expected_location": ".planning/milestones/v1.3-MILESTONE-AUDIT.md",
+      "current_location": ".planning/v1.3-MILESTONE-AUDIT.md",
+      "pattern_source": "milestones/v1.2-MILESTONE-AUDIT.md, milestones/v1.1-MILESTONE-AUDIT.md, milestones/v1.0-MILESTONE-AUDIT.md",
+      "action": "Copy .planning/v1.3-MILESTONE-AUDIT.md to .planning/milestones/v1.3-MILESTONE-AUDIT.md. Consider removing the top-level copy to avoid duplication, or leave both if the top-level serves as the 'active' version during the milestone."
+    },
+    {
+      "id": "RNG-002",
+      "severity": "P1",
+      "category": "missing_document",
+      "description": "No milestones/v1.3-REQUIREMENTS.md exists. Every prior milestone (v1.0, v1.1, v1.2) has an archived requirements document in milestones/. The current .planning/REQUIREMENTS.md contains v1.3 requirements with all 39 marked [x] and a complete traceability table -- this should be archived to milestones/v1.3-REQUIREMENTS.md before the next milestone overwrites it.",
+      "expected_location": ".planning/milestones/v1.3-REQUIREMENTS.md",
+      "pattern_source": "milestones/v1.2-REQUIREMENTS.md (archived 2026-02-11), milestones/v1.1-REQUIREMENTS.md (archived 2026-02-10), milestones/v1.0-REQUIREMENTS.md (archived 2026-02-09)",
+      "action": "Archive .planning/REQUIREMENTS.md to .planning/milestones/v1.3-REQUIREMENTS.md. Add header: 'Archived: 2026-02-14, Status: COMPLETE'. Prior archives have 'Status: SHIPPED'."
+    },
+    {
+      "id": "RNG-003",
+      "severity": "P1",
+      "category": "missing_document",
+      "description": "No milestones/v1.3-ROADMAP.md exists. Every prior milestone (v1.0, v1.1, v1.2) has an archived roadmap in milestones/. The current .planning/ROADMAP.md contains the v1.3 roadmap with all 21 plans marked [x] and a complete progress table -- this should be archived.",
+      "expected_location": ".planning/milestones/v1.3-ROADMAP.md",
+      "pattern_source": "milestones/v1.2-ROADMAP.md, milestones/v1.1-ROADMAP.md, milestones/v1.0-ROADMAP.md",
+      "action": "Archive .planning/ROADMAP.md to .planning/milestones/v1.3-ROADMAP.md. Add status header. Prior archives include: Status line, Phases covered, Total Plans, Overview, Phase sections with plans."
+    },
+    {
+      "id": "RNG-004",
+      "severity": "P1",
+      "category": "incomplete_section",
+      "description": "MILESTONES.md has NO v1.3 entry. It contains detailed entries for v1.2, v1.0, and v1.1 (each with 'Delivered' paragraph, 'Phases completed', 'Key accomplishments' bullets, 'Stats' table, 'Git range', and 'What's next') but v1.3 is entirely absent. The last 'What's next' line says 'Planning v1.3 (congressional alerts, confidence scoring, scraper pagination)' -- this was written at v1.2 closure and never updated.",
+      "expected_location": ".planning/MILESTONES.md",
+      "pattern_source": "Existing v1.2 and v1.0 entries in MILESTONES.md",
+      "action": "Add a v1.3 Production Launch entry to MILESTONES.md following the established pattern. Should include: 'Delivered:' paragraph, 'Phases completed: 15-18 (21 plans total)', 'Key accomplishments:' bullets (congressional intelligence pipeline, DOCX quality assurance, website deployment, production hardening), 'Stats:' table (98 files, ~37,900 LOC, 4 phases, 21 plans, 39 requirements, 964 tests), 'Git range:' (8f96850 -> e8a4aba), 'What's next:' (future milestone backlog)."
+    },
+    {
+      "id": "RNG-005",
+      "severity": "P2",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Validated' list contains NO v1.3 capabilities. All validated items are tagged v1.0, v1.1, or v1.2. v1.3 delivered 39 requirements including: congressional intelligence pipeline (5 Pydantic models, bill detail fetching, pagination hardening, confidence scoring), DOCX quality assurance (992/992 structural validation), website deployment (592-Tribe search, SquareSpace integration, WCAG 2.1 AA), and production hardening (4-agent adversarial audit, GO decision). None of these appear in the Validated list.",
+      "expected_location": ".planning/PROJECT.md, 'Validated' section",
+      "pattern_source": "Existing v1.0/v1.1/v1.2 entries in PROJECT.md Validated list",
+      "action": "Add v1.3 validated capabilities to the list with '-- v1.3' suffix. Key items: congressional intelligence (INTEL-01 through INTEL-15), DOCX quality assurance (DOCX-01 through DOCX-06), website deployment (WEB-01 through WEB-10), production hardening (HARD-01 through HARD-05), cross-cutting compliance (XCUT-01 through XCUT-03)."
+    },
+    {
+      "id": "RNG-006",
+      "severity": "P2",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Data files' inventory is missing data/packet_state/ directory. Ground truth shows ~592 packet_state JSON files exist. Also missing from inventory: data/congressional_intel.json (or congressional_cache.json -- ground truth notes 'congressional_cache.json exists, not congressional_intel.json as some docs reference'). The inventory lists 'data/congressional_cache.json' which is correct per ground truth, but REQUIREMENTS.md and agent persona files reference 'congressional_intel.json'. This naming inconsistency needs resolution.",
+      "expected_location": ".planning/PROJECT.md, 'Data files' section",
+      "pattern_source": "ground_truth.json data_files section",
+      "action": "Add data/packet_state/*.json to data files inventory. Verify and document the correct name for congressional data file (congressional_cache.json per ground truth). Update references in REQUIREMENTS.md and persona files if they reference congressional_intel.json."
+    },
+    {
+      "id": "RNG-007",
+      "severity": "P2",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Key Decisions' table contains NO v1.3 decisions. STATE.md documents 33 decisions (DEC-1501-01 through DEC-1806-01) made during v1.3. The Key Decisions table in PROJECT.md only covers decisions from v1.0 through v1.2. Key v1.3 decisions include: DEC-1501-02 (confidence decay rate), DEC-1504-01 (bill relevance weighting), DEC-1601-01 (performance budget), DEC-1602-01 (WCAG amber contrast), DEC-1806-01 (GO launch decision).",
+      "expected_location": ".planning/PROJECT.md, 'Key Decisions' table",
+      "pattern_source": "STATE.md Decisions section listing 33 v1.3 decisions",
+      "action": "Add representative v1.3 decisions to PROJECT.md Key Decisions table. Not all 33 need inclusion -- select architecturally significant ones (confidence scoring model, bill relevance threshold, performance budget, WCAG compliance, GO decision)."
+    },
+    {
+      "id": "RNG-008",
+      "severity": "P2",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Current State' section is stale. It says 'v1.2 shipped 2026-02-11' as the latest event and 'Current milestone: v1.3 Production Launch'. v1.3 is COMPLETE as of 2026-02-14. The stats reference '95 source files' (should be 98 per ground truth) and '743 tests' (should be 964). The 'Last updated: 2026-02-12 after v1.3 milestone initialization' timestamp predates v1.3 completion.",
+      "expected_location": ".planning/PROJECT.md, 'Current State' and footer sections",
+      "pattern_source": "STATE.md (accurate: 964 tests, 98 files, v1.3 COMPLETE 2026-02-14)",
+      "action": "Update PROJECT.md Current State to add v1.3 completion line. Update stats: 98 source files, 964 tests. Update 'Current milestone' to reflect v1.3 COMPLETE and next steps. Update footer timestamp."
+    },
+    {
+      "id": "RNG-009",
+      "severity": "P2",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Test suite' line says '743 tests across 20+ modules'. Actual count is 964 tests across 33 test files (per ground truth). Also, the 'Known tech debt (8 items, 0 critical)' section reflects v1.2 tech debt. The v1.3 milestone audit documents 48 tech debt items (0 P0, 3 P1, 16 P2, 29 P3). The tech debt section needs updating.",
+      "expected_location": ".planning/PROJECT.md, 'Test suite' and 'Known tech debt' sections",
+      "pattern_source": "ground_truth.json (964 tests, 33 test files), v1.3-MILESTONE-AUDIT.md (48 tech debt items)",
+      "action": "Update test suite count to 964 across 33 modules. Update tech debt section to reflect v1.3 state."
+    },
+    {
+      "id": "RNG-010",
+      "severity": "P2",
+      "category": "pattern_violation",
+      "description": "ROADMAP.md milestone status header says 'v1.3 Production Launch - Phases 15-18 (in progress)' but v1.3 is COMPLETE as of 2026-02-14. The progress table shows all phases as Complete with dates, which is correct, but the header is stale.",
+      "expected_location": ".planning/ROADMAP.md line 8",
+      "pattern_source": "v1.0/v1.1/v1.2 all say 'shipped' in their collapsed headers",
+      "action": "Change '(in progress)' to '(complete 2026-02-14)' or '(shipped 2026-02-14)' to match established pattern."
+    },
+    {
+      "id": "RNG-011",
+      "severity": "P2",
+      "category": "orphaned_file",
+      "description": "ROADMAP-SUPPLEMENTAL-UPDATES.md is a v1.2-era artifact containing an updated Progress Table and Wave Summary for Phases 9-14, plus 3 new requirements (INTG-06, INTG-07, INTG-08). This content was from the v1.2 execution period. Now that v1.2 is archived in milestones/v1.2-ROADMAP.md (which includes all these phases and plans), this supplemental file serves no further purpose. It was never merged into the archived roadmap and its content is now stale.",
+      "expected_location": "N/A (should be deleted or archived)",
+      "pattern_source": "milestones/v1.2-ROADMAP.md contains final v1.2 roadmap state",
+      "action": "Delete ROADMAP-SUPPLEMENTAL-UPDATES.md or move to an archive folder. Its content is fully captured in milestones/v1.2-ROADMAP.md."
+    },
+    {
+      "id": "RNG-012",
+      "severity": "P2",
+      "category": "orphaned_file",
+      "description": "TRIGGER-PROMPT-V1.3.md is a consumed trigger prompt for spawning the Phase 15 agent swarm. It contains the initial prompt text used to create the 4-agent Congressional Intelligence team. The milestone is COMPLETE; this prompt has been consumed and will not be reused. The ROADMAP.md Phase 15 section references it as 'Swarm trigger: F:\\tcr-policy-scanner\\.planning\\TRIGGER-PROMPT-V1.3.md' so it has documentary value as a record of what was executed.",
+      "expected_location": ".planning/TRIGGER-PROMPT-V1.3.md (current location)",
+      "pattern_source": "v1.1-session-prompt.md is a similar consumed prompt artifact from v1.1",
+      "action": "Mark with a blockquote header: '> CONSUMED: This prompt was executed for Phase 15 (v1.3). It is retained as a historical record.' Alternatively, archive alongside other v1.3 artifacts."
+    },
+    {
+      "id": "RNG-013",
+      "severity": "P2",
+      "category": "orphaned_file",
+      "description": "v1.1-session-prompt.md is a consumed session prompt from v1.1 (Phase 7 continuation). Contains context and instructions for resuming a Phase 7 development session. v1.1 shipped 2026-02-10. This file has been superseded by subsequent milestones.",
+      "expected_location": ".planning/v1.1-session-prompt.md",
+      "pattern_source": "TRIGGER-PROMPT-V1.3.md (similar consumed prompt pattern)",
+      "action": "Mark with a consumed header or move to an archive. Not needed for ongoing work."
+    },
+    {
+      "id": "RNG-014",
+      "severity": "P2",
+      "category": "orphaned_file",
+      "description": "PHASE-14-DESIGN-DECISIONS.md and PHASE-14-REFERENCE.md are at the top level of .planning/ but pertain specifically to Phase 14 (Integration). Every other phase keeps its artifacts in phases/14-integration/. These files total ~57KB of detailed design decisions and reference material for Phase 14.",
+      "expected_location": ".planning/phases/14-integration/",
+      "current_location": ".planning/PHASE-14-DESIGN-DECISIONS.md and .planning/PHASE-14-REFERENCE.md",
+      "pattern_source": "phases/14-integration/ directory (other Phase 14 artifacts are there)",
+      "action": "Move PHASE-14-DESIGN-DECISIONS.md and PHASE-14-REFERENCE.md into phases/14-integration/ to match the organizational pattern."
+    },
+    {
+      "id": "RNG-015",
+      "severity": "P2",
+      "category": "orphaned_file",
+      "description": "REVIEW-COORDINATION.md exists at the top level of .planning/ AND a different version exists at .planning/phases/07-computation-docx/REVIEW-COORDINATION.md. The top-level version (1,232 bytes) is a Phase 16 DOCX Agent Swarm coordination doc with 5 agents. The Phase 7 version (very long, multi-section) is the Phase 7 systemic review coordination doc with 7 agents. These are different documents for different purposes. The top-level one belongs in or near Phase 16 artifacts.",
+      "expected_location": "Top-level: should be in .planning/phases/16-document-quality-assurance/ or clearly namespaced",
+      "current_location": ".planning/REVIEW-COORDINATION.md",
+      "pattern_source": ".planning/phases/07-computation-docx/REVIEW-COORDINATION.md (phase-scoped)",
+      "action": "Move .planning/REVIEW-COORDINATION.md to .planning/phases/16-document-quality-assurance/REVIEW-COORDINATION.md for organizational consistency."
+    },
+    {
+      "id": "RNG-016",
+      "severity": "P2",
+      "category": "orphaned_file",
+      "description": "V1.3-OPERATIONS-PLAN.md is a pre-milestone operations plan created 2026-02-12 that outlined 3 phases (DOCX Visual QA, Website Launch, Production Hardening). The actual v1.3 execution followed a 4-phase structure (Phase 15-18) documented in ROADMAP.md and REQUIREMENTS.md. The operations plan was the initial planning document that was superseded by the formal ROADMAP. It has no retrospective section. Now that v1.3 is complete, it is a consumed planning artifact.",
+      "expected_location": ".planning/V1.3-OPERATIONS-PLAN.md (current location)",
+      "pattern_source": "ROADMAP.md (the authoritative execution plan that superseded it)",
+      "action": "Mark with a consumed/superseded header. The ROADMAP.md is the authoritative record. This file could be archived but has value as historical context for how v1.3 planning evolved."
+    },
+    {
+      "id": "RNG-017",
+      "severity": "P2",
+      "category": "orphaned_file",
+      "description": "TCR-Research-Team-Agent-Ecosystem.md is a detailed agent team ecosystem document (35,763 bytes). Its header contains 'ATNI Climate Program' which is an organization name that should have been scrubbed per air gap compliance (XCUT-01). It also describes the agent team setup (Claude Code experimental features, MCP server configuration, etc.) as if it is current setup documentation. With v1.3 complete, this may be a historical artifact or may still serve as the canonical agent team reference.",
+      "expected_location": ".planning/TCR-Research-Team-Agent-Ecosystem.md",
+      "pattern_source": "XCUT-01 air gap compliance, Phase 7 organization name removal review",
+      "action": "Remove 'ATNI Climate Program' from the header (air gap violation). Determine if this document is still the canonical agent team reference or has been superseded. If historical, mark as archived."
+    },
+    {
+      "id": "RNG-018",
+      "severity": "P3",
+      "category": "orphaned_file",
+      "description": "13 agent persona files exist at the top level of .planning/: accuracy-agent.md, cyclops.md, dale-gribble.md, design-aficionado.md, fire-keeper.md, gap-finder.md, gatekeeper.md, horizon-walker.md, marie-kondo.md, mr-magoo.md, pipeline-surgeon.md, river-runner.md, sovereignty-scout.md. These were used by Phases 15-18 agent swarms. They are referenced by ROADMAP.md and REQUIREMENTS.md agent swarm tables. With v1.3 complete, these serve as historical records of agent configurations.",
+      "expected_location": ".planning/ (current location, or a dedicated agents/ subfolder)",
+      "pattern_source": "ROADMAP.md Phase 15-18 agent tables reference these files by path",
+      "action": "These files are well-organized and properly referenced. Consider moving to a .planning/agents/ subfolder for cleanliness, but this is low priority since the ROADMAP references their current paths."
+    },
+    {
+      "id": "RNG-019",
+      "severity": "P3",
+      "category": "orphaned_file",
+      "description": "LAUNCH-SWARM.md (9,840 bytes) is the Phase 17 website review swarm trigger prompt. Referenced by ROADMAP.md Phase 17 section. Consumed prompt -- the website review is complete and findings are in outputs/website_review/SYNTHESIS.md.",
+      "expected_location": ".planning/LAUNCH-SWARM.md",
+      "pattern_source": "TRIGGER-PROMPT-V1.3.md (similar consumed swarm prompt)",
+      "action": "Mark as consumed. Could be moved to phases/17-website-deployment/ for organizational consistency."
+    },
+    {
+      "id": "RNG-020",
+      "severity": "P3",
+      "category": "orphaned_file",
+      "description": "planning-review-prompt.md (20,767 bytes) is the prompt document used to initiate this very documentation review and closeout process. It contains detailed instructions for multiple review agents (Ranger, etc.). Once the review is complete, this prompt is consumed.",
+      "expected_location": ".planning/planning-review-prompt.md",
+      "pattern_source": "TRIGGER-PROMPT-V1.3.md (consumed prompt pattern)",
+      "action": "After documentation review is complete, mark as consumed. Retain as a template for future milestone closeout reviews."
+    },
+    {
+      "id": "RNG-021",
+      "severity": "P3",
+      "category": "missing_document",
+      "description": "No data dictionary or JSON schema documentation exists for the 1,817 JSON files across 10 directories (592 award_cache, 592 hazard_profiles, ~592 packet_state, plus 11 core data files). While the code defines Pydantic models (INTEL-05) for congressional data, there is no standalone schema documentation for the other data formats (award_cache schema, hazard_profile schema, tribal_registry schema, etc.). The ground truth notes this as a gap.",
+      "expected_location": "docs/ or .planning/ (data dictionary document)",
+      "pattern_source": "ground_truth.json data_files section documents 1,817 JSON files with no schema documentation",
+      "action": "Consider creating a data dictionary document for the next milestone. Not blocking for v1.3 closure, but important for maintainability. Could be auto-generated from Pydantic models and JSON samples."
+    },
+    {
+      "id": "RNG-022",
+      "severity": "P3",
+      "category": "missing_document",
+      "description": "No deployment runbook exists for the production system. The system includes 3 GitHub Actions workflows (daily-scan.yml, deploy-website.yml, generate-packets.yml), API key requirements (CONGRESS_API_KEY, SAM_API_KEY), and GitHub Pages configuration. While individual workflow files document their triggers, there is no consolidated 'deploy from scratch' guide.",
+      "expected_location": "docs/ or .planning/ (deployment runbook)",
+      "pattern_source": "github_workflows in ground_truth.json, PROJECT.md constraints section",
+      "action": "Consider creating a deployment runbook for the next milestone. Document: 1) GitHub repo settings, 2) secrets configuration, 3) GitHub Pages setup, 4) SquareSpace iframe setup, 5) initial data population sequence, 6) monitoring/alerting."
+    },
+    {
+      "id": "RNG-023",
+      "severity": "P2",
+      "category": "pattern_violation",
+      "description": "v1.3 MILESTONE-AUDIT.md follows a slightly different section structure than v1.0/v1.1/v1.2 audits. Pattern analysis: v1.0 has YAML frontmatter + Executive Summary + Requirements Coverage (with per-phase tables) + Cross-Phase Integration + E2E Flow Verification + Test Results + Code Review History + Tech Debt + Integration Score + Conclusion. v1.1 has same structure plus Quantitative Summary table. v1.2 has same plus Architectural Decisions and Data Coverage sections. v1.3 follows the general pattern but is missing: 1) detailed per-requirement evidence table (v1.0/v1.1/v1.2 have Evidence column per requirement; v1.3 only has Notes), 2) no Integration Score (v1.0 had 95/100), 3) no Code Review History section.",
+      "expected_location": ".planning/v1.3-MILESTONE-AUDIT.md",
+      "pattern_source": "milestones/v1.0-MILESTONE-AUDIT.md, milestones/v1.1-MILESTONE-AUDIT.md, milestones/v1.2-MILESTONE-AUDIT.md",
+      "action": "Minor pattern deviation. The v1.3 audit is comprehensive but could be enriched with: 1) Evidence column in requirements table, 2) Integration score (e.g., 97/100). Not blocking -- the audit captures all necessary information."
+    },
+    {
+      "id": "RNG-024",
+      "severity": "P2",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Out of Scope' section lists 'Scraper pagination fixes -- important but separate concern; v1.3 candidate' and 'Congress.gov bill detail fetching -- v1.3 candidate'. Both of these were COMPLETED in v1.3 (INTEL-01 bill detail fetching, INTEL-02 pagination hardening). These items should be moved from Out of Scope to the Validated list.",
+      "expected_location": ".planning/PROJECT.md, 'Out of Scope' section",
+      "pattern_source": "REQUIREMENTS.md INTEL-01 (bill detail fetching, Complete), INTEL-02 (pagination, Complete)",
+      "action": "Remove 'Scraper pagination fixes' and 'Congress.gov bill detail fetching' from Out of Scope. Add corresponding entries to Validated list."
+    },
+    {
+      "id": "RNG-025",
+      "severity": "P3",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Shipped v1.2 with ~37,900 LOC Python across 95 source files.' This line was not updated for v1.3. Ground truth shows 102 active Python files (54 src + 33 tests + 14 scripts + 1 root). The total LOC per ground truth is 38,340 for src+tests or 46,543 for all Python. The '95 source files' is the v1.2 count.",
+      "expected_location": ".planning/PROJECT.md, Context section",
+      "pattern_source": "ground_truth.json (102 active Python files, 38,340 src+tests LOC)",
+      "action": "Update to reflect v1.3 stats: '98 Python source files' (per STATE.md) or '102 active Python files' (per ground truth). Update LOC figure."
+    },
+    {
+      "id": "RNG-026",
+      "severity": "P3",
+      "category": "incomplete_section",
+      "description": "PROJECT.md 'Data files' section lists 'data/congressional_cache.json' which is correct per ground truth. However, multiple documents reference 'congressional_intel.json' instead (REQUIREMENTS.md INTEL-03 output, TRIGGER-PROMPT-V1.3.md, fire-keeper.md, ROADMAP.md Phase 15 E2E test). The ground truth explicitly notes: 'congressional_cache.json exists (not congressional_intel.json as some docs reference)'. This naming inconsistency across documents creates confusion.",
+      "expected_location": "Multiple files referencing congressional data file",
+      "pattern_source": "ground_truth.json: 'congressional_cache.json exists (not congressional_intel.json as some docs reference)'",
+      "action": "Audit all references to congressional_intel.json vs congressional_cache.json. Standardize on the actual filename (congressional_cache.json per ground truth). Update REQUIREMENTS.md, ROADMAP.md, and agent persona files."
+    },
+    {
+      "id": "RNG-027",
+      "severity": "P3",
+      "category": "incomplete_section",
+      "description": "PROJECT.md reports '992 documents' but ground truth shows 996 DOCX files in outputs/packets/. The ground truth notes: 'Documents claim 992. Actual filesystem has 996.' This is a minor discrepancy but should be investigated and documented.",
+      "expected_location": ".planning/PROJECT.md, multiple locations referencing document count",
+      "pattern_source": "ground_truth.json: 'outputs_packets_docx: 996'",
+      "action": "Verify actual DOCX count and update documentation if 996 is correct. Investigate whether the extra 4 are regional or strategic overview variants."
+    },
+    {
+      "id": "RNG-028",
+      "severity": "P3",
+      "category": "pattern_violation",
+      "description": "MILESTONES.md lists milestones in non-chronological order: v1.2 (top), v1.0 (middle), v1.1 (bottom). The expected pattern for a milestone history document would be reverse-chronological (newest first) or chronological. Currently the order is v1.2, v1.0, v1.1 which is neither.",
+      "expected_location": ".planning/MILESTONES.md",
+      "pattern_source": "Standard milestone history ordering (reverse-chronological or chronological)",
+      "action": "Reorder to reverse-chronological: v1.3 (add new entry first), v1.2, v1.1, v1.0. This matches the 'latest first' pattern common in changelogs."
+    },
+    {
+      "id": "RNG-029",
+      "severity": "P3",
+      "category": "orphaned_file",
+      "description": "website/ directory exists at .planning/website/ containing React/Vite project scaffolding (index.html, package.json, vite.config.ts, src/). This appears to be a planning-phase website prototype or scaffold. The actual deployed website lives at docs/web/ (per ground truth). This planning artifact may have been the initial website exploration before the final vanilla HTML/JS/CSS approach was chosen.",
+      "expected_location": ".planning/website/",
+      "pattern_source": "ground_truth.json: website.location = 'docs/web/'",
+      "action": "Determine if this planning-phase website scaffold is still needed. If the actual website uses vanilla HTML/JS/CSS (per ground truth), this React/Vite scaffold is a historical artifact and could be archived or deleted."
+    },
+    {
+      "id": "RNG-030",
+      "severity": "P3",
+      "category": "pattern_violation",
+      "description": "v1.3 phase directories (phases/15-18) exist and contain all expected files (CONTEXT.md, RESEARCH.md, PLAN files, SUMMARY files, VERIFICATION.md) following the established pattern. However, unlike phases 1-14, none of the v1.3 phase files appeared in the glob results for *.md -- they are found using full path listing. This is not a content issue but was noted during the audit. All 4 v1.3 phase directories have complete documentation sets: Phase 15 (19 files), Phase 16 (9 files), Phase 17 (15 files), Phase 18 (15 files).",
+      "expected_location": ".planning/phases/15-18/",
+      "pattern_source": ".planning/phases/01-14/ (each has CONTEXT, RESEARCH, PLANs, SUMMARYs, VERIFICATION)",
+      "action": "No action needed -- v1.3 phase directories are complete and well-organized. This is an informational finding."
+    },
+    {
+      "id": "RNG-031",
+      "severity": "P3",
+      "category": "incomplete_section",
+      "description": "STATE.md 'Todos' section contains only one item: 'Future milestone: DOCX layout & content improvements' with 3 sub-bullets. This aligns with what the MEMORY.md lists as the future milestone backlog. However, it does not mention the documentation closeout itself as a todo (i.e., archiving v1.3, creating milestones/ entries, updating MILESTONES.md). The 'Next step' in Session Continuity says '/gsd:audit-milestone or /gsd:complete-milestone'.",
+      "expected_location": ".planning/STATE.md, 'Todos' section",
+      "pattern_source": "STATE.md Session Continuity section",
+      "action": "Minor. The Todos section reflects future project work, while the Session Continuity section captures the immediate next action (milestone closure). No change needed unless documentation closeout should be explicitly tracked."
+    },
+    {
+      "id": "RNG-032",
+      "severity": "P1",
+      "category": "incomplete_section",
+      "description": "REQUIREMENTS.md is archive-ready: all 39 v1.3 requirements are marked [x], the traceability table shows all 39 as Complete, and the document has proper header, categorization, and future requirements section. However, the archive procedure has NOT been executed. The document needs to be copied to milestones/v1.3-REQUIREMENTS.md with an archive header before the next milestone overwrites it. This is the same issue as RNG-002 but emphasizes the archive readiness aspect.",
+      "expected_location": ".planning/REQUIREMENTS.md",
+      "pattern_source": "milestones/v1.2-REQUIREMENTS.md header: 'Archived: 2026-02-11, Status: SHIPPED'",
+      "action": "Execute the archive procedure: copy REQUIREMENTS.md to milestones/v1.3-REQUIREMENTS.md. Add header: 'Archived: 2026-02-14, Status: COMPLETE'. All 39/39 requirements marked [x]. 0 dropped."
+    }
+  ],
+  "summary": {
+    "total": 32,
+    "by_severity": {
+      "P1": 5,
+      "P2": 14,
+      "P3": 13
+    },
+    "by_category": {
+      "missing_document": 5,
+      "pattern_violation": 4,
+      "orphaned_file": 11,
+      "incomplete_section": 12
+    },
+    "archive_ready": false,
+    "archive_blockers": [
+      "RNG-001: v1.3 MILESTONE-AUDIT not in milestones/ subfolder",
+      "RNG-002: No milestones/v1.3-REQUIREMENTS.md archive",
+      "RNG-003: No milestones/v1.3-ROADMAP.md archive",
+      "RNG-004: No v1.3 entry in MILESTONES.md",
+      "RNG-032: Archive procedure not executed for REQUIREMENTS.md"
+    ],
+    "pattern_analysis": {
+      "milestone_archive_pattern": {
+        "description": "Each milestone (v1.0, v1.1, v1.2) has 3 archived files in milestones/: {version}-MILESTONE-AUDIT.md, {version}-REQUIREMENTS.md, {version}-ROADMAP.md",
+        "v1_0": "3/3 files present",
+        "v1_1": "3/3 files present",
+        "v1_2": "3/3 files present",
+        "v1_3": "0/3 files present (audit exists at top level, requirements and roadmap not archived)"
+      },
+      "milestone_audit_sections": {
+        "description": "Common sections across v1.0/v1.1/v1.2 audits",
+        "common": ["YAML frontmatter", "Executive Summary", "Requirements Coverage with evidence", "Cross-Phase Integration", "E2E Flow Verification", "Tech Debt", "Conclusion"],
+        "v1_0_unique": ["Code Review History", "Integration Score"],
+        "v1_1_unique": ["Quantitative Summary"],
+        "v1_2_unique": ["Architectural Decisions", "Data Coverage", "Test Suite Growth"],
+        "v1_3_coverage": "Has all common sections. Missing: Integration Score, detailed Evidence column per requirement."
+      },
+      "requirements_archive_pattern": {
+        "description": "Each archived requirements doc has: archive date/status header, categorized [x] requirements, traceability table, milestone summary with shipped/adjusted/dropped counts",
+        "compliance": "v1.0/v1.1/v1.2 all follow this pattern consistently"
+      },
+      "roadmap_archive_pattern": {
+        "description": "Each archived roadmap has: status/phases/plans header, overview paragraph, phase sections with goals/depends/plans/details/success criteria, coverage mapping, milestone summary",
+        "compliance": "v1.0/v1.1/v1.2 all follow this pattern consistently"
+      }
+    },
+    "ground_truth_discrepancies": [
+      {
+        "field": "docx_count",
+        "documented": 992,
+        "actual": 996,
+        "finding": "RNG-027"
+      },
+      {
+        "field": "source_file_count",
+        "documented_project_md": 95,
+        "documented_state_md": 98,
+        "actual_active": 102,
+        "finding": "RNG-025"
+      },
+      {
+        "field": "congressional_data_filename",
+        "documented_in_some_files": "congressional_intel.json",
+        "actual_on_disk": "congressional_cache.json",
+        "finding": "RNG-026"
+      }
+    ]
+  }
+}

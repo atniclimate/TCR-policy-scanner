@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Automated policy intelligence pipeline for Tribal Climate Resilience advocacy. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending), scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces advocacy intelligence products for Tribal Leaders advocating for FY26 climate resilience funding. Generates 4 document types — Tribal internal strategy (Doc A), Tribal congressional overview (Doc B), regional InterTribal strategy (Doc C), and regional congressional overview (Doc D) — for all 592 federally recognized Tribes across 8 regions, backed by real USASpending award data and FEMA NRI hazard profiles.
+Automated policy intelligence and congressional advocacy platform for Tribal Climate Resilience. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending) with full pagination and circuit breaker resilience, scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces confidence-scored advocacy intelligence products for 592 federally recognized Tribal Nations. Enriches every document with congressional intelligence -- bill tracking, CFDA-to-program mapping, committee activity, delegation data -- displayed with confidence indicators (HIGH/MEDIUM/LOW) derived from source weights and freshness decay. Generates 4 document types: Tribal internal strategy with talking points (Doc A), Tribal congressional overview with facts only (Doc B), regional InterTribal strategy (Doc C), and regional congressional overview (Doc D), enforcing a strict air gap between internal strategy and congressional-facing content. All documents backed by real USASpending award data (451/592 Tribes), FEMA NRI hazard profiles (592/592 Tribes), and live congressional bill intelligence. Delivered via a production website (Fuse.js fuzzy search, ARIA combobox, dark mode, mobile responsive, SquareSpace embeddable) on GitHub Pages. Hardened through a 2-round adversarial audit (trust 9/10, 0 P0/P1/P2 remaining, GO confirmed 2026-02-14). 964 tests across 33 modules.
 
 Built for the Tribal Climate Resilience program, serving 592 federally recognized Tribal Nations.
 
@@ -61,23 +61,35 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 - ✓ Regional aggregation across 8 regions with Doc C/D generation — v1.2
 - ✓ Quality review automation (audience leakage, air gap, placeholder detection) — v1.2
 - ✓ Data validation script with coverage reporting across all cache types — v1.2
-- ✓ GitHub Pages deployment with production URLs (atniclimate.github.io) — v1.2
+- ✓ GitHub Pages deployment with production URLs (atniclimate.github.io) -- v1.2
+- ✓ Congressional intelligence pipeline: Congress.gov bill detail fetcher (5 sub-endpoints per bill), bill-to-program relevance scoring (subject 0.30, CFDA 0.25, committee 0.20, keyword 0.25, threshold 0.30) -- v1.3
+- ✓ Confidence scoring: per-section indicators (HIGH >= 0.7, MEDIUM >= 0.4, LOW < 0.4) using source weights and exponential freshness decay (e^(-0.01 * days), ~69-day half-life) -- v1.3
+- ✓ Audience-differentiated congressional rendering: Doc A includes talking points and timing, Doc B is facts-only with zero strategy language -- v1.3
+- ✓ 5 Pydantic models for congressional data (BillAction, BillIntelligence, VoteRecord, Legislator, CongressionalIntelReport) -- v1.3
+- ✓ Scraper pagination hardening for all 4 scrapers with safety caps (Congress.gov 2500, Federal Register 20 pages, Grants.gov 1000, USASpending 5000) -- v1.3
+- ✓ Structural validation for 992-document corpus (~208ms/doc, 7 automated checks) -- v1.3
+- ✓ 5-agent document quality audit (40 findings, 0 P0, 6 P1 all fixed) with WCAG contrast fix (amber #B45309, 4.6:1) -- v1.3
+- ✓ Production website: Fuse.js 7.1.0 fuzzy search, W3C APG ARIA combobox, dark mode with CRT scan-line effect, state filtering, freshness badges, mobile responsive (44px touch targets), hash-based deep linking -- v1.3
+- ✓ SquareSpace iframe embedding with CSP meta tag and SRI integrity hash -- v1.3
+- ✓ WCAG 2.1 AA compliance: keyboard navigation, 4.5:1+ contrast, prefers-reduced-motion, focus styles -- v1.3
+- ✓ GitHub Pages automated deployment pipeline (deploy-website.yml) with SHA-pinned Actions -- v1.3
+- ✓ Production hardening: 4-agent adversarial audit across 2 rounds, 70 findings (38 fixed, 23 confirmed safe), NO-GO/fix/re-audit cycle, GO confirmed -- v1.3
+- ✓ Zero third-party tracking, zero cookies, zero external CDN dependencies (CARE/OCAP/UNDRIP sovereignty compliance) -- v1.3
+- ✓ Cross-cutting compliance: air gap enforcement, encoding utf-8, no hardcoded FYs, no third-party tracking in src/ -- v1.3
 
 ### Active
 
-*See `.planning/REQUIREMENTS.md` for v1.3 Production Launch requirements.*
+*No active milestone. v1.3 Production Launch completed 2026-02-14. See `.planning/STATE.md` for future priorities.*
 
-## Current Milestone: v1.3 Production Launch
+## Milestone History
 
-**Goal:** Ship production-ready website delivering real DOCX advocacy packets to 592 Tribal Nations, backed by reliable scrapers and trustworthy document quality.
+**v1.3 Production Launch** completed 2026-02-14 -- congressional intelligence pipeline, document quality assurance, production website, adversarial hardening across 4 phases (15-18), 20 plans, 39 requirements. GO confirmed with trust 9/10, 0 P0/P1/P2 remaining. 964 tests.
 
-**Target features:**
-- Data reliability: scraper pagination fixes, Congress.gov bill detail fetching
-- DOCX visual QA: structural validation, visual sampling, targeted revisions
-- Website launch: 4-agent review swarm, P0-P3 implementation, GitHub Pages + SquareSpace integration
-- Production hardening: 4-agent bug hunt swarm with clone pairs, merge-sort QA strategy
-- Document quality: confidence scoring, better sourcing for more trustworthy packets
-- Surface-level congressional intelligence improvements
+**v1.2 Tech Debt Cleanup + Data Foundation** shipped 2026-02-11.
+**v1.1 Tribe-Specific Advocacy Packets** shipped 2026-02-10.
+**v1.0 MVP** shipped 2026-02-09.
+
+See `.planning/MILESTONES.md` for detailed milestone history.
 
 ### Out of Scope
 
@@ -88,8 +100,8 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 - EPA EJScreen integration -- removed from EPA Feb 2025; FEMA NRI + USFS cover core hazard needs
 - NOAA climate projections -- valuable but deferred; adds significant integration complexity beyond NRI
 - BEA RIMS II multipliers -- cost-prohibitive ($500/region); published multipliers + FEMA BCR sufficient
-- Scraper pagination fixes -- important but separate concern; v1.3 candidate
-- Congress.gov bill detail fetching -- v1.3 candidate
+- VoteNode and voting records -- Senate.gov lacks structured vote data; deferred pending reliable API
+- DOCX layout/presentation redesign -- next milestone candidate
 
 ## Context
 
@@ -100,7 +112,7 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 **Server:** GitHub-hosted, developed locally at F:\tcr-policy-scanner
 **Local workspace:** F:\tcr-policy-scanner
 
-**Shipped v1.2 with ~37,900 LOC Python across 95 source files.**
+**Shipped v1.3 with ~38,300 LOC Python (src + tests) across 102 Python files (54 src + 33 tests + 14 scripts + 1 root).**
 
 **Pipeline architecture:**
 ```
@@ -124,16 +136,20 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 - `data/housing_authority_aliases.json` — 15,027 housing authority aliases for award matching
 - `data/award_cache/*.json` — per-Tribe USASpending award histories (592 files, 451 with real data)
 - `data/hazard_profiles/*.json` — per-Tribe FEMA NRI + USFS hazard profiles (592 files, all with real data)
-- `data/regional_config.json` — 8 NCA5-based regional definitions with Tribe-to-region mapping
+- `data/regional_config.json` -- 8 NCA5-based regional definitions with Tribe-to-region mapping
+- `data/nri/tribal_county_area_weights.json` -- Tribe-to-county area weights for NRI hazard aggregation (131K)
+- `data/packet_state/*.json` -- per-Tribe packet generation state for change tracking (622 files)
 
-**Test suite:** 743 tests across 20+ modules (circuit breaker, hazard aggregation, USFS override, housing authority aliases, document types, audience filtering, regional aggregation, quality review, coverage validation, plus all v1.0/v1.1 modules)
+**Test suite:** 964 tests across 33 modules (congressional models, pagination, confidence scoring, congressional rendering, E2E congressional, XCUT compliance, web index, plus all v1.0/v1.1/v1.2 modules)
 
-**Known tech debt (8 items, 0 critical):**
+**Known tech debt (48 items per v1.3 audit: 0 P0, 3 P1 deferred, 16 P2, 29 P3):**
 - 4 circuit breaker behaviors need human E2E verification (network manipulation tests)
-- Non-atomic write_text() for award cache files (re-runnable, low risk)
 - 141 Tribes with zero awards (remaining housing authority gaps)
-- 91 placeholder warnings in docs (TBD where data fields empty)
 - Doc A coverage limited to 384/592 (data completeness constraint)
+- VoteNode and voting records deferred (Senate.gov lacks structured data)
+- CYCLOPS-016: URIError on malformed hash fragment in website (console-only, no user impact)
+- DALE-019: daily-scan.yml uses version tags instead of SHA-pinned Actions
+- See `v1.3-MILESTONE-AUDIT.md` and `outputs/bug_hunt/SYNTHESIS.md` for complete inventory
 
 ## Constraints
 
@@ -177,22 +193,29 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 | ProgramRelevanceFilter (8-12 per Tribe) | Supersedes AF-04; omitted programs in appendix | ✓ Good — focused packets, complete coverage |
 | Batch GC every 25 Tribes | Prevents memory buildup across 592 Tribe batch generation | ✓ Good — stable memory usage |
 | Change tracking with state persistence | Per-Tribe JSON state enables "Since Last Packet" diff sections | ✓ Good — 5 change types detected |
-| Centralized src/paths.py | Single source of truth for all file paths, imports only pathlib | ✓ Good — 25 constants, 47 consumers |
+| Centralized src/paths.py | Single source of truth for all file paths, imports only pathlib | ✓ Good -- 35 constants, 35 consumers |
 | Circuit breaker wraps retry loop | Trips only when ALL retries exhausted, not per-attempt | ✓ Good — injectable clock for testing |
 | Batch CFDA queries (not per-Tribe) | 70 API calls vs 592; respects rate limits | ✓ Good — 14 CFDAs x 5 FYs |
 | Housing authority alias curation | 6 rounds programmatic + curated overrides | ✓ Good — 418 → 451 coverage |
 | Area-weighted hazard aggregation | Weighted avg for percentiles, weighted sum for EAL | ✓ Good — dual-CRS (EPSG:5070 + EPSG:3338) |
 | 4 document types with air gap | Doc A/C internal, Doc B/D congressional; no strategy leakage | ✓ Good — quality review enforces |
 | Regional aggregation (8 regions) | NCA5-based regions with crosscutting region for all 592 | ✓ Good — Doc C/D per region |
-| DOM methods for web widget (not innerHTML) | XSS prevention in client-side JavaScript | ✓ Good — security best practice |
+| DOM methods for web widget (not innerHTML) | XSS prevention in client-side JavaScript | ✓ Good -- security best practice |
+| Confidence decay rate = 0.01 (~69-day half-life) | Congressional data freshness matters; exponential decay penalizes stale intelligence | ✓ Good -- tested across date ranges |
+| Bill relevance 4-component scoring | Multi-signal scoring (subject/CFDA/committee/keyword) avoids single-signal false positives; threshold 0.30 | ✓ Good -- filters noise while retaining relevant bills |
+| Vanilla HTML/JS/CSS for website (not React) | Sovereignty compliance (zero build dependencies, zero third-party CDN), <500KB gzipped | ✓ Good -- 65KB gzipped, static-file deploy |
+| NO-GO/fix/re-audit pattern | User elected to fix all actionable P2/P3 before launch rather than ship with known issues | ✓ Good -- trust 9/10 after 2nd round |
+| VoteNode deferred | Senate.gov lacks structured vote data; unreliable source deferred pending better API | ✓ Good -- avoids unreliable data |
+| Air gap enforcement in quality gate | Doc B/D (congressional) must contain zero strategy language; regex patterns flag forbidden terms | ✓ Good -- quality_review.py enforces 18 patterns |
 
 ## Current State
 
-**v1.0 MVP** shipped 2026-02-09 — policy intelligence pipeline with 4 scrapers, 5 monitors, decision engine, 14-section briefing.
-**v1.1 Tribe-Specific Advocacy Packets** shipped 2026-02-10 — per-Tribe DOCX generation for 592 Tribes with award history, hazard profiling, economic impact, congressional delegation, and web distribution widget.
-**v1.2 Tech Debt Cleanup + Data Foundation** shipped 2026-02-11 — API resilience, real award/hazard data population, 4 document types with audience differentiation, regional aggregation, quality review, and GitHub Pages deployment. 992 documents generated (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D). Data completeness: ~87% (up from ~39%).
+**v1.0 MVP** shipped 2026-02-09 -- policy intelligence pipeline with 4 scrapers, 5 monitors, decision engine, 14-section briefing.
+**v1.1 Tribe-Specific Advocacy Packets** shipped 2026-02-10 -- per-Tribe DOCX generation for 592 Tribes with award history, hazard profiling, economic impact, congressional delegation, and web distribution widget.
+**v1.2 Tech Debt Cleanup + Data Foundation** shipped 2026-02-11 -- API resilience, real award/hazard data population, 4 document types with audience differentiation, regional aggregation, quality review, and GitHub Pages deployment. 992 documents generated (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D).
+**v1.3 Production Launch** completed 2026-02-14 -- congressional intelligence pipeline (bill tracking, CFDA mapping, committee activity, confidence scoring), document quality assurance (992/992 structural validation, 5-agent audit), production website (Fuse.js fuzzy search, ARIA combobox, dark mode, SquareSpace embed), and 2-round adversarial hardening (4 agents, 70 findings, GO confirmed). Trust 9/10. 964 tests. 4 phases, 20 plans, 39 requirements.
 
-**Current milestone:** v1.3 Production Launch — data hardening, website deployment, document quality, production readiness for 100–200 users over 48 hours.
+**Next milestone:** Planning. Candidates: DOCX layout/presentation redesign, extreme weather vulnerability data, climate risk/impact/vulnerability assessments per Tribe.
 
 ---
-*Last updated: 2026-02-12 after v1.3 milestone initialization*
+*Last updated: 2026-02-14 after v1.3 Production Launch completion (GO confirmed)*

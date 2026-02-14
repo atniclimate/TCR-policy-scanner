@@ -1,11 +1,14 @@
 # TCR Policy Scanner
 
 ## What
-Automated policy intelligence pipeline for Tribal Climate Resilience advocacy.
-Scans 4 federal sources, scores relevance against 16 tracked programs, runs 5
+Automated policy intelligence and congressional advocacy platform for Tribal
+Climate Resilience. Scans 4 federal sources with full pagination and circuit
+breaker resilience, scores relevance against 16 tracked programs, runs 5
 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine,
-and produces per-Tribe DOCX advocacy packets for 592 federally recognized Tribal
-Nations. Python 3.12. Apache 2.0.
+enriches with congressional intelligence (bill tracking, CFDA mapping, committee
+activity, confidence scoring), and produces 4 document types (Doc A/B/C/D) with
+audience-differentiated content for 592 federally recognized Tribal Nations.
+Delivered via production website on GitHub Pages. Python 3.12. Apache 2.0.
 
 TSDF Classification: T0 (Open). No Tribal-specific or sensitive data collected.
 
@@ -23,16 +26,20 @@ data/award_cache/        - per-Tribe USASpending award histories (592 files)
 data/hazard_profiles/    - per-Tribe FEMA NRI + USFS hazard profiles (592 files)
 src/
   main.py                - Pipeline orchestrator (6-stage DAG)
-  scrapers/              - federal_register, grants_gov, congress_gov, usaspending
+  config.py              - Dynamic FY, project-wide configuration
+  paths.py               - Centralized path constants (35 constants)
+  utils.py               - Shared utilities (format_dollars, etc.)
+  scrapers/              - federal_register, grants_gov, congress_gov, usaspending, circuit_breaker, cfda_map
   analysis/              - relevance scorer, change detector, decision engine
   graph/                 - Knowledge graph builder + schema
   monitors/              - IIJA sunset, reconciliation, DHS funding, hot sheets, consultation
   reports/               - Markdown/JSON/DOCX generation
-  packets/               - Per-Tribe DOCX packet assembly + DocxEngine
-scripts/                 - Ingestion and generation scripts
-tests/                   - 287 tests (pytest)
-outputs/                 - Generated briefings, graphs, monitor data
-docs/web/                - GitHub Pages search widget for Tribal packets
+  packets/               - Per-Tribe DOCX packet assembly, DocxEngine, confidence scoring, congressional rendering, quality review
+  schemas/               - Pydantic models (congressional intelligence, etc.)
+scripts/                 - Data population, web index building, structural validation (14 scripts)
+tests/                   - 964 tests (pytest)
+outputs/                 - Generated briefings, graphs, monitor data, bug hunt findings
+docs/web/                - Production website (Fuse.js search, ARIA combobox, dark mode)
 .planning/               - GSD milestone planning (roadmaps, phases, research)
 ```
 
@@ -45,6 +52,9 @@ docs/web/                - GitHub Pages search widget for Tribal packets
 - Single source: `python -m src.main --source federal_register`
 - Report only: `python -m src.main --report-only`
 - All tribes: `python -m src.main --prep-packets --all-tribes`
+- Build congressional intel: `python scripts/build_congressional_intel.py`
+- Build web index: `python scripts/build_web_index.py`
+- Validate DOCX structure: `python scripts/validate_docx_structure.py`
 
 ## Critical Rules (Non-Negotiable)
 1. NEVER hardcode fiscal years. Use config, CLI args, or env vars.

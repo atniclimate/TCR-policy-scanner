@@ -1,0 +1,221 @@
+{
+  "agent": "tahoma",
+  "domain": "narrative accuracy and completeness",
+  "audit_date": "2026-02-13",
+  "findings": [
+    {
+      "id": "TAH-001",
+      "severity": "P1",
+      "category": "stale_description",
+      "description": "PROJECT.md 'What This Is' paragraph describes the v1.2 system, not v1.3. It mentions 4 document types and real data but omits: (1) congressional intelligence pipeline with bill tracking, CFDA mapping, committee activity, and confidence scoring, (2) the production website with Fuse.js fuzzy search, ARIA combobox, dark mode, CRT effect, mobile responsiveness, and SquareSpace embed, (3) the 2-round adversarial hardening process that confirmed production readiness, and (4) the GO launch decision. Someone reading only this paragraph would believe the system generates documents but has no delivery mechanism and no congressional content.",
+      "capability": "system overview",
+      "where_it_exists": "The complete v1.3 system is documented across ROADMAP.md, STATE.md, REQUIREMENTS.md, and the Phase 15-18 verification reports",
+      "where_it_should_be": "PROJECT.md 'What This Is' paragraph (lines 5-7)",
+      "suggested_text": "See drafts.project_md_what_this_is"
+    },
+    {
+      "id": "TAH-002",
+      "severity": "P1",
+      "category": "missing_narrative",
+      "description": "MILESTONES.md has no v1.3 entry. The file ends after v1.2 (shipped 2026-02-11). This is a CRITICAL gap: the milestone that delivered congressional intelligence, document quality assurance, a production website, and adversarial hardening across 4 phases, 21 plans, and 39 requirements is completely absent from the milestone record. The pattern established by v1.0/v1.1/v1.2 entries (Delivered paragraph, Phases completed, Key accomplishments, Stats table, Git range, What's next) has no v1.3 continuation.",
+      "capability": "milestone record",
+      "where_it_exists": "STATE.md, ROADMAP.md, v1.3-MILESTONE-AUDIT.md all confirm v1.3 COMPLETE",
+      "where_it_should_be": "MILESTONES.md, at the top (most recent milestone first, following v1.2 pattern)",
+      "suggested_text": "See drafts.milestones_v1_3_entry"
+    },
+    {
+      "id": "TAH-003",
+      "severity": "P2",
+      "category": "undocumented_capability",
+      "description": "PROJECT.md Validated Requirements list stops at v1.2. There are zero v1.3 requirements listed in the Validated section. The 39 requirements (15 INTEL, 6 DOCX, 10 WEB, 5 HARD, 3 XCUT) that were completed and verified are referenced only via the pointer 'See .planning/REQUIREMENTS.md for v1.3 Production Launch requirements' under the Active heading. Since v1.3 is now COMPLETE, these should graduate from Active to Validated, preserving the same level of detail as v1.0-v1.2 entries.",
+      "capability": "congressional intelligence, document quality, website, production hardening",
+      "where_it_exists": "REQUIREMENTS.md has full detail for all 39 requirements",
+      "where_it_should_be": "PROJECT.md Validated Requirements section, as v1.3 entries",
+      "suggested_text": "Add validated requirement bullets for v1.3, following the pattern: '- checkmark Congressional intelligence pipeline with bill tracking, CFDA mapping, committee activity, and confidence scoring (HIGH/MEDIUM/LOW) across all 4 doc types -- v1.3' and similar for each major capability. At minimum, add 8-10 bullets covering the key capabilities rather than all 39 individually."
+    },
+    {
+      "id": "TAH-004",
+      "severity": "P2",
+      "category": "undocumented_capability",
+      "description": "The congressional intelligence pipeline is PROJECT.md's largest narrative gap. This is a major new capability: 5 Pydantic models, 4 paginated scrapers with safety caps, bill-to-program relevance scoring (4 weighted components: subject 0.30, CFDA 0.25, committee 0.20, keyword 0.25), confidence scoring with exponential freshness decay (~69-day half-life), and audience-differentiated rendering (Doc A gets talking points, Doc B gets facts only). None of this appears in PROJECT.md's description, requirements, or architecture sections.",
+      "capability": "congressional intelligence pipeline",
+      "where_it_exists": "ROADMAP.md Phase 15, REQUIREMENTS.md INTEL-01 through INTEL-15, 15-VERIFICATION.md, 15-CONTEXT.md, STATE.md DEC-1501-* through DEC-1507-*",
+      "where_it_should_be": "PROJECT.md 'What This Is' paragraph, Validated Requirements, and possibly a new Architecture subsection or extension of the existing Packet architecture diagram",
+      "suggested_text": "Congressional intelligence pipeline: Congress.gov bill detail fetcher (5 sub-endpoints per bill), bill-to-program relevance scoring (subject 0.30, CFDA 0.25, committee 0.20, keyword 0.25, threshold 0.30), confidence scoring with exponential freshness decay (weight * e^(-0.01 * days), HIGH >= 0.7, MEDIUM >= 0.4, LOW < 0.4), and audience-differentiated DOCX rendering (Doc A includes talking points and timing, Doc B is facts-only with zero strategy language)."
+    },
+    {
+      "id": "TAH-005",
+      "severity": "P2",
+      "category": "undocumented_capability",
+      "description": "The production website is described in PROJECT.md only as a 'GitHub Pages search widget (15KB)' from v1.1. The v1.3 website is a complete redesign: vanilla HTML/JS/CSS (the React/Vite/Tailwind stack from REQUIREMENTS.md was superseded), Fuse.js 7.1.0 fuzzy search across all 592 Tribes with alias embedding, ARIA combobox following W3C APG pattern, dark mode with CRT scan-line effect, state filtering, freshness badges, mobile responsive (375px/360px with 44px touch targets), SquareSpace iframe embedding, CSP meta tag, SRI on Fuse.js, privacy footer, hash-based deep linking, and ~65KB gzipped total. The 15KB characterization is obsolete.",
+      "capability": "production website",
+      "where_it_exists": "ROADMAP.md Phase 17, REQUIREMENTS.md WEB-01 through WEB-10, 17-VERIFICATION.md, outputs/website_review/SYNTHESIS.md",
+      "where_it_should_be": "PROJECT.md 'What This Is' paragraph, Validated Requirements, and update to the existing 'GitHub Pages search widget' bullet to reflect the complete v1.3 website",
+      "suggested_text": "Production website (docs/web/): Fuse.js 7.1.0 fuzzy search across all 592 Tribes with alias embedding, W3C APG ARIA combobox pattern, dark mode with CRT scan-line effect, state filtering, freshness badges (Current/Recent/Stale), mobile responsive (44px touch targets), SquareSpace iframe embedding, CSP meta tag, SRI integrity hash, privacy footer, hash-based deep linking. ~65KB gzipped. Deployed via GitHub Pages with automated CI/CD."
+    },
+    {
+      "id": "TAH-006",
+      "severity": "P2",
+      "category": "undocumented_capability",
+      "description": "The confidence scoring system is not mentioned anywhere in PROJECT.md. This is a cross-cutting capability that affects how every DOCX section is presented to Tribal Leaders. Source weights (congress_gov_api: 1.0, federal_register_api: 0.95, usaspending_api: 0.90, grants_gov_api: 0.85, inferred: 0.50) and exponential freshness decay (decay_rate=0.01, ~69-day half-life) produce per-section confidence levels displayed as HIGH/MEDIUM/LOW badges. This directly affects the trustworthiness of the intelligence product.",
+      "capability": "confidence scoring system",
+      "where_it_exists": "REQUIREMENTS.md INTEL-08, STATE.md DEC-1501-02 and DEC-1501-03, 15-VERIFICATION.md Truth 3, src/packets/confidence.py",
+      "where_it_should_be": "PROJECT.md Validated Requirements (v1.3 entry) and potentially the Data files section (confidence is a presentation layer, not a data file, but its weights are configured)",
+      "suggested_text": "Confidence scoring: per-section indicators (HIGH >= 0.7, MEDIUM >= 0.4, LOW < 0.4) using source weights and exponential freshness decay (e^(-0.01 * days), ~69-day half-life). Zero numeric scores exposed in rendered documents."
+    },
+    {
+      "id": "TAH-007",
+      "severity": "P2",
+      "category": "undocumented_capability",
+      "description": "The agent swarm methodology is used 4 times across v1.3 (Phase 15: 4 territory agents, Phase 16: 5 audit agents, Phase 17: 4 review agents, Phase 18: 4 adversarial bug hunters with 2-round audit) but is not documented as a reusable pattern in PROJECT.md. This is arguably the most significant process innovation of the project -- parallel agents with non-overlapping file domains, written findings to disk, synthesis documents, and GO/NO-GO gate decisions. Future contributors or projects would benefit from understanding this pattern.",
+      "capability": "agent swarm methodology",
+      "where_it_exists": "ROADMAP.md agent tables for each phase, V1.3-OPERATIONS-PLAN.md, STATE.md v1.3 Phase Structure table, all phase verification reports",
+      "where_it_should_be": "PROJECT.md (possibly a new 'Process Innovations' or 'Methodology' section), or at minimum in the Key Decisions table",
+      "suggested_text": "Agent swarm methodology: Parallel Claude agents with non-overlapping file territories (territory agents for coding, audit agents for read-only review, adversarial agents for bug hunting). Each agent writes machine-readable findings to disk. A synthesis step reconciles cross-agent themes. GO/NO-GO gate decisions use quantitative thresholds (trust score, severity counts). Used 4 times across v1.3 with 17 total agent roles."
+    },
+    {
+      "id": "TAH-008",
+      "severity": "P2",
+      "category": "undocumented_capability",
+      "description": "Production hardening results are absent from PROJECT.md. The 2-round adversarial audit (initial NO-GO, fix cycle, re-audit, GO) is a significant quality milestone: trust 9/10, joy 9/10, 0 P0/P1/P2 remaining, 70 total findings with 38 fixed and 23 confirmed safe. The NO-GO/fix/re-audit pattern (DEC-1803-01) is itself a process innovation where the user elected to fix all actionable P2/P3 before launch rather than shipping with known moderate issues.",
+      "capability": "production hardening and NO-GO/fix/re-audit pattern",
+      "where_it_exists": "outputs/bug_hunt/SYNTHESIS.md, 18-VERIFICATION.md, STATE.md DEC-1803-01 and DEC-1806-01",
+      "where_it_should_be": "PROJECT.md Current State section (at minimum), and ideally in the Key Decisions table (the NO-GO decision and subsequent GO)",
+      "suggested_text": "v1.3 Production Launch complete 2026-02-14 -- 4-agent adversarial audit across 2 rounds, initial NO-GO (user elected to fix all actionable P2/P3), full remediation cycle, re-audit confirmed GO. Trust 9/10, Joy 9/10, 0 P0/P1/P2 remaining. 964 tests. System cleared for 100-200 concurrent users."
+    },
+    {
+      "id": "TAH-009",
+      "severity": "P2",
+      "category": "stale_description",
+      "description": "PROJECT.md 'Current State' section still says 'Current milestone: v1.3 Production Launch' as if it is in progress. The milestone completed 2026-02-14 with GO confirmed. The section should reflect completion and point to what comes next. Additionally, the LOC count ('~37,900'), source file count ('95'), and test count ('743') in the body text are v1.2 numbers. The actual v1.3 numbers are: 98 source files, ~37,900 LOC (coincidentally same), 964 tests, 102 active Python files per ground truth.",
+      "capability": "current state narrative",
+      "where_it_exists": "STATE.md has accurate v1.3 metrics, ground_truth.json has verified counts",
+      "where_it_should_be": "PROJECT.md 'Current State' section, test suite count, source file count",
+      "suggested_text": "Update 'Current milestone' to 'v1.3 Production Launch shipped 2026-02-14'. Update test suite to '964 tests across 33 modules'. Update source files to '98 Python source files' (or '102 active Python files' per ground truth). Add v1.3 completion line: 'v1.3 Production Launch shipped 2026-02-14 -- congressional intelligence, document quality assurance, production website, adversarial hardening. 4 phases, 21 plans, 39 requirements. 964 tests. GO confirmed.'"
+    },
+    {
+      "id": "TAH-010",
+      "severity": "P2",
+      "category": "stale_description",
+      "description": "PROJECT.md 'Out of Scope' section contains two items that are no longer out of scope: 'Scraper pagination fixes -- v1.3 candidate' and 'Congress.gov bill detail fetching -- v1.3 candidate'. Both were delivered in v1.3 Phase 15 (INTEL-01 and INTEL-02). These should be removed from Out of Scope and their completion should be referenced in the Validated Requirements.",
+      "capability": "scraper pagination, bill detail fetching",
+      "where_it_exists": "REQUIREMENTS.md INTEL-01 and INTEL-02, 15-VERIFICATION.md Truths 2 and 4",
+      "where_it_should_be": "PROJECT.md Out of Scope section (remove these two items)",
+      "suggested_text": "Remove the lines '- Scraper pagination fixes -- important but separate concern; v1.3 candidate' and '- Congress.gov bill detail fetching -- v1.3 candidate' from Out of Scope."
+    },
+    {
+      "id": "TAH-011",
+      "severity": "P2",
+      "category": "stale_description",
+      "description": "CLAUDE.md (the root-level agent instruction file) is frozen at approximately v1.1 state. The Structure section shows '287 tests (pytest)' which is the v1.1 count; the actual count is 964. The 'What' section does not mention congressional intelligence, confidence scoring, or the production website. The 'docs/web/' description says 'GitHub Pages search widget for Tribal packets' which understates the full v1.3 website. The Structure section is missing key v1.3 directories and files (src/schemas/, src/scrapers/cfda_map.py, src/packets/confidence.py, etc.).",
+      "capability": "CLAUDE.md accuracy",
+      "where_it_exists": "ground_truth.json has the actual file counts and structure",
+      "where_it_should_be": "CLAUDE.md should reflect v1.3 state: 964 tests, updated 'What' section, updated Structure tree",
+      "suggested_text": "Update CLAUDE.md: tests line to '964 tests (pytest)', 'What' section to mention congressional intelligence and production website, Structure to include src/schemas/ and update docs/web/ description. Also add new CLI commands for congressional intelligence (scripts/build_congressional_intel.py) and web index building (scripts/build_web_index.py)."
+    },
+    {
+      "id": "TAH-012",
+      "severity": "P2",
+      "category": "stale_description",
+      "description": "V1.3-OPERATIONS-PLAN.md describes a 3-phase architecture (DOCX Visual QA, Website Launch, Production Hardening) but execution was 4 phases (Congressional Intelligence was Phase 15, not anticipated in the original operations plan). The plan also references React 18 + Vite 6 + Tailwind CSS + shadcn/ui as the website stack, but the actual implementation used vanilla HTML/JS/CSS + Fuse.js. The plan mentions 'clone pairs' (2 instances per agent) for bug hunters but execution used single instances per agent. There is no retrospective section documenting these divergences.",
+      "capability": "operations plan accuracy",
+      "where_it_exists": "V1.3-OPERATIONS-PLAN.md (the original plan), ROADMAP.md (the actual execution)",
+      "where_it_should_be": "V1.3-OPERATIONS-PLAN.md should have a retrospective section appended",
+      "suggested_text": "See drafts.operations_plan_retrospective"
+    },
+    {
+      "id": "TAH-013",
+      "severity": "P2",
+      "category": "stale_description",
+      "description": "REQUIREMENTS.md contains a stale reference in the Website (WEB) section: 'Stack: React 18 + Vite 6 + Tailwind CSS v4 + shadcn/ui'. The actual implementation uses vanilla HTML/JS/CSS + Fuse.js 7.1.0 (self-hosted). This is misleading for anyone reading the requirements document to understand the technology choices.",
+      "capability": "website technology stack",
+      "where_it_exists": "REQUIREMENTS.md line 81, compared with actual docs/web/ files and website review SYNTHESIS.md",
+      "where_it_should_be": "REQUIREMENTS.md WEB section should say 'Stack: Vanilla HTML/JS/CSS + Fuse.js 7.1.0 (self-hosted)'",
+      "suggested_text": "Replace 'Stack: React 18 + Vite 6 + Tailwind CSS v4 + shadcn/ui' with 'Stack: Vanilla HTML/JS/CSS + Fuse.js 7.1.0 (self-hosted, SRI-verified)'"
+    },
+    {
+      "id": "TAH-014",
+      "severity": "P3",
+      "category": "knowledge_risk",
+      "description": "The 'air gap' concept is mentioned in PROJECT.md Validated Requirements (v1.2 entry) as 'air gap enforcement' but is never defined. A new contributor would need to hunt through quality_review.py or doc_types.py to understand that 'air gap' means: Doc A/C (internal) may contain strategy language, talking points, timing notes, and advocacy positioning, while Doc B/D (congressional) must contain zero strategy language because these documents are shared with congressional offices. The term 'air gap' borrows from network security (physically separated networks) to describe the strict content boundary between audience types.",
+      "capability": "audience differentiation / air gap concept",
+      "where_it_exists": "Scattered across REQUIREMENTS.md XCUT-01, 15-CONTEXT.md, docx_sections.py, quality_review.py",
+      "where_it_should_be": "PROJECT.md should have a brief definition, perhaps in Constraints or as a Key Decision entry",
+      "suggested_text": "Add to Constraints or Key Decisions: 'Air gap: strict content boundary between document audiences. Doc A/C (internal to Tribal teams) may contain advocacy strategy, talking points, timing notes, and positioning language. Doc B/D (shared with congressional offices) must contain zero strategy language -- facts, data, and neutral framing only. The quality gate (quality_review.py) enforces this via regex patterns that flag forbidden terms. Named by analogy to air-gapped networks: no information crosses the audience boundary.'"
+    },
+    {
+      "id": "TAH-015",
+      "severity": "P3",
+      "category": "knowledge_risk",
+      "description": "The relationship between the scanner pipeline (Ingest -> Normalize -> Graph -> Monitors -> Decision Engine -> Reporting) and the packet pipeline (CLI -> PacketOrchestrator -> caches -> DocxEngine -> DOCX) is shown as two separate architecture diagrams in PROJECT.md but their connection is not explained. A new contributor might not understand that the scanner pipeline produces the policy intelligence that feeds into the packet pipeline's data caches, or that the packet pipeline consumes congressional_cache.json, award_cache/, hazard_profiles/, and program_inventory.json that are populated by various scripts (some triggered by the scanner, some run independently).",
+      "capability": "pipeline relationship",
+      "where_it_exists": "PROJECT.md has both diagrams, STATE.md Architecture Notes describes both flows",
+      "where_it_should_be": "PROJECT.md should have a connecting sentence between the two architecture diagrams explaining the data flow relationship",
+      "suggested_text": "Add between the two diagrams: 'The scanner pipeline produces policy intelligence (briefings, CI scores, monitor alerts). The packet pipeline consumes that intelligence plus pre-populated data caches (congressional, awards, hazards, economic) to assemble per-Tribe and per-region DOCX advocacy documents. Scripts in scripts/ populate the data caches independently of the scanner pipeline. The PacketOrchestrator makes zero API calls during document assembly -- all data comes from local caches.'"
+    },
+    {
+      "id": "TAH-016",
+      "severity": "P3",
+      "category": "knowledge_risk",
+      "description": "Deferred items have variable levels of context for resumption. VoteNode (DEC-1503-04) and voting records (DEC-1504-03) are well-documented with clear rationale (Senate.gov lacks structured vote data). The 2 remaining P3 findings from Phase 18 re-audit (CYCLOPS-016: URIError on malformed hash, DALE-019: daily-scan.yml not SHA-pinned) are documented in SYNTHESIS.md with enough context. However, the 16 P2 and 18 P3 from Phase 16 document quality are listed by ID only in SYNTHESIS.md's tables, and the actual finding details require reading the per-agent JSON files. Someone resuming this work would need to correlate across multiple files.",
+      "capability": "deferred work resumption context",
+      "where_it_exists": "outputs/docx_review/SYNTHESIS.md (P2/P3 tables), per-agent JSON files, outputs/bug_hunt/SYNTHESIS.md",
+      "where_it_should_be": "A consolidated deferred items list with enough context per item that someone could pick it up without reading the original agent finding",
+      "suggested_text": "Consider adding a DEFERRED-ITEMS.md that consolidates all deferred P2/P3 items with one-line descriptions and the originating agent/file reference. Not critical (all information exists), but would reduce friction for future contributors."
+    },
+    {
+      "id": "TAH-017",
+      "severity": "P3",
+      "category": "knowledge_risk",
+      "description": "TSDF T0 classification is mentioned in PROJECT.md ('TSDF Classification: T0 (Open) -- all data from public federal documents') and in the Constraints section, but the full TSDF framework (T0 Open, T1 Restricted, T2 Confidential, T3 Sovereign) is never defined. The term 'TSDF' itself is undefined -- it appears to stand for 'Tribal Sovereignty Data Framework' or similar, but this is never spelled out. A new contributor or auditor would need external knowledge to understand the classification system.",
+      "capability": "TSDF classification explanation",
+      "where_it_exists": "PROJECT.md mentions T0, REQUIREMENTS.md AF-01 references T1+",
+      "where_it_should_be": "PROJECT.md Constraints section could include a brief TSDF definition",
+      "suggested_text": "Add to Constraints: 'TSDF (Tribal Sovereignty Data Framework): T0 = Open (public federal data, no restrictions), T1 = Restricted (aggregated Tribal data), T2 = Confidential (identified Tribal data), T3 = Sovereign (Tribal-controlled data requiring consent). This system operates exclusively at T0.'"
+    },
+    {
+      "id": "TAH-018",
+      "severity": "P3",
+      "category": "missing_narrative",
+      "description": "STATE.md Todos section contains a single future milestone with 3 bullet points (DOCX layout redesign, extreme weather data, climate risk assessments) but provides no prioritization, estimated scope, or connection to the capabilities built in v1.3. It reads as a vague wish list rather than a prioritized backlog. Additionally, there is no 'here is where we are, here is what comes next' narrative anywhere -- the closest is STATE.md's 'Next step: /gsd:audit-milestone or /gsd:complete-milestone' which is a process step, not a strategic direction.",
+      "capability": "future-facing narrative",
+      "where_it_exists": "STATE.md Todos section",
+      "where_it_should_be": "STATE.md or PROJECT.md should have a brief forward-looking section that connects v1.3 completion to the next priorities",
+      "suggested_text": "Consider expanding the Todos with a brief paragraph: 'v1.3 delivered the production-ready system. The next milestone should address the highest-impact gap for Tribal Leaders: [chosen priority]. Candidate priorities ranked by user value: (1) DOCX layout and presentation redesign (the documents are the product -- visual quality directly affects credibility with congressional offices), (2) Extreme weather vulnerability data integration (adds concrete risk context to each Tribe's profile), (3) Climate risk/impact/vulnerability assessments per Tribe (deepens the hazard story beyond NRI county-level data).'"
+    },
+    {
+      "id": "TAH-019",
+      "severity": "P1",
+      "category": "stale_description",
+      "description": "PROJECT.md 'Last updated' timestamp says '2026-02-12 after v1.3 milestone initialization' but v1.3 was completed 2026-02-14. The document reflects the state at milestone start, not completion. Combined with the missing v1.3 validated requirements, stale Out of Scope items, and frozen Current State section, PROJECT.md reads as a document that was last meaningfully updated for v1.2 with a v1.3 placeholder added. A new reader would get an incomplete and misleading picture of the system.",
+      "capability": "document currency",
+      "where_it_exists": "PROJECT.md line 199",
+      "where_it_should_be": "PROJECT.md should be updated with v1.3 completion state and a current timestamp",
+      "suggested_text": "Update to: '*Last updated: 2026-02-14 after v1.3 Production Launch completion (GO confirmed)*'"
+    },
+    {
+      "id": "TAH-020",
+      "severity": "P3",
+      "category": "stale_description",
+      "description": "PROJECT.md Key Decisions table has no v1.3 decisions. STATE.md records 33 decisions (DEC-1501-01 through DEC-1806-01) from v1.3 execution, none of which appear in PROJECT.md's Key Decisions table. The most architecturally significant decisions (confidence decay rate, bill relevance 4-component scoring, bills-first ordering in documents, NO-GO/fix/re-audit cycle) deserve inclusion in the permanent project record.",
+      "capability": "key decisions completeness",
+      "where_it_exists": "STATE.md Decisions section lists all 33 v1.3 decisions",
+      "where_it_should_be": "PROJECT.md Key Decisions table, at minimum the 5-6 most significant",
+      "suggested_text": "Add to Key Decisions table: (1) 'Confidence decay rate = 0.01 (~69-day half-life) | Congressional data freshness matters; exponential decay penalizes stale intelligence | Good -- tested across date ranges'; (2) 'Bill relevance 4-component scoring (subject/CFDA/committee/keyword) | Multi-signal scoring avoids single-signal false positives | Good -- threshold 0.30 filters noise'; (3) 'Vanilla HTML/JS/CSS for website (not React) | Sovereignty compliance, no build dependencies, <500KB gzipped | Good -- 65KB gzipped, CDN-backed static'; (4) 'NO-GO/fix/re-audit pattern | User elected to fix all actionable P2/P3 before launch | Good -- trust 9/10 after 2nd round'; (5) 'VoteNode deferred | Senate.gov lacks structured vote data | Good -- avoids unreliable data source'"
+    }
+  ],
+  "drafts": {
+    "project_md_what_this_is": "Automated policy intelligence and congressional advocacy platform for Tribal Climate Resilience. Scans 4 federal policy sources (Federal Register, Grants.gov, Congress.gov, USASpending) with full pagination and circuit breaker resilience, scores relevance against 16 tracked programs, runs 5 threat/signal monitors, classifies advocacy goals via a 5-rule decision engine, and produces confidence-scored advocacy intelligence products for 592 federally recognized Tribal Nations. Enriches every document with congressional intelligence -- bill tracking, CFDA-to-program mapping, committee activity, delegation data -- displayed with confidence indicators (HIGH/MEDIUM/LOW) derived from source weights and freshness decay. Generates 4 document types: Tribal internal strategy with talking points (Doc A), Tribal congressional overview with facts only (Doc B), regional InterTribal strategy (Doc C), and regional congressional overview (Doc D) -- enforcing a strict air gap between internal strategy and congressional-facing content. All documents backed by real USASpending award data (451/592 Tribes), FEMA NRI hazard profiles (592/592 Tribes), and live congressional bill intelligence. Delivered via a production website (Fuse.js fuzzy search, ARIA combobox, dark mode, mobile responsive, SquareSpace embeddable) on GitHub Pages, hardened through a 2-round adversarial audit (trust 9/10, 0 P0/P1/P2 remaining, GO confirmed). 964 tests across 33 modules. Built for the Tribal Climate Resilience program, serving 592 federally recognized Tribal Nations.",
+    "milestones_v1_3_entry": "## v1.3 Production Launch (Complete: 2026-02-14)\n\n**Delivered:** Congressional intelligence pipeline with bill tracking, CFDA mapping, committee activity, and confidence scoring; 5-agent document quality assurance audit with 992-document structural validation; production website with Fuse.js fuzzy search, ARIA combobox, dark mode, mobile responsive layout, and SquareSpace embedding; 4-agent adversarial hardening with 2-round audit cycle (initial NO-GO, full P2/P3 remediation, re-audit confirming GO). Trust 9/10, Joy 9/10, zero P0/P1/P2 remaining.\n\n**Phases completed:** 15-18 (21 plans total)\n\n**Key accomplishments:**\n\n- Built congressional intelligence pipeline: Congress.gov bill detail fetcher (5 sub-endpoints), 4-component relevance scoring (subject/CFDA/committee/keyword), confidence scoring with exponential freshness decay (~69-day half-life), audience-differentiated rendering across all 4 doc types\n- Hardened all 4 scrapers for full pagination with safety caps (Congress.gov 2500, Federal Register 20 pages, Grants.gov 1000, USASpending 5000) and zero silent truncation\n- Ran 5-agent document quality audit on 992 DOCX corpus: 40 findings (0 P0, 6 P1 all fixed), structural validation at ~208ms/doc, WCAG contrast fix (amber #B45309, 4.6:1), quality gate default enabled\n- Deployed production website: vanilla HTML/JS/CSS + Fuse.js 7.1.0 (65KB gzipped), ARIA combobox, state filtering, freshness badges, hash-based deep linking, CSP + SRI security, privacy footer, SquareSpace iframe embedding\n- Executed 4-agent adversarial hardening (Cyclops, Dale Gribble, Mr. Magoo, Marie Kondo) across 6 waves: 70 findings, 38 fixed, 23 confirmed safe, NO-GO decision followed by full remediation and re-audit to GO\n- Achieved CARE/OCAP/UNDRIP sovereignty compliance with zero third-party tracking, zero cookies, zero external CDN dependencies\n\n**Stats:**\n\n- 98 Python source files (102 active including archive), ~37,900 lines of Python (src + tests)\n- 4 phases, 21 plans, 39 requirements (38 satisfied + 1 conditional)\n- 964 tests (221 new: congressional models, pagination, confidence, rendering, E2E, XCUT compliance)\n- 33 key decisions documented (DEC-1501-01 through DEC-1806-01)\n- 4 agent swarms deployed (17 total agent roles across territory, audit, review, and adversarial modes)\n- Trust score 9/10, Joy score 9/10, Sovereignty assessment COMPLIANT + IMPROVED\n- 3 days from v1.2 ship to v1.3 completion (2026-02-12 to 2026-02-14)\n\n**Git range:** `8f96850` (v1.2 end) -> `e8a4aba` (v1.3 end)\n\n**What's next:** Planning next milestone. Candidates: DOCX layout/presentation redesign, extreme weather vulnerability data, climate risk/impact/vulnerability assessments per Tribe.\n\n---",
+    "operations_plan_retrospective": "## Retrospective (Added 2026-02-14)\n\n### Plan vs. Execution\n\nThe operations plan described a 3-phase architecture (DOCX Visual QA, Website Launch, Production Hardening). Execution was 4 phases:\n\n| Planned | Actual | Divergence |\n|---------|--------|------------|\n| Phase 1: DOCX Visual QA | Phase 15: Congressional Intelligence | Added phase -- congressional intelligence was not in the original operations plan but was the milestone's highest-value capability |\n| Phase 1 (cont.) | Phase 16: Document Quality Assurance | Roughly maps to planned Phase 1, but executed as agent swarm audit rather than Playwright visual sampling |\n| Phase 2: Website Launch | Phase 17: Website Deployment | Technology pivot: planned React 18 + Vite 6 + Tailwind + shadcn/ui, shipped vanilla HTML/JS/CSS + Fuse.js |\n| Phase 3: Production Hardening | Phase 18: Production Hardening | Close match; clone pairs became single instances, but the 2-round audit exceeded the plan's single pass |\n\n### What Worked\n\n1. **Agent swarm methodology.** Parallel agents with non-overlapping territories eliminated merge conflicts and produced comprehensive coverage. The 5-agent Phase 16 audit found 40 findings across 5 quality dimensions that a single reviewer would have missed.\n2. **Written findings to disk.** Every agent writes JSON findings, and the synthesis document reconciles them. This survived context window resets perfectly -- no information lost between sessions.\n3. **NO-GO/fix/re-audit pattern.** The initial Phase 18 synthesis recommended GO, but the user elected NO-GO to fix all actionable P2/P3. This second round raised trust from 8/10 to 9/10 and resolved all P2 issues. The extra investment paid off in quality.\n4. **Checklist-driven agents.** Each bug hunter had a specific personality and checklist. Mr. Magoo (experiential) found UX issues that Cyclops (code inspector) would never notice. Marie Kondo (hygiene) found dead code that Dale Gribble (security) did not care about. Different perspectives found different bugs.\n5. **Gate decisions between phases.** Each phase had explicit success criteria that had to be verified before the next phase started. This prevented premature progression.\n\n### What Would Be Done Differently\n\n1. **Plan should have anticipated Congressional Intelligence.** The operations plan was written before requirements were finalized. Congressional intelligence was the milestone's largest phase (7 plans, 15 INTEL + 3 XCUT requirements) but appeared nowhere in the plan. Next time, finalize requirements before writing the operations plan.\n2. **Technology decision (React vs. vanilla) should have been made earlier.** The plan and requirements reference React/Vite/Tailwind, but the actual implementation used vanilla HTML/JS/CSS. This was the right call (sovereignty compliance, no build dependencies, 65KB vs hundreds of KB) but the decision should have been documented in the plan rather than discovered during execution.\n3. **Clone pairs were unnecessary.** The plan called for 2 instances of each bug hunter for coverage. In practice, single instances produced thorough coverage -- 70 findings across 4 agents was more than sufficient. The context overhead of coordinating clones would not have been worth the marginal coverage improvement.\n4. **Visual sampling (Playwright screenshots) was never needed.** The plan's Phase 1 Session 1B described Playwright-based visual inspection. The structural validation script (641 LOC, 7 automated checks) plus the 5-agent audit provided sufficient quality assurance without visual screenshots. Automated structural checks scale better than visual inspection.\n5. **Timeline estimate was close but compressed.** The plan estimated 6-8 hours across 10-12 sessions. Actual execution was approximately 3 days with more sessions but similar active time. The additional phases (congressional intelligence) and the NO-GO remediation cycle added scope not anticipated in the estimate."
+  },
+  "summary": {
+    "total": 20,
+    "undocumented_capabilities": 5,
+    "stale_descriptions": 7,
+    "missing_narratives": 2,
+    "knowledge_risks": 6,
+    "story_coherent": false,
+    "story_assessment": "The documentation tells the story of a v1.2 system with a placeholder for v1.3 work in progress. It does not tell the story of a v1.3 system that shipped congressional intelligence, a production website, and passed adversarial hardening. Someone reading only PROJECT.md and MILESTONES.md would understand the scanner pipeline and DOCX generation but would miss: (1) congressional intelligence enrichment, (2) confidence scoring, (3) the production website beyond a 'search widget', (4) the agent swarm methodology, and (5) the 2-round adversarial hardening that confirmed production readiness. The institutional knowledge exists -- it is scattered across ROADMAP.md, STATE.md, REQUIREMENTS.md, phase verification reports, and synthesis documents -- but it has not been consolidated into the primary documents that a new contributor would read first. The 3 P1 findings (stale What This Is paragraph, missing MILESTONES.md v1.3 entry, stale document timestamp) mean a newcomer's first impression of the project would significantly understate its capabilities. The v1.3 milestone deserves to be honored in the documentation with the same care it received in execution."
+  }
+}

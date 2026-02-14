@@ -1,0 +1,508 @@
+{
+  "agent": "banjo",
+  "domain": "ground-truth verification",
+  "audit_date": "2026-02-13",
+  "facts": {
+    "source_files": {
+      "src": 54,
+      "tests": 33,
+      "scripts": 14,
+      "root": 1,
+      "total_active": 102,
+      "total_including_archive": 113
+    },
+    "test_count": 964,
+    "loc": {
+      "src": 18524,
+      "tests": 19816,
+      "scripts": 6086,
+      "src_plus_tests": 38340,
+      "all_active_python": 44426
+    },
+    "docx_count": {
+      "total_in_outputs": 996,
+      "doc_a_internal": 384,
+      "doc_b_congressional": 592,
+      "doc_c_regional_internal": 8,
+      "doc_d_regional_congressional": 8,
+      "top_level_misc": 4,
+      "claimed_count": 992,
+      "breakdown_384_plus_592_plus_8_plus_8": 992,
+      "note": "Actual 996 includes 4 top-level files (epa_001.docx, epa_100000168.docx, epa_100000171.docx, STRATEGIC-OVERVIEW.docx) not in the 992 count. The 992 claim correctly counts Doc A+B+C+D."
+    },
+    "data_file_count": 1817,
+    "git_head": "e8a4aba",
+    "git_head_full": "e8a4aba770f590b65eebf022836753a3f38579c7",
+    "git_head_message": "docs(18): complete Production Hardening phase"
+  },
+
+  "capability_verification": [
+    {
+      "capability": "congressional_intelligence",
+      "verified": true,
+      "evidence": "src/scrapers/congress_gov.py EXISTS, src/packets/congress.py EXISTS, src/packets/confidence.py EXISTS, scripts/build_congressional_intel.py EXISTS",
+      "details": "CongressionalMapper class in congress.py lazy-loads congressional_cache.json. Confidence scoring in confidence.py with exponential decay (decay_rate=0.01, ~69-day half-life). 5 Pydantic models (BillAction, BillIntelligence, VoteRecord, Legislator, CongressionalIntelReport) confirmed in src/schemas/models.py lines 996-1221."
+    },
+    {
+      "capability": "scraper_pagination_with_safety_caps",
+      "verified": true,
+      "evidence": "All 4 scrapers have pagination loops and safety caps",
+      "details": "Congress.gov: _SAFETY_CAP=2500 (10 pages, offset-based). Federal Register: _MAX_PAGES=20 (1000 results, page-based). Grants.gov: _SAFETY_CAP=1000 (20 pages, startRecordNum offset). USASpending: _OBLIGATION_SAFETY_CAP=5000 (50 pages, page-based). All have _PAGE_DELAY=0.3s between requests."
+    },
+    {
+      "capability": "quality_review_air_gap",
+      "verified": true,
+      "evidence": "src/packets/quality_review.py EXISTS with INTERNAL_ONLY_PATTERNS and AIR_GAP_VIOLATIONS lists",
+      "details": "DocumentQualityReviewer class checks: (1) INTERNAL_ONLY_PATTERNS: 18 strategy/leverage phrases blocked from congressional docs (B/D), (2) AIR_GAP_VIOLATIONS: 12 org/tool-name phrases blocked from ALL docs, (3) PLACEHOLDER_PATTERNS: 6 template markers checked. Strategy words include 'strategic leverage', 'leverage point', 'lobby', 'push for', etc."
+    },
+    {
+      "capability": "doc_types_abcd",
+      "verified": true,
+      "evidence": "src/packets/doc_types.py EXISTS with DOC_A, DOC_B, DOC_C, DOC_D frozen dataclass instances",
+      "details": "DocumentTypeConfig frozen dataclass with 14 fields. DOC_A: internal/tribal/confidential/assertive. DOC_B: congressional/tribal/public/objective. DOC_C: internal/regional/confidential/assertive. DOC_D: congressional/regional/public/objective. DOC_TYPES dict provides lookup by letter."
+    },
+    {
+      "capability": "confidence_scoring",
+      "verified": true,
+      "evidence": "src/packets/confidence.py: compute_confidence(), confidence_level(), section_confidence()",
+      "details": "Formula: confidence = source_weight * e^(-decay_rate * days). DEFAULT_SOURCE_WEIGHTS: congress_gov=0.80, federal_register=0.90, grants_gov=0.85, usaspending=0.70, congressional_cache=0.75, inferred=0.50. Thresholds: HIGH >= 0.7, MEDIUM >= 0.4, LOW < 0.4. Default decay_rate=0.01 gives ~69-day half-life."
+    },
+    {
+      "capability": "circuit_breaker",
+      "verified": true,
+      "evidence": "src/scrapers/circuit_breaker.py EXISTS with CircuitBreaker class",
+      "details": "Three states: CLOSED/OPEN/HALF_OPEN. CircuitState enum. failure_threshold=5 default, recovery_timeout=60.0s. Injectable clock via Callable for testing. State transitions: CLOSED->OPEN on threshold failures, OPEN->HALF_OPEN on timeout, HALF_OPEN->CLOSED on success, HALF_OPEN->OPEN on failure. CircuitOpenError exception for fail-fast."
+    },
+    {
+      "capability": "bill_relevance_4_components",
+      "verified": true,
+      "evidence": "scripts/build_congressional_intel.py lines 120-188",
+      "details": "4 weighted components confirmed: (1) Subject overlap 0.30: bill subjects vs program keywords, (2) CFDA/ALN reference 0.25: CFDA numbers in bill text, (3) Committee match 0.20: Tribal-relevant committees (SLIA, SSAP, SSEG, SSCM, HSII, HSAP), (4) Keyword density 0.25: Tribal keyword matches in title (normalized to min(matches/3, 1.0)). Relevance threshold 0.30 for bill inclusion."
+    },
+    {
+      "capability": "website_fuse_js",
+      "verified": true,
+      "evidence": "docs/web/index.html line 70: <script src='js/fuse.min.js' integrity='sha384-...' crossorigin='anonymous'>",
+      "details": "Fuse.js loaded with SRI hash for supply chain protection. Used for client-side search across 592 Tribes."
+    },
+    {
+      "capability": "website_aria_combobox",
+      "verified": true,
+      "evidence": "docs/web/js/combobox.js implements W3C ARIA combobox pattern",
+      "details": "TribeCombobox class with: input[role='combobox'], ul[role='listbox'], div[role='status'] live region. Keyboard navigation (ArrowDown/Up/Enter/Escape), aria-activedescendant focus management, aria-expanded toggle, aria-selected on options. References W3C ARIA APG patterns."
+    },
+    {
+      "capability": "website_dark_mode",
+      "verified": true,
+      "evidence": "docs/web/css/style.css line 36: @media (prefers-color-scheme: dark)",
+      "details": "Dark mode via prefers-color-scheme media query. WCAG AA contrast verified: button 8.36:1, badges 4.5:1+, selected option 8.36:1."
+    },
+    {
+      "capability": "website_crt_effect",
+      "verified": true,
+      "evidence": "docs/web/css/style.css line 85: /* --- CRT Scan-line Effect --- */",
+      "details": "CRT scan-line effect implemented in CSS. Stylesheet header confirms: 'Complete stylesheet: light/dark mode, type scale, CRT effect'."
+    },
+    {
+      "capability": "website_reduced_motion",
+      "verified": true,
+      "evidence": "docs/web/css/style.css line 556: @media (prefers-reduced-motion: reduce)",
+      "details": "prefers-reduced-motion media query present. Also JS-side: scrollIntoView checks matchMedia for reduced motion preference."
+    },
+    {
+      "capability": "website_csp_headers",
+      "verified": true,
+      "evidence": "docs/web/index.html line 7: <meta http-equiv='Content-Security-Policy'>",
+      "details": "CSP via meta tag (not HTTP header): default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'self' *.squarespace.com. Note: implemented as HTML meta tag, not via workflow/server headers."
+    },
+    {
+      "capability": "sha_pinned_actions",
+      "verified": "partial",
+      "evidence": "deploy-website.yml and generate-packets.yml use SHA pins. daily-scan.yml uses version tags.",
+      "details": "deploy-website.yml: checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 (v4), setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 (v5). generate-packets.yml: same SHAs. daily-scan.yml: checkout@v4, setup-python@v5 (NOT SHA-pinned). This is known finding DALE-019 (P3)."
+    },
+    {
+      "capability": "keyboard_handlers",
+      "verified": true,
+      "evidence": "combobox.js line 48: keydown listener. app.js line 319: keydown handler for state filter items.",
+      "details": "Keyboard navigation: combobox handles ArrowDown/Up/Enter/Escape. State filter items have keydown handlers. CSS focus styles: .search-input:focus, .state-select:focus, .btn-download:focus (3px solid outline), .state-tribe-item:focus, .overview-link:focus."
+    },
+    {
+      "capability": "cfda_map_module",
+      "verified": true,
+      "evidence": "src/scrapers/cfda_map.py: 27 lines, Python module with CFDA_TO_PROGRAM dict",
+      "details": "14 CFDA numbers mapped to program IDs. Single source of truth for both grants_gov.py and usaspending.py. Created in Phase 18 (MK-CODE-05 hygiene fix)."
+    }
+  ],
+
+  "data_inventory": [
+    {
+      "path": "data/tribal_registry.json",
+      "size": "215K",
+      "purpose": "592 Tribes from EPA API with BIA codes, states, name variants"
+    },
+    {
+      "path": "data/congressional_cache.json",
+      "size": "3.4M",
+      "purpose": "538 members with committee assignments, 501 Tribe delegations"
+    },
+    {
+      "path": "data/tribal_aliases.json",
+      "size": "1.6M",
+      "purpose": "18,776 USASpending name aliases for two-tier matching"
+    },
+    {
+      "path": "data/housing_authority_aliases.json",
+      "size": "1.3M",
+      "purpose": "15,027 housing authority aliases for award matching"
+    },
+    {
+      "path": "data/program_inventory.json",
+      "size": "18K",
+      "purpose": "16 programs with CI, advocacy levers, hot_sheets_status, access_type, funding_type"
+    },
+    {
+      "path": "data/aiannh_tribe_crosswalk.json",
+      "size": "21K",
+      "purpose": "AIANNH-to-Tribe geographic crosswalk for hazard mapping"
+    },
+    {
+      "path": "data/graph_schema.json",
+      "size": "13K",
+      "purpose": "20 authorities, 13 barriers, 8 funding vehicles, Structural Asks, Trust Super-Node"
+    },
+    {
+      "path": "data/policy_tracking.json",
+      "size": "9.9K",
+      "purpose": "FY26 positions with 7-tier CI thresholds"
+    },
+    {
+      "path": "data/regional_config.json",
+      "size": "3.5K",
+      "purpose": "8 NCA5-based regional definitions (pnw, alaska, plains, southwest, greatlakes, southeast, northeast, crosscutting)"
+    },
+    {
+      "path": "data/ecoregion_config.json",
+      "size": "2.2K",
+      "purpose": "7 NCA5 ecoregion definitions with program priority mappings"
+    },
+    {
+      "path": "data/nri/tribal_county_area_weights.json",
+      "size": "131K",
+      "purpose": "Tribe-to-county area weights for NRI hazard aggregation"
+    },
+    {
+      "path": "data/congressional_intel.json",
+      "size": "DOES NOT EXIST",
+      "purpose": "Referenced by CONGRESSIONAL_INTEL_PATH in paths.py but not yet generated. Orchestrator handles gracefully (returns empty dict). congressional_cache.json exists instead."
+    },
+    {
+      "path": "data/award_cache/",
+      "size": "592 files",
+      "purpose": "Per-Tribe USASpending award histories. 451/592 have real award data."
+    },
+    {
+      "path": "data/hazard_profiles/",
+      "size": "592 files",
+      "purpose": "Per-Tribe FEMA NRI + USFS hazard profiles. All 592 have FEMA NRI data."
+    },
+    {
+      "path": "data/packet_state/",
+      "size": "622 files",
+      "purpose": "Per-Tribe packet generation state for change tracking."
+    }
+  ],
+
+  "data_directories": [
+    "data/ (core JSON files)",
+    "data/award_cache/ (592 files)",
+    "data/census/ (Census CD119-AIANNH crosswalk)",
+    "data/hazard_profiles/ (592 files)",
+    "data/nri/ (NRI data + county/aiannh subdirs)",
+    "data/nri/aiannh/ (AIANNH shapefiles)",
+    "data/nri/county/ (County-level NRI CSV)",
+    "data/packet_state/ (622 files)",
+    "data/templates/ (DOCX templates)",
+    "data/usfs/ (USFS wildfire risk data)"
+  ],
+
+  "p3_findings": {
+    "CYCLOPS_016": {
+      "id": "CYCLOPS-016",
+      "severity": "P3",
+      "category": "error-handling",
+      "file": "docs/web/js/app.js",
+      "line": 209,
+      "description": "Hash-based URL navigation uses decodeURIComponent() on hash fragment. Malformed percent-encoded sequence (e.g., '#tribe=%E0%A4') causes URIError with no try/catch. No visible user impact -- console error only, page loads normally without pre-selecting a Tribe.",
+      "fix": "Optional: wrap decodeURIComponent in try/catch",
+      "status": "new, not fixed, acceptable for launch"
+    },
+    "DALE_019": {
+      "id": "DALE-019",
+      "severity": "P3",
+      "category": "third-party-risk",
+      "file": ".github/workflows/daily-scan.yml",
+      "description": "daily-scan.yml uses version-tagged GitHub Actions (checkout@v4, setup-python@v5) while deploy-website.yml and generate-packets.yml are SHA-pinned. Inconsistency in supply chain protection. Daily scan outputs are not public-facing documents, so risk is low.",
+      "fix": "Pin daily-scan.yml to same SHAs: checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 and setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+      "status": "new, not fixed, acceptable for launch"
+    }
+  },
+
+  "doc_claims_vs_reality": [
+    {
+      "claim": "98 Python files",
+      "source_doc": "STATE.md (line 44)",
+      "actual": "102 active Python files (54 src + 33 tests + 14 scripts + 1 root). 113 including 11 archive files.",
+      "verdict": "MISMATCH",
+      "note": "The '98' figure does not correspond to any discoverable subset. The closest would be 102 active minus 4 removed scripts (from Marie Kondo cleanup in Wave 2), but 102-4=98 only if counting post-removal but the files are gone, so the current count IS 102. The '98' may be a stale snapshot from before Phase 18 additions (cfda_map.py, build_manifest.py, test_xcut_compliance.py, test_web_index.py). SYNTHESIS.md also says '98 source files'."
+    },
+    {
+      "claim": "~37,900 LOC Python",
+      "source_doc": "STATE.md (line 45), PROJECT.md (line 103), SYNTHESIS.md (line 352)",
+      "actual": "src=18,524 + tests=19,816 = 38,340 LOC. Or src alone = 18,524. src+tests+scripts = 44,426.",
+      "verdict": "APPROXIMATE MATCH",
+      "note": "~37,900 is close to the src+tests count of 38,340. The tilde (~) indicates an approximation. Acceptable."
+    },
+    {
+      "claim": "992 documents generated (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D)",
+      "source_doc": "STATE.md (line 46), PROJECT.md (line 193), SYNTHESIS.md (line 353)",
+      "actual": "996 total DOCX in outputs/packets/. Breakdown: 384 (internal/) + 592 (congressional/) + 8 (regional/internal/) + 8 (regional/congressional/) = 992 matched docs. Plus 4 top-level files (epa_001.docx, epa_100000168.docx, epa_100000171.docx, STRATEGIC-OVERVIEW.docx) = 996.",
+      "verdict": "MATCH (992 count is correct for Doc A+B+C+D; 4 additional files are test/sample artifacts)"
+    },
+    {
+      "claim": "964 tests",
+      "source_doc": "STATE.md (line 43), SYNTHESIS.md (lines 283-284)",
+      "actual": "964 tests collected by pytest",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "287 tests (pytest)",
+      "source_doc": "CLAUDE.md (structure section)",
+      "actual": "964 tests collected by pytest",
+      "verdict": "STALE - CLAUDE.md still shows v1.1 test count of 287. Should be updated to 964."
+    },
+    {
+      "claim": "25 constants in src/paths.py",
+      "source_doc": "PROJECT.md (line 48, line 180)",
+      "actual": "35 path constants defined in src/paths.py",
+      "verdict": "MISMATCH - was already 34 at v1.2 tag (commit 8f96850). Now 35."
+    },
+    {
+      "claim": "47 files migrated to paths.py",
+      "source_doc": "PROJECT.md (line 48, line 180)",
+      "actual": "35 Python files import from src.paths (17 src + 5 tests + 13 scripts)",
+      "verdict": "MISMATCH - 35 consumer files, not 47. The '47 files migrated' may have counted planning docs or duplicate imports."
+    },
+    {
+      "claim": "congressional_intel.json exists (referenced as data file)",
+      "source_doc": "MEMORY.md mentions 'congressional_intel.json', paths.py defines CONGRESSIONAL_INTEL_PATH",
+      "actual": "data/congressional_intel.json DOES NOT EXIST. data/congressional_cache.json (3.4M) exists. The orchestrator handles the missing file gracefully.",
+      "verdict": "MISMATCH - congressional_cache.json exists, congressional_intel.json does not. Orchestrator references it via CONGRESSIONAL_INTEL_PATH but gracefully handles absence."
+    },
+    {
+      "claim": "538 members with committee assignments per Tribe",
+      "source_doc": "PROJECT.md (line 122)",
+      "actual": "congressional_cache.json: 538 members, 501 delegations",
+      "verdict": "MATCH for member count"
+    },
+    {
+      "claim": "592 Tribes from EPA API",
+      "source_doc": "PROJECT.md, STATE.md, CLAUDE.md",
+      "actual": "tribal_registry.json: 592 Tribes",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "18,776 USASpending name aliases",
+      "source_doc": "PROJECT.md (line 123)",
+      "actual": "tribal_aliases.json metadata shows total_aliases: 18,776. Key count: 18,776.",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "15,027 housing authority aliases",
+      "source_doc": "PROJECT.md (line 124), MEMORY.md",
+      "actual": "housing_authority_aliases.json metadata shows total_aliases: 15,027",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "451/592 Tribes have award data",
+      "source_doc": "PROJECT.md (line 125), MEMORY.md",
+      "actual": "451 award cache files have real award data out of 592 total",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "8 regions",
+      "source_doc": "PROJECT.md (line 127)",
+      "actual": "regional_config.json: 8 regions (pnw, alaska, plains, southwest, greatlakes, southeast, northeast, crosscutting)",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "cfda_map is a .py module (src/scrapers/cfda_map.py)",
+      "source_doc": "Inferred from files_added_since_v1_2 in ground_truth.json",
+      "actual": "src/scrapers/cfda_map.py: 27-line Python module with CFDA_TO_PROGRAM dict mapping 14 CFDAs to program IDs",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "14 CFDAs x 5 FYs = 70 sequential queries",
+      "source_doc": "MEMORY.md",
+      "actual": "cfda_map.py defines 14 CFDA numbers. Formula 14x5=70 is arithmetic.",
+      "verdict": "MATCH for 14 CFDAs. FY count not independently verified but formula is correct."
+    },
+    {
+      "claim": "Safety caps: 2500/1000/1000/5000",
+      "source_doc": "STATE.md (DEC-1502-03)",
+      "actual": "Congress.gov: 2500, Federal Register: 20 pages x 50 = 1000, Grants.gov: 1000, USASpending: 5000",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "Bill relevance: 4 components (subject 0.30, CFDA 0.25, committee 0.20, keyword 0.25)",
+      "source_doc": "STATE.md (DEC-1504-01), MEMORY.md",
+      "actual": "scripts/build_congressional_intel.py lines 185-188: subject_score * 0.30 + cfda_score * 0.25 + committee_score * 0.20 + keyword_score * 0.25",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "Confidence decay_rate=0.01 (~69 day half-life)",
+      "source_doc": "STATE.md (DEC-1501-02), MEMORY.md",
+      "actual": "src/packets/confidence.py: compute_confidence() default decay_rate=0.01, docstring says '~69 days'",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "HIGH >= 0.7, MEDIUM >= 0.4, LOW < 0.4",
+      "source_doc": "MEMORY.md, confidence.py docstring",
+      "actual": "confidence_level(): score >= 0.7 -> HIGH, score >= 0.4 -> MEDIUM, else LOW",
+      "verdict": "MATCH"
+    },
+    {
+      "claim": "18 completed phases",
+      "source_doc": "STATE.md (line 40)",
+      "actual": "Per STATE.md history: v1.0 (4) + v1.1 (4) + v1.2 (6) + v1.3 (4) = 18",
+      "verdict": "MATCH (arithmetic check)"
+    },
+    {
+      "claim": "70 completed plans",
+      "source_doc": "STATE.md (line 41)",
+      "actual": "Per STATE.md: v1.0 (9) + v1.1 (17) + v1.2 (20) + v1.3 (21) = 67, but STATE.md says 70 and MEMORY.md says 70",
+      "verdict": "MISMATCH - Per-milestone arithmetic: 9+17+20+21 = 67, not 70. Also, v1.3 claims 21 plans but Phase 15(7)+16(2)+17(5)+18(6)=20. The discrepancy of 3 plans may be due to renumbering, sub-plans, or counting methodology changes across milestones."
+    },
+    {
+      "claim": "115 completed requirements",
+      "source_doc": "STATE.md (line 42)",
+      "actual": "Per STATE.md: 30 + 22 + 24 + 39 = 115",
+      "verdict": "MATCH (arithmetic check)"
+    },
+    {
+      "claim": "CSP headers in deploy-website.yml",
+      "source_doc": "Checklist item",
+      "actual": "CSP is via <meta> tag in index.html, NOT in deploy-website.yml. No Content-Security-Policy in workflow file.",
+      "verdict": "CLARIFICATION - CSP exists but is implemented as HTML meta tag, not as server/workflow headers"
+    },
+    {
+      "claim": "32 test files",
+      "source_doc": "SYNTHESIS.md (line 287)",
+      "actual": "33 files in tests/ including __init__.py. 32 actual test files (test_*.py).",
+      "verdict": "MATCH (32 test files excluding __init__.py)"
+    },
+    {
+      "claim": "573/592 Tribes have hazard profiles",
+      "source_doc": "MEMORY.md",
+      "actual": "All 592 hazard profile files contain FEMA NRI data with composite scores and top_hazards.",
+      "verdict": "NEEDS CLARIFICATION - All 592 files have NRI data. The 573/592 figure may have been from an earlier state or may refer to a different metric (e.g., tribes with county matches)."
+    }
+  ],
+
+  "stale_docs": [
+    {
+      "file": "CLAUDE.md",
+      "field": "test count",
+      "says": "287 tests (pytest)",
+      "should_say": "964 tests (pytest)",
+      "severity": "P2 - significantly stale, visible to all agents"
+    },
+    {
+      "file": "STATE.md",
+      "field": "source file count",
+      "says": "98 Python files",
+      "should_say": "102 active Python files (54 src + 33 tests + 14 scripts + 1 root)",
+      "severity": "P2 - incorrect count"
+    },
+    {
+      "file": "PROJECT.md",
+      "field": "paths.py constants",
+      "says": "25 constants",
+      "should_say": "35 constants",
+      "severity": "P3 - stale from v1.2 era"
+    },
+    {
+      "file": "PROJECT.md",
+      "field": "paths.py consumers",
+      "says": "47 files migrated",
+      "should_say": "35 Python files import from src.paths",
+      "severity": "P3 - inflated count, may have included planning docs"
+    },
+    {
+      "file": "PROJECT.md",
+      "field": "test suite count",
+      "says": "743 tests across 20+ modules",
+      "should_say": "964 tests across 33 modules",
+      "severity": "P2 - stale from v1.2, v1.3 added 221 tests"
+    },
+    {
+      "file": "SYNTHESIS.md (bug hunt)",
+      "field": "source file count",
+      "says": "98 Python files (~37,900 LOC)",
+      "should_say": "102 active Python files (~38,340 LOC)",
+      "severity": "P3 - minor inaccuracy in audit artifact"
+    }
+  ],
+
+  "files_added_since_v1_2_verified": {
+    "claimed": [
+      "src/config.py",
+      "src/graph/schema.py",
+      "src/packets/agent_review.py",
+      "src/packets/confidence.py",
+      "src/packets/context.py",
+      "src/packets/doc_types.py",
+      "src/packets/docx_engine.py",
+      "src/packets/docx_regional_sections.py",
+      "src/packets/docx_sections.py",
+      "src/packets/docx_styles.py",
+      "src/packets/orchestrator.py",
+      "src/packets/regional.py",
+      "src/paths.py",
+      "src/schemas/models.py",
+      "src/scrapers/cfda_map.py",
+      "src/scrapers/congress_gov.py",
+      "src/scrapers/federal_register.py",
+      "src/scrapers/grants_gov.py",
+      "src/scrapers/usaspending.py"
+    ],
+    "note": "All 19 files exist in current codebase. This list comes from the Conductor's ground truth which used git diff against v1.2 end commit (8f96850). Not independently re-verified via git diff but all files confirmed present."
+  },
+
+  "website_verification": {
+    "fuse_min_js_referenced": true,
+    "fuse_min_js_sri": true,
+    "combobox_aria": true,
+    "dark_mode": true,
+    "crt_effect": true,
+    "reduced_motion": true,
+    "csp_meta_tag": true,
+    "csp_in_workflow": false,
+    "keyboard_handlers": true,
+    "focus_styles": true,
+    "privacy_footer": true,
+    "noscript_fallback": true,
+    "zero_tracking": true,
+    "dom_safe_no_innerhtml": true
+  },
+
+  "verification_summary": {
+    "total_claims_checked": 26,
+    "matches": 19,
+    "approximate_matches": 1,
+    "mismatches": 5,
+    "clarifications": 2,
+    "stale_docs_found": 6,
+    "note": "Mismatches are: (1) 98 vs 102 Python files, (2) 25 vs 35 paths.py constants, (3) 47 vs 35 paths.py consumers, (4) congressional_intel.json does not exist, (5) 70 total plans does not match per-milestone sum of 67. All other claims verified against codebase."
+  }
+}

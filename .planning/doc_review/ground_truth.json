@@ -1,0 +1,132 @@
+{
+  "collected": "2026-02-13",
+  "collector": "Conductor (Step 0)",
+
+  "source_files": {
+    "src_python_count": 54,
+    "tests_python_count": 33,
+    "scripts_python_count": 14,
+    "root_python_count": 1,
+    "archive_python_count": 11,
+    "total_active_python": 102,
+    "total_including_archive": 113,
+    "note": "102 active = 54 src + 33 tests + 14 scripts + 1 root (validate_data_integrity.py). 11 archive files in archive/tcr-policy-scanner/."
+  },
+
+  "lines_of_code": {
+    "src_loc": 18524,
+    "tests_loc": 19816,
+    "scripts_loc": 6086,
+    "src_plus_tests": 38340,
+    "total_all_python": 46543,
+    "note": "Documents say '~37,900 LOC Python'. Actual src+tests = 38,340. If counting src only: 18,524. If counting src+tests+scripts: 44,426."
+  },
+
+  "test_count": {
+    "pytest_collected": 964,
+    "collection_time": "1.36s",
+    "test_files": 33
+  },
+
+  "docx_count": {
+    "outputs_packets_docx": 996,
+    "note": "Documents claim 992. Actual filesystem has 996."
+  },
+
+  "data_files": {
+    "total_json": 1817,
+    "award_cache_json": 592,
+    "hazard_profiles_json": 592,
+    "packet_state_json": "~592 (epa_001 through epa_100000597, with gaps)",
+    "core_data_files": [
+      "data/aiannh_tribe_crosswalk.json",
+      "data/congressional_cache.json",
+      "data/ecoregion_config.json",
+      "data/graph_schema.json",
+      "data/housing_authority_aliases.json",
+      "data/nri/tribal_county_area_weights.json",
+      "data/policy_tracking.json",
+      "data/program_inventory.json",
+      "data/regional_config.json",
+      "data/tribal_aliases.json",
+      "data/tribal_registry.json"
+    ],
+    "data_directories": [
+      "data/",
+      "data/award_cache",
+      "data/census",
+      "data/hazard_profiles",
+      "data/nri",
+      "data/nri/aiannh",
+      "data/nri/county",
+      "data/packet_state",
+      "data/templates",
+      "data/usfs"
+    ],
+    "note": "congressional_cache.json exists (not congressional_intel.json as some docs reference)"
+  },
+
+  "git": {
+    "head": "e8a4aba770f590b65eebf022836753a3f38579c7",
+    "head_short": "e8a4aba",
+    "latest_commit_msg": "docs(18): complete Production Hardening phase",
+    "v1_2_end_commit": "8f96850"
+  },
+
+  "files_added_since_v1_2": [
+    "src/config.py",
+    "src/graph/schema.py",
+    "src/packets/agent_review.py",
+    "src/packets/confidence.py",
+    "src/packets/context.py",
+    "src/packets/doc_types.py",
+    "src/packets/docx_engine.py",
+    "src/packets/docx_regional_sections.py",
+    "src/packets/docx_sections.py",
+    "src/packets/docx_styles.py",
+    "src/packets/orchestrator.py",
+    "src/packets/regional.py",
+    "src/paths.py",
+    "src/schemas/models.py",
+    "src/scrapers/cfda_map.py",
+    "src/scrapers/congress_gov.py",
+    "src/scrapers/federal_register.py",
+    "src/scrapers/grants_gov.py",
+    "src/scrapers/usaspending.py"
+  ],
+
+  "website": {
+    "location": "docs/web/",
+    "files": ["index.html", "404.html", "css/style.css", "js/app.js", "js/combobox.js", "js/fuse.min.js", "data/tribes.json", "data/manifest.json"],
+    "tribes_dir_empty": true
+  },
+
+  "github_workflows": [
+    ".github/workflows/daily-scan.yml",
+    ".github/workflows/deploy-website.yml",
+    ".github/workflows/generate-packets.yml"
+  ],
+
+  "output_artifacts": {
+    "bug_hunt": ["cyclops_findings.json", "cyclops_summary.md", "dale-gribble_findings.json", "dale-gribble_summary.md", "marie-kondo_findings.json", "marie-kondo_summary.md", "mr-magoo_findings.json", "mr-magoo_summary.md", "SYNTHESIS.md"],
+    "docx_review": ["accuracy-agent_findings.json", "content_integrity_findings.json", "design-aficionado_findings.json", "gap-finder_findings.json", "gatekeeper_findings.json", "orchestration_findings.json", "pipeline-surgeon_findings.json", "quality_gate_findings.json", "structural_validation.json", "style_layout_findings.json", "SYNTHESIS.md", "test_coverage_findings.json"],
+    "website_review": ["SYNTHESIS.md"]
+  },
+
+  "scripts_inventory": [
+    "scripts/build_area_crosswalk.py",
+    "scripts/build_congress_cache.py",
+    "scripts/build_congressional_intel.py",
+    "scripts/build_manifest.py",
+    "scripts/build_registry.py",
+    "scripts/build_tribal_aliases.py",
+    "scripts/build_web_index.py",
+    "scripts/download_nri_data.py",
+    "scripts/download_usfs_data.py",
+    "scripts/generate_ha_aliases.py",
+    "scripts/populate_awards.py",
+    "scripts/populate_hazards.py",
+    "scripts/validate_coverage.py",
+    "scripts/validate_docx_structure.py"
+  ]
+}
