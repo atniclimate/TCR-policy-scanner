@@ -106,11 +106,11 @@ trustworthy document quality. Target: 100-200 concurrent users over 48-hour laun
 **Gate:** Go/no-go launch decision based on combined findings
 **Output:** `outputs/bug_hunt/{agent}_findings.json`
 
-- [ ] **HARD-01**: Deep code inspection (Cyclops) verifies boundary handling, race conditions, error recovery paths, resource leaks, and the 15-item checklist including GitHub Pages fallback, special characters in Tribe names, manifest staleness, and search race conditions
-- [ ] **HARD-02**: Security & data sovereignty audit (Dale Gribble) verifies CSP headers, zero third-party tracking (no Google Analytics/Fonts CDN/cookies), TSDF compliance, referrer leakage prevention, source map exclusion, and the 18-item UNDRIP/OCAP/CARE checklist with paranoia_level assessment
-- [ ] **HARD-03**: Experiential user testing (Mr. Magoo) navigates as a non-technical Tribal staff member without reading source code, testing misspellings, mobile friction, download flow, and reporting trust_score (1-10) across the 12-item user experience checklist
-- [ ] **HARD-04**: Code hygiene sweep (Marie Kondo) identifies dead code, unused imports, redundant abstractions, oversized modules, and opportunities for simplification across the full codebase without changing behavior
-- [ ] **HARD-05**: Go/no-go launch decision synthesizes all 4 agents' findings — zero P0 critical issues, all P1 issues have documented workarounds, and combined trust assessment supports 100-200 concurrent user launch
+- [x] **HARD-01**: Deep code inspection (Cyclops) verifies boundary handling, race conditions, error recovery paths, resource leaks, and the 15-item checklist including GitHub Pages fallback, special characters in Tribe names, manifest staleness, and search race conditions
+- [x] **HARD-02**: Security & data sovereignty audit (Dale Gribble) verifies CSP headers, zero third-party tracking (no Google Analytics/Fonts CDN/cookies), TSDF compliance, referrer leakage prevention, source map exclusion, and the 18-item UNDRIP/OCAP/CARE checklist with paranoia_level assessment
+- [x] **HARD-03**: Experiential user testing (Mr. Magoo) navigates as a non-technical Tribal staff member without reading source code, testing misspellings, mobile friction, download flow, and reporting trust_score (1-10) across the 12-item user experience checklist
+- [x] **HARD-04**: Code hygiene sweep (Marie Kondo) identifies dead code, unused imports, redundant abstractions, oversized modules, and opportunities for simplification across the full codebase without changing behavior
+- [x] **HARD-05**: Go/no-go launch decision synthesizes all 4 agents' findings — zero P0 critical issues, all P1 issues have documented workarounds, and combined trust assessment supports 100-200 concurrent user launch
 
 ### Cross-Cutting (XCUT)
 
@@ -177,11 +177,11 @@ These requirements apply across ALL phases and are verified at each gate.
 | WEB-08 | Phase 17 | Complete |
 | WEB-09 | Phase 17 | Complete |
 | WEB-10 | Phase 17 | Complete |
-| HARD-01 | Phase 18 | Pending |
-| HARD-02 | Phase 18 | Pending |
-| HARD-03 | Phase 18 | Pending |
-| HARD-04 | Phase 18 | Pending |
-| HARD-05 | Phase 18 | Pending |
+| HARD-01 | Phase 18 | Complete |
+| HARD-02 | Phase 18 | Complete |
+| HARD-03 | Phase 18 | Complete |
+| HARD-04 | Phase 18 | Complete |
+| HARD-05 | Phase 18 | Complete |
 | XCUT-01 | Phase 15 | Complete |
 | XCUT-02 | Phase 15 | Complete |
 | XCUT-03 | Phase 15 | Complete |
