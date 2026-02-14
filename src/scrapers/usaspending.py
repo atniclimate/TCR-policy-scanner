@@ -20,26 +20,9 @@ from src.config import (
     FISCAL_YEAR_START,
 )
 from src.scrapers.base import BaseScraper
+from src.scrapers.cfda_map import CFDA_TO_PROGRAM
 
 logger = logging.getLogger(__name__)
-
-# Map CFDA numbers to program IDs (shared with grants_gov.py)
-CFDA_TO_PROGRAM = {
-    "15.156": "bia_tcr",
-    "15.124": "bia_tcr_awards",
-    "97.047": "fema_bric",
-    "97.039": "fema_bric",
-    "66.926": "epa_gap",
-    "66.468": "epa_stag",
-    "20.205": "fhwa_ttp_safety",
-    "14.867": "hud_ihbg",
-    "81.087": "doe_indian_energy",
-    "10.720": "usda_wildfire",
-    "15.507": "usbr_watersmart",
-    "20.284": "dot_protect",
-    "11.483": "noaa_tribal",
-    "66.038": "epa_tribal_air",
-}
 
 # Award type code GROUPS for Tribal award queries.
 # USASpending API requires award_type_codes from a single group per request.
@@ -52,8 +35,8 @@ TRIBAL_AWARD_TYPE_CODE_GROUPS = [
     ["06", "10"],                    # other_financial_assistance (direct payments)
 ]
 
-# Flat list for backward compatibility and external reference
-TRIBAL_AWARD_TYPE_CODES = ["02", "03", "04", "05", "06", "10"]
+# Derived flat list for backward compatibility and external reference (MK-CODE-06)
+TRIBAL_AWARD_TYPE_CODES = [code for group in TRIBAL_AWARD_TYPE_CODE_GROUPS for code in group]
 
 
 class USASpendingScraper(BaseScraper):

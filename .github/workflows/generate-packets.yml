@@ -78,29 +78,7 @@ jobs:
           cp outputs/packets/regional/congressional/*.docx docs/web/tribes/regional/congressional/ 2>/dev/null || true
 
       - name: Generate deployment manifest
-        run: |
-          python3 -c "
-          import json
-          from datetime import datetime, timezone
-          from pathlib import Path
-
-          tribes_dir = Path('docs/web/tribes')
-          counts = {
-              'internal': len(list((tribes_dir / 'internal').glob('*.docx'))) if (tribes_dir / 'internal').is_dir() else 0,
-              'congressional': len(list((tribes_dir / 'congressional').glob('*.docx'))) if (tribes_dir / 'congressional').is_dir() else 0,
-              'regional_internal': len(list((tribes_dir / 'regional/internal').glob('*.docx'))) if (tribes_dir / 'regional/internal').is_dir() else 0,
-              'regional_congressional': len(list((tribes_dir / 'regional/congressional').glob('*.docx'))) if (tribes_dir / 'regional/congressional').is_dir() else 0,
-          }
-          manifest = {
-              'deployed_at': datetime.now(timezone.utc).isoformat(),
-              'document_counts': counts,
-              'total_documents': sum(counts.values()),
-          }
-          Path('docs/web/data').mkdir(parents=True, exist_ok=True)
-          with open('docs/web/data/manifest.json', 'w', encoding='utf-8') as f:
-              json.dump(manifest, f, indent=2)
-          print(f'Manifest: {manifest[\"total_documents\"]} documents deployed')
-          "
+        run: python scripts/build_manifest.py
 
       - name: Commit and push
         run: |

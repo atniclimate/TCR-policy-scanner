@@ -15,25 +15,14 @@ import logging
 from datetime import datetime, timedelta, timezone
 
 from src.scrapers.base import BaseScraper, check_zombie_cfda
+from src.scrapers.cfda_map import CFDA_TO_PROGRAM
 from src.paths import CFDA_TRACKER_PATH
 
 logger = logging.getLogger(__name__)
 
-# CFDA numbers for tracked programs (Assistance Listings)
-CFDA_NUMBERS = {
-    "15.156": "bia_tcr",        # BIA Tribal Climate Resilience
-    "15.124": "bia_tcr_awards",  # BIA Tribal Community Resilience Annual Awards
-    "97.047": "fema_bric",      # FEMA BRIC / Hazard Mitigation
-    "97.039": "fema_bric",      # FEMA Hazard Mitigation Grant Program
-    "66.926": "epa_gap",        # EPA Indian Environmental GAP
-    "66.468": "epa_stag",       # EPA Drinking Water SRF (Tribal set-aside)
-    "20.205": "fhwa_ttp_safety",  # FHWA Highway Planning & Construction (includes TTP)
-    "14.867": "hud_ihbg",       # HUD IHBG
-    "81.087": "doe_indian_energy",  # DOE Indian Energy
-    "10.720": "usda_wildfire",  # USDA Community Wildfire Defense
-    "15.507": "usbr_watersmart",  # USBR WaterSMART
-    "20.284": "dot_protect",    # DOT PROTECT
-}
+# Backward-compatible alias: grants_gov historically used CFDA_NUMBERS.
+# Now imports the canonical mapping from cfda_map.py (MK-CODE-05).
+CFDA_NUMBERS = CFDA_TO_PROGRAM
 
 # Eligibility codes that indicate Tribal government eligibility
 TRIBAL_ELIGIBILITY_CODES = [

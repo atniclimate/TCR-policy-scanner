@@ -14,10 +14,7 @@ Example:
 
 from datetime import date
 
-from src.paths import PROJECT_ROOT
-
 __all__ = [
-    "PROJECT_ROOT",
     "FISCAL_YEAR_INT",
     "FISCAL_YEAR_SHORT",
     "FISCAL_YEAR_LONG",
