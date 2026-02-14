@@ -1,81 +1,100 @@
-# Marie Kondo Code Hygiene Sweep Summary
+# Marie Kondo Code Hygiene Sweep Summary (Wave 2 Re-Audit)
 
 ## Agent: Marie Kondo
-**Date:** 2026-02-13
-**Scope:** All Python source files (47 in src/), scripts (17 in scripts/), test files (32 in tests/), web files (docs/web/), config files, workflows
-
-## Methodology
-
-Three-pass inventory: (1) Python dependency audit against requirements.txt, (2) Code inventory for unused imports, dead functions, dead code paths, (3) Configuration inventory for unused keys and simplification opportunities.
+**Date:** 2026-02-14
+**Audit Wave:** 2 (post-fix re-audit)
+**Previous Audit:** 2026-02-13
+**Scope:** All Python source files, scripts, web files, config files, workflows, plus 2 new files from 18-04
 
 ## Joy Score
 
-| Metric | Score |
-|--------|-------|
-| Current joy | 8/10 |
-| Potential joy (after tidying) | 9/10 |
+| Metric | Wave 1 | Wave 2 | Change |
+|--------|--------|--------|--------|
+| Current joy | 8/10 | 9/10 | +1 |
+| Potential joy | 9/10 | 10/10 | +1 |
 
-## Key Findings
+## Fix Verification Results
 
-### Pass 1: Python Dependencies (13 packages)
+### Fixes Applied and Verified
 
-| Package | Status | Verdict |
-|---------|--------|---------|
-| aiohttp | Essential | Keep -- concurrent API scraping |
-| pydantic | Essential | Keep -- congressional intel models |
-| python-dateutil | Used | Keep -- date parsing across APIs |
-| jinja2 | Used | Keep -- report templating |
-| rapidfuzz | Essential | Keep -- Tribal name matching |
-| pyyaml | Replaceable | Evaluate -- only 1 import site |
-| python-docx | Essential | Keep -- DOCX generation core |
-| openpyxl | Used | Keep -- Excel reports |
-| requests | Replaceable | Evaluate -- only 2 download scripts |
-| geopandas | Used | Keep -- build-time only |
-| shapely | Used | Keep -- geopandas transitive |
-| pyproj | Used | Keep -- geopandas transitive |
-| pyogrio | Used | Keep -- geopandas I/O backend |
+| ID | Finding | Fix | Status |
+|----|---------|-----|--------|
+| MK-CODE-01-04 | 4 dead alias scripts | Deleted in Wave 1 | Verified Fixed |
+| MK-CODE-05 | CFDA mapping duplicated | Consolidated to cfda_map.py | Verified Fixed |
+| MK-CODE-06 | TRIBAL_AWARD_TYPE_CODES flat list | Derived via list comprehension | Verified Fixed |
+| MK-CODE-09 | PROJECT_ROOT re-export | Removed from config.py | Verified Fixed |
+| MK-CODE-12 | Manifest generation duplicated | Extracted to build_manifest.py | Verified Fixed |
 
-**Verdict:** 0 truly unused dependencies. 2 replaceable with stdlib (pyyaml, requests) but low priority.
+**8 of 12 code hygiene findings fixed and verified.**
 
-### Pass 2: Python Code
+### Deferred (Low Priority)
 
-**4 dead scripts identified** (safe to remove):
-- `scripts/_add_curated_aliases_round3.py` -- one-time migration, applied
-- `scripts/_add_curated_aliases_round4.py` -- one-time migration, applied
-- `scripts/_add_curated_aliases_round5.py` -- one-time migration, applied
-- `scripts/_add_curated_aliases_tmp.py` -- temporary script, completed
+| ID | Finding | Reason |
+|----|---------|--------|
+| MK-CODE-10 | pyyaml replaceable | Single import site, lightweight |
+| MK-CODE-11 | requests replaceable | Two import sites, widely installed |
 
-**1 consolidation opportunity:**
-- CFDA_NUMBERS (grants_gov.py) and CFDA_TO_PROGRAM (usaspending.py) are near-duplicates. Consider extracting to a shared module.
+### New Files Audit (18-04 Additions)
 
-**1 backward-compat alias:**
-- `src/config.py` re-exports `PROJECT_ROOT` from `src/paths.py`. New code should import from paths directly.
+| File | Lines | Assessment |
+|------|-------|------------|
+| src/scrapers/cfda_map.py | 27 | Clean. Type-annotated dict, inline comments, clear docstring. Sparks joy. |
+| scripts/build_manifest.py | 74 | Clean. pathlib, encoding, timezone, docstrings, graceful fallbacks. Sparks joy. |
 
-**No unused imports found** in source files. All imports verified against usage.
-**No dead functions found** -- all exported functions are imported or called.
-**No TODO/FIXME comments for resolved issues** found in source code.
+**Both new files follow all project patterns. Zero hygiene concerns.**
 
-### Pass 3: Configuration
+## Dependency Audit (Re-verified)
 
-- Manifest generation code duplicated between two GitHub Actions workflows (~20 lines). Acceptable for CI readability.
-- No unused config JSON keys found in scanner_config.json.
-- No unused web files -- all HTML/CSS/JS files are referenced.
+| Package | Status | Change from Wave 1 |
+|---------|--------|-------------------|
+| aiohttp | Essential | No change |
+| pydantic | Essential | No change |
+| python-dateutil | Used | No change |
+| jinja2 | Used | No change |
+| rapidfuzz | Essential | No change |
+| pyyaml | Replaceable | Deferred (unchanged) |
+| python-docx | Essential | No change |
+| openpyxl | Used | No change |
+| requests | Replaceable | Deferred (unchanged) |
+| geopandas | Used (build-time) | No change |
+| shapely | Used (build-time) | No change |
+| pyproj | Used (build-time) | No change |
+| pyogrio | Used (build-time) | No change |
 
-## Recommendations (Priority Order)
+**0 unused dependencies. 2 replaceable (low priority). No new dependencies added by 18-04.**
 
-1. **Remove 4 dead alias scripts** -- safe, no dependencies, reduces scripts/ directory clutter
-2. **Extract shared CFDA mapping** -- reduces duplication between scrapers
-3. **Migrate PROJECT_ROOT imports** to use src.paths directly (gradual)
-4. **Consider pyyaml/requests replacement** with stdlib (low priority)
+## What Changed Since Wave 1
 
-## What Sparks Joy
+### Files Added
+- `src/scrapers/cfda_map.py` (27 lines) -- canonical CFDA mapping
+- `scripts/build_manifest.py` (74 lines) -- shared manifest generation
+
+### Files Modified
+- `src/scrapers/grants_gov.py` -- imports from cfda_map, backward-compat alias
+- `src/scrapers/usaspending.py` -- imports from cfda_map, derived flat list
+- `src/config.py` -- PROJECT_ROOT removed from __all__
+- `.github/workflows/deploy-website.yml` -- uses build_manifest.py, SHA-pinned
+- `.github/workflows/generate-packets.yml` -- uses build_manifest.py, SHA-pinned
+
+### Net Impact
+- +101 lines (2 new clean files)
+- -24,893 bytes (4 dead scripts deleted in Wave 1)
+- 0 new dependencies
+- 2 deduplication consolidations completed
+- 1 backward-compat re-export removed
+
+## What Sparks Joy (Updated)
 
 - Clean module architecture: scrapers, analysis, graph, monitors, packets, reports
+- **NEW:** Single source of truth for CFDA mappings (cfda_map.py)
+- **NEW:** Single source of truth for manifest generation (build_manifest.py)
+- **NEW:** No more backward-compat PROJECT_ROOT re-export
+- **NEW:** Award type codes derived, not duplicated
 - 964 tests with 100% pass rate
 - Atomic write patterns throughout
 - Consistent logging with getLogger(__name__)
 - Path constants centralized in src/paths.py
-- Zero external dependencies in the web frontend (system fonts, bundled Fuse.js)
+- Zero external dependencies in the web frontend
 - 592 Tribal Nations served with exactly the documents they need
 
-**A tidy codebase is a trustworthy codebase. This one is already close to perfect.**
+**A tidy codebase is a trustworthy codebase. This one now sparks genuine joy. Thank you for listening to the findings and tidying with care.**

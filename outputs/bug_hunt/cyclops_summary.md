@@ -1,56 +1,81 @@
-# Cyclops Deep Code Inspection Summary
+# Cyclops Deep Code Inspection Summary (Wave 2 Re-Audit)
 
 ## Agent: Cyclops
-**Date:** 2026-02-13
-**Scope:** Website source (app.js, combobox.js, index.html), pipeline code (orchestrator.py, docx_engine.py, main.py), end-to-end data flow tracing
+**Date:** 2026-02-14
+**Audit Wave:** 2 (post-fix re-audit)
+**Previous Audit:** 2026-02-13
+**Scope:** Website source (app.js, combobox.js, index.html, style.css), pipeline code, 12 end-to-end data path traces
 
 ## Methodology
 
-Function-by-function code reading with 8 complete data path traces from user input through search to DOCX download delivery. Every assumption tested at boundaries. Every error propagation path followed.
+Complete re-audit of all source files after Plan 18-04 P2/P3 remediation wave. Every previous finding re-verified against current code. All new code (hash navigation, hideCard transition, buildErrorWithRefresh, announceResultCount, Fuse check, document descriptions, download guard, prepared context) traced for correctness and edge cases.
 
-## Key Findings
+## Fix Verification Results
 
-### CYCLOPS-001 (Important): Missing fetch timeout
-The tribes.json fetch has no AbortController or setTimeout fallback. If the server hangs, users see "Loading Tribe data..." indefinitely with no error message and no recourse.
+### Previously Fixed (Wave 1 -> Wave 2 Confirmed)
 
-**Fix:** Add a 15-second AbortController timeout to the fetch() call.
+| ID | Original Severity | Fix | Status |
+|----|------------------|-----|--------|
+| CYCLOPS-001 | Important | AbortController + buildErrorWithRefresh | Verified Fixed |
+| CYCLOPS-004 | Cosmetic | Button disable/re-enable guard | Verified Fixed |
+| CYCLOPS-006 | Cosmetic | announceResultCount() with truncation | Verified Fixed |
+| CYCLOPS-008 | Cosmetic | Tribe name + deployment date context | Verified Fixed |
+| CYCLOPS-015 | Cosmetic | typeof Fuse check with specific error | Verified Fixed |
 
-### CYCLOPS-004 (Cosmetic): Download Both double-click guard
-Rapidly clicking "Download Both" queues multiple setTimeout callbacks, potentially triggering 4+ downloads instead of 2. No guard against double-click.
+**5 of 15 original findings fixed and verified.**
 
-### CYCLOPS-006 (Cosmetic): Truncated result count in status
-The combobox caps at 15 results but the screen reader announcement says "15 results available" even when hundreds match. Could mislead assistive technology users.
+### Verified Safe (Architecture Correct, No Fix Needed)
 
-## Findings by Severity
+| ID | Category | Assessment |
+|----|----------|------------|
+| CYCLOPS-005 | XSS prevention | textContent throughout, zero innerHTML -- including new buildErrorWithRefresh() |
+| CYCLOPS-010 | Ecoregion mapping | Many-to-many by design, correct |
+| CYCLOPS-011 | Null check | Defensive pattern appropriate |
+| CYCLOPS-012 | Event listeners | Singleton pattern, no leaks |
+| CYCLOPS-013 | Download URLs | Relative paths correct on GitHub Pages |
+| CYCLOPS-014 | 592 boundary | All operations efficient |
+| CYCLOPS-017 | Hide/show guard | data-visible attribute check prevents race condition |
 
-| Severity | Count | Finding IDs |
-|----------|-------|-------------|
-| Critical | 0 | -- |
-| Important | 1 | CYCLOPS-001 |
-| Cosmetic | 14 | CYCLOPS-002 through CYCLOPS-015 |
+**7 verified-safe findings confirmed.**
 
-## Checklist Coverage
+### Deferred (Acceptable for Current Deployment)
 
-All 15 checklist items inspected:
+| ID | Category | Reason |
+|----|----------|--------|
+| CYCLOPS-002 | Filename sanitizer | All 592 names ASCII, no current impact |
+| CYCLOPS-003 | No debounce | Fuse.js synchronous, imperceptible with 592 items |
+| CYCLOPS-007 | Clock offset | Standard web limitation |
+| CYCLOPS-009 | Diacritic search | All 592 names ASCII, aliases compensate |
 
-1. GitHub Pages fallback: Error shown on fetch failure, but missing timeout (CYCLOPS-001)
-2. Special characters in names: textContent used throughout, XSS-safe (CYCLOPS-005)
-3. Manifest staleness: Freshness badge uses generated_at timestamps correctly (CYCLOPS-007)
-4. Search race conditions: No debounce, but Fuse.js is synchronous so no stale closures (CYCLOPS-003)
-5. Download handler cleanup: Double-click unguarded (CYCLOPS-004)
-6. XSS vectors: None found -- textContent exclusively, no innerHTML (CYCLOPS-005)
-7. 592 boundary test: All operations handle 592 items efficiently (CYCLOPS-014)
-8. Ecoregion mapping: Many-to-many by design, not a bug (CYCLOPS-010)
-9. Caching behavior: No service worker, browser cache handles static files correctly
-10. Error boundaries: Vanilla JS error handling is appropriate (CYCLOPS-011)
-11. Missing packets: Handled with disabled state message (CYCLOPS-008)
-12. Fetch timeout: Missing -- primary finding (CYCLOPS-001)
-13. Diacritic search: All 592 names are ASCII; aliases compensate (CYCLOPS-009)
-14. Content-Disposition: GitHub Pages serves correct MIME type (CYCLOPS-013)
-15. Memory leaks: Singleton combobox, no listener accumulation (CYCLOPS-012)
+**4 deferred items remain -- all cosmetic with no current impact.**
+
+### New Findings
+
+| ID | Severity | Category | Description |
+|----|----------|----------|-------------|
+| CYCLOPS-016 | P3 | Error handling | decodeURIComponent in hash navigation could throw URIError on malformed percent-encoding. No visible user impact. |
+| CYCLOPS-017 | N/A | Verified safe | hideCard() transition guard correctly prevents race condition on rapid selection. |
+
+## Findings Summary (Wave 2)
+
+| Status | Count |
+|--------|-------|
+| Verified Fixed | 5 |
+| Verified Safe | 7 |
+| Deferred (acceptable) | 4 |
+| New (P3) | 1 |
+| **Total** | **17** |
+
+## New P0/P1 Findings
+
+**Zero.** No new critical or important findings introduced by the 18-04 fix wave.
+
+## Regression Check
+
+All 12 data path traces completed with zero regressions. The new code (buildErrorWithRefresh, announceResultCount, hideCard, handleHashNavigation, Fuse check, document descriptions, download guard, prepared context) integrates correctly with existing patterns. DOM manipulation remains XSS-safe throughout -- the new buildErrorWithRefresh() function uses createDocumentFragment + createTextNode + createElement, maintaining the textContent-only policy.
 
 ## Structural Assessment
 
-The architecture is fundamentally sound. Vanilla JS with no build step is appropriate for a single-page static search-and-download tool. Key strengths: XSS-safe DOM manipulation, proper W3C APG combobox, efficient 592-item Fuse.js index. The one substantive finding is the missing fetch timeout. All other findings are cosmetic edge cases that do not affect the current deployment.
+The architecture is stronger after the 18-04 remediation. The vanilla JS codebase now has proper error handling (3 differentiated error paths), accessibility announcements (result truncation), user experience guards (double-click prevention, card transition), shareable URLs (hash-based navigation), and document type clarity (descriptions under buttons). Zero innerHTML usage confirmed across all files. The Fuse.js SRI hash provides supply chain protection. The CSP meta tag restricts script sources.
 
-**Trace complete. One important defect identified.**
+**Trace complete. Zero regressions. One new P3 finding (cosmetic). System is sound.**

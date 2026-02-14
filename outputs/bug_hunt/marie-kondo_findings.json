@@ -1,8 +1,10 @@
 {
   "agent": "Marie Kondo",
   "clone_id": "frontend|pipeline",
-  "timestamp": "2026-02-13T22:55:00Z",
-  "fix_verification_timestamp": "2026-02-13T23:05:00Z",
+  "timestamp": "2026-02-14T00:22:00Z",
+  "audit_wave": 2,
+  "previous_audit": "2026-02-13T22:55:00Z",
+  "context": "Post-fix re-audit after Plan 18-04 code hygiene remediation. CFDA consolidation, manifest script extraction, PROJECT_ROOT cleanup, and TRIBAL_AWARD_TYPE_CODES derivation all verified.",
   "inventory": {
     "dependencies": {
       "total": 13,
@@ -17,7 +19,7 @@
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
           "gratitude": "Thank you for enabling concurrent API scraping across 4 federal data sources.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": "pydantic",
@@ -26,7 +28,7 @@
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
           "gratitude": "Thank you for providing structured validation for congressional intelligence models.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": "python-dateutil",
@@ -35,7 +37,7 @@
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
           "gratitude": "Thank you for flexible date parsing across inconsistent federal API date formats.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": "jinja2",
@@ -44,7 +46,7 @@
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
           "gratitude": "Thank you for templating the markdown briefing reports.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": "rapidfuzz",
@@ -53,16 +55,17 @@
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
           "gratitude": "Thank you for enabling 85% fuzzy matching threshold for Tribal name resolution across 592 Nations.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": "pyyaml",
           "status": "replaceable",
           "imported_by": ["src/monitors/base.py"],
           "size_impact": "N/A (server-side)",
-          "recommendation": "evaluate -- used only in monitor base class for YAML config parsing; could use json if config files were converted",
-          "gratitude": "Thank you for readable monitor configuration. You served well during Phase 4.",
-          "fix_status": "deferred"
+          "recommendation": "evaluate -- used only in monitor base class. Low priority.",
+          "gratitude": "Thank you for readable monitor configuration.",
+          "fix_status": "deferred",
+          "deferral_reason": "Single import site, low priority. Stdlib json could replace but requires config file conversion."
         },
         {
           "name": "python-docx",
@@ -71,7 +74,7 @@
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
           "gratitude": "Thank you for generating 992 DOCX advocacy packets that serve 592 Tribal Nations.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": "openpyxl",
@@ -79,44 +82,45 @@
           "imported_by": ["src/reports/generator.py"],
           "size_impact": "N/A (server-side)",
           "recommendation": "keep",
-          "gratitude": "Thank you for Excel report generation in the reporting pipeline.",
-          "fix_status": "deferred"
+          "gratitude": "Thank you for Excel report generation.",
+          "fix_status": "verified_safe"
         },
         {
           "name": "requests",
           "status": "replaceable",
           "imported_by": ["scripts/download_nri_data.py", "scripts/download_usfs_data.py"],
           "size_impact": "N/A (server-side)",
-          "recommendation": "evaluate -- used only in two download scripts; the main pipeline uses aiohttp exclusively. Could use urllib.request for simple GET downloads to eliminate the dependency",
-          "gratitude": "Thank you for simple synchronous downloads of NRI and USFS data files.",
-          "fix_status": "deferred"
+          "recommendation": "evaluate -- used only in 2 download scripts. Low priority.",
+          "gratitude": "Thank you for reliable HTTP downloads.",
+          "fix_status": "deferred",
+          "deferral_reason": "Two import sites, low priority. Stdlib urllib could replace."
         },
         {
           "name": "geopandas",
           "status": "used",
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
-          "recommendation": "keep -- build-time dependency for geographic area calculations",
-          "gratitude": "Thank you for enabling AIANNH-to-county area weight calculations.",
-          "fix_status": "deferred"
+          "recommendation": "keep",
+          "gratitude": "Thank you for geographic area calculations.",
+          "fix_status": "verified_safe"
         },
         {
           "name": "shapely",
           "status": "used",
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
-          "recommendation": "keep -- transitive dependency of geopandas",
+          "recommendation": "keep -- geopandas transitive",
           "gratitude": "Thank you for geometric intersection calculations.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": "pyproj",
           "status": "used",
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
-          "recommendation": "keep -- transitive dependency of geopandas",
-          "gratitude": "Thank you for coordinate reference system transformations.",
-          "fix_status": "deferred"
+          "recommendation": "keep -- geopandas transitive",
+          "gratitude": "Thank you for CRS transformations.",
+          "fix_status": "verified_safe"
         },
         {
           "name": "pyogrio",
@@ -124,8 +128,8 @@
           "imported_by": ["scripts/build_area_crosswalk.py"],
           "size_impact": "N/A (build-time only)",
           "recommendation": "keep -- fast I/O backend for geopandas",
-          "gratitude": "Thank you for fast reading of shapefiles.",
-          "fix_status": "deferred"
+          "gratitude": "Thank you for fast shapefile reading.",
+          "fix_status": "verified_safe"
         }
       ]
     },
@@ -136,105 +140,117 @@
           "name": "scripts/_add_curated_aliases_round3.py",
           "status": "removed",
           "file": "scripts/_add_curated_aliases_round3.py",
-          "recommendation": "remove -- one-time migration script, already applied",
-          "gratitude": "Thank you for adding the third round of curated Tribal aliases. Your work lives on in data/tribal_aliases.json.",
-          "fix_status": "applied",
-          "fix_applied": "File deleted. One-time migration script that had already been applied to data/tribal_aliases.json.",
-          "fix_verified_at": "2026-02-13T23:05:00Z"
+          "recommendation": "Removed in Wave 1.",
+          "gratitude": "Thank you for your service. You live on in data/tribal_aliases.json.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-02 (924e9ac): File deleted.",
+          "fix_verified_at": "2026-02-14T00:22:00Z"
         },
         {
           "name": "scripts/_add_curated_aliases_round4.py",
           "status": "removed",
           "file": "scripts/_add_curated_aliases_round4.py",
-          "recommendation": "remove -- one-time migration script, already applied",
-          "gratitude": "Thank you for the fourth round of alias curation.",
-          "fix_status": "applied",
-          "fix_applied": "File deleted. One-time migration script that had already been applied.",
-          "fix_verified_at": "2026-02-13T23:05:00Z"
+          "recommendation": "Removed in Wave 1.",
+          "gratitude": "Thank you for the fourth round of curation.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-02 (924e9ac): File deleted.",
+          "fix_verified_at": "2026-02-14T00:22:00Z"
         },
         {
           "name": "scripts/_add_curated_aliases_round5.py",
           "status": "removed",
           "file": "scripts/_add_curated_aliases_round5.py",
-          "recommendation": "remove -- one-time migration script, already applied",
-          "gratitude": "Thank you for the fifth and final round of alias refinement.",
-          "fix_status": "applied",
-          "fix_applied": "File deleted. One-time migration script that had already been applied.",
-          "fix_verified_at": "2026-02-13T23:05:00Z"
+          "recommendation": "Removed in Wave 1.",
+          "gratitude": "Thank you for the final round of refinement.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-02 (924e9ac): File deleted.",
+          "fix_verified_at": "2026-02-14T00:22:00Z"
         },
         {
           "name": "scripts/_add_curated_aliases_tmp.py",
           "status": "removed",
           "file": "scripts/_add_curated_aliases_tmp.py",
-          "recommendation": "remove -- temporary script, no longer needed",
-          "gratitude": "Thank you for your temporary service during alias development.",
-          "fix_status": "applied",
-          "fix_applied": "File deleted. Temporary script no longer needed.",
-          "fix_verified_at": "2026-02-13T23:05:00Z"
+          "recommendation": "Removed in Wave 1.",
+          "gratitude": "Thank you for your temporary service.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-02 (924e9ac): File deleted.",
+          "fix_verified_at": "2026-02-14T00:22:00Z"
         },
         {
-          "name": "CFDA_TO_PROGRAM duplication",
-          "status": "used",
-          "file": "src/scrapers/usaspending.py and src/scrapers/grants_gov.py",
-          "recommendation": "refactor -- CFDA_NUMBERS dict in grants_gov.py and CFDA_TO_PROGRAM dict in usaspending.py are near-duplicates (12 of 14 entries overlap). Consider extracting to a shared module (e.g., src/scrapers/cfda_map.py)",
-          "gratitude": "Thank you both for independently tracking CFDA numbers. It is time to consolidate.",
-          "fix_status": "deferred"
+          "name": "CFDA_TO_PROGRAM consolidation (MK-CODE-05)",
+          "status": "consolidated",
+          "file": "src/scrapers/cfda_map.py",
+          "recommendation": "Consolidated. Single source of truth.",
+          "gratitude": "Thank you, cfda_map.py, for unifying what was once scattered. 14 CFDA numbers, one canonical home.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-04 (c1c3d43): Created src/scrapers/cfda_map.py with canonical CFDA_TO_PROGRAM dict. Both grants_gov.py and usaspending.py now import from cfda_map. grants_gov.py maintains backward-compatible CFDA_NUMBERS alias. Verified: both scrapers use the same 14 CFDA entries.",
+          "fix_verified_at": "2026-02-14T00:22:00Z",
+          "verification_details": "Checked imports: src/scrapers/grants_gov.py line 18: 'from src.scrapers.cfda_map import CFDA_TO_PROGRAM'. src/scrapers/usaspending.py line 23: 'from src.scrapers.cfda_map import CFDA_TO_PROGRAM'. grants_gov.py line 25: 'CFDA_NUMBERS = CFDA_TO_PROGRAM' (backward compat alias). cfda_map.py contains 14 entries. No duplicate CFDA mappings remain."
         },
         {
-          "name": "TRIBAL_AWARD_TYPE_CODES flat list",
-          "status": "used",
+          "name": "TRIBAL_AWARD_TYPE_CODES derivation (MK-CODE-06)",
+          "status": "derived",
           "file": "src/scrapers/usaspending.py",
-          "recommendation": "evaluate -- TRIBAL_AWARD_TYPE_CODES (flat list) exists alongside TRIBAL_AWARD_TYPE_CODE_GROUPS (nested list). The flat list is documented as 'backward compatibility' but no external code imports it. Could be derived: [code for group in GROUPS for code in group]",
-          "gratitude": "Thank you for documenting the award type taxonomy. The flat list may still serve external reference.",
-          "fix_status": "deferred"
+          "recommendation": "Derived from grouped list. Clean.",
+          "gratitude": "Thank you for the elegant list comprehension.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-04 (c1c3d43): TRIBAL_AWARD_TYPE_CODES now derived via list comprehension: [code for group in TRIBAL_AWARD_TYPE_CODE_GROUPS for code in group]. No hardcoded flat list. Verified: produces ['02', '03', '04', '05', '06', '10'] -- same 6 codes as before.",
+          "fix_verified_at": "2026-02-14T00:22:00Z"
         },
         {
           "name": "docs/web/404.html",
           "status": "used",
           "file": "docs/web/404.html",
           "recommendation": "keep -- SPA routing fallback for GitHub Pages",
-          "gratitude": "Thank you for handling deep link navigation on GitHub Pages.",
-          "fix_status": "deferred"
+          "gratitude": "Thank you for handling deep link navigation.",
+          "fix_status": "verified_safe"
         },
         {
           "name": "Unused import check: asyncio in congress_gov.py",
           "status": "used",
           "file": "src/scrapers/congress_gov.py",
-          "recommendation": "keep -- asyncio.sleep is used for rate limiting between API calls",
-          "gratitude": "Thank you for rate-limiting API requests to be a good citizen.",
-          "fix_status": "deferred"
+          "recommendation": "keep -- asyncio.sleep is used for rate limiting",
+          "gratitude": "Thank you for rate-limiting API requests.",
+          "fix_status": "verified_safe"
         },
         {
-          "name": "Re-exported PROJECT_ROOT in config.py",
-          "status": "used",
+          "name": "PROJECT_ROOT re-export removal (MK-CODE-09)",
+          "status": "removed",
           "file": "src/config.py",
-          "recommendation": "evaluate -- config.py re-exports PROJECT_ROOT from paths.py via __all__. This creates an import alias: both src.config.PROJECT_ROOT and src.paths.PROJECT_ROOT resolve to the same value. The re-export exists for backward compatibility with older code that imported from config. New code should import from paths directly.",
-          "gratitude": "Thank you for maintaining backward compatibility. But we should gradually migrate imports.",
-          "fix_status": "deferred"
+          "recommendation": "Re-export removed. config.py no longer re-exports PROJECT_ROOT.",
+          "gratitude": "Thank you, config.py, for letting go of what was not yours to keep. paths.py is the canonical home now.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-04 (c1c3d43): PROJECT_ROOT removed from config.py __all__ and re-export. Verified: grep for 'PROJECT_ROOT' in config.py returns no matches. No imports of PROJECT_ROOT from src.config found in the codebase.",
+          "fix_verified_at": "2026-02-14T00:22:00Z"
         },
         {
           "name": "pyyaml import",
           "status": "used",
           "file": "src/monitors/base.py",
-          "recommendation": "evaluate -- pyyaml is imported in only 1 file. Monitor configs could be JSON instead of YAML to eliminate this dependency. Low priority since pyyaml is lightweight.",
-          "gratitude": "Thank you for readable YAML configuration in the monitor framework.",
-          "fix_status": "deferred"
+          "recommendation": "evaluate -- replaceable with stdlib json. Low priority.",
+          "gratitude": "Thank you for readable YAML configuration.",
+          "fix_status": "deferred",
+          "deferral_reason": "Single import site, lightweight dependency, low priority."
         },
         {
           "name": "requests import",
           "status": "used",
           "file": "scripts/download_nri_data.py, scripts/download_usfs_data.py",
-          "recommendation": "evaluate -- requests is used only in 2 download scripts for simple synchronous GET requests. urllib.request from stdlib could replace it. Low priority since requests is widely installed.",
-          "gratitude": "Thank you for reliable HTTP downloads of NRI and USFS data.",
-          "fix_status": "deferred"
+          "recommendation": "evaluate -- replaceable with urllib.request. Low priority.",
+          "gratitude": "Thank you for reliable downloads.",
+          "fix_status": "deferred",
+          "deferral_reason": "Two import sites, widely installed, low priority."
         },
         {
-          "name": "Workflow step duplication",
-          "status": "used",
-          "file": ".github/workflows/deploy-website.yml, .github/workflows/generate-packets.yml",
-          "recommendation": "note -- manifest.json generation code is duplicated between two workflows (~20 identical lines). Could extract to a shared script. Acceptable for CI readability per SYNTHESIS.md.",
-          "gratitude": "Thank you for clear, self-contained workflow definitions.",
-          "fix_status": "deferred"
+          "name": "Manifest script extraction (MK-CODE-12)",
+          "status": "extracted",
+          "file": "scripts/build_manifest.py",
+          "recommendation": "Extracted. Single source of truth for manifest generation.",
+          "gratitude": "Thank you, build_manifest.py, for consolidating what two workflows once duplicated. A tidy script is a trustworthy script.",
+          "fix_status": "verified_fixed",
+          "fix_applied": "18-04 (c1c3d43): Created scripts/build_manifest.py with build_manifest() function. Both deploy-website.yml and generate-packets.yml now call 'python scripts/build_manifest.py' instead of inline manifest generation code. Verified: script uses datetime.now(timezone.utc), encoding='utf-8', pathlib.Path throughout. Correct document counting for all 4 subdirectories.",
+          "fix_verified_at": "2026-02-14T00:22:00Z",
+          "verification_details": "Checked: deploy-website.yml line 50: 'run: python scripts/build_manifest.py'. generate-packets.yml line 81: 'run: python scripts/build_manifest.py'. No inline manifest generation code remains in either workflow. build_manifest.py handles internal, congressional, regional_internal, regional_congressional counting."
         }
       ]
     },
@@ -245,30 +261,48 @@
           "name": "docs/web/data/ directory",
           "status": "used",
           "file": "docs/web/data/",
-          "recommendation": "keep -- contains tribes.json (search index) and manifest.json (deployment metadata)",
-          "gratitude": "Thank you for organizing web data in a dedicated directory.",
-          "fix_status": "deferred"
+          "recommendation": "keep",
+          "gratitude": "Thank you for organizing web data.",
+          "fix_status": "verified_safe"
         },
         {
           "name": "docs/web/tribes/ directory",
           "status": "used",
           "file": "docs/web/tribes/",
-          "recommendation": "keep -- contains DOCX files organized by type (internal/, congressional/, regional/)",
+          "recommendation": "keep",
           "gratitude": "Thank you for organizing documents by audience.",
-          "fix_status": "deferred"
+          "fix_status": "verified_safe"
         },
         {
           "name": ".planning/ directory",
           "status": "used",
           "file": ".planning/",
-          "recommendation": "keep -- active planning and state tracking for GSD workflow",
-          "gratitude": "Thank you for structured milestone planning that brought this project from 0 to 964 tests.",
-          "fix_status": "deferred"
+          "recommendation": "keep",
+          "gratitude": "Thank you for structured planning that brought this project to 964 tests.",
+          "fix_status": "verified_safe"
+        }
+      ]
+    },
+    "new_files_audit": {
+      "description": "Audit of files created by 18-04 remediation wave",
+      "items": [
+        {
+          "name": "src/scrapers/cfda_map.py",
+          "lines": 27,
+          "assessment": "Clean. Single responsibility: canonical CFDA-to-program mapping. Type-annotated dict. 14 entries with inline comments. Module docstring explains purpose and MK-CODE-05 origin. No imports needed. Sparks joy.",
+          "fix_status": "verified_safe"
+        },
+        {
+          "name": "scripts/build_manifest.py",
+          "lines": 74,
+          "assessment": "Clean. Uses pathlib throughout, encoding='utf-8', datetime.now(timezone.utc) (not deprecated utcnow()). Proper if __name__ == '__main__' guard. Function docstring with args/returns. Handles missing subdirectories gracefully. Sparks joy.",
+          "fix_status": "verified_safe"
         }
       ]
     }
   },
-  "joy_score": 8,
-  "joy_score_potential": 9,
-  "joy_analysis": "This codebase sparks significant joy. 47 Python source files, 32 test files, ~37,900 LOC -- everything has a purpose. The architecture is clean: scrapers, analysis, graph, monitors, packets, reports. Each module owns its domain. The web frontend is 4 files totaling ~67KB. The 4 one-time alias migration scripts (prefixed with _) that had completed their purpose have been released with gratitude. The CFDA duplication between scrapers is a minor consolidation opportunity for future work. After tidying: 9/10 joy -- a codebase that serves 592 Tribal Nations with exactly what they need and nothing more."
+  "joy_score": 9,
+  "joy_score_previous": 8,
+  "joy_score_potential": 10,
+  "joy_analysis": "This codebase now sparks even more joy. The 18-04 remediation addressed the 4 highest-priority hygiene items: (1) CFDA mapping consolidated into single source of truth (cfda_map.py), (2) TRIBAL_AWARD_TYPE_CODES derived via list comprehension instead of duplicated flat list, (3) PROJECT_ROOT re-export removed from config.py, (4) manifest generation extracted to shared script. The 4 dead migration scripts were already removed in Wave 1. The new files (cfda_map.py, build_manifest.py) are clean, well-documented, and follow all project patterns (encoding, pathlib, docstrings). Two low-priority items remain (pyyaml and requests replaceable with stdlib) but these do not affect the joy of working with this codebase. A 10/10 is achievable with those two replacements, but a 9/10 is already a codebase that sparks genuine joy. Every module has purpose. Every function is called. Every dependency is justified."
 }

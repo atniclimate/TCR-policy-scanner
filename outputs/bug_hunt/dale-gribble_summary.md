@@ -1,67 +1,95 @@
-# Dale Gribble Security and Data Sovereignty Audit Summary
+# Dale Gribble Security and Data Sovereignty Audit Summary (Wave 2 Re-Audit)
 
 ## Agent: Dale Gribble
-**Date:** 2026-02-13
-**Scope:** Full system -- website (docs/web/), deployment (.github/workflows/), scrapers (src/scrapers/), CSP headers, third-party tracking, data sovereignty
+**Date:** 2026-02-14
+**Audit Wave:** 2 (post-fix re-audit)
+**Previous Audit:** 2026-02-13
+**Scope:** Full system -- website (docs/web/), deployment (.github/workflows/), CSP policy, SRI hashes, privacy footer, SHA-pinned Actions, UNDRIP/OCAP/CARE checklist
 
 ## Methodology
 
-Three simultaneous perspectives: (1) The Attacker -- how to exploit for Tribal data access, (2) The Auditor -- does the system comply with Indigenous Data Sovereignty principles, (3) The Paranoid User -- what data leaks when I use this website.
+Three simultaneous perspectives: (1) The Attacker -- can the 18-04 fixes be bypassed? (2) The Auditor -- did sovereignty compliance improve? (3) The Paranoid User -- do I trust this site more now?
 
-## Key Findings
+## Fix Verification Results
 
-### DALE-001 (Important): No SRI hash on Fuse.js
-The bundled fuse.min.js has no Subresource Integrity hash. While locally hosted (good), a supply chain compromise during CI/CD could tamper with the file undetected.
+### Previously Fixed (Verified in Wave 2)
 
-### DALE-002 (Important): Manifest enables advocacy monitoring
-The publicly accessible manifest.json and tribes.json allow anyone to enumerate all 592 Tribal advocacy packets and monitor deployment timing. Inherent to T0 classification and static hosting.
+| ID | Original Severity | Fix | Status |
+|----|------------------|-----|--------|
+| DALE-001 | Important | SRI hash on Fuse.js | Verified Fixed |
+| DALE-002 | Important | Risk accepted (T0 data) | Accepted |
+| DALE-004 | Cosmetic | CSP meta tag added | Verified Fixed |
+| DALE-005 | Cosmetic | Embed comment removed | Verified Fixed |
+| DALE-011 | Cosmetic | Privacy footer added | Verified Fixed |
+| DALE-012 | Cosmetic | noscript links to repo | Verified Fixed |
+| DALE-015 | Cosmetic | SHA-pinned (2 of 3 workflows) | Partially Fixed |
 
-### DALE-004 (Cosmetic): No Content-Security-Policy
-GitHub Pages does not support custom HTTP headers, but a meta CSP tag could be added for defense-in-depth.
+**7 findings addressed. 5 fully fixed, 1 accepted, 1 partially fixed.**
 
-## Findings by Severity
+### Verified Safe (No Fix Needed)
 
-| Severity | Count | Finding IDs |
-|----------|-------|-------------|
-| Critical | 0 | -- |
-| Important | 2 | DALE-001, DALE-002 |
-| Cosmetic | 16 | DALE-003 through DALE-018 |
+| ID | Category | Assessment |
+|----|----------|------------|
+| DALE-006 | Privacy | Zero tracking, CSP-enforced |
+| DALE-007 | Trust boundary | iframe sandbox correct |
+| DALE-008 | Security | API keys in GitHub Secrets |
+| DALE-009 | Security | No source maps |
+| DALE-010 | Security | Path traversal prevented |
+| DALE-013 | Security | HTTPS/HSTS enforced |
+| DALE-014 | Privacy | No PII in URLs |
+| DALE-016 | Privacy | Service account email |
+| DALE-017 | Security | Zero client-side storage |
+| DALE-018 | Third-party | System fonts only, CSP-enforced |
+| DALE-020 | Security | CSP policy well-structured (new positive) |
 
-## Checklist Coverage
+**11 verified-safe findings confirmed.**
 
-All 18 checklist items inspected:
+### Deferred
 
-1. HTTPS/CSP: HTTPS enforced by GitHub Pages; no CSP but meta tag possible (DALE-004, DALE-013)
-2. Manifest enumeration: Public manifest + tribes.json enables tracking (DALE-002)
-3. Referrer leakage: SquareSpace iframe sandbox correctly configured (DALE-007)
-4. Analytics/tracking: ZERO -- fully clean (DALE-006)
-5. TSDF enforcement: Pipeline-level, not displayed to users (DALE-011)
-6. URL manipulation: GitHub Pages normalizes paths, prevents traversal (DALE-010)
-7. CDN dependencies: Fuse.js bundled locally, no external CDN (DALE-001)
-8. JavaScript disabled: noscript fallback added, no alternative path (DALE-012)
-9. GitHub API rate limits: Not applicable -- static file serving, no API calls from client
-10. PII in URLs: None -- EPA IDs only (DALE-014)
-11. MITM: Prevented by GitHub Pages TLS (DALE-013)
-12. Google Fonts: Not used -- system fonts only (DALE-018)
-13. Cookies: Zero (DALE-017)
-14. IP exposure: Standard for any web hosting (DALE-003)
-15. SquareSpace plugin access: Prevented by same-origin policy (DALE-007)
-16. SRI: Missing on fuse.min.js (DALE-001)
-17. Hardcoded secrets: None found -- GitHub Secrets used correctly (DALE-008)
-18. Source maps: None present -- no build step (DALE-009)
+| ID | Category | Reason |
+|----|----------|--------|
+| DALE-003 | Privacy | GitHub Pages access logs -- platform inherent |
 
-## Data Sovereignty Assessment
+### New Findings
 
-The system substantially honors Indigenous Data Sovereignty. Zero tracking, system fonts, no cookies, no client storage, T0 data by design. The gaps (no visible TSDF statement, GitHub access logs, manifest exposure) are inherent to static hosting and do not violate UNDRIP, OCAP, or CARE for T0 data.
+| ID | Severity | Category | Description |
+|----|----------|----------|-------------|
+| DALE-019 | P3 | Third-party risk | daily-scan.yml not SHA-pinned (inconsistency with other workflows) |
+| DALE-020 | N/A | Positive | CSP meta tag well-structured and correctly configured |
 
-## Third-Party Inventory
+## New P0/P1 Findings
 
-| Domain | Purpose | Client/Server | Auth |
-|--------|---------|---------------|------|
-| github.com | Hosting, CI/CD | Both | No (public) |
-| api.congress.gov | Legislative data | Server only | API key |
-| api.usaspending.gov | Spending data | Server only | None |
-| www.grants.gov | Grant opportunities | Server only | None |
-| www.federalregister.gov | Policy documents | Server only | None |
+**Zero.** No new critical or important findings from the 18-04 fix wave.
 
-**That's what they WANT you to think... but actually, this site is clean. Sh-sh-sha!**
+## UNDRIP/OCAP/CARE Checklist (18-item re-run)
+
+| Principle | Status | Notes |
+|-----------|--------|-------|
+| UNDRIP Art. 18 | COMPLIANT | Self-determined policy intelligence |
+| UNDRIP Art. 31 | COMPLIANT | No Indigenous Knowledge collected |
+| OCAP Ownership | COMPLIANT | Public EPA NCOD data |
+| OCAP Control | COMPLIANT | T0 enforced at pipeline |
+| OCAP Access | COMPLIANT | Freely accessible |
+| OCAP Possession | N/A | T0 public by design |
+| CARE Collective Benefit | FULL | Zero tracking + CSP enforcement |
+| CARE Authority Control | PARTIAL | GitHub logs outside audit (platform) |
+| CARE Responsibility | IMPROVED | Privacy footer now informs users |
+| CARE Ethics | FULL | Data minimization |
+
+## Sovereignty Improvements Since Wave 1
+
+1. **CSP meta tag** -- Policy-level enforcement of no-external-scripts (DALE-004 fixed)
+2. **Privacy footer** -- "No tracking. No cookies. Your searches stay on your device." (DALE-011 fixed)
+3. **SRI on Fuse.js** -- Supply chain integrity verification (DALE-001 fixed, Wave 1)
+4. **SHA-pinned deployment workflows** -- CI/CD supply chain protection (DALE-015 partial)
+5. **noscript with repo link** -- Fallback path for JS-disabled users (DALE-012 fixed)
+
+## Third-Party Inventory (unchanged)
+
+5 domains total. 1 client-side (github.com hosting). 4 server-side only (federal API scrapers).
+
+## Assessment
+
+The system is **significantly more secure and sovereignty-compliant** after the 18-04 remediation wave. The combination of CSP + SRI + privacy footer + SHA-pinned workflows demonstrates proactive data sovereignty beyond minimum requirements. The one remaining gap (daily-scan.yml version tags) is low-risk since it does not affect public-facing documents.
+
+**That's what they WANT you to think... but actually, this site is genuinely clean. Even I have to admit it. The CSP locked it down tight. Sh-sh-sha!**
