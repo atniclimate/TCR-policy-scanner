@@ -17,6 +17,7 @@
   "use strict";
 
   var TRIBES_URL = "data/tribes.json";
+  var MANIFEST_URL = "data/manifest.json";
 
   // --- DOM element references ---
   var searchInput = document.getElementById("tribe-search");
@@ -36,19 +37,59 @@
   var stateResultsList = document.getElementById("state-results-list");
   var regionsSection = document.getElementById("regions-section");
   var regionsList = document.getElementById("regions-list");
+  var resultCountEl = document.getElementById("result-count");
 
   // --- Data storage ---
   var allTribes = [];
   var tribeMap = {};
+  var manifestData = null;
+  var comboboxInstance = null;
 
   // ====================================================================
   // Initialization
   // ====================================================================
 
   /**
+   * Build an error message element with a Refresh Page link.
+   * Uses safe DOM methods (no innerHTML) to prevent XSS.
+   * @param {string} messageText - Plain text error message
+   * @returns {DocumentFragment}
+   */
+  function buildErrorWithRefresh(messageText) {
+    var frag = document.createDocumentFragment();
+    var textNode = document.createTextNode(messageText + " ");
+    frag.appendChild(textNode);
+    var refreshLink = document.createElement("a");
+    refreshLink.href = "#";
+    refreshLink.textContent = "Refresh Page";
+    refreshLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      location.reload();
+    });
+    frag.appendChild(refreshLink);
+    return frag;
+  }
+
+  /**
    * Initialize the application: fetch data, build search index, wire UI.
    */
   function init() {
+    // CYCLOPS-015: Check if Fuse.js loaded successfully
+    if (typeof window.Fuse === "undefined") {
+      showError(buildErrorWithRefresh("Search functionality failed to load. Please"));
+      return;
+    }
+
+    // Fetch manifest for deployment date (non-blocking)
+    fetch(MANIFEST_URL).then(function(response) {
+      if (response.ok) return response.json();
+      return null;
+    }).then(function(data) {
+      manifestData = data;
+    }).catch(function() {
+      // Non-critical, ignore
+    });
+
     var controller = new AbortController();
     var timeoutId = setTimeout(function() { controller.abort(); }, 15000);
 
@@ -86,8 +127,16 @@
       });
 
       // Initialize ARIA combobox
-      var combobox = new TribeCombobox(searchInput, listboxEl, statusEl, fuse);
-      combobox.onTribeSelected = showCard;
+      comboboxInstance = new TribeCombobox(searchInput, listboxEl, statusEl, fuse);
+      comboboxInstance.onTribeSelected = function(tribe) {
+        showCard(tribe);
+        updateHash(tribe.name);
+      };
+
+      // MAGOO-004: Hide card when user starts typing new search
+      searchInput.addEventListener("input", function() {
+        hideCard();
+      });
 
       // Enable search input
       searchInput.disabled = false;
@@ -103,12 +152,15 @@
       // Hide loading message
       loadingEl.hidden = true;
 
+      // MAGOO-009: Check for hash-based deep link
+      handleHashNavigation();
+
     }).catch(function(err) {
       clearTimeout(timeoutId);
       if (err.name === "AbortError") {
-        showError("Loading timed out. Please refresh the page or try again in a few minutes.");
+        showError(buildErrorWithRefresh("Loading timed out."));
       } else {
-        showError("Failed to load Tribe data. Please try again later.");
+        showError(buildErrorWithRefresh("Failed to load Tribe data. Please try again in a few minutes or"));
       }
       if (typeof console !== "undefined") {
         console.error("Failed to load tribes.json:", err);
@@ -118,12 +170,52 @@
 
   /**
    * Show error message and hide loading indicator.
-   * @param {string} message
+   * Accepts either a string or a DocumentFragment for safe DOM rendering.
+   * @param {string|DocumentFragment} message
    */
   function showError(message) {
     loadingEl.hidden = true;
-    errorEl.textContent = message;
+    // Clear previous content
+    while (errorEl.firstChild) {
+      errorEl.removeChild(errorEl.firstChild);
+    }
+    if (typeof message === "string") {
+      errorEl.textContent = message;
+    } else {
+      errorEl.appendChild(message);
+    }
     errorEl.hidden = false;
+  }
+
+  // ====================================================================
+  // Hash-based shareable URLs (MAGOO-009)
+  // ====================================================================
+
+  /**
+   * Update the URL hash when a Tribe is selected.
+   * @param {string} name - Tribe name
+   */
+  function updateHash(name) {
+    if (history.replaceState) {
+      history.replaceState(null, "", "#tribe=" + encodeURIComponent(name));
+    } else {
+      location.hash = "#tribe=" + encodeURIComponent(name);
+    }
+  }
+
+  /**
+   * On page load, check if URL contains a #tribe= hash and auto-select.
+   */
+  function handleHashNavigation() {
+    var hash = location.hash;
+    if (!hash || hash.indexOf("#tribe=") !== 0) return;
+
+    var name = decodeURIComponent(hash.substring(7));
+    var tribe = tribeMap[name];
+    if (tribe) {
+      searchInput.value = name;
+      showCard(tribe);
+    }
   }
 
   // ====================================================================
@@ -222,11 +314,13 @@
       (function(t) {
         item.addEventListener("click", function() {
           showCard(t);
+          updateHash(t.name);
         });
         item.addEventListener("keydown", function(e) {
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
             showCard(t);
+            updateHash(t.name);
           }
         });
       })(tribe);
@@ -235,11 +329,45 @@
     }
 
     stateResultsSection.hidden = false;
+
+    // CYCLOPS-006: Announce result count
+    announceResultCount(tribes.length, allTribes.length);
+  }
+
+  // ====================================================================
+  // Screen Reader Announcements (CYCLOPS-006)
+  // ====================================================================
+
+  /**
+   * Announce search result count to screen readers via aria-live region.
+   * @param {number} shown - Number of results displayed
+   * @param {number} total - Total number of Tribal Nations
+   */
+  function announceResultCount(shown, total) {
+    if (!resultCountEl) return;
+    if (shown >= 15) {
+      resultCountEl.textContent = "Showing 15 of " + total + " matches";
+    } else {
+      resultCountEl.textContent = "Showing " + shown + " matches";
+    }
   }
 
   // ====================================================================
   // Tribe Card
   // ====================================================================
+
+  /**
+   * Hide the tribe card (MAGOO-004: hide on new search).
+   */
+  function hideCard() {
+    cardEl.removeAttribute("data-visible");
+    // Let transition complete before hiding
+    setTimeout(function() {
+      if (!cardEl.hasAttribute("data-visible")) {
+        cardEl.hidden = true;
+      }
+    }, 250);
+  }
 
   /**
    * Show the tribe card with details and download buttons.
@@ -272,6 +400,8 @@
     }
 
     if (hasInternal) {
+      var internalWrapper = document.createElement("div");
+      internalWrapper.className = "btn-download-wrapper";
       var internalBtn = document.createElement("a");
       internalBtn.href = "tribes/" + docs.internal_strategy;
       internalBtn.download = safeName + "_Internal_Strategy.docx";
@@ -279,10 +409,18 @@
       internalBtn.className = "btn-download btn-internal";
       internalBtn.setAttribute("aria-label", "Download Internal Strategy for " + tribe.name);
       internalBtn.textContent = "Internal Strategy";
-      tribeActions.appendChild(internalBtn);
+      internalWrapper.appendChild(internalBtn);
+      // MAGOO-003: Document type description
+      var internalDesc = document.createElement("span");
+      internalDesc.className = "doc-description";
+      internalDesc.textContent = "Detailed analysis with talking points for your team";
+      internalWrapper.appendChild(internalDesc);
+      tribeActions.appendChild(internalWrapper);
     }
 
     if (hasCongressional) {
+      var congressionalWrapper = document.createElement("div");
+      congressionalWrapper.className = "btn-download-wrapper";
       var congressionalBtn = document.createElement("a");
       congressionalBtn.href = "tribes/" + docs.congressional_overview;
       congressionalBtn.download = safeName + "_Congressional_Overview.docx";
@@ -290,7 +428,13 @@
       congressionalBtn.className = "btn-download btn-congressional";
       congressionalBtn.setAttribute("aria-label", "Download Congressional Overview for " + tribe.name);
       congressionalBtn.textContent = "Congressional Overview";
-      tribeActions.appendChild(congressionalBtn);
+      congressionalWrapper.appendChild(congressionalBtn);
+      // MAGOO-003: Document type description
+      var congressionalDesc = document.createElement("span");
+      congressionalDesc.className = "doc-description";
+      congressionalDesc.textContent = "Facts-only briefing for congressional offices";
+      congressionalWrapper.appendChild(congressionalDesc);
+      tribeActions.appendChild(congressionalWrapper);
     }
 
     if (hasInternal && hasCongressional) {
@@ -300,16 +444,29 @@
       bothBtn.setAttribute("aria-label", "Download both documents for " + tribe.name);
       bothBtn.textContent = "Download Both";
       bothBtn.addEventListener("click", function() {
+        // CYCLOPS-004: Double-click guard
+        bothBtn.disabled = true;
+        bothBtn.textContent = "Downloading...";
         downloadBoth(docs.internal_strategy, docs.congressional_overview, tribe.name);
+        setTimeout(function() {
+          bothBtn.disabled = false;
+          bothBtn.textContent = "Download Both";
+        }, 2000);
       });
       tribeActions.appendChild(bothBtn);
     }
 
     if (!hasInternal && !hasCongressional) {
+      // CYCLOPS-008: Better "documents being prepared" context
       var disabledSpan = document.createElement("span");
       disabledSpan.className = "btn-download";
       disabledSpan.setAttribute("aria-disabled", "true");
-      disabledSpan.textContent = "Documents are being prepared. Check back soon.";
+      var prepMsg = "Documents are being prepared for " + tribe.name + ". Check back after the next daily update.";
+      if (manifestData && manifestData.deployed_at) {
+        var deployDate = new Date(manifestData.deployed_at).toLocaleDateString();
+        prepMsg = "Documents are being prepared for " + tribe.name + ". Last deployment: " + deployDate + ". Check back after the next daily update.";
+      }
+      disabledSpan.textContent = prepMsg;
       tribeActions.appendChild(disabledSpan);
     }
 
