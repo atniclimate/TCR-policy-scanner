@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-14T02:29:46.026804+00:00",
+  "generated_at": "2026-02-15T15:33:10.076417+00:00",
   "total_tribes": 592,
   "tribes": [
     {
@@ -11199,10 +11199,42 @@
       "documents": {}
     },
     {
+      "region_id": "alaska_intertribal_strategy_fy26",
+      "region_name": "Alaska Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/alaska_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "alaska_regional_congressional_overview_fy26",
+      "region_name": "Alaska Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/alaska_regional_congressional_overview_fy26.docx"
+      }
+    },
+    {
       "region_id": "crosscutting",
       "region_name": "Cross-Cutting (All Regions)",
       "states": [],
       "documents": {}
+    },
+    {
+      "region_id": "crosscutting_intertribal_strategy_fy26",
+      "region_name": "Crosscutting Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/crosscutting_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "crosscutting_regional_congressional_overview_fy26",
+      "region_name": "Crosscutting Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/crosscutting_regional_congressional_overview_fy26.docx"
+      }
     },
     {
       "region_id": "greatlakes",
@@ -11215,6 +11247,22 @@
         "OH"
       ],
       "documents": {}
+    },
+    {
+      "region_id": "greatlakes_intertribal_strategy_fy26",
+      "region_name": "Greatlakes Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/greatlakes_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "greatlakes_regional_congressional_overview_fy26",
+      "region_name": "Greatlakes Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/greatlakes_regional_congressional_overview_fy26.docx"
+      }
     },
     {
       "region_id": "northeast",
@@ -11237,6 +11285,22 @@
       "documents": {}
     },
     {
+      "region_id": "northeast_intertribal_strategy_fy26",
+      "region_name": "Northeast Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/northeast_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "northeast_regional_congressional_overview_fy26",
+      "region_name": "Northeast Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/northeast_regional_congressional_overview_fy26.docx"
+      }
+    },
+    {
       "region_id": "plains",
       "region_name": "Great Plains / Northern Plains",
       "states": [
@@ -11254,6 +11318,22 @@
       "documents": {}
     },
     {
+      "region_id": "plains_intertribal_strategy_fy26",
+      "region_name": "Plains Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/plains_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "plains_regional_congressional_overview_fy26",
+      "region_name": "Plains Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/plains_regional_congressional_overview_fy26.docx"
+      }
+    },
+    {
       "region_id": "pnw",
       "region_name": "Pacific Northwest / Columbia River Basin",
       "states": [
@@ -11263,6 +11343,22 @@
         "MT"
       ],
       "documents": {}
+    },
+    {
+      "region_id": "pnw_intertribal_strategy_fy26",
+      "region_name": "Pnw Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/pnw_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "pnw_regional_congressional_overview_fy26",
+      "region_name": "Pnw Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/pnw_regional_congressional_overview_fy26.docx"
+      }
     },
     {
       "region_id": "southeast",
@@ -11282,6 +11378,22 @@
       "documents": {}
     },
     {
+      "region_id": "southeast_intertribal_strategy_fy26",
+      "region_name": "Southeast Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/southeast_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "southeast_regional_congressional_overview_fy26",
+      "region_name": "Southeast Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/southeast_regional_congressional_overview_fy26.docx"
+      }
+    },
+    {
       "region_id": "southwest",
       "region_name": "Southwest / Great Basin",
       "states": [
@@ -11292,14 +11404,30 @@
         "CO"
       ],
       "documents": {}
+    },
+    {
+      "region_id": "southwest_intertribal_strategy_fy26",
+      "region_name": "Southwest Intertribal Strategy Fy26",
+      "states": [],
+      "documents": {
+        "internal_strategy": "regional/internal/southwest_intertribal_strategy_fy26.docx"
+      }
+    },
+    {
+      "region_id": "southwest_regional_congressional_overview_fy26",
+      "region_name": "Southwest Regional Congressional Overview Fy26",
+      "states": [],
+      "documents": {
+        "congressional_overview": "regional/congressional/southwest_regional_congressional_overview_fy26.docx"
+      }
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-14T02:29:46.026820+00:00",
+    "generated_at": "2026-02-15T15:33:10.076431+00:00",
     "total_tribes": 592,
     "doc_a_count": 0,
     "doc_b_count": 0,
-    "doc_c_count": 0,
-    "doc_d_count": 0
+    "doc_c_count": 8,
+    "doc_d_count": 8
   }
 }
