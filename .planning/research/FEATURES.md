@@ -1,731 +1,350 @@
-# Feature Landscape: v1.3 Production Launch
+# Feature Landscape: Climate Vulnerability Intelligence (v1.4)
 
-**Domain:** Tribal advocacy packet distribution system (production readiness)
-**Researched:** 2026-02-12
-**Confidence:** HIGH for web/accessibility/pagination; MEDIUM for DOCX QA automation and confidence scoring
-**Context:** 992 documents (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) serving 592 Tribal Nations. Peak usage: 100-200 concurrent users over 48 hours (Feb 12-13, 2026). 47 known issues across P0-P3 severity.
+**Domain:** Climate vulnerability intelligence for Tribal Nations advocacy
+**Researched:** 2026-02-17
+**Researcher confidence:** MEDIUM-HIGH (data sources verified; some API specifics remain LOW)
+**Context:** Adding climate vulnerability dimensions to existing TCR Policy Scanner serving 592 Tribal Nations. Builds on existing FEMA NRI hazard profiles (573/592 coverage, 18 hazard types, area-weighted crosswalk, USFS wildfire override).
 
 ---
 
 ## Overview
 
-v1.3 transforms a functional document generation pipeline into a production-ready distribution system. The feature landscape spans seven domains: scraper pagination (API completeness), Congress.gov bill detail enrichment, website production readiness, DOCX visual QA automation, confidence scoring for intelligence products, WCAG 2.1 AA accessibility, and SquareSpace iframe embedding. Each domain has distinct table stakes that users and Tribal advocates expect, differentiators that elevate trust and professionalism, and anti-features that would waste effort or introduce risk.
+Climate vulnerability intelligence extends the existing hazard profiling system with three new dimensions: (1) deeper risk metrics from expanded FEMA NRI extraction, (2) social vulnerability indicators from CDC/ATSDR SVI, and (3) forward-looking climate projections from NOAA downscaled data. Together these transform per-Tribe profiles from "what hazards exist" to "how vulnerable is this community and how will it change."
+
+**Primary advocacy use cases:**
+- **Grant applications** -- citing specific, quantified climate risks with federal data provenance and dollar-denominated loss estimates
+- **Congressional testimony** -- local impact narratives backed by authoritative projections and comparative context
+- **Resilience planning** -- identifying priority hazards, vulnerable populations, and capacity gaps
+
+**Data classification:** T0 (Open) -- all data from public federal sources. No Tribal-specific or sensitive data.
 
 ---
 
 ## Table Stakes
 
-Features users expect. Missing = product feels incomplete or untrustworthy for production use.
+Features users expect in any climate vulnerability intelligence product. Missing = product feels incomplete for the stated use cases.
 
-### TS-01: Real Document Downloads (P0 Fix)
-
-**Why Expected:** Downloads currently serve fake text blobs. Users clicking "Download" expect an actual DOCX document. This is the single most critical production blocker.
-**Complexity:** Medium
-**What "Done" Looks Like:**
-- All 992 DOCX files served from `docs/web/tribes/` directory via GitHub Pages
-- tribes.json references correct file paths for each Tribe's Doc A and Doc B
-- Download links verified to return valid DOCX files, not placeholder text
-- File sizes are reasonable (50-200 KB per DOCX, not 0 bytes or multi-MB)
-**Dependencies:** Existing `build_web_index.py`, existing `DocxEngine` output, existing GitHub Pages deployment
-
----
-
-### TS-02: Full 592-Tribe Coverage in Web Index (P0 Fix)
-
-**Why Expected:** Currently serving 46 Tribes vs 592. Users for the vast majority of Tribal Nations find nothing. An advocacy distribution system that covers 8% of its target audience is not production-ready.
-**Complexity:** Low (build_web_index.py already supports 592; this is a data pipeline execution issue)
-**What "Done" Looks Like:**
-- tribes.json contains all 592 federally recognized Tribal Nations
-- All 592 Doc B (congressional overview) files present and downloadable
-- 384 Doc A (internal strategy) files present for Tribes with complete data
-- Remaining 208 Tribes show "Congressional Overview available" (not "Documents not yet available")
-**Dependencies:** Completed v1.2 batch generation (992 docs already generated)
-
----
-
-### TS-03: WCAG 2.1 AA Accessibility Compliance
-
-**Why Expected:** ADA Title II requires WCAG 2.1 AA by April 24, 2026 for entities serving 50,000+. While Tribal advocacy organizations may not be directly subject to Title II, their congressional audiences (government offices) expect accessible content. More importantly: 1 in 4 adults has a disability; excluding them from policy advocacy tools is antithetical to the project's values. The existing site has known failures: no ARIA landmarks beyond basic roles, no focus trap on card display, contrast issues on some elements, and no skip navigation.
-**Complexity:** Medium
-**What "Done" Looks Like:**
-
-| WCAG Criterion | Requirement | Current Status | Fix |
-|----------------|-------------|----------------|-----|
-| 1.1.1 Non-text | Alt text for images | No images in current UI | N/A |
-| 1.3.1 Info & Relationships | ARIA landmarks, heading hierarchy | Partial (has role="banner", role="main") | Add skip nav, verify heading levels |
-| 1.4.3 Contrast (Min) | 4.5:1 for text, 3:1 for large text | Known contrast issues on muted text | Audit all color combinations |
-| 2.1.1 Keyboard | All functionality via keyboard | Partial (Awesomplete supports keyboard) | Verify full keyboard flow |
-| 2.1.2 No Keyboard Trap | Focus can always escape | No focus trap implemented (good) | Verify Escape key behavior |
-| 2.4.1 Skip Navigation | Skip to main content link | Missing | Add skip link |
-| 2.4.3 Focus Order | Logical tab sequence | Unknown | Test and fix |
-| 2.4.7 Focus Visible | Visible focus indicator | Has outline styles | Verify all interactive elements |
-| 3.2.1 On Focus | No context change on focus | OK | Verify |
-| 4.1.2 Name, Role, Value | ARIA for custom widgets | Partial (combobox role exists, aria-expanded) | Complete ARIA for Awesomplete |
-
-**Dependencies:** Existing CSS (style.css), existing JS (app.js), existing HTML (index.html)
-
----
-
-### TS-04: Scraper Pagination for Complete Results
-
-**Why Expected:** Current scrapers fetch one page of results (25-50 items) but do not paginate. For a production intelligence system, missing the second page of Federal Register results means missing regulatory actions. Incomplete data = unreliable intelligence.
-**Complexity:** Medium
-
-**Federal Register API Pagination:**
-- Uses `page` parameter (1-indexed) with `per_page` (max 50, currently set to 50)
-- Returns `total_pages` and `count` in response metadata
-- Hard limit: only first 2,000 results accessible via pagination (use date filters for larger sets)
-- Current scraper: fetches page 1 only -- no pagination loop
-- Fix: Add pagination loop until `page >= total_pages` or results exhausted, respecting the 2,000 ceiling
-
-**Grants.gov API Pagination:**
-- Uses `page_offset` (1-indexed) and `page_size` (max 100, currently set to 25/50)
-- Returns `pagination_info` with `total_pages`, `total_records`
-- Hard limit: 10,000 results maximum per query (add filters to narrow if hit)
-- Current scraper: fetches page 1 only for CFDA and keyword searches
-- Fix: Loop incrementing `page_offset` until `page_offset > total_pages`
-
-**Congress.gov API Pagination:**
-- Uses `offset` parameter (0-based) with `limit` (max 250, currently set to 50)
-- Returns `pagination` with `count` and `next` URL
-- Rate limit: 5,000 requests/hour (generous)
-- Current scraper: fetches first page only
-- Fix: Follow `next` URLs or increment offset until all results retrieved
-
-**USASpending API Pagination:**
-- Uses `page` parameter (1-indexed) with `limit`
-- Returns `page_metadata` with `hasNext`, `page`, `total`
-- Current scraper (awards.py): already paginates correctly via CFDA batch approach
-- Fix: Verify and document existing pagination behavior
-
-**What "Done" Looks Like:**
-- All 4 scrapers paginate through all available results (within API ceiling limits)
-- Pagination respects rate limits (0.3-0.5s delays between pages)
-- Pagination stops correctly (not infinite looping on empty pages)
-- Circuit breaker still protects paginated loops (trips after N consecutive failures)
-- Total items collected per scan increases measurably (log before/after counts)
-
-**Dependencies:** Existing `BaseScraper._request_with_retry()`, existing circuit breaker
-
----
-
-### TS-05: Congress.gov Bill Detail Enrichment
-
-**Why Expected:** Current Congress.gov scraper fetches bill list data but not detail data. The list endpoint returns only: title, type, number, congress, latestAction, updateDate. For a policy intelligence product, users need cosponsors (who supports this?), subjects (what policy area?), and summaries (what does it do?). Without these, the 5-factor relevance scorer operates on incomplete data.
-**Complexity:** Medium-High
-
-**Congress.gov Bill API Sub-Endpoints:**
-Each bill has sub-endpoints accessible at `/bill/{congress}/{billType}/{billNumber}/{sub}`:
-
-| Sub-Endpoint | Key Data | Value for TCR |
-|--------------|----------|---------------|
-| `/actions` | Legislative steps with dates, types, committees | Track bill progress toward passage |
-| `/cosponsors` | Member name, party, state, bioguideId | Identify congressional champions for Tribal climate |
-| `/subjects` | CRS subject terms, policy area | Improve relevance scoring with subject matching |
-| `/summaries` | CRS-written bill analysis | Richer abstract for relevance scoring and briefings |
-| `/text` | Bill text versions with dates | Full text for keyword analysis (optional, large) |
-| `/titles` | Official and short titles | Better display names |
-| `/committees` | Committee referrals and activities | Track committee action |
-| `/relatedbills` | Related legislation links | Cross-reference with other bills in pipeline |
-
-**What "Done" Looks Like:**
-- After fetching bill list, scraper fetches detail sub-endpoints for each relevant bill
-- Normalized schema includes: `cosponsors_count`, `cosponsor_names`, `policy_area`, `subjects`, `crs_summary`, `committee_referrals`, `latest_action_type`
-- Rate limiting respected: 0.3s between sub-endpoint calls, 5,000/hour limit
-- Sub-endpoint failures degrade gracefully (bill still included with partial data)
-- Detail fetching is optional (can be disabled via config for faster scans)
-
-**Dependencies:** Existing `CongressGovScraper`, Congress.gov API key
-
----
-
-### TS-06: Website Performance for 100-200 Concurrent Users
-
-**Why Expected:** GitHub Pages serves static files via Fastly CDN. For 100-200 concurrent users, the site must load quickly and downloads must succeed without timeouts. The P0 issue is that downloads are fake text blobs (not large DOCX files). With real DOCX files (50-200 KB each), download performance becomes relevant.
-**Complexity:** Low-Medium
-**What "Done" Looks Like:**
-- tribes.json loads in under 2 seconds (should be ~150-300 KB for 592 entries)
-- DOCX file downloads complete in under 5 seconds per file
-- No JavaScript errors under concurrent usage
-- Search/autocomplete remains responsive with 592 entries
-- Awesomplete handles 592 items without UI lag (currently configured for maxItems:15, which is correct)
-- GitHub Pages bandwidth limits not exceeded (100 GB/month soft limit; 992 DOCX files at 100KB each = ~100 MB total, well within limits)
-
-**Dependencies:** GitHub Pages hosting, Fastly CDN (automatic)
-
----
-
-### TS-07: SquareSpace Iframe Embedding
-
-**Why Expected:** The website is designed to embed in a SquareSpace site via iframe. Existing comment in index.html shows the embed code. For production, this must actually work.
-**Complexity:** Low
-**What "Done" Looks Like:**
-- Iframe embed code works on SquareSpace Business plan or higher
-- Widget renders correctly within constrained width (max-width: 800px)
-- Widget height either fixed at 700px or uses postMessage for dynamic resizing
-- Downloads work from within iframe (download attribute honored, no X-Frame-Options blocking)
-- Widget is self-contained (no external dependencies that break in iframe context)
-- Cross-origin considerations documented (same-origin vs cross-origin download behavior)
-- title attribute on iframe present for WCAG 2.1 AA (already in embed comment)
-
-**iframe Implementation Pattern:**
-```html
-<!-- In SquareSpace Code Block -->
-<div style="width:100%;max-width:800px;margin:0 auto;">
-  <iframe
-    src="https://atniclimate.github.io/TCR-policy-scanner/"
-    width="100%" height="700" frameborder="0"
-    style="border:1px solid #e0e0e0;border-radius:8px;"
-    title="Tribal Climate Resilience - Program Priorities"
-    loading="lazy">
-  </iframe>
-</div>
-```
-
-**Cross-Origin Download Behavior:**
-- DOCX downloads from GitHub Pages should work within SquareSpace iframe because the download attribute triggers browser-native download behavior
-- If cross-origin restrictions block download, fallback: open in new tab via `target="_blank"` instead of `download` attribute
-- Test in actual SquareSpace environment before peak usage
-
-**Dependencies:** SquareSpace Business plan, existing index.html embed comment, GitHub Pages CORS headers
+| # | Feature | Why Expected | Complexity | Dependencies | Notes |
+|---|---------|-------------|------------|--------------|-------|
+| TS-1 | **CDC/ATSDR SVI integration** | Social vulnerability is the standard complement to hazard data in every federal vulnerability framework. FEMA NRI already incorporates a SOVI_SCORE but CDC SVI provides the authoritative 16-variable breakdown across 4 themes. Grant reviewers at FEMA, HUD, and EPA explicitly reference SVI data. The existing SOVI_SCORE is a coarse single-number summary; CDC SVI provides the granular theme-level detail (socioeconomic status, household characteristics, minority status, housing type/transportation) that grant narratives require. | Medium | Existing AIANNH crosswalk, existing area-weighted aggregation pattern from `hazards.py` | SVI 2022 is the current release (May 2024). Available as CSV at census tract and county levels. Download from CDC at https://atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html. Field naming convention: E_ (estimates), EP_ (percentages), EPL_ (percentiles), SPL_ (theme sums), RPL_ (theme rankings), F_ (flags for 90th percentile). Key field: RPL_THEMES (overall SVI ranking, 0-1 scale). Pipeline pattern: download CSV, map census tracts to Tribal areas via existing area-weighted crosswalk, aggregate theme scores, cache as per-Tribe JSON. Closely follows existing `populate_hazards.py` pattern. |
+| TS-2 | **Expanded NRI risk metrics** | Current hazard profiles extract only risk_score, eal_total, annualized_freq, and num_events per hazard. The NRI CSV contains richer data that directly supports grant applications: per-hazard EAL broken down by consequence type (buildings, population, agriculture), exposure values, and historic loss ratios. Dollar-denominated risk estimates are what grant reviewers want to see. | Low | Existing `hazards.py` CSV parsing (extend column extraction) | Already reading NRI_Table_Counties.csv. Additional columns to extract per hazard code: `{CODE}_EALB` (EAL buildings $), `{CODE}_EALP` (EAL population $), `{CODE}_EALA` (EAL agriculture $), `{CODE}_EALS` (EAL score percentile), `{CODE}_EXPT` (exposure total $), `{CODE}_HLRT` (historic loss ratio). Backward-compatible schema extension -- existing profile consumers continue to work, new fields are additive. Verified against existing `NRI_HAZARD_CODES` dict and CSV parsing in `hazards.py`. |
+| TS-3 | **Composite vulnerability score** | Users need a single summary metric ("How vulnerable is this Tribe?") for quick comparison and grant narratives. The standard methodology in the domain is: Vulnerability = f(Exposure, Sensitivity, Adaptive Capacity). FEMA NRI uses: Risk = EAL x SoVI / Community Resilience. Using the same formula FEMA uses provides methodological credibility. | Medium | TS-1 (SVI for social vulnerability detail), TS-2 (expanded NRI for exposure/loss detail) | FEMA's existing risk equation already combines EAL_SCORE (exposure), SOVI_SCORE (social vulnerability), and RESL_SCORE (community resilience). These composite scores are already extracted per county in `hazards.py` and area-weighted to Tribal level. The composite vulnerability score enriches this with CDC SVI theme-level breakdown. Implementation: per-Tribe composite = weighted combination of NRI risk score + CDC SVI overall + NRI resilience score. Five rating tiers matching NRI: Very High, Relatively High, Relatively Moderate, Relatively Low, Very Low. |
+| TS-4 | **Vulnerability profile in DOCX reports** | Doc A/B already have hazard summary sections rendered by `render_hazard_summary()`. Climate vulnerability assessment is the natural next section. Tribal Leaders reviewing briefing documents expect vulnerability context alongside hazard data -- it answers "so what does this mean for our community?" | Medium | TS-1, TS-2, TS-3, existing DocxEngine + `docx_sections.py` | New DOCX section: "Climate Vulnerability Assessment" rendered after hazard summary. Content: composite vulnerability score with rating badge, top 5 hazards with EAL breakdown (buildings/population/agriculture), SVI theme scores with interpretation, data sources with versions. Must respect Doc A vs Doc B audience differentiation: Doc A includes strategic framing ("This positions the Tribe to..."); Doc B presents facts only with neutral language. New function: `render_vulnerability_assessment()` in `docx_sections.py`. |
+| TS-5 | **Data provenance and citation** | Grant applications require specific citations to federal data sources. Every number in a vulnerability profile must trace back to a named dataset with version and date. This is already partially implemented (NRI version tracking via `_nri_version` field in hazard profiles). Extend to all data sources. | Low | All data features | Store in profile metadata: FEMA NRI version and download date, CDC SVI vintage year, NOAA data period. Generate APA-style citations for DOCX appendices. Example: "FEMA National Risk Index v1.20 (December 2025). Social Vulnerability Index, CDC/ATSDR, 2022." |
+| TS-6 | **Vulnerability display on website** | The GitHub Pages website currently shows Tribe search, state/ecoregion info, and document downloads. Vulnerability data should be visible on the tribe card before download -- gives users immediate value and a reason to engage with the documents. | Medium-High | TS-3 (composite score), existing web infrastructure (Fuse.js search, app.js, tribe card) | Extend tribe card with: composite vulnerability rating (color-coded badge), top 3 hazards with risk ratings, SVI overall percentile indicator. Data pre-computed and embedded in tribes.json search index (static site, no server). Requires updating `build_web_index.py` to include vulnerability fields, and `app.js` to render new card sections. HTML/CSS additions to `index.html` and `style.css`. |
 
 ---
 
 ## Differentiators
 
-Features that set the product apart. Not expected, but elevate trust, professionalism, and advocacy effectiveness.
+Features that set the product apart from generic vulnerability tools. Not expected, but highly valued by Tribal Leaders doing advocacy work.
 
-### DF-01: Confidence Scoring for Policy Intelligence Products
-
-**Value Proposition:** Intelligence products without confidence indicators are opinion, not analysis. The US intelligence community uses a standardized three-tier confidence framework (High/Moderate/Low) paired with Words of Estimative Probability. Applying this to Tribal policy intelligence would make TCR Policy Scanner's products more credible and professional than typical advocacy materials.
-**Complexity:** Medium
-**How Other Intelligence Tools Handle This:**
-
-**US Intelligence Community Standard (ICD 203):**
-- **High Confidence:** Judgments based on high-quality information from multiple sources, minimal conflict
-- **Moderate Confidence:** Credibly sourced and plausible, but insufficient quality or corroboration for higher confidence
-- **Low Confidence:** Source credibility or plausibility uncertain; scant, questionable, or fragmented information
-
-**Factors to Assess:**
-1. **Source diversity:** How many independent sources support this assessment? (Federal Register + Congress.gov + Grants.gov = multi-source)
-2. **Source quality:** Authoritative government sources (HIGH) vs. inferred from keyword matching (LOW)
-3. **Temporal currency:** Recent data (< 30 days) = higher confidence than stale data
-4. **Corroboration:** Do multiple sources agree? Conflicting signals lower confidence
-5. **Completeness:** Full data (awards + hazards + congressional) = higher confidence than partial
-
-**Application to TCR:**
-- Each Tribe's advocacy packet could include a data confidence indicator
-- "Funding Analysis Confidence: HIGH -- based on 3 verified USASpending records and FEMA NRI county data"
-- "Legislative Outlook Confidence: MODERATE -- based on bill text keyword matching; cosponsor analysis pending"
-- Confidence drives prioritization: Tribes with HIGH confidence data get richer analysis
-
-**Open Source Implementation (OpenCTI MISP Taxonomy):**
-- Fuses source reliability with analytic confidence
-- Tags: `estimative-language:confidence-in-analytic-judgment="high"` etc.
-- TCR could adopt a simpler 3-tier model without the full taxonomy
-
-**What "Done" Looks Like:**
-- Each document section has a confidence indicator (HIGH/MODERATE/LOW)
-- Confidence computed from: source count, data freshness, data completeness
-- Displayed in DOCX output as a subtle indicator (e.g., colored sidebar or footnote)
-- Web widget shows per-Tribe data quality indicator
-
-**Dependencies:** Existing scoring engine, existing data coverage tracking (validate_coverage.py)
-
----
-
-### DF-02: DOCX Visual QA Automation
-
-**Value Proposition:** 992 documents cannot be manually reviewed. The existing `DocumentQualityReviewer` checks text content (audience leakage, air gap, placeholders) but does not check visual formatting (correct heading styles, table structure, font consistency, page count accuracy). Automated visual QA catches formatting regressions that text-only checks miss.
-**Complexity:** Medium-High
-
-**What Exists (quality_review.py):**
-- Text-based checks: audience leakage (19 patterns), air gap (12 patterns), placeholder detection (6 patterns)
-- Structural checks: confidential marking, minimum paragraph count, executive summary presence, page break count
-- Batch review with markdown report generation
-- Already integrated into the pipeline
-
-**What to Add (Visual/Structural QA):**
-
-| Check | How to Implement | Library |
-|-------|-----------------|---------|
-| Heading hierarchy (H1 -> H2 -> H3) | python-docx: iterate paragraphs, verify style names follow hierarchy | python-docx (existing) |
-| Table presence per section | python-docx: count tables, verify minimum per doc type | python-docx (existing) |
-| Font consistency | python-docx: verify all runs use expected font family/size | python-docx (existing) |
-| Page count accuracy | python-docx: count section breaks + page breaks (already partial) | python-docx (existing) |
-| Style name validation | python-docx: verify all paragraph styles match expected set | python-docx (existing) |
-| Table column count | python-docx: verify tables have expected column counts | python-docx (existing) |
-| Image presence (if applicable) | python-docx: check for inline shapes | python-docx (existing) |
-| DOCX-to-PDF render comparison | Convert to PDF via LibreOffice CLI, compare screenshots | LibreOffice + Pillow (new) |
-
-**Recommended Approach:**
-- Extend existing `DocumentQualityReviewer` with structural checks (no new dependencies)
-- python-docx can inspect heading levels, table dimensions, run fonts, and style names programmatically
-- Skip DOCX-to-PDF visual regression (too complex for the timeline, requires LibreOffice install)
-- Focus on structural invariants that can be checked via the python-docx object model
-
-**What "Done" Looks Like:**
-- quality_review.py has 5+ new structural checks
-- Batch review catches: broken heading hierarchy, missing tables, wrong fonts, unexpected styles
-- Structural checks are warnings (not critical), since they do not affect content accuracy
-- Report includes structural issues alongside existing text-based issues
-
-**Dependencies:** Existing `quality_review.py`, existing python-docx dependency
-
----
-
-### DF-03: "Action Center" Landing Page
-
-**Value Proposition:** Beyond document downloads, the website could include pre-written email templates, elected official directories, and talking points. This transforms a document distribution site into an advocacy platform.
-**Complexity:** High
-**Notes:** Defer to post-v1.3. The immediate need is document distribution, not advocacy orchestration. However, the web architecture should not preclude adding this later.
-**Dependencies:** Would require significant new HTML/JS/CSS development
-
----
-
-### DF-04: Freshness Indicators and Last-Updated Timestamps
-
-**Value Proposition:** Users need to know when data was last refreshed. Showing "Data as of: Feb 11, 2026" builds trust. Without it, users cannot assess whether the policy intelligence is current.
-**Complexity:** Low
-**What "Done" Looks Like:**
-- tribes.json includes `"generated_at": "2026-02-11T..."` metadata
-- Web widget displays "Data as of: [date]" in footer or header
-- Each Tribe card shows when its data was last updated
-- Documents include generation date in header/footer
-
-**Dependencies:** Existing `build_web_index.py` (already includes metadata generation timestamp)
-
----
-
-### DF-05: Download Analytics (Basic)
-
-**Value Proposition:** Knowing which Tribes' documents are being downloaded tells the organization where its advocacy efforts are landing. Even basic analytics (total downloads, most-downloaded Tribes) are valuable.
-**Complexity:** Medium (if using GitHub Pages, client-side only; server-side not possible)
-**What "Done" Looks Like:**
-- Client-side download counter using localStorage or a lightweight analytics service
-- Or: use GitHub's built-in traffic analytics (Settings > Traffic) for page views
-- No server-side tracking needed for MVP
-- Privacy-respecting: no PII collection, no cookies
-
-**Dependencies:** Client-side JavaScript, GitHub traffic data
+| # | Feature | Value Proposition | Complexity | Dependencies | Notes |
+|---|---------|-------------------|------------|--------------|-------|
+| DF-1 | **NOAA climate projections per Tribe** | Most vulnerability tools stop at current/historical risk. Adding mid-century and late-century projections under multiple emissions scenarios shows how risk will change. Extremely powerful for grant narratives: "By 2060, under higher emissions, extreme heat days in our region are projected to increase from X to Y per year." Forward-looking data is the strongest differentiator for this tool. | High | Existing county-FIPS crosswalk for area-weighted aggregation | **Data source recommendation: NOAA Climate Explorer + LOCA2/CMIP6.** Climate Explorer provides county-level projections (CMIP5/LOCA downscaled) under RCP 4.5 and 8.5 from observed (1950-2013) through projected (2020s-2090s). Variables: avg/max/min temperature, precipitation, degree days, days above thresholds. LOCA2/CMIP6 (from UCSD/USGS) is newer, with SSP 2-4.5, 3-7.0, 5-8.5 scenarios. County-level aggregations confirmed available. **Implementation approach:** Pre-download county CSV data for all 3,107 US counties. Aggregate to Tribal areas using existing area-weighted crosswalk. Cache as per-Tribe climate projection JSON. Key metrics to extract: projected temperature change (mid-century vs baseline), projected precipitation change, extreme heat days (days above 95F/100F/105F), cooling/heating degree days. **Risk:** Bulk download workflow for Climate Explorer county data is unverified -- the web interface allows single-county export but programmatic bulk access needs validation. LOCA2 data from USGS ScienceBase has confirmed county-level CSVs. |
+| DF-2 | **Grant-ready vulnerability narratives** | Auto-generate paragraph-length narratives formatted for direct insertion into federal grant applications. "The [Tribe Name] faces significant climate risk from [top hazard], with expected annual losses of $[amount] to buildings and $[amount] to agricultural systems. CDC Social Vulnerability indicators show [rating] vulnerability in socioeconomic status (Xth percentile). Based on FEMA National Risk Index data, the community's composite risk score places it in the [Yth] percentile nationally." This saves Tribal staff hours of grant-writing per application. | Medium | TS-1, TS-2, TS-3, TS-4, TS-5 | Template-based narrative generation. 3-5 templates for different grant contexts (FEMA BRIC, EPA Environmental Justice, HUD CDBG-DR, BIA Climate Resilience, generic). Fill data placeholders with Tribe-specific values. Doc A version includes advocacy framing; Doc B version uses neutral citation style. Each narrative includes inline data citations (TS-5). |
+| DF-3 | **Hazard-specific trend indicators** | Show whether each hazard type is increasing, stable, or decreasing. A simple directional indicator (increasing/stable/decreasing) next to each hazard in the profile. Extremely useful for testimony: "Wildfire frequency in our region has increased 40% over the past decade." | Medium | TS-2 (expanded NRI for historical frequency data), optionally DF-1 (for projected trends) | NRI provides `{HAZARD}_EVNTS` (total historical events) and `{HAZARD}_AFREQ` (annualized frequency). Can compute trends by comparing NRI v1.20 frequencies against earlier NRI versions (v1.16, v1.18 archived at FEMA). Climate projections (DF-1) add future trajectory. Even without projections, historical trend alone is valuable. Display as arrow icon in DOCX and website. |
+| DF-4 | **Community resilience sub-indicators** | FEMA NRI includes RESL_SCORE based on BRIC (Baseline Resilience Indicators for Communities) from University of South Carolina. BRIC has 6 sub-categories: social, economic, community capital, institutional, infrastructural, environmental. Exposing sub-scores helps Tribes identify which resilience dimensions need investment and which grant programs to target. | Medium | Existing NRI data (verify if BRIC sub-scores in NRI CSV), potentially separate BRIC data download | NRI CSV includes RESL_SCORE and RESL_RATNG at county level. **Whether BRIC sub-category scores are included in the NRI CSV columns needs verification during implementation.** If not in NRI CSV, BRIC data may need separate download from USC Hazards and Vulnerability Research Institute. This is a LOW confidence item -- flag for implementation-time research. |
+| DF-5 | **Comparative vulnerability context** | Show a Tribe's vulnerability relative to: state average, national average, and ecoregion peer group. "Your wildfire risk score of 78 places you in the 92nd percentile among Pacific Northwest Tribes." Provides crucial advocacy context: "We face disproportionate risk compared to..." | Low-Medium | TS-3 (composite score), existing registry (ecoregion data from Phase 5) | Compute percentile rankings across the 592-Tribe dataset. Group by ecoregion (already in registry). Store distribution statistics (mean, median, percentiles) in a summary JSON. Display in DOCX as contextual sentence and in website as percentile bar. |
+| DF-6 | **Interactive vulnerability visualization on website** | Beyond basic vulnerability indicators (TS-6), add visual charts: hazard radar/spider chart showing relative risk across hazard types, SVI theme breakdown bar chart, and vulnerability trend sparkline. Chart.js (~200KB) or similar lightweight library. | Medium-High | TS-6, TS-3, all data features | Progressive enhancement pattern: charts render if JavaScript loads, fall back to text badges if not. Chart.js works without build step (CDN or vendored script). Must work in static site context (no server). All data pre-computed in tribes.json. Radar chart shows 5-8 top hazard types with normalized scores. SVI bar chart shows 4 theme percentiles. No interactive filtering needed -- single Tribe display only. |
+| DF-7 | **EAL breakdown by consequence type** | Display Expected Annual Loss split into buildings ($), population ($), and agriculture ($) per hazard type. Helps Tribes identify whether their risk is primarily to infrastructure, human health, or food/agricultural systems. Critical for targeting the right grant programs: infrastructure damage -> FEMA BRIC; population impact -> HHS/ASPR; agriculture loss -> USDA. | Low | TS-2 (expanded NRI extraction provides the data) | NRI CSV columns `{CODE}_EALB`, `{CODE}_EALP`, `{CODE}_EALA` provide the three consequence-type breakdowns per hazard. Already area-weighted per existing methodology. Display as table in DOCX (top 5 hazards with 3-column EAL breakdown) and as stacked bar in website visualization (DF-6). Smallest additional effort once TS-2 extracts the data. |
 
 ---
 
 ## Anti-Features
 
-Features to explicitly NOT build for v1.3. Common mistakes in this domain that would waste time or introduce risk.
+Features to explicitly NOT build. Common mistakes in the climate vulnerability domain.
 
-### AF-01: User Authentication or Login System
-
-**Why Avoid:** The documents are advocacy materials meant for broad distribution. Adding authentication creates a barrier to access and contradicts the purpose. Doc B (congressional) documents are explicitly designed for sharing. Doc A (internal strategy) documents have "CONFIDENTIAL" markings but are distributed by Tribal leadership, not locked behind logins.
-**What to Do Instead:** Use the existing air gap enforcement (no attribution, no tool names) and confidential markings. Trust Tribal leadership to manage distribution of their own materials.
-
----
-
-### AF-02: Server-Side Rendering or Dynamic Backend
-
-**Why Avoid:** GitHub Pages is static-only. Adding a backend (Flask, Express, etc.) changes the hosting model, adds cost, adds maintenance burden, and introduces failure modes. The 100-200 concurrent user target is easily handled by static files on CDN.
-**What to Do Instead:** Keep everything static. Pre-generate all documents. Pre-build tribes.json. Let CDN do the heavy lifting. If dynamic features are ever needed, consider serverless functions (Cloudflare Workers, Netlify Functions) as a layer on top, not a replacement.
-
----
-
-### AF-03: Full-Text Search Across Document Contents
-
-**Why Avoid:** Searching within 992 DOCX files requires either a search index (adds build complexity) or server-side processing (breaks static hosting). The Awesomplete autocomplete on Tribe names is sufficient for finding specific Tribes. Users come looking for their Tribe, not searching for keywords.
-**What to Do Instead:** Keep Tribe name autocomplete. If keyword search is ever needed, pre-build a search index as a JSON file and use lunr.js or fuse.js client-side.
-
----
-
-### AF-04: Real-Time Data Refresh or Live API Connections in the Website
-
-**Why Avoid:** The website should serve pre-generated, reviewed documents. Real-time API connections from the client would expose API keys, bypass quality review, and produce unreviewed content. The pipeline's value is in the human-reviewed, quality-checked output.
-**What to Do Instead:** Regenerate documents on a schedule (weekly or as needed). Update tribes.json. Redeploy. The generation pipeline handles freshness; the website handles distribution.
-
----
-
-### AF-05: PDF Conversion of DOCX Files
-
-**Why Avoid:** Converting 992 DOCX files to PDF adds a build step (requires LibreOffice or Aspose), doubles storage (992 DOCX + 992 PDF), and DOCX is the standard format for congressional offices (they annotate and share Word documents). PDF is less useful for advocacy workflows.
-**What to Do Instead:** Serve DOCX files only. If specific users need PDF, they can open in Word/Google Docs and export. Consider PDF as a post-v1.3 enhancement if user feedback demands it.
-
----
-
-### AF-06: Complex Client-Side Filtering (By State, Ecoregion, Document Type)
-
-**Why Avoid:** With 592 Tribes, users know which Tribe they want. Filtering by state or ecoregion adds UI complexity, increases JavaScript payload, and serves a minority use case. The regional documents (Doc C/D) already handle geographic aggregation.
-**What to Do Instead:** Keep the single search input. It already narrows to 15 results with 2 characters. Add the 8 regional documents as a second section (already done in current UI). If filtering is needed later, add it as an enhancement.
-
----
-
-### AF-07: Custom CMS for Document Management
-
-**Why Avoid:** Documents are generated by the pipeline, not authored manually. A CMS adds overhead for uploading, organizing, and managing documents that are already managed by the generation pipeline. The pipeline IS the CMS.
-**What to Do Instead:** Use the existing `build_web_index.py` to regenerate tribes.json whenever documents are updated. The script already handles file discovery, metadata extraction, and index generation.
-
----
-
-### AF-08: Multi-Language Translation
-
-**Why Avoid:** Policy advocacy documents contain highly specific legal and regulatory terminology. Machine translation of terms like "IIJA sunset provisions" or "FEMA BRIC Hazard Mitigation" would be inaccurate and misleading. Professional translation of 992 documents is infeasible for v1.3.
-**What to Do Instead:** Serve documents in English (the language of federal policy). If specific Tribal Nations request translations, handle as individual requests outside the pipeline.
+| # | Anti-Feature | Why Avoid | What to Do Instead |
+|---|-------------|-----------|-------------------|
+| AF-1 | **Real-time climate modeling or simulation** | Computationally intractable, scientifically inappropriate for a policy tool, and creates false precision. Climate modeling is a multi-institution, supercomputer-scale endeavor. Running climate models is not what this tool does. | Consume pre-computed projections from authoritative federal sources (NOAA Climate Explorer, LOCA2/CMIP6 from USGS). Present their data with proper citation, not our own calculations. |
+| AF-2 | **Tribal-specific data collection or surveys** | Violates T0 data classification. Collecting data about Tribal communities raises sovereignty and privacy concerns. The Tribal Climate Adaptation Guidebook explicitly notes that vulnerability assessments should braid western science with Traditional Knowledge -- but that braiding is for Tribes to do, not for this tool. | Use only federally published public datasets (NRI, SVI, NOAA, USFS). Acknowledge data limitations transparently. Let Tribes supplement with their own Traditional Knowledge -- our tool provides the federal data baseline. |
+| AF-3 | **Health impact predictions** | Projecting specific health outcomes (mortality, morbidity, disease incidence) from climate data requires epidemiological expertise and peer review. Wrong predictions could harm advocacy credibility and create liability. | Present CDC SVI health-adjacent indicators (disability status, age demographics, uninsured populations) as vulnerability factors without projecting outcomes. Link to CDC Climate and Health resources and EPA Environmental Justice screening tool (EJScreen) for health-specific analysis. |
+| AF-4 | **Census tract-level granularity in reports** | Most Tribal areas span multiple census tracts. Showing tract-level data creates noise without actionable insight for Tribal Leaders. Census tract boundaries do not align with Tribal governance boundaries. | Aggregate census tract data to Tribal area level using existing area-weighted crosswalk methodology (proven in Phase 13). Show single composite scores per Tribe, not per-tract breakdowns. Maintain tract-level data in pipeline internals for accuracy; present Tribe-level summaries in outputs. |
+| AF-5 | **Interactive GIS/map interface** | Building a map-based interface requires a tile server, geographic data pipeline, and ongoing hosting costs incompatible with static GitHub Pages deployment. The existing site is a static file distribution system, not a GIS application. | Use pre-computed vulnerability scores and display as cards/charts on existing static site. Provide links to FEMA NRI Interactive Map (https://hazards.fema.gov/nri/map) and CDC SVI Interactive Map for users who want geographic exploration. These official tools are already built and maintained by federal agencies. |
+| AF-6 | **Proprietary vulnerability scoring methodology** | Inventing a novel vulnerability index invites methodological criticism and reduces trust with grant reviewers. Federal grant applications work best when citing recognized federal frameworks. | Use FEMA NRI's own risk equation (Risk = EAL x SoVI / Community Resilience) as the composite methodology. Cite it explicitly. For SVI integration, use CDC's published percentile ranking methodology. Transparency in methodology builds trust with reviewers. |
+| AF-7 | **Climate adaptation recommendations** | Generating specific adaptation strategies (e.g., "build seawalls," "relocate infrastructure," "implement drought-resistant crops") requires local engineering, ecological, and cultural knowledge we don't have. Generic recommendations could be harmful or culturally inappropriate. | Present vulnerability data and risk context. Link to Tribal Climate Adaptation Guidebook (tribalclimateadaptationguidebook.org), BIA Tribal Climate Resilience Program for adaptation planning support, and UW Climate Impacts Group Tribal tools (cig.uw.edu/resources/tribal-vulnerability-assessment-resources/). |
+| AF-8 | **Real-time weather or extreme event alerts** | This is a policy intelligence and advocacy tool, not an emergency management system. Weather alerting requires 24/7 monitoring infrastructure, push notification systems, and liability frameworks that are far outside scope. | Present historical and projected climate trends for planning and advocacy. Link to NWS alerts and FEMA Emergency Alert System for real-time information. |
 
 ---
 
 ## Feature Dependencies
 
 ```
-Critical Path (must be done in order):
-  TS-01 (real downloads) + TS-02 (592 coverage) --> TS-06 (performance)
-  These three form the "website actually works" cluster.
-  Real downloads require real files deployed to GitHub Pages.
-  Performance testing requires real files to be present.
+TS-2 (Expanded NRI) -----> TS-3 (Composite Score) -----> TS-4 (DOCX Section)
+                    \                              \
+                     \                              --> DF-2 (Grant Narratives)
+                      \
+                       --> DF-7 (EAL Breakdown)     --> TS-6 (Website Display)
+                                                         |
+TS-1 (CDC SVI) ---------> TS-3 (Composite Score)        |
+                                    |                    v
+                                    v               DF-6 (Visualization)
+                              DF-5 (Peer Context)
 
-Parallel Track A: API Enrichment
-  TS-04 (scraper pagination) --> TS-05 (bill detail enrichment)
-  Pagination completes the data; bill details enrich it.
-  Can run in parallel with website fixes.
+DF-1 (NOAA Projections) --> DF-3 (Trend Indicators)
+                        \
+                         --> DF-2 (Grant Narratives, enhanced)
 
-Parallel Track B: Quality & Compliance
-  TS-03 (WCAG accessibility) -- independent, CSS/HTML/JS only
-  DF-02 (DOCX visual QA) -- independent, python only
+TS-5 (Data Provenance) --- independent, threads through all outputs
 
-Parallel Track C: Trust Indicators
-  DF-01 (confidence scoring) -- depends on TS-04 + TS-05 for enriched data
-  DF-04 (freshness indicators) -- independent, low complexity
-
-Standalone:
-  TS-07 (SquareSpace embed) -- independent, verify and document
-
-Dependency Graph:
-  TS-01 (real downloads) ----+
-                              |--> TS-06 (performance testing)
-  TS-02 (592 Tribe coverage) +
-
-  TS-04 (pagination) --> TS-05 (bill details) --> DF-01 (confidence scoring)
-
-  TS-03 (WCAG) -- standalone
-  TS-07 (iframe) -- standalone
-  DF-02 (DOCX QA) -- standalone
-  DF-04 (freshness) -- standalone
-  DF-05 (analytics) -- standalone, defer to post-launch
+DF-4 (Resilience Sub-indicators) --- extends existing NRI data (independent track)
 ```
+
+**Critical path:** TS-2 (Expanded NRI) -> TS-1 (CDC SVI) -> TS-3 (Composite Score) -> TS-4 (DOCX) -> TS-6 (Website)
+
+**Independent parallel tracks:**
+- DF-1 (NOAA Projections) can proceed in parallel with SVI integration but is highest risk
+- TS-5 (Data Provenance) threads through all features with no upstream dependencies
+- DF-4 (Resilience Sub-indicators) depends only on NRI CSV verification
 
 ---
 
-## MVP Recommendation
+## Data Source Inventory
 
-Given the time pressure (peak usage Feb 12-13, 2026 -- TODAY AND TOMORROW), prioritize ruthlessly:
+### Available Federal Data Sources (Verified)
 
-### Must-Ship Today (P0)
+| Source | Data | Geographic Level | Format | Access Method | Status | Confidence |
+|--------|------|------------------|--------|---------------|--------|------------|
+| FEMA NRI v1.20 | 18 hazard types, EAL (total + by consequence type), risk/exposure/frequency scores, SoVI, BRIC resilience | County, Census Tract | CSV, Shapefile, GDB | OpenFEMA download | ALREADY INTEGRATED (partially) | HIGH |
+| CDC/ATSDR SVI 2022 | 16 variables, 4 themes, percentile rankings (0-1) | Census Tract, County, ZCTA | CSV, Shapefile | CDC data download page | NOT YET INTEGRATED | HIGH |
+| NOAA Climate Explorer | Temperature, precipitation, degree days, extreme day counts (observed 1950-2013, projected through 2090s under RCP 4.5/8.5) | County (FIPS) | CSV via web export | Web interface with per-county data export | NOT YET INTEGRATED | MEDIUM |
+| NOAA nClimGrid | Monthly temperature (avg/max/min), precipitation (1895-present) | County (FIPS), gridded | CSV, NetCDF | FTP, AWS Open Data | NOT YET INTEGRATED | HIGH |
+| LOCA2/CMIP6 | Downscaled projections (temperature, precipitation) under SSP 2-4.5, 3-7.0, 5-8.5 (1950-2100) | County aggregations, 6km gridded | NetCDF, CSV | UCSD LOCA server, USGS ScienceBase | NOT YET INTEGRATED | MEDIUM |
+| NRI Tribal Relational CSV | AIANNH GEOID -> county FIPS mapping | AIANNH areas | CSV | FEMA download | ALREADY INTEGRATED | HIGH |
+| Census AIANNH Shapefiles | Tribal area boundaries (TIGER/Line) | National | Shapefile | Census Bureau | ALREADY INTEGRATED (crosswalk built) | HIGH |
+| NOAA CDO API | Historical weather observations by station/county | Station, County (FIPS) | JSON, CSV | REST API (free token, 10K req/day) | NOT YET INTEGRATED | HIGH |
 
-1. **TS-01: Real Document Downloads** -- Deploy actual DOCX files to GitHub Pages. Without this, the site is non-functional.
-2. **TS-02: Full 592-Tribe Coverage** -- Run `build_web_index.py` with all 992 documents, deploy updated tribes.json.
+### CDC/ATSDR SVI 2022 Variables (16 variables, 4 themes)
 
-### Must-Ship Within 24 Hours (P1)
+**Theme 1: Socioeconomic Status**
+1. Below 150% poverty (EP_POV150 / EPL_POV150)
+2. Unemployed (EP_UNEMP / EPL_UNEMP)
+3. Housing cost burden (EP_HBURD / EPL_HBURD)
+4. No health insurance (EP_UNINSUR / EPL_UNINSUR)
+5. No high school diploma (EP_NOHSDP / EPL_NOHSDP)
 
-3. **TS-03: Critical WCAG Fixes** -- Skip nav link, contrast fixes, focus management. Not full WCAG audit, just the P1 accessibility issues.
-4. **TS-07: SquareSpace Embed Verification** -- Test iframe in actual SquareSpace environment.
+**Theme 2: Household Characteristics**
+6. Aged 65 and older (EP_AGE65 / EPL_AGE65)
+7. Aged 17 and younger (EP_AGE17 / EPL_AGE17)
+8. Civilian with a disability (EP_DISABL / EPL_DISABL)
+9. Single-parent households (EP_SNGPNT / EPL_SNGPNT)
+10. English language proficiency (EP_LIMENG / EPL_LIMENG)
 
-### Should-Ship This Week (P2)
+**Theme 3: Racial and Ethnic Minority Status**
+11-16. Six racial/ethnic categories with percentile rankings
 
-5. **TS-06: Performance Verification** -- Load test with 100+ concurrent downloads.
-6. **DF-04: Freshness Indicators** -- Add "Data as of" timestamp to web widget.
-7. **TS-04: Scraper Pagination** -- Complete data collection for next refresh cycle.
+**Theme summaries:** RPL_THEME1 through RPL_THEME4 (0-1 percentile for each theme)
+**Overall SVI:** RPL_THEMES (composite 0-1 percentile)
+**Flags:** F_THEME1 through F_THEME4, F_TOTAL (1 if in 90th percentile)
 
-### Should-Ship Within 2 Weeks (P3)
+**Confidence:** MEDIUM -- variable list reconstructed from multiple documentation sources. Exact 2022 field names (especially Theme 3 which changed from prior years) must be verified against actual CSV download during implementation.
 
-8. **TS-05: Congress.gov Bill Details** -- Enrich legislative data.
-9. **DF-02: DOCX Visual QA** -- Automated structural checks for next batch generation.
-10. **DF-01: Confidence Scoring** -- Add trust indicators to documents.
+### NRI CSV Columns: Currently Extracted vs. Needed
 
-### Defer to Post-v1.3
+| Field Pattern | Meaning | Currently Extracted | Action |
+|---------------|---------|---------------------|--------|
+| `{CODE}_RISKS` | Risk score (percentile) | YES | Keep |
+| `{CODE}_RISKR` | Risk rating (text) | YES | Keep |
+| `{CODE}_EALT` | Expected Annual Loss total ($) | YES | Keep |
+| `{CODE}_AFREQ` | Annualized frequency | YES | Keep |
+| `{CODE}_EVNTS` | Number of events | YES | Keep |
+| `{CODE}_EALB` | EAL - Buildings ($) | NO | **Add in TS-2** |
+| `{CODE}_EALP` | EAL - Population ($) | NO | **Add in TS-2** |
+| `{CODE}_EALA` | EAL - Agriculture ($) | NO | **Add in TS-2** |
+| `{CODE}_EALS` | EAL score (percentile) | NO | **Add in TS-2** |
+| `{CODE}_EXPT` | Exposure total ($) | NO | **Add in TS-2** |
+| `{CODE}_HLRT` | Historic loss ratio | NO | **Add in TS-2** |
+| `SOVI_SCORE` | Social Vulnerability score | YES (composite) | Keep |
+| `SOVI_RATNG` | Social Vulnerability rating | YES (composite) | Keep |
+| `RESL_SCORE` | Community Resilience score | YES (composite) | Keep |
+| `RESL_RATNG` | Community Resilience rating | YES (composite) | Keep |
+| `RISK_SCORE` | Overall Risk score | YES | Keep |
+| `EAL_VALT` | Total EAL all hazards ($) | YES | Keep |
 
-- DF-03: Action Center Landing Page
-- DF-05: Download Analytics (beyond GitHub traffic)
-- AF-05: PDF conversion (if user feedback demands it)
+**NRI hazard codes (18):** AVLN, CFLD, CWAV, DRGT, ERQK, HAIL, HWAV, HRCN, ISTM, IFLD, LNDS, LTNG, SWND, TRND, TSUN, VLCN, WFIR, WNTW
+(Verified from existing `NRI_HAZARD_CODES` dict in `src/packets/hazards.py`)
+
+---
+
+## Vulnerability Assessment Framework
+
+The standard vulnerability assessment framework used by federal agencies and documented in the U.S. Climate Resilience Toolkit and Tribal Climate Adaptation Guidebook:
+
+**Vulnerability = f(Exposure, Sensitivity, Adaptive Capacity)**
+
+| Component | What It Measures | Data Sources in TCR | Existing? |
+|-----------|------------------|---------------------|-----------|
+| **Exposure** | Presence of assets in places affected by climate hazards | FEMA NRI hazard scores + EAL, NOAA climate projections | Partial (NRI integrated, NOAA not yet) |
+| **Sensitivity** | Degree to which assets are affected | CDC SVI (social factors), NRI EAL by consequence type | No (SVI not integrated, EAL breakdown not extracted) |
+| **Adaptive Capacity** | Ability to cope with and recover from impacts | FEMA NRI RESL_SCORE (Community Resilience/BRIC), SVI economic indicators | Partial (RESL_SCORE integrated as composite) |
+
+### Assessment Approaches Documented for Tribal Nations
+
+From the Tribal Climate Adaptation Guidebook, five approaches used by Tribes:
+
+1. **Qualitative staff input** (Tohono O'odham Nation) -- staff-driven assessment using local knowledge
+2. **Vulnerability and risk assessment** (Confederated Salish and Kootenai Tribes) -- matrix-based scoring
+3. **Guided staff input** (Jamestown S'Klallam Tribe) -- structured workshops with data support
+4. **Vulnerability indexing** (Shoshone-Bannock Tribes) -- quantitative index from federal data
+5. **Multi-criteria analysis** (Swinomish Indian Tribal Community) -- weighted multi-factor scoring
+
+TCR Policy Scanner serves approach #4 (vulnerability indexing from federal data). Tribal Nations can layer their own Traditional Knowledge and staff input (approaches #1-3, #5) on top of our federal data baseline.
+
+---
+
+## MVP Recommendation (v1.4 Scope)
+
+### Phase 1: Data Foundation (Build First)
+
+Extend existing data pipeline with minimal architectural risk. All features follow proven patterns from Phase 13 hazard profiling.
+
+1. **TS-2: Expanded NRI risk metrics** -- LOW complexity. Extend existing CSV column extraction in `_load_nri_county_data()` to pull 6 additional fields per hazard type. Backward-compatible schema extension. Same area-weighted aggregation. Immediate value: dollar-denominated EAL breakdowns for grant applications.
+
+2. **TS-1: CDC/ATSDR SVI integration** -- MEDIUM complexity. New pipeline following proven pattern: download SVI 2022 CSV -> map census tracts to Tribal areas via existing crosswalk -> aggregate theme scores with area weighting -> cache as per-Tribe JSON. New files: `scripts/download_svi_data.py`, `scripts/populate_svi.py`, `src/packets/svi.py`. Pattern closely mirrors `scripts/populate_hazards.py` + `src/packets/hazards.py`.
+
+3. **TS-3: Composite vulnerability score** -- MEDIUM complexity. Combine NRI risk score + CDC SVI overall + NRI resilience into single per-Tribe composite. Use FEMA's own equation for methodological credibility. Five rating tiers. Depends on TS-1 and TS-2.
+
+4. **TS-5: Data provenance and citation** -- LOW complexity. Metadata tracking threaded through all outputs. Extend existing `generated_at` and `version` patterns.
+
+### Phase 2: Report Integration (Build Second)
+
+Surface new data in documents. Extend existing DOCX rendering infrastructure.
+
+5. **TS-4: Vulnerability profile in DOCX** -- MEDIUM complexity. New `render_vulnerability_assessment()` function in `docx_sections.py`. Composite score with badge, top hazards with EAL breakdown, SVI themes, data citations. Audience-differentiated (Doc A strategy vs Doc B facts).
+
+6. **DF-7: EAL by consequence type** -- LOW complexity. Table in DOCX showing buildings/population/agriculture split for top 5 hazards. Data already available from TS-2.
+
+7. **DF-2: Grant-ready narratives** -- MEDIUM complexity. Template-based paragraph generation. High value for Tribal staff time savings.
+
+8. **DF-5: Comparative vulnerability** -- LOW-MEDIUM complexity. Percentile rankings across 592 Tribes grouped by ecoregion. Contextual sentence in DOCX.
+
+### Phase 3: Web Integration (Build Third)
+
+Update website to display vulnerability data.
+
+9. **TS-6: Website vulnerability display** -- MEDIUM-HIGH complexity. Extend tribe card, update search index JSON, add vulnerability badges.
+
+10. **DF-6: Vulnerability visualization** -- MEDIUM-HIGH complexity. Chart.js radar chart for hazards, bar chart for SVI themes. Progressive enhancement.
+
+### Defer to v1.5+
+
+- **DF-1: NOAA climate projections** -- HIGH complexity, HIGH value, HIGH risk. New data pipeline with uncertain bulk download workflow. Needs dedicated research sprint to validate data access before committing. Recommend as v1.5 headline feature.
+- **DF-3: Hazard trend indicators** -- Partially feasible with historical NRI data alone; full implementation needs DF-1.
+- **DF-4: Community resilience sub-indicators (BRIC sub-scores)** -- Blocked on verifying whether BRIC sub-scores exist in NRI CSV or require separate data source.
 
 ---
 
 ## Feature Prioritization Matrix
 
-| Feature | Priority | Complexity | Impact | Dependencies | Timeline |
-|---------|----------|------------|--------|-------------|----------|
-| TS-01 Real Downloads | P0 | Medium | CRITICAL | build_web_index.py | Today |
-| TS-02 592 Coverage | P0 | Low | CRITICAL | v1.2 batch output | Today |
-| TS-03 WCAG Fixes | P1 | Medium | HIGH | CSS/HTML/JS only | 24 hours |
-| TS-04 Pagination | P2 | Medium | HIGH | BaseScraper | This week |
-| TS-05 Bill Details | P3 | Med-High | MEDIUM | Congress API key | 2 weeks |
-| TS-06 Performance | P2 | Low | MEDIUM | TS-01 + TS-02 done | This week |
-| TS-07 SquareSpace | P1 | Low | HIGH | GitHub Pages URL | 24 hours |
-| DF-01 Confidence | P3 | Medium | MEDIUM | TS-04 + TS-05 | 2 weeks |
-| DF-02 DOCX QA | P3 | Med-High | MEDIUM | quality_review.py | 2 weeks |
-| DF-03 Action Center | Defer | High | LOW (for now) | New development | Post-v1.3 |
-| DF-04 Freshness | P2 | Low | MEDIUM | build_web_index.py | This week |
-| DF-05 Analytics | Defer | Medium | LOW | JS only | Post-v1.3 |
+| Feature | User Value | Technical Risk | Complexity | Data Available? | Priority |
+|---------|-----------|---------------|------------|-----------------|----------|
+| TS-2: Expanded NRI | HIGH | LOW | LOW | YES (same CSV already loaded) | **P0 -- Do first** |
+| TS-1: CDC SVI | HIGH | LOW | MEDIUM | YES (CSV download from CDC) | **P0 -- Do first** |
+| TS-3: Composite Score | HIGH | LOW | MEDIUM | YES (derived from TS-1 + TS-2) | **P0 -- After TS-1/2** |
+| TS-5: Provenance | MEDIUM | LOW | LOW | N/A (metadata) | **P0 -- Thread through** |
+| TS-4: DOCX Vulnerability | HIGH | LOW | MEDIUM | YES (from data pipeline) | **P1 -- After data** |
+| DF-7: EAL Breakdown | MEDIUM | LOW | LOW | YES (from TS-2 extraction) | **P1 -- With TS-4** |
+| DF-2: Grant Narratives | HIGH | LOW | MEDIUM | YES (from data) | **P1 -- After TS-4** |
+| DF-5: Peer Context | MEDIUM | LOW | LOW-MED | YES (derived from 592 Tribes) | **P1 -- After TS-3** |
+| TS-6: Website Display | MEDIUM | MEDIUM | MEDIUM-HIGH | YES (pre-computed) | **P2 -- After reports** |
+| DF-6: Web Visualization | LOW-MED | MEDIUM | MEDIUM-HIGH | YES (pre-computed) | **P2 -- After TS-6** |
+| DF-1: NOAA Projections | HIGH | HIGH | HIGH | MAYBE (bulk download TBD) | **P3 -- v1.5 candidate** |
+| DF-3: Trend Indicators | MEDIUM | MEDIUM | MEDIUM | PARTIAL (historical yes, projected no) | **P3 -- After DF-1** |
+| DF-4: BRIC Sub-scores | LOW-MED | MEDIUM | MEDIUM | UNKNOWN (verify in NRI CSV) | **P3 -- Verify first** |
 
 ---
 
-## Federal API Pagination Reference
+## Tribal Advocacy Use Case Mapping
 
-### Federal Register API
+### Grant Applications
 
-| Parameter | Value | Notes |
-|-----------|-------|-------|
-| Endpoint | `GET /documents.json` | No auth required |
-| Pagination param | `page` (1-indexed) | Default: 1 |
-| Page size param | `per_page` | Max: 50 (current setting) |
-| Response metadata | `total_pages`, `count` | In root response |
-| Hard ceiling | 2,000 results | Use date range filters for larger sets |
-| Rate limit | None documented | Courtesy delay: 0.5s between pages |
+**Data points that directly support grant writing (features in parentheses):**
+- Total Expected Annual Loss in dollars (TS-2)
+- EAL broken down by buildings/population/agriculture -- targets grant program type (DF-7)
+- Top hazards with risk scores, ratings, and dollar impact (existing + TS-2 enrichment)
+- Social vulnerability percentile with theme-level breakdown (TS-1)
+- Composite vulnerability score with methodology citation to FEMA NRI (TS-3)
+- Federal data provenance citations formatted for appendices (TS-5)
+- Pre-written vulnerability narrative paragraph ready for insertion (DF-2)
+- Comparative context: "92nd percentile among Pacific NW Tribes" (DF-5)
+- Future: Climate projections for 2040/2060 planning horizons (DF-1, v1.5)
 
-### Grants.gov API (Simpler)
+### Congressional Testimony
 
-| Parameter | Value | Notes |
-|-----------|-------|-------|
-| Endpoint | `POST /api/search2` | No auth required |
-| Pagination param | `page_offset` (1-indexed) inside `pagination` object | |
-| Page size param | `page_size` | Max: 100, range: 1-100 |
-| Response metadata | `pagination_info.total_pages`, `pagination_info.total_records` | |
-| Hard ceiling | 10,000 results | Add filters to narrow |
-| Rate limit | None documented | Courtesy delay: 0.3s between pages |
+**Data points that support persuasive testimony:**
+- Overall vulnerability rating with plain-language explanation (TS-3)
+- Specific hazard trends with directional indicators (DF-3)
+- Future projections: "by 2060, extreme heat days projected to increase Y%" (DF-1, v1.5)
+- Dollar-denominated risk: "$X million in expected annual losses" (TS-2)
+- Social vulnerability factors: "X% of our community below poverty" (TS-1)
+- Peer comparison: "more vulnerable than X% of Tribes in our state" (DF-5)
+- EAL by consequence: "most of our risk is to agricultural systems" (DF-7)
 
-### Congress.gov API
+### Resilience Planning
 
-| Parameter | Value | Notes |
-|-----------|-------|-------|
-| Endpoint | `GET /bill/{congress}` | API key required |
-| Pagination param | `offset` (0-based) | Default: 0 |
-| Page size param | `limit` | Max: 250 (currently using 50) |
-| Response metadata | `pagination.count`, `pagination.next` | Follow `next` URL |
-| Hard ceiling | None documented | All results accessible |
-| Rate limit | 5,000 requests/hour | Generous for batch operations |
-
-### USASpending API
-
-| Parameter | Value | Notes |
-|-----------|-------|-------|
-| Endpoint | `POST /api/v2/search/spending_by_award/` | No auth required |
-| Pagination param | `page` (1-indexed) | |
-| Page size param | `limit` | |
-| Response metadata | `page_metadata.hasNext`, `page_metadata.page`, `page_metadata.total` | |
-| Existing pagination | YES (awards.py already paginates) | Verify only |
+**Data points that support internal planning:**
+- All 18 hazard types ranked by risk score (existing + TS-2 enrichment)
+- EAL breakdown showing infrastructure vs population vs agriculture risk (DF-7)
+- SVI themes identifying most vulnerable population segments (TS-1)
+- Community resilience sub-indicators showing capacity gaps (DF-4, v1.5)
+- Climate projections for 20/40/60 year planning horizons (DF-1, v1.5)
+- Trend indicators showing which hazards are worsening (DF-3)
 
 ---
 
-## Congress.gov Bill Detail Data Reference
+## Implementation Patterns (from existing codebase)
 
-### Available Sub-Endpoints
+The existing hazard profiling pipeline (`src/packets/hazards.py`, `scripts/populate_hazards.py`) establishes patterns that new vulnerability features should follow:
 
-| Sub-Endpoint | URL Pattern | Key Fields | TCR Value |
-|--------------|-------------|------------|-----------|
-| Actions | `/bill/{c}/{type}/{num}/actions` | actionDate, text, type, sourceSystem | Track legislative progress |
-| Cosponsors | `/bill/{c}/{type}/{num}/cosponsors` | count, bioguideId, fullName, party, state | Identify Tribal champions |
-| Subjects | `/bill/{c}/{type}/{num}/subjects` | policyArea, legislativeSubjects | Improve relevance scoring |
-| Summaries | `/bill/{c}/{type}/{num}/summaries` | text, actionDate, versionCode | Richer briefing content |
-| Text | `/bill/{c}/{type}/{num}/text` | date, formats, type | Full text analysis (optional) |
-| Titles | `/bill/{c}/{type}/{num}/titles` | title, titleType | Better display names |
-| Committees | `/bill/{c}/{type}/{num}/committees` | name, chamber, activities | Track committee referrals |
-| Related Bills | `/bill/{c}/{type}/{num}/relatedbills` | title, number, type, relationship | Cross-reference bills |
-
-### Recommended Enrichment Priority
-
-1. **Cosponsors** (highest value: identifies congressional champions)
-2. **Subjects** (improves relevance scoring accuracy)
-3. **Summaries** (enriches briefing content)
-4. **Actions** (tracks legislative progress)
-5. Committees (contextual value)
-6. Related Bills (cross-reference value)
-7. Titles (display improvement)
-8. Text (full text is large; defer unless needed for keyword analysis)
-
----
-
-## WCAG 2.1 AA Compliance Checklist (Relevant Criteria)
-
-### Current Site Assessment
-
-| Category | Criterion | Status | Issue | Fix |
-|----------|-----------|--------|-------|-----|
-| Perceivable | 1.3.1 Info & Relationships | PARTIAL | Missing skip navigation link | Add `<a class="skip-link" href="#tribe-search">Skip to search</a>` |
-| Perceivable | 1.4.3 Contrast | UNKNOWN | Muted text (#6c757d on #f8f9fa) = 4.6:1 (passes AA) but verify all states | Audit all color combinations |
-| Perceivable | 1.4.11 Non-text Contrast | PARTIAL | Button focus outlines use rgba(.3 opacity) | Verify 3:1 contrast for UI components |
-| Operable | 2.1.1 Keyboard | PARTIAL | Awesomplete has keyboard support; verify "Download Both" sequential downloads | Test full keyboard flow |
-| Operable | 2.4.1 Bypass Blocks | FAIL | No skip navigation link | Add skip link |
-| Operable | 2.4.3 Focus Order | UNKNOWN | Need to verify tab order when card appears | Test tab sequence |
-| Operable | 2.4.7 Focus Visible | PARTIAL | Has outline styles in CSS, but need to verify all elements | Audit all interactive elements |
-| Robust | 4.1.2 Name/Role/Value | PARTIAL | Combobox role present, but aria-expanded not updated dynamically | Fix JS to toggle aria-expanded |
-
-### Required Fixes (Minimum for Production)
-
-1. Add skip navigation link (visible on focus)
-2. Verify all color contrast ratios meet 4.5:1 (text) and 3:1 (UI components)
-3. Ensure aria-expanded updates when Awesomplete dropdown opens/closes
-4. Verify keyboard-only navigation works for: search -> select -> download
-5. Ensure Escape key closes card and returns focus to search input (partially implemented)
-6. Add aria-label to regional document section cards
-
----
-
-## DOCX Visual QA Automation Reference
-
-### Existing Quality Checks (quality_review.py)
-
-| Check | Type | Severity | Status |
-|-------|------|----------|--------|
-| Audience leakage (19 patterns) | Text | Critical | IMPLEMENTED |
-| Air gap violations (12 patterns) | Text | Critical | IMPLEMENTED |
-| Placeholder detection (6 patterns) | Text | Warning | IMPLEMENTED |
-| Confidential marking | Structural | Warning/Critical | IMPLEMENTED |
-| Minimum paragraph count (20+) | Structural | Warning | IMPLEMENTED |
-| Executive summary presence | Text | Warning | IMPLEMENTED |
-| Page count estimation | Structural | Warning | IMPLEMENTED |
-
-### Recommended Additional Checks (python-docx native)
-
-| Check | Implementation | Severity | Complexity |
-|-------|---------------|----------|------------|
-| Heading hierarchy valid (H1->H2->H3) | Iterate paragraph.style.name, verify no H3 before H2 | Warning | Low |
-| All tables have header row | Check table.rows[0] bold/style | Warning | Low |
-| Font consistency (all body text same font) | Check run.font.name across paragraphs | Warning | Low |
-| No empty sections (heading with no content before next heading) | Detect consecutive headings | Warning | Low |
-| Table column count matches expected | Count table.columns per doc type | Warning | Medium |
-| Style names in expected set | Verify paragraph.style.name against whitelist | Warning | Low |
-| No orphaned runs (runs with no text) | Filter runs where text.strip() == "" | Info | Low |
-
-### Tools Evaluated and Rejected
-
-| Tool | Why Rejected |
-|------|-------------|
-| Aspose.Words for Python | Commercial license; overkill for structural checks |
-| docx-compare (GitHub) | Designed for comparing two documents, not validating one against rules |
-| LibreOffice CLI + screenshot comparison | Requires LibreOffice install; too complex for CI/CD pipeline |
-| validocx (GitHub) | Validates style XML, not content structure |
-
-**Recommendation:** Extend existing `DocumentQualityReviewer` with python-docx structural checks. No new dependencies needed. The existing python-docx library already provides access to paragraph styles, table dimensions, run fonts, and document structure. All new checks should be `warning` severity (not `critical`), since formatting issues do not affect content accuracy.
-
----
-
-## SquareSpace Iframe Embedding Reference
-
-### Requirements
-
-| Requirement | Status | Notes |
-|-------------|--------|-------|
-| SquareSpace Business plan or higher | REQUIRED | iframes disabled on Personal plans |
-| title attribute on iframe | PRESENT | In existing embed comment, WCAG compliant |
-| Responsive width | PRESENT | width="100%" in embed code |
-| Fixed height | PRESENT | height="700" -- adequate for search + card + regions |
-| Cross-origin downloads | NEEDS TESTING | DOCX download attribute may not work cross-origin |
-| loading="lazy" | PRESENT | Defers iframe load until visible |
-
-### Dynamic Height Resizing (Optional Enhancement)
-
-If fixed height (700px) is insufficient (e.g., regional documents section extends below fold), implement postMessage-based resizing:
-
-**In embedded page (index.html):**
-```javascript
-// Send height to parent on content change
-function notifyHeight() {
-  var height = document.body.scrollHeight;
-  window.parent.postMessage({ type: 'resize', height: height }, '*');
-}
-// Call after card show, region render
-```
-
-**In SquareSpace code injection (or Code Block):**
-```javascript
-window.addEventListener('message', function(e) {
-  if (e.data && e.data.type === 'resize') {
-    document.querySelector('iframe').style.height = e.data.height + 'px';
-  }
-});
-```
-
-**Recommendation:** Start with fixed height (700px). Add postMessage resizing only if users report content being cut off. The current UI with search + card + 8 regions fits within 700px on desktop.
-
----
-
-## Confidence Scoring Framework Reference
-
-### Intelligence Community Standard (Adapted for TCR)
-
-| Level | Label | Criteria for TCR | Display |
-|-------|-------|-----------------|---------|
-| HIGH | High Confidence | 3+ data sources present (awards + hazards + congressional); data < 30 days old; no placeholder warnings | Green indicator |
-| MODERATE | Moderate Confidence | 2 data sources present; data < 60 days old; some placeholder warnings | Yellow indicator |
-| LOW | Low Confidence | 1 or fewer data sources; data > 60 days old; significant placeholders | Red indicator or "Limited Data" label |
-
-### Per-Section Scoring
-
-| Document Section | Confidence Inputs | Weight |
-|-----------------|-------------------|--------|
-| Funding Landscape | USASpending award count, CFDA match count | 30% |
-| Hazard Profile | NRI data completeness, USFS override availability | 25% |
-| Legislative Outlook | Congress.gov bill count, cosponsor data richness | 20% |
-| Economic Impact | Award total, multiplier confidence | 15% |
-| Strategic Recommendations | Composite of all above | 10% |
-
-### Implementation Approach
-
-```python
-def compute_confidence(tribe_context: dict) -> str:
-    """Compute confidence level for a Tribe's advocacy packet."""
-    score = 0
-    # Source count
-    if tribe_context.get("awards"): score += 30
-    if tribe_context.get("hazards"): score += 25
-    if tribe_context.get("congressional"): score += 20
-    if tribe_context.get("economic_impact"): score += 15
-    # Freshness
-    if data_age_days < 30: score += 10
-    elif data_age_days < 60: score += 5
-
-    if score >= 80: return "HIGH"
-    elif score >= 50: return "MODERATE"
-    else: return "LOW"
-```
+| Pattern | Existing Example | New Feature Application |
+|---------|-----------------|------------------------|
+| Download script | `scripts/download_nri_data.py` | `scripts/download_svi_data.py`, `scripts/download_noaa_data.py` |
+| Population script | `scripts/populate_hazards.py` | `scripts/populate_svi.py`, `scripts/populate_climate_projections.py` |
+| Builder class | `HazardProfileBuilder` in `hazards.py` | `SVIProfileBuilder` in `svi.py`, `ClimateProjectionBuilder` in `climate.py` |
+| Area-weighted aggregation | `_build_tribe_nri_profile()` with `norm_weights` | Same crosswalk, same weight normalization, same aggregation |
+| Per-Tribe JSON cache | `data/hazard_profiles/{tribe_id}.json` | `data/svi_profiles/{tribe_id}.json`, `data/climate_profiles/{tribe_id}.json` |
+| Coverage report | `outputs/hazard_coverage_report.json` | `outputs/svi_coverage_report.json` |
+| Score-to-rating conversion | `score_to_rating()` quintile thresholds | Reuse for composite vulnerability rating |
+| Atomic file writes | `tempfile.mkstemp()` + `os.replace()` | Same pattern in all new cache writers |
+| Path management | `src/paths.py` constants | Add SVI_DIR, SVI_PROFILES_DIR, CLIMATE_DIR, etc. |
+| Config integration | `config["packets"]["hazards"]` | `config["packets"]["svi"]`, `config["packets"]["climate"]` |
 
 ---
 
 ## Sources
 
-### HIGH Confidence (Official Documentation)
+### HIGH Confidence (Official Documentation + Verified Code)
 
-- [Federal Register API Documentation](https://www.federalregister.gov/developers/documentation/api/v1) -- pagination parameters, field selection, rate limits
-- [Congress.gov API Bill Endpoint](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/BillEndpoint.md) -- sub-endpoints, data fields, pagination structure
-- [Congress.gov API GitHub Repository](https://github.com/LibraryOfCongress/api.congress.gov) -- v3 API documentation, rate limits
-- [Grants.gov Simpler API - Search Opportunities](https://wiki.simpler.grants.gov/product/api/search-opportunities) -- pagination parameters, 10K ceiling, response structure
-- [ADA Title II Web Accessibility Requirements](https://www.ada.gov/resources/2024-03-08-web-rule/) -- WCAG 2.1 AA requirement, April 2026 deadline
-- [Squarespace Embed Blocks Help](https://support.squarespace.com/hc/en-us/articles/206543617-Embed-blocks) -- iframe support, plan requirements
-- [WCAG 2.1 AA Focus Management](https://www.a11y-collective.com/blog/modal-accessibility/) -- dialog patterns, focus trap, keyboard navigation
-- [python-docx Styles Documentation](https://python-docx.readthedocs.io/en/latest/user/styles-using.html) -- style objects, heading validation
+- FEMA National Risk Index: https://www.fema.gov/flood-maps/products-tools/national-risk-index
+- FEMA NRI Data v1.20 (December 2025): https://www.fema.gov/about/openfema/data-sets/national-risk-index-data
+- CDC/ATSDR SVI main page: https://www.atsdr.cdc.gov/place-health/php/svi/index.html
+- CDC SVI Data Download: https://atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html
+- CDC SVI 2022 Documentation PDF: https://www.atsdr.cdc.gov/place-health/media/pdfs/2024/10/SVI2022Documentation.pdf
+- Existing `src/packets/hazards.py` -- verified NRI field patterns and aggregation methodology from production code
+- Existing `scripts/populate_hazards.py` -- verified pipeline orchestration pattern
+- NOAA CDO API documentation: https://www.ncdc.noaa.gov/cdo-web/webservices/v2
+- NOAA nClimGrid county data: https://www.ncei.noaa.gov/news/noaa-offers-climate-data-counties
 
-### MEDIUM Confidence (Verified Community Sources)
+### MEDIUM Confidence (WebSearch Verified with Official Source)
 
-- [CIS Words of Estimative Probability](https://www.cisecurity.org/ms-isac/services/words-of-estimative-probability-analytic-confidences-and-structured-analytic-techniques) -- confidence level definitions, analytic standards
-- [Analytic Confidence - Wikipedia](https://en.wikipedia.org/wiki/Analytic_confidence) -- HIGH/MODERATE/LOW framework, ICD 203 reference
-- [OpenCTI Reliability and Confidence](https://docs.opencti.io/latest/usage/reliability-confidence/) -- open-source confidence scoring taxonomy
-- [MISP Estimative Language](https://github.com/MISP/best-practices-in-threat-intelligence/blob/master/best-practices/expressing-confidence.adoc) -- standardized confidence tags
-- [GitHub Pages Performance (Fastly CDN)](https://www.fastly.com/customers/github) -- CDN infrastructure, global distribution
-- [SquareSpace iframe Responsive Resize](https://forum.squarespace.com/topic/191637-resizing-iframe-in-squarespace-to-match-window-height-dynamically/) -- postMessage pattern for dynamic height
+- NOAA Climate Explorer: https://crt-climate-explorer.nemac.org/about/
+- LOCA2/CMIP6 downscaled projections: https://loca.ucsd.edu/
+- USGS LOCA2 county-level data: https://www.usgs.gov/data/cmip6-loca2-temperature-and-precipitation-variables-resilient-roadway-design-1950-2100
+- U.S. Climate Resilience Toolkit vulnerability framework: https://toolkit.climate.gov/assess-vulnerability-and-risk
+- Tribal Climate Adaptation Guidebook: https://tribalclimateadaptationguidebook.org/step-3-assess-vulnerability/
+- UW Climate Impacts Group Tribal resources: https://cig.uw.edu/resources/tribal-vulnerability-assessment-resources/
+- FEMA NRI Community Resilience (BRIC): https://hazards.fema.gov/nri/community-resilience
 
-### LOW Confidence (Single Source / Unverified)
+### LOW Confidence (WebSearch Only, Needs Implementation-Time Validation)
 
-- DOCX visual regression testing landscape -- limited tooling found; recommendation to extend existing python-docx checks is based on capability assessment rather than established best practice
-- Download analytics for GitHub Pages -- client-side only; no server-side analytics possible; approach based on platform limitations rather than proven pattern
-
-### Direct Code Verification (Highest Confidence)
-
-- `F:/tcr-policy-scanner/src/scrapers/congress_gov.py` -- current pagination: single page (limit=50), no offset loop
-- `F:/tcr-policy-scanner/src/scrapers/federal_register.py` -- current pagination: single page (per_page=50), no page parameter
-- `F:/tcr-policy-scanner/src/scrapers/grants_gov.py` -- current pagination: single page (rows=25/50), no page_offset
-- `F:/tcr-policy-scanner/src/packets/quality_review.py` -- 7 existing checks, extensible architecture
-- `F:/tcr-policy-scanner/docs/web/index.html` -- current HTML structure, ARIA attributes, embed comment
-- `F:/tcr-policy-scanner/docs/web/js/app.js` -- current JS functionality, Awesomplete integration
-- `F:/tcr-policy-scanner/docs/web/css/style.css` -- current CSS, color values, responsive design
+- SVI 2022 exact 16-variable field names -- reconstructed from multiple documentation sources; Theme 3 changed from prior SVI years; must verify against actual CSV column headers during download
+- BRIC sub-category score availability in NRI CSV -- not confirmed in any documentation; may require separate USC HVRI data download
+- NOAA Climate Explorer programmatic bulk download -- web interface confirmed, but county-level CSV bulk export for all 3,107 counties needs validation
+- LOCA2 county-level CSV pre-aggregation download workflow -- confirmed in USGS ScienceBase catalog but actual download process untested
 
 ---
 
-*Research completed: 2026-02-12*
-*Mode: Ecosystem (Feature Landscape)*
+*Research completed: 2026-02-17*
+*Mode: Ecosystem (Feature Landscape -- Climate Vulnerability Intelligence)*
 *Ready for requirements definition: YES*

@@ -1,391 +1,381 @@
-# Project Research Summary
+# Research Summary: TCR Policy Scanner v1.4 — Climate Vulnerability Intelligence
 
-**Project:** TCR Policy Scanner v1.3 "Production Launch"
-**Domain:** Tribal Climate Resilience policy intelligence pipeline — production readiness
-**Researched:** 2026-02-12
-**Confidence:** HIGH
+**Synthesized:** 2026-02-17
+**Synthesizer:** gsd-research-synthesizer
+**Sources:** STACK.md, FEATURES.md, ARCHITECTURE.md, PITFALLS.md
+**Overall confidence:** MEDIUM-HIGH
+**Ready for roadmap:** YES
+
+---
 
 ## Executive Summary
 
-The TCR Policy Scanner is a Tribal advocacy document generation system that transforms federal climate policy intelligence into customized DOCX packets for 592 Federally Recognized Tribal Nations. Version 1.3 represents the production launch phase — transitioning from a functional prototype to a production-ready distribution system serving 100-200 concurrent users during critical federal policy windows.
+TCR Policy Scanner v1.4 adds climate vulnerability intelligence to a mature, battle-tested pipeline that already produces briefing packets for 592 federally recognized Tribal Nations. The milestone integrates three new federal data sources — CDC/ATSDR Social Vulnerability Index 2022 (SVI), expanded FEMA NRI fields (EAL breakdowns, national percentiles), and USGS CMIP6-LOCA2 county-level climate projections — into the existing pre-cache architecture without changing any fundamental patterns. The result: per-Tribe vulnerability profiles that transform existing hazard data from "what hazards exist" into "how vulnerable is this community and how will that change." A new standalone vulnerability document (Doc E) joins Doc A–D, and vulnerability data surfaces on the website and within existing documents.
 
-The research reveals three major architectural gaps that must be closed for production readiness: **data completeness** (3 of 4 scrapers silently truncate results by not paginating API responses), **distribution infrastructure** (a React/Vite website that currently downloads fake text blobs instead of real DOCX files), and **trustworthiness** (no confidence scoring or quality validation for 992 generated documents). The existing Python pipeline (743 tests passing, v1.0-v1.2 milestones complete) is production-grade. The new website frontend drafted in `.planning/website/` has 47 known issues spanning P0 (fake downloads, mock data for 46 Tribes vs 592) to P3 (typography). The critical path is: fix scraper pagination for complete data → fix website to serve real DOCX → validate document quality → harden for production load.
+The technical approach is conservative by design. Two new libraries (xarray, netCDF4) handle the only genuinely new format — NetCDF climate projection files. Everything else — CSV parsing, area-weighted aggregation via the existing county crosswalk, JSON caching, Pydantic models, DOCX rendering — reuses proven infrastructure from Phases 12–16. The critical path is: expand NRI extraction -> integrate SVI -> build composite vulnerability profiles -> render in documents -> update website. NOAA climate projections (LOCA2) are architecturally sound but carry the highest technical risk due to NetCDF complexity and Alaska coverage gaps; they should be treated as a conditional component of Phase 19 that may slip to v1.5 if the NetCDF validation reveals unexpected complexity.
 
-**Key risks:** (1) SquareSpace iframe sandbox attributes may block downloads from embedded content — this is the deployment target and must be tested first; (2) Indigenous data sovereignty violations via third-party tracking scripts (Google Analytics, Google Fonts CDN) would destroy trust with Tribal communities; (3) The system ships TODAY for peak usage Feb 12-13, 2026 — time pressure creates temptation to skip critical accessibility (WCAG 2.1 AA) and quality validation steps. Mitigation: ruthlessly prioritize P0 fixes (real downloads, 592-Tribe coverage, SquareSpace iframe test), defer all non-blocking features, and add automated quality gates (DOCX structural validation, client-side accessibility audit, zero third-party request checks).
+The most important non-technical constraints are sovereignty-first framing and the audience air gap. Vulnerability data inherently risks deficit framing of Tribal Nations — presenting communities as "at-risk" rather than as sovereign governments facing disproportionate hazard exposure. Every renderer must use approved framing vocabulary before any code ships. The existing Doc A/B air gap must extend to vulnerability sections: SVI theme decompositions (poverty rate, disability rate) belong only in internal documents (Doc A/C), not congressional documents (Doc B/D). These are not polish concerns — they are architectural requirements that must be decided in Phase 19 and enforced through existing audience-filtering tests.
+
+---
 
 ## Key Findings
 
-### Recommended Stack
+### Stack (from STACK.md)
 
-**No new production Python dependencies needed.** All data reliability fixes (scraper pagination, bill detail fetching, confidence scoring) are pure logic changes using existing libraries (aiohttp, python-docx, pydantic). The scraper pagination pattern already exists in `usaspending.py` and should be copied to the three unpaginated scrapers (Federal Register, Grants.gov, Congress.gov).
+**Two new libraries only:**
+- `xarray >= 2025.12.0` — reads USGS LOCA2 county NetCDF climate files
+- `netCDF4 >= 1.7.3` — HDF5 backend required by xarray
 
-**Website stack: React 18 + Vite 6 + Tailwind v4 (DO NOT upgrade to React 19 or Vite 7).** React 19's Server Components provide zero value for a static GitHub Pages SPA and risk breaking shadcn/Radix components. Vite 7's Rolldown bundler introduces breaking plugin changes. The draft website is on these versions and they are stable/supported. Add Fuse.js 7.1.0 for 592-Tribe fuzzy search autocomplete (lightweight at 7KB gzipped). Remove 30+ unused dependencies (embla-carousel, recharts, react-day-picker, etc.) that bloat the bundle.
+Both are build-time only (parallel to existing geopandas pattern). The main pipeline, DocxEngine, and test suite never import them. Both have pre-built Windows wheels and are fully Python 3.12 compatible. Version compatibility is clean: xarray requires pandas >= 2.2 and numpy >= 1.26, both already satisfied via geopandas.
 
-**DOCX visual QA: LibreOffice headless + Playwright + Pillow (dev-only dependencies).** This three-stage pipeline (DOCX → PDF via LibreOffice CLI → screenshots via Playwright → pixel-diff via Pillow) validates visual rendering quality across 992 documents. Structural validation (heading hierarchy, table presence, font consistency) uses the existing `python-docx` library with no new dependencies — extend the existing `DocumentQualityReviewer` class.
+**Three data sources, one pattern:**
 
-**Core technologies:**
-- **Python 3.12** (existing): Runtime for scrapers, packet generation, confidence scoring — no changes
-- **aiohttp** (existing): Async HTTP client, BaseScraper pattern handles retry + circuit breaker — pagination loops call `_request_with_retry()` naturally
-- **python-docx** (existing): DOCX generation + structural validation — existing StyleManager/HotSheetRenderer stay unchanged
-- **React 18.3.1** (stay on v18): Static SPA for document distribution — DO NOT upgrade to React 19 (Server Components not needed for static GitHub Pages deployment)
-- **Vite 6.x** (stay on v6): Build tool — DO NOT upgrade to Vite 7 (Rolldown bundler breaking changes)
-- **Fuse.js 7.1.0** (NEW): Client-side fuzzy search for 592-Tribe autocomplete — purpose-built for typo tolerance, 592 items loads in <1ms
-- **Playwright 1.58.0** (NEW, dev-only): DOCX visual QA screenshots via headless Chromium
-- **LibreOffice 24.2+** (system dependency, CI-only): DOCX-to-PDF conversion for visual QA
-- **Pillow 11.0.0** (NEW, dev-only): Image comparison for visual regression detection
+| Source | Format | Download | Key Field | Status |
+|--------|--------|----------|-----------|--------|
+| USGS CMIP6-LOCA2 | NetCDF (~2.17 GB) | HTTPS from ScienceBase (DOI: 10.5066/P1N9IRWC) | `GEOID` (county FIPS) | Not integrated — highest risk |
+| CDC/ATSDR SVI 2022 | CSV (~15 MB) | Manual download from svi.cdc.gov | `FIPS` (county) | Not integrated — medium risk |
+| FEMA NRI expanded | Same CSV already in data/nri/ | None (already downloaded) | `STCOFIPS` | Partial — lowest risk |
 
-### Expected Features
+All three join via the existing `tribal_county_area_weights.json` crosswalk. County FIPS is the universal join key across every source.
 
-**Must have (table stakes) — these are P0 blockers for production:**
+**Do NOT integrate:**
+- FEMA Future Risk Index (removed from FEMA website February 2025, archived by third parties only — politically uncertain)
+- NOAA SLR projections (not county-level; use NRI CFLD fields as coastal flooding proxy unless a differentiator is specifically requested)
+- Raw LOCA2 gridded 6km data (~100+ GB; county-level summaries already exist)
 
-1. **Real DOCX downloads** — Current system generates fake text blobs (5-line plaintext stubs). The Python `DocxEngine` produces real 150KB advocacy packets, but the React frontend download handler creates in-browser Blobs instead of linking to GitHub Pages-hosted files. This is the single most trust-destroying behavior.
+**Critical version note:** FEMA NRI v1.20 (December 2025) migrates toward RAPT, Connecticut replaced county FIPS with 8 planning regions, and social vulnerability methodology changed at v1.19 to use CDC SVI. Both version-related changes must be handled in Phase 19.
 
-2. **Full 592-Tribe coverage** — Currently serving 46 hardcoded Tribes in `mockData.ts` vs 592 in the actual `tribal_registry.json`. 546 of 592 Tribal Nations find nothing when they search.
+---
 
-3. **Scraper pagination** — Federal Register, Grants.gov, and Congress.gov scrapers fetch page 1 only (25-50 results) and never check for `next_page_url` or pagination tokens. Silent data loss when results exceed page size. USASpending already paginates correctly; copy its pattern.
+### Features (from FEATURES.md)
 
-4. **WCAG 2.1 AA compliance** — The autocomplete widget has no ARIA roles (`role="combobox"`, `aria-expanded`, `aria-activedescendant`), no keyboard navigation through suggestions, no live region announcements, and potential color contrast failures. Keyboard-only and screen reader users cannot complete the search → download flow.
+**Table stakes — must ship in v1.4:**
 
-5. **SquareSpace iframe embedding** — The primary deployment target. Requires `sandbox="allow-scripts allow-same-origin allow-downloads allow-popups"` attribute on the iframe Code Block. Without `allow-downloads`, Chrome 83+ silently blocks all download attempts. This MUST be tested in actual SquareSpace environment before declaring "ready."
+| ID | Feature | Priority | Complexity |
+|----|---------|----------|------------|
+| TS-2 | Expanded NRI risk metrics (EAL by consequence type, national percentiles) | P0 — do first | LOW |
+| TS-1 | CDC/ATSDR SVI integration (4-theme social vulnerability) | P0 — do first | MEDIUM |
+| TS-3 | Composite vulnerability score (0–1, 5 rating tiers, FEMA methodology) | P0 — after TS-1/2 | MEDIUM |
+| TS-5 | Data provenance and citation metadata in all outputs | P0 — thread through | LOW |
+| TS-4 | Vulnerability section in Doc A and Doc B | P1 — after data pipeline | MEDIUM |
+| TS-6 | Vulnerability display on website (tribe card badges) | P2 — after documents | MEDIUM-HIGH |
 
-6. **Performance for 100-200 concurrent users** — GitHub Pages serves static files via Fastly CDN. 992 DOCX files at ~100KB each = ~100MB total, well within 100GB/month bandwidth limits. Critical: Vite `base` path must be set to `/tcr-policy-scanner/` for GitHub Pages repository-level hosting, or all assets return 404 (blank white page).
+**Differentiators — high value, ship in v1.4 if feasible:**
 
-**Should have (differentiators) — these elevate trust and professionalism:**
+| ID | Feature | Priority | Complexity |
+|----|---------|----------|------------|
+| DF-7 | EAL breakdown by consequence type in DOCX (buildings/population/agriculture) | P1 — with TS-4, data from TS-2 | LOW |
+| DF-2 | Grant-ready vulnerability narrative paragraphs | P1 — after TS-4 | MEDIUM |
+| DF-5 | Comparative peer context (percentile among 592 Tribes, ecoregion group) | P1 — after TS-3 | LOW-MEDIUM |
+| DF-6 | Web visualization (Chart.js radar + SVI bar charts) | P2 — after TS-6 | MEDIUM-HIGH |
+| DF-1 | NOAA climate projections (LOCA2 mid-century vs baseline) | P3 — conditional, may slip to v1.5 | HIGH |
 
-1. **Confidence scoring** — Intelligence products without confidence indicators are opinion, not analysis. Each DOCX section should show "Data Confidence: HIGH/MEDIUM/LOW" based on: source diversity (how many independent APIs contributed), temporal currency (data freshness < 30 days), completeness (awards + hazards + congressional data all present). Use qualitative labels NOT numeric scores (research shows numeric scores create false precision and overconfidence bias).
+**Explicitly defer to v1.5+:**
+- DF-3: Hazard trend indicators (needs DF-1 for forward trajectory; historical-only version is partial)
+- DF-4: BRIC resilience sub-indicators (verify if NRI CSV has sub-scores — LOW confidence item)
 
-2. **DOCX visual QA automation** — 992 documents cannot be manually reviewed. Existing `DocumentQualityReviewer` checks text content (audience leakage, air gap violations, placeholders) but not visual formatting (heading hierarchy, table structure, font consistency). Add structural checks using `python-docx` object model (no new dependencies). For visual regression, use LibreOffice headless + Playwright to screenshot sample pages.
+**Anti-features confirmed — do not build:**
+- Real-time climate modeling or simulation (computationally intractable for a policy tool)
+- Tribal-specific data collection or surveys (T0 classification boundary)
+- Health impact predictions (requires epidemiological expertise not present)
+- Census tract granularity in documents (aggregate to Tribal level only via crosswalk)
+- Interactive GIS/map interface (incompatible with static GitHub Pages deployment)
+- Proprietary vulnerability scoring methodology (federal credibility requires FEMA/CDC methodology citation)
+- Climate adaptation recommendations (requires local knowledge outside scope)
 
-3. **Freshness indicators** — Display "Data as of: [date]" in website footer and DOCX headers. The existing `build_web_index.py` already includes `generated_at` timestamp in `tribes.json`. This builds trust by showing when intelligence was last refreshed.
+**Critical path (feature dependency chain):**
+TS-2 (Expanded NRI) + TS-1 (CDC SVI) -> TS-3 (Composite Score) -> TS-4 (DOCX) -> TS-6 (Website) -> DF-6 (Visualization)
+DF-1 (NOAA Projections) is an independent track that enriches TS-3 and DF-3 but is not required for any table stakes feature.
 
-4. **Congress.gov bill detail enrichment** — Current scraper fetches bill listings but not detail sub-endpoints (cosponsors, actions, summaries, subjects). For policy intelligence, users need to know who supports a bill (cosponsors), whether it is moving (actions), and what it does (CRS summaries). Each bill has sub-endpoints at `/bill/{congress}/{type}/{number}/{sub}`. Fetch 3 highest-value endpoints: actions, cosponsors, summaries.
+---
 
-**Defer (v2+) — not essential for Feb 12-13 peak usage:**
+### Architecture (from ARCHITECTURE.md)
 
-- Action Center landing page (pre-written email templates, elected official directories)
-- Download analytics beyond GitHub Pages built-in traffic data
-- PDF conversion of DOCX files (congressional offices use Word, not PDF)
-- Multi-language translation (requires professional translation of regulatory terminology)
-- Full-text search across 992 documents (Tribe name autocomplete is sufficient; users come looking for their Nation)
+**Core pattern: reuse everything.** The existing `tribal_county_area_weights.json` crosswalk serves all new data sources. The existing `_load_tribe_cache()` method in the orchestrator handles vulnerability cache loading identically to hazards and awards. The existing `HazardProfileBuilder` pattern clones directly to `VulnerabilityProfileBuilder`. The existing `DocumentTypeConfig` frozen dataclass extends cleanly with one new boolean field.
 
-### Architecture Approach
+**New files to create (8):**
+- `scripts/download_climate_projections.py` — LOCA2 NetCDF download and extraction to county JSON
+- `scripts/download_svi_data.py` — SVI CSV download (or documented manual procedure)
+- `scripts/populate_vulnerability.py` — orchestrate all sources into 592 vulnerability_profiles/
+- `src/packets/vulnerability.py` — VulnerabilityProfileBuilder (mirrors HazardProfileBuilder)
+- `src/schemas/vulnerability.py` — Pydantic models for vulnerability profile (DEBT-01 mitigation: schema before implementation)
+- `src/packets/docx_vulnerability_sections.py` — 4 vulnerability section renderers
+- `docs/web/js/vulnerability.js` — website vulnerability card rendering
+- DOC_E definition in `src/packets/doc_types.py`
 
-The system has three planes: **Pipeline Plane** (Python async scrapers + packet generation), **Distribution Plane** (React website + GitHub Pages), and **QA Automation Plane** (new for v1.3). The critical integration point is: React website fetches `tribes.json` manifest at runtime (not build time), constructs download URLs from the `documents` object, and links to DOCX files served as static assets from `docs/web/tribes/`. The pipeline and website are decoupled — packets regenerate weekly via `generate-packets.yml`, website builds once and redeploys only when features change.
+**Files to modify (10):**
+- `src/packets/hazards.py` — expand `_load_nri_county_data()` (EAL_VALB/P/A, RISK_NPCTL, RESL_VALUE)
+- `src/paths.py` — add SVI_DIR, CLIMATE_DIR, VULNERABILITY_PROFILES_DIR, helper function
+- `src/packets/context.py` — add `vulnerability_profile: dict` field
+- `src/packets/orchestrator.py` — load vulnerability cache in `_build_context()`
+- `src/packets/docx_engine.py` — import and call vulnerability renderers
+- `src/packets/docx_sections.py` — expand hazard summary with EAL consequence breakdown
+- `src/packets/doc_types.py` — add DOC_E, add `include_vulnerability: bool = False` flag
+- `scripts/build_web_index.py` — include vulnerability summary fields in tribes.json
+- `docs/web/js/app.js` — render vulnerability data in Tribe cards
+- `docs/web/css/style.css` — vulnerability visualization styles
 
-**Data sovereignty constraint:** Zero third-party requests. No Google Analytics (behavioral data about which Tribal Nations are searching violates CARE Principles for Indigenous Data Governance). No Google Fonts CDN (self-host `League Spartan` and `Roboto` fonts). No error tracking services (Sentry, LogRocket). Enforce with CSP meta tag in `index.html`: `default-src 'self'; font-src 'self'; connect-src 'self'`. Add CI test that scans build output for third-party URLs.
+**Composite vulnerability score formula:**
 
-**Major components:**
+| Component | Source | Weight |
+|-----------|--------|--------|
+| Hazard Exposure | NRI RISK_NPCTL / 100 | 0.30 |
+| Social Vulnerability | CDC SVI RPL_THEMES (0–1) | 0.25 |
+| Climate Trajectory | Normalized LOCA2 severity index | 0.25 |
+| Adaptive Capacity Deficit | 1 - (NRI RESL_SCORE / 100) | 0.20 |
 
-1. **Scraper pagination loops** — Modify 3 scrapers (`federal_register.py`, `grants_gov.py`, `congress_gov.py`) to add pagination loops using native API mechanisms (Federal Register: `next_page_url` in response; Grants.gov: `startRecordNum` offset + `totalHits` count; Congress.gov: `offset` param + `pagination.next` URL). Safety cap at 10 pages (500-1000 results) per query to prevent infinite loops.
+Five rating tiers matching NRI methodology: Very High (≥0.80), High (≥0.60), Moderate (≥0.40), Low (≥0.20), Very Low (<0.20).
 
-2. **ConfidenceScorer** (new module) — Computes per-section confidence levels based on data completeness (award count, hazard sources), recency (cache age vs generation time), and source diversity (number of APIs that contributed). Integrates into `PacketOrchestrator._build_context()` AFTER assembling context, BEFORE DOCX generation. Stores in `context.confidence_scores` dict. Renders in DOCX via `docx_sections.py` as subtle indicators (colored sidebar or footnote).
+**Note:** If LOCA2 data is deferred to v1.5, Climate Trajectory weight (0.25) redistributes to Hazard Exposure (0.40) and Social Vulnerability (0.35). The formula degrades gracefully.
 
-3. **React website** — Replaces vanilla JS widget at `docs/web/`. Vite builds to `docs/web/` (configure `outDir`). Must NOT clobber `data/tribes.json` or `tribes/` DOCX files. Fetches `tribes.json` at runtime (`useEffect` on mount), indexes with Fuse.js for fuzzy search, constructs download URLs as relative paths: `tribes/internal/{tribe_id}.docx`. Critical: replace `mockData.ts` import with runtime fetch. Remove all Blob-based download code.
+**Key architectural decision: separate vulnerability_profiles/ directory.** Do NOT merge into hazard_profiles/. Reasons: different update cadence (SVI biannual, climate static, NRI annual); independent validation and coverage reporting; backward compatibility with 964 existing tests; schema clarity (SVI themes and climate projections are structurally different from NRI hazard arrays). Expanded NRI fields (EAL breakdowns, percentiles) DO go in existing hazard_profiles/ because they extend the same source CSV with the same area-weighting logic.
 
-4. **QA screenshot pipeline** (new script) — `scripts/qa_screenshot.py` converts DOCX → PDF via LibreOffice headless (`soffice --headless --convert-to pdf`), opens PDF in Playwright Chromium, captures full-page screenshots, generates HTML gallery for human review. Runs AFTER `generate-packets.yml` completes. Read-only consumer of packet output.
+---
 
-5. **build_web_index.py** (enhanced) — Already generates `tribes.json` manifest. Add confidence scores to output if computed during packet generation. Runs as final step in `generate-packets.yml` workflow AFTER DOCX files copied to `docs/web/tribes/`, BEFORE Pages deployment.
+### Pitfalls (from PITFALLS.md)
 
-### Critical Pitfalls
+**Critical pitfalls — recovery cost HIGH or VERY HIGH:**
 
-1. **Fake downloads destroy trust** — The current download handler generates 5-line text blobs saved as `.txt` files. A Tribal Leader sees "REPORT READY FOR DOWNLOAD," clicks the button, and receives nothing. This is the single highest priority fix. Prevention: replace Blob generation with URL-based downloads pointing to actual DOCX files on GitHub Pages (`tribes/{doc_type}/{tribe_id}.docx`). Test by opening the downloaded file in Microsoft Word — if it's a text file, the fix failed.
+| ID | Pitfall | Prevention |
+|----|---------|------------|
+| CRIT-01 | Confusing FEMA NRI SOVI with CDC SVI. As of NRI v1.19+, SOVI_SCORE already IS CDC SVI. Double-counting creates contradictory social vulnerability figures. | Verify NRI version during Phase 19. Treat CDC SVI as enrichment (theme decomposition), not a parallel index. Document the relationship explicitly. |
+| CRIT-02 | Deficit framing of Tribal vulnerability. "High vulnerability," "at-risk populations," "low resilience" undermine sovereignty-first posture and make documents unusable for advocacy. | Build `VULNERABILITY_FRAMING` constants module before writing any renderer. "Disproportionate exposure to climate hazards," not "vulnerable." Frame resilience scores as "federal measurement gaps," not deficiencies. |
+| CRIT-03 | CDC SVI tribal census tracts are UNRANKED by CDC design. Using tribal tract data produces null percentiles or methodologically invalid rankings. | Use COUNTY-level SVI only, through the existing area-weighted crosswalk. Never use the tribal tract SVI database. |
+| CRIT-04 | NRI v1.20 schema instability: RAPT migration may change download URLs; Connecticut replaced county FIPS with 8 planning regions. | Pin NRI version + SHA256 checksum; add CSV schema validation on load; add CT planning region FIPS mapping. |
 
-2. **SquareSpace iframe sandbox blocks downloads** — Chrome 83+ blocks downloads from sandboxed iframes unless `allow-downloads` is explicitly set in the `sandbox` attribute. SquareSpace's default embed blocks may not include this flag. Prevention: use SquareSpace Code Block (not Embed Block) to manually set `sandbox="allow-scripts allow-same-origin allow-downloads allow-popups"`. Fallback: use `window.open()` to escape the iframe context (requires `allow-popups`). Test in actual SquareSpace preview environment before declaring ready.
+**High-severity integration pitfalls:**
 
-3. **Three scrapers silently truncate results** — Federal Register (per_page=50, no loop), Grants.gov (rows=25, no offset), Congress.gov (limit=50, no offset) fetch page 1 only. If an API returns 150 results, items 51-150 are silently dropped. Prevention: implement pagination for each API using native mechanisms. Add safety cap (max 10 pages). Log total items collected vs API-reported total. Compare before/after counts to verify pagination worked.
+| ID | Pitfall | Prevention |
+|----|---------|------------|
+| INT-01 | Extending NRI CSV parser may silently break existing field extraction for 964 tests. | Extend `_load_nri_county_data()` incrementally. Add new fields in a sub-dict. Diff all 592 hazard_profiles/ before/after. Add regression test for existing fields. |
+| INT-02 | Pre-cache pattern violation — network imports appearing in src/packets/. | Add compliance test scanning for network imports in src/packets/ (mirrors existing test_xcut_compliance.py). Write it BEFORE writing any new packet code. |
+| INT-03 | Area-weighted aggregation invalid for climate extremes. Days above threshold should not be averaged — a Tribe exposed to extreme heat in 40% of its land is not experiencing "moderate" extreme heat. | Per-variable aggregation rules: means use area-weighted average; extremes use area-weighted MAX or worst-case county; counts report both aggregate and range. |
+| INT-04 | Audience air gap leakage in vulnerability sections. Strategy language ("leverage this data") or sensitive SVI decomposition leaking into congressional documents. | Update audience filtering tests with vulnerability-specific forbidden words before writing renderers. Write congressional (facts-only) version first. |
+| INT-05 | Website tribes.json payload explosion if full climate projection arrays are embedded. Rural Tribal communities often access site on low-bandwidth connections. | Summary indicators only in tribes.json (composite rating, top hazard, SVI overall). Full vulnerability detail in per-Tribe JSON files loaded on-demand. Measure payload; fail build if tribes.json > 1.5 MB. |
 
-4. **Vite base path breaks GitHub Pages deployment** — Default `base: "/"` resolves assets against domain root (`github.io/main.js`). Repository-level hosting requires `base: "/tcr-policy-scanner/"` to resolve correctly (`github.io/tcr-policy-scanner/main.js`). Without this, deployed site shows blank white page with all JS/CSS returning 404. Prevention: set `base` in `vite.config.ts` conditionally (`process.env.NODE_ENV === 'production' ? '/tcr-policy-scanner/' : '/'`). Verify Network tab shows all assets loading with 200 status codes.
+**Technical debt patterns to prevent:**
 
-5. **Indigenous data sovereignty violations via tracking scripts** — Google Analytics, Google Fonts CDN, Sentry, or any third-party service creates behavioral metadata about which Tribal Nations are searching for policy intelligence. This violates CARE Principles (Authority to Control) and OCAP (Ownership, Control, Access, Possession). Prevention: audit all external requests via Network tab — verify ZERO requests to domains other than `github.io`. Self-host all fonts. Add CSP meta tag. Document the constraint in README. Add CI test that scans build output for third-party URLs.
+| ID | Pattern | Prevention |
+|----|---------|------------|
+| DEBT-01 | Climate projection temporal schema complexity. Multi-scenario, multi-period data does not fit flat cache schema; flat key explosion or information loss both occur without planning. | Define JSON schema (Pydantic model in src/schemas/vulnerability.py) BEFORE writing any population script. Use arrays of projection objects, not flattened key names. |
+| DEBT-02 | Crosswalk proliferation. Each new data source adding its own geography bridge. | Formalize county FIPS as the universal intermediate layer. All new sources route through existing tribal_county_area_weights.json. One source of geographic truth. |
+| DEBT-03 | DocxEngine section creep. Vulnerability sections add N new render calls to generate(), expanding a method already at risk of becoming monolithic. | Treat vulnerability as expansion of the hazard section; use section registry pattern. Keep TribePacketContext extensible by nesting data under existing dict fields where possible. |
 
-6. **WCAG 2.1 AA failures exclude users** — The autocomplete has no ARIA roles (`role="combobox"`, `aria-expanded`), no keyboard navigation (arrow keys through suggestions), no live region announcements (result count changes), and potential color contrast failures (`text-cyan-300/60` at 60% opacity). Prevention: follow WAI-ARIA Combobox Pattern exactly. Add `aria-live="polite"` region for result count. Use Radix UI's `Select` component (already a dependency) for the RegionSelector dropdown. Test with NVDA/VoiceOver manually and axe-core in CI.
-
-7. **Confidence scores create overconfidence bias** — Displaying "Data Confidence: HIGH (0.95)" when the 0.95 score reflects developer assumptions (T1 source = 1.00) rather than empirical calibration leads to false precision. Tribal Leaders may cite uncalibrated scores in congressional testimony. Prevention: use qualitative labels ("VERIFIED" / "ESTIMATED" / "PENDING") NOT numeric scores. Add disclaimers explaining what "HIGH" means. Start conservative — defer numeric scores until after empirical validation against known outcomes.
+---
 
 ## Implications for Roadmap
 
-Based on research, the milestone decomposes into 5-7 phases with clear dependencies. Critical path: data reliability → document quality → website deployment → production hardening. The SquareSpace iframe test MUST happen first (before building any website features) because if iframe embedding is blocked by GitHub Pages headers (`X-Frame-Options: DENY`), the entire deployment architecture changes.
+### Recommended Phase Structure
 
-### Phase 1: Scraper Pagination + Bill Detail Fetching
-**Rationale:** Data completeness is the foundation. All downstream features (confidence scoring, DOCX quality, website distribution) depend on complete, accurate data. Fix silent data truncation before improving output. Pagination pattern already exists in `usaspending.py` — copy to 3 unpaginated scrapers.
-
-**Delivers:**
-- Complete results from Federal Register (up to 2000-result API limit), Grants.gov (all pages until `totalHits` exhausted), Congress.gov (follow `pagination.next` until null)
-- Congress.gov bill detail sub-endpoints (actions, cosponsors, summaries) enriching legislative intelligence
-- Measurable increase in items collected per scan (log before/after counts)
-
-**Addresses:** TS-04 (scraper pagination), TS-05 (bill detail enrichment) from FEATURES.md
-
-**Avoids:** C-4 (silent truncation), M-4 (rate limiting during pagination) from PITFALLS.md
-
-**Stack:** No new dependencies. Pure logic changes using existing `BaseScraper._request_with_retry()`.
-
-**Research flag:** LOW — pattern already exists, APIs are well-documented. Standard implementation phase.
+Research strongly indicates a 4-phase structure following the proven layer-by-layer build order from ARCHITECTURE.md. Each phase delivers working, testable output before the next begins. Phase numbers continue from v1.3 (Phases 15–18), starting at Phase 19.
 
 ---
 
-### Phase 2: Confidence Scoring
-**Rationale:** Depends on complete data from Phase 1 (pagination must provide full source coverage before confidence can be assessed). Produces metadata that both DOCX rendering (Phase 3) and website (Phase 5) consume. Build computation layer before building display layers.
+**Phase 19: Data Foundation**
 
-**Delivers:**
-- New module `src/packets/confidence.py` with `ConfidenceScorer` class
-- Per-section confidence levels (overall, congressional, awards, hazards, economic) based on: source diversity, data freshness, completeness, match quality
-- Integration into `PacketOrchestrator._build_context()`
-- Qualitative labels ("HIGH"/"MEDIUM"/"LOW") NOT numeric scores (defers numeric scores to post-calibration)
+Rationale: Everything downstream depends on correct, validated data in caches. Build and validate all data extraction before touching any document rendering. Lowest risk items first (expanded NRI); highest risk (LOCA2 NetCDF) treated as conditional. The Pydantic schema must be written before any population script to prevent DEBT-01.
 
-**Addresses:** DF-01 (confidence scoring) from FEATURES.md
+Deliverables:
+- Expanded NRI field extraction in hazards.py (EAL_VALB/P/A, RISK_NPCTL, RESL_VALUE, per-hazard EAL breakdowns) — backward-compatible schema extension
+- Regenerated hazard profiles with validation that existing fields are unchanged
+- CDC/ATSDR SVI 2022 county CSV downloaded and parsed to per-county JSON
+- USGS LOCA2 NetCDF file inspected; extraction script written and validated against real file (conditional: proceed if variable names and dimension structure match CMIP6 assumptions; defer to v1.5 if significantly different)
+- `src/schemas/vulnerability.py` Pydantic models defining the full cache schema upfront (DEBT-01 mitigation)
+- `scripts/populate_vulnerability.py` producing 592 vulnerability_profiles/ JSON files
+- Composite vulnerability score computed per Tribe (FEMA methodology, 5 tiers)
+- Vulnerability coverage report (SVI coverage %, climate coverage %, expanded NRI coverage %)
+- Data provenance metadata in all cache files (TS-5)
+- NRI version pinning + SHA256 checksum validation (CRIT-04 mitigation)
+- Connecticut NRI v1.20 planning region mapping (CRIT-04 mitigation)
+- VULNERABILITY_FRAMING constants module established (CRIT-02 foundation — must exist before Phase 21)
 
-**Avoids:** M-3 (overconfidence bias) from PITFALLS.md by using qualitative labels and adding disclaimers
-
-**Stack:** No new dependencies. Pure computation on existing `TribePacketContext` data.
-
-**Research flag:** LOW — deterministic scoring with known inputs. Defer ML/calibration to v2+.
-
----
-
-### Phase 3: DOCX Quality Enhancements
-**Rationale:** Depends on confidence scores from Phase 2 (renders confidence badges in section headers). DOCX improvements must ship BEFORE the website distributes them to users (Phase 5).
-
-**Delivers:**
-- Confidence badges rendered in DOCX section headers via `docx_sections.py`
-- Source citations per data point (which API contributed this figure)
-- Structural validation script (`scripts/validate_docx_structure.py`) checking: heading hierarchy, table presence, font consistency, no placeholders
-- Visual QA automation (`scripts/qa_screenshot.py`): DOCX → PDF → screenshots → HTML gallery
-- Full batch regeneration with verified output
-
-**Addresses:** DF-02 (DOCX visual QA) from FEATURES.md
-
-**Avoids:** Shipping unreviewed documents to production (quality gate before distribution)
-
-**Stack:** Playwright 1.58.0, LibreOffice 24.2+, Pillow 11.0.0 (dev-only dependencies)
-
-**Research flag:** MEDIUM — LibreOffice headless and Playwright integration needs testing on GitHub Actions `ubuntu-latest`. Verify `apt-get install libreoffice-writer-nogui` + `playwright install chromium --with-deps` works in CI.
+Features: TS-2, TS-1, TS-3, TS-5
+Pitfalls: CRIT-01, CRIT-03, CRIT-04, INT-01, INT-02 (compliance test), DEBT-01, DEBT-02, PERF-01, PERF-02
+Research flag: NEEDS phase research for LOCA2 NetCDF before writing extraction code. Inspect file with `xarray.open_dataset(path); print(ds)` to confirm variable names, multi-model mean structure, and dimension layout. Also verify NRI v1.20 CSV headers for new expanded fields and SVI 2022 Theme 3 column names against actual downloads.
 
 ---
 
-### Phase 4: SquareSpace Iframe Validation (GATE)
-**Rationale:** This is a GO/NO-GO decision point. If GitHub Pages blocks iframe embedding via `X-Frame-Options` or CSP `frame-ancestors`, the entire deployment architecture changes (alternative: Cloudflare Pages, Vercel, or direct link instead of embed). MUST test before building website features (Phase 5).
+**Phase 20: Pipeline Integration**
 
-**Delivers:**
-- Deployed "Hello World" test page to GitHub Pages
-- SquareSpace Code Block with iframe embed + correct `sandbox` attributes
-- Verified rendering in SquareSpace preview environment
-- Documented fallback plan if embedding fails
-- Decision: proceed with embedded architecture OR pivot to direct link
+Rationale: Wire vulnerability data into the document context pipeline before writing any renderers. Validate that context is correctly populated for all 592 Tribes before touching DocxEngine. Integration errors caught here are cheap to fix; errors discovered during rendering are expensive.
 
-**Addresses:** TS-07 (SquareSpace iframe embedding) from FEATURES.md
+Deliverables:
+- `src/paths.py` new constants (SVI_DIR, CLIMATE_DIR, VULNERABILITY_PROFILES_DIR, vulnerability_profile_path())
+- `src/packets/context.py` vulnerability_profile field addition
+- `src/packets/orchestrator.py` vulnerability cache loading in _build_context() (identical pattern to hazard/award loading)
+- `src/packets/doc_types.py` DOC_E definition + include_vulnerability: bool = False flag (backward-compatible)
+- Compliance test: network imports blocked in src/packets/ (INT-02 mitigation — write before Phase 21 begins)
+- Audience filtering tests updated with vulnerability-specific forbidden words (INT-04 early setup)
+- Integration tests: vulnerability_profile populated correctly for 5 representative Tribes
+- CLI display: _display_vulnerability_summary() method mirrors existing _display_hazard_summary()
 
-**Avoids:** C-3 (sandbox blocks downloads), M-6 (X-Frame-Options blocks embedding) from PITFALLS.md
-
-**Stack:** No code changes. Pure infrastructure validation.
-
-**Research flag:** HIGH — GitHub Pages iframe behavior is documented but varies by configuration. Must test empirically. SquareSpace sandbox attribute control is a known limitation. This phase is HIGH RISK.
-
----
-
-### Phase 5: Website Production Launch (GATE PASSED)
-**Rationale:** Assumes Phase 4 validated iframe embedding works. This is the largest single feature — fixing 47 known issues in `.planning/website/`. Depends on: verified DOCX from Phase 3 (what we're distributing), confidence data from Phase 2 (what we display), SquareSpace test from Phase 4 (how we deploy).
-
-**Delivers:**
-- Fixed P0 issues: real DOCX downloads (replace Blob generation with URL construction), 592-Tribe coverage (replace `mockData.ts` with runtime `tribes.json` fetch)
-- Fuse.js 7.1.0 integration for fuzzy search autocomplete
-- Removed 30+ unused dependencies (embla-carousel, recharts, react-day-picker, cmdk, etc.)
-- Vite `base` path configured: `/tcr-policy-scanner/`
-- Build pipeline: Vite output → `docs/web/`, merged with DOCX files + `tribes.json`
-- Deployed to GitHub Pages, embedded in SquareSpace with verified download flow
-
-**Addresses:** TS-01 (real downloads), TS-02 (592 coverage), TS-06 (performance) from FEATURES.md
-
-**Avoids:** C-1 (fake downloads), TD-1 (mock data), C-5 (Vite base path), C-2 (MIME type issues), M-5 (404 fallback delivers HTML) from PITFALLS.md
-
-**Stack:** React 18.3.1, Vite 6.x, Fuse.js 7.1.0, Tailwind v4
-
-**Research flag:** MEDIUM — React/Vite deployment to GitHub Pages is well-documented, but the merger of SPA output + static DOCX files in `generate-packets.yml` needs workflow engineering. Vite `base` path and 404.html SPA hack need careful testing.
+Features: Infrastructure only (no user-facing features yet)
+Pitfalls: INT-02, INT-04 (test setup)
+Research flag: Standard patterns from Phases 12–15. No phase research needed.
 
 ---
 
-### Phase 6: Accessibility (WCAG 2.1 AA)
-**Rationale:** Can run in parallel with Phase 5 (website launch) but should complete BEFORE declaring production-ready. Keyboard-only and screen reader users are part of the target audience (Tribal climate coordinators, federal partners). Section 508 compliance expected for federal-facing tools.
+**Phase 21: Document Rendering**
 
-**Delivers:**
-- WAI-ARIA Combobox Pattern implemented: `role="combobox"`, `aria-expanded`, `aria-activedescendant`, arrow-key navigation
-- `aria-live="polite"` region announcing result count changes
-- Color contrast audit (all combinations meet 4.5:1 for text, 3:1 for UI components)
-- Skip navigation link (visible on focus)
-- Radix UI `Select` component for RegionSelector dropdown (built-in accessibility)
-- Keyboard-only testing: search → select → download flow completable without mouse
-- axe-core CI check + manual NVDA/VoiceOver testing
+Rationale: Render vulnerability data in documents only after the pipeline is validated end-to-end. Congressional version (facts only) before internal version (strategy framing), per INT-04 mitigation. Doc A/B subsections first (compact vulnerability block within existing hazard section), Doc E standalone second.
 
-**Addresses:** TS-03 (WCAG 2.1 AA compliance) from FEATURES.md
+Deliverables:
+- `src/packets/docx_vulnerability_sections.py` with 4 renderers:
+  - `render_vulnerability_overview()` — composite score, rating badge, data source citations with version
+  - `render_climate_projections_section()` — temperature/precipitation change table, scenario range (always show range, never single value — SEC-02 mitigation)
+  - `render_svi_breakdown()` — 4-theme breakdown (Doc A/C internal only; Doc B/D shows overall SVI composite only — SEC-01 mitigation)
+  - `render_vulnerability_synthesis()` — grant-ready narrative paragraph (DF-2)
+- Integration into Doc A and Doc B (compact vulnerability subsection after hazard summary) (TS-4)
+- EAL consequence-type breakdown table: buildings/population/agriculture per top hazard (DF-7)
+- Comparative peer context sentence: percentile among 592 Tribes + ecoregion group (DF-5)
+- Doc E standalone vulnerability assessment, full-detail rendering, wired into orchestrator
+- Sovereignty framing throughout using VULNERABILITY_FRAMING constants (CRIT-02 completion)
+- Structural validator extended to validate Doc E
+- Test additions: vulnerability section renderers, Doc E generation, audience air gap enforcement for vulnerability content, temperature unit consistency (Fahrenheit for U.S. audience), dollar formatting via utils.format_dollars() only
 
-**Avoids:** M-1 (WCAG failures exclude users) from PITFALLS.md
-
-**Stack:** Radix UI components (already a dependency), axe-core (CI testing)
-
-**Research flag:** LOW — WCAG 2.1 AA is well-documented. WAI-ARIA Combobox Pattern is standardized. Radix UI provides accessible components out-of-box.
+Features: TS-4, DF-7, DF-2, DF-5, Doc E
+Pitfalls: CRIT-02, INT-03, INT-04, SEC-01, SEC-02, DEBT-03, DONE-02
+Research flag: Standard rendering patterns. Review actual FEMA BRIC and EPA Environmental Justice grant application formats during implementation to inform grant narrative templates (DF-2).
 
 ---
 
-### Phase 7: Production Hardening
-**Rationale:** Final phase. Assumes website deployed (Phase 5), accessibility verified (Phase 6), DOCX quality validated (Phase 3). This is stress testing, bug hunting, and final go/no-go before peak usage Feb 12-13.
+**Phase 22: Website and Polish**
 
-**Delivers:**
-- Data sovereignty audit: zero third-party requests (Network tab verification), self-hosted fonts, CSP meta tag, CI test for third-party URLs
-- Performance testing: 100-200 concurrent user simulation, verify GitHub Pages CDN handles load
-- Bug hunt swarm: atomic → pairs → chains → stress (LAUNCH-SWARM.md strategy)
-- Freshness indicators: "Data as of: [date]" in website footer and DOCX headers
-- Final batch regeneration with all v1.3 features active
-- Go/no-go decision based on: download flow works, SquareSpace embed works, accessibility passes, no third-party tracking, documents are trustworthy
+Rationale: Website changes are additive and lower-risk than document rendering. Build last to avoid coupling web changes to document pipeline. Static site constraint (no server, tribes.json payload budget) drives design choices — the on-demand loading pattern is required, not optional.
 
-**Addresses:** DF-04 (freshness indicators) from FEATURES.md
+Deliverables:
+- `scripts/build_web_index.py` extended with vulnerability summary fields (composite rating, top hazard, SVI overall indicator)
+- `docs/web/js/app.js` vulnerability badge/summary in Tribe cards (TS-6)
+- `docs/web/css/style.css` vulnerability badge styles, color coding, dark mode support
+- tribes.json payload size validation: fail build if > 1.5 MB (INT-05 mitigation)
+- Per-Tribe detail JSON files for on-demand loading (not embedded in tribes.json)
+- Chart.js hazard radar chart and SVI theme bar chart, progressive enhancement (DF-6 — conditional on scope; defer if Phase 21 is large)
+- Vulnerability indicators ARIA-compliant, mobile-responsive (rural communities are often mobile-first)
+- End-to-end coverage validation: all sources tracked in vulnerability_coverage_report
+- DONE-01 through DONE-04 checklist verification from PITFALLS.md
 
-**Avoids:** C-6 (data sovereignty violations), PT-1 (large JSON load), PT-2 (concurrent user bursts) from PITFALLS.md
-
-**Stack:** No new dependencies. Testing and validation only.
-
-**Research flag:** LOW — standard testing practices. GitHub Pages performance limits are documented (100GB/month bandwidth, 1GB site size). The 1.1GB DOCX corpus (992 files * ~500KB avg) approaches the limit — may need GitHub Releases for storage (defer to monitoring).
+Features: TS-6, DF-6 (conditional)
+Pitfalls: INT-05, DONE-04
+Research flag: Standard static site patterns. No phase research needed.
 
 ---
 
 ### Phase Ordering Rationale
 
-**Critical path dependencies:**
-- Phase 1 (pagination) MUST precede Phase 2 (confidence scoring) — can't assess confidence without complete data
-- Phase 2 (confidence) MUST precede Phase 3 (DOCX quality) — DOCX renders confidence badges
-- Phase 3 (DOCX quality) MUST precede Phase 5 (website) — don't distribute unverified documents
-- Phase 4 (iframe test) MUST precede Phase 5 (website) — validates deployment architecture
-- Phase 7 (hardening) MUST be last — tests the integrated system
+The data-first, render-second ordering is not preference — it is the established TCR pattern proven in Phases 12 and 13 for awards and hazards respectively. Attempting to render before caches exist forces mock data that diverges from production JSON structure and produces integration surprises late in the phase.
 
-**Parallel opportunities:**
-- Phase 6 (accessibility) can overlap Phase 5 (website) if features are isolated (accessibility touches specific components: TribeSelector, RegionSelector; download handler is separate)
-- Phase 3 (DOCX quality) and Phase 4 (iframe test) are independent and can run simultaneously
+The INT-02 compliance test (no network imports in src/packets/) must be written at the start of Phase 20, before Phase 21 begins writing renderers. Once Phase 21 renderers exist, a failing compliance test requires refactoring already-written code.
 
-**Time pressure mitigation:**
-- Phase 4 (iframe test) is a 2-hour task but HIGH RISK — do it first thing to avoid late-breaking architecture pivot
-- Phases 1-3 (data reliability → confidence → DOCX quality) are the "trustworthiness pipeline" — these can ship BEFORE the website if needed
-- Phase 5 (website) P0 fixes (real downloads, 592 coverage, Vite base path) are ~1-2 days; the remaining 44 issues are P1-P3 and can defer
-- Phase 6 (accessibility) critical fixes (ARIA roles, keyboard nav, skip link) are ~1 day; full WCAG audit can defer to post-launch
-- Phase 7 (hardening) can be condensed to: data sovereignty audit (2 hours) + download flow smoke test (1 hour) + go/no-go decision (30 min)
+VULNERABILITY_FRAMING constants (CRIT-02 mitigation) must be established in Phase 19, reviewed before Phase 21 begins, and enforced from the first renderer written. Retroactively replacing framing language across all renderers after the fact requires full document re-generation and stakeholder review.
 
-**Grouping rationale:**
-- Phases 1-3 form the "backend pipeline" (Python, no frontend changes) — can be developed/tested in isolation
-- Phases 4-6 form the "frontend deployment" (React, website, accessibility) — separate testing environment
-- Phase 7 is "integration validation" (everything working together)
+**LOCA2 conditional decision point:** If Phase 19 NetCDF inspection reveals the variable names, multi-model mean structure, or dimension layout are materially different from CMIP6 conventions, climate projections should be descoped from Phase 19 and planned as a standalone v1.5 phase. The composite vulnerability score degrades gracefully (SVI + expanded NRI components only, reweighted). Everything else in v1.4 is fully independent of LOCA2.
 
-**Avoids pitfalls:**
-- Early iframe test (Phase 4) avoids late discovery that embedding is blocked (M-6)
-- Scraper pagination before confidence (Phases 1 → 2) avoids computing confidence on truncated data (C-4)
-- DOCX quality before website (Phases 3 → 5) avoids distributing documents with fake confidence scores or visual regressions (M-3)
-- Accessibility as dedicated phase (Phase 6) avoids the "ship now, fix accessibility later" trap that leads to permanent WCAG failures (M-1)
-- Data sovereignty audit in hardening (Phase 7) catches third-party tracking before production (C-6)
+**Dependency graph:**
+```
+Phase 19 (Data Foundation)
+  -> Phase 20 (Pipeline Integration)
+      -> Phase 21 (Document Rendering)
+          -> Phase 22 (Website and Polish)
 
-### Research Flags
-
-**Phases likely needing deeper research during planning:**
-
-- **Phase 4 (SquareSpace iframe test):** GitHub Pages `X-Frame-Options` behavior is documented but varies by repository configuration. SquareSpace sandbox attribute control is a known limitation (may not support `allow-downloads` on all plan tiers). Empirical testing required. If embedding fails, need alternative hosting research (Cloudflare Pages, Vercel, Netlify) with custom header support.
-
-- **Phase 3 (DOCX visual QA):** LibreOffice headless + Playwright integration on GitHub Actions `ubuntu-latest` needs validation. Installation commands (`apt-get install libreoffice-writer-nogui`, `playwright install chromium --with-deps`) and CI workflow timeout/memory limits need testing with actual DOCX corpus (992 files). May hit runner resource limits.
-
-**Phases with standard patterns (skip research-phase):**
-
-- **Phase 1 (scraper pagination):** Pattern already exists in `usaspending.py`. APIs are well-documented (Congress.gov GitHub repo, Federal Register developer docs, Grants.gov wiki). No niche domain knowledge required.
-
-- **Phase 2 (confidence scoring):** Deterministic computation on known inputs. No ML, no external services, no API calls. Standard implementation phase.
-
-- **Phase 5 (website launch):** React/Vite deployment to GitHub Pages is extensively documented. Fuse.js API is straightforward. The 47 known issues are cataloged with clear fixes. Standard frontend development.
-
-- **Phase 6 (accessibility):** WCAG 2.1 AA is a well-established standard. WAI-ARIA Combobox Pattern is documented with examples. Radix UI provides accessible components. Standard compliance work.
-
-- **Phase 7 (production hardening):** Standard testing and validation. GitHub Pages limits are documented. Data sovereignty audit is a checklist. No research needed.
-
-## Confidence Assessment
-
-| Area | Confidence | Notes |
-|------|------------|-------|
-| Stack | HIGH | All stack decisions verified against PyPI/npm registries (versions confirmed), official API docs (pagination mechanisms verified), and codebase inspection (existing patterns identified). React 18 / Vite 6 stability confirmed. Playwright/LibreOffice/Pillow verified on GitHub Actions ubuntu-latest. |
-| Features | HIGH | Feature prioritization based on: codebase inspection (47 known website issues cataloged), Tribal advocacy domain expertise (table stakes vs differentiators), and production readiness criteria (accessibility, performance, data sovereignty). MVP recommendation (P0 fixes today, P1 within 24 hours) is time-pressure aware. |
-| Architecture | HIGH | Integration points verified via direct file inspection (95 Python source files, 2 GitHub Actions workflows, React website draft). Data flow traced from scrapers → cache → packets → website → GitHub Pages → SquareSpace. Anti-patterns identified from real pitfalls (404.html hack breaks DOCX serving, Blob downloads vs URL downloads). |
-| Pitfalls | MEDIUM-HIGH | Critical pitfalls (C-1 through C-6) verified against: codebase inspection (fake download handler in `TribeSelector.tsx` lines 38-51, unpaginated scrapers), browser security specs (iframe sandbox `allow-downloads`), Indigenous data governance frameworks (CARE Principles, OCAP), WCAG 2.1 AA spec. Moderate pitfalls (M-1 through M-6) sourced from: community knowledge (Vite base path, GitHub Pages MIME types), accessibility standards (WAI-ARIA), and research on AI confidence calibration. |
-
-**Overall confidence:** HIGH
-
-Findings are anchored in:
-1. **Direct codebase inspection** — 95 Python files, React website draft, GitHub Actions workflows
-2. **Verified external sources** — Official API documentation (Congress.gov GitHub, Federal Register docs, Grants.gov wiki), package registries (PyPI, npm), browser specs (MDN iframe sandbox), accessibility standards (WCAG 2.1 AA, WAI-ARIA APG)
-3. **Domain expertise** — Tribal advocacy context (data sovereignty constraints, trust requirements), policy intelligence domain (confidence scoring practices from IC Standard ICD 203)
-4. **Empirical validation opportunities** — Most pitfalls can be detected via testing (download a file, check Network tab, test with keyboard-only, verify in SquareSpace iframe)
-
-The MEDIUM confidence area is pitfalls that depend on empirical testing in production conditions (SquareSpace iframe sandbox behavior, GitHub Pages MIME type handling for DOCX, concurrent user performance at 200 users). These cannot be fully validated until deployed.
-
-### Gaps to Address
-
-**SquareSpace iframe embedding behavior** — Research found that `allow-downloads` sandbox attribute is required (Chrome 83+), but SquareSpace's default embed blocks and plan-tier restrictions are not fully documented. The official SquareSpace help docs say Code Blocks support iframes on Business+ plans, but do not specify whether `sandbox` attribute is user-controllable. **Mitigation:** Phase 4 (iframe test) validates this empirically in actual SquareSpace environment before building Phase 5 (website). Fallback: direct link instead of embed.
-
-**GitHub Pages MIME type handling for DOCX** — Community sources report that DOCX files may be served as `application/octet-stream` or `application/zip` instead of the correct `application/vnd.openxmlformats-officedocument.wordprocessingml.document`. Official GitHub Pages docs do not specify MIME type behavior for DOCX. **Mitigation:** Test actual DOCX download from GitHub Pages on Chrome/Firefox/Safari/Edge + iOS/Android during Phase 5 deployment. Fallback: JavaScript-mediated download with explicit Content-Type (fetch as Blob, set type, trigger download via `URL.createObjectURL()`).
-
-**Repository size approaching GitHub Pages 1GB limit** — 992 DOCX files at ~500KB avg = ~1.1GB total, exceeding the 1GB site size recommendation. Git history accumulates all versions even when files are overwritten. **Mitigation:** Monitor repository size after each batch generation (`git count-objects -vH`). If approaching 1GB, enable Git LFS for `*.docx` files (`.gitattributes`: `*.docx filter=lfs diff=lfs merge=lfs -text`) or move DOCX storage to GitHub Releases (2GB per file limit, no total limit). Defer to Phase 7 monitoring.
-
-**Confidence score calibration vs developer assumptions** — The proposed confidence scoring uses source tier assignments (T1=1.00, T2=0.95) that reflect developer assumptions about source reliability, not empirical validation against known outcomes. Research on AI confidence calibration warns that uncalibrated scores create overconfidence bias. **Mitigation:** Phase 2 uses qualitative labels ("HIGH"/"MEDIUM"/"LOW") NOT numeric scores. Add disclaimers explaining what "HIGH" means. Defer numeric scores to v2+ after empirical calibration (compare USASpending award data against known Tribal government award announcements).
-
-**LibreOffice headless + Playwright resource limits on GitHub Actions** — Converting 992 DOCX → PDF → screenshots may exceed runner memory limits or timeout. Ubuntu runners have 7GB RAM and 6-hour timeout, but LibreOffice conversion + Chromium screenshot pipeline is memory-intensive. **Mitigation:** Phase 3 QA automation samples representative documents (e.g., 10 Tribes per region = 80 documents) rather than processing all 992. Full-corpus validation defers to local testing or dedicated CI infrastructure. Structural validation (python-docx checks) can run on all 992 without resource concerns.
-
-## Sources
-
-### Primary (HIGH confidence)
-
-**API Documentation:**
-- [Congress.gov API GitHub Repository](https://github.com/LibraryOfCongress/api.congress.gov) — BillEndpoint.md (sub-endpoints: actions, cosponsors, summaries), README.md (rate limit 5000/hr, offset max 250, pagination.next)
-- [Federal Register API v1](https://www.federalregister.gov/developers/documentation/api/v1) — pagination fields (next_page_url, total_pages, per_page max 50), 2000-result ceiling
-- [Grants.gov Simpler API](https://wiki.simpler.grants.gov/product/api/search-opportunities) — search2 endpoint, startRecordNum/rows pagination, 10K result limit
-- [GitHub Pages Limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) — 1GB site size, 100GB/month bandwidth, no documented per-second rate limits
-
-**Package Registries:**
-- [Playwright Python 1.58.0 on PyPI](https://pypi.org/project/playwright/) — Released 2026-01-30, Python 3.9-3.13 support
-- [Fuse.js 7.1.0 on npm](https://www.npmjs.com/package/fuse.js) — Lightweight fuzzy search (7KB gzipped), 592 items benchmark
-- [Tailwind CSS 4.1.x on npm](https://www.npmjs.com/package/tailwindcss) — v4 syntax with Vite plugin
-- [React 19.2.4 on npm](https://www.npmjs.com/package/react) — Current latest (NOT recommended; stay on 18.3.1)
-- [Vite 7.3.1 on npm](https://www.npmjs.com/package/vite) — Current latest (NOT recommended; stay on 6.x)
-
-**Standards & Specifications:**
-- [WCAG 2.1 AA Specification](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&levels=aaa) — Accessibility criteria 1.3.1, 1.4.3, 2.1.1, 2.4.1, 2.4.7, 4.1.2
-- [WAI-ARIA Combobox Pattern (W3C APG)](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) — Required roles, states, keyboard navigation
-- [MDN: iframe sandbox attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe) — allow-downloads, allow-scripts, allow-same-origin, allow-popups
-- [Chrome Platform Status: Downloads in Sandboxed Iframes](https://chromestatus.com/feature/5706745674465280) — Chrome 83+ blocks downloads without allow-downloads
-
-**Codebase Inspection:**
-- `F:\tcr-policy-scanner\src\scrapers\` (4 scrapers: base.py, federal_register.py, grants_gov.py, congress_gov.py, usaspending.py)
-- `F:\tcr-policy-scanner\src\packets\` (orchestrator.py, context.py, docx_engine.py, docx_sections.py, quality_review.py)
-- `F:\tcr-policy-scanner\.planning\website\src\` (TribeSelector.tsx lines 38-51, mockData.ts, App.tsx, vite.config.ts)
-- `F:\tcr-policy-scanner\.github\workflows\` (daily-scan.yml, generate-packets.yml)
-
-### Secondary (MEDIUM confidence)
-
-**Indigenous Data Governance:**
-- [CARE Principles for Indigenous Data Governance](https://datascience.codata.org/articles/dsj-2020-043) — Collective Benefit, Authority to Control, Responsibility, Ethics
-- [FNIGC OCAP Principles](https://fnigc.ca/ocap-training/) — Ownership, Control, Access, Possession (First Nations Information Governance Centre)
-- Tribal Sovereignty Data Framework (TSDF) — T0-T5 classification (referenced in codebase docs/concepts/)
-
-**Deployment & Embedding:**
-- [SquareSpace Embed Blocks Help](https://support.squarespace.com/hc/en-us/articles/206543617-Embed-blocks) — iframe support, Business plan requirement for Code Blocks
-- [Deploy Vite React to GitHub Pages](https://paulserban.eu/blog/post/deploy-vite-react-with-react-router-app-to-github-pages/) — Base path configuration, 404.html SPA hack
-- [GitHub Pages CORS discussion](https://github.com/orgs/community/discussions/22399) — Access-Control-Allow-Origin: * for public repos
-- [LibreOffice headless conversion guide](https://michalzalecki.com/converting-docx-to-pdf-using-python/) — soffice --headless --convert-to pdf
-
-**Confidence Scoring:**
-- [CIS Words of Estimative Probability](https://www.cisecurity.org/ms-isac/services/words-of-estimative-probability-analytic-confidences-and-structured-analytic-techniques) — HIGH/MODERATE/LOW framework
-- [Analytic Confidence - Wikipedia](https://en.wikipedia.org/wiki/Analytic_confidence) — ICD 203 reference (Intelligence Community Directive)
-- Research on AI confidence calibration (arXiv, multiple papers) — Overconfidence bias when users see numeric scores
-
-### Tertiary (LOW confidence — needs validation)
-
-**Performance & Infrastructure:**
-- GitHub Pages undocumented per-second rate limits — official docs say "may enforce rate limits" with 429 responses, but no specifics on thresholds
-- DOCX MIME type behavior on GitHub Pages — community reports of `application/zip` misidentification, but no official confirmation
-- SquareSpace Code Block sandbox attribute control — help docs confirm iframe support on Business+ plans but do not specify sandbox attribute editability
-- Concurrent user performance at 200 users on GitHub Pages — no published benchmarks; 100GB/month limit is documented but real-world CDN behavior under burst load is unspecified
+Phase 21 and Phase 22 can partially overlap if Doc E rendering
+completes before website work begins (they touch different files).
+```
 
 ---
 
-*Research completed: 2026-02-12*
-*Ready for roadmap: yes*
+### Research Flags by Phase
+
+| Phase | Research Needed? | Topic |
+|-------|-----------------|-------|
+| Phase 19 | YES — before writing extraction code | Inspect LOCA2 NetCDF: `xarray.open_dataset(path); print(ds)` to confirm variable names (tasmax, tasmin, pr), whether WMMM is a pre-computed variable or requires model-dimension mean, and dimension structure. |
+| Phase 19 | YES — before NRI expansion | Verify NRI v1.20 CSV column headers for expanded fields: EAL_VALB, EAL_VALP, EAL_VALA, RISK_NPCTL, RESL_VALUE, SOVI_VALUE. STACK.md rates these MEDIUM confidence (based on v1.18 naming, not verified against v1.20 CSV). |
+| Phase 19 | YES — during SVI download | Verify CDC SVI 2022 column names for Theme 3 (Racial and Ethnic Minority Status — changed from prior SVI years). Must confirm against actual CSV headers before writing parser. |
+| Phase 19 | YES — quick check | Confirm whether BRIC sub-category scores exist in NRI v1.20 CSV. If yes, add DF-4 to scope. If no, keep deferred. |
+| Phase 20 | NO | Standard orchestrator/context patterns; identical to Phases 12–15 implementation. |
+| Phase 21 | NO | Standard DOCX rendering patterns. Review grant application formats during implementation for DF-2 narrative templates. |
+| Phase 22 | NO | Standard static site patterns. |
+
+---
+
+## Confidence Assessment
+
+| Area | Confidence | Basis |
+|------|------------|-------|
+| Stack — xarray + netCDF4 | HIGH | Verified PyPI pages; Python 3.12 compatibility confirmed; Windows wheels confirmed; v2026.1.0 current; dependency conflict check clean via existing geopandas |
+| Stack — SVI and expanded NRI | HIGH | No new libraries; CDC SVI CSV format verified from official documentation; existing NRI parsing pattern confirmed via codebase inspection |
+| Stack — LOCA2 NetCDF specifics | MEDIUM | ScienceBase catalog verified (sizes, GEOID keying, DOI); but variable names (tasmax, tasmin, pr) and multi-model mean structure are assumed from CMIP6 conventions, not verified against actual file |
+| Features — table stakes (TS-1 through TS-6) | HIGH | All follow established patterns; data sources confirmed available; dependencies well-understood |
+| Features — differentiators (DF-1) | MEDIUM | LOCA2 data confirmed to exist at county level; bulk download workflow needs Phase 19 validation |
+| Features — differentiators (DF-4) | LOW | BRIC sub-scores in NRI CSV not confirmed; may require separate USC HVRI data download |
+| Architecture — all pipeline patterns | HIGH | Direct codebase inspection of hazards.py, orchestrator.py, docx_engine.py, context.py, paths.py, doc_types.py — all patterns verified from production code |
+| Architecture — Doc E | HIGH | Follows DOC_A through DOC_D frozen dataclass pattern exactly; backward-compatible extension verified |
+| Pitfalls — CRIT-01/02/03/04 | HIGH | Verified from FEMA NRI v1.19 change notes (official), CDC SVI FAQ (official), direct codebase inspection |
+| Pitfalls — Alaska LOCA2 gap | HIGH | LOCA2 CONUS-only coverage is confirmed in USGS documentation |
+| Pitfalls — NRI v1.20 CT planning regions | MEDIUM-HIGH | Confirmed from FEMA release notes; impact on existing TCR crosswalk not yet tested against actual data |
+| CDC SVI download stability | MEDIUM | URL has been stable since 2014; no programmatic bulk API exists; manual download is required |
+
+**Overall confidence: MEDIUM-HIGH.** Patterns are solid; data sources are confirmed; architecture is a clean extension of Phase 13. The two meaningful uncertainties (LOCA2 NetCDF internal structure; NRI v1.20 expanded field names) are both resolvable within the first hours of Phase 19 by inspecting the actual files. Neither blocks roadmap creation.
+
+---
+
+## Gaps to Address
+
+| Gap | Severity | Resolution |
+|-----|----------|-----------|
+| LOCA2 NetCDF variable names unconfirmed | HIGH | Phase 19 day 1 — inspect file before writing any xarray extraction code |
+| LOCA2 multi-model mean structure unknown | HIGH | Phase 19 day 1 — `print(ds)` reveals whether WMMM is a variable or a model dimension |
+| NRI v1.20 expanded field names (EAL_VALB, RISK_NPCTL, etc.) | MEDIUM | Phase 19 start — check CSV headers against assumptions |
+| CDC SVI 2022 Theme 3 column names (changed from prior years) | MEDIUM | Phase 19 during SVI download — verify against actual CSV |
+| BRIC sub-category score availability in NRI CSV | LOW-MEDIUM | Phase 19 quick scan — determines DF-4 in/out of scope |
+| Connecticut NRI v1.20 planning region impact on crosswalk | MEDIUM | Phase 19 — verify CT Tribe crosswalk entries; add FIPS mapping if needed |
+| Alaska LOCA2 coverage (CONUS only) | MEDIUM | Phase 19 — accept partial coverage for AK Tribes; flag in vulnerability coverage report; add AK note to Doc E |
+| VULNERABILITY_FRAMING approved language | HIGH | Phase 19 design decision (before Phase 21 begins rendering) — must be agreed upon before any renderer is written |
+| CDC SVI download is manual (no stable programmatic URL) | LOW | Phase 19 — document the exact download procedure; add URL to config for flexibility |
+| Grant narrative templates for DF-2 | LOW | Phase 21 implementation — review FEMA BRIC and EPA EJ grant application formats |
+
+---
+
+## Sources
+
+### Aggregated from Research Files
+
+**HIGH confidence — verified official sources:**
+- USGS CMIP6-LOCA2 County Spatial Summaries: https://www.sciencebase.gov/catalog/item/673d0719d34e6b795de6b593
+- USGS LOCA2 data page: https://www.usgs.gov/data/cmip6-loca2-spatial-summaries-counties-tiger-2023-1950-2100-contiguous-united-states
+- CDC/ATSDR SVI Data Download: https://svi.cdc.gov/dataDownloads/data-download.html
+- CDC SVI 2022 Documentation PDF: https://www.atsdr.cdc.gov/place-health/media/pdfs/2024/10/SVI2022Documentation.pdf
+- CDC/ATSDR SVI FAQ (tribal tracts unranked): https://www.atsdr.cdc.gov/place-health/php/svi/svi-frequently-asked-questions-faqs.html
+- FEMA NRI Data (v1.20 December 2025): https://www.fema.gov/about/openfema/data-sets/national-risk-index-data
+- FEMA NRI v1.19 Change Summary (SVI methodology change): https://hazards.fema.gov/nri/change-summary-v119
+- xarray on PyPI v2026.1.0: https://pypi.org/project/xarray/
+- netCDF4 on PyPI v1.7.4: https://pypi.org/project/netCDF4/
+- NOAA CDO API documentation: https://www.ncdc.noaa.gov/cdo-web/webservices/v2
+- Existing codebase: `src/packets/hazards.py` (NRI field patterns, area-weighted aggregation, USFS override)
+- Existing codebase: `scripts/build_area_crosswalk.py` (crosswalk architecture, dual CRS, atomic writes)
+- Existing codebase: `src/packets/orchestrator.py` (_build_context, _load_tribe_cache patterns)
+- Existing codebase: `src/packets/context.py` (TribePacketContext structure and field pattern)
+- Existing codebase: `src/packets/doc_types.py` (DocumentTypeConfig frozen dataclass, DOC_A–D)
+- Existing codebase: `src/paths.py` (35 path constants pattern)
+- Existing codebase: `docs/web/js/app.js` (static site, vanilla JS, tribes.json on-load pattern)
+
+**MEDIUM confidence — verified with caveats:**
+- NOAA Climate Explorer: https://crt-climate-explorer.nemac.org/about/ (no bulk API confirmed)
+- LOCA2 downscaling methodology: https://loca.ucsd.edu/
+- U.S. Climate Resilience Toolkit vulnerability framework: https://toolkit.climate.gov/assess-vulnerability-and-risk
+- Tribal Climate Adaptation Guidebook: https://tribalclimateadaptationguidebook.org/step-3-assess-vulnerability/
+- UW Climate Impacts Group Tribal resources: https://cig.uw.edu/resources/tribal-vulnerability-assessment-resources/
+- FEMA NRI Community Resilience (BRIC): https://hazards.fema.gov/nri/community-resilience
+
+**LOW confidence — verify during implementation:**
+- NOAA SLR scenario data exact download format (not confirmed)
+- FEMA RAPT migration timeline (URL redirects observed; completion date uncertain)
+- LOCA2 exact variable names in county NetCDF (assumed from CMIP6 conventions — verify by opening file)
+- CDC SVI 2022 Theme 3 exact column names (changed from prior years — verify against CSV)
+- NRI v1.20 Connecticut planning region impact on existing crosswalks (inferred from release notes, not tested)
+- BRIC sub-category scores in NRI CSV (not confirmed in any documentation)
+
+---
+
+*All research files written 2026-02-17. SUMMARY.md synthesized 2026-02-17.*
+*v1.3 baseline: 18 phases, 66 plans, 115 requirements, 964 tests, ~38,300 LOC Python, 102 source files.*
+*v1.4 target: Phases 19–22, ~8 new source files, ~10 modified source files, ~1 new document type (Doc E), 592 new vulnerability_profiles/.*
