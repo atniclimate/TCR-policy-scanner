@@ -2,7 +2,7 @@
 
 **Milestone:** v1.4
 **Created:** 2026-02-17
-**Status:** Draft — pending user approval
+**Status:** Roadmap approved -- 28 requirements mapped to 6 phases
 
 ## v1.4 Requirements
 
@@ -86,8 +86,41 @@
 
 ## Traceability
 
-*To be filled by roadmap creation — maps each requirement to a phase.*
+| Requirement | Phase | Description | Status |
+|-------------|-------|-------------|--------|
+| REG-01 | Phase 22 | Data catalog/registry | Pending |
+| REG-02 | Phase 22 | Acquisition query logging | Pending |
+| REG-03 | Phase 19 | Pydantic schema models (schema-first) | Pending |
+| REG-04 | Phase 19 | Sovereignty-first framing vocabulary | Pending |
+| VULN-01 | Phase 19 | Expanded FEMA NRI metrics | Pending |
+| VULN-02 | Phase 19 | CDC/ATSDR SVI 2022 integration | Pending |
+| VULN-03 | Phase 22 | Composite vulnerability score | Pending |
+| VULN-04 | Phase 22 | Per-Tribe vulnerability profiles | Pending |
+| FLOOD-01 | Phase 20 | NFIP flood insurance data | Pending |
+| FLOOD-02 | Phase 20 | FEMA disaster declarations | Pending |
+| FLOOD-03 | Phase 20 | FEMA NFHL flood zones | Pending |
+| FLOOD-04 | Phase 20 | USGS Water Services streamflow | Pending |
+| FLOOD-05 | Phase 20 | NOAA Atlas 14 precipitation | Pending |
+| FLOOD-06 | Phase 20 | NOAA CO-OPS coastal water levels | Pending |
+| CLIM-01 | Phase 21 | US Drought Monitor / NOAA-NIDIS | Pending |
+| CLIM-02 | Phase 21 | NOAA NCEI Climate Data Online | Pending |
+| CLIM-03 | Phase 21 | NWS API forecasts/alerts | Pending |
+| GEO-01 | Phase 21 | State landslide data (WA/OR) | Pending |
+| GEO-02 | Phase 21 | USGS 3DEP elevation/terrain | Pending |
+| INFRA-01 | Phase 21 | DHS HIFLD infrastructure | Pending |
+| DOC-01 | Phase 23 | Vulnerability sections in Doc A/B | Pending |
+| DOC-02 | Phase 23 | Doc E standalone vulnerability report | Pending |
+| DOC-03 | Phase 23 | EAL breakdown table | Pending |
+| WEB-01 | Phase 24 | Vulnerability badges in Tribe cards | Pending |
+| WEB-02 | Phase 24 | On-demand detail loading | Pending |
+| WEB-03 | Phase 24 | Chart.js visualizations | Pending |
+| XCUT-01 | Phase 22 | County FIPS crosswalk (one geographic truth) | Pending |
+| XCUT-02 | Phase 22 | Zero API calls during doc generation | Pending |
+| XCUT-03 | Phase 19 | NRI version pinning + SHA256 + CT mapping | Pending |
+| XCUT-04 | Phase 19 | utf-8 encoding + atomic writes | Pending |
+| XCUT-05 | Phase 22 | Compliance tests (network imports, air gap) | Pending |
 
 ---
 *Created: 2026-02-17*
 *Requirements: 28 (REG: 4, VULN: 4, FLOOD: 6, CLIM: 3, GEO: 2, INFRA: 1, DOC: 3, WEB: 3, XCUT: 5)*
+*Traceability updated: 2026-02-17 -- all 28 requirements mapped to Phases 19-24*
