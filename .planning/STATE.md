@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-02-14)
 
 **Core value:** Tribal Leaders get timely, accurate, machine-scored policy intelligence that surfaces federal developments relevant to their climate resilience programs.
-**Current focus:** Planning next milestone
+**Current focus:** v1.4 Climate Vulnerability Intelligence — NOAA projections, CDC/ATSDR SVI, expanded FEMA NRI
 
 **Project Type:** Brownfield -- working Python pipeline with 4 scrapers, relevance scorer, knowledge graph, 5 monitors, decision engine, report generator, 4-document-type DOCX advocacy packet generation, regional aggregation, and GitHub Pages deployment.
 
 ## Current Position
 
-**Milestone:** v1.3 Production Launch -- ARCHIVED
-**Phase:** Not started
-**Plan:** Not started
-**Status:** Ready to plan next milestone
-**Last activity:** 2026-02-14 -- v1.3 milestone archived. Documentation closeout complete.
+**Milestone:** v1.4 Climate Vulnerability Intelligence
+**Phase:** Not started (defining requirements)
+**Plan:** --
+**Status:** Defining requirements
+**Last activity:** 2026-02-17 -- Milestone v1.4 started. Research + requirements + roadmap cycle.
 
 **Progress:**
 ```
@@ -72,12 +72,12 @@ _None._
 
 ### Last Session
 
-**Date:** 2026-02-14
-**Stopped at:** v1.3 milestone archived. Documentation closeout complete. .planning/ reorganized.
-**Next step:** `/gsd:new-milestone`
+**Date:** 2026-02-17
+**Stopped at:** v1.4 milestone initialized. Running research + requirements + roadmap cycle.
+**Next step:** Research phase, then requirements, then roadmap creation.
 **Resume file:** None
-**Quality gate:** v1.3 GO confirmed. 964 tests passing. Trust 9/10.
+**Quality gate:** v1.3 baseline: 964 tests passing. Trust 9/10.
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-14 after v1.3 milestone completion and archival*
+*Last updated: 2026-02-17 after v1.4 milestone initialization*

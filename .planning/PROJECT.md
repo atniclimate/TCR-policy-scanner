@@ -79,7 +79,18 @@ Tribal Leaders get timely, accurate, machine-scored policy intelligence that sur
 
 ### Active
 
-*No active milestone. v1.3 Production Launch completed 2026-02-14. See `.planning/STATE.md` for future priorities.*
+**Current Milestone: v1.4 Climate Vulnerability Intelligence**
+
+**Goal:** Add comprehensive climate vulnerability data (NOAA projections, CDC/ATSDR SVI, expanded FEMA NRI) to per-Tribe intelligence products, surfaced in DOCX packets, standalone vulnerability reports, and the production website.
+
+**Target features:**
+- NOAA climate projections (temperature, precipitation, sea level rise) mapped to Tribal lands
+- CDC/ATSDR Social Vulnerability Index integration per Tribe
+- Expanded FEMA NRI utilization (expected annual loss, community resilience, composite risk index)
+- New vulnerability sections in Doc A/B/C/D packets
+- Standalone per-Tribe vulnerability profile reports (new document type)
+- Website enhancements for vulnerability data (search, filtering, display)
+- Research-driven regional hazard prioritization
 
 ## Milestone History
 
@@ -215,7 +226,7 @@ CLI (--prep-packets) -> PacketOrchestrator -> Registry + Congressional + Awards 
 **v1.2 Tech Debt Cleanup + Data Foundation** shipped 2026-02-11 -- API resilience, real award/hazard data population, 4 document types with audience differentiation, regional aggregation, quality review, and GitHub Pages deployment. 992 documents generated (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D).
 **v1.3 Production Launch** completed 2026-02-14 -- congressional intelligence pipeline (bill tracking, CFDA mapping, committee activity, confidence scoring), document quality assurance (992/992 structural validation, 5-agent audit), production website (Fuse.js fuzzy search, ARIA combobox, dark mode, SquareSpace embed), and 2-round adversarial hardening (4 agents, 70 findings, GO confirmed). Trust 9/10. 964 tests. 4 phases, 20 plans, 39 requirements.
 
-**Next milestone:** Planning. Candidates: DOCX layout/presentation redesign, extreme weather vulnerability data, climate risk/impact/vulnerability assessments per Tribe.
+**Next milestone:** v1.4 Climate Vulnerability Intelligence — NOAA projections, CDC/ATSDR SVI, expanded FEMA NRI, standalone vulnerability reports, website enhancements.
 
 ---
-*Last updated: 2026-02-14 after v1.3 Production Launch completion (GO confirmed)*
+*Last updated: 2026-02-17 after v1.4 milestone initialization*
