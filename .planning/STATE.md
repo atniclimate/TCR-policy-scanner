@@ -12,10 +12,10 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 **Milestone:** v1.4 Climate Vulnerability Intelligence
-**Phase:** 18.5 - Architectural Review & Scaffolding
-**Plan:** -- (not yet planned)
-**Status:** Roadmap approved, ready for Phase 18.5 architectural review
-**Last activity:** 2026-02-17 -- Roadmap created with 7 phases (18.5 + 19-24), 28 requirements mapped.
+**Phase:** 18.5 - Architectural Review & Scaffolding - COMPLETE
+**Plan:** All 4 agents completed (Sovereignty Scout, Fire Keeper, River Runner, Horizon Walker)
+**Status:** Phase 18.5 COMPLETE -- GO decision with 8 corrections
+**Last activity:** 2026-02-17 -- Phase 18.5 architectural review executed (2 waves, 4 agents, Architecture Delta Report compiled)
 
 **Progress:**
 ```
@@ -23,7 +23,7 @@ v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
 v1.3     [##########] 100% SHIPPED (4 phases, 20 plans, 39 requirements)
-v1.4     [----------]   0% Phase 18.5 ready (7 phases, 28 requirements)
+v1.4     [#---------]  14% Phase 18.5 complete (7 phases, 28 requirements)
 ```
 
 ## Performance Metrics
@@ -57,7 +57,7 @@ v1.4     [----------]   0% Phase 18.5 ready (7 phases, 28 requirements)
 
 | Phase | Name | Requirements | Status |
 |-------|------|-------------|--------|
-| 18.5 | Architectural Review & Scaffolding | — (pre-phase) | Next |
+| 18.5 | Architectural Review & Scaffolding | — (pre-phase) | **COMPLETE** |
 | 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | Pending |
 | 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | Pending |
 | 21 | Climate, Geologic & Infrastructure Data | CLIM-01 to CLIM-03, GEO-01, GEO-02, INFRA-01 | Pending |
@@ -69,9 +69,24 @@ v1.4     [----------]   0% Phase 18.5 ready (7 phases, 28 requirements)
 
 v1.3 decisions (33 total) archived to `milestones/v1.3-ROADMAP.md`. Full cumulative log in `PROJECT.md` Key Decisions table.
 
+**Phase 18.5 decisions:**
+- [18.5-DEC-01] `RISK_NPCTL` does not exist in NRI v1.20. Compute national percentile from `RISK_SCORE` rank at build time.
+- [18.5-DEC-02] SVI `RPL_THEMES` includes excluded Theme 3. Compute custom Tribal SVI from Themes 1+2+4 average.
+- [18.5-DEC-03] LOCA2 deferral to v1.5+ validated. CSV Thresholds path eliminates xarray/netCDF4 dependency when ready.
+- [18.5-DEC-04] Composite score: 3-component formula (0.40 hazard + 0.35 social + 0.25 adaptive capacity deficit) for v1.4.
+- [18.5-DEC-05] Framing: Option D (Hybrid) -- "Climate Resilience Investment Priority" headings, "disproportionate exposure" context, "vulnerability" only in federal proper nouns.
+- [18.5-DEC-06] Alaska (229 Tribes): 3-tier narrative strategy. Data gaps framed as federal infrastructure failures.
+- [18.5-DEC-07] USGS Water Services: build against NEW API (`api.waterdata.usgs.gov`), not legacy endpoint.
+- [18.5-DEC-08] NOAA NCEI: use new endpoint (`ncei.noaa.gov/access/services/data/v1`), not deprecated CDO v2.
+- [18.5-DEC-09] GEO-02 (3DEP): defer to v1.5+ (requires research-grade geospatial processing).
+- [18.5-DEC-10] Fix 22 hardcoded FY26 strings BEFORE defining DOC_E (pre-Phase 19 tech debt).
+
 ### Todos
 
-- Execute Phase 18.5 architectural review (next step: `/gsd:plan-phase 18.5`)
+- Fix 22 hardcoded FY26 strings (pre-Phase 19 tech debt cleanup)
+- Add `vulnerability_profile: dict` to TribePacketContext (zero-risk)
+- Add 6 path constants to `src/paths.py` (zero-risk)
+- Plan Phase 19: Schema & Core Data Foundation
 
 ### Blockers
 
@@ -82,11 +97,31 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-17
-**Stopped at:** v1.4 roadmap created. 7 phases (18.5 + 19-24), 28 requirements, 100% coverage.
-**Next step:** Plan Phase 18.5 -- Architectural Review & Scaffolding
-**Resume file:** .planning/ROADMAP.md
+**Stopped at:** Phase 18.5 COMPLETE. Architecture Delta Report compiled. GO with 8 corrections.
+**Next step:** Plan Phase 19 -- Schema & Core Data Foundation (fix FY26 debt first)
+**Resume file:** .planning/phases/18.5-architectural-review/ARCHITECTURE-DELTA-REPORT.md
 **Quality gate:** v1.3 baseline: 964 tests passing. Trust 9/10.
+
+## Phase 18.5 Summary
+
+**Completed:** 2026-02-17
+
+**Execution:** 2 waves, 4 research agents
+- Wave 1: Sovereignty Scout (data validation) + Fire Keeper (codebase analysis)
+- Wave 2: River Runner (schema design) + Horizon Walker (narrative framing)
+- Synthesis: Architecture Delta Report
+
+**Deliverables:**
+- `.planning/phases/18.5-architectural-review/sovereignty-scout-report.md` (405 lines)
+- `.planning/phases/18.5-architectural-review/fire-keeper-report.md` (917 lines)
+- `.planning/phases/18.5-architectural-review/river-runner-report.md` (~2,258 lines)
+- `.planning/phases/18.5-architectural-review/horizon-walker-report.md` (~1,080 lines)
+- `.planning/phases/18.5-architectural-review/ARCHITECTURE-DELTA-REPORT.md` (synthesis)
+
+**Key findings:** 8 architecture corrections, 37 Pydantic v2 models drafted, 4 framing options evaluated (Option D Hybrid recommended), 229 Alaska Tribes require 3-tier narrative strategy, 22 FY26 tech debt instances to fix before Phase 19.
+
+**Decision:** GO with corrections.
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-17 after v1.4 roadmap creation*
+*Last updated: 2026-02-17 after Phase 18.5 completion*

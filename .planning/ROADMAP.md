@@ -177,7 +177,7 @@ v1.4 adds comprehensive climate vulnerability intelligence to the TCR Policy Sca
 
 | Phase | Name | Requirements | Status |
 |-------|------|-------------|--------|
-| 18.5 | Architectural Review & Scaffolding | — (pre-phase) | Pending |
+| 18.5 | Architectural Review & Scaffolding | — (pre-phase) | **Complete** (2026-02-17) |
 | 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | Pending |
 | 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | Pending |
 | 21 | Climate, Geologic & Infrastructure Data | CLIM-01 to CLIM-03, GEO-01, GEO-02, INFRA-01 | Pending |
