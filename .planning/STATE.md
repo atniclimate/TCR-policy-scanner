@@ -12,10 +12,10 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 **Milestone:** v1.4 Climate Vulnerability Intelligence
-**Phase:** 18.5 - Architectural Review & Scaffolding - COMPLETE
-**Plan:** All 4 agents completed (Sovereignty Scout, Fire Keeper, River Runner, Horizon Walker)
-**Status:** Phase 18.5 COMPLETE -- GO decision with 8 corrections
-**Last activity:** 2026-02-17 -- Phase 18.5 architectural review executed (2 waves, 4 agents, Architecture Delta Report compiled)
+**Phase:** 19 - Schema & Core Data Foundation - IN PROGRESS
+**Plan:** 03 of 6 complete (19-01 through 19-06), Wave 1 executing
+**Status:** Phase 19 IN PROGRESS -- 19-03 complete, Wave 1 plans executing
+**Last activity:** 2026-02-17 -- Completed 19-03-PLAN.md (vocabulary constants)
 
 **Progress:**
 ```
@@ -23,7 +23,7 @@ v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
 v1.3     [##########] 100% SHIPPED (4 phases, 20 plans, 39 requirements)
-v1.4     [#---------]  14% Phase 18.5 complete (7 phases, 28 requirements)
+v1.4     [##--------]  18% Phase 19 in progress (7 phases, 28 requirements)
 ```
 
 ## Performance Metrics
@@ -37,7 +37,7 @@ v1.4     [#---------]  14% Phase 18.5 complete (7 phases, 28 requirements)
 | Total phases | 18 completed, 7 planned (18.5 + 19-24) |
 | Total plans | 66 completed |
 | Total requirements | 115 completed + 28 planned = 143 |
-| Total tests | 964 (all passing) |
+| Total tests | 1084 (all passing) |
 | Source files | 102 Python files (54 src + 33 tests + 14 scripts + 1 root) |
 | Total LOC | ~38,300 Python (src + tests) |
 | Documents generated | 992 (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) |
@@ -58,7 +58,7 @@ v1.4     [#---------]  14% Phase 18.5 complete (7 phases, 28 requirements)
 | Phase | Name | Requirements | Status |
 |-------|------|-------------|--------|
 | 18.5 | Architectural Review & Scaffolding | — (pre-phase) | **COMPLETE** |
-| 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | Pending |
+| 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | **IN PROGRESS** (19-03 done) |
 | 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | Pending |
 | 21 | Climate, Geologic & Infrastructure Data | CLIM-01 to CLIM-03, GEO-01, GEO-02, INFRA-01 | Pending |
 | 22 | Vulnerability Profiles & Pipeline Integration | VULN-03, VULN-04, REG-01, REG-02, XCUT-01 to XCUT-03, XCUT-05 | Pending |
@@ -86,7 +86,7 @@ v1.3 decisions (33 total) archived to `milestones/v1.3-ROADMAP.md`. Full cumulat
 - Fix 22 hardcoded FY26 strings (pre-Phase 19 tech debt cleanup)
 - Add `vulnerability_profile: dict` to TribePacketContext (zero-risk)
 - Add 6 path constants to `src/paths.py` (zero-risk)
-- Plan Phase 19: Schema & Core Data Foundation
+- Execute Phase 19: Schema & Core Data Foundation (6 plans, 3 waves)
 
 ### Blockers
 
@@ -97,10 +97,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-17
-**Stopped at:** Phase 18.5 COMPLETE. Architecture Delta Report compiled. GO with 8 corrections.
-**Next step:** Plan Phase 19 -- Schema & Core Data Foundation (fix FY26 debt first)
-**Resume file:** .planning/phases/18.5-architectural-review/ARCHITECTURE-DELTA-REPORT.md
-**Quality gate:** v1.3 baseline: 964 tests passing. Trust 9/10.
+**Stopped at:** Completed 19-03-PLAN.md (vocabulary constants)
+**Next step:** Continue Phase 19 Wave 1 execution (19-01, 19-02, remaining plans)
+**Resume file:** .planning/phases/19-schema-core-data-foundation/19-03-SUMMARY.md
+**Quality gate:** 1084 tests passing. Trust 9/10.
 
 ## Phase 18.5 Summary
 
@@ -124,4 +124,4 @@ _None._
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-17 after Phase 18.5 completion*
+*Last updated: 2026-02-17 after 19-03 completion*
