@@ -13,9 +13,9 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Milestone:** v1.4 Climate Vulnerability Intelligence
 **Phase:** 19 - Schema & Core Data Foundation - IN PROGRESS
-**Plan:** 03 of 6 complete (19-01 through 19-06), Wave 1 executing
-**Status:** Phase 19 IN PROGRESS -- 19-01, 19-02, 19-03 complete, Wave 1 done
-**Last activity:** 2026-02-17 -- Completed 19-02-PLAN.md (vulnerability schemas via TDD)
+**Plan:** 03 of 6 complete (19-01 through 19-06), Wave 1 complete
+**Status:** Phase 19 IN PROGRESS -- 19-01, 19-02, 19-03 complete (Wave 1 done)
+**Last activity:** 2026-02-18 -- Completed 19-01-PLAN.md (FY26 tech debt + path constants + context field)
 
 **Progress:**
 ```
@@ -37,7 +37,7 @@ v1.4     [##--------]  18% Phase 19 in progress (7 phases, 28 requirements)
 | Total phases | 18 completed, 7 planned (18.5 + 19-24) |
 | Total plans | 66 completed |
 | Total requirements | 115 completed + 28 planned = 143 |
-| Total tests | 1084 (all passing) |
+| Total tests | 1103 (all passing) |
 | Source files | 102 Python files (54 src + 33 tests + 14 scripts + 1 root) |
 | Total LOC | ~38,300 Python (src + tests) |
 | Documents generated | 992 (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) |
@@ -81,12 +81,18 @@ v1.3 decisions (33 total) archived to `milestones/v1.3-ROADMAP.md`. Full cumulat
 - [18.5-DEC-09] GEO-02 (3DEP): defer to v1.5+ (requires research-grade geospatial processing).
 - [18.5-DEC-10] Fix 22 hardcoded FY26 strings BEFORE defining DOC_E (pre-Phase 19 tech debt).
 
+**Phase 19 decisions:**
+- [19-01-DEC-01] Use f-strings at module init time for doc_types constants (frozen dataclass values evaluated once at import).
+- [19-01-DEC-02] Double-brace escape for .replace() placeholders in f-strings (DOC_B/DOC_D header_template).
+- [19-01-DEC-03] Preserve FY26 example value in schemas/models.py line 96 (documentation, not functional code).
+- [19-01-DEC-04] Leave test mock filenames in test_quality_review.py as literal fy26 (mock data, not generated).
+
 ### Todos
 
-- Fix 22 hardcoded FY26 strings (pre-Phase 19 tech debt cleanup)
-- Add `vulnerability_profile: dict` to TribePacketContext (zero-risk)
-- Add 6 path constants to `src/paths.py` (zero-risk)
-- Execute Phase 19: Schema & Core Data Foundation (6 plans, 3 waves)
+- ~~Fix 22 hardcoded FY26 strings (pre-Phase 19 tech debt cleanup)~~ DONE (19-01)
+- ~~Add `vulnerability_profile: dict` to TribePacketContext (zero-risk)~~ DONE (19-01)
+- ~~Add 6 path constants to `src/paths.py` (zero-risk)~~ DONE (19-01)
+- Execute Phase 19: Schema & Core Data Foundation -- Wave 2 next (19-04, 19-05)
 
 ### Blockers
 
@@ -96,11 +102,11 @@ _None._
 
 ### Last Session
 
-**Date:** 2026-02-17
-**Stopped at:** Completed 19-02-PLAN.md (vulnerability schemas TDD)
+**Date:** 2026-02-18
+**Stopped at:** Completed 19-01-PLAN.md (FY26 tech debt + path constants + context field)
 **Next step:** Continue Phase 19 Wave 2 execution (19-04, 19-05)
-**Resume file:** .planning/phases/19-schema-core-data-foundation/19-02-SUMMARY.md
-**Quality gate:** 1084 tests passing. Trust 9/10.
+**Resume file:** .planning/phases/19-schema-core-data-foundation/19-01-SUMMARY.md
+**Quality gate:** 1103 tests passing. Trust 9/10.
 
 ## Phase 18.5 Summary
 
@@ -124,4 +130,4 @@ _None._
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-17 after 19-02 completion*
+*Last updated: 2026-02-18 after 19-01 completion*
