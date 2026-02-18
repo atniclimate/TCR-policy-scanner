@@ -14,8 +14,8 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 **Milestone:** v1.4 Climate Vulnerability Intelligence
 **Phase:** 19 - Schema & Core Data Foundation - IN PROGRESS
 **Plan:** 03 of 6 complete (19-01 through 19-06), Wave 1 executing
-**Status:** Phase 19 IN PROGRESS -- 19-03 complete, Wave 1 plans executing
-**Last activity:** 2026-02-17 -- Completed 19-03-PLAN.md (vocabulary constants)
+**Status:** Phase 19 IN PROGRESS -- 19-01, 19-02, 19-03 complete, Wave 1 done
+**Last activity:** 2026-02-17 -- Completed 19-02-PLAN.md (vulnerability schemas via TDD)
 
 **Progress:**
 ```
@@ -97,9 +97,9 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-17
-**Stopped at:** Completed 19-03-PLAN.md (vocabulary constants)
-**Next step:** Continue Phase 19 Wave 1 execution (19-01, 19-02, remaining plans)
-**Resume file:** .planning/phases/19-schema-core-data-foundation/19-03-SUMMARY.md
+**Stopped at:** Completed 19-02-PLAN.md (vulnerability schemas TDD)
+**Next step:** Continue Phase 19 Wave 2 execution (19-04, 19-05)
+**Resume file:** .planning/phases/19-schema-core-data-foundation/19-02-SUMMARY.md
 **Quality gate:** 1084 tests passing. Trust 9/10.
 
 ## Phase 18.5 Summary
@@ -124,4 +124,4 @@ _None._
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-17 after 19-03 completion*
+*Last updated: 2026-02-17 after 19-02 completion*
