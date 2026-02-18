@@ -90,6 +90,17 @@ Plans:
 - FLOOD-05: NOAA Atlas 14 precipitation frequency estimates at county/station level
 - FLOOD-06: NOAA CO-OPS coastal water levels and flood thresholds for coastal Tribal areas
 
+**Plans:** 7 plans
+
+Plans:
+- [ ] 20-01-PLAN.md -- Flood Pydantic schemas, shared infrastructure, path constants, reference data
+- [ ] 20-02-PLAN.md -- FLOOD-01: NFIP flood insurance builder (OpenFEMA claims)
+- [ ] 20-03-PLAN.md -- FLOOD-02: Disaster declarations builder (OpenFEMA + PA/HMGP dollar joins)
+- [ ] 20-04-PLAN.md -- FLOOD-03: NFHL community status builder (OpenFEMA Community Status Book)
+- [ ] 20-05-PLAN.md -- FLOOD-04: USGS streamflow builder (OGC API + dataretrieval peak flows)
+- [ ] 20-06-PLAN.md -- FLOOD-05 + FLOOD-06: Atlas 14 precipitation + NOAA CO-OPS coastal builders
+- [ ] 20-07-PLAN.md -- CLI orchestrator, combined FloodProfile, coverage report
+
 **Success Criteria:**
 1. For a sample coastal Tribe and a sample inland Tribe, running the flood data population script produces cached JSON files containing NFIP claims/policies, disaster declarations, flood zone designations, nearby streamflow gauges, precipitation frequency estimates, and (for coastal Tribe) tidal/water level data -- all with data provenance metadata
 2. All six flood data sources route through the existing county FIPS crosswalk (tribal_county_area_weights.json) with no new geographic bridge files created
