@@ -249,8 +249,13 @@ facts and policy recommendations.
 # 9. Explanatory framing text
 # ---------------------------------------------------------------------------
 
-EXPOSURE_CONTEXT: str = "disproportionate exposure to climate hazards"
-"""Standard context phrase for describing climate exposure patterns."""
+EXPOSURE_CONTEXT: str = "elevated exposure to climate hazards"
+"""Standard context phrase for describing climate exposure patterns.
+
+Uses "elevated" instead of "disproportionate" to remain safe for use
+across all document types including Doc B/D (congressional audience).
+"Disproportionate" is a FORBIDDEN_DOC_B_TERMS member.
+"""
 
 COMPOSITE_METHODOLOGY_BRIEF: str = (
     "Composite score derived from FEMA National Risk Index hazard exposure, "

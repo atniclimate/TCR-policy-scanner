@@ -21,24 +21,26 @@ Usage:
 """
 
 import bisect
-import contextlib
 import csv
 import hashlib
 import json
 import logging
-import os
-import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src.packets._geo_common import (
+    atomic_write_json,
+    load_aiannh_crosswalk,
+    load_area_weights,
+)
 from src.packets.hazards import NRI_HAZARD_CODES, _safe_float
 from src.paths import (
     AIANNH_CROSSWALK_PATH,
     NRI_DIR,
     OUTPUTS_DIR,
-    PROJECT_ROOT,
     TRIBAL_COUNTY_WEIGHTS_PATH,
     VULNERABILITY_PROFILES_DIR,
+    resolve_path,
 )
 from src.schemas.vulnerability import NRIExpanded
 
@@ -53,15 +55,21 @@ logger = logging.getLogger(__name__)
 # may use the other. We detect and remap to match.
 
 CT_LEGACY_TO_PLANNING: dict[str, str] = {
-    "09001": "09120",  # Fairfield -> Capitol
-    "09003": "09160",  # Hartford -> South Central
-    "09005": "09190",  # Litchfield -> Western
-    "09007": "09130",  # Middlesex -> Lower Connecticut River Valley
-    "09009": "09170",  # New Haven -> Southeastern
-    "09011": "09140",  # New London -> Naugatuck Valley
-    "09013": "09180",  # Tolland -> Upper Connecticut River Valley
-    "09015": "09150",  # Windham -> Northwestern
+    "09001": "09190",  # Fairfield -> Western Connecticut (17/24 towns)
+    "09003": "09110",  # Hartford -> Capitol (27/30 towns)
+    "09005": "09160",  # Litchfield -> Northwest Hills (16/23 towns)
+    "09007": "09130",  # Middlesex -> Lower Connecticut River Valley (14/14 towns)
+    "09009": "09170",  # New Haven -> South Central Connecticut (16/27 towns)
+    "09011": "09180",  # New London -> Southeastern Connecticut (17/20 towns)
+    "09013": "09140",  # Tolland -> Naugatuck Valley (best-fit residual, 0/13 direct)
+    "09015": "09150",  # Windham -> Northeastern Connecticut (14/15 towns)
 }
+# NOTE: CT counties and planning regions have a many-to-many relationship
+# at the town level. This best-fit 1:1 mapping maximizes geographic overlap
+# per the Census Bureau crosswalk (ct_cou_to_cousub_crosswalk.txt). Tolland
+# has no good 1:1 match (12/13 towns went to Capitol, already assigned to
+# Hartford). Only 2 CT Tribes exist (both in New London -> Southeastern),
+# so the Tolland residual assignment does not affect Tribal data.
 
 CT_PLANNING_TO_LEGACY: dict[str, str] = {v: k for k, v in CT_LEGACY_TO_PLANNING.items()}
 
@@ -105,7 +113,7 @@ def validate_nri_checksum(csv_path: Path, expected_sha256: str) -> bool:
 
 
 def _compute_sha256(file_path: Path) -> str:
-    """Compute SHA256 hash of a file in 64KB chunks.
+    """Compute SHA256 hash of a file using hashlib.file_digest (Python 3.11+).
 
     Args:
         file_path: Path to the file to hash.
@@ -117,29 +125,8 @@ def _compute_sha256(file_path: Path) -> str:
         FileNotFoundError: If file_path does not exist.
         OSError: If file cannot be read.
     """
-    sha256 = hashlib.sha256()
     with open(file_path, "rb") as f:
-        while True:
-            chunk = f.read(65536)  # 64KB chunks
-            if not chunk:
-                break
-            sha256.update(chunk)
-    return sha256.hexdigest()
-
-
-def _resolve_path(raw_path: str) -> Path:
-    """Resolve a path relative to project root if not absolute.
-
-    Args:
-        raw_path: File or directory path (absolute or relative).
-
-    Returns:
-        Resolved Path object.
-    """
-    p = Path(raw_path)
-    if not p.is_absolute():
-        p = PROJECT_ROOT / p
-    return p
+        return hashlib.file_digest(f, "sha256").hexdigest()
 
 
 # ---------------------------------------------------------------------------
@@ -183,7 +170,7 @@ class NRIExpandedBuilder:
 
         raw = nri_cfg.get("nri_csv_path")
         self.nri_csv_path: Path = (
-            _resolve_path(raw) if raw
+            resolve_path(raw) if raw
             else NRI_DIR / "NRI_Table_Counties.csv"
         )
 
@@ -191,17 +178,19 @@ class NRIExpandedBuilder:
 
         raw = nri_cfg.get("output_dir")
         self.output_dir: Path = (
-            _resolve_path(raw) if raw
+            resolve_path(raw) if raw
             else VULNERABILITY_PROFILES_DIR
         )
 
         # Step 2: Load crosswalk
-        self._crosswalk: dict[str, str] = {}
-        self._tribe_to_geoids: dict[str, list[str]] = {}
-        self._load_crosswalk()
+        self._crosswalk, self._tribe_to_geoids = load_aiannh_crosswalk(
+            AIANNH_CROSSWALK_PATH, label="NRI expanded",
+        )
 
         # Step 3: Load area weights
-        self._area_weights: dict[str, list[dict]] = self._load_area_weights()
+        self._area_weights = load_area_weights(
+            TRIBAL_COUNTY_WEIGHTS_PATH, label="NRI expanded",
+        )
 
         # NRI county data (populated by _load_nri_csv)
         self._county_data: dict[str, dict] = {}
@@ -210,83 +199,6 @@ class NRIExpandedBuilder:
 
         # National percentiles (populated by compute_national_percentiles)
         self._sorted_risk_scores: list[float] = []
-
-    # -- Step 2: Load crosswalk --
-
-    def _load_crosswalk(self) -> None:
-        """Load and invert the AIANNH-to-tribe_id crosswalk.
-
-        The crosswalk JSON has structure:
-            {"mappings": {"GEOID": "tribe_id", ...}}
-
-        One Tribe may span multiple AIANNH areas, so the reverse mapping
-        is tribe_id -> list[GEOID].
-        """
-        try:
-            with open(AIANNH_CROSSWALK_PATH, encoding="utf-8") as f:
-                data = json.load(f)
-        except FileNotFoundError:
-            logger.warning(
-                "AIANNH crosswalk not found at %s -- "
-                "all Tribes will get empty NRI expanded profiles",
-                AIANNH_CROSSWALK_PATH,
-            )
-            return
-        except json.JSONDecodeError as exc:
-            logger.error(
-                "Crosswalk at %s is invalid JSON: %s",
-                AIANNH_CROSSWALK_PATH, exc,
-            )
-            return
-
-        self._crosswalk = data.get("mappings", {})
-
-        # Build reverse mapping: tribe_id -> [geoid, ...]
-        for geoid, tribe_id in self._crosswalk.items():
-            if tribe_id not in self._tribe_to_geoids:
-                self._tribe_to_geoids[tribe_id] = []
-            self._tribe_to_geoids[tribe_id].append(geoid)
-
-        logger.info(
-            "NRI expanded crosswalk: %d GEOIDs -> %d tribes",
-            len(self._crosswalk),
-            len(self._tribe_to_geoids),
-        )
-
-    # -- Step 3: Load area weights --
-
-    def _load_area_weights(self) -> dict[str, list[dict]]:
-        """Load pre-computed area-weighted AIANNH-to-county crosswalk.
-
-        Returns:
-            Dict mapping AIANNH GEOID -> list of
-            {county_fips, weight, overlap_area_sqkm}.
-            Empty dict if file not found.
-        """
-        if not TRIBAL_COUNTY_WEIGHTS_PATH.exists():
-            logger.warning(
-                "Area-weighted crosswalk not found at %s -- "
-                "NRI expanded profiles will have no geographic data",
-                TRIBAL_COUNTY_WEIGHTS_PATH,
-            )
-            return {}
-
-        try:
-            with open(TRIBAL_COUNTY_WEIGHTS_PATH, encoding="utf-8") as f:
-                data = json.load(f)
-        except (json.JSONDecodeError, OSError) as exc:
-            logger.error(
-                "Failed to load area weights from %s: %s",
-                TRIBAL_COUNTY_WEIGHTS_PATH, exc,
-            )
-            return {}
-
-        crosswalk = data.get("crosswalk", {})
-        logger.info(
-            "NRI expanded area weights: %d AIANNH entities",
-            len(crosswalk),
-        )
-        return crosswalk
 
     # -- Step 4: Load NRI CSV with version pinning (XCUT-03) --
 
@@ -472,7 +384,22 @@ class NRIExpandedBuilder:
             return 50.0
 
         rank = bisect.bisect_left(self._sorted_risk_scores, risk_score)
-        percentile = (rank / (n - 1)) * 100.0
+
+        # Exact match or boundary: use rank-based percentile
+        if rank >= n:
+            return 100.0
+        if rank == 0:
+            return round((0 / (n - 1)) * 100.0, 2) if self._sorted_risk_scores[0] == risk_score else 0.0
+        if self._sorted_risk_scores[rank] == risk_score:
+            return round((rank / (n - 1)) * 100.0, 2)
+
+        # Interpolated Tribal score between two county scores:
+        # linear interpolation gives more accurate percentile than
+        # rounding to next-higher rank (which systematically overstates).
+        lower = self._sorted_risk_scores[rank - 1]
+        upper = self._sorted_risk_scores[rank]
+        fraction = (risk_score - lower) / (upper - lower) if upper > lower else 0.0
+        percentile = ((rank - 1 + fraction) / (n - 1)) * 100.0
         return round(min(percentile, 100.0), 2)
 
     # -- Step 6: Aggregate tribe NRI --
@@ -710,43 +637,12 @@ class NRIExpandedBuilder:
 
         return files_written
 
-    # -- Step 8: Atomic write --
+    # -- Step 8: Atomic write (delegates to shared utility) --
 
-    def _atomic_write(self, output_path: Path, data: dict) -> None:
-        """Write JSON data atomically with path traversal guard.
-
-        Uses tempfile.mkstemp + os.fdopen + os.replace pattern for
-        crash safety. Cleans up temp file on error.
-
-        Args:
-            output_path: Target file path.
-            data: Dict to serialize as JSON.
-
-        Raises:
-            ValueError: If output_path attempts path traversal.
-        """
-        # Path traversal guard
-        safe_name = Path(output_path.name).name
-        if safe_name != output_path.name or ".." in str(output_path):
-            raise ValueError(
-                f"Path traversal detected in output path: {output_path}"
-            )
-
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-
-        tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=output_path.parent,
-            suffix=".tmp",
-            prefix=f"{output_path.stem}_",
-        )
-        try:
-            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=2, ensure_ascii=False)
-            os.replace(tmp_path, output_path)
-        except Exception:
-            with contextlib.suppress(OSError):
-                os.unlink(tmp_path)
-            raise
+    @staticmethod
+    def _atomic_write(output_path: Path, data: dict) -> None:
+        """Write JSON data atomically. Delegates to _geo_common.atomic_write_json."""
+        atomic_write_json(output_path, data)
 
     # -- Step 9: Coverage report --
 
@@ -779,19 +675,7 @@ class NRIExpandedBuilder:
             },
         }
 
-        OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
         report_path = OUTPUTS_DIR / "nri_expanded_coverage_report.json"
-
-        tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=OUTPUTS_DIR, suffix=".tmp", prefix="nri_exp_cov_"
-        )
-        try:
-            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                json.dump(report, f, indent=2, ensure_ascii=False)
-            os.replace(tmp_path, report_path)
-        except Exception:
-            with contextlib.suppress(OSError):
-                os.unlink(tmp_path)
-            raise
+        atomic_write_json(report_path, report)
 
         logger.info("NRI expanded coverage report written to %s", report_path)

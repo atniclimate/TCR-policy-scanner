@@ -196,3 +196,21 @@ def packet_state_path(tribe_id: str) -> Path:
 def vulnerability_profile_path(tribe_id: str) -> Path:
     """Return the vulnerability profile JSON path for a specific Tribe."""
     return VULNERABILITY_PROFILES_DIR / f"{tribe_id}.json"
+
+
+def resolve_path(raw_path: str) -> Path:
+    """Resolve a path relative to project root if not absolute.
+
+    Used by builders (hazards, NRI, SVI) to normalize config-supplied
+    path strings into absolute Path objects.
+
+    Args:
+        raw_path: File or directory path (absolute or relative).
+
+    Returns:
+        Resolved Path object.
+    """
+    p = Path(raw_path)
+    if not p.is_absolute():
+        p = PROJECT_ROOT / p
+    return p

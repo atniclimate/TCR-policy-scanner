@@ -138,40 +138,33 @@ class TestAtomicWriteCompliance:
         filepath = PROJECT_ROOT / "src" / "packets" / "svi_builder.py"
         return filepath.read_text(encoding="utf-8")
 
-    def test_nri_has_os_replace(self, nri_source):
-        """nri_expanded.py uses os.replace() for atomic writes."""
-        assert "os.replace(" in nri_source, (
-            "nri_expanded.py must use os.replace() for atomic file writes"
+    def test_nri_uses_atomic_write(self, nri_source):
+        """nri_expanded.py delegates to atomic_write_json from _geo_common."""
+        assert "atomic_write_json" in nri_source, (
+            "nri_expanded.py must use atomic_write_json from _geo_common"
         )
 
-    def test_svi_has_os_replace(self, svi_source):
-        """svi_builder.py uses os.replace() for atomic writes."""
-        assert "os.replace(" in svi_source, (
-            "svi_builder.py must use os.replace() for atomic file writes"
+    def test_svi_uses_atomic_write(self, svi_source):
+        """svi_builder.py delegates to atomic_write_json from _geo_common."""
+        assert "atomic_write_json" in svi_source, (
+            "svi_builder.py must use atomic_write_json from _geo_common"
         )
 
-    def test_nri_imports_tempfile(self, nri_source):
-        """nri_expanded.py imports tempfile for atomic write pattern."""
-        assert "import tempfile" in nri_source, (
-            "nri_expanded.py must import tempfile for atomic write support"
-        )
+    def test_geo_common_has_os_replace(self):
+        """_geo_common.py implements atomic writes with os.replace()."""
+        from src.paths import PROJECT_ROOT
 
-    def test_svi_imports_tempfile(self, svi_source):
-        """svi_builder.py imports tempfile for atomic write pattern."""
-        assert "import tempfile" in svi_source, (
-            "svi_builder.py must import tempfile for atomic write support"
+        source = (PROJECT_ROOT / "src" / "packets" / "_geo_common.py").read_text(
+            encoding="utf-8"
         )
-
-    def test_nri_has_contextlib_suppress(self, nri_source):
-        """nri_expanded.py has contextlib.suppress(OSError) for cleanup on failure."""
-        assert "contextlib.suppress(OSError)" in nri_source, (
-            "nri_expanded.py must use contextlib.suppress(OSError) for temp file cleanup"
+        assert "os.replace(" in source, (
+            "_geo_common.py must use os.replace() for atomic file writes"
         )
-
-    def test_svi_has_contextlib_suppress(self, svi_source):
-        """svi_builder.py has contextlib.suppress(OSError) for cleanup on failure."""
-        assert "contextlib.suppress(OSError)" in svi_source, (
-            "svi_builder.py must use contextlib.suppress(OSError) for temp file cleanup"
+        assert "import tempfile" in source, (
+            "_geo_common.py must import tempfile for atomic write support"
+        )
+        assert "contextlib.suppress(OSError)" in source, (
+            "_geo_common.py must use contextlib.suppress(OSError) for cleanup"
         )
 
 

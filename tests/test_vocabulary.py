@@ -350,7 +350,17 @@ class TestExplanatoryFraming:
 
     def test_exposure_context_value(self):
         """EXPOSURE_CONTEXT has the expected framing text."""
-        assert EXPOSURE_CONTEXT == "disproportionate exposure to climate hazards"
+        assert EXPOSURE_CONTEXT == "elevated exposure to climate hazards"
+
+    def test_exposure_context_doc_b_safe(self):
+        """EXPOSURE_CONTEXT contains no FORBIDDEN_DOC_B_TERMS members."""
+        from src.packets.vocabulary import FORBIDDEN_DOC_B_TERMS
+
+        context_lower = EXPOSURE_CONTEXT.lower()
+        for term in FORBIDDEN_DOC_B_TERMS:
+            assert term.lower() not in context_lower, (
+                f"EXPOSURE_CONTEXT contains forbidden Doc B term '{term}'"
+            )
 
     def test_composite_methodology_references_sources(self):
         """COMPOSITE_METHODOLOGY_BRIEF references all three data sources."""

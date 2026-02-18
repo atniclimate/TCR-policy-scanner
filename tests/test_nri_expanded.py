@@ -216,6 +216,28 @@ class TestCTFIPSMapping:
             num = int(fips)
             assert 9110 <= num <= 9190
 
+    def test_new_london_maps_to_southeastern(self):
+        """New London (09011) maps to Southeastern CT (09180).
+
+        Critical: 2 CT Tribes (Mashantucket Pequot, Mohegan) are in
+        New London County. Wrong mapping here = wrong hazard data for
+        real Tribal Nations.
+        """
+        assert CT_LEGACY_TO_PLANNING["09011"] == "09180"
+
+    def test_fairfield_maps_to_western(self):
+        """Fairfield (09001) maps to Western Connecticut (09190)."""
+        assert CT_LEGACY_TO_PLANNING["09001"] == "09190"
+
+    def test_hartford_maps_to_capitol(self):
+        """Hartford (09003) maps to Capitol (09110)."""
+        assert CT_LEGACY_TO_PLANNING["09003"] == "09110"
+
+    def test_all_planning_values_unique(self):
+        """Each legacy county maps to a different planning region."""
+        values = list(CT_LEGACY_TO_PLANNING.values())
+        assert len(values) == len(set(values))
+
 
 # ---------------------------------------------------------------------------
 # -- TestNationalPercentile --
@@ -278,6 +300,44 @@ class TestNationalPercentile:
         """Score matching the highest county gets 100.0 percentile."""
         # Highest is 60.0 in the fixture
         assert builder_with_data._get_risk_percentile(60.0) == 100.0
+
+    def test_interpolated_score_between_counties(self):
+        """Area-weighted Tribal score between counties gets interpolated percentile.
+
+        Regression test for P2-#7: bisect_left without interpolation
+        systematically overstates percentiles for Tribal scores that
+        fall between county scores. Linear interpolation is more accurate.
+        """
+        builder = MagicMock()
+        builder._sorted_risk_scores = [10.0, 20.0, 30.0]
+        # 15.0 is midpoint between 10 and 20
+        # Interpolated: ((0 + 0.5) / 2) * 100 = 25.0
+        # Old code would give: (1 / 2) * 100 = 50.0 (overstated by 25 points)
+        result = NRIExpandedBuilder._get_risk_percentile(builder, 15.0)
+        assert result == pytest.approx(25.0, abs=0.01)
+
+    def test_interpolated_score_near_upper(self):
+        """Score near upper bound interpolates close to higher rank."""
+        builder = MagicMock()
+        builder._sorted_risk_scores = [10.0, 20.0, 30.0]
+        # 19.0 is 90% of way from 10 to 20
+        # Interpolated: ((0 + 0.9) / 2) * 100 = 45.0
+        result = NRIExpandedBuilder._get_risk_percentile(builder, 19.0)
+        assert result == pytest.approx(45.0, abs=0.01)
+
+    def test_score_above_all_counties(self):
+        """Score higher than all counties returns 100.0."""
+        builder = MagicMock()
+        builder._sorted_risk_scores = [10.0, 20.0, 30.0]
+        result = NRIExpandedBuilder._get_risk_percentile(builder, 999.0)
+        assert result == 100.0
+
+    def test_score_below_all_counties(self):
+        """Score below all counties returns 0.0."""
+        builder = MagicMock()
+        builder._sorted_risk_scores = [10.0, 20.0, 30.0]
+        result = NRIExpandedBuilder._get_risk_percentile(builder, 5.0)
+        assert result == 0.0
 
 
 # ---------------------------------------------------------------------------
@@ -768,7 +828,7 @@ class TestCTFIPSInCSV:
         weights = {
             "crosswalk": {
                 "GEOID_CT": [
-                    {"county_fips": "09120", "weight": 1.0, "overlap_area_sqkm": 100},
+                    {"county_fips": "09190", "weight": 1.0, "overlap_area_sqkm": 100},
                 ],
             },
         }
@@ -794,8 +854,8 @@ class TestCTFIPSInCSV:
             builder = NRIExpandedBuilder(config)
             county_data = builder._load_nri_csv()
 
-        # 09001 should be remapped to 09120
-        assert "09120" in county_data
+        # 09001 (Fairfield) should be remapped to 09190 (Western Connecticut)
+        assert "09190" in county_data
         assert "09001" not in county_data
 
 

@@ -17,24 +17,27 @@ Usage:
     print(f"Built {count} hazard profiles")
 """
 
-import contextlib
 import csv
 import json
 import logging
 import math
-import os
-import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src.packets._geo_common import (
+    atomic_write_json,
+    atomic_write_text,
+    load_aiannh_crosswalk,
+    load_area_weights,
+)
 from src.paths import (
     AIANNH_CROSSWALK_PATH,
     HAZARD_PROFILES_DIR,
     NRI_DIR,
     OUTPUTS_DIR,
-    PROJECT_ROOT,
     TRIBAL_COUNTY_WEIGHTS_PATH,
     USFS_DIR,
+    resolve_path,
 )
 
 logger = logging.getLogger(__name__)
@@ -106,21 +109,6 @@ def _safe_float(value, default: float = 0.0) -> float:
         return default
 
 
-def _resolve_path(raw_path: str) -> Path:
-    """Resolve a path relative to project root if not absolute.
-
-    Args:
-        raw_path: File or directory path (absolute or relative).
-
-    Returns:
-        Resolved Path object.
-    """
-    p = Path(raw_path)
-    if not p.is_absolute():
-        p = PROJECT_ROOT / p
-    return p
-
-
 def score_to_rating(score: float) -> str:
     """Convert 0-100 percentile score to NRI rating string.
 
@@ -173,109 +161,32 @@ class HazardProfileBuilder:
         hazards_cfg = packets_cfg.get("hazards", {})
 
         raw = hazards_cfg.get("crosswalk_path")
-        self.crosswalk_path = _resolve_path(raw) if raw else AIANNH_CROSSWALK_PATH
+        self.crosswalk_path = resolve_path(raw) if raw else AIANNH_CROSSWALK_PATH
 
         raw = hazards_cfg.get("nri_dir")
-        self.nri_dir = _resolve_path(raw) if raw else NRI_DIR
+        self.nri_dir = resolve_path(raw) if raw else NRI_DIR
 
         raw = hazards_cfg.get("usfs_dir")
-        self.usfs_dir = _resolve_path(raw) if raw else USFS_DIR
+        self.usfs_dir = resolve_path(raw) if raw else USFS_DIR
 
         raw = hazards_cfg.get("cache_dir")
-        self.cache_dir = _resolve_path(raw) if raw else HAZARD_PROFILES_DIR
+        self.cache_dir = resolve_path(raw) if raw else HAZARD_PROFILES_DIR
 
         # Load registry for tribe enumeration
         self._registry = TribalRegistry(config)
 
         # Load crosswalk: AIANNH GEOID -> tribe_id
-        self._crosswalk: dict[str, str] = {}
-        # Reverse crosswalk: tribe_id -> list of AIANNH GEOIDs
-        self._tribe_to_geoids: dict[str, list[str]] = {}
-        self._load_crosswalk()
+        self._crosswalk, self._tribe_to_geoids = load_aiannh_crosswalk(
+            self.crosswalk_path, label="hazard",
+        )
 
         # Load pre-computed area-weighted AIANNH-to-county crosswalk
-        self._area_weights: dict[str, list[dict]] = self._load_area_weights()
+        self._area_weights = load_area_weights(
+            TRIBAL_COUNTY_WEIGHTS_PATH, label="hazard",
+        )
 
         # NRI dataset version -- detected dynamically in _load_nri_county_data()
         self._nri_version: str = "NRI_v1.20"
-
-    def _load_crosswalk(self) -> None:
-        """Load and invert the AIANNH-to-tribe_id crosswalk.
-
-        The crosswalk JSON has structure:
-            {"mappings": {"GEOID": "tribe_id", ...}}
-
-        One Tribe may span multiple AIANNH areas, so the reverse mapping
-        is tribe_id -> list[GEOID].
-        """
-        try:
-            with open(self.crosswalk_path, encoding="utf-8") as f:
-                data = json.load(f)
-        except FileNotFoundError:
-            logger.warning(
-                "AIANNH crosswalk not found at %s -- "
-                "all Tribes will get empty hazard profiles",
-                self.crosswalk_path,
-            )
-            return
-        except json.JSONDecodeError as exc:
-            logger.error(
-                "Crosswalk at %s is invalid JSON: %s",
-                self.crosswalk_path, exc,
-            )
-            return
-
-        self._crosswalk = data.get("mappings", {})
-
-        # Build reverse mapping: tribe_id -> [geoid, ...]
-        for geoid, tribe_id in self._crosswalk.items():
-            if tribe_id not in self._tribe_to_geoids:
-                self._tribe_to_geoids[tribe_id] = []
-            self._tribe_to_geoids[tribe_id].append(geoid)
-
-        logger.info(
-            "Loaded crosswalk: %d AIANNH GEOIDs -> %d unique tribe_ids",
-            len(self._crosswalk),
-            len(self._tribe_to_geoids),
-        )
-
-    def _load_area_weights(self) -> dict[str, list[dict]]:
-        """Load pre-computed area-weighted AIANNH-to-county crosswalk.
-
-        Reads the JSON file produced by scripts/build_area_crosswalk.py.
-        Each AIANNH GEOID maps to a list of county entries with weights.
-
-        Returns:
-            Dict mapping AIANNH GEOID -> list of {county_fips, weight, overlap_area_sqkm}.
-            Empty dict if file not found.
-        """
-        if not TRIBAL_COUNTY_WEIGHTS_PATH.exists():
-            logger.warning(
-                "Area-weighted crosswalk not found at %s -- "
-                "falling back to unweighted aggregation. "
-                "Run scripts/build_area_crosswalk.py to generate.",
-                TRIBAL_COUNTY_WEIGHTS_PATH,
-            )
-            return {}
-
-        try:
-            with open(TRIBAL_COUNTY_WEIGHTS_PATH, encoding="utf-8") as f:
-                data = json.load(f)
-        except (json.JSONDecodeError, OSError) as exc:
-            logger.error(
-                "Failed to load area weights from %s: %s",
-                TRIBAL_COUNTY_WEIGHTS_PATH, exc,
-            )
-            return {}
-
-        crosswalk = data.get("crosswalk", {})
-        metadata = data.get("metadata", {})
-        logger.info(
-            "Loaded area-weighted crosswalk: %d AIANNH entities, %d total county links",
-            metadata.get("total_aiannh_entities", len(crosswalk)),
-            metadata.get("total_county_links", 0),
-        )
-        return crosswalk
 
     @staticmethod
     def _detect_nri_version(csv_path: Path) -> str:
@@ -1111,19 +1022,9 @@ class HazardProfileBuilder:
                 "generated_at": datetime.now(timezone.utc).isoformat(),
             }
 
-            # Write cache file (atomic: tmp + os.replace)
+            # Write cache file atomically
             cache_file = self.cache_dir / f"{tribe_id}.json"
-            tmp_fd, tmp_path = tempfile.mkstemp(
-                dir=self.cache_dir, suffix=".tmp", prefix=f"{tribe_id}_"
-            )
-            try:
-                with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                    json.dump(profile, f, indent=2, ensure_ascii=False)
-                os.replace(tmp_path, cache_file)
-            except Exception:
-                with contextlib.suppress(OSError):
-                    os.unlink(tmp_path)
-                raise
+            atomic_write_json(cache_file, profile)
             files_written += 1
 
         # Log summary
@@ -1176,8 +1077,6 @@ class HazardProfileBuilder:
                 build_all_profiles(), including counts, unmatched list,
                 and per-state statistics.
         """
-        OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
-
         total = coverage_data["total_profiles"]
         nri = coverage_data["nri_matched"]
         usfs = coverage_data["usfs_matched"]
@@ -1217,17 +1116,7 @@ class HazardProfileBuilder:
         }
 
         json_path = OUTPUTS_DIR / "hazard_coverage_report.json"
-        tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=OUTPUTS_DIR, suffix=".tmp", prefix="hazard_cov_"
-        )
-        try:
-            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                json.dump(report_json, f, indent=2, ensure_ascii=False)
-            os.replace(tmp_path, json_path)
-        except Exception:
-            with contextlib.suppress(OSError):
-                os.unlink(tmp_path)
-            raise
+        atomic_write_json(json_path, report_json)
         logger.info("Coverage report (JSON) written to %s", json_path)
 
         # Build Markdown report
@@ -1276,15 +1165,5 @@ class HazardProfileBuilder:
         md_lines.append("")  # trailing newline
 
         md_path = OUTPUTS_DIR / "hazard_coverage_report.md"
-        tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=OUTPUTS_DIR, suffix=".tmp", prefix="hazard_cov_md_"
-        )
-        try:
-            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                f.write("\n".join(md_lines))
-            os.replace(tmp_path, md_path)
-        except Exception:
-            with contextlib.suppress(OSError):
-                os.unlink(tmp_path)
-            raise
+        atomic_write_text(md_path, "\n".join(md_lines))
         logger.info("Coverage report (Markdown) written to %s", md_path)

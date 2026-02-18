@@ -394,12 +394,17 @@ class TestSVICompositeComputation:
         county_data = builder._load_svi_csv()
         # Verify that raw RPL_THEMES is stored but NOT used for composite
         for fips, record in county_data.items():
-            expected_mean = round(
+            our_composite = round(
                 (record["rpl_theme1"] + record["rpl_theme2"] + record["rpl_theme4"]) / 3,
                 4,
             )
             # RPL_THEMES includes theme3, so it should differ from our composite
             assert "rpl_themes" in record  # stored for reference
+            if record["rpl_themes"] != 0.0:
+                assert abs(our_composite - record["rpl_themes"]) > 0.001, (
+                    f"FIPS {fips}: 3-theme composite ({our_composite}) should differ "
+                    f"from RPL_THEMES ({record['rpl_themes']}) which includes Theme 3"
+                )
 
     def test_composite_mismatch_rejected(self):
         """Schema rejects composite that doesn't match mean of themes."""
@@ -530,7 +535,7 @@ class TestSVIAreaWeightedAggregation:
     def test_coverage_pct(
         self, tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
     ):
-        """Coverage_pct = matched / crosswalk counties."""
+        """Coverage_pct = matched_weight / total_weight (area-based)."""
         builder = _make_builder(
             tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
         )
@@ -594,6 +599,47 @@ class TestSVIAreaWeightedAggregation:
         assert result["counties_matched"] == 0
         assert DataGapType.MISSING_SVI in result["data_gaps"]
 
+    def test_zero_theme_high_area_triggers_gap(self, tmp_path, crosswalk_file, mock_registry):
+        """Counties with zero themes and high area weight correctly lower coverage_pct.
+
+        Regression test for P2-#9: A Tribe whose high-area counties have
+        suppressed (all-zero) SVI data should have low coverage_pct and
+        trigger MISSING_SVI gap via weight-based coverage calculation.
+        """
+        # 80% area has zero themes, 20% has real data
+        weights = {
+            "metadata": {"total_aiannh_entities": 1, "total_county_links": 2},
+            "crosswalk": {
+                "GEOID_001": [
+                    {"county_fips": "06001", "weight": 0.8, "overlap_area_sqkm": 800},
+                    {"county_fips": "06003", "weight": 0.2, "overlap_area_sqkm": 200},
+                ],
+            },
+        }
+        weights_path = tmp_path / "weights.json"
+        weights_path.write_text(json.dumps(weights), encoding="utf-8")
+
+        # 06001: all zeros (suppressed), 06003: real data
+        csv_content = (
+            "STCNTY,ST_ABBR,RPL_THEME1,RPL_THEME2,RPL_THEME3,RPL_THEME4,RPL_THEMES,"
+            "E_TOTPOP,F_THEME1,F_THEME2,F_THEME3,F_THEME4\n"
+            "06001,CA,0.0,0.0,0.0,0.0,0.0,100000,0,0,0,0\n"
+            "06003,CA,0.40,0.30,0.20,0.50,0.35,5000,1,0,0,2\n"
+        )
+        csv_path = tmp_path / "SVI2022_US_COUNTY.csv"
+        csv_path.write_text(csv_content, encoding="utf-8")
+
+        builder = _make_builder(
+            tmp_path, csv_path, crosswalk_file, weights_path, mock_registry
+        )
+        county_data = builder._load_svi_csv()
+        tribe = {"tribe_id": "epa_100000001", "name": "Alpha", "states": ["CA"]}
+        result = builder._aggregate_tribe_svi("epa_100000001", tribe, county_data)
+
+        # Weight-based: only 06003 matched (0.2 weight) out of 1.0 total
+        assert result["coverage_pct"] == 0.2
+        assert DataGapType.MISSING_SVI in result["data_gaps"]
+
 
 # ═══════════════════════════════════════════════════════════════════════════
 # TestSVIProfileBuilder
@@ -610,37 +656,32 @@ class TestSVIProfileBuilder:
         # Just verify the class can be instantiated
         assert builder is not None
 
-    def test_path_traversal_guard(
-        self, tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
-    ):
-        """Atomic write rejects path traversal in tribe_id."""
-        builder = _make_builder(
-            tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
-        )
-        with pytest.raises(ValueError, match="Invalid tribe_id"):
-            builder._atomic_write("../../etc/passwd", {"test": True})
+    def test_path_traversal_guard(self, tmp_path):
+        """atomic_write_json rejects path traversal sequences."""
+        from src.packets._geo_common import atomic_write_json
 
-    def test_path_traversal_guard_dotdot(
-        self, tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
-    ):
-        """Atomic write rejects tribe_id containing '..'."""
-        builder = _make_builder(
-            tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
-        )
-        with pytest.raises(ValueError, match="Invalid tribe_id"):
-            builder._atomic_write("..epa_test", {"test": True})
+        with pytest.raises(ValueError, match="Path traversal"):
+            atomic_write_json(
+                tmp_path / ".." / "etc" / "passwd.json", {"test": True}
+            )
 
-    def test_atomic_write_creates_file(
-        self, tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
-    ):
-        """Atomic write creates a valid JSON file."""
-        builder = _make_builder(
-            tmp_path, svi_county_csv, crosswalk_file, area_weights_file, mock_registry
-        )
+    def test_path_traversal_guard_dotdot(self, tmp_path):
+        """atomic_write_json rejects paths containing '..'."""
+        from src.packets._geo_common import atomic_write_json
+
+        with pytest.raises(ValueError, match="Path traversal"):
+            atomic_write_json(
+                tmp_path / "..epa_test.json", {"test": True}
+            )
+
+    def test_atomic_write_creates_file(self, tmp_path):
+        """atomic_write_json creates a valid JSON file."""
+        from src.packets._geo_common import atomic_write_json
+
+        output_file = tmp_path / "epa_100000001.json"
         test_data = {"tribe_id": "epa_100000001", "test_key": "test_value"}
-        builder._atomic_write("epa_100000001", test_data)
+        atomic_write_json(output_file, test_data)
 
-        output_file = builder.output_dir / "epa_100000001.json"
         assert output_file.exists()
         with open(output_file, encoding="utf-8") as f:
             loaded = json.load(f)

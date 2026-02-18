@@ -20,24 +20,27 @@ Usage:
     print(f"Built {count} SVI profiles")
 """
 
-import contextlib
 import csv
 import json
 import logging
-import os
-import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src.packets._geo_common import (
+    atomic_write_json,
+    atomic_write_text,
+    load_aiannh_crosswalk,
+    load_area_weights,
+)
 from src.packets.hazards import _safe_float
 from src.paths import (
     AIANNH_CROSSWALK_PATH,
     OUTPUTS_DIR,
-    PROJECT_ROOT,
     SVI_COUNTY_PATH,
     SVI_DIR,
     TRIBAL_COUNTY_WEIGHTS_PATH,
     VULNERABILITY_PROFILES_DIR,
+    resolve_path,
 )
 from src.schemas.vulnerability import DataGapType, SVIProfile, SVITheme
 
@@ -97,21 +100,6 @@ def _safe_svi_float(value, default: float = 0.0) -> float:
     return result
 
 
-def _resolve_path(raw_path: str) -> Path:
-    """Resolve a path relative to project root if not absolute.
-
-    Args:
-        raw_path: File or directory path (absolute or relative).
-
-    Returns:
-        Resolved Path object.
-    """
-    p = Path(raw_path)
-    if not p.is_absolute():
-        p = PROJECT_ROOT / p
-    return p
-
-
 # ---------------------------------------------------------------------------
 # -- SVIProfileBuilder --
 # ---------------------------------------------------------------------------
@@ -154,107 +142,26 @@ class SVIProfileBuilder:
         svi_cfg = packets_cfg.get("svi", {})
 
         raw = svi_cfg.get("svi_csv_path")
-        self.svi_csv_path = _resolve_path(raw) if raw else SVI_COUNTY_PATH
+        self.svi_csv_path = resolve_path(raw) if raw else SVI_COUNTY_PATH
 
         raw = svi_cfg.get("output_dir")
-        self.output_dir = _resolve_path(raw) if raw else SVI_DIR / "profiles"
+        self.output_dir = resolve_path(raw) if raw else SVI_DIR / "profiles"
 
         raw = svi_cfg.get("crosswalk_path")
-        self.crosswalk_path = _resolve_path(raw) if raw else AIANNH_CROSSWALK_PATH
+        self.crosswalk_path = resolve_path(raw) if raw else AIANNH_CROSSWALK_PATH
 
         # Load registry for tribe enumeration
         self._registry = TribalRegistry(config)
 
         # Load crosswalk: AIANNH GEOID -> tribe_id
-        self._crosswalk: dict[str, str] = {}
-        # Reverse crosswalk: tribe_id -> list of AIANNH GEOIDs
-        self._tribe_to_geoids: dict[str, list[str]] = {}
-        self._load_crosswalk()
+        self._crosswalk, self._tribe_to_geoids = load_aiannh_crosswalk(
+            self.crosswalk_path, label="SVI",
+        )
 
         # Load pre-computed area-weighted AIANNH-to-county crosswalk
-        self._area_weights: dict[str, list[dict]] = self._load_area_weights()
-
-    # -- Step 2: Load crosswalk --
-
-    def _load_crosswalk(self) -> None:
-        """Load and invert the AIANNH-to-tribe_id crosswalk.
-
-        The crosswalk JSON has structure:
-            {"mappings": {"GEOID": "tribe_id", ...}}
-
-        One Tribe may span multiple AIANNH areas, so the reverse mapping
-        is tribe_id -> list[GEOID].
-        """
-        try:
-            with open(self.crosswalk_path, encoding="utf-8") as f:
-                data = json.load(f)
-        except FileNotFoundError:
-            logger.warning(
-                "AIANNH crosswalk not found at %s -- "
-                "all Tribes will get empty SVI profiles",
-                self.crosswalk_path,
-            )
-            return
-        except json.JSONDecodeError as exc:
-            logger.error(
-                "Crosswalk at %s is invalid JSON: %s",
-                self.crosswalk_path, exc,
-            )
-            return
-
-        self._crosswalk = data.get("mappings", {})
-
-        # Build reverse mapping: tribe_id -> [geoid, ...]
-        for geoid, tribe_id in self._crosswalk.items():
-            if tribe_id not in self._tribe_to_geoids:
-                self._tribe_to_geoids[tribe_id] = []
-            self._tribe_to_geoids[tribe_id].append(geoid)
-
-        logger.info(
-            "SVI crosswalk loaded: %d AIANNH GEOIDs -> %d unique tribe_ids",
-            len(self._crosswalk),
-            len(self._tribe_to_geoids),
+        self._area_weights = load_area_weights(
+            TRIBAL_COUNTY_WEIGHTS_PATH, label="SVI",
         )
-
-    # -- Step 3: Load area weights --
-
-    def _load_area_weights(self) -> dict[str, list[dict]]:
-        """Load pre-computed area-weighted AIANNH-to-county crosswalk.
-
-        Reads the JSON file produced by scripts/build_area_crosswalk.py.
-        Each AIANNH GEOID maps to a list of county entries with weights.
-
-        Returns:
-            Dict mapping AIANNH GEOID -> list of {county_fips, weight, overlap_area_sqkm}.
-            Empty dict if file not found.
-        """
-        if not TRIBAL_COUNTY_WEIGHTS_PATH.exists():
-            logger.warning(
-                "Area-weighted crosswalk not found at %s -- "
-                "SVI aggregation will use equal weights. "
-                "Run scripts/build_area_crosswalk.py to generate.",
-                TRIBAL_COUNTY_WEIGHTS_PATH,
-            )
-            return {}
-
-        try:
-            with open(TRIBAL_COUNTY_WEIGHTS_PATH, encoding="utf-8") as f:
-                data = json.load(f)
-        except (json.JSONDecodeError, OSError) as exc:
-            logger.error(
-                "Failed to load area weights from %s: %s",
-                TRIBAL_COUNTY_WEIGHTS_PATH, exc,
-            )
-            return {}
-
-        crosswalk = data.get("crosswalk", {})
-        metadata = data.get("metadata", {})
-        logger.info(
-            "SVI area-weighted crosswalk loaded: %d AIANNH entities, %d total county links",
-            metadata.get("total_aiannh_entities", len(crosswalk)),
-            metadata.get("total_county_links", 0),
-        )
-        return crosswalk
 
     # -- Step 4: Load SVI CSV --
 
@@ -483,16 +390,21 @@ class SVIProfileBuilder:
             (weighted_theme1 + weighted_theme2 + weighted_theme4) / 3.0, 4
         )
 
-        # Step 7: Coverage percentage
+        # Step 7: Coverage percentage (area-weight-based, matching NRI builder)
+        total_possible_weight = sum(county_weights.values())
+        matched_weight = sum(
+            county_weights.get(r["fips"], 0.0) for r in matched_records
+        )
         coverage_pct = round(
-            len(matched_records) / max(len(county_weights), 1), 4
+            matched_weight / total_possible_weight
+            if total_possible_weight > 0
+            else 0.0,
+            4,
         )
 
         # Step 8: Data gap detection
         data_gaps: list[str] = []
-        if coverage_pct == 0.0:
-            data_gaps.append(DataGapType.MISSING_SVI)
-        elif coverage_pct < 0.5:
+        if coverage_pct < 0.5:
             data_gaps.append(DataGapType.MISSING_SVI)
 
         # Check for Alaska partial coverage
@@ -595,6 +507,7 @@ class SVIProfileBuilder:
 
         files_written = 0
         matched_count = 0
+        validation_errors = 0
         unmatched_tribes: list[dict] = []
 
         # Per-state tracking for coverage report
@@ -652,14 +565,22 @@ class SVIProfileBuilder:
                 ))
 
             # Validate against SVIProfile Pydantic schema
-            svi_profile = SVIProfile(
-                tribe_id=tribe_id,
-                themes=svi_themes,
-                composite=svi_result["composite"],
-                coverage_pct=svi_result["coverage_pct"],
-                source_year=SVI_SOURCE_YEAR,
-                data_gaps=svi_result.get("data_gaps", []),
-            )
+            try:
+                svi_profile = SVIProfile(
+                    tribe_id=tribe_id,
+                    themes=svi_themes,
+                    composite=svi_result["composite"],
+                    coverage_pct=svi_result["coverage_pct"],
+                    source_year=SVI_SOURCE_YEAR,
+                    data_gaps=svi_result.get("data_gaps", []),
+                )
+            except Exception as exc:
+                logger.warning(
+                    "SVI validation failed for %s: %s",
+                    tribe_id, exc,
+                )
+                validation_errors += 1
+                continue
 
             # Build output dict
             profile_dict = {
@@ -676,16 +597,18 @@ class SVIProfileBuilder:
                 profile_dict["note"] = svi_result["note"]
 
             # Atomic write
-            self._atomic_write(tribe_id, profile_dict)
+            cache_file = self.output_dir / f"{tribe_id}.json"
+            atomic_write_json(cache_file, profile_dict)
             files_written += 1
 
         # Log summary
         logger.info(
             "SVI profile build complete: %d files written, "
-            "%d with SVI data, %d without SVI data",
+            "%d with SVI data, %d without SVI data, %d validation errors",
             files_written,
             matched_count,
             len(unmatched_tribes),
+            validation_errors,
         )
 
         if unmatched_tribes:
@@ -711,39 +634,6 @@ class SVIProfileBuilder:
 
         return files_written
 
-    # -- Step 8: Atomic write --
-
-    def _atomic_write(self, tribe_id: str, data: dict) -> None:
-        """Write a per-Tribe SVI profile JSON file atomically.
-
-        Uses tempfile + os.replace() pattern for crash safety. Includes
-        path traversal guard to prevent writes outside the output directory.
-
-        Args:
-            tribe_id: EPA tribe identifier (used as filename base).
-            data: Profile dict to serialize as JSON.
-
-        Raises:
-            ValueError: If tribe_id contains path traversal characters.
-        """
-        # Path traversal guard
-        safe_id = Path(tribe_id).name
-        if safe_id != tribe_id or ".." in tribe_id:
-            raise ValueError(f"Invalid tribe_id for file write: {tribe_id!r}")
-
-        cache_file = self.output_dir / f"{safe_id}.json"
-        tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=self.output_dir, suffix=".tmp", prefix=f"{safe_id}_"
-        )
-        try:
-            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=2, ensure_ascii=False)
-            os.replace(tmp_path, cache_file)
-        except Exception:
-            with contextlib.suppress(OSError):
-                os.unlink(tmp_path)
-            raise
-
     # -- Step 9: Coverage report --
 
     def _generate_coverage_report(self, coverage_data: dict) -> None:
@@ -757,8 +647,6 @@ class SVIProfileBuilder:
             coverage_data: Dict with tracking data accumulated during
                 build_all_profiles().
         """
-        OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
-
         total = coverage_data["total_profiles"]
         matched = coverage_data["matched"]
         unmatched_count = coverage_data["unmatched_count"]
@@ -792,17 +680,7 @@ class SVIProfileBuilder:
         }
 
         json_path = OUTPUTS_DIR / "svi_coverage_report.json"
-        tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=OUTPUTS_DIR, suffix=".tmp", prefix="svi_cov_"
-        )
-        try:
-            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                json.dump(report_json, f, indent=2, ensure_ascii=False)
-            os.replace(tmp_path, json_path)
-        except Exception:
-            with contextlib.suppress(OSError):
-                os.unlink(tmp_path)
-            raise
+        atomic_write_json(json_path, report_json)
         logger.info("SVI coverage report (JSON) written to %s", json_path)
 
         # Build Markdown report
@@ -851,15 +729,5 @@ class SVIProfileBuilder:
         md_lines.append("")  # trailing newline
 
         md_path = OUTPUTS_DIR / "svi_coverage_report.md"
-        tmp_fd, tmp_path = tempfile.mkstemp(
-            dir=OUTPUTS_DIR, suffix=".tmp", prefix="svi_cov_md_"
-        )
-        try:
-            with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
-                f.write("\n".join(md_lines))
-            os.replace(tmp_path, md_path)
-        except Exception:
-            with contextlib.suppress(OSError):
-                os.unlink(tmp_path)
-            raise
+        atomic_write_text(md_path, "\n".join(md_lines))
         logger.info("SVI coverage report (Markdown) written to %s", md_path)

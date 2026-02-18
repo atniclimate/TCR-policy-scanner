@@ -713,17 +713,13 @@ class TestAtomicProfileWrites:
     def test_cache_file_written_atomically(self, tmp_path: Path) -> None:
         """Cache files should use tmp + os.replace, not direct write.
 
-        We verify by checking the source code uses os.replace pattern.
-        This is a structural test: the atomic write produces the same file,
-        but survives crashes mid-write.
+        We verify by checking the source code uses atomic_write_json from
+        _geo_common, which implements the os.replace() pattern internally.
         """
         import inspect
         source = inspect.getsource(HazardProfileBuilder.build_all_profiles)
-        assert "os.replace" in source, (
-            "build_all_profiles must use os.replace() for atomic writes"
-        )
-        assert "tempfile" in source or "tmp" in source.lower(), (
-            "build_all_profiles must use a temp file for atomic writes"
+        assert "atomic_write_json" in source, (
+            "build_all_profiles must use atomic_write_json for atomic writes"
         )
 
 
