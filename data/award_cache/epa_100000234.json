@@ -84,6 +84,28 @@
       "awarding_agency": "Department of Homeland Security"
     },
     {
+      "award_id": "55IH5312700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "QUINAULT HOUSING AUTHORITY",
+      "obligation": 36149824.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5312700",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "QUINAULT HOUSING AUTHORITY",
+      "obligation": 1366958.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "DEIE0000148",
       "cfda": "81.087",
       "program_id": "doe_indian_energy",
@@ -95,8 +117,8 @@
       "awarding_agency": "Department of Energy"
     }
   ],
-  "total_obligation": 1956603.55,
-  "award_count": 8,
+  "total_obligation": 39473385.55,
+  "award_count": 10,
   "cfda_summary": {
     "15.156": {
       "count": 4,
@@ -105,6 +127,10 @@
     "97.047": {
       "count": 3,
       "total": 1515393.55
+    },
+    "14.867": {
+      "count": 2,
+      "total": 37516782.0
     },
     "81.087": {
       "count": 1,

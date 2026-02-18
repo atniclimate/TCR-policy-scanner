@@ -62,6 +62,39 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "A16AV00510",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO ENGINEERING & CONSTRUCTION AUTHORITY",
+      "obligation": 19175659.26,
+      "start_date": "2016-03-14",
+      "end_date": "2023-05-16",
+      "description": "ROAD AND BRIDGE CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A14AV00073",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO ENGINEERING & CONSTRUCTION AUTHORITY",
+      "obligation": 17889491.38,
+      "start_date": "2013-11-06",
+      "end_date": "2023-05-05",
+      "description": "NAVAJO, NM PROJECT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A11AV00326",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "NAVAJO ENGINEERING & CONSTRUCTION AUTHORITY",
+      "obligation": 210549.97,
+      "start_date": "2013-09-16",
+      "end_date": "2023-05-10",
+      "description": "NAVAJO MOUNTAIN, UT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
       "award_id": "693JG42330000V600AZ0028",
       "cfda": "20.205",
       "program_id": "fhwa_ttp_safety",
@@ -161,16 +194,16 @@
       "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 2079033289.51,
-  "award_count": 14,
+  "total_obligation": 2116308990.12,
+  "award_count": 17,
   "cfda_summary": {
     "66.468": {
       "count": 2,
       "total": 1125000.0
     },
     "20.205": {
-      "count": 10,
-      "total": 236229135.51
+      "count": 13,
+      "total": 273504836.12
     },
     "14.867": {
       "count": 2,

@@ -199,8 +199,8 @@ Plans:
 | Phase | Name | Requirements | Status |
 |-------|------|-------------|--------|
 | 18.5 | Architectural Review & Scaffolding | — (pre-phase) | **Complete** (2026-02-17) |
-| 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | Pending |
-| 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | Pending |
+| 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | **Complete** (2026-02-18) |
+| 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | **Planned** (7 plans, spec swarm complete) |
 | 21 | Climate, Geologic & Infrastructure Data | CLIM-01 to CLIM-03, GEO-01, GEO-02, INFRA-01 | Pending |
 | 22 | Vulnerability Profiles & Pipeline Integration | VULN-03, VULN-04, REG-01, REG-02, XCUT-01, XCUT-02, XCUT-05 | Pending |
 | 23 | Document Rendering | DOC-01, DOC-02, DOC-03 | Pending |
@@ -244,4 +244,5 @@ Plans:
 
 ---
 *Created: 2026-02-17*
+*Updated: 2026-02-18 -- Phase 19 complete, Phase 20 planned (7 plans + 30-file spec suite)*
 *28 requirements mapped across 6 phases (Phase 19-24)*

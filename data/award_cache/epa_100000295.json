@@ -139,6 +139,17 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH5315520",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SWINOMISH HOUSING AUTHORITY",
+      "obligation": 23376264.0,
+      "start_date": "2011-10-18",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "R24AP00461",
       "cfda": "15.507",
       "program_id": "usbr_watersmart",
@@ -150,8 +161,8 @@
       "awarding_agency": "Department of the Interior"
     }
   ],
-  "total_obligation": 3340370.84,
-  "award_count": 13,
+  "total_obligation": 26716634.84,
+  "award_count": 14,
   "cfda_summary": {
     "15.156": {
       "count": 4,
@@ -164,6 +175,10 @@
     "20.205": {
       "count": 7,
       "total": 2288113.1200000006
+    },
+    "14.867": {
+      "count": 1,
+      "total": 23376264.0
     },
     "15.507": {
       "count": 1,

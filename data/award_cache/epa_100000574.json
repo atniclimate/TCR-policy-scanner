@@ -7,17 +7,6 @@
   },
   "awards": [
     {
-      "award_id": "99578615",
-      "cfda": "66.926",
-      "program_id": "epa_gap",
-      "recipient_name_raw": "LEECH LAKE BAND OF OJIBWE",
-      "obligation": 520000.0,
-      "start_date": "2023-10-31",
-      "end_date": "2027-09-30",
-      "description": "DESCRIPTION:THIS AWARD WILL PROVIDE GENERAL ASSISTANCE PROGRAM (GAP) FUNDS TO THE LEECH LAKE BAND OF OJIBWE (LLBO) IN SUPPORT OF ENVIRONMENTAL CAPACITY BUILDING ACTIVITIES. THE FUNDS WILL ENABLE THE TRIBE TO ASSESS, MONITOR AND DEVELOP STRATEGIES FOR PROTECTION OF HUMAN HEALTH AND THE ENVIRONMENT. ACTIVITIES:SPECIFIC ACTIVITIES DURING THIS PERIOD INCLUDE: ADMINISTRATIVE OVERSIGHT, LEGISLATIVE AND REGULATORY CAPACITIES, STRATEGIC PLANNING OF WASTE MINIMIZATION, AND COORDINATION OF TRAININGS, OUTREACH, AND EDUCATION ACTIVITIES.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE WORK INCLUDES OUTPUTS AND OUTCOMES ASSOCIATED WITH MANAGING CONTINUING ENVIRONMENTAL PROGRAMS WHICH INCLUDE DELIVERABLES TO PROTECT AND MAINTAIN ENVIRONMENTAL PROGRAM CAPACITY BUILDING AND WATER QUALITY. THE BENEFICIARIES ARE THE CITIZENS OF THE LEECH LAKE BAND OF OJIBWE.",
-      "awarding_agency": "Environmental Protection Agency"
-    },
-    {
       "award_id": "55IH2726660",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -38,39 +27,20 @@
       "end_date": "2026-09-30",
       "description": "INDIAN HOUSING BLOCK GRANTS",
       "awarding_agency": "Department of Housing and Urban Development"
-    },
-    {
-      "award_id": "DEIE0000155",
-      "cfda": "81.087",
-      "program_id": "doe_indian_energy",
-      "recipient_name_raw": "LEECH LAKE BAND OF OJIBWE",
-      "obligation": 1048735.0,
-      "start_date": "2024-03-01",
-      "end_date": "2027-02-28",
-      "description": "LEECH LAKE BAND OF OJIBWE SOLAR ENERGY SUSTAINABILITY",
-      "awarding_agency": "Department of Energy"
     }
   ],
-  "total_obligation": 76486828.0,
-  "award_count": 4,
+  "total_obligation": 74918093.0,
+  "award_count": 2,
   "cfda_summary": {
-    "66.926": {
-      "count": 1,
-      "total": 520000.0
-    },
     "14.867": {
       "count": 2,
       "total": 74918093.0
-    },
-    "81.087": {
-      "count": 1,
-      "total": 1048735.0
     }
   },
   "yearly_obligations": {
     "2022": 2781676.0,
     "2023": 0.0,
-    "2024": 1568735.0,
+    "2024": 0.0,
     "2025": 0.0,
     "2026": 0.0
   },

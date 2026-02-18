@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-11T16:32:16.909992+00:00",
+  "timestamp": "2026-02-11T17:12:12.950390+00:00",
   "fiscal_year_range": {
     "start": 2022,
     "end": 2026
@@ -15,17 +15,17 @@
     "duplicates_removed": 4680
   },
   "matching": {
-    "matched_awards": 3189,
-    "unmatched_awards": 1040,
+    "matched_awards": 3244,
+    "unmatched_awards": 985,
     "consortium_awards": 64,
-    "match_rate_pct": 74.3
+    "match_rate_pct": 75.6
   },
   "coverage": {
     "total_tribes": 592,
-    "tribes_with_awards": 446,
-    "tribes_without_awards": 146,
-    "coverage_pct": 75.3,
-    "target_met": false
+    "tribes_with_awards": 451,
+    "tribes_without_awards": 141,
+    "coverage_pct": 76.2,
+    "target_met": true
   },
   "top_unmatched": [
     {
@@ -61,40 +61,24 @@
       "total_obligation": 82856566.89000002
     },
     {
+      "name": "KODIAK ISLAND HOUSING AUTHORITY",
+      "total_obligation": 79935837.0
+    },
+    {
       "name": "TAGIUGMIULLU NUNAMIULLU HOUSING AUTHORITY",
       "total_obligation": 72243631.0
+    },
+    {
+      "name": "ALEUTIAN HOUSING AUTHORITY",
+      "total_obligation": 52315994.0
     },
     {
       "name": "NORTH PACIFIC RIM HOUSING AUTHORITY",
       "total_obligation": 47070863.0
     },
     {
-      "name": "ORUTSARARMUIT NATIVE COUNCIL, INCORPORATED",
-      "total_obligation": 43340011.0
-    },
-    {
-      "name": "PUYALLUP TRIBE OF INDIANS",
-      "total_obligation": 41733736.0
-    },
-    {
-      "name": "PENOBSCOT INDIAN NATION",
-      "total_obligation": 39019640.96
-    },
-    {
       "name": "NEW YORK STATE THRUWAY AUTHORITY",
       "total_obligation": 39000000.0
-    },
-    {
-      "name": "NORTHERN PONCA HOUSING AUTHORITY",
-      "total_obligation": 37935288.0
-    },
-    {
-      "name": "CHEYENNE AND ARAPAHO HOUSING AUTHORITY",
-      "total_obligation": 37537669.129999995
-    },
-    {
-      "name": "NAVAJO ENGINEERING & CONSTRUCTION AUTHORITY",
-      "total_obligation": 37275700.61
     },
     {
       "name": "COPPER RIVER HOUSING AUTHORITY",
@@ -107,6 +91,22 @@
     {
       "name": "OGLALA SIOUX TRIBE OF PINE RIDGE INDIAN RESERVATION",
       "total_obligation": 35350194.98
+    },
+    {
+      "name": "AKWESASNE HOUSING AUTHORITY",
+      "total_obligation": 35119000.0
+    },
+    {
+      "name": "ALL MISSION INDIAN HOUSING AUTHORITY",
+      "total_obligation": 33988799.0
+    },
+    {
+      "name": "HUALAPAI TRIBAL COUNCIL",
+      "total_obligation": 30672467.0
+    },
+    {
+      "name": "CHIPPEWA HOUSING AUTHORITY",
+      "total_obligation": 30396071.0
     }
   ],
   "consortium_summary": [

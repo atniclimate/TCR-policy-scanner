@@ -12,10 +12,10 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 **Milestone:** v1.4 Climate Vulnerability Intelligence
-**Phase:** 19 - Schema & Core Data Foundation - COMPLETE
-**Plan:** 06 of 6 complete (19-01, 19-02, 19-03, 19-04, 19-05, 19-06), All waves done
-**Status:** Phase 19 COMPLETE -- all 6 plans done. Ready for Phase 20.
-**Last activity:** 2026-02-18 -- Completed 19-06-PLAN.md (integration & XCUT-04 compliance tests)
+**Phase:** 20 - Flood & Water Data - PLANNED (ready for execution)
+**Plan:** 7 plans created (20-01 through 20-07), 3 waves. Spec swarm complete (30 files).
+**Status:** Phase 20 PLANNED -- 7 plans + 30-file specification suite ready. Next: `/gsd:execute-phase 20`
+**Last activity:** 2026-02-18 -- Phase 20 agent swarm complete (4 phases, 4 agents, 30 spec files)
 
 **Progress:**
 ```
@@ -23,7 +23,7 @@ v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
 v1.3     [##########] 100% SHIPPED (4 phases, 20 plans, 39 requirements)
-v1.4     [####------]  33% Phase 19 COMPLETE (7 phases, 28 requirements)
+v1.4     [####------]  33% Phase 19 COMPLETE, Phase 20 PLANNED (7 phases, 28 requirements)
 ```
 
 ## Performance Metrics
@@ -34,9 +34,9 @@ v1.4     [####------]  33% Phase 19 COMPLETE (7 phases, 28 requirements)
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | v1.3 shipped | 2026-02-14 (4 phases, 20 plans, 39 requirements, 964 tests) |
-| Total phases | 19 completed, 6 planned (20-24) |
-| Total plans | 72 completed (66 prior + 6 Phase 19) |
-| Total requirements | 121 completed + 22 planned = 143 |
+| Total phases | 19 completed, 1 planned (20), 4 pending (21-24) |
+| Total plans | 72 completed (66 prior + 6 Phase 19), 7 planned (Phase 20) |
+| Total requirements | 121 completed + 28 planned = 149 |
 | Total tests | 1257 (all passing, 1 skipped) |
 | Source files | 102 Python files (54 src + 33 tests + 14 scripts + 1 root) |
 | Total LOC | ~38,300 Python (src + tests) |
@@ -59,7 +59,7 @@ v1.4     [####------]  33% Phase 19 COMPLETE (7 phases, 28 requirements)
 |-------|------|-------------|--------|
 | 18.5 | Architectural Review & Scaffolding | — (pre-phase) | **COMPLETE** |
 | 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | **COMPLETE** (6/6 done) |
-| 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | Pending |
+| 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | **PLANNED** (7 plans, spec swarm done) |
 | 21 | Climate, Geologic & Infrastructure Data | CLIM-01 to CLIM-03, GEO-01, GEO-02, INFRA-01 | Pending |
 | 22 | Vulnerability Profiles & Pipeline Integration | VULN-03, VULN-04, REG-01, REG-02, XCUT-01 to XCUT-03, XCUT-05 | Pending |
 | 23 | Document Rendering | DOC-01, DOC-02, DOC-03 | Pending |
@@ -100,7 +100,10 @@ v1.3 decisions (33 total) archived to `milestones/v1.3-ROADMAP.md`. Full cumulat
 - ~~Build SVI 2022 builder with theme exclusion~~ DONE (19-05)
 - ~~Build NRI expanded builder with version pinning~~ DONE (19-04)
 - ~~Integration & XCUT-04 compliance tests~~ DONE (19-06)
-- Begin Phase 20: Flood & Water Data
+- ~~Phase 20 planning: 7 PLAN.md files created~~ DONE
+- ~~Phase 20 spec swarm: 4-phase agent swarm (30 files)~~ DONE
+- ~~Fix 4 P1 audit findings (NIBS ROI, HMGP frozen, date range, BRIC/HMGP split)~~ DONE
+- Execute Phase 20: `/gsd:execute-phase 20` (7 plans, 3 waves)
 
 ### Blockers
 
@@ -111,10 +114,56 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-18
-**Stopped at:** Completed 19-06-PLAN.md (integration & XCUT-04 compliance tests) -- Phase 19 COMPLETE
-**Next step:** Begin Phase 20 (Flood & Water Data)
-**Resume file:** .planning/phases/19-schema-core-data-foundation/19-06-SUMMARY.md
-**Quality gate:** 1257 tests passing, 1 skipped. Trust 9/10.
+**Stopped at:** Phase 20 agent swarm complete (all 4 phases). P1 audit fixes applied. ROADMAP + STATE updated.
+**Next step:** `/gsd:execute-phase 20` (7 plans in 3 waves: Wave 1 = 20-01, Wave 2 = 20-02 through 20-06, Wave 3 = 20-07)
+**Resume file:** .planning/flood-module/SWARM-COMPLETE.md
+**Quality gate:** 1257 tests passing, 1 skipped. Trust 9/10. Phase 20 specs: ~618+ tests specified, 20 Pydantic models, 4 API clients.
+
+## Phase 20 Planning Summary
+
+**Planned:** 2026-02-18
+
+**Planning artifacts:**
+- 7 PLAN.md files in `.planning/phases/20-flood-water-data/` (20-01 through 20-07)
+- 30 specification files in `.planning/flood-module/` produced by 4-phase agent swarm
+- Research: `20-RESEARCH.md`, `20-RESEARCH-ADDENDUM.md`, `20-CONTEXT.md`
+
+**Agent swarm (4 phases, 4 agents):**
+- Phase 1: Watershed Walker + Accuracy Agent (architecture + research verification)
+- Phase 2: Flood Scout + Current Runner (data models + test infrastructure)
+- Phase 3: All 4 agents (implementation specs + final audit)
+- Phase 4: Watershed Walker (final planning documents + cross-reference consistency)
+
+**Key specs:**
+- 20 Pydantic v2 models (2 enums + 18 models) in `FLOOD-DATA-MODELS.md`
+- 4 API clients (OpenFEMA, USGS OGC, Atlas 14 PFDS, NOAA CO-OPS) in `API-CLIENT-SPECS.md`
+- 13 endpoints verified (10 VERIFIED, 3 PROBABLE) in `ENDPOINT-VERIFICATION.md`
+- 6 builder implementation specs (9-step template each) in `IMPL-FLOOD-BUILDERS.md`
+- ~618+ tests specified across 10 test spec files
+- 4 enhancement proposals (ENH-F01 through F04, 134 total story points, future milestones)
+
+**Audit:** 15 findings (4 P1 FIXED, 6 P2 advisory, 5 P3 advisory). Verdict: PASS.
+
+**Data impact:** `program_inventory.json` updated from 16 to 18 programs (added `fema_hmgp` ALN 97.039 and `fema_fma` ALN 97.029).
+
+**Execution plan:** 3 waves
+- Wave 1: 20-01 (schemas, shared infra, paths, reference data)
+- Wave 2: 20-02, 20-03, 20-04, 20-05, 20-06 (6 builders, parallel)
+- Wave 3: 20-07 (CLI orchestrator, combined profile, coverage report)
+
+**Decisions:**
+- [20-DEC-01] All 6 flood sources route through existing county FIPS crosswalk (no new geographic files)
+- [20-DEC-02] Coastal classification: marine > lacustrine > inland priority hierarchy
+- [20-DEC-03] Missing data: 2-category system (not_applicable vs monitoring_gap), never bare None
+- [20-DEC-04] Claims-outside-zones %: THE single most important advocacy number, traced at every handoff
+- [20-DEC-05] USGS OGC API at v0 (not v1); peak flows use `dataretrieval` library fallback
+- [20-DEC-06] All dollar amounts use `Decimal` (not float) in Pydantic models
+- [20-DEC-07] OpenFEMA countyCode confirmed 5-digit FIPS (not 3-digit)
+- [20-DEC-08] Include ALL disaster types (no incidentType filter per 20-CONTEXT.md)
+- [20-DEC-09] Store raw API responses alongside parsed data for streamflow
+- [20-DEC-10] HMGP "severely constrained" (not "frozen"); BRIC/HMGP split into separate program entries
+
+---
 
 ## Phase 18.5 Summary
 
@@ -138,4 +187,4 @@ _None._
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-18 after 19-06 completion (Phase 19 COMPLETE)*
+*Last updated: 2026-02-18 after Phase 20 planning complete (agent swarm done, P1 fixes applied)*

@@ -38,21 +38,10 @@
       "end_date": "2026-09-30",
       "description": "SUN'AQ TRIBE OF KODIAK TRANSPORTATION PROGRAM AGREEMENT (STRA-21)",
       "awarding_agency": "Department of the Interior"
-    },
-    {
-      "award_id": "55IH0208680",
-      "cfda": "14.867",
-      "program_id": "hud_ihbg",
-      "recipient_name_raw": "KODIAK ISLAND HOUSING AUTHORITY",
-      "obligation": 79935837.0,
-      "start_date": "2011-10-18",
-      "end_date": "2034-09-30",
-      "description": "INDIAN HSG BLOCK GR",
-      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 80907553.32,
-  "award_count": 4,
+  "total_obligation": 971716.3200000001,
+  "award_count": 3,
   "cfda_summary": {
     "66.926": {
       "count": 2,
@@ -61,10 +50,6 @@
     "20.205": {
       "count": 1,
       "total": 352292.32
-    },
-    "14.867": {
-      "count": 1,
-      "total": 79935837.0
     }
   },
   "yearly_obligations": {

@@ -18,17 +18,6 @@
       "awarding_agency": "Department of the Interior"
     },
     {
-      "award_id": "55IH3200410",
-      "cfda": "14.867",
-      "program_id": "hud_ihbg",
-      "recipient_name_raw": "DUCK VALLEY HOUSING AUTHORITY",
-      "obligation": 44987757.0,
-      "start_date": "2011-10-18",
-      "end_date": "2035-09-30",
-      "description": "INDIAN HSG BLOCK GR",
-      "awarding_agency": "Department of Housing and Urban Development"
-    },
-    {
       "award_id": "55IH5605620",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -40,16 +29,16 @@
       "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 80319102.0,
-  "award_count": 3,
+  "total_obligation": 35331345.0,
+  "award_count": 2,
   "cfda_summary": {
     "15.156": {
       "count": 1,
       "total": 5043992.0
     },
     "14.867": {
-      "count": 2,
-      "total": 75275110.0
+      "count": 1,
+      "total": 30287353.0
     }
   },
   "yearly_obligations": {

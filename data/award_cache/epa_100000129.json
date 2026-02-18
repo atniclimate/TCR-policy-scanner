@@ -71,10 +71,21 @@
       "end_date": "2026-12-31",
       "description": "KIOWA TRIBE - TRANSPORTATION IMPROVEMENT PLANNING PROGRAM- TO ADD FY18X 2% TRANSFER, FY19X 2% TRANSFER AND FY24X CR #1 FUNDING.",
       "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IH4016583",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "KIOWA TRIBE HOUSING AUTHORITY",
+      "obligation": 12200434.21,
+      "start_date": "2019-04-15",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
     }
   ],
-  "total_obligation": 8286470.2700000005,
-  "award_count": 6,
+  "total_obligation": 20486904.48,
+  "award_count": 7,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -87,6 +98,10 @@
     "20.205": {
       "count": 4,
       "total": 7666470.2700000005
+    },
+    "14.867": {
+      "count": 1,
+      "total": 12200434.21
     }
   },
   "yearly_obligations": {

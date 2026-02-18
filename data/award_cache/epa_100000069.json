@@ -7,6 +7,171 @@
   },
   "awards": [
     {
+      "award_id": "A18AV00037",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 8760700.0,
+      "start_date": "2018-04-26",
+      "end_date": "2025-09-30",
+      "description": "CROW TRIBE TTP PROJECT NO C52-21320 RTE 73 ASPHALT OVERLAY",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00754",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 6873812.22,
+      "start_date": "2022-06-15",
+      "end_date": "2024-06-30",
+      "description": "ROAD MAINTENANCE_INDIAN ROADS",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A19AV01164",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 144754.0,
+      "start_date": "2018-10-01",
+      "end_date": "2025-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01071",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 610329.0,
+      "start_date": "2023-08-29",
+      "end_date": "2026-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV01109",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 394239.0,
+      "start_date": "2023-08-30",
+      "end_date": "2026-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00810",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 340991.95,
+      "start_date": "2023-08-30",
+      "end_date": "2026-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A23AV00586",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 174311.0,
+      "start_date": "2023-07-10",
+      "end_date": "2026-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00399",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 6666858.13,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00179",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 3053970.0,
+      "start_date": "2022-10-01",
+      "end_date": "2027-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00401",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 1056000.0,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "CROW TRIBE TTP TRANSIT SET-ASIDE",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00398",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 478920.47,
+      "start_date": "2022-10-01",
+      "end_date": "2026-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A24AV00591",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 318209.0,
+      "start_date": "2024-05-01",
+      "end_date": "2027-09-30",
+      "description": "CROW TRIBE TTPSF 11089 SYSTEMIC ROADWAY DEPARTURE COUNTERMEASURES FHWA 1-TIME SAFETY GRANT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00825",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 2246454.34,
+      "start_date": "2025-05-01",
+      "end_date": "2026-12-31",
+      "description": "CROW TRIBE TRANSIT BUILDING SUBPART J CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00873",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 150000.0,
+      "start_date": "2025-06-01",
+      "end_date": "2026-09-30",
+      "description": "CROW TRIBE C223 UPPER LODGE GRASS BRIDGE PRELIMINAR ENGR AWARD",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A25AV00872",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 150000.0,
+      "start_date": "2025-06-01",
+      "end_date": "2026-09-30",
+      "description": "CROW TRIBE YOUTH CAMP BRIDGE PRELIMINARY ENGINEERING CONTRACT",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
       "award_id": "55IH3001880",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -16,22 +181,41 @@
       "end_date": "2034-09-30",
       "description": "INDIAN HSG BLOCK GR",
       "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "96833819",
+      "cfda": "66.038",
+      "program_id": "epa_tribal_air",
+      "recipient_name_raw": "CROW TRIBE OF INDIANS",
+      "obligation": 124146.0,
+      "start_date": "2018-10-01",
+      "end_date": "2023-09-30",
+      "description": "THIS AGREEMENT WILL PROVIDE ASSISTANCE TO THE CROW TRIBE IN ITS EFFORTS TO DEVELOP SPECIAL PURPOSE AIR QUALITY ACTIVITIES ON THE CROW RESERVATION, INCLUDING CONTINUING DEVELOPMENT OF AIR QUALITY PROGRAMS; IMPROVEMENT OF EMISSION INVENTORIES FOR IDENTIFICATION OF POLLUTION SOURCES; AND TO DEVELOP AN AIR MONITORING NETWORK THAT COLLECTS AIR DATA. THESE ACTIVITIES ARE TO IMPROVE AND MAINTAIN THE PUBLIC'S AIR QUALITY.",
+      "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 50712529.0,
-  "award_count": 1,
+  "total_obligation": 82256224.11,
+  "award_count": 17,
   "cfda_summary": {
+    "20.205": {
+      "count": 15,
+      "total": 31419549.109999996
+    },
     "14.867": {
       "count": 1,
       "total": 50712529.0
+    },
+    "66.038": {
+      "count": 1,
+      "total": 124146.0
     }
   },
   "yearly_obligations": {
-    "2022": 0.0,
-    "2023": 0.0,
-    "2024": 0.0,
-    "2025": 0.0,
+    "2022": 6873812.22,
+    "2023": 12775619.55,
+    "2024": 318209.0,
+    "2025": 2546454.34,
     "2026": 0.0
   },
-  "trend": "none"
+  "trend": "decreasing"
 }

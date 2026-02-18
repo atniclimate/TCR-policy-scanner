@@ -5,114 +5,17 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [
-    {
-      "award_id": "A22AV00696",
-      "cfda": "20.205",
-      "program_id": "fhwa_ttp_safety",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 7619757.71,
-      "start_date": "2021-10-01",
-      "end_date": "2031-09-30",
-      "description": "DISTS. FOR TRIBAL TRANSPORTATION PROGRAM AND TRIBAL TRANSPORTATION PLANNING FOR ACTIVITIES/PROJECTS DESCRIBED IN 23 USC 202(A) AND A FHWA APPROVED TRANSPORTATION IMPROVEMENT PROGRAM (TIP), 23 USC 202(C)(3).",
-      "awarding_agency": "Department of the Interior"
-    },
-    {
-      "award_id": "A21AV00099",
-      "cfda": "20.205",
-      "program_id": "fhwa_ttp_safety",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 3808535.31,
-      "start_date": "2020-10-01",
-      "end_date": "2024-09-30",
-      "description": "DISTS. FOR SELF GOVERNANCE COMPACTS FY 21 CR1 (19.73%) TPA BASE; LAW ENFORCEMENT-638 TRIBAL CR1 FOR PROGRAM BASE FUNDING @ FY2020 LEVEL AND SELF GOVERNANCE COMPACTS FOR TPA BASE AT 80.27% OF THE CR ANNUAL RATE OF OPERATIONS OF THE TRIBAL PRIORITY ALLOCATION (TPA) PROGRAMS.",
-      "awarding_agency": "Department of the Interior"
-    },
-    {
-      "award_id": "A20AV00092",
-      "cfda": "20.205",
-      "program_id": "fhwa_ttp_safety",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 3676868.06,
-      "start_date": "2019-10-01",
-      "end_date": "2022-09-30",
-      "description": "CR#1 FOR LAW ENFORCEMENT-638 TRIBAL AND SELF GOVERNANCE COMPACTS (TPA BASE) DISTS.",
-      "awarding_agency": "Department of the Interior"
-    },
-    {
-      "award_id": "A18AV00359",
-      "cfda": "20.205",
-      "program_id": "fhwa_ttp_safety",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 3322492.01,
-      "start_date": "2017-10-01",
-      "end_date": "2024-09-30",
-      "description": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "awarding_agency": "Department of the Interior"
-    },
-    {
-      "award_id": "A22AV00087",
-      "cfda": "20.205",
-      "program_id": "fhwa_ttp_safety",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 3110792.24,
-      "start_date": "2021-10-01",
-      "end_date": "2023-09-30",
-      "description": "SELF GOVERNANCE COMPACTS FY 22 CR1 (17.53%) TPA BASE DIST.",
-      "awarding_agency": "Department of the Interior"
-    },
-    {
-      "award_id": "A21AV00537",
-      "cfda": "20.205",
-      "program_id": "fhwa_ttp_safety",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 2890598.46,
-      "start_date": "2020-10-01",
-      "end_date": "2025-09-30",
-      "description": "AMERICAN RESCUE PLAN ACT 2021/LAW ENFORCEMENT SPECIAL INITIATIVES FUNDING IS BEING PROVIDED ON A ONE-TIME (NONRECURRING) BASIS TO MEET THE OPERATIONAL NEEDS OF TRIBALLY CONTRACTED OR COMPACTED LAW ENFORCEMENT AND/OR DETENTION/CORRECTIONS PROGRAMS",
-      "awarding_agency": "Department of the Interior"
-    },
-    {
-      "award_id": "55IT2704760",
-      "cfda": "14.867",
-      "program_id": "hud_ihbg",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 17271169.0,
-      "start_date": "2011-10-18",
-      "end_date": "2034-09-30",
-      "description": "INDIAN HSG BLOCK GR",
-      "awarding_agency": "Department of Housing and Urban Development"
-    },
-    {
-      "award_id": "21AH2704760",
-      "cfda": "14.867",
-      "program_id": "hud_ihbg",
-      "recipient_name_raw": "BOIS FORTE RESERVATION TRIBAL COUNCIL",
-      "obligation": 712091.0,
-      "start_date": "2021-04-22",
-      "end_date": "2026-09-30",
-      "description": "INDIAN HOUSING BLOCK GRANTS",
-      "awarding_agency": "Department of Housing and Urban Development"
-    }
-  ],
-  "total_obligation": 42412303.79,
-  "award_count": 8,
-  "cfda_summary": {
-    "20.205": {
-      "count": 6,
-      "total": 24429043.79
-    },
-    "14.867": {
-      "count": 2,
-      "total": 17983260.0
-    }
-  },
+  "awards": [],
+  "total_obligation": 0,
+  "award_count": 0,
+  "cfda_summary": {},
   "yearly_obligations": {
-    "2022": 10730549.95,
+    "2022": 0.0,
     "2023": 0.0,
     "2024": 0.0,
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "decreasing"
+  "trend": "none",
+  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
 }

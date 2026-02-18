@@ -5,17 +5,247 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "A25AV00441",
+      "cfda": "15.156",
+      "program_id": "bia_tcr",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 4000000.0,
+      "start_date": "2025-01-16",
+      "end_date": "2027-10-30",
+      "description": "TRIBAL COMMUNITY RESILIENCE- TCR ADAPTATION PLANNING",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "00A01569",
+      "cfda": "66.468",
+      "program_id": "epa_stag",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 25200.0,
+      "start_date": "2024-02-21",
+      "end_date": "2025-12-31",
+      "description": "DESCRIPTION:THIS AGREEMENT PROVIDES FUNDING UNDER THE INFRASTRUCTURE INVESTMENT AND JOBS ACT (IIJA) TO THE PENOBSCOT INDIAN NATION TO DEVELOP AND IMPLEMENT LEAD SERVICE LINE IDENTIFICATION AND/OR REPLACEMENT ACTIVITIES IN TRIBAL COMMUNITIES. SPECIFICALLY, THE RECIPIENT WILL DEVELOP A COMPREHENSIVE INVENTORY OF THE SERVICE LINE IN THE TRIBE'S DISTRIBUTION SYSTEMS.\n\nACTIVITIES:THE ACTIVITIES INCLUDE DIGITIZING THE EXISTING RECORDS, QUANTIFYING THE SERVICE LINES AND CONNECTIONS, AND MAPPING THE COLLECTED DATA.SUBRECIPIENT:NO SUBAWARDS ARE INCLUDED IN THIS ASSISTANCE AGREEMENT.OUTCOMES:THE ANTICIPATED DELIVERABLES INCLUDE AN INITIAL INVENTORY FOR THE LEAD SERVICE LINES. THE EXPECTED OUTCOMES INCLUDE DETAILED MAPPING AND A COMPREHENSIVE ASSESSMENT OF SERVICE LINE MATERIALS USED IN THE SYSTEM, WHICH WILL ULTIMATELY HELP DETERMINE THE PLAN FOR REPLACEMENTS AS NECESSARY. THE INTENDED BENEFICIARIES INCLUDE THE RESIDENTS OF THE PENOBSCOT INDIAN NATION.",
+      "awarding_agency": "Environmental Protection Agency"
+    },
+    {
+      "award_id": "A16AV00967",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 871394.09,
+      "start_date": "2016-07-31",
+      "end_date": "2024-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A22AV00351",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 427669.24,
+      "start_date": "2021-08-01",
+      "end_date": "2025-10-31",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "A16AV00969",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 158409.48,
+      "start_date": "2016-07-31",
+      "end_date": "2024-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "693JG42330000V600ME0110",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 2697396.52,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000V170ME0110",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 475000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42330000K600ME0110",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 106175.98,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y17AME3110024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 3325123.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PENOBSCOT INDIAN NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PENOBSCOT INDIAN NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y602ME3110024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 1224373.3,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PENOBSCOT INDIAN NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PENOBSCOT INDIAN NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22440000Y176ME3110024",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 364914.5,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PENOBSCOT INDIAN NATION TRANSPORTATION PROGRAM FUNDING FY 2024 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PENOBSCOT INDIAN NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY24",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JG42430000V600ME0110",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 182207.53,
+      "start_date": null,
+      "end_date": null,
+      "description": "TRIBAL TRANSPORTATION PROGRAM",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y602ME3110025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 1454981.32,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PENOBSCOT NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PENOBSCOT NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y17AME3110025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 905000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PENOBSCOT NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PENOBSCOT NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "693JJ22540000Y271ME3110025",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 185000.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "PROJECT TITLE: PENOBSCOT NATION TRANSPORTATION PROGRAM FUNDING FY 2025 :::: PROJECT DESCRIPTION: ALL TRANSPORTATION FUNDING PROVIDED BY FHWA TO PENOBSCOT NATION UNDER THE FHWA OTT PROGRAM AGREEMENT FOR FY25",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "55IT2323820",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 17612355.0,
+      "start_date": "2012-02-17",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH2323820",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 673284.0,
+      "start_date": "2022-05-16",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "DEIE0000105",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 250059.0,
+      "start_date": "2018-10-01",
+      "end_date": "2026-12-31",
+      "description": "PIN/DOE GREEN BUILDING PROJECT: ENERGY EFFICIENCY AND ENERGY PRODUCTION AT THE COMMUNITY TRIBAL BUILDING",
+      "awarding_agency": "Department of Energy"
+    },
+    {
+      "award_id": "DEIE0000198",
+      "cfda": "81.087",
+      "program_id": "doe_indian_energy",
+      "recipient_name_raw": "PENOBSCOT INDIAN NATION",
+      "obligation": 4081098.0,
+      "start_date": "2024-07-01",
+      "end_date": "2026-12-31",
+      "description": "COMMUNITY HUB SOLAR & INFRASTRUCTURE",
+      "awarding_agency": "Department of Energy"
+    }
+  ],
+  "total_obligation": 39019640.96,
+  "award_count": 19,
+  "cfda_summary": {
+    "15.156": {
+      "count": 1,
+      "total": 4000000.0
+    },
+    "66.468": {
+      "count": 1,
+      "total": 25200.0
+    },
+    "20.205": {
+      "count": 13,
+      "total": 12377644.96
+    },
+    "14.867": {
+      "count": 2,
+      "total": 18285639.0
+    },
+    "81.087": {
+      "count": 2,
+      "total": 4331157.0
+    }
+  },
   "yearly_obligations": {
-    "2022": 0.0,
+    "2022": 673284.0,
     "2023": 0.0,
-    "2024": 0.0,
-    "2025": 0.0,
+    "2024": 4106298.0,
+    "2025": 4000000.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "increasing"
 }

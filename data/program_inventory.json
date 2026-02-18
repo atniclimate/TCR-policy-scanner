@@ -35,7 +35,7 @@
       "description": "FEMA pre-disaster mitigation competitive grant program.",
       "access_type": "competitive",
       "funding_type": "One-Time",
-      "cfda": ["97.047", "97.039"],
+      "cfda": "97.047",
       "confidence_index": 0.12,
       "ci_status": "FLAGGED",
       "ci_determination": "FEMA announced termination of BRIC on April 4, 2025. FY24/25 cycles canceled. ~$882M unobligated IIJA funds being returned to Treasury. Requires immediate specialist engagement.",
@@ -45,6 +45,50 @@
         "status": "FLAGGED",
         "last_updated": "2026-02-09",
         "source": "FY26 Hot Sheets v2"
+      }
+    },
+    {
+      "id": "fema_hmgp",
+      "name": "FEMA HMGP",
+      "agency": "FEMA",
+      "federal_home": "Federal Emergency Management Agency",
+      "priority": "high",
+      "keywords": ["HMGP", "hazard mitigation grant", "post-disaster mitigation", "Stafford Act", "Section 404"],
+      "search_queries": ["FEMA HMGP tribal", "hazard mitigation grant program tribal"],
+      "advocacy_lever": "Restore full approval authority; protect Tribal project pipeline",
+      "description": "FEMA post-disaster hazard mitigation grant program under Stafford Act Section 404. Triggered by presidential disaster declarations.",
+      "access_type": "competitive",
+      "funding_type": "Mandatory",
+      "cfda": "97.039",
+      "confidence_index": 0.35,
+      "ci_status": "AT_RISK",
+      "ci_determination": "HMGP remains authorized but severely constrained since February 2025. DHS Secretary requires personal sign-off on all grants over $100,000, creating de facto approval bottleneck. Not terminated but functionally impaired.",
+      "hot_sheets_status": {
+        "status": "AT_RISK",
+        "last_updated": "2026-02-18",
+        "source": "Phase 20 Audit"
+      }
+    },
+    {
+      "id": "fema_fma",
+      "name": "FEMA FMA",
+      "agency": "FEMA",
+      "federal_home": "Federal Emergency Management Agency",
+      "priority": "high",
+      "keywords": ["FMA", "flood mitigation assistance", "NFIP", "repetitive loss", "severe repetitive loss", "flood mitigation"],
+      "search_queries": ["FEMA flood mitigation assistance tribal", "FMA tribal"],
+      "advocacy_lever": "Protect $50M Tribal set-aside; simplify application for NFIP-participating Tribes",
+      "description": "FEMA Flood Mitigation Assistance program for NFIP-participating communities. $600M/year with $50M Tribal set-aside.",
+      "access_type": "competitive",
+      "funding_type": "Discretionary",
+      "cfda": "97.029",
+      "confidence_index": 0.60,
+      "ci_status": "AT_RISK",
+      "ci_determination": "$600M FY2024 total with $50M Tribal set-aside. Requires NFIP participation. FY2024 NOFO disrupted by FEMA reorganization. Tribal access constrained by low NFIP participation rates.",
+      "hot_sheets_status": {
+        "status": "AT_RISK",
+        "last_updated": "2026-02-18",
+        "source": "Phase 20 Audit"
       }
     },
     {

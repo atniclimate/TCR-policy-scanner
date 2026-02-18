@@ -128,6 +128,28 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH3505330",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SANTA CLARA PUEBLO HOUSING AUTHORITY",
+      "obligation": 14752386.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXNM05330",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "SANTA CLARA PUEBLO HOUSING AUTHORITY",
+      "obligation": 5000000.0,
+      "start_date": "2025-01-14",
+      "end_date": "2029-12-19",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "24DG11030000038",
       "cfda": "10.720",
       "program_id": "usda_wildfire",
@@ -139,8 +161,8 @@
       "awarding_agency": "Department of Agriculture"
     }
   ],
-  "total_obligation": 6746696.36,
-  "award_count": 12,
+  "total_obligation": 26499082.36,
+  "award_count": 14,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -158,6 +180,10 @@
       "count": 8,
       "total": 3833065.36
     },
+    "14.867": {
+      "count": 2,
+      "total": 19752386.0
+    },
     "10.720": {
       "count": 1,
       "total": 228177.0
@@ -167,7 +193,7 @@
     "2022": 0.0,
     "2023": 510000.0,
     "2024": 2297714.0,
-    "2025": 225881.13,
+    "2025": 5225881.13,
     "2026": 0.0
   },
   "trend": "increasing"

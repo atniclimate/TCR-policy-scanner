@@ -5,17 +5,85 @@
     "start": 2022,
     "end": 2026
   },
-  "awards": [],
-  "total_obligation": 0,
-  "award_count": 0,
-  "cfda_summary": {},
+  "awards": [
+    {
+      "award_id": "EMS-2022-PC-0001",
+      "cfda": "97.047",
+      "program_id": "fema_bric",
+      "recipient_name_raw": "PUYALLUP TRIBE OF INDIANS",
+      "obligation": 285136.0,
+      "start_date": null,
+      "end_date": null,
+      "description": "BRIC: BUILDING RESILIENT INFRASTRUCTURE AND COMMUNITIES",
+      "awarding_agency": "Department of Homeland Security"
+    },
+    {
+      "award_id": "693JJ32440752",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUYALLUP TRIBE OF INDIANS",
+      "obligation": 216250.0,
+      "start_date": "2024-09-13",
+      "end_date": "2026-03-31",
+      "description": "THE PROPOSED PROJECT IS TO PREPARE THE PLANNING AND SCOPING PHASE OF MUCH NEEDED WILDLIFE CROSSING STRUCTURES ALONG SR12 IN EASTERN LEWIS COUNTY OF WASHINGTON STATE.",
+      "awarding_agency": "Department of Transportation"
+    },
+    {
+      "award_id": "A25AV00310",
+      "cfda": "20.205",
+      "program_id": "fhwa_ttp_safety",
+      "recipient_name_raw": "PUYALLUP TRIBE OF INDIANS",
+      "obligation": 594940.0,
+      "start_date": "2023-10-01",
+      "end_date": "2029-09-30",
+      "description": "HIGHWAY PLANNING AND CONSTRUCTION",
+      "awarding_agency": "Department of the Interior"
+    },
+    {
+      "award_id": "55IT5312680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PUYALLUP TRIBE OF INDIANS",
+      "obligation": 38389757.0,
+      "start_date": "2017-08-15",
+      "end_date": "2033-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "21AH5312680",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "PUYALLUP TRIBE OF INDIANS",
+      "obligation": 2247653.0,
+      "start_date": "2021-04-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    }
+  ],
+  "total_obligation": 41733736.0,
+  "award_count": 5,
+  "cfda_summary": {
+    "97.047": {
+      "count": 1,
+      "total": 285136.0
+    },
+    "20.205": {
+      "count": 2,
+      "total": 811190.0
+    },
+    "14.867": {
+      "count": 2,
+      "total": 40637410.0
+    }
+  },
   "yearly_obligations": {
     "2022": 0.0,
     "2023": 0.0,
-    "2024": 0.0,
+    "2024": 811190.0,
     "2025": 0.0,
     "2026": 0.0
   },
-  "trend": "none",
-  "no_awards_context": "No federal climate resilience awards found in tracked programs. This represents a first-time applicant opportunity -- the Tribe can leverage this status to demonstrate unmet need in competitive grant applications."
+  "trend": "stable"
 }

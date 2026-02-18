@@ -84,6 +84,17 @@
       "awarding_agency": "Department of Transportation"
     },
     {
+      "award_id": "55IH3200410",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "DUCK VALLEY HOUSING AUTHORITY",
+      "obligation": 44987757.0,
+      "start_date": "2011-10-18",
+      "end_date": "2035-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "98T72201",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -117,8 +128,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 4333402.89,
-  "award_count": 10,
+  "total_obligation": 49321159.89,
+  "award_count": 11,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -131,6 +142,10 @@
     "20.205": {
       "count": 5,
       "total": 3398843.89
+    },
+    "14.867": {
+      "count": 1,
+      "total": 44987757.0
     },
     "66.038": {
       "count": 3,

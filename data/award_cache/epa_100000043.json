@@ -62,6 +62,28 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "55IH3006460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHIPPEWA CREE HOUSING AUTHORITY",
+      "obligation": 43671249.67,
+      "start_date": "2012-02-07",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
+      "award_id": "24IXMT06460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "CHIPPEWA CREE HOUSING AUTHORITY",
+      "obligation": 4833600.0,
+      "start_date": "2025-01-14",
+      "end_date": "2030-03-27",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "95805421",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -73,8 +95,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 4108101.91,
-  "award_count": 6,
+  "total_obligation": 52612951.58,
+  "award_count": 8,
   "cfda_summary": {
     "15.156": {
       "count": 1,
@@ -88,6 +110,10 @@
       "count": 3,
       "total": 3185046.97
     },
+    "14.867": {
+      "count": 2,
+      "total": 48504849.67
+    },
     "66.038": {
       "count": 1,
       "total": 177419.0
@@ -97,8 +123,8 @@
     "2022": 509072.95,
     "2023": 2675974.02,
     "2024": 624333.04,
-    "2025": 0.0,
+    "2025": 4833600.0,
     "2026": 0.0
   },
-  "trend": "decreasing"
+  "trend": "increasing"
 }

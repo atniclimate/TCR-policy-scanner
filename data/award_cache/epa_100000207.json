@@ -29,6 +29,17 @@
       "awarding_agency": "Environmental Protection Agency"
     },
     {
+      "award_id": "55IH3124180",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "NORTHERN PONCA HOUSING AUTHORITY",
+      "obligation": 37935288.0,
+      "start_date": "2012-01-06",
+      "end_date": "2034-09-30",
+      "description": "INDIAN HSG BLOCK GR",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "97795701",
       "cfda": "66.038",
       "program_id": "epa_tribal_air",
@@ -40,8 +51,8 @@
       "awarding_agency": "Environmental Protection Agency"
     }
   ],
-  "total_obligation": 285846.67,
-  "award_count": 3,
+  "total_obligation": 38221134.67,
+  "award_count": 4,
   "cfda_summary": {
     "97.047": {
       "count": 1,
@@ -50,6 +61,10 @@
     "66.926": {
       "count": 1,
       "total": 119998.0
+    },
+    "14.867": {
+      "count": 1,
+      "total": 37935288.0
     },
     "66.038": {
       "count": 1,

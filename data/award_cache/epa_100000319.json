@@ -139,6 +139,17 @@
       "awarding_agency": "Department of the Interior"
     },
     {
+      "award_id": "21AH0815460",
+      "cfda": "14.867",
+      "program_id": "hud_ihbg",
+      "recipient_name_raw": "UTE MOUNTAIN HOUSING AUTHORITY",
+      "obligation": 6280.0,
+      "start_date": "2021-09-22",
+      "end_date": "2026-09-30",
+      "description": "INDIAN HOUSING BLOCK GRANTS",
+      "awarding_agency": "Department of Housing and Urban Development"
+    },
+    {
       "award_id": "21AH0815461",
       "cfda": "14.867",
       "program_id": "hud_ihbg",
@@ -183,8 +194,8 @@
       "awarding_agency": "Department of Energy"
     }
   ],
-  "total_obligation": 16168390.64,
-  "award_count": 16,
+  "total_obligation": 16174670.64,
+  "award_count": 17,
   "cfda_summary": {
     "15.156": {
       "count": 3,
@@ -195,8 +206,8 @@
       "total": 13290853.62
     },
     "14.867": {
-      "count": 1,
-      "total": 891987.0
+      "count": 2,
+      "total": 898267.0
     },
     "81.087": {
       "count": 3,
