@@ -8,6 +8,7 @@ Provides strict validation models for all core data structures:
 - HazardProfile: FEMA NRI + USFS wildfire hazard data per Tribe
 - CongressionalDelegate: 119th Congress member records
 - CongressionalDelegation: Per-Tribe congressional mapping
+- VulnerabilityProfile: Composite vulnerability assessment per Tribe (v1.4)
 
 All models use Pydantic v2 strict validation with field descriptions
 and examples. Schema violations are bugs, not warnings.
@@ -32,8 +33,19 @@ from src.schemas.models import (
     ProgramRecord,
     TribeRecord,
 )
+from src.schemas.vulnerability import (
+    CompositeComponent,
+    CompositeScore,
+    DataGapType,
+    InvestmentPriorityTier,
+    NRIExpanded,
+    SVIProfile,
+    SVITheme,
+    VulnerabilityProfile,
+)
 
 __all__ = [
+    # Core models (models.py)
     "AwardCacheFile",
     "CFDASummaryEntry",
     "CommitteeAssignment",
@@ -51,4 +63,13 @@ __all__ = [
     "PolicyPosition",
     "ProgramRecord",
     "TribeRecord",
+    # Vulnerability models (vulnerability.py) - v1.4
+    "CompositeComponent",
+    "CompositeScore",
+    "DataGapType",
+    "InvestmentPriorityTier",
+    "NRIExpanded",
+    "SVIProfile",
+    "SVITheme",
+    "VulnerabilityProfile",
 ]
