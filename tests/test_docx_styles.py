@@ -352,7 +352,8 @@ class TestDocxEngine:
 
         # Header -- air gap clean (no tool name or org name)
         header_text = section.header.paragraphs[0].text
-        assert "FY26" in header_text
+        from src.config import FISCAL_YEAR_SHORT
+        assert FISCAL_YEAR_SHORT in header_text
         assert "Climate Resilience" in header_text
         assert "TCR Policy Scanner" not in header_text
 

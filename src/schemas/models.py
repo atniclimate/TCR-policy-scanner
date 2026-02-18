@@ -73,7 +73,7 @@ NRI_HAZARD_CODES = frozenset({
 # ── Hot Sheets Status ──
 
 class HotSheetsStatus(BaseModel):
-    """Program status from FY26 Hot Sheets review.
+    """Program status from Hot Sheets review.
 
     Tracks the most recent manual review status for each program,
     including when it was last updated and which Hot Sheets version
@@ -284,7 +284,7 @@ class ExtensibleFields(BaseModel):
     )
     fy26_funding: Optional[str] = Field(
         default=None,
-        description="FY26 funding amount string",
+        description="Current fiscal year funding amount string",
         examples=["$34.291M"],
     )
     scanner_trigger_keywords: Optional[list[str]] = Field(

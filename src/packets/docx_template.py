@@ -28,6 +28,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Emu, Inches, Pt, RGBColor
 
+from src.config import FISCAL_YEAR_SHORT
 from src.packets.docx_styles import COLORS, StyleManager, set_cell_shading
 from src.paths import PROJECT_ROOT
 
@@ -512,7 +513,7 @@ class TemplateBuilder:
             header_para = (header.paragraphs[0] if header.paragraphs
                            else header.add_paragraph())
             header_run = header_para.add_run(
-                "FY26 Climate Resilience Program Priorities"
+                f"{FISCAL_YEAR_SHORT} Climate Resilience Program Priorities"
             )
             header_run.font.size = Pt(8)
             header_run.font.color.rgb = COLORS.muted

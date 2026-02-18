@@ -6,6 +6,7 @@ header/footer formatting, and filename generation for all 4 document types.
 
 import pytest
 
+from src.config import FISCAL_YEAR_SHORT
 from src.packets.doc_types import (
     DOC_A,
     DOC_B,
@@ -174,7 +175,7 @@ class TestFormatHeader:
     def test_format_header_tribal_congressional(self):
         """DOC_B header substitutes tribe_name correctly."""
         result = DOC_B.format_header(tribe_name="Tulalip Tribes")
-        assert result == "Tulalip Tribes | FY26 Climate Resilience Program Priorities"
+        assert result == f"Tulalip Tribes | {FISCAL_YEAR_SHORT} Climate Resilience Program Priorities"
 
     def test_format_header_regional_internal(self):
         """DOC_C header substitutes region_name correctly."""
@@ -184,7 +185,7 @@ class TestFormatHeader:
     def test_format_header_regional_congressional(self):
         """DOC_D header substitutes region_name correctly."""
         result = DOC_D.format_header(region_name="Great Plains")
-        assert result == "Great Plains | FY26 Regional Climate Resilience Overview"
+        assert result == f"Great Plains | {FISCAL_YEAR_SHORT} Regional Climate Resilience Overview"
 
     def test_format_header_no_placeholder_leaves_template(self):
         """Calling format_header without args leaves placeholders intact."""
@@ -205,22 +206,26 @@ class TestFormatFilename:
     def test_format_filename_doc_a(self):
         """DOC_A generates correct filename with internal_strategy suffix."""
         result = DOC_A.format_filename("epa_001")
-        assert result == "epa_001_internal_strategy_fy26.docx"
+        fy = FISCAL_YEAR_SHORT.lower()
+        assert result == f"epa_001_internal_strategy_{fy}.docx"
 
     def test_format_filename_doc_b(self):
         """DOC_B generates correct filename with congressional_overview suffix."""
         result = DOC_B.format_filename("epa_001")
-        assert result == "epa_001_congressional_overview_fy26.docx"
+        fy = FISCAL_YEAR_SHORT.lower()
+        assert result == f"epa_001_congressional_overview_{fy}.docx"
 
     def test_format_filename_doc_c(self):
         """DOC_C generates correct filename with intertribal_strategy suffix."""
         result = DOC_C.format_filename("pnw")
-        assert result == "pnw_intertribal_strategy_fy26.docx"
+        fy = FISCAL_YEAR_SHORT.lower()
+        assert result == f"pnw_intertribal_strategy_{fy}.docx"
 
     def test_format_filename_doc_d(self):
         """DOC_D generates correct filename with regional_congressional_overview suffix."""
         result = DOC_D.format_filename("plains")
-        assert result == "plains_regional_congressional_overview_fy26.docx"
+        fy = FISCAL_YEAR_SHORT.lower()
+        assert result == f"plains_regional_congressional_overview_{fy}.docx"
 
 
 class TestAirGapCompliance:

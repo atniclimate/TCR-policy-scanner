@@ -67,7 +67,7 @@ def render_cover_page(
         context: TribePacketContext with all Tribe data.
         style_manager: StyleManager with registered custom styles.
         doc_type_config: Optional DocumentTypeConfig for audience-aware
-            cover page rendering. When None, uses default FY26 title.
+            cover page rendering. When None, uses default fiscal year title.
     """
     # Top spacing
     document.add_paragraph("")

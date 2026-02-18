@@ -96,7 +96,8 @@ class TestTemplateBuilder:
         doc = builder.build()
         header = doc.sections[0].header
         text = header.paragraphs[0].text
-        assert "FY26" in text
+        from src.config import FISCAL_YEAR_SHORT
+        assert FISCAL_YEAR_SHORT in text
         assert "Climate Resilience" in text
         assert "TCR Policy Scanner" not in text
 

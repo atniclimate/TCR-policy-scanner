@@ -19,6 +19,7 @@ import os
 import tempfile
 from pathlib import Path
 
+from src.config import FISCAL_YEAR_SHORT
 from src.paths import PACKETS_OUTPUT_DIR, PROJECT_ROOT
 
 from docx import Document
@@ -171,13 +172,13 @@ class DocxEngine:
         Args:
             document: The python-docx Document to configure.
             header_text: Header text to display. Defaults to a generic
-                FY26 program overview header.
+                fiscal year program overview header.
             footer_text: Footer text prefix. Defaults to congressional
                 office use text.
             confidential: If True, adds CONFIDENTIAL marking.
         """
         if header_text is None:
-            header_text = "FY26 Climate Resilience Program Priorities"
+            header_text = f"{FISCAL_YEAR_SHORT} Climate Resilience Program Priorities"
         if footer_text is None:
             footer_text = "For Congressional Office Use"
 

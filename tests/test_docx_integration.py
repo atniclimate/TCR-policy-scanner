@@ -485,7 +485,8 @@ class TestDocxContent:
         combined = "\n".join(first_paras)
 
         assert "Alpha Tribe of Arizona" in combined
-        assert "FY26 Climate Resilience Program Priorities" in combined
+        from src.config import FISCAL_YEAR_SHORT
+        assert f"{FISCAL_YEAR_SHORT} Climate Resilience Program Priorities" in combined
         assert "State(s): AZ" in combined
         assert "Ecoregion(s): southwest" in combined
         assert "Congressional Session: 119" in combined

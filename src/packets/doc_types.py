@@ -16,6 +16,8 @@ Document Types:
 
 from dataclasses import dataclass
 
+from src.config import FISCAL_YEAR_SHORT
+
 
 @dataclass(frozen=True)
 class DocumentTypeConfig:
@@ -108,9 +110,9 @@ class DocumentTypeConfig:
             slug: Identifier slug (e.g., tribe_id or region_id).
 
         Returns:
-            Filename string like "{slug}_{suffix}_fy26.docx".
+            Filename string like "{slug}_{suffix}_{fy}.docx".
         """
-        return f"{slug}_{self.filename_suffix}_fy26.docx"
+        return f"{slug}_{self.filename_suffix}_{FISCAL_YEAR_SHORT.lower()}.docx"
 
 
 # ---------------------------------------------------------------------------
@@ -121,7 +123,7 @@ DOC_A = DocumentTypeConfig(
     doc_type="A",
     audience="internal",
     scope="tribal",
-    title_template="FY26 Federal Funding Overview & Strategy",
+    title_template=f"{FISCAL_YEAR_SHORT} Federal Funding Overview & Strategy",
     header_template="{tribe_name} | Internal Strategy | CONFIDENTIAL",
     footer_template="Confidential: For Internal Use Only",
     confidential=True,
@@ -139,8 +141,8 @@ DOC_B = DocumentTypeConfig(
     doc_type="B",
     audience="congressional",
     scope="tribal",
-    title_template="FY26 Climate Resilience Program Priorities",
-    header_template="{tribe_name} | FY26 Climate Resilience Program Priorities",
+    title_template=f"{FISCAL_YEAR_SHORT} Climate Resilience Program Priorities",
+    header_template=f"{{tribe_name}} | {FISCAL_YEAR_SHORT} Climate Resilience Program Priorities",
     footer_template="For Congressional Office Use",
     confidential=False,
     include_strategy=False,
@@ -157,7 +159,7 @@ DOC_C = DocumentTypeConfig(
     doc_type="C",
     audience="internal",
     scope="regional",
-    title_template="FY26 InterTribal Climate Resilience Strategy",
+    title_template=f"{FISCAL_YEAR_SHORT} InterTribal Climate Resilience Strategy",
     header_template="{region_name} | Regional Strategy | CONFIDENTIAL",
     footer_template="Confidential: For Internal Use Only",
     confidential=True,
@@ -175,8 +177,8 @@ DOC_D = DocumentTypeConfig(
     doc_type="D",
     audience="congressional",
     scope="regional",
-    title_template="FY26 Regional Climate Resilience Overview",
-    header_template="{region_name} | FY26 Regional Climate Resilience Overview",
+    title_template=f"{FISCAL_YEAR_SHORT} Regional Climate Resilience Overview",
+    header_template=f"{{region_name}} | {FISCAL_YEAR_SHORT} Regional Climate Resilience Overview",
     footer_template="For Congressional Office Use",
     confidential=False,
     include_strategy=False,

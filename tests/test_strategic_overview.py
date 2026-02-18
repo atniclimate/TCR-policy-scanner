@@ -450,7 +450,8 @@ class TestSectionStructure:
         all_text = "\n".join(p.text for p in doc.paragraphs)
 
         # Cover page content
-        assert "FY26 Federal Funding Overview & Strategy" in all_text
+        from src.config import FISCAL_YEAR_SHORT
+        assert f"{FISCAL_YEAR_SHORT} Federal Funding Overview & Strategy" in all_text
 
         # The 6 Heading 2 sections
         expected_h2 = [
@@ -651,7 +652,8 @@ class TestCoverPage:
         first_texts = [p.text for p in doc.paragraphs[:10]]
         combined = "\n".join(first_texts)
 
-        assert "FY26 Federal Funding Overview" in combined
+        from src.config import FISCAL_YEAR_SHORT
+        assert f"{FISCAL_YEAR_SHORT} Federal Funding Overview" in combined
         assert "CONFIDENTIAL" in combined
 
     def test_cover_page_has_date(self, setup_data_files):
