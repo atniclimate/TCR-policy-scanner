@@ -251,6 +251,8 @@ class CongressGovScraper(BaseScraper):
         Returns:
             Dict with keys: bill, actions, cosponsors, subjects, policy_area, text_versions.
         """
+        if not str(bill_number).isdigit():
+            raise ValueError(f"Invalid bill_number: {bill_number!r} (must be numeric)")
         base = f"{self.base_url}/bill/{congress}/{bill_type.lower()}/{bill_number}"
 
         # Main bill detail (includes sponsor inline)

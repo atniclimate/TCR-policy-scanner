@@ -80,15 +80,16 @@ _STATE_FIPS_PREFIX = {
 }
 
 
-def _safe_float(value, default: float = 0.0) -> float:
+def _safe_float(value, default: float | None = 0.0) -> float | None:
     """Convert a value to float, returning default for empty/None/non-numeric.
 
     Args:
         value: The value to convert. May be str, None, int, float, or empty.
-        default: Fallback value if conversion fails.
+        default: Fallback value if conversion fails. When default=None, None
+            may be returned to signal absence of a value (caller must handle).
 
     Returns:
-        Float value or default.
+        Float value, or default (which may be None when explicitly passed).
     """
     if value is None:
         return default
@@ -210,7 +211,11 @@ class HazardProfileBuilder:
 
         # Check for version in sibling ZIP filenames (e.g., NRI_v1.20_counties.zip)
         nri_dir = csv_path.parent
-        for sibling in nri_dir.iterdir():
+        try:
+            siblings = list(nri_dir.iterdir())
+        except OSError:
+            siblings = []  # Fall through to default version
+        for sibling in siblings:
             name_lower = sibling.name.lower()
             # Look for patterns like "v1.20", "v120", "v1_20"
             match = re.search(r"v(\d+)[._]?(\d+)", name_lower)
@@ -503,6 +508,11 @@ class HazardProfileBuilder:
                 state_fips = self._get_state_county_fips(states, county_data)
                 county_fips_set.update(state_fips)
                 if county_fips_set:
+                    tribe_id = tribe.get("epa_id", tribe.get("id", "unknown"))
+                    logger.info(
+                        "Tribe %s: using state-level NRI fallback (%d counties from %d states)",
+                        tribe_id, len(county_fips_set), len(states),
+                    )
                     equal_w = 1.0 / len(county_fips_set)
                     county_weights = {fips: equal_w for fips in county_fips_set}
 

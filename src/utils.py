@@ -19,4 +19,6 @@ def format_dollars(amount: float) -> str:
     Returns:
         Formatted string with dollar sign and thousand separators.
     """
+    if amount < 0:
+        return f"-${abs(amount):,.0f}"
     return f"${amount:,.0f}"

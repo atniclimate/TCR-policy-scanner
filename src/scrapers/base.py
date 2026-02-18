@@ -21,6 +21,10 @@ from src.scrapers.circuit_breaker import CircuitBreaker, CircuitOpenError  # noq
 
 logger = logging.getLogger(__name__)
 
+_ALLOWED_METHODS: frozenset[str] = frozenset(
+    {"get", "post", "put", "patch", "delete", "head", "options"}
+)
+
 USER_AGENT = "TCR-Policy-Scanner/1.0 (Tribal Climate Resilience; automated-scan)"
 DEFAULT_TIMEOUT = aiohttp.ClientTimeout(total=30)
 MAX_RETRIES = 3
@@ -83,7 +87,7 @@ class BaseScraper:
         kwargs.setdefault("timeout", self.request_timeout)
         last_error = None
         method_lower = method.lower()
-        if not hasattr(session, method_lower):
+        if method_lower not in _ALLOWED_METHODS:
             raise ValueError(f"Unsupported HTTP method: {method}")
         request_fn = getattr(session, method_lower)
 
@@ -104,7 +108,7 @@ class BaseScraper:
                             )
                         raw_retry = resp.headers.get("Retry-After", "")
                         try:
-                            retry_after = max(0, min(int(raw_retry), self.backoff_max))
+                            retry_after = max(1, min(int(raw_retry), self.backoff_max))
                         except (ValueError, TypeError):
                             retry_after = min(
                                 self.backoff_base ** (attempt + 2), self.backoff_max

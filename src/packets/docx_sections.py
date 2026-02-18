@@ -402,11 +402,17 @@ def render_delegation_section(
 
     for row_idx, member in enumerate(all_members, start=1):
         row = table.rows[row_idx]
-        row.cells[0].text = member["name"]
-        row.cells[1].text = member["role"]
-        row.cells[2].text = member["state"]
-        row.cells[3].text = member["district"]
-        row.cells[4].text = member["committees"]
+        # Use paragraph.clear() + add_run() to avoid ghost empty run from cell.text=
+        for col_idx, value in enumerate([
+            member["name"],
+            member["role"],
+            member["state"],
+            member["district"],
+            member["committees"],
+        ]):
+            p = row.cells[col_idx].paragraphs[0]
+            p.clear()
+            p.add_run(value)
 
     apply_zebra_stripe(table)
 

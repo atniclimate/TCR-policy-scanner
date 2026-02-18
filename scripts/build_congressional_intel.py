@@ -281,16 +281,17 @@ def transform_to_bill_intel(
     actions = []
     for act in actions_raw:
         actions.append({
-            "action_date": act.get("actionDate", ""),
+            "action_date": act.get("actionDate") or None,
             "text": act.get("text", ""),
             "action_type": act.get("type", ""),
             "chamber": act.get("chamber", ""),
         })
 
-    # Latest action
+    # Latest action (sort by date to guard against out-of-order API responses)
     latest_action = None
     if actions:
-        latest_action = actions[-1]  # actions are typically chronological
+        sorted_actions = sorted(actions, key=lambda a: a.get("action_date") or "")
+        latest_action = sorted_actions[-1]
 
     # Committees (from main bill record)
     committees = []

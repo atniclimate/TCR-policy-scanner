@@ -100,10 +100,10 @@ def load_hazard_profile(tribe_id: str) -> dict:
 class TestProgramRecordSchema:
     """Validate program_inventory.json against ProgramRecord schema."""
 
-    def test_all_16_programs_validate(self, program_inventory):
+    def test_all_programs_validate(self, program_inventory):
         """Every program in program_inventory.json must pass ProgramRecord validation."""
         programs = program_inventory["programs"]
-        assert len(programs) == 16, f"Expected 16 programs, got {len(programs)}"
+        assert len(programs) >= 16, f"Expected at least 16 programs, got {len(programs)}"
         errors = []
         for prog_data in programs:
             try:

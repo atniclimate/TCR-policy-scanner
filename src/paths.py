@@ -178,24 +178,51 @@ SCRIPTS_DIR: Path = PROJECT_ROOT / "scripts"
 # -- Helper Functions (per-Tribe paths) --
 # ---------------------------------------------------------------------------
 
+
+def _sanitize_tribe_id(tribe_id: str) -> str:
+    """Sanitize a tribe_id to prevent path traversal attacks.
+
+    Uses Path(tribe_id).name to strip any directory separators, then
+    rejects the result if it is empty or a dot segment, or if the
+    original string contains suspicious characters.
+
+    Args:
+        tribe_id: Raw tribe identifier string from caller.
+
+    Returns:
+        Safe filename stem (no path separators).
+
+    Raises:
+        ValueError: If tribe_id contains path traversal sequences or is
+            otherwise invalid.
+    """
+    # Reject original strings containing path separator characters
+    if "/" in tribe_id or "\\" in tribe_id or "." in tribe_id:
+        raise ValueError(f"Invalid tribe_id (contains traversal characters): {tribe_id!r}")
+    safe_id = Path(tribe_id).name
+    if not safe_id or safe_id in (".", ".."):
+        raise ValueError(f"Invalid tribe_id: {tribe_id!r}")
+    return safe_id
+
+
 def award_cache_path(tribe_id: str) -> Path:
     """Return the award cache JSON path for a specific Tribe."""
-    return AWARD_CACHE_DIR / f"{tribe_id}.json"
+    return AWARD_CACHE_DIR / f"{_sanitize_tribe_id(tribe_id)}.json"
 
 
 def hazard_profile_path(tribe_id: str) -> Path:
     """Return the hazard profile JSON path for a specific Tribe."""
-    return HAZARD_PROFILES_DIR / f"{tribe_id}.json"
+    return HAZARD_PROFILES_DIR / f"{_sanitize_tribe_id(tribe_id)}.json"
 
 
 def packet_state_path(tribe_id: str) -> Path:
     """Return the packet state JSON path for a specific Tribe."""
-    return PACKET_STATE_DIR / f"{tribe_id}.json"
+    return PACKET_STATE_DIR / f"{_sanitize_tribe_id(tribe_id)}.json"
 
 
 def vulnerability_profile_path(tribe_id: str) -> Path:
     """Return the vulnerability profile JSON path for a specific Tribe."""
-    return VULNERABILITY_PROFILES_DIR / f"{tribe_id}.json"
+    return VULNERABILITY_PROFILES_DIR / f"{_sanitize_tribe_id(tribe_id)}.json"
 
 
 def resolve_path(raw_path: str) -> Path:

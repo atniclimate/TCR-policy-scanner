@@ -24,6 +24,8 @@ from src.scrapers.cfda_map import CFDA_TO_PROGRAM
 
 logger = logging.getLogger(__name__)
 
+MAX_PAGES = 50  # Safety cap for tribal awards pagination (BUG-016)
+
 # Award type code GROUPS for Tribal award queries.
 # USASpending API requires award_type_codes from a single group per request.
 # Group 1 (grants): 02-05 = grants/cooperative agreements
@@ -196,6 +198,7 @@ class USASpendingScraper(BaseScraper):
                         "USASpending: failed fetching Tribal awards for CFDA %s "
                         "page %d (types %s)",
                         cfda, page, type_group,
+                        exc_info=True,
                     )
                     break
 
@@ -210,6 +213,14 @@ class USASpendingScraper(BaseScraper):
                     break
 
                 page += 1
+
+                # Safety page cap (BUG-016)
+                if page >= MAX_PAGES:
+                    logger.warning(
+                        "USASpending: hit page cap %d for CFDA %s",
+                        MAX_PAGES, cfda,
+                    )
+                    break
 
         logger.info(
             "USASpending: fetched %d Tribal awards for CFDA %s",

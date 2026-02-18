@@ -21,6 +21,7 @@ Usage:
 import asyncio
 import json
 import logging
+import os
 from pathlib import Path
 
 from src.config import FISCAL_YEAR_INT
@@ -480,8 +481,15 @@ class TribalAwardMatcher:
                 )
 
             cache_path = self.cache_dir / f"{tribe_id}.json"
-            with open(cache_path, "w", encoding="utf-8") as f:
-                json.dump(cache_data, f, indent=2, ensure_ascii=False)
+            tmp_path = cache_path.with_suffix(".tmp")
+            try:
+                with open(tmp_path, "w", encoding="utf-8") as f:
+                    json.dump(cache_data, f, indent=2, ensure_ascii=False)
+                os.replace(str(tmp_path), str(cache_path))
+            except Exception:
+                if tmp_path.exists():
+                    tmp_path.unlink()
+                raise
 
             files_written += 1
 
@@ -586,6 +594,22 @@ def _compute_trend(
 
     # Check if awards only exist in the last 2 years
     fy_range = list(range(fy_start, fy_end + 1))
+    if len(fy_range) <= 2:
+        # With 2 or fewer years there is no meaningful "earlier" window.
+        # Return "new" only when the first year has no activity; otherwise
+        # use a simple comparison between the two years.
+        if len(fy_range) == 1:
+            return "new"
+        first_fy, last_fy = str(fy_range[0]), str(fy_range[-1])
+        first_val = yearly_obligations.get(first_fy, 0.0)
+        last_val = yearly_obligations.get(last_fy, 0.0)
+        if first_val == 0:
+            return "new"
+        if last_val > first_val * 1.2:
+            return "increasing"
+        if last_val < first_val * 0.8:
+            return "decreasing"
+        return "stable"
     earlier = set(str(fy) for fy in fy_range[:-2])
     has_earlier = any(yearly_obligations.get(fy, 0.0) > 0 for fy in earlier)
     if not has_earlier:

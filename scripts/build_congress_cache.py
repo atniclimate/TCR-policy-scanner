@@ -585,7 +585,11 @@ def format_member_name(member: dict, chamber: str, state_code: str) -> str:
     if chamber == "Senate" or district is None:
         return f"{prefix} {name} ({party}-{state_code})"
     else:
-        dist_num = int(district)
+        try:
+            dist_num = int(district)
+        except (ValueError, TypeError):
+            logger.warning("Non-numeric district value: %r for %s", district, name)
+            dist_num = 0  # treat as at-large
         if dist_num == 0:
             dist_label = f"{state_code}-AL"
         else:
@@ -919,7 +923,11 @@ def assemble_delegations(
         elif chamber == "House":
             dist = member.get("district")
             if dist is not None:
-                dist_num = int(dist)
+                try:
+                    dist_num = int(dist)
+                except (ValueError, TypeError):
+                    logger.warning("Non-numeric district value: %r for %s", dist, member.get("name", ""))
+                    dist_num = 0  # treat as at-large
                 if dist_num == 0:
                     dist_label = f"{state}-AL"
                 else:
