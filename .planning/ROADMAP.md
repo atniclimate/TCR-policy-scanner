@@ -57,6 +57,16 @@ v1.4 adds comprehensive climate vulnerability intelligence to the TCR Policy Sca
 - XCUT-03: NRI version pinning with SHA256 checksum and CT planning region mapping
 - XCUT-04: encoding="utf-8" on all file operations, atomic writes on all cache files
 
+**Plans:** 6 plans
+
+Plans:
+- [ ] 19-01-PLAN.md -- Pre-phase tech debt: fix FY26 hardcodes, add path constants, add context field
+- [ ] 19-02-PLAN.md -- REG-03: Vulnerability Pydantic v2 schema models (TDD)
+- [ ] 19-03-PLAN.md -- REG-04: Sovereignty-first vocabulary constants module
+- [ ] 19-04-PLAN.md -- VULN-01 + XCUT-03: NRI expanded builder with version pinning and CT FIPS
+- [ ] 19-05-PLAN.md -- VULN-02: SVI 2022 builder with sentinel handling and 3-theme composite
+- [ ] 19-06-PLAN.md -- XCUT-04: Integration tests and encoding/atomic write compliance
+
 **Success Criteria:**
 1. Running `python -c "from src.schemas.vulnerability import ..."` imports all vulnerability Pydantic models without error, and each model validates sample data with correct field types and constraints
 2. A VULNERABILITY_FRAMING constants module exists with approved language, and importing it provides string constants that renderers will use instead of raw vulnerability terminology
