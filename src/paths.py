@@ -98,6 +98,28 @@ CENSUS_DATA_PATH: Path = DATA_DIR / "census" / "tab20_cd11920_aiannh20_natl.txt"
 """Census AIANNH-to-congressional-district crosswalk table."""
 
 # ---------------------------------------------------------------------------
+# -- Vulnerability Data Paths --
+# ---------------------------------------------------------------------------
+
+SVI_DIR: Path = DATA_DIR / "svi"
+"""CDC Social Vulnerability Index data directory."""
+
+SVI_COUNTY_PATH: Path = SVI_DIR / "SVI2022_US_COUNTY.csv"
+"""SVI 2022 county-level dataset (RPL_THEMES, individual theme percentiles)."""
+
+CLIMATE_DIR: Path = DATA_DIR / "climate"
+"""Climate data directory for temperature, precipitation, and summary files."""
+
+CLIMATE_SUMMARY_PATH: Path = CLIMATE_DIR / "climate_summary.json"
+"""Aggregated climate summary with per-Tribe indicators."""
+
+VULNERABILITY_PROFILES_DIR: Path = DATA_DIR / "vulnerability_profiles"
+"""Per-Tribe composite vulnerability profile JSON files."""
+
+CLIMATE_RAW_DIR: Path = CLIMATE_DIR / "raw"
+"""Raw climate data downloads before processing."""
+
+# ---------------------------------------------------------------------------
 # -- Output Paths --
 # ---------------------------------------------------------------------------
 
@@ -169,3 +191,8 @@ def hazard_profile_path(tribe_id: str) -> Path:
 def packet_state_path(tribe_id: str) -> Path:
     """Return the packet state JSON path for a specific Tribe."""
     return PACKET_STATE_DIR / f"{tribe_id}.json"
+
+
+def vulnerability_profile_path(tribe_id: str) -> Path:
+    """Return the vulnerability profile JSON path for a specific Tribe."""
+    return VULNERABILITY_PROFILES_DIR / f"{tribe_id}.json"

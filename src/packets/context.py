@@ -65,6 +65,11 @@ class TribePacketContext:
     # Phase 7 stubs
     economic_impact: dict = field(default_factory=dict)
 
+    # Vulnerability profile (Phase 19)
+    # Composite vulnerability data combining hazard, social vulnerability,
+    # and adaptive capacity metrics. Populated by VulnerabilityProfileBuilder.
+    vulnerability_profile: dict = field(default_factory=dict)
+
     # Congressional intelligence (INTEL-06)
     # Dict carrying bill intelligence, enhanced delegation, committee activity,
     # appropriations status, scan_date, and confidence scores. Populated by
