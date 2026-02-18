@@ -12,10 +12,10 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 **Milestone:** v1.4 Climate Vulnerability Intelligence
-**Phase:** 19 - Schema & Core Data Foundation - IN PROGRESS
-**Plan:** 05 of 6 complete (19-01, 19-02, 19-03, 19-04, 19-05), Wave 1 + Wave 2 done
-**Status:** Phase 19 IN PROGRESS -- 19-01 through 19-05 complete (06 pending)
-**Last activity:** 2026-02-18 -- Completed 19-04-PLAN.md (NRI expanded builder with version pinning)
+**Phase:** 19 - Schema & Core Data Foundation - COMPLETE
+**Plan:** 06 of 6 complete (19-01, 19-02, 19-03, 19-04, 19-05, 19-06), All waves done
+**Status:** Phase 19 COMPLETE -- all 6 plans done. Ready for Phase 20.
+**Last activity:** 2026-02-18 -- Completed 19-06-PLAN.md (integration & XCUT-04 compliance tests)
 
 **Progress:**
 ```
@@ -23,7 +23,7 @@ v1.0 MVP [##########] 100% SHIPPED (4 phases, 9 plans, 30 requirements)
 v1.1     [##########] 100% SHIPPED (4 phases, 17 plans, 22 requirements)
 v1.2     [##########] 100% SHIPPED (6 phases, 20 plans, 24 requirements)
 v1.3     [##########] 100% SHIPPED (4 phases, 20 plans, 39 requirements)
-v1.4     [###-------]  28% Phase 19 in progress (7 phases, 28 requirements)
+v1.4     [####------]  33% Phase 19 COMPLETE (7 phases, 28 requirements)
 ```
 
 ## Performance Metrics
@@ -34,10 +34,10 @@ v1.4     [###-------]  28% Phase 19 in progress (7 phases, 28 requirements)
 | v1.1 shipped | 2026-02-10 (4 phases, 17 plans, 22 requirements, 287 tests) |
 | v1.2 shipped | 2026-02-11 (6 phases, 20 plans, 24 requirements, 743 tests) |
 | v1.3 shipped | 2026-02-14 (4 phases, 20 plans, 39 requirements, 964 tests) |
-| Total phases | 18 completed, 7 planned (18.5 + 19-24) |
-| Total plans | 66 completed |
-| Total requirements | 115 completed + 28 planned = 143 |
-| Total tests | 1204 (all passing) |
+| Total phases | 19 completed, 6 planned (20-24) |
+| Total plans | 72 completed (66 prior + 6 Phase 19) |
+| Total requirements | 121 completed + 22 planned = 143 |
+| Total tests | 1257 (all passing, 1 skipped) |
 | Source files | 102 Python files (54 src + 33 tests + 14 scripts + 1 root) |
 | Total LOC | ~38,300 Python (src + tests) |
 | Documents generated | 992 (384 Doc A + 592 Doc B + 8 Doc C + 8 Doc D) |
@@ -58,7 +58,7 @@ v1.4     [###-------]  28% Phase 19 in progress (7 phases, 28 requirements)
 | Phase | Name | Requirements | Status |
 |-------|------|-------------|--------|
 | 18.5 | Architectural Review & Scaffolding | — (pre-phase) | **COMPLETE** |
-| 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | **IN PROGRESS** (5/6 done: 01,02,03,04,05) |
+| 19 | Schema & Core Data Foundation | REG-03, REG-04, VULN-01, VULN-02, XCUT-03, XCUT-04 | **COMPLETE** (6/6 done) |
 | 20 | Flood & Water Data | FLOOD-01 to FLOOD-06 | Pending |
 | 21 | Climate, Geologic & Infrastructure Data | CLIM-01 to CLIM-03, GEO-01, GEO-02, INFRA-01 | Pending |
 | 22 | Vulnerability Profiles & Pipeline Integration | VULN-03, VULN-04, REG-01, REG-02, XCUT-01 to XCUT-03, XCUT-05 | Pending |
@@ -90,6 +90,7 @@ v1.3 decisions (33 total) archived to `milestones/v1.3-ROADMAP.md`. Full cumulat
 - [19-05-DEC-02] SVI profiles output to data/svi/profiles/ (intermediate, consumed by composite builder).
 - [19-05-DEC-03] Skip counties where ALL 3 included themes are 0.0 (suppressed data, not real zeros).
 - [19-05-DEC-04] Store RPL_THEMES for reference but never use in composite (includes excluded Theme 3).
+- [19-06-DEC-01] Only check Doc B/D headings for FORBIDDEN_DOC_B_TERMS (internal Doc A/C/E headings intentionally use strategy terms).
 
 ### Todos
 
@@ -98,7 +99,8 @@ v1.3 decisions (33 total) archived to `milestones/v1.3-ROADMAP.md`. Full cumulat
 - ~~Add 6 path constants to `src/paths.py` (zero-risk)~~ DONE (19-01)
 - ~~Build SVI 2022 builder with theme exclusion~~ DONE (19-05)
 - ~~Build NRI expanded builder with version pinning~~ DONE (19-04)
-- Execute Phase 19 remaining: 19-06 (composite vulnerability builder)
+- ~~Integration & XCUT-04 compliance tests~~ DONE (19-06)
+- Begin Phase 20: Flood & Water Data
 
 ### Blockers
 
@@ -109,10 +111,10 @@ _None._
 ### Last Session
 
 **Date:** 2026-02-18
-**Stopped at:** Completed 19-04-PLAN.md (NRI expanded builder with version pinning)
-**Next step:** Continue Phase 19 remaining plan: 19-06 (composite vulnerability builder)
-**Resume file:** .planning/phases/19-schema-core-data-foundation/19-04-SUMMARY.md
-**Quality gate:** 1204 tests passing. Trust 9/10.
+**Stopped at:** Completed 19-06-PLAN.md (integration & XCUT-04 compliance tests) -- Phase 19 COMPLETE
+**Next step:** Begin Phase 20 (Flood & Water Data)
+**Resume file:** .planning/phases/19-schema-core-data-foundation/19-06-SUMMARY.md
+**Quality gate:** 1257 tests passing, 1 skipped. Trust 9/10.
 
 ## Phase 18.5 Summary
 
@@ -136,4 +138,4 @@ _None._
 
 ---
 *State initialized: 2026-02-09*
-*Last updated: 2026-02-18 after 19-04 completion*
+*Last updated: 2026-02-18 after 19-06 completion (Phase 19 COMPLETE)*
