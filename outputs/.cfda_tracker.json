@@ -1,46 +1,58 @@
 {
   "15.156": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:07.447645"
+    "last_results": "2026-02-19T14:07:56.432866+00:00",
+    "zero_since": null
   },
   "97.047": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:07.837853"
+    "last_results": "2026-02-19T14:08:11.887819+00:00",
+    "zero_since": null
   },
   "97.039": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:08.223563"
+    "last_results": "2026-02-19T14:08:19.434714+00:00",
+    "zero_since": null
   },
   "66.926": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:08.635321"
+    "last_results": "2026-02-19T14:08:26.999786+00:00",
+    "zero_since": null
   },
   "66.468": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:09.008412"
+    "last_results": "2026-02-19T14:08:34.558719+00:00",
+    "zero_since": null
   },
   "20.205": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:09.402799"
+    "last_results": "2026-02-19T14:08:42.171707+00:00",
+    "zero_since": null
   },
   "14.867": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:09.811313"
+    "last_results": "2026-02-19T14:08:49.794799+00:00",
+    "zero_since": null
   },
   "81.087": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:10.297087"
+    "last_results": "2026-02-19T14:08:57.536963+00:00",
+    "zero_since": null
   },
   "10.720": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:10.753763"
+    "last_results": "2026-02-19T14:09:05.164774+00:00",
+    "zero_since": null
   },
   "15.507": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:11.145396"
+    "last_results": "2026-02-19T14:09:12.633779+00:00",
+    "zero_since": null
   },
   "20.284": {
-    "last_results": "",
-    "zero_since": "2026-02-09T13:41:11.518710"
+    "last_results": "2026-02-19T14:09:20.085771+00:00",
+    "zero_since": null
+  },
+  "15.124": {
+    "last_results": "2026-02-19T14:08:03.998720+00:00",
+    "zero_since": null
+  },
+  "11.483": {
+    "last_results": "2026-02-19T14:09:27.587721+00:00",
+    "zero_since": null
+  },
+  "66.038": {
+    "last_results": "2026-02-19T14:09:34.993312+00:00",
+    "zero_since": null
   }
 }

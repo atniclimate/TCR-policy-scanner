@@ -2,55 +2,203 @@
   "alerts": [
     {
       "monitor": "dhs_funding",
-      "severity": "WARNING",
+      "severity": "CRITICAL",
       "program_ids": [
         "fema_bric"
       ],
-      "title": "DHS funding cliff: FEMA BRIC -- 4 days to CR expiration",
-      "detail": "The DHS Continuing Resolution expires on 2026-02-13. 4 days remain. FEMA BRIC (FEMA) may be affected if DHS funding lapses.",
+      "title": "DHS CR EXPIRED: FEMA BRIC funding at risk",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 6 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
-        "days_remaining": 4,
+        "days_remaining": 0,
+        "days_since_expiration": 6,
         "creates_threatens_edge": true,
         "dhs_bills_detected": 0
       },
-      "timestamp": "2026-02-09T22:00:26.524963+00:00"
+      "timestamp": "2026-02-19T14:22:24.123799+00:00"
     },
     {
       "monitor": "dhs_funding",
-      "severity": "WARNING",
+      "severity": "CRITICAL",
       "program_ids": [
         "fema_tribal_mitigation"
       ],
-      "title": "DHS funding cliff: FEMA Tribal Mitigation Plans -- 4 days to CR expiration",
-      "detail": "The DHS Continuing Resolution expires on 2026-02-13. 4 days remain. FEMA Tribal Mitigation Plans (FEMA) may be affected if DHS funding lapses.",
+      "title": "DHS CR EXPIRED: FEMA Tribal Mitigation Plans funding at risk",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 6 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
-        "days_remaining": 4,
+        "days_remaining": 0,
+        "days_since_expiration": 6,
         "creates_threatens_edge": true,
         "dhs_bills_detected": 0
       },
-      "timestamp": "2026-02-09T22:00:26.524969+00:00"
+      "timestamp": "2026-02-19T14:22:24.123815+00:00"
     },
     {
-      "monitor": "iija_sunset",
-      "severity": "INFO",
+      "monitor": "reconciliation",
+      "severity": "WARNING",
       "program_ids": [
-        "epa_stag"
+        "irs_elective_pay"
       ],
-      "title": "IIJA sunset: EPA STAG -- 233 days remaining",
-      "detail": "EPA STAG is funded under auth_iija which expires September 30, 2026. 233 days remain. No reauthorization bill detected in scan results.",
+      "title": "Reconciliation threat: To amend section 13031 of the Consolidated Omnibus Budget Reconciliation Act of ",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: To amend section 13031 of the Consolidated Omnibus Budget Reconciliation Act of 1985 to provide for a user fee to cover the cost of customs inspections at express courier facilities.. Source ID: 107-HR-2140. This is an active legislative threat -- not the already-enacted OBBBA.",
       "metadata": {
-        "threat_type": "iija_sunset",
-        "deadline": "2026-09-30",
-        "days_remaining": 233,
-        "authority_id": "auth_iija",
-        "reauth_detected": false,
-        "creates_threatens_edge": true
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "107-HR-2140",
+        "bill_title": "To amend section 13031 of the Consolidated Omnibus Budget Reconciliation Act of 1985 to provide for a user fee to cover the cost of customs inspections at express courier facilities.",
+        "description": "To amend section 13031 of the Consolidated Omnibus Budget Reconciliation Act of 1985 to provide for a user fee to cover the cost of customs inspections at express courier facilities.",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "reconciliation"
+        ]
       },
-      "timestamp": "2026-02-09T22:00:26.524761+00:00"
+      "timestamp": "2026-02-19T14:22:24.120607+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "irs_elective_pay"
+      ],
+      "title": "Reconciliation threat: Commission on Equity and Reconciliation in the Uniformed Services Act",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: Commission on Equity and Reconciliation in the Uniformed Services Act. Source ID: 119-HR-7238. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "119-HR-7238",
+        "bill_title": "Commission on Equity and Reconciliation in the Uniformed Services Act",
+        "description": "Commission on Equity and Reconciliation in the Uniformed Services Act",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "reconciliation"
+        ]
+      },
+      "timestamp": "2026-02-19T14:22:24.120702+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "irs_elective_pay"
+      ],
+      "title": "Reconciliation threat: Commission on Equity and Reconciliation in the Uniformed Services Act",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: Commission on Equity and Reconciliation in the Uniformed Services Act. Source ID: 119-S-3691. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "119-S-3691",
+        "bill_title": "Commission on Equity and Reconciliation in the Uniformed Services Act",
+        "description": "Commission on Equity and Reconciliation in the Uniformed Services Act",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "reconciliation"
+        ]
+      },
+      "timestamp": "2026-02-19T14:22:24.120766+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "irs_elective_pay"
+      ],
+      "title": "Reconciliation threat: Rancho El Cajon Boundary Reconciliation Act",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: Rancho El Cajon Boundary Reconciliation Act. Source ID: 108-HR-3954. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "108-HR-3954",
+        "bill_title": "Rancho El Cajon Boundary Reconciliation Act",
+        "description": "Rancho El Cajon Boundary Reconciliation Act",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "reconciliation"
+        ]
+      },
+      "timestamp": "2026-02-19T14:22:24.120825+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "irs_elective_pay"
+      ],
+      "title": "Reconciliation threat: A bill to make permanent the pension and individual retirement arrangement provi",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: A bill to make permanent the pension and individual retirement arrangement provisions of the Economic Growth and Tax Relief Reconciliation Act of 2001.. Source ID: 108-S-95. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "108-S-95",
+        "bill_title": "A bill to make permanent the pension and individual retirement arrangement provisions of the Economic Growth and Tax Relief Reconciliation Act of 2001.",
+        "description": "A bill to make permanent the pension and individual retirement arrangement provisions of the Economic Growth and Tax Relief Reconciliation Act of 2001.",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "reconciliation"
+        ]
+      },
+      "timestamp": "2026-02-19T14:22:24.120882+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "irs_elective_pay"
+      ],
+      "title": "Reconciliation threat: To amend the Internal Revenue Code of 1986 to simplify the $500 per child tax cr",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: To amend the Internal Revenue Code of 1986 to simplify the $500 per child tax credit and other individual non-refundable credits by repealing the complex limitations on the allowance of those credits resulting from their interaction with the alternative minimum tax.. Source ID: 107-HR-468. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "107-HR-468",
+        "bill_title": "To amend the Internal Revenue Code of 1986 to simplify the $500 per child tax credit and other individual non-refundable credits by repealing the complex limitations on the allowance of those credits resulting from their interaction with the alternative minimum tax.",
+        "description": "To amend the Internal Revenue Code of 1986 to simplify the $500 per child tax credit and other individual non-refundable credits by repealing the complex limitations on the allowance of those credits resulting from their interaction with the alternative minimum tax.",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "repeal"
+        ]
+      },
+      "timestamp": "2026-02-19T14:22:24.121030+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "bia_tcr",
+        "fema_bric",
+        "fema_hmgp",
+        "fema_fma",
+        "irs_elective_pay",
+        "epa_stag",
+        "epa_gap",
+        "fema_tribal_mitigation",
+        "dot_protect",
+        "usda_wildfire",
+        "doe_indian_energy",
+        "hud_ihbg",
+        "noaa_tribal",
+        "fhwa_ttp_safety",
+        "usbr_watersmart",
+        "usbr_tap",
+        "bia_tcr_awards",
+        "epa_tribal_air"
+      ],
+      "title": "Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: Providing for consideration of the joint resolution (S.J. Res. 80) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision''; providing for consideration of the joint resolution (H.J. Res. 130) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''Buffalo Field Office Record of Decision and Approved Resource Management Plan Amendment''; providing for consideration of the joint resolution (H.J. Res. 131) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''Coastal Plain Oil and Gas Leasing Program Record of Decision''; providing for consideration of the concurrent resolution (H. Con. Res. 58) denouncing the horrors of socialism; providing for consideration of the bill (H.R. 1949) to repeal restrictions on the export and import of natural gas; providing for consideration of the bill (H.R. 3109) to require the Secretary of Energy to direct the National Petroleum Council to issue a report with respect to petrochemical refineries in the United States, and for other purposes; providing for consideration of the bill (H.R. 5107) to repeal the Comprehensive Policing and Justice Reform Amendment Act of 2022 enacted by the District of Columbia Council; providing for consideration of the bill (H.R. 5214) to require mandatory pretrial and post conviction detention for crimes of violence and dangerous crimes and require mandatory cash bail for certain offenses that pose a threat to public safety or order in the District of Columbia, and for other purposes; and for other purposes.. Source ID: 119-HRES-879. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "119-HRES-879",
+        "bill_title": "Providing for consideration of the joint resolution (S.J. Res. 80) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision''; providing for consideration of the joint resolution (H.J. Res. 130) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''Buffalo Field Office Record of Decision and Approved Resource Management Plan Amendment''; providing for consideration of the joint resolution (H.J. Res. 131) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''Coastal Plain Oil and Gas Leasing Program Record of Decision''; providing for consideration of the concurrent resolution (H. Con. Res. 58) denouncing the horrors of socialism; providing for consideration of the bill (H.R. 1949) to repeal restrictions on the export and import of natural gas; providing for consideration of the bill (H.R. 3109) to require the Secretary of Energy to direct the National Petroleum Council to issue a report with respect to petrochemical refineries in the United States, and for other purposes; providing for consideration of the bill (H.R. 5107) to repeal the Comprehensive Policing and Justice Reform Amendment Act of 2022 enacted by the District of Columbia Council; providing for consideration of the bill (H.R. 5214) to require mandatory pretrial and post conviction detention for crimes of violence and dangerous crimes and require mandatory cash bail for certain offenses that pose a threat to public safety or order in the District of Columbia, and for other purposes; and for other purposes.",
+        "description": "Providing for consideration of the joint resolution (S.J. Res. 80) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision''; providing for consideration of the joint resolution (H.J. Res. 130) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''Buffalo Field Office Record of Decision and Approved Resource Management Plan Amendment''; providing for consideration of the joint resolution (H.J. Res. 131) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to ''Coastal Plain Oil and Gas Leasing Program Record of Decision''; providing for consideration of the concurrent resolution (H. Con. Res. 58) denouncing the horrors of socialism; providing for consideration of the bill (H.R. 1949) to repeal restrictions on the export and import of natural gas; providing for consideration of the bill (H.R. 3109) to require the Secretary of Energy to direct the National Petroleum Council to issue a report with respect to petrochemical refineries in the United States, and for other purposes; providing for consideration of the bill (H.R. 5107) to repeal the Comprehensive Policing and Justice Reform Amendment Act of 2022 enacted by the District of Columbia Council; providing for consideration of the bill (H.R. 5214) to require mandatory pretrial and post conviction detention for crimes of violence and dangerous crimes and require mandatory cash bail for certain offenses that pose a threat to public safety or order in the District of Columbia, and for other purposes; and for other purposes.",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "repeal"
+        ]
+      },
+      "timestamp": "2026-02-19T14:22:24.122254+00:00"
     },
     {
       "monitor": "iija_sunset",
@@ -58,17 +206,17 @@
       "program_ids": [
         "usbr_watersmart"
       ],
-      "title": "IIJA sunset: USBR WaterSMART -- 233 days remaining",
-      "detail": "USBR WaterSMART is funded under auth_iija_watersmart which expires September 30, 2026. 233 days remain. No reauthorization bill detected in scan results.",
+      "title": "IIJA sunset: USBR WaterSMART -- 223 days remaining",
+      "detail": "USBR WaterSMART is funded under auth_iija_watersmart which expires September 30, 2026. 223 days remain. No reauthorization bill detected in scan results.",
       "metadata": {
         "threat_type": "iija_sunset",
         "deadline": "2026-09-30",
-        "days_remaining": 233,
+        "days_remaining": 223,
         "authority_id": "auth_iija_watersmart",
         "reauth_detected": false,
         "creates_threatens_edge": true
       },
-      "timestamp": "2026-02-09T22:00:26.524816+00:00"
+      "timestamp": "2026-02-19T14:22:24.120479+00:00"
     },
     {
       "monitor": "iija_sunset",
@@ -84,149 +232,203 @@
         "expiration_type": "fund_exhaustion",
         "days_remaining": null
       },
-      "timestamp": "2026-02-09T22:00:26.524821+00:00"
+      "timestamp": "2026-02-19T14:22:24.120494+00:00"
     }
   ],
   "classifications": {
     "bia_tcr": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "fema_bric": {
       "advocacy_goal": "URGENT_STABILIZATION",
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: DHS funding cliff: FEMA BRIC -- 4 days to CR expiration (4 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-01"
       ]
     },
+    "fema_hmgp": {
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": []
+    },
+    "fema_fma": {
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02"
+      ]
+    },
     "irs_elective_pay": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: To amend section 13031 of the Consolidated Omnibus Budget Reconciliation Act of  (30 days remaining, threshold 30)",
       "secondary_rules": []
     },
     "epa_stag": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "epa_gap": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "fema_tribal_mitigation": {
       "advocacy_goal": "URGENT_STABILIZATION",
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: DHS funding cliff: FEMA Tribal Mitigation Plans -- 4 days to CR expiration (4 days remaining, threshold 30)",
-      "secondary_rules": []
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02"
+      ]
     },
     "dot_protect": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "usda_wildfire": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
       "secondary_rules": []
     },
     "doe_indian_energy": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02"
+      ]
     },
     "hud_ihbg": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "noaa_tribal": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02"
+      ]
     },
     "fhwa_ttp_safety": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "usbr_watersmart": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02"
+      ]
     },
     "usbr_tap": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "bia_tcr_awards": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     },
     "epa_tribal_air": {
-      "advocacy_goal": null,
-      "goal_label": null,
-      "rule": null,
-      "confidence": "LOW",
-      "reason": "No decision rule matched for this program",
-      "secondary_rules": []
+      "advocacy_goal": "URGENT_STABILIZATION",
+      "goal_label": "Urgent Stabilization",
+      "rule": "LOGIC-05",
+      "confidence": "HIGH",
+      "reason": "THREATENS edge: Reconciliation threat: Providing for consideration of the joint resolution (S.J. Res. 80) providing for (30 days remaining, threshold 30)",
+      "secondary_rules": [
+        "LOGIC-02",
+        "LOGIC-04"
+      ]
     }
   },
   "summary": {
-    "total_alerts": 5,
-    "critical_count": 0,
-    "warning_count": 2,
-    "info_count": 3,
+    "total_alerts": 11,
+    "critical_count": 2,
+    "warning_count": 7,
+    "info_count": 2,
     "monitors_run": [
       "dhs_funding",
-      "iija_sunset"
+      "iija_sunset",
+      "reconciliation"
     ]
   }
 }
