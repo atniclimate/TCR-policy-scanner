@@ -1,12 +1,12 @@
 # Data Coverage Report v1.2
 
-**Generated:** 2026-02-15T15:33:10.145910+00:00
+**Generated:** 2026-02-22T15:32:41.438500+00:00
 
 ## Data Sources
 
 | Source | Populated | Total | Coverage |
 |--------|-----------|-------|----------|
-| Awards (USASpending) | 446 | 592 | 75.3% |
+| Awards (USASpending) | 451 | 592 | 76.2% |
 | Hazards (FEMA NRI) | 592 | 592 | 100.0% |
 | Hazards (USFS Wildfire) | 0 | 592 | -- |
 | Congressional | 501 | 592 | 84.6% |
@@ -16,7 +16,7 @@
 
 | Document Type | Count |
 |--------------|-------|
-| Doc A (Tribal Internal) | 376 |
+| Doc A (Tribal Internal) | 384 |
 | Doc B (Tribal Congressional) | 592 |
 | Doc C (Regional Internal) | 8 |
 | Doc D (Regional Congressional) | 8 |
@@ -26,16 +26,16 @@
 
 | Category | Count | Percentage |
 |----------|-------|------------|
-| Complete (awards + hazards + delegation) | 376 | 63.5% |
+| Complete (awards + hazards + delegation) | 384 | 64.9% |
 | Partial (awards + delegation) | 0 | -- |
-| Award only | 70 | -- |
-| Delegation only | 125 | -- |
-| Hazard only | 21 | -- |
+| Award only | 67 | -- |
+| Delegation only | 117 | -- |
+| Hazard only | 24 | -- |
 | None | 0 | -- |
 
 ## Coverage Gaps
 
-### Awards (146 Tribes at 0%)
+### Awards (141 Tribes at 0%)
 
 - epa_100000002
 - epa_100000019
@@ -45,7 +45,6 @@
 - epa_100000031
 - epa_100000032
 - epa_100000034
-- epa_100000039
 - epa_100000048
 - epa_100000068
 - epa_100000070
@@ -57,7 +56,8 @@
 - epa_100000096
 - epa_100000097
 - epa_100000107
-- ... and 126 more
+- epa_100000109
+- ... and 121 more
 
 ### Congressional (0 Tribes unmapped)
 

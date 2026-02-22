@@ -1,10 +1,10 @@
 {
-  "deployed_at": "2026-02-15T15:33:10.517953+00:00",
+  "deployed_at": "2026-02-22T15:32:41.841620+00:00",
   "document_counts": {
-    "internal": 376,
+    "internal": 387,
     "congressional": 592,
     "regional_internal": 8,
     "regional_congressional": 8
   },
-  "total_documents": 984
+  "total_documents": 995
 }
