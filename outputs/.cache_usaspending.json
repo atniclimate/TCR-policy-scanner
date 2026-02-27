@@ -1,7 +1,7 @@
 {
   "source": "usaspending",
-  "cached_at": "2026-02-19T14:08:27.850021+00:00",
-  "item_count": 5885,
+  "cached_at": "2026-02-27T14:02:07.883497+00:00",
+  "item_count": 5903,
   "items": [
     {
       "source": "usaspending",
@@ -5009,6 +5009,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_66.926_198421703",
+      "title": "FY26 Obligation: 02J04901 \u2014 BRISTOL BAY NATIVE ASSOCIATION, INC.",
+      "abstract": "$528,000 obligated under CFDA 66.926 to BRISTOL BAY NATIVE ASSOCIATION, INC.",
+      "url": "https://www.usaspending.gov/award/198421703",
+      "pdf_url": "",
+      "published_date": "2022-10-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 528000.0,
+      "cfda": "66.926",
+      "cfda_program_match": "epa_gap",
+      "recipient": "BRISTOL BAY NATIVE ASSOCIATION, INC.",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_66.926_258855096",
       "title": "FY26 Obligation: 98T34201 \u2014 ENTERPRISE RANCHERIA",
       "abstract": "$511,360 obligated under CFDA 66.926 to ENTERPRISE RANCHERIA",
@@ -5203,6 +5221,24 @@
       "cfda": "66.926",
       "cfda_program_match": "epa_gap",
       "recipient": "NATIVE VILLAGE OF EKWOK",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_66.926_198418677",
+      "title": "FY26 Obligation: 02F56401 \u2014 JENA BAND OF CHOCTAW INDIANS",
+      "abstract": "$405,000 obligated under CFDA 66.926 to JENA BAND OF CHOCTAW INDIANS",
+      "url": "https://www.usaspending.gov/award/198418677",
+      "pdf_url": "",
+      "published_date": "2024-10-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 405000.0,
+      "cfda": "66.926",
+      "cfda_program_match": "epa_gap",
+      "recipient": "JENA BAND OF CHOCTAW INDIANS",
       "authority_weight": 0.7
     },
     {
@@ -5550,8 +5586,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_66.926_258855659",
-      "title": "FY26 Obligation: 98T93901 \u2014 CHEMEHUEVI INDIAN TRIBE",
-      "abstract": "$318,636 obligated under CFDA 66.926 to CHEMEHUEVI INDIAN TRIBE",
+      "title": "FY26 Obligation: 98T93901 \u2014 CHEMEHUEVI INDIAN TRIBE OF THE CHEMEHUEVI RESERVATION, CALIFORNIA",
+      "abstract": "$318,636 obligated under CFDA 66.926 to CHEMEHUEVI INDIAN TRIBE OF THE CHEMEHUEVI RESERVATION, CALIFORNIA",
       "url": "https://www.usaspending.gov/award/258855659",
       "pdf_url": "",
       "published_date": "2024-10-01",
@@ -5562,7 +5598,25 @@
       "award_amount": 318636.0,
       "cfda": "66.926",
       "cfda_program_match": "epa_gap",
-      "recipient": "CHEMEHUEVI INDIAN TRIBE",
+      "recipient": "CHEMEHUEVI INDIAN TRIBE OF THE CHEMEHUEVI RESERVATION, CALIFORNIA",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_66.926_198421824",
+      "title": "FY26 Obligation: 02J17401 \u2014 NATIVE VILLAGE OF CHENEGA",
+      "abstract": "$313,000 obligated under CFDA 66.926 to NATIVE VILLAGE OF CHENEGA",
+      "url": "https://www.usaspending.gov/award/198421824",
+      "pdf_url": "",
+      "published_date": "2022-10-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 313000.0,
+      "cfda": "66.926",
+      "cfda_program_match": "epa_gap",
+      "recipient": "NATIVE VILLAGE OF CHENEGA",
       "authority_weight": 0.7
     },
     {
@@ -6143,6 +6197,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_66.468_198127890",
+      "title": "FY26 Obligation: 01E03409 \u2014 WISCONSIN DEPARTMENT OF NATURAL RESOURCES",
+      "abstract": "$81,203,000 obligated under CFDA 66.468 to WISCONSIN DEPARTMENT OF NATURAL RESOURCES",
+      "url": "https://www.usaspending.gov/award/198127890",
+      "pdf_url": "",
+      "published_date": "2023-07-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 81203000.0,
+      "cfda": "66.468",
+      "cfda_program_match": "epa_stag",
+      "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_66.468_197960698",
       "title": "FY26 Obligation: 00E03243 \u2014 THE STATE OF OHIO OFFICE OF BUDGET AND MANAGEMENT",
       "abstract": "$71,300,000 obligated under CFDA 66.468 to THE STATE OF OHIO OFFICE OF BUDGET AND MANAGEMENT",
@@ -6193,6 +6265,24 @@
       "cfda": "66.468",
       "cfda_program_match": "epa_stag",
       "recipient": "NORTH CAROLINA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_66.468_355638698",
+      "title": "FY26 Obligation: 02D43925 \u2014 GEORGIA ENVIRONMENTAL FINANCE AUTHORITY",
+      "abstract": "$67,510,000 obligated under CFDA 66.468 to GEORGIA ENVIRONMENTAL FINANCE AUTHORITY",
+      "url": "https://www.usaspending.gov/award/355638698",
+      "pdf_url": "",
+      "published_date": "2025-07-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 67510000.0,
+      "cfda": "66.468",
+      "cfda_program_match": "epa_stag",
+      "recipient": "GEORGIA ENVIRONMENTAL FINANCE AUTHORITY",
       "authority_weight": 0.7
     },
     {
@@ -6373,6 +6463,42 @@
       "cfda": "66.468",
       "cfda_program_match": "epa_stag",
       "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_66.468_258259871",
+      "title": "FY26 Obligation: 96884024 \u2014 NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "abstract": "$34,511,000 obligated under CFDA 66.468 to NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "url": "https://www.usaspending.gov/award/258259871",
+      "pdf_url": "",
+      "published_date": "2025-05-27",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 34511000.0,
+      "cfda": "66.468",
+      "cfda_program_match": "epa_stag",
+      "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_66.468_258259870",
+      "title": "FY26 Obligation: 96884023 \u2014 NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "abstract": "$34,109,000 obligated under CFDA 66.468 to NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "url": "https://www.usaspending.gov/award/258259870",
+      "pdf_url": "",
+      "published_date": "2024-02-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 34109000.0,
+      "cfda": "66.468",
+      "cfda_program_match": "epa_stag",
+      "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
       "authority_weight": 0.7
     },
     {
@@ -6751,6 +6877,24 @@
       "cfda": "66.468",
       "cfda_program_match": "epa_stag",
       "recipient": "SOUTH CAROLINA DEPARTMENT OF ENVIRONMENTAL SERVICES",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_66.468_355638911",
+      "title": "FY26 Obligation: 98454725 \u2014 KENTUCKY INFRASTRUCTURE AUTHORITY",
+      "abstract": "$13,277,000 obligated under CFDA 66.468 to KENTUCKY INFRASTRUCTURE AUTHORITY",
+      "url": "https://www.usaspending.gov/award/355638911",
+      "pdf_url": "",
+      "published_date": "2025-07-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "award_amount": 13277000.0,
+      "cfda": "66.468",
+      "cfda_program_match": "epa_stag",
+      "recipient": "KENTUCKY INFRASTRUCTURE AUTHORITY",
       "authority_weight": 0.7
     },
     {
@@ -7656,8 +7800,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109297",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA9655077 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$147,082,390 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA9655077 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$147,082,390 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109297",
       "pdf_url": "",
       "published_date": null,
@@ -7668,7 +7812,7 @@
       "award_amount": 147082389.56,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -9186,8 +9330,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_245520658",
-      "title": "FY26 Obligation: 510643498Z240 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$54,926,949 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 510643498Z240 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$54,926,949 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/245520658",
       "pdf_url": "",
       "published_date": null,
@@ -9198,7 +9342,7 @@
       "award_amount": 54926948.64,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -9798,8 +9942,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251095360",
-      "title": "FY26 Obligation: 693JJ22230000Z970VAPM03369 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$44,981,000 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000Z970VAPM03369 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$44,981,000 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251095360",
       "pdf_url": "",
       "published_date": null,
@@ -9810,7 +9954,7 @@
       "award_amount": 44981000.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -10608,8 +10752,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109248",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5A01917 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$38,151,362 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5A01917 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$38,151,362 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109248",
       "pdf_url": "",
       "published_date": null,
@@ -10620,7 +10764,7 @@
       "award_amount": 38151362.08,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -10860,8 +11004,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109211",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0952537 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$35,661,410 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0952537 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$35,661,410 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109211",
       "pdf_url": "",
       "published_date": null,
@@ -10872,7 +11016,7 @@
       "award_amount": 35661409.61,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -10968,8 +11112,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109282",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5B01449 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$34,773,822 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5B01449 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$34,773,822 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109282",
       "pdf_url": "",
       "published_date": null,
@@ -10980,7 +11124,7 @@
       "award_amount": 34773821.59,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -11310,8 +11454,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109246",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5A01745 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$32,164,616 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5A01745 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$32,164,616 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109246",
       "pdf_url": "",
       "published_date": null,
@@ -11322,7 +11466,7 @@
       "award_amount": 32164616.31,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -11382,8 +11526,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109155",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA000S277 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$31,574,198 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA000S277 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$31,574,198 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109155",
       "pdf_url": "",
       "published_date": null,
@@ -11394,7 +11538,7 @@
       "award_amount": 31574198.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -11454,8 +11598,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251151182",
-      "title": "FY26 Obligation: 693JJ22430000Y001VA0812334 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$31,228,960 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22430000Y001VA0812334 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$31,228,960 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251151182",
       "pdf_url": "",
       "published_date": null,
@@ -11466,7 +11610,7 @@
       "award_amount": 31228959.69,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -11490,8 +11634,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109188",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0661356 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$31,117,415 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0661356 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$31,117,415 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109188",
       "pdf_url": "",
       "published_date": null,
@@ -11502,7 +11646,7 @@
       "award_amount": 31117414.73,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -11544,8 +11688,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109181",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0643488 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$30,862,863 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0643488 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$30,862,863 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109181",
       "pdf_url": "",
       "published_date": null,
@@ -11556,7 +11700,7 @@
       "award_amount": 30862863.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -11976,8 +12120,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109180",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0643479 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$29,077,836 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0643479 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$29,077,836 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109180",
       "pdf_url": "",
       "published_date": null,
@@ -11988,7 +12132,7 @@
       "award_amount": 29077835.52,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -12084,8 +12228,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109210",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0952525 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$28,464,620 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0952525 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$28,464,620 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109210",
       "pdf_url": "",
       "published_date": null,
@@ -12096,7 +12240,7 @@
       "award_amount": 28464619.78,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -16098,8 +16242,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109252",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5A03755 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$17,161,689 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5A03755 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$17,161,689 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109252",
       "pdf_url": "",
       "published_date": null,
@@ -16110,7 +16254,7 @@
       "award_amount": 17161688.97,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -17052,8 +17196,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109182",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0643499 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$15,807,533 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0643499 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$15,807,533 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109182",
       "pdf_url": "",
       "published_date": null,
@@ -17064,7 +17208,7 @@
       "award_amount": 15807532.94,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -17556,8 +17700,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251067718",
-      "title": "FY26 Obligation: 693JJ22230000Y001VA5A01790 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$15,234,339 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000Y001VA5A01790 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$15,234,339 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251067718",
       "pdf_url": "",
       "published_date": null,
@@ -17568,7 +17712,7 @@
       "award_amount": 15234339.09,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -19284,8 +19428,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_245507227",
-      "title": "FY26 Obligation: 510131066L980 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$13,385,476 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 510131066L980 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$13,385,476 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/245507227",
       "pdf_url": "",
       "published_date": null,
@@ -19296,7 +19440,7 @@
       "award_amount": 13385475.9,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -21678,8 +21822,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109187",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0661341 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$11,686,407 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0661341 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$11,686,407 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109187",
       "pdf_url": "",
       "published_date": null,
@@ -21690,7 +21834,7 @@
       "award_amount": 11686406.91,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -21858,8 +22002,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251067695",
-      "title": "FY26 Obligation: 693JJ22230000Y001VA5111235 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$11,572,565 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000Y001VA5111235 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$11,572,565 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251067695",
       "pdf_url": "",
       "published_date": null,
@@ -21870,7 +22014,7 @@
       "award_amount": 11572565.3,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -23856,8 +24000,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251124533",
-      "title": "FY26 Obligation: 693JJ22330000Y240VA5A01181 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$10,504,459 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y240VA5A01181 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$10,504,459 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251124533",
       "pdf_url": "",
       "published_date": null,
@@ -23868,7 +24012,7 @@
       "award_amount": 10504459.39,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -25314,8 +25458,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109232",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5118209 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$9,789,425 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5118209 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$9,789,425 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109232",
       "pdf_url": "",
       "published_date": null,
@@ -25326,7 +25470,7 @@
       "award_amount": 9789425.26,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -28446,8 +28590,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251117147",
-      "title": "FY26 Obligation: 693JJ22330000Y236VA5138172 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$8,385,508 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y236VA5138172 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$8,385,508 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251117147",
       "pdf_url": "",
       "published_date": null,
@@ -28458,7 +28602,7 @@
       "award_amount": 8385507.55,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -29652,8 +29796,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251044653",
-      "title": "FY26 Obligation: 693JJ22130000Z2E2VA0092055 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$8,004,924 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22130000Z2E2VA0092055 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$8,004,924 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251044653",
       "pdf_url": "",
       "published_date": null,
@@ -29664,7 +29808,7 @@
       "award_amount": 8004923.54,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -30624,8 +30768,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109207",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0951364 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$7,639,586 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0951364 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$7,639,586 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109207",
       "pdf_url": "",
       "published_date": null,
@@ -30636,7 +30780,7 @@
       "award_amount": 7639586.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -33576,8 +33720,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109167",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0327032 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$6,824,997 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0327032 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$6,824,997 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109167",
       "pdf_url": "",
       "published_date": null,
@@ -33588,7 +33732,7 @@
       "award_amount": 6824997.01,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -34404,8 +34548,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109253",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5A03761 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$6,573,548 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5A03761 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$6,573,548 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109253",
       "pdf_url": "",
       "published_date": null,
@@ -34416,7 +34560,7 @@
       "award_amount": 6573547.75,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -34548,8 +34692,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109259",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5A27328 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$6,544,326 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5A27328 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$6,544,326 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109259",
       "pdf_url": "",
       "published_date": null,
@@ -34560,7 +34704,7 @@
       "award_amount": 6544326.06,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -35106,8 +35250,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109295",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA9611099 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$6,402,031 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA9611099 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$6,402,031 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109295",
       "pdf_url": "",
       "published_date": null,
@@ -35118,7 +35262,7 @@
       "award_amount": 6402030.85,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -35538,8 +35682,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109197",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA0812302 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$6,329,427 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA0812302 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$6,329,427 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109197",
       "pdf_url": "",
       "published_date": null,
@@ -35550,7 +35694,7 @@
       "award_amount": 6329426.92,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -37068,8 +37212,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109335",
-      "title": "FY26 Obligation: 693JJ22330000Y001VAPM09369 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$6,031,526 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VAPM09369 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$6,031,526 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109335",
       "pdf_url": "",
       "published_date": null,
@@ -37080,7 +37224,7 @@
       "award_amount": 6031525.74,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -40416,8 +40560,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251052459",
-      "title": "FY26 Obligation: 693JJ22130000ZS30VATS09301 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$5,430,864 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22130000ZS30VATS09301 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$5,430,864 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251052459",
       "pdf_url": "",
       "published_date": null,
@@ -40428,7 +40572,7 @@
       "award_amount": 5430863.68,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -44466,8 +44610,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109156",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA000S321 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$4,902,788 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA000S321 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$4,902,788 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109156",
       "pdf_url": "",
       "published_date": null,
@@ -44478,14 +44622,14 @@
       "award_amount": 4902787.79,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109217",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA4951504 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$4,902,061 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA4951504 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$4,902,061 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109217",
       "pdf_url": "",
       "published_date": null,
@@ -44496,7 +44640,7 @@
       "award_amount": 4902061.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -45492,8 +45636,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251188834",
-      "title": "FY26 Obligation: 693JJ22530000Y113VA0951398 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$4,762,464 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22530000Y113VA0951398 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$4,762,464 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251188834",
       "pdf_url": "",
       "published_date": null,
@@ -45504,7 +45648,7 @@
       "award_amount": 4762464.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -46356,8 +46500,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251033555",
-      "title": "FY26 Obligation: 693JJ22130000Z0E1VAPM08452 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$4,666,607 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22130000Z0E1VAPM08452 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$4,666,607 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251033555",
       "pdf_url": "",
       "published_date": null,
@@ -46368,7 +46512,7 @@
       "award_amount": 4666606.83,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -46968,8 +47112,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251095374",
-      "title": "FY26 Obligation: 693JJ22230000Z970VATS05286 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$4,584,109 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000Z970VATS05286 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$4,584,109 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251095374",
       "pdf_url": "",
       "published_date": null,
@@ -46980,7 +47124,7 @@
       "award_amount": 4584109.48,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -47580,8 +47724,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251117144",
-      "title": "FY26 Obligation: 693JJ22330000Y236VA5118259 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$4,505,265 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y236VA5118259 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$4,505,265 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251117144",
       "pdf_url": "",
       "published_date": null,
@@ -47592,7 +47736,7 @@
       "award_amount": 4505264.87,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -47976,8 +48120,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251076867",
-      "title": "FY26 Obligation: 693JJ22230000Y240VA5A01907 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$4,459,085 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000Y240VA5A01907 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$4,459,085 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251076867",
       "pdf_url": "",
       "published_date": null,
@@ -47988,7 +48132,7 @@
       "award_amount": 4459085.31,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -54906,8 +55050,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109298",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA9655078 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$3,774,302 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA9655078 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$3,774,302 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109298",
       "pdf_url": "",
       "published_date": null,
@@ -54918,7 +55062,7 @@
       "award_amount": 3774301.66,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -58794,8 +58938,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251130012",
-      "title": "FY26 Obligation: 693JJ22330000Y800VA5B03035 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$3,458,382 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y800VA5B03035 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$3,458,382 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251130012",
       "pdf_url": "",
       "published_date": null,
@@ -58806,7 +58950,7 @@
       "award_amount": 3458381.99,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -60702,8 +60846,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251151164",
-      "title": "FY26 Obligation: 693JJ22430000Y001VA0576039 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$3,331,151 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22430000Y001VA0576039 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$3,331,151 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251151164",
       "pdf_url": "",
       "published_date": null,
@@ -60714,7 +60858,7 @@
       "award_amount": 3331151.23,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -65616,8 +65760,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251130005",
-      "title": "FY26 Obligation: 693JJ22330000Y800VA0166089 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$3,010,898 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y800VA0166089 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$3,010,898 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251130005",
       "pdf_url": "",
       "published_date": null,
@@ -65628,7 +65772,7 @@
       "award_amount": 3010898.08,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -68784,8 +68928,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251117142",
-      "title": "FY26 Obligation: 693JJ22330000Y236VA5118235 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,805,681 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y236VA5118235 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,805,681 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251117142",
       "pdf_url": "",
       "published_date": null,
@@ -68796,7 +68940,7 @@
       "award_amount": 2805681.18,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -70440,8 +70584,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251117139",
-      "title": "FY26 Obligation: 693JJ22330000Y236VA5115209 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,713,506 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y236VA5115209 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,713,506 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251117139",
       "pdf_url": "",
       "published_date": null,
@@ -70452,7 +70596,7 @@
       "award_amount": 2713505.65,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -70548,8 +70692,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251167711",
-      "title": "FY26 Obligation: 693JJ22430000Y800VA0124060 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,705,626 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22430000Y800VA0124060 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,705,626 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251167711",
       "pdf_url": "",
       "published_date": null,
@@ -70560,7 +70704,7 @@
       "award_amount": 2705626.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -72888,8 +73032,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_250957315",
-      "title": "FY26 Obligation: 693JJ21930000L98EVA0131066 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,593,300 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ21930000L98EVA0131066 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,593,300 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/250957315",
       "pdf_url": "",
       "published_date": null,
@@ -72900,7 +73044,7 @@
       "award_amount": 2593300.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -76110,8 +76254,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251016419",
-      "title": "FY26 Obligation: 693JJ22030000ZS30VA5128427 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,425,113 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22030000ZS30VA5128427 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,425,113 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251016419",
       "pdf_url": "",
       "published_date": null,
@@ -76122,7 +76266,7 @@
       "award_amount": 2425113.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -78324,8 +78468,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109220",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5104256 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,320,786 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5104256 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,320,786 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109220",
       "pdf_url": "",
       "published_date": null,
@@ -78336,7 +78480,7 @@
       "award_amount": 2320786.25,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -80016,8 +80160,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251207825",
-      "title": "FY26 Obligation: 693JJ22530000YS30VA9688150 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,244,200 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22530000YS30VA9688150 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,244,200 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251207825",
       "pdf_url": "",
       "published_date": "2025-08-20",
@@ -80028,7 +80172,7 @@
       "award_amount": 2244200.0,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -80124,8 +80268,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251117769",
-      "title": "FY26 Obligation: 693JJ22330000Y237VA5101218 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,242,284 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y237VA5101218 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,242,284 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251117769",
       "pdf_url": "",
       "published_date": null,
@@ -80136,7 +80280,7 @@
       "award_amount": 2242283.93,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -86388,8 +86532,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251119231",
-      "title": "FY26 Obligation: 693JJ22330000Y238VA0966037 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$2,014,839 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y238VA0966037 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$2,014,839 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251119231",
       "pdf_url": "",
       "published_date": null,
@@ -86400,7 +86544,7 @@
       "award_amount": 2014839.25,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -88152,8 +88296,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251199601",
-      "title": "FY26 Obligation: 693JJ22530000Y240VA0981045 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,970,478 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22530000Y240VA0981045 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,970,478 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251199601",
       "pdf_url": "",
       "published_date": null,
@@ -88164,7 +88308,7 @@
       "award_amount": 1970478.4,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -88944,8 +89088,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251109233",
-      "title": "FY26 Obligation: 693JJ22330000Y001VA5118293 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,942,870 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000Y001VA5118293 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,942,870 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251109233",
       "pdf_url": "",
       "published_date": null,
@@ -88956,7 +89100,7 @@
       "award_amount": 1942869.59,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -92796,8 +92940,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251069148",
-      "title": "FY26 Obligation: 693JJ22230000Y120VA9633067 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,821,336 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000Y120VA9633067 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,821,336 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251069148",
       "pdf_url": "",
       "published_date": null,
@@ -92808,7 +92952,7 @@
       "award_amount": 1821335.7,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -92904,8 +93048,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251133751",
-      "title": "FY26 Obligation: 693JJ22330000YS30VA0218024 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,817,011 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22330000YS30VA0218024 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,817,011 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251133751",
       "pdf_url": "",
       "published_date": null,
@@ -92916,7 +93060,7 @@
       "award_amount": 1817011.27,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -93084,8 +93228,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_250969269",
-      "title": "FY26 Obligation: 693JJ21930000Z005VA5A03769 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,812,794 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ21930000Z005VA5A03769 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,812,794 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/250969269",
       "pdf_url": "",
       "published_date": null,
@@ -93096,7 +93240,7 @@
       "award_amount": 1812793.97,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -93714,8 +93858,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251069146",
-      "title": "FY26 Obligation: 693JJ22230000Y120VA3954192 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,801,123 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000Y120VA3954192 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,801,123 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251069146",
       "pdf_url": "",
       "published_date": null,
@@ -93726,7 +93870,7 @@
       "award_amount": 1801123.18,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -94398,8 +94542,8 @@
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251052377",
-      "title": "FY26 Obligation: 693JJ22130000ZS30VA5128448 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,780,444 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22130000ZS30VA5128448 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,780,444 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251052377",
       "pdf_url": "",
       "published_date": null,
@@ -94410,14 +94554,14 @@
       "award_amount": 1780444.12,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
       "source": "usaspending",
       "source_id": "usa_20.205_251082120",
-      "title": "FY26 Obligation: 693JJ22230000YS31VA5204127 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
-      "abstract": "$1,780,272 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "title": "FY26 Obligation: 693JJ22230000YS31VA5204127 \u2014 VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "abstract": "$1,780,272 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "url": "https://www.usaspending.gov/award/251082120",
       "pdf_url": "",
       "published_date": null,
@@ -94428,7 +94572,7 @@
       "award_amount": 1780271.87,
       "cfda": "20.205",
       "cfda_program_match": "fhwa_ttp_safety",
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "authority_weight": 0.7
     },
     {
@@ -97565,6 +97709,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_14.867_247663539",
+      "title": "FY26 Obligation: 55IT3610440 \u2014 CAYUGA INDIAN NATION OF NEW YORK",
+      "abstract": "$2,602,709 obligated under CFDA 14.867 to CAYUGA INDIAN NATION OF NEW YORK",
+      "url": "https://www.usaspending.gov/award/247663539",
+      "pdf_url": "",
+      "published_date": "2011-10-18",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 2602709.07,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "CAYUGA INDIAN NATION OF NEW YORK",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_14.867_247663582",
       "title": "FY26 Obligation: 55IT4901240 \u2014 NORTHWESTERN BAND OF SHOSHONE NATION",
       "abstract": "$2,527,551 obligated under CFDA 14.867 to NORTHWESTERN BAND OF SHOSHONE NATION",
@@ -98605,6 +98767,24 @@
       "cfda": "81.087",
       "cfda_program_match": "doe_indian_energy",
       "recipient": "TANDEM PV, INC.",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_81.087_260361584",
+      "title": "FY26 Obligation: DEEE0011053 \u2014 CORTEVA AGRISCIENCE LLC",
+      "abstract": "$5,004,663 obligated under CFDA 81.087 to CORTEVA AGRISCIENCE LLC",
+      "url": "https://www.usaspending.gov/award/260361584",
+      "pdf_url": "",
+      "published_date": "2023-10-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 5004663.0,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "CORTEVA AGRISCIENCE LLC",
       "authority_weight": 0.7
     },
     {
@@ -99833,6 +100013,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_81.087_260359919",
+      "title": "FY26 Obligation: DEEE0009032 \u2014 UNIVERSITY OF WISCONSIN SYSTEM",
+      "abstract": "$2,514,834 obligated under CFDA 81.087 to UNIVERSITY OF WISCONSIN SYSTEM",
+      "url": "https://www.usaspending.gov/award/260359919",
+      "pdf_url": "",
+      "published_date": "2020-01-02",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 2514834.33,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "UNIVERSITY OF WISCONSIN SYSTEM",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_81.087_260361632",
       "title": "FY26 Obligation: DEEE0011114 \u2014 UNIVERSITY OF WISCONSIN SYSTEM",
       "abstract": "$2,500,000 obligated under CFDA 81.087 to UNIVERSITY OF WISCONSIN SYSTEM",
@@ -100045,6 +100243,24 @@
       "cfda": "81.087",
       "cfda_program_match": "doe_indian_energy",
       "recipient": "WASHINGTON STATE UNIVERSITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_81.087_260360451",
+      "title": "FY26 Obligation: DEEE0009632 \u2014 UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION",
+      "abstract": "$2,322,019 obligated under CFDA 81.087 to UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION",
+      "url": "https://www.usaspending.gov/award/260360451",
+      "pdf_url": "",
+      "published_date": "2022-03-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 2322019.0,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION",
       "authority_weight": 0.7
     },
     {
@@ -101003,6 +101219,42 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_81.087_260360163",
+      "title": "FY26 Obligation: DEEE0009329 \u2014 ELEMENT 16 TECHNOLOGIES INC",
+      "abstract": "$1,400,000 obligated under CFDA 81.087 to ELEMENT 16 TECHNOLOGIES INC",
+      "url": "https://www.usaspending.gov/award/260360163",
+      "pdf_url": "",
+      "published_date": "2021-08-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 1399999.98,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "ELEMENT 16 TECHNOLOGIES INC",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_81.087_260360121",
+      "title": "FY26 Obligation: DEEE0009268 \u2014 UNIVERSITY OF MARYLAND, COLLEGE PARK",
+      "abstract": "$1,370,263 obligated under CFDA 81.087 to UNIVERSITY OF MARYLAND, COLLEGE PARK",
+      "url": "https://www.usaspending.gov/award/260360121",
+      "pdf_url": "",
+      "published_date": "2020-10-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 1370262.77,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_81.087_260359664",
       "title": "FY26 Obligation: DEEE0008763 \u2014 THE PENNSYLVANIA STATE UNIVERSITY",
       "abstract": "$1,364,920 obligated under CFDA 81.087 to THE PENNSYLVANIA STATE UNIVERSITY",
@@ -101521,6 +101773,24 @@
       "cfda": "81.087",
       "cfda_program_match": "doe_indian_energy",
       "recipient": "NORTH CAROLINA STATE UNIVERSITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_81.087_260360909",
+      "title": "FY26 Obligation: DEEE0010122 \u2014 UNIVERSITY OF HAWAII",
+      "abstract": "$999,838 obligated under CFDA 81.087 to UNIVERSITY OF HAWAII",
+      "url": "https://www.usaspending.gov/award/260360909",
+      "pdf_url": "",
+      "published_date": "2023-08-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 999838.0,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "UNIVERSITY OF HAWAII",
       "authority_weight": 0.7
     },
     {
@@ -102227,6 +102497,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_81.087_260362010",
+      "title": "FY26 Obligation: DEEE0011659 \u2014 UNIVERSITY OF MISSOURI SYSTEM",
+      "abstract": "$400,000 obligated under CFDA 81.087 to UNIVERSITY OF MISSOURI SYSTEM",
+      "url": "https://www.usaspending.gov/award/260362010",
+      "pdf_url": "",
+      "published_date": "2025-10-01",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 400000.0,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "UNIVERSITY OF MISSOURI SYSTEM",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_81.087_260360957",
       "title": "FY26 Obligation: DEEE0010191 \u2014 UNIVERSITY OF MARYLAND, COLLEGE PARK",
       "abstract": "$399,998 obligated under CFDA 81.087 to UNIVERSITY OF MARYLAND, COLLEGE PARK",
@@ -102295,6 +102583,24 @@
       "cfda": "81.087",
       "cfda_program_match": "doe_indian_energy",
       "recipient": "UNIVERSITY OF SOUTH CAROLINA",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_81.087_260362011",
+      "title": "FY26 Obligation: DEEE0011684 \u2014 OREGON STATE UNIVERSITY",
+      "abstract": "$335,000 obligated under CFDA 81.087 to OREGON STATE UNIVERSITY",
+      "url": "https://www.usaspending.gov/award/260362011",
+      "pdf_url": "",
+      "published_date": "2026-03-15",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 335000.0,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "OREGON STATE UNIVERSITY",
       "authority_weight": 0.7
     },
     {
@@ -102637,6 +102943,24 @@
       "cfda": "81.087",
       "cfda_program_match": "doe_indian_energy",
       "recipient": "WASHINGTON MARITIME BLUE",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_81.087_260361002",
+      "title": "FY26 Obligation: DEEE0010252 \u2014 URIEL SOLAR, INC.",
+      "abstract": "$99,850 obligated under CFDA 81.087 to URIEL SOLAR, INC.",
+      "url": "https://www.usaspending.gov/award/260361002",
+      "pdf_url": "",
+      "published_date": "2022-09-15",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Energy"
+      ],
+      "award_amount": 99849.8,
+      "cfda": "81.087",
+      "cfda_program_match": "doe_indian_energy",
+      "recipient": "URIEL SOLAR, INC.",
       "authority_weight": 0.7
     },
     {

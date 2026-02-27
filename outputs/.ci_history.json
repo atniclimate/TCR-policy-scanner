@@ -213,5 +213,82 @@
         "status": "STABLE"
       }
     }
+  },
+  {
+    "timestamp": "2026-02-27",
+    "programs": {
+      "bia_tcr": {
+        "ci": 0.88,
+        "status": "STABLE"
+      },
+      "fema_bric": {
+        "ci": 0.12,
+        "status": "FLAGGED"
+      },
+      "fema_hmgp": {
+        "ci": 0.35,
+        "status": "AT_RISK"
+      },
+      "fema_fma": {
+        "ci": 0.6,
+        "status": "AT_RISK"
+      },
+      "irs_elective_pay": {
+        "ci": 0.55,
+        "status": "AT_RISK"
+      },
+      "epa_stag": {
+        "ci": 0.9,
+        "status": "STABLE"
+      },
+      "epa_gap": {
+        "ci": 0.8,
+        "status": "STABLE"
+      },
+      "fema_tribal_mitigation": {
+        "ci": 0.65,
+        "status": "AT_RISK"
+      },
+      "dot_protect": {
+        "ci": 0.93,
+        "status": "SECURE"
+      },
+      "usda_wildfire": {
+        "ci": 0.78,
+        "status": "STABLE_BUT_VULNERABLE"
+      },
+      "doe_indian_energy": {
+        "ci": 0.55,
+        "status": "UNCERTAIN"
+      },
+      "hud_ihbg": {
+        "ci": 0.85,
+        "status": "STABLE"
+      },
+      "noaa_tribal": {
+        "ci": 0.5,
+        "status": "UNCERTAIN"
+      },
+      "fhwa_ttp_safety": {
+        "ci": 0.85,
+        "status": "STABLE"
+      },
+      "usbr_watersmart": {
+        "ci": 0.6,
+        "status": "UNCERTAIN"
+      },
+      "usbr_tap": {
+        "ci": 0.75,
+        "status": "STABLE"
+      },
+      "bia_tcr_awards": {
+        "ci": 0.85,
+        "status": "STABLE"
+      },
+      "epa_tribal_air": {
+        "ci": 0.82,
+        "status": "STABLE"
+      }
+    }
   }
 ]

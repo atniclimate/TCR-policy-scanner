@@ -748,7 +748,7 @@
     "usa_66.926_258855659": {
       "id": "usa_66.926_258855659",
       "amount": 318636.0,
-      "recipient": "CHEMEHUEVI INDIAN TRIBE",
+      "recipient": "CHEMEHUEVI INDIAN TRIBE OF THE CHEMEHUEVI RESERVATION, CALIFORNIA",
       "fiscal_year": "FY26",
       "cfda": "66.926",
       "_type": "ObligationNode"
@@ -785,13 +785,6 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "bar_paperwork_reduction_act": {
-      "id": "bar_paperwork_reduction_act",
-      "description": "Paperwork Reduction Act",
-      "barrier_type": "Administrative",
-      "severity": "Med",
-      "_type": "BarrierNode"
-    },
     "usa_97.039_355183766": {
       "id": "usa_97.039_355183766",
       "amount": 104176.25,
@@ -804,14 +797,6 @@
       "id": "usa_97.039_354892433",
       "amount": 97814.08,
       "recipient": "STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT",
-      "fiscal_year": "FY26",
-      "cfda": "97.039",
-      "_type": "ObligationNode"
-    },
-    "usa_97.039_354685845": {
-      "id": "usa_97.039_354685845",
-      "amount": 19464.48,
-      "recipient": "DEFENSE, HAWAII DEPARTMENT OF",
       "fiscal_year": "FY26",
       "cfda": "97.039",
       "_type": "ObligationNode"
@@ -831,20 +816,6 @@
       "fiscal_year": "FY26",
       "cfda": "14.867",
       "_type": "ObligationNode"
-    },
-    "auth_proposed_rule": {
-      "id": "auth_proposed_rule",
-      "citation": "proposed rule",
-      "authority_type": "Regulation",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "auth_final_rule": {
-      "id": "auth_final_rule",
-      "citation": "Final rule",
-      "authority_type": "Regulation",
-      "durability": "",
-      "_type": "AuthorityNode"
     },
     "auth_ira": {
       "id": "auth_ira",
@@ -905,6 +876,14 @@
       "id": "usa_97.039_354303857",
       "amount": 20492.0,
       "recipient": "OREGON MILITARY DEPARTMENT",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
+    },
+    "usa_97.039_354685845": {
+      "id": "usa_97.039_354685845",
+      "amount": 19464.48,
+      "recipient": "DEFENSE, HAWAII DEPARTMENT OF",
       "fiscal_year": "FY26",
       "cfda": "97.039",
       "_type": "ObligationNode"
@@ -2877,6 +2856,27 @@
       "cfda": "97.039",
       "_type": "ObligationNode"
     },
+    "auth_proposed_rule": {
+      "id": "auth_proposed_rule",
+      "citation": "proposed rule",
+      "authority_type": "Regulation",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "auth_final_rule": {
+      "id": "auth_final_rule",
+      "citation": "Final rule",
+      "authority_type": "Regulation",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "auth_safe_drinking_water_act": {
+      "id": "auth_safe_drinking_water_act",
+      "citation": "Safe Drinking Water Act",
+      "authority_type": "Statute",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
     "usa_66.926_258855092": {
       "id": "usa_66.926_258855092",
       "amount": 569776.0,
@@ -4445,6 +4445,14 @@
       "cfda": "66.926",
       "_type": "ObligationNode"
     },
+    "usa_66.926_198418677": {
+      "id": "usa_66.926_198418677",
+      "amount": 405000.0,
+      "recipient": "JENA BAND OF CHOCTAW INDIANS",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
     "usa_66.926_258855672": {
       "id": "usa_66.926_258855672",
       "amount": 320140.0,
@@ -4605,6 +4613,14 @@
       "cfda": "66.926",
       "_type": "ObligationNode"
     },
+    "usa_14.867_247663539": {
+      "id": "usa_14.867_247663539",
+      "amount": 2602709.07,
+      "recipient": "CAYUGA INDIAN NATION OF NEW YORK",
+      "fiscal_year": "FY26",
+      "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
     "usa_81.087_260369824": {
       "id": "usa_81.087_260369824",
       "amount": 4240947.0,
@@ -4661,67 +4677,12 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
-    "usa_20.284_355330519": {
-      "id": "usa_20.284_355330519",
-      "amount": 400000.0,
-      "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION",
+    "usa_81.087_260362011": {
+      "id": "usa_81.087_260362011",
+      "amount": 335000.0,
+      "recipient": "OREGON STATE UNIVERSITY",
       "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "auth_indian_self_determination": {
-      "id": "auth_indian_self_determination",
-      "citation": "Indian Self-Determination",
-      "authority_type": "Statute",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "usa_15.507_355307482": {
-      "id": "usa_15.507_355307482",
-      "amount": 1494569.0,
-      "recipient": "SOUTHERN NEVADA WATER AUTHORITY",
-      "fiscal_year": "FY26",
-      "cfda": "15.507",
-      "_type": "ObligationNode"
-    },
-    "usa_20.284_355330513": {
-      "id": "usa_20.284_355330513",
-      "amount": 2879503.0,
-      "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "usa_20.284_355330520": {
-      "id": "usa_20.284_355330520",
-      "amount": 1120497.0,
-      "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "usa_20.284_355330521": {
-      "id": "usa_20.284_355330521",
-      "amount": 150000.0,
-      "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "usa_20.205_354807134": {
-      "id": "usa_20.205_354807134",
-      "amount": 12865000.0,
-      "recipient": "NEBRASKA DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.205",
-      "_type": "ObligationNode"
-    },
-    "usa_20.205_355330873": {
-      "id": "usa_20.205_355330873",
-      "amount": 5000000.0,
-      "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.205",
+      "cfda": "81.087",
       "_type": "ObligationNode"
     },
     "usa_20.205_355330876": {
@@ -4756,14 +4717,6 @@
       "cfda": "20.205",
       "_type": "ObligationNode"
     },
-    "usa_10.720_354803859": {
-      "id": "usa_10.720_354803859",
-      "amount": 1015595.0,
-      "recipient": "BLACKBERRY MOUNTAIN RESIDENTIAL CONDOMINIUM OWNERS' ASSOCIATION",
-      "fiscal_year": "FY26",
-      "cfda": "10.720",
-      "_type": "ObligationNode"
-    },
     "usa_10.720_355327349": {
       "id": "usa_10.720_355327349",
       "amount": 176381.0,
@@ -4772,10 +4725,10 @@
       "cfda": "10.720",
       "_type": "ObligationNode"
     },
-    "usa_15.507_354776930": {
-      "id": "usa_15.507_354776930",
-      "amount": 400000.0,
-      "recipient": "CONTRA COSTA WATER DISTRICT",
+    "usa_15.507_355307482": {
+      "id": "usa_15.507_355307482",
+      "amount": 1494569.0,
+      "recipient": "SOUTHERN NEVADA WATER AUTHORITY",
       "fiscal_year": "FY26",
       "cfda": "15.507",
       "_type": "ObligationNode"
@@ -4788,10 +4741,10 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_20.284_354806842": {
-      "id": "usa_20.284_354806842",
-      "amount": 7283200.0,
-      "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION",
+    "usa_20.284_355330513": {
+      "id": "usa_20.284_355330513",
+      "amount": 2879503.0,
+      "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -4804,6 +4757,14 @@
       "cfda": "20.284",
       "_type": "ObligationNode"
     },
+    "usa_20.284_355330520": {
+      "id": "usa_20.284_355330520",
+      "amount": 1120497.0,
+      "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
     "usa_20.284_354806851": {
       "id": "usa_20.284_354806851",
       "amount": 480000.0,
@@ -4812,10 +4773,18 @@
       "cfda": "20.284",
       "_type": "ObligationNode"
     },
-    "usa_20.284_354806843": {
-      "id": "usa_20.284_354806843",
+    "usa_20.284_355330519": {
+      "id": "usa_20.284_355330519",
       "amount": 400000.0,
-      "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION",
+      "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "usa_20.284_355330521": {
+      "id": "usa_20.284_355330521",
+      "amount": 150000.0,
+      "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -4826,6 +4795,29 @@
       "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "bar_paperwork_reduction_act": {
+      "id": "bar_paperwork_reduction_act",
+      "description": "Paperwork Reduction Act",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "usa_20.205_354807134": {
+      "id": "usa_20.205_354807134",
+      "amount": 12865000.0,
+      "recipient": "NEBRASKA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_355330873": {
+      "id": "usa_20.205_355330873",
+      "amount": 5000000.0,
+      "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
       "_type": "ObligationNode"
     },
     "usa_20.205_354453506": {
@@ -4860,12 +4852,20 @@
       "cfda": "10.720",
       "_type": "ObligationNode"
     },
-    "usa_10.720_354061840": {
-      "id": "usa_10.720_354061840",
-      "amount": 296560.0,
-      "recipient": "UTAH DEPARTMENT OF NATURAL RESOURCES",
+    "usa_10.720_354803859": {
+      "id": "usa_10.720_354803859",
+      "amount": 1015595.0,
+      "recipient": "BLACKBERRY MOUNTAIN RESIDENTIAL CONDOMINIUM OWNERS' ASSOCIATION",
       "fiscal_year": "FY26",
       "cfda": "10.720",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_354776930": {
+      "id": "usa_15.507_354776930",
+      "amount": 400000.0,
+      "recipient": "CONTRA COSTA WATER DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
       "_type": "ObligationNode"
     },
     "usa_15.507_354335804": {
@@ -4876,34 +4876,18 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_15.507_354110960": {
-      "id": "usa_15.507_354110960",
-      "amount": 200000.0,
-      "recipient": "ORANGE COUNTY WATER DISTRICT",
+    "usa_20.284_354806842": {
+      "id": "usa_20.284_354806842",
+      "amount": 7283200.0,
+      "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
-      "cfda": "15.507",
+      "cfda": "20.284",
       "_type": "ObligationNode"
     },
     "usa_20.284_354152729": {
       "id": "usa_20.284_354152729",
       "amount": 1879977.0,
       "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "usa_20.284_354152722": {
-      "id": "usa_20.284_354152722",
-      "amount": 1304000.0,
-      "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "usa_20.284_354152726": {
-      "id": "usa_20.284_354152726",
-      "amount": 775861.6,
-      "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -4920,6 +4904,14 @@
       "id": "usa_20.284_354152730",
       "amount": 512712.0,
       "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "usa_20.284_354806843": {
+      "id": "usa_20.284_354806843",
+      "amount": 400000.0,
+      "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -5079,7 +5071,7 @@
     "usa_20.205_251109297": {
       "id": "usa_20.205_251109297",
       "amount": 147082389.56,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -5695,7 +5687,7 @@
     "usa_20.205_245520658": {
       "id": "usa_20.205_245520658",
       "amount": 54926948.64,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -5935,7 +5927,7 @@
     "usa_20.205_251095360": {
       "id": "usa_20.205_251095360",
       "amount": 44981000.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6271,7 +6263,7 @@
     "usa_20.205_251109248": {
       "id": "usa_20.205_251109248",
       "amount": 38151362.08,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6375,7 +6367,7 @@
     "usa_20.205_251109211": {
       "id": "usa_20.205_251109211",
       "amount": 35661409.61,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6423,7 +6415,7 @@
     "usa_20.205_251109282": {
       "id": "usa_20.205_251109282",
       "amount": 34773821.59,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6575,7 +6567,7 @@
     "usa_20.205_251109246": {
       "id": "usa_20.205_251109246",
       "amount": 32164616.31,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6599,7 +6591,7 @@
     "usa_20.205_251109155": {
       "id": "usa_20.205_251109155",
       "amount": 31574198.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6623,7 +6615,7 @@
     "usa_20.205_251151182": {
       "id": "usa_20.205_251151182",
       "amount": 31228959.69,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6639,7 +6631,7 @@
     "usa_20.205_251109188": {
       "id": "usa_20.205_251109188",
       "amount": 31117414.73,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6663,7 +6655,7 @@
     "usa_20.205_251109181": {
       "id": "usa_20.205_251109181",
       "amount": 30862863.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6831,7 +6823,7 @@
     "usa_20.205_251109180": {
       "id": "usa_20.205_251109180",
       "amount": 29077835.52,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -6871,7 +6863,7 @@
     "usa_20.205_251109210": {
       "id": "usa_20.205_251109210",
       "amount": 28464619.78,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -8511,7 +8503,7 @@
     "usa_20.205_251109252": {
       "id": "usa_20.205_251109252",
       "amount": 17161688.97,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -8927,7 +8919,7 @@
     "usa_20.205_251109182": {
       "id": "usa_20.205_251109182",
       "amount": 15807532.94,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -9151,7 +9143,7 @@
     "usa_20.205_251067718": {
       "id": "usa_20.205_251067718",
       "amount": 15234339.09,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -9879,7 +9871,7 @@
     "usa_20.205_245507227": {
       "id": "usa_20.205_245507227",
       "amount": 13385475.9,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -10823,7 +10815,7 @@
     "usa_20.205_251109187": {
       "id": "usa_20.205_251109187",
       "amount": 11686406.91,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -10895,7 +10887,7 @@
     "usa_20.205_251067695": {
       "id": "usa_20.205_251067695",
       "amount": 11572565.3,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -11687,7 +11679,7 @@
     "usa_20.205_251124533": {
       "id": "usa_20.205_251124533",
       "amount": 10504459.39,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -12271,7 +12263,7 @@
     "usa_20.205_251109232": {
       "id": "usa_20.205_251109232",
       "amount": 9789425.26,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -13543,7 +13535,7 @@
     "usa_20.205_251117147": {
       "id": "usa_20.205_251117147",
       "amount": 8385507.55,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -14071,7 +14063,7 @@
     "usa_20.205_251044653": {
       "id": "usa_20.205_251044653",
       "amount": 8004923.54,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -14455,7 +14447,7 @@
     "usa_20.205_251109207": {
       "id": "usa_20.205_251109207",
       "amount": 7639586.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -15631,7 +15623,7 @@
     "usa_20.205_251109167": {
       "id": "usa_20.205_251109167",
       "amount": 6824997.01,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -15983,7 +15975,7 @@
     "usa_20.205_251109253": {
       "id": "usa_20.205_251109253",
       "amount": 6573547.75,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -16039,7 +16031,7 @@
     "usa_20.205_251109259": {
       "id": "usa_20.205_251109259",
       "amount": 6544326.06,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -16263,7 +16255,7 @@
     "usa_20.205_251109295": {
       "id": "usa_20.205_251109295",
       "amount": 6402030.85,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -16439,7 +16431,7 @@
     "usa_20.205_251109197": {
       "id": "usa_20.205_251109197",
       "amount": 6329426.92,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -17071,7 +17063,7 @@
     "usa_20.205_251109335": {
       "id": "usa_20.205_251109335",
       "amount": 6031525.74,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -18439,7 +18431,7 @@
     "usa_20.205_251052459": {
       "id": "usa_20.205_251052459",
       "amount": 5430863.68,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -20023,7 +20015,7 @@
     "usa_20.205_251109156": {
       "id": "usa_20.205_251109156",
       "amount": 4902787.79,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -20031,7 +20023,7 @@
     "usa_20.205_251109217": {
       "id": "usa_20.205_251109217",
       "amount": 4902061.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -20431,7 +20423,7 @@
     "usa_20.205_251188834": {
       "id": "usa_20.205_251188834",
       "amount": 4762464.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -20743,7 +20735,7 @@
     "usa_20.205_251033555": {
       "id": "usa_20.205_251033555",
       "amount": 4666606.83,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -20983,7 +20975,7 @@
     "usa_20.205_251095374": {
       "id": "usa_20.205_251095374",
       "amount": 4584109.48,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -21215,7 +21207,7 @@
     "usa_20.205_251117144": {
       "id": "usa_20.205_251117144",
       "amount": 4505264.87,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -21383,7 +21375,7 @@
     "usa_20.205_251076867": {
       "id": "usa_20.205_251076867",
       "amount": 4459085.31,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -24199,7 +24191,7 @@
     "usa_20.205_251109298": {
       "id": "usa_20.205_251109298",
       "amount": 3774301.66,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -25647,7 +25639,7 @@
     "usa_20.205_251130012": {
       "id": "usa_20.205_251130012",
       "amount": 3458381.99,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -26431,7 +26423,7 @@
     "usa_20.205_251151164": {
       "id": "usa_20.205_251151164",
       "amount": 3331151.23,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -28335,7 +28327,7 @@
     "usa_20.205_251130005": {
       "id": "usa_20.205_251130005",
       "amount": 3010898.08,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -29575,7 +29567,7 @@
     "usa_20.205_251117142": {
       "id": "usa_20.205_251117142",
       "amount": 2805681.18,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -30223,7 +30215,7 @@
     "usa_20.205_251117139": {
       "id": "usa_20.205_251117139",
       "amount": 2713505.65,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -30271,7 +30263,7 @@
     "usa_20.205_251167711": {
       "id": "usa_20.205_251167711",
       "amount": 2705626.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -31215,7 +31207,7 @@
     "usa_20.205_250957315": {
       "id": "usa_20.205_250957315",
       "amount": 2593300.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -32439,7 +32431,7 @@
     "usa_20.205_251016419": {
       "id": "usa_20.205_251016419",
       "amount": 2425113.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -33319,7 +33311,7 @@
     "usa_20.205_251109220": {
       "id": "usa_20.205_251109220",
       "amount": 2320786.25,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -34039,7 +34031,7 @@
     "usa_20.205_251117769": {
       "id": "usa_20.205_251117769",
       "amount": 2242283.93,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -36575,7 +36567,7 @@
     "usa_20.205_251119231": {
       "id": "usa_20.205_251119231",
       "amount": 2014839.25,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -37223,7 +37215,7 @@
     "usa_20.205_251199601": {
       "id": "usa_20.205_251199601",
       "amount": 1970478.4,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -37535,7 +37527,7 @@
     "usa_20.205_251109233": {
       "id": "usa_20.205_251109233",
       "amount": 1942869.59,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -39079,7 +39071,7 @@
     "usa_20.205_251069148": {
       "id": "usa_20.205_251069148",
       "amount": 1821335.7,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -39127,7 +39119,7 @@
     "usa_20.205_251133751": {
       "id": "usa_20.205_251133751",
       "amount": 1817011.27,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -39207,7 +39199,7 @@
     "usa_20.205_250969269": {
       "id": "usa_20.205_250969269",
       "amount": 1812793.97,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -39471,7 +39463,7 @@
     "usa_20.205_251069146": {
       "id": "usa_20.205_251069146",
       "amount": 1801123.18,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -39767,7 +39759,7 @@
     "usa_20.205_251052377": {
       "id": "usa_20.205_251052377",
       "amount": 1780444.12,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -39775,7 +39767,7 @@
     "usa_20.205_251082120": {
       "id": "usa_20.205_251082120",
       "amount": 1780271.87,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -41148,6 +41140,14 @@
       "cfda": "66.926",
       "_type": "ObligationNode"
     },
+    "usa_66.926_198421703": {
+      "id": "usa_66.926_198421703",
+      "amount": 528000.0,
+      "recipient": "BRISTOL BAY NATIVE ASSOCIATION, INC.",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
     "usa_66.926_258855096": {
       "id": "usa_66.926_258855096",
       "amount": 511360.0,
@@ -41280,6 +41280,14 @@
       "id": "usa_66.926_258855293",
       "amount": 336381.0,
       "recipient": "HABEMATOLEL POMO OF UPPER LAKE",
+      "fiscal_year": "FY26",
+      "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_66.926_198421824": {
+      "id": "usa_66.926_198421824",
+      "amount": 313000.0,
+      "recipient": "NATIVE VILLAGE OF CHENEGA",
       "fiscal_year": "FY26",
       "cfda": "66.926",
       "_type": "ObligationNode"
@@ -41452,6 +41460,14 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_198127890": {
+      "id": "usa_66.468_198127890",
+      "amount": 81203000.0,
+      "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_197960698": {
       "id": "usa_66.468_197960698",
       "amount": 71300000.0,
@@ -41472,6 +41488,14 @@
       "id": "usa_66.468_353785101",
       "amount": 68611000.0,
       "recipient": "NORTH CAROLINA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_355638698": {
+      "id": "usa_66.468_355638698",
+      "amount": 67510000.0,
+      "recipient": "GEORGIA ENVIRONMENTAL FINANCE AUTHORITY",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -41544,6 +41568,22 @@
       "id": "usa_66.468_198417567",
       "amount": 35443000.0,
       "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258259871": {
+      "id": "usa_66.468_258259871",
+      "amount": 34511000.0,
+      "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258259870": {
+      "id": "usa_66.468_258259870",
+      "amount": 34109000.0,
+      "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -41672,6 +41712,14 @@
       "id": "usa_66.468_354250776",
       "amount": 13631000.0,
       "recipient": "SOUTH CAROLINA DEPARTMENT OF ENVIRONMENTAL SERVICES",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_355638911": {
+      "id": "usa_66.468_355638911",
+      "amount": 13277000.0,
+      "recipient": "KENTUCKY INFRASTRUCTURE AUTHORITY",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -44167,7 +44215,7 @@
     "usa_20.205_251207825": {
       "id": "usa_20.205_251207825",
       "amount": 2244200.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT",
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -45092,6 +45140,14 @@
       "cfda": "81.087",
       "_type": "ObligationNode"
     },
+    "usa_81.087_260361584": {
+      "id": "usa_81.087_260361584",
+      "amount": 5004663.0,
+      "recipient": "CORTEVA AGRISCIENCE LLC",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
     "usa_81.087_260369812": {
       "id": "usa_81.087_260369812",
       "amount": 5000000.0,
@@ -45588,6 +45644,14 @@
       "cfda": "81.087",
       "_type": "ObligationNode"
     },
+    "usa_81.087_260359919": {
+      "id": "usa_81.087_260359919",
+      "amount": 2514834.33,
+      "recipient": "UNIVERSITY OF WISCONSIN SYSTEM",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
     "usa_81.087_260361632": {
       "id": "usa_81.087_260361632",
       "amount": 2500000.0,
@@ -45672,6 +45736,14 @@
       "id": "usa_81.087_260361869",
       "amount": 2390420.0,
       "recipient": "WASHINGTON STATE UNIVERSITY",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260360451": {
+      "id": "usa_81.087_260360451",
+      "amount": 2322019.0,
+      "recipient": "UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION",
       "fiscal_year": "FY26",
       "cfda": "81.087",
       "_type": "ObligationNode"
@@ -46076,6 +46148,22 @@
       "cfda": "81.087",
       "_type": "ObligationNode"
     },
+    "usa_81.087_260360163": {
+      "id": "usa_81.087_260360163",
+      "amount": 1399999.98,
+      "recipient": "ELEMENT 16 TECHNOLOGIES INC",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260360121": {
+      "id": "usa_81.087_260360121",
+      "amount": 1370262.77,
+      "recipient": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
     "usa_81.087_260359664": {
       "id": "usa_81.087_260359664",
       "amount": 1364920.0,
@@ -46296,6 +46384,14 @@
       "id": "usa_81.087_260362028",
       "amount": 999958.0,
       "recipient": "NORTH CAROLINA STATE UNIVERSITY",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_81.087_260360909": {
+      "id": "usa_81.087_260360909",
+      "amount": 999838.0,
+      "recipient": "UNIVERSITY OF HAWAII",
       "fiscal_year": "FY26",
       "cfda": "81.087",
       "_type": "ObligationNode"
@@ -46556,6 +46652,14 @@
       "cfda": "81.087",
       "_type": "ObligationNode"
     },
+    "usa_81.087_260362010": {
+      "id": "usa_81.087_260362010",
+      "amount": 400000.0,
+      "recipient": "UNIVERSITY OF MISSOURI SYSTEM",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
     "usa_81.087_260360957": {
       "id": "usa_81.087_260360957",
       "amount": 399997.75,
@@ -46708,6 +46812,14 @@
       "cfda": "81.087",
       "_type": "ObligationNode"
     },
+    "usa_81.087_260361002": {
+      "id": "usa_81.087_260361002",
+      "amount": 99849.8,
+      "recipient": "URIEL SOLAR, INC.",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
     "usa_81.087_260361575": {
       "id": "usa_81.087_260361575",
       "amount": 52257.54,
@@ -46840,6 +46952,14 @@
       "id": "usa_10.720_236043913",
       "amount": 315599.0,
       "recipient": "CHICKEN RANCH RANCHERIA",
+      "fiscal_year": "FY26",
+      "cfda": "10.720",
+      "_type": "ObligationNode"
+    },
+    "usa_10.720_354061840": {
+      "id": "usa_10.720_354061840",
+      "amount": 296560.0,
+      "recipient": "UTAH DEPARTMENT OF NATURAL RESOURCES",
       "fiscal_year": "FY26",
       "cfda": "10.720",
       "_type": "ObligationNode"
@@ -47188,6 +47308,14 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "usa_15.507_354110960": {
+      "id": "usa_15.507_354110960",
+      "amount": 200000.0,
+      "recipient": "ORANGE COUNTY WATER DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_270331924": {
       "id": "usa_15.507_270331924",
       "amount": 175810.0,
@@ -47340,6 +47468,14 @@
       "cfda": "20.284",
       "_type": "ObligationNode"
     },
+    "usa_20.284_354152722": {
+      "id": "usa_20.284_354152722",
+      "amount": 1304000.0,
+      "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
     "usa_20.284_354453193": {
       "id": "usa_20.284_354453193",
       "amount": 1284985.0,
@@ -47392,6 +47528,14 @@
       "id": "usa_20.284_251217375",
       "amount": 788219.59,
       "recipient": "WVDOT DIVISION OF HIGHWAYS",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "usa_20.284_354152726": {
+      "id": "usa_20.284_354152726",
+      "amount": 775861.6,
+      "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -47744,10 +47888,10 @@
       "severity": "Med",
       "_type": "BarrierNode"
     },
-    "auth_safe_drinking_water_act": {
-      "id": "auth_safe_drinking_water_act",
-      "citation": "Safe Drinking Water Act",
-      "authority_type": "Statute",
+    "auth_executive_order_14249": {
+      "id": "auth_executive_order_14249",
+      "citation": "Executive Order 14249",
+      "authority_type": "Guidance",
       "durability": "",
       "_type": "AuthorityNode"
     },
@@ -47764,6 +47908,13 @@
       "barrier_type": "Administrative",
       "severity": "Med",
       "_type": "BarrierNode"
+    },
+    "auth_infrastructure_investment_and_jobs_act": {
+      "id": "auth_infrastructure_investment_and_jobs_act",
+      "citation": "Infrastructure Investment and Jobs Act",
+      "authority_type": "Statute",
+      "durability": "",
+      "_type": "AuthorityNode"
     }
   },
   "edges": [
@@ -48534,7 +48685,7 @@
       "target": "auth_bil",
       "type": "AUTHORIZED_BY",
       "metadata": {
-        "inferred_from": "360521"
+        "inferred_from": "361349"
       }
     },
     {
@@ -48570,7 +48721,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 318636.0,
-        "recipient": "CHEMEHUEVI INDIAN TRIBE"
+        "recipient": "CHEMEHUEVI INDIAN TRIBE OF THE CHEMEHUEVI RESERVATION, CALIFORNIA"
       }
     },
     {
@@ -48611,22 +48762,6 @@
     },
     {
       "source": "fema_bric",
-      "target": "bar_paperwork_reduction_act",
-      "type": "BLOCKED_BY",
-      "metadata": {
-        "inferred_from": "2026-02677"
-      }
-    },
-    {
-      "source": "fema_hmgp",
-      "target": "bar_paperwork_reduction_act",
-      "type": "BLOCKED_BY",
-      "metadata": {
-        "inferred_from": "2026-02677"
-      }
-    },
-    {
-      "source": "fema_bric",
       "target": "usa_97.039_355183766",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -48645,28 +48780,11 @@
     },
     {
       "source": "fema_bric",
-      "target": "usa_97.039_354685845",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 19464.48,
-        "recipient": "DEFENSE, HAWAII DEPARTMENT OF"
-      }
-    },
-    {
-      "source": "fema_bric",
       "target": "usa_97.039_354893427",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 7813.6,
         "recipient": "HOMELAND SECURITY & EMERGENCY"
-      }
-    },
-    {
-      "source": "irs_elective_pay",
-      "target": "auth_bil",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "108-S-95"
       }
     },
     {
@@ -48676,38 +48794,6 @@
       "metadata": {
         "amount": 110531.0,
         "recipient": "MOHEGAN TRIBE OF INDIANS OF CONNECTICUT"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_proposed_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
-      }
-    },
-    {
-      "source": "epa_tribal_air",
-      "target": "auth_proposed_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_final_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
-      }
-    },
-    {
-      "source": "epa_tribal_air",
-      "target": "auth_final_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
       }
     },
     {
@@ -48787,6 +48873,15 @@
       "metadata": {
         "amount": 20492.0,
         "recipient": "OREGON MILITARY DEPARTMENT"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_354685845",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 19464.48,
+        "recipient": "DEFENSE, HAWAII DEPARTMENT OF"
       }
     },
     {
@@ -51067,6 +51162,110 @@
       }
     },
     {
+      "source": "dot_protect",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03157"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03157"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03157"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03157"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_clean_water_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_clean_water_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "auth_safe_drinking_water_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_safe_drinking_water_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_safe_drinking_water_act",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
       "source": "epa_gap",
       "target": "usa_66.926_258855092",
       "type": "OBLIGATED_BY",
@@ -52832,6 +53031,15 @@
     },
     {
       "source": "epa_gap",
+      "target": "usa_66.926_198418677",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 405000.0,
+        "recipient": "JENA BAND OF CHOCTAW INDIANS"
+      }
+    },
+    {
+      "source": "epa_gap",
       "target": "usa_66.926_258855672",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -52957,14 +53165,6 @@
       }
     },
     {
-      "source": "fema_bric",
-      "target": "auth_final_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-02926"
-      }
-    },
-    {
       "source": "epa_gap",
       "target": "usa_66.926_354250769",
       "type": "OBLIGATED_BY",
@@ -53019,6 +53219,15 @@
       }
     },
     {
+      "source": "hud_ihbg",
+      "target": "usa_14.867_247663539",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2602709.07,
+        "recipient": "CAYUGA INDIAN NATION OF NEW YORK"
+      }
+    },
+    {
       "source": "doe_indian_energy",
       "target": "usa_81.087_260369824",
       "type": "OBLIGATED_BY",
@@ -53064,6 +53273,14 @@
       }
     },
     {
+      "source": "fema_bric",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02926"
+      }
+    },
+    {
       "source": "epa_gap",
       "target": "usa_66.926_258855656",
       "type": "OBLIGATED_BY",
@@ -53082,74 +53299,12 @@
       }
     },
     {
-      "source": "dot_protect",
-      "target": "usa_20.284_355330519",
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260362011",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 400000.0,
-        "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "usbr_watersmart",
-      "target": "usa_15.507_355307482",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 1494569.0,
-        "recipient": "SOUTHERN NEVADA WATER AUTHORITY"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "usa_20.284_355330513",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 2879503.0,
-        "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "usa_20.284_355330520",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 1120497.0,
-        "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "usa_20.284_355330521",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 150000.0,
-        "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "usbr_tap",
-      "target": "bar_paperwork_reduction_act",
-      "type": "BLOCKED_BY",
-      "metadata": {
-        "inferred_from": "2026-03140"
-      }
-    },
-    {
-      "source": "fhwa_ttp_safety",
-      "target": "usa_20.205_354807134",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 12865000.0,
-        "recipient": "NEBRASKA DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "fhwa_ttp_safety",
-      "target": "usa_20.205_355330873",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 5000000.0,
-        "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION"
+        "amount": 335000.0,
+        "recipient": "OREGON STATE UNIVERSITY"
       }
     },
     {
@@ -53190,15 +53345,6 @@
     },
     {
       "source": "usda_wildfire",
-      "target": "usa_10.720_354803859",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 1015595.0,
-        "recipient": "BLACKBERRY MOUNTAIN RESIDENTIAL CONDOMINIUM OWNERS' ASSOCIATION"
-      }
-    },
-    {
-      "source": "usda_wildfire",
       "target": "usa_10.720_355327349",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -53208,11 +53354,11 @@
     },
     {
       "source": "usbr_watersmart",
-      "target": "usa_15.507_354776930",
+      "target": "usa_15.507_355307482",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 400000.0,
-        "recipient": "CONTRA COSTA WATER DISTRICT"
+        "amount": 1494569.0,
+        "recipient": "SOUTHERN NEVADA WATER AUTHORITY"
       }
     },
     {
@@ -53226,11 +53372,11 @@
     },
     {
       "source": "dot_protect",
-      "target": "usa_20.284_354806842",
+      "target": "usa_20.284_355330513",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 7283200.0,
-        "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION"
+        "amount": 2879503.0,
+        "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
       }
     },
     {
@@ -53244,6 +53390,15 @@
     },
     {
       "source": "dot_protect",
+      "target": "usa_20.284_355330520",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1120497.0,
+        "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
+      }
+    },
+    {
+      "source": "dot_protect",
       "target": "usa_20.284_354806851",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -53253,11 +53408,20 @@
     },
     {
       "source": "dot_protect",
-      "target": "usa_20.284_354806843",
+      "target": "usa_20.284_355330519",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 400000.0,
-        "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION"
+        "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.284_355330521",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 150000.0,
+        "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -53270,11 +53434,29 @@
       }
     },
     {
-      "source": "dot_protect",
-      "target": "auth_bil",
-      "type": "AUTHORIZED_BY",
+      "source": "usbr_tap",
+      "target": "bar_paperwork_reduction_act",
+      "type": "BLOCKED_BY",
       "metadata": {
-        "inferred_from": "2026-02769"
+        "inferred_from": "2026-03140"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_354807134",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 12865000.0,
+        "recipient": "NEBRASKA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_355330873",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 5000000.0,
+        "recipient": "TENNESSEE DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -53315,11 +53497,20 @@
     },
     {
       "source": "usda_wildfire",
-      "target": "usa_10.720_354061840",
+      "target": "usa_10.720_354803859",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 296560.0,
-        "recipient": "UTAH DEPARTMENT OF NATURAL RESOURCES"
+        "amount": 1015595.0,
+        "recipient": "BLACKBERRY MOUNTAIN RESIDENTIAL CONDOMINIUM OWNERS' ASSOCIATION"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_354776930",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 400000.0,
+        "recipient": "CONTRA COSTA WATER DISTRICT"
       }
     },
     {
@@ -53332,12 +53523,12 @@
       }
     },
     {
-      "source": "usbr_watersmart",
-      "target": "usa_15.507_354110960",
+      "source": "dot_protect",
+      "target": "usa_20.284_354806842",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 200000.0,
-        "recipient": "ORANGE COUNTY WATER DISTRICT"
+        "amount": 7283200.0,
+        "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -53347,24 +53538,6 @@
       "metadata": {
         "amount": 1879977.0,
         "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "usa_20.284_354152722",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 1304000.0,
-        "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "usa_20.284_354152726",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 775861.6,
-        "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -53383,6 +53556,15 @@
       "metadata": {
         "amount": 512712.0,
         "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.284_354806843",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 400000.0,
+        "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -53410,14 +53592,6 @@
       "metadata": {
         "amount": 160000.0,
         "recipient": "DEPARTMENT OF TRANSPORTATION ARIZONA"
-      }
-    },
-    {
-      "source": "epa_tribal_air",
-      "target": "auth_bil",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-02843"
       }
     },
     {
@@ -53570,7 +53744,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 147082389.56,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54263,7 +54437,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 54926948.64,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54533,7 +54707,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 44981000.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54911,7 +55085,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 38151362.08,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55028,7 +55202,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 35661409.61,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55082,7 +55256,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 34773821.59,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55253,7 +55427,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 32164616.31,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55280,7 +55454,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 31574198.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55307,7 +55481,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 31228959.69,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55325,7 +55499,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 31117414.73,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55352,7 +55526,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 30862863.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55541,7 +55715,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 29077835.52,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -55586,7 +55760,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 28464619.78,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -57431,7 +57605,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 17161688.97,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -57899,7 +58073,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 15807532.94,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -58151,7 +58325,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 15234339.09,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -58970,7 +59144,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 13385475.9,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -60032,7 +60206,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 11686406.91,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -60113,7 +60287,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 11572565.3,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -61004,7 +61178,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 10504459.39,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -61661,7 +61835,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 9789425.26,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -63092,7 +63266,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 8385507.55,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -63686,7 +63860,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 8004923.54,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -64118,7 +64292,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 7639586.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -65441,7 +65615,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 6824997.01,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -65837,7 +66011,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 6573547.75,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -65900,7 +66074,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 6544326.06,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -66152,7 +66326,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 6402030.85,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -66350,7 +66524,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 6329426.92,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -67061,7 +67235,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 6031525.74,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -68600,7 +68774,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 5430863.68,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -70382,7 +70556,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 4902787.79,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -70391,7 +70565,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 4902061.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -70841,7 +71015,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 4762464.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -71192,7 +71366,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 4666606.83,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -71462,7 +71636,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 4584109.48,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -71723,7 +71897,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 4505264.87,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -71912,7 +72086,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 4459085.31,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -75080,7 +75254,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 3774301.66,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -76709,7 +76883,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 3458381.99,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -77591,7 +77765,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 3331151.23,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -79733,7 +79907,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 3010898.08,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -81128,7 +81302,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2805681.18,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -81857,7 +82031,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2713505.65,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -81911,7 +82085,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2705626.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -82973,7 +83147,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2593300.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -84350,7 +84524,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2425113.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -85340,7 +85514,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2320786.25,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -86150,7 +86324,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2242283.93,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -89003,7 +89177,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2014839.25,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -89732,7 +89906,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1970478.4,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -90083,7 +90257,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1942869.59,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -91820,7 +91994,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1821335.7,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -91874,7 +92048,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1817011.27,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -91964,7 +92138,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1812793.97,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -92261,7 +92435,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1801123.18,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -92594,7 +92768,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1780444.12,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -92603,7 +92777,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 1780271.87,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -94282,6 +94456,15 @@
     },
     {
       "source": "epa_gap",
+      "target": "usa_66.926_198421703",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 528000.0,
+        "recipient": "BRISTOL BAY NATIVE ASSOCIATION, INC."
+      }
+    },
+    {
+      "source": "epa_gap",
       "target": "usa_66.926_258855096",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -94431,6 +94614,15 @@
       "metadata": {
         "amount": 336381.0,
         "recipient": "HABEMATOLEL POMO OF UPPER LAKE"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "usa_66.926_198421824",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 313000.0,
+        "recipient": "NATIVE VILLAGE OF CHENEGA"
       }
     },
     {
@@ -94624,6 +94816,15 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_198127890",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 81203000.0,
+        "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_197960698",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -94647,6 +94848,15 @@
       "metadata": {
         "amount": 68611000.0,
         "recipient": "NORTH CAROLINA DEPARTMENT OF ENVIRONMENTAL QUALITY"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_355638698",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 67510000.0,
+        "recipient": "GEORGIA ENVIRONMENTAL FINANCE AUTHORITY"
       }
     },
     {
@@ -94728,6 +94938,24 @@
       "metadata": {
         "amount": 35443000.0,
         "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258259871",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 34511000.0,
+        "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258259870",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 34109000.0,
+        "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY"
       }
     },
     {
@@ -94872,6 +95100,15 @@
       "metadata": {
         "amount": 13631000.0,
         "recipient": "SOUTH CAROLINA DEPARTMENT OF ENVIRONMENTAL SERVICES"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_355638911",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 13277000.0,
+        "recipient": "KENTUCKY INFRASTRUCTURE AUTHORITY"
       }
     },
     {
@@ -97679,7 +97916,7 @@
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2244200.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION DEPT"
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -98719,6 +98956,15 @@
     },
     {
       "source": "doe_indian_energy",
+      "target": "usa_81.087_260361584",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 5004663.0,
+        "recipient": "CORTEVA AGRISCIENCE LLC"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
       "target": "usa_81.087_260369812",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -99277,6 +99523,15 @@
     },
     {
       "source": "doe_indian_energy",
+      "target": "usa_81.087_260359919",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2514834.33,
+        "recipient": "UNIVERSITY OF WISCONSIN SYSTEM"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
       "target": "usa_81.087_260361632",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -99372,6 +99627,15 @@
       "metadata": {
         "amount": 2390420.0,
         "recipient": "WASHINGTON STATE UNIVERSITY"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260360451",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2322019.0,
+        "recipient": "UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION"
       }
     },
     {
@@ -99826,6 +100090,24 @@
     },
     {
       "source": "doe_indian_energy",
+      "target": "usa_81.087_260360163",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1399999.98,
+        "recipient": "ELEMENT 16 TECHNOLOGIES INC"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260360121",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1370262.77,
+        "recipient": "UNIVERSITY OF MARYLAND, COLLEGE PARK"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
       "target": "usa_81.087_260359664",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -100074,6 +100356,15 @@
       "metadata": {
         "amount": 999958.0,
         "recipient": "NORTH CAROLINA STATE UNIVERSITY"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
+      "target": "usa_81.087_260360909",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 999838.0,
+        "recipient": "UNIVERSITY OF HAWAII"
       }
     },
     {
@@ -100366,6 +100657,15 @@
     },
     {
       "source": "doe_indian_energy",
+      "target": "usa_81.087_260362010",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 400000.0,
+        "recipient": "UNIVERSITY OF MISSOURI SYSTEM"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
       "target": "usa_81.087_260360957",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -100537,6 +100837,15 @@
     },
     {
       "source": "doe_indian_energy",
+      "target": "usa_81.087_260361002",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 99849.8,
+        "recipient": "URIEL SOLAR, INC."
+      }
+    },
+    {
+      "source": "doe_indian_energy",
       "target": "usa_81.087_260361575",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -100694,6 +101003,15 @@
       "metadata": {
         "amount": 315599.0,
         "recipient": "CHICKEN RANCH RANCHERIA"
+      }
+    },
+    {
+      "source": "usda_wildfire",
+      "target": "usa_10.720_354061840",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 296560.0,
+        "recipient": "UTAH DEPARTMENT OF NATURAL RESOURCES"
       }
     },
     {
@@ -101085,6 +101403,15 @@
     },
     {
       "source": "usbr_watersmart",
+      "target": "usa_15.507_354110960",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 200000.0,
+        "recipient": "ORANGE COUNTY WATER DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
       "target": "usa_15.507_270331924",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -101256,6 +101583,15 @@
     },
     {
       "source": "dot_protect",
+      "target": "usa_20.284_354152722",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1304000.0,
+        "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
       "target": "usa_20.284_354453193",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -101315,6 +101651,15 @@
       "metadata": {
         "amount": 788219.59,
         "recipient": "WVDOT DIVISION OF HIGHWAYS"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.284_354152726",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 775861.6,
+        "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -101678,6 +102023,22 @@
       }
     },
     {
+      "source": "epa_gap",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02965"
+      }
+    },
+    {
+      "source": "epa_gap",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-02965"
+      }
+    },
+    {
       "source": "dot_protect",
       "target": "auth_42_u_s_c_4321",
       "type": "AUTHORIZED_BY",
@@ -101702,66 +102063,26 @@
       }
     },
     {
-      "source": "epa_gap",
-      "target": "auth_bil",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-02965"
-      }
-    },
-    {
-      "source": "epa_gap",
-      "target": "auth_final_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-02965"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_ira",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "110-S-670"
-      }
-    },
-    {
-      "source": "epa_stag",
-      "target": "auth_bil",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "107-S-698"
-      }
-    },
-    {
-      "source": "epa_stag",
-      "target": "auth_safe_drinking_water_act",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "107-S-698"
-      }
-    },
-    {
       "source": "usbr_watersmart",
       "target": "auth_bil",
       "type": "AUTHORIZED_BY",
       "metadata": {
-        "inferred_from": "107-S-3022"
+        "inferred_from": "119-S-3912"
       }
     }
   ],
   "summary": {
-    "total_nodes": 5972,
-    "total_edges": 6040,
+    "total_nodes": 5991,
+    "total_edges": 6059,
     "programs": 18,
     "node_types": {
       "ProgramNode": 18,
       "AdvocacyLeverNode": 23,
-      "AuthorityNode": 30,
+      "AuthorityNode": 31,
       "FundingVehicleNode": 8,
       "BarrierNode": 16,
       "TrustSuperNode": 1,
-      "ObligationNode": 5876
+      "ObligationNode": 5894
     }
   }
 }

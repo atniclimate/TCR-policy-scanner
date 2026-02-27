@@ -1,20 +1,608 @@
 {
   "source": "grants_gov",
-  "cached_at": "2026-02-19T14:10:34.632968+00:00",
-  "item_count": 1473,
+  "cached_at": "2026-02-27T14:01:39.816964+00:00",
+  "item_count": 1466,
   "items": [
     {
       "source": "grants_gov",
-      "source_id": "361324",
-      "title": "BJA FY25 Smart Reentry Demonstration Program",
+      "source_id": "361373",
+      "title": "Rural Microentrepreneur Assistance Program",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361324",
+      "url": "https://www.grants.gov/search-results-detail/361373",
       "pdf_url": "",
-      "published_date": "02/19/2026",
-      "close_date": "03/19/2026",
+      "published_date": "02/26/2026",
+      "close_date": "06/30/2026",
       "document_type": "grant_opportunity",
       "agencies": [
-        "USDOJ-OJP-BJA"
+        "USDA-RBCS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361374",
+      "title": "Rural Microentrepreneur Program(RMAP)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361374",
+      "pdf_url": "",
+      "published_date": "02/26/2026",
+      "close_date": "06/30/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "USDA-RBCS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361375",
+      "title": "Dental Faculty Loan Repayment Program (DFLRP)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361375",
+      "pdf_url": "",
+      "published_date": "02/26/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-HRSA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361376",
+      "title": "Strategies to Link, Engage, and Retain Men with HIV in Care: Evaluation Provider",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361376",
+      "pdf_url": "",
+      "published_date": "02/26/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-HRSA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361377",
+      "title": "Strategies to Link, Engage, and Retain Men with HIV in Care: Implementation Technical Assistance Provider",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361377",
+      "pdf_url": "",
+      "published_date": "02/26/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-HRSA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361366",
+      "title": "Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361366",
+      "pdf_url": "",
+      "published_date": "02/25/2026",
+      "close_date": "04/28/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HUD"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361365",
+      "title": "Next-Generation Geothermal Field Tests and Geothermal Resource Characterization and Confirmation",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361365",
+      "pdf_url": "",
+      "published_date": "02/25/2026",
+      "close_date": "03/27/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOE-GFO"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361368",
+      "title": "The Reentry Employment in Skilled Trades, Advanced Manufacturing, Registered Apprenticeships, and Training (RESTART) Initiative",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361368",
+      "pdf_url": "",
+      "published_date": "02/25/2026",
+      "close_date": "04/15/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOL-ETA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "360057",
+      "title": "Veterans Legacy Grants Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/360057",
+      "pdf_url": "",
+      "published_date": "02/25/2026",
+      "close_date": "03/27/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "VA-VLGP"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361370",
+      "title": "Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Therapeutic Agent Characterization and Preclinical Efficacy Studies",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361370",
+      "pdf_url": "",
+      "published_date": "02/25/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361369",
+      "title": "Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Assay Development and Therapeutic Agent Identification",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361369",
+      "pdf_url": "",
+      "published_date": "02/25/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361361",
+      "title": "Region 9 Fiscal Year 2025 Wetland Program Development Grants",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361361",
+      "pdf_url": "",
+      "published_date": "02/24/2026",
+      "close_date": "04/13/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "EPA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361364",
+      "title": "Delta Rural Integrated Health Network Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361364",
+      "pdf_url": "",
+      "published_date": "02/24/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-HRSA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361348",
+      "title": "Improving Chronic Conditions Through Inexpensive Interventions",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361348",
+      "pdf_url": "",
+      "published_date": "02/23/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361351",
+      "title": "Precision Measurement Grant Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361351",
+      "pdf_url": "",
+      "published_date": "02/23/2026",
+      "close_date": "06/22/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOC-NIST"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361349",
+      "title": "University Centers for Developmental Disabilities in Education, Research, and Service",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361349",
+      "pdf_url": "",
+      "published_date": "02/23/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-ACL"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361334",
+      "title": "HEAL Initiative: Program to Reveal and Evaluate Cells-to-gene Information that Specify Intricacies, Origins and the Nature of (PRECISION) Human Pain Network",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361334",
+      "pdf_url": "",
+      "published_date": "02/20/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361338",
+      "title": "FY 2025 Region 4 Wetlands Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361338",
+      "pdf_url": "",
+      "published_date": "02/20/2026",
+      "close_date": "04/06/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "EPA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361337",
+      "title": "Region 08 Fiscal Year 2025 Wetland Program Development Grants",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361337",
+      "pdf_url": "",
+      "published_date": "02/20/2026",
+      "close_date": "04/20/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "EPA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361339",
+      "title": "Feed the Future Innovation Labs",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361339",
+      "pdf_url": "",
+      "published_date": "02/20/2026",
+      "close_date": "04/03/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOS-GFS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361335",
+      "title": "Region 1 Fiscal Year 2025 Wetland Program Development Grants",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361335",
+      "pdf_url": "",
+      "published_date": "02/20/2026",
+      "close_date": "04/24/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "EPA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361336",
+      "title": "OSERS-OSEP: State Technical Assistance Projects to Improve Services and Results for DeafBlind Children, Assistance Listing Number 84.326T",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361336",
+      "pdf_url": "",
+      "published_date": "02/20/2026",
+      "close_date": "04/21/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "ED"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361322",
+      "title": "Collaborative Program Grant for Multidisciplinary Teams",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361322",
+      "pdf_url": "",
+      "published_date": "02/19/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361330",
+      "title": "FY 2026 Young Southeast Asian Leaders Initiative (YSEALI)  Professional Fellowship",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361330",
+      "pdf_url": "",
+      "published_date": "02/19/2026",
+      "close_date": "04/20/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOS-ECA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361327",
+      "title": "FY 2026 Community College Administrator Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361327",
+      "pdf_url": "",
+      "published_date": "02/19/2026",
+      "close_date": "04/20/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOS-ECA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361331",
+      "title": "Region 2 Fiscal Year 2025 Wetland Program Development Grants",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361331",
+      "pdf_url": "",
+      "published_date": "02/19/2026",
+      "close_date": "04/10/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "EPA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361329",
+      "title": "Comprehensive Addiction and Recovery Act (CARA)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361329",
+      "pdf_url": "",
+      "published_date": "02/19/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-CDC-NCIPC"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361328",
+      "title": "OJJDP FY25 Victims of Child Abuse Act Training and Technical Assistance for Child Abuse Prosecutors",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361328",
+      "pdf_url": "",
+      "published_date": "02/19/2026",
+      "close_date": "03/30/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "USDOJ-OJP-OJJDP"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361333",
+      "title": "Pathways to Enable Secure Open-Source Ecosystems",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361333",
+      "pdf_url": "",
+      "published_date": "02/19/2026",
+      "close_date": "09/01/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "NSF"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -68,16 +656,16 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361322",
-      "title": "Collaborative Program Grant for Multidisciplinary Teams",
+      "source_id": "361324",
+      "title": "BJA FY25 Smart Reentry Demonstration Program",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361322",
+      "url": "https://www.grants.gov/search-results-detail/361324",
       "pdf_url": "",
       "published_date": "02/19/2026",
-      "close_date": "",
+      "close_date": "03/19/2026",
       "document_type": "grant_opportunity",
       "agencies": [
-        "HHS-NIH11"
+        "USDOJ-OJP-BJA"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -99,48 +687,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "USDOJ-OJP-BJA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361327",
-      "title": "FY 2026 Community College Administrator Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361327",
-      "pdf_url": "",
-      "published_date": "02/19/2026",
-      "close_date": "04/20/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOS-ECA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361309",
-      "title": "Energy Frontier Research Centers (EFRCs)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361309",
-      "pdf_url": "",
-      "published_date": "02/18/2026",
-      "close_date": "07/01/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "PAMS-SC"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -236,27 +782,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "360601",
-      "title": "2026 Community Wood Energy and Wood Innovation Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360601",
-      "pdf_url": "",
-      "published_date": "02/18/2026",
-      "close_date": "04/22/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDA-FS"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361313",
       "title": "Region 10 Fiscal Year 2025 Wetland Program Development Grants",
       "abstract": "",
@@ -267,48 +792,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "EPA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "360602",
-      "title": "2026 Wood Products Infrastructure Assistance Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360602",
-      "pdf_url": "",
-      "published_date": "02/18/2026",
-      "close_date": "04/22/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDA-FS"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "360250",
-      "title": "2026 Wood Innovations Grant Funding Opportunity",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360250",
-      "pdf_url": "",
-      "published_date": "02/18/2026",
-      "close_date": "04/22/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDA-FS"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -425,6 +908,90 @@
     },
     {
       "source": "grants_gov",
+      "source_id": "361309",
+      "title": "Energy Frontier Research Centers (EFRCs)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361309",
+      "pdf_url": "",
+      "published_date": "02/18/2026",
+      "close_date": "07/01/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "PAMS-SC"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "360601",
+      "title": "2026 Community Wood Energy and Wood Innovation Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/360601",
+      "pdf_url": "",
+      "published_date": "02/18/2026",
+      "close_date": "04/22/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "USDA-FS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "360602",
+      "title": "2026 Wood Products Infrastructure Assistance Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/360602",
+      "pdf_url": "",
+      "published_date": "02/18/2026",
+      "close_date": "04/22/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "USDA-FS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "360250",
+      "title": "2026 Wood Innovations Grant Funding Opportunity",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/360250",
+      "pdf_url": "",
+      "published_date": "02/18/2026",
+      "close_date": "04/22/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "USDA-FS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
       "source_id": "361290",
       "title": "Value-Added Producer Grant",
       "abstract": "",
@@ -477,27 +1044,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361310",
-      "title": "Emergency Medical Services for Children (EMSC) National Pediatric Readiness Coordinating Center Cooperative Agreement",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361310",
-      "pdf_url": "",
-      "published_date": "02/17/2026",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-HRSA"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -698,27 +1244,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361286",
-      "title": "NIJ FY25 Invited to Apply - Adolescent Brain Cognitive Development: Social Development Sub-study (ABCD-SD)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361286",
-      "pdf_url": "",
-      "published_date": "02/12/2026",
-      "close_date": "02/26/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-NIJ"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "359004",
       "title": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
       "abstract": "",
@@ -887,16 +1412,16 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361283",
-      "title": "NIJ FY25 Invited to Apply - Novel Psychoactive Substance Discovery, Education, and Reporting Institute",
+      "source_id": "361284",
+      "title": "Network of the National Library of Medicine Regional Medical Libraries (UG4 Clinical Trial Not Allowed)",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361283",
+      "url": "https://www.grants.gov/search-results-detail/361284",
       "pdf_url": "",
       "published_date": "02/11/2026",
-      "close_date": "02/25/2026",
+      "close_date": "",
       "document_type": "grant_opportunity",
       "agencies": [
-        "USDOJ-OJP-NIJ"
+        "HHS-NIH11"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -908,12 +1433,54 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361284",
-      "title": "Network of the National Library of Medicine Regional Medical Libraries (UG4 Clinical Trial Not Allowed)",
+      "source_id": "361274",
+      "title": "FY 2026 Implementation of the U.S. Integrated Ocean Observing System (IOOS)",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361284",
+      "url": "https://www.grants.gov/search-results-detail/361274",
       "pdf_url": "",
-      "published_date": "02/11/2026",
+      "published_date": "02/10/2026",
+      "close_date": "04/13/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOC-DOCNOAAERA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361271",
+      "title": "Medical Scientist Training Program (MSTP)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361271",
+      "pdf_url": "",
+      "published_date": "02/10/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361270",
+      "title": "Native American Research Centers for Health (NARCH)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361270",
+      "pdf_url": "",
+      "published_date": "02/10/2026",
       "close_date": "",
       "document_type": "grant_opportunity",
       "agencies": [
@@ -1076,90 +1643,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361274",
-      "title": "FY 2026 Implementation of the U.S. Integrated Ocean Observing System (IOOS)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361274",
-      "pdf_url": "",
-      "published_date": "02/10/2026",
-      "close_date": "04/13/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOC-DOCNOAAERA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361271",
-      "title": "Medical Scientist Training Program (MSTP)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361271",
-      "pdf_url": "",
-      "published_date": "02/10/2026",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361270",
-      "title": "Native American Research Centers for Health (NARCH)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361270",
-      "pdf_url": "",
-      "published_date": "02/10/2026",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361269",
-      "title": "NIJ FY25 Invited to Apply - Operation of the Secretariat of SC 37 under JTC 1 of ISO/IEC",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361269",
-      "pdf_url": "",
-      "published_date": "02/10/2026",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-NIJ"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "358859",
       "title": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
       "abstract": "",
@@ -1170,27 +1653,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361261",
-      "title": "Freedom 250 Outreach Across India",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361261",
-      "pdf_url": "",
-      "published_date": "02/09/2026",
-      "close_date": "03/10/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOS-IND"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -1265,16 +1727,37 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361265",
-      "title": "NIJ FY25 Invited to Apply - Criminal Justice Technology Testing and Evaluation Center",
+      "source_id": "361261",
+      "title": "Freedom 250 Outreach Across India",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361265",
+      "url": "https://www.grants.gov/search-results-detail/361261",
       "pdf_url": "",
       "published_date": "02/09/2026",
-      "close_date": "02/23/2026",
+      "close_date": "03/10/2026",
       "document_type": "grant_opportunity",
       "agencies": [
-        "USDOJ-OJP-NIJ"
+        "DOS-IND"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361257",
+      "title": "Cartel Recruitment Understanding &amp; Suppression Hub (CRUSH",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361257",
+      "pdf_url": "",
+      "published_date": "02/06/2026",
+      "close_date": "03/06/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOS-INL"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -1377,27 +1860,6 @@
       "pdf_url": "",
       "published_date": "02/06/2026",
       "close_date": "04/06/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOS-INL"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361257",
-      "title": "Cartel Recruitment Understanding &amp; Suppression Hub (CRUSH",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361257",
-      "pdf_url": "",
-      "published_date": "02/06/2026",
-      "close_date": "03/06/2026",
       "document_type": "grant_opportunity",
       "agencies": [
         "DOS-INL"
@@ -2357,27 +2819,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361182",
-      "title": "New World Screwworm Grand Challenge",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361182",
-      "pdf_url": "",
-      "published_date": "01/21/2026",
-      "close_date": "02/23/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDA-APHIS"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "360581",
       "title": "NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)",
       "abstract": "",
@@ -2504,90 +2945,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361153",
-      "title": "Carderock BAA",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361153",
-      "pdf_url": "",
-      "published_date": "01/15/2026",
-      "close_date": "02/27/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOD-ONR-SEA-NSWFCRD"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361155",
-      "title": "BJS FY25 Consolidated National Criminal History Improvement Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361155",
-      "pdf_url": "",
-      "published_date": "01/15/2026",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-BJS"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361154",
-      "title": "BJS FY25 State Justice Statistics Program for Statistical Analysis Centers",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361154",
-      "pdf_url": "",
-      "published_date": "01/15/2026",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-BJS"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361156",
-      "title": "BJS FY25 National Corrections Reporting Program (NCRP) National Prisoner Statistics (NPS) Program, Reference Years (RY) 2025&ndash;2029",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361156",
-      "pdf_url": "",
-      "published_date": "01/15/2026",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-BJS"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361160",
       "title": "NIH Research Educational Program -Mentoring Activities &amp; Networks (R25/UE5)",
       "abstract": "",
@@ -2651,6 +3008,27 @@
     },
     {
       "source": "grants_gov",
+      "source_id": "361153",
+      "title": "Carderock BAA",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361153",
+      "pdf_url": "",
+      "published_date": "01/15/2026",
+      "close_date": "03/13/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOD-ONR-SEA-NSWFCRD"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
       "source_id": "361150",
       "title": "International Religious Freedom Fund (I-REFF) Emergency Assistance",
       "abstract": "",
@@ -2682,27 +3060,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "DOD-COE-ERDC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361151",
-      "title": "2026 National Geological &amp; Geophysical Data Preservation Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361151",
-      "pdf_url": "",
-      "published_date": "01/14/2026",
-      "close_date": "02/26/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOI-USGS1"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -3092,27 +3449,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361135",
-      "title": "BJA FY25 The Kevin and Avonte Program: Reducing Injury and Death of Missing Individuals with Dementia and Developmental Disabilities",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361135",
-      "pdf_url": "",
-      "published_date": "01/13/2026",
-      "close_date": "02/20/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-BJA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361125",
       "title": "ROSES25: A.6 Earth Venture Suborbital-4 Landslide Change Characterization Experiment Science Team",
       "abstract": "",
@@ -3302,27 +3638,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361094",
-      "title": "State Offices of Rural Health Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361094",
-      "pdf_url": "",
-      "published_date": "01/06/2026",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-HRSA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361085",
       "title": "Telehealth Centers of Excellence",
       "abstract": "",
@@ -3470,6 +3785,27 @@
     },
     {
       "source": "grants_gov",
+      "source_id": "361094",
+      "title": "State Offices of Rural Health Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361094",
+      "pdf_url": "",
+      "published_date": "01/06/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-HRSA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
       "source_id": "361080",
       "title": "ERDC Broad Agency Announcement",
       "abstract": "",
@@ -3512,10 +3848,10 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361071",
-      "title": "OVC FY25 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking",
+      "source_id": "361072",
+      "title": "OVC FY25 Services for Victims of Human Trafficking",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361071",
+      "url": "https://www.grants.gov/search-results-detail/361072",
       "pdf_url": "",
       "published_date": "12/30/2025",
       "close_date": "03/11/2026",
@@ -3533,94 +3869,10 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361074",
-      "title": "OVC FY25 Housing Assistance for Victims of Human Trafficking",
+      "source_id": "361071",
+      "title": "OVC FY25 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361074",
-      "pdf_url": "",
-      "published_date": "12/30/2025",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-OVC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361077",
-      "title": "OVC FY25 Preventing Trafficking of Girls",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361077",
-      "pdf_url": "",
-      "published_date": "12/30/2025",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-OVC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361078",
-      "title": "OVC FY25 Specialized Human Trafficking Assistance: Supporting Survivor Engagement in Anti-Trafficking Programming",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361078",
-      "pdf_url": "",
-      "published_date": "12/30/2025",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-OVC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361075",
-      "title": "OVC FY25 Integrated Services for Minor Victims of Human Trafficking",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361075",
-      "pdf_url": "",
-      "published_date": "12/30/2025",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "USDOJ-OJP-OVC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361072",
-      "title": "OVC FY25 Services for Victims of Human Trafficking",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361072",
+      "url": "https://www.grants.gov/search-results-detail/361071",
       "pdf_url": "",
       "published_date": "12/30/2025",
       "close_date": "03/11/2026",
@@ -3848,27 +4100,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361055",
-      "title": "Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361055",
-      "pdf_url": "",
-      "published_date": "12/23/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-HRSA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361056",
       "title": "Traumatic Brain Injury State Partnership",
       "abstract": "",
@@ -3932,10 +4163,31 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361054",
-      "title": "Rural Health Research Dissemination Program",
+      "source_id": "361053",
+      "title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361054",
+      "url": "https://www.grants.gov/search-results-detail/361053",
+      "pdf_url": "",
+      "published_date": "12/23/2025",
+      "close_date": "03/31/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-HRSA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361055",
+      "title": "Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361055",
       "pdf_url": "",
       "published_date": "12/23/2025",
       "close_date": "",
@@ -3953,13 +4205,13 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361053",
-      "title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
+      "source_id": "361054",
+      "title": "Rural Health Research Dissemination Program",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361053",
+      "url": "https://www.grants.gov/search-results-detail/361054",
       "pdf_url": "",
       "published_date": "12/23/2025",
-      "close_date": "03/31/2026",
+      "close_date": "",
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-HRSA"
@@ -4016,27 +4268,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361047",
-      "title": "FY 2025 Continuum of Care Competition and Youth Homeless Demonstration Program Grants NOFO",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361047",
-      "pdf_url": "",
-      "published_date": "12/20/2025",
-      "close_date": "02/25/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HUD"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361044",
       "title": "Ryan White HIV/AIDS Program Part D Coordinated HIV Services and Access to Research for Women, Infants, Children, and Youth (WICY) Existing Geographic Service Areas",
       "abstract": "",
@@ -4079,27 +4310,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "360555",
-      "title": "Extension of the World Trade Center Health Registry (U50)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360555",
-      "pdf_url": "",
-      "published_date": "12/19/2025",
-      "close_date": "02/20/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-CDC-HHSCDCERA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361035",
       "title": "Single Source Competition: Continuation of the Cardiovascular Repository for Type 1 Diabetes (CaRe-T1D) - Resource Center (U24 Clinical Trial Not Allowed)",
       "abstract": "",
@@ -4121,16 +4331,16 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361042",
-      "title": "Telehealth Nutrition Services Network Grant Program",
+      "source_id": "361036",
+      "title": "ROSES25: B.5 Research and Development of Initiatives for Advanced New Technologies",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361042",
+      "url": "https://www.grants.gov/search-results-detail/361036",
       "pdf_url": "",
       "published_date": "12/18/2025",
-      "close_date": "",
+      "close_date": "04/27/2026",
       "document_type": "grant_opportunity",
       "agencies": [
-        "HHS-HRSA"
+        "NASA-HQ"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -4142,16 +4352,16 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361036",
-      "title": "ROSES25: B.5 Research and Development of Initiatives for Advanced New Technologies",
+      "source_id": "361042",
+      "title": "Telehealth Nutrition Services Network Grant Program",
       "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361036",
+      "url": "https://www.grants.gov/search-results-detail/361042",
       "pdf_url": "",
       "published_date": "12/18/2025",
-      "close_date": "04/27/2026",
+      "close_date": "",
       "document_type": "grant_opportunity",
       "agencies": [
-        "NASA-HQ"
+        "HHS-HRSA"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -4194,27 +4404,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-ACL"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361033",
-      "title": "Cooperative Agreement for affiliated Partner with the North Atlantic Coast Cooperative Ecosystem Studies Unit",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361033",
-      "pdf_url": "",
-      "published_date": "12/17/2025",
-      "close_date": "02/22/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOI-USGS1"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -4289,27 +4478,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361011",
-      "title": "VA Supportive Services for Veteran Families (SSVF) Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361011",
-      "pdf_url": "",
-      "published_date": "12/15/2025",
-      "close_date": "02/19/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "VA-SSVF"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361010",
       "title": "Summer Institute for Research Education in Biostatistics and Data Science",
       "abstract": "",
@@ -4352,27 +4520,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "361018",
-      "title": "Rural Communities Opioid Response Program (RCORP)-Planning",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361018",
-      "pdf_url": "",
-      "published_date": "12/15/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-HRSA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "361021",
       "title": "Fiscal Year 2026 Phase II Continuation Consolidated Innovative Nuclear Research",
       "abstract": "",
@@ -4404,6 +4551,27 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "DOE-ID"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361018",
+      "title": "Rural Communities Opioid Response Program (RCORP)-Planning",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361018",
+      "pdf_url": "",
+      "published_date": "12/15/2025",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-HRSA"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -5507,27 +5675,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "360933",
-      "title": "Oyster Pads and Wave Trip at Long Bird Island, Houston Ship Channel",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360933",
-      "pdf_url": "",
-      "published_date": "12/04/2025",
-      "close_date": "02/23/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOD-COE-FW"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "360931",
       "title": "Engineering Improved Stem Cell-Derived Islet Cells for Replacement Therapies (R01 - Clinical Trial Not Allowed)",
       "abstract": "",
@@ -5601,27 +5748,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "360921",
-      "title": "FY 2026 National Infrastructure Investments",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360921",
-      "pdf_url": "",
-      "published_date": "11/26/2025",
-      "close_date": "02/24/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOT-DOT X-50"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -6242,27 +6368,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "360755",
-      "title": "Sustaining HIV services in Ukraine through targeted testing, treatment, prevention, and differentiated services under the President's Emergency Plan for AIDS Relief (PEPFAR)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360755",
-      "pdf_url": "",
-      "published_date": "10/16/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-CDC-GHC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "360760",
       "title": "Supporting life-saving HIV services and related health systems in Zambia on a pathway to self-reliance under the President&rsquo;s Plan for AIDS Relief (PEPFAR)",
       "abstract": "",
@@ -6294,6 +6399,27 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-CMS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "360755",
+      "title": "Sustaining life-saving HIV services in Ukraine by strengthening resilient health systems under the Ukraine Ministry of Health, Public Health Center",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/360755",
+      "pdf_url": "",
+      "published_date": "10/16/2025",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-CDC-GHC"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -11030,6 +11156,27 @@
     },
     {
       "source": "grants_gov",
+      "source_id": "360149",
+      "title": "Computer and Information Science and Engineering (CISE): Future Computing Research",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/360149",
+      "pdf_url": "",
+      "published_date": "07/25/2025",
+      "close_date": "09/10/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "NSF"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
       "source_id": "360091",
       "title": "FDA's Integrated Food Safety System Training Delivery and Development",
       "abstract": "",
@@ -11208,27 +11355,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "360057",
-      "title": "Veterans Legacy Grants Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360057",
-      "pdf_url": "",
-      "published_date": "07/17/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "VA-VLGP"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -15902,69 +16028,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "358396",
-      "title": "Fellowship Programs at Independent Research Institutions",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/358396",
-      "pdf_url": "",
-      "published_date": "01/24/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NEH"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "358393",
-      "title": "Preservation Assistance Grants for Smaller Institutions",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/358393",
-      "pdf_url": "",
-      "published_date": "01/24/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NEH"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "358392",
-      "title": "Sustaining Cultural Heritage Collections",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/358392",
-      "pdf_url": "",
-      "published_date": "01/24/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NEH"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "358391",
       "title": "Media Projects",
       "abstract": "",
@@ -16350,27 +16413,6 @@
       "pdf_url": "",
       "published_date": "01/10/2025",
       "close_date": "01/07/2028",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "358129",
-      "title": "NIDDK High Risk Multi-Center Clinical Study Implementation Planning Cooperative Agreements (U34 Clinical Trial Optional)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/358129",
-      "pdf_url": "",
-      "published_date": "01/10/2025",
-      "close_date": "06/10/2027",
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
@@ -16938,27 +16980,6 @@
       "pdf_url": "",
       "published_date": "12/30/2024",
       "close_date": "01/07/2028",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "357945",
-      "title": "Planning for Product Development Strategy (R34 Clinical Trial Not Allowed)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/357945",
-      "pdf_url": "",
-      "published_date": "12/30/2024",
-      "close_date": "05/07/2026",
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
@@ -17876,27 +17897,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "357590",
-      "title": "Role of Defective Proviruses in HIV Persistence (R01 Clinical Trial Not Allowed)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/357590",
-      "pdf_url": "",
-      "published_date": "12/09/2024",
-      "close_date": "05/07/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "357592",
       "title": "HARMONY: Human-Centric Analytics for Resilient &amp; Modernized Power sYstems",
       "abstract": "",
@@ -18513,27 +18513,6 @@
       "pdf_url": "",
       "published_date": "12/02/2024",
       "close_date": "11/13/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "357488",
-      "title": "Targeting Cell Surface HIV Envelope for Cell Elimination (R01 Clinical Trial Not Allowed)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/357488",
-      "pdf_url": "",
-      "published_date": "12/02/2024",
-      "close_date": "05/07/2026",
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
@@ -20501,27 +20480,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "357123",
-      "title": "CATALYTIC APPLICATION TESTING FOR ACCELERATED LEARNING CHEMISTRIES VIA HIGH-THROUGHPUT EXPERIMENTATION AND MODELING EFFICIENTLY (CATALCHEM-E)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/357123",
-      "pdf_url": "",
-      "published_date": "11/14/2024",
-      "close_date": "02/25/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOE-ARPAE"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "357087",
       "title": "Digital Health Technology Derived Biomarkers and Outcome Assessments for Remote Monitoring and Endpoint Development (UG3/UH3 - Clinical Trial Optional)",
       "abstract": "",
@@ -20991,6 +20949,48 @@
       "pdf_url": "",
       "published_date": "11/06/2024",
       "close_date": "01/07/2027",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "356978",
+      "title": "Cancer Prevention and Control Clinical Trials Planning Grant Program (U34 Clinical Trials Optional)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/356978",
+      "pdf_url": "",
+      "published_date": "11/05/2024",
+      "close_date": "10/25/2027",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "356982",
+      "title": "BRAIN Initiative: Clinical Studies to Advance Next-Generation Devices for Recording and Modulation in the Human Central Nervous System (UH3 Clinical Trial Optional)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/356982",
+      "pdf_url": "",
+      "published_date": "11/05/2024",
+      "close_date": "09/28/2026",
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
@@ -23361,25 +23361,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "356978",
-      "title": "Cancer Prevention and Control Clinical Trials Planning Grant Program (U34 Clinical Trials Optional)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/356978",
-      "pdf_url": "",
-      "published_date": "11/05/2024",
-      "close_date": "10/25/2027",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "356979",
       "title": "Cancer Prevention and Control Clinical Trials Planning Grant Program (R34 Clinical Trials Optional)",
       "abstract": "",
@@ -23542,25 +23523,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "356739",
-      "title": "Spotlight on Humanities in Higher Education",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/356739",
-      "pdf_url": "",
-      "published_date": "10/17/2024",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NEH"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -24786,25 +24748,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "348175",
-      "title": "NLM Grants for Scholarly Works in Biomedicine and Health (G13 Clinical Trial Not Allowed)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/348175",
-      "pdf_url": "",
-      "published_date": "05/17/2023",
-      "close_date": "02/26/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "348058",
       "title": "Decision, Risk and Management Sciences",
       "abstract": "",
@@ -25945,25 +25888,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "322177",
-      "title": "Cancer Center Support Grants (CCSGs) for NCI-designated Cancer Centers (P30 Clinical Trial Optional)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/322177",
-      "pdf_url": "",
-      "published_date": "11/04/2019",
-      "close_date": "10/12/2121",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "320536",
       "title": "Biosensing",
       "abstract": "",
@@ -26458,25 +26382,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "356523",
-      "title": "Dynamic Language Infrastructure &ndash; Documenting Endangered Languages Fellowships",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/356523",
-      "pdf_url": "",
-      "published_date": "09/25/2024",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NEH"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "356472",
       "title": "Safety, Security, and Privacy of Open-Source Ecosystems",
       "abstract": "",
@@ -26503,25 +26408,6 @@
       "pdf_url": "",
       "published_date": "09/14/2024",
       "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NSF"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "356423",
-      "title": "Pathways to Enable Open-Source Ecosystems",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/356423",
-      "pdf_url": "",
-      "published_date": "09/14/2024",
-      "close_date": "09/01/2026",
       "document_type": "grant_opportunity",
       "agencies": [
         "NSF"
@@ -26848,6 +26734,25 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-FDA"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "328573",
+      "title": "Mathematical Sciences Infrastructure Program",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/328573",
+      "pdf_url": "",
+      "published_date": "08/07/2020",
+      "close_date": "08/04/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "NSF"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -27902,6 +27807,25 @@
     },
     {
       "source": "grants_gov",
+      "source_id": "347026",
+      "title": "A Science of Science Approach to Analyzing and Innovating the Biomedical Research Enterprise",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/347026",
+      "pdf_url": "",
+      "published_date": "03/21/2023",
+      "close_date": "09/09/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "NSF"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85
+    },
+    {
+      "source": "grants_gov",
       "source_id": "342810",
       "title": "Rapid Response Team (RRT) Cooperative Agreement",
       "abstract": "",
@@ -28263,25 +28187,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "356982",
-      "title": "BRAIN Initiative: Clinical Studies to Advance Next-Generation Devices for Recording and Modulation in the Human Central Nervous System (UH3 Clinical Trial Optional)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/356982",
-      "pdf_url": "",
-      "published_date": "11/05/2024",
-      "close_date": "09/28/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "356981",
       "title": "BRAIN Initiative:  Next-Generation Devices for Recording and Modulation in the Human Central Nervous System (UG3/UH3 Clinical Trial Optional)",
       "abstract": "",
@@ -28453,25 +28358,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "356591",
-      "title": "Dialogues on the Experiences of War",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/356591",
-      "pdf_url": "",
-      "published_date": "09/30/2024",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NEH"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "356531",
       "title": "Blueprint Neurotherapeutics Network (BPN): Small Molecule Drug Discovery and Development of Disorders of the Nervous System (UG3/UH3 Clinical Trial Optional)",
       "abstract": "",
@@ -28634,25 +28520,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "355689",
-      "title": "Humanities Collections and Reference Resources",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/355689",
-      "pdf_url": "",
-      "published_date": "07/29/2024",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NEH"
       ],
       "award_ceiling": "",
       "award_floor": "",
