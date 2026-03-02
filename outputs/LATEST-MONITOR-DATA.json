@@ -7,16 +7,16 @@
         "fema_bric"
       ],
       "title": "DHS CR EXPIRED: FEMA BRIC funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 14 days since expiration.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 17 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 14,
+        "days_since_expiration": 17,
         "creates_threatens_edge": true,
         "dhs_bills_detected": 0
       },
-      "timestamp": "2026-02-27T14:11:54.605918+00:00"
+      "timestamp": "2026-03-02T14:13:14.455209+00:00"
     },
     {
       "monitor": "dhs_funding",
@@ -25,16 +25,16 @@
         "fema_tribal_mitigation"
       ],
       "title": "DHS CR EXPIRED: FEMA Tribal Mitigation Plans funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 14 days since expiration.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 17 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 14,
+        "days_since_expiration": 17,
         "creates_threatens_edge": true,
         "dhs_bills_detected": 0
       },
-      "timestamp": "2026-02-27T14:11:54.605928+00:00"
+      "timestamp": "2026-03-02T14:13:14.455221+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -55,7 +55,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-02-27T14:11:54.604011+00:00"
+      "timestamp": "2026-03-02T14:13:14.452912+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -76,7 +76,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-02-27T14:11:54.604115+00:00"
+      "timestamp": "2026-03-02T14:13:14.452978+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -114,7 +114,7 @@
           "repeal"
         ]
       },
-      "timestamp": "2026-02-27T14:11:54.604757+00:00"
+      "timestamp": "2026-03-02T14:13:14.453886+00:00"
     },
     {
       "monitor": "iija_sunset",
@@ -130,7 +130,7 @@
         "expiration_type": "fund_exhaustion",
         "days_remaining": null
       },
-      "timestamp": "2026-02-27T14:11:54.603788+00:00"
+      "timestamp": "2026-03-02T14:13:14.452733+00:00"
     }
   ],
   "classifications": {

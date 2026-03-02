@@ -1,7 +1,7 @@
 {
   "source": "usaspending",
-  "cached_at": "2026-02-27T14:02:07.883497+00:00",
-  "item_count": 5903,
+  "cached_at": "2026-03-02T13:59:28.899177+00:00",
+  "item_count": 5917,
   "items": [
     {
       "source": "usaspending",
@@ -97493,6 +97493,132 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_14.867_247663341",
+      "title": "FY26 Obligation: 55IH4613400 \u2014 OGLALA LAKOTA HOUSING AUTHORITY",
+      "abstract": "$192,081,777 obligated under CFDA 14.867 to OGLALA LAKOTA HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663341",
+      "pdf_url": "",
+      "published_date": "2012-02-07",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 192081777.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "OGLALA LAKOTA HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663310",
+      "title": "FY26 Obligation: 55IH3819760 \u2014 TURTLE MOUNTAIN HOUSING AUTHORITY",
+      "abstract": "$129,735,388 obligated under CFDA 14.867 to TURTLE MOUNTAIN HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663310",
+      "pdf_url": "",
+      "published_date": "2012-01-06",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 129735388.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "TURTLE MOUNTAIN HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663342",
+      "title": "FY26 Obligation: 55IH4614480 \u2014 SICANGU WICOTI AWAYANKAPE CORPORATION",
+      "abstract": "$125,977,113 obligated under CFDA 14.867 to SICANGU WICOTI AWAYANKAPE CORPORATION",
+      "url": "https://www.usaspending.gov/award/247663342",
+      "pdf_url": "",
+      "published_date": "2012-01-06",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 125977113.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "SICANGU WICOTI AWAYANKAPE CORPORATION",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663262",
+      "title": "FY26 Obligation: 55IH3000680 \u2014 BLACKFEET HOUSING PROGRAM",
+      "abstract": "$119,316,396 obligated under CFDA 14.867 to BLACKFEET HOUSING PROGRAM",
+      "url": "https://www.usaspending.gov/award/247663262",
+      "pdf_url": "",
+      "published_date": "2012-01-06",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 119316396.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "BLACKFEET HOUSING PROGRAM",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663189",
+      "title": "FY26 Obligation: 55IH0210640 \u2014 NORTHWEST INUPIAT HOUSING AUTHORITY",
+      "abstract": "$85,513,449 obligated under CFDA 14.867 to NORTHWEST INUPIAT HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663189",
+      "pdf_url": "",
+      "published_date": "2012-01-06",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 85513449.48,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "NORTHWEST INUPIAT HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663258",
+      "title": "FY26 Obligation: 55IH2738580 \u2014 RED LAKE RESERVATION HOUSING",
+      "abstract": "$82,631,946 obligated under CFDA 14.867 to RED LAKE RESERVATION HOUSING",
+      "url": "https://www.usaspending.gov/award/247663258",
+      "pdf_url": "",
+      "published_date": "2011-10-18",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 82631946.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "RED LAKE RESERVATION HOUSING",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663306",
+      "title": "FY26 Obligation: 55IH3806940 \u2014 FORT BERTHOLD HOUSING AUTHORITY INC",
+      "abstract": "$67,991,190 obligated under CFDA 14.867 to FORT BERTHOLD HOUSING AUTHORITY INC",
+      "url": "https://www.usaspending.gov/award/247663306",
+      "pdf_url": "",
+      "published_date": "2012-02-08",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 67991190.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "FORT BERTHOLD HOUSING AUTHORITY INC",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_14.867_247663182",
       "title": "FY26 Obligation: 55IH0202800 \u2014 NORTH PACIFIC RIM HOUSING AUTHORITY",
       "abstract": "$47,070,863 obligated under CFDA 14.867 to NORTH PACIFIC RIM HOUSING AUTHORITY",
@@ -97547,9 +97673,99 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_14.867_247663271",
+      "title": "FY26 Obligation: 55IH3124180 \u2014 NORTHERN PONCA HOUSING AUTHORITY",
+      "abstract": "$39,149,296 obligated under CFDA 14.867 to NORTHERN PONCA HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663271",
+      "pdf_url": "",
+      "published_date": "2012-01-06",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 39149296.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "NORTHERN PONCA HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663184",
+      "title": "FY26 Obligation: 55IH0203300 \u2014 COPPER RIVER HOUSING AUTHORITY",
+      "abstract": "$38,353,626 obligated under CFDA 14.867 to COPPER RIVER HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663184",
+      "pdf_url": "",
+      "published_date": "2012-02-07",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 38353626.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "COPPER RIVER HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663344",
+      "title": "FY26 Obligation: 55IH4618920 \u2014 YANKTON SIOUX HOUSING AUTHORITY",
+      "abstract": "$36,079,156 obligated under CFDA 14.867 to YANKTON SIOUX HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663344",
+      "pdf_url": "",
+      "published_date": "2012-01-06",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 36079155.5,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "YANKTON SIOUX HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663350",
+      "title": "FY26 Obligation: 55IH4912760 \u2014 PAIUTE HOUSING AUTHORITY",
+      "abstract": "$33,557,319 obligated under CFDA 14.867 to PAIUTE HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663350",
+      "pdf_url": "",
+      "published_date": "2011-10-18",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 33557319.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "PAIUTE HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663265",
+      "title": "FY26 Obligation: 55IH3002980 \u2014 FORT BELKNAP TRIBAL HOUSING AUTHORITY",
+      "abstract": "$31,859,065 obligated under CFDA 14.867 to FORT BELKNAP TRIBAL HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663265",
+      "pdf_url": "",
+      "published_date": "2016-09-07",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 31859065.17,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "FORT BELKNAP TRIBAL HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_14.867_247663338",
       "title": "FY26 Obligation: 55IH4604340 \u2014 CROW CREEK SIOUX TRIBE",
-      "abstract": "$26,614,748 obligated under CFDA 14.867 to CROW CREEK SIOUX TRIBE",
+      "abstract": "$27,239,283 obligated under CFDA 14.867 to CROW CREEK SIOUX TRIBE",
       "url": "https://www.usaspending.gov/award/247663338",
       "pdf_url": "",
       "published_date": "2011-10-18",
@@ -97557,7 +97773,7 @@
       "agencies": [
         "Department of Housing and Urban Development"
       ],
-      "award_amount": 26614748.0,
+      "award_amount": 27239283.0,
       "cfda": "14.867",
       "cfda_program_match": "hud_ihbg",
       "recipient": "CROW CREEK SIOUX TRIBE",
@@ -97585,7 +97801,7 @@
       "source": "usaspending",
       "source_id": "usa_14.867_247663340",
       "title": "FY26 Obligation: 55IH4610520 \u2014 LOWER BRULE HOUSING AUTHORITY",
-      "abstract": "$22,477,528 obligated under CFDA 14.867 to LOWER BRULE HOUSING AUTHORITY",
+      "abstract": "$22,937,869 obligated under CFDA 14.867 to LOWER BRULE HOUSING AUTHORITY",
       "url": "https://www.usaspending.gov/award/247663340",
       "pdf_url": "",
       "published_date": "2011-10-18",
@@ -97593,10 +97809,28 @@
       "agencies": [
         "Department of Housing and Urban Development"
       ],
-      "award_amount": 22477528.0,
+      "award_amount": 22937869.0,
       "cfda": "14.867",
       "cfda_program_match": "hud_ihbg",
       "recipient": "LOWER BRULE HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663372",
+      "title": "FY26 Obligation: 55IH5554660 \u2014 RED CLIFF CHIPPEWA HOUSING AUTHORITY",
+      "abstract": "$21,286,572 obligated under CFDA 14.867 to RED CLIFF CHIPPEWA HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663372",
+      "pdf_url": "",
+      "published_date": "2011-10-18",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 21286572.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "RED CLIFF CHIPPEWA HOUSING AUTHORITY",
       "authority_weight": 0.7
     },
     {
@@ -97633,6 +97867,24 @@
       "cfda": "14.867",
       "cfda_program_match": "hud_ihbg",
       "recipient": "YERINGTON PAIUTE TRIBAL HOUSING AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_14.867_247663249",
+      "title": "FY26 Obligation: 55IH2505210 \u2014 AQUINNAH WAMPANOAG TRIBAL HOUSING AUTHORITY",
+      "abstract": "$8,506,774 obligated under CFDA 14.867 to AQUINNAH WAMPANOAG TRIBAL HOUSING AUTHORITY",
+      "url": "https://www.usaspending.gov/award/247663249",
+      "pdf_url": "",
+      "published_date": "2011-10-18",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of Housing and Urban Development"
+      ],
+      "award_amount": 8506774.0,
+      "cfda": "14.867",
+      "cfda_program_match": "hud_ihbg",
+      "recipient": "AQUINNAH WAMPANOAG TRIBAL HOUSING AUTHORITY",
       "authority_weight": 0.7
     },
     {

@@ -1,7 +1,7 @@
 {
   "source": "federal_register",
-  "cached_at": "2026-02-27T13:58:57.131416+00:00",
-  "item_count": 153,
+  "cached_at": "2026-03-02T13:59:10.842901+00:00",
+  "item_count": 146,
   "items": [
     {
       "source": "federal_register",
@@ -107,6 +107,38 @@
       ],
       "regulation_ids": [
         "2060-AW71"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04089",
+      "title": "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+      "abstract": "The Office of the Comptroller of the Currency (OCC) proposes to issue regulations to implement the Guiding and Establishing National Innovation for U.S. Stablecoins Act regarding the issuance of payment stablecoins and certain related activities by entities subject to the OCC's jurisdiction.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04089/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04089.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Proposed Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Treasury Department",
+        "Comptroller of the Currency"
+      ],
+      "agency_ids": [
+        497,
+        80
+      ],
+      "action": "Notice of proposed rulemaking.",
+      "dates": "Comments must be received by May 1, 2026.",
+      "cfr_references": [
+        "12 CFR 3",
+        "12 CFR 6",
+        "12 CFR 8",
+        "12 CFR 15",
+        "12 CFR 19"
+      ],
+      "regulation_ids": [
+        "1557-AF41"
       ],
       "authority_weight": 0.9
     },
@@ -285,35 +317,6 @@
       ],
       "regulation_ids": [
         "1625-AC95"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02965",
-      "title": "Restoring Integrity to the Issuance of Non-Domiciled Commercial Drivers Licenses (CDL)",
-      "abstract": "FMCSA amends the Federal regulations for State Driver's Licensing Agencies (SDLAs) issuing commercial driving credentials to non-domiciled individuals. This final rule reaffirms, with minor changes, the provisions of the interim final rule (IFR) published on September 29, 2025. Specifically, this final rule limits eligibility for non-domiciled Commercial Learner's Permits (CLPs) and Commercial Driver's Licenses (CDLs) for foreign-domiciled individuals to those who hold specific, verifiable employment-based nonimmigrant status. This rule reaffirms the IFR requirements, aligning the issuance of non- domiciled CDLs with FMCSA's statutory mandate to ensure the fitness of all drivers who operate a CMV. By limiting eligibility to statuses subject to enhanced consular vetting of driver history and interagency screening, FMCSA restores the integrity of the CDL system, closes a significant safety gap, and enhances the safety of the traveling public.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02965/restoring-integrity-to-the-issuance-of-non-domiciled-commercial-drivers-licenses-cdl",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02965.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "This final rule is effective March 16, 2026.",
-      "cfr_references": [
-        "49 CFR 383",
-        "49 CFR 384"
-      ],
-      "regulation_ids": [
-        "2126-AC98"
       ],
       "authority_weight": 0.9
     },
@@ -1037,120 +1040,58 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-02982",
-      "title": "North Dakota Regulatory Program",
-      "abstract": "We, the Office of Surface Mining Reclamation and Enforcement (OSM), are approving an amendment to the North Dakota regulatory program under the Surface Mining Control and Reclamation Act of 1977 (SMCRA or the Act). North Dakota proposed amendments to its program based on changes to the North Dakota Century Code made by the State legislature that resulted in changes to the North Dakota Administrative Code for surface coal mining and reclamation operations. The changes added a perfected lien or security interest in real property to the definition of collateral bond. The changes also added conditions that must be met for real property pledged as collateral bond.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02982/north-dakota-regulatory-program",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02982.pdf",
-      "published_date": "2026-02-13",
+      "source_id": "2026-04135",
+      "title": "Offshore Downhole Commingling Regulatory Updates",
+      "abstract": "The Department of the Interior (DOI or Department), through the Bureau of Safety and Environmental Enforcement (BSEE), is revising the Outer Continental Shelf (OCS) downhole commingling regulations consistent with the One Big Beautiful Bill Act (OBBB). These revisions update the regulations to ensure consistency with the OBBB when BSEE reviews a request for downhole commingling.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04135/offshore-downhole-commingling-regulatory-updates",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04135.pdf",
+      "published_date": "2026-03-02",
       "document_type": "Rule",
       "document_subtype": "",
       "agencies": [
         "Interior Department",
-        "Surface Mining Reclamation and Enforcement Office"
+        "Safety and Environmental Enforcement Bureau"
       ],
       "agency_ids": [
         253,
-        480
+        576
       ],
-      "action": "Final rule; approval of amendment.",
-      "dates": "The effective date is March 16, 2026.",
+      "action": "Direct final rule; response to comments.",
+      "dates": "Effective March 2, 2026.",
       "cfr_references": [
-        "30 CFR 934"
+        "30 CFR 250"
       ],
-      "regulation_ids": [],
+      "regulation_ids": [
+        "1014-AA68"
+      ],
       "authority_weight": 0.9
     },
     {
       "source": "federal_register",
-      "source_id": "2026-02981",
-      "title": "Montana Regulatory Program",
-      "abstract": "The Office of Surface Mining Reclamation and Enforcement (OSM) approves an amendment to the Montana regulatory program under the Surface Mining Control and Reclamation Act of 1977 (SMCRA or the Act). Montana proposed an addition to the Montana Code Annotated (MCA), which would revise and add regulations in the Administrative Rules of Montana (ARM) pertaining to ownership and control. These changes were required by an October 2, 2009, letter from OSM to Montana and in response, Senate bill 92, was approved by the 2013 Montana Legislature. Montana also proposed other ARM revisions unrelated to ownership and control.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02981/montana-regulatory-program",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02981.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
+      "source_id": "2026-04033",
+      "title": "Proposal of Special Measure Regarding MBaer Merchant Bank AG as a Financial Institution Operating Outside of the United States of Primary Money Laundering Concern",
+      "abstract": "FinCEN is issuing a notice of proposed rulemaking, pursuant to section 311 of the USA PATRIOT Act, that finds MBaer Merchant Bank AG (MBaer), a financial institution based in Switzerland, to be of primary money laundering concern, and proposes imposing a special measure to: (1) prohibit U.S. financial institutions from opening or maintaining a correspondent account for, or on behalf of, MBaer; (2) require U.S. financial institutions to take reasonable steps not to process a transaction for the correspondent account in the United States of a foreign banking institution if such a transaction involves MBaer; and (3) require U.S. financial institutions to apply special due diligence to their foreign correspondent accounts that is reasonably designed to guard against their use to process transactions involving MBaer.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04033/proposal-of-special-measure-regarding-mbaer-merchant-bank-ag-as-a-financial-institution-operating",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04033.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
-        "Interior Department",
-        "Surface Mining Reclamation and Enforcement Office"
+        "Treasury Department",
+        "Financial Crimes Enforcement Network"
       ],
       "agency_ids": [
-        253,
-        480
+        497,
+        194
       ],
-      "action": "Final rule; approval of amendment.",
-      "dates": "The effective date is March 16, 2026.",
+      "action": "Notice of proposed rulemaking.",
+      "dates": "Written comments on the notice of proposed rulemaking must be submitted on or before April 1, 2026.",
       "cfr_references": [
-        "30 CFR 926"
+        "31 CFR 1010"
       ],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02955",
-      "title": "60-Day Notice of Proposed Information Collection: Housing Choice Voucher Program and Tribal HUD-VASH",
-      "abstract": "HUD is seeking approval from the Office of Management and Budget (OMB) for the information collection described below. In accordance with the Paperwork Reduction Act, HUD is requesting comment from all interested parties on the proposed collection of information. The purpose of this notice is to allow for 60 days of public comment.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02955/60-day-notice-of-proposed-information-collection-housing-choice-voucher-program-and-tribal-hud-vash",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02955.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Housing and Urban Development Department"
+      "regulation_ids": [
+        "1506-AB71"
       ],
-      "agency_ids": [
-        228
-      ],
-      "action": "Notice.",
-      "dates": "Comments Due Date: April 14, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02947",
-      "title": "Constellation Energy Generation, LLC; LaSalle County Station, Units 1 and 2; License Amendment Request",
-      "abstract": "The U.S. Nuclear Regulatory Commission (NRC) is considering issuance of amendments to Renewed Facility Operating Licenses (RFOLs) No. NPF-11 and NPF-18, issued to Constellation Energy Generation, LLC (Constellation, the licensee) for LaSalle County Station, Units 1 and 2 (LaSalle). The proposed license amendments, if granted, would temporarily revise the Technical Specification (TS) Limiting Condition for Operation (LCO) 3.3.7.1, \"Control Room Area Filtration (CRAF) System Instrumentation,\" until December 31, 2027. The Atomic Energy Act of 1954, as amended, (the Act) grants the Commission authority to issue and make immediately effective any amendment to an operating license upon a determination by the Commission that such amendment involves no significant hazards consideration (NSHC), notwithstanding the pendency before the Commission of a request for a hearing from any person. For this amendment request, the NRC proposes to determine that it involves NSHC.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02947/constellation-energy-generation-llc-lasalle-county-station-units-1-and-2-license-amendment-request",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02947.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Nuclear Regulatory Commission"
-      ],
-      "agency_ids": [
-        383
-      ],
-      "action": "Opportunity to comment, request a hearing and to petition for leave to intervene.",
-      "dates": "Submit comments by March 16, 2026. Comments received after this date will be considered if it is practical to do so, but the NRC is able to ensure consideration only for comments received on or before this date. Requests for a hearing or petition for leave to intervene must be filed by April 14, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02917",
-      "title": "State of Wyoming: NRC Staff Assessment of a Proposed Amendment to the Agreement Between the Nuclear Regulatory Commission and the State of Wyoming",
-      "abstract": "As required by Section 274e. of the Atomic Energy Act of 1954, as amended (AEA), the U.S. Nuclear Regulatory Commission (NRC or Commission) is publishing the proposed Agreement for public comment (Appendix A). The NRC is also publishing the summary of a draft assessment by the NRC staff of the State of Wyoming's regulatory source material program. Comments are requested on the proposed amendment to the Agreement and its effect on public health and safety. Comments are also requested on the draft staff assessment, the adequacy of the State of Wyoming's source material program, and the adequacy of the staffing of the State's program, as discussed in this document.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02917/state-of-wyoming-nrc-staff-assessment-of-a-proposed-amendment-to-the-agreement-between-the-nuclear",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02917.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Nuclear Regulatory Commission"
-      ],
-      "agency_ids": [
-        383
-      ],
-      "action": "Proposed amendment to state agreement; request for comment.",
-      "dates": "Submit comments by March 2, 2026. Comments received after this date will be considered if it is practical to do so, but the Commission is able to ensure consideration only for comments received on or before this date.",
-      "cfr_references": [],
-      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -2064,222 +2005,30 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-02960",
-      "title": "Marine Mammals; Proposed Incidental Harassment Authorization for the Southern Beaufort Sea Stock of Polar Bears During Legacy Well Remediation Activities, North Slope of Alaska; Draft Environmental Assessment",
-      "abstract": "We, the U.S. Fish and Wildlife Service, in response to a request under the Marine Mammal Protection Act from the Bureau of Land Management, propose to authorize nonlethal incidental take by harassment of small numbers of Southern Beaufort Sea (SBS) polar bears (Ursus maritimus) for 1 year from the date of issuance of the incidental harassment authorization (IHA). The applicant requested this authorization for take by harassment that may result from activities associated with oil well plugging and reclamation, soil sampling, snow trail, pad, and airstrip construction, and summer cleanup activities in the North Slope Borough of Alaska between western Smith Bay and Oliktok. This proposed authorization, if finalized, will be for up to 10 takes of polar bears by Level B harassment. No Level A harassment or lethal take is requested, expected, or proposed to be authorized. We invite comments on the proposed IHA and accompanying draft environmental assessment from the public, Tribes, and local, State, and Federal agencies.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02960/marine-mammals-proposed-incidental-harassment-authorization-for-the-southern-beaufort-sea-stock-of",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02960.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Interior Department",
-        "Fish and Wildlife Service"
-      ],
-      "agency_ids": [
-        253,
-        197
-      ],
-      "action": "Notice of receipt of application; proposed incidental harassment authorization; notice of availability of draft environmental assessment; request for comments.",
-      "dates": "Comments must be received by March 16, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02954",
-      "title": "Agency Information Collection Activities: Requests for Comments; Clearance of a New Approval of Information Collection: FAA Request Form for CUAS Coordination",
-      "abstract": "In accordance with the Paperwork Reduction Act of 1995, FAA invites public comments about our intention to request the Office of Management and Budget (OMB) approval for a new information collection. The Federal Register Notice with a 60-day comment period soliciting comments on the following collection of information was published on February 11, 2026. The collection involves data for Counter-Unmanned Aircraft System Deployment. The information to be collected will be used to process interagency and local law enforcement CUAS deployment packages and/or is necessary because FAA coordination is federally mandated.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02954/agency-information-collection-activities-requests-for-comments-clearance-of-a-new-approval-of",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02954.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Aviation Administration"
-      ],
-      "agency_ids": [
-        492,
-        159
-      ],
-      "action": "Notice and request for comments.",
-      "dates": "Written comments should be submitted by March 3, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02948",
-      "title": "Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA) Rulemaking; Town Hall Meetings",
-      "abstract": "This notice announces town hall meetings to allow external stakeholders a limited additional opportunity to provide input on refining the scope and burden of the CIRCIA Notice of Proposed Rulemaking (NPRM) issued in the Federal Register on April 4, 2024. The proposed CIRCIA rulemaking seeks to implement the Cyber Incident Reporting for Critical Infrastructure Act of 2022, as amended, by implementing covered cyber incident and ransom payment reporting requirements for covered entities.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02948/cyber-incident-reporting-for-critical-infrastructure-act-circia-rulemaking-town-hall-meetings",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02948.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Proposed Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Homeland Security Department"
-      ],
-      "agency_ids": [
-        227
-      ],
-      "action": "Notification of town hall meetings.",
-      "dates": "Town hall meetings are scheduled to be held on the following dates:",
-      "cfr_references": [
-        "6 CFR 226"
-      ],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02936",
-      "title": "Energy Conservation Program: Energy Conservation Standards for Small Electric Motors",
-      "abstract": "The Energy Policy and Conservation Act, as amended (\"EPCA\"), prescribes energy conservation standards for various consumer products and certain commercial and industrial equipment, including small electric motors (\"SEMs\"). EPCA also requires the U.S. Department of Energy (\"DOE\") to periodically determine whether more-stringent standards would be technologically feasible and economically justified, and would result in significant conservation of energy. In this final determination, DOE has determined that more-stringent energy conservation standards for SEMs would not be cost-effective and, therefore, DOE has determined that energy conservation standards for SEMs should not be amended.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02936/energy-conservation-program-energy-conservation-standards-for-small-electric-motors",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02936.pdf",
-      "published_date": "2026-02-13",
+      "source_id": "2026-04136",
+      "title": "Office of the Chief Administrative Hearing Officer Electronic Filing",
+      "abstract": "The Executive Office for Immigration Review (\"EOIR\") is implementing electronic filing and records applications for all cases before the Office of the Chief Administrative Hearing Officer (\"OCAHO\"). This interim final rule (\"IFR\") updates the relevant regulations necessary to implement these electronic filing and records applications, including by requiring certain users to file documents electronically and changing service of process methods. This IFR also includes several additional minor changes to OCAHO's rules of practice and procedure to clarify and improve upon the existing regulatory language.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04136/office-of-the-chief-administrative-hearing-officer-electronic-filing",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04136.pdf",
+      "published_date": "2026-03-02",
       "document_type": "Rule",
       "document_subtype": "",
       "agencies": [
-        "Energy Department"
+        "Justice Department",
+        "Executive Office for Immigration Review"
       ],
       "agency_ids": [
-        136
+        268,
+        149
       ],
-      "action": "Final determination.",
-      "dates": "The effective date of this final determination is March 16, 2026.",
+      "action": "Interim final rule; request for comments.",
+      "dates": "Effective date: This IFR is effective March 2, 2026.",
       "cfr_references": [
-        "10 CFR 431"
+        "28 CFR 68"
       ],
       "regulation_ids": [
-        "1904-AF39"
+        "1125-AB23"
       ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02935",
-      "title": "Energy Conservation Program: Energy Conservation Standards for Metal Halide Lamp Fixtures",
-      "abstract": "The Energy Policy and Conservation Act, as amended (\"EPCA\"), prescribes energy conservation standards for various consumer products and certain commercial and industrial equipment, including metal halide lamp fixtures (\"MHLFs\"). EPCA also requires the U.S. Department of Energy (\"DOE\") to periodically review its existing standards to determine whether more-stringent standards would be technologically feasible and economically justified and would result in significant energy savings. In this final determination, DOE has determined that more-stringent energy conservation standards for MHLFs would not be cost effective and, therefore, DOE does not need to amend its energy conservation standards for MHLFs.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02935/energy-conservation-program-energy-conservation-standards-for-metal-halide-lamp-fixtures",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02935.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Energy Department"
-      ],
-      "agency_ids": [
-        136
-      ],
-      "action": "Final determination.",
-      "dates": "The effective date of this final determination is March 16, 2026.",
-      "cfr_references": [
-        "10 CFR 431"
-      ],
-      "regulation_ids": [
-        "1904-AF44"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02933",
-      "title": "Afidopyropen; Pesticide Tolerances",
-      "abstract": "This regulation amends the current tolerance for residues of the insecticide afidopyropen in or on the food and feed commodities of raw agricultural commodity of strawberry by increasing it from 0.15 parts per million (ppm) to 0.3 ppm and removes the established time- limited tolerance in or on strawberry at 0.3 ppm. Under the Federal Food, Drug, and Cosmetic Act (FFDCA), BASF Corporation submitted a petition to EPA requesting that EPA establish a maximum permissible level for residues of this pesticide in or on the identified commodity.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02933/afidopyropen-pesticide-tolerances",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02933.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Environmental Protection Agency"
-      ],
-      "agency_ids": [
-        145
-      ],
-      "action": "Final rule.",
-      "dates": "This rule is effective on February 13, 2026. Objections and requests for hearings must be received on or before April 14, 2026 and must be filed in accordance with the instructions provided in 40 CFR part 178 (see also Unit I.D. of this document).",
-      "cfr_references": [
-        "40 CFR 180"
-      ],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02926",
-      "title": "Rice Bran Wax in Pesticide Formulations; Exemption From the Requirement for a Tolerance",
-      "abstract": "This regulation establishes an exemption from the requirement of a tolerance for residues of rice bran wax (CAS Reg. No. 8016-60-2) when used as an inert ingredient (lubricant) on growing crops and raw agricultural commodities pre- and post-harvest, when applied to animals, and in antimicrobial formulations applied to food-contact surfaces in public eating places, dairy-processing equipment, and food- processing equipment and utensils. Micro Powders, Inc., submitted a petition to EPA under the Federal Food, Drug, and Cosmetic Act (FFDCA) requesting establishment of an exemption from the requirement of a tolerance. This regulation eliminates the need to establish a maximum permissible level for residues of rice bran wax when used in accordance with the terms of those exemptions.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02926/rice-bran-wax-in-pesticide-formulations-exemption-from-the-requirement-for-a-tolerance",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02926.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Environmental Protection Agency"
-      ],
-      "agency_ids": [
-        145
-      ],
-      "action": "Final rule.",
-      "dates": "This regulation is effective February 13, 2026. Objections and requests for hearings must be received on or before April 14, 2026 and must be filed in accordance with the instructions provided in 40 CFR part 178 (see also Unit I.C. of this document).",
-      "cfr_references": [
-        "40 CFR 180"
-      ],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02922",
-      "title": "Sulfonic Acids, C14-16-Alkane Hydroxy and C14-16-Alkene, Sodium Salts in Pesticide Formulations; Exemption From the Requirement for a Tolerance",
-      "abstract": "This regulation establishes an exemption from the requirement of a tolerance for residues of sulfonic acids, C14-16-alkane hydroxy and C14-16-alkene, sodium salts (CAS Reg. No. 68439-57-6) when used as an inert ingredient (surfactant) in antimicrobial formulations applied to food-contact surfaces in public eating places, dairy-processing equipment, and food-processing equipment and utensils under 40 CFR 180.940(a), at a maximum concentration of 1% in pesticide formulations. Ramboll US Consulting Inc., on behalf of Ecolab Inc., submitted a petition to EPA under the Federal Food, Drug, and Cosmetic Act (FFDCA), requesting establishment of an exemption from the requirement of a tolerance. This regulation eliminates the need to establish a maximum permissible level for residues of sulfonic acids, C14-16-alkane hydroxy and C14-16-alkene, sodium salts, when used in accordance with the terms of those exemptions.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02922/sulfonic-acids-c14-16-alkane-hydroxy-and-c14-16-alkene-sodium-salts-in-pesticide-formulations",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02922.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Environmental Protection Agency"
-      ],
-      "agency_ids": [
-        145
-      ],
-      "action": "Final rule.",
-      "dates": "This regulation is effective February 13, 2026. Objections and requests for hearings must be received on or before April 14, 2026 and must be filed in accordance with the instructions provided in 40 CFR part 178 (see also Unit I.C. of this document).",
-      "cfr_references": [
-        "40 CFR 180"
-      ],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02916",
-      "title": "Hexythiazox; Pesticide Tolerances",
-      "abstract": "This regulation establishes a tolerance for residues of the insecticide hexythiazox and its metabolites in or on lemon/lime, subgroup 10-10B at 0.6 parts per million (ppm). This regulation also establishes separate regional tolerances for grapefruit, subgroup 10- 10C (CA, AZ, TX only) at 0.5 ppm and orange, subgroup 10-10A (CA, AZ, TX only) at 0.5 ppm. Under the Federal Food, Drug, and Cosmetic Act (FFDCA), Gowan Company submitted a petition to EPA requesting that EPA establish a maximum permissible level for residues of this pesticide.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02916/hexythiazox-pesticide-tolerances",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02916.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Environmental Protection Agency"
-      ],
-      "agency_ids": [
-        145
-      ],
-      "action": "Final rule.",
-      "dates": "This rule is effective on February 13, 2026. Objections and requests for hearings must be received on or before April 14, 2026 and must be filed in accordance with the instructions provided in 40 CFR part 178 (see also Unit I.C. of this document).",
-      "cfr_references": [
-        "40 CFR 180"
-      ],
-      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -2556,32 +2305,6 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-02978",
-      "title": "Home Visits in Program of Comprehensive Assistance for Family Caregivers During COVID-19 National Emergency",
-      "abstract": "The Department of Veterans Affairs (VA) is removing a regulation that was adopted to provide temporary flexibility under VA's Program of Comprehensive Assistance for Family Caregivers (PCAFC) but is no longer applicable. The regulation relaxed PCAFC requirements for in-person home visits during the national emergency related to Coronavirus Disease-2019 (COVID-19). The removal of this regulation is appropriate because the national emergency related to COVID-19 (COVID- 19 National Emergency) has ended and the regulation has no effect.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02978/home-visits-in-program-of-comprehensive-assistance-for-family-caregivers-during-covid-19-national",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02978.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Veterans Affairs Department"
-      ],
-      "agency_ids": [
-        520
-      ],
-      "action": "Final rule; rescission.",
-      "dates": "This rule is effective February 13, 2026.",
-      "cfr_references": [
-        "38 CFR 71"
-      ],
-      "regulation_ids": [
-        "2900-AQ96"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
       "source_id": "2026-03971",
       "title": "Medicare, Medicaid, and Children's Health Insurance Programs: Announcement of Nationwide Temporary Moratoria on Enrollment of Durable Medical Equipment, Prosthetics, Orthotics, and Supplies (DMEPOS) Supplier Medical Supply Companies",
       "abstract": "This notice announces the imposition of a 6-month nationwide moratorium on the Medicare enrollment of DMEPOS supplier medical supply companies.",
@@ -2632,65 +2355,6 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-02961",
-      "title": "Electronic Bond Transmission",
-      "abstract": "U.S. Customs and Border Protection (CBP) collects bonds from parties engaging in transactions or activities with CBP to adequately protect the revenue of the United States and ensure compliance with U.S. statutes and regulations. This document proposes to amend the CBP regulations to require that most bonds be transmitted to CBP electronically via a specialized system by the surety securing the bond, or by the principal on a bond secured by cash in lieu of surety. The changes proposed in this document further centralize and streamline CBP's bond program.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02961/electronic-bond-transmission",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02961.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Proposed Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Homeland Security Department",
-        "U.S. Customs and Border Protection"
-      ],
-      "agency_ids": [
-        227,
-        501
-      ],
-      "action": "Proposed rule; request for comments.",
-      "dates": "Comments on the proposed rule must be received on or before April 14, 2026.",
-      "cfr_references": [
-        "19 CFR 4",
-        "19 CFR 10",
-        "19 CFR 11",
-        "19 CFR 12",
-        "19 CFR 18",
-        "19 CFR 19",
-        "19 CFR 24",
-        "19 CFR 54",
-        "19 CFR 112",
-        "19 CFR 113",
-        "19 CFR 118",
-        "19 CFR 122",
-        "19 CFR 123",
-        "19 CFR 125",
-        "19 CFR 127",
-        "19 CFR 128",
-        "19 CFR 132",
-        "19 CFR 133",
-        "19 CFR 134",
-        "19 CFR 141",
-        "19 CFR 142",
-        "19 CFR 144",
-        "19 CFR 146",
-        "19 CFR 147",
-        "19 CFR 148",
-        "19 CFR 149",
-        "19 CFR 151",
-        "19 CFR 162",
-        "19 CFR 163",
-        "19 CFR 190",
-        "19 CFR 191"
-      ],
-      "regulation_ids": [
-        "1515-AE49",
-        "1685-AA24"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
       "source_id": "2026-03388",
       "title": "Collections From Central Valley Project Power Contractors To Carry Out the Restoration, Improvement and Acquisition of Environmental Habitat Provisions of the Central Valley Project Improvement Act of 1992",
       "abstract": "The collection procedures for the Sierra Nevada (SN) region have been confirmed, approved, and placed into effect. These collection procedures supersede those previously published in the Federal Register on April 16, 2003. The collection procedures remain unchanged but are being republished, for administrative purposes, to remove references to a specific Western Area Power Administration (WAPA) SN Power Marketing Plan (PMP).",
@@ -2709,30 +2373,6 @@
       ],
       "action": "Notice of order concerning collection procedures.",
       "dates": "The collection procedures are effective on the first day of the first full billing period, beginning on or after April 1, 2026, and will remain in effect until superseded.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02928",
-      "title": "Proposed Information Collection Activity: 2024 Low Income Home Energy Assistance Program (LIHEAP) Residential Energy Consumption Survey (RECS) Data Match",
-      "abstract": "The Office of Community Services (OCS) is requesting a reinstatement with changes to the collection and reporting of administrative household beneficiary data from state Low Income Home Energy Assistance Program (LIHEAP) grant recipients. The LIHEAP Residential Energy Consumption Survey (RECS) Data Match request is completed approximately every five years, to support research and analysis of LIHEAP program impacts. Office of Management and Budget (OMB) approved the original collection under #: 0970-0486. Through the LIHEAP RECS data match, OCS requires state grant recipients to provide household-level recipient data. This request will cover data for fiscal years 2024, and 2025, and include revisions aimed to reduce the reporting burden by approximately 30 percent compared to the last such data collection in 2021.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02928/proposed-information-collection-activity-2024-low-income-home-energy-assistance-program-liheap",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02928.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Health and Human Services Department",
-        "Children and Families Administration"
-      ],
-      "agency_ids": [
-        221,
-        49
-      ],
-      "action": "Request for public comments.",
-      "dates": "Comments due April 14, 2026.",
       "cfr_references": [],
       "regulation_ids": [],
       "authority_weight": 0.9
@@ -3079,6 +2719,35 @@
     },
     {
       "source": "federal_register",
+      "source_id": "2026-04095",
+      "title": "Establishing Flexibility for Implementation of Work Requirements and Term Limits",
+      "abstract": "This proposed rule would amend HUD regulations to provide Public Housing Agencies (PHAs) and certain Multifamily Housing Owners (Owners) with the option to implement work requirements for work- eligible adults and term limits for non-elderly, non-disabled families residing in public housing or receiving assistance through Housing Choice Vouchers (HCV), Project-Based Vouchers (PBV), or Project-Based Rental Assistance (PBRA). This proposed rule is necessary to further the statutory goals of the public housing, HCV, PBV, and PBRA programs to provide maximum local flexibility for PHAs, promote self-sufficiency for residents, promote economically mixed housing in the PBRA program, and address the affordable housing shortage.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04095/establishing-flexibility-for-implementation-of-work-requirements-and-term-limits",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04095.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Proposed Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Housing and Urban Development Department"
+      ],
+      "agency_ids": [
+        228
+      ],
+      "action": "Notice of proposed rulemaking.",
+      "dates": "Comment due date: May 1, 2026.",
+      "cfr_references": [
+        "24 CFR 5",
+        "24 CFR 960",
+        "24 CFR 982",
+        "24 CFR 983"
+      ],
+      "regulation_ids": [
+        "2501-AE15"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
       "source_id": "2026-03427",
       "title": "State Home Care Agreements for State Home Medical Model Adult Day Health Care",
       "abstract": "The Department of Veterans Affairs (VA) proposes to amend two of its State Veterans Home (State home) regulations. One amendment would define medical model adult day health care (MMADHC). The other would codify into regulation VA's ability to enter into State Home Care Agreements (SHCA) for MMADHC and pay for services rendered. Additionally, this rulemaking proposes the methodology for the payment rate.",
@@ -3294,6 +2963,178 @@
       "regulation_ids": [
         "2126-AC93"
       ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04104",
+      "title": "Agency Information Collection Activities; North American Woodcock Singing Ground Survey",
+      "abstract": "In accordance with the Paperwork Reduction Act of 1995, we, the U.S. Fish and Wildlife Service (Service), are proposing to renew an information collection without change.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04104/agency-information-collection-activities-north-american-woodcock-singing-ground-survey",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04104.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Notice",
+      "document_subtype": "icr",
+      "agencies": [
+        "Interior Department",
+        "Fish and Wildlife Service"
+      ],
+      "agency_ids": [
+        253,
+        197
+      ],
+      "action": "Notice of information collection; request for comment.",
+      "dates": "Interested persons are invited to submit comments on or before May 1, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04088",
+      "title": "National Bank Chartering",
+      "abstract": "The Office of the Comptroller of the Currency (OCC) is amending its rule related to chartering of national banks to clarify the longstanding authority of national banks limited to the operations of trust companies and activities related thereto to engage in non- fiduciary activities in addition to their fiduciary activities.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04088/national-bank-chartering",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04088.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Treasury Department",
+        "Comptroller of the Currency"
+      ],
+      "agency_ids": [
+        497,
+        80
+      ],
+      "action": "Final rule.",
+      "dates": "The final rule is effective on April 1, 2026.",
+      "cfr_references": [
+        "12 CFR 5"
+      ],
+      "regulation_ids": [
+        "1557-AF47"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04079",
+      "title": "Foreign Endangered Species; Receipt of Permit Applications",
+      "abstract": "We, the U.S. Fish and Wildlife Service, invite the public to comment on applications to conduct certain activities with foreign species that are listed as endangered under the Endangered Species Act (ESA). With some exceptions, the ESA prohibits activities with listed species unless Federal authorization is issued that allows such activities. The ESA also requires that we invite public comment before issuing permits for any activity otherwise prohibited by the ESA with respect to any endangered species.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04079/foreign-endangered-species-receipt-of-permit-applications",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04079.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        "Fish and Wildlife Service"
+      ],
+      "agency_ids": [
+        253,
+        197
+      ],
+      "action": "Notice of receipt of permit applications; request for comments.",
+      "dates": "We must receive comments by April 1, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04055",
+      "title": "Notice of Inventory Completion: Santa Barbara Museum of Natural History, Santa Barbara, CA",
+      "abstract": "In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the Santa Barbara Museum of Natural History has completed an inventory of human remains and has determined that there is a cultural affiliation between the human remains and Indian Tribes or Native Hawaiian organizations in this notice.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04055/notice-of-inventory-completion-santa-barbara-museum-of-natural-history-santa-barbara-ca",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04055.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        "National Park Service"
+      ],
+      "agency_ids": [
+        253,
+        362
+      ],
+      "action": "Notice.",
+      "dates": "Repatriation of the human remains in this notice may occur on or after April 1, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04042",
+      "title": "Notice of Intended Disposition: U.S. Department of the Interior, Bureau of Land Management, Colorado State Office, Lakewood, CO",
+      "abstract": "In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the U.S. Department of the Interior, Bureau of Land Management, Colorado State Office (BLM Colorado State Office), intends to carry out the disposition of human remains, associated funerary objects, unassociated funerary objects, sacred objects, or objects of cultural patrimony removed from Federal or Tribal lands to the lineal descendants, Indian Tribe, or Native Hawaiian organization with priority for disposition in this notice.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04042/notice-of-intended-disposition-us-department-of-the-interior-bureau-of-land-management-colorado",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04042.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        "National Park Service"
+      ],
+      "agency_ids": [
+        253,
+        362
+      ],
+      "action": "Notice.",
+      "dates": "Disposition of the human remains or cultural items in this notice may occur on or after April 1, 2026. If no claim for disposition is received by March 2, 2027, the human remains or cultural items in this notice will become unclaimed human remains or cultural items.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04032",
+      "title": "Foreign Endangered Species; Receipt of Permit Applications",
+      "abstract": "We, the U.S. Fish and Wildlife Service, invite the public to comment on applications to conduct certain activities with foreign species that are listed as endangered under the Endangered Species Act (ESA). With some exceptions, the ESA prohibits activities with listed species unless Federal authorization is issued that allows such activities. The ESA also requires that we invite public comment before issuing permits for any activity otherwise prohibited by the ESA with respect to any endangered species.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04032/foreign-endangered-species-receipt-of-permit-applications",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04032.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        "Fish and Wildlife Service"
+      ],
+      "agency_ids": [
+        253,
+        197
+      ],
+      "action": "Notice of receipt of permit applications; request for comments.",
+      "dates": "We must receive comments by April 1, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04021",
+      "title": "Foreign Endangered Species; Receipt of Permit Applications",
+      "abstract": "We, the U.S. Fish and Wildlife Service, invite the public to comment on applications to conduct certain activities with foreign species that are listed as endangered under the Endangered Species Act (ESA). With some exceptions, the ESA prohibits activities with listed species unless Federal authorization is issued that allows such activities. The ESA also requires that we invite public comment before issuing permits for any activity otherwise prohibited by the ESA with respect to any endangered species.",
+      "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04021/foreign-endangered-species-receipt-of-permit-applications",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/pdf/2026-04021.pdf",
+      "published_date": "2026-03-02",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        "Fish and Wildlife Service"
+      ],
+      "agency_ids": [
+        253,
+        197
+      ],
+      "action": "Notice of receipt of permit applications; request for comments.",
+      "dates": "We must receive comments by April 1, 2026",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -3837,30 +3678,6 @@
       "action": "Notice of modified systems of records.",
       "dates": "Submit comments on or before March 19, 2026. The modifications will be effective upon publication and the new routine uses will be applicable 30 days after publication March 19, 2026 unless Treasury receives comments and determines that changes to the system of records notice are necessary.",
       "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02915",
-      "title": "Removal of Regulations for the John Heinz Neighborhood Development Program",
-      "abstract": "This rule removes HUD's John Heinz Neighborhood Development Program regulations because the program has not been funded since 1998 and all grants have been closed out.",
-      "url": "https://www.federalregister.gov/documents/2026/02/13/2026-02915/removal-of-regulations-for-the-john-heinz-neighborhood-development-program",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/pdf/2026-02915.pdf",
-      "published_date": "2026-02-13",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Housing and Urban Development Department"
-      ],
-      "agency_ids": [
-        228
-      ],
-      "action": "Final rule.",
-      "dates": "Effective Date: March 16, 2026.",
-      "cfr_references": [
-        "24 CFR 594"
-      ],
       "regulation_ids": [],
       "authority_weight": 0.9
     }

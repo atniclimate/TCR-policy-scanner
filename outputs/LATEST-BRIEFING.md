@@ -1,13 +1,13 @@
-# TCR Policy Briefing — 2026-02-27
+# TCR Policy Briefing — 2026-03-02
 
-**Scan Date:** 2026-02-27  
-**Items Above Threshold:** 7165  
-**New Since Last Scan:** 195  
-**Knowledge Graph:** 5991 nodes, 6059 edges  
+**Scan Date:** 2026-03-02  
+**Items Above Threshold:** 7158  
+**New Since Last Scan:** 24  
+**Knowledge Graph:** 6004 nodes, 6071 edges  
 
 ## Executive Summary
 
-This scan identified **195 new policy development(s)** since the last scan.
+This scan identified **24 new policy development(s)** since the last scan.
 
 ## Reconciliation Watch
 
@@ -34,287 +34,37 @@ This scan identified **195 new policy development(s)** since the last scan.
 
 ## New Developments
 
-### Rural Microentrepreneur Assistance Program **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361373](https://www.grants.gov/search-results-detail/361373)
-
-### Rural Microentrepreneur Program(RMAP) **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361374](https://www.grants.gov/search-results-detail/361374)
-
-### Dental Faculty Loan Repayment Program (DFLRP) **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361375](https://www.grants.gov/search-results-detail/361375)
-
-### Strategies to Link, Engage, and Retain Men with HIV in Care: Evaluation Provider **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361376](https://www.grants.gov/search-results-detail/361376)
-
-### Strategies to Link, Engage, and Retain Men with HIV in Care: Implementation Technical Assistance Provider **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361377](https://www.grants.gov/search-results-detail/361377)
-
-### Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs **[NEW]**
+### Peer Supports for Augmentative and Alternative Communication **[NEW]**
 
 - **Score:** 0.72
 - **Source:** Grants Gov
-- **Published:** 02/25/2026
+- **Published:** 02/27/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361366](https://www.grants.gov/search-results-detail/361366)
+- **Link:** [https://www.grants.gov/search-results-detail/361379](https://www.grants.gov/search-results-detail/361379)
 
-### Next-Generation Geothermal Field Tests and Geothermal Resource Characterization and Confirmation **[NEW]**
+### NextTech: Translational Development of Next-Generation Diagnostic and Therapeutic Devices (R18 Clinical Trial Not Allowed) **[NEW]**
 
 - **Score:** 0.72
 - **Source:** Grants Gov
-- **Published:** 02/25/2026
+- **Published:** 02/27/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361365](https://www.grants.gov/search-results-detail/361365)
+- **Link:** [https://www.grants.gov/search-results-detail/361380](https://www.grants.gov/search-results-detail/361380)
 
-### The Reentry Employment in Skilled Trades, Advanced Manufacturing, Registered Apprenticeships, and Training (RESTART) Initiative **[NEW]**
+### Facilitator Training for Victim Offender Dialogue **[NEW]**
 
 - **Score:** 0.72
 - **Source:** Grants Gov
-- **Published:** 02/25/2026
+- **Published:** 02/27/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361368](https://www.grants.gov/search-results-detail/361368)
+- **Link:** [https://www.grants.gov/search-results-detail/361378](https://www.grants.gov/search-results-detail/361378)
 
-### Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Therapeutic Agent Characterization and Preclinical Efficacy Studies **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361370](https://www.grants.gov/search-results-detail/361370)
-
-### Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Assay Development and Therapeutic Agent Identification **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361369](https://www.grants.gov/search-results-detail/361369)
-
-### Region 9 Fiscal Year 2025 Wetland Program Development Grants **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/24/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361361](https://www.grants.gov/search-results-detail/361361)
-
-### Delta Rural Integrated Health Network Program **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/24/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361364](https://www.grants.gov/search-results-detail/361364)
-
-### Improving Chronic Conditions Through Inexpensive Interventions **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/23/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361348](https://www.grants.gov/search-results-detail/361348)
-
-### Precision Measurement Grant Program **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/23/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361351](https://www.grants.gov/search-results-detail/361351)
-
-### University Centers for Developmental Disabilities in Education, Research, and Service **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/23/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361349](https://www.grants.gov/search-results-detail/361349)
-
-### HEAL Initiative: Program to Reveal and Evaluate Cells-to-gene Information that Specify Intricacies, Origins and the Nature of (PRECISION) Human Pain Network **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361334](https://www.grants.gov/search-results-detail/361334)
-
-### FY 2025 Region 4 Wetlands Program **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361338](https://www.grants.gov/search-results-detail/361338)
-
-### Region 08 Fiscal Year 2025 Wetland Program Development Grants **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361337](https://www.grants.gov/search-results-detail/361337)
-
-### Feed the Future Innovation Labs **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361339](https://www.grants.gov/search-results-detail/361339)
-
-### Region 1 Fiscal Year 2025 Wetland Program Development Grants **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361335](https://www.grants.gov/search-results-detail/361335)
-
-### OSERS-OSEP: State Technical Assistance Projects to Improve Services and Results for DeafBlind Children, Assistance Listing Number 84.326T **[NEW]**
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361336](https://www.grants.gov/search-results-detail/361336)
-
-### FY 2026 Young Southeast Asian Leaders Initiative (YSEALI)  Professional Fellowship **[NEW]**
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/19/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361330](https://www.grants.gov/search-results-detail/361330)
-
-### Region 2 Fiscal Year 2025 Wetland Program Development Grants **[NEW]**
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/19/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361331](https://www.grants.gov/search-results-detail/361331)
-
-### Comprehensive Addiction and Recovery Act (CARA) **[NEW]**
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/19/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361329](https://www.grants.gov/search-results-detail/361329)
-
-### OJJDP FY25 Victims of Child Abuse Act Training and Technical Assistance for Child Abuse Prosecutors **[NEW]**
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/19/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361328](https://www.grants.gov/search-results-detail/361328)
-
-### Pathways to Enable Secure Open-Source Ecosystems **[NEW]**
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/19/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361333](https://www.grants.gov/search-results-detail/361333)
-
-### An act to provide for reconciliation pursuant to title II of H. Con. Res. 14. **[NEW]**
-
-- **Score:** 0.69
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 1
-- **Programs:** IRS Elective Pay
-- **Summary:** Became Public Law No: 119-21.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1?format=json](https://api.congress.gov/v3/bill/119/hr/1?format=json)
-
-### Computer and Information Science and Engineering (CISE): Future Computing Research **[NEW]**
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 07/25/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360149](https://www.grants.gov/search-results-detail/360149)
-
-### Cancer Prevention and Control Clinical Trials Planning Grant Program (U34 Clinical Trials Optional) **[NEW]**
+### Cancer Prevention and Control Clinical Trials Planning Grant Program (R34 Clinical Trials Optional) **[NEW]**
 
 - **Score:** 0.65
 - **Source:** Grants Gov
@@ -322,1633 +72,219 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/356978](https://www.grants.gov/search-results-detail/356978)
+- **Link:** [https://www.grants.gov/search-results-detail/356979](https://www.grants.gov/search-results-detail/356979)
 
-### BRAIN Initiative: Clinical Studies to Advance Next-Generation Devices for Recording and Modulation in the Human Central Nervous System (UH3 Clinical Trial Optional) **[NEW]**
+### FY26 Obligation: 55IH2738580 — RED LAKE RESERVATION HOUSING **[NEW]**
 
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 11/05/2024
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/356982](https://www.grants.gov/search-results-detail/356982)
-
-### Prior Notice of Citizen Suits **[NEW]**
-
-- **Score:** 0.62
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Proposed Rule
-- **Programs:** EPA STAG, DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to amend its regulations prescribing the manner in which prior notice of citizen suits is to be provided as required under the citizen suit provisions of the Clean Air Act (CAA), the Clean Water Act (CWA), the Safe Drinking Water Act (SDWA), the Noise Control Act (NCA), the Resource Conservation and Recovery Act (RCRA), the Comprehensive Environmental Response, Compensation, and Liability Act (CERCLA), and the Toxic Substances Control Act (T
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03646/prior-notice-of-citizen-suits](https://www.federalregister.gov/documents/2026/02/24/2026-03646/prior-notice-of-citizen-suits)
-
-### Extending the Reporting Deadline Under the Greenhouse Gas Reporting Rule for 2025 **[NEW]**
-
-- **Score:** 0.62
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The U.S. Environmental Protection Agency (EPA) is promulgating this final rule to extend the reporting deadline under the Greenhouse Gas Reporting Rule for reporting year 2025 from March 31, 2026 to October 30, 2026. This final rule changes only the reporting deadline for annual greenhouse gas (GHG) reports for reporting year 2025 in response to comments received on the proposed rescission of the Greenhouse Gas Reporting Program (GHGRP). The EPA anticipates addressing the remainder of the propos
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03995/extending-the-reporting-deadline-under-the-greenhouse-gas-reporting-rule-for-2025](https://www.federalregister.gov/documents/2026/02/27/2026-03995/extending-the-reporting-deadline-under-the-greenhouse-gas-reporting-rule-for-2025)
-
-### FY26 Obligation: 02F56401 — JENA BAND OF CHOCTAW INDIANS **[NEW]**
-
-- **Score:** 0.58
-- **Source:** Usaspending
-- **Published:** 2024-10-01
-- **Type:** obligation
-- **Programs:** EPA GAP
-- **CFDA:** 66.926
-- **Summary:** $405,000 obligated under CFDA 66.926 to JENA BAND OF CHOCTAW INDIANS
-- **Link:** [https://www.usaspending.gov/award/198418677](https://www.usaspending.gov/award/198418677)
-
-### FY26 Obligation: 55IT3610440 — CAYUGA INDIAN NATION OF NEW YORK **[NEW]**
-
-- **Score:** 0.57
+- **Score:** 0.59
 - **Source:** Usaspending
 - **Published:** 2011-10-18
 - **Type:** obligation
 - **Programs:** HUD IHBG
 - **CFDA:** 14.867
-- **Summary:** $2,602,709 obligated under CFDA 14.867 to CAYUGA INDIAN NATION OF NEW YORK
-- **Link:** [https://www.usaspending.gov/award/247663539](https://www.usaspending.gov/award/247663539)
+- **Summary:** $82,631,946 obligated under CFDA 14.867 to RED LAKE RESERVATION HOUSING
+- **Link:** [https://www.usaspending.gov/award/247663258](https://www.usaspending.gov/award/247663258)
 
-### FY26 Obligation: DEEE0011684 — OREGON STATE UNIVERSITY **[NEW]**
+### FY26 Obligation: 55IH3002980 — FORT BELKNAP TRIBAL HOUSING AUTHORITY **[NEW]**
 
-- **Score:** 0.55
+- **Score:** 0.58
 - **Source:** Usaspending
-- **Published:** 2026-03-15
+- **Published:** 2016-09-07
 - **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $335,000 obligated under CFDA 81.087 to OREGON STATE UNIVERSITY
-- **Link:** [https://www.usaspending.gov/award/260362011](https://www.usaspending.gov/award/260362011)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $31,859,065 obligated under CFDA 14.867 to FORT BELKNAP TRIBAL HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663265](https://www.usaspending.gov/award/247663265)
 
-### Air Plan Approval; Ohio; Clean Data Determination for the Cleveland, Ohio Area for the 2015 Ozone Standard **[NEW]**
+### FY26 Obligation: 55IH2505210 — AQUINNAH WAMPANOAG TRIBAL HOUSING AUTHORITY **[NEW]**
 
-- **Score:** 0.55
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to determine under the Clean Air Act (CAA) that the Cleveland, Ohio nonattainment area (hereafter also referred to as "Cleveland area" or "area") has attained the 2015 ozone National Ambient Air Quality Standard (NAAQS or standard). This determination is based upon complete, quality-assured, and certified ambient air monitoring data for the 2023-2025 design period showing that the Cleveland area achieved attainment of the 2015 ozone NAAQS. T
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03934/air-plan-approval-ohio-clean-data-determination-for-the-cleveland-ohio-area-for-the-2015-ozone](https://www.federalregister.gov/documents/2026/02/27/2026-03934/air-plan-approval-ohio-clean-data-determination-for-the-cleveland-ohio-area-for-the-2015-ozone)
+- **Score:** 0.58
+- **Source:** Usaspending
+- **Published:** 2011-10-18
+- **Type:** obligation
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $8,506,774 obligated under CFDA 14.867 to AQUINNAH WAMPANOAG TRIBAL HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663249](https://www.usaspending.gov/award/247663249)
 
-### Air Plan Approval; Illinois; Clean Data Determination for the Illinois Portion of the St. Louis Area for the 2015 Ozone Standard **[NEW]**
-
-- **Score:** 0.55
-- **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to determine under the Clean Air Act (CAA) that the Illinois portion of the St. Louis, MO-IL nonattainment area (hereafter also referred to, respectively, as the "St. Louis area" or "area") has attained the 2015 ozone National Ambient Air Quality Standards (NAAQS or standard). This determination is based upon complete, quality-assured, and certified ambient air monitoring data for the 2023-2025 design value period showing that the Illinois p
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03846/air-plan-approval-illinois-clean-data-determination-for-the-illinois-portion-of-the-st-louis-area](https://www.federalregister.gov/documents/2026/02/26/2026-03846/air-plan-approval-illinois-clean-data-determination-for-the-illinois-portion-of-the-st-louis-area)
-
-### Air Plan Approval; Missouri; Clean Data Determination for the 2015 8-Hour Ozone Standard for the Missouri Portion of the St. Louis Nonattainment Area **[NEW]**
+### Notice of Inventory Completion: Santa Barbara Museum of Natural History, Santa Barbara, CA **[NEW]**
 
 - **Score:** 0.55
 - **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to determine under the Clean Air Act (CAA) that the Missouri portion of the St. Louis, MO-IL nonattainment area (hereafter also referred to, respectively, as the "St. Louis area" or "area") has achieved clean data for the 2015 ozone National Ambient Air Quality Standards (NAAQS or standard). This determination of clean data is based upon complete, quality-assured, and certified ambient air monitoring data for the 2023-2025 design value perio
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03845/air-plan-approval-missouri-clean-data-determination-for-the-2015-8-hour-ozone-standard-for-the](https://www.federalregister.gov/documents/2026/02/26/2026-03845/air-plan-approval-missouri-clean-data-determination-for-the-2015-8-hour-ozone-standard-for-the)
-
-### Notice of Intended Repatriation: Turtle Bay Exploration Park, Redding, CA **[NEW]**
-
-- **Score:** 0.55
-- **Source:** Federal Register
-- **Published:** 2026-02-23
+- **Published:** 2026-03-02
 - **Type:** Notice
 - **Programs:** DOT PROTECT
-- **Summary:** In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), Turtle Bay Exploration Park (TBEP) intends to repatriate certain cultural items that meet the definition of sacred objects and that have a cultural affiliation with the Indian Tribes or Native Hawaiian organizations in this notice.
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03565/notice-of-intended-repatriation-turtle-bay-exploration-park-redding-ca](https://www.federalregister.gov/documents/2026/02/23/2026-03565/notice-of-intended-repatriation-turtle-bay-exploration-park-redding-ca)
+- **Summary:** In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the Santa Barbara Museum of Natural History has completed an inventory of human remains and has determined that there is a cultural affiliation between the human remains and Indian Tribes or Native Hawaiian organizations in this notice.
+- **Link:** [https://www.federalregister.gov/documents/2026/03/02/2026-04055/notice-of-inventory-completion-santa-barbara-museum-of-natural-history-santa-barbara-ca](https://www.federalregister.gov/documents/2026/03/02/2026-04055/notice-of-inventory-completion-santa-barbara-museum-of-natural-history-santa-barbara-ca)
 
-### Solid American Hardwood Tax Credit Act **[NEW]**
+### Notice of Intended Disposition: U.S. Department of the Interior, Bureau of Land Management, Colorado State Office, Lakewood, CO **[NEW]**
 
-- **Score:** 0.55
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** S 1964
-- **Programs:** IRS Elective Pay
-- **Summary:** Read twice and referred to the Committee on Finance.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/1964?format=json](https://api.congress.gov/v3/bill/119/s/1964?format=json)
-
-### Notice of Inventory Completion: Fowler Museum at UCLA, Los Angeles, CA **[NEW]**
-
-- **Score:** 0.54
+- **Score:** 0.53
 - **Source:** Federal Register
-- **Published:** 2026-02-23
+- **Published:** 2026-03-02
 - **Type:** Notice
 - **Programs:** DOT PROTECT
-- **Summary:** In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the Fowler Museum at UCLA has completed an inventory of associated funerary objects and has determined that there is a cultural affiliation between the associated funerary objects and Indian Tribes or Native Hawaiian organizations in this notice.
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03557/notice-of-inventory-completion-fowler-museum-at-ucla-los-angeles-ca](https://www.federalregister.gov/documents/2026/02/23/2026-03557/notice-of-inventory-completion-fowler-museum-at-ucla-los-angeles-ca)
+- **Summary:** In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the U.S. Department of the Interior, Bureau of Land Management, Colorado State Office (BLM Colorado State Office), intends to carry out the disposition of human remains, associated funerary objects, unassociated funerary objects, sacred objects, or objects of cultural patrimony removed from Federal or Tribal lands to the lineal descendants, Indian Tribe, or Native Hawaiian organization with priority for dispo
+- **Link:** [https://www.federalregister.gov/documents/2026/03/02/2026-04042/notice-of-intended-disposition-us-department-of-the-interior-bureau-of-land-management-colorado](https://www.federalregister.gov/documents/2026/03/02/2026-04042/notice-of-intended-disposition-us-department-of-the-interior-bureau-of-land-management-colorado)
 
-### Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention **[NEW]**
-
-- **Score:** 0.54
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The U.S. Environmental Protection Agency (EPA or Agency) is proposing to amend its Risk Management Program (RMP) regulations by making several proposed changes to the 2024 Safer Communities by Chemical Accident Prevention (SCCAP) rule. The proposed revisions include changes to provisions relating to safer technology and alternatives analyses, information availability, third-party audits, employee participation, community and emergency responder notification, stationary source siting, natural haz
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03633/accidental-release-prevention-requirements-risk-management-programs-under-the-clean-air-act-common](https://www.federalregister.gov/documents/2026/02/24/2026-03633/accidental-release-prevention-requirements-risk-management-programs-under-the-clean-air-act-common)
-
-### National Emission Standards for Hazardous Air Pollutants: Coal- and Oil-Fired Electric Utility Steam Generating Units: Final Repeal **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The U.S. Environmental Protection Agency (EPA) is finalizing the repeal of specific amendments to the National Emission Standards for Hazardous Air Pollutants (NESHAP) for Coal- and Oil-Fired Electric Utility Steam Generating Units (EGUs), commonly referred to as the Mercury and Air Toxics Standards (MATS), that were promulgated on May 7, 2024. Specifically, the EPA is repealing the revised filterable particulate matter (fPM) emission standard, which serves as a surrogate for non-mercury hazardo
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03638/national-emission-standards-for-hazardous-air-pollutants-coal--and-oil-fired-electric-utility-steam](https://www.federalregister.gov/documents/2026/02/24/2026-03638/national-emission-standards-for-hazardous-air-pollutants-coal--and-oil-fired-electric-utility-steam)
-
-### Notice of Inventory Completion: Tennessee Department of Environment and Conservation Division of Archaeology, Nashville, TN **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Federal Register
-- **Published:** 2026-02-23
-- **Type:** Notice
-- **Programs:** DOT PROTECT
-- **Summary:** In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the Tennessee Department of Environment and Conservation, Division of Archaeology (TDEC-DOA) has completed an inventory of human remains and associated funerary objects from site 40MT43, Montgomery County, TN, and has determined that there is a cultural affiliation between the human remains and associated funerary objects and Indian Tribes or Native Hawaiian organizations in this notice.
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03567/notice-of-inventory-completion-tennessee-department-of-environment-and-conservation-division-of](https://www.federalregister.gov/documents/2026/02/23/2026-03567/notice-of-inventory-completion-tennessee-department-of-environment-and-conservation-division-of)
-
-### Air Plan Approvals; Illinois; Regional Haze Plan for the Second Implementation Period; Interstate Transport of Air Pollution for the 2012 PM2.5 and 2015 Ozone NAAQS **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to approve the regional haze State Implementation Plan (SIP) revision submitted by the Illinois Environmental Protection Agency (Illinois EPA) on June 3, 2024, as satisfying applicable requirements under the Clean Air Act (CAA) and the EPA's Regional Haze Rule for the program's second implementation period. The EPA proposes to find that Illinois' regional haze SIP submission fulfills the requirement that States must periodically revise their
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03936/air-plan-approvals-illinois-regional-haze-plan-for-the-second-implementation-period-interstate](https://www.federalregister.gov/documents/2026/02/27/2026-03936/air-plan-approvals-illinois-regional-haze-plan-for-the-second-implementation-period-interstate)
-
-### Air Plan Approval; Missouri; Reporting Emission Data, Emission Fees, and Process Information **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is taking final action to approve revisions to the Missouri State Implementation Plan (SIP) and the Missouri Operating Permits Program related to Reporting Emission Data, Emission Fees, and Process Information. The revisions set emission fees and a base fee for calendar years 2025-2028 and beyond, add 1-Bromopropane to the category 1 Hazardous Air Pollutant list in table 1, update two publication dates for material that is incorporated by reference and m
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03888/air-plan-approval-missouri-reporting-emission-data-emission-fees-and-process-information](https://www.federalregister.gov/documents/2026/02/26/2026-03888/air-plan-approval-missouri-reporting-emission-data-emission-fees-and-process-information)
-
-### Air Plan Approval; Connecticut; State Implementation Plan Revisions Required as a Result of a Definition Change Due to the Ozone Reclassification **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is approving a State Implementation Plan (SIP) revision submitted by the State of Connecticut. This action consists of revisions to Regulations of Connecticut State Agencies (RCSA) sections 22a-174-22e and 22a-174-22f, primarily to add compliance dates for sources brought into the applicability of these sections due to a change in the definition of "severe non-attainment area for ozone." The definition change had previously been approved into Connecticut
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03887/air-plan-approval-connecticut-state-implementation-plan-revisions-required-as-a-result-of-a](https://www.federalregister.gov/documents/2026/02/26/2026-03887/air-plan-approval-connecticut-state-implementation-plan-revisions-required-as-a-result-of-a)
-
-### Air Plan Approval; Michigan; Moderate Attainment Plan Elements for the Allegan County, Berrien County, and Muskegon County Areas for the 2015 Ozone Standard **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is approving a revision to the Michigan State Implementation Plan (SIP) as meeting the reasonable further progress (RFP) requirements of the Clean Air Act (CAA) for the Allegan County (partial county), Berrien County, and Muskegon County (partial county) Moderate nonattainment areas for the 2015 ozone national ambient air quality standard (NAAQS). The EPA is also approving updated 2017 base year emissions inventories and is finding adequate and approving
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03880/air-plan-approval-michigan-moderate-attainment-plan-elements-for-the-allegan-county-berrien-county](https://www.federalregister.gov/documents/2026/02/26/2026-03880/air-plan-approval-michigan-moderate-attainment-plan-elements-for-the-allegan-county-berrien-county)
-
-### Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025 **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 1144
-- **Programs:** DOT PROTECT
-- **Summary:** Ordered to be Reported (Amended) by Voice Vote.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1144?format=json](https://api.congress.gov/v3/bill/119/hr/1144?format=json)
-
-### Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025 **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Congress Gov
-- **Published:** 2026-02-23
-- **Type:** HR 2796
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on the Judiciary, and in addition to the Committees on Foreign Affairs, and Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2796?format=json](https://api.congress.gov/v3/bill/119/hr/2796?format=json)
-
-### Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025 **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 2961
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on the Judiciary, and in addition to the Committee on Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2961?format=json](https://api.congress.gov/v3/bill/119/hr/2961?format=json)
-
-### Notice of Intended Disposition: U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore, St. Marys, GA **[NEW]**
-
-- **Score:** 0.49
-- **Source:** Federal Register
-- **Published:** 2026-02-23
-- **Type:** Notice
-- **Programs:** DOT PROTECT
-- **Summary:** In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore (CUIS) intends to carry out the disposition of human remains and associated funerary objects removed from Federal lands to the consulting tribes with priority for disposition in this notice.
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03562/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island](https://www.federalregister.gov/documents/2026/02/23/2026-03562/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island)
-
-### Notice of Intended Disposition: U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore, St. Marys, GA **[NEW]**
-
-- **Score:** 0.49
-- **Source:** Federal Register
-- **Published:** 2026-02-23
-- **Type:** Notice
-- **Programs:** DOT PROTECT
-- **Summary:** In accordance with the Native American Graves Protection and Repatriation Act (NAGPRA), the U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore (CUIS) intends to carry out the disposition of human remains and associated funerary objects removed from Federal lands to the consulting tribes with priority for disposition in this notice.
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03561/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island](https://www.federalregister.gov/documents/2026/02/23/2026-03561/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island)
-
-### Air Plan Approval; Indiana; Keystone VOC RACT Alternative Control **[NEW]**
-
-- **Score:** 0.49
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to approve revisions to the volatile organic compound (VOC) requirements for Keystone Automotive Industries dba Saturn Wheel (Keystone) of Huntington County, Indiana. Keystone owns and operates an aluminum alloy wheel refurbishing and distribution facility at which it performs cold cleaner degreasing operations and is subject to the VOC rules under article 8 of the Indiana Administrative Code (IAC). On February 26, 2025, the Indiana Departme
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03933/air-plan-approval-indiana-keystone-voc-ract-alternative-control](https://www.federalregister.gov/documents/2026/02/27/2026-03933/air-plan-approval-indiana-keystone-voc-ract-alternative-control)
-
-### FY26 Obligation: 02J04901 — BRISTOL BAY NATIVE ASSOCIATION, INC. **[NEW]**
+### FY26 Obligation: 55IH4613400 — OGLALA LAKOTA HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2022-10-01
+- **Published:** 2012-02-07
 - **Type:** obligation
-- **Programs:** EPA GAP
-- **CFDA:** 66.926
-- **Summary:** $528,000 obligated under CFDA 66.926 to BRISTOL BAY NATIVE ASSOCIATION, INC.
-- **Link:** [https://www.usaspending.gov/award/198421703](https://www.usaspending.gov/award/198421703)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $192,081,777 obligated under CFDA 14.867 to OGLALA LAKOTA HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663341](https://www.usaspending.gov/award/247663341)
 
-### FY26 Obligation: 02J17401 — NATIVE VILLAGE OF CHENEGA **[NEW]**
+### FY26 Obligation: 55IH3819760 — TURTLE MOUNTAIN HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2022-10-01
+- **Published:** 2012-01-06
 - **Type:** obligation
-- **Programs:** EPA GAP
-- **CFDA:** 66.926
-- **Summary:** $313,000 obligated under CFDA 66.926 to NATIVE VILLAGE OF CHENEGA
-- **Link:** [https://www.usaspending.gov/award/198421824](https://www.usaspending.gov/award/198421824)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $129,735,388 obligated under CFDA 14.867 to TURTLE MOUNTAIN HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663310](https://www.usaspending.gov/award/247663310)
 
-### FY26 Obligation: 01E03409 — WISCONSIN DEPARTMENT OF NATURAL RESOURCES **[NEW]**
+### FY26 Obligation: 55IH4614480 — SICANGU WICOTI AWAYANKAPE CORPORATION **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2023-07-01
+- **Published:** 2012-01-06
 - **Type:** obligation
-- **Programs:** EPA STAG
-- **CFDA:** 66.468
-- **Summary:** $81,203,000 obligated under CFDA 66.468 to WISCONSIN DEPARTMENT OF NATURAL RESOURCES
-- **Link:** [https://www.usaspending.gov/award/198127890](https://www.usaspending.gov/award/198127890)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $125,977,113 obligated under CFDA 14.867 to SICANGU WICOTI AWAYANKAPE CORPORATION
+- **Link:** [https://www.usaspending.gov/award/247663342](https://www.usaspending.gov/award/247663342)
 
-### FY26 Obligation: 02D43925 — GEORGIA ENVIRONMENTAL FINANCE AUTHORITY **[NEW]**
+### FY26 Obligation: 55IH3000680 — BLACKFEET HOUSING PROGRAM **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2025-07-01
+- **Published:** 2012-01-06
 - **Type:** obligation
-- **Programs:** EPA STAG
-- **CFDA:** 66.468
-- **Summary:** $67,510,000 obligated under CFDA 66.468 to GEORGIA ENVIRONMENTAL FINANCE AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/355638698](https://www.usaspending.gov/award/355638698)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $119,316,396 obligated under CFDA 14.867 to BLACKFEET HOUSING PROGRAM
+- **Link:** [https://www.usaspending.gov/award/247663262](https://www.usaspending.gov/award/247663262)
 
-### FY26 Obligation: 96884024 — NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY **[NEW]**
+### FY26 Obligation: 55IH0210640 — NORTHWEST INUPIAT HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2025-05-27
+- **Published:** 2012-01-06
 - **Type:** obligation
-- **Programs:** EPA STAG
-- **CFDA:** 66.468
-- **Summary:** $34,511,000 obligated under CFDA 66.468 to NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY
-- **Link:** [https://www.usaspending.gov/award/258259871](https://www.usaspending.gov/award/258259871)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $85,513,449 obligated under CFDA 14.867 to NORTHWEST INUPIAT HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663189](https://www.usaspending.gov/award/247663189)
 
-### FY26 Obligation: 96884023 — NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY **[NEW]**
+### FY26 Obligation: 55IH3806940 — FORT BERTHOLD HOUSING AUTHORITY INC **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2024-02-01
+- **Published:** 2012-02-08
 - **Type:** obligation
-- **Programs:** EPA STAG
-- **CFDA:** 66.468
-- **Summary:** $34,109,000 obligated under CFDA 66.468 to NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY
-- **Link:** [https://www.usaspending.gov/award/258259870](https://www.usaspending.gov/award/258259870)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $67,991,190 obligated under CFDA 14.867 to FORT BERTHOLD HOUSING AUTHORITY INC
+- **Link:** [https://www.usaspending.gov/award/247663306](https://www.usaspending.gov/award/247663306)
 
-### FY26 Obligation: 98454725 — KENTUCKY INFRASTRUCTURE AUTHORITY **[NEW]**
+### FY26 Obligation: 55IH3124180 — NORTHERN PONCA HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2025-07-01
+- **Published:** 2012-01-06
 - **Type:** obligation
-- **Programs:** EPA STAG
-- **CFDA:** 66.468
-- **Summary:** $13,277,000 obligated under CFDA 66.468 to KENTUCKY INFRASTRUCTURE AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/355638911](https://www.usaspending.gov/award/355638911)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $39,149,296 obligated under CFDA 14.867 to NORTHERN PONCA HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663271](https://www.usaspending.gov/award/247663271)
 
-### FY26 Obligation: DEEE0011053 — CORTEVA AGRISCIENCE LLC **[NEW]**
+### FY26 Obligation: 55IH0203300 — COPPER RIVER HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2023-10-01
+- **Published:** 2012-02-07
 - **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $5,004,663 obligated under CFDA 81.087 to CORTEVA AGRISCIENCE LLC
-- **Link:** [https://www.usaspending.gov/award/260361584](https://www.usaspending.gov/award/260361584)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $38,353,626 obligated under CFDA 14.867 to COPPER RIVER HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663184](https://www.usaspending.gov/award/247663184)
 
-### FY26 Obligation: DEEE0009032 — UNIVERSITY OF WISCONSIN SYSTEM **[NEW]**
+### FY26 Obligation: 55IH4618920 — YANKTON SIOUX HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2020-01-02
+- **Published:** 2012-01-06
 - **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $2,514,834 obligated under CFDA 81.087 to UNIVERSITY OF WISCONSIN SYSTEM
-- **Link:** [https://www.usaspending.gov/award/260359919](https://www.usaspending.gov/award/260359919)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $36,079,156 obligated under CFDA 14.867 to YANKTON SIOUX HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663344](https://www.usaspending.gov/award/247663344)
 
-### FY26 Obligation: DEEE0009632 — UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION **[NEW]**
+### FY26 Obligation: 55IH4912760 — PAIUTE HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2022-03-01
+- **Published:** 2011-10-18
 - **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $2,322,019 obligated under CFDA 81.087 to UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION
-- **Link:** [https://www.usaspending.gov/award/260360451](https://www.usaspending.gov/award/260360451)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $33,557,319 obligated under CFDA 14.867 to PAIUTE HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663350](https://www.usaspending.gov/award/247663350)
 
-### FY26 Obligation: DEEE0009329 — ELEMENT 16 TECHNOLOGIES INC **[NEW]**
+### FY26 Obligation: 55IH5554660 — RED CLIFF CHIPPEWA HOUSING AUTHORITY **[NEW]**
 
 - **Score:** 0.48
 - **Source:** Usaspending
-- **Published:** 2021-08-01
+- **Published:** 2011-10-18
 - **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $1,400,000 obligated under CFDA 81.087 to ELEMENT 16 TECHNOLOGIES INC
-- **Link:** [https://www.usaspending.gov/award/260360163](https://www.usaspending.gov/award/260360163)
+- **Programs:** HUD IHBG
+- **CFDA:** 14.867
+- **Summary:** $21,286,572 obligated under CFDA 14.867 to RED CLIFF CHIPPEWA HOUSING AUTHORITY
+- **Link:** [https://www.usaspending.gov/award/247663372](https://www.usaspending.gov/award/247663372)
 
-### FY26 Obligation: DEEE0009268 — UNIVERSITY OF MARYLAND, COLLEGE PARK **[NEW]**
+### Protecting Sensitive Locations Act **[NEW]**
 
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2020-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $1,370,263 obligated under CFDA 81.087 to UNIVERSITY OF MARYLAND, COLLEGE PARK
-- **Link:** [https://www.usaspending.gov/award/260360121](https://www.usaspending.gov/award/260360121)
-
-### FY26 Obligation: DEEE0010122 — UNIVERSITY OF HAWAII **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2023-08-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $999,838 obligated under CFDA 81.087 to UNIVERSITY OF HAWAII
-- **Link:** [https://www.usaspending.gov/award/260360909](https://www.usaspending.gov/award/260360909)
-
-### FY26 Obligation: DEEE0011659 — UNIVERSITY OF MISSOURI SYSTEM **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $400,000 obligated under CFDA 81.087 to UNIVERSITY OF MISSOURI SYSTEM
-- **Link:** [https://www.usaspending.gov/award/260362010](https://www.usaspending.gov/award/260362010)
-
-### FY26 Obligation: DEEE0010252 — URIEL SOLAR, INC. **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-09-15
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $99,850 obligated under CFDA 81.087 to URIEL SOLAR, INC.
-- **Link:** [https://www.usaspending.gov/award/260361002](https://www.usaspending.gov/award/260361002)
-
-### Employee or Independent Contractor Status Under the Fair Labor Standards Act, Family and Medical Leave Act, and Migrant and Seasonal Agricultural Worker Protection Act **[NEW]**
-
-- **Score:** 0.47
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Department is proposing to rescind the analysis for determining employee or independent contractor status under the Fair Labor Standards Act (FLSA) currently set forth in 29 CFR part 795 and replace it with the analysis that it published and adopted in a prior final rule dated January 7, 2021, with a few modifications. In addition, the Department proposes to apply this analysis to the Family and Medical Leave Act (FMLA) and Migrant and Seasonal Agricultural Worker Protection Act (MSPA), both
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03962/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical](https://www.federalregister.gov/documents/2026/02/27/2026-03962/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical)
-
-### Implementing Statutory Addition of Certain Per- and Polyfluoroalkyl Substances (PFAS) to the Toxics Release Inventory Beginning With Reporting Year 2026 **[NEW]**
-
-- **Score:** 0.47
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA or the Agency) is updating the list of chemicals subject to toxic chemical release reporting under the Emergency Planning and Community Right-to-Know Act (EPCRA) and the Pollution Prevention Act (PPA). Specifically, this action updates the regulations to identify one perfluoroalkyl substance that must be reported pursuant to the National Defense Authorization Act for Fiscal Year 2020 (FY 2020 NDAA) enacted on December 20, 2019. As this action is being tak
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03944/implementing-statutory-addition-of-certain-per--and-polyfluoroalkyl-substances-pfas-to-the-toxics](https://www.federalregister.gov/documents/2026/02/27/2026-03944/implementing-statutory-addition-of-certain-per--and-polyfluoroalkyl-substances-pfas-to-the-toxics)
-
-### Living Donor Protection Act of 2025 **[NEW]**
-
-- **Score:** 0.46
+- **Score:** 0.40
 - **Source:** Congress Gov
 - **Published:** 2026-02-27
-- **Type:** S 1552
-- **Programs:** DOT PROTECT
-- **Summary:** Committee on Health, Education, Labor, and Pensions. Ordered to be reported with an amendment in the nature of a substitute favorably.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/1552?format=json](https://api.congress.gov/v3/bill/119/s/1552?format=json)
-
-### Protect Our Military Families’ 2nd Amendment Rights Act **[NEW]**
-
-- **Score:** 0.45
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 2070
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2070?format=json](https://api.congress.gov/v3/bill/119/hr/2070?format=json)
-
-### Veterans 2nd Amendment Protection Act of 2025 **[NEW]**
-
-- **Score:** 0.45
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 478
-- **Programs:** DOT PROTECT
-- **Summary:** Committee on Veterans' Affairs. Hearings held.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/478?format=json](https://api.congress.gov/v3/bill/119/s/478?format=json)
-
-### Providing for consideration of the joint resolution (H.J. Res. 60) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Park Service relating to "Glen Canyon National Recreation Area: Motor Vehicles"; providing for consideration of the joint resolution (H.J. Res. 78) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to "Endangered and Threatened Wildlife and Plants; Endangered Species Status for the San Francisco Bay-Delta Distinct Population Segment of the Longfin Smelt"; providing for consideration of the joint resolution (H.J. Res. 87) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power Train Certification; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 88) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 89) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The 'Omnibus' Low NOX Regulation; Waiver of Preemption; Notice of Decision"; and for other purposes. **[NEW]**
-
-- **Score:** 0.45
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HRES 354
-- **Programs:** DOT PROTECT
-- **Summary:** Pursuant to the provisions of H.Res. 707, H.Res. 354 is amended.
-- **Link:** [https://api.congress.gov/v3/bill/119/hres/354?format=json](https://api.congress.gov/v3/bill/119/hres/354?format=json)
-
-### Reauthorization of Dairy Forward Pricing Program **[NEW]**
-
-- **Score:** 0.43
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Rule
-- **Summary:** This final rule updates the Dairy Forward Pricing Program (DFPP) regulations in accordance with the Continuing Appropriations, Agriculture, Legislative Branch, Military Construction and Veterans Affairs, and Extensions Act, 2026 (Continuing Extensions Act). The Continuing Extensions Act reauthorizes the DFPP program to allow handlers to enter into new contracts until September 30, 2026. Any forward contract entered prior to the September 30, 2026, deadline is subject to a September 30, 2029, exp
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03985/reauthorization-of-dairy-forward-pricing-program](https://www.federalregister.gov/documents/2026/02/27/2026-03985/reauthorization-of-dairy-forward-pricing-program)
-
-### Constellation Energy Generation, LLC; Christopher M. Crane Clean Energy Center; Applications for Amendments to Renewed Facility License Involving Proposed No Significant Hazards Consideration Determination and Containing Safeguards Information and Order Imposing Procedures for Access to Safeguards Information **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Notice
-- **Summary:** The U.S. Nuclear Regulatory Commission (NRC, the Commission) received and is considering issuance of three amendments to Renewed Facility License (RFL) No. DPR-50 for the Christopher M. Crane Clean Energy Center (CCEC), which were requested by Constellation Energy Generation, LLC (CEG) to support the potential reauthorization of power operations at the CCEC. For each amendment request, the NRC proposes to determine that they involve no significant hazards consideration (NSHC). Because potential 
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03626/constellation-energy-generation-llc-christopher-m-crane-clean-energy-center-applications-for](https://www.federalregister.gov/documents/2026/02/24/2026-03626/constellation-energy-generation-llc-christopher-m-crane-clean-energy-center-applications-for)
-
-### Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Maleic Hydrazide, et al. **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA or Agency) is finalizing several pesticide tolerance actions under the Federal Food, Drug, and Cosmetic Act (FFDCA) that the Agency previously determined were necessary or appropriate during the registration review conducted under the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA). During registration review, EPA reviews all aspects of a pesticide case, including existing tolerances, to ensure that the pesticide continues to meet the standard
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03942/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-maleic](https://www.federalregister.gov/documents/2026/02/27/2026-03942/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-maleic)
-
-### Air Plan Approval; Michigan; 2015 Ozone Moderate Reasonably Available Control Technology **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to approve revisions and additions to Michigan Air Pollution Control Rules (MAPCR) Parts 6 and 8 for inclusion in the Michigan State Implementation Plan (SIP). Michigan submitted these SIP revisions to meet the Moderate Volatile Organic Compound (VOC) and Nitrogen Oxide (NO<INF>X</INF>) Reasonably Available Control Technology (RACT) requirements for the Western Michigan nonattainment areas (Berrien, Western portion of Allegan, and Western po
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03937/air-plan-approval-michigan-2015-ozone-moderate-reasonably-available-control-technology](https://www.federalregister.gov/documents/2026/02/27/2026-03937/air-plan-approval-michigan-2015-ozone-moderate-reasonably-available-control-technology)
-
-### Approval of Missouri's Request for Partial Program Delegation of Clean Air Act Section 112(r) Prevention of Accidental Release Program **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Proposed Rule
-- **Programs:** Tribal Air Quality Management
-- **Summary:** Under the Clean Air Act (CAA), EPA may approve State or local rules or programs to be implemented and enforced in place of certain otherwise applicable Federal rules, emissions standards, or requirements. On October 6, 2025, the Missouri Department of Natural Resources (MoDNR), on behalf of the State of Missouri, requested delegation of a partial CAA Risk Management Program (RMP) for agricultural anhydrous ammonia facilities. The request was supplemented by MoDNR on October 9, 2025, and on Octob
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03891/approval-of-missouris-request-for-partial-program-delegation-of-clean-air-act-section-112r](https://www.federalregister.gov/documents/2026/02/26/2026-03891/approval-of-missouris-request-for-partial-program-delegation-of-clean-air-act-section-112r)
-
-### Wyoming: Approval of State Coal Combustion Residuals Permit Program **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA or the Agency) is approving the Wyoming partial coal combustion residuals (CCR) permit program under the Resource Conservation and Recovery Act (RCRA). After reviewing the CCR permit program application submitted by the Wyoming Department of Environmental Quality (WDEQ), EPA has determined that Wyoming's partial CCR permit program meets the standard for approval under RCRA. Wyoming's partial CCR permit program will operate in lieu of the Federal CCR progr
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03820/wyoming-approval-of-state-coal-combustion-residuals-permit-program](https://www.federalregister.gov/documents/2026/02/26/2026-03820/wyoming-approval-of-state-coal-combustion-residuals-permit-program)
-
-### Air Plan Approval; Ohio; Source-Specific Non-CTG RACT and SIP Strengthening for Ohio **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to approve source-specific State Implementation Plan (SIP) revisions submitted by Ohio. These revisions address major source volatile organic compound (VOC) and nitrogen oxide (NO<INF>X</INF>) reasonably available control technology (RACT) requirements for the Cleveland, OH Moderate nonattainment area under the 2015 ozone National Ambient Air Quality Standard (NAAQS or standard). The affected facilities include PPG Industries Ohio, Inc. (PPG
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03931/air-plan-approval-ohio-source-specific-non-ctg-ract-and-sip-strengthening-for-ohio](https://www.federalregister.gov/documents/2026/02/27/2026-03931/air-plan-approval-ohio-source-specific-non-ctg-ract-and-sip-strengthening-for-ohio)
-
-### To authorize leases of up to 99 years for land held in trust for federally recognized Indian Tribes. **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 5910
-- **Summary:** Placed on the Union Calendar, Calendar No. 388.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5910?format=json](https://api.congress.gov/v3/bill/119/hr/5910?format=json)
-
-### To amend title 10, United States Code, to include Indian tribes in the defense community infrastructure program, and for other purposes. **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7710
-- **Summary:** Referred to the House Committee on Armed Services.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7710?format=json](https://api.congress.gov/v3/bill/119/hr/7710?format=json)
-
-### To allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer. **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7698
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7698?format=json](https://api.congress.gov/v3/bill/119/hr/7698?format=json)
-
-### A bill to allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer. **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** S 3946
-- **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3946?format=json](https://api.congress.gov/v3/bill/119/s/3946?format=json)
-
-### Pydiflumetofen; Pesticide Tolerances **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Federal Register
-- **Published:** 2026-02-20
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** This regulation establishes tolerances for residues of pydiflumetofen in or on coffee, green bean and dragon fruit. Syngenta Crop Protection, LLC, requested these tolerances under the Federal Food, Drug, and Cosmetic Act (FFDCA).
-- **Link:** [https://www.federalregister.gov/documents/2026/02/20/2026-03421/pydiflumetofen-pesticide-tolerances](https://www.federalregister.gov/documents/2026/02/20/2026-03421/pydiflumetofen-pesticide-tolerances)
-
-### Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Diphenylamine, et al. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Federal Register
-- **Published:** 2026-02-20
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA or Agency) is finalizing several pesticide tolerance actions under the Federal Food, Drug, and Cosmetic Act (FFDCA) that the Agency previously determined were necessary or appropriate during the registration review conducted under the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA). During registration review, EPA reviews all aspects of a pesticide case, including existing tolerances, to ensure that the pesticide continues to meet the standard
-- **Link:** [https://www.federalregister.gov/documents/2026/02/20/2026-03371/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-diphenylamine](https://www.federalregister.gov/documents/2026/02/20/2026-03371/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-diphenylamine)
-
-### Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Terbacil, et al. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Federal Register
-- **Published:** 2026-02-20
-- **Type:** Rule
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA or Agency) is finalizing several tolerance actions under the Federal Food, Drug, and Cosmetic Act (FFDCA) that the Agency previously determined were necessary or appropriate during the registration review conducted under the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA). During registration review, EPA reviews all aspects of a pesticide case, including existing tolerances, to ensure that the pesticide continues to meet the standard for regis
-- **Link:** [https://www.federalregister.gov/documents/2026/02/20/2026-03366/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-terbacil-et](https://www.federalregister.gov/documents/2026/02/20/2026-03366/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-terbacil-et)
-
-### To amend the Food Security Act of 1985 to include Indian Tribes in certain provisions relating to priority resource concerns. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-21
-- **Type:** HR 7627
-- **Summary:** Referred to the House Committee on Agriculture.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7627?format=json](https://api.congress.gov/v3/bill/119/hr/7627?format=json)
-
-### Tribal Trust Land Homeownership Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 723
-- **Summary:** Held at the desk.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/723?format=json](https://api.congress.gov/v3/bill/119/s/723?format=json)
-
-### Parris Island Protection Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 443
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Armed Services.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/443?format=json](https://api.congress.gov/v3/bill/119/hr/443?format=json)
-
-### Household Goods Shipping Consumer Protection Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 880
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Subcommittee on Highways and Transit.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/880?format=json](https://api.congress.gov/v3/bill/119/hr/880?format=json)
-
-### Protecting Life from Chemical Abortions Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 1525
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1525?format=json](https://api.congress.gov/v3/bill/119/hr/1525?format=json)
-
-### New Era of Preventing End-Stage Kidney Disease Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 1518
-- **Programs:** EPA STAG
-- **Summary:** Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1518?format=json](https://api.congress.gov/v3/bill/119/hr/1518?format=json)
-
-### Law Enforcement Protection and Privacy Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 1698
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on the Judiciary, and in addition to the Committee on Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1698?format=json](https://api.congress.gov/v3/bill/119/hr/1698?format=json)
-
-### Protecting Older Workers Against Discrimination Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 3522
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/3522?format=json](https://api.congress.gov/v3/bill/119/hr/3522?format=json)
-
-### Striking and Locked Out Workers Healthcare Protection Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 3532
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/3532?format=json](https://api.congress.gov/v3/bill/119/hr/3532?format=json)
-
-### Protecting Private Job Creators Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 3959
-- **Programs:** DOT PROTECT
-- **Summary:** Placed on the Union Calendar, Calendar No. 448.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/3959?format=json](https://api.congress.gov/v3/bill/119/hr/3959?format=json)
-
-### Home Appliance Protection and Affordability Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 4626
-- **Programs:** DOT PROTECT
-- **Summary:** Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/4626?format=json](https://api.congress.gov/v3/bill/119/hr/4626?format=json)
-
-### Community Health Center Drug Pricing Protection Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7391
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7391?format=json](https://api.congress.gov/v3/bill/119/hr/7391?format=json)
-
-### Protecting Student Athletes from Concussions Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7590
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7590?format=json](https://api.congress.gov/v3/bill/119/hr/7590?format=json)
-
-### To require the Commissioner of U.S. Customs and Border Protection to refund tariffs collected under the International Emergency Economic Powers Act, and for other purposes. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 7615
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Ways and Means.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7615?format=json](https://api.congress.gov/v3/bill/119/hr/7615?format=json)
-
-### To amend title 18, United States Code, to prohibit coercing protected adults to send or otherwise transmit an intimate visual depiction, and for other purposes. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7715
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7715?format=json](https://api.congress.gov/v3/bill/119/hr/7715?format=json)
-
-### To amend the Consumer Financial Protection Act of 2010 to establish the position of the Assistant Director and Student Loan Borrower Advocate of the Bureau of Consumer Financial Protection, to provide a framework for the Bureau of Consumer Financial Protection and the Department of Education to coordinate in providing assistance to and serving borrowers seeking to resolve complaints related to their private education or Federal student loans, and for other purposes. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7671
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on Education and Workforce, and in addition to the Committees on Financial Services, and Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7671?format=json](https://api.congress.gov/v3/bill/119/hr/7671?format=json)
-
-### To direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7684
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7684?format=json](https://api.congress.gov/v3/bill/119/hr/7684?format=json)
-
-### Closing the Provider Fraud Gap Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7677
-- **Programs:** EPA GAP
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7677?format=json](https://api.congress.gov/v3/bill/119/hr/7677?format=json)
-
-### To require the Commissioner of U.S. Customs and Border Protection to refund tariffs collected under the International Emergency Economic Powers Act, and for other purposes. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 7736
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Ways and Means.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7736?format=json](https://api.congress.gov/v3/bill/119/hr/7736?format=json)
-
-### Jamie Reed Protecting Our Kids from Child Abuse Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 312
+- **Type:** S 455
 - **Programs:** DOT PROTECT
 - **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/312?format=json](https://api.congress.gov/v3/bill/119/s/312?format=json)
+- **Link:** [https://api.congress.gov/v3/bill/119/s/455?format=json](https://api.congress.gov/v3/bill/119/s/455?format=json)
 
-### Household Goods Shipping Consumer Protection Act **[NEW]**
+### Protecting Student Athletes from Concussions Act of 2025 **[NEW]**
 
-- **Score:** 0.41
+- **Score:** 0.40
 - **Source:** Congress Gov
 - **Published:** 2026-02-27
-- **Type:** S 337
+- **Type:** S 2889
 - **Programs:** DOT PROTECT
-- **Summary:** Placed on Senate Legislative Calendar under General Orders. Calendar No. 341.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/337?format=json](https://api.congress.gov/v3/bill/119/s/337?format=json)
+- **Summary:** Read twice and referred to the Committee on Health, Education, Labor, and Pensions. (text: CR S6734)
+- **Link:** [https://api.congress.gov/v3/bill/119/s/2889?format=json](https://api.congress.gov/v3/bill/119/s/2889?format=json)
 
-### Protect Our Probationary Employees Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 918
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Homeland Security and Governmental Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/918?format=json](https://api.congress.gov/v3/bill/119/s/918?format=json)
-
-### Michael Enzi Voluntary Protection Program Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 1417
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Health, Education, Labor, and Pensions.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/1417?format=json](https://api.congress.gov/v3/bill/119/s/1417?format=json)
-
-### Upholding Protections for Unaccompanied Children Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 3322
-- **Programs:** DOT PROTECT
-- **Summary:** Star Print ordered on the bill.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3322?format=json](https://api.congress.gov/v3/bill/119/s/3322?format=json)
-
-### State Authority to Protect Civil Rights **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 3824
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3824?format=json](https://api.congress.gov/v3/bill/119/s/3824?format=json)
-
-### A bill to strengthen homeland security by expanding Urban Areas Security Initiative grant eligibility criteria to promote cooperation with U.S. Immigration and Customs Enforcement and to advance election security protections. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 3920
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Homeland Security and Governmental Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3920?format=json](https://api.congress.gov/v3/bill/119/s/3920?format=json)
-
-### A bill to reauthorize the National Integrated Drought Information System Act of 2006, and for other purposes. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 3912
-- **Programs:** USBR WaterSMART
-- **Summary:** Read twice and referred to the Committee on Commerce, Science, and Transportation.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3912?format=json](https://api.congress.gov/v3/bill/119/s/3912?format=json)
-
-### A bill to amend the Federal Food, Drug, and Cosmetic Act to clarify the Food and Drug Administration's jurisdiction over certain tobacco products, and to protect jobs and small businesses involved in the sale, manufacturing, and distribution of traditional and premium cigars. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 3922
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Health, Education, Labor, and Pensions.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3922?format=json](https://api.congress.gov/v3/bill/119/s/3922?format=json)
-
-### A bill to establish artificial intelligence standards, metrics, and evaluation tools, to support artificial intelligence research, development, and capacity building activities, to promote innovation in the artificial intelligence industry by ensuring companies of all sizes can succeed and thrive, and for other purposes. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** S 3952
-- **Programs:** EPA GAP
-- **Summary:** Read twice and referred to the Committee on Commerce, Science, and Transportation.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3952?format=json](https://api.congress.gov/v3/bill/119/s/3952?format=json)
-
-### A bill to direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** S 3928
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Environment and Public Works.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3928?format=json](https://api.congress.gov/v3/bill/119/s/3928?format=json)
-
-### Community Protection and Wildfire Resilience Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-21
-- **Type:** HR 582
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on Science, Space, and Technology, and in addition to the Committees on Natural Resources, and Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/582?format=json](https://api.congress.gov/v3/bill/119/hr/582?format=json)
-
-### Boundary Waters Wilderness Protection and Pollution Prevention Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 588
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/588?format=json](https://api.congress.gov/v3/bill/119/hr/588?format=json)
-
-### Federal Firearms Licensee Protection Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 1773
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1773?format=json](https://api.congress.gov/v3/bill/119/hr/1773?format=json)
-
-### Protecting Students with Disabilities Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 2333
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2333?format=json](https://api.congress.gov/v3/bill/119/hr/2333?format=json)
-
-### Southern California Coast and Ocean Protection Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 2862
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2862?format=json](https://api.congress.gov/v3/bill/119/hr/2862?format=json)
-
-### Public Service Worker Protection Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 3139
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/3139?format=json](https://api.congress.gov/v3/bill/119/hr/3139?format=json)
-
-### Protecting America's Property Rights Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-21
-- **Type:** HR 3206
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Financial Services.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/3206?format=json](https://api.congress.gov/v3/bill/119/hr/3206?format=json)
-
-### Capacity Building for Business Districts Pilot Program Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 3585
-- **Programs:** EPA GAP
-- **Summary:** Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/3585?format=json](https://api.congress.gov/v3/bill/119/hr/3585?format=json)
-
-### Fair Accounting for Income Realized from Betting Earnings Taxation Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 4304
-- **Programs:** FHWA TTP Safety
-- **Summary:** Motion to Discharge Committee filed by Ms. Titus. Petition No: 119-16. (<a href="https://clerk.house.gov/DischargePetition/2026021216">Discharge petition</a> text with signatures.)
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/4304?format=json](https://api.congress.gov/v3/bill/119/hr/4304?format=json)
-
-### Climate Change Health Protection and Promotion Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 4515
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/4515?format=json](https://api.congress.gov/v3/bill/119/hr/4515?format=json)
-
-### Uniform Standards Protection Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 5581
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5581?format=json](https://api.congress.gov/v3/bill/119/hr/5581?format=json)
-
-### Head Start Shutdown Protection Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 5790
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5790?format=json](https://api.congress.gov/v3/bill/119/hr/5790?format=json)
-
-### To authorize the Department of Justice and the Department of State to provide law enforcement and intelligence technical assistance, training, capacity building, and advisory support to the Government of Ukraine to achieve the exchange of prisoners of war, the release of civilian detainees, and the return of forcibly transferred Ukrainian children, and for other purposes. **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 5962
-- **Programs:** EPA GAP
-- **Summary:** Referred to the House Committee on Foreign Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5962?format=json](https://api.congress.gov/v3/bill/119/hr/5962?format=json)
-
-### Protect American Fisheries Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 6150
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6150?format=json](https://api.congress.gov/v3/bill/119/hr/6150?format=json)
-
-### RED Tape Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 6398
-- **Programs:** USBR TAP
-- **Summary:** Ordered to be Reported by the Yeas and Nays: 23 - 22.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6398?format=json](https://api.congress.gov/v3/bill/119/hr/6398?format=json)
-
-### Upholding Protections for Unaccompanied Children Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 6389
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on the Judiciary, and in addition to the Committee on Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6389?format=json](https://api.congress.gov/v3/bill/119/hr/6389?format=json)
-
-### PROTECT Act of 2026 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 6990
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6990?format=json](https://api.congress.gov/v3/bill/119/hr/6990?format=json)
-
-### PROTECT Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-21
-- **Type:** HR 7045
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7045?format=json](https://api.congress.gov/v3/bill/119/hr/7045?format=json)
-
-### Preventing Research Ownership Transfer to External Competitive Threats (PROTECT) Act of 2026 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-23
-- **Type:** HR 7510
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7510?format=json](https://api.congress.gov/v3/bill/119/hr/7510?format=json)
-
-### GAP Supply Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 7528
-- **Programs:** EPA GAP
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7528?format=json](https://api.congress.gov/v3/bill/119/hr/7528?format=json)
-
-### Protecting Puppies from Sharia Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 7611
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Oversight and Government Reform.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7611?format=json](https://api.congress.gov/v3/bill/119/hr/7611?format=json)
-
-### To amend title 54, United States Code, to modify certain cost-sharing requirements for grant programs under the American Battlefield Protection Program, and for other purposes. **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-21
-- **Type:** HR 7618
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7618?format=json](https://api.congress.gov/v3/bill/119/hr/7618?format=json)
-
-### Protecting Life in Foreign Assistance Act **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 250
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Foreign Relations.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/250?format=json](https://api.congress.gov/v3/bill/119/s/250?format=json)
-
-### Invest to Protect Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 768
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/768?format=json](https://api.congress.gov/v3/bill/119/s/768?format=json)
-
-### Expanding Whistleblower Protections for Contractors Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 874
-- **Programs:** DOT PROTECT
-- **Summary:** Placed on Senate Legislative Calendar under General Orders. Calendar No. 289.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/874?format=json](https://api.congress.gov/v3/bill/119/s/874?format=json)
-
-### Content Origin Protection and Integrity from Edited and Deepfaked Media Act of 2025 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-23
-- **Type:** S 1396
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Commerce, Science, and Transportation.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/1396?format=json](https://api.congress.gov/v3/bill/119/s/1396?format=json)
-
-### Affordable Housing and Homeownership Protection Act of 2026 **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-23
-- **Type:** S 3754
-- **Programs:** DOT PROTECT
-- **Summary:** Read twice and referred to the Committee on Finance. (Sponsor introductory remarks on measure: CR S420-421)
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3754?format=json](https://api.congress.gov/v3/bill/119/s/3754?format=json)
-
-### Disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions". **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HJRES 59
-- **Programs:** DOT PROTECT
-- **Summary:** Placed on the Union Calendar, Calendar No. 16.
-- **Link:** [https://api.congress.gov/v3/bill/119/hjres/59?format=json](https://api.congress.gov/v3/bill/119/hjres/59?format=json)
-
-### A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions". **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** SJRES 18
-- **Programs:** DOT PROTECT
-- **Summary:** Became Public Law No: 119-10.
-- **Link:** [https://api.congress.gov/v3/bill/119/sjres/18?format=json](https://api.congress.gov/v3/bill/119/sjres/18?format=json)
-
-### Recognizing that it is the duty of the Federal Government to develop and implement a Transgender Bill of Rights to protect and codify the rights of transgender and nonbinary people under the law and ensure their access to medical care, shelter, safety, and economic security. **[NEW]**
-
-- **Score:** 0.40
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HRES 1058
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on the Judiciary, and in addition to the Committees on Education and Workforce, Energy and Commerce, Financial Services, Oversight and Government Reform, Armed Services, Veterans' Affairs, and House Administration, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hres/1058?format=json](https://api.congress.gov/v3/bill/119/hres/1058?format=json)
-
-### National Environmental Policy Act Implementing Regulations **[NEW]**
-
-- **Score:** 0.39
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Rule
-- **Summary:** The Department of the Interior (Department or DOI) is adopting the interim final rule (IFR) published on July 3, 2025, with minor changes, as final. In the IFR, DOI provided a 30-day comment period for the public to review and make comments. This final rule addresses public comments and adopts as final the IFR, with certain substantive changes as explained herein. The IFR partially rescinded DOI's regulations implementing the National Environmental Policy Act (NEPA) and made necessary targeted u
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03708/national-environmental-policy-act-implementing-regulations](https://www.federalregister.gov/documents/2026/02/24/2026-03708/national-environmental-policy-act-implementing-regulations)
-
-### Agency Information Collection Activities; Comment Request; U.S. Department of Education Supplemental Information for the SF-424 Form **[NEW]**
-
-- **Score:** 0.39
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Notice
-- **Summary:** In accordance with the Paperwork Reduction Act (PRA) of 1995, the Department is proposing an extension without change of a currently approved information collection request (ICR).
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03982/agency-information-collection-activities-comment-request-us-department-of-education-supplemental](https://www.federalregister.gov/documents/2026/02/27/2026-03982/agency-information-collection-activities-comment-request-us-department-of-education-supplemental)
-
-### Mandatory Manufacturing Cost Survey Advanced Notice of Proposed Rulemaking **[NEW]**
-
-- **Score:** 0.39
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Proposed Rule
-- **Summary:** This advance notice of proposed rulemaking (ANPR) seeks input from stakeholders on the development of mandatory surveys of dairy production cost and product yield information, as authorized by the One Big Beautiful Bill Act of 2025 (OBBBA). USDA's Agricultural Marketing Service (AMS) seeks comments on the manufacturing cost and product yield data to be collected, the collection process, cost calculation methodologies, verification processes, and data reporting. Information received from public c
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-04013/mandatory-manufacturing-cost-survey-advanced-notice-of-proposed-rulemaking](https://www.federalregister.gov/documents/2026/02/27/2026-04013/mandatory-manufacturing-cost-survey-advanced-notice-of-proposed-rulemaking)
-
-### Religious Workforce Protection Act **[NEW]**
-
-- **Score:** 0.38
-- **Source:** Congress Gov
-- **Published:** 2026-02-19
-- **Type:** HR 2672
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2672?format=json](https://api.congress.gov/v3/bill/119/hr/2672?format=json)
-
-### A resolution recognizing that it is the duty of the Federal Government to develop and implement a Transgender Bill of Rights to protect and codify the rights of transgender and nonbinary people under the law and ensure their access to medical care, shelter, safety, and economic security. **[NEW]**
-
-- **Score:** 0.38
-- **Source:** Congress Gov
-- **Published:** 2026-02-19
-- **Type:** SRES 604
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on the Judiciary. (text: CR S580-581)
-- **Link:** [https://api.congress.gov/v3/bill/119/sres/604?format=json](https://api.congress.gov/v3/bill/119/sres/604?format=json)
-
-### Privacy Act of 1974; System of Records **[NEW]**
-
-- **Score:** 0.38
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Notice
-- **Summary:** Pursuant to the Privacy Act of 1974 and Office of Management and Budget (OMB) Circular A-108, the U.S. Nuclear Regulatory Commission (NRC) is proposing revisions to three systems of records: NRC 5, Grants Management System; NRC 32, Office of the Chief Financial Officer Financial Transactions and Debt Collection Management Records; and NRC 41, Tort Claims and Personal Property Claims Records. The revisions add a routine use permitting disclosure to the U.S. Department of the Treasury for purposes
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03592/privacy-act-of-1974-system-of-records](https://www.federalregister.gov/documents/2026/02/24/2026-03592/privacy-act-of-1974-system-of-records)
-
-### Agency Information Collection Activities; Comment Request on Distributions From Pensions, Annuities, Retirement or Profit-Sharing Plans, IRAs, Insurance Contracts, etc. **[NEW]**
-
-- **Score:** 0.38
-- **Source:** Federal Register
-- **Published:** 2026-02-20
-- **Type:** Notice
-- **Summary:** In accordance with the Paperwork Reduction Act of 1995, the IRS is inviting comments on the information collection request outlined in this notice.
-- **Link:** [https://www.federalregister.gov/documents/2026/02/20/2026-03376/agency-information-collection-activities-comment-request-on-distributions-from-pensions-annuities](https://www.federalregister.gov/documents/2026/02/20/2026-03376/agency-information-collection-activities-comment-request-on-distributions-from-pensions-annuities)
-
-### To amend the Grand Ronde Reservation Act to address the hunting, fishing, trapping, and animal gathering rights of the Confederated Tribes of the Grand Ronde Community, and for other purposes. **[NEW]**
-
-- **Score:** 0.37
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 1499
-- **Summary:** Referred to the House Committee on Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1499?format=json](https://api.congress.gov/v3/bill/119/hr/1499?format=json)
-
-### Tribal Gaming Regulatory Compliance Act **[NEW]**
-
-- **Score:** 0.36
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 3723
-- **Summary:** Referred to the House Committee on Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/3723?format=json](https://api.congress.gov/v3/bill/119/hr/3723?format=json)
-
-### Republic of Georgia Sovereignty Act **[NEW]**
-
-- **Score:** 0.36
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 7630
-- **Summary:** Referred to the House Committee on Foreign Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7630?format=json](https://api.congress.gov/v3/bill/119/hr/7630?format=json)
-
-### Indian Buffalo Management Act **[NEW]**
-
-- **Score:** 0.36
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 3478
-- **Summary:** Read twice and referred to the Committee on Indian Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3478?format=json](https://api.congress.gov/v3/bill/119/s/3478?format=json)
-
-### Albuquerque Indian School Act of 2025 **[NEW]**
-
-- **Score:** 0.35
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 6162
-- **Summary:** Referred to the Subcommittee on Indian and Insular Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6162?format=json](https://api.congress.gov/v3/bill/119/hr/6162?format=json)
-
-### Seneca Nation Law Enforcement Efficiency Act **[NEW]**
-
-- **Score:** 0.35
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7065
-- **Summary:** Referred to the Subcommittee on Indian and Insular Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7065?format=json](https://api.congress.gov/v3/bill/119/hr/7065?format=json)
-
-### Tribal Warrant Fairness Act **[NEW]**
-
-- **Score:** 0.35
-- **Source:** Congress Gov
-- **Published:** 2026-02-23
-- **Type:** S 3041
-- **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3041?format=json](https://api.congress.gov/v3/bill/119/s/3041?format=json)
-
-### Rural Opportunities To Use Transportation for Economic Success Initiative: Request for Information **[NEW]**
-
-- **Score:** 0.35
-- **Source:** Federal Register
-- **Published:** 2026-02-23
-- **Type:** Notice
-- **Summary:** DOT's Rural Opportunities to Use Transportation for Economic Success (ROUTES) Initiative addresses the transportation infrastructure needs of rural and Tribal communities by developing user-friendly tools and information, aggregating DOT resources, and providing direct technical assistance to connect rural and Tribal communities with the funding, financing, and outreach resources available. This notice requests comments on unmet transportation infrastructure needs in rural communities, barriers 
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03496/rural-opportunities-to-use-transportation-for-economic-success-initiative-request-for-information](https://www.federalregister.gov/documents/2026/02/23/2026-03496/rural-opportunities-to-use-transportation-for-economic-success-initiative-request-for-information)
-
-### Agency Information Collection Request for Comments **[NEW]**
+### Agency Information Collection Activities; North American Woodcock Singing Ground Survey **[NEW]**
 
 - **Score:** 0.34
 - **Source:** Federal Register
-- **Published:** 2026-02-26
+- **Published:** 2026-03-02
 - **Type:** Notice
-- **Summary:** The U.S. Energy Information Administration (EIA) has submitted the following information collection requirement to OMB for review and clearance under the Paperwork Reduction Act of 1995. This is the second notice for public comment; the first was published in the Federal Register on December 18, 2025, and no comments were received. EIA is forwarding the proposed Data Security Requirements for Accessing Confidential Data information collection to the Office of Management and Budget (OMB) for clea
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03822/agency-information-collection-request-for-comments](https://www.federalregister.gov/documents/2026/02/26/2026-03822/agency-information-collection-request-for-comments)
+- **Summary:** In accordance with the Paperwork Reduction Act of 1995, we, the U.S. Fish and Wildlife Service (Service), are proposing to renew an information collection without change.
+- **Link:** [https://www.federalregister.gov/documents/2026/03/02/2026-04104/agency-information-collection-activities-north-american-woodcock-singing-ground-survey](https://www.federalregister.gov/documents/2026/03/02/2026-04104/agency-information-collection-activities-north-american-woodcock-singing-ground-survey)
 
-### Revocation of the 30-Day Notification Requirement Prior To Termination of Lease for Nonpayment of Rent **[NEW]**
+### SUPPORT for Patients and Communities Reauthorization Act of 2025 **[NEW]**
 
-- **Score:** 0.34
-- **Source:** Federal Register
-- **Published:** 2026-02-26
-- **Type:** Rule
-- **Summary:** This rule revokes the 2021 interim final rule and 2024 final rule requiring that public housing agencies (PHAs) and owners of properties receiving project-based rental assistance (PBRA) provide certain tenants with 30-day notification prior to termination of lease for nonpayment of rent. Regulatory requirements for notice of termination for nonpayment of rent will return to pre-2021 requirements, which range from 5 days to 30 days for HUD programs and depend on state and local laws. This rule al
-- **Link:** [https://www.federalregister.gov/documents/2026/02/26/2026-03921/revocation-of-the-30-day-notification-requirement-prior-to-termination-of-lease-for-nonpayment-of](https://www.federalregister.gov/documents/2026/02/26/2026-03921/revocation-of-the-30-day-notification-requirement-prior-to-termination-of-lease-for-nonpayment-of)
-
-### Tribal Access to Electronic Evidence Act **[NEW]**
-
-- **Score:** 0.34
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 1574
-- **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/1574?format=json](https://api.congress.gov/v3/bill/119/s/1574?format=json)
-
-### Helping Our People Act of 2026 **[NEW]**
-
-- **Score:** 0.34
-- **Source:** Congress Gov
-- **Published:** 2026-02-23
-- **Type:** S 3769
-- **Summary:** Read twice and referred to the Committee on Indian Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3769?format=json](https://api.congress.gov/v3/bill/119/s/3769?format=json)
-
-### Applications for Amendments to Facility Operating Licenses Involving Proposed No Significant Hazards Consideration Determination and Containing Sensitive Unclassified Non-Safeguards Information and Order Imposing Procedures for Access to Sensitive Unclassified Non-Safeguards Information **[NEW]**
-
-- **Score:** 0.33
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Notice
-- **Summary:** The U.S. Nuclear Regulatory Commission (NRC) received and is considering approval of a request to amend three operating licenses. The license amendment requests are for Braidwood Station, Units 1 and 2, and Byron Station, Unit Nos. 1 and 2; Virgil C. Summer Nuclear Station, Unit 1; and Salem Nuclear Generating Station, Unit Nos. 1 and 2. For each amendment request, the NRC proposes to determine that it involves no significant hazards consideration (NSHC). Because each amendment request contains 
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03625/applications-for-amendments-to-facility-operating-licenses-involving-proposed-no-significant-hazards](https://www.federalregister.gov/documents/2026/02/24/2026-03625/applications-for-amendments-to-facility-operating-licenses-involving-proposed-no-significant-hazards)
-
-### Employment Authorization Reform for Asylum Applicants **[NEW]**
-
-- **Score:** 0.33
-- **Source:** Federal Register
-- **Published:** 2026-02-23
-- **Type:** Proposed Rule
-- **Summary:** The U.S. Department of Homeland Security (DHS) proposes to modify regulations governing applications for asylum and withholding of removal (asylum applications) and employment authorization based on a pending asylum application. The proposed rule would change filing and eligibility requirements for aliens requesting employment authorization and an employment authorization document (EAD) based on a pending asylum application. The changes include pausing acceptance of EAD applications from asylum 
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03595/employment-authorization-reform-for-asylum-applicants](https://www.federalregister.gov/documents/2026/02/23/2026-03595/employment-authorization-reform-for-asylum-applicants)
-
-### Guidance on Multimodal State Freight Plans and State Freight Advisory Committees **[NEW]**
-
-- **Score:** 0.33
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Notice
-- **Summary:** The Fixing America's Surface Transportation (FAST) Act included a provision requiring each State that receives funding under the National Highway Freight Program (NHFP) to develop a State Freight Plan (the Plan) that provides a comprehensive approach for the immediate and long-range planning activities and investments of the State with respect to freight, and meets all the required plan contents listed in the Act. The Infrastructure Investment and Jobs Act (IIJA) added several new required eleme
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03648/guidance-on-multimodal-state-freight-plans-and-state-freight-advisory-committees](https://www.federalregister.gov/documents/2026/02/24/2026-03648/guidance-on-multimodal-state-freight-plans-and-state-freight-advisory-committees)
-
-### Housing and Community Development Act of 1980: Verification of Eligible Status **[NEW]**
-
-- **Score:** 0.33
-- **Source:** Federal Register
-- **Published:** 2026-02-20
-- **Type:** Proposed Rule
-- **Summary:** Section 214 of the Housing and Community Development Act of 1980, as amended ("Section 214"), prohibits the Secretary of HUD from making financial assistance available to persons other than United States citizens or certain categories of eligible noncitizens in HUD's public and specified assisted housing programs. This proposed rule would revise HUD's Section 214 implementing regulations to require the verification of U.S. citizenship or the eligible immigration status of all applicants and reci
-- **Link:** [https://www.federalregister.gov/documents/2026/02/20/2026-03405/housing-and-community-development-act-of-1980-verification-of-eligible-status](https://www.federalregister.gov/documents/2026/02/20/2026-03405/housing-and-community-development-act-of-1980-verification-of-eligible-status)
-
-### Hiring Authority for College Graduates **[NEW]**
-
-- **Score:** 0.33
-- **Source:** Federal Register
-- **Published:** 2026-02-20
-- **Type:** Rule
-- **Summary:** The Office of Personnel Management (OPM) is issuing a final rule to amend its career and career-conditional employment regulations. The revision is necessary to implement the John S. McCain National Defense Authorization Act (NDAA) for Fiscal Year (FY) 2019. This statute requires OPM to issue regulations establishing a hiring authority for college graduates into positions at specified grades in the competitive service. The intended effect of the authority is to provide additional flexibility in 
-- **Link:** [https://www.federalregister.gov/documents/2026/02/20/2026-03354/hiring-authority-for-college-graduates](https://www.federalregister.gov/documents/2026/02/20/2026-03354/hiring-authority-for-college-graduates)
-
-### Agency Information Collection Activities; Submission to the Office of Management and Budget for Review and Approval; Diversions, Return Flow, and Consumptive Use of Colorado River Water in the Lower Colorado River Basin **[NEW]**
-
-- **Score:** 0.33
-- **Source:** Federal Register
-- **Published:** 2026-02-24
-- **Type:** Notice
-- **Summary:** In accordance with the Paperwork Reduction Act of 1995, we, the Bureau of Reclamation (Reclamation) are proposing to renew and revise an information collection.
-- **Link:** [https://www.federalregister.gov/documents/2026/02/24/2026-03654/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-for](https://www.federalregister.gov/documents/2026/02/24/2026-03654/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-for)
-
-### Comprehensive Fishery Management Plans for Puerto Rico, St. Croix, and St. Thomas and St. John; Correction **[NEW]**
-
-- **Score:** 0.33
-- **Source:** Federal Register
-- **Published:** 2026-02-23
-- **Type:** Rule
-- **Summary:** NMFS corrects the final rule that implemented management measures described in the Puerto Rico, St. Croix, and St. Thomas and St. John Fishery Management Plans (collectively, island-based FMPs), which published in the Federal Register on September 13, 2022. Among other measures, the final rule revised and redesignated the species tables, but inadvertently did not include revisions to the applicable species table references. The purpose of this correcting amendment is to fix these inadvertent err
-- **Link:** [https://www.federalregister.gov/documents/2026/02/23/2026-03507/comprehensive-fishery-management-plans-for-puerto-rico-st-croix-and-st-thomas-and-st-john-correction](https://www.federalregister.gov/documents/2026/02/23/2026-03507/comprehensive-fishery-management-plans-for-puerto-rico-st-croix-and-st-thomas-and-st-john-correction)
-
-### To repeal the Impoundment Control Act of 1974. **[NEW]**
-
-- **Score:** 0.32
+- **Score:** 0.31
 - **Source:** Congress Gov
 - **Published:** 2026-02-27
-- **Type:** HR 1180
-- **Summary:** Referred to the Committee on the Budget, and in addition to the Committee on Rules, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1180?format=json](https://api.congress.gov/v3/bill/119/hr/1180?format=json)
-
-### CCAMPIS Reauthorization Act **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 5458
-- **Summary:** Referred to the House Committee on Education and Workforce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5458?format=json](https://api.congress.gov/v3/bill/119/hr/5458?format=json)
-
-### First Responder Network Authority Reauthorization Act of 2026 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7386
-- **Summary:** Forwarded by Subcommittee to Full Committee by Voice Vote.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7386?format=json](https://api.congress.gov/v3/bill/119/hr/7386?format=json)
-
-### Conrad State 30 and Physician Access Reauthorization Act **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 709
-- **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/709?format=json](https://api.congress.gov/v3/bill/119/s/709?format=json)
-
-### Rural Innovation Stronger Economy (RISE) Reauthorization Act of 2026 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** S 3861
-- **Summary:** Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3861?format=json](https://api.congress.gov/v3/bill/119/s/3861?format=json)
-
-### Providing for consideration of the bill (H.R. 5371) making continuing appropriations and extensions for fiscal year 2026, and for other purposes; providing for consideration of the resolution (H. Res. 719) honoring the life and legacy of Charles "Charlie" James Kirk; and for other purposes. **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HRES 722
-- **Summary:** Motion to reconsider laid on the table Agreed to without objection.
-- **Link:** [https://api.congress.gov/v3/bill/119/hres/722?format=json](https://api.congress.gov/v3/bill/119/hres/722?format=json)
-
-### Stronger Engagement for Indian Health Needs Act of 2026 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-02-21
-- **Type:** S 3767
-- **Summary:** Read twice and referred to the Committee on Indian Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3767?format=json](https://api.congress.gov/v3/bill/119/s/3767?format=json)
-
-### Disapproving the action of the District of Columbia Council in approving the D.C. Income and Franchise Tax Conformity and Revision Temporary Amendment Act of 2025. **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-19
-- **Type:** HJRES 142
-- **Summary:** Became Public Law No: 119-78.
-- **Link:** [https://api.congress.gov/v3/bill/119/hjres/142?format=json](https://api.congress.gov/v3/bill/119/hjres/142?format=json)
-
-### United States Commission on International Religious Freedom Reauthorization Act of 2025 **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 1744
-- **Summary:** Referred to the House Committee on Foreign Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1744?format=json](https://api.congress.gov/v3/bill/119/hr/1744?format=json)
-
-### National Flood Insurance Program Reauthorization and Reform Act of 2025 **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 5484
-- **Summary:** Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5484?format=json](https://api.congress.gov/v3/bill/119/hr/5484?format=json)
-
-### Wildlife Road Crossings Program Reauthorization Act of 2025 **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 6078
-- **Summary:** Referred to the Subcommittee on Highways and Transit.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6078?format=json](https://api.congress.gov/v3/bill/119/hr/6078?format=json)
-
-### To amend the Agriculture, Rural Development, Food and Drug Administration, and Related Agency Appropriations Act, 2026, to delay the implementation of amendments made by such Act to the hemp production provisions of the Agricultural Marketing Act of 1946. **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** HR 7010
-- **Summary:** Referred to the House Committee on Agriculture.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7010?format=json](https://api.congress.gov/v3/bill/119/hr/7010?format=json)
-
-### RISE Reauthorization Act of 2026 **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 7533
-- **Summary:** Referred to the House Committee on Agriculture.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7533?format=json](https://api.congress.gov/v3/bill/119/hr/7533?format=json)
-
-### Export-Import Bank Reauthorization Act of 2026 **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-23
-- **Type:** S 3772
-- **Summary:** Read twice and referred to the Committee on Banking, Housing, and Urban Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3772?format=json](https://api.congress.gov/v3/bill/119/s/3772?format=json)
-
-### Regional Ocean Partnerships Reauthorization Act of 2026 **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 3791
-- **Summary:** Read twice and referred to the Committee on Commerce, Science, and Transportation.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3791?format=json](https://api.congress.gov/v3/bill/119/s/3791?format=json)
-
-### Healthy Start Reauthorization Act of 2026 **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-24
-- **Type:** S 3799
-- **Summary:** Read twice and referred to the Committee on Health, Education, Labor, and Pensions.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3799?format=json](https://api.congress.gov/v3/bill/119/s/3799?format=json)
-
-### Providing for consideration of the joint resolution (H.J. Res. 25) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to "Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales"; providing for consideration of the bill (H.R. 1156) to amend the CARES Act to extend the statute of limitations for fraud under certain unemployment programs, and for other purposes; providing for consideration of the bill (H.R. 1968) making further continuing appropriations and other extensions for the fiscal year ending September 30, 2025, and for other purposes; and for other purposes. **[NEW]**
-
-- **Score:** 0.31
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HRES 211
-- **Summary:** Pursuant to the provisions of H.Res. 707, H.Res. 211 is amended.
-- **Link:** [https://api.congress.gov/v3/bill/119/hres/211?format=json](https://api.congress.gov/v3/bill/119/hres/211?format=json)
-
-### Notice of Intent To Amend the Resource Management Plan for the Sonoran Desert National Monument, Arizona, and Prepare an Associated Environmental Assessment **[NEW]**
-
-- **Score:** 0.30
-- **Source:** Federal Register
-- **Published:** 2026-02-27
-- **Type:** Notice
-- **Summary:** In compliance with the National Environmental Policy Act of 1969, as amended (NEPA), and the Federal Land Policy and Management Act of 1976, as amended, the Bureau of Land Management (BLM) Arizona State Director intends to prepare a Resource Management Plan (RMP) Amendment with an associated environmental assessment (EA) concerning recreational target shooting for the Sonoran Desert National Monument (SDNM). By this notice the BLM is announcing the beginning of the scoping period to solicit publ
-- **Link:** [https://www.federalregister.gov/documents/2026/02/27/2026-03912/notice-of-intent-to-amend-the-resource-management-plan-for-the-sonoran-desert-national-monument](https://www.federalregister.gov/documents/2026/02/27/2026-03912/notice-of-intent-to-amend-the-resource-management-plan-for-the-sonoran-desert-national-monument)
-
-### To amend the Internal Revenue Code of 1986 to treat Indian Tribal Governments in the same manner as State governments for certain Federal tax purposes, and for other purposes. **[NEW]**
-
-- **Score:** 0.30
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HR 7705
-- **Summary:** Referred to the Committee on Ways and Means, and in addition to the Committee on Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7705?format=json](https://api.congress.gov/v3/bill/119/hr/7705?format=json)
-
-### Of inquiry requesting the President and directing the Secretary of Health and Human Services to transmit, respectively, certain documents to the House of Representatives relating to the "Defend the Spend" freeze on child care payments to all States, Tribes, and Territories. **[NEW]**
-
-- **Score:** 0.30
-- **Source:** Congress Gov
-- **Published:** 2026-02-26
-- **Type:** HRES 1078
-- **Summary:** Referred to the House Committee on Ways and Means.
-- **Link:** [https://api.congress.gov/v3/bill/119/hres/1078?format=json](https://api.congress.gov/v3/bill/119/hres/1078?format=json)
+- **Type:** HR 2483
+- **Summary:** Became Public Law No: 119-44.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/2483?format=json](https://api.congress.gov/v3/bill/119/hr/2483?format=json)
 
 
 ## Critical Program Updates
@@ -2025,7 +361,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 
 ### Clinical Research Network on Antimicrobial Resistance
 
-- **Score:** 0.87
+- **Score:** 0.85
 - **Source:** Grants Gov
 - **Published:** 12/29/2025
 - **Type:** grant_opportunity
@@ -2035,7 +371,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 
 ### FY2026 Support for 988 Tribal Response Cooperative Agreements
 
-- **Score:** 0.87
+- **Score:** 0.85
 - **Source:** Grants Gov
 - **Published:** 12/29/2025
 - **Type:** grant_opportunity
@@ -2408,56 +744,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Summary:** $11,300,743 obligated under CFDA 97.047 to INDIANA DEPT OF HOMELAND SECURITY
 - **Link:** [https://www.usaspending.gov/award/266578341](https://www.usaspending.gov/award/266578341)
 
-### Rural Microentrepreneur Assistance Program
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361373](https://www.grants.gov/search-results-detail/361373)
-
-### Rural Microentrepreneur Program(RMAP)
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361374](https://www.grants.gov/search-results-detail/361374)
-
-### Dental Faculty Loan Repayment Program (DFLRP)
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361375](https://www.grants.gov/search-results-detail/361375)
-
-### Strategies to Link, Engage, and Retain Men with HIV in Care: Evaluation Provider
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361376](https://www.grants.gov/search-results-detail/361376)
-
-### Strategies to Link, Engage, and Retain Men with HIV in Care: Implementation Technical Assistance Provider
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 02/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361377](https://www.grants.gov/search-results-detail/361377)
-
 ### FY26 Obligation: A22AC00055 — GREAT PLAINS TRIBAL WATER ALLIANCE, INC
 
 - **Score:** 0.72
@@ -2468,6 +754,86 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Summary:** $1,604,220 obligated under CFDA 15.156 to GREAT PLAINS TRIBAL WATER ALLIANCE, INC
 - **Link:** [https://www.usaspending.gov/award/259249424](https://www.usaspending.gov/award/259249424)
+
+### Peer Supports for Augmentative and Alternative Communication
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/27/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361379](https://www.grants.gov/search-results-detail/361379)
+
+### NextTech: Translational Development of Next-Generation Diagnostic and Therapeutic Devices (R18 Clinical Trial Not Allowed)
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/27/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361380](https://www.grants.gov/search-results-detail/361380)
+
+### Facilitator Training for Victim Offender Dialogue
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/27/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361378](https://www.grants.gov/search-results-detail/361378)
+
+### Rural Microentrepreneur Program(RMAP)
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/26/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361374](https://www.grants.gov/search-results-detail/361374)
+
+### Rural Microentrepreneur Assistance Program
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/26/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361373](https://www.grants.gov/search-results-detail/361373)
+
+### Strategies to Link, Engage, and Retain Men with HIV in Care: Implementation Technical Assistance Provider
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/26/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361377](https://www.grants.gov/search-results-detail/361377)
+
+### Dental Faculty Loan Repayment Program (DFLRP)
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/26/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361375](https://www.grants.gov/search-results-detail/361375)
+
+### Strategies to Link, Engage, and Retain Men with HIV in Care: Evaluation Provider
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/26/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361376](https://www.grants.gov/search-results-detail/361376)
 
 ### Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs
 
@@ -2529,6 +895,16 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361369](https://www.grants.gov/search-results-detail/361369)
 
+### Delta Rural Integrated Health Network Program
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 02/24/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361364](https://www.grants.gov/search-results-detail/361364)
+
 ### Region 9 Fiscal Year 2025 Wetland Program Development Grants
 
 - **Score:** 0.72
@@ -2539,15 +915,15 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361361](https://www.grants.gov/search-results-detail/361361)
 
-### Delta Rural Integrated Health Network Program
+### University Centers for Developmental Disabilities in Education, Research, and Service
 
 - **Score:** 0.72
 - **Source:** Grants Gov
-- **Published:** 02/24/2026
+- **Published:** 02/23/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361364](https://www.grants.gov/search-results-detail/361364)
+- **Link:** [https://www.grants.gov/search-results-detail/361349](https://www.grants.gov/search-results-detail/361349)
 
 ### Improving Chronic Conditions Through Inexpensive Interventions
 
@@ -2568,76 +944,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361351](https://www.grants.gov/search-results-detail/361351)
-
-### University Centers for Developmental Disabilities in Education, Research, and Service
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/23/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361349](https://www.grants.gov/search-results-detail/361349)
-
-### HEAL Initiative: Program to Reveal and Evaluate Cells-to-gene Information that Specify Intricacies, Origins and the Nature of (PRECISION) Human Pain Network
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361334](https://www.grants.gov/search-results-detail/361334)
-
-### FY 2025 Region 4 Wetlands Program
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361338](https://www.grants.gov/search-results-detail/361338)
-
-### Region 08 Fiscal Year 2025 Wetland Program Development Grants
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361337](https://www.grants.gov/search-results-detail/361337)
-
-### Feed the Future Innovation Labs
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361339](https://www.grants.gov/search-results-detail/361339)
-
-### Region 1 Fiscal Year 2025 Wetland Program Development Grants
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361335](https://www.grants.gov/search-results-detail/361335)
-
-### OSERS-OSEP: State Technical Assistance Projects to Improve Services and Results for DeafBlind Children, Assistance Listing Number 84.326T
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361336](https://www.grants.gov/search-results-detail/361336)
 
 ### Strategic support for human resources for health for the Ministry of Health and Social Services (MOHSS) to sustain HIV epidemic control in Namibia under the U.S. President's Emergency Plan for AIDS Relief (PEPFAR)
 
@@ -2668,6 +974,66 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience, EPA STAG
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/358886](https://www.grants.gov/search-results-detail/358886)
+
+### HEAL Initiative: Program to Reveal and Evaluate Cells-to-gene Information that Specify Intricacies, Origins and the Nature of (PRECISION) Human Pain Network
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/20/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361334](https://www.grants.gov/search-results-detail/361334)
+
+### FY 2025 Region 4 Wetlands Program
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/20/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361338](https://www.grants.gov/search-results-detail/361338)
+
+### Region 08 Fiscal Year 2025 Wetland Program Development Grants
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/20/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361337](https://www.grants.gov/search-results-detail/361337)
+
+### Feed the Future Innovation Labs
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/20/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361339](https://www.grants.gov/search-results-detail/361339)
+
+### Region 1 Fiscal Year 2025 Wetland Program Development Grants
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/20/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361335](https://www.grants.gov/search-results-detail/361335)
+
+### OSERS-OSEP: State Technical Assistance Projects to Improve Services and Results for DeafBlind Children, Assistance Listing Number 84.326T
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/20/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361336](https://www.grants.gov/search-results-detail/361336)
 
 ### Collaborative Program Grant for Multidisciplinary Teams
 
@@ -2938,66 +1304,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361304](https://www.grants.gov/search-results-detail/361304)
-
-### Pay-for-Performance (PfP) Incentive Payments Program
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361087](https://www.grants.gov/search-results-detail/361087)
-
-### FY 2026 English Language Fellow, Specialist, and Virtual Educator Program
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361293](https://www.grants.gov/search-results-detail/361293)
-
-### Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361294](https://www.grants.gov/search-results-detail/361294)
-
-### NEA Research Grants in the Arts, FY 2027
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361295](https://www.grants.gov/search-results-detail/361295)
-
-### NEA Research Labs, FY 2027
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361296](https://www.grants.gov/search-results-detail/361296)
-
-### National Quantum and Nanotechnology Infrastructure
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361297](https://www.grants.gov/search-results-detail/361297)
 
 ### REQUEST FOR INFORMATION &ndash; MUTUALLY BENEFICIAL MULTIDISCIPLINARY INNOVATION ECOSYSTEMS
 
@@ -3299,16 +1605,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/358024](https://www.grants.gov/search-results-detail/358024)
 
-### An act to provide for reconciliation pursuant to title II of H. Con. Res. 14.
-
-- **Score:** 0.69
-- **Source:** Congress Gov
-- **Published:** 2026-02-27
-- **Type:** HR 1
-- **Programs:** IRS Elective Pay
-- **Summary:** Became Public Law No: 119-21.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1?format=json](https://api.congress.gov/v3/bill/119/hr/1?format=json)
-
 ### Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)
 
 - **Score:** 0.69
@@ -3318,6 +1614,66 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience, EPA STAG
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/359274](https://www.grants.gov/search-results-detail/359274)
+
+### Pay-for-Performance (PfP) Incentive Payments Program
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361087](https://www.grants.gov/search-results-detail/361087)
+
+### FY 2026 English Language Fellow, Specialist, and Virtual Educator Program
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361293](https://www.grants.gov/search-results-detail/361293)
+
+### Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361294](https://www.grants.gov/search-results-detail/361294)
+
+### NEA Research Grants in the Arts, FY 2027
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361295](https://www.grants.gov/search-results-detail/361295)
+
+### NEA Research Labs, FY 2027
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361296](https://www.grants.gov/search-results-detail/361296)
+
+### National Quantum and Nanotechnology Infrastructure
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361297](https://www.grants.gov/search-results-detail/361297)
 
 ### Genomic and Biologic Therapies for ADRD (U01 Clinical Trial Optional)
 
@@ -3529,6 +1885,16 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/359939](https://www.grants.gov/search-results-detail/359939)
 
+### Freedom 250 Outreach Across India
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/09/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361261](https://www.grants.gov/search-results-detail/361261)
+
 ### BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)
 
 - **Score:** 0.69
@@ -3568,16 +1934,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361263](https://www.grants.gov/search-results-detail/361263)
-
-### Freedom 250 Outreach Across India
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 02/09/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361261](https://www.grants.gov/search-results-detail/361261)
 
 ### Cartel Recruitment Understanding &amp; Suppression Hub (CRUSH
 
@@ -3739,16 +2095,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361249](https://www.grants.gov/search-results-detail/361249)
 
-### FY24 MS HCDC Seaway Rail Truck Site
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 02/05/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361246](https://www.grants.gov/search-results-detail/361246)
-
 ### The Metastasis Research Network (MetNet): MetNet Research Projects (U01 Clinical Trial Not Allowed)
 
 - **Score:** 0.69
@@ -3789,155 +2135,15 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361234](https://www.grants.gov/search-results-detail/361234)
 
-### Conservation Interns at the Raystown Lake Project, USACE
+### An act to provide for reconciliation pursuant to title II of H. Con. Res. 14.
 
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360945](https://www.grants.gov/search-results-detail/360945)
-
-### Specialized Alcohol Research Centers (P50 Clinical trial Optional)
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361216](https://www.grants.gov/search-results-detail/361216)
-
-### Pilot Projects Enhancing Utility and Usage of Common Fund Data Sets (R03 Clinical Trial Not Allowed)
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/359879](https://www.grants.gov/search-results-detail/359879)
-
-### Wildfire Smoke Preparedness in Community Buildings
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361217](https://www.grants.gov/search-results-detail/361217)
-
-### PRIA 5 Training Development
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361218](https://www.grants.gov/search-results-detail/361218)
-
-### Ryan White HIV/AIDS Program Part C Capacity Development Program&#8239;
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361220](https://www.grants.gov/search-results-detail/361220)
-
-### Single Source: Outcomes of Electronic Medical Records and Genomics (eMERGE) Genomic Risk Assessment and Management Network - Coordinating Center (U01 Clinical Trial Required)
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/359173](https://www.grants.gov/search-results-detail/359173)
-
-### Fiscal Year (FY) 2026 AmeriCorps Seniors RSVP Competition
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361221](https://www.grants.gov/search-results-detail/361221)
-
-### Fiscal Year (FY) 2026 AmeriCorps State and National Competitive Grants
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361222](https://www.grants.gov/search-results-detail/361222)
-
-### Groundwater and Streamflow Information Program, National Ground-Water Monitoring Network
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/30/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361219](https://www.grants.gov/search-results-detail/361219)
-
-### Controlled Clinical Trials on Long-Term Effects of Nutritional Interventions on the Progression of Risk Factors for Age-Related Chronic Conditions Over the Life Span and Their Age of Onset
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/29/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361214](https://www.grants.gov/search-results-detail/361214)
-
-### NIA Research and Entrepreneurial Development Immersion (REDI): Entrepreneurship Enhancement Award
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/29/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361215](https://www.grants.gov/search-results-detail/361215)
-
-### Agriculture and Food Research Initiative  Strengthening Agricultural Systems
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/29/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361211](https://www.grants.gov/search-results-detail/361211)
-
-### Single Source for the Continuation of the Epidemiology of Diabetes Interventions and Complications (EDIC) Study Research Center (Collaborative U01 Clinical Trial Not Allowed)
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/29/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361213](https://www.grants.gov/search-results-detail/361213)
-
-### 2025 South Florida Program
-
-- **Score:** 0.69
-- **Source:** Grants Gov
-- **Published:** 01/28/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361209](https://www.grants.gov/search-results-detail/361209)
+- **Score:** 0.68
+- **Source:** Congress Gov
+- **Published:** 2026-02-27
+- **Type:** HR 1
+- **Programs:** IRS Elective Pay
+- **Summary:** Became Public Law No: 119-21.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/1?format=json](https://api.congress.gov/v3/bill/119/hr/1?format=json)
 
 ### Commission on Equity and Reconciliation in the Uniformed Services Act
 
@@ -3969,6 +2175,156 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361107](https://www.grants.gov/search-results-detail/361107)
 
+### Conservation Interns at the Raystown Lake Project, USACE
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/360945](https://www.grants.gov/search-results-detail/360945)
+
+### Specialized Alcohol Research Centers (P50 Clinical trial Optional)
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361216](https://www.grants.gov/search-results-detail/361216)
+
+### Pilot Projects Enhancing Utility and Usage of Common Fund Data Sets (R03 Clinical Trial Not Allowed)
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/359879](https://www.grants.gov/search-results-detail/359879)
+
+### Wildfire Smoke Preparedness in Community Buildings
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361217](https://www.grants.gov/search-results-detail/361217)
+
+### PRIA 5 Training Development
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361218](https://www.grants.gov/search-results-detail/361218)
+
+### Ryan White HIV/AIDS Program Part C Capacity Development Program&#8239;
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361220](https://www.grants.gov/search-results-detail/361220)
+
+### Single Source: Outcomes of Electronic Medical Records and Genomics (eMERGE) Genomic Risk Assessment and Management Network - Coordinating Center (U01 Clinical Trial Required)
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/359173](https://www.grants.gov/search-results-detail/359173)
+
+### Fiscal Year (FY) 2026 AmeriCorps Seniors RSVP Competition
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361221](https://www.grants.gov/search-results-detail/361221)
+
+### Fiscal Year (FY) 2026 AmeriCorps State and National Competitive Grants
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361222](https://www.grants.gov/search-results-detail/361222)
+
+### Groundwater and Streamflow Information Program, National Ground-Water Monitoring Network
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/30/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361219](https://www.grants.gov/search-results-detail/361219)
+
+### Controlled Clinical Trials on Long-Term Effects of Nutritional Interventions on the Progression of Risk Factors for Age-Related Chronic Conditions Over the Life Span and Their Age of Onset
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/29/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361214](https://www.grants.gov/search-results-detail/361214)
+
+### NIA Research and Entrepreneurial Development Immersion (REDI): Entrepreneurship Enhancement Award
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/29/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361215](https://www.grants.gov/search-results-detail/361215)
+
+### Agriculture and Food Research Initiative  Strengthening Agricultural Systems
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/29/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361211](https://www.grants.gov/search-results-detail/361211)
+
+### Single Source for the Continuation of the Epidemiology of Diabetes Interventions and Complications (EDIC) Study Research Center (Collaborative U01 Clinical Trial Not Allowed)
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/29/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361213](https://www.grants.gov/search-results-detail/361213)
+
+### 2025 South Florida Program
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/28/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361209](https://www.grants.gov/search-results-detail/361209)
+
 ### Coordinating Center for National Resource Network for the Study of Human Auditory and Vestibular Disorders
 
 - **Score:** 0.67
@@ -3978,16 +2334,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361208](https://www.grants.gov/search-results-detail/361208)
-
-### BRAIN Initiative: Brain-Behavior Quantification and Synchronization &ndash; Transformative Research on Behavior at the Organismal Level
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 01/26/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361205](https://www.grants.gov/search-results-detail/361205)
 
 ### Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials
 
@@ -4018,6 +2364,16 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361206](https://www.grants.gov/search-results-detail/361206)
+
+### BRAIN Initiative: Brain-Behavior Quantification and Synchronization &ndash; Transformative Research on Behavior at the Organismal Level
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/26/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361205](https://www.grants.gov/search-results-detail/361205)
 
 ### Resource-Related Research Projects Cooperative Agreements in Aging and/or Alzheimer's Disease (AD) and Alzheimer's Disease-Related Dementias (ADRD) Research
 
@@ -4069,6 +2425,16 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361191](https://www.grants.gov/search-results-detail/361191)
 
+### Native Hawaiian Library Services Grants (2026)
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/21/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361174](https://www.grants.gov/search-results-detail/361174)
+
 ### OVW Fiscal Year 2026 Formula Programs Training and Technical Assistance Initiative
 
 - **Score:** 0.67
@@ -4088,16 +2454,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361172](https://www.grants.gov/search-results-detail/361172)
-
-### Native Hawaiian Library Services Grants (2026)
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 01/21/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361174](https://www.grants.gov/search-results-detail/361174)
 
 ### NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)
 
@@ -4239,36 +2595,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361137](https://www.grants.gov/search-results-detail/361137)
 
-### ROSES25: C.12 Foundational Artificial Intelligence for the Moon and Mars
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 01/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361136](https://www.grants.gov/search-results-detail/361136)
-
-### Limited Competition: Biospecimen Banks to support NCI National Clinical Trials Network Biospecimen Banks (NCTN Biobanks) and the NCI Early-Phase and Experimental Clinical Trials Biospecimen Bank (EET Biobank) (U24 Clinical Trial Not Allowed)
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 01/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361134](https://www.grants.gov/search-results-detail/361134)
-
-### FY2026 Cooperative Agreement for 988 Suicide &amp; Crisis Lifeline Administrator
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 01/13/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360981](https://www.grants.gov/search-results-detail/360981)
-
 ### Support for a National Electronic Interstate Records Exchange System
 
 - **Score:** 0.67
@@ -4369,6 +2695,26 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361147](https://www.grants.gov/search-results-detail/361147)
 
+### ROSES25: C.12 Foundational Artificial Intelligence for the Moon and Mars
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361136](https://www.grants.gov/search-results-detail/361136)
+
+### Limited Competition: Biospecimen Banks to support NCI National Clinical Trials Network Biospecimen Banks (NCTN Biobanks) and the NCI Early-Phase and Experimental Clinical Trials Biospecimen Bank (EET Biobank) (U24 Clinical Trial Not Allowed)
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/13/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361134](https://www.grants.gov/search-results-detail/361134)
+
 ### ROSES25: F.19 Collaborative Opportunities for Mentorship, Partnership and Academic Success in Science
 
 - **Score:** 0.67
@@ -4459,26 +2805,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361100](https://www.grants.gov/search-results-detail/361100)
 
-### Telehealth Centers of Excellence
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 01/06/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361085](https://www.grants.gov/search-results-detail/361085)
-
-### Fiscal Year 2026 University Reactor Sharing and Outreach
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 01/06/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361092](https://www.grants.gov/search-results-detail/361092)
-
 ### NIH Director&rsquo;s Transformative Research Awards (R01 Clinical Trial Optional)
 
 - **Score:** 0.67
@@ -4509,6 +2835,16 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361094](https://www.grants.gov/search-results-detail/361094)
 
+### Telehealth Centers of Excellence
+
+- **Score:** 0.67
+- **Source:** Grants Gov
+- **Published:** 01/06/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361085](https://www.grants.gov/search-results-detail/361085)
+
 ### ERDC Broad Agency Announcement
 
 - **Score:** 0.67
@@ -4518,106 +2854,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361080](https://www.grants.gov/search-results-detail/361080)
-
-### Mechanisms for Amplification of fusion Reaction Rates in Solids (MARRS)
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/30/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361079](https://www.grants.gov/search-results-detail/361079)
-
-### OVC FY25 Services for Victims of Human Trafficking
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/30/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361072](https://www.grants.gov/search-results-detail/361072)
-
-### OVC FY25 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/30/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361071](https://www.grants.gov/search-results-detail/361071)
-
-### OVC FY25 Improving Outcomes for Child and Youth Victims of Human Trafficking
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/30/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361076](https://www.grants.gov/search-results-detail/361076)
-
-### NIGMS Institutional Biomedical Undergraduate Research Training (BURT) Program (T34)
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/29/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/359861](https://www.grants.gov/search-results-detail/359861)
-
-### Office of Special Education and Rehabilitative Services (OSERS): Rehabilitation Services Administration (RSA): Braille Training Program, Assistance Listing Number 84.235E
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/29/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361064](https://www.grants.gov/search-results-detail/361064)
-
-### National K12 Program for the Career Development of Clinician-Scientists in Diabetes Research (Diabetes-DOCS)
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/29/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361066](https://www.grants.gov/search-results-detail/361066)
-
-### FY2026 Cooperative Agreements for 988 Suicide and Crisis Lifeline Crisis Center Follow-Up Programs
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/29/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361069](https://www.grants.gov/search-results-detail/361069)
-
-### FY2026 Cooperative Agreements for States and Territories to Improve Local 988 Capacity
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/29/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361067](https://www.grants.gov/search-results-detail/361067)
-
-### Providers Clinical Support System &ndash; Substance Use Disorder Treatment (PCSS-SUD Treatment)
-
-- **Score:** 0.67
-- **Source:** Grants Gov
-- **Published:** 12/29/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361070](https://www.grants.gov/search-results-detail/361070)
 
 ### FY26 Obligation: 4798DRTXP00000005 — TEXAS DIVISION OF EMERGENCY MANAGEMENT
 
@@ -4629,28 +2865,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 97.039
 - **Summary:** $104,176 obligated under CFDA 97.039 to TEXAS DIVISION OF EMERGENCY MANAGEMENT
 - **Link:** [https://www.usaspending.gov/award/355183766](https://www.usaspending.gov/award/355183766)
-
-### FY26 Obligation: 4794DRFLP00000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT
-
-- **Score:** 0.66
-- **Source:** Usaspending
-- **Published:** 2026-01-30
-- **Type:** obligation
-- **Programs:** FEMA BRIC
-- **CFDA:** 97.039
-- **Summary:** $97,814 obligated under CFDA 97.039 to STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT
-- **Link:** [https://www.usaspending.gov/award/354892433](https://www.usaspending.gov/award/354892433)
-
-### FY26 Obligation: 4817DRLAP00000005 — HOMELAND SECURITY & EMERGENCY
-
-- **Score:** 0.66
-- **Source:** Usaspending
-- **Published:** 2026-01-29
-- **Type:** obligation
-- **Programs:** FEMA BRIC
-- **CFDA:** 97.039
-- **Summary:** $7,814 obligated under CFDA 97.039 to HOMELAND SECURITY & EMERGENCY
-- **Link:** [https://www.usaspending.gov/award/354893427](https://www.usaspending.gov/award/354893427)
 
 ### Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements
 
@@ -4952,6 +3166,106 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/357307](https://www.grants.gov/search-results-detail/357307)
 
+### Mechanisms for Amplification of fusion Reaction Rates in Solids (MARRS)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/30/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361079](https://www.grants.gov/search-results-detail/361079)
+
+### OVC FY25 Services for Victims of Human Trafficking
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/30/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361072](https://www.grants.gov/search-results-detail/361072)
+
+### OVC FY25 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/30/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361071](https://www.grants.gov/search-results-detail/361071)
+
+### OVC FY25 Improving Outcomes for Child and Youth Victims of Human Trafficking
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/30/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361076](https://www.grants.gov/search-results-detail/361076)
+
+### NIGMS Institutional Biomedical Undergraduate Research Training (BURT) Program (T34)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/29/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/359861](https://www.grants.gov/search-results-detail/359861)
+
+### Office of Special Education and Rehabilitative Services (OSERS): Rehabilitation Services Administration (RSA): Braille Training Program, Assistance Listing Number 84.235E
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/29/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361064](https://www.grants.gov/search-results-detail/361064)
+
+### National K12 Program for the Career Development of Clinician-Scientists in Diabetes Research (Diabetes-DOCS)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/29/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361066](https://www.grants.gov/search-results-detail/361066)
+
+### FY2026 Cooperative Agreements for 988 Suicide and Crisis Lifeline Crisis Center Follow-Up Programs
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/29/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361069](https://www.grants.gov/search-results-detail/361069)
+
+### FY2026 Cooperative Agreements for States and Territories to Improve Local 988 Capacity
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/29/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361067](https://www.grants.gov/search-results-detail/361067)
+
+### Providers Clinical Support System &ndash; Substance Use Disorder Treatment (PCSS-SUD Treatment)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/29/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361070](https://www.grants.gov/search-results-detail/361070)
+
 ### YouthBuild 2025
 
 - **Score:** 0.65
@@ -4972,26 +3286,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361056](https://www.grants.gov/search-results-detail/361056)
 
-### Technology-enabled Collaborative Learning Program
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 12/23/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361058](https://www.grants.gov/search-results-detail/361058)
-
-### Port Infrastructure Development Program
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 12/23/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361059](https://www.grants.gov/search-results-detail/361059)
-
 ### Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies
 
 - **Score:** 0.65
@@ -5011,6 +3305,26 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361054](https://www.grants.gov/search-results-detail/361054)
+
+### Technology-enabled Collaborative Learning Program
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/23/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361058](https://www.grants.gov/search-results-detail/361058)
+
+### Port Infrastructure Development Program
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 12/23/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361059](https://www.grants.gov/search-results-detail/361059)
 
 ### Centers for Structural Biology of HIV and other Infectious Diseases
 
@@ -5532,16 +3846,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/360969](https://www.grants.gov/search-results-detail/360969)
 
-### ROSES25: D.3C XRISM General Observer - Type 2
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 12/10/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360956](https://www.grants.gov/search-results-detail/360956)
-
 ### &#8203;&#8203;Maternal and Child Health (MCH) Leadership, Education, and Advancement in Undergraduate Pathways (LEAP) Training Program&#8203;&#8203;
 
 - **Score:** 0.65
@@ -5972,16 +4276,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/360761](https://www.grants.gov/search-results-detail/360761)
 
-### Innovation in Behavioral Health (IBH)
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 10/16/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/358987](https://www.grants.gov/search-results-detail/358987)
-
 ### Sustaining life-saving HIV services in Ukraine by strengthening resilient health systems under the Ukraine Ministry of Health, Public Health Center
 
 - **Score:** 0.65
@@ -5991,6 +4285,16 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/360755](https://www.grants.gov/search-results-detail/360755)
+
+### Innovation in Behavioral Health (IBH)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 10/16/2025
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/358987](https://www.grants.gov/search-results-detail/358987)
 
 ### Promoting World Trade Center Health Program Youth Research Cohort Recruitment and Retention Using Principles of Community Engaged Research (CEnR) to Build Community Participation (U01)
 
@@ -12082,6 +10386,27 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/356982](https://www.grants.gov/search-results-detail/356982)
 
+### Cancer Prevention and Control Clinical Trials Planning Grant Program (R34 Clinical Trials Optional)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 11/05/2024
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/356979](https://www.grants.gov/search-results-detail/356979)
+
+### FY26 Obligation: 4794DRFLP00000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT
+
+- **Score:** 0.64
+- **Source:** Usaspending
+- **Published:** 2026-01-30
+- **Type:** obligation
+- **Programs:** FEMA BRIC
+- **CFDA:** 97.039
+- **Summary:** $97,814 obligated under CFDA 97.039 to STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT
+- **Link:** [https://www.usaspending.gov/award/354892433](https://www.usaspending.gov/award/354892433)
+
 ### FY26 Obligation: 4757DRMIP0000005 — STATE OF MICHIGAN
 
 - **Score:** 0.64
@@ -12169,6 +10494,17 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **CFDA:** 97.039
 - **Summary:** $19,464 obligated under CFDA 97.039 to DEFENSE, HAWAII DEPARTMENT OF
 - **Link:** [https://www.usaspending.gov/award/354685845](https://www.usaspending.gov/award/354685845)
+
+### FY26 Obligation: 4817DRLAP00000005 — HOMELAND SECURITY & EMERGENCY
+
+- **Score:** 0.64
+- **Source:** Usaspending
+- **Published:** 2026-01-29
+- **Type:** obligation
+- **Programs:** FEMA BRIC
+- **CFDA:** 97.039
+- **Summary:** $7,814 obligated under CFDA 97.039 to HOMELAND SECURITY & EMERGENCY
+- **Link:** [https://www.usaspending.gov/award/354893427](https://www.usaspending.gov/award/354893427)
 
 ### FY26 Obligation: 4501DRGAP00000005 — GEORGIA EMERGENCY MANAGEMENT AND HOMELAND SECURITY AGENCY
 
@@ -14876,19 +13212,9 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **Summary:** $-63,006 obligated under CFDA 97.039 to STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT
 - **Link:** [https://www.usaspending.gov/award/354303733](https://www.usaspending.gov/award/354303733)
 
-### Rice Bran Wax in Pesticide Formulations; Exemption From the Requirement for a Tolerance
-
-- **Score:** 0.56
-- **Source:** Federal Register
-- **Published:** 2026-02-13
-- **Type:** Rule
-- **Programs:** FEMA BRIC
-- **Summary:** This regulation establishes an exemption from the requirement of a tolerance for residues of rice bran wax (CAS Reg. No. 8016-60-2) when used as an inert ingredient (lubricant) on growing crops and raw agricultural commodities pre- and post-harvest, when applied to animals, and in antimicrobial formulations applied to food-contact surfaces in public eating places, dairy-processing equipment, and food- processing equipment and utensils. Micro Powders, Inc., submitted a petition to EPA under the F
-- **Link:** [https://www.federalregister.gov/documents/2026/02/13/2026-02926/rice-bran-wax-in-pesticide-formulations-exemption-from-the-requirement-for-a-tolerance](https://www.federalregister.gov/documents/2026/02/13/2026-02926/rice-bran-wax-in-pesticide-formulations-exemption-from-the-requirement-for-a-tolerance)
-
 ### Historic Tax Credit Growth and Opportunity Act of 2025
 
-- **Score:** 0.56
+- **Score:** 0.55
 - **Source:** Congress Gov
 - **Published:** 2026-02-27
 - **Type:** HR 2941
@@ -14898,7 +13224,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 
 ### Energy Burden Tax Credit Act
 
-- **Score:** 0.56
+- **Score:** 0.55
 - **Source:** Congress Gov
 - **Published:** 2026-02-27
 - **Type:** HR 7044
@@ -15081,12 +13407,12 @@ This scan identified **195 new policy development(s)** since the last scan.
 | 36 CFR 800.14(b) | Statute |  | DOT PROTECT |
 | 42 U.S.C. 4321 | Statute |  | DOT PROTECT |
 | 54 U.S.C. 306108 | Statute |  | DOT PROTECT |
-| bil | Statute |  | BIA Tribal Climate Resilience, EPA STAG, DOT PROTECT, Tribal Air Quality Management, EPA GAP, USBR WaterSMART |
+| bil | Statute |  | BIA Tribal Climate Resilience, EPA STAG, DOT PROTECT, Tribal Air Quality Management, USBR WaterSMART, EPA GAP |
 | Clean Air Act § 105 (Tribal Air Quality) | Statute | Permanent | Tribal Air Quality Management |
 | Clean Water Act / Safe Drinking Water Act | Statute | Permanent | EPA STAG, DOT PROTECT, Tribal Air Quality Management |
 | Energy Policy Act of 2005, Title V | Statute | Permanent | DOE Indian Energy |
 | Executive Order 14225 (Forest Management) | Guidance | Executive discretion | USDA Wildfire Defense Grants |
-| Final rule | Regulation |  | DOT PROTECT, Tribal Air Quality Management, FEMA BRIC, EPA GAP |
+| Final rule | Regulation |  | DOT PROTECT, Tribal Air Quality Management |
 | Infrastructure Investment and Jobs Act (IIJA/BIL) | Statute | Expires FY26 | EPA STAG, FEMA BRIC, DOT PROTECT, USBR WaterSMART |
 | IIJA § 40901 (WaterSMART Enhancement) | Statute | Expires FY26 | USBR WaterSMART |
 | IIJA § 40803 (Community Wildfire Defense Grants) | Statute | Expires when funds exhausted | USDA Wildfire Defense Grants |
@@ -15127,28 +13453,28 @@ This scan identified **195 new policy development(s)** since the last scan.
 
 ## CI Score Trends
 
-*Tracking 4 scan(s). Showing last 4.*
+*Tracking 5 scan(s). Showing last 5.*
 
-| Program | 2026-02-08 | 2026-02-09 | 2026-02-19 | 2026-02-27 | Trend |
-|---------|-----:|-----:|-----:|-----:|-------|
-| BIA Tribal Climate Resilience | 85% | 88% | 88% | 88% | +3% |
-| Tribal Community Resilience Annual Awards | 82% | 85% | 85% | 85% | +3% |
-| DOE Indian Energy | 52% | 55% | 55% | 55% | +3% |
-| DOT PROTECT | 90% | 93% | 93% | 93% | +3% |
-| EPA GAP | 77% | 80% | 80% | 80% | +3% |
-| EPA STAG | 87% | 90% | 90% | 90% | +3% |
-| Tribal Air Quality Management | 79% | 82% | 82% | 82% | +3% |
-| FEMA BRIC | 9% | 12% | 12% | 12% | +3% |
-| FEMA FMA | -- | -- | 60% | 60% | -- |
-| FEMA HMGP | -- | -- | 35% | 35% | -- |
-| FEMA Tribal Mitigation Plans | 62% | 65% | 65% | 65% | +3% |
-| FHWA TTP Safety | 82% | 85% | 85% | 85% | +3% |
-| HUD IHBG | 82% | 85% | 85% | 85% | +3% |
-| IRS Elective Pay | 52% | 55% | 55% | 55% | +3% |
-| NOAA Tribal Grants | 47% | 50% | 50% | 50% | +3% |
-| USBR TAP | 72% | 75% | 75% | 75% | +3% |
-| USBR WaterSMART | 57% | 60% | 60% | 60% | +3% |
-| USDA Wildfire Defense Grants | 75% | 78% | 78% | 78% | +3% |
+| Program | 2026-02-08 | 2026-02-09 | 2026-02-19 | 2026-02-27 | 2026-03-02 | Trend |
+|---------|-----:|-----:|-----:|-----:|-----:|-------|
+| BIA Tribal Climate Resilience | 85% | 88% | 88% | 88% | 88% | +3% |
+| Tribal Community Resilience Annual Awards | 82% | 85% | 85% | 85% | 85% | +3% |
+| DOE Indian Energy | 52% | 55% | 55% | 55% | 55% | +3% |
+| DOT PROTECT | 90% | 93% | 93% | 93% | 93% | +3% |
+| EPA GAP | 77% | 80% | 80% | 80% | 80% | +3% |
+| EPA STAG | 87% | 90% | 90% | 90% | 90% | +3% |
+| Tribal Air Quality Management | 79% | 82% | 82% | 82% | 82% | +3% |
+| FEMA BRIC | 9% | 12% | 12% | 12% | 12% | +3% |
+| FEMA FMA | -- | -- | 60% | 60% | 60% | -- |
+| FEMA HMGP | -- | -- | 35% | 35% | 35% | -- |
+| FEMA Tribal Mitigation Plans | 62% | 65% | 65% | 65% | 65% | +3% |
+| FHWA TTP Safety | 82% | 85% | 85% | 85% | 85% | +3% |
+| HUD IHBG | 82% | 85% | 85% | 85% | 85% | +3% |
+| IRS Elective Pay | 52% | 55% | 55% | 55% | 55% | +3% |
+| NOAA Tribal Grants | 47% | 50% | 50% | 50% | 50% | +3% |
+| USBR TAP | 72% | 75% | 75% | 75% | 75% | +3% |
+| USBR WaterSMART | 57% | 60% | 60% | 60% | 60% | +3% |
+| USDA Wildfire Defense Grants | 75% | 78% | 78% | 78% | 78% | +3% |
 
 ## All Relevant Items (by score)
 
@@ -15159,8 +13485,8 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.87** | [Native American/Native Hawaiian Museum Services (2026)](https://www.grants.gov/search-results-detail/361148) | BIA Tribal Climate Resilience
 - **0.87** | [Indian Highway Safety Grant - Lifesavers Conference](https://www.grants.gov/search-results-detail/361089) | BIA Tribal Climate Resilience
 - **0.87** | [Indian Highway Safety Law Enforcment Grant](https://www.grants.gov/search-results-detail/361095) | BIA Tribal Climate Resilience
-- **0.87** | [Clinical Research Network on Antimicrobial Resistance](https://www.grants.gov/search-results-detail/361065) | BIA Tribal Climate Resilience
-- **0.87** | [FY2026 Support for 988 Tribal Response Cooperative Agreements](https://www.grants.gov/search-results-detail/361068) | BIA Tribal Climate Resilience
+- **0.85** | [Clinical Research Network on Antimicrobial Resistance](https://www.grants.gov/search-results-detail/361065) | BIA Tribal Climate Resilience
+- **0.85** | [FY2026 Support for 988 Tribal Response Cooperative Agreements](https://www.grants.gov/search-results-detail/361068) | BIA Tribal Climate Resilience
 - **0.85** | [U.S. Administration on Aging, National Resource Centers on Older Indians, Alaska Natives and Native Hawaiian Programs](https://www.grants.gov/search-results-detail/361032) | BIA Tribal Climate Resilience
 - **0.85** | [Ending the HIV/HCV Epidemics in Indian Country](https://www.grants.gov/search-results-detail/360295) | BIA Tribal Climate Resilience
 - **0.85** | [National Indian Health Outreach and Education](https://www.grants.gov/search-results-detail/360296) | BIA Tribal Climate Resilience
@@ -15197,32 +13523,35 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.74** | [Supporting life-saving HIV services and related health systems in Zambia on a pathway to self-reliance under the President&rsquo;s Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360760) | BIA Tribal Climate Resilience
 - **0.74** | [Strengthening comprehensive HIV and TB services and health systems in high-burden areas of Namibia under the President's Emergency Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360720) | BIA Tribal Climate Resilience
 - **0.73** | [FY26 Obligation: EMC-2019-PC-0003 — INDIANA DEPT OF HOMELAND SECURITY](https://www.usaspending.gov/award/266578341) | FEMA BRIC
-- **0.73** | [Rural Microentrepreneur Assistance Program](https://www.grants.gov/search-results-detail/361373) | BIA Tribal Climate Resilience
-- **0.73** | [Rural Microentrepreneur Program(RMAP)](https://www.grants.gov/search-results-detail/361374) | BIA Tribal Climate Resilience
-- **0.73** | [Dental Faculty Loan Repayment Program (DFLRP)](https://www.grants.gov/search-results-detail/361375) | BIA Tribal Climate Resilience
-- **0.73** | [Strategies to Link, Engage, and Retain Men with HIV in Care: Evaluation Provider](https://www.grants.gov/search-results-detail/361376) | BIA Tribal Climate Resilience
-- **0.73** | [Strategies to Link, Engage, and Retain Men with HIV in Care: Implementation Technical Assistance Provider](https://www.grants.gov/search-results-detail/361377) | BIA Tribal Climate Resilience
 - **0.72** | [FY26 Obligation: A22AC00055 — GREAT PLAINS TRIBAL WATER ALLIANCE, INC](https://www.usaspending.gov/award/259249424) | BIA Tribal Climate Resilience
+- **0.72** | [Peer Supports for Augmentative and Alternative Communication](https://www.grants.gov/search-results-detail/361379) | BIA Tribal Climate Resilience
+- **0.72** | [NextTech: Translational Development of Next-Generation Diagnostic and Therapeutic Devices (R18 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/361380) | BIA Tribal Climate Resilience
+- **0.72** | [Facilitator Training for Victim Offender Dialogue](https://www.grants.gov/search-results-detail/361378) | BIA Tribal Climate Resilience
+- **0.72** | [Rural Microentrepreneur Program(RMAP)](https://www.grants.gov/search-results-detail/361374) | BIA Tribal Climate Resilience
+- **0.72** | [Rural Microentrepreneur Assistance Program](https://www.grants.gov/search-results-detail/361373) | BIA Tribal Climate Resilience
+- **0.72** | [Strategies to Link, Engage, and Retain Men with HIV in Care: Implementation Technical Assistance Provider](https://www.grants.gov/search-results-detail/361377) | BIA Tribal Climate Resilience
+- **0.72** | [Dental Faculty Loan Repayment Program (DFLRP)](https://www.grants.gov/search-results-detail/361375) | BIA Tribal Climate Resilience
+- **0.72** | [Strategies to Link, Engage, and Retain Men with HIV in Care: Evaluation Provider](https://www.grants.gov/search-results-detail/361376) | BIA Tribal Climate Resilience
 - **0.72** | [Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs](https://www.grants.gov/search-results-detail/361366) | BIA Tribal Climate Resilience
 - **0.72** | [Next-Generation Geothermal Field Tests and Geothermal Resource Characterization and Confirmation](https://www.grants.gov/search-results-detail/361365) | BIA Tribal Climate Resilience
 - **0.72** | [The Reentry Employment in Skilled Trades, Advanced Manufacturing, Registered Apprenticeships, and Training (RESTART) Initiative](https://www.grants.gov/search-results-detail/361368) | BIA Tribal Climate Resilience
 - **0.72** | [Veterans Legacy Grants Program](https://www.grants.gov/search-results-detail/360057) | BIA Tribal Climate Resilience
 - **0.72** | [Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Therapeutic Agent Characterization and Preclinical Efficacy Studies](https://www.grants.gov/search-results-detail/361370) | BIA Tribal Climate Resilience
 - **0.72** | [Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Assay Development and Therapeutic Agent Identification](https://www.grants.gov/search-results-detail/361369) | BIA Tribal Climate Resilience
-- **0.72** | [Region 9 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361361) | BIA Tribal Climate Resilience
 - **0.72** | [Delta Rural Integrated Health Network Program](https://www.grants.gov/search-results-detail/361364) | BIA Tribal Climate Resilience
+- **0.72** | [Region 9 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361361) | BIA Tribal Climate Resilience
+- **0.72** | [University Centers for Developmental Disabilities in Education, Research, and Service](https://www.grants.gov/search-results-detail/361349) | BIA Tribal Climate Resilience
 - **0.72** | [Improving Chronic Conditions Through Inexpensive Interventions](https://www.grants.gov/search-results-detail/361348) | BIA Tribal Climate Resilience
 - **0.72** | [Precision Measurement Grant Program](https://www.grants.gov/search-results-detail/361351) | BIA Tribal Climate Resilience
-- **0.72** | [University Centers for Developmental Disabilities in Education, Research, and Service](https://www.grants.gov/search-results-detail/361349) | BIA Tribal Climate Resilience
-- **0.72** | [HEAL Initiative: Program to Reveal and Evaluate Cells-to-gene Information that Specify Intricacies, Origins and the Nature of (PRECISION) Human Pain Network](https://www.grants.gov/search-results-detail/361334) | BIA Tribal Climate Resilience
-- **0.72** | [FY 2025 Region 4 Wetlands Program](https://www.grants.gov/search-results-detail/361338) | BIA Tribal Climate Resilience
-- **0.72** | [Region 08 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361337) | BIA Tribal Climate Resilience
-- **0.72** | [Feed the Future Innovation Labs](https://www.grants.gov/search-results-detail/361339) | BIA Tribal Climate Resilience
-- **0.72** | [Region 1 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361335) | BIA Tribal Climate Resilience
-- **0.72** | [OSERS-OSEP: State Technical Assistance Projects to Improve Services and Results for DeafBlind Children, Assistance Listing Number 84.326T](https://www.grants.gov/search-results-detail/361336) | BIA Tribal Climate Resilience
 - **0.71** | [Strategic support for human resources for health for the Ministry of Health and Social Services (MOHSS) to sustain HIV epidemic control in Namibia under the U.S. President's Emergency Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360721) | BIA Tribal Climate Resilience
 - **0.70** | [Forecast to Publish a Funding Opportunity Announcement for Early-Stage Development of Informatics Technologies for Cancer Research and Management (U01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/359892) | BIA Tribal Climate Resilience, EPA STAG
 - **0.70** | [Notice of Intent to Publish a Funding Opportunity Announcement for Trailblazer Award for New and Early-Stage Investigators (R21 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/358886) | BIA Tribal Climate Resilience, EPA STAG
+- **0.70** | [HEAL Initiative: Program to Reveal and Evaluate Cells-to-gene Information that Specify Intricacies, Origins and the Nature of (PRECISION) Human Pain Network](https://www.grants.gov/search-results-detail/361334) | BIA Tribal Climate Resilience
+- **0.70** | [FY 2025 Region 4 Wetlands Program](https://www.grants.gov/search-results-detail/361338) | BIA Tribal Climate Resilience
+- **0.70** | [Region 08 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361337) | BIA Tribal Climate Resilience
+- **0.70** | [Feed the Future Innovation Labs](https://www.grants.gov/search-results-detail/361339) | BIA Tribal Climate Resilience
+- **0.70** | [Region 1 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361335) | BIA Tribal Climate Resilience
+- **0.70** | [OSERS-OSEP: State Technical Assistance Projects to Improve Services and Results for DeafBlind Children, Assistance Listing Number 84.326T](https://www.grants.gov/search-results-detail/361336) | BIA Tribal Climate Resilience
 - **0.70** | [Collaborative Program Grant for Multidisciplinary Teams](https://www.grants.gov/search-results-detail/361322) | BIA Tribal Climate Resilience
 - **0.70** | [FY 2026 Young Southeast Asian Leaders Initiative (YSEALI)  Professional Fellowship](https://www.grants.gov/search-results-detail/361330) | BIA Tribal Climate Resilience
 - **0.70** | [FY 2026 Community College Administrator Program](https://www.grants.gov/search-results-detail/361327) | BIA Tribal Climate Resilience
@@ -15250,12 +13579,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.70** | [Value-Added Producer Grant](https://www.grants.gov/search-results-detail/361290) | BIA Tribal Climate Resilience
 - **0.70** | [Strengthening Community Colleges Training Grants (Round 6)](https://www.grants.gov/search-results-detail/361307) | BIA Tribal Climate Resilience
 - **0.70** | [HEAL Initiative Whole Joint Health Program](https://www.grants.gov/search-results-detail/361304) | BIA Tribal Climate Resilience
-- **0.70** | [Pay-for-Performance (PfP) Incentive Payments Program](https://www.grants.gov/search-results-detail/361087) | BIA Tribal Climate Resilience
-- **0.70** | [FY 2026 English Language Fellow, Specialist, and Virtual Educator Program](https://www.grants.gov/search-results-detail/361293) | BIA Tribal Climate Resilience
-- **0.70** | [Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan](https://www.grants.gov/search-results-detail/361294) | BIA Tribal Climate Resilience
-- **0.70** | [NEA Research Grants in the Arts, FY 2027](https://www.grants.gov/search-results-detail/361295) | BIA Tribal Climate Resilience
-- **0.70** | [NEA Research Labs, FY 2027](https://www.grants.gov/search-results-detail/361296) | BIA Tribal Climate Resilience
-- **0.70** | [National Quantum and Nanotechnology Infrastructure](https://www.grants.gov/search-results-detail/361297) | BIA Tribal Climate Resilience
 - **0.70** | [REQUEST FOR INFORMATION &ndash; MUTUALLY BENEFICIAL MULTIDISCIPLINARY INNOVATION ECOSYSTEMS](https://www.grants.gov/search-results-detail/361029) | BIA Tribal Climate Resilience
 - **0.70** | [Engineering Improved Stem Cell-Derived Islet Cells for Replacement Therapies (R01 - Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/360931) | BIA Tribal Climate Resilience
 - **0.70** | [FY 2026 Continuation of Solicitation for the Office of Science Financial Assistance Program](https://www.grants.gov/search-results-detail/360678) | BIA Tribal Climate Resilience
@@ -15286,8 +13609,13 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.70** | [Forecast to Publish a Funding Opportunity Announcement for Integrative Neuroscience Initiative on Alcoholism (INIA) Consortia (U01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/358827) | BIA Tribal Climate Resilience
 - **0.70** | [Forecast to Publish a Funding Opportunity Announcement for Copy of Integrative Neuroscience Initiative on Alcoholism (INIA) Consortia Research Resource (U24) (Clinical Trial Optional)](https://www.grants.gov/search-results-detail/358826) | BIA Tribal Climate Resilience
 - **0.70** | [Method to Extend Research in Time (MERIT) Award Extension Request (Type 4 eSubmission Clinical Trial Optional)](https://www.grants.gov/search-results-detail/358024) | BIA Tribal Climate Resilience
-- **0.69** | [An act to provide for reconciliation pursuant to title II of H. Con. Res. 14.](https://api.congress.gov/v3/bill/119/hr/1?format=json) | IRS Elective Pay
 - **0.69** | [Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/359274) | BIA Tribal Climate Resilience, EPA STAG
+- **0.69** | [Pay-for-Performance (PfP) Incentive Payments Program](https://www.grants.gov/search-results-detail/361087) | BIA Tribal Climate Resilience
+- **0.69** | [FY 2026 English Language Fellow, Specialist, and Virtual Educator Program](https://www.grants.gov/search-results-detail/361293) | BIA Tribal Climate Resilience
+- **0.69** | [Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan](https://www.grants.gov/search-results-detail/361294) | BIA Tribal Climate Resilience
+- **0.69** | [NEA Research Grants in the Arts, FY 2027](https://www.grants.gov/search-results-detail/361295) | BIA Tribal Climate Resilience
+- **0.69** | [NEA Research Labs, FY 2027](https://www.grants.gov/search-results-detail/361296) | BIA Tribal Climate Resilience
+- **0.69** | [National Quantum and Nanotechnology Infrastructure](https://www.grants.gov/search-results-detail/361297) | BIA Tribal Climate Resilience
 - **0.69** | [Genomic and Biologic Therapies for ADRD (U01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361287) | BIA Tribal Climate Resilience
 - **0.69** | [Cooperative Agreement for Affiliated Partner with the Rocky Mountain Cooperative Ecosystem Studies Unit (CESU)](https://www.grants.gov/search-results-detail/361292) | BIA Tribal Climate Resilience
 - **0.69** | [ROSES25: A.3 NASA ISRO Synthetic Aperture Radar Mission Data, Applications, Research, and Technology Team](https://www.grants.gov/search-results-detail/361289) | BIA Tribal Climate Resilience
@@ -15309,11 +13637,11 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.69** | [Advanced Rehabilitation Research Training (ARRT) Program - Health and Function](https://www.grants.gov/search-results-detail/360514) | BIA Tribal Climate Resilience
 - **0.69** | [Advanced Rehabilitation Research Training (ARRT) Program - Employment](https://www.grants.gov/search-results-detail/360493) | BIA Tribal Climate Resilience
 - **0.69** | [Impact of Initial Influenza Exposure on Immunity in Infants (U01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359939) | BIA Tribal Climate Resilience
+- **0.69** | [Freedom 250 Outreach Across India](https://www.grants.gov/search-results-detail/361261) | BIA Tribal Climate Resilience
 - **0.69** | [BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/358859) | BIA Tribal Climate Resilience
 - **0.69** | [Nursing Home Staffing Campaign](https://www.grants.gov/search-results-detail/361025) | BIA Tribal Climate Resilience
 - **0.69** | [Veterans Cemetery Grants](https://www.grants.gov/search-results-detail/361262) | BIA Tribal Climate Resilience
 - **0.69** | [Genomic Community Resources (U24 Clinical Trials Not Allowed)](https://www.grants.gov/search-results-detail/361263) | BIA Tribal Climate Resilience
-- **0.69** | [Freedom 250 Outreach Across India](https://www.grants.gov/search-results-detail/361261) | BIA Tribal Climate Resilience
 - **0.69** | [Cartel Recruitment Understanding &amp; Suppression Hub (CRUSH](https://www.grants.gov/search-results-detail/361257) | BIA Tribal Climate Resilience
 - **0.69** | [Alumni Engagement Innovation Fund (AEIF) 2026: Strengthen U.S.&ndash;Kazakhstan Partnerships Through Alumni-Led Innovation](https://www.grants.gov/search-results-detail/361250) | BIA Tribal Climate Resilience
 - **0.69** | [The NINDS Human Biospecimen and Data Repository (U24 - Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/358861) | BIA Tribal Climate Resilience
@@ -15330,26 +13658,10 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.69** | [National Centers for Cryo-electron Tomography (cryoET) (R24 -Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359656) | BIA Tribal Climate Resilience
 - **0.69** | [Pilot Program to Increase Research Capacity at  Historically Black Colleges and Universities and Other Minority-Serving Institutions](https://www.grants.gov/search-results-detail/361240) | BIA Tribal Climate Resilience
 - **0.69** | [Postdoctoral Research Fellowships in Biology](https://www.grants.gov/search-results-detail/361249) | BIA Tribal Climate Resilience
-- **0.69** | [FY24 MS HCDC Seaway Rail Truck Site](https://www.grants.gov/search-results-detail/361246) | BIA Tribal Climate Resilience
 - **0.69** | [The Metastasis Research Network (MetNet): MetNet Research Projects (U01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359725) | BIA Tribal Climate Resilience
 - **0.69** | [Rigor and Reproducibility for Biomarkers in Type 1 Diabetes Clinical Research](https://www.grants.gov/search-results-detail/361235) | BIA Tribal Climate Resilience
 - **0.69** | [CyberAICorps Scholarship for Service](https://www.grants.gov/search-results-detail/361238) | BIA Tribal Climate Resilience
 - **0.69** | [ROSES25: B.2 Heliophysics Foundational Research](https://www.grants.gov/search-results-detail/361234) | BIA Tribal Climate Resilience
-- **0.69** | [Conservation Interns at the Raystown Lake Project, USACE](https://www.grants.gov/search-results-detail/360945) | BIA Tribal Climate Resilience
-- **0.69** | [Specialized Alcohol Research Centers (P50 Clinical trial Optional)](https://www.grants.gov/search-results-detail/361216) | BIA Tribal Climate Resilience
-- **0.69** | [Pilot Projects Enhancing Utility and Usage of Common Fund Data Sets (R03 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359879) | BIA Tribal Climate Resilience
-- **0.69** | [Wildfire Smoke Preparedness in Community Buildings](https://www.grants.gov/search-results-detail/361217) | BIA Tribal Climate Resilience
-- **0.69** | [PRIA 5 Training Development](https://www.grants.gov/search-results-detail/361218) | BIA Tribal Climate Resilience
-- **0.69** | [Ryan White HIV/AIDS Program Part C Capacity Development Program&#8239;](https://www.grants.gov/search-results-detail/361220) | BIA Tribal Climate Resilience
-- **0.69** | [Single Source: Outcomes of Electronic Medical Records and Genomics (eMERGE) Genomic Risk Assessment and Management Network - Coordinating Center (U01 Clinical Trial Required)](https://www.grants.gov/search-results-detail/359173) | BIA Tribal Climate Resilience
-- **0.69** | [Fiscal Year (FY) 2026 AmeriCorps Seniors RSVP Competition](https://www.grants.gov/search-results-detail/361221) | BIA Tribal Climate Resilience
-- **0.69** | [Fiscal Year (FY) 2026 AmeriCorps State and National Competitive Grants](https://www.grants.gov/search-results-detail/361222) | BIA Tribal Climate Resilience
-- **0.69** | [Groundwater and Streamflow Information Program, National Ground-Water Monitoring Network](https://www.grants.gov/search-results-detail/361219) | BIA Tribal Climate Resilience
-- **0.69** | [Controlled Clinical Trials on Long-Term Effects of Nutritional Interventions on the Progression of Risk Factors for Age-Related Chronic Conditions Over the Life Span and Their Age of Onset](https://www.grants.gov/search-results-detail/361214) | BIA Tribal Climate Resilience
-- **0.69** | [NIA Research and Entrepreneurial Development Immersion (REDI): Entrepreneurship Enhancement Award](https://www.grants.gov/search-results-detail/361215) | BIA Tribal Climate Resilience
-- **0.69** | [Agriculture and Food Research Initiative  Strengthening Agricultural Systems](https://www.grants.gov/search-results-detail/361211) | BIA Tribal Climate Resilience
-- **0.69** | [Single Source for the Continuation of the Epidemiology of Diabetes Interventions and Complications (EDIC) Study Research Center (Collaborative U01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/361213) | BIA Tribal Climate Resilience
-- **0.69** | [2025 South Florida Program](https://www.grants.gov/search-results-detail/361209) | BIA Tribal Climate Resilience
 - **0.68** | [FY26 Obligation: 95304701 — PAMUNKEY INDIAN TRIBE](https://www.usaspending.gov/award/257805434) | EPA GAP
 - **0.68** | [FY26 Obligation: 98T52601 — CONFEDERATED TRIBES OF THE GOSHUTE RESERVATION](https://www.usaspending.gov/award/258855273) | EPA GAP
 - **0.68** | [FY26 Obligation: 02J27001 — UPPER COLUMBIA UNITED TRIBES](https://www.usaspending.gov/award/198421918) | EPA GAP
@@ -15358,22 +13670,38 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.68** | [FY26 Obligation: DEIE0000206 — UNITED TRIBES TECHNICAL COLLEGE](https://www.usaspending.gov/award/260369826) | DOE Indian Energy
 - **0.68** | [FY26 Obligation: R18AP00182 — SHOSHONE BANNOCK TRIBES](https://www.usaspending.gov/award/270286224) | USBR WaterSMART
 - **0.68** | [FY26 Obligation: R19AP00237 — QUECHAN INDIAN TRIBE](https://www.usaspending.gov/award/270287425) | USBR WaterSMART
+- **0.68** | [An act to provide for reconciliation pursuant to title II of H. Con. Res. 14.](https://api.congress.gov/v3/bill/119/hr/1?format=json) | IRS Elective Pay
 - **0.68** | [Commission on Equity and Reconciliation in the Uniformed Services Act](https://api.congress.gov/v3/bill/119/hr/7238?format=json) | IRS Elective Pay
 - **0.68** | [Commission on Equity and Reconciliation in the Uniformed Services Act](https://api.congress.gov/v3/bill/119/s/3691?format=json) | IRS Elective Pay
 - **0.67** | [Lead Hazard Reduction Capacity Building Grant Program](https://www.grants.gov/search-results-detail/361107) | BIA Tribal Climate Resilience, EPA GAP
+- **0.67** | [Conservation Interns at the Raystown Lake Project, USACE](https://www.grants.gov/search-results-detail/360945) | BIA Tribal Climate Resilience
+- **0.67** | [Specialized Alcohol Research Centers (P50 Clinical trial Optional)](https://www.grants.gov/search-results-detail/361216) | BIA Tribal Climate Resilience
+- **0.67** | [Pilot Projects Enhancing Utility and Usage of Common Fund Data Sets (R03 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359879) | BIA Tribal Climate Resilience
+- **0.67** | [Wildfire Smoke Preparedness in Community Buildings](https://www.grants.gov/search-results-detail/361217) | BIA Tribal Climate Resilience
+- **0.67** | [PRIA 5 Training Development](https://www.grants.gov/search-results-detail/361218) | BIA Tribal Climate Resilience
+- **0.67** | [Ryan White HIV/AIDS Program Part C Capacity Development Program&#8239;](https://www.grants.gov/search-results-detail/361220) | BIA Tribal Climate Resilience
+- **0.67** | [Single Source: Outcomes of Electronic Medical Records and Genomics (eMERGE) Genomic Risk Assessment and Management Network - Coordinating Center (U01 Clinical Trial Required)](https://www.grants.gov/search-results-detail/359173) | BIA Tribal Climate Resilience
+- **0.67** | [Fiscal Year (FY) 2026 AmeriCorps Seniors RSVP Competition](https://www.grants.gov/search-results-detail/361221) | BIA Tribal Climate Resilience
+- **0.67** | [Fiscal Year (FY) 2026 AmeriCorps State and National Competitive Grants](https://www.grants.gov/search-results-detail/361222) | BIA Tribal Climate Resilience
+- **0.67** | [Groundwater and Streamflow Information Program, National Ground-Water Monitoring Network](https://www.grants.gov/search-results-detail/361219) | BIA Tribal Climate Resilience
+- **0.67** | [Controlled Clinical Trials on Long-Term Effects of Nutritional Interventions on the Progression of Risk Factors for Age-Related Chronic Conditions Over the Life Span and Their Age of Onset](https://www.grants.gov/search-results-detail/361214) | BIA Tribal Climate Resilience
+- **0.67** | [NIA Research and Entrepreneurial Development Immersion (REDI): Entrepreneurship Enhancement Award](https://www.grants.gov/search-results-detail/361215) | BIA Tribal Climate Resilience
+- **0.67** | [Agriculture and Food Research Initiative  Strengthening Agricultural Systems](https://www.grants.gov/search-results-detail/361211) | BIA Tribal Climate Resilience
+- **0.67** | [Single Source for the Continuation of the Epidemiology of Diabetes Interventions and Complications (EDIC) Study Research Center (Collaborative U01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/361213) | BIA Tribal Climate Resilience
+- **0.67** | [2025 South Florida Program](https://www.grants.gov/search-results-detail/361209) | BIA Tribal Climate Resilience
 - **0.67** | [Coordinating Center for National Resource Network for the Study of Human Auditory and Vestibular Disorders](https://www.grants.gov/search-results-detail/361208) | BIA Tribal Climate Resilience
-- **0.67** | [BRAIN Initiative: Brain-Behavior Quantification and Synchronization &ndash; Transformative Research on Behavior at the Organismal Level](https://www.grants.gov/search-results-detail/361205) | BIA Tribal Climate Resilience
 - **0.67** | [Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials](https://www.grants.gov/search-results-detail/361204) | BIA Tribal Climate Resilience
 - **0.67** | [National Resource Network for the Study of Human Auditory and Vestibular Disorders](https://www.grants.gov/search-results-detail/361207) | BIA Tribal Climate Resilience
 - **0.67** | [ROSS Rapid Response Program](https://www.grants.gov/search-results-detail/361206) | BIA Tribal Climate Resilience
+- **0.67** | [BRAIN Initiative: Brain-Behavior Quantification and Synchronization &ndash; Transformative Research on Behavior at the Organismal Level](https://www.grants.gov/search-results-detail/361205) | BIA Tribal Climate Resilience
 - **0.67** | [Resource-Related Research Projects Cooperative Agreements in Aging and/or Alzheimer's Disease (AD) and Alzheimer's Disease-Related Dementias (ADRD) Research](https://www.grants.gov/search-results-detail/361185) | BIA Tribal Climate Resilience
 - **0.67** | [Restoring Joint Health and Function to Reduce Pain (RE-JOIN) 2.0](https://www.grants.gov/search-results-detail/361186) | BIA Tribal Climate Resilience
 - **0.67** | [Lasker Clinical Research Scholar's Program (Si2/R00 Clinical Trial  Optional)](https://www.grants.gov/search-results-detail/361187) | BIA Tribal Climate Resilience
 - **0.67** | [Department of the Interior (DOI), Office of Wildland Fire (OWF) - Slip-On Tanker Units](https://www.grants.gov/search-results-detail/361193) | BIA Tribal Climate Resilience
 - **0.67** | [2026 Atlantic Sea Scallop Research Set Aside Program](https://www.grants.gov/search-results-detail/361191) | BIA Tribal Climate Resilience
+- **0.67** | [Native Hawaiian Library Services Grants (2026)](https://www.grants.gov/search-results-detail/361174) | BIA Tribal Climate Resilience
 - **0.67** | [OVW Fiscal Year 2026 Formula Programs Training and Technical Assistance Initiative](https://www.grants.gov/search-results-detail/361183) | BIA Tribal Climate Resilience
 - **0.67** | [BJS FY25 Survey of Public Defenders (SPD)](https://www.grants.gov/search-results-detail/361172) | BIA Tribal Climate Resilience
-- **0.67** | [Native Hawaiian Library Services Grants (2026)](https://www.grants.gov/search-results-detail/361174) | BIA Tribal Climate Resilience
 - **0.67** | [NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/360581) | BIA Tribal Climate Resilience
 - **0.67** | [Research Project Cooperative Agreements in Aging and/or Alzheimer's disease (AD) and Alzheimer's disease-related dementias (ADRD) Research](https://www.grants.gov/search-results-detail/361168) | BIA Tribal Climate Resilience
 - **0.67** | [Specialized Center Cooperative Agreements in Aging and/or Alzheimer's Disease (AD) and AD-Related Dementias (ADRD) Research](https://www.grants.gov/search-results-detail/361170) | BIA Tribal Climate Resilience
@@ -15388,9 +13716,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.67** | [Depth-Resolved Algal Bloom Mapping at Lake Okeechobee, FL](https://www.grants.gov/search-results-detail/361152) | BIA Tribal Climate Resilience
 - **0.67** | [Research Initiatives at the Naval Postgraduate School](https://www.grants.gov/search-results-detail/361099) | BIA Tribal Climate Resilience
 - **0.67** | [Service Area Competition - Additional Area 1](https://www.grants.gov/search-results-detail/361137) | BIA Tribal Climate Resilience
-- **0.67** | [ROSES25: C.12 Foundational Artificial Intelligence for the Moon and Mars](https://www.grants.gov/search-results-detail/361136) | BIA Tribal Climate Resilience
-- **0.67** | [Limited Competition: Biospecimen Banks to support NCI National Clinical Trials Network Biospecimen Banks (NCTN Biobanks) and the NCI Early-Phase and Experimental Clinical Trials Biospecimen Bank (EET Biobank) (U24 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/361134) | BIA Tribal Climate Resilience
-- **0.67** | [FY2026 Cooperative Agreement for 988 Suicide &amp; Crisis Lifeline Administrator](https://www.grants.gov/search-results-detail/360981) | BIA Tribal Climate Resilience
 - **0.67** | [Support for a National Electronic Interstate Records Exchange System](https://www.grants.gov/search-results-detail/360995) | BIA Tribal Climate Resilience
 - **0.67** | [National Leadership Grants for Libraries (2026)](https://www.grants.gov/search-results-detail/361140) | BIA Tribal Climate Resilience
 - **0.67** | [Museum Grants for African American History and Culture (2026)](https://www.grants.gov/search-results-detail/361144) | BIA Tribal Climate Resilience
@@ -15401,6 +13726,8 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.67** | [Museum Grants for American Latino History and Culture (2026)](https://www.grants.gov/search-results-detail/361146) | BIA Tribal Climate Resilience
 - **0.67** | [Museums Empowered (2026)](https://www.grants.gov/search-results-detail/361149) | BIA Tribal Climate Resilience
 - **0.67** | [National Leadership Grants for Museums (2026)](https://www.grants.gov/search-results-detail/361147) | BIA Tribal Climate Resilience
+- **0.67** | [ROSES25: C.12 Foundational Artificial Intelligence for the Moon and Mars](https://www.grants.gov/search-results-detail/361136) | BIA Tribal Climate Resilience
+- **0.67** | [Limited Competition: Biospecimen Banks to support NCI National Clinical Trials Network Biospecimen Banks (NCTN Biobanks) and the NCI Early-Phase and Experimental Clinical Trials Biospecimen Bank (EET Biobank) (U24 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/361134) | BIA Tribal Climate Resilience
 - **0.67** | [ROSES25: F.19 Collaborative Opportunities for Mentorship, Partnership and Academic Success in Science](https://www.grants.gov/search-results-detail/361132) | BIA Tribal Climate Resilience
 - **0.67** | [ROSES25: A.6 Earth Venture Suborbital-4 Landslide Change Characterization Experiment Science Team](https://www.grants.gov/search-results-detail/361125) | BIA Tribal Climate Resilience
 - **0.67** | [ROSES25: B.6 Heliophysics Technology and Instrument Development for Science](https://www.grants.gov/search-results-detail/361127) | BIA Tribal Climate Resilience
@@ -15410,25 +13737,12 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.67** | [2026 CTR Non-Proliferation Programing](https://www.grants.gov/search-results-detail/361106) | BIA Tribal Climate Resilience
 - **0.67** | [Environmental Education Grant Program](https://www.grants.gov/search-results-detail/361098) | BIA Tribal Climate Resilience
 - **0.67** | [San Francisco Bay Restoration Grants](https://www.grants.gov/search-results-detail/361100) | BIA Tribal Climate Resilience
-- **0.67** | [Telehealth Centers of Excellence](https://www.grants.gov/search-results-detail/361085) | BIA Tribal Climate Resilience
-- **0.67** | [Fiscal Year 2026 University Reactor Sharing and Outreach](https://www.grants.gov/search-results-detail/361092) | BIA Tribal Climate Resilience
 - **0.67** | [NIH Director&rsquo;s Transformative Research Awards (R01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361084) | BIA Tribal Climate Resilience
 - **0.67** | [Advancing outbreak detection, notification, and response capacity through 7-1-7 implementation in partner countries](https://www.grants.gov/search-results-detail/361093) | BIA Tribal Climate Resilience
 - **0.67** | [State Offices of Rural Health Program](https://www.grants.gov/search-results-detail/361094) | BIA Tribal Climate Resilience
+- **0.67** | [Telehealth Centers of Excellence](https://www.grants.gov/search-results-detail/361085) | BIA Tribal Climate Resilience
 - **0.67** | [ERDC Broad Agency Announcement](https://www.grants.gov/search-results-detail/361080) | BIA Tribal Climate Resilience
-- **0.67** | [Mechanisms for Amplification of fusion Reaction Rates in Solids (MARRS)](https://www.grants.gov/search-results-detail/361079) | BIA Tribal Climate Resilience
-- **0.67** | [OVC FY25 Services for Victims of Human Trafficking](https://www.grants.gov/search-results-detail/361072) | BIA Tribal Climate Resilience
-- **0.67** | [OVC FY25 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking](https://www.grants.gov/search-results-detail/361071) | BIA Tribal Climate Resilience
-- **0.67** | [OVC FY25 Improving Outcomes for Child and Youth Victims of Human Trafficking](https://www.grants.gov/search-results-detail/361076) | BIA Tribal Climate Resilience
-- **0.67** | [NIGMS Institutional Biomedical Undergraduate Research Training (BURT) Program (T34)](https://www.grants.gov/search-results-detail/359861) | BIA Tribal Climate Resilience
-- **0.67** | [Office of Special Education and Rehabilitative Services (OSERS): Rehabilitation Services Administration (RSA): Braille Training Program, Assistance Listing Number 84.235E](https://www.grants.gov/search-results-detail/361064) | BIA Tribal Climate Resilience
-- **0.67** | [National K12 Program for the Career Development of Clinician-Scientists in Diabetes Research (Diabetes-DOCS)](https://www.grants.gov/search-results-detail/361066) | BIA Tribal Climate Resilience
-- **0.67** | [FY2026 Cooperative Agreements for 988 Suicide and Crisis Lifeline Crisis Center Follow-Up Programs](https://www.grants.gov/search-results-detail/361069) | BIA Tribal Climate Resilience
-- **0.67** | [FY2026 Cooperative Agreements for States and Territories to Improve Local 988 Capacity](https://www.grants.gov/search-results-detail/361067) | BIA Tribal Climate Resilience
-- **0.67** | [Providers Clinical Support System &ndash; Substance Use Disorder Treatment (PCSS-SUD Treatment)](https://www.grants.gov/search-results-detail/361070) | BIA Tribal Climate Resilience
 - **0.66** | [FY26 Obligation: 4798DRTXP00000005 — TEXAS DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/355183766) | FEMA BRIC
-- **0.66** | [FY26 Obligation: 4794DRFLP00000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/354892433) | FEMA BRIC
-- **0.66** | [FY26 Obligation: 4817DRLAP00000005 — HOMELAND SECURITY & EMERGENCY](https://www.usaspending.gov/award/354893427) | FEMA BRIC
 - **0.66** | [FY26 Obligation: 55IT0906400 — MOHEGAN TRIBE OF INDIANS OF CONNECTICUT](https://www.usaspending.gov/award/355241186) | HUD IHBG
 - **0.65** | [Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements](https://www.grants.gov/search-results-detail/361053) | BIA Tribal Climate Resilience, USBR TAP
 - **0.65** | [Rural Health Clinic Technical Assistance Program](https://www.grants.gov/search-results-detail/361052) | BIA Tribal Climate Resilience, USBR TAP
@@ -15460,12 +13774,22 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.65** | [Early Stage Testing of Pharmacologic or Neuromodulatory Device-based Interventions for the Treatment of Mental Disorders (R61/R33 Clinical Trial Required)](https://www.grants.gov/search-results-detail/357433) | BIA Tribal Climate Resilience, EPA STAG
 - **0.65** | [Seamless Early-Stage Clinical Drug Development (Phase 1 to 2a) for Novel therapeutic Agents for the Spectrum of Alzheimer's Disease (AD) and AD-related Dementias (ADRD) (UG3/UH3 Clinical Trial Required)](https://www.grants.gov/search-results-detail/357343) | BIA Tribal Climate Resilience, EPA STAG
 - **0.65** | [Utilizing the PLCO Biospecimens Resource to Bridge Gaps in Cancer Etiology and Early Detection Research (U01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357307) | BIA Tribal Climate Resilience, EPA GAP
+- **0.65** | [Mechanisms for Amplification of fusion Reaction Rates in Solids (MARRS)](https://www.grants.gov/search-results-detail/361079) | BIA Tribal Climate Resilience
+- **0.65** | [OVC FY25 Services for Victims of Human Trafficking](https://www.grants.gov/search-results-detail/361072) | BIA Tribal Climate Resilience
+- **0.65** | [OVC FY25 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking](https://www.grants.gov/search-results-detail/361071) | BIA Tribal Climate Resilience
+- **0.65** | [OVC FY25 Improving Outcomes for Child and Youth Victims of Human Trafficking](https://www.grants.gov/search-results-detail/361076) | BIA Tribal Climate Resilience
+- **0.65** | [NIGMS Institutional Biomedical Undergraduate Research Training (BURT) Program (T34)](https://www.grants.gov/search-results-detail/359861) | BIA Tribal Climate Resilience
+- **0.65** | [Office of Special Education and Rehabilitative Services (OSERS): Rehabilitation Services Administration (RSA): Braille Training Program, Assistance Listing Number 84.235E](https://www.grants.gov/search-results-detail/361064) | BIA Tribal Climate Resilience
+- **0.65** | [National K12 Program for the Career Development of Clinician-Scientists in Diabetes Research (Diabetes-DOCS)](https://www.grants.gov/search-results-detail/361066) | BIA Tribal Climate Resilience
+- **0.65** | [FY2026 Cooperative Agreements for 988 Suicide and Crisis Lifeline Crisis Center Follow-Up Programs](https://www.grants.gov/search-results-detail/361069) | BIA Tribal Climate Resilience
+- **0.65** | [FY2026 Cooperative Agreements for States and Territories to Improve Local 988 Capacity](https://www.grants.gov/search-results-detail/361067) | BIA Tribal Climate Resilience
+- **0.65** | [Providers Clinical Support System &ndash; Substance Use Disorder Treatment (PCSS-SUD Treatment)](https://www.grants.gov/search-results-detail/361070) | BIA Tribal Climate Resilience
 - **0.65** | [YouthBuild 2025](https://www.grants.gov/search-results-detail/361057) | BIA Tribal Climate Resilience
 - **0.65** | [Traumatic Brain Injury State Partnership](https://www.grants.gov/search-results-detail/361056) | BIA Tribal Climate Resilience
-- **0.65** | [Technology-enabled Collaborative Learning Program](https://www.grants.gov/search-results-detail/361058) | BIA Tribal Climate Resilience
-- **0.65** | [Port Infrastructure Development Program](https://www.grants.gov/search-results-detail/361059) | BIA Tribal Climate Resilience
 - **0.65** | [Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies](https://www.grants.gov/search-results-detail/361055) | BIA Tribal Climate Resilience
 - **0.65** | [Rural Health Research Dissemination Program](https://www.grants.gov/search-results-detail/361054) | BIA Tribal Climate Resilience
+- **0.65** | [Technology-enabled Collaborative Learning Program](https://www.grants.gov/search-results-detail/361058) | BIA Tribal Climate Resilience
+- **0.65** | [Port Infrastructure Development Program](https://www.grants.gov/search-results-detail/361059) | BIA Tribal Climate Resilience
 - **0.65** | [Centers for Structural Biology of HIV and other Infectious Diseases](https://www.grants.gov/search-results-detail/361050) | BIA Tribal Climate Resilience
 - **0.65** | [Ryan White HIV/AIDS Program Part D Coordinated HIV Services and Access to Research for Women, Infants, Children, and Youth (WICY) Existing Geographic Service Areas](https://www.grants.gov/search-results-detail/361044) | BIA Tribal Climate Resilience
 - **0.65** | [Ryan White HIV/AIDS Program Part D - Women, Infants, Children and Youth Grant Supplemental Funding](https://www.grants.gov/search-results-detail/361045) | BIA Tribal Climate Resilience
@@ -15518,7 +13842,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.65** | [Cooperative Agreements for Certified Community Behavioral Health Clinic (CCBHC) Planning Grants](https://www.grants.gov/search-results-detail/360982) | BIA Tribal Climate Resilience
 - **0.65** | [Community Programs for Youth and Young Adults at Clinical High Risk for Psychosis](https://www.grants.gov/search-results-detail/360975) | BIA Tribal Climate Resilience
 - **0.65** | [Project AWARE (Advancing Wellness and Resiliency in Education)](https://www.grants.gov/search-results-detail/360969) | BIA Tribal Climate Resilience
-- **0.65** | [ROSES25: D.3C XRISM General Observer - Type 2](https://www.grants.gov/search-results-detail/360956) | BIA Tribal Climate Resilience
 - **0.65** | [&#8203;&#8203;Maternal and Child Health (MCH) Leadership, Education, and Advancement in Undergraduate Pathways (LEAP) Training Program&#8203;&#8203;](https://www.grants.gov/search-results-detail/360959) | BIA Tribal Climate Resilience
 - **0.65** | [Space Technology Research, Development, Demonstration, and Infusion (SpaceTech REDDI-2026)](https://www.grants.gov/search-results-detail/360954) | BIA Tribal Climate Resilience
 - **0.65** | [Choice Neighborhoods Implementation Grants for Fiscal Year 2025](https://www.grants.gov/search-results-detail/360950) | BIA Tribal Climate Resilience
@@ -15562,8 +13885,8 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.65** | [Strengthening Ghana Health Service laboratory systems activities under the President&rsquo;s Emergency Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360759) | BIA Tribal Climate Resilience
 - **0.65** | [Implement and sustain a comprehensive response to HIV and technical assistance to strengthen the capacity of regional authorities in the United Republic of Tanzania under PEPFAR](https://www.grants.gov/search-results-detail/360756) | BIA Tribal Climate Resilience
 - **0.65** | [Strengthening national laboratory and HIV epidemiologic monitoring capacities and systems to enhance an efficient, resilient and self-reliant response to HIV, TB and related public health threats in the Kingdom of Eswatini under PEPFAR](https://www.grants.gov/search-results-detail/360761) | BIA Tribal Climate Resilience
-- **0.65** | [Innovation in Behavioral Health (IBH)](https://www.grants.gov/search-results-detail/358987) | BIA Tribal Climate Resilience
 - **0.65** | [Sustaining life-saving HIV services in Ukraine by strengthening resilient health systems under the Ukraine Ministry of Health, Public Health Center](https://www.grants.gov/search-results-detail/360755) | BIA Tribal Climate Resilience
+- **0.65** | [Innovation in Behavioral Health (IBH)](https://www.grants.gov/search-results-detail/358987) | BIA Tribal Climate Resilience
 - **0.65** | [Promoting World Trade Center Health Program Youth Research Cohort Recruitment and Retention Using Principles of Community Engaged Research (CEnR) to Build Community Participation (U01)](https://www.grants.gov/search-results-detail/360752) | BIA Tribal Climate Resilience
 - **0.65** | [Exploratory/Developmental Grants Related to the World Trade Center Health Program (R21)](https://www.grants.gov/search-results-detail/360753) | BIA Tribal Climate Resilience
 - **0.65** | [Strengthening government capacity for implementation and management of public health systems for quality improvement, monitoring and evaluation, survey/surveillance and health information system for program sustainability in Nigeria under PEPFAR](https://www.grants.gov/search-results-detail/360722) | BIA Tribal Climate Resilience
@@ -16173,6 +14496,8 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.65** | [Academic-Industrial Partnerships (AIP) to Translate and Validate In Vivo Imaging Systems (R01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/357018) | BIA Tribal Climate Resilience
 - **0.65** | [Cancer Prevention and Control Clinical Trials Planning Grant Program (U34 Clinical Trials Optional)](https://www.grants.gov/search-results-detail/356978) | BIA Tribal Climate Resilience
 - **0.65** | [BRAIN Initiative: Clinical Studies to Advance Next-Generation Devices for Recording and Modulation in the Human Central Nervous System (UH3 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/356982) | BIA Tribal Climate Resilience
+- **0.65** | [Cancer Prevention and Control Clinical Trials Planning Grant Program (R34 Clinical Trials Optional)](https://www.grants.gov/search-results-detail/356979) | BIA Tribal Climate Resilience
+- **0.64** | [FY26 Obligation: 4794DRFLP00000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/354892433) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4757DRMIP0000005 — STATE OF MICHIGAN](https://www.usaspending.gov/award/354303749) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4807DRSDP0000005 — SOUTH DAKOTA DEPARTMENT OF PUBLIC SAFETY](https://www.usaspending.gov/award/354303772) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4785DRMEP00000005 — EMERGENCY MANAGEMENT AGENCY MAINE](https://www.usaspending.gov/award/354449758) | FEMA BRIC
@@ -16181,6 +14506,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.64** | [FY26 Obligation: 4797DRMNP0000005 — PUBLIC SAFETY, MINNESOTA DEPARTMENT OF](https://www.usaspending.gov/award/354303764) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 5500FMORP0000005 — OREGON MILITARY DEPARTMENT](https://www.usaspending.gov/award/354303857) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4724DRHIP00000005 — DEFENSE, HAWAII DEPARTMENT OF](https://www.usaspending.gov/award/354685845) | FEMA BRIC
+- **0.64** | [FY26 Obligation: 4817DRLAP00000005 — HOMELAND SECURITY & EMERGENCY](https://www.usaspending.gov/award/354893427) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4501DRGAP00000005 — GEORGIA EMERGENCY MANAGEMENT AND HOMELAND SECURITY AGENCY](https://www.usaspending.gov/award/243581233) | FEMA BRIC, EPA GAP
 - **0.64** | [FY26 Obligation: 4500DRCTP00000005 — EMERGENCY SERVICES AND PUBLIC PROTECTION, DEPARTMENT OF](https://www.usaspending.gov/award/243579064) | FEMA BRIC, DOT PROTECT
 - **0.64** | [FY26 Obligation: 4685DRGAP00000005 — GEORGIA EMERGENCY MANAGEMENT AND HOMELAND SECURITY AGENCY](https://www.usaspending.gov/award/244194474) | FEMA BRIC, EPA GAP
@@ -16432,7 +14758,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.62** | [Prior Notice of Citizen Suits](https://www.federalregister.gov/documents/2026/02/24/2026-03646/prior-notice-of-citizen-suits) | EPA STAG, DOT PROTECT, Tribal Air Quality Management
 - **0.62** | [FY26 Obligation: 98T33801 — HAVASUPAI TRIBE](https://www.usaspending.gov/award/258855092) | EPA GAP
 - **0.62** | [FY26 Obligation: 02F31801 — TONKAWA TRIBE](https://www.usaspending.gov/award/198418455) | EPA GAP
-- **0.62** | [Extending the Reporting Deadline Under the Greenhouse Gas Reporting Rule for 2025](https://www.federalregister.gov/documents/2026/02/27/2026-03995/extending-the-reporting-deadline-under-the-greenhouse-gas-reporting-rule-for-2025) | DOT PROTECT
+- **0.61** | [Extending the Reporting Deadline Under the Greenhouse Gas Reporting Rule for 2025](https://www.federalregister.gov/documents/2026/02/27/2026-03995/extending-the-reporting-deadline-under-the-greenhouse-gas-reporting-rule-for-2025) | DOT PROTECT
 - **0.60** | [FY26 Obligation: 98T83301 — AK-CHIN INDIAN COMMUNITY](https://www.usaspending.gov/award/258855560) | EPA GAP
 - **0.60** | [FY26 Obligation: 98T96301 — DUCKWATER SHOSHONE TRIBE](https://www.usaspending.gov/award/258855680) | EPA GAP
 - **0.60** | [FY26 Obligation: 95349901 — MONACAN INDIAN NATION](https://www.usaspending.gov/award/257819381) | EPA GAP
@@ -16597,6 +14923,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.59** | [FY26 Obligation: 03J17801 — PILOT POINT TRIBAL COUNCIL](https://www.usaspending.gov/award/198511291) | EPA GAP
 - **0.59** | [FY26 Obligation: 693JJ22530000Y001IN1802797 — INDIANA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/251183998) | FHWA TTP Safety
 - **0.59** | [FY26 Obligation: 693JJ22530000YS30IN2000025 — INDIANA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/251206250) | FHWA TTP Safety
+- **0.59** | [FY26 Obligation: 55IH2738580 — RED LAKE RESERVATION HOUSING](https://www.usaspending.gov/award/247663258) | HUD IHBG
 - **0.59** | [FY26 Obligation: 55IH4604340 — CROW CREEK SIOUX TRIBE](https://www.usaspending.gov/award/247663338) | HUD IHBG
 - **0.59** | [FY26 Obligation: 55IH3122100 — OMAHA TRIBAL HOUSING AUTHORITY](https://www.usaspending.gov/award/247663270) | HUD IHBG
 - **0.59** | [FY26 Obligation: 55IT4606320 — FLANDREAU SANTEE SIOUX TRIBE](https://www.usaspending.gov/award/247663579) | HUD IHBG
@@ -16622,7 +14949,6 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.59** | [FY26 Obligation: 96724401 — WINNEBAGO TRIBE OF NEBRASKA](https://www.usaspending.gov/award/258212104) | Tribal Air Quality Management
 - **0.59** | [FY26 Obligation: 97T13301 — BIG PINE PAIUTE TRIBE](https://www.usaspending.gov/award/258575683) | Tribal Air Quality Management
 - **0.58** | [FY26 Obligation: N-IT-16-TA-0014 — NATIONAL AMERICAN INDIAN HOUSING COUNCIL](https://www.usaspending.gov/award/268688309) | HUD IHBG
-- **0.58** | [WaterSMART Access for Tribes Act](https://api.congress.gov/v3/bill/118/s/2927?format=json) | USBR WaterSMART
 - **0.58** | [FY26 Obligation: 98T34501 — VIEJAS BAND OF KUMEYAAY INDIANS](https://www.usaspending.gov/award/258855099) | EPA GAP
 - **0.58** | [FY26 Obligation: 98T32901 — LONE PINE PAIUTE SHOSHONE RESERVATION](https://www.usaspending.gov/award/258855084) | EPA GAP
 - **0.58** | [FY26 Obligation: 98T33701 — HOPLAND BAND OF POMO INDIANS](https://www.usaspending.gov/award/258855091) | EPA GAP
@@ -16634,8 +14960,10 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.58** | [FY26 Obligation: 97T51001 — SAN CARLOS APACHE TRIBAL COUNCIL](https://www.usaspending.gov/award/354663676) | EPA STAG
 - **0.58** | [FY26 Obligation: 97T10701 — MORONGO BAND OF MISSION INDIANS](https://www.usaspending.gov/award/258575657) | EPA STAG
 - **0.58** | [FY26 Obligation: 98T27301 — SAN CARLOS APACHE TRIBAL COUNCIL](https://www.usaspending.gov/award/258855033) | EPA STAG
+- **0.58** | [FY26 Obligation: 55IH3002980 — FORT BELKNAP TRIBAL HOUSING AUTHORITY](https://www.usaspending.gov/award/247663265) | HUD IHBG
 - **0.58** | [FY26 Obligation: 55IH3126060 — SANTEE SIOUX TRIBAL HOUSING AUTHORITY](https://www.usaspending.gov/award/247663272) | HUD IHBG
 - **0.58** | [FY26 Obligation: 55IH3202080 — YERINGTON PAIUTE TRIBAL HOUSING AUTHORITY](https://www.usaspending.gov/award/247663280) | HUD IHBG
+- **0.58** | [FY26 Obligation: 55IH2505210 — AQUINNAH WAMPANOAG TRIBAL HOUSING AUTHORITY](https://www.usaspending.gov/award/247663249) | HUD IHBG
 - **0.58** | [FY26 Obligation: 55IT0627340 — PASKENTA BAND OF NOMLAKI INDIANS](https://www.usaspending.gov/award/247663471) | HUD IHBG
 - **0.58** | [FY26 Obligation: 55IT2626000 — MATCH-E-BE-NASH-SHE-WISH BAND OF POTTAWATOMI INDIAN](https://www.usaspending.gov/award/247663508) | HUD IHBG
 - **0.58** | [FY26 Obligation: 55IH0627370 — ALL MISSION INDIAN HOUSING AUTHORITY](https://www.usaspending.gov/award/247663219) | HUD IHBG
@@ -16655,22 +14983,22 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.57** | [FY26 Obligation: 98T85101 — TWENTY-NINE PALMS BAND OF MISSION INDIANS](https://www.usaspending.gov/award/258855577) | Tribal Air Quality Management
 - **0.56** | [FY26 Obligation: DEIE0000194 — MINNESOTA CHIPPEWA TRIBE - WHITE EARTH BAND](https://www.usaspending.gov/award/260369817) | DOE Indian Energy
 - **0.56** | [FY26 Obligation: 00E98407 — LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS](https://www.usaspending.gov/award/197962723) | Tribal Air Quality Management
-- **0.56** | [Rice Bran Wax in Pesticide Formulations; Exemption From the Requirement for a Tolerance](https://www.federalregister.gov/documents/2026/02/13/2026-02926/rice-bran-wax-in-pesticide-formulations-exemption-from-the-requirement-for-a-tolerance) | FEMA BRIC
 - **0.56** | [FY26 Obligation: 98T93601 — CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA](https://www.usaspending.gov/award/258855656) | EPA GAP
-- **0.56** | [Historic Tax Credit Growth and Opportunity Act of 2025](https://api.congress.gov/v3/bill/119/hr/2941?format=json) | IRS Elective Pay
-- **0.56** | [Energy Burden Tax Credit Act](https://api.congress.gov/v3/bill/119/hr/7044?format=json) | IRS Elective Pay
 - **0.55** | [FY26 Obligation: 02F42404 — NEW MEXICO FINANCE AUTHORITY](https://www.usaspending.gov/award/355151843) | EPA STAG
 - **0.55** | [FY26 Obligation: DEEE0011684 — OREGON STATE UNIVERSITY](https://www.usaspending.gov/award/260362011) | DOE Indian Energy
-- **0.55** | [Air Plan Approval; Ohio; Clean Data Determination for the Cleveland, Ohio Area for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/27/2026-03934/air-plan-approval-ohio-clean-data-determination-for-the-cleveland-ohio-area-for-the-2015-ozone) | DOT PROTECT, Tribal Air Quality Management
-- **0.55** | [Air Plan Approval; Illinois; Clean Data Determination for the Illinois Portion of the St. Louis Area for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/26/2026-03846/air-plan-approval-illinois-clean-data-determination-for-the-illinois-portion-of-the-st-louis-area) | DOT PROTECT, Tribal Air Quality Management
-- **0.55** | [Air Plan Approval; Missouri; Clean Data Determination for the 2015 8-Hour Ozone Standard for the Missouri Portion of the St. Louis Nonattainment Area](https://www.federalregister.gov/documents/2026/02/26/2026-03845/air-plan-approval-missouri-clean-data-determination-for-the-2015-8-hour-ozone-standard-for-the) | DOT PROTECT, Tribal Air Quality Management
 - **0.55** | [Notice of Intended Repatriation: Turtle Bay Exploration Park, Redding, CA](https://www.federalregister.gov/documents/2026/02/23/2026-03565/notice-of-intended-repatriation-turtle-bay-exploration-park-redding-ca) | DOT PROTECT
+- **0.55** | [Notice of Inventory Completion: Santa Barbara Museum of Natural History, Santa Barbara, CA](https://www.federalregister.gov/documents/2026/03/02/2026-04055/notice-of-inventory-completion-santa-barbara-museum-of-natural-history-santa-barbara-ca) | DOT PROTECT
+- **0.55** | [Historic Tax Credit Growth and Opportunity Act of 2025](https://api.congress.gov/v3/bill/119/hr/2941?format=json) | IRS Elective Pay
+- **0.55** | [Energy Burden Tax Credit Act](https://api.congress.gov/v3/bill/119/hr/7044?format=json) | IRS Elective Pay
 - **0.55** | [Historic Tax Credit Growth and Opportunity Act of 2025](https://api.congress.gov/v3/bill/119/s/1459?format=json) | IRS Elective Pay
 - **0.55** | [Solid American Hardwood Tax Credit Act](https://api.congress.gov/v3/bill/119/s/1964?format=json) | IRS Elective Pay
 - **0.54** | [Notice of Inventory Completion: Fowler Museum at UCLA, Los Angeles, CA](https://www.federalregister.gov/documents/2026/02/23/2026-03557/notice-of-inventory-completion-fowler-museum-at-ucla-los-angeles-ca) | DOT PROTECT
 - **0.54** | [Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention](https://www.federalregister.gov/documents/2026/02/24/2026-03633/accidental-release-prevention-requirements-risk-management-programs-under-the-clean-air-act-common) | DOT PROTECT, Tribal Air Quality Management
+- **0.54** | [Air Plan Approval; Ohio; Clean Data Determination for the Cleveland, Ohio Area for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/27/2026-03934/air-plan-approval-ohio-clean-data-determination-for-the-cleveland-ohio-area-for-the-2015-ozone) | DOT PROTECT, Tribal Air Quality Management
+- **0.54** | [Air Plan Approval; Illinois; Clean Data Determination for the Illinois Portion of the St. Louis Area for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/26/2026-03846/air-plan-approval-illinois-clean-data-determination-for-the-illinois-portion-of-the-st-louis-area) | DOT PROTECT, Tribal Air Quality Management
+- **0.54** | [Air Plan Approval; Missouri; Clean Data Determination for the 2015 8-Hour Ozone Standard for the Missouri Portion of the St. Louis Nonattainment Area](https://www.federalregister.gov/documents/2026/02/26/2026-03845/air-plan-approval-missouri-clean-data-determination-for-the-2015-8-hour-ozone-standard-for-the) | DOT PROTECT, Tribal Air Quality Management
+- **0.53** | [Notice of Intended Disposition: U.S. Department of the Interior, Bureau of Land Management, Colorado State Office, Lakewood, CO](https://www.federalregister.gov/documents/2026/03/02/2026-04042/notice-of-intended-disposition-us-department-of-the-interior-bureau-of-land-management-colorado) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22640000Y926CA6328127 — DEPARTMENT OF TRANSPORTATION CALIFORNIA](https://www.usaspending.gov/award/355330876) | FHWA TTP Safety
-- **0.51** | [FY26 Obligation: 693JJ22640000Y603FLD526058 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330869) | FHWA TTP Safety
 - **0.51** | [FY26 Obligation: 693JJ22640000Y926WA4463002 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330881) | FHWA TTP Safety
 - **0.51** | [FY26 Obligation: 693JJ32640319 — KAWERAK, INC.](https://www.usaspending.gov/award/355193824) | FHWA TTP Safety
 - **0.51** | [FY26 Obligation: 26DG11094200002 — AGRICULTURE, CONSERVATION & FORESTRY, MAINE DEPARTMENT OF](https://www.usaspending.gov/award/355327349) | USDA Wildfire Defense Grants
@@ -16679,16 +15007,11 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800NJF00S132 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/355330513) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800PAT046311 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330518) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y810NJF00S132 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/355330520) | DOT PROTECT
-- **0.51** | [FY26 Obligation: 693JJ22630000Y810WV0019635 — WVDOT DIVISION OF HIGHWAYS](https://www.usaspending.gov/award/354806851) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800TN0157011 — TENNESSEE DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330519) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y830PAT014485 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330521) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y830PAT016277 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330522) | DOT PROTECT
 - **0.51** | [National Emission Standards for Hazardous Air Pollutants: Coal- and Oil-Fired Electric Utility Steam Generating Units: Final Repeal](https://www.federalregister.gov/documents/2026/02/24/2026-03638/national-emission-standards-for-hazardous-air-pollutants-coal--and-oil-fired-electric-utility-steam) | DOT PROTECT
 - **0.51** | [Notice of Inventory Completion: Tennessee Department of Environment and Conservation Division of Archaeology, Nashville, TN](https://www.federalregister.gov/documents/2026/02/23/2026-03567/notice-of-inventory-completion-tennessee-department-of-environment-and-conservation-division-of) | DOT PROTECT
-- **0.50** | [Air Plan Approvals; Illinois; Regional Haze Plan for the Second Implementation Period; Interstate Transport of Air Pollution for the 2012 PM2.5 and 2015 Ozone NAAQS](https://www.federalregister.gov/documents/2026/02/27/2026-03936/air-plan-approvals-illinois-regional-haze-plan-for-the-second-implementation-period-interstate) | DOT PROTECT, Tribal Air Quality Management
-- **0.50** | [Air Plan Approval; Missouri; Reporting Emission Data, Emission Fees, and Process Information](https://www.federalregister.gov/documents/2026/02/26/2026-03888/air-plan-approval-missouri-reporting-emission-data-emission-fees-and-process-information) | DOT PROTECT, Tribal Air Quality Management
-- **0.50** | [Air Plan Approval; Connecticut; State Implementation Plan Revisions Required as a Result of a Definition Change Due to the Ozone Reclassification](https://www.federalregister.gov/documents/2026/02/26/2026-03887/air-plan-approval-connecticut-state-implementation-plan-revisions-required-as-a-result-of-a) | DOT PROTECT, Tribal Air Quality Management
-- **0.50** | [Air Plan Approval; Michigan; Moderate Attainment Plan Elements for the Allegan County, Berrien County, and Muskegon County Areas for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/26/2026-03880/air-plan-approval-michigan-moderate-attainment-plan-elements-for-the-allegan-county-berrien-county) | DOT PROTECT, Tribal Air Quality Management
 - **0.50** | [Petroleum-Equivalent Fuel Economy Calculation](https://www.federalregister.gov/documents/2026/02/19/2026-03300/petroleum-equivalent-fuel-economy-calculation) | DOT PROTECT
 - **0.50** | [Notice of Request for Extension of a Currently Approved Information Collection](https://www.federalregister.gov/documents/2026/02/18/2026-03140/notice-of-request-for-extension-of-a-currently-approved-information-collection) | USBR TAP
 - **0.50** | [Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/1144?format=json) | DOT PROTECT
@@ -16698,6 +15021,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.50** | [To amend the William Wilberforce Trafficking Victims Protection Reauthorization Act of 2008 to establish strong requirements to ensure safe placements for unaccompanied alien children.](https://api.congress.gov/v3/bill/119/hr/7538?format=json) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22640000Y603NE0261181 — NEBRASKA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354807134) | FHWA TTP Safety
 - **0.49** | [FY26 Obligation: 693JJ22640000Y603TN0002309 — TENNESSEE DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330873) | FHWA TTP Safety
+- **0.49** | [FY26 Obligation: 693JJ22640000Y603FLD526058 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330869) | FHWA TTP Safety
 - **0.49** | [FY26 Obligation: 693JJ22640000Y603CA5450110 — DEPARTMENT OF TRANSPORTATION CALIFORNIA](https://www.usaspending.gov/award/354453506) | FHWA TTP Safety
 - **0.49** | [FY26 Obligation: 693JJ22640000Y603MS8100002 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354453512) | FHWA TTP Safety
 - **0.49** | [FY26 Obligation: DEEE0011686 — RUTGERS, THE STATE UNIVERSITY](https://www.usaspending.gov/award/260362013) | DOE Indian Energy
@@ -16706,16 +15030,18 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.49** | [FY26 Obligation: R25AP00545 — CONTRA COSTA WATER DISTRICT](https://www.usaspending.gov/award/354776930) | USBR WaterSMART
 - **0.49** | [FY26 Obligation: R25AP00462 — MOJAVE WATER AGENCY PUBLIC FACILITIES CORPORATION](https://www.usaspending.gov/award/354335804) | USBR WaterSMART
 - **0.49** | [FY26 Obligation: 693JJ22630000Y800MN0012325 — MINNESOTA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354806842) | DOT PROTECT
-- **0.49** | [FY26 Obligation: 693JJ22630000Y810NJF00S079 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/354152729) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22640001YP63WV0039440PROT — WVDOT DIVISION OF HIGHWAYS](https://www.usaspending.gov/award/354453525) | DOT PROTECT
-- **0.49** | [FY26 Obligation: 693JJ22630000Y810NJF00S103 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/354152730) | DOT PROTECT
+- **0.49** | [FY26 Obligation: 693JJ22630000Y810WV0019635 — WVDOT DIVISION OF HIGHWAYS](https://www.usaspending.gov/award/354806851) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22630000Y800MN8826139 — MINNESOTA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354806843) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22630000Y800AZ040C237 — DEPARTMENT OF TRANSPORTATION ARIZONA](https://www.usaspending.gov/award/354453190) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22630000Y800AZA89C211 — DEPARTMENT OF TRANSPORTATION ARIZONA](https://www.usaspending.gov/award/354453192) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22630000Y800AZ070B205 — DEPARTMENT OF TRANSPORTATION ARIZONA](https://www.usaspending.gov/award/354453191) | DOT PROTECT
 - **0.49** | [Notice of Intended Disposition: U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore, St. Marys, GA](https://www.federalregister.gov/documents/2026/02/23/2026-03562/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island) | DOT PROTECT
 - **0.49** | [Notice of Intended Disposition: U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore, St. Marys, GA](https://www.federalregister.gov/documents/2026/02/23/2026-03561/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island) | DOT PROTECT
-- **0.49** | [Air Plan Approval; Indiana; Keystone VOC RACT Alternative Control](https://www.federalregister.gov/documents/2026/02/27/2026-03933/air-plan-approval-indiana-keystone-voc-ract-alternative-control) | DOT PROTECT
+- **0.49** | [Air Plan Approvals; Illinois; Regional Haze Plan for the Second Implementation Period; Interstate Transport of Air Pollution for the 2012 PM2.5 and 2015 Ozone NAAQS](https://www.federalregister.gov/documents/2026/02/27/2026-03936/air-plan-approvals-illinois-regional-haze-plan-for-the-second-implementation-period-interstate) | DOT PROTECT, Tribal Air Quality Management
+- **0.49** | [Air Plan Approval; Missouri; Reporting Emission Data, Emission Fees, and Process Information](https://www.federalregister.gov/documents/2026/02/26/2026-03888/air-plan-approval-missouri-reporting-emission-data-emission-fees-and-process-information) | DOT PROTECT, Tribal Air Quality Management
+- **0.49** | [Air Plan Approval; Connecticut; State Implementation Plan Revisions Required as a Result of a Definition Change Due to the Ozone Reclassification](https://www.federalregister.gov/documents/2026/02/26/2026-03887/air-plan-approval-connecticut-state-implementation-plan-revisions-required-as-a-result-of-a) | DOT PROTECT, Tribal Air Quality Management
+- **0.49** | [Air Plan Approval; Michigan; Moderate Attainment Plan Elements for the Allegan County, Berrien County, and Muskegon County Areas for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/26/2026-03880/air-plan-approval-michigan-moderate-attainment-plan-elements-for-the-allegan-county-berrien-county) | DOT PROTECT, Tribal Air Quality Management
 - **0.48** | [FY26 Obligation: 120041228Z001 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/202624551) | FHWA TTP Safety
 - **0.48** | [FY26 Obligation: 693JJ22540000ER05NCER24381 — TRANSPORTATION NORTH CAROLINA DEPARTMENT](https://www.usaspending.gov/award/251213831) | FHWA TTP Safety
 - **0.48** | [FY26 Obligation: 693JJ22430000Y001TX2024944 — TEXAS DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/251151053) | FHWA TTP Safety
@@ -21685,10 +20011,21 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.48** | [FY26 Obligation: 693JJ22530000Y240NY5764303 — DEPARTMENT OF TRANSPORTATION NEW YORK](https://www.usaspending.gov/award/251198694) | FHWA TTP Safety
 - **0.48** | [FY26 Obligation: 693JJ22530000Y240ME2886200 — MAINE DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/251197784) | FHWA TTP Safety
 - **0.48** | [FY26 Obligation: 693JJ22530000YS30MN2725223 — MINNESOTA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/251206573) | FHWA TTP Safety
+- **0.48** | [FY26 Obligation: 55IH4613400 — OGLALA LAKOTA HOUSING AUTHORITY](https://www.usaspending.gov/award/247663341) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH3819760 — TURTLE MOUNTAIN HOUSING AUTHORITY](https://www.usaspending.gov/award/247663310) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH4614480 — SICANGU WICOTI AWAYANKAPE CORPORATION](https://www.usaspending.gov/award/247663342) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH3000680 — BLACKFEET HOUSING PROGRAM](https://www.usaspending.gov/award/247663262) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH0210640 — NORTHWEST INUPIAT HOUSING AUTHORITY](https://www.usaspending.gov/award/247663189) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH3806940 — FORT BERTHOLD HOUSING AUTHORITY INC](https://www.usaspending.gov/award/247663306) | HUD IHBG
 - **0.48** | [FY26 Obligation: 55IH0202800 — NORTH PACIFIC RIM HOUSING AUTHORITY](https://www.usaspending.gov/award/247663182) | HUD IHBG
 - **0.48** | [FY26 Obligation: 55IH3200410 — DUCK VALLEY HOUSING AUTHORITY](https://www.usaspending.gov/award/247663274) | HUD IHBG
 - **0.48** | [FY26 Obligation: 55IH3006460 — CHIPPEWA CREE HOUSING AUTHORITY](https://www.usaspending.gov/award/247663269) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH3124180 — NORTHERN PONCA HOUSING AUTHORITY](https://www.usaspending.gov/award/247663271) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH0203300 — COPPER RIVER HOUSING AUTHORITY](https://www.usaspending.gov/award/247663184) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH4618920 — YANKTON SIOUX HOUSING AUTHORITY](https://www.usaspending.gov/award/247663344) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH4912760 — PAIUTE HOUSING AUTHORITY](https://www.usaspending.gov/award/247663350) | HUD IHBG
 - **0.48** | [FY26 Obligation: 55IH4610520 — LOWER BRULE HOUSING AUTHORITY](https://www.usaspending.gov/award/247663340) | HUD IHBG
+- **0.48** | [FY26 Obligation: 55IH5554660 — RED CLIFF CHIPPEWA HOUSING AUTHORITY](https://www.usaspending.gov/award/247663372) | HUD IHBG
 - **0.48** | [FY26 Obligation: 55IT0627790 — PINOLEVILLE POMO NATION](https://www.usaspending.gov/award/247663473) | HUD IHBG
 - **0.48** | [FY26 Obligation: 55IT4901240 — NORTHWESTERN BAND OF SHOSHONE NATION](https://www.usaspending.gov/award/247663582) | HUD IHBG
 - **0.48** | [FY26 Obligation: 55IT3505290 — PUEBLO OF SANDIA](https://www.usaspending.gov/award/247663536) | HUD IHBG
@@ -22041,6 +20378,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800LAH016087 — TRANSPORTATION & DEVELOPMENT LOUISIANA D](https://www.usaspending.gov/award/355330511) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800ORS009522 — OREGON DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/353154946) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800LAH010331 — TRANSPORTATION & DEVELOPMENT LOUISIANA D](https://www.usaspending.gov/award/355330509) | DOT PROTECT
+- **0.48** | [FY26 Obligation: 693JJ22630000Y810NJF00S079 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/354152729) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800MN0169365 — MINNESOTA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354152722) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800CO0253302 — COLORADO DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354453193) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800IDA023540 — TRANSPORTATION, IDAHO DEPARTMENT OF](https://www.usaspending.gov/award/354453194) | DOT PROTECT
@@ -22052,6 +20390,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800NM2105090 — NEW MEXICO DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354152726) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800MOS304066 — MISSOURI DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/352782262) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800AZA89A214 — DEPARTMENT OF TRANSPORTATION ARIZONA](https://www.usaspending.gov/award/354152721) | DOT PROTECT
+- **0.48** | [FY26 Obligation: 693JJ22630000Y810NJF00S103 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/354152730) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y830PAT093152 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/353633809) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y810IDA022822 — TRANSPORTATION, IDAHO DEPARTMENT OF](https://www.usaspending.gov/award/251217377) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 693JJ22630000Y800PAT024149 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354806850) | DOT PROTECT
@@ -22091,85 +20430,60 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.48** | [FY26 Obligation: 00E03013 — ONEIDA NATION](https://www.usaspending.gov/award/197960472) | Tribal Air Quality Management
 - **0.48** | [FY26 Obligation: 01E01976 — FOREST COUNTY POTAWATOMI COMMUNITY](https://www.usaspending.gov/award/198127789) | Tribal Air Quality Management
 - **0.48** | [Partial Approval and Partial Disapproval of Air Quality Implementation Plans; Hawaii; Regional Haze State Implementation Plan for the Second Implementation Period](https://www.federalregister.gov/documents/2026/02/17/2026-03072/partial-approval-and-partial-disapproval-of-air-quality-implementation-plans-hawaii-regional-haze) | DOT PROTECT, Tribal Air Quality Management
-- **0.47** | [Employee or Independent Contractor Status Under the Fair Labor Standards Act, Family and Medical Leave Act, and Migrant and Seasonal Agricultural Worker Protection Act](https://www.federalregister.gov/documents/2026/02/27/2026-03962/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical) | DOT PROTECT
-- **0.47** | [Implementing Statutory Addition of Certain Per- and Polyfluoroalkyl Substances (PFAS) to the Toxics Release Inventory Beginning With Reporting Year 2026](https://www.federalregister.gov/documents/2026/02/27/2026-03944/implementing-statutory-addition-of-certain-per--and-polyfluoroalkyl-substances-pfas-to-the-toxics) | DOT PROTECT
-- **0.47** | [Marine Mammals; Proposed Incidental Harassment Authorization for the Southern Beaufort Sea Stock of Polar Bears During Legacy Well Remediation Activities, North Slope of Alaska; Draft Environmental Assessment](https://www.federalregister.gov/documents/2026/02/13/2026-02960/marine-mammals-proposed-incidental-harassment-authorization-for-the-southern-beaufort-sea-stock-of) | DOT PROTECT
-- **0.46** | [Living Donor Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/1552?format=json) | DOT PROTECT
-- **0.45** | [Restoring Integrity to the Issuance of Non-Domiciled Commercial Drivers Licenses (CDL)](https://www.federalregister.gov/documents/2026/02/13/2026-02965/restoring-integrity-to-the-issuance-of-non-domiciled-commercial-drivers-licenses-cdl) | EPA GAP
+- **0.48** | [Air Plan Approval; Indiana; Keystone VOC RACT Alternative Control](https://www.federalregister.gov/documents/2026/02/27/2026-03933/air-plan-approval-indiana-keystone-voc-ract-alternative-control) | DOT PROTECT
+- **0.46** | [Employee or Independent Contractor Status Under the Fair Labor Standards Act, Family and Medical Leave Act, and Migrant and Seasonal Agricultural Worker Protection Act](https://www.federalregister.gov/documents/2026/02/27/2026-03962/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical) | DOT PROTECT
+- **0.46** | [Implementing Statutory Addition of Certain Per- and Polyfluoroalkyl Substances (PFAS) to the Toxics Release Inventory Beginning With Reporting Year 2026](https://www.federalregister.gov/documents/2026/02/27/2026-03944/implementing-statutory-addition-of-certain-per--and-polyfluoroalkyl-substances-pfas-to-the-toxics) | DOT PROTECT
 - **0.45** | [Parts and Accessories Necessary for Safe Operation; Certification and Labeling Requirements for Rear Impact Protection Guards](https://www.federalregister.gov/documents/2026/02/19/2026-03255/parts-and-accessories-necessary-for-safe-operation-certification-and-labeling-requirements-for-rear) | DOT PROTECT
 - **0.45** | [Protect Our Military Families’ 2nd Amendment Rights Act](https://api.congress.gov/v3/bill/119/hr/2070?format=json) | DOT PROTECT
 - **0.45** | [Veterans 2nd Amendment Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/478?format=json) | DOT PROTECT
+- **0.45** | [Living Donor Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/1552?format=json) | DOT PROTECT
 - **0.45** | [Providing for consideration of the joint resolution (H.J. Res. 60) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Park Service relating to "Glen Canyon National Recreation Area: Motor Vehicles"; providing for consideration of the joint resolution (H.J. Res. 78) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to "Endangered and Threatened Wildlife and Plants; Endangered Species Status for the San Francisco Bay-Delta Distinct Population Segment of the Longfin Smelt"; providing for consideration of the joint resolution (H.J. Res. 87) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power Train Certification; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 88) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 89) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The 'Omnibus' Low NOX Regulation; Waiver of Preemption; Notice of Decision"; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/354?format=json) | DOT PROTECT
 - **0.44** | [Notice of Intent To Prepare a Programmatic Environmental Assessment; Initiation of Public Scoping Under the National Environmental Policy Act; Initiation of Consultation Under Section 106 of the National Historic Preservation Act; and Notice of Intent To Develop a Section 106 Programmatic Agreement With the Alaska State Historic Preservation Officer](https://www.federalregister.gov/documents/2026/02/18/2026-03106/notice-of-intent-to-prepare-a-programmatic-environmental-assessment-initiation-of-public-scoping) | DOT PROTECT
-- **0.43** | [Reauthorization of Dairy Forward Pricing Program](https://www.federalregister.gov/documents/2026/02/27/2026-03985/reauthorization-of-dairy-forward-pricing-program) | 
 - **0.43** | [Theodore Roosevelt National Park Wild Horses Protection Act](https://api.congress.gov/v3/bill/119/s/1377?format=json) | DOT PROTECT
 - **0.42** | [Constellation Energy Generation, LLC; Christopher M. Crane Clean Energy Center; Applications for Amendments to Renewed Facility License Involving Proposed No Significant Hazards Consideration Determination and Containing Safeguards Information and Order Imposing Procedures for Access to Safeguards Information](https://www.federalregister.gov/documents/2026/02/24/2026-03626/constellation-energy-generation-llc-christopher-m-crane-clean-energy-center-applications-for) | 
-- **0.42** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Maleic Hydrazide, et al.](https://www.federalregister.gov/documents/2026/02/27/2026-03942/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-maleic) | DOT PROTECT
-- **0.42** | [Air Plan Approval; Michigan; 2015 Ozone Moderate Reasonably Available Control Technology](https://www.federalregister.gov/documents/2026/02/27/2026-03937/air-plan-approval-michigan-2015-ozone-moderate-reasonably-available-control-technology) | DOT PROTECT
-- **0.42** | [Approval of Missouri's Request for Partial Program Delegation of Clean Air Act Section 112(r) Prevention of Accidental Release Program](https://www.federalregister.gov/documents/2026/02/26/2026-03891/approval-of-missouris-request-for-partial-program-delegation-of-clean-air-act-section-112r) | Tribal Air Quality Management
-- **0.42** | [Wyoming: Approval of State Coal Combustion Residuals Permit Program](https://www.federalregister.gov/documents/2026/02/26/2026-03820/wyoming-approval-of-state-coal-combustion-residuals-permit-program) | DOT PROTECT
-- **0.42** | [Air Plan Approval; Ohio; Source-Specific Non-CTG RACT and SIP Strengthening for Ohio](https://www.federalregister.gov/documents/2026/02/27/2026-03931/air-plan-approval-ohio-source-specific-non-ctg-ract-and-sip-strengthening-for-ohio) | DOT PROTECT
-- **0.42** | [To authorize leases of up to 99 years for land held in trust for federally recognized Indian Tribes.](https://api.congress.gov/v3/bill/119/hr/5910?format=json) | 
-- **0.42** | [To amend title 10, United States Code, to include Indian tribes in the defense community infrastructure program, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7710?format=json) | 
-- **0.42** | [To allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer.](https://api.congress.gov/v3/bill/119/hr/7698?format=json) | 
-- **0.42** | [A bill to allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer.](https://api.congress.gov/v3/bill/119/s/3946?format=json) | 
-- **0.41** | [Pydiflumetofen; Pesticide Tolerances](https://www.federalregister.gov/documents/2026/02/20/2026-03421/pydiflumetofen-pesticide-tolerances) | DOT PROTECT
-- **0.41** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Diphenylamine, et al.](https://www.federalregister.gov/documents/2026/02/20/2026-03371/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-diphenylamine) | DOT PROTECT
-- **0.41** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Terbacil, et al.](https://www.federalregister.gov/documents/2026/02/20/2026-03366/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-terbacil-et) | DOT PROTECT
+- **0.42** | [Reauthorization of Dairy Forward Pricing Program](https://www.federalregister.gov/documents/2026/02/27/2026-03985/reauthorization-of-dairy-forward-pricing-program) | 
+- **0.41** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Maleic Hydrazide, et al.](https://www.federalregister.gov/documents/2026/02/27/2026-03942/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-maleic) | DOT PROTECT
+- **0.41** | [Air Plan Approval; Michigan; 2015 Ozone Moderate Reasonably Available Control Technology](https://www.federalregister.gov/documents/2026/02/27/2026-03937/air-plan-approval-michigan-2015-ozone-moderate-reasonably-available-control-technology) | DOT PROTECT
+- **0.41** | [Approval of Missouri's Request for Partial Program Delegation of Clean Air Act Section 112(r) Prevention of Accidental Release Program](https://www.federalregister.gov/documents/2026/02/26/2026-03891/approval-of-missouris-request-for-partial-program-delegation-of-clean-air-act-section-112r) | Tribal Air Quality Management
+- **0.41** | [Wyoming: Approval of State Coal Combustion Residuals Permit Program](https://www.federalregister.gov/documents/2026/02/26/2026-03820/wyoming-approval-of-state-coal-combustion-residuals-permit-program) | DOT PROTECT
+- **0.41** | [Air Plan Approval; Ohio; Source-Specific Non-CTG RACT and SIP Strengthening for Ohio](https://www.federalregister.gov/documents/2026/02/27/2026-03931/air-plan-approval-ohio-source-specific-non-ctg-ract-and-sip-strengthening-for-ohio) | DOT PROTECT
 - **0.41** | [Tribal Trust Land Homeownership Act of 2025](https://api.congress.gov/v3/bill/119/hr/2130?format=json) | 
-- **0.41** | [To amend the Food Security Act of 1985 to include Indian Tribes in certain provisions relating to priority resource concerns.](https://api.congress.gov/v3/bill/119/hr/7627?format=json) | 
+- **0.41** | [To authorize leases of up to 99 years for land held in trust for federally recognized Indian Tribes.](https://api.congress.gov/v3/bill/119/hr/5910?format=json) | 
+- **0.41** | [To amend title 10, United States Code, to include Indian tribes in the defense community infrastructure program, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7710?format=json) | 
+- **0.41** | [To allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer.](https://api.congress.gov/v3/bill/119/hr/7698?format=json) | 
 - **0.41** | [Tribal Trust Land Homeownership Act of 2025](https://api.congress.gov/v3/bill/119/s/723?format=json) | 
-- **0.41** | [Parris Island Protection Act](https://api.congress.gov/v3/bill/119/hr/443?format=json) | DOT PROTECT
-- **0.41** | [Household Goods Shipping Consumer Protection Act](https://api.congress.gov/v3/bill/119/hr/880?format=json) | DOT PROTECT
-- **0.41** | [Protecting Sensitive Locations Act](https://api.congress.gov/v3/bill/119/hr/1061?format=json) | DOT PROTECT
-- **0.41** | [Protecting Privacy in Purchases Act](https://api.congress.gov/v3/bill/119/hr/1181?format=json) | DOT PROTECT
-- **0.41** | [Protecting Life from Chemical Abortions Act](https://api.congress.gov/v3/bill/119/hr/1525?format=json) | DOT PROTECT
-- **0.41** | [New Era of Preventing End-Stage Kidney Disease Act](https://api.congress.gov/v3/bill/119/hr/1518?format=json) | EPA STAG
-- **0.41** | [Law Enforcement Protection and Privacy Act of 2025](https://api.congress.gov/v3/bill/119/hr/1698?format=json) | DOT PROTECT
-- **0.41** | [Protecting Americans’ Social Security Data Act](https://api.congress.gov/v3/bill/119/hr/1877?format=json) | DOT PROTECT
-- **0.41** | [Protecting Older Workers Against Discrimination Act of 2025](https://api.congress.gov/v3/bill/119/hr/3522?format=json) | DOT PROTECT
-- **0.41** | [Striking and Locked Out Workers Healthcare Protection Act](https://api.congress.gov/v3/bill/119/hr/3532?format=json) | DOT PROTECT
-- **0.41** | [Protecting Private Job Creators Act](https://api.congress.gov/v3/bill/119/hr/3959?format=json) | DOT PROTECT
-- **0.41** | [Home Appliance Protection and Affordability Act](https://api.congress.gov/v3/bill/119/hr/4626?format=json) | DOT PROTECT
-- **0.41** | [Federal Correctional Officer Paycheck Protection Act of 2026](https://api.congress.gov/v3/bill/119/hr/7033?format=json) | DOT PROTECT
-- **0.41** | [Community Health Center Drug Pricing Protection Act](https://api.congress.gov/v3/bill/119/hr/7391?format=json) | DOT PROTECT
-- **0.41** | [Protecting Student Athletes from Concussions Act](https://api.congress.gov/v3/bill/119/hr/7590?format=json) | DOT PROTECT
-- **0.41** | [To require the Commissioner of U.S. Customs and Border Protection to refund tariffs collected under the International Emergency Economic Powers Act, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7615?format=json) | DOT PROTECT
-- **0.41** | [To amend title 18, United States Code, to prohibit coercing protected adults to send or otherwise transmit an intimate visual depiction, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7715?format=json) | DOT PROTECT
-- **0.41** | [To amend the Consumer Financial Protection Act of 2010 to establish the position of the Assistant Director and Student Loan Borrower Advocate of the Bureau of Consumer Financial Protection, to provide a framework for the Bureau of Consumer Financial Protection and the Department of Education to coordinate in providing assistance to and serving borrowers seeking to resolve complaints related to their private education or Federal student loans, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7671?format=json) | DOT PROTECT
-- **0.41** | [To direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions.](https://api.congress.gov/v3/bill/119/hr/7684?format=json) | DOT PROTECT
-- **0.41** | [Closing the Provider Fraud Gap Act](https://api.congress.gov/v3/bill/119/hr/7677?format=json) | EPA GAP
-- **0.41** | [To require the Commissioner of U.S. Customs and Border Protection to refund tariffs collected under the International Emergency Economic Powers Act, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7736?format=json) | DOT PROTECT
-- **0.41** | [Jamie Reed Protecting Our Kids from Child Abuse Act](https://api.congress.gov/v3/bill/119/s/312?format=json) | DOT PROTECT
-- **0.41** | [Household Goods Shipping Consumer Protection Act](https://api.congress.gov/v3/bill/119/s/337?format=json) | DOT PROTECT
-- **0.41** | [Protect Our Probationary Employees Act](https://api.congress.gov/v3/bill/119/s/918?format=json) | DOT PROTECT
-- **0.41** | [Michael Enzi Voluntary Protection Program Act](https://api.congress.gov/v3/bill/119/s/1417?format=json) | DOT PROTECT
-- **0.41** | [Upholding Protections for Unaccompanied Children Act of 2025](https://api.congress.gov/v3/bill/119/s/3322?format=json) | DOT PROTECT
-- **0.41** | [Protect America Act](https://api.congress.gov/v3/bill/119/s/3790?format=json) | DOT PROTECT
-- **0.41** | [State Authority to Protect Civil Rights](https://api.congress.gov/v3/bill/119/s/3824?format=json) | DOT PROTECT
-- **0.41** | [A bill to strengthen homeland security by expanding Urban Areas Security Initiative grant eligibility criteria to promote cooperation with U.S. Immigration and Customs Enforcement and to advance election security protections.](https://api.congress.gov/v3/bill/119/s/3920?format=json) | DOT PROTECT
-- **0.41** | [A bill to reauthorize the National Integrated Drought Information System Act of 2006, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3912?format=json) | USBR WaterSMART
-- **0.41** | [A bill to amend the Federal Food, Drug, and Cosmetic Act to clarify the Food and Drug Administration's jurisdiction over certain tobacco products, and to protect jobs and small businesses involved in the sale, manufacturing, and distribution of traditional and premium cigars.](https://api.congress.gov/v3/bill/119/s/3922?format=json) | DOT PROTECT
-- **0.41** | [A bill to establish artificial intelligence standards, metrics, and evaluation tools, to support artificial intelligence research, development, and capacity building activities, to promote innovation in the artificial intelligence industry by ensuring companies of all sizes can succeed and thrive, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3952?format=json) | EPA GAP
-- **0.41** | [A bill to direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions.](https://api.congress.gov/v3/bill/119/s/3928?format=json) | DOT PROTECT
+- **0.41** | [A bill to allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer.](https://api.congress.gov/v3/bill/119/s/3946?format=json) | 
+- **0.40** | [To amend the Catawba Indian Tribe of South Carolina Land Claims Settlement Act of 1993.](https://api.congress.gov/v3/bill/119/hr/4463?format=json) | 
 - **0.40** | [Endangered and Threatened Wildlife and Plants; Notice of 12-Month Finding on a Petition To List the Washington Coast Chinook Salmon Evolutionarily Significant Unit as Threatened or Endangered Under the Endangered Species Act](https://www.federalregister.gov/documents/2026/02/19/2026-03292/endangered-and-threatened-wildlife-and-plants-notice-of-12-month-finding-on-a-petition-to-list-the) | DOT PROTECT
+- **0.40** | [Pydiflumetofen; Pesticide Tolerances](https://www.federalregister.gov/documents/2026/02/20/2026-03421/pydiflumetofen-pesticide-tolerances) | DOT PROTECT
+- **0.40** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Diphenylamine, et al.](https://www.federalregister.gov/documents/2026/02/20/2026-03371/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-diphenylamine) | DOT PROTECT
+- **0.40** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Terbacil, et al.](https://www.federalregister.gov/documents/2026/02/20/2026-03366/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-terbacil-et) | DOT PROTECT
 - **0.40** | [Privacy Act of 1974; System of Records](https://www.federalregister.gov/documents/2026/02/17/2026-03003/privacy-act-of-1974-system-of-records) | DOT PROTECT
-- **0.40** | [Electronic Bond Transmission](https://www.federalregister.gov/documents/2026/02/13/2026-02961/electronic-bond-transmission) | DOT PROTECT
-- **0.40** | [Community Protection and Wildfire Resilience Act](https://api.congress.gov/v3/bill/119/hr/582?format=json) | DOT PROTECT
+- **0.40** | [Parris Island Protection Act](https://api.congress.gov/v3/bill/119/hr/443?format=json) | DOT PROTECT
 - **0.40** | [Boundary Waters Wilderness Protection and Pollution Prevention Act](https://api.congress.gov/v3/bill/119/hr/588?format=json) | DOT PROTECT
+- **0.40** | [Household Goods Shipping Consumer Protection Act](https://api.congress.gov/v3/bill/119/hr/880?format=json) | DOT PROTECT
 - **0.40** | [Protection of Women in Olympic and Amateur Sports Act of 2026](https://api.congress.gov/v3/bill/119/hr/1028?format=json) | DOT PROTECT
 - **0.40** | [Protect Our Letter Carriers Act of 2025](https://api.congress.gov/v3/bill/119/hr/1065?format=json) | DOT PROTECT
+- **0.40** | [Protecting Sensitive Locations Act](https://api.congress.gov/v3/bill/119/hr/1061?format=json) | DOT PROTECT
+- **0.40** | [Protecting Privacy in Purchases Act](https://api.congress.gov/v3/bill/119/hr/1181?format=json) | DOT PROTECT
 - **0.40** | [Protecting Domestic Mining Act of 2025](https://api.congress.gov/v3/bill/119/hr/1501?format=json) | DOT PROTECT
+- **0.40** | [Protecting Life from Chemical Abortions Act](https://api.congress.gov/v3/bill/119/hr/1525?format=json) | DOT PROTECT
+- **0.40** | [New Era of Preventing End-Stage Kidney Disease Act](https://api.congress.gov/v3/bill/119/hr/1518?format=json) | EPA STAG
 - **0.40** | [Protect and Serve Act of 2025](https://api.congress.gov/v3/bill/119/hr/1551?format=json) | DOT PROTECT
+- **0.40** | [Law Enforcement Protection and Privacy Act of 2025](https://api.congress.gov/v3/bill/119/hr/1698?format=json) | DOT PROTECT
 - **0.40** | [Federal Firearms Licensee Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/1773?format=json) | DOT PROTECT
+- **0.40** | [Protecting Americans’ Social Security Data Act](https://api.congress.gov/v3/bill/119/hr/1877?format=json) | DOT PROTECT
 - **0.40** | [Protecting Students with Disabilities Act](https://api.congress.gov/v3/bill/119/hr/2333?format=json) | DOT PROTECT
+- **0.40** | [Protecting Our Courts from Foreign Manipulation Act of 2025](https://api.congress.gov/v3/bill/119/hr/2675?format=json) | DOT PROTECT
 - **0.40** | [Southern California Coast and Ocean Protection Act](https://api.congress.gov/v3/bill/119/hr/2862?format=json) | DOT PROTECT
-- **0.40** | [Arctic Refuge Protection Act](https://api.congress.gov/v3/bill/119/hr/3067?format=json) | DOT PROTECT
 - **0.40** | [Public Service Worker Protection Act](https://api.congress.gov/v3/bill/119/hr/3139?format=json) | DOT PROTECT
-- **0.40** | [Protecting America's Property Rights Act](https://api.congress.gov/v3/bill/119/hr/3206?format=json) | DOT PROTECT
+- **0.40** | [Protecting Older Workers Against Discrimination Act of 2025](https://api.congress.gov/v3/bill/119/hr/3522?format=json) | DOT PROTECT
+- **0.40** | [Striking and Locked Out Workers Healthcare Protection Act](https://api.congress.gov/v3/bill/119/hr/3532?format=json) | DOT PROTECT
 - **0.40** | [Capacity Building for Business Districts Pilot Program Act of 2025](https://api.congress.gov/v3/bill/119/hr/3585?format=json) | EPA GAP
+- **0.40** | [Protecting Private Job Creators Act](https://api.congress.gov/v3/bill/119/hr/3959?format=json) | DOT PROTECT
 - **0.40** | [Fair Accounting for Income Realized from Betting Earnings Taxation Act](https://api.congress.gov/v3/bill/119/hr/4304?format=json) | FHWA TTP Safety
 - **0.40** | [Climate Change Health Protection and Promotion Act of 2025](https://api.congress.gov/v3/bill/119/hr/4515?format=json) | DOT PROTECT
+- **0.40** | [Home Appliance Protection and Affordability Act](https://api.congress.gov/v3/bill/119/hr/4626?format=json) | DOT PROTECT
 - **0.40** | [Uniform Standards Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/5581?format=json) | DOT PROTECT
 - **0.40** | [Head Start Shutdown Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/5790?format=json) | DOT PROTECT
 - **0.40** | [To authorize the Department of Justice and the Department of State to provide law enforcement and intelligence technical assistance, training, capacity building, and advisory support to the Government of Ukraine to achieve the exchange of prisoners of war, the release of civilian detainees, and the return of forcibly transferred Ukrainian children, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/5962?format=json) | EPA GAP
@@ -22178,84 +20492,91 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.40** | [RED Tape Act](https://api.congress.gov/v3/bill/119/hr/6398?format=json) | USBR TAP
 - **0.40** | [Air Permitting Improvements to Protect National Security Act of 2025](https://api.congress.gov/v3/bill/119/hr/6373?format=json) | DOT PROTECT
 - **0.40** | [Upholding Protections for Unaccompanied Children Act of 2025](https://api.congress.gov/v3/bill/119/hr/6389?format=json) | DOT PROTECT
-- **0.40** | [Protecting Students on Campus Act of 2025](https://api.congress.gov/v3/bill/119/hr/6857?format=json) | DOT PROTECT
 - **0.40** | [PROTECT Act of 2026](https://api.congress.gov/v3/bill/119/hr/6990?format=json) | DOT PROTECT
-- **0.40** | [PROTECT Act](https://api.congress.gov/v3/bill/119/hr/7045?format=json) | DOT PROTECT
+- **0.40** | [Federal Correctional Officer Paycheck Protection Act of 2026](https://api.congress.gov/v3/bill/119/hr/7033?format=json) | DOT PROTECT
 - **0.40** | [Protecting Motherhood Act](https://api.congress.gov/v3/bill/119/hr/7235?format=json) | DOT PROTECT
 - **0.40** | [Protect Veterans from the THIEF Act](https://api.congress.gov/v3/bill/119/hr/7241?format=json) | DOT PROTECT
-- **0.40** | [Protecting Children in Surrogacy Act](https://api.congress.gov/v3/bill/119/hr/7293?format=json) | DOT PROTECT
-- **0.40** | [Protecting Small Businesses from Predatory Website Lawsuits Act](https://api.congress.gov/v3/bill/119/hr/7328?format=json) | DOT PROTECT
 - **0.40** | [Puerto Rico Water Infrastructure Resilience Act](https://api.congress.gov/v3/bill/119/hr/7397?format=json) | EPA STAG
-- **0.40** | [Protecting Hospitals from Disaster Act of 2026](https://api.congress.gov/v3/bill/119/hr/7486?format=json) | DOT PROTECT
+- **0.40** | [Community Health Center Drug Pricing Protection Act](https://api.congress.gov/v3/bill/119/hr/7391?format=json) | DOT PROTECT
 - **0.40** | [Preventing Research Ownership Transfer to External Competitive Threats (PROTECT) Act of 2026](https://api.congress.gov/v3/bill/119/hr/7510?format=json) | DOT PROTECT
 - **0.40** | [U.S. Farmworker Protection Act](https://api.congress.gov/v3/bill/119/hr/7541?format=json) | DOT PROTECT
 - **0.40** | [GAP Supply Act](https://api.congress.gov/v3/bill/119/hr/7528?format=json) | EPA GAP
+- **0.40** | [Protecting Student Athletes from Concussions Act](https://api.congress.gov/v3/bill/119/hr/7590?format=json) | DOT PROTECT
 - **0.40** | [Protecting Puppies from Sharia Act](https://api.congress.gov/v3/bill/119/hr/7611?format=json) | DOT PROTECT
-- **0.40** | [To amend title 54, United States Code, to modify certain cost-sharing requirements for grant programs under the American Battlefield Protection Program, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7618?format=json) | DOT PROTECT
+- **0.40** | [To require the Commissioner of U.S. Customs and Border Protection to refund tariffs collected under the International Emergency Economic Powers Act, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7615?format=json) | DOT PROTECT
+- **0.40** | [To amend title 18, United States Code, to prohibit coercing protected adults to send or otherwise transmit an intimate visual depiction, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7715?format=json) | DOT PROTECT
+- **0.40** | [To amend the Consumer Financial Protection Act of 2010 to establish the position of the Assistant Director and Student Loan Borrower Advocate of the Bureau of Consumer Financial Protection, to provide a framework for the Bureau of Consumer Financial Protection and the Department of Education to coordinate in providing assistance to and serving borrowers seeking to resolve complaints related to their private education or Federal student loans, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7671?format=json) | DOT PROTECT
+- **0.40** | [To direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions.](https://api.congress.gov/v3/bill/119/hr/7684?format=json) | DOT PROTECT
+- **0.40** | [Closing the Provider Fraud Gap Act](https://api.congress.gov/v3/bill/119/hr/7677?format=json) | EPA GAP
+- **0.40** | [To require the Commissioner of U.S. Customs and Border Protection to refund tariffs collected under the International Emergency Economic Powers Act, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7736?format=json) | DOT PROTECT
 - **0.40** | [Protecting Life in Foreign Assistance Act](https://api.congress.gov/v3/bill/119/s/250?format=json) | DOT PROTECT
+- **0.40** | [Jamie Reed Protecting Our Kids from Child Abuse Act](https://api.congress.gov/v3/bill/119/s/312?format=json) | DOT PROTECT
+- **0.40** | [Household Goods Shipping Consumer Protection Act](https://api.congress.gov/v3/bill/119/s/337?format=json) | DOT PROTECT
+- **0.40** | [Protecting Sensitive Locations Act](https://api.congress.gov/v3/bill/119/s/455?format=json) | DOT PROTECT
 - **0.40** | [Invest to Protect Act of 2025](https://api.congress.gov/v3/bill/119/s/768?format=json) | DOT PROTECT
 - **0.40** | [Expanding Whistleblower Protections for Contractors Act of 2025](https://api.congress.gov/v3/bill/119/s/874?format=json) | DOT PROTECT
+- **0.40** | [Protect Our Probationary Employees Act](https://api.congress.gov/v3/bill/119/s/918?format=json) | DOT PROTECT
 - **0.40** | [Content Origin Protection and Integrity from Edited and Deepfaked Media Act of 2025](https://api.congress.gov/v3/bill/119/s/1396?format=json) | DOT PROTECT
-- **0.40** | [Empowering States' Rights To Protect Consumers Act of 2026](https://api.congress.gov/v3/bill/119/s/3721?format=json) | DOT PROTECT
+- **0.40** | [Michael Enzi Voluntary Protection Program Act](https://api.congress.gov/v3/bill/119/s/1417?format=json) | DOT PROTECT
+- **0.40** | [Protecting Student Athletes from Concussions Act of 2025](https://api.congress.gov/v3/bill/119/s/2889?format=json) | DOT PROTECT
+- **0.40** | [Upholding Protections for Unaccompanied Children Act of 2025](https://api.congress.gov/v3/bill/119/s/3322?format=json) | DOT PROTECT
 - **0.40** | [Water Security and Drought Resilience Act](https://api.congress.gov/v3/bill/119/s/3732?format=json) | USBR WaterSMART
 - **0.40** | [Affordable Housing and Homeownership Protection Act of 2026](https://api.congress.gov/v3/bill/119/s/3754?format=json) | DOT PROTECT
+- **0.40** | [Protect America Act](https://api.congress.gov/v3/bill/119/s/3790?format=json) | DOT PROTECT
+- **0.40** | [State Authority to Protect Civil Rights](https://api.congress.gov/v3/bill/119/s/3824?format=json) | DOT PROTECT
+- **0.40** | [A bill to strengthen homeland security by expanding Urban Areas Security Initiative grant eligibility criteria to promote cooperation with U.S. Immigration and Customs Enforcement and to advance election security protections.](https://api.congress.gov/v3/bill/119/s/3920?format=json) | DOT PROTECT
+- **0.40** | [A bill to reauthorize the National Integrated Drought Information System Act of 2006, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3912?format=json) | USBR WaterSMART
+- **0.40** | [A bill to amend the Federal Food, Drug, and Cosmetic Act to clarify the Food and Drug Administration's jurisdiction over certain tobacco products, and to protect jobs and small businesses involved in the sale, manufacturing, and distribution of traditional and premium cigars.](https://api.congress.gov/v3/bill/119/s/3922?format=json) | DOT PROTECT
+- **0.40** | [A bill to establish artificial intelligence standards, metrics, and evaluation tools, to support artificial intelligence research, development, and capacity building activities, to promote innovation in the artificial intelligence industry by ensuring companies of all sizes can succeed and thrive, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3952?format=json) | EPA GAP
+- **0.40** | [A bill to direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions.](https://api.congress.gov/v3/bill/119/s/3928?format=json) | DOT PROTECT
 - **0.40** | [Disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions".](https://api.congress.gov/v3/bill/119/hjres/59?format=json) | DOT PROTECT
 - **0.40** | [A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions".](https://api.congress.gov/v3/bill/119/sjres/18?format=json) | DOT PROTECT
 - **0.40** | [Recognizing that it is the duty of the Federal Government to develop and implement a Transgender Bill of Rights to protect and codify the rights of transgender and nonbinary people under the law and ensure their access to medical care, shelter, safety, and economic security.](https://api.congress.gov/v3/bill/119/hres/1058?format=json) | DOT PROTECT
+- **0.40** | [To amend the Food Security Act of 1985 to include Indian Tribes in certain provisions relating to priority resource concerns.](https://api.congress.gov/v3/bill/119/hr/7627?format=json) | 
 - **0.39** | [National Environmental Policy Act Implementing Regulations](https://www.federalregister.gov/documents/2026/02/24/2026-03708/national-environmental-policy-act-implementing-regulations) | 
-- **0.39** | [Agency Information Collection Activities; Comment Request; U.S. Department of Education Supplemental Information for the SF-424 Form](https://www.federalregister.gov/documents/2026/02/27/2026-03982/agency-information-collection-activities-comment-request-us-department-of-education-supplemental) | 
-- **0.39** | [Mandatory Manufacturing Cost Survey Advanced Notice of Proposed Rulemaking](https://www.federalregister.gov/documents/2026/02/27/2026-04013/mandatory-manufacturing-cost-survey-advanced-notice-of-proposed-rulemaking) | 
-- **0.38** | [Undersea Cable Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/261?format=json) | DOT PROTECT
-- **0.38** | [Department of Education Protection Act](https://api.congress.gov/v3/bill/119/hr/433?format=json) | DOT PROTECT
-- **0.38** | [PROTECT Taiwan Act](https://api.congress.gov/v3/bill/119/hr/1531?format=json) | DOT PROTECT
+- **0.38** | [Community Protection and Wildfire Resilience Act](https://api.congress.gov/v3/bill/119/hr/582?format=json) | DOT PROTECT
 - **0.38** | [Protecting American Agriculture from Foreign Adversaries Act of 2025](https://api.congress.gov/v3/bill/119/hr/1576?format=json) | DOT PROTECT
 - **0.38** | [Protecting Mushroom Farmers Act](https://api.congress.gov/v3/bill/119/hr/1613?format=json) | DOT PROTECT
 - **0.38** | [Women's Retirement Protection Act](https://api.congress.gov/v3/bill/119/hr/2023?format=json) | DOT PROTECT
 - **0.38** | [Puppy Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/2253?format=json) | DOT PROTECT
 - **0.38** | [Religious Workforce Protection Act](https://api.congress.gov/v3/bill/119/hr/2672?format=json) | DOT PROTECT
-- **0.38** | [Protecting Our Courts from Foreign Manipulation Act of 2025](https://api.congress.gov/v3/bill/119/hr/2675?format=json) | DOT PROTECT
-- **0.38** | [Invest to Protect Act of 2025](https://api.congress.gov/v3/bill/119/hr/2711?format=json) | DOT PROTECT
 - **0.38** | [PROTECT Students Act of 2025](https://api.congress.gov/v3/bill/119/hr/2899?format=json) | DOT PROTECT
+- **0.38** | [Arctic Refuge Protection Act](https://api.congress.gov/v3/bill/119/hr/3067?format=json) | DOT PROTECT
+- **0.38** | [Protecting America's Property Rights Act](https://api.congress.gov/v3/bill/119/hr/3206?format=json) | DOT PROTECT
 - **0.38** | [Living Donor Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/4583?format=json) | DOT PROTECT
 - **0.38** | [Improving Drought Monitoring Act](https://api.congress.gov/v3/bill/119/hr/5610?format=json) | USBR WaterSMART
 - **0.38** | [Bridge the Gap for Rural Communities Act](https://api.congress.gov/v3/bill/119/hr/5710?format=json) | EPA GAP
-- **0.38** | [Water Infrastructure Modernization Act of 2025](https://api.congress.gov/v3/bill/119/hr/6075?format=json) | EPA STAG
-- **0.38** | [Conscience Protections for Medical Residents Act](https://api.congress.gov/v3/bill/119/hr/6219?format=json) | DOT PROTECT
 - **0.38** | [Oregon Owyhee Wilderness and Community Protection Act](https://api.congress.gov/v3/bill/119/hr/6777?format=json) | DOT PROTECT
+- **0.38** | [Protecting Students on Campus Act of 2025](https://api.congress.gov/v3/bill/119/hr/6857?format=json) | DOT PROTECT
+- **0.38** | [PROTECT Act](https://api.congress.gov/v3/bill/119/hr/7045?format=json) | DOT PROTECT
 - **0.38** | [Protecting Girls with Turner Syndrome Act of 2026](https://api.congress.gov/v3/bill/119/hr/7177?format=json) | DOT PROTECT
 - **0.38** | [PROTECT the Grid Act](https://api.congress.gov/v3/bill/119/hr/7208?format=json) | DOT PROTECT
+- **0.38** | [Protecting Children in Surrogacy Act](https://api.congress.gov/v3/bill/119/hr/7293?format=json) | DOT PROTECT
 - **0.38** | [Lebanon Election Integrity and Diaspora Voting Protection Act of 2026](https://api.congress.gov/v3/bill/119/hr/7311?format=json) | DOT PROTECT
-- **0.38** | [Local Water Protection Act](https://api.congress.gov/v3/bill/119/hr/7376?format=json) | DOT PROTECT
-- **0.38** | [To amend the Clean Air Act to exclude carbon dioxide, methane, and nitrous oxide from the definition of the term "air pollutant".](https://api.congress.gov/v3/bill/119/hr/7554?format=json) | Tribal Air Quality Management
-- **0.38** | [To protect the civil rights of individuals against unlawful vigilante checkpoints and identity demands, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7572?format=json) | DOT PROTECT
+- **0.38** | [Protecting Small Businesses from Predatory Website Lawsuits Act](https://api.congress.gov/v3/bill/119/hr/7328?format=json) | DOT PROTECT
+- **0.38** | [Protecting Hospitals from Disaster Act of 2026](https://api.congress.gov/v3/bill/119/hr/7486?format=json) | DOT PROTECT
 - **0.38** | [To authorize the issuance of extreme risk protection orders.](https://api.congress.gov/v3/bill/119/hr/7599?format=json) | DOT PROTECT
-- **0.38** | [Religious Workforce Protection Act](https://api.congress.gov/v3/bill/119/s/1298?format=json) | DOT PROTECT
-- **0.38** | [Ruby Mountains Protection Act](https://api.congress.gov/v3/bill/119/s/1349?format=json) | DOT PROTECT
+- **0.38** | [To amend title 54, United States Code, to modify certain cost-sharing requirements for grant programs under the American Battlefield Protection Program, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7618?format=json) | DOT PROTECT
 - **0.38** | [Protecting Global Fisheries Act of 2026](https://api.congress.gov/v3/bill/119/s/1369?format=json) | DOT PROTECT
-- **0.38** | [Buffalo Tract Protection Act](https://api.congress.gov/v3/bill/119/s/1464?format=json) | DOT PROTECT
-- **0.38** | [Protecting Privacy in Purchases Act](https://api.congress.gov/v3/bill/119/s/1715?format=json) | DOT PROTECT
 - **0.38** | [PROTECT the Grid Act](https://api.congress.gov/v3/bill/119/s/2593?format=json) | DOT PROTECT
 - **0.38** | [Main Street Depositor Protection Act](https://api.congress.gov/v3/bill/119/s/2999?format=json) | DOT PROTECT
 - **0.38** | [American Shores Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/3082?format=json) | DOT PROTECT
+- **0.38** | [Empowering States' Rights To Protect Consumers Act of 2026](https://api.congress.gov/v3/bill/119/s/3721?format=json) | DOT PROTECT
 - **0.38** | [Financial Technology Protection Act of 2023](https://api.congress.gov/v3/bill/118/s/1340?format=json) | DOT PROTECT
-- **0.38** | [Drought Preparedness Act](https://api.congress.gov/v3/bill/118/hr/4385?format=json) | USBR WaterSMART
-- **0.38** | [Drought Preparedness Act](https://api.congress.gov/v3/bill/118/s/4242?format=json) | USBR WaterSMART
 - **0.38** | [A resolution recognizing that it is the duty of the Federal Government to develop and implement a Transgender Bill of Rights to protect and codify the rights of transgender and nonbinary people under the law and ensure their access to medical care, shelter, safety, and economic security.](https://api.congress.gov/v3/bill/119/sres/604?format=json) | DOT PROTECT
-- **0.38** | [To amend the Catawba Indian Tribe of South Carolina Land Claims Settlement Act of 1993.](https://api.congress.gov/v3/bill/119/hr/4463?format=json) | 
 - **0.38** | [Tribal Warrant Fairness Act](https://api.congress.gov/v3/bill/119/hr/7490?format=json) | 
 - **0.38** | [Privacy Act of 1974; System of Records](https://www.federalregister.gov/documents/2026/02/24/2026-03592/privacy-act-of-1974-system-of-records) | 
-- **0.38** | [Agency Information Collection Activities; Comment Request on Distributions From Pensions, Annuities, Retirement or Profit-Sharing Plans, IRAs, Insurance Contracts, etc.](https://www.federalregister.gov/documents/2026/02/20/2026-03376/agency-information-collection-activities-comment-request-on-distributions-from-pensions-annuities) | 
-- **0.37** | [Native American Entrepreneurial Opportunity Act](https://api.congress.gov/v3/bill/119/hr/7396?format=json) | 
+- **0.38** | [Agency Information Collection Activities; Comment Request; U.S. Department of Education Supplemental Information for the SF-424 Form](https://www.federalregister.gov/documents/2026/02/27/2026-03982/agency-information-collection-activities-comment-request-us-department-of-education-supplemental) | 
+- **0.38** | [Mandatory Manufacturing Cost Survey Advanced Notice of Proposed Rulemaking](https://www.federalregister.gov/documents/2026/02/27/2026-04013/mandatory-manufacturing-cost-survey-advanced-notice-of-proposed-rulemaking) | 
 - **0.37** | [To amend the Grand Ronde Reservation Act to address the hunting, fishing, trapping, and animal gathering rights of the Confederated Tribes of the Grand Ronde Community, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/1499?format=json) | 
 - **0.36** | [Tribal Gaming Regulatory Compliance Act](https://api.congress.gov/v3/bill/119/hr/3723?format=json) | 
+- **0.36** | [Native American Entrepreneurial Opportunity Act](https://api.congress.gov/v3/bill/119/hr/7396?format=json) | 
 - **0.36** | [Republic of Georgia Sovereignty Act](https://api.congress.gov/v3/bill/119/hr/7630?format=json) | 
-- **0.36** | [To restore the ability of the people of American Samoa to approve amendments to the territorial constitution based on majority rule in a democratic act of self-determination, as authorized pursuant to an Act of Congress delegating administration of Federal territorial law in the territory to the President, and to the Secretary of the Interior under Executive Order 10264, dated June 29, 1951, under which the Constitution of American Samoa was approved and may be amended without requirement for further congressional action, subject to the authority of Congress under the Territorial Clause in article IV, section 3, clause 2 of the United States Constitution.](https://api.congress.gov/v3/bill/118/hr/6062?format=json) | 
-- **0.36** | [Indian Buffalo Management Act](https://api.congress.gov/v3/bill/119/s/3478?format=json) | 
+- **0.36** | [Agency Information Collection Activities; Comment Request on Distributions From Pensions, Annuities, Retirement or Profit-Sharing Plans, IRAs, Insurance Contracts, etc.](https://www.federalregister.gov/documents/2026/02/20/2026-03376/agency-information-collection-activities-comment-request-on-distributions-from-pensions-annuities) | 
 - **0.36** | [Agency Information Collection Activities: Comment Request for Burden Related to the Credit To Produce Electricity From Advanced Nuclear Power Facilities](https://www.federalregister.gov/documents/2026/02/19/2026-03270/agency-information-collection-activities-comment-request-for-burden-related-to-the-credit-to-produce) | 
 - **0.36** | [To direct the Secretary of the Interior to convey to the Nisqually Indian Tribe the Clear Creek Hatchery infrastructure.](https://api.congress.gov/v3/bill/119/hr/7515?format=json) | 
-- **0.35** | [Albuquerque Indian School Act of 2025](https://api.congress.gov/v3/bill/119/hr/6162?format=json) | 
-- **0.35** | [Seneca Nation Law Enforcement Efficiency Act](https://api.congress.gov/v3/bill/119/hr/7065?format=json) | 
 - **0.35** | [Tribal Warrant Fairness Act](https://api.congress.gov/v3/bill/119/s/3041?format=json) | 
+- **0.35** | [Indian Buffalo Management Act](https://api.congress.gov/v3/bill/119/s/3478?format=json) | 
 - **0.35** | [Dementia CAReS Grants for American Indian and Alaska Native Communities](https://www.grants.gov/search-results-detail/355940) | 
 - **0.35** | [CONTAMINATED ALASKA NATIVE CLAIMS SETTLEMENT ACT LANDS ASSISTANCE PROGRAM](https://www.grants.gov/search-results-detail/351547) | 
 - **0.35** | [Tribal Colleges and Universities Program](https://www.grants.gov/search-results-detail/334326) | 
@@ -22264,6 +20585,8 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.35** | [Ambassadors Fund for Cultural Preservation Large Grants Program](https://www.grants.gov/search-results-detail/322314) | 
 - **0.35** | [Rural Opportunities To Use Transportation for Economic Success Initiative: Request for Information](https://www.federalregister.gov/documents/2026/02/23/2026-03496/rural-opportunities-to-use-transportation-for-economic-success-initiative-request-for-information) | 
 - **0.34** | [Salt River Pima-Maricopa Indian Community of the Salt River Reservation, Arizona; Alcoholic Beverage Control Ordinance](https://www.federalregister.gov/documents/2026/02/18/2026-03105/salt-river-pima-maricopa-indian-community-of-the-salt-river-reservation-arizona-alcoholic-beverage) | 
+- **0.34** | [Albuquerque Indian School Act of 2025](https://api.congress.gov/v3/bill/119/hr/6162?format=json) | 
+- **0.34** | [Seneca Nation Law Enforcement Efficiency Act](https://api.congress.gov/v3/bill/119/hr/7065?format=json) | 
 - **0.34** | [SEEDING CRITICAL ADVANCES FOR LEADING ENERGY TECHNOLOGIES WITH UNTAPPED POTENTIAL (SCALEUP) READY](https://www.grants.gov/search-results-detail/356623) | USBR TAP
 - **0.34** | [Capacity Building and Program Technical Assistance for Family Violence Prevention and Services Act Formula Grantees](https://www.grants.gov/search-results-detail/355622) | EPA GAP
 - **0.34** | [Projects of National Significance:  Protecting Rights and Abuse](https://www.grants.gov/search-results-detail/355863) | DOT PROTECT
@@ -22272,8 +20595,7 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.34** | [NCI Pathway to Independence Award for Early-Stage Postdoctoral Researchers (K99/R00 - Independent Basic Experimental Studies with Humans Required)](https://www.grants.gov/search-results-detail/350945) | EPA STAG
 - **0.34** | [NCI Pathway to Independence Award for Early-Stage Postdoctoral Researchers (K99/R00 - Independent Clinical Trial Required)](https://www.grants.gov/search-results-detail/350944) | EPA STAG
 - **0.34** | [NCI Pathway to Independence Award for Early-Stage Postdoctoral Researchers (K99/R00 - Independent Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/350943) | EPA STAG
-- **0.34** | [Agency Information Collection Request for Comments](https://www.federalregister.gov/documents/2026/02/26/2026-03822/agency-information-collection-request-for-comments) | 
-- **0.34** | [Revocation of the 30-Day Notification Requirement Prior To Termination of Lease for Nonpayment of Rent](https://www.federalregister.gov/documents/2026/02/26/2026-03921/revocation-of-the-30-day-notification-requirement-prior-to-termination-of-lease-for-nonpayment-of) | 
+- **0.34** | [Agency Information Collection Activities; North American Woodcock Singing Ground Survey](https://www.federalregister.gov/documents/2026/03/02/2026-04104/agency-information-collection-activities-north-american-woodcock-singing-ground-survey) | 
 - **0.34** | [Tribal Access to Electronic Evidence Act](https://api.congress.gov/v3/bill/119/s/1574?format=json) | 
 - **0.34** | [Helping Our People Act of 2026](https://api.congress.gov/v3/bill/119/s/3769?format=json) | 
 - **0.33** | [Native American Research Centers for Health (NARCH) (S06 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/348514) | 
@@ -22281,42 +20603,39 @@ This scan identified **195 new policy development(s)** since the last scan.
 - **0.33** | [A bill to amend the Catawba Indian Tribe of South Carolina Land Claims Settlement Act of 1993 with respect to future membership in the Catawba Indian Nation.](https://api.congress.gov/v3/bill/119/s/3859?format=json) | 
 - **0.33** | [Applications for Amendments to Facility Operating Licenses Involving Proposed No Significant Hazards Consideration Determination and Containing Sensitive Unclassified Non-Safeguards Information and Order Imposing Procedures for Access to Sensitive Unclassified Non-Safeguards Information](https://www.federalregister.gov/documents/2026/02/24/2026-03625/applications-for-amendments-to-facility-operating-licenses-involving-proposed-no-significant-hazards) | 
 - **0.33** | [Employment Authorization Reform for Asylum Applicants](https://www.federalregister.gov/documents/2026/02/23/2026-03595/employment-authorization-reform-for-asylum-applicants) | 
+- **0.33** | [Agency Information Collection Request for Comments](https://www.federalregister.gov/documents/2026/02/26/2026-03822/agency-information-collection-request-for-comments) | 
 - **0.33** | [Guidance on Multimodal State Freight Plans and State Freight Advisory Committees](https://www.federalregister.gov/documents/2026/02/24/2026-03648/guidance-on-multimodal-state-freight-plans-and-state-freight-advisory-committees) | 
-- **0.33** | [Housing and Community Development Act of 1980: Verification of Eligible Status](https://www.federalregister.gov/documents/2026/02/20/2026-03405/housing-and-community-development-act-of-1980-verification-of-eligible-status) | 
-- **0.33** | [Hiring Authority for College Graduates](https://www.federalregister.gov/documents/2026/02/20/2026-03354/hiring-authority-for-college-graduates) | 
+- **0.33** | [Revocation of the 30-Day Notification Requirement Prior To Termination of Lease for Nonpayment of Rent](https://www.federalregister.gov/documents/2026/02/26/2026-03921/revocation-of-the-30-day-notification-requirement-prior-to-termination-of-lease-for-nonpayment-of) | 
 - **0.33** | [Agency Information Collection Activities; Submission to the Office of Management and Budget for Review and Approval; Diversions, Return Flow, and Consumptive Use of Colorado River Water in the Lower Colorado River Basin](https://www.federalregister.gov/documents/2026/02/24/2026-03654/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-for) | 
 - **0.33** | [Comprehensive Fishery Management Plans for Puerto Rico, St. Croix, and St. Thomas and St. John; Correction](https://www.federalregister.gov/documents/2026/02/23/2026-03507/comprehensive-fishery-management-plans-for-puerto-rico-st-croix-and-st-thomas-and-st-john-correction) | 
 - **0.32** | [Rescission of the “Ten-Day Notices and Corrective Action for State Regulatory Program Issues” Rule, Issued April 9, 2024](https://www.federalregister.gov/documents/2026/02/19/2026-03301/rescission-of-the-ten-day-notices-and-corrective-action-for-state-regulatory-program-issues-rule) | 
-- **0.32** | [To repeal the Impoundment Control Act of 1974.](https://api.congress.gov/v3/bill/119/hr/1180?format=json) | 
-- **0.32** | [CCAMPIS Reauthorization Act](https://api.congress.gov/v3/bill/119/hr/5458?format=json) | 
-- **0.32** | [First Responder Network Authority Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/hr/7386?format=json) | 
-- **0.32** | [Conrad State 30 and Physician Access Reauthorization Act](https://api.congress.gov/v3/bill/119/s/709?format=json) | 
-- **0.32** | [Rural Innovation Stronger Economy (RISE) Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3861?format=json) | 
-- **0.32** | [Providing for consideration of the bill (H.R. 5371) making continuing appropriations and extensions for fiscal year 2026, and for other purposes; providing for consideration of the resolution (H. Res. 719) honoring the life and legacy of Charles "Charlie" James Kirk; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/722?format=json) | 
 - **0.32** | [Tribal Undergraduate to Graduate Research Training and Leadership Experiences (TURTLE) Program (UE5/T32)](https://www.grants.gov/search-results-detail/356309) | 
 - **0.32** | [Tribal Undergraduate to Graduate Research Training and Leadership Experiences (TURTLE) Program (UE5/T34)](https://www.grants.gov/search-results-detail/356310) | 
 - **0.32** | [Stronger Engagement for Indian Health Needs Act of 2026](https://api.congress.gov/v3/bill/119/s/3767?format=json) | 
 - **0.31** | [Disapproving the action of the District of Columbia Council in approving the D.C. Income and Franchise Tax Conformity and Revision Temporary Amendment Act of 2025.](https://api.congress.gov/v3/bill/119/hjres/142?format=json) | 
 - **0.31** | [Monthly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations](https://www.federalregister.gov/documents/2026/02/17/2026-03048/monthly-notice-applications-and-amendments-to-facility-operating-licenses-and-combined-licenses) | 
-- **0.31** | [Constellation Energy Generation, LLC; LaSalle County Station, Units 1 and 2; License Amendment Request](https://www.federalregister.gov/documents/2026/02/13/2026-02947/constellation-energy-generation-llc-lasalle-county-station-units-1-and-2-license-amendment-request) | 
 - **0.31** | [General Policy for Pricing and Charging for Materials and Services Sold by the Department of Energy](https://www.federalregister.gov/documents/2026/02/18/2026-03159/general-policy-for-pricing-and-charging-for-materials-and-services-sold-by-the-department-of-energy) | 
-- **0.31** | [Agency Information Collection Activities: Requests for Comments; Clearance of a New Approval of Information Collection: FAA Request Form for CUAS Coordination](https://www.federalregister.gov/documents/2026/02/13/2026-02954/agency-information-collection-activities-requests-for-comments-clearance-of-a-new-approval-of) | 
+- **0.31** | [Housing and Community Development Act of 1980: Verification of Eligible Status](https://www.federalregister.gov/documents/2026/02/20/2026-03405/housing-and-community-development-act-of-1980-verification-of-eligible-status) | 
+- **0.31** | [Hiring Authority for College Graduates](https://www.federalregister.gov/documents/2026/02/20/2026-03354/hiring-authority-for-college-graduates) | 
 - **0.31** | [Hiring Authority for Post-Secondary Students](https://www.federalregister.gov/documents/2026/02/19/2026-03242/hiring-authority-for-post-secondary-students) | 
 - **0.31** | [Bank Appeals Process](https://www.federalregister.gov/documents/2026/02/17/2026-03086/bank-appeals-process) | 
+- **0.31** | [To repeal the Impoundment Control Act of 1974.](https://api.congress.gov/v3/bill/119/hr/1180?format=json) | 
 - **0.31** | [United States Commission on International Religious Freedom Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/1744?format=json) | 
+- **0.31** | [SUPPORT for Patients and Communities Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/2483?format=json) | 
 - **0.31** | [National Flood Insurance Program Reauthorization and Reform Act of 2025](https://api.congress.gov/v3/bill/119/hr/5484?format=json) | 
+- **0.31** | [CCAMPIS Reauthorization Act](https://api.congress.gov/v3/bill/119/hr/5458?format=json) | 
 - **0.31** | [Wildlife Road Crossings Program Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/6078?format=json) | 
 - **0.31** | [To amend the Agriculture, Rural Development, Food and Drug Administration, and Related Agency Appropriations Act, 2026, to delay the implementation of amendments made by such Act to the hemp production provisions of the Agricultural Marketing Act of 1946.](https://api.congress.gov/v3/bill/119/hr/7010?format=json) | 
+- **0.31** | [First Responder Network Authority Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/hr/7386?format=json) | 
 - **0.31** | [RISE Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/hr/7533?format=json) | 
-- **0.31** | [Family-to-Family Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3714?format=json) | 
+- **0.31** | [Conrad State 30 and Physician Access Reauthorization Act](https://api.congress.gov/v3/bill/119/s/709?format=json) | 
 - **0.31** | [Export-Import Bank Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3772?format=json) | 
 - **0.31** | [Regional Ocean Partnerships Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3791?format=json) | 
 - **0.31** | [Healthy Start Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3799?format=json) | 
+- **0.31** | [Rural Innovation Stronger Economy (RISE) Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3861?format=json) | 
 - **0.31** | [Providing for consideration of the joint resolution (H.J. Res. 25) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to "Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales"; providing for consideration of the bill (H.R. 1156) to amend the CARES Act to extend the statute of limitations for fraud under certain unemployment programs, and for other purposes; providing for consideration of the bill (H.R. 1968) making further continuing appropriations and other extensions for the fiscal year ending September 30, 2025, and for other purposes; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/211?format=json) | 
-- **0.30** | [Notice of Intent To Amend the Resource Management Plan for the Sonoran Desert National Monument, Arizona, and Prepare an Associated Environmental Assessment](https://www.federalregister.gov/documents/2026/02/27/2026-03912/notice-of-intent-to-amend-the-resource-management-plan-for-the-sonoran-desert-national-monument) | 
+- **0.31** | [Providing for consideration of the bill (H.R. 5371) making continuing appropriations and extensions for fiscal year 2026, and for other purposes; providing for consideration of the resolution (H. Res. 719) honoring the life and legacy of Charles "Charlie" James Kirk; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/722?format=json) | 
 - **0.30** | [Notice of Funding Opportunity (NOFO) SUSI Civic Engagement and Environmental Issues Selection Process](https://www.grants.gov/search-results-detail/344137) | 
-- **0.30** | [To amend the Internal Revenue Code of 1986 to treat Indian Tribal Governments in the same manner as State governments for certain Federal tax purposes, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7705?format=json) | 
-- **0.30** | [Of inquiry requesting the President and directing the Secretary of Health and Human Services to transmit, respectively, certain documents to the House of Representatives relating to the "Defend the Spend" freeze on child care payments to all States, Tribes, and Territories.](https://api.congress.gov/v3/bill/119/hres/1078?format=json) | 
 
 ---
-*Generated by TCR Policy Scanner on 2026-02-27*
+*Generated by TCR Policy Scanner on 2026-03-02*
