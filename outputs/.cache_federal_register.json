@@ -1,7 +1,7 @@
 {
   "source": "federal_register",
-  "cached_at": "2026-03-02T13:59:10.842901+00:00",
-  "item_count": 146,
+  "cached_at": "2026-03-03T13:58:23.659436+00:00",
+  "item_count": 152,
   "items": [
     {
       "source": "federal_register",
@@ -1036,6 +1036,108 @@
       "dates": "Comments must be filed by March 19, 2026. A request for a hearing or petitions for leave to intervene must be filed by April 20, 2026. This monthly notice includes all amendments issued, or proposed to be issued, from January 1, 2026, to January 29, 2026. The last monthly notice was published on January 20, 2026.",
       "cfr_references": [],
       "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04191",
+      "title": "Pacific Gas and Electric Company; Notice of Application for Temporary Variance of Flow Requirements Accepted for Filing and Soliciting Comments, Motions To Intervene, and Protests",
+      "abstract": "",
+      "url": "https://www.federalregister.gov/documents/2026/03/03/2026-04191/pacific-gas-and-electric-company-notice-of-application-for-temporary-variance-of-flow-requirements",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-03/pdf/2026-04191.pdf",
+      "published_date": "2026-03-03",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Energy Department",
+        "Federal Energy Regulatory Commission"
+      ],
+      "agency_ids": [
+        136,
+        167
+      ],
+      "action": "",
+      "dates": null,
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04170",
+      "title": "Privacy Act of 1974; System of Records",
+      "abstract": "In accordance with the Privacy Act of 1974, the DoD is modifying and reissuing a current System of Records Notice (SORN) titled, \"Defense Manpower Data Center Data Base,\" DMDC 01. The SORN is being retitled \"Uniformed Services Human Resources Information System,\" to reflect the updated name of the underlying database. The system is designed to collect and maintain records that support a single central facility within the DoD. Its primary functions include assessing manpower trends, supporting personnel and readiness operations, conducting longitudinal statistical analyses, identifying current and former DoD civilians and Armed Forces personnel for the purpose of detecting fraud and abuse of pay and benefits programs, and registering eligible individuals and their authorized dependents for medical examinations, treatment, or other qualified benefits. The system also facilitates the collection of debts owed to the United States Government and to state and local governments. As part of this update, two routine uses are being revised to reflect changes in computer matching activities. Specifically, the proposed revisions expand the eligible population for data sharing with the Department of Education (DoE) to support a new computer matching program, and remove routine uses associated with the Public Assistance Reporting Information System (PARIS), as the DoD no longer participates in that program. Additional modifications throughout the SORN improve clarity and ensure the information reflects current operational practices.",
+      "url": "https://www.federalregister.gov/documents/2026/03/03/2026-04170/privacy-act-of-1974-system-of-records",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-03/pdf/2026-04170.pdf",
+      "published_date": "2026-03-03",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Defense Department",
+        ""
+      ],
+      "agency_ids": [
+        103,
+        0
+      ],
+      "action": "Notice of a modified system of records notice.",
+      "dates": "This SORN is effective upon publication; however, comments on the Routine Uses will be accepted on or before April 2, 2026. The Routine Uses are effective at the close of the comment period, unless comments have been received from interested members of the public that require modification and republication of the notice.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04166",
+      "title": "Freedom of Information Act",
+      "abstract": "The Defense Nuclear Facilities Board's (the Board or DNFSB) published a proposed rule to amend its Freedom of Information Act (FOIA) regulations on November 24, 2025, with a request for comments. The Board did not receive any public comments, and the proposed rule is adopted in this action as a final rule without change. This final rule incorporates certain changes made by the OPEN Government Act of 2007 and the FOIA Improvement Act of 2016. This final rule also amends certain provisions to reflect developments in case law and changes in position titles to align with changes made by the National Defense Authorization Act (NDAA) for Fiscal Year (FY) 2022 to the Atomic Energy Act of 1954 (AEA) and an agency reorganization. The final rule amends a section to permit submission of FOIA requests by electronic mail to the Board or via the government-wide portal. This final rule also adds multitrack processing, which allows the Board to quickly process simple requests. Finally, the final rule defines what information should be included in a denial letter.",
+      "url": "https://www.federalregister.gov/documents/2026/03/03/2026-04166/freedom-of-information-act",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-03/pdf/2026-04166.pdf",
+      "published_date": "2026-03-03",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Defense Nuclear Facilities Safety Board"
+      ],
+      "agency_ids": [
+        109
+      ],
+      "action": "Final rule.",
+      "dates": "Effective date: April 2, 2026.",
+      "cfr_references": [
+        "10 CFR 1703"
+      ],
+      "regulation_ids": [
+        "3155-AA04"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04161",
+      "title": "Assateague Island National Seashore; Oversand Vehicles",
+      "abstract": "The National Park Service (NPS) amends the special regulations for Assateague Island National Seashore to remove certain permit eligibility requirements for motor vehicles that drive on designated beaches and oversand routes. The rule eliminates requirements addressing vehicle weight, ground clearance, and dimensions. These requirements were established in 1976 and are no longer necessary. In addition, the NPS is making several technical, non-substantive changes to the regulations.",
+      "url": "https://www.federalregister.gov/documents/2026/03/03/2026-04161/assateague-island-national-seashore-oversand-vehicles",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-03/pdf/2026-04161.pdf",
+      "published_date": "2026-03-03",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        "National Park Service"
+      ],
+      "agency_ids": [
+        253,
+        362
+      ],
+      "action": "Final rule.",
+      "dates": "This rule is effective April 2, 2026.",
+      "cfr_references": [
+        "36 CFR 7"
+      ],
+      "regulation_ids": [
+        "1024-AE90"
+      ],
       "authority_weight": 0.9
     },
     {
@@ -2544,6 +2646,30 @@
     },
     {
       "source": "federal_register",
+      "source_id": "2026-04159",
+      "title": "Air Plan Approval; AK; Regional Haze State Implementation Plan for the Second Implementation Period",
+      "abstract": "The Environmental Protection Agency (EPA) is approving the Alaska regional haze plan for the second implementation period. Alaska submitted the plan to address applicable requirements under the Clean Air Act and the EPA's Regional Haze Rule.",
+      "url": "https://www.federalregister.gov/documents/2026/03/03/2026-04159/air-plan-approval-ak-regional-haze-state-implementation-plan-for-the-second-implementation-period",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-03/pdf/2026-04159.pdf",
+      "published_date": "2026-03-03",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "agency_ids": [
+        145
+      ],
+      "action": "Final rule.",
+      "dates": "This final rule is effective April 2, 2026.",
+      "cfr_references": [
+        "40 CFR 52"
+      ],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
       "source_id": "2026-03933",
       "title": "Air Plan Approval; Indiana; Keystone VOC RACT Alternative Control",
       "abstract": "The Environmental Protection Agency (EPA) is proposing to approve revisions to the volatile organic compound (VOC) requirements for Keystone Automotive Industries dba Saturn Wheel (Keystone) of Huntington County, Indiana. Keystone owns and operates an aluminum alloy wheel refurbishing and distribution facility at which it performs cold cleaner degreasing operations and is subject to the VOC rules under article 8 of the Indiana Administrative Code (IAC). On February 26, 2025, the Indiana Department of Environmental Management (IDEM) submitted a Commissioner's Order containing the revised requirements and requested that the EPA approve it as an amendment to the Indiana State Implementation Plan (SIP). IDEM is seeking the EPA approval of an equivalent control device and site specific Reasonably Available Control Technology (RACT) for Keystone's degreasing operations, as provided in IAC article 8.",
@@ -2963,6 +3089,30 @@
       "regulation_ids": [
         "2126-AC93"
       ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04194",
+      "title": "Agency Information Collection Activities; Data Elements for Bureau-Funded Schools",
+      "abstract": "In accordance with the Paperwork Reduction Act of 1995, the Bureau of Indian Education (BIE) is proposing to renew an information collection without change.",
+      "url": "https://www.federalregister.gov/documents/2026/03/03/2026-04194/agency-information-collection-activities-data-elements-for-bureau-funded-schools",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-03/pdf/2026-04194.pdf",
+      "published_date": "2026-03-03",
+      "document_type": "Notice",
+      "document_subtype": "icr",
+      "agencies": [
+        "Interior Department",
+        "Indian Affairs Bureau"
+      ],
+      "agency_ids": [
+        253,
+        234
+      ],
+      "action": "Notice of information collection; request for comment.",
+      "dates": "Interested persons are invited to submit comments on or before May 4, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {

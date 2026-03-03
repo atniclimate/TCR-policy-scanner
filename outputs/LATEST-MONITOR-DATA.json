@@ -7,16 +7,16 @@
         "fema_bric"
       ],
       "title": "DHS CR EXPIRED: FEMA BRIC funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 17 days since expiration.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 18 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 17,
+        "days_since_expiration": 18,
         "creates_threatens_edge": true,
         "dhs_bills_detected": 0
       },
-      "timestamp": "2026-03-02T14:13:14.455209+00:00"
+      "timestamp": "2026-03-03T14:09:47.711311+00:00"
     },
     {
       "monitor": "dhs_funding",
@@ -25,16 +25,37 @@
         "fema_tribal_mitigation"
       ],
       "title": "DHS CR EXPIRED: FEMA Tribal Mitigation Plans funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 17 days since expiration.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 18 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 17,
+        "days_since_expiration": 18,
         "creates_threatens_edge": true,
         "dhs_bills_detected": 0
       },
-      "timestamp": "2026-03-02T14:13:14.455221+00:00"
+      "timestamp": "2026-03-03T14:09:47.711323+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "irs_elective_pay"
+      ],
+      "title": "Reconciliation threat: Acknowledging oppression, forced eviction, and suffering experienced by tens of ",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: Acknowledging oppression, forced eviction, and suffering experienced by tens of thousands of Bhutanese citizens during the late 1980s and early 1990s, and encouraging steps toward justice, reconciliation, and lasting peace.. Source ID: 119-HRES-1093. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "119-HRES-1093",
+        "bill_title": "Acknowledging oppression, forced eviction, and suffering experienced by tens of thousands of Bhutanese citizens during the late 1980s and early 1990s, and encouraging steps toward justice, reconciliation, and lasting peace.",
+        "description": "Acknowledging oppression, forced eviction, and suffering experienced by tens of thousands of Bhutanese citizens during the late 1980s and early 1990s, and encouraging steps toward justice, reconciliation, and lasting peace.",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "reconciliation"
+        ]
+      },
+      "timestamp": "2026-03-03T14:09:47.708278+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -55,7 +76,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-02T14:13:14.452912+00:00"
+      "timestamp": "2026-03-03T14:09:47.708402+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -76,7 +97,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-02T14:13:14.452978+00:00"
+      "timestamp": "2026-03-03T14:09:47.708453+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -114,7 +135,7 @@
           "repeal"
         ]
       },
-      "timestamp": "2026-03-02T14:13:14.453886+00:00"
+      "timestamp": "2026-03-03T14:09:47.709767+00:00"
     },
     {
       "monitor": "iija_sunset",
@@ -130,7 +151,7 @@
         "expiration_type": "fund_exhaustion",
         "days_remaining": null
       },
-      "timestamp": "2026-03-02T14:13:14.452733+00:00"
+      "timestamp": "2026-03-03T14:09:47.708142+00:00"
     }
   ],
   "classifications": {
@@ -178,7 +199,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: Commission on Equity and Reconciliation in the Uniformed Services Act (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: Acknowledging oppression, forced eviction, and suffering experienced by tens of  (30 days remaining, threshold 30)",
       "secondary_rules": []
     },
     "epa_stag": {
@@ -319,9 +340,9 @@
     }
   },
   "summary": {
-    "total_alerts": 6,
+    "total_alerts": 7,
     "critical_count": 2,
-    "warning_count": 3,
+    "warning_count": 4,
     "info_count": 1,
     "monitors_run": [
       "dhs_funding",

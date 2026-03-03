@@ -1,7 +1,7 @@
 {
   "source": "usaspending",
-  "cached_at": "2026-03-02T13:59:28.899177+00:00",
-  "item_count": 5917,
+  "cached_at": "2026-03-03T13:58:42.910160+00:00",
+  "item_count": 5938,
   "items": [
     {
       "source": "usaspending",
@@ -103937,6 +103937,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_270331754",
+      "title": "FY26 Obligation: R24AP00177 \u2014 ALBUQUERQUE BERNALILLO COUNTY WATER UTILITY AUTHORITY",
+      "abstract": "$2,926,617 obligated under CFDA 15.507 to ALBUQUERQUE BERNALILLO COUNTY WATER UTILITY AUTHORITY",
+      "url": "https://www.usaspending.gov/award/270331754",
+      "pdf_url": "",
+      "published_date": "2024-04-29",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 2926617.34,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "ALBUQUERQUE BERNALILLO COUNTY WATER UTILITY AUTHORITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_270330953",
       "title": "FY26 Obligation: R22AP00628 \u2014 OWL CREEK IRRIGATION DISTRICT",
       "abstract": "$2,000,000 obligated under CFDA 15.507 to OWL CREEK IRRIGATION DISTRICT",
@@ -104045,6 +104063,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_355682552",
+      "title": "FY26 Obligation: R24AP00724 \u2014 WESTLANDS WATER DISTRICT",
+      "abstract": "$1,808,326 obligated under CFDA 15.507 to WESTLANDS WATER DISTRICT",
+      "url": "https://www.usaspending.gov/award/355682552",
+      "pdf_url": "",
+      "published_date": "2026-02-27",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 1808326.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "WESTLANDS WATER DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_270331351",
       "title": "FY26 Obligation: R23AP00421 \u2014 DAVIS & WEBER COUNTIES CANAL CO",
       "abstract": "$1,800,000 obligated under CFDA 15.507 to DAVIS & WEBER COUNTIES CANAL CO",
@@ -104059,6 +104095,24 @@
       "cfda": "15.507",
       "cfda_program_match": "usbr_watersmart",
       "recipient": "DAVIS & WEBER COUNTIES CANAL CO",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270330936",
+      "title": "FY26 Obligation: R22AP00607 \u2014 SUN RIVER WATERSHED",
+      "abstract": "$1,769,323 obligated under CFDA 15.507 to SUN RIVER WATERSHED",
+      "url": "https://www.usaspending.gov/award/270330936",
+      "pdf_url": "",
+      "published_date": "2023-05-05",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 1769323.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "SUN RIVER WATERSHED",
       "authority_weight": 0.7
     },
     {
@@ -104153,6 +104207,42 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_270286237",
+      "title": "FY26 Obligation: R18AP00197 \u2014 ELEPHANT BUTTE IRRIGATION DISTRICT",
+      "abstract": "$997,181 obligated under CFDA 15.507 to ELEPHANT BUTTE IRRIGATION DISTRICT",
+      "url": "https://www.usaspending.gov/award/270286237",
+      "pdf_url": "",
+      "published_date": "2019-08-14",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 997181.37,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "ELEPHANT BUTTE IRRIGATION DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270330940",
+      "title": "FY26 Obligation: R22AP00611 \u2014 STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
+      "abstract": "$996,487 obligated under CFDA 15.507 to STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
+      "url": "https://www.usaspending.gov/award/270330940",
+      "pdf_url": "",
+      "published_date": "2023-03-29",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 996487.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_353114366",
       "title": "FY26 Obligation: R25AP00383 \u2014 BOULDER WATERSHED COLLECTIVE",
       "abstract": "$954,204 obligated under CFDA 15.507 to BOULDER WATERSHED COLLECTIVE",
@@ -104167,6 +104257,24 @@
       "cfda": "15.507",
       "cfda_program_match": "usbr_watersmart",
       "recipient": "BOULDER WATERSHED COLLECTIVE",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270331722",
+      "title": "FY26 Obligation: R24AP00073 \u2014 STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
+      "abstract": "$936,892 obligated under CFDA 15.507 to STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
+      "url": "https://www.usaspending.gov/award/270331722",
+      "pdf_url": "",
+      "published_date": "2024-06-28",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 936892.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
       "authority_weight": 0.7
     },
     {
@@ -104261,6 +104369,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_270331345",
+      "title": "FY26 Obligation: R23AP00408 \u2014 QUINCY COLUMBIA BASIN IRRIGATION DISTRICT",
+      "abstract": "$500,000 obligated under CFDA 15.507 to QUINCY COLUMBIA BASIN IRRIGATION DISTRICT",
+      "url": "https://www.usaspending.gov/award/270331345",
+      "pdf_url": "",
+      "published_date": "2023-09-06",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 500000.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "QUINCY COLUMBIA BASIN IRRIGATION DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_270301853",
       "title": "FY26 Obligation: R21AP10396 \u2014 ARCO DIVERSION CONVEYANCE LATERAL PIPELINE ASSOCIATION",
       "abstract": "$500,000 obligated under CFDA 15.507 to ARCO DIVERSION CONVEYANCE LATERAL PIPELINE ASSOCIATION",
@@ -104293,6 +104419,42 @@
       "cfda": "15.507",
       "cfda_program_match": "usbr_watersmart",
       "recipient": "HELENA VALLEY IRRIGATION DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_355682562",
+      "title": "FY26 Obligation: R25AP00465 \u2014 RANCHO CALIFORNIA WATER DISTRICT",
+      "abstract": "$400,000 obligated under CFDA 15.507 to RANCHO CALIFORNIA WATER DISTRICT",
+      "url": "https://www.usaspending.gov/award/355682562",
+      "pdf_url": "",
+      "published_date": "2026-02-23",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 400000.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "RANCHO CALIFORNIA WATER DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_355682561",
+      "title": "FY26 Obligation: R25AP00460 \u2014 SAN BERNARDINO VALLEY CONSERVATION TRUST",
+      "abstract": "$400,000 obligated under CFDA 15.507 to SAN BERNARDINO VALLEY CONSERVATION TRUST",
+      "url": "https://www.usaspending.gov/award/355682561",
+      "pdf_url": "",
+      "published_date": "2026-02-25",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 400000.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "SAN BERNARDINO VALLEY CONSERVATION TRUST",
       "authority_weight": 0.7
     },
     {
@@ -104477,6 +104639,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_355682565",
+      "title": "FY26 Obligation: R26AC00059 \u2014 SAN LUIS OBISPO COUNTY FLOOD CONTROL AND WATER CONSERVATION DISTRICT",
+      "abstract": "$234,827 obligated under CFDA 15.507 to SAN LUIS OBISPO COUNTY FLOOD CONTROL AND WATER CONSERVATION DISTRICT",
+      "url": "https://www.usaspending.gov/award/355682565",
+      "pdf_url": "",
+      "published_date": "2026-02-27",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 234827.43,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "SAN LUIS OBISPO COUNTY FLOOD CONTROL AND WATER CONSERVATION DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_270331360",
       "title": "FY26 Obligation: R23AP00451 \u2014 BELLE FOURCHE IRRIGATION DISTRICT",
       "abstract": "$225,842 obligated under CFDA 15.507 to BELLE FOURCHE IRRIGATION DISTRICT",
@@ -104545,6 +104725,24 @@
       "cfda": "15.507",
       "cfda_program_match": "usbr_watersmart",
       "recipient": "MOULTON NIGUEL WATER DISTRICT PUBLIC FACILITIES CORP",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270330816",
+      "title": "FY26 Obligation: R22AP00331 \u2014 RIO GRANDE WATER CONSERVATION DISTRICT",
+      "abstract": "$202,260 obligated under CFDA 15.507 to RIO GRANDE WATER CONSERVATION DISTRICT",
+      "url": "https://www.usaspending.gov/award/270330816",
+      "pdf_url": "",
+      "published_date": "2022-05-10",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 202260.05,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "RIO GRANDE WATER CONSERVATION DISTRICT",
       "authority_weight": 0.7
     },
     {
@@ -104621,6 +104819,60 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_270331886",
+      "title": "FY26 Obligation: R24AP00417 \u2014 EL DORADO IRRIGATION DISTRICT",
+      "abstract": "$100,000 obligated under CFDA 15.507 to EL DORADO IRRIGATION DISTRICT",
+      "url": "https://www.usaspending.gov/award/270331886",
+      "pdf_url": "",
+      "published_date": "2024-08-22",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 100000.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "EL DORADO IRRIGATION DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270331883",
+      "title": "FY26 Obligation: R24AP00414 \u2014 CITY OF SHARON SPRINGS",
+      "abstract": "$100,000 obligated under CFDA 15.507 to CITY OF SHARON SPRINGS",
+      "url": "https://www.usaspending.gov/award/270331883",
+      "pdf_url": "",
+      "published_date": "2024-09-16",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 100000.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "CITY OF SHARON SPRINGS",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270331880",
+      "title": "FY26 Obligation: R24AP00411 \u2014 LINCOLN CITY OF",
+      "abstract": "$100,000 obligated under CFDA 15.507 to LINCOLN CITY OF",
+      "url": "https://www.usaspending.gov/award/270331880",
+      "pdf_url": "",
+      "published_date": "2024-09-09",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 100000.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "LINCOLN CITY OF",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_270331311",
       "title": "FY26 Obligation: R23AP00340 \u2014 STOCKTON EAST WATER DISTRICT",
       "abstract": "$100,000 obligated under CFDA 15.507 to STOCKTON EAST WATER DISTRICT",
@@ -104671,6 +104923,24 @@
       "cfda": "15.507",
       "cfda_program_match": "usbr_watersmart",
       "recipient": "CENTRAL PLATTE NATURAL RESOURCES DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270333457",
+      "title": "FY26 Obligation: R25AP00183 \u2014 COLDWATER CANYON WATER COMPANY",
+      "abstract": "$87,464 obligated under CFDA 15.507 to COLDWATER CANYON WATER COMPANY",
+      "url": "https://www.usaspending.gov/award/270333457",
+      "pdf_url": "",
+      "published_date": "2025-04-18",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 87464.21,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "COLDWATER CANYON WATER COMPANY",
       "authority_weight": 0.7
     },
     {
@@ -104729,6 +104999,24 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_270330675",
+      "title": "FY26 Obligation: R22AP00103 \u2014 CITY OF FORT COLLINS",
+      "abstract": "$75,000 obligated under CFDA 15.507 to CITY OF FORT COLLINS",
+      "url": "https://www.usaspending.gov/award/270330675",
+      "pdf_url": "",
+      "published_date": "2022-03-09",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 75000.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "CITY OF FORT COLLINS",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_270330650",
       "title": "FY26 Obligation: R22AP00069 \u2014 BARD WATER DISTRICT",
       "abstract": "$75,000 obligated under CFDA 15.507 to BARD WATER DISTRICT",
@@ -104743,6 +105031,24 @@
       "cfda": "15.507",
       "cfda_program_match": "usbr_watersmart",
       "recipient": "BARD WATER DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270330750",
+      "title": "FY26 Obligation: R22AP00228 \u2014 PIONEER IRRIGATION CO INC",
+      "abstract": "$72,377 obligated under CFDA 15.507 to PIONEER IRRIGATION CO INC",
+      "url": "https://www.usaspending.gov/award/270330750",
+      "pdf_url": "",
+      "published_date": "2023-01-26",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 72377.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "PIONEER IRRIGATION CO INC",
       "authority_weight": 0.7
     },
     {
@@ -104819,6 +105125,60 @@
     },
     {
       "source": "usaspending",
+      "source_id": "usa_15.507_270330682",
+      "title": "FY26 Obligation: R22AP00112 \u2014 CITY OF YUBA CITY",
+      "abstract": "$45,452 obligated under CFDA 15.507 to CITY OF YUBA CITY",
+      "url": "https://www.usaspending.gov/award/270330682",
+      "pdf_url": "",
+      "published_date": "2022-03-02",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 45452.07,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "CITY OF YUBA CITY",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270333465",
+      "title": "FY26 Obligation: R25AP00192 \u2014 OCHOCO IRRIGATION DISTRICT",
+      "abstract": "$35,571 obligated under CFDA 15.507 to OCHOCO IRRIGATION DISTRICT",
+      "url": "https://www.usaspending.gov/award/270333465",
+      "pdf_url": "",
+      "published_date": "2025-06-10",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 35571.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "OCHOCO IRRIGATION DISTRICT",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270301752",
+      "title": "FY26 Obligation: R21AP10158 \u2014 TALENT IRRIGATION DIST",
+      "abstract": "$20,350 obligated under CFDA 15.507 to TALENT IRRIGATION DIST",
+      "url": "https://www.usaspending.gov/award/270301752",
+      "pdf_url": "",
+      "published_date": "2021-03-31",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 20350.29,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "TALENT IRRIGATION DIST",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
       "source_id": "usa_15.507_270331963",
       "title": "FY26 Obligation: R24AP00543 \u2014 MONTEREY COUNTY WATER RESOURCES",
       "abstract": "$0 obligated under CFDA 15.507 to MONTEREY COUNTY WATER RESOURCES",
@@ -104833,6 +105193,24 @@
       "cfda": "15.507",
       "cfda_program_match": "usbr_watersmart",
       "recipient": "MONTEREY COUNTY WATER RESOURCES",
+      "authority_weight": 0.7
+    },
+    {
+      "source": "usaspending",
+      "source_id": "usa_15.507_270330778",
+      "title": "FY26 Obligation: R22AP00272 \u2014 CITY OF VALLEJO",
+      "abstract": "$0 obligated under CFDA 15.507 to CITY OF VALLEJO",
+      "url": "https://www.usaspending.gov/award/270330778",
+      "pdf_url": "",
+      "published_date": "2022-05-12",
+      "document_type": "obligation",
+      "agencies": [
+        "Department of the Interior"
+      ],
+      "award_amount": 0.0,
+      "cfda": "15.507",
+      "cfda_program_match": "usbr_watersmart",
+      "recipient": "CITY OF VALLEJO",
       "authority_weight": 0.7
     },
     {

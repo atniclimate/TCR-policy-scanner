@@ -682,6 +682,13 @@
       "cfda": "15.156",
       "_type": "ObligationNode"
     },
+    "auth_bil": {
+      "id": "auth_bil",
+      "citation": "bil",
+      "authority_type": "Statute",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
     "usa_97.047_266576412": {
       "id": "usa_97.047_266576412",
       "amount": 211843.92,
@@ -713,13 +720,6 @@
       "fiscal_year": "FY26",
       "cfda": "15.156",
       "_type": "ObligationNode"
-    },
-    "auth_bil": {
-      "id": "auth_bil",
-      "citation": "bil",
-      "authority_type": "Statute",
-      "durability": "",
-      "_type": "AuthorityNode"
     },
     "usa_66.926_257805434": {
       "id": "usa_66.926_257805434",
@@ -4589,6 +4589,14 @@
       "cfda": "81.087",
       "_type": "ObligationNode"
     },
+    "usa_15.507_270331345": {
+      "id": "usa_15.507_270331345",
+      "amount": 500000.0,
+      "recipient": "QUINCY COLUMBIA BASIN IRRIGATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_66.926_354250769": {
       "id": "usa_66.926_354250769",
       "amount": 900000.0,
@@ -4707,6 +4715,38 @@
       "recipient": "OREGON STATE UNIVERSITY",
       "fiscal_year": "FY26",
       "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_355682552": {
+      "id": "usa_15.507_355682552",
+      "amount": 1808326.0,
+      "recipient": "WESTLANDS WATER DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_355682561": {
+      "id": "usa_15.507_355682561",
+      "amount": 400000.0,
+      "recipient": "SAN BERNARDINO VALLEY CONSERVATION TRUST",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_355682565": {
+      "id": "usa_15.507_355682565",
+      "amount": 234827.43,
+      "recipient": "SAN LUIS OBISPO COUNTY FLOOD CONTROL AND WATER CONSERVATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_355682562": {
+      "id": "usa_15.507_355682562",
+      "amount": 400000.0,
+      "recipient": "RANCHO CALIFORNIA WATER DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
       "_type": "ObligationNode"
     },
     "usa_20.205_355330876": {
@@ -4850,14 +4890,6 @@
       "recipient": "MISSISSIPPI DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
-      "_type": "ObligationNode"
-    },
-    "usa_81.087_260362013": {
-      "id": "usa_81.087_260362013",
-      "amount": 500000.0,
-      "recipient": "RUTGERS, THE STATE UNIVERSITY",
-      "fiscal_year": "FY26",
-      "cfda": "81.087",
       "_type": "ObligationNode"
     },
     "usa_10.720_354333183": {
@@ -46708,6 +46740,14 @@
       "cfda": "81.087",
       "_type": "ObligationNode"
     },
+    "usa_81.087_260362013": {
+      "id": "usa_81.087_260362013",
+      "amount": 500000.0,
+      "recipient": "RUTGERS, THE STATE UNIVERSITY",
+      "fiscal_year": "FY26",
+      "cfda": "81.087",
+      "_type": "ObligationNode"
+    },
     "usa_81.087_260361913": {
       "id": "usa_81.087_260361913",
       "amount": 500000.0,
@@ -47164,6 +47204,14 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "usa_15.507_270331754": {
+      "id": "usa_15.507_270331754",
+      "amount": 2926617.34,
+      "recipient": "ALBUQUERQUE BERNALILLO COUNTY WATER UTILITY AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_270330953": {
       "id": "usa_15.507_270330953",
       "amount": 2000000.0,
@@ -47220,6 +47268,14 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "usa_15.507_270330936": {
+      "id": "usa_15.507_270330936",
+      "amount": 1769323.0,
+      "recipient": "SUN RIVER WATERSHED",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_354110956": {
       "id": "usa_15.507_354110956",
       "amount": 1610500.0,
@@ -47252,10 +47308,34 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "usa_15.507_270286237": {
+      "id": "usa_15.507_270286237",
+      "amount": 997181.37,
+      "recipient": "ELEPHANT BUTTE IRRIGATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270330940": {
+      "id": "usa_15.507_270330940",
+      "amount": 996487.0,
+      "recipient": "STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_353114366": {
       "id": "usa_15.507_353114366",
       "amount": 954204.0,
       "recipient": "BOULDER WATERSHED COLLECTIVE",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270331722": {
+      "id": "usa_15.507_270331722",
+      "amount": 936892.0,
+      "recipient": "STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES",
       "fiscal_year": "FY26",
       "cfda": "15.507",
       "_type": "ObligationNode"
@@ -47404,6 +47484,14 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "usa_15.507_270330816": {
+      "id": "usa_15.507_270330816",
+      "amount": 202260.05,
+      "recipient": "RIO GRANDE WATER CONSERVATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_354110960": {
       "id": "usa_15.507_354110960",
       "amount": 200000.0,
@@ -47424,6 +47512,30 @@
       "id": "usa_15.507_354110958",
       "amount": 160000.0,
       "recipient": "CITY OF GRAND JUNCTION",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270331886": {
+      "id": "usa_15.507_270331886",
+      "amount": 100000.0,
+      "recipient": "EL DORADO IRRIGATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270331883": {
+      "id": "usa_15.507_270331883",
+      "amount": 100000.0,
+      "recipient": "CITY OF SHARON SPRINGS",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270331880": {
+      "id": "usa_15.507_270331880",
+      "amount": 100000.0,
+      "recipient": "LINCOLN CITY OF",
       "fiscal_year": "FY26",
       "cfda": "15.507",
       "_type": "ObligationNode"
@@ -47452,6 +47564,14 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "usa_15.507_270333457": {
+      "id": "usa_15.507_270333457",
+      "amount": 87464.21,
+      "recipient": "COLDWATER CANYON WATER COMPANY",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_270331248": {
       "id": "usa_15.507_270331248",
       "amount": 83030.0,
@@ -47476,10 +47596,26 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "usa_15.507_270330675": {
+      "id": "usa_15.507_270330675",
+      "amount": 75000.0,
+      "recipient": "CITY OF FORT COLLINS",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_270330650": {
       "id": "usa_15.507_270330650",
       "amount": 75000.0,
       "recipient": "BARD WATER DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270330750": {
+      "id": "usa_15.507_270330750",
+      "amount": 72377.0,
+      "recipient": "PIONEER IRRIGATION CO INC",
       "fiscal_year": "FY26",
       "cfda": "15.507",
       "_type": "ObligationNode"
@@ -47504,6 +47640,30 @@
       "id": "usa_15.507_270331898",
       "amount": 49986.97,
       "recipient": "NORTH UNIT IRRIGATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270330682": {
+      "id": "usa_15.507_270330682",
+      "amount": 45452.07,
+      "recipient": "CITY OF YUBA CITY",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270333465": {
+      "id": "usa_15.507_270333465",
+      "amount": 35571.0,
+      "recipient": "OCHOCO IRRIGATION DISTRICT",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_270301752": {
+      "id": "usa_15.507_270301752",
+      "amount": 20350.29,
+      "recipient": "TALENT IRRIGATION DIST",
       "fiscal_year": "FY26",
       "cfda": "15.507",
       "_type": "ObligationNode"
@@ -48750,6 +48910,14 @@
       }
     },
     {
+      "source": "bia_tcr",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "361383"
+      }
+    },
+    {
       "source": "fema_bric",
       "target": "usa_97.047_266576412",
       "type": "OBLIGATED_BY",
@@ -48783,14 +48951,6 @@
       "metadata": {
         "amount": 1604219.98,
         "recipient": "GREAT PLAINS TRIBAL WATER ALLIANCE, INC"
-      }
-    },
-    {
-      "source": "bia_tcr",
-      "target": "auth_bil",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "361349"
       }
     },
     {
@@ -53297,6 +53457,15 @@
       }
     },
     {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270331345",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 500000.0,
+        "recipient": "QUINCY COLUMBIA BASIN IRRIGATION DISTRICT"
+      }
+    },
+    {
       "source": "epa_gap",
       "target": "usa_66.926_354250769",
       "type": "OBLIGATED_BY",
@@ -53429,6 +53598,42 @@
       "metadata": {
         "amount": 335000.0,
         "recipient": "OREGON STATE UNIVERSITY"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_355682552",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1808326.0,
+        "recipient": "WESTLANDS WATER DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_355682561",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 400000.0,
+        "recipient": "SAN BERNARDINO VALLEY CONSERVATION TRUST"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_355682565",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 234827.43,
+        "recipient": "SAN LUIS OBISPO COUNTY FLOOD CONTROL AND WATER CONSERVATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_355682562",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 400000.0,
+        "recipient": "RANCHO CALIFORNIA WATER DISTRICT"
       }
     },
     {
@@ -53590,15 +53795,6 @@
       "metadata": {
         "amount": 2000000.0,
         "recipient": "MISSISSIPPI DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "doe_indian_energy",
-      "target": "usa_81.087_260362013",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 500000.0,
-        "recipient": "RUTGERS, THE STATE UNIVERSITY"
       }
     },
     {
@@ -100817,6 +101013,15 @@
     },
     {
       "source": "doe_indian_energy",
+      "target": "usa_81.087_260362013",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 500000.0,
+        "recipient": "RUTGERS, THE STATE UNIVERSITY"
+      }
+    },
+    {
+      "source": "doe_indian_energy",
       "target": "usa_81.087_260361913",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -101338,6 +101543,15 @@
     },
     {
       "source": "usbr_watersmart",
+      "target": "usa_15.507_270331754",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2926617.34,
+        "recipient": "ALBUQUERQUE BERNALILLO COUNTY WATER UTILITY AUTHORITY"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
       "target": "usa_15.507_270330953",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -101401,6 +101615,15 @@
     },
     {
       "source": "usbr_watersmart",
+      "target": "usa_15.507_270330936",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1769323.0,
+        "recipient": "SUN RIVER WATERSHED"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
       "target": "usa_15.507_354110956",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -101437,11 +101660,38 @@
     },
     {
       "source": "usbr_watersmart",
+      "target": "usa_15.507_270286237",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 997181.37,
+        "recipient": "ELEPHANT BUTTE IRRIGATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270330940",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 996487.0,
+        "recipient": "STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
       "target": "usa_15.507_353114366",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 954204.0,
         "recipient": "BOULDER WATERSHED COLLECTIVE"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270331722",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 936892.0,
+        "recipient": "STATE OF HAWAII DEPARTMENT OF LAND & NATURAL RESOURCES"
       }
     },
     {
@@ -101608,6 +101858,15 @@
     },
     {
       "source": "usbr_watersmart",
+      "target": "usa_15.507_270330816",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 202260.05,
+        "recipient": "RIO GRANDE WATER CONSERVATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
       "target": "usa_15.507_354110960",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -101631,6 +101890,33 @@
       "metadata": {
         "amount": 160000.0,
         "recipient": "CITY OF GRAND JUNCTION"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270331886",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 100000.0,
+        "recipient": "EL DORADO IRRIGATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270331883",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 100000.0,
+        "recipient": "CITY OF SHARON SPRINGS"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270331880",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 100000.0,
+        "recipient": "LINCOLN CITY OF"
       }
     },
     {
@@ -101662,6 +101948,15 @@
     },
     {
       "source": "usbr_watersmart",
+      "target": "usa_15.507_270333457",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 87464.21,
+        "recipient": "COLDWATER CANYON WATER COMPANY"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
       "target": "usa_15.507_270331248",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -101689,11 +101984,29 @@
     },
     {
       "source": "usbr_watersmart",
+      "target": "usa_15.507_270330675",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 75000.0,
+        "recipient": "CITY OF FORT COLLINS"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
       "target": "usa_15.507_270330650",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 75000.0,
         "recipient": "BARD WATER DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270330750",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 72377.0,
+        "recipient": "PIONEER IRRIGATION CO INC"
       }
     },
     {
@@ -101721,6 +102034,33 @@
       "metadata": {
         "amount": 49986.97,
         "recipient": "NORTH UNIT IRRIGATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270330682",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 45452.07,
+        "recipient": "CITY OF YUBA CITY"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270333465",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 35571.0,
+        "recipient": "OCHOCO IRRIGATION DISTRICT"
+      }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_270301752",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 20350.29,
+        "recipient": "TALENT IRRIGATION DIST"
       }
     },
     {
@@ -102287,8 +102627,8 @@
     }
   ],
   "summary": {
-    "total_nodes": 6004,
-    "total_edges": 6071,
+    "total_nodes": 6024,
+    "total_edges": 6091,
     "programs": 18,
     "node_types": {
       "ProgramNode": 18,
@@ -102297,7 +102637,7 @@
       "FundingVehicleNode": 8,
       "BarrierNode": 16,
       "TrustSuperNode": 1,
-      "ObligationNode": 5908
+      "ObligationNode": 5928
     }
   }
 }
