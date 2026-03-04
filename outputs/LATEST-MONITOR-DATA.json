@@ -7,16 +7,16 @@
         "fema_bric"
       ],
       "title": "DHS CR EXPIRED: FEMA BRIC funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 18 days since expiration.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 19 days since expiration. Note: 1 DHS funding bill(s) detected in scan results, but passage is not guaranteed.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 18,
+        "days_since_expiration": 19,
         "creates_threatens_edge": true,
-        "dhs_bills_detected": 0
+        "dhs_bills_detected": 1
       },
-      "timestamp": "2026-03-03T14:09:47.711311+00:00"
+      "timestamp": "2026-03-04T14:09:41.224797+00:00"
     },
     {
       "monitor": "dhs_funding",
@@ -25,16 +25,37 @@
         "fema_tribal_mitigation"
       ],
       "title": "DHS CR EXPIRED: FEMA Tribal Mitigation Plans funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 18 days since expiration.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 19 days since expiration. Note: 1 DHS funding bill(s) detected in scan results, but passage is not guaranteed.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 18,
+        "days_since_expiration": 19,
         "creates_threatens_edge": true,
-        "dhs_bills_detected": 0
+        "dhs_bills_detected": 1
       },
-      "timestamp": "2026-03-03T14:09:47.711323+00:00"
+      "timestamp": "2026-03-04T14:09:41.224808+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "irs_elective_pay"
+      ],
+      "title": "Reconciliation threat: To provide for reconciliation pursuant to section 2002 of the concurrent resolut",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: To provide for reconciliation pursuant to section 2002 of the concurrent resolution on the budget for fiscal year 2016.. Source ID: 114-HR-3762. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "114-HR-3762",
+        "bill_title": "To provide for reconciliation pursuant to section 2002 of the concurrent resolution on the budget for fiscal year 2016.",
+        "description": "To provide for reconciliation pursuant to section 2002 of the concurrent resolution on the budget for fiscal year 2016.",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "reconciliation"
+        ]
+      },
+      "timestamp": "2026-03-04T14:09:41.222245+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -55,7 +76,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-03T14:09:47.708278+00:00"
+      "timestamp": "2026-03-04T14:09:41.222306+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -76,7 +97,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-03T14:09:47.708402+00:00"
+      "timestamp": "2026-03-04T14:09:41.222407+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -97,7 +118,45 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-03T14:09:47.708453+00:00"
+      "timestamp": "2026-03-04T14:09:41.222469+00:00"
+    },
+    {
+      "monitor": "reconciliation",
+      "severity": "WARNING",
+      "program_ids": [
+        "bia_tcr",
+        "fema_bric",
+        "fema_hmgp",
+        "fema_fma",
+        "irs_elective_pay",
+        "epa_stag",
+        "epa_gap",
+        "fema_tribal_mitigation",
+        "dot_protect",
+        "usda_wildfire",
+        "doe_indian_energy",
+        "hud_ihbg",
+        "noaa_tribal",
+        "fhwa_ttp_safety",
+        "usbr_watersmart",
+        "usbr_tap",
+        "bia_tcr_awards",
+        "epa_tribal_air"
+      ],
+      "title": "Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment.",
+      "detail": "Active bill detected in Congress.gov that may threaten IRA Section 6417 (Elective Pay). Bill: To amend the Fair Housing Act to repeal the Thurmond amendment.. Source ID: 119-HR-7765. This is an active legislative threat -- not the already-enacted OBBBA.",
+      "metadata": {
+        "threat_type": "reconciliation",
+        "creates_threatens_edge": true,
+        "bill_id": "119-HR-7765",
+        "bill_title": "To amend the Fair Housing Act to repeal the Thurmond amendment.",
+        "description": "To amend the Fair Housing Act to repeal the Thurmond amendment.",
+        "days_remaining": 30,
+        "matched_keywords": [
+          "repeal"
+        ]
+      },
+      "timestamp": "2026-03-04T14:09:41.223459+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -135,7 +194,7 @@
           "repeal"
         ]
       },
-      "timestamp": "2026-03-03T14:09:47.709767+00:00"
+      "timestamp": "2026-03-04T14:09:41.223568+00:00"
     },
     {
       "monitor": "iija_sunset",
@@ -151,7 +210,7 @@
         "expiration_type": "fund_exhaustion",
         "days_remaining": null
       },
-      "timestamp": "2026-03-03T14:09:47.708142+00:00"
+      "timestamp": "2026-03-04T14:09:41.222119+00:00"
     }
   ],
   "classifications": {
@@ -160,7 +219,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -171,7 +230,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-01"
       ]
@@ -181,7 +240,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": []
     },
     "fema_fma": {
@@ -189,7 +248,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02"
       ]
@@ -199,7 +258,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: Acknowledging oppression, forced eviction, and suffering experienced by tens of  (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To provide for reconciliation pursuant to section 2002 of the concurrent resolut (30 days remaining, threshold 30)",
       "secondary_rules": []
     },
     "epa_stag": {
@@ -207,7 +266,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -218,7 +277,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -229,7 +288,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02"
       ]
@@ -239,7 +298,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -250,7 +309,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": []
     },
     "doe_indian_energy": {
@@ -258,7 +317,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02"
       ]
@@ -268,7 +327,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -279,7 +338,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02"
       ]
@@ -289,7 +348,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -300,7 +359,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02"
       ]
@@ -310,7 +369,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -321,7 +380,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -332,7 +391,7 @@
       "goal_label": "Urgent Stabilization",
       "rule": "LOGIC-05",
       "confidence": "HIGH",
-      "reason": "THREATENS edge: Reconciliation threat: To repeal the Impoundment Control Act of 1974. (30 days remaining, threshold 30)",
+      "reason": "THREATENS edge: Reconciliation threat: To amend the Fair Housing Act to repeal the Thurmond amendment. (30 days remaining, threshold 30)",
       "secondary_rules": [
         "LOGIC-02",
         "LOGIC-04"
@@ -340,9 +399,9 @@
     }
   },
   "summary": {
-    "total_alerts": 7,
+    "total_alerts": 9,
     "critical_count": 2,
-    "warning_count": 4,
+    "warning_count": 6,
     "info_count": 1,
     "monitors_run": [
       "dhs_funding",

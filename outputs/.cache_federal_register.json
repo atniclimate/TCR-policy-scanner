@@ -1,8 +1,36 @@
 {
   "source": "federal_register",
-  "cached_at": "2026-03-03T13:58:23.659436+00:00",
-  "item_count": 152,
+  "cached_at": "2026-03-04T13:56:40.865015+00:00",
+  "item_count": 153,
   "items": [
+    {
+      "source": "federal_register",
+      "source_id": "2026-04256",
+      "title": "Atlantic Highly Migratory Species; Spatial Fisheries Management; Amendment 15 to the 2006 Consolidated Atlantic Highly Migratory Species Fishery Management Plan",
+      "abstract": "This final rule implements Amendment 15 to the 2006 Consolidated Atlantic Highly Migratory Species Fishery Management Plan (HMS FMP) (Amendment 15). This final action modifies the timing of the Mid-Atlantic shark closed area, modifies the boundaries of the Charleston Bump and East Florida Coast closed areas to create low- and/ or high-bycatch-risk areas, and maintains the current boundaries and timing of the DeSoto Canyon closed area. This action also establishes a process to collect data from all the spatial management areas and review that data as needed and on a regular basis, while also renaming the closed areas to more closely reflect their intended uses. This rule does not implement a fleet-wide requirement for vessel owners to pay for electronic monitoring sampling costs as proposed but requires pelagic longline vessel owners to pay for the electronic monitoring sampling costs if their vessels choose to fish within the low-bycatch- risk areas of the Charleston Bump and East Florida Coast spatial management areas. This final action directly affects bottom and pelagic longline fishermen who hold Atlantic HMS fishing permits.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04256/atlantic-highly-migratory-species-spatial-fisheries-management-amendment-15-to-the-2006-consolidated",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04256.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Commerce Department",
+        "National Oceanic and Atmospheric Administration"
+      ],
+      "agency_ids": [
+        54,
+        361
+      ],
+      "action": "Final rule.",
+      "dates": "This final rule is effective April 3, 2026.",
+      "cfr_references": [
+        "50 CFR 635"
+      ],
+      "regulation_ids": [
+        "0648-BI10"
+      ],
+      "authority_weight": 0.9
+    },
     {
       "source": "federal_register",
       "source_id": "2026-03831",
@@ -294,30 +322,52 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03044",
-      "title": "Sabine Pass Safety Fairway Anchorages",
-      "abstract": "The Coast Guard proposes to establish two new fairway anchorages adjacent to the existing safety fairway approaches to Sabine Bank and Sabine Pass, Texas. These two additional fairway anchorages would be in deeper water than the existing anchorages along the Sabine Pass fairway to accommodate vessels, primarily petroleum tankers, with deeper drafts. This rulemaking enhances the efficient transportation of energy resources and advances our national energy dominance. The establishment of these anchorages in deeper waters enhances navigation safety and the flow of commerce, contributing to economic growth and national energy security.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03044/sabine-pass-safety-fairway-anchorages",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03044.pdf",
-      "published_date": "2026-02-17",
+      "source_id": "2026-04304",
+      "title": "National Emission Standards for Marine Tank Vessel Loading Operations: Technology Review",
+      "abstract": "The U.S. Environmental Protection Agency (EPA) is proposing amendments to the National Emission Standards for Hazardous Air Pollutants (NESHAP) for the marine tank vessel loading operations (MTVLO) source category under Clean Air Act (CAA) section 112. The EPA is proposing certain decisions resulting from the Agency's technology review of the MTVLO NESHAP pursuant to CAA section 112(d)(6). Specifically, the EPA is proposing enhanced flare monitoring requirements, requirements to perform periodic performance testing, electronic reporting provisions, and removal of startup, shutdown, and malfunction (SSM) exemptions.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04304/national-emission-standards-for-marine-tank-vessel-loading-operations-technology-review",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04304.pdf",
+      "published_date": "2026-03-04",
       "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
-        "Homeland Security Department",
-        "Coast Guard"
+        "Environmental Protection Agency"
       ],
       "agency_ids": [
-        227,
-        53
+        145
       ],
-      "action": "Notice of proposed rulemaking.",
-      "dates": "Comments and related material must be received by the Coast Guard on or before May 18, 2026.",
+      "action": "Proposed rule.",
+      "dates": "Comments must be received on or before April 20, 2026. Under the Paperwork Reduction Act (PRA), comments on the information collection provisions are best assured of consideration if the Office of Management and Budget (OMB) receives a copy of your comments on or before April 3, 2026.",
       "cfr_references": [
-        "33 CFR 166"
+        "40 CFR 63"
       ],
       "regulation_ids": [
-        "1625-AC95"
+        "2060-AW22"
       ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04216",
+      "title": "Privacy Act of 1974; System of Records",
+      "abstract": "Pursuant to the provisions of the Privacy Act of 1974, as amended, the Department of the Interior (DOI) is issuing a public notice of its intent to modify certain system of records notices to add a new routine use. This new routine use authorizes the disclosure of records to the U.S. Department of the Treasury for purposes of reviewing payment and award eligibility through the Do Not Pay Working System to identify, prevent, or recoup improper payments, consistent with the Payment Integrity Information Act of 2019 (31 U.S.C. 3351 et seq.), the Privacy Act of 1974 (5 U.S.C. 552a(b)(3)), Executive Order 14249, Protecting America's Bank Account Against Fraud, Waste, and Abuse, and OMB Memorandum M-25-32, Preventing Improper Payments and Protecting Privacy Through Do Not Pay.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04216/privacy-act-of-1974-system-of-records",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04216.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        ""
+      ],
+      "agency_ids": [
+        253,
+        0
+      ],
+      "action": "Notice of modified systems of records.",
+      "dates": "This notice will be effective upon publication. The new routine use will be effective April 6, 2026. Submit comments on or before April 6, 2026. DOI will not disclose any records pursuant to this new routine use until after the 30-day comment period has ended and all comments have been reviewed and addressed.",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -1018,23 +1068,50 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03048",
-      "title": "Monthly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations",
-      "abstract": "Pursuant to section 189a.(2) of the Atomic Energy Act of 1954, as amended (the Act), the U.S. Nuclear Regulatory Commission (NRC) is publishing this regular monthly notice. The Act requires the Commission to publish notice of any amendments issued, or proposed to be issued, and grants the Commission the authority to issue and make immediately effective any amendment to an operating license or combined license, as applicable, upon a determination by the Commission that such amendment involves no significant hazards consideration (NSHC), notwithstanding the pendency before the Commission of a request for a hearing from any person.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03048/monthly-notice-applications-and-amendments-to-facility-operating-licenses-and-combined-licenses",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03048.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Notice",
+      "source_id": "2026-04338",
+      "title": "Approval and Promulgation of State Air Quality Plans for Designated Facilities and Pollutants; Texas; Control of Emissions From Existing Municipal Solid Waste Landfills",
+      "abstract": "Pursuant to the Federal Clean Air Act (CAA or the Act), the Environmental Protection Agency (EPA) is proposing to approve the CAA section 111(d) state plan submitted by the State of Texas for sources subject to the Municipal Solid Waste (MSW) Landfills Emission Guidelines (EG). The Texas MSW landfills plan was submitted to fulfill the state's obligations under CAA section 111(d) to implement and enforce the requirements under the MSW Landfills EG. The EPA is proposing to approve the state plan and amend the agency regulations in accordance with the requirements of the CAA.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04338/approval-and-promulgation-of-state-air-quality-plans-for-designated-facilities-and-pollutants-texas",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04338.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
-        "Nuclear Regulatory Commission"
+        "Environmental Protection Agency"
       ],
       "agency_ids": [
-        383
+        145
       ],
-      "action": "Monthly notice.",
-      "dates": "Comments must be filed by March 19, 2026. A request for a hearing or petitions for leave to intervene must be filed by April 20, 2026. This monthly notice includes all amendments issued, or proposed to be issued, from January 1, 2026, to January 29, 2026. The last monthly notice was published on January 20, 2026.",
-      "cfr_references": [],
+      "action": "Proposed rule.",
+      "dates": "Written comments must be received on or before April 3, 2026.",
+      "cfr_references": [
+        "40 CFR 62"
+      ],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04333",
+      "title": "Air Plan Approval; OR; Klamath Falls PM2.5 Redesignation to Attainment and Maintenance Plan",
+      "abstract": "The Environmental Protection Agency (EPA) proposes to approve an August 20, 2024 request by the Oregon Department of Environmental Quality (Oregon) to revise the attainment plan for the Klamath Falls, Oregon, nonattainment area; redesignate the Klamath Falls nonattainment area to attainment for the 2006 24-hour fine particulate matter (PM<INF>2.5</INF>) National Ambient Air Quality Standard (NAAQS); and approve into the Oregon state implementation plan (SIP) a maintenance plan for the area that demonstrates continued attainment through 2037. This proposed rulemaking includes approving the motor vehicle emission budget for the area and approving updated state rules and the Klamath County Clean Air Ordinance, to be incorporated by reference. EPA proposes these actions pursuant to the Clean Air Act (CAA or the Act).",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04333/air-plan-approval-or-klamath-falls-pm25-redesignation-to-attainment-and-maintenance-plan",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04333.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Proposed Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "agency_ids": [
+        145
+      ],
+      "action": "Proposed rule.",
+      "dates": "Comments must be received on or before April 3, 2026.",
+      "cfr_references": [
+        "40 CFR 52",
+        "40 CFR 81"
+      ],
       "regulation_ids": [],
       "authority_weight": 0.9
     },
@@ -2031,82 +2108,6 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03072",
-      "title": "Partial Approval and Partial Disapproval of Air Quality Implementation Plans; Hawaii; Regional Haze State Implementation Plan for the Second Implementation Period",
-      "abstract": "The Environmental Protection Agency (EPA) is proposing to partially approve and partially disapprove the regional haze state implementation plan (SIP) revision submitted by Hawaii on August 2, 2024, under the Clean Air Act (CAA) and the EPA's Regional Haze Rule (RHR) for the program's second implementation period. Hawaii's SIP submission is intended to address the requirement that states must periodically revise their long-term strategies for making reasonable progress towards the national goal of preventing any future, and remedying any existing, anthropogenic impairment of visibility, including regional haze, in mandatory Class I Federal areas. The SIP submission also addresses other applicable requirements for the second implementation period of the regional haze program. The EPA is proposing to approve the portions of Hawaii's submission relating to calculations of baseline, current, and natural visibility conditions, progress to date, the uniform rate of progress, reasonably attributable visibility impairment, progress report requirements, and monitoring strategy and other implementation plan requirements. The EPA is proposing to disapprove the long-term strategy, including the enforceable shutdown of several electric generating units at facilities on the islands of Hawaii and Maui. Additionally, we are proposing to disapprove the portions of the submission relating to reasonable progress goals and FLM consultation requirements.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03072/partial-approval-and-partial-disapproval-of-air-quality-implementation-plans-hawaii-regional-haze",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03072.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Proposed Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Environmental Protection Agency"
-      ],
-      "agency_ids": [
-        145
-      ],
-      "action": "Proposed rule.",
-      "dates": "Written comments must be received on or before April 20, 2026.",
-      "cfr_references": [
-        "40 CFR 52"
-      ],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03054",
-      "title": "Great Lakes Pilotage Rates-2026 Annual Review and Revisions to Methodology",
-      "abstract": "The Coast Guard is issuing new base Great Lakes pilotage rates for the 2026 shipping season. The Coast Guard estimates that this final rule will result in an approximately 6-percent decrease in operating costs compared to the 2025 season, while facilitating commerce and supply chains. The Coast Guard is also making one change to the ratemaking methodology: the removal of Step 5 regarding the working capital fund. We conducted a full ratemaking for the 2026 ratemaking and considered comments on the Great Lakes pilotage ratemaking methodology.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03054/great-lakes-pilotage-rates-2026-annual-review-and-revisions-to-methodology",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03054.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Homeland Security Department",
-        "Coast Guard"
-      ],
-      "agency_ids": [
-        227,
-        53
-      ],
-      "action": "Final rule.",
-      "dates": "This final rule is effective March 19, 2026.",
-      "cfr_references": [
-        "46 CFR 401",
-        "46 CFR 403",
-        "46 CFR 404"
-      ],
-      "regulation_ids": [
-        "1625-AD03"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03003",
-      "title": "Privacy Act of 1974; System of Records",
-      "abstract": "In accordance with the Privacy Act of 1974, as amended, the Department of Health and Human Services (HHS) is partially modifying an existing system of records maintained by the Office for Civil Rights (OCR), \"Program Information Management System (PIMS),\" System No. 09- 90-0052. The modifications include changing the system of records name to \"HHS Civil Rights and Health Information Privacy Program Records\" and affect only certain sections of the System of Records Notice (SORN), so HHS is not republishing the SORN in full. The system of records contains records about individual members of the public who submit or are named or otherwise involved in civil rights, conscience and religious freedom, and health information privacy-related complaints received by and compliance reviews conducted by OCR, and individuals who submit reports to OCR about breaches of unsecured protected health information (PHI) experienced by covered entities and business associates subject to the Health Insurance Portability and Accountability Act (HIPAA) Privacy, Security, Breach Notification, and Enforcement Rules. OCR is modifying it to include information that programs subject to 42 CFR part 2 (\"Part 2\") (and, as applicable, a qualified service organization on a Part 2 program's behalf) report to the Secretary with respect to a breach of unsecured substance use disorder (SUD) patient records maintained by a Part 2 program (\"Part 2 records\") and complaints and compliance reviews involving potential violations of Part 2.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03003/privacy-act-of-1974-system-of-records",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03003.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Health and Human Services Department"
-      ],
-      "agency_ids": [
-        221
-      ],
-      "action": "Notice of a modified system of records.",
-      "dates": "The modified system of records is effective upon publication, subject to a 30-day period in which to comment on the modifications. Submit any comments by March 19, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
       "source_id": "2026-04136",
       "title": "Office of the Chief Administrative Hearing Officer Electronic Filing",
       "abstract": "The Executive Office for Immigration Review (\"EOIR\") is implementing electronic filing and records applications for all cases before the Office of the Chief Administrative Hearing Officer (\"OCAHO\"). This interim final rule (\"IFR\") updates the relevant regulations necessary to implement these electronic filing and records applications, including by requiring certain users to file documents electronically and changing service of process methods. This IFR also includes several additional minor changes to OCAHO's rules of practice and procedure to clarify and improve upon the existing regulatory language.",
@@ -2385,28 +2386,6 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03075",
-      "title": "Privacy Act of 1974; Matching Program",
-      "abstract": "In accordance with the Privacy Act of 1974, as amended (\"Privacy Act\"), this document announces a new computer matching program the Federal Communications Commission (\"FCC\" or \"Commission\" or \"Agency\") and the Universal Service Administrative Company (USAC) will conduct with the Pennsylvania Department of Human Services. The purpose of this matching program is to verify the eligibility of applicants to and subscribers of Lifeline, and the Affordable Connectivity Program (ACP), both of which are administered by USAC under the direction of the FCC. More information about these programs is provided in the SUPPLEMENTARY INFORMATION section below.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03075/privacy-act-of-1974-matching-program",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03075.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Federal Communications Commission"
-      ],
-      "agency_ids": [
-        161
-      ],
-      "action": "Notice.",
-      "dates": "Written comments are due on or before March 19, 2026. This computer matching program will commence on March 19, 2026, and will conclude after 18 months.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
       "source_id": "2026-03971",
       "title": "Medicare, Medicaid, and Children's Health Insurance Programs: Announcement of Nationwide Temporary Moratoria on Enrollment of Durable Medical Equipment, Prosthetics, Orthotics, and Supplies (DMEPOS) Supplier Medical Supply Companies",
       "abstract": "This notice announces the imposition of a 6-month nationwide moratorium on the Medicare enrollment of DMEPOS supplier medical supply companies.",
@@ -2453,6 +2432,30 @@
       "regulation_ids": [
         "2501-AE16"
       ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04262",
+      "title": "Combined Notice of Filings",
+      "abstract": "",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04262/combined-notice-of-filings",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04262.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Energy Department",
+        "Federal Energy Regulatory Commission"
+      ],
+      "agency_ids": [
+        136,
+        167
+      ],
+      "action": "",
+      "dates": "2/26/26.",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -2642,6 +2645,30 @@
       "regulation_ids": [
         "3206-AN86"
       ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04339",
+      "title": "Air Plan Approval; Arizona; Attainment Plan for the Hayden SO2 Nonattainment Area for the 1971 and 2010 Sulfur Dioxide National Ambient Air Quality Standards",
+      "abstract": "The Environmental Protection Agency (EPA) is proposing to approve revisions to the Arizona state implementation plan (SIP) for attaining the 1971 and 2010 sulfur dioxide (SO<INF>2</INF>) national ambient air quality standards (NAAQS or \"standards\") in the Hayden SO<INF>2</INF> nonattainment area. These SIP revisions, collectively referred to as the \"Hayden SO<INF>2</INF> Plan\" or \"Plan,\" include Arizona's attainment demonstration and other elements required under Clean Air Act (CAA or \"Act\") sections 110, 172, 191, and 192. In addition to an attainment demonstration, the revisions address the requirements for meeting reasonable further progress (RFP) toward attainment of the NAAQS, reasonably available control measures and reasonably available control technology (RACM/RACT), base-year and projection-year emissions inventories, nonattainment new source review (NSR), emissions limitations necessary to provide for attainment, and contingency measures. The EPA is proposing to approve the SIP revisions as meeting the CAA requirements. This action is being taken under the CAA. We are taking comments on this proposal and plan to follow with a final action.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04339/air-plan-approval-arizona-attainment-plan-for-the-hayden-so2-nonattainment-area-for-the-1971-and",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04339.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Proposed Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "agency_ids": [
+        145
+      ],
+      "action": "Proposed rule.",
+      "dates": "Comments must be received on or before April 3, 2026.",
+      "cfr_references": [
+        "40 CFR 52"
+      ],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -3088,6 +3115,108 @@
       ],
       "regulation_ids": [
         "2126-AC93"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04319",
+      "title": "New Mexico and Oklahoma Statewide Tribal Municipal Separate Storm Sewer System (MS4) General Permit Proposal",
+      "abstract": "The Environmental Protection Agency (EPA) Region 6 is providing notice of a proposed National Pollutant Discharge Elimination System (NPDES) statewide general permit for storm water discharges from Tribal municipal separate storm sewer systems (MS4s) located in urbanized areas in the states of New Mexico and Oklahoma. This permit offers discharge authorization to regulated MS4s within the boundaries of the Bureau of the Census-designated 2000, 2010, and 2020 urbanized area and any other MS4s designated by the Director as needing a MS4 permit.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04319/new-mexico-and-oklahoma-statewide-tribal-municipal-separate-storm-sewer-system-ms4-general-permit",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04319.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Environmental Protection Agency"
+      ],
+      "agency_ids": [
+        145
+      ],
+      "action": "Notice of availability of proposed NPDES general permit and request for public comments.",
+      "dates": "Comments must be submitted in writing to EPA on or before May 4, 2026. A virtual public hearing will be held. More information on the date and how to participate will be posted on the EPA public notices web page at https://www.epa.gov/publicnotices at least 30 days prior to the virtual public hearing.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04279",
+      "title": "Agency Information Collection Activities; Comment Request on Revenue Procedure 97-22 Recordkeeping Requirements",
+      "abstract": "In accordance with the Paperwork Reduction Act of 1995, the IRS is inviting comments on the information collection request outlined in this notice.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04279/agency-information-collection-activities-comment-request-on-revenue-procedure-97-22-recordkeeping",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04279.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Notice",
+      "document_subtype": "icr",
+      "agencies": [
+        "Treasury Department",
+        "Internal Revenue Service"
+      ],
+      "agency_ids": [
+        497,
+        254
+      ],
+      "action": "Notice of Information Collection; request for comments.",
+      "dates": "Written comments should be received on or before May 4, 2026 to be assured of consideration.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04276",
+      "title": "Fair Housing Home Loan Data System",
+      "abstract": "The Office of the Comptroller of the Currency (OCC) is rescinding its Fair Housing Home Loan Data System regulation. The OCC has determined that the regulation is obsolete and largely duplicative of and inconsistent with other legal authorities that require national banks to collect and retain certain information on applications for home loans. Moreover, it imposed asymmetrical data collection requirements on national banks compared to their other depository institution counterparts, and the data collected had limited utility. For these reasons, rescinding the regulation eliminates the regulatory burden for national banks without having a material impact on the availability of data necessary for the OCC to conduct its fair housing- related supervisory activities.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04276/fair-housing-home-loan-data-system",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04276.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Treasury Department",
+        "Comptroller of the Currency"
+      ],
+      "agency_ids": [
+        497,
+        80
+      ],
+      "action": "Final rule.",
+      "dates": "The final rule is effective April 3, 2026.",
+      "cfr_references": [
+        "12 CFR 27"
+      ],
+      "regulation_ids": [
+        "1557-AF42"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04275",
+      "title": "Community Bank Licensing Amendments",
+      "abstract": "The Office of the Comptroller of the Currency (OCC) is amending its rules related to policies and procedures to simplify licensing requirements for corporate activities and transactions involving national banks and Federal savings associations that have less than $30 billion in total assets and satisfy certain conditions. The final rule is intended to reduce burden on these institutions.",
+      "url": "https://www.federalregister.gov/documents/2026/03/04/2026-04275/community-bank-licensing-amendments",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04275.pdf",
+      "published_date": "2026-03-04",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Treasury Department",
+        "Comptroller of the Currency"
+      ],
+      "agency_ids": [
+        497,
+        80
+      ],
+      "action": "Final rule.",
+      "dates": "The final rule is effective on April 3, 2026.",
+      "cfr_references": [
+        "12 CFR 5"
+      ],
+      "regulation_ids": [
+        "1557-AF38"
       ],
       "authority_weight": 0.9
     },
@@ -3733,100 +3862,6 @@
       ],
       "action": "Notice of information collection and request for comments.",
       "dates": "Written comments should be received on or before April 20, 2026 to be assured of consideration.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03086",
-      "title": "Bank Appeals Process",
-      "abstract": "The Office of the Comptroller of the Currency (OCC) is issuing a notice of proposed rulemaking to establish revised procedures and policies for appeals of material supervisory determinations by OCC supervised entities. The proposed changes would reflect the OCC's experience administering the bank appeals process and are intended to enhance the independence and efficiency of the appeals function.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03086/bank-appeals-process",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03086.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Proposed Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Treasury Department",
-        "Comptroller of the Currency"
-      ],
-      "agency_ids": [
-        497,
-        80
-      ],
-      "action": "Notice of proposed rulemaking.",
-      "dates": "Comments must be received on or before April 20, 2026.",
-      "cfr_references": [
-        "12 CFR 4"
-      ],
-      "regulation_ids": [
-        "1557-AF48"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03062",
-      "title": "60-Day Notice of Proposed Information Collection: Revitalization Area Designation and Management",
-      "abstract": "HUD is seeking approval from the Office of Management and Budget (OMB) for the information collection described below. In accordance with the Paperwork Reduction Act, HUD is requesting comments from all interested parties on the proposed collection of information. The purpose of this notice is to allow for 60 days of public comment.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03062/60-day-notice-of-proposed-information-collection-revitalization-area-designation-and-management",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03062.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Housing and Urban Development Department"
-      ],
-      "agency_ids": [
-        228
-      ],
-      "action": "Notice.",
-      "dates": "Comments Due Date: April 20, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03045",
-      "title": "Submission for OMB Review; Comment Request",
-      "abstract": "",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-03045/submission-for-omb-review-comment-request",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-03045.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Agriculture Department"
-      ],
-      "agency_ids": [
-        12
-      ],
-      "action": "",
-      "dates": null,
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-02983",
-      "title": "Privacy Act of 1974; System of Records",
-      "abstract": "In accordance with the Privacy Act of 1974, the Department of the Treasury (\"Treasury\" or the \"Department\"), Treasury Inspector General for Tax Administration (TIGTA) is publishing its inventory of Privacy Act systems of records.",
-      "url": "https://www.federalregister.gov/documents/2026/02/17/2026-02983/privacy-act-of-1974-system-of-records",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-17/pdf/2026-02983.pdf",
-      "published_date": "2026-02-17",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Treasury Department"
-      ],
-      "agency_ids": [
-        497
-      ],
-      "action": "Notice of modified systems of records.",
-      "dates": "Submit comments on or before March 19, 2026. The modifications will be effective upon publication and the new routine uses will be applicable 30 days after publication March 19, 2026 unless Treasury receives comments and determines that changes to the system of records notice are necessary.",
       "cfr_references": [],
       "regulation_ids": [],
       "authority_weight": 0.9
