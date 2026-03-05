@@ -7,16 +7,16 @@
         "fema_bric"
       ],
       "title": "DHS CR EXPIRED: FEMA BRIC funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 19 days since expiration. Note: 1 DHS funding bill(s) detected in scan results, but passage is not guaranteed.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA BRIC (FEMA) may be affected by the funding lapse. 20 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 19,
+        "days_since_expiration": 20,
         "creates_threatens_edge": true,
-        "dhs_bills_detected": 1
+        "dhs_bills_detected": 0
       },
-      "timestamp": "2026-03-04T14:09:41.224797+00:00"
+      "timestamp": "2026-03-05T14:13:57.602280+00:00"
     },
     {
       "monitor": "dhs_funding",
@@ -25,16 +25,16 @@
         "fema_tribal_mitigation"
       ],
       "title": "DHS CR EXPIRED: FEMA Tribal Mitigation Plans funding at risk",
-      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 19 days since expiration. Note: 1 DHS funding bill(s) detected in scan results, but passage is not guaranteed.",
+      "detail": "The DHS Continuing Resolution expired on 2026-02-13. FEMA Tribal Mitigation Plans (FEMA) may be affected by the funding lapse. 20 days since expiration.",
       "metadata": {
         "threat_type": "dhs_funding_cliff",
         "deadline": "2026-02-13",
         "days_remaining": 0,
-        "days_since_expiration": 19,
+        "days_since_expiration": 20,
         "creates_threatens_edge": true,
-        "dhs_bills_detected": 1
+        "dhs_bills_detected": 0
       },
-      "timestamp": "2026-03-04T14:09:41.224808+00:00"
+      "timestamp": "2026-03-05T14:13:57.602293+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -55,7 +55,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-04T14:09:41.222245+00:00"
+      "timestamp": "2026-03-05T14:13:57.599469+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -76,7 +76,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-04T14:09:41.222306+00:00"
+      "timestamp": "2026-03-05T14:13:57.599578+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -97,7 +97,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-04T14:09:41.222407+00:00"
+      "timestamp": "2026-03-05T14:13:57.599646+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -118,7 +118,7 @@
           "reconciliation"
         ]
       },
-      "timestamp": "2026-03-04T14:09:41.222469+00:00"
+      "timestamp": "2026-03-05T14:13:57.599688+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -156,7 +156,7 @@
           "repeal"
         ]
       },
-      "timestamp": "2026-03-04T14:09:41.223459+00:00"
+      "timestamp": "2026-03-05T14:13:57.600725+00:00"
     },
     {
       "monitor": "reconciliation",
@@ -194,7 +194,7 @@
           "repeal"
         ]
       },
-      "timestamp": "2026-03-04T14:09:41.223568+00:00"
+      "timestamp": "2026-03-05T14:13:57.600873+00:00"
     },
     {
       "monitor": "iija_sunset",
@@ -210,7 +210,7 @@
         "expiration_type": "fund_exhaustion",
         "days_remaining": null
       },
-      "timestamp": "2026-03-04T14:09:41.222119+00:00"
+      "timestamp": "2026-03-05T14:13:57.599344+00:00"
     }
   ],
   "classifications": {

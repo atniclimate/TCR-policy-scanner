@@ -1,13 +1,13 @@
-# TCR Policy Briefing — 2026-03-04
+# TCR Policy Briefing — 2026-03-05
 
-**Scan Date:** 2026-03-04  
-**Items Above Threshold:** 7261  
-**New Since Last Scan:** 555  
-**Knowledge Graph:** 6059 nodes, 6127 edges  
+**Scan Date:** 2026-03-05  
+**Items Above Threshold:** 7268  
+**New Since Last Scan:** 36  
+**Knowledge Graph:** 6058 nodes, 6128 edges  
 
 ## Executive Summary
 
-This scan identified **555 new policy development(s)** since the last scan.
+This scan identified **36 new policy development(s)** since the last scan.
 
 ## Reconciliation Watch
 
@@ -49,37 +49,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 
 ## New Developments
 
-### Ambassador's Fund for Cultural Preservation **[NEW]**
-
-- **Score:** 0.93
-- **Source:** Grants Gov
-- **Published:** 03/04/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361407](https://www.grants.gov/search-results-detail/361407)
-
-### U.S. Ambassadors Fund for Cultural Preservation Freedom 250 **[NEW]**
-
-- **Score:** 0.93
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361395](https://www.grants.gov/search-results-detail/361395)
-
-### Indian Tribal Energy Development and Self-Determination Act Amendments of 2015 **[NEW]**
-
-- **Score:** 0.79
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 209
-- **Programs:** DOE Indian Energy
-- **Summary:** Referred to the Subcommittee on Energy and Power.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/209?format=json](https://api.congress.gov/v3/bill/114/s/209?format=json)
-
-### Urgent Competitive Revision to Existing NIH Grants and Cooperative Agreements (Urgent Supplement Clinical Trial Optional) **[NEW]**
+### Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed) **[NEW]**
 
 - **Score:** 0.73
 - **Source:** Grants Gov
@@ -87,5984 +57,345 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361408](https://www.grants.gov/search-results-detail/361408)
+- **Link:** [https://www.grants.gov/search-results-detail/361411](https://www.grants.gov/search-results-detail/361411)
 
-### FY 2026 English Access Scholarship Program **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361396](https://www.grants.gov/search-results-detail/361396)
-
-### NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional) **[NEW]**
+### Feed the Future Innovation Labs **[NEW]**
 
 - **Score:** 0.73
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 03/04/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361394](https://www.grants.gov/search-results-detail/361394)
+- **Link:** [https://www.grants.gov/search-results-detail/361412](https://www.grants.gov/search-results-detail/361412)
 
-### State and Jurisdictional Humanities CouncilsGeneral Operating Support Grants **[NEW]**
+### CONSORTIUM FOR NUCLEAR FORENSICS **[NEW]**
 
 - **Score:** 0.73
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 03/04/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361405](https://www.grants.gov/search-results-detail/361405)
+- **Link:** [https://www.grants.gov/search-results-detail/361410](https://www.grants.gov/search-results-detail/361410)
 
-### Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional) **[NEW]**
+### Bioengineering Partnerships with Industry (U01 Clinical Trial Optional) **[NEW]**
 
-- **Score:** 0.73
+- **Score:** 0.65
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 11/06/2024
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361399](https://www.grants.gov/search-results-detail/361399)
+- **Link:** [https://www.grants.gov/search-results-detail/357019](https://www.grants.gov/search-results-detail/357019)
 
-### FY 2026 J. Christopher Stevens Virtual Exchange Initiative   (JCSVEI) Program **[NEW]**
+### Research Projects to Enhance Applicability of Mammalian Models for Translational Research (R01 Clinical Trial Not Allowed) **[NEW]**
 
-- **Score:** 0.73
+- **Score:** 0.65
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 11/06/2024
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361398](https://www.grants.gov/search-results-detail/361398)
+- **Link:** [https://www.grants.gov/search-results-detail/357005](https://www.grants.gov/search-results-detail/357005)
 
-### FY 2026 American Film Showcase **[NEW]**
+### Assay development and screening for discovery of chemical probes, drugs or immunomodulators (R01 Clinical Trial Not Allowed) **[NEW]**
 
-- **Score:** 0.73
+- **Score:** 0.65
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 11/06/2024
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361402](https://www.grants.gov/search-results-detail/361402)
+- **Link:** [https://www.grants.gov/search-results-detail/357014](https://www.grants.gov/search-results-detail/357014)
 
-### FY 2026 Ngawang Choephel Fellows Program **[NEW]**
+### Molecular Imaging of Inflammation in Cancer (R01 Clinical Trial Not Allowed) **[NEW]**
 
-- **Score:** 0.73
+- **Score:** 0.65
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 11/06/2024
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361401](https://www.grants.gov/search-results-detail/361401)
+- **Link:** [https://www.grants.gov/search-results-detail/357002](https://www.grants.gov/search-results-detail/357002)
 
-### FY 2026 National Security Language Initiative for Youth (NSLI-Y) **[NEW]**
+### Agency Information Collection Activities; Submission for OMB Review; Comment Request; Protections for Transit Workers Under Section 5333(b) Urban Program **[NEW]**
 
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361397](https://www.grants.gov/search-results-detail/361397)
+- **Score:** 0.57
+- **Source:** Federal Register
+- **Published:** 2026-03-05
+- **Type:** Notice
+- **Programs:** DOT PROTECT
+- **Summary:** The Department of Labor (DOL of the Department) is submitting this Office of Labor-Management Standards, Department of Labor (OLMS)- sponsored information collection request (ICR) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act of 1995 (PRA). Public comments on the ICR are invited.
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04362/agency-information-collection-activities-submission-for-omb-review-comment-request-protections-for](https://www.federalregister.gov/documents/2026/03/05/2026-04362/agency-information-collection-activities-submission-for-omb-review-comment-request-protections-for)
 
-### FY 2026 Leaders Lead On-Demand **[NEW]**
+### Improve and Enhance the Work Opportunity Tax Credit Act **[NEW]**
 
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361400](https://www.grants.gov/search-results-detail/361400)
-
-### Expanding Financial Literacy and Empowerment: Increasing Awareness and Use of ABLE Accounts for Americans with Disabilities **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361403](https://www.grants.gov/search-results-detail/361403)
-
-### OVW Fiscal Year 2026 Invitation to Apply Administrative Funding Adjustment 1 **[NEW]**
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361404](https://www.grants.gov/search-results-detail/361404)
-
-### FY26 Obligation: 26DG11010013003 — THREE AFFILIATED TRIBES **[NEW]**
-
-- **Score:** 0.71
-- **Source:** Usaspending
-- **Published:** 2026-02-09
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $249,262 obligated under CFDA 10.720 to THREE AFFILIATED TRIBES
-- **Link:** [https://www.usaspending.gov/award/355709982](https://www.usaspending.gov/award/355709982)
-
-### To provide for reconciliation pursuant to section 2002 of the concurrent resolution on the budget for fiscal year 2016. **[NEW]**
-
-- **Score:** 0.69
+- **Score:** 0.56
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 3762
+- **Published:** 2026-03-05
+- **Type:** HR 6231
 - **Programs:** IRS Elective Pay
-- **Summary:** On passage, the objections of the President to the contrary notwithstanding Failed by the Yeas and Nays: (2/3 required): 241 - 186 (Roll no. 53). (consideration: CR H482)
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/3762?format=json](https://api.congress.gov/v3/bill/114/hr/3762?format=json)
+- **Summary:** Referred to the House Committee on Ways and Means.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/6231?format=json](https://api.congress.gov/v3/bill/119/hr/6231?format=json)
 
-### FY26 Obligation: DEIE0000207 — WICHITA AND AFFILIATED TRIBES **[NEW]**
+### Clean Water Act Hazardous Substance Facility Response Plans: Compliance Date Delay and Changes To Reflect Administration Policy **[NEW]**
 
-- **Score:** 0.68
-- **Source:** Usaspending
-- **Published:** 2025-12-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $4,008,148 obligated under CFDA 81.087 to WICHITA AND AFFILIATED TRIBES
-- **Link:** [https://www.usaspending.gov/award/355713535](https://www.usaspending.gov/award/355713535)
-
-### FY26 Obligation: 693JJ22430000Y001DC2024014 — DISTRICT OF COLUMBIA **[NEW]**
-
-- **Score:** 0.61
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $31,014,610 obligated under CFDA 20.205 to DISTRICT OF COLUMBIA
-- **Link:** [https://www.usaspending.gov/award/251148275](https://www.usaspending.gov/award/251148275)
-
-### FY26 Obligation: 693JJ22330000Y001IN1800035 — INDIANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.60
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,074,102 obligated under CFDA 20.205 to INDIANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105728](https://www.usaspending.gov/award/251105728)
-
-### FY26 Obligation: 693JJ22030000ZS30IN1400265 — INDIANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.60
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,212,279 obligated under CFDA 20.205 to INDIANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251014310](https://www.usaspending.gov/award/251014310)
-
-### FY26 Obligation: 693JJ22430000Y230IN1901763 — INDIANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.60
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,752,526 obligated under CFDA 20.205 to INDIANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251155510](https://www.usaspending.gov/award/251155510)
-
-### FY26 Obligation: 693JJ22230000YS30IN2001534 — INDIANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.60
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,668,373 obligated under CFDA 20.205 to INDIANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251080425](https://www.usaspending.gov/award/251080425)
-
-### FY26 Obligation: 693JJ22330000Y240IN1702729 — INDIANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.60
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,985,451 obligated under CFDA 20.205 to INDIANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251121012](https://www.usaspending.gov/award/251121012)
-
-### National Emission Standards for Marine Tank Vessel Loading Operations: Technology Review **[NEW]**
-
-- **Score:** 0.55
+- **Score:** 0.53
 - **Source:** Federal Register
-- **Published:** 2026-03-04
+- **Published:** 2026-03-05
 - **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The U.S. Environmental Protection Agency (EPA) is proposing amendments to the National Emission Standards for Hazardous Air Pollutants (NESHAP) for the marine tank vessel loading operations (MTVLO) source category under Clean Air Act (CAA) section 112. The EPA is proposing certain decisions resulting from the Agency's technology review of the MTVLO NESHAP pursuant to CAA section 112(d)(6). Specifically, the EPA is proposing enhanced flare monitoring requirements, requirements to perform periodic
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04304/national-emission-standards-for-marine-tank-vessel-loading-operations-technology-review](https://www.federalregister.gov/documents/2026/03/04/2026-04304/national-emission-standards-for-marine-tank-vessel-loading-operations-technology-review)
-
-### Air Plan Approval; OR; Klamath Falls PM2.5 Redesignation to Attainment and Maintenance Plan **[NEW]**
-
-- **Score:** 0.55
-- **Source:** Federal Register
-- **Published:** 2026-03-04
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) proposes to approve an August 20, 2024 request by the Oregon Department of Environmental Quality (Oregon) to revise the attainment plan for the Klamath Falls, Oregon, nonattainment area; redesignate the Klamath Falls nonattainment area to attainment for the 2006 24-hour fine particulate matter (PM<INF>2.5</INF>) National Ambient Air Quality Standard (NAAQS); and approve into the Oregon state implementation plan (SIP) a maintenance plan for the area that 
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04333/air-plan-approval-or-klamath-falls-pm25-redesignation-to-attainment-and-maintenance-plan](https://www.federalregister.gov/documents/2026/03/04/2026-04333/air-plan-approval-or-klamath-falls-pm25-redesignation-to-attainment-and-maintenance-plan)
-
-### FY26 Obligation: 693JJ22630000Y800PAT062257 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.54
-- **Source:** Usaspending
-- **Published:** 2026-02-25
-- **Type:** obligation
 - **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $700,000 obligated under CFDA 20.284 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713043](https://www.usaspending.gov/award/355713043)
+- **Summary:** The Environmental Protection Agency (EPA) is proposing to delay the compliance date for Facility Response Plan (FRP) requirements as well as to make language modifications to align with the Administration's climate change and environmental justice policies in Executive Order 14148 of January 20, 2025. These requirements are for onshore non-transportation-related facilities that could reasonably be expected to cause substantial harm to the environment from a CWA hazardous substance worst case dis
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04388/clean-water-act-hazardous-substance-facility-response-plans-compliance-date-delay-and-changes-to](https://www.federalregister.gov/documents/2026/03/05/2026-04388/clean-water-act-hazardous-substance-facility-response-plans-compliance-date-delay-and-changes-to)
 
-### FY26 Obligation: 693JJ22640000Y926VA5B03656 — VIRGINIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.53
-- **Source:** Usaspending
-- **Published:** 2026-02-19
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,000,000 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713351](https://www.usaspending.gov/award/355713351)
-
-### FY26 Obligation: 693JJ22640000Y926VA5B01669 — VIRGINIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.53
-- **Source:** Usaspending
-- **Published:** 2026-02-18
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,000,000 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713350](https://www.usaspending.gov/award/355713350)
-
-### FY26 Obligation: 693JJ22630000Y800NM1102270 — NEW MEXICO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.53
-- **Source:** Usaspending
-- **Published:** 2026-02-18
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $2,713,764 obligated under CFDA 20.284 to NEW MEXICO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713041](https://www.usaspending.gov/award/355713041)
-
-### FY26 Obligation: 693JJ22630000Y800VA5B01805 — VIRGINIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.53
-- **Source:** Usaspending
-- **Published:** 2026-02-18
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $625,104 obligated under CFDA 20.284 to VIRGINIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713047](https://www.usaspending.gov/award/355713047)
-
-### FY26 Obligation: 693JJ22630000Y800UTF018285 — UTAH DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.53
-- **Source:** Usaspending
-- **Published:** 2026-02-18
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $559,380 obligated under CFDA 20.284 to UTAH DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713046](https://www.usaspending.gov/award/355713046)
-
-### FY26 Obligation: 693JJ22630000Y800ME2722420 — MAINE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.53
-- **Source:** Usaspending
-- **Published:** 2026-02-24
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $2,400 obligated under CFDA 20.284 to MAINE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713039](https://www.usaspending.gov/award/355713039)
-
-### Privacy Act of 1974; System of Records **[NEW]**
+### Paper Manifest Sunset Rule; Modification of the Hazardous Waste Manifest Regulations **[NEW]**
 
 - **Score:** 0.52
 - **Source:** Federal Register
-- **Published:** 2026-03-04
-- **Type:** Notice
-- **Programs:** DOT PROTECT
-- **Summary:** Pursuant to the provisions of the Privacy Act of 1974, as amended, the Department of the Interior (DOI) is issuing a public notice of its intent to modify certain system of records notices to add a new routine use. This new routine use authorizes the disclosure of records to the U.S. Department of the Treasury for purposes of reviewing payment and award eligibility through the Do Not Pay Working System to identify, prevent, or recoup improper payments, consistent with the Payment Integrity Infor
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04216/privacy-act-of-1974-system-of-records](https://www.federalregister.gov/documents/2026/03/04/2026-04216/privacy-act-of-1974-system-of-records)
-
-### FY26 Obligation: 693JJ22640000Y926MN0061355 — MINNESOTA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-17
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,000,000 obligated under CFDA 20.205 to MINNESOTA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713347](https://www.usaspending.gov/award/355713347)
-
-### FY26 Obligation: 693JJ22640000Y926MI26A0380 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-17
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,832,888 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/355713345](https://www.usaspending.gov/award/355713345)
-
-### FY26 Obligation: 26DG11062752030 — SWEET HOME FIRE & AMBULANCE DISTRICT **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-12
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $8,711,040 obligated under CFDA 10.720 to SWEET HOME FIRE & AMBULANCE DISTRICT
-- **Link:** [https://www.usaspending.gov/award/355709983](https://www.usaspending.gov/award/355709983)
-
-### FY26 Obligation: 26DG11062752031 — DESCHUTES COUNTY **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-12
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $3,439,362 obligated under CFDA 10.720 to DESCHUTES COUNTY
-- **Link:** [https://www.usaspending.gov/award/355709984](https://www.usaspending.gov/award/355709984)
-
-### FY26 Obligation: 25DG11094200202 — DEPARTMENT OF CONSERVATION & NATURAL RESOURCES PENNSYLVANIA **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-13
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $350,000 obligated under CFDA 10.720 to DEPARTMENT OF CONSERVATION & NATURAL RESOURCES PENNSYLVANIA
-- **Link:** [https://www.usaspending.gov/award/355709893](https://www.usaspending.gov/award/355709893)
-
-### FY26 Obligation: 693JJ22630000Y800PAT036201 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-17
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $1,500,000 obligated under CFDA 20.284 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713042](https://www.usaspending.gov/award/355713042)
-
-### FY26 Obligation: 693JJ22630000Y800WV0019638 — WVDOT DIVISION OF HIGHWAYS **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-17
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $480,000 obligated under CFDA 20.284 to WVDOT DIVISION OF HIGHWAYS
-- **Link:** [https://www.usaspending.gov/award/355713048](https://www.usaspending.gov/award/355713048)
-
-### FY26 Obligation: 693JJ22630000Y810CA5058117 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.51
-- **Source:** Usaspending
-- **Published:** 2026-02-17
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $450,000 obligated under CFDA 20.284 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/355713049](https://www.usaspending.gov/award/355713049)
-
-### Approval and Promulgation of State Air Quality Plans for Designated Facilities and Pollutants; Texas; Control of Emissions From Existing Municipal Solid Waste Landfills **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Federal Register
-- **Published:** 2026-03-04
+- **Published:** 2026-03-05
 - **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** Pursuant to the Federal Clean Air Act (CAA or the Act), the Environmental Protection Agency (EPA) is proposing to approve the CAA section 111(d) state plan submitted by the State of Texas for sources subject to the Municipal Solid Waste (MSW) Landfills Emission Guidelines (EG). The Texas MSW landfills plan was submitted to fulfill the state's obligations under CAA section 111(d) to implement and enforce the requirements under the MSW Landfills EG. The EPA is proposing to approve the state plan a
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04338/approval-and-promulgation-of-state-air-quality-plans-for-designated-facilities-and-pollutants-texas](https://www.federalregister.gov/documents/2026/03/04/2026-04338/approval-and-promulgation-of-state-air-quality-plans-for-designated-facilities-and-pollutants-texas)
+- **Programs:** DOT PROTECT
+- **Summary:** The U.S. Environmental Protection Agency (EPA) is proposing regulatory amendments to the hazardous waste manifest regulations to establish a date for sunsetting use of paper manifests in favor of electronic manifests. Phasing out paper manifests would unlock the estimated $28.5 million annual savings through decreased burden to manifest users while also increasing human health and environmental protection through better tracking of hazardous waste and greater transparency for regulators and the 
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04366/paper-manifest-sunset-rule-modification-of-the-hazardous-waste-manifest-regulations](https://www.federalregister.gov/documents/2026/03/05/2026-04366/paper-manifest-sunset-rule-modification-of-the-hazardous-waste-manifest-regulations)
 
-### Air Plan Approval; Arizona; Attainment Plan for the Hayden SO2 Nonattainment Area for the 1971 and 2010 Sulfur Dioxide National Ambient Air Quality Standards **[NEW]**
-
-- **Score:** 0.50
-- **Source:** Federal Register
-- **Published:** 2026-03-04
-- **Type:** Proposed Rule
-- **Programs:** DOT PROTECT, Tribal Air Quality Management
-- **Summary:** The Environmental Protection Agency (EPA) is proposing to approve revisions to the Arizona state implementation plan (SIP) for attaining the 1971 and 2010 sulfur dioxide (SO<INF>2</INF>) national ambient air quality standards (NAAQS or "standards") in the Hayden SO<INF>2</INF> nonattainment area. These SIP revisions, collectively referred to as the "Hayden SO<INF>2</INF> Plan" or "Plan," include Arizona's attainment demonstration and other elements required under Clean Air Act (CAA or "Act") sec
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04339/air-plan-approval-arizona-attainment-plan-for-the-hayden-so2-nonattainment-area-for-the-1971-and](https://www.federalregister.gov/documents/2026/03/04/2026-04339/air-plan-approval-arizona-attainment-plan-for-the-hayden-so2-nonattainment-area-for-the-1971-and)
-
-### New Mexico and Oklahoma Statewide Tribal Municipal Separate Storm Sewer System (MS4) General Permit Proposal **[NEW]**
+### Tribal Advisory Committee; Notice of Solicitation for Nominations **[NEW]**
 
 - **Score:** 0.49
 - **Source:** Federal Register
-- **Published:** 2026-03-04
+- **Published:** 2026-03-05
 - **Type:** Notice
-- **Programs:** DOT PROTECT
-- **Summary:** The Environmental Protection Agency (EPA) Region 6 is providing notice of a proposed National Pollutant Discharge Elimination System (NPDES) statewide general permit for storm water discharges from Tribal municipal separate storm sewer systems (MS4s) located in urbanized areas in the states of New Mexico and Oklahoma. This permit offers discharge authorization to regulated MS4s within the boundaries of the Bureau of the Census-designated 2000, 2010, and 2020 urbanized area and any other MS4s des
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04319/new-mexico-and-oklahoma-statewide-tribal-municipal-separate-storm-sewer-system-ms4-general-permit](https://www.federalregister.gov/documents/2026/03/04/2026-04319/new-mexico-and-oklahoma-statewide-tribal-municipal-separate-storm-sewer-system-ms4-general-permit)
+- **Programs:** EPA STAG
+- **Summary:** Through this notice, the U.S. Department of Agriculture (USDA) is soliciting nominations for three (3) vacancies on the USDA Tribal Advisory Committee ("the Committee"). The Committee consists of eleven (11) members serving staggered terms. Three members will be appointed by the Secretary of Agriculture for a three-year term. This notice reopens the notice to solicit nominations for membership published in the Federal Register on August 8, 2025, and subsequently extended on September 22, 2025, u
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04387/tribal-advisory-committee-notice-of-solicitation-for-nominations](https://www.federalregister.gov/documents/2026/03/05/2026-04387/tribal-advisory-committee-notice-of-solicitation-for-nominations)
 
-### FY26 Obligation: 693JJ22430000Y001CA00PE025 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
+### Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado-Liquor Code Amendment **[NEW]**
 
 - **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $299,974,280 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251148004](https://www.usaspending.gov/award/251148004)
+- **Source:** Federal Register
+- **Published:** 2026-03-05
+- **Type:** Notice
+- **Summary:** This notice publishes amended Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado Liquor Code.
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04378/southern-ute-indian-tribe-of-the-southern-ute-reservation-colorado-liquor-code-amendment](https://www.federalregister.gov/documents/2026/03/05/2026-04378/southern-ute-indian-tribe-of-the-southern-ute-reservation-colorado-liquor-code-amendment)
 
-### FY26 Obligation: 693JJ22430000Y001CA4052003 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
+### Reduction in Force **[NEW]**
 
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $175,408,360 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251148017](https://www.usaspending.gov/award/251148017)
-
-### FY26 Obligation: 693JJ22230000Y001FL2757410 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $108,632,084 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063707](https://www.usaspending.gov/award/251063707)
-
-### FY26 Obligation: 693JJ22230000Y001FLD720031 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $100,071,530 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063926](https://www.usaspending.gov/award/251063926)
-
-### FY26 Obligation: 693JJ22530000Y230CA6054104 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $96,920,535 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251192117](https://www.usaspending.gov/award/251192117)
-
-### FY26 Obligation: 693JJ22430000YS30CA00PE025 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $72,343,038 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251168747](https://www.usaspending.gov/award/251168747)
-
-### FY26 Obligation: 693JJ22430000Y001CAP091151 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $65,026,253 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251148131](https://www.usaspending.gov/award/251148131)
-
-### FY26 Obligation: 693JJ22230000Y001FLD218017 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $63,354,258 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063747](https://www.usaspending.gov/award/251063747)
-
-### FY26 Obligation: 693JJ22230000Y001FLD120030 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $60,818,263 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063729](https://www.usaspending.gov/award/251063729)
-
-### FY26 Obligation: 693JJ22230000Y001FLD319079 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $59,863,059 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063804](https://www.usaspending.gov/award/251063804)
-
-### FY26 Obligation: 693JJ22230000Y460OHE190122 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $54,687,470 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251078661](https://www.usaspending.gov/award/251078661)
-
-### FY26 Obligation: 693JJ21930000Z460CAP057067 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $54,646,525 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/250981287](https://www.usaspending.gov/award/250981287)
-
-### FY26 Obligation: 693JJ22330000Y001PAT065279 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $50,517,740 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251108484](https://www.usaspending.gov/award/251108484)
-
-### FY26 Obligation: 39E170713Z001 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $44,346,689 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/241685672](https://www.usaspending.gov/award/241685672)
-
-### FY26 Obligation: 693JJ22430000Y001IL6QNF571 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $43,345,178 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251148798](https://www.usaspending.gov/award/251148798)
-
-### FY26 Obligation: 693JJ22330000Y001ILQJBY480 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $40,688,958 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105572](https://www.usaspending.gov/award/251105572)
-
-### FY26 Obligation: 693JJ22430000Y001PAX043631 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $39,701,500 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251150725](https://www.usaspending.gov/award/251150725)
-
-### FY26 Obligation: 693JJ22230000Y001OHE190122 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $37,757,631 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251066591](https://www.usaspending.gov/award/251066591)
-
-### FY26 Obligation: 693JJ22230000Y001NYX720313 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $36,629,054 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251066452](https://www.usaspending.gov/award/251066452)
-
-### FY26 Obligation: 693JJ22330000Y001DES113027 — TRANSPORTATION, DELAWARE DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $35,784,675 obligated under CFDA 20.205 to TRANSPORTATION, DELAWARE DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251104939](https://www.usaspending.gov/award/251104939)
-
-### FY26 Obligation: 693JJ22330000Y240ORPR25001 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $33,037,283 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251123737](https://www.usaspending.gov/award/251123737)
-
-### FY26 Obligation: 693JJ22530000Y113NV0801342 — DEPARTMENT OF TRANSPORTATION NEVADA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $31,568,770 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEVADA
-- **Link:** [https://www.usaspending.gov/award/251188771](https://www.usaspending.gov/award/251188771)
-
-### FY26 Obligation: 693JJ22230000Y001FLD320013 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $31,053,432 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063814](https://www.usaspending.gov/award/251063814)
-
-### FY26 Obligation: 693JJ22330000Y001FLD320016 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $31,037,746 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105001](https://www.usaspending.gov/award/251105001)
-
-### FY26 Obligation: 693JJ22130000Z0E1MI21A0236 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $30,864,431 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251030585](https://www.usaspending.gov/award/251030585)
-
-### FY26 Obligation: 693JJ22330000Y001FLD319075 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $30,738,755 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251104992](https://www.usaspending.gov/award/251104992)
-
-### FY26 Obligation: 693JJ22530000Y001ILGFGL994 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $29,902,670 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251183893](https://www.usaspending.gov/award/251183893)
-
-### FY26 Obligation: 693JJ22530000Y002IL9IGU899 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $28,917,031 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251186538](https://www.usaspending.gov/award/251186538)
-
-### FY26 Obligation: 36X777044ER90 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $25,853,720 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/240563289](https://www.usaspending.gov/award/240563289)
-
-### FY26 Obligation: 693JJ22330000Y001NC0440024 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $25,644,365 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251107232](https://www.usaspending.gov/award/251107232)
-
-### FY26 Obligation: 693JJ22330000Y460TX2022929 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $25,484,372 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251128211](https://www.usaspending.gov/award/251128211)
-
-### FY26 Obligation: 693JJ22230000Y001FL0105152 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $25,101,514 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063684](https://www.usaspending.gov/award/251063684)
-
-### FY26 Obligation: 693JJ22530000Y001NJF00S005 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $25,024,770 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251185083](https://www.usaspending.gov/award/251185083)
-
-### FY26 Obligation: 693JJ22330000YS30LAH013116 — TRANSPORTATION & DEVELOPMENT LOUISIANA D **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $24,851,863 obligated under CFDA 20.205 to TRANSPORTATION & DEVELOPMENT LOUISIANA D
-- **Link:** [https://www.usaspending.gov/award/251131853](https://www.usaspending.gov/award/251131853)
-
-### FY26 Obligation: 693JJ22230000Y001CA0802374 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $22,330,847 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251063341](https://www.usaspending.gov/award/251063341)
-
-### FY26 Obligation: 693JJ22330000Y240NC1003179 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $21,102,397 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251122703](https://www.usaspending.gov/award/251122703)
-
-### FY26 Obligation: 693JJ22330000Y001ALI085380 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $20,716,839 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251104436](https://www.usaspending.gov/award/251104436)
-
-### FY26 Obligation: 693JJ22030000Z001NY8101463 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $20,691,132 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/250998133](https://www.usaspending.gov/award/250998133)
-
-### FY26 Obligation: 36X777114ER90 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $20,091,291 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/240563299](https://www.usaspending.gov/award/240563299)
-
-### FY26 Obligation: 693JJ22530000Y240ILE49R365 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $20,000,000 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251197231](https://www.usaspending.gov/award/251197231)
-
-### FY26 Obligation: 693JJ22230000Y240NC0401300 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $19,880,371 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251075238](https://www.usaspending.gov/award/251075238)
-
-### FY26 Obligation: 693JJ22330000Y550ORPR25001 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $19,861,246 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251128740](https://www.usaspending.gov/award/251128740)
-
-### FY26 Obligation: 693JJ22530000Y460ILNI5S589 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $19,320,293 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251202623](https://www.usaspending.gov/award/251202623)
-
-### FY26 Obligation: 693JJ22230000Y001FL0955313 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $18,713,074 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063698](https://www.usaspending.gov/award/251063698)
-
-### FY26 Obligation: 693JJ22430000Y001PAT111005 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $18,567,985 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251150692](https://www.usaspending.gov/award/251150692)
-
-### FY26 Obligation: 693JJ22230000Y001FLD217128 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $18,399,280 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063744](https://www.usaspending.gov/award/251063744)
-
-### FY26 Obligation: 693JJ22230000Y001FLD521032 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $18,110,548 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063891](https://www.usaspending.gov/award/251063891)
-
-### FY26 Obligation: 693JJ22030000Z001CAP055060 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,940,310 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/250995913](https://www.usaspending.gov/award/250995913)
-
-### FY26 Obligation: 693JJ22330000Y608AR0076269 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,754,208 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251129594](https://www.usaspending.gov/award/251129594)
-
-### FY26 Obligation: 693JJ22230000Y001FLD120059 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,634,479 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063730](https://www.usaspending.gov/award/251063730)
-
-### FY26 Obligation: 693JJ22430000Y001FLD322070 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,613,339 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251148390](https://www.usaspending.gov/award/251148390)
-
-### FY26 Obligation: 693JJ22040000ZP20PR0052069 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,208,772 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251020414](https://www.usaspending.gov/award/251020414)
-
-### FY26 Obligation: 693JJ22530000Y001IL4CE6723 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,145,226 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251183838](https://www.usaspending.gov/award/251183838)
-
-### FY26 Obligation: 693JJ22430000Y001FLD423014 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,125,061 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251148424](https://www.usaspending.gov/award/251148424)
-
-### FY26 Obligation: 020A31062ZS30 — ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $17,066,117 obligated under CFDA 20.205 to ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES
-- **Link:** [https://www.usaspending.gov/award/198151871](https://www.usaspending.gov/award/198151871)
-
-### FY26 Obligation: 693JJ21930000Z001CA0402065 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $16,789,033 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/250964186](https://www.usaspending.gov/award/250964186)
-
-### FY26 Obligation: 693JJ22330000Y001KY0061056 — EXECUTIVE OFFICE OF THE COMMONWEALTH OF KENTUCKY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $16,600,000 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE COMMONWEALTH OF KENTUCKY
-- **Link:** [https://www.usaspending.gov/award/251106088](https://www.usaspending.gov/award/251106088)
-
-### FY26 Obligation: 693JJ22230000Y001NY0760783 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $15,735,799 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251066169](https://www.usaspending.gov/award/251066169)
-
-### FY26 Obligation: 693JJ22330000Y001OHE190807 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $15,607,836 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251108094](https://www.usaspending.gov/award/251108094)
-
-### FY26 Obligation: 120951685Z001 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $15,505,965 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/202742421](https://www.usaspending.gov/award/202742421)
-
-### FY26 Obligation: 693JJ22230000Y240IL6FQN827 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $15,240,492 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251073748](https://www.usaspending.gov/award/251073748)
-
-### FY26 Obligation: 693JJ22230000Y001FLD317016 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $15,094,327 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063795](https://www.usaspending.gov/award/251063795)
-
-### FY26 Obligation: 693JJ22030000Z240AK0A33030 — ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $15,000,342 obligated under CFDA 20.205 to ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES
-- **Link:** [https://www.usaspending.gov/award/251005296](https://www.usaspending.gov/award/251005296)
-
-### FY26 Obligation: 693JJ22330000Y001IL9IGU899 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $14,891,977 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105461](https://www.usaspending.gov/award/251105461)
-
-### FY26 Obligation: 693JJ22030000ZS30AR3026001 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $14,621,079 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251013567](https://www.usaspending.gov/award/251013567)
-
-### FY26 Obligation: 693JJ22030000Z001MI20A0293 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $14,542,538 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/250997194](https://www.usaspending.gov/award/250997194)
-
-### FY26 Obligation: 693JJ22130000Z0E1MI20A0293 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $14,461,743 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251030575](https://www.usaspending.gov/award/251030575)
-
-### FY26 Obligation: 693JJ22240000YP20PR0030034 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $14,094,210 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251100211](https://www.usaspending.gov/award/251100211)
-
-### FY26 Obligation: 693JJ22430000YS30NC0074234 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,965,954 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251169648](https://www.usaspending.gov/award/251169648)
-
-### FY26 Obligation: 693JJ22230000Y240AR9013010 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,804,006 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251072970](https://www.usaspending.gov/award/251072970)
-
-### FY26 Obligation: 693JJ22130000Z0E1FL0951685 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,724,632 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251029174](https://www.usaspending.gov/award/251029174)
-
-### FY26 Obligation: 693JJ22230000Y237ORS081072 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,692,291 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251071493](https://www.usaspending.gov/award/251071493)
-
-### FY26 Obligation: 693JJ22330000Y001NC0087049 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,430,980 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251107213](https://www.usaspending.gov/award/251107213)
-
-### FY26 Obligation: 693JJ22330000Y001MS0792018 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,348,616 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251107060](https://www.usaspending.gov/award/251107060)
-
-### FY26 Obligation: 693JJ22230000Y001FLD319003 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,200,249 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063802](https://www.usaspending.gov/award/251063802)
-
-### FY26 Obligation: 693JJ22230000Y001ME2242001 — MAINE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,197,765 obligated under CFDA 20.205 to MAINE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065037](https://www.usaspending.gov/award/251065037)
-
-### FY26 Obligation: 693JJ22230000Y001FLD717065 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $13,043,728 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063911](https://www.usaspending.gov/award/251063911)
-
-### FY26 Obligation: 51S191011Z550 — VIRGINIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,866,467 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/246451846](https://www.usaspending.gov/award/246451846)
-
-### FY26 Obligation: 693JJ22230000Y001NJ0004324 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,840,068 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251065876](https://www.usaspending.gov/award/251065876)
-
-### FY26 Obligation: 693JJ22530000Y134MANEVI004 — MASSACHUSETTS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,810,101 obligated under CFDA 20.205 to MASSACHUSETTS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251191949](https://www.usaspending.gov/award/251191949)
-
-### FY26 Obligation: 693JJ21940000ZP20PR0002076 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,748,619 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/250988913](https://www.usaspending.gov/award/250988913)
-
-### FY26 Obligation: 693JJ22330000Y001COM420001 — COLORADO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,688,552 obligated under CFDA 20.205 to COLORADO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251104823](https://www.usaspending.gov/award/251104823)
-
-### FY26 Obligation: 693JJ22330000Y001WV0033420 — WVDOT DIVISION OF HIGHWAYS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,550,075 obligated under CFDA 20.205 to WVDOT DIVISION OF HIGHWAYS
-- **Link:** [https://www.usaspending.gov/award/251109661](https://www.usaspending.gov/award/251109661)
-
-### FY26 Obligation: 693JJ22130000Z0E1ORS017018 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,384,638 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251032647](https://www.usaspending.gov/award/251032647)
-
-### FY26 Obligation: 693JJ22430000Y001GA0013992 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,314,281 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251148489](https://www.usaspending.gov/award/251148489)
-
-### FY26 Obligation: 693JJ22130000Z908ILAQUS586 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $11,868,328 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251049622](https://www.usaspending.gov/award/251049622)
-
-### FY26 Obligation: 693JJ22330000Y230NC0210015 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $11,781,385 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251114315](https://www.usaspending.gov/award/251114315)
-
-### FY26 Obligation: 693JJ22240000YT10VIA034002 — EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $11,643,752 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS
-- **Link:** [https://www.usaspending.gov/award/251100264](https://www.usaspending.gov/award/251100264)
-
-### FY26 Obligation: 693JJ22230000Y001MS0553096 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $11,558,821 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065483](https://www.usaspending.gov/award/251065483)
-
-### FY26 Obligation: 693JJ22230000Y001FLD221066 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $11,516,997 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063787](https://www.usaspending.gov/award/251063787)
-
-### FY26 Obligation: 693JJ22030000Z001NJ0577333 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $11,193,037 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/250997815](https://www.usaspending.gov/award/250997815)
-
-### FY26 Obligation: 050050033Z001 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,974,145 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/198801946](https://www.usaspending.gov/award/198801946)
-
-### FY26 Obligation: 693JJ22430000Y230ILIKV4803 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,940,626 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251155432](https://www.usaspending.gov/award/251155432)
-
-### FY26 Obligation: 693JJ22230000Y001NY1810823 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,887,211 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251066219](https://www.usaspending.gov/award/251066219)
-
-### FY26 Obligation: 693JJ22130000Z0E1MI20A0296 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,855,391 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251030576](https://www.usaspending.gov/award/251030576)
-
-### FY26 Obligation: 693JJ22130000Z0E1WYI805177 — WYOMING DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,773,134 obligated under CFDA 20.205 to WYOMING DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251033977](https://www.usaspending.gov/award/251033977)
-
-### FY26 Obligation: 693JJ22130000Z24EMI20A1013 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,657,822 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251040076](https://www.usaspending.gov/award/251040076)
-
-### FY26 Obligation: 693JJ22530000Y114NV0801342 — DEPARTMENT OF TRANSPORTATION NEVADA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,437,729 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEVADA
-- **Link:** [https://www.usaspending.gov/award/251189157](https://www.usaspending.gov/award/251189157)
-
-### FY26 Obligation: 693JJ21930000Z460AR5551002 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,378,742 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250981284](https://www.usaspending.gov/award/250981284)
-
-### FY26 Obligation: 693JJ22430000Y240NC0710027 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,264,195 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251161576](https://www.usaspending.gov/award/251161576)
-
-### FY26 Obligation: 693JJ22330000Y001NYXB21021 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,182,240 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251108000](https://www.usaspending.gov/award/251108000)
-
-### FY26 Obligation: 693JJ22330000Y240TX2022819 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,081,617 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251124239](https://www.usaspending.gov/award/251124239)
-
-### FY26 Obligation: 693JJ22030000Z230NY0760573 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,839,171 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251001743](https://www.usaspending.gov/award/251001743)
-
-### FY26 Obligation: 693JJ22430000YS30AR5270002 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,788,547 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251168696](https://www.usaspending.gov/award/251168696)
-
-### FY26 Obligation: 693JJ22230000Y230NC1009018 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,674,159 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251069876](https://www.usaspending.gov/award/251069876)
-
-### FY26 Obligation: 693JJ22230000Y240OHE150958 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,591,262 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251075767](https://www.usaspending.gov/award/251075767)
-
-### FY26 Obligation: 693JJ22230000Y001FLD217011 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,590,483 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063740](https://www.usaspending.gov/award/251063740)
-
-### FY26 Obligation: 693JJ22230000Y110NHA005073 — NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,539,547 obligated under CFDA 20.205 to NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251068847](https://www.usaspending.gov/award/251068847)
-
-### FY26 Obligation: 693JJ22230000Y001AL0042517 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,368,327 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063166](https://www.usaspending.gov/award/251063166)
-
-### FY26 Obligation: 693JJ22430000Y001FLD221062 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,320,071 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251148324](https://www.usaspending.gov/award/251148324)
-
-### FY26 Obligation: 693JJ22530000Y001WV0460072 — WVDOT DIVISION OF HIGHWAYS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,129,894 obligated under CFDA 20.205 to WVDOT DIVISION OF HIGHWAYS
-- **Link:** [https://www.usaspending.gov/award/251186455](https://www.usaspending.gov/award/251186455)
-
-### FY26 Obligation: 693JJ22430000Y240MD000B821 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,070,570 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251160930](https://www.usaspending.gov/award/251160930)
-
-### FY26 Obligation: 693JJ22530000Y001MD000B854 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,058,177 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251184431](https://www.usaspending.gov/award/251184431)
-
-### FY26 Obligation: 693JJ22530000Y001SD0012230 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $9,000,000 obligated under CFDA 20.205 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/251185702](https://www.usaspending.gov/award/251185702)
-
-### FY26 Obligation: 693JJ22330000Y230AL7533601 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,866,885 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251113110](https://www.usaspending.gov/award/251113110)
-
-### FY26 Obligation: 693JJ22330000YS30ILZVSK274 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,767,370 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251131650](https://www.usaspending.gov/award/251131650)
-
-### FY26 Obligation: 693JJ22530000Y240OHE220151 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,745,015 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251198823](https://www.usaspending.gov/award/251198823)
-
-### FY26 Obligation: 693JJ22430000Y233CA5939107 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,662,002 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251156437](https://www.usaspending.gov/award/251156437)
-
-### FY26 Obligation: 693JJ22330000Y001FLD420097 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,651,849 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105021](https://www.usaspending.gov/award/251105021)
-
-### FY26 Obligation: 693JJ22430000Y236OK116B059 — OKLAHOMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,626,792 obligated under CFDA 20.205 to OKLAHOMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251157629](https://www.usaspending.gov/award/251157629)
-
-### FY26 Obligation: 693JJ22230000Y460NHA005073 — NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,626,348 obligated under CFDA 20.205 to NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251078650](https://www.usaspending.gov/award/251078650)
-
-### FY26 Obligation: 693JJ22130000Z904MI21A0116 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,448,220 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251049209](https://www.usaspending.gov/award/251049209)
-
-### FY26 Obligation: 693JJ22130000Z23ENC1009018 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,326,353 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251036764](https://www.usaspending.gov/award/251036764)
-
-### FY26 Obligation: 693JJ22330000YS31DEK008016 — TRANSPORTATION, DELAWARE DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,235,835 obligated under CFDA 20.205 to TRANSPORTATION, DELAWARE DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251134223](https://www.usaspending.gov/award/251134223)
-
-### FY26 Obligation: 693JJ22240000YP10PR0030034 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,185,795 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251100193](https://www.usaspending.gov/award/251100193)
-
-### FY26 Obligation: 693JJ22330000Y001MO0673148 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,034,823 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251106862](https://www.usaspending.gov/award/251106862)
-
-### FY26 Obligation: 693JJ22430000Y001ALI085389 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $8,027,186 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251147829](https://www.usaspending.gov/award/251147829)
-
-### FY26 Obligation: 693JJ22530000Y236GA0015445 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,991,149 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251194421](https://www.usaspending.gov/award/251194421)
-
-### FY26 Obligation: 693JJ22430000Y240WA2C01006 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,974,657 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251163012](https://www.usaspending.gov/award/251163012)
-
-### FY26 Obligation: 065415011Z001 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,946,436 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/199116910](https://www.usaspending.gov/award/199116910)
-
-### FY26 Obligation: 693JJ22230000Y001MD000B581 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,882,145 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251064948](https://www.usaspending.gov/award/251064948)
-
-### FY26 Obligation: 693JJ22330000Y001IL4532474 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,820,264 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105424](https://www.usaspending.gov/award/251105424)
-
-### FY26 Obligation: 120042268Z001 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,819,607 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/202624914](https://www.usaspending.gov/award/202624914)
-
-### FY26 Obligation: 693JJ21930000Z001NHA004458 — NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,738,722 obligated under CFDA 20.205 to NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250966505](https://www.usaspending.gov/award/250966505)
-
-### FY26 Obligation: 693JJ22330000Y001NE0808161 — NEBRASKA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,714,116 obligated under CFDA 20.205 to NEBRASKA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251107315](https://www.usaspending.gov/award/251107315)
-
-### FY26 Obligation: 693JJ22530000Y240AL0014552 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,691,998 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251196528](https://www.usaspending.gov/award/251196528)
-
-### FY26 Obligation: 693JJ22530000Y113WYB262010 — WYOMING DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,580,250 obligated under CFDA 20.205 to WYOMING DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251188866](https://www.usaspending.gov/award/251188866)
-
-### FY26 Obligation: 693JJ21930000Z003NY0760413 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,532,635 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/250968977](https://www.usaspending.gov/award/250968977)
-
-### FY26 Obligation: 693JJ22230000Y550CTSP23005 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,497,722 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251078866](https://www.usaspending.gov/award/251078866)
-
-### FY26 Obligation: 693JJ22230000Y001AL0007546 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,343,916 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063152](https://www.usaspending.gov/award/251063152)
-
-### FY26 Obligation: 693JJ22330000Y001AK0002527 — ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,338,964 obligated under CFDA 20.205 to ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES
-- **Link:** [https://www.usaspending.gov/award/251104230](https://www.usaspending.gov/award/251104230)
-
-### FY26 Obligation: 693JJ22330000Y001ILS3A1548 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,313,504 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105581](https://www.usaspending.gov/award/251105581)
-
-### FY26 Obligation: 693JJ22330000Y001TX2023047 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,313,218 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251108909](https://www.usaspending.gov/award/251108909)
-
-### FY26 Obligation: 693JJ22530000Y001TN0407186 — TENNESSEE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,310,619 obligated under CFDA 20.205 to TENNESSEE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251185830](https://www.usaspending.gov/award/251185830)
-
-### FY26 Obligation: 693JJ22430000Y003CT0911136 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,274,114 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251151836](https://www.usaspending.gov/award/251151836)
-
-### FY26 Obligation: 693JJ22430000Y236SD0293113 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,251,218 obligated under CFDA 20.205 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/251157654](https://www.usaspending.gov/award/251157654)
-
-### FY26 Obligation: 693JJ22230000Y550FLHP09060 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,189,069 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251078876](https://www.usaspending.gov/award/251078876)
-
-### FY26 Obligation: 693JJ21930000Z001CAP057067 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,116,252 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/250964270](https://www.usaspending.gov/award/250964270)
-
-### FY26 Obligation: 693JJ21930000LY10AK0952018 — ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,070,900 obligated under CFDA 20.205 to ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES
-- **Link:** [https://www.usaspending.gov/award/250958080](https://www.usaspending.gov/award/250958080)
-
-### FY26 Obligation: 693JJ22430000Y001ALI085390 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,058,901 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251147830](https://www.usaspending.gov/award/251147830)
-
-### FY26 Obligation: 693JJ22230000Y001ALI565317 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $7,013,774 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063225](https://www.usaspending.gov/award/251063225)
-
-### FY26 Obligation: 693JJ22330000Y230UTF017170 — UTAH DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,967,045 obligated under CFDA 20.205 to UTAH DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251114918](https://www.usaspending.gov/award/251114918)
-
-### FY26 Obligation: 693JJ22430000Y001ALI085388 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,946,362 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251147828](https://www.usaspending.gov/award/251147828)
-
-### FY26 Obligation: 693JJ22530000Y001NE2812129 — NEBRASKA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,943,960 obligated under CFDA 20.205 to NEBRASKA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251185019](https://www.usaspending.gov/award/251185019)
-
-### FY26 Obligation: 693JJ22330000Y607AR0076269 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,578,776 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251129547](https://www.usaspending.gov/award/251129547)
-
-### FY26 Obligation: 693JJ22430000Y001TN0403178 — TENNESSEE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,537,724 obligated under CFDA 20.205 to TENNESSEE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251150899](https://www.usaspending.gov/award/251150899)
-
-### FY26 Obligation: 693JJ22230000Y001FLD519079 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,452,454 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063878](https://www.usaspending.gov/award/251063878)
-
-### FY26 Obligation: 693JJ22430000Y001WA0002880 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,437,211 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251151273](https://www.usaspending.gov/award/251151273)
-
-### FY26 Obligation: 693JJ22230000Y001HI0300158 — THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,372,323 obligated under CFDA 20.205 to THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251064008](https://www.usaspending.gov/award/251064008)
-
-### FY26 Obligation: 693JJ22230000Y240FLD221062 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,304,482 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251073262](https://www.usaspending.gov/award/251073262)
-
-### FY26 Obligation: 693JJ22430000Y240TX1802547 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,266,000 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251162538](https://www.usaspending.gov/award/251162538)
-
-### FY26 Obligation: 693JJ22430000Y001TX2B24125 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,222,711 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251151083](https://www.usaspending.gov/award/251151083)
-
-### FY26 Obligation: 693JJ22530000Y001NY5308423 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,195,313 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251185240](https://www.usaspending.gov/award/251185240)
-
-### FY26 Obligation: 693JJ22430000Y240TX2024414 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,169,576 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251162631](https://www.usaspending.gov/award/251162631)
-
-### FY26 Obligation: 693JJ22130000Z0E1UTF013500 — UTAH DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,111,104 obligated under CFDA 20.205 to UTAH DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251033419](https://www.usaspending.gov/award/251033419)
-
-### FY26 Obligation: 693JJ22330000Y550ILXGRJ146 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,105,000 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251128467](https://www.usaspending.gov/award/251128467)
-
-### FY26 Obligation: 36X777811ER90 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,084,271 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/240563334](https://www.usaspending.gov/award/240563334)
-
-### FY26 Obligation: 693JJ22230000Y237SCP030267 — SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,066,578 obligated under CFDA 20.205 to SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251071500](https://www.usaspending.gov/award/251071500)
-
-### FY26 Obligation: 693JJ22330000Z922ILL3GY166 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $6,033,749 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251140241](https://www.usaspending.gov/award/251140241)
-
-### FY26 Obligation: 693JJ22230000Y001FLD117115 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,999,208 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063724](https://www.usaspending.gov/award/251063724)
-
-### FY26 Obligation: 693JJ22530000Y001MD000B855 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,921,490 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251184432](https://www.usaspending.gov/award/251184432)
-
-### FY26 Obligation: 693JJ22530000Y110MO0631042 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,880,750 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251188363](https://www.usaspending.gov/award/251188363)
-
-### FY26 Obligation: 693JJ22340000YP20PR9999373 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,876,797 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251143845](https://www.usaspending.gov/award/251143845)
-
-### FY26 Obligation: 693JJ22430000Y460MD1271068 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,809,968 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251165770](https://www.usaspending.gov/award/251165770)
-
-### FY26 Obligation: 693JJ21930000Z240TX1902364 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,798,387 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250977910](https://www.usaspending.gov/award/250977910)
-
-### FY26 Obligation: 693JJ22530000Y236ORS035081 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,773,208 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251194639](https://www.usaspending.gov/award/251194639)
-
-### FY26 Obligation: 693JJ22430000Y001NE0806116 — NEBRASKA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,635,827 obligated under CFDA 20.205 to NEBRASKA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251150030](https://www.usaspending.gov/award/251150030)
-
-### FY26 Obligation: 693JJ21930000Z004FLD719020 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,588,620 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250969031](https://www.usaspending.gov/award/250969031)
-
-### FY26 Obligation: 693JJ22130000Z24ENHA005073 — NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,518,748 obligated under CFDA 20.205 to NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251040694](https://www.usaspending.gov/award/251040694)
-
-### FY26 Obligation: 693JJ22230000Y400OHE170583 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,488,298 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251078159](https://www.usaspending.gov/award/251078159)
-
-### FY26 Obligation: 693JJ22330000Y240MTSTWD665 — MONTANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,388,443 obligated under CFDA 20.205 to MONTANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251122645](https://www.usaspending.gov/award/251122645)
-
-### FY26 Obligation: 693JJ22230000Z230ALPE10917 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,327,007 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251085101](https://www.usaspending.gov/award/251085101)
-
-### FY26 Obligation: 693JJ22330000Y240MTSTWD944 — MONTANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,297,544 obligated under CFDA 20.205 to MONTANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251122662](https://www.usaspending.gov/award/251122662)
-
-### FY26 Obligation: 693JJ22430000Y233OHE230736 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,279,157 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251156904](https://www.usaspending.gov/award/251156904)
-
-### FY26 Obligation: 693JJ22530000Y115PAT111224 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,252,000 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251190157](https://www.usaspending.gov/award/251190157)
-
-### FY26 Obligation: 693JJ22530000Y230AL9802905 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,226,598 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251192027](https://www.usaspending.gov/award/251192027)
-
-### FY26 Obligation: 693JJ22530000Y240PAT112003 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,215,234 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251199160](https://www.usaspending.gov/award/251199160)
-
-### FY26 Obligation: 693JJ22330000Z230IL4532474 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,062,111 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251136845](https://www.usaspending.gov/award/251136845)
-
-### FY26 Obligation: 693JJ22230000Y240MD000B581 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,029,255 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251074463](https://www.usaspending.gov/award/251074463)
-
-### FY26 Obligation: 693JJ22530000Y001SD0212189 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,000,000 obligated under CFDA 20.205 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/251185739](https://www.usaspending.gov/award/251185739)
-
-### FY26 Obligation: 693JJ22430000Y001NC0001147 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,000,000 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251149966](https://www.usaspending.gov/award/251149966)
-
-### FY26 Obligation: 693JJ21930000Z001WI2019002 — WISCONSIN DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,996,201 obligated under CFDA 20.205 to WISCONSIN DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250968229](https://www.usaspending.gov/award/250968229)
-
-### FY26 Obligation: 693JJ22530000Y030OHE220687 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,974,073 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251187076](https://www.usaspending.gov/award/251187076)
-
-### FY26 Obligation: 693JJ22330000Y001OK166N232 — OKLAHOMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,969,647 obligated under CFDA 20.205 to OKLAHOMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251108273](https://www.usaspending.gov/award/251108273)
-
-### FY26 Obligation: 693JJ22330000Y001NYX806164 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,929,849 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251107996](https://www.usaspending.gov/award/251107996)
-
-### FY26 Obligation: 693JJ22430000Y240AL0053605 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,900,000 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251159488](https://www.usaspending.gov/award/251159488)
-
-### FY26 Obligation: 693JJ22430000YS30MD2181039 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,813,025 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251169322](https://www.usaspending.gov/award/251169322)
-
-### FY26 Obligation: 693JJ22330000Y001MI20A0712 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,803,369 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251106534](https://www.usaspending.gov/award/251106534)
-
-### FY26 Obligation: 693JJ22330000Y230GA0015890 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,789,444 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251113612](https://www.usaspending.gov/award/251113612)
-
-### FY26 Obligation: 693JJ22430000Y240ALMR22902 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,787,838 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251159546](https://www.usaspending.gov/award/251159546)
-
-### FY26 Obligation: 693JJ21930000Z001ILS08V749 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,744,592 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250965027](https://www.usaspending.gov/award/250965027)
-
-### FY26 Obligation: 693JJ22530000YS30VA96A9184 — VIRGINIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,706,174 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251207827](https://www.usaspending.gov/award/251207827)
-
-### FY26 Obligation: 693JJ22430000Y123SC5462320 — SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,697,466 obligated under CFDA 20.205 to SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251154492](https://www.usaspending.gov/award/251154492)
-
-### FY26 Obligation: 693JJ22430000Y230IDA020259 — TRANSPORTATION, IDAHO DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,680,664 obligated under CFDA 20.205 to TRANSPORTATION, IDAHO DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251155367](https://www.usaspending.gov/award/251155367)
-
-### FY26 Obligation: 693JJ22230000YS30GA0015591 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,668,467 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251080223](https://www.usaspending.gov/award/251080223)
-
-### FY26 Obligation: 693JJ22330000Y238ORS092069 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,667,080 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251118958](https://www.usaspending.gov/award/251118958)
-
-### FY26 Obligation: 693JJ22330000Y240UTF011929 — UTAH DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,661,500 obligated under CFDA 20.205 to UTAH DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251124390](https://www.usaspending.gov/award/251124390)
-
-### FY26 Obligation: 693JJ22530000Y233PAX053430 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,645,760 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251194083](https://www.usaspending.gov/award/251194083)
-
-### FY26 Obligation: 693JJ21930000Z231WV0671009 — WVDOT DIVISION OF HIGHWAYS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,640,000 obligated under CFDA 20.205 to WVDOT DIVISION OF HIGHWAYS
-- **Link:** [https://www.usaspending.gov/award/250971522](https://www.usaspending.gov/award/250971522)
-
-### FY26 Obligation: 693JJ22430000Y240MI22A0088 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,571,239 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251161028](https://www.usaspending.gov/award/251161028)
-
-### FY26 Obligation: 693JJ21930000Z230NJ0004324 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,561,976 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/250970431](https://www.usaspending.gov/award/250970431)
-
-### FY26 Obligation: 693JJ22130000Z2E1MT8113009 — MONTANA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,556,504 obligated under CFDA 20.205 to MONTANA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251043030](https://www.usaspending.gov/award/251043030)
-
-### FY26 Obligation: 693JJ22230000Z918WA2C01006 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,552,287 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251094344](https://www.usaspending.gov/award/251094344)
-
-### FY26 Obligation: 693JJ22130000Z0E1MI21A0265 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,549,214 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251030587](https://www.usaspending.gov/award/251030587)
-
-### FY26 Obligation: 693JJ22230000Y001MS0111072 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,474,274 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065471](https://www.usaspending.gov/award/251065471)
-
-### FY26 Obligation: 693JJ22430000YS70AZTUC0283 — DEPARTMENT OF TRANSPORTATION ARIZONA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,441,623 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION ARIZONA
-- **Link:** [https://www.usaspending.gov/award/251172012](https://www.usaspending.gov/award/251172012)
-
-### FY26 Obligation: 693JJ22230000Y001FLD321007 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,414,494 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063824](https://www.usaspending.gov/award/251063824)
-
-### FY26 Obligation: 693JJ22030000Z001FLD518083 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,407,714 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250996168](https://www.usaspending.gov/award/250996168)
-
-### FY26 Obligation: 693JJ22230000Y001FL0951685 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,392,851 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063693](https://www.usaspending.gov/award/251063693)
-
-### FY26 Obligation: 693JJ22530000Y001NV0801342 — DEPARTMENT OF TRANSPORTATION NEVADA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,383,404 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEVADA
-- **Link:** [https://www.usaspending.gov/award/251185118](https://www.usaspending.gov/award/251185118)
-
-### FY26 Obligation: 693JJ22240000YT10VI0066012 — EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,366,407 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS
-- **Link:** [https://www.usaspending.gov/award/251100254](https://www.usaspending.gov/award/251100254)
-
-### FY26 Obligation: 693JJ22330000Y240NJD00S653 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,355,871 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251122948](https://www.usaspending.gov/award/251122948)
-
-### FY26 Obligation: 693JJ22330000Y001MI21A0010 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,346,090 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251106551](https://www.usaspending.gov/award/251106551)
-
-### FY26 Obligation: 693JJ22330000Y550VTSPWP023 — TRANSPORTATION, VERMONT AGENCY OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,302,902 obligated under CFDA 20.205 to TRANSPORTATION, VERMONT AGENCY OF
-- **Link:** [https://www.usaspending.gov/award/251128802](https://www.usaspending.gov/award/251128802)
-
-### FY26 Obligation: 693JJ22430000Y001DEK150028 — TRANSPORTATION, DELAWARE DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,267,371 obligated under CFDA 20.205 to TRANSPORTATION, DELAWARE DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251148288](https://www.usaspending.gov/award/251148288)
-
-### FY26 Obligation: 693JJ22430000Y236AL6321252 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,263,404 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251157351](https://www.usaspending.gov/award/251157351)
-
-### FY26 Obligation: 693JJ22530000Y230CA5916158 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,189,053 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251192109](https://www.usaspending.gov/award/251192109)
-
-### FY26 Obligation: 693JJ22330000Y238AL0017589 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,155,345 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251117887](https://www.usaspending.gov/award/251117887)
-
-### FY26 Obligation: 693JJ22330000YS70NC0421091 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,136,400 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251135715](https://www.usaspending.gov/award/251135715)
-
-### FY26 Obligation: 693JJ22430000Y230CT1148117 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,128,522 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251155159](https://www.usaspending.gov/award/251155159)
-
-### FY26 Obligation: 693JJ22230000Y240MO0601054 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,096,736 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251074896](https://www.usaspending.gov/award/251074896)
-
-### FY26 Obligation: 693JJ22130000Z400HI0300158 — THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,072,828 obligated under CFDA 20.205 to THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251046648](https://www.usaspending.gov/award/251046648)
-
-### FY26 Obligation: 693JJ22430000Y238AL0233504 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,061,978 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251158234](https://www.usaspending.gov/award/251158234)
-
-### FY26 Obligation: 693JJ21930000Z003NY8757083 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,025,201 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/250968982](https://www.usaspending.gov/award/250968982)
-
-### FY26 Obligation: 693JJ22330000YS30ORSR05001 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,009,248 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251133164](https://www.usaspending.gov/award/251133164)
-
-### FY26 Obligation: 693JJ22030000Z232CT1134107 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,995,762 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251003314](https://www.usaspending.gov/award/251003314)
-
-### FY26 Obligation: 693JJ21930000Z001GA0013595 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,973,416 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250964650](https://www.usaspending.gov/award/250964650)
-
-### FY26 Obligation: 693JJ22430000Y240GA0013522 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,964,965 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251160119](https://www.usaspending.gov/award/251160119)
-
-### FY26 Obligation: 693JJ22230000Y001NC0074152 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,957,728 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251065626](https://www.usaspending.gov/award/251065626)
-
-### FY26 Obligation: 693JJ22230000Y240NHA005020 — NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,950,103 obligated under CFDA 20.205 to NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251075348](https://www.usaspending.gov/award/251075348)
-
-### FY26 Obligation: 693JJ22330000Y800IDA023239 — TRANSPORTATION, IDAHO DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,944,028 obligated under CFDA 20.205 to TRANSPORTATION, IDAHO DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251129765](https://www.usaspending.gov/award/251129765)
-
-### FY26 Obligation: 693JJ22230000Y460AR9150039 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,931,910 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251078598](https://www.usaspending.gov/award/251078598)
-
-### FY26 Obligation: 693JJ22330000Y238MS2171027 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,931,762 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251118641](https://www.usaspending.gov/award/251118641)
-
-### FY26 Obligation: 693JJ22430000Y238MS0331013 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,926,469 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251158766](https://www.usaspending.gov/award/251158766)
-
-### FY26 Obligation: 693JJ22530000Y233PAT104411 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,904,960 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251194049](https://www.usaspending.gov/award/251194049)
-
-### FY26 Obligation: 693JJ22330000Y001NY2303493 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,896,307 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251107579](https://www.usaspending.gov/award/251107579)
-
-### FY26 Obligation: 693JJ22430000Y240TX2023304 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,889,590 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251162586](https://www.usaspending.gov/award/251162586)
-
-### FY26 Obligation: 693JJ22430000Y001CT0841105 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,883,524 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251148245](https://www.usaspending.gov/award/251148245)
-
-### FY26 Obligation: 693JJ22330000Y240NY1B22024 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,879,080 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251123050](https://www.usaspending.gov/award/251123050)
-
-### FY26 Obligation: 693JJ22430000Y238ME2643000 — MAINE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,846,710 obligated under CFDA 20.205 to MAINE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251158622](https://www.usaspending.gov/award/251158622)
-
-### FY26 Obligation: 693JJ22330000Y001FLD518083 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,845,088 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251105027](https://www.usaspending.gov/award/251105027)
-
-### FY26 Obligation: 693JJ22230000Y001ME2415100 — MAINE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,821,421 obligated under CFDA 20.205 to MAINE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065070](https://www.usaspending.gov/award/251065070)
-
-### FY26 Obligation: 693JJ22230000Y001MS0111071 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,807,113 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065470](https://www.usaspending.gov/award/251065470)
-
-### FY26 Obligation: 693JJ22230000Y001FLD220018 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,789,776 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063763](https://www.usaspending.gov/award/251063763)
-
-### FY26 Obligation: 693JJ22330000Y001TX2023227 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,786,376 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251108916](https://www.usaspending.gov/award/251108916)
-
-### FY26 Obligation: 693JJ22130000ZS3EMI21A0244 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,772,884 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251053384](https://www.usaspending.gov/award/251053384)
-
-### FY26 Obligation: 693JJ22230000Y240NHA005021 — NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,769,781 obligated under CFDA 20.205 to NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251075349](https://www.usaspending.gov/award/251075349)
-
-### FY26 Obligation: 693JJ22030000Z001IDA020795 — TRANSPORTATION, IDAHO DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,728,659 obligated under CFDA 20.205 to TRANSPORTATION, IDAHO DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/250996398](https://www.usaspending.gov/award/250996398)
-
-### FY26 Obligation: 693JJ22230000Y240NY8814083 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,701,137 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251075668](https://www.usaspending.gov/award/251075668)
-
-### FY26 Obligation: 693JJ22330000Y240NJD00S652 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,690,871 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251122947](https://www.usaspending.gov/award/251122947)
-
-### FY26 Obligation: 693JJ22230000Y001MS0551120 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,658,020 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065478](https://www.usaspending.gov/award/251065478)
-
-### FY26 Obligation: 693JJ21930000Z240ILWY1B824 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,653,948 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250974983](https://www.usaspending.gov/award/250974983)
-
-### FY26 Obligation: 693JJ22240000YP30PR0101005 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,620,272 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251100224](https://www.usaspending.gov/award/251100224)
-
-### FY26 Obligation: 693JJ22230000Y001NY6067473 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,604,770 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251066342](https://www.usaspending.gov/award/251066342)
-
-### FY26 Obligation: 693JJ22330000Y230NY3756253 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,592,387 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251114468](https://www.usaspending.gov/award/251114468)
-
-### FY26 Obligation: 693JJ22540000YP20PR0052069 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,573,139 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251216038](https://www.usaspending.gov/award/251216038)
-
-### FY26 Obligation: 693JJ22330000Y001MS0201266 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,533,214 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251107048](https://www.usaspending.gov/award/251107048)
-
-### FY26 Obligation: 693JJ22230000Y001NY5308393 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,513,777 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251066308](https://www.usaspending.gov/award/251066308)
-
-### FY26 Obligation: 693JJ21930000Z001GA0015559 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,480,000 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250964664](https://www.usaspending.gov/award/250964664)
-
-### FY26 Obligation: 693JJ22440000ER01AR0017055 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,424,005 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251178150](https://www.usaspending.gov/award/251178150)
-
-### FY26 Obligation: 693JJ22430000Y001AZ024A201 — DEPARTMENT OF TRANSPORTATION ARIZONA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,421,687 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION ARIZONA
-- **Link:** [https://www.usaspending.gov/award/251147978](https://www.usaspending.gov/award/251147978)
-
-### FY26 Obligation: 693JJ22430000Y001CA0155169 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,406,084 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251148009](https://www.usaspending.gov/award/251148009)
-
-### FY26 Obligation: 693JJ22430000Y236TX2020893 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,357,718 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251157665](https://www.usaspending.gov/award/251157665)
-
-### FY26 Obligation: 693JJ22430000Y550GA0020720 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,340,000 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251166005](https://www.usaspending.gov/award/251166005)
-
-### FY26 Obligation: 693JJ22230000Y001GA0007761 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,313,755 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063945](https://www.usaspending.gov/award/251063945)
-
-### FY26 Obligation: 693JJ22530000Y909SC5570770 — SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,311,108 obligated under CFDA 20.205 to SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251205184](https://www.usaspending.gov/award/251205184)
-
-### FY26 Obligation: 693JJ22430000Y001MO0702123 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,307,164 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251149799](https://www.usaspending.gov/award/251149799)
-
-### FY26 Obligation: 693JJ22030000Z001ILP3Z4920 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,259,517 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250996537](https://www.usaspending.gov/award/250996537)
-
-### FY26 Obligation: 693JJ22430000Y001NY5813973 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,254,553 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251150221](https://www.usaspending.gov/award/251150221)
-
-### FY26 Obligation: 693JJ22440000RPF4ALMR22902 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,244,897 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251179029](https://www.usaspending.gov/award/251179029)
-
-### FY26 Obligation: 693JJ22230000Z230NYX024463 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,219,298 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251085438](https://www.usaspending.gov/award/251085438)
-
-### FY26 Obligation: 693JJ22530000Y030ILYJJD457 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,205,394 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251186884](https://www.usaspending.gov/award/251186884)
-
-### FY26 Obligation: 693JJ22330000Y001MD000B665 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,195,972 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251106327](https://www.usaspending.gov/award/251106327)
-
-### FY26 Obligation: 693JJ22330000Y237MO0054030 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,194,735 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251117528](https://www.usaspending.gov/award/251117528)
-
-### FY26 Obligation: 693JJ22330000M001GA0014897 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,190,894 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251102534](https://www.usaspending.gov/award/251102534)
-
-### FY26 Obligation: 693JJ22330000Z922ILZM0X092 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,186,571 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251140245](https://www.usaspending.gov/award/251140245)
-
-### FY26 Obligation: 693JJ21930000Z240ORS017018 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,184,402 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250977526](https://www.usaspending.gov/award/250977526)
-
-### FY26 Obligation: 693JJ22230000Y230MI22A0371 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,171,766 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251069797](https://www.usaspending.gov/award/251069797)
-
-### FY26 Obligation: 693JJ22230000Y001FLD421053 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,166,363 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063860](https://www.usaspending.gov/award/251063860)
-
-### FY26 Obligation: 17IXWB505Z240 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,158,737 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/233143678](https://www.usaspending.gov/award/233143678)
-
-### FY26 Obligation: 693JJ22530000YS30MD000B902 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,158,308 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251206426](https://www.usaspending.gov/award/251206426)
-
-### FY26 Obligation: 16A011244Z232 — TRANSPORTATION, IDAHO DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,155,027 obligated under CFDA 20.205 to TRANSPORTATION, IDAHO DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/232470619](https://www.usaspending.gov/award/232470619)
-
-### FY26 Obligation: 693JJ22430000Y400SD0025088 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,052,210 obligated under CFDA 20.205 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/251165056](https://www.usaspending.gov/award/251165056)
-
-### FY26 Obligation: 693JJ22430000Y030HI0631028 — THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,002,364 obligated under CFDA 20.205 to THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251151924](https://www.usaspending.gov/award/251151924)
-
-### FY26 Obligation: 693JJ22130000Z0E1FL0951693 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,000,358 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251029177](https://www.usaspending.gov/award/251029177)
-
-### FY26 Obligation: 693JJ22430000Y100GA0019455 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,000,000 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251152230](https://www.usaspending.gov/award/251152230)
-
-### FY26 Obligation: 693JJ22230000Y240TX2021343 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,000,000 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251076521](https://www.usaspending.gov/award/251076521)
-
-### FY26 Obligation: 693JJ22240000MP2EPR0030034 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,958,655 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251099883](https://www.usaspending.gov/award/251099883)
-
-### FY26 Obligation: 693JJ22430000YS30VA9633079 — VIRGINIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,953,197 obligated under CFDA 20.205 to VIRGINIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251170655](https://www.usaspending.gov/award/251170655)
-
-### FY26 Obligation: 693JJ22230000Y233FLNBIS257 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,946,282 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251070373](https://www.usaspending.gov/award/251070373)
-
-### FY26 Obligation: 693JJ22330000Y230PAT124300 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,945,804 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251114743](https://www.usaspending.gov/award/251114743)
-
-### FY26 Obligation: 693JJ22430000Y001GAM006461 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,944,759 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251148573](https://www.usaspending.gov/award/251148573)
-
-### FY26 Obligation: 693JJ22330000YS30KY9010432 — EXECUTIVE OFFICE OF THE COMMONWEALTH OF KENTUCKY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,938,210 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE COMMONWEALTH OF KENTUCKY
-- **Link:** [https://www.usaspending.gov/award/251131820](https://www.usaspending.gov/award/251131820)
-
-### FY26 Obligation: 693JJ22230000Y001FLD320053 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,937,463 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063819](https://www.usaspending.gov/award/251063819)
-
-### FY26 Obligation: 693JJ22030000Z230CT1059113 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,925,797 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251001059](https://www.usaspending.gov/award/251001059)
-
-### FY26 Obligation: 693JJ22130000Z913NE0302148 — NEBRASKA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,903,930 obligated under CFDA 20.205 to NEBRASKA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251049964](https://www.usaspending.gov/award/251049964)
-
-### FY26 Obligation: 693JJ22530000Y240GAM006275 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,877,800 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251197057](https://www.usaspending.gov/award/251197057)
-
-### FY26 Obligation: 693JJ22430000YS32MO2911090 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,875,834 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251171260](https://www.usaspending.gov/award/251171260)
-
-### FY26 Obligation: 693JJ22530000Y238AL0118517 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,871,049 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251195213](https://www.usaspending.gov/award/251195213)
-
-### FY26 Obligation: 693JJ22330000YS60CT000T390 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,850,080 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251135434](https://www.usaspending.gov/award/251135434)
-
-### FY26 Obligation: 693JJ22240000YP10PR0101005 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,844,554 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251100195](https://www.usaspending.gov/award/251100195)
-
-### FY26 Obligation: 693JJ22040000ZP10PR0052069 — PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,806,252 obligated under CFDA 20.205 to PUERTO RICO HIGHWAY & TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/251020388](https://www.usaspending.gov/award/251020388)
-
-### FY26 Obligation: 693JJ22530000Y238PAT114000 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,800,000 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251196081](https://www.usaspending.gov/award/251196081)
-
-### FY26 Obligation: 530504010M240 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,790,116 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/246785914](https://www.usaspending.gov/award/246785914)
-
-### FY26 Obligation: 693JJ22330000YS30MD1301187 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,779,743 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251131926](https://www.usaspending.gov/award/251131926)
-
-### FY26 Obligation: 693JJ22530000Y233PAX051609 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,778,413 obligated under CFDA 20.205 to PENNSYLVANIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251194082](https://www.usaspending.gov/award/251194082)
-
-### FY26 Obligation: 693JJ22330000Y001TX2019818 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,774,445 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251108842](https://www.usaspending.gov/award/251108842)
-
-### FY26 Obligation: 693JJ22230000Y001NC0404157 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,767,750 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251065694](https://www.usaspending.gov/award/251065694)
-
-### FY26 Obligation: 693JJ22530000Y125SC5570770 — SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,725,611 obligated under CFDA 20.205 to SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251191528](https://www.usaspending.gov/award/251191528)
-
-### FY26 Obligation: 693JJ22130000ZS3EFLD421018 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,706,521 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251053006](https://www.usaspending.gov/award/251053006)
-
-### FY26 Obligation: 693JJ22030000Z240MI20A0795 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,690,643 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251006777](https://www.usaspending.gov/award/251006777)
-
-### FY26 Obligation: 693JJ21930000Z230FLD719020 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,680,257 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250969935](https://www.usaspending.gov/award/250969935)
-
-### FY26 Obligation: 693JJ22130000Z2E2NY1811123 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,648,490 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251044296](https://www.usaspending.gov/award/251044296)
-
-### FY26 Obligation: 693JJ22330000Y238OK202C078 — OKLAHOMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,641,351 obligated under CFDA 20.205 to OKLAHOMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251118911](https://www.usaspending.gov/award/251118911)
-
-### FY26 Obligation: 693JJ22330000Y001NY3756513 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,624,677 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251107645](https://www.usaspending.gov/award/251107645)
-
-### FY26 Obligation: 693JJ22430000Y307OHE200615 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,622,722 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251164286](https://www.usaspending.gov/award/251164286)
-
-### FY26 Obligation: 693JJ21930000Z001FL0951693 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,620,020 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250964504](https://www.usaspending.gov/award/250964504)
-
-### FY26 Obligation: 693JJ22240000YT10VI0085002 — EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,619,844 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS
-- **Link:** [https://www.usaspending.gov/award/251100259](https://www.usaspending.gov/award/251100259)
-
-### FY26 Obligation: 693JJ22130000Z240MI21A0239 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,618,908 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251037596](https://www.usaspending.gov/award/251037596)
-
-### FY26 Obligation: 693JJ22330000YS30ILVDXW944 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,611,014 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251131641](https://www.usaspending.gov/award/251131641)
-
-### FY26 Obligation: 693JJ22230000Y001FL0951671 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,600,462 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063690](https://www.usaspending.gov/award/251063690)
-
-### FY26 Obligation: 693JJ21930000ZS30GA0016348 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,590,228 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/250983534](https://www.usaspending.gov/award/250983534)
-
-### FY26 Obligation: 693JJ22530000Y001ILGQCR801 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,587,016 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251183896](https://www.usaspending.gov/award/251183896)
-
-### FY26 Obligation: 693JJ22130000Z001GAM006089 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,566,460 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251026578](https://www.usaspending.gov/award/251026578)
-
-### FY26 Obligation: 693JJ22330000Y230FLD122029 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,565,563 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251113435](https://www.usaspending.gov/award/251113435)
-
-### FY26 Obligation: 693JJ22430000Y230HI0300202 — THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,544,000 obligated under CFDA 20.205 to THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251155353](https://www.usaspending.gov/award/251155353)
-
-### FY26 Obligation: 693JJ22530000Y236AL2823251 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,540,908 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251194367](https://www.usaspending.gov/award/251194367)
-
-### FY26 Obligation: 693JJ22430000Y237ME2366900 — MAINE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,539,458 obligated under CFDA 20.205 to MAINE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251157911](https://www.usaspending.gov/award/251157911)
-
-### FY26 Obligation: 693JJ22130000Z905NC1624004 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,533,500 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251049424](https://www.usaspending.gov/award/251049424)
-
-### FY26 Obligation: 693JJ22230000Y240TX2021361 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,518,882 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251076523](https://www.usaspending.gov/award/251076523)
-
-### FY26 Obligation: 693JJ22430000Y240TN0403182 — TENNESSEE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,516,544 obligated under CFDA 20.205 to TENNESSEE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251162527](https://www.usaspending.gov/award/251162527)
-
-### FY26 Obligation: 693JJ22430000Y240IDA023239 — TRANSPORTATION, IDAHO DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,502,786 obligated under CFDA 20.205 to TRANSPORTATION, IDAHO DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251160300](https://www.usaspending.gov/award/251160300)
-
-### FY26 Obligation: 693JJ22230000YS30FLD621057 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,501,040 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251080172](https://www.usaspending.gov/award/251080172)
-
-### FY26 Obligation: 693JJ22130000Z24EFL0951685 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,500,000 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251038843](https://www.usaspending.gov/award/251038843)
-
-### FY26 Obligation: 693JJ22530000Y236MI25A0222 — TRANSPORTATION, MICHIGAN DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,486,705 obligated under CFDA 20.205 to TRANSPORTATION, MICHIGAN DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251194538](https://www.usaspending.gov/award/251194538)
-
-### FY26 Obligation: 693JJ22430000Y001ILARPW718 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,473,590 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251148823](https://www.usaspending.gov/award/251148823)
-
-### FY26 Obligation: 693JJ22330000Y233AK0001531 — ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,452,088 obligated under CFDA 20.205 to ALASKA DEPARTMENT OF TRANSPORTATION & PUBLIC FACILITIES
-- **Link:** [https://www.usaspending.gov/award/251115092](https://www.usaspending.gov/award/251115092)
-
-### FY26 Obligation: 693JJ22330000Y240MD1113004 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,440,332 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251121812](https://www.usaspending.gov/award/251121812)
-
-### FY26 Obligation: 693JJ22330000Y240FLD522057 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,434,661 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251120282](https://www.usaspending.gov/award/251120282)
-
-### FY26 Obligation: 693JJ22230000YS30NJ0571302 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,423,307 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251081034](https://www.usaspending.gov/award/251081034)
-
-### FY26 Obligation: 693JJ22430000Y601NE6809044 — NEBRASKA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,408,691 obligated under CFDA 20.205 to NEBRASKA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251166916](https://www.usaspending.gov/award/251166916)
-
-### FY26 Obligation: 693JJ22530000Y600SD0294074 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,400,000 obligated under CFDA 20.205 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/251203726](https://www.usaspending.gov/award/251203726)
-
-### FY26 Obligation: 693JJ22230000Y001NJ0004327 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,382,024 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251065877](https://www.usaspending.gov/award/251065877)
-
-### FY26 Obligation: 693JJ21930000Z001NC0001147 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,380,474 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/250966321](https://www.usaspending.gov/award/250966321)
-
-### FY26 Obligation: 693JJ22330000Y240MD000B665 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,373,081 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251121739](https://www.usaspending.gov/award/251121739)
-
-### FY26 Obligation: 693JJ22330000Y240AL0041524 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,354,257 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251119577](https://www.usaspending.gov/award/251119577)
-
-### FY26 Obligation: 693JJ22240000YT10VI0076001 — EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,346,744 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS
-- **Link:** [https://www.usaspending.gov/award/251100257](https://www.usaspending.gov/award/251100257)
-
-### FY26 Obligation: 693JJ22330000Y001MO0301050 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,341,355 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251106759](https://www.usaspending.gov/award/251106759)
-
-### FY26 Obligation: 693JJ22430000Y001ALMR22903 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,339,109 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251147834](https://www.usaspending.gov/award/251147834)
-
-### FY26 Obligation: 693JJ22430000YS32OHE220060 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,330,426 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251171312](https://www.usaspending.gov/award/251171312)
-
-### FY26 Obligation: 693JJ22230000Y001MO2705368 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,323,727 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065372](https://www.usaspending.gov/award/251065372)
-
-### FY26 Obligation: 693JJ22030000Z232FLD120040 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,318,696 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251003325](https://www.usaspending.gov/award/251003325)
-
-### FY26 Obligation: 693JJ22430000Y607MS0372006 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,306,442 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251167144](https://www.usaspending.gov/award/251167144)
-
-### FY26 Obligation: 693JJ22230000Y001MS0201252 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,297,617 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251065474](https://www.usaspending.gov/award/251065474)
-
-### FY26 Obligation: 693JJ22330000Y240AL0017591 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,294,825 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251119561](https://www.usaspending.gov/award/251119561)
-
-### FY26 Obligation: 693JJ22530000Y800SDNBIS045 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,284,160 obligated under CFDA 20.205 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/251204780](https://www.usaspending.gov/award/251204780)
-
-### FY26 Obligation: 693JJ22530000Y001TN0109043 — TENNESSEE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,280,000 obligated under CFDA 20.205 to TENNESSEE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251185809](https://www.usaspending.gov/award/251185809)
-
-### FY26 Obligation: 693JJ22430000Y030MO0831018 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,265,038 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251152033](https://www.usaspending.gov/award/251152033)
-
-### FY26 Obligation: 693JJ22230000Y237MN7420168 — MINNESOTA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,260,300 obligated under CFDA 20.205 to MINNESOTA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251071362](https://www.usaspending.gov/award/251071362)
-
-### FY26 Obligation: 693JJ22230000Z46ENHA005073 — NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,242,158 obligated under CFDA 20.205 to NEW HAMPSHIRE DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251092468](https://www.usaspending.gov/award/251092468)
-
-### FY26 Obligation: 693JJ22230000Y001FLD420065 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,238,104 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063847](https://www.usaspending.gov/award/251063847)
-
-### FY26 Obligation: 693JJ22330000Y030NY4260063 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,234,848 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251110472](https://www.usaspending.gov/award/251110472)
-
-### FY26 Obligation: 693JJ22430000Y001AL0003657 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,213,533 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251147728](https://www.usaspending.gov/award/251147728)
-
-### FY26 Obligation: 693JJ22530000Z240CT000T486 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,196,871 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/251210842](https://www.usaspending.gov/award/251210842)
-
-### FY26 Obligation: 693JJ22330000Y240MN3123247 — MINNESOTA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,195,000 obligated under CFDA 20.205 to MINNESOTA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251122327](https://www.usaspending.gov/award/251122327)
-
-### FY26 Obligation: 693JJ22430000Y240WAM201004 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,192,158 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251163051](https://www.usaspending.gov/award/251163051)
-
-### FY26 Obligation: 693JJ22330000Y001NY4260063 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,188,534 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251107687](https://www.usaspending.gov/award/251107687)
-
-### FY26 Obligation: 693JJ22430000YS30TX2024938 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,188,036 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251170529](https://www.usaspending.gov/award/251170529)
-
-### FY26 Obligation: 693JJ22530000Y001AR9299013 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,183,373 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251183115](https://www.usaspending.gov/award/251183115)
-
-### FY26 Obligation: 693JJ22230000Y240NY1110023 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,181,757 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251075493](https://www.usaspending.gov/award/251075493)
-
-### FY26 Obligation: 693JJ21930000Z233CT000T001 — DEPARTMENT OF TRANSPORTATION CONNECTICUT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,181,600 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CONNECTICUT
-- **Link:** [https://www.usaspending.gov/award/250972768](https://www.usaspending.gov/award/250972768)
-
-### FY26 Obligation: 693JJ22330000Y238MD1113004 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,175,381 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251118379](https://www.usaspending.gov/award/251118379)
-
-### FY26 Obligation: 693JJ22530000Y530IDA021980 — TRANSPORTATION, IDAHO DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,171,800 obligated under CFDA 20.205 to TRANSPORTATION, IDAHO DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251202782](https://www.usaspending.gov/award/251202782)
-
-### FY26 Obligation: 693JJ22330000Y001ORS017018 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,158,454 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251108376](https://www.usaspending.gov/award/251108376)
-
-### FY26 Obligation: 693JJ22430000Z001OHE230004 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,157,586 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251172765](https://www.usaspending.gov/award/251172765)
-
-### FY26 Obligation: 693JJ22030000Z233AR0001035 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,141,278 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251004585](https://www.usaspending.gov/award/251004585)
-
-### FY26 Obligation: 693JJ22530000Y001NY1116593 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,140,714 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251185155](https://www.usaspending.gov/award/251185155)
-
-### FY26 Obligation: 693JJ22230000Y001FLD418042 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,108,048 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251063834](https://www.usaspending.gov/award/251063834)
-
-### FY26 Obligation: 693JJ22230000Y550FLHP58014 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,093,986 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251078896](https://www.usaspending.gov/award/251078896)
-
-### FY26 Obligation: 693JJ22030000Z001WV0792196 — WVDOT DIVISION OF HIGHWAYS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,089,843 obligated under CFDA 20.205 to WVDOT DIVISION OF HIGHWAYS
-- **Link:** [https://www.usaspending.gov/award/250999586](https://www.usaspending.gov/award/250999586)
-
-### FY26 Obligation: 693JJ22330000Y908ILQ7IK050 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,073,866 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251130109](https://www.usaspending.gov/award/251130109)
-
-### FY26 Obligation: 693JJ22230000Y240MS0141075 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,069,335 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251075016](https://www.usaspending.gov/award/251075016)
-
-### FY26 Obligation: 693JJ22430000YS30IA1416078 — IOWA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,055,330 obligated under CFDA 20.205 to IOWA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251169022](https://www.usaspending.gov/award/251169022)
-
-### FY26 Obligation: 693JJ22230000Y030MS0402037 — MISSISSIPPI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,048,226 obligated under CFDA 20.205 to MISSISSIPPI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251068556](https://www.usaspending.gov/award/251068556)
-
-### FY26 Obligation: 693JJ22130000Z24EFLD421018 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,038,695 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251039057](https://www.usaspending.gov/award/251039057)
-
-### FY26 Obligation: 693JJ22240000YT10VI0063002 — EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,037,657 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS
-- **Link:** [https://www.usaspending.gov/award/251100253](https://www.usaspending.gov/award/251100253)
-
-### FY26 Obligation: 693JJ22530000Y240MD000B889 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,032,565 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251197674](https://www.usaspending.gov/award/251197674)
-
-### FY26 Obligation: 693JJ21930000Z003NY0760243 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,031,654 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/250968975](https://www.usaspending.gov/award/250968975)
-
-### FY26 Obligation: 693JJ22230000YS30NC0581030 — TRANSPORTATION NORTH CAROLINA DEPARTMENT **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,031,517 obligated under CFDA 20.205 to TRANSPORTATION NORTH CAROLINA DEPARTMENT
-- **Link:** [https://www.usaspending.gov/award/251080931](https://www.usaspending.gov/award/251080931)
-
-### FY26 Obligation: 693JJ22530000Y001FLD322020 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,026,541 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251183481](https://www.usaspending.gov/award/251183481)
-
-### FY26 Obligation: 693JJ22330000YS30NY8762093 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,026,209 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251132902](https://www.usaspending.gov/award/251132902)
-
-### FY26 Obligation: 693JJ22330000Y001WA0525045 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,019,508 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251109440](https://www.usaspending.gov/award/251109440)
-
-### FY26 Obligation: 693JJ22130000Z240DE2021025 — TRANSPORTATION, DELAWARE DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,013,174 obligated under CFDA 20.205 to TRANSPORTATION, DELAWARE DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251037205](https://www.usaspending.gov/award/251037205)
-
-### FY26 Obligation: 693JJ22330000Y238SCP031968 — SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,009,790 obligated under CFDA 20.205 to SOUTH CAROLINA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251119012](https://www.usaspending.gov/award/251119012)
-
-### FY26 Obligation: 693JJ22430000Y120NY7753943 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,004,216 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251154103](https://www.usaspending.gov/award/251154103)
-
-### FY26 Obligation: 128886433ZS30 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,980,081 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/203467365](https://www.usaspending.gov/award/203467365)
-
-### FY26 Obligation: 693JJ22430000Y001ALI020371 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,975,176 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251147791](https://www.usaspending.gov/award/251147791)
-
-### FY26 Obligation: 693JJ22330000Y001NY9038091 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,964,186 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251107938](https://www.usaspending.gov/award/251107938)
-
-### FY26 Obligation: 693JJ22430000Y113TX2023552 — TEXAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,951,729 obligated under CFDA 20.205 to TEXAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251153102](https://www.usaspending.gov/award/251153102)
-
-### FY26 Obligation: 693JJ22130000Z24EMOS702028 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,951,219 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251040405](https://www.usaspending.gov/award/251040405)
-
-### FY26 Obligation: 693JJ22130000Z0E1FLD521001 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,950,000 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251029345](https://www.usaspending.gov/award/251029345)
-
-### FY26 Obligation: 12NBIS255Z001 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,945,281 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/229170169](https://www.usaspending.gov/award/229170169)
-
-### FY26 Obligation: 693JJ22530000Y240NYXBNY254 — DEPARTMENT OF TRANSPORTATION NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,944,943 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION NEW YORK
-- **Link:** [https://www.usaspending.gov/award/251198765](https://www.usaspending.gov/award/251198765)
-
-### FY26 Obligation: 693JJ22330000Y240AR0065071 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,942,628 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251119676](https://www.usaspending.gov/award/251119676)
-
-### FY26 Obligation: 693JJ22130000ZS3EGA0017326 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** None
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,933,937 obligated under CFDA 20.205 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251053146](https://www.usaspending.gov/award/251053146)
-
-### FY26 Obligation: MA-2019-023 — MASSACHUSETTS BAY TRANSPORTATION AUTHORITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2019-08-16
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $144,279,591 obligated under CFDA 20.205 to MASSACHUSETTS BAY TRANSPORTATION AUTHORITY
-- **Link:** [https://www.usaspending.gov/award/268330455](https://www.usaspending.gov/award/268330455)
-
-### FY26 Obligation: 693JJ22530000Y113CA6003029 — DEPARTMENT OF TRANSPORTATION CALIFORNIA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2019-03-22
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $100,000,000 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION CALIFORNIA
-- **Link:** [https://www.usaspending.gov/award/251188570](https://www.usaspending.gov/award/251188570)
-
-### FY26 Obligation: 693JJ22530000Y460LAH015308 — TRANSPORTATION & DEVELOPMENT LOUISIANA D **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-07-15
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $24,200,521 obligated under CFDA 20.205 to TRANSPORTATION & DEVELOPMENT LOUISIANA D
-- **Link:** [https://www.usaspending.gov/award/251202627](https://www.usaspending.gov/award/251202627)
-
-### FY26 Obligation: 693JJ22530000Y240MD6956385 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2020-07-14
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $21,100,736 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251197710](https://www.usaspending.gov/award/251197710)
-
-### FY26 Obligation: 693JJ22530000Y240AZ064A208 — DEPARTMENT OF TRANSPORTATION ARIZONA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-08-18
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $14,562,204 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION ARIZONA
-- **Link:** [https://www.usaspending.gov/award/251196635](https://www.usaspending.gov/award/251196635)
-
-### FY26 Obligation: 693JJ22530000Y001AZ093B226 — DEPARTMENT OF TRANSPORTATION ARIZONA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-08-28
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $12,845,992 obligated under CFDA 20.205 to DEPARTMENT OF TRANSPORTATION ARIZONA
-- **Link:** [https://www.usaspending.gov/award/251183137](https://www.usaspending.gov/award/251183137)
-
-### FY26 Obligation: 693JJ22530000Y240OK237B108 — OKLAHOMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-09-09
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $11,087,232 obligated under CFDA 20.205 to OKLAHOMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251198992](https://www.usaspending.gov/award/251198992)
-
-### FY26 Obligation: 693JJ22530000Y240OK237B109 — OKLAHOMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-09-09
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $10,300,786 obligated under CFDA 20.205 to OKLAHOMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251198993](https://www.usaspending.gov/award/251198993)
-
-### FY26 Obligation: 693JJ22530000Y240WA0025015 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-09-12
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,916,278 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251199726](https://www.usaspending.gov/award/251199726)
-
-### FY26 Obligation: 693JJ22530000Y230MO0641105 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-09-09
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,825,821 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251192819](https://www.usaspending.gov/award/251192819)
-
-### FY26 Obligation: 693JJ22530000Y240NJF00S041 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-09-16
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,819,064 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251198560](https://www.usaspending.gov/award/251198560)
-
-### FY26 Obligation: 693JJ22530000YS70MD2491114 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-03-18
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,551,172 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251209287](https://www.usaspending.gov/award/251209287)
-
-### FY26 Obligation: 693JJ22530000Y240ALI459319 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2021-03-16
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,364,830 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251196575](https://www.usaspending.gov/award/251196575)
-
-### FY26 Obligation: 693JJ22530000Y240WA0231903 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-04-16
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $5,174,789 obligated under CFDA 20.205 to WASHINGTON ST DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251199735](https://www.usaspending.gov/award/251199735)
-
-### FY26 Obligation: 693JJ22530000Y230MO0673148 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-11-08
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,967,827 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251192820](https://www.usaspending.gov/award/251192820)
-
-### FY26 Obligation: 693JJ22540000YT10VIA034003 — EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-08-05
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,504,329 obligated under CFDA 20.205 to EXECUTIVE OFFICE OF THE GOVERNMENT OF THE VIRGIN ISLANDS
-- **Link:** [https://www.usaspending.gov/award/251216073](https://www.usaspending.gov/award/251216073)
-
-### FY26 Obligation: 693JJ22530000Y240ILH2FS699 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-01-31
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $4,448,000 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251197241](https://www.usaspending.gov/award/251197241)
-
-### FY26 Obligation: 693JJ22530000Y001FLD221103 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2021-11-04
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,810,035 obligated under CFDA 20.205 to STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251183436](https://www.usaspending.gov/award/251183436)
-
-### FY26 Obligation: 693JJ22530000Y240AR2950002 — ARKANSAS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-09-16
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,729,697 obligated under CFDA 20.205 to ARKANSAS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251196621](https://www.usaspending.gov/award/251196621)
-
-### FY26 Obligation: 693JJ22530000Y230AL3716256 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2016-11-03
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,670,186 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251192019](https://www.usaspending.gov/award/251192019)
-
-### FY26 Obligation: 693JJ22530000Y230MOS503015 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2021-12-21
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,606,352 obligated under CFDA 20.205 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251192870](https://www.usaspending.gov/award/251192870)
-
-### FY26 Obligation: 693JJ22530000YS30ILZ0M6528 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-03-10
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,298,659 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251206231](https://www.usaspending.gov/award/251206231)
-
-### FY26 Obligation: 693JJ22530000Y230MD3001063 — MARYLAND DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-03-06
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $3,184,155 obligated under CFDA 20.205 to MARYLAND DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251192667](https://www.usaspending.gov/award/251192667)
-
-### FY26 Obligation: 693JJ22530000Y115NJ0080337 — TRANSPORTATION, NEW JERSEY DEPT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2023-07-11
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,991,996 obligated under CFDA 20.205 to TRANSPORTATION, NEW JERSEY DEPT OF
-- **Link:** [https://www.usaspending.gov/award/251189976](https://www.usaspending.gov/award/251189976)
-
-### FY26 Obligation: 693JJ22530000Y400ALNR19938 — ALABAMA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2021-12-28
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,827,406 obligated under CFDA 20.205 to ALABAMA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251201516](https://www.usaspending.gov/award/251201516)
-
-### FY26 Obligation: 693JJ22530000YS70DE2024036 — TRANSPORTATION, DELAWARE DEPARTMENT OF **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-09-09
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,230,961 obligated under CFDA 20.205 to TRANSPORTATION, DELAWARE DEPARTMENT OF
-- **Link:** [https://www.usaspending.gov/award/251209162](https://www.usaspending.gov/award/251209162)
-
-### FY26 Obligation: 693JJ22530000YS32ORSA00660 — OREGON DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2024-04-01
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,007,602 obligated under CFDA 20.205 to OREGON DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251208433](https://www.usaspending.gov/award/251208433)
-
-### FY26 Obligation: 693JJ22640000Y926OHE230373 — OHIO DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2024-12-05
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,000,000 obligated under CFDA 20.205 to OHIO DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713349](https://www.usaspending.gov/award/355713349)
-
-### FY26 Obligation: 693JJ22530000Y001ILAVI6022 — ILLINOIS DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-02-03
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $2,000,000 obligated under CFDA 20.205 to ILLINOIS DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251183864](https://www.usaspending.gov/award/251183864)
-
-### FY26 Obligation: 693JJ22530000Y800MN1825040 — MINNESOTA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-05-19
-- **Type:** obligation
-- **Programs:** FHWA TTP Safety
-- **CFDA:** 20.205
-- **Summary:** $1,952,532 obligated under CFDA 20.205 to MINNESOTA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/251204632](https://www.usaspending.gov/award/251204632)
-
-### FY26 Obligation: DEEE0008512 — UNIVERSITY OF ILLINOIS **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2018-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $1,585,115 obligated under CFDA 81.087 to UNIVERSITY OF ILLINOIS
-- **Link:** [https://www.usaspending.gov/award/260359445](https://www.usaspending.gov/award/260359445)
-
-### FY26 Obligation: DEEE0009271 — UTAH STATE UNIVERSITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2020-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $1,477,735 obligated under CFDA 81.087 to UTAH STATE UNIVERSITY
-- **Link:** [https://www.usaspending.gov/award/260360124](https://www.usaspending.gov/award/260360124)
-
-### FY26 Obligation: DEEE0009637 — IMAGEN ENERGY INC **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-01-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $1,422,988 obligated under CFDA 81.087 to IMAGEN ENERGY INC
-- **Link:** [https://www.usaspending.gov/award/260360455](https://www.usaspending.gov/award/260360455)
-
-### FY26 Obligation: DEEE0009814 — ECHOGEN POWER SYSTEMS (DELAWARE), INC. **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-02-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $1,199,313 obligated under CFDA 81.087 to ECHOGEN POWER SYSTEMS (DELAWARE), INC.
-- **Link:** [https://www.usaspending.gov/award/260360625](https://www.usaspending.gov/award/260360625)
-
-### FY26 Obligation: DEEE0008734 — WESTERN ECOSYSTEMS TECHNOLOGY, INC **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2019-08-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $911,893 obligated under CFDA 81.087 to WESTERN ECOSYSTEMS TECHNOLOGY, INC
-- **Link:** [https://www.usaspending.gov/award/260359636](https://www.usaspending.gov/award/260359636)
-
-### FY26 Obligation: DEEE0010666 — CITY OF DULUTH **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2023-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $619,159 obligated under CFDA 81.087 to CITY OF DULUTH
-- **Link:** [https://www.usaspending.gov/award/260361277](https://www.usaspending.gov/award/260361277)
-
-### FY26 Obligation: DEEE0010984 — THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2024-03-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $607,819 obligated under CFDA 81.087 to THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK
-- **Link:** [https://www.usaspending.gov/award/260361520](https://www.usaspending.gov/award/260361520)
-
-### FY26 Obligation: DEEE0011655 — NORTH CAROLINA STATE UNIVERSITY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $550,000 obligated under CFDA 81.087 to NORTH CAROLINA STATE UNIVERSITY
-- **Link:** [https://www.usaspending.gov/award/260362007](https://www.usaspending.gov/award/260362007)
-
-### FY26 Obligation: DEEE0011433 — AK LONGLINE FISHERMANS ASSOCIATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-04-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $514,000 obligated under CFDA 81.087 to AK LONGLINE FISHERMANS ASSOCIATION
-- **Link:** [https://www.usaspending.gov/award/260361909](https://www.usaspending.gov/award/260361909)
-
-### FY26 Obligation: DEEE0011685 — REGENTS OF THE UNIVERSITY OF MICHIGAN **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $400,000 obligated under CFDA 81.087 to REGENTS OF THE UNIVERSITY OF MICHIGAN
-- **Link:** [https://www.usaspending.gov/award/260362012](https://www.usaspending.gov/award/260362012)
-
-### FY26 Obligation: DEEE0011700 — THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-10-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $320,000 obligated under CFDA 81.087 to THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK
-- **Link:** [https://www.usaspending.gov/award/260362025](https://www.usaspending.gov/award/260362025)
-
-### FY26 Obligation: DEEE0009626 — CZERO INC **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2023-09-01
-- **Type:** obligation
-- **Programs:** DOE Indian Energy
-- **CFDA:** 81.087
-- **Summary:** $0 obligated under CFDA 81.087 to CZERO INC
-- **Link:** [https://www.usaspending.gov/award/260360445](https://www.usaspending.gov/award/260360445)
-
-### FY26 Obligation: 22DG11083151400 — VIRGINIA DEPARTMENT OF FORESTRY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-09-08
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $320,000 obligated under CFDA 10.720 to VIRGINIA DEPARTMENT OF FORESTRY
-- **Link:** [https://www.usaspending.gov/award/235753551](https://www.usaspending.gov/award/235753551)
-
-### FY26 Obligation: 23DG11083113401 — GEORGIA FORESTRY COMMISSION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2023-07-13
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $195,345 obligated under CFDA 10.720 to GEORGIA FORESTRY COMMISSION
-- **Link:** [https://www.usaspending.gov/award/236044153](https://www.usaspending.gov/award/236044153)
-
-### FY26 Obligation: 24DG11083151400 — VIRGINIA DEPARTMENT OF FORESTRY **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2024-09-06
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $160,000 obligated under CFDA 10.720 to VIRGINIA DEPARTMENT OF FORESTRY
-- **Link:** [https://www.usaspending.gov/award/236495076](https://www.usaspending.gov/award/236495076)
-
-### FY26 Obligation: 23DG11083121401 — ENERGY & ENVIRONMENT CABINET **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2023-07-14
-- **Type:** obligation
-- **Programs:** USDA Wildfire Defense Grants
-- **CFDA:** 10.720
-- **Summary:** $73,675 obligated under CFDA 10.720 to ENERGY & ENVIRONMENT CABINET
-- **Link:** [https://www.usaspending.gov/award/236044163](https://www.usaspending.gov/award/236044163)
-
-### FY26 Obligation: 693JJ22630000Y800MOS304087 — MISSOURI DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-01-12
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $2,439,445 obligated under CFDA 20.284 to MISSOURI DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713040](https://www.usaspending.gov/award/355713040)
-
-### FY26 Obligation: 693JJ22630000Y800SD014A032 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-08-26
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $1,255,392 obligated under CFDA 20.284 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/355713044](https://www.usaspending.gov/award/355713044)
-
-### FY26 Obligation: 693JJ22630000Y800HI0831090 — THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-09-09
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $672,651 obligated under CFDA 20.284 to THE STATE OF HAWAII DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713038](https://www.usaspending.gov/award/355713038)
-
-### FY26 Obligation: 693JJ22630000Y800SD0905117 — STATE OF SOUTH DAKOTA **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2025-06-10
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $662,489 obligated under CFDA 20.284 to STATE OF SOUTH DAKOTA
-- **Link:** [https://www.usaspending.gov/award/355713045](https://www.usaspending.gov/award/355713045)
-
-### FY26 Obligation: 693JJ22630000Y800GA0017734 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-04-06
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $153,000 obligated under CFDA 20.284 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713036](https://www.usaspending.gov/award/355713036)
-
-### FY26 Obligation: 693JJ22630000Y800GA0017935 — GEORGIA DEPARTMENT OF TRANSPORTATION **[NEW]**
-
-- **Score:** 0.48
-- **Source:** Usaspending
-- **Published:** 2022-04-06
-- **Type:** obligation
-- **Programs:** DOT PROTECT
-- **CFDA:** 20.284
-- **Summary:** $126,000 obligated under CFDA 20.284 to GEORGIA DEPARTMENT OF TRANSPORTATION
-- **Link:** [https://www.usaspending.gov/award/355713037](https://www.usaspending.gov/award/355713037)
-
-### Library of Congress Sound Recording and Film Preservation Programs Reauthorization Act of 2016 **[NEW]**
-
-- **Score:** 0.43
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 2893
-- **Summary:** Became Public Law No: 114-217.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/2893?format=json](https://api.congress.gov/v3/bill/114/s/2893?format=json)
-
-### Department of the Interior Tribal Self-Governance Act of 2015 **[NEW]**
-
-- **Score:** 0.42
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 286
-- **Summary:** Referred to the Subcommittee on Indian, Insular and Alaska Native Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/286?format=json](https://api.congress.gov/v3/bill/114/s/286?format=json)
+- **Score:** 0.47
+- **Source:** Federal Register
+- **Published:** 2026-03-05
+- **Type:** Proposed Rule
+- **Programs:** USBR TAP
+- **Summary:** The Office of Personnel Management (OPM) is issuing a proposed rule to revise its reduction-in-force (RIF) regulations. The proposed rule would make the RIF regulations more streamlined, efficient, and merit-based by prioritizing performance over tenure and length of service when determining which employees will be retained in a RIF and modifying the types of employees who are excluded from RIF competition. OPM also proposes to revise its regulations regarding the reemployment priority list (RPL
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04377/reduction-in-force](https://www.federalregister.gov/documents/2026/03/05/2026-04377/reduction-in-force)
 
-### Water Conservation Rebate Tax Parity Act **[NEW]**
+### TAP Promotion Act **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 1871
-- **Programs:** USBR WaterSMART
-- **Summary:** Referred to the House Committee on Ways and Means.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/1871?format=json](https://api.congress.gov/v3/bill/119/hr/1871?format=json)
+- **Published:** 2026-03-05
+- **Type:** HR 1845
+- **Programs:** USBR TAP
+- **Summary:** Referred to the Subcommittee on Economic Opportunity.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/1845?format=json](https://api.congress.gov/v3/bill/119/hr/1845?format=json)
 
-### Medicare Enrollment Protection Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 2744
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Committee on Energy and Commerce, and in addition to the Committees on Education and Workforce, and Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2744?format=json](https://api.congress.gov/v3/bill/119/hr/2744?format=json)
-
-### Invest to Protect Act of 2025 **[NEW]**
+### Protecting American Energy Security Act of 2026 **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 2711
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2711?format=json](https://api.congress.gov/v3/bill/119/hr/2711?format=json)
-
-### Michael Enzi Voluntary Protection Program Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 2844
-- **Programs:** DOT PROTECT
-- **Summary:** Placed on the Union Calendar, Calendar No. 463.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/2844?format=json](https://api.congress.gov/v3/bill/119/hr/2844?format=json)
-
-### Strengthening Protections for Domestic Violence and Stalking Survivors Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 4166
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/4166?format=json](https://api.congress.gov/v3/bill/119/hr/4166?format=json)
-
-### HCBS Worker Protection Act of 2025 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 5228
+- **Published:** 2026-03-05
+- **Type:** HR 7061
 - **Programs:** DOT PROTECT
 - **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5228?format=json](https://api.congress.gov/v3/bill/119/hr/5228?format=json)
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7061?format=json](https://api.congress.gov/v3/bill/119/hr/7061?format=json)
 
-### American Hemp Protection Act of 2025 **[NEW]**
+### Protecting Local Zoos Act of 2026 **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-03
-- **Type:** HR 6209
+- **Published:** 2026-03-05
+- **Type:** HR 7159
 - **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Agriculture.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6209?format=json](https://api.congress.gov/v3/bill/119/hr/6209?format=json)
+- **Summary:** Subcommittee Hearings Held
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7159?format=json](https://api.congress.gov/v3/bill/119/hr/7159?format=json)
 
-### Biological Intellectual Property Protection Act of 2025 **[NEW]**
+### Local Taxpayer Protection Act of 2026 **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 6624
+- **Published:** 2026-03-05
+- **Type:** HR 7648
 - **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Foreign Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6624?format=json](https://api.congress.gov/v3/bill/119/hr/6624?format=json)
+- **Summary:** Referred to the Committee on the Judiciary, and in addition to the Committees on Energy and Commerce, and Transportation and Infrastructure, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7648?format=json](https://api.congress.gov/v3/bill/119/hr/7648?format=json)
 
-### To strengthen and standardize "first look" protections for covered properties to ensure first-time homebuyers have priority access to foreclosed homes, and for other purposes. **[NEW]**
+### To amend the HITECH Act to allow an individual to obtain a copy of such individual's protected health information at no cost unless certain circumstances apply, and for other purposes. **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 7753
+- **Published:** 2026-03-05
+- **Type:** HR 7790
 - **Programs:** DOT PROTECT
-- **Summary:** Referred to the House Committee on Financial Services.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7753?format=json](https://api.congress.gov/v3/bill/119/hr/7753?format=json)
+- **Summary:** Referred to the House Committee on Energy and Commerce.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7790?format=json](https://api.congress.gov/v3/bill/119/hr/7790?format=json)
 
-### Protecting Older Americans Act of 2025 **[NEW]**
+### Protecting Our Communities Act **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 2703
+- **Published:** 2026-03-05
+- **Type:** HR 7785
+- **Programs:** DOT PROTECT
+- **Summary:** Referred to the Committee on the Judiciary, and in addition to the Committee on Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7785?format=json](https://api.congress.gov/v3/bill/119/hr/7785?format=json)
+
+### To establish protections against digital impersonation fraud, and for other purposes. **[NEW]**
+
+- **Score:** 0.41
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** HR 7786
+- **Programs:** DOT PROTECT
+- **Summary:** Referred to the Committee on Energy and Commerce, and in addition to the Committees on the Judiciary, Science, Space, and Technology, and Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7786?format=json](https://api.congress.gov/v3/bill/119/hr/7786?format=json)
+
+### A bill to establish protections against digital impersonation fraud, and for other purposes. **[NEW]**
+
+- **Score:** 0.41
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** S 3982
+- **Programs:** DOT PROTECT
+- **Summary:** Read twice and referred to the Committee on Commerce, Science, and Transportation.
+- **Link:** [https://api.congress.gov/v3/bill/119/s/3982?format=json](https://api.congress.gov/v3/bill/119/s/3982?format=json)
+
+### A bill to require U.S. Customs and Border Protection and U.S. Immigration and Customs Enforcement to timely update the Online Detainee Locator System, and for other purposes. **[NEW]**
+
+- **Score:** 0.41
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** S 3995
 - **Programs:** DOT PROTECT
 - **Summary:** Read twice and referred to the Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/2703?format=json](https://api.congress.gov/v3/bill/119/s/2703?format=json)
+- **Link:** [https://api.congress.gov/v3/bill/119/s/3995?format=json](https://api.congress.gov/v3/bill/119/s/3995?format=json)
 
-### Pain-Capable Unborn Child Protection Act **[NEW]**
+### A bill to improve the hiring and training processes at U.S. Immigration and Customs Enforcement and U.S. Customs and Border Protection. **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 36
+- **Published:** 2026-03-05
+- **Type:** S 3996
 - **Programs:** DOT PROTECT
-- **Summary:** Motion to proceed to consideration of measure withdrawn in Senate. (consideration: CR S6868)
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/36?format=json](https://api.congress.gov/v3/bill/114/hr/36?format=json)
+- **Summary:** Read twice and referred to the Committee on Homeland Security and Governmental Affairs.
+- **Link:** [https://api.congress.gov/v3/bill/119/s/3996?format=json](https://api.congress.gov/v3/bill/119/s/3996?format=json)
 
-### To amend the Internal Revenue Code of 1986 to ensure that emergency services volunteers are not taken into account as employees under the shared responsibility requirements contained in the Patient Protection and Affordable Care Act. **[NEW]**
+### A bill to increase transparency, accountability, and community engagement within the Department of Homeland Security, to provide independent oversight of border security activities, to improve training for agents and officers of U.S. Customs and Border Protection, and for other purposes. **[NEW]**
 
 - **Score:** 0.41
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 33
+- **Published:** 2026-03-05
+- **Type:** S 3997
 - **Programs:** DOT PROTECT
-- **Summary:** Referred to the Subcommittee on Health.
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/33?format=json](https://api.congress.gov/v3/bill/114/hr/33?format=json)
+- **Summary:** Read twice and referred to the Committee on Homeland Security and Governmental Affairs.
+- **Link:** [https://api.congress.gov/v3/bill/119/s/3997?format=json](https://api.congress.gov/v3/bill/119/s/3997?format=json)
 
-### Protect and Preserve International Cultural Property Act **[NEW]**
+### Renewal Package From the State of Ohio to the Surface Transportation Project Delivery Program and Proposed Memorandum of Understanding (MOU) Assigning Environmental Responsibilities to the State **[NEW]**
 
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 1493
-- **Programs:** DOT PROTECT
-- **Summary:** Became Public Law No: 114-151.
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/1493?format=json](https://api.congress.gov/v3/bill/114/hr/1493?format=json)
-
-### Federal Water Quality Protection Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 1140
-- **Programs:** DOT PROTECT
-- **Summary:** Motion to proceed to consideration of measure withdrawn in Senate. (consideration: CR S7697)
-- **Link:** [https://api.congress.gov/v3/bill/114/s/1140?format=json](https://api.congress.gov/v3/bill/114/s/1140?format=json)
-
-### Edward "Ted" Kaufman and Michael Leavitt Presidential Transitions Improvements Act of 2015 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 1172
-- **Programs:** FEMA FMA
-- **Summary:** Became Public Law No: 114-136.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/1172?format=json](https://api.congress.gov/v3/bill/114/s/1172?format=json)
-
-### Homeless Veterans Services Protection Act of 2015 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 1731
-- **Programs:** DOT PROTECT
-- **Summary:** Referred to the Subcommittee on Health.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/1731?format=json](https://api.congress.gov/v3/bill/114/s/1731?format=json)
-
-### An act to require the Secretary of Commerce to study the coverage gaps of the Next Generation Weather Radar of the National Weather Service and to develop a plan for improving radar coverage and hazardous weather detection and forecasting. **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 2058
-- **Programs:** EPA GAP
-- **Summary:** Referred to the House Committee on Science, Space, and Technology.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/2058?format=json](https://api.congress.gov/v3/bill/114/s/2058?format=json)
-
-### Safe Drinking Water Act Improved Compliance Awareness Act **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 4470
-- **Programs:** EPA STAG
-- **Summary:** Read twice and referred to the Committee on Environment and Public Works.
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/4470?format=json](https://api.congress.gov/v3/bill/114/hr/4470?format=json)
-
-### PROTECT Patrimony Resolution **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HCONRES 122
-- **Programs:** DOT PROTECT
-- **Summary:** Motion to reconsider laid on the table Agreed to without objection.
-- **Link:** [https://api.congress.gov/v3/bill/114/hconres/122?format=json](https://api.congress.gov/v3/bill/114/hconres/122?format=json)
-
-### Overtime Pay for Protective Services Act of 2016 **[NEW]**
-
-- **Score:** 0.41
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 6302
-- **Programs:** DOT PROTECT
-- **Summary:** Became Public Law No: 114-311.
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/6302?format=json](https://api.congress.gov/v3/bill/114/hr/6302?format=json)
-
-### Agency Information Collection Activities; Comment Request on Revenue Procedure 97-22 Recordkeeping Requirements **[NEW]**
-
-- **Score:** 0.39
+- **Score:** 0.35
 - **Source:** Federal Register
-- **Published:** 2026-03-04
+- **Published:** 2026-03-05
 - **Type:** Notice
-- **Summary:** In accordance with the Paperwork Reduction Act of 1995, the IRS is inviting comments on the information collection request outlined in this notice.
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04279/agency-information-collection-activities-comment-request-on-revenue-procedure-97-22-recordkeeping](https://www.federalregister.gov/documents/2026/03/04/2026-04279/agency-information-collection-activities-comment-request-on-revenue-procedure-97-22-recordkeeping)
+- **Summary:** This notice announces that FHWA received and reviewed a renewal package from the Ohio Department of Transportation (ODOT) requesting participation in the Surface Transportation Project Delivery Program (Program). This Program allows for FHWA to assign, and States to assume, responsibilities under the National Environmental Policy Act of 1969 (NEPA), and all or part of FHWA's responsibilities for environmental review, consultation, or other actions required under any Federal environmental law wit
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04354/renewal-package-from-the-state-of-ohio-to-the-surface-transportation-project-delivery-program-and](https://www.federalregister.gov/documents/2026/03/05/2026-04354/renewal-package-from-the-state-of-ohio-to-the-surface-transportation-project-delivery-program-and)
 
-### People’s White House Historic Preservation Act **[NEW]**
-
-- **Score:** 0.36
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 6761
-- **Summary:** Referred to the House Committee on Natural Resources.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/6761?format=json](https://api.congress.gov/v3/bill/119/hr/6761?format=json)
-
-### Atlantic Highly Migratory Species; Spatial Fisheries Management; Amendment 15 to the 2006 Consolidated Atlantic Highly Migratory Species Fishery Management Plan **[NEW]**
+### Tribal Tax and Investment Reform Act of 2025 **[NEW]**
 
 - **Score:** 0.34
-- **Source:** Federal Register
-- **Published:** 2026-03-04
-- **Type:** Rule
-- **Summary:** This final rule implements Amendment 15 to the 2006 Consolidated Atlantic Highly Migratory Species Fishery Management Plan (HMS FMP) (Amendment 15). This final action modifies the timing of the Mid-Atlantic shark closed area, modifies the boundaries of the Charleston Bump and East Florida Coast closed areas to create low- and/ or high-bycatch-risk areas, and maintains the current boundaries and timing of the DeSoto Canyon closed area. This action also establishes a process to collect data from a
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04256/atlantic-highly-migratory-species-spatial-fisheries-management-amendment-15-to-the-2006-consolidated](https://www.federalregister.gov/documents/2026/03/04/2026-04256/atlantic-highly-migratory-species-spatial-fisheries-management-amendment-15-to-the-2006-consolidated)
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** S 2022
+- **Summary:** Read twice and referred to the Committee on Finance.
+- **Link:** [https://api.congress.gov/v3/bill/119/s/2022?format=json](https://api.congress.gov/v3/bill/119/s/2022?format=json)
 
-### Community Bank Licensing Amendments **[NEW]**
+### A bill to amend the Federal Meat Inspection Act to authorize Tribal meat inspection under that Act by Tribal personnel, and for other purposes. **[NEW]**
 
 - **Score:** 0.34
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** S 3994
+- **Summary:** Read twice and referred to the Committee on Indian Affairs.
+- **Link:** [https://api.congress.gov/v3/bill/119/s/3994?format=json](https://api.congress.gov/v3/bill/119/s/3994?format=json)
+
+### Water Power Research and Development Reauthorization Act **[NEW]**
+
+- **Score:** 0.32
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** HR 7129
+- **Summary:** Referred to the Committee on Science, Space, and Technology, and in addition to the Committee on Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7129?format=json](https://api.congress.gov/v3/bill/119/hr/7129?format=json)
+
+### NASA Transition Authorization Act of 2025 **[NEW]**
+
+- **Score:** 0.32
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** S 933
+- **Summary:** Committee on Commerce, Science, and Transportation. Ordered to be reported with an amendment in the nature of a substitute favorably.
+- **Link:** [https://api.congress.gov/v3/bill/119/s/933?format=json](https://api.congress.gov/v3/bill/119/s/933?format=json)
+
+### To amend the Act of August 9, 1955 (commonly known as the “Long-Term Leasing Act”), to authorize leases of up to 99 years for land in the Mashpee Wampanoag Tribe Reservation and land held in trust for the Wampanoag Tribe of Gay Head (Aquinnah), and for other purposes **[NEW]**
+
+- **Score:** 0.32
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** HR 681
+- **Summary:** Received in the Senate and Read twice and referred to the Committee on Indian Affairs.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/681?format=json](https://api.congress.gov/v3/bill/119/hr/681?format=json)
+
+### To provide for the equitable settlement of certain Indian land disputes regarding land in Illinois, and for other purposes. **[NEW]**
+
+- **Score:** 0.31
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** HR 2827
+- **Summary:** Subcommittee Hearings Held
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/2827?format=json](https://api.congress.gov/v3/bill/119/hr/2827?format=json)
+
+### Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for the Threatened Scrub-Jay; Brevard County, FL; Categorical Exclusion **[NEW]**
+
+- **Score:** 0.31
 - **Source:** Federal Register
-- **Published:** 2026-03-04
-- **Type:** Rule
-- **Summary:** The Office of the Comptroller of the Currency (OCC) is amending its rules related to policies and procedures to simplify licensing requirements for corporate activities and transactions involving national banks and Federal savings associations that have less than $30 billion in total assets and satisfy certain conditions. The final rule is intended to reduce burden on these institutions.
-- **Link:** [https://www.federalregister.gov/documents/2026/03/04/2026-04275/community-bank-licensing-amendments](https://www.federalregister.gov/documents/2026/03/04/2026-04275/community-bank-licensing-amendments)
+- **Published:** 2026-03-05
+- **Type:** Notice
+- **Summary:** We, the Fish and Wildlife Service (Service), announce receipt of an application from Melbourne Orlando International Airport (Taxiway A Rehabilitation Project) (applicant) for an incidental take permit (ITP) under the Endangered Species Act. The applicant requests the ITP to take the federally listed scrub-jay incidental to a taxiway rehabilitation in Brevard County, Florida. We request public comment on the application, which includes the applicant's proposed habitat conservation plan (HCP), an
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04376/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the](https://www.federalregister.gov/documents/2026/03/05/2026-04376/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the)
 
-### District of Columbia National Guard Home Rule Act **[NEW]**
+### Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for the Sand Skink and Blue-Tailed Mole-Skink; Highlands County, FL; Categorical Exclusion **[NEW]**
 
-- **Score:** 0.33
+- **Score:** 0.31
+- **Source:** Federal Register
+- **Published:** 2026-03-05
+- **Type:** Notice
+- **Summary:** We, the Fish and Wildlife Service (Service), announce receipt of an application from Rizzzo Self Storage of Sebring, LLC (Sebring Parkway Parcel) (applicant) for an incidental take permit (ITP) under the Endangered Species Act. The applicant requests the ITP to take the federally listed sand skink and blue-tailed mole skink incidental to the construction of a self-storage facility and associated infrastructure. We request public comment on the application, which includes the applicant's proposed
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04369/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the-sand](https://www.federalregister.gov/documents/2026/03/05/2026-04369/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the-sand)
+
+### Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for Sand Skink and Bluetail Mole Skink; Lake County, FL; Categorical Exclusion **[NEW]**
+
+- **Score:** 0.31
+- **Source:** Federal Register
+- **Published:** 2026-03-05
+- **Type:** Notice
+- **Summary:** We, the Fish and Wildlife Service (Service), announce receipt of an application from Clayton Properties Group, Inc. dba Highland Homes (Radio Road) (applicant) for an incidental take permit (ITP) under the Endangered Species Act. The applicant requests the ITP to take the federally listed threatened sand skink (skinks) incidental to the construction of a mixed residential development and the associated clearing and infrastructure in Lake County, Florida. We request public comment on the applicat
+- **Link:** [https://www.federalregister.gov/documents/2026/03/05/2026-04371/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-sand-skink](https://www.federalregister.gov/documents/2026/03/05/2026-04371/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-sand-skink)
+
+### To amend the Internal Revenue Code of 1986 to treat Indian Tribal Governments in the same manner as State governments for certain Federal tax purposes, and for other purposes. **[NEW]**
+
+- **Score:** 0.30
 - **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 5093
-- **Summary:** Referred to the House Committee on Oversight and Government Reform.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5093?format=json](https://api.congress.gov/v3/bill/119/hr/5093?format=json)
-
-### United States Grain Standards Reauthorization Act of 2025 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-03
-- **Type:** HR 4550
-- **Summary:** Placed on Senate Legislative Calendar under General Orders. Calendar No. 263.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/4550?format=json](https://api.congress.gov/v3/bill/119/hr/4550?format=json)
-
-### Counter-UAS Authority Security, Safety, and Reauthorization Act **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 5061
-- **Summary:** Ordered to be Reported (Amended) by the Yeas and Nays: 60 - 0.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5061?format=json](https://api.congress.gov/v3/bill/119/hr/5061?format=json)
-
-### Special Diabetes Program Reauthorization Act of 2025 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 5461
-- **Summary:** Referred to the House Committee on Energy and Commerce.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/5461?format=json](https://api.congress.gov/v3/bill/119/hr/5461?format=json)
-
-### Department of Homeland Security Appropriations Act, 2026 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 7744
-- **Summary:** Rules Committee Resolution H. Res. 1095 Reported to House. Rule provides for consideration of H.R. 7744 with 1 hour of general debate. Motion to recommit allowed. Bill is closed to amendments.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7744?format=json](https://api.congress.gov/v3/bill/119/hr/7744?format=json)
-
-### To amend the Fair Housing Act to repeal the Thurmond amendment. **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 7765
-- **Summary:** Referred to the House Committee on the Judiciary.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7765?format=json](https://api.congress.gov/v3/bill/119/hr/7765?format=json)
-
-### Weather Research and Forecasting Innovation Reauthorization Act of 2026 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-03
-- **Type:** S 3923
-- **Summary:** Read twice and referred to the Committee on Commerce, Science, and Transportation.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3923?format=json](https://api.congress.gov/v3/bill/119/s/3923?format=json)
-
-### Terrorism Risk Insurance Program Reauthorization Act of 2015 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 26
-- **Summary:** Became Public Law No: 114-1.
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/26?format=json](https://api.congress.gov/v3/bill/114/hr/26?format=json)
-
-### Medicare Access and CHIP Reauthorization Act of 2015 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 2
-- **Summary:** Became Public Law No: 114-10.
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/2?format=json](https://api.congress.gov/v3/bill/114/hr/2?format=json)
-
-### Bulletproof Vest Partnership Grant Program Reauthorization Act of 2015 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 125
-- **Summary:** Became Public Law No: 114-155.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/125?format=json](https://api.congress.gov/v3/bill/114/s/125?format=json)
-
-### Commerce, Justice, Science, and Related Agencies Appropriations Act, 2016 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 2578
-- **Summary:** Motion to table the motion by Senator McConnell to commit to Senate Committee on the Judiciary with instructions to report back forthwith with amendment SA 4858 rejected in Senate by Yea-Nay Vote. 46 - 52. Record Vote Number: 109. (consideration: CR S4534-4535)
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/2578?format=json](https://api.congress.gov/v3/bill/114/hr/2578?format=json)
-
-### Quarterly Financial Report Reauthorization Act **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HR 3116
-- **Summary:** Became Public Law No: 114-72.
-- **Link:** [https://api.congress.gov/v3/bill/114/hr/3116?format=json](https://api.congress.gov/v3/bill/114/hr/3116?format=json)
-
-### Hire More Heroes Act of 2015 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HJRES 61
-- **Summary:** Motion by Senator McConnell to commit to Senate Committee on Appropriations with instructions to report back forthwith with the following amendment (SA 2685) made in Senate. (consideration: CR S6916; text: CR S6916)
-- **Link:** [https://api.congress.gov/v3/bill/114/hjres/61?format=json](https://api.congress.gov/v3/bill/114/hjres/61?format=json)
-
-### Justice for All Reauthorization Act of 2016 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 2577
-- **Summary:** Became Public Law No: 114-324.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/2577?format=json](https://api.congress.gov/v3/bill/114/s/2577?format=json)
-
-### Adam Walsh Reauthorization Act of 2016 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 2613
-- **Summary:** Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/2613?format=json](https://api.congress.gov/v3/bill/114/s/2613?format=json)
-
-### Emmett Till Unsolved Civil Rights Crimes Reauthorization Act of 2016 **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** S 2854
-- **Summary:** Became Public Law No: 114-325.
-- **Link:** [https://api.congress.gov/v3/bill/114/s/2854?format=json](https://api.congress.gov/v3/bill/114/s/2854?format=json)
-
-### Of inquiry requesting the President of the United States, and directing the Secretaries of the Treasury and Homeland Security, to furnish certain information to the House of Representatives relating to the implementation and enforcement of the "Memorandum of Understanding for the Exchange of Information for Nontax Criminal Enforcement" between the Department of the Treasury and the Department of Homeland Security. **[NEW]**
-
-- **Score:** 0.32
-- **Source:** Congress Gov
-- **Published:** 2026-03-04
-- **Type:** HRES 1097
-- **Summary:** Referred to the House Committee on Ways and Means.
-- **Link:** [https://api.congress.gov/v3/bill/119/hres/1097?format=json](https://api.congress.gov/v3/bill/119/hres/1097?format=json)
+- **Published:** 2026-03-05
+- **Type:** HR 7705
+- **Summary:** Referred to the Committee on Ways and Means, and in addition to the Committee on Education and Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7705?format=json](https://api.congress.gov/v3/bill/119/hr/7705?format=json)
 
 
 ## Critical Program Updates
@@ -6081,7 +412,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 
 ### U.S. Ambassadors Fund for Cultural Preservation Freedom 250
 
-- **Score:** 0.93
+- **Score:** 0.92
 - **Source:** Grants Gov
 - **Published:** 03/03/2026
 - **Type:** grant_opportunity
@@ -6412,16 +743,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Summary:** $211,844 obligated under CFDA 97.047 to CATAWBA INDIAN NATION
 - **Link:** [https://www.usaspending.gov/award/266576412](https://www.usaspending.gov/award/266576412)
 
-### 2026 Wood Innovations Grant Funding Opportunity
-
-- **Score:** 0.75
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360250](https://www.grants.gov/search-results-detail/360250)
-
 ### Forecast to Publish a Notice of Funding Opportunity for Academic Career Excellence (ACE) Award (K32 - Clinical Trial Required)
 
 - **Score:** 0.75
@@ -6543,6 +864,16 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/360720](https://www.grants.gov/search-results-detail/360720)
 
+### 2026 Wood Innovations Grant Funding Opportunity
+
+- **Score:** 0.74
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/360250](https://www.grants.gov/search-results-detail/360250)
+
 ### FY26 Obligation: EMC-2019-PC-0003 — INDIANA DEPT OF HOMELAND SECURITY
 
 - **Score:** 0.73
@@ -6564,135 +895,35 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361408](https://www.grants.gov/search-results-detail/361408)
 
-### FY 2026 English Access Scholarship Program
+### Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed)
 
 - **Score:** 0.73
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 03/04/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361396](https://www.grants.gov/search-results-detail/361396)
+- **Link:** [https://www.grants.gov/search-results-detail/361411](https://www.grants.gov/search-results-detail/361411)
 
-### NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)
+### Feed the Future Innovation Labs
 
 - **Score:** 0.73
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 03/04/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361394](https://www.grants.gov/search-results-detail/361394)
+- **Link:** [https://www.grants.gov/search-results-detail/361412](https://www.grants.gov/search-results-detail/361412)
 
-### Early Career Research Program (ECRP)
+### CONSORTIUM FOR NUCLEAR FORENSICS
 
 - **Score:** 0.73
 - **Source:** Grants Gov
-- **Published:** 03/03/2026
+- **Published:** 03/04/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361393](https://www.grants.gov/search-results-detail/361393)
-
-### Drug-Free Communities (DFC) Support Program &ndash; COMPETING CONTINUATION (Year 6)
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360889](https://www.grants.gov/search-results-detail/360889)
-
-### State and Jurisdictional Humanities CouncilsGeneral Operating Support Grants
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361405](https://www.grants.gov/search-results-detail/361405)
-
-### Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361399](https://www.grants.gov/search-results-detail/361399)
-
-### FY 2026 J. Christopher Stevens Virtual Exchange Initiative   (JCSVEI) Program
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361398](https://www.grants.gov/search-results-detail/361398)
-
-### FY 2026 American Film Showcase
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361402](https://www.grants.gov/search-results-detail/361402)
-
-### FY 2026 Ngawang Choephel Fellows Program
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361401](https://www.grants.gov/search-results-detail/361401)
-
-### FY 2026 National Security Language Initiative for Youth (NSLI-Y)
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361397](https://www.grants.gov/search-results-detail/361397)
-
-### FY 2026 Leaders Lead On-Demand
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361400](https://www.grants.gov/search-results-detail/361400)
-
-### Expanding Financial Literacy and Empowerment: Increasing Awareness and Use of ABLE Accounts for Americans with Disabilities
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361403](https://www.grants.gov/search-results-detail/361403)
-
-### OVW Fiscal Year 2026 Invitation to Apply Administrative Funding Adjustment 1
-
-- **Score:** 0.73
-- **Source:** Grants Gov
-- **Published:** 03/03/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361404](https://www.grants.gov/search-results-detail/361404)
+- **Link:** [https://www.grants.gov/search-results-detail/361410](https://www.grants.gov/search-results-detail/361410)
 
 ### FY26 Obligation: A22AC00055 — GREAT PLAINS TRIBAL WATER ALLIANCE, INC
 
@@ -6705,15 +936,125 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Summary:** $1,604,220 obligated under CFDA 15.156 to GREAT PLAINS TRIBAL WATER ALLIANCE, INC
 - **Link:** [https://www.usaspending.gov/award/259249424](https://www.usaspending.gov/award/259249424)
 
-### Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)
+### FY 2026 English Access Scholarship Program
 
 - **Score:** 0.72
 - **Source:** Grants Gov
-- **Published:** 03/02/2026
+- **Published:** 03/03/2026
 - **Type:** grant_opportunity
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360888](https://www.grants.gov/search-results-detail/360888)
+- **Link:** [https://www.grants.gov/search-results-detail/361396](https://www.grants.gov/search-results-detail/361396)
+
+### NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361394](https://www.grants.gov/search-results-detail/361394)
+
+### Early Career Research Program (ECRP)
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361393](https://www.grants.gov/search-results-detail/361393)
+
+### State and Jurisdictional Humanities CouncilsGeneral Operating Support Grants
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361405](https://www.grants.gov/search-results-detail/361405)
+
+### Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361399](https://www.grants.gov/search-results-detail/361399)
+
+### FY 2026 J. Christopher Stevens Virtual Exchange Initiative   (JCSVEI) Program
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361398](https://www.grants.gov/search-results-detail/361398)
+
+### FY 2026 American Film Showcase
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361402](https://www.grants.gov/search-results-detail/361402)
+
+### FY 2026 Ngawang Choephel Fellows Program
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361401](https://www.grants.gov/search-results-detail/361401)
+
+### FY 2026 National Security Language Initiative for Youth (NSLI-Y)
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361397](https://www.grants.gov/search-results-detail/361397)
+
+### FY 2026 Leaders Lead On-Demand
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361400](https://www.grants.gov/search-results-detail/361400)
+
+### Expanding Financial Literacy and Empowerment: Increasing Awareness and Use of ABLE Accounts for Americans with Disabilities
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361403](https://www.grants.gov/search-results-detail/361403)
+
+### OVW Fiscal Year 2026 Invitation to Apply Administrative Funding Adjustment 1
+
+- **Score:** 0.72
+- **Source:** Grants Gov
+- **Published:** 03/03/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361404](https://www.grants.gov/search-results-detail/361404)
 
 ### Fiscal Year 2027 National Sea Grant College Program Dean John A. Knauss Marine Policy Fellowship
 
@@ -6855,66 +1196,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361375](https://www.grants.gov/search-results-detail/361375)
 
-### Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361366](https://www.grants.gov/search-results-detail/361366)
-
-### Next-Generation Geothermal Field Tests and Geothermal Resource Characterization and Confirmation
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361365](https://www.grants.gov/search-results-detail/361365)
-
-### The Reentry Employment in Skilled Trades, Advanced Manufacturing, Registered Apprenticeships, and Training (RESTART) Initiative
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361368](https://www.grants.gov/search-results-detail/361368)
-
-### Veterans Legacy Grants Program
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360057](https://www.grants.gov/search-results-detail/360057)
-
-### Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Therapeutic Agent Characterization and Preclinical Efficacy Studies
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361370](https://www.grants.gov/search-results-detail/361370)
-
-### Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Assay Development and Therapeutic Agent Identification
-
-- **Score:** 0.72
-- **Source:** Grants Gov
-- **Published:** 02/25/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361369](https://www.grants.gov/search-results-detail/361369)
-
 ### Strategic support for human resources for health for the Ministry of Health and Social Services (MOHSS) to sustain HIV epidemic control in Namibia under the U.S. President's Emergency Plan for AIDS Relief (PEPFAR)
 
 - **Score:** 0.71
@@ -6944,6 +1225,66 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience, EPA STAG
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/358886](https://www.grants.gov/search-results-detail/358886)
+
+### Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/25/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361366](https://www.grants.gov/search-results-detail/361366)
+
+### Next-Generation Geothermal Field Tests and Geothermal Resource Characterization and Confirmation
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/25/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361365](https://www.grants.gov/search-results-detail/361365)
+
+### The Reentry Employment in Skilled Trades, Advanced Manufacturing, Registered Apprenticeships, and Training (RESTART) Initiative
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/25/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361368](https://www.grants.gov/search-results-detail/361368)
+
+### Veterans Legacy Grants Program
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/25/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/360057](https://www.grants.gov/search-results-detail/360057)
+
+### Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Therapeutic Agent Characterization and Preclinical Efficacy Studies
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/25/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361370](https://www.grants.gov/search-results-detail/361370)
+
+### Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Assay Development and Therapeutic Agent Identification
+
+- **Score:** 0.70
+- **Source:** Grants Gov
+- **Published:** 02/25/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361369](https://www.grants.gov/search-results-detail/361369)
 
 ### Delta Rural Integrated Health Network Program
 
@@ -7024,16 +1365,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361337](https://www.grants.gov/search-results-detail/361337)
-
-### Feed the Future Innovation Labs
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/20/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361339](https://www.grants.gov/search-results-detail/361339)
 
 ### Region 1 Fiscal Year 2025 Wetland Program Development Grants
 
@@ -7164,136 +1495,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361323](https://www.grants.gov/search-results-detail/361323)
-
-### Region 7 Fiscal Year 2025 Wetland Program Development Grants
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361311](https://www.grants.gov/search-results-detail/361311)
-
-### Region 06 Fiscal Year 2025 Wetland Program Development Grants
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361312](https://www.grants.gov/search-results-detail/361312)
-
-### Region 5 Fiscal Year 2025 Wetland Program Development Grants
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361319](https://www.grants.gov/search-results-detail/361319)
-
-### Region 10 Fiscal Year 2025 Wetland Program Development Grants
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361313](https://www.grants.gov/search-results-detail/361313)
-
-### Rural Community Health Support Program
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361316](https://www.grants.gov/search-results-detail/361316)
-
-### Limited Competition: Small Grant Program for the NCATS Clinical and Translational Science Award (CTSA) Program (Clinical Trial Optional)
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361317](https://www.grants.gov/search-results-detail/361317)
-
-### NLM Institutional Grants for Research Training in Biomedical Informatics, Data Science, and AI
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361318](https://www.grants.gov/search-results-detail/361318)
-
-### OJJDP FY25 Second Chance Act Youth Reentry Program
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361321](https://www.grants.gov/search-results-detail/361321)
-
-### OJJDP FY25 Second Chance Act Addressing the Needs of Incarcerated Parents and Their Minor Children
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361320](https://www.grants.gov/search-results-detail/361320)
-
-### Energy Frontier Research Centers (EFRCs)
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361309](https://www.grants.gov/search-results-detail/361309)
-
-### 2026 Community Wood Energy and Wood Innovation Program
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360601](https://www.grants.gov/search-results-detail/360601)
-
-### 2026 Wood Products Infrastructure Assistance Program
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360602](https://www.grants.gov/search-results-detail/360602)
-
-### Building EPSCoR-State/National Laboratory Partnerships
-
-- **Score:** 0.70
-- **Source:** Grants Gov
-- **Published:** 02/18/2026
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/361314](https://www.grants.gov/search-results-detail/361314)
 
 ### REQUEST FOR INFORMATION &ndash; MUTUALLY BENEFICIAL MULTIDISCIPLINARY INNOVATION ECOSYSTEMS
 
@@ -7605,16 +1806,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Summary:** On passage, the objections of the President to the contrary notwithstanding Failed by the Yeas and Nays: (2/3 required): 241 - 186 (Roll no. 53). (consideration: CR H482)
 - **Link:** [https://api.congress.gov/v3/bill/114/hr/3762?format=json](https://api.congress.gov/v3/bill/114/hr/3762?format=json)
 
-### Acknowledging oppression, forced eviction, and suffering experienced by tens of thousands of Bhutanese citizens during the late 1980s and early 1990s, and encouraging steps toward justice, reconciliation, and lasting peace.
-
-- **Score:** 0.69
-- **Source:** Congress Gov
-- **Published:** 2026-03-03
-- **Type:** HRES 1093
-- **Programs:** IRS Elective Pay
-- **Summary:** Referred to the House Committee on Foreign Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/hres/1093?format=json](https://api.congress.gov/v3/bill/119/hres/1093?format=json)
-
 ### Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)
 
 - **Score:** 0.69
@@ -7624,6 +1815,136 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience, EPA STAG
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/359274](https://www.grants.gov/search-results-detail/359274)
+
+### Region 7 Fiscal Year 2025 Wetland Program Development Grants
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361311](https://www.grants.gov/search-results-detail/361311)
+
+### Region 06 Fiscal Year 2025 Wetland Program Development Grants
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361312](https://www.grants.gov/search-results-detail/361312)
+
+### Region 5 Fiscal Year 2025 Wetland Program Development Grants
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361319](https://www.grants.gov/search-results-detail/361319)
+
+### Region 10 Fiscal Year 2025 Wetland Program Development Grants
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361313](https://www.grants.gov/search-results-detail/361313)
+
+### Rural Community Health Support Program
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361316](https://www.grants.gov/search-results-detail/361316)
+
+### Limited Competition: Small Grant Program for the NCATS Clinical and Translational Science Award (CTSA) Program (Clinical Trial Optional)
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361317](https://www.grants.gov/search-results-detail/361317)
+
+### NLM Institutional Grants for Research Training in Biomedical Informatics, Data Science, and AI
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361318](https://www.grants.gov/search-results-detail/361318)
+
+### OJJDP FY25 Second Chance Act Youth Reentry Program
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361321](https://www.grants.gov/search-results-detail/361321)
+
+### OJJDP FY25 Second Chance Act Addressing the Needs of Incarcerated Parents and Their Minor Children
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361320](https://www.grants.gov/search-results-detail/361320)
+
+### Energy Frontier Research Centers (EFRCs)
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361309](https://www.grants.gov/search-results-detail/361309)
+
+### 2026 Community Wood Energy and Wood Innovation Program
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/360601](https://www.grants.gov/search-results-detail/360601)
+
+### 2026 Wood Products Infrastructure Assistance Program
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/360602](https://www.grants.gov/search-results-detail/360602)
+
+### Building EPSCoR-State/National Laboratory Partnerships
+
+- **Score:** 0.69
+- **Source:** Grants Gov
+- **Published:** 02/18/2026
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/361314](https://www.grants.gov/search-results-detail/361314)
 
 ### Value-Added Producer Grant
 
@@ -8185,25 +2506,15 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Summary:** Became Public Law No: 119-21.
 - **Link:** [https://api.congress.gov/v3/bill/119/hr/1?format=json](https://api.congress.gov/v3/bill/119/hr/1?format=json)
 
-### Commission on Equity and Reconciliation in the Uniformed Services Act
+### Acknowledging oppression, forced eviction, and suffering experienced by tens of thousands of Bhutanese citizens during the late 1980s and early 1990s, and encouraging steps toward justice, reconciliation, and lasting peace.
 
 - **Score:** 0.68
 - **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** HR 7238
+- **Published:** 2026-03-03
+- **Type:** HRES 1093
 - **Programs:** IRS Elective Pay
-- **Summary:** Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
-- **Link:** [https://api.congress.gov/v3/bill/119/hr/7238?format=json](https://api.congress.gov/v3/bill/119/hr/7238?format=json)
-
-### Commission on Equity and Reconciliation in the Uniformed Services Act
-
-- **Score:** 0.68
-- **Source:** Congress Gov
-- **Published:** 2026-02-25
-- **Type:** S 3691
-- **Programs:** IRS Elective Pay
-- **Summary:** Read twice and referred to the Committee on Veterans' Affairs.
-- **Link:** [https://api.congress.gov/v3/bill/119/s/3691?format=json](https://api.congress.gov/v3/bill/119/s/3691?format=json)
+- **Summary:** Referred to the House Committee on Foreign Affairs.
+- **Link:** [https://api.congress.gov/v3/bill/119/hres/1093?format=json](https://api.congress.gov/v3/bill/119/hres/1093?format=json)
 
 ### Lead Hazard Reduction Capacity Building Grant Program
 
@@ -8825,16 +3136,25 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/361085](https://www.grants.gov/search-results-detail/361085)
 
-### FY26 Obligation: 4798DRTXP00000005 — TEXAS DIVISION OF EMERGENCY MANAGEMENT
+### Commission on Equity and Reconciliation in the Uniformed Services Act
 
 - **Score:** 0.66
-- **Source:** Usaspending
-- **Published:** 2026-02-02
-- **Type:** obligation
-- **Programs:** FEMA BRIC
-- **CFDA:** 97.039
-- **Summary:** $104,176 obligated under CFDA 97.039 to TEXAS DIVISION OF EMERGENCY MANAGEMENT
-- **Link:** [https://www.usaspending.gov/award/355183766](https://www.usaspending.gov/award/355183766)
+- **Source:** Congress Gov
+- **Published:** 2026-02-25
+- **Type:** HR 7238
+- **Programs:** IRS Elective Pay
+- **Summary:** Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/7238?format=json](https://api.congress.gov/v3/bill/119/hr/7238?format=json)
+
+### Commission on Equity and Reconciliation in the Uniformed Services Act
+
+- **Score:** 0.66
+- **Source:** Congress Gov
+- **Published:** 2026-02-25
+- **Type:** S 3691
+- **Programs:** IRS Elective Pay
+- **Summary:** Read twice and referred to the Committee on Veterans' Affairs.
+- **Link:** [https://api.congress.gov/v3/bill/119/s/3691?format=json](https://api.congress.gov/v3/bill/119/s/3691?format=json)
 
 ### Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements
 
@@ -10845,16 +5165,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/359645](https://www.grants.gov/search-results-detail/359645)
-
-### NSF/CASIS Transport Phenomena Research at the International Space Station to Benefit Life on Earth
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 09/22/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/360640](https://www.grants.gov/search-results-detail/360640)
 
 ### The NIDDK Disorders of Gastrointestinal Interoception Consortium Clinical Centers (DGIC)
 
@@ -13255,26 +7565,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/359275](https://www.grants.gov/search-results-detail/359275)
-
-### New NIA Institutional Training Programs for Aging Research
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 06/06/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/359276](https://www.grants.gov/search-results-detail/359276)
-
-### Research Opportunities in Crisis Response Services for Suicide Prevention
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 06/06/2025
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/359273](https://www.grants.gov/search-results-detail/359273)
 
 ### U.S. Embassy Port Louis Public Diplomacy Small Grants Program
 
@@ -16016,16 +10306,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/357135](https://www.grants.gov/search-results-detail/357135)
 
-### Coupling, Energetics, and Dynamics of Atmospheric Regions
-
-- **Score:** 0.65
-- **Source:** Grants Gov
-- **Published:** 11/14/2024
-- **Type:** grant_opportunity
-- **Programs:** BIA Tribal Climate Resilience
-- **CFDA:** 15.156
-- **Link:** [https://www.grants.gov/search-results-detail/357105](https://www.grants.gov/search-results-detail/357105)
-
 ### Focused Technology Research and Development (R01 Clinical Trial Not Allowed)
 
 - **Score:** 0.65
@@ -16195,6 +10475,57 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Programs:** BIA Tribal Climate Resilience
 - **CFDA:** 15.156
 - **Link:** [https://www.grants.gov/search-results-detail/357015](https://www.grants.gov/search-results-detail/357015)
+
+### Bioengineering Partnerships with Industry (U01 Clinical Trial Optional)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 11/06/2024
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/357019](https://www.grants.gov/search-results-detail/357019)
+
+### Research Projects to Enhance Applicability of Mammalian Models for Translational Research (R01 Clinical Trial Not Allowed)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 11/06/2024
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/357005](https://www.grants.gov/search-results-detail/357005)
+
+### Assay development and screening for discovery of chemical probes, drugs or immunomodulators (R01 Clinical Trial Not Allowed)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 11/06/2024
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/357014](https://www.grants.gov/search-results-detail/357014)
+
+### Molecular Imaging of Inflammation in Cancer (R01 Clinical Trial Not Allowed)
+
+- **Score:** 0.65
+- **Source:** Grants Gov
+- **Published:** 11/06/2024
+- **Type:** grant_opportunity
+- **Programs:** BIA Tribal Climate Resilience
+- **CFDA:** 15.156
+- **Link:** [https://www.grants.gov/search-results-detail/357002](https://www.grants.gov/search-results-detail/357002)
+
+### FY26 Obligation: 4798DRTXP00000005 — TEXAS DIVISION OF EMERGENCY MANAGEMENT
+
+- **Score:** 0.64
+- **Source:** Usaspending
+- **Published:** 2026-02-02
+- **Type:** obligation
+- **Programs:** FEMA BRIC
+- **CFDA:** 97.039
+- **Summary:** $104,176 obligated under CFDA 97.039 to TEXAS DIVISION OF EMERGENCY MANAGEMENT
+- **Link:** [https://www.usaspending.gov/award/355183766](https://www.usaspending.gov/award/355183766)
 
 ### FY26 Obligation: 4794DRFLP00000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT
 
@@ -19012,6 +13343,16 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **Summary:** $-63,006 obligated under CFDA 97.039 to STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT
 - **Link:** [https://www.usaspending.gov/award/354303733](https://www.usaspending.gov/award/354303733)
 
+### Improve and Enhance the Work Opportunity Tax Credit Act
+
+- **Score:** 0.56
+- **Source:** Congress Gov
+- **Published:** 2026-03-05
+- **Type:** HR 6231
+- **Programs:** IRS Elective Pay
+- **Summary:** Referred to the House Committee on Ways and Means.
+- **Link:** [https://api.congress.gov/v3/bill/119/hr/6231?format=json](https://api.congress.gov/v3/bill/119/hr/6231?format=json)
+
 ### Historic Tax Credit Growth and Opportunity Act of 2025
 
 - **Score:** 0.56
@@ -19177,6 +13518,9 @@ This scan identified **555 new policy development(s)** since the last scan.
 - Affects: EPA STAG, DOT PROTECT, USBR WaterSMART, USDA Wildfire Defense Grants
 - Mitigation: Shift from annual discretionary to multi-year or permanent authorization for core Tribal climate programs
 
+**information collection request** [Med]
+- Affects: DOT PROTECT
+
 **Tribal instrumentality definition for elective pay requires legal clarity** [Med]
 - Affects: IRS Elective Pay
 - Mitigation: Defend against reconciliation repeal; protect Tribal instrumentality access
@@ -19186,7 +13530,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 - Mitigation: Categorical Tribal exemptions from cost-share requirements based on trust responsibility
 
 **Paperwork Reduction Act** [Med]
-- Affects: USBR TAP
+- Affects: DOT PROTECT
 
 **Tribal Hazard Mitigation Plan required for post-disaster funding (Stafford Act § 322)** [Med]
 - Affects: FEMA Tribal Mitigation Plans, FEMA BRIC
@@ -19205,17 +13549,15 @@ This scan identified **555 new policy development(s)** since the last scan.
 | Authority | Type | Durability | Programs |
 |-----------|------|-----------|----------|
 | 31 U.S.C. 3351 | Statute |  | DOT PROTECT |
-| 36 CFR 800.14(b) | Statute |  | DOT PROTECT |
-| 42 U.S.C. 4321 | Statute |  | DOT PROTECT |
-| 54 U.S.C. 306108 | Statute |  | DOT PROTECT |
 | 5 U.S.C. 552 | Statute |  | DOT PROTECT |
 | bil | Statute |  | BIA Tribal Climate Resilience, EPA STAG, DOT PROTECT, Tribal Air Quality Management, USBR WaterSMART, EPA GAP |
 | Clean Air Act § 105 (Tribal Air Quality) | Statute | Permanent | Tribal Air Quality Management |
 | Clean Water Act / Safe Drinking Water Act | Statute | Permanent | EPA STAG, DOT PROTECT, Tribal Air Quality Management |
 | Energy Policy Act of 2005, Title V | Statute | Permanent | DOE Indian Energy |
 | Executive Order 14225 (Forest Management) | Guidance | Executive discretion | USDA Wildfire Defense Grants |
+| Executive Order 14148 | Guidance |  | DOT PROTECT |
 | Executive Order 14249 | Guidance |  | DOT PROTECT |
-| Final rule | Regulation |  | DOT PROTECT, Tribal Air Quality Management |
+| final rule | Regulation |  | DOT PROTECT, Tribal Air Quality Management |
 | Infrastructure Investment and Jobs Act (IIJA/BIL) | Statute | Expires FY26 | EPA STAG, FEMA BRIC, DOT PROTECT, USBR WaterSMART |
 | IIJA § 40901 (WaterSMART Enhancement) | Statute | Expires FY26 | USBR WaterSMART |
 | IIJA § 40803 (Community Wildfire Defense Grants) | Statute | Expires when funds exhausted | USDA Wildfire Defense Grants |
@@ -19227,7 +13569,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 | Indian Self-Determination and Education Assistance Act (25 U.S.C. 5301) | Statute | Permanent | BIA Tribal Climate Resilience, EPA GAP |
 | Magnuson-Stevens Fishery Conservation and Management Act | Statute | Permanent | NOAA Tribal Grants |
 | Native American Housing Assistance and Self-Determination Act (NAHASDA) | Statute | Permanent | HUD IHBG |
-| proposed rule | Regulation |  | DOT PROTECT, Tribal Air Quality Management, EPA STAG |
+| proposed rule | Regulation |  | DOT PROTECT, EPA STAG, Tribal Air Quality Management, USBR TAP |
 | IIJA § 11405 (PROTECT Program) | Statute | Expires FY26 | DOT PROTECT |
 | SECURE Water Act (P.L. 111-11, § 9504) | Statute | Permanent | USBR WaterSMART, USBR TAP |
 | Safe Drinking Water Act | Statute |  | EPA STAG, DOT PROTECT, Tribal Air Quality Management |
@@ -19257,33 +13599,33 @@ This scan identified **555 new policy development(s)** since the last scan.
 
 ## CI Score Trends
 
-*Tracking 7 scan(s). Showing last 7.*
+*Tracking 8 scan(s). Showing last 8.*
 
-| Program | 2026-02-08 | 2026-02-09 | 2026-02-19 | 2026-02-27 | 2026-03-02 | 2026-03-03 | 2026-03-04 | Trend |
-|---------|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-------|
-| BIA Tribal Climate Resilience | 85% | 88% | 88% | 88% | 88% | 88% | 88% | +3% |
-| Tribal Community Resilience Annual Awards | 82% | 85% | 85% | 85% | 85% | 85% | 85% | +3% |
-| DOE Indian Energy | 52% | 55% | 55% | 55% | 55% | 55% | 55% | +3% |
-| DOT PROTECT | 90% | 93% | 93% | 93% | 93% | 93% | 93% | +3% |
-| EPA GAP | 77% | 80% | 80% | 80% | 80% | 80% | 80% | +3% |
-| EPA STAG | 87% | 90% | 90% | 90% | 90% | 90% | 90% | +3% |
-| Tribal Air Quality Management | 79% | 82% | 82% | 82% | 82% | 82% | 82% | +3% |
-| FEMA BRIC | 9% | 12% | 12% | 12% | 12% | 12% | 12% | +3% |
-| FEMA FMA | -- | -- | 60% | 60% | 60% | 60% | 60% | -- |
-| FEMA HMGP | -- | -- | 35% | 35% | 35% | 35% | 35% | -- |
-| FEMA Tribal Mitigation Plans | 62% | 65% | 65% | 65% | 65% | 65% | 65% | +3% |
-| FHWA TTP Safety | 82% | 85% | 85% | 85% | 85% | 85% | 85% | +3% |
-| HUD IHBG | 82% | 85% | 85% | 85% | 85% | 85% | 85% | +3% |
-| IRS Elective Pay | 52% | 55% | 55% | 55% | 55% | 55% | 55% | +3% |
-| NOAA Tribal Grants | 47% | 50% | 50% | 50% | 50% | 50% | 50% | +3% |
-| USBR TAP | 72% | 75% | 75% | 75% | 75% | 75% | 75% | +3% |
-| USBR WaterSMART | 57% | 60% | 60% | 60% | 60% | 60% | 60% | +3% |
-| USDA Wildfire Defense Grants | 75% | 78% | 78% | 78% | 78% | 78% | 78% | +3% |
+| Program | 2026-02-08 | 2026-02-09 | 2026-02-19 | 2026-02-27 | 2026-03-02 | 2026-03-03 | 2026-03-04 | 2026-03-05 | Trend |
+|---------|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-------|
+| BIA Tribal Climate Resilience | 85% | 88% | 88% | 88% | 88% | 88% | 88% | 88% | +3% |
+| Tribal Community Resilience Annual Awards | 82% | 85% | 85% | 85% | 85% | 85% | 85% | 85% | +3% |
+| DOE Indian Energy | 52% | 55% | 55% | 55% | 55% | 55% | 55% | 55% | +3% |
+| DOT PROTECT | 90% | 93% | 93% | 93% | 93% | 93% | 93% | 93% | +3% |
+| EPA GAP | 77% | 80% | 80% | 80% | 80% | 80% | 80% | 80% | +3% |
+| EPA STAG | 87% | 90% | 90% | 90% | 90% | 90% | 90% | 90% | +3% |
+| Tribal Air Quality Management | 79% | 82% | 82% | 82% | 82% | 82% | 82% | 82% | +3% |
+| FEMA BRIC | 9% | 12% | 12% | 12% | 12% | 12% | 12% | 12% | +3% |
+| FEMA FMA | -- | -- | 60% | 60% | 60% | 60% | 60% | 60% | -- |
+| FEMA HMGP | -- | -- | 35% | 35% | 35% | 35% | 35% | 35% | -- |
+| FEMA Tribal Mitigation Plans | 62% | 65% | 65% | 65% | 65% | 65% | 65% | 65% | +3% |
+| FHWA TTP Safety | 82% | 85% | 85% | 85% | 85% | 85% | 85% | 85% | +3% |
+| HUD IHBG | 82% | 85% | 85% | 85% | 85% | 85% | 85% | 85% | +3% |
+| IRS Elective Pay | 52% | 55% | 55% | 55% | 55% | 55% | 55% | 55% | +3% |
+| NOAA Tribal Grants | 47% | 50% | 50% | 50% | 50% | 50% | 50% | 50% | +3% |
+| USBR TAP | 72% | 75% | 75% | 75% | 75% | 75% | 75% | 75% | +3% |
+| USBR WaterSMART | 57% | 60% | 60% | 60% | 60% | 60% | 60% | 60% | +3% |
+| USDA Wildfire Defense Grants | 75% | 78% | 78% | 78% | 78% | 78% | 78% | 78% | +3% |
 
 ## All Relevant Items (by score)
 
 - **0.93** | [Ambassador's Fund for Cultural Preservation](https://www.grants.gov/search-results-detail/361407) | BIA Tribal Climate Resilience
-- **0.93** | [U.S. Ambassadors Fund for Cultural Preservation Freedom 250](https://www.grants.gov/search-results-detail/361395) | BIA Tribal Climate Resilience
+- **0.92** | [U.S. Ambassadors Fund for Cultural Preservation Freedom 250](https://www.grants.gov/search-results-detail/361395) | BIA Tribal Climate Resilience
 - **0.89** | [Native American Research Centers for Health (NARCH)](https://www.grants.gov/search-results-detail/361270) | BIA Tribal Climate Resilience
 - **0.87** | [Indian Highway Safety Occupant Protection Grant](https://www.grants.gov/search-results-detail/361096) | BIA Tribal Climate Resilience, DOT PROTECT
 - **0.87** | [Native American Library Services Enhancement Grants (2026)](https://www.grants.gov/search-results-detail/361173) | BIA Tribal Climate Resilience
@@ -19317,7 +13659,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.77** | [FY 2026 Competitive Funding Opportunity: All Stations Accessibility Program](https://www.grants.gov/search-results-detail/361383) | BIA Tribal Climate Resilience
 - **0.76** | [Supporting sustainable HIV patient and program monitoring systems in Zambia under the President's Emergency Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360723) | BIA Tribal Climate Resilience
 - **0.75** | [FY26 Obligation: EMA-2021-PC-0003 — CATAWBA INDIAN NATION](https://www.usaspending.gov/award/266576412) | FEMA BRIC
-- **0.75** | [2026 Wood Innovations Grant Funding Opportunity](https://www.grants.gov/search-results-detail/360250) | BIA Tribal Climate Resilience
 - **0.75** | [Forecast to Publish a Notice of Funding Opportunity for Academic Career Excellence (ACE) Award (K32 - Clinical Trial Required)](https://www.grants.gov/search-results-detail/359894) | BIA Tribal Climate Resilience
 - **0.75** | [Forecast to Publish a Notice of Funding Opportunity for Paul Calabresi Career Development Award in Clinical Oncology (K12 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/359889) | BIA Tribal Climate Resilience
 - **0.75** | [Forecast to Publish a Notice of Funding Opportunity for The Experimental Therapeutics Clinical Trials Network (ETCTN) Pharmacokinetic Resource Laboratory (U24 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359854) | BIA Tribal Climate Resilience
@@ -19330,23 +13671,25 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.74** | [FY26 Obligation: EMK-2020-PC-0004 — PONCA TRIBE OF NEBRASKA](https://www.usaspending.gov/award/266582713) | FEMA BRIC
 - **0.74** | [Supporting life-saving HIV services and related health systems in Zambia on a pathway to self-reliance under the President&rsquo;s Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360760) | BIA Tribal Climate Resilience
 - **0.74** | [Strengthening comprehensive HIV and TB services and health systems in high-burden areas of Namibia under the President's Emergency Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360720) | BIA Tribal Climate Resilience
+- **0.74** | [2026 Wood Innovations Grant Funding Opportunity](https://www.grants.gov/search-results-detail/360250) | BIA Tribal Climate Resilience
 - **0.73** | [FY26 Obligation: EMC-2019-PC-0003 — INDIANA DEPT OF HOMELAND SECURITY](https://www.usaspending.gov/award/266578341) | FEMA BRIC
 - **0.73** | [Urgent Competitive Revision to Existing NIH Grants and Cooperative Agreements (Urgent Supplement Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361408) | BIA Tribal Climate Resilience
-- **0.73** | [FY 2026 English Access Scholarship Program](https://www.grants.gov/search-results-detail/361396) | BIA Tribal Climate Resilience
-- **0.73** | [NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361394) | BIA Tribal Climate Resilience
-- **0.73** | [Early Career Research Program (ECRP)](https://www.grants.gov/search-results-detail/361393) | BIA Tribal Climate Resilience
-- **0.73** | [Drug-Free Communities (DFC) Support Program &ndash; COMPETING CONTINUATION (Year 6)](https://www.grants.gov/search-results-detail/360889) | BIA Tribal Climate Resilience
-- **0.73** | [State and Jurisdictional Humanities CouncilsGeneral Operating Support Grants](https://www.grants.gov/search-results-detail/361405) | BIA Tribal Climate Resilience
-- **0.73** | [Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361399) | BIA Tribal Climate Resilience
-- **0.73** | [FY 2026 J. Christopher Stevens Virtual Exchange Initiative   (JCSVEI) Program](https://www.grants.gov/search-results-detail/361398) | BIA Tribal Climate Resilience
-- **0.73** | [FY 2026 American Film Showcase](https://www.grants.gov/search-results-detail/361402) | BIA Tribal Climate Resilience
-- **0.73** | [FY 2026 Ngawang Choephel Fellows Program](https://www.grants.gov/search-results-detail/361401) | BIA Tribal Climate Resilience
-- **0.73** | [FY 2026 National Security Language Initiative for Youth (NSLI-Y)](https://www.grants.gov/search-results-detail/361397) | BIA Tribal Climate Resilience
-- **0.73** | [FY 2026 Leaders Lead On-Demand](https://www.grants.gov/search-results-detail/361400) | BIA Tribal Climate Resilience
-- **0.73** | [Expanding Financial Literacy and Empowerment: Increasing Awareness and Use of ABLE Accounts for Americans with Disabilities](https://www.grants.gov/search-results-detail/361403) | BIA Tribal Climate Resilience
-- **0.73** | [OVW Fiscal Year 2026 Invitation to Apply Administrative Funding Adjustment 1](https://www.grants.gov/search-results-detail/361404) | BIA Tribal Climate Resilience
+- **0.73** | [Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/361411) | BIA Tribal Climate Resilience
+- **0.73** | [Feed the Future Innovation Labs](https://www.grants.gov/search-results-detail/361412) | BIA Tribal Climate Resilience
+- **0.73** | [CONSORTIUM FOR NUCLEAR FORENSICS](https://www.grants.gov/search-results-detail/361410) | BIA Tribal Climate Resilience
 - **0.72** | [FY26 Obligation: A22AC00055 — GREAT PLAINS TRIBAL WATER ALLIANCE, INC](https://www.usaspending.gov/award/259249424) | BIA Tribal Climate Resilience
-- **0.72** | [Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)](https://www.grants.gov/search-results-detail/360888) | BIA Tribal Climate Resilience
+- **0.72** | [FY 2026 English Access Scholarship Program](https://www.grants.gov/search-results-detail/361396) | BIA Tribal Climate Resilience
+- **0.72** | [NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361394) | BIA Tribal Climate Resilience
+- **0.72** | [Early Career Research Program (ECRP)](https://www.grants.gov/search-results-detail/361393) | BIA Tribal Climate Resilience
+- **0.72** | [State and Jurisdictional Humanities CouncilsGeneral Operating Support Grants](https://www.grants.gov/search-results-detail/361405) | BIA Tribal Climate Resilience
+- **0.72** | [Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361399) | BIA Tribal Climate Resilience
+- **0.72** | [FY 2026 J. Christopher Stevens Virtual Exchange Initiative   (JCSVEI) Program](https://www.grants.gov/search-results-detail/361398) | BIA Tribal Climate Resilience
+- **0.72** | [FY 2026 American Film Showcase](https://www.grants.gov/search-results-detail/361402) | BIA Tribal Climate Resilience
+- **0.72** | [FY 2026 Ngawang Choephel Fellows Program](https://www.grants.gov/search-results-detail/361401) | BIA Tribal Climate Resilience
+- **0.72** | [FY 2026 National Security Language Initiative for Youth (NSLI-Y)](https://www.grants.gov/search-results-detail/361397) | BIA Tribal Climate Resilience
+- **0.72** | [FY 2026 Leaders Lead On-Demand](https://www.grants.gov/search-results-detail/361400) | BIA Tribal Climate Resilience
+- **0.72** | [Expanding Financial Literacy and Empowerment: Increasing Awareness and Use of ABLE Accounts for Americans with Disabilities](https://www.grants.gov/search-results-detail/361403) | BIA Tribal Climate Resilience
+- **0.72** | [OVW Fiscal Year 2026 Invitation to Apply Administrative Funding Adjustment 1](https://www.grants.gov/search-results-detail/361404) | BIA Tribal Climate Resilience
 - **0.72** | [Fiscal Year 2027 National Sea Grant College Program Dean John A. Knauss Marine Policy Fellowship](https://www.grants.gov/search-results-detail/361392) | BIA Tribal Climate Resilience
 - **0.72** | [Securing Convictions from Vetted and Special Unit Operations](https://www.grants.gov/search-results-detail/361388) | BIA Tribal Climate Resilience
 - **0.72** | [Awards for Faculty at HBCUs](https://www.grants.gov/search-results-detail/361391) | BIA Tribal Climate Resilience
@@ -19361,16 +13704,16 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.72** | [Strategies to Link, Engage, and Retain Men with HIV in Care: Implementation Technical Assistance Provider](https://www.grants.gov/search-results-detail/361377) | BIA Tribal Climate Resilience
 - **0.72** | [Strategies to Link, Engage, and Retain Men with HIV in Care: Evaluation Provider](https://www.grants.gov/search-results-detail/361376) | BIA Tribal Climate Resilience
 - **0.72** | [Dental Faculty Loan Repayment Program (DFLRP)](https://www.grants.gov/search-results-detail/361375) | BIA Tribal Climate Resilience
-- **0.72** | [Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs](https://www.grants.gov/search-results-detail/361366) | BIA Tribal Climate Resilience
-- **0.72** | [Next-Generation Geothermal Field Tests and Geothermal Resource Characterization and Confirmation](https://www.grants.gov/search-results-detail/361365) | BIA Tribal Climate Resilience
-- **0.72** | [The Reentry Employment in Skilled Trades, Advanced Manufacturing, Registered Apprenticeships, and Training (RESTART) Initiative](https://www.grants.gov/search-results-detail/361368) | BIA Tribal Climate Resilience
-- **0.72** | [Veterans Legacy Grants Program](https://www.grants.gov/search-results-detail/360057) | BIA Tribal Climate Resilience
-- **0.72** | [Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Therapeutic Agent Characterization and Preclinical Efficacy Studies](https://www.grants.gov/search-results-detail/361370) | BIA Tribal Climate Resilience
-- **0.72** | [Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Assay Development and Therapeutic Agent Identification](https://www.grants.gov/search-results-detail/361369) | BIA Tribal Climate Resilience
 - **0.71** | [FY26 Obligation: 26DG11010013003 — THREE AFFILIATED TRIBES](https://www.usaspending.gov/award/355709982) | USDA Wildfire Defense Grants
 - **0.71** | [Strategic support for human resources for health for the Ministry of Health and Social Services (MOHSS) to sustain HIV epidemic control in Namibia under the U.S. President's Emergency Plan for AIDS Relief (PEPFAR)](https://www.grants.gov/search-results-detail/360721) | BIA Tribal Climate Resilience
 - **0.70** | [Forecast to Publish a Funding Opportunity Announcement for Early-Stage Development of Informatics Technologies for Cancer Research and Management (U01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/359892) | BIA Tribal Climate Resilience, EPA STAG
 - **0.70** | [Notice of Intent to Publish a Funding Opportunity Announcement for Trailblazer Award for New and Early-Stage Investigators (R21 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/358886) | BIA Tribal Climate Resilience, EPA STAG
+- **0.70** | [Capital Improvements for At-Risk/Receivership/Substandard/Troubled PHAs](https://www.grants.gov/search-results-detail/361366) | BIA Tribal Climate Resilience
+- **0.70** | [Next-Generation Geothermal Field Tests and Geothermal Resource Characterization and Confirmation](https://www.grants.gov/search-results-detail/361365) | BIA Tribal Climate Resilience
+- **0.70** | [The Reentry Employment in Skilled Trades, Advanced Manufacturing, Registered Apprenticeships, and Training (RESTART) Initiative](https://www.grants.gov/search-results-detail/361368) | BIA Tribal Climate Resilience
+- **0.70** | [Veterans Legacy Grants Program](https://www.grants.gov/search-results-detail/360057) | BIA Tribal Climate Resilience
+- **0.70** | [Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Therapeutic Agent Characterization and Preclinical Efficacy Studies](https://www.grants.gov/search-results-detail/361370) | BIA Tribal Climate Resilience
+- **0.70** | [Innovation Grants to Nurture Initial Translational Efforts (IGNITE): Assay Development and Therapeutic Agent Identification](https://www.grants.gov/search-results-detail/361369) | BIA Tribal Climate Resilience
 - **0.70** | [Delta Rural Integrated Health Network Program](https://www.grants.gov/search-results-detail/361364) | BIA Tribal Climate Resilience
 - **0.70** | [Region 9 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361361) | BIA Tribal Climate Resilience
 - **0.70** | [University Centers for Developmental Disabilities in Education, Research, and Service](https://www.grants.gov/search-results-detail/361349) | BIA Tribal Climate Resilience
@@ -19379,7 +13722,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.70** | [HEAL Initiative: Program to Reveal and Evaluate Cells-to-gene Information that Specify Intricacies, Origins and the Nature of (PRECISION) Human Pain Network](https://www.grants.gov/search-results-detail/361334) | BIA Tribal Climate Resilience
 - **0.70** | [FY 2025 Region 4 Wetlands Program](https://www.grants.gov/search-results-detail/361338) | BIA Tribal Climate Resilience
 - **0.70** | [Region 08 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361337) | BIA Tribal Climate Resilience
-- **0.70** | [Feed the Future Innovation Labs](https://www.grants.gov/search-results-detail/361339) | BIA Tribal Climate Resilience
 - **0.70** | [Region 1 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361335) | BIA Tribal Climate Resilience
 - **0.70** | [OSERS-OSEP: State Technical Assistance Projects to Improve Services and Results for DeafBlind Children, Assistance Listing Number 84.326T](https://www.grants.gov/search-results-detail/361336) | BIA Tribal Climate Resilience
 - **0.70** | [Collaborative Program Grant for Multidisciplinary Teams](https://www.grants.gov/search-results-detail/361322) | BIA Tribal Climate Resilience
@@ -19393,19 +13735,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.70** | [BJA FY25 Local Law Enforcement Crime Gun Intelligence Center Integration Initiative](https://www.grants.gov/search-results-detail/361326) | BIA Tribal Climate Resilience
 - **0.70** | [BJA FY25 Smart Reentry Demonstration Program](https://www.grants.gov/search-results-detail/361324) | BIA Tribal Climate Resilience
 - **0.70** | [BJA FY25 Strengthening Community Supervision Agency Operations Program](https://www.grants.gov/search-results-detail/361323) | BIA Tribal Climate Resilience
-- **0.70** | [Region 7 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361311) | BIA Tribal Climate Resilience
-- **0.70** | [Region 06 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361312) | BIA Tribal Climate Resilience
-- **0.70** | [Region 5 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361319) | BIA Tribal Climate Resilience
-- **0.70** | [Region 10 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361313) | BIA Tribal Climate Resilience
-- **0.70** | [Rural Community Health Support Program](https://www.grants.gov/search-results-detail/361316) | BIA Tribal Climate Resilience
-- **0.70** | [Limited Competition: Small Grant Program for the NCATS Clinical and Translational Science Award (CTSA) Program (Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361317) | BIA Tribal Climate Resilience
-- **0.70** | [NLM Institutional Grants for Research Training in Biomedical Informatics, Data Science, and AI](https://www.grants.gov/search-results-detail/361318) | BIA Tribal Climate Resilience
-- **0.70** | [OJJDP FY25 Second Chance Act Youth Reentry Program](https://www.grants.gov/search-results-detail/361321) | BIA Tribal Climate Resilience
-- **0.70** | [OJJDP FY25 Second Chance Act Addressing the Needs of Incarcerated Parents and Their Minor Children](https://www.grants.gov/search-results-detail/361320) | BIA Tribal Climate Resilience
-- **0.70** | [Energy Frontier Research Centers (EFRCs)](https://www.grants.gov/search-results-detail/361309) | BIA Tribal Climate Resilience
-- **0.70** | [2026 Community Wood Energy and Wood Innovation Program](https://www.grants.gov/search-results-detail/360601) | BIA Tribal Climate Resilience
-- **0.70** | [2026 Wood Products Infrastructure Assistance Program](https://www.grants.gov/search-results-detail/360602) | BIA Tribal Climate Resilience
-- **0.70** | [Building EPSCoR-State/National Laboratory Partnerships](https://www.grants.gov/search-results-detail/361314) | BIA Tribal Climate Resilience
 - **0.70** | [REQUEST FOR INFORMATION &ndash; MUTUALLY BENEFICIAL MULTIDISCIPLINARY INNOVATION ECOSYSTEMS](https://www.grants.gov/search-results-detail/361029) | BIA Tribal Climate Resilience
 - **0.70** | [Engineering Improved Stem Cell-Derived Islet Cells for Replacement Therapies (R01 - Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/360931) | BIA Tribal Climate Resilience
 - **0.70** | [FY 2026 Continuation of Solicitation for the Office of Science Financial Assistance Program](https://www.grants.gov/search-results-detail/360678) | BIA Tribal Climate Resilience
@@ -19437,8 +13766,20 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.70** | [Forecast to Publish a Funding Opportunity Announcement for Copy of Integrative Neuroscience Initiative on Alcoholism (INIA) Consortia Research Resource (U24) (Clinical Trial Optional)](https://www.grants.gov/search-results-detail/358826) | BIA Tribal Climate Resilience
 - **0.70** | [Method to Extend Research in Time (MERIT) Award Extension Request (Type 4 eSubmission Clinical Trial Optional)](https://www.grants.gov/search-results-detail/358024) | BIA Tribal Climate Resilience
 - **0.69** | [To provide for reconciliation pursuant to section 2002 of the concurrent resolution on the budget for fiscal year 2016.](https://api.congress.gov/v3/bill/114/hr/3762?format=json) | IRS Elective Pay
-- **0.69** | [Acknowledging oppression, forced eviction, and suffering experienced by tens of thousands of Bhutanese citizens during the late 1980s and early 1990s, and encouraging steps toward justice, reconciliation, and lasting peace.](https://api.congress.gov/v3/bill/119/hres/1093?format=json) | IRS Elective Pay
 - **0.69** | [Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/359274) | BIA Tribal Climate Resilience, EPA STAG
+- **0.69** | [Region 7 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361311) | BIA Tribal Climate Resilience
+- **0.69** | [Region 06 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361312) | BIA Tribal Climate Resilience
+- **0.69** | [Region 5 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361319) | BIA Tribal Climate Resilience
+- **0.69** | [Region 10 Fiscal Year 2025 Wetland Program Development Grants](https://www.grants.gov/search-results-detail/361313) | BIA Tribal Climate Resilience
+- **0.69** | [Rural Community Health Support Program](https://www.grants.gov/search-results-detail/361316) | BIA Tribal Climate Resilience
+- **0.69** | [Limited Competition: Small Grant Program for the NCATS Clinical and Translational Science Award (CTSA) Program (Clinical Trial Optional)](https://www.grants.gov/search-results-detail/361317) | BIA Tribal Climate Resilience
+- **0.69** | [NLM Institutional Grants for Research Training in Biomedical Informatics, Data Science, and AI](https://www.grants.gov/search-results-detail/361318) | BIA Tribal Climate Resilience
+- **0.69** | [OJJDP FY25 Second Chance Act Youth Reentry Program](https://www.grants.gov/search-results-detail/361321) | BIA Tribal Climate Resilience
+- **0.69** | [OJJDP FY25 Second Chance Act Addressing the Needs of Incarcerated Parents and Their Minor Children](https://www.grants.gov/search-results-detail/361320) | BIA Tribal Climate Resilience
+- **0.69** | [Energy Frontier Research Centers (EFRCs)](https://www.grants.gov/search-results-detail/361309) | BIA Tribal Climate Resilience
+- **0.69** | [2026 Community Wood Energy and Wood Innovation Program](https://www.grants.gov/search-results-detail/360601) | BIA Tribal Climate Resilience
+- **0.69** | [2026 Wood Products Infrastructure Assistance Program](https://www.grants.gov/search-results-detail/360602) | BIA Tribal Climate Resilience
+- **0.69** | [Building EPSCoR-State/National Laboratory Partnerships](https://www.grants.gov/search-results-detail/361314) | BIA Tribal Climate Resilience
 - **0.69** | [Value-Added Producer Grant](https://www.grants.gov/search-results-detail/361290) | BIA Tribal Climate Resilience
 - **0.69** | [Strengthening Community Colleges Training Grants (Round 6)](https://www.grants.gov/search-results-detail/361307) | BIA Tribal Climate Resilience
 - **0.69** | [HEAL Initiative Whole Joint Health Program](https://www.grants.gov/search-results-detail/361304) | BIA Tribal Climate Resilience
@@ -19504,8 +13845,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.68** | [FY26 Obligation: R18AP00182 — SHOSHONE BANNOCK TRIBES](https://www.usaspending.gov/award/270286224) | USBR WaterSMART
 - **0.68** | [FY26 Obligation: R19AP00237 — QUECHAN INDIAN TRIBE](https://www.usaspending.gov/award/270287425) | USBR WaterSMART
 - **0.68** | [An act to provide for reconciliation pursuant to title II of H. Con. Res. 14.](https://api.congress.gov/v3/bill/119/hr/1?format=json) | IRS Elective Pay
-- **0.68** | [Commission on Equity and Reconciliation in the Uniformed Services Act](https://api.congress.gov/v3/bill/119/hr/7238?format=json) | IRS Elective Pay
-- **0.68** | [Commission on Equity and Reconciliation in the Uniformed Services Act](https://api.congress.gov/v3/bill/119/s/3691?format=json) | IRS Elective Pay
+- **0.68** | [Acknowledging oppression, forced eviction, and suffering experienced by tens of thousands of Bhutanese citizens during the late 1980s and early 1990s, and encouraging steps toward justice, reconciliation, and lasting peace.](https://api.congress.gov/v3/bill/119/hres/1093?format=json) | IRS Elective Pay
 - **0.67** | [Lead Hazard Reduction Capacity Building Grant Program](https://www.grants.gov/search-results-detail/361107) | BIA Tribal Climate Resilience, EPA GAP
 - **0.67** | [Specialized Alcohol Research Centers (P50 Clinical trial Optional)](https://www.grants.gov/search-results-detail/361216) | BIA Tribal Climate Resilience
 - **0.67** | [Pilot Projects Enhancing Utility and Usage of Common Fund Data Sets (R03 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359879) | BIA Tribal Climate Resilience
@@ -19568,7 +13908,8 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.67** | [Advancing outbreak detection, notification, and response capacity through 7-1-7 implementation in partner countries](https://www.grants.gov/search-results-detail/361093) | BIA Tribal Climate Resilience
 - **0.67** | [State Offices of Rural Health Program](https://www.grants.gov/search-results-detail/361094) | BIA Tribal Climate Resilience
 - **0.67** | [Telehealth Centers of Excellence](https://www.grants.gov/search-results-detail/361085) | BIA Tribal Climate Resilience
-- **0.66** | [FY26 Obligation: 4798DRTXP00000005 — TEXAS DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/355183766) | FEMA BRIC
+- **0.66** | [Commission on Equity and Reconciliation in the Uniformed Services Act](https://api.congress.gov/v3/bill/119/hr/7238?format=json) | IRS Elective Pay
+- **0.66** | [Commission on Equity and Reconciliation in the Uniformed Services Act](https://api.congress.gov/v3/bill/119/s/3691?format=json) | IRS Elective Pay
 - **0.66** | [FY26 Obligation: 55IT0906400 — MOHEGAN TRIBE OF INDIANS OF CONNECTICUT](https://www.usaspending.gov/award/355241186) | HUD IHBG
 - **0.65** | [Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements](https://www.grants.gov/search-results-detail/361053) | BIA Tribal Climate Resilience, USBR TAP
 - **0.65** | [Rural Health Clinic Technical Assistance Program](https://www.grants.gov/search-results-detail/361052) | BIA Tribal Climate Resilience, USBR TAP
@@ -19771,7 +14112,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.65** | [LAUNCHing Leaders for Future U.S. Investments in Global Health Research (D43 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/360638) | BIA Tribal Climate Resilience
 - **0.65** | [NHLBI TOPMed: Omics Phenotypes of Heart, Lung, and Blood Disorders (X01 - Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359942) | BIA Tribal Climate Resilience
 - **0.65** | [Clinical Trial Readiness for Rare Diseases, Disorders, and Syndromes (R21 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359645) | BIA Tribal Climate Resilience
-- **0.65** | [NSF/CASIS Transport Phenomena Research at the International Space Station to Benefit Life on Earth](https://www.grants.gov/search-results-detail/360640) | BIA Tribal Climate Resilience
 - **0.65** | [The NIDDK Disorders of Gastrointestinal Interoception Consortium Clinical Centers (DGIC)](https://www.grants.gov/search-results-detail/360623) | BIA Tribal Climate Resilience
 - **0.65** | [The NIDDK Inflammatory Bowel Disease Genetics Consortium (IBDGC) Data Coordinating Center](https://www.grants.gov/search-results-detail/360622) | BIA Tribal Climate Resilience
 - **0.65** | [The NIDDK Inflammatory Bowel Disease Genetics Consortium (IBDGC) Genomic Research Centers](https://www.grants.gov/search-results-detail/360621) | BIA Tribal Climate Resilience
@@ -20012,8 +14352,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.65** | [PRIMED-AI: Validation Center (U54 Clinical Trial Not Allowed)&#8239;](https://www.grants.gov/search-results-detail/359269) | BIA Tribal Climate Resilience
 - **0.65** | [PRIMED-AI: Multi-use Framework Playbooks (UG3 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359271) | BIA Tribal Climate Resilience
 - **0.65** | [Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study Renewal - Data Analysis, Informatics and Resource Center, and Coordinating Center (U24 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/359275) | BIA Tribal Climate Resilience
-- **0.65** | [New NIA Institutional Training Programs for Aging Research](https://www.grants.gov/search-results-detail/359276) | BIA Tribal Climate Resilience
-- **0.65** | [Research Opportunities in Crisis Response Services for Suicide Prevention](https://www.grants.gov/search-results-detail/359273) | BIA Tribal Climate Resilience
 - **0.65** | [U.S. Embassy Port Louis Public Diplomacy Small Grants Program](https://www.grants.gov/search-results-detail/359240) | BIA Tribal Climate Resilience
 - **0.65** | [EDA FY25 Disaster Supplemental](https://www.grants.gov/search-results-detail/359225) | BIA Tribal Climate Resilience
 - **0.65** | [FY2025 APS- Opioid and Substance Use Disorder Intervention](https://www.grants.gov/search-results-detail/359228) | BIA Tribal Climate Resilience
@@ -20288,7 +14626,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.65** | [Development of Animal Models and Related Biological Materials for Research (R21 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357138) | BIA Tribal Climate Resilience
 - **0.65** | [BRAIN Initiative: Development and Validation of Novel Tools to Probe Cell-Specific and Circuit-Specific Processes in the Brain (R01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357137) | BIA Tribal Climate Resilience
 - **0.65** | [Developing novel theory and methods for understanding the genetic architecture of complex human traits (R01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357135) | BIA Tribal Climate Resilience
-- **0.65** | [Coupling, Energetics, and Dynamics of Atmospheric Regions](https://www.grants.gov/search-results-detail/357105) | BIA Tribal Climate Resilience
 - **0.65** | [Focused Technology Research and Development (R01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357112) | BIA Tribal Climate Resilience
 - **0.65** | [Technology Development Research for Establishing Feasibility and Proof of Concept (R21 - Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357113) | BIA Tribal Climate Resilience
 - **0.65** | [Understanding the Intersection of Forced Scamming and Child Labor in Southeast Asia](https://www.grants.gov/search-results-detail/357126) | BIA Tribal Climate Resilience
@@ -20306,6 +14643,11 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.65** | [Population Approaches to Reducing Alcohol-related Cancer Risk (R01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/357021) | BIA Tribal Climate Resilience
 - **0.65** | [Natural History of Disorders Screenable in the Newborn Period (R01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/357010) | BIA Tribal Climate Resilience
 - **0.65** | [Clinical Characterization of Cancer Therapy-induced Adverse Sequelae and Mechanism-based Interventional Strategies (R01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/357015) | BIA Tribal Climate Resilience
+- **0.65** | [Bioengineering Partnerships with Industry (U01 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/357019) | BIA Tribal Climate Resilience
+- **0.65** | [Research Projects to Enhance Applicability of Mammalian Models for Translational Research (R01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357005) | BIA Tribal Climate Resilience
+- **0.65** | [Assay development and screening for discovery of chemical probes, drugs or immunomodulators (R01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357014) | BIA Tribal Climate Resilience
+- **0.65** | [Molecular Imaging of Inflammation in Cancer (R01 Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/357002) | BIA Tribal Climate Resilience
+- **0.64** | [FY26 Obligation: 4798DRTXP00000005 — TEXAS DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/355183766) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4794DRFLP00000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/354892433) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4757DRMIP0000005 — STATE OF MICHIGAN](https://www.usaspending.gov/award/354303749) | FEMA BRIC
 - **0.64** | [FY26 Obligation: 4807DRSDP0000005 — SOUTH DAKOTA DEPARTMENT OF PUBLIC SAFETY](https://www.usaspending.gov/award/354303772) | FEMA BRIC
@@ -20563,7 +14905,6 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.63** | [FY26 Obligation: 4734DRFLP0000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/354303743) | FEMA BRIC
 - **0.63** | [FY26 Obligation: 5154FMNVP0000005 — NEVADA OFFICE OF THE MILITARY](https://www.usaspending.gov/award/246327825) | FEMA BRIC
 - **0.63** | [FY26 Obligation: 4673DRFLP0000005 — STATE OF FLORIDA DIVISION OF EMERGENCY MANAGEMENT](https://www.usaspending.gov/award/354303733) | FEMA BRIC
-- **0.63** | [Rescission of the Greenhouse Gas Endangerment Finding and Motor Vehicle Greenhouse Gas Emission Standards Under the Clean Air Act](https://www.federalregister.gov/documents/2026/02/18/2026-03157/rescission-of-the-greenhouse-gas-endangerment-finding-and-motor-vehicle-greenhouse-gas-emission) | DOT PROTECT, Tribal Air Quality Management
 - **0.62** | [FY26 Obligation: 98T33801 — HAVASUPAI TRIBE](https://www.usaspending.gov/award/258855092) | EPA GAP
 - **0.62** | [FY26 Obligation: 02F31801 — TONKAWA TRIBE](https://www.usaspending.gov/award/198418455) | EPA GAP
 - **0.61** | [Extending the Reporting Deadline Under the Greenhouse Gas Reporting Rule for 2025](https://www.federalregister.gov/documents/2026/02/27/2026-03995/extending-the-reporting-deadline-under-the-greenhouse-gas-reporting-rule-for-2025) | DOT PROTECT
@@ -20773,6 +15114,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.58** | [FY26 Obligation: DEIE0000125 — RINCON BAND OF LUISENO INDIANS](https://www.usaspending.gov/award/260369758) | DOE Indian Energy
 - **0.58** | [FY26 Obligation: DEIE0000154 — PASKENTA BAND OF NOMLAKI INDIANS](https://www.usaspending.gov/award/260369780) | DOE Indian Energy
 - **0.58** | [FY26 Obligation: R23AP00408 — QUINCY COLUMBIA BASIN IRRIGATION DISTRICT](https://www.usaspending.gov/award/270331345) | USBR WaterSMART
+- **0.57** | [Agency Information Collection Activities; Submission for OMB Review; Comment Request; Protections for Transit Workers Under Section 5333(b) Urban Program](https://www.federalregister.gov/documents/2026/03/05/2026-04362/agency-information-collection-activities-submission-for-omb-review-comment-request-protections-for) | DOT PROTECT
 - **0.57** | [FY26 Obligation: 03J20501 — REGION 10 TRIBAL OPERATIONS COMMITTEE CONSORTIUM](https://www.usaspending.gov/award/354250769) | EPA GAP
 - **0.57** | [FY26 Obligation: 98T75801 — FORT MCDERMITT PAIUTE AND SHOSHONE TRIBE](https://www.usaspending.gov/award/258855489) | EPA GAP
 - **0.57** | [FY26 Obligation: 98T55401 — CAHTO TRIBE OF THE LAYTONVILLE RANCHERIA](https://www.usaspending.gov/award/258855301) | EPA GAP
@@ -20786,6 +15128,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.56** | [FY26 Obligation: DEIE0000194 — MINNESOTA CHIPPEWA TRIBE - WHITE EARTH BAND](https://www.usaspending.gov/award/260369817) | DOE Indian Energy
 - **0.56** | [FY26 Obligation: 00E98407 — LITTLE TRAVERSE BAY BANDS OF ODAWA INDIANS](https://www.usaspending.gov/award/197962723) | Tribal Air Quality Management
 - **0.56** | [FY26 Obligation: 98T93601 — CHER-AE HEIGHTS INDIAN COMMUNITY OF THE TRINIDAD RANCHERIA](https://www.usaspending.gov/award/258855656) | EPA GAP
+- **0.56** | [Improve and Enhance the Work Opportunity Tax Credit Act](https://api.congress.gov/v3/bill/119/hr/6231?format=json) | IRS Elective Pay
 - **0.56** | [Historic Tax Credit Growth and Opportunity Act of 2025](https://api.congress.gov/v3/bill/119/s/1459?format=json) | IRS Elective Pay
 - **0.55** | [FY26 Obligation: 02F42404 — NEW MEXICO FINANCE AUTHORITY](https://www.usaspending.gov/award/355151843) | EPA STAG
 - **0.55** | [FY26 Obligation: DEEE0011684 — OREGON STATE UNIVERSITY](https://www.usaspending.gov/award/260362011) | DOE Indian Energy
@@ -20794,40 +15137,41 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.55** | [Historic Tax Credit Growth and Opportunity Act of 2025](https://api.congress.gov/v3/bill/119/hr/2941?format=json) | IRS Elective Pay
 - **0.55** | [Energy Burden Tax Credit Act](https://api.congress.gov/v3/bill/119/hr/7044?format=json) | IRS Elective Pay
 - **0.54** | [FY26 Obligation: R24AP00724 — WESTLANDS WATER DISTRICT](https://www.usaspending.gov/award/355682552) | USBR WaterSMART
-- **0.54** | [FY26 Obligation: R25AP00460 — SAN BERNARDINO VALLEY CONSERVATION TRUST](https://www.usaspending.gov/award/355682561) | USBR WaterSMART
 - **0.54** | [FY26 Obligation: R26AC00059 — SAN LUIS OBISPO COUNTY FLOOD CONTROL AND WATER CONSERVATION DISTRICT](https://www.usaspending.gov/award/355682565) | USBR WaterSMART
-- **0.54** | [FY26 Obligation: 693JJ22630000Y800PAT062257 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713043) | DOT PROTECT
 - **0.54** | [Air Plan Approval; Ohio; Clean Data Determination for the Cleveland, Ohio Area for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/27/2026-03934/air-plan-approval-ohio-clean-data-determination-for-the-cleveland-ohio-area-for-the-2015-ozone) | DOT PROTECT, Tribal Air Quality Management
 - **0.54** | [Air Plan Approval; Illinois; Clean Data Determination for the Illinois Portion of the St. Louis Area for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/26/2026-03846/air-plan-approval-illinois-clean-data-determination-for-the-illinois-portion-of-the-st-louis-area) | DOT PROTECT, Tribal Air Quality Management
 - **0.54** | [Air Plan Approval; Missouri; Clean Data Determination for the 2015 8-Hour Ozone Standard for the Missouri Portion of the St. Louis Nonattainment Area](https://www.federalregister.gov/documents/2026/02/26/2026-03845/air-plan-approval-missouri-clean-data-determination-for-the-2015-8-hour-ozone-standard-for-the) | DOT PROTECT, Tribal Air Quality Management
 - **0.54** | [Notice of Inventory Completion: Santa Barbara Museum of Natural History, Santa Barbara, CA](https://www.federalregister.gov/documents/2026/03/02/2026-04055/notice-of-inventory-completion-santa-barbara-museum-of-natural-history-santa-barbara-ca) | DOT PROTECT
 - **0.54** | [Notice of Intended Repatriation: Turtle Bay Exploration Park, Redding, CA](https://www.federalregister.gov/documents/2026/02/23/2026-03565/notice-of-intended-repatriation-turtle-bay-exploration-park-redding-ca) | DOT PROTECT
+- **0.53** | [Clean Water Act Hazardous Substance Facility Response Plans: Compliance Date Delay and Changes To Reflect Administration Policy](https://www.federalregister.gov/documents/2026/03/05/2026-04388/clean-water-act-hazardous-substance-facility-response-plans-compliance-date-delay-and-changes-to) | DOT PROTECT
 - **0.53** | [Solid American Hardwood Tax Credit Act](https://api.congress.gov/v3/bill/119/s/1964?format=json) | IRS Elective Pay
 - **0.53** | [Notice of Inventory Completion: Fowler Museum at UCLA, Los Angeles, CA](https://www.federalregister.gov/documents/2026/02/23/2026-03557/notice-of-inventory-completion-fowler-museum-at-ucla-los-angeles-ca) | DOT PROTECT
 - **0.53** | [FY26 Obligation: 693JJ22640000Y926VA5B03656 — VIRGINIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713351) | FHWA TTP Safety
-- **0.53** | [FY26 Obligation: 693JJ22640000Y926VA5B01669 — VIRGINIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713350) | FHWA TTP Safety
 - **0.53** | [FY26 Obligation: R25AP00465 — RANCHO CALIFORNIA WATER DISTRICT](https://www.usaspending.gov/award/355682562) | USBR WaterSMART
-- **0.53** | [FY26 Obligation: 693JJ22630000Y800NM1102270 — NEW MEXICO DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713041) | DOT PROTECT
-- **0.53** | [FY26 Obligation: 693JJ22630000Y800VA5B01805 — VIRGINIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713047) | DOT PROTECT
-- **0.53** | [FY26 Obligation: 693JJ22630000Y800UTF018285 — UTAH DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713046) | DOT PROTECT
+- **0.53** | [FY26 Obligation: R25AP00460 — SAN BERNARDINO VALLEY CONSERVATION TRUST](https://www.usaspending.gov/award/355682561) | USBR WaterSMART
+- **0.53** | [FY26 Obligation: 693JJ22630000Y800PAT062257 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713043) | DOT PROTECT
 - **0.53** | [FY26 Obligation: 693JJ22630000Y800ME2722420 — MAINE DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713039) | DOT PROTECT
 - **0.53** | [Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention](https://www.federalregister.gov/documents/2026/02/24/2026-03633/accidental-release-prevention-requirements-risk-management-programs-under-the-clean-air-act-common) | DOT PROTECT, Tribal Air Quality Management
 - **0.52** | [Privacy Act of 1974; System of Records](https://www.federalregister.gov/documents/2026/03/04/2026-04216/privacy-act-of-1974-system-of-records) | DOT PROTECT
+- **0.52** | [Paper Manifest Sunset Rule; Modification of the Hazardous Waste Manifest Regulations](https://www.federalregister.gov/documents/2026/03/05/2026-04366/paper-manifest-sunset-rule-modification-of-the-hazardous-waste-manifest-regulations) | DOT PROTECT
 - **0.52** | [Notice of Intended Disposition: U.S. Department of the Interior, Bureau of Land Management, Colorado State Office, Lakewood, CO](https://www.federalregister.gov/documents/2026/03/02/2026-04042/notice-of-intended-disposition-us-department-of-the-interior-bureau-of-land-management-colorado) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22640000Y926MN0061355 — MINNESOTA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713347) | FHWA TTP Safety
 - **0.51** | [FY26 Obligation: 693JJ22640000Y926MI26A0380 — TRANSPORTATION, MICHIGAN DEPARTMENT OF](https://www.usaspending.gov/award/355713345) | FHWA TTP Safety
 - **0.51** | [FY26 Obligation: 693JJ22640000Y926CA6328127 — DEPARTMENT OF TRANSPORTATION CALIFORNIA](https://www.usaspending.gov/award/355330876) | FHWA TTP Safety
+- **0.51** | [FY26 Obligation: 693JJ22640000Y926VA5B01669 — VIRGINIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713350) | FHWA TTP Safety
 - **0.51** | [FY26 Obligation: 693JJ22640000Y926WA4463002 — WASHINGTON ST DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330881) | FHWA TTP Safety
 - **0.51** | [FY26 Obligation: 26DG11062752030 — SWEET HOME FIRE & AMBULANCE DISTRICT](https://www.usaspending.gov/award/355709983) | USDA Wildfire Defense Grants
 - **0.51** | [FY26 Obligation: 26DG11062752031 — DESCHUTES COUNTY](https://www.usaspending.gov/award/355709984) | USDA Wildfire Defense Grants
 - **0.51** | [FY26 Obligation: 25DG11094200202 — DEPARTMENT OF CONSERVATION & NATURAL RESOURCES PENNSYLVANIA](https://www.usaspending.gov/award/355709893) | USDA Wildfire Defense Grants
 - **0.51** | [FY26 Obligation: 26DG11094200002 — AGRICULTURE, CONSERVATION & FORESTRY, MAINE DEPARTMENT OF](https://www.usaspending.gov/award/355327349) | USDA Wildfire Defense Grants
 - **0.51** | [FY26 Obligation: R25AP00393 — SOUTHERN NEVADA WATER AUTHORITY](https://www.usaspending.gov/award/355307482) | USBR WaterSMART
-- **0.51** | [FY26 Obligation: R25AC00434 — GRAND VALLEY WATER USERS ASSOCIATION](https://www.usaspending.gov/award/355307479) | USBR WaterSMART
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800NJF00S132 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/355330513) | DOT PROTECT
+- **0.51** | [FY26 Obligation: 693JJ22630000Y800NM1102270 — NEW MEXICO DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713041) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800PAT046311 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330518) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800PAT036201 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713042) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y810NJF00S132 — TRANSPORTATION, NEW JERSEY DEPT OF](https://www.usaspending.gov/award/355330520) | DOT PROTECT
+- **0.51** | [FY26 Obligation: 693JJ22630000Y800VA5B01805 — VIRGINIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713047) | DOT PROTECT
+- **0.51** | [FY26 Obligation: 693JJ22630000Y800UTF018285 — UTAH DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355713046) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800WV0019638 — WVDOT DIVISION OF HIGHWAYS](https://www.usaspending.gov/award/355713048) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y810CA5058117 — DEPARTMENT OF TRANSPORTATION CALIFORNIA](https://www.usaspending.gov/award/355713049) | DOT PROTECT
 - **0.51** | [FY26 Obligation: 693JJ22630000Y800TN0157011 — TENNESSEE DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330519) | DOT PROTECT
@@ -20835,13 +15179,8 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.51** | [FY26 Obligation: 693JJ22630000Y830PAT016277 — PENNSYLVANIA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330522) | DOT PROTECT
 - **0.50** | [Approval and Promulgation of State Air Quality Plans for Designated Facilities and Pollutants; Texas; Control of Emissions From Existing Municipal Solid Waste Landfills](https://www.federalregister.gov/documents/2026/03/04/2026-04338/approval-and-promulgation-of-state-air-quality-plans-for-designated-facilities-and-pollutants-texas) | DOT PROTECT, Tribal Air Quality Management
 - **0.50** | [Air Plan Approval; Arizona; Attainment Plan for the Hayden SO2 Nonattainment Area for the 1971 and 2010 Sulfur Dioxide National Ambient Air Quality Standards](https://www.federalregister.gov/documents/2026/03/04/2026-04339/air-plan-approval-arizona-attainment-plan-for-the-hayden-so2-nonattainment-area-for-the-1971-and) | DOT PROTECT, Tribal Air Quality Management
-- **0.50** | [Air Plan Approval; AK; Regional Haze State Implementation Plan for the Second Implementation Period](https://www.federalregister.gov/documents/2026/03/03/2026-04159/air-plan-approval-ak-regional-haze-state-implementation-plan-for-the-second-implementation-period) | DOT PROTECT, Tribal Air Quality Management
 - **0.50** | [National Emission Standards for Hazardous Air Pollutants: Coal- and Oil-Fired Electric Utility Steam Generating Units: Final Repeal](https://www.federalregister.gov/documents/2026/02/24/2026-03638/national-emission-standards-for-hazardous-air-pollutants-coal--and-oil-fired-electric-utility-steam) | DOT PROTECT
 - **0.50** | [Petroleum-Equivalent Fuel Economy Calculation](https://www.federalregister.gov/documents/2026/02/19/2026-03300/petroleum-equivalent-fuel-economy-calculation) | DOT PROTECT
-- **0.50** | [Notice of Request for Extension of a Currently Approved Information Collection](https://www.federalregister.gov/documents/2026/02/18/2026-03140/notice-of-request-for-extension-of-a-currently-approved-information-collection) | USBR TAP
-- **0.50** | [Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/1144?format=json) | DOT PROTECT
-- **0.50** | [Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/2961?format=json) | DOT PROTECT
-- **0.50** | [To amend the William Wilberforce Trafficking Victims Protection Reauthorization Act of 2008 to establish strong requirements to ensure safe placements for unaccompanied alien children.](https://api.congress.gov/v3/bill/119/hr/7538?format=json) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22640000Y603NE0261181 — NEBRASKA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354807134) | FHWA TTP Safety
 - **0.49** | [FY26 Obligation: 693JJ22640000Y603TN0002309 — TENNESSEE DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330873) | FHWA TTP Safety
 - **0.49** | [FY26 Obligation: 693JJ22640000Y603FLD526058 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/355330869) | FHWA TTP Safety
@@ -20851,6 +15190,7 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.49** | [FY26 Obligation: 26DG11083150402 — BLACKBERRY MOUNTAIN RESIDENTIAL CONDOMINIUM OWNERS' ASSOCIATION](https://www.usaspending.gov/award/354803859) | USDA Wildfire Defense Grants
 - **0.49** | [FY26 Obligation: R25AP00545 — CONTRA COSTA WATER DISTRICT](https://www.usaspending.gov/award/354776930) | USBR WaterSMART
 - **0.49** | [FY26 Obligation: R25AP00462 — MOJAVE WATER AGENCY PUBLIC FACILITIES CORPORATION](https://www.usaspending.gov/award/354335804) | USBR WaterSMART
+- **0.49** | [FY26 Obligation: R25AC00434 — GRAND VALLEY WATER USERS ASSOCIATION](https://www.usaspending.gov/award/355307479) | USBR WaterSMART
 - **0.49** | [FY26 Obligation: 693JJ22630000Y800MN0012325 — MINNESOTA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354806842) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22640001YP63WV0039440PROT — WVDOT DIVISION OF HIGHWAYS](https://www.usaspending.gov/award/354453525) | DOT PROTECT
 - **0.49** | [FY26 Obligation: 693JJ22630000Y800MN8826139 — MINNESOTA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/354806843) | DOT PROTECT
@@ -20860,10 +15200,13 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.49** | [FY26 Obligation: 693JJ22630000Y810WV0019635 — WVDOT DIVISION OF HIGHWAYS](https://www.usaspending.gov/award/354806851) | DOT PROTECT
 - **0.49** | [Notice of Inventory Completion: Tennessee Department of Environment and Conservation Division of Archaeology, Nashville, TN](https://www.federalregister.gov/documents/2026/02/23/2026-03567/notice-of-inventory-completion-tennessee-department-of-environment-and-conservation-division-of) | DOT PROTECT
 - **0.49** | [Air Plan Approvals; Illinois; Regional Haze Plan for the Second Implementation Period; Interstate Transport of Air Pollution for the 2012 PM2.5 and 2015 Ozone NAAQS](https://www.federalregister.gov/documents/2026/02/27/2026-03936/air-plan-approvals-illinois-regional-haze-plan-for-the-second-implementation-period-interstate) | DOT PROTECT, Tribal Air Quality Management
+- **0.49** | [Air Plan Approval; AK; Regional Haze State Implementation Plan for the Second Implementation Period](https://www.federalregister.gov/documents/2026/03/03/2026-04159/air-plan-approval-ak-regional-haze-state-implementation-plan-for-the-second-implementation-period) | DOT PROTECT, Tribal Air Quality Management
 - **0.49** | [Air Plan Approval; Missouri; Reporting Emission Data, Emission Fees, and Process Information](https://www.federalregister.gov/documents/2026/02/26/2026-03888/air-plan-approval-missouri-reporting-emission-data-emission-fees-and-process-information) | DOT PROTECT, Tribal Air Quality Management
 - **0.49** | [Air Plan Approval; Connecticut; State Implementation Plan Revisions Required as a Result of a Definition Change Due to the Ozone Reclassification](https://www.federalregister.gov/documents/2026/02/26/2026-03887/air-plan-approval-connecticut-state-implementation-plan-revisions-required-as-a-result-of-a) | DOT PROTECT, Tribal Air Quality Management
 - **0.49** | [Air Plan Approval; Michigan; Moderate Attainment Plan Elements for the Allegan County, Berrien County, and Muskegon County Areas for the 2015 Ozone Standard](https://www.federalregister.gov/documents/2026/02/26/2026-03880/air-plan-approval-michigan-moderate-attainment-plan-elements-for-the-allegan-county-berrien-county) | DOT PROTECT, Tribal Air Quality Management
+- **0.49** | [Tribal Advisory Committee; Notice of Solicitation for Nominations](https://www.federalregister.gov/documents/2026/03/05/2026-04387/tribal-advisory-committee-notice-of-solicitation-for-nominations) | EPA STAG
 - **0.49** | [New Mexico and Oklahoma Statewide Tribal Municipal Separate Storm Sewer System (MS4) General Permit Proposal](https://www.federalregister.gov/documents/2026/03/04/2026-04319/new-mexico-and-oklahoma-statewide-tribal-municipal-separate-storm-sewer-system-ms4-general-permit) | DOT PROTECT
+- **0.48** | [Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado-Liquor Code Amendment](https://www.federalregister.gov/documents/2026/03/05/2026-04378/southern-ute-indian-tribe-of-the-southern-ute-reservation-colorado-liquor-code-amendment) | 
 - **0.48** | [FY26 Obligation: 120041228Z001 — STATE OF FLORIDA DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/202624551) | FHWA TTP Safety
 - **0.48** | [FY26 Obligation: 693JJ22540000ER05NCER24381 — TRANSPORTATION NORTH CAROLINA DEPARTMENT](https://www.usaspending.gov/award/251213831) | FHWA TTP Safety
 - **0.48** | [FY26 Obligation: 693JJ22430000Y001TX2024944 — TEXAS DEPARTMENT OF TRANSPORTATION](https://www.usaspending.gov/award/251151053) | FHWA TTP Safety
@@ -25366,8 +19709,11 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.48** | [FY26 Obligation: 693JJ22130000Z23ECA5060296 — DEPARTMENT OF TRANSPORTATION CALIFORNIA](https://www.usaspending.gov/award/251036158) | FHWA TTP Safety
 - **0.48** | [FY26 Obligation: T-AN-16-TA-0010 — FIRSTPIC, INC.](https://www.usaspending.gov/award/271475245) | HUD IHBG
 - **0.48** | [FY26 Obligation: N-IT-16-TA-0001 — THE ASSOCIATION OF ALASKA HOUSING AUTHORITIES](https://www.usaspending.gov/award/268688308) | HUD IHBG
+- **0.48** | [Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/1144?format=json) | DOT PROTECT
 - **0.48** | [Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/2796?format=json) | DOT PROTECT
+- **0.48** | [Frederick Douglass Trafficking Victims Prevention and Protection Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/2961?format=json) | DOT PROTECT
 - **0.48** | [Water Infrastructure Assistance Reauthorization Act](https://api.congress.gov/v3/bill/119/hr/7476?format=json) | EPA STAG
+- **0.48** | [To amend the William Wilberforce Trafficking Victims Protection Reauthorization Act of 2008 to establish strong requirements to ensure safe placements for unaccompanied alien children.](https://api.congress.gov/v3/bill/119/hr/7538?format=json) | DOT PROTECT
 - **0.48** | [FY26 Obligation: 96220324 — NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION](https://www.usaspending.gov/award/258059947) | EPA STAG, DOT PROTECT
 - **0.48** | [FY26 Obligation: 02D37925 — FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION](https://www.usaspending.gov/award/353150079) | EPA STAG, DOT PROTECT
 - **0.48** | [FY26 Obligation: 96220323 — NEW JERSEY DEPARTMENT OF ENVIRONMENTAL PROTECTION](https://www.usaspending.gov/award/258059946) | EPA STAG, DOT PROTECT
@@ -26300,17 +20646,19 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.48** | [Notice of Intended Disposition: U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore, St. Marys, GA](https://www.federalregister.gov/documents/2026/02/23/2026-03562/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island) | DOT PROTECT
 - **0.48** | [Notice of Intended Disposition: U.S. Department of the Interior, National Park Service, Cumberland Island National Seashore, St. Marys, GA](https://www.federalregister.gov/documents/2026/02/23/2026-03561/notice-of-intended-disposition-us-department-of-the-interior-national-park-service-cumberland-island) | DOT PROTECT
 - **0.48** | [Air Plan Approval; Indiana; Keystone VOC RACT Alternative Control](https://www.federalregister.gov/documents/2026/02/27/2026-03933/air-plan-approval-indiana-keystone-voc-ract-alternative-control) | DOT PROTECT
+- **0.47** | [Reduction in Force](https://www.federalregister.gov/documents/2026/03/05/2026-04377/reduction-in-force) | USBR TAP
 - **0.46** | [Employee or Independent Contractor Status Under the Fair Labor Standards Act, Family and Medical Leave Act, and Migrant and Seasonal Agricultural Worker Protection Act](https://www.federalregister.gov/documents/2026/02/27/2026-03962/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical) | DOT PROTECT
 - **0.46** | [Implementing Statutory Addition of Certain Per- and Polyfluoroalkyl Substances (PFAS) to the Toxics Release Inventory Beginning With Reporting Year 2026](https://www.federalregister.gov/documents/2026/02/27/2026-03944/implementing-statutory-addition-of-certain-per--and-polyfluoroalkyl-substances-pfas-to-the-toxics) | DOT PROTECT
 - **0.45** | [Parts and Accessories Necessary for Safe Operation; Certification and Labeling Requirements for Rear Impact Protection Guards](https://www.federalregister.gov/documents/2026/02/19/2026-03255/parts-and-accessories-necessary-for-safe-operation-certification-and-labeling-requirements-for-rear) | DOT PROTECT
-- **0.45** | [Veterans 2nd Amendment Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/478?format=json) | DOT PROTECT
 - **0.45** | [Living Donor Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/1552?format=json) | DOT PROTECT
-- **0.45** | [Providing for consideration of the joint resolution (H.J. Res. 60) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Park Service relating to "Glen Canyon National Recreation Area: Motor Vehicles"; providing for consideration of the joint resolution (H.J. Res. 78) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to "Endangered and Threatened Wildlife and Plants; Endangered Species Status for the San Francisco Bay-Delta Distinct Population Segment of the Longfin Smelt"; providing for consideration of the joint resolution (H.J. Res. 87) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power Train Certification; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 88) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 89) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The 'Omnibus' Low NOX Regulation; Waiver of Preemption; Notice of Decision"; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/354?format=json) | DOT PROTECT
-- **0.44** | [Notice of Intent To Prepare a Programmatic Environmental Assessment; Initiation of Public Scoping Under the National Environmental Policy Act; Initiation of Consultation Under Section 106 of the National Historic Preservation Act; and Notice of Intent To Develop a Section 106 Programmatic Agreement With the Alaska State Historic Preservation Officer](https://www.federalregister.gov/documents/2026/02/18/2026-03106/notice-of-intent-to-prepare-a-programmatic-environmental-assessment-initiation-of-public-scoping) | DOT PROTECT
 - **0.43** | [Protect Our Military Families’ 2nd Amendment Rights Act](https://api.congress.gov/v3/bill/119/hr/2070?format=json) | DOT PROTECT
+- **0.43** | [Veterans 2nd Amendment Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/478?format=json) | DOT PROTECT
+- **0.43** | [Providing for consideration of the joint resolution (H.J. Res. 60) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Park Service relating to "Glen Canyon National Recreation Area: Motor Vehicles"; providing for consideration of the joint resolution (H.J. Res. 78) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to "Endangered and Threatened Wildlife and Plants; Endangered Species Status for the San Francisco Bay-Delta Distinct Population Segment of the Longfin Smelt"; providing for consideration of the joint resolution (H.J. Res. 87) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power Train Certification; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 88) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision"; providing for consideration of the joint resolution (H.J. Res. 89) providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to "California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The 'Omnibus' Low NOX Regulation; Waiver of Preemption; Notice of Decision"; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/354?format=json) | DOT PROTECT
 - **0.43** | [Library of Congress Sound Recording and Film Preservation Programs Reauthorization Act of 2016](https://api.congress.gov/v3/bill/114/s/2893?format=json) | 
 - **0.42** | [Reauthorization of Dairy Forward Pricing Program](https://www.federalregister.gov/documents/2026/02/27/2026-03985/reauthorization-of-dairy-forward-pricing-program) | 
-- **0.42** | [To authorize leases of up to 99 years for land held in trust for federally recognized Indian Tribes.](https://api.congress.gov/v3/bill/119/hr/5910?format=json) | 
+- **0.42** | [Tribal Trust Land Homeownership Act of 2025](https://api.congress.gov/v3/bill/119/hr/2130?format=json) | 
+- **0.42** | [Albuquerque Indian School Act of 2025](https://api.congress.gov/v3/bill/119/hr/6162?format=json) | 
+- **0.42** | [Tribal Trust Land Homeownership Act of 2025](https://api.congress.gov/v3/bill/119/s/723?format=json) | 
 - **0.42** | [Department of the Interior Tribal Self-Governance Act of 2015](https://api.congress.gov/v3/bill/114/s/286?format=json) | 
 - **0.41** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Maleic Hydrazide, et al.](https://www.federalregister.gov/documents/2026/02/27/2026-03942/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-maleic) | DOT PROTECT
 - **0.41** | [Air Plan Approval; Michigan; 2015 Ozone Moderate Reasonably Available Control Technology](https://www.federalregister.gov/documents/2026/02/27/2026-03937/air-plan-approval-michigan-2015-ozone-moderate-reasonably-available-control-technology) | DOT PROTECT
@@ -26318,28 +20666,43 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.41** | [Wyoming: Approval of State Coal Combustion Residuals Permit Program](https://www.federalregister.gov/documents/2026/02/26/2026-03820/wyoming-approval-of-state-coal-combustion-residuals-permit-program) | DOT PROTECT
 - **0.41** | [Air Plan Approval; Ohio; Source-Specific Non-CTG RACT and SIP Strengthening for Ohio](https://www.federalregister.gov/documents/2026/02/27/2026-03931/air-plan-approval-ohio-source-specific-non-ctg-ract-and-sip-strengthening-for-ohio) | DOT PROTECT
 - **0.41** | [Constellation Energy Generation, LLC; Christopher M. Crane Clean Energy Center; Applications for Amendments to Renewed Facility License Involving Proposed No Significant Hazards Consideration Determination and Containing Safeguards Information and Order Imposing Procedures for Access to Safeguards Information](https://www.federalregister.gov/documents/2026/02/24/2026-03626/constellation-energy-generation-llc-christopher-m-crane-clean-energy-center-applications-for) | 
-- **0.41** | [Tribal Trust Land Homeownership Act of 2025](https://api.congress.gov/v3/bill/119/hr/2130?format=json) | 
 - **0.41** | [To amend title 10, United States Code, to include Indian tribes in the defense community infrastructure program, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7710?format=json) | 
 - **0.41** | [To allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer.](https://api.congress.gov/v3/bill/119/hr/7698?format=json) | 
 - **0.41** | [A bill to allow members of federally recognized Tribes to use their Tribal government identification documents in obtaining a firearm from a federally licensed firearms dealer.](https://api.congress.gov/v3/bill/119/s/3946?format=json) | 
 - **0.41** | [Household Goods Shipping Consumer Protection Act](https://api.congress.gov/v3/bill/119/hr/880?format=json) | DOT PROTECT
 - **0.41** | [Protection of Women in Olympic and Amateur Sports Act of 2026](https://api.congress.gov/v3/bill/119/hr/1028?format=json) | DOT PROTECT
 - **0.41** | [Protecting Sensitive Locations Act](https://api.congress.gov/v3/bill/119/hr/1061?format=json) | DOT PROTECT
+- **0.41** | [TAP Promotion Act](https://api.congress.gov/v3/bill/119/hr/1845?format=json) | USBR TAP
 - **0.41** | [Water Conservation Rebate Tax Parity Act](https://api.congress.gov/v3/bill/119/hr/1871?format=json) | USBR WaterSMART
 - **0.41** | [Medicare Enrollment Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/2744?format=json) | DOT PROTECT
 - **0.41** | [Invest to Protect Act of 2025](https://api.congress.gov/v3/bill/119/hr/2711?format=json) | DOT PROTECT
 - **0.41** | [Michael Enzi Voluntary Protection Program Act of 2025](https://api.congress.gov/v3/bill/119/hr/2844?format=json) | DOT PROTECT
 - **0.41** | [Striking and Locked Out Workers Healthcare Protection Act](https://api.congress.gov/v3/bill/119/hr/3532?format=json) | DOT PROTECT
+- **0.41** | [Protecting Private Job Creators Act](https://api.congress.gov/v3/bill/119/hr/3959?format=json) | DOT PROTECT
 - **0.41** | [Strengthening Protections for Domestic Violence and Stalking Survivors Act of 2025](https://api.congress.gov/v3/bill/119/hr/4166?format=json) | DOT PROTECT
 - **0.41** | [HCBS Worker Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/5228?format=json) | DOT PROTECT
-- **0.41** | [American Hemp Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/6209?format=json) | DOT PROTECT
+- **0.41** | [Air Permitting Improvements to Protect National Security Act of 2025](https://api.congress.gov/v3/bill/119/hr/6373?format=json) | DOT PROTECT
 - **0.41** | [Biological Intellectual Property Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/6624?format=json) | DOT PROTECT
-- **0.41** | [Protecting Students on Campus Act of 2025](https://api.congress.gov/v3/bill/119/hr/6857?format=json) | DOT PROTECT
+- **0.41** | [Federal Correctional Officer Paycheck Protection Act of 2026](https://api.congress.gov/v3/bill/119/hr/7033?format=json) | DOT PROTECT
+- **0.41** | [Protecting American Energy Security Act of 2026](https://api.congress.gov/v3/bill/119/hr/7061?format=json) | DOT PROTECT
+- **0.41** | [Protecting Local Zoos Act of 2026](https://api.congress.gov/v3/bill/119/hr/7159?format=json) | DOT PROTECT
 - **0.41** | [Community Health Center Drug Pricing Protection Act](https://api.congress.gov/v3/bill/119/hr/7391?format=json) | DOT PROTECT
+- **0.41** | [Federal Extreme Risk Protection Order Act of 2026](https://api.congress.gov/v3/bill/119/hr/7599?format=json) | DOT PROTECT
+- **0.41** | [To amend title 54, United States Code, to modify certain cost-sharing requirements for grant programs under the American Battlefield Protection Program, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7618?format=json) | DOT PROTECT
+- **0.41** | [Local Taxpayer Protection Act of 2026](https://api.congress.gov/v3/bill/119/hr/7648?format=json) | DOT PROTECT
+- **0.41** | [Closing the Provider Fraud Gap Act](https://api.congress.gov/v3/bill/119/hr/7677?format=json) | EPA GAP
 - **0.41** | [To strengthen and standardize "first look" protections for covered properties to ensure first-time homebuyers have priority access to foreclosed homes, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7753?format=json) | DOT PROTECT
+- **0.41** | [To amend the HITECH Act to allow an individual to obtain a copy of such individual's protected health information at no cost unless certain circumstances apply, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7790?format=json) | DOT PROTECT
+- **0.41** | [Protecting Our Communities Act](https://api.congress.gov/v3/bill/119/hr/7785?format=json) | DOT PROTECT
+- **0.41** | [To establish protections against digital impersonation fraud, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7786?format=json) | DOT PROTECT
 - **0.41** | [Household Goods Shipping Consumer Protection Act](https://api.congress.gov/v3/bill/119/s/337?format=json) | DOT PROTECT
 - **0.41** | [Protecting Older Americans Act of 2025](https://api.congress.gov/v3/bill/119/s/2703?format=json) | DOT PROTECT
 - **0.41** | [Protect America Act](https://api.congress.gov/v3/bill/119/s/3790?format=json) | DOT PROTECT
+- **0.41** | [A bill to strengthen homeland security by expanding Urban Areas Security Initiative grant eligibility criteria to promote cooperation with U.S. Immigration and Customs Enforcement and to advance election security protections.](https://api.congress.gov/v3/bill/119/s/3920?format=json) | DOT PROTECT
+- **0.41** | [A bill to establish protections against digital impersonation fraud, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3982?format=json) | DOT PROTECT
+- **0.41** | [A bill to require U.S. Customs and Border Protection and U.S. Immigration and Customs Enforcement to timely update the Online Detainee Locator System, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3995?format=json) | DOT PROTECT
+- **0.41** | [A bill to improve the hiring and training processes at U.S. Immigration and Customs Enforcement and U.S. Customs and Border Protection.](https://api.congress.gov/v3/bill/119/s/3996?format=json) | DOT PROTECT
+- **0.41** | [A bill to increase transparency, accountability, and community engagement within the Department of Homeland Security, to provide independent oversight of border security activities, to improve training for agents and officers of U.S. Customs and Border Protection, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3997?format=json) | DOT PROTECT
 - **0.41** | [Pain-Capable Unborn Child Protection Act](https://api.congress.gov/v3/bill/114/hr/36?format=json) | DOT PROTECT
 - **0.41** | [To amend the Internal Revenue Code of 1986 to ensure that emergency services volunteers are not taken into account as employees under the shared responsibility requirements contained in the Patient Protection and Affordable Care Act.](https://api.congress.gov/v3/bill/114/hr/33?format=json) | DOT PROTECT
 - **0.41** | [Protect and Preserve International Cultural Property Act](https://api.congress.gov/v3/bill/114/hr/1493?format=json) | DOT PROTECT
@@ -26350,40 +20713,26 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.41** | [Safe Drinking Water Act Improved Compliance Awareness Act](https://api.congress.gov/v3/bill/114/hr/4470?format=json) | EPA STAG
 - **0.41** | [PROTECT Patrimony Resolution](https://api.congress.gov/v3/bill/114/hconres/122?format=json) | DOT PROTECT
 - **0.41** | [Overtime Pay for Protective Services Act of 2016](https://api.congress.gov/v3/bill/114/hr/6302?format=json) | DOT PROTECT
-- **0.41** | [Supporting the goals and ideals of the Rise Up for LGBTQI+ Youth in Schools Initiative, a call to action to communities across the country to demand equal educational opportunity, basic civil rights protections, and freedom from erasure for all students, particularly LGBTQI+ young people, in K-12 schools.](https://api.congress.gov/v3/bill/119/hres/321?format=json) | DOT PROTECT
 - **0.41** | [Recognizing that it is the duty of the Federal Government to develop and implement a Transgender Bill of Rights to protect and codify the rights of transgender and nonbinary people under the law and ensure their access to medical care, shelter, safety, and economic security.](https://api.congress.gov/v3/bill/119/hres/1058?format=json) | DOT PROTECT
 - **0.41** | [Condemning Israeli settlement expansion, settler violence, and related human rights abuses in the West Bank, and calling for accountability and specific United States policy responses to deter further violations and protect the viability of a negotiated two-State solution.](https://api.congress.gov/v3/bill/119/hres/1092?format=json) | DOT PROTECT
+- **0.40** | [To authorize leases of up to 99 years for land held in trust for federally recognized Indian Tribes.](https://api.congress.gov/v3/bill/119/hr/5910?format=json) | 
 - **0.40** | [Endangered and Threatened Wildlife and Plants; Notice of 12-Month Finding on a Petition To List the Washington Coast Chinook Salmon Evolutionarily Significant Unit as Threatened or Endangered Under the Endangered Species Act](https://www.federalregister.gov/documents/2026/02/19/2026-03292/endangered-and-threatened-wildlife-and-plants-notice-of-12-month-finding-on-a-petition-to-list-the) | DOT PROTECT
 - **0.40** | [Pydiflumetofen; Pesticide Tolerances](https://www.federalregister.gov/documents/2026/02/20/2026-03421/pydiflumetofen-pesticide-tolerances) | DOT PROTECT
 - **0.40** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Diphenylamine, et al.](https://www.federalregister.gov/documents/2026/02/20/2026-03371/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-diphenylamine) | DOT PROTECT
 - **0.40** | [Pesticide Tolerances; Implementing Registration Review Decisions for Certain Pesticides; Terbacil, et al.](https://www.federalregister.gov/documents/2026/02/20/2026-03366/pesticide-tolerances-implementing-registration-review-decisions-for-certain-pesticides-terbacil-et) | DOT PROTECT
 - **0.40** | [Parris Island Protection Act](https://api.congress.gov/v3/bill/119/hr/443?format=json) | DOT PROTECT
-- **0.40** | [Boundary Waters Wilderness Protection and Pollution Prevention Act](https://api.congress.gov/v3/bill/119/hr/588?format=json) | DOT PROTECT
-- **0.40** | [Protect Our Letter Carriers Act of 2025](https://api.congress.gov/v3/bill/119/hr/1065?format=json) | DOT PROTECT
 - **0.40** | [Protecting Privacy in Purchases Act](https://api.congress.gov/v3/bill/119/hr/1181?format=json) | DOT PROTECT
-- **0.40** | [Protecting Domestic Mining Act of 2025](https://api.congress.gov/v3/bill/119/hr/1501?format=json) | DOT PROTECT
 - **0.40** | [Protecting Life from Chemical Abortions Act](https://api.congress.gov/v3/bill/119/hr/1525?format=json) | DOT PROTECT
 - **0.40** | [New Era of Preventing End-Stage Kidney Disease Act](https://api.congress.gov/v3/bill/119/hr/1518?format=json) | EPA STAG
-- **0.40** | [Protect and Serve Act of 2025](https://api.congress.gov/v3/bill/119/hr/1551?format=json) | DOT PROTECT
 - **0.40** | [Law Enforcement Protection and Privacy Act of 2025](https://api.congress.gov/v3/bill/119/hr/1698?format=json) | DOT PROTECT
-- **0.40** | [Federal Firearms Licensee Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/1773?format=json) | DOT PROTECT
 - **0.40** | [Protecting Americans’ Social Security Data Act](https://api.congress.gov/v3/bill/119/hr/1877?format=json) | DOT PROTECT
 - **0.40** | [Protecting Our Courts from Foreign Manipulation Act of 2025](https://api.congress.gov/v3/bill/119/hr/2675?format=json) | DOT PROTECT
-- **0.40** | [Southern California Coast and Ocean Protection Act](https://api.congress.gov/v3/bill/119/hr/2862?format=json) | DOT PROTECT
-- **0.40** | [Public Service Worker Protection Act](https://api.congress.gov/v3/bill/119/hr/3139?format=json) | DOT PROTECT
 - **0.40** | [Protecting Older Workers Against Discrimination Act of 2025](https://api.congress.gov/v3/bill/119/hr/3522?format=json) | DOT PROTECT
-- **0.40** | [Protecting Private Job Creators Act](https://api.congress.gov/v3/bill/119/hr/3959?format=json) | DOT PROTECT
-- **0.40** | [Fair Accounting for Income Realized from Betting Earnings Taxation Act](https://api.congress.gov/v3/bill/119/hr/4304?format=json) | FHWA TTP Safety
-- **0.40** | [Climate Change Health Protection and Promotion Act of 2025](https://api.congress.gov/v3/bill/119/hr/4515?format=json) | DOT PROTECT
 - **0.40** | [Home Appliance Protection and Affordability Act](https://api.congress.gov/v3/bill/119/hr/4626?format=json) | DOT PROTECT
-- **0.40** | [Head Start Shutdown Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/5790?format=json) | DOT PROTECT
-- **0.40** | [To authorize the Department of Justice and the Department of State to provide law enforcement and intelligence technical assistance, training, capacity building, and advisory support to the Government of Ukraine to achieve the exchange of prisoners of war, the release of civilian detainees, and the return of forcibly transferred Ukrainian children, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/5962?format=json) | EPA GAP
-- **0.40** | [Protect American Fisheries Act of 2025](https://api.congress.gov/v3/bill/119/hr/6150?format=json) | DOT PROTECT
+- **0.40** | [American Hemp Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/6209?format=json) | DOT PROTECT
+- **0.40** | [Protecting Students on Campus Act of 2025](https://api.congress.gov/v3/bill/119/hr/6857?format=json) | DOT PROTECT
 - **0.40** | [PROTECT Act of 2026](https://api.congress.gov/v3/bill/119/hr/6990?format=json) | DOT PROTECT
-- **0.40** | [Federal Correctional Officer Paycheck Protection Act of 2026](https://api.congress.gov/v3/bill/119/hr/7033?format=json) | DOT PROTECT
-- **0.40** | [Protect Veterans from the THIEF Act](https://api.congress.gov/v3/bill/119/hr/7241?format=json) | DOT PROTECT
 - **0.40** | [Preventing Research Ownership Transfer to External Competitive Threats (PROTECT) Act of 2026](https://api.congress.gov/v3/bill/119/hr/7510?format=json) | DOT PROTECT
-- **0.40** | [U.S. Farmworker Protection Act](https://api.congress.gov/v3/bill/119/hr/7541?format=json) | DOT PROTECT
 - **0.40** | [GAP Supply Act](https://api.congress.gov/v3/bill/119/hr/7528?format=json) | EPA GAP
 - **0.40** | [Protecting Student Athletes from Concussions Act](https://api.congress.gov/v3/bill/119/hr/7590?format=json) | DOT PROTECT
 - **0.40** | [Protecting Puppies from Sharia Act](https://api.congress.gov/v3/bill/119/hr/7611?format=json) | DOT PROTECT
@@ -26391,74 +20740,73 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.40** | [To amend title 18, United States Code, to prohibit coercing protected adults to send or otherwise transmit an intimate visual depiction, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7715?format=json) | DOT PROTECT
 - **0.40** | [To amend the Consumer Financial Protection Act of 2010 to establish the position of the Assistant Director and Student Loan Borrower Advocate of the Bureau of Consumer Financial Protection, to provide a framework for the Bureau of Consumer Financial Protection and the Department of Education to coordinate in providing assistance to and serving borrowers seeking to resolve complaints related to their private education or Federal student loans, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7671?format=json) | DOT PROTECT
 - **0.40** | [To direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions.](https://api.congress.gov/v3/bill/119/hr/7684?format=json) | DOT PROTECT
-- **0.40** | [Closing the Provider Fraud Gap Act](https://api.congress.gov/v3/bill/119/hr/7677?format=json) | EPA GAP
-- **0.40** | [Protecting Life in Foreign Assistance Act](https://api.congress.gov/v3/bill/119/s/250?format=json) | DOT PROTECT
 - **0.40** | [Protect Infant Formula from Contamination Act](https://api.congress.gov/v3/bill/119/s/272?format=json) | DOT PROTECT
 - **0.40** | [Jamie Reed Protecting Our Kids from Child Abuse Act](https://api.congress.gov/v3/bill/119/s/312?format=json) | DOT PROTECT
 - **0.40** | [Protecting Sensitive Locations Act](https://api.congress.gov/v3/bill/119/s/455?format=json) | DOT PROTECT
-- **0.40** | [Invest to Protect Act of 2025](https://api.congress.gov/v3/bill/119/s/768?format=json) | DOT PROTECT
-- **0.40** | [Expanding Whistleblower Protections for Contractors Act of 2025](https://api.congress.gov/v3/bill/119/s/874?format=json) | DOT PROTECT
 - **0.40** | [Protect Our Probationary Employees Act](https://api.congress.gov/v3/bill/119/s/918?format=json) | DOT PROTECT
 - **0.40** | [Protecting Employees and Retirees in Business Bankruptcies Act of 2025](https://api.congress.gov/v3/bill/119/s/1381?format=json) | DOT PROTECT
 - **0.40** | [Michael Enzi Voluntary Protection Program Act](https://api.congress.gov/v3/bill/119/s/1417?format=json) | DOT PROTECT
 - **0.40** | [Protecting Student Athletes from Concussions Act of 2025](https://api.congress.gov/v3/bill/119/s/2889?format=json) | DOT PROTECT
 - **0.40** | [Upholding Protections for Unaccompanied Children Act of 2025](https://api.congress.gov/v3/bill/119/s/3322?format=json) | DOT PROTECT
 - **0.40** | [State Authority to Protect Civil Rights](https://api.congress.gov/v3/bill/119/s/3824?format=json) | DOT PROTECT
-- **0.40** | [A bill to strengthen homeland security by expanding Urban Areas Security Initiative grant eligibility criteria to promote cooperation with U.S. Immigration and Customs Enforcement and to advance election security protections.](https://api.congress.gov/v3/bill/119/s/3920?format=json) | DOT PROTECT
 - **0.40** | [A bill to reauthorize the National Integrated Drought Information System Act of 2006, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3912?format=json) | USBR WaterSMART
 - **0.40** | [A bill to amend the Federal Food, Drug, and Cosmetic Act to clarify the Food and Drug Administration's jurisdiction over certain tobacco products, and to protect jobs and small businesses involved in the sale, manufacturing, and distribution of traditional and premium cigars.](https://api.congress.gov/v3/bill/119/s/3922?format=json) | DOT PROTECT
 - **0.40** | [A bill to establish artificial intelligence standards, metrics, and evaluation tools, to support artificial intelligence research, development, and capacity building activities, to promote innovation in the artificial intelligence industry by ensuring companies of all sizes can succeed and thrive, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3952?format=json) | EPA GAP
 - **0.40** | [A bill to direct the Administrator of the Environmental Protection Agency to conduct a study, and publish guidance on, calculating and reporting scope 3 emissions.](https://api.congress.gov/v3/bill/119/s/3928?format=json) | DOT PROTECT
-- **0.40** | [Disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions".](https://api.congress.gov/v3/bill/119/hjres/59?format=json) | DOT PROTECT
-- **0.40** | [A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions".](https://api.congress.gov/v3/bill/119/sjres/18?format=json) | DOT PROTECT
-- **0.40** | [Agency Information Collection Activities; Data Elements for Bureau-Funded Schools](https://www.federalregister.gov/documents/2026/03/03/2026-04194/agency-information-collection-activities-data-elements-for-bureau-funded-schools) | 
-- **0.40** | [To amend the Food Security Act of 1985 to include Indian Tribes in certain provisions relating to priority resource concerns.](https://api.congress.gov/v3/bill/119/hr/7627?format=json) | 
+- **0.40** | [Supporting the goals and ideals of the Rise Up for LGBTQI+ Youth in Schools Initiative, a call to action to communities across the country to demand equal educational opportunity, basic civil rights protections, and freedom from erasure for all students, particularly LGBTQI+ young people, in K-12 schools.](https://api.congress.gov/v3/bill/119/hres/321?format=json) | DOT PROTECT
 - **0.39** | [To amend the Catawba Indian Tribe of South Carolina Land Claims Settlement Act of 1993.](https://api.congress.gov/v3/bill/119/hr/4463?format=json) | 
-- **0.39** | [Freedom of Information Act](https://www.federalregister.gov/documents/2026/03/03/2026-04166/freedom-of-information-act) | 
+- **0.39** | [Tribal Conservation Priorities Inclusion Act](https://api.congress.gov/v3/bill/119/hr/7627?format=json) | 
+- **0.39** | [Agency Information Collection Activities; Data Elements for Bureau-Funded Schools](https://www.federalregister.gov/documents/2026/03/03/2026-04194/agency-information-collection-activities-data-elements-for-bureau-funded-schools) | 
 - **0.39** | [Agency Information Collection Activities; Comment Request on Revenue Procedure 97-22 Recordkeeping Requirements](https://www.federalregister.gov/documents/2026/03/04/2026-04279/agency-information-collection-activities-comment-request-on-revenue-procedure-97-22-recordkeeping) | 
 - **0.38** | [Community Protection and Wildfire Resilience Act](https://api.congress.gov/v3/bill/119/hr/582?format=json) | DOT PROTECT
-- **0.38** | [Protecting Mushroom Farmers Act](https://api.congress.gov/v3/bill/119/hr/1613?format=json) | DOT PROTECT
-- **0.38** | [Puppy Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/2253?format=json) | DOT PROTECT
+- **0.38** | [Boundary Waters Wilderness Protection and Pollution Prevention Act](https://api.congress.gov/v3/bill/119/hr/588?format=json) | DOT PROTECT
+- **0.38** | [Protect Our Letter Carriers Act of 2025](https://api.congress.gov/v3/bill/119/hr/1065?format=json) | DOT PROTECT
+- **0.38** | [Protecting Domestic Mining Act of 2025](https://api.congress.gov/v3/bill/119/hr/1501?format=json) | DOT PROTECT
+- **0.38** | [Protect and Serve Act of 2025](https://api.congress.gov/v3/bill/119/hr/1551?format=json) | DOT PROTECT
+- **0.38** | [Federal Firearms Licensee Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/1773?format=json) | DOT PROTECT
 - **0.38** | [Protecting Students with Disabilities Act](https://api.congress.gov/v3/bill/119/hr/2333?format=json) | DOT PROTECT
 - **0.38** | [Religious Workforce Protection Act](https://api.congress.gov/v3/bill/119/hr/2672?format=json) | DOT PROTECT
-- **0.38** | [PROTECT Students Act of 2025](https://api.congress.gov/v3/bill/119/hr/2899?format=json) | DOT PROTECT
+- **0.38** | [Southern California Coast and Ocean Protection Act](https://api.congress.gov/v3/bill/119/hr/2862?format=json) | DOT PROTECT
 - **0.38** | [Arctic Refuge Protection Act](https://api.congress.gov/v3/bill/119/hr/3067?format=json) | DOT PROTECT
+- **0.38** | [Public Service Worker Protection Act](https://api.congress.gov/v3/bill/119/hr/3139?format=json) | DOT PROTECT
 - **0.38** | [Protecting America's Property Rights Act](https://api.congress.gov/v3/bill/119/hr/3206?format=json) | DOT PROTECT
 - **0.38** | [Capacity Building for Business Districts Pilot Program Act of 2025](https://api.congress.gov/v3/bill/119/hr/3585?format=json) | EPA GAP
-- **0.38** | [Living Donor Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/4583?format=json) | DOT PROTECT
+- **0.38** | [Fair Accounting for Income Realized from Betting Earnings Taxation Act](https://api.congress.gov/v3/bill/119/hr/4304?format=json) | FHWA TTP Safety
+- **0.38** | [Climate Change Health Protection and Promotion Act of 2025](https://api.congress.gov/v3/bill/119/hr/4515?format=json) | DOT PROTECT
 - **0.38** | [Uniform Standards Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/5581?format=json) | DOT PROTECT
-- **0.38** | [Bridge the Gap for Rural Communities Act](https://api.congress.gov/v3/bill/119/hr/5710?format=json) | EPA GAP
+- **0.38** | [Head Start Shutdown Protection Act of 2025](https://api.congress.gov/v3/bill/119/hr/5790?format=json) | DOT PROTECT
+- **0.38** | [To authorize the Department of Justice and the Department of State to provide law enforcement and intelligence technical assistance, training, capacity building, and advisory support to the Government of Ukraine to achieve the exchange of prisoners of war, the release of civilian detainees, and the return of forcibly transferred Ukrainian children, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/5962?format=json) | EPA GAP
+- **0.38** | [Protect American Fisheries Act of 2025](https://api.congress.gov/v3/bill/119/hr/6150?format=json) | DOT PROTECT
 - **0.38** | [Kidney Care Access Protection Act](https://api.congress.gov/v3/bill/119/hr/6214?format=json) | DOT PROTECT
 - **0.38** | [RED Tape Act](https://api.congress.gov/v3/bill/119/hr/6398?format=json) | USBR TAP
-- **0.38** | [Air Permitting Improvements to Protect National Security Act of 2025](https://api.congress.gov/v3/bill/119/hr/6373?format=json) | DOT PROTECT
 - **0.38** | [Upholding Protections for Unaccompanied Children Act of 2025](https://api.congress.gov/v3/bill/119/hr/6389?format=json) | DOT PROTECT
-- **0.38** | [Oregon Owyhee Wilderness and Community Protection Act](https://api.congress.gov/v3/bill/119/hr/6777?format=json) | DOT PROTECT
 - **0.38** | [PROTECT Act](https://api.congress.gov/v3/bill/119/hr/7045?format=json) | DOT PROTECT
-- **0.38** | [Protecting Girls with Turner Syndrome Act of 2026](https://api.congress.gov/v3/bill/119/hr/7177?format=json) | DOT PROTECT
-- **0.38** | [PROTECT the Grid Act](https://api.congress.gov/v3/bill/119/hr/7208?format=json) | DOT PROTECT
 - **0.38** | [Protecting Motherhood Act](https://api.congress.gov/v3/bill/119/hr/7235?format=json) | DOT PROTECT
+- **0.38** | [Protect Veterans from the THIEF Act](https://api.congress.gov/v3/bill/119/hr/7241?format=json) | DOT PROTECT
 - **0.38** | [Protecting Children in Surrogacy Act](https://api.congress.gov/v3/bill/119/hr/7293?format=json) | DOT PROTECT
-- **0.38** | [Lebanon Election Integrity and Diaspora Voting Protection Act of 2026](https://api.congress.gov/v3/bill/119/hr/7311?format=json) | DOT PROTECT
 - **0.38** | [Protecting Small Businesses from Predatory Website Lawsuits Act](https://api.congress.gov/v3/bill/119/hr/7328?format=json) | DOT PROTECT
 - **0.38** | [Puerto Rico Water Infrastructure Resilience Act](https://api.congress.gov/v3/bill/119/hr/7397?format=json) | EPA STAG
 - **0.38** | [Protecting Hospitals from Disaster Act of 2026](https://api.congress.gov/v3/bill/119/hr/7486?format=json) | DOT PROTECT
-- **0.38** | [To authorize the issuance of extreme risk protection orders.](https://api.congress.gov/v3/bill/119/hr/7599?format=json) | DOT PROTECT
-- **0.38** | [To amend title 54, United States Code, to modify certain cost-sharing requirements for grant programs under the American Battlefield Protection Program, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7618?format=json) | DOT PROTECT
+- **0.38** | [U.S. Farmworker Protection Act](https://api.congress.gov/v3/bill/119/hr/7541?format=json) | DOT PROTECT
+- **0.38** | [Protecting Life in Foreign Assistance Act](https://api.congress.gov/v3/bill/119/s/250?format=json) | DOT PROTECT
+- **0.38** | [Invest to Protect Act of 2025](https://api.congress.gov/v3/bill/119/s/768?format=json) | DOT PROTECT
+- **0.38** | [Expanding Whistleblower Protections for Contractors Act of 2025](https://api.congress.gov/v3/bill/119/s/874?format=json) | DOT PROTECT
 - **0.38** | [Content Origin Protection and Integrity from Edited and Deepfaked Media Act of 2025](https://api.congress.gov/v3/bill/119/s/1396?format=json) | DOT PROTECT
-- **0.38** | [PROTECT the Grid Act](https://api.congress.gov/v3/bill/119/s/2593?format=json) | DOT PROTECT
-- **0.38** | [Main Street Depositor Protection Act](https://api.congress.gov/v3/bill/119/s/2999?format=json) | DOT PROTECT
 - **0.38** | [American Shores Protection Act of 2025](https://api.congress.gov/v3/bill/119/s/3082?format=json) | DOT PROTECT
 - **0.38** | [Empowering States' Rights To Protect Consumers Act of 2026](https://api.congress.gov/v3/bill/119/s/3721?format=json) | DOT PROTECT
 - **0.38** | [Water Security and Drought Resilience Act](https://api.congress.gov/v3/bill/119/s/3732?format=json) | USBR WaterSMART
 - **0.38** | [Affordable Housing and Homeownership Protection Act of 2026](https://api.congress.gov/v3/bill/119/s/3754?format=json) | DOT PROTECT
 - **0.38** | [Financial Technology Protection Act of 2023](https://api.congress.gov/v3/bill/118/s/1340?format=json) | DOT PROTECT
+- **0.38** | [Disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions".](https://api.congress.gov/v3/bill/119/hjres/59?format=json) | DOT PROTECT
+- **0.38** | [A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to "Overdraft Lending: Very Large Financial Institutions".](https://api.congress.gov/v3/bill/119/sjres/18?format=json) | DOT PROTECT
 - **0.38** | [A resolution recognizing that it is the duty of the Federal Government to develop and implement a Transgender Bill of Rights to protect and codify the rights of transgender and nonbinary people under the law and ensure their access to medical care, shelter, safety, and economic security.](https://api.congress.gov/v3/bill/119/sres/604?format=json) | DOT PROTECT
 - **0.38** | [National Environmental Policy Act Implementing Regulations](https://www.federalregister.gov/documents/2026/02/24/2026-03708/national-environmental-policy-act-implementing-regulations) | 
+- **0.38** | [Freedom of Information Act](https://www.federalregister.gov/documents/2026/03/03/2026-04166/freedom-of-information-act) | 
 - **0.38** | [Agency Information Collection Activities; Comment Request; U.S. Department of Education Supplemental Information for the SF-424 Form](https://www.federalregister.gov/documents/2026/02/27/2026-03982/agency-information-collection-activities-comment-request-us-department-of-education-supplemental) | 
 - **0.38** | [Mandatory Manufacturing Cost Survey Advanced Notice of Proposed Rulemaking](https://www.federalregister.gov/documents/2026/02/27/2026-04013/mandatory-manufacturing-cost-survey-advanced-notice-of-proposed-rulemaking) | 
 - **0.37** | [Tribal Gaming Regulatory Compliance Act](https://api.congress.gov/v3/bill/119/hr/3723?format=json) | 
-- **0.37** | [Native American Entrepreneurial Opportunity Act](https://api.congress.gov/v3/bill/119/hr/7396?format=json) | 
-- **0.36** | [Republic of Georgia Sovereignty Act](https://api.congress.gov/v3/bill/119/hr/7630?format=json) | 
+- **0.37** | [Weather Research and Forecasting Innovation Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3923?format=json) | 
+- **0.36** | [Native American Entrepreneurial Opportunity Act](https://api.congress.gov/v3/bill/119/hr/7396?format=json) | 
 - **0.36** | [People’s White House Historic Preservation Act](https://api.congress.gov/v3/bill/119/hr/6761?format=json) | 
 - **0.36** | [Tribal Warrant Fairness Act](https://api.congress.gov/v3/bill/119/hr/7490?format=json) | 
 - **0.36** | [Privacy Act of 1974; System of Records](https://www.federalregister.gov/documents/2026/02/24/2026-03592/privacy-act-of-1974-system-of-records) | 
@@ -26472,10 +20820,8 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.35** | [U.S. Ambassadors Fund for Cultural Preservation (AFCP)](https://www.grants.gov/search-results-detail/327283) | 
 - **0.35** | [U.S. Administration on Aging, National Resource Centers on Older Indians, Alaska Natives and Native Hawaiian Programs](https://www.grants.gov/search-results-detail/355786) | 
 - **0.35** | [Ambassadors Fund for Cultural Preservation Large Grants Program](https://www.grants.gov/search-results-detail/322314) | 
-- **0.34** | [Tribal Access to Electronic Evidence Act](https://api.congress.gov/v3/bill/119/s/1574?format=json) | 
-- **0.34** | [Salt River Pima-Maricopa Indian Community of the Salt River Reservation, Arizona; Alcoholic Beverage Control Ordinance](https://www.federalregister.gov/documents/2026/02/18/2026-03105/salt-river-pima-maricopa-indian-community-of-the-salt-river-reservation-arizona-alcoholic-beverage) | 
-- **0.34** | [Albuquerque Indian School Act of 2025](https://api.congress.gov/v3/bill/119/hr/6162?format=json) | 
-- **0.34** | [Seneca Nation Law Enforcement Efficiency Act](https://api.congress.gov/v3/bill/119/hr/7065?format=json) | 
+- **0.35** | [Republic of Georgia Sovereignty Act](https://api.congress.gov/v3/bill/119/hr/7630?format=json) | 
+- **0.35** | [Renewal Package From the State of Ohio to the Surface Transportation Project Delivery Program and Proposed Memorandum of Understanding (MOU) Assigning Environmental Responsibilities to the State](https://www.federalregister.gov/documents/2026/03/05/2026-04354/renewal-package-from-the-state-of-ohio-to-the-surface-transportation-project-delivery-program-and) | 
 - **0.34** | [To direct the Secretary of the Interior to convey to the Nisqually Indian Tribe the Clear Creek Hatchery infrastructure.](https://api.congress.gov/v3/bill/119/hr/7515?format=json) | 
 - **0.34** | [SEEDING CRITICAL ADVANCES FOR LEADING ENERGY TECHNOLOGIES WITH UNTAPPED POTENTIAL (SCALEUP) READY](https://www.grants.gov/search-results-detail/356623) | USBR TAP
 - **0.34** | [Capacity Building and Program Technical Assistance for Family Violence Prevention and Services Act Formula Grantees](https://www.grants.gov/search-results-detail/355622) | EPA GAP
@@ -26486,8 +20832,11 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.34** | [NCI Pathway to Independence Award for Early-Stage Postdoctoral Researchers (K99/R00 - Independent Clinical Trial Required)](https://www.grants.gov/search-results-detail/350944) | EPA STAG
 - **0.34** | [NCI Pathway to Independence Award for Early-Stage Postdoctoral Researchers (K99/R00 - Independent Clinical Trial Not Allowed)](https://www.grants.gov/search-results-detail/350943) | EPA STAG
 - **0.34** | [Tribal Warrant Fairness Act](https://api.congress.gov/v3/bill/119/s/3041?format=json) | 
+- **0.34** | [Tribal Tax and Investment Reform Act of 2025](https://api.congress.gov/v3/bill/119/s/2022?format=json) | 
+- **0.34** | [A bill to amend the Federal Meat Inspection Act to authorize Tribal meat inspection under that Act by Tribal personnel, and for other purposes.](https://api.congress.gov/v3/bill/119/s/3994?format=json) | 
 - **0.34** | [Atlantic Highly Migratory Species; Spatial Fisheries Management; Amendment 15 to the 2006 Consolidated Atlantic Highly Migratory Species Fishery Management Plan](https://www.federalregister.gov/documents/2026/03/04/2026-04256/atlantic-highly-migratory-species-spatial-fisheries-management-amendment-15-to-the-2006-consolidated) | 
 - **0.34** | [Community Bank Licensing Amendments](https://www.federalregister.gov/documents/2026/03/04/2026-04275/community-bank-licensing-amendments) | 
+- **0.34** | [Tribal Access to Electronic Evidence Act](https://api.congress.gov/v3/bill/119/s/1574?format=json) | 
 - **0.33** | [Native American Research Centers for Health (NARCH) (S06 Clinical Trial Optional)](https://www.grants.gov/search-results-detail/348514) | 
 - **0.33** | [U.S. Ambassadors Fund for Cultural Preservation (AFCP) 2021 Small Grant Competition](https://www.grants.gov/search-results-detail/327284) | 
 - **0.33** | [District of Columbia National Guard Home Rule Act](https://api.congress.gov/v3/bill/119/hr/5093?format=json) | 
@@ -26496,14 +20845,12 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.33** | [Agency Information Collection Activities; North American Woodcock Singing Ground Survey](https://www.federalregister.gov/documents/2026/03/02/2026-04104/agency-information-collection-activities-north-american-woodcock-singing-ground-survey) | 
 - **0.33** | [Revocation of the 30-Day Notification Requirement Prior To Termination of Lease for Nonpayment of Rent](https://www.federalregister.gov/documents/2026/02/26/2026-03921/revocation-of-the-30-day-notification-requirement-prior-to-termination-of-lease-for-nonpayment-of) | 
 - **0.32** | [Rescission of the “Ten-Day Notices and Corrective Action for State Regulatory Program Issues” Rule, Issued April 9, 2024](https://www.federalregister.gov/documents/2026/02/19/2026-03301/rescission-of-the-ten-day-notices-and-corrective-action-for-state-regulatory-program-issues-rule) | 
-- **0.32** | [United States Grain Standards Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/4550?format=json) | 
 - **0.32** | [Counter-UAS Authority Security, Safety, and Reauthorization Act](https://api.congress.gov/v3/bill/119/hr/5061?format=json) | 
 - **0.32** | [Special Diabetes Program Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/5461?format=json) | 
-- **0.32** | [Department of Homeland Security Appropriations Act, 2026](https://api.congress.gov/v3/bill/119/hr/7744?format=json) | 
+- **0.32** | [Water Power Research and Development Reauthorization Act](https://api.congress.gov/v3/bill/119/hr/7129?format=json) | 
 - **0.32** | [To amend the Fair Housing Act to repeal the Thurmond amendment.](https://api.congress.gov/v3/bill/119/hr/7765?format=json) | 
+- **0.32** | [NASA Transition Authorization Act of 2025](https://api.congress.gov/v3/bill/119/s/933?format=json) | 
 - **0.32** | [Helping Our People Act of 2026](https://api.congress.gov/v3/bill/119/s/3769?format=json) | 
-- **0.32** | [Regional Ocean Partnerships Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3791?format=json) | 
-- **0.32** | [Weather Research and Forecasting Innovation Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3923?format=json) | 
 - **0.32** | [Terrorism Risk Insurance Program Reauthorization Act of 2015](https://api.congress.gov/v3/bill/114/hr/26?format=json) | 
 - **0.32** | [Medicare Access and CHIP Reauthorization Act of 2015](https://api.congress.gov/v3/bill/114/hr/2?format=json) | 
 - **0.32** | [Bulletproof Vest Partnership Grant Program Reauthorization Act of 2015](https://api.congress.gov/v3/bill/114/s/125?format=json) | 
@@ -26517,32 +20864,34 @@ This scan identified **555 new policy development(s)** since the last scan.
 - **0.32** | [Tribal Undergraduate to Graduate Research Training and Leadership Experiences (TURTLE) Program (UE5/T32)](https://www.grants.gov/search-results-detail/356309) | 
 - **0.32** | [Tribal Undergraduate to Graduate Research Training and Leadership Experiences (TURTLE) Program (UE5/T34)](https://www.grants.gov/search-results-detail/356310) | 
 - **0.32** | [A bill to amend the Catawba Indian Tribe of South Carolina Land Claims Settlement Act of 1993 with respect to future membership in the Catawba Indian Nation.](https://api.congress.gov/v3/bill/119/s/3859?format=json) | 
-- **0.32** | [Tribal Trust Land Homeownership Act of 2025](https://api.congress.gov/v3/bill/119/s/723?format=json) | 
 - **0.32** | [Stronger Engagement for Indian Health Needs Act of 2026](https://api.congress.gov/v3/bill/119/s/3767?format=json) | 
+- **0.32** | [To amend the Act of August 9, 1955 (commonly known as the “Long-Term Leasing Act”), to authorize leases of up to 99 years for land in the Mashpee Wampanoag Tribe Reservation and land held in trust for the Wampanoag Tribe of Gay Head (Aquinnah), and for other purposes](https://api.congress.gov/v3/bill/119/hr/681?format=json) | 
 - **0.31** | [Disapproving the action of the District of Columbia Council in approving the D.C. Income and Franchise Tax Conformity and Revision Temporary Amendment Act of 2025.](https://api.congress.gov/v3/bill/119/hjres/142?format=json) | 
+- **0.31** | [To provide for the equitable settlement of certain Indian land disputes regarding land in Illinois, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/2827?format=json) | 
+- **0.31** | [Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for the Threatened Scrub-Jay; Brevard County, FL; Categorical Exclusion](https://www.federalregister.gov/documents/2026/03/05/2026-04376/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the) | 
 - **0.31** | [Applications for Amendments to Facility Operating Licenses Involving Proposed No Significant Hazards Consideration Determination and Containing Sensitive Unclassified Non-Safeguards Information and Order Imposing Procedures for Access to Sensitive Unclassified Non-Safeguards Information](https://www.federalregister.gov/documents/2026/02/24/2026-03625/applications-for-amendments-to-facility-operating-licenses-involving-proposed-no-significant-hazards) | 
 - **0.31** | [Employment Authorization Reform for Asylum Applicants](https://www.federalregister.gov/documents/2026/02/23/2026-03595/employment-authorization-reform-for-asylum-applicants) | 
 - **0.31** | [Guidance on Multimodal State Freight Plans and State Freight Advisory Committees](https://www.federalregister.gov/documents/2026/02/24/2026-03648/guidance-on-multimodal-state-freight-plans-and-state-freight-advisory-committees) | 
-- **0.31** | [General Policy for Pricing and Charging for Materials and Services Sold by the Department of Energy](https://www.federalregister.gov/documents/2026/02/18/2026-03159/general-policy-for-pricing-and-charging-for-materials-and-services-sold-by-the-department-of-energy) | 
 - **0.31** | [Housing and Community Development Act of 1980: Verification of Eligible Status](https://www.federalregister.gov/documents/2026/02/20/2026-03405/housing-and-community-development-act-of-1980-verification-of-eligible-status) | 
 - **0.31** | [Hiring Authority for College Graduates](https://www.federalregister.gov/documents/2026/02/20/2026-03354/hiring-authority-for-college-graduates) | 
 - **0.31** | [Hiring Authority for Post-Secondary Students](https://www.federalregister.gov/documents/2026/02/19/2026-03242/hiring-authority-for-post-secondary-students) | 
 - **0.31** | [Agency Information Collection Activities; Submission to the Office of Management and Budget for Review and Approval; Diversions, Return Flow, and Consumptive Use of Colorado River Water in the Lower Colorado River Basin](https://www.federalregister.gov/documents/2026/02/24/2026-03654/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-for) | 
 - **0.31** | [Comprehensive Fishery Management Plans for Puerto Rico, St. Croix, and St. Thomas and St. John; Correction](https://www.federalregister.gov/documents/2026/02/23/2026-03507/comprehensive-fishery-management-plans-for-puerto-rico-st-croix-and-st-thomas-and-st-john-correction) | 
 - **0.31** | [To repeal the Impoundment Control Act of 1974.](https://api.congress.gov/v3/bill/119/hr/1180?format=json) | 
-- **0.31** | [United States Commission on International Religious Freedom Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/1744?format=json) | 
 - **0.31** | [SUPPORT for Patients and Communities Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/2483?format=json) | 
-- **0.31** | [National Flood Insurance Program Reauthorization and Reform Act of 2025](https://api.congress.gov/v3/bill/119/hr/5484?format=json) | 
+- **0.31** | [United States Grain Standards Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/4550?format=json) | 
 - **0.31** | [CCAMPIS Reauthorization Act](https://api.congress.gov/v3/bill/119/hr/5458?format=json) | 
-- **0.31** | [Wildlife Road Crossings Program Reauthorization Act of 2025](https://api.congress.gov/v3/bill/119/hr/6078?format=json) | 
 - **0.31** | [First Responder Network Authority Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/hr/7386?format=json) | 
 - **0.31** | [RISE Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/hr/7533?format=json) | 
 - **0.31** | [Conrad State 30 and Physician Access Reauthorization Act](https://api.congress.gov/v3/bill/119/s/709?format=json) | 
+- **0.31** | [Regional Ocean Partnerships Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3791?format=json) | 
 - **0.31** | [Healthy Start Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3799?format=json) | 
 - **0.31** | [Rural Innovation Stronger Economy (RISE) Reauthorization Act of 2026](https://api.congress.gov/v3/bill/119/s/3861?format=json) | 
-- **0.31** | [Providing for consideration of the joint resolution (H.J. Res. 25) providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to "Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales"; providing for consideration of the bill (H.R. 1156) to amend the CARES Act to extend the statute of limitations for fraud under certain unemployment programs, and for other purposes; providing for consideration of the bill (H.R. 1968) making further continuing appropriations and other extensions for the fiscal year ending September 30, 2025, and for other purposes; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/211?format=json) | 
 - **0.31** | [Providing for consideration of the bill (H.R. 5371) making continuing appropriations and extensions for fiscal year 2026, and for other purposes; providing for consideration of the resolution (H. Res. 719) honoring the life and legacy of Charles "Charlie" James Kirk; and for other purposes.](https://api.congress.gov/v3/bill/119/hres/722?format=json) | 
+- **0.31** | [Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for the Sand Skink and Blue-Tailed Mole-Skink; Highlands County, FL; Categorical Exclusion](https://www.federalregister.gov/documents/2026/03/05/2026-04369/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the-sand) | 
+- **0.31** | [Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for Sand Skink and Bluetail Mole Skink; Lake County, FL; Categorical Exclusion](https://www.federalregister.gov/documents/2026/03/05/2026-04371/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-sand-skink) | 
 - **0.30** | [Notice of Funding Opportunity (NOFO) SUSI Civic Engagement and Environmental Issues Selection Process](https://www.grants.gov/search-results-detail/344137) | 
+- **0.30** | [To amend the Internal Revenue Code of 1986 to treat Indian Tribal Governments in the same manner as State governments for certain Federal tax purposes, and for other purposes.](https://api.congress.gov/v3/bill/119/hr/7705?format=json) | 
 
 ---
-*Generated by TCR Policy Scanner on 2026-03-04*
+*Generated by TCR Policy Scanner on 2026-03-05*

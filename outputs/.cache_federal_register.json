@@ -1,7 +1,7 @@
 {
   "source": "federal_register",
-  "cached_at": "2026-03-04T13:56:40.865015+00:00",
-  "item_count": 153,
+  "cached_at": "2026-03-05T14:00:30.518063+00:00",
+  "item_count": 155,
   "items": [
     {
       "source": "federal_register",
@@ -85,37 +85,13 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03197",
-      "title": "Tongass National Forest; Alaska; Land Management Plan Revision",
-      "abstract": "The U.S. Department of Agriculture, Forest Service is revising the land management plan for the Tongass National Forest. This notice announces the Forest Service's initiation of the development of a revised land management plan (revised plan) and intent to prepare an environmental impact statement (EIS) to evaluate the effects of revising the current plan. This notice initiates the scoping period on the development of the proposed action and EIS. This notice also describes the documents and background resources available for review and how to obtain them; includes a description of the preliminary need to change the current land management plan; includes options for meeting the needs for change; includes a preliminary list of substantive issues to be analyzed in detail; provides information on public participation, including the process for submitting comments; provides an estimated schedule for the planning process; and describes how to obtain additional information. The Planning, Administrative Reviews, and Litigation System identification number for the project is 64039.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03197/tongass-national-forest-alaska-land-management-plan-revision",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03197.pdf",
-      "published_date": "2026-02-18",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Agriculture Department",
-        "Forest Service"
-      ],
-      "agency_ids": [
-        12,
-        209
-      ],
-      "action": "Notice of initiation of the development of a proposed plan revision and notice of intent to prepare an environmental impact statement.",
-      "dates": "Comments must be received by March 20, 2026. Scoping for this revised plan will occur between now and release of the draft revised plan and draft EIS, through iterative public engagement opportunities, using a variety of methods.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03157",
-      "title": "Rescission of the Greenhouse Gas Endangerment Finding and Motor Vehicle Greenhouse Gas Emission Standards Under the Clean Air Act",
-      "abstract": "In this action, the U.S. Environmental Protection Agency (EPA) is rescinding the Administrator's 2009 findings of contribution and endangerment and repealing all greenhouse gas (GHG) emission standards for light-duty, medium-duty, and heavy-duty vehicles and engines to effectuate the best reading of Clean Air Act (CAA) section 202(a)(1). The EPA determines that CAA section 202(a)(1) does not authorize the Agency to prescribe emission standards in response to global climate change concerns for multiple reasons, including the best reading of the statutory terms \"air pollution,\" \"cause,\" \"contribute,\" and \"reasonably be anticipated to endanger.\" This statutory interpretation is corroborated by application of the major questions doctrine. The EPA further determines that GHG emission standards for new motor vehicles and engines do not impact in any material way the public health and welfare concerns identified in the Administrator's prior findings in 2009. On these multiple and independent bases, the EPA concludes that it lacks statutory authority to regulate GHG emissions in response to global climate change concerns under CAA section 202(a)(1), and is not finalizing the additional bases for repeal set out in the proposed rule.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03157/rescission-of-the-greenhouse-gas-endangerment-finding-and-motor-vehicle-greenhouse-gas-emission",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03157.pdf",
-      "published_date": "2026-02-18",
-      "document_type": "Rule",
+      "source_id": "2026-04388",
+      "title": "Clean Water Act Hazardous Substance Facility Response Plans: Compliance Date Delay and Changes To Reflect Administration Policy",
+      "abstract": "The Environmental Protection Agency (EPA) is proposing to delay the compliance date for Facility Response Plan (FRP) requirements as well as to make language modifications to align with the Administration's climate change and environmental justice policies in Executive Order 14148 of January 20, 2025. These requirements are for onshore non-transportation-related facilities that could reasonably be expected to cause substantial harm to the environment from a CWA hazardous substance worst case discharge to navigable waters, adjoining shorelines, or the exclusive economic zone. This delay action is necessary to allow the Agency to consider implementation and compliance assistance tools that regulated parties may be able to take advantage of when complying with the new requirements. EPA notes that it cannot quantify the number, nature, and magnitude of covered discharges that may occur during the proposed rule delay period.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04388/clean-water-act-hazardous-substance-facility-response-plans-compliance-date-delay-and-changes-to",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04388.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
         "Environmental Protection Agency"
@@ -123,18 +99,13 @@
       "agency_ids": [
         145
       ],
-      "action": "Final rule.",
-      "dates": "This final action is effective on April 20, 2026. The incorporation by reference of certain material listed in the action was approved by the Director of the Federal Register as of March 27, 2023, June 17, 2024, and June 21, 2024.",
+      "action": "Proposed rule.",
+      "dates": "Comments must be received on or before April 6, 2026.",
       "cfr_references": [
-        "40 CFR 85",
-        "40 CFR 86",
-        "40 CFR 600",
-        "40 CFR 1036",
-        "40 CFR 1037",
-        "40 CFR 1039"
+        "40 CFR 118"
       ],
       "regulation_ids": [
-        "2060-AW71"
+        "2050-AH38"
       ],
       "authority_weight": 0.9
     },
@@ -278,44 +249,98 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03109",
-      "title": "Categorical Exclusion Adoption Public Notice",
-      "abstract": "In accordance with Section 109 of the National Environmental Policy Act (NEPA), NASA is adopting one or more categorical exclusions (CATEXs) established by the Federal Rail Administration (FRA), Department of Energy (DOE), National Telecommunications and Information Administration (NTIA), U.S. Coast Guard (USCG), U.S. Forest Service (USFS), Department of the Army (DA), Department of the Air Force (DAF), Department of the Navy, Missile Defense Agency (MDA), Defense Threat Reduction Agency (DTRA) and Federal Bureau of Investigation (FBI). These CATEXs cover actions of the same nature and scope as those originally reviewed by the originating agency or agencies. NASA has determined that applying them to similar NASA activities is appropriate and consistent with NEPA. This notice describes the categories of proposed actions for which NASA intends to use the CATEXs and describes the consultation between the agencies.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03109/categorical-exclusion-adoption-public-notice",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03109.pdf",
-      "published_date": "2026-02-18",
+      "source_id": "2026-04387",
+      "title": "Tribal Advisory Committee; Notice of Solicitation for Nominations",
+      "abstract": "Through this notice, the U.S. Department of Agriculture (USDA) is soliciting nominations for three (3) vacancies on the USDA Tribal Advisory Committee (\"the Committee\"). The Committee consists of eleven (11) members serving staggered terms. Three members will be appointed by the Secretary of Agriculture for a three-year term. This notice reopens the notice to solicit nominations for membership published in the Federal Register on August 8, 2025, and subsequently extended on September 22, 2025, until March 31, 2026. This notice further clarifies the term for Secretarial appointments.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04387/tribal-advisory-committee-notice-of-solicitation-for-nominations",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04387.pdf",
+      "published_date": "2026-03-05",
       "document_type": "Notice",
       "document_subtype": "",
       "agencies": [
-        "National Aeronautics and Space Administration"
+        "Agriculture Department"
       ],
       "agency_ids": [
-        301
+        12
       ],
-      "action": "Notice of adoption of categorical exclusions.",
-      "dates": "The categorical exclusion adoption is effective February 18, 2026.",
+      "action": "Solicitation for nominations; reopen.",
+      "dates": "The nomination period announced on August 8, 2025 (90 FR 38431) is reopened. Complete nomination packages for membership on the Committee must be received at Tribal.Relations@usda.gov no later than March 31, 2026.",
       "cfr_references": [],
       "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03106",
-      "title": "Notice of Intent To Prepare a Programmatic Environmental Assessment; Initiation of Public Scoping Under the National Environmental Policy Act; Initiation of Consultation Under Section 106 of the National Historic Preservation Act; and Notice of Intent To Develop a Section 106 Programmatic Agreement With the Alaska State Historic Preservation Officer",
-      "abstract": "EPA Region 10 intends to prepare a programmatic Environmental Assessment (EA) pursuant to the National Environmental Policy Act (NEPA), 42 U.S.C. 4321-4347, to evaluate the potential environmental and sociocultural effects of the EPA Contaminated Alaska Native Claims Settlement Act (ANCSA) Lands Assistance Program. The program provides funding to eligible Alaska Native Regional and Village Corporations, Federally Recognized Tribes in Alaska, Alaska Native Nonprofit Associations, Alaska Native Nonprofit Organizations and Alaskan Inter- Tribal Consortia (\"applicants\") to investigate and remediate contamination present on ANCSA-conveyed lands at the time of conveyance. Through this notice, EPA is initiating scoping to help identify the scope of analysis, reasonable alternatives, and information sources, with particular attention to sociocultural issues tied to: (1) archaeological preservation and historic properties, including sacred sites and traditional cultural places; (2) protected subsistence resources and uses; and, (3) wetlands and associated aquatic resources. Concurrently, and pursuant to Section 106 of the National Historic Preservation Act (NHPA) (54 U.S.C. 306108) and its implementing regulations at 36 CFR part 800, EPA is initiating consultation with the Alaska State Historic Preservation Officer (SHPO), Federally Recognized Tribes in Alaska, Alaska Native corporations, and other consulting parties for the Contaminated ANCSA Lands Assistance Program. EPA intends to develop a Section 106 Programmatic Agreement (PA) under 36 CFR 800.14(b) with the Alaska SHPO and invited signatories and concurring parties to establish program- wide procedures for identifying, evaluating, and resolving effects to historic properties potentially affected by representative assessment and cleanup actions funded under the program. The EA will consider potential direct, indirect, and reasonably foreseeable impacts of representative cleanup actions funded under the program and will inform whether a Finding of No Significant Impact (FONSI) is appropriate or whether preparation of an Environmental Impact Statement (EIS) is warranted.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03106/notice-of-intent-to-prepare-a-programmatic-environmental-assessment-initiation-of-public-scoping",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03106.pdf",
-      "published_date": "2026-02-18",
+      "source_id": "2026-04378",
+      "title": "Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado-Liquor Code Amendment",
+      "abstract": "This notice publishes amended Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado Liquor Code.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04378/southern-ute-indian-tribe-of-the-southern-ute-reservation-colorado-liquor-code-amendment",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04378.pdf",
+      "published_date": "2026-03-05",
       "document_type": "Notice",
       "document_subtype": "",
       "agencies": [
-        "Environmental Protection Agency"
+        "Interior Department",
+        "Indian Affairs Bureau"
       ],
       "agency_ids": [
-        145
+        253,
+        234
       ],
-      "action": "Notice of intent to prepare a programmatic environmental assessment; initiation of public scoping under the National Environmental Policy Act; initiation of consultation under section 106 of the National Historic Preservation Act; and notice of intent to develop a section 106 programmatic agreement with the Alaska State Historic Preservation Officer.",
-      "dates": "The scoping period begins upon publication of this notice. Scoping comments must be received on or before March 20, 2026. Requests to participate as a consulting party in Section 106 consultation and initial input on the scope and content of the Programmatic Agreement should be submitted on or before March 20, 2026. Tribal consultations will be held upon request.",
+      "action": "Notice.",
+      "dates": "This Liquor Code shall become effective March 5, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04365",
+      "title": "National Standards for Traffic Control Devices; the Manual on Uniform Traffic Control Devices for Streets and Highways; Revision",
+      "abstract": "The Manual on Uniform Traffic Control Devices for Streets and Highways (MUTCD) is incorporated in FHWA regulations and recognized as the national standard for traffic control devices used on all public roads, bikeways, and private roads open to public travel. The purpose of this final rule is to make technical corrections to revise Standard, Guidance, Option provisions, and supporting information, relating to the traffic control devices in all parts of the MUTCD. The changes provide minor technical corrections and address editorial changes that have been identified since the 11th Edition of the MUTCD was published. The changes promote uniformity and ultimately improve and promote the safe and efficient utilization of roads that are open to public travel. The MUTCD, with these changes incorporated, is being designated as Revision 1 of the 11th Edition of the MUTCD.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04365/national-standards-for-traffic-control-devices-the-manual-on-uniform-traffic-control-devices-for",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04365.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Transportation Department",
+        "Federal Highway Administration"
+      ],
+      "agency_ids": [
+        492,
+        170
+      ],
+      "action": "Final rule.",
+      "dates": "This final rule is effective March 5, 2026. The incorporation by reference of the publication listed in the rule is approved by the Director of the Office of the Federal Register as of March 5, 2026.",
+      "cfr_references": [
+        "23 CFR 655"
+      ],
+      "regulation_ids": [
+        "2125-AG15"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04354",
+      "title": "Renewal Package From the State of Ohio to the Surface Transportation Project Delivery Program and Proposed Memorandum of Understanding (MOU) Assigning Environmental Responsibilities to the State",
+      "abstract": "This notice announces that FHWA received and reviewed a renewal package from the Ohio Department of Transportation (ODOT) requesting participation in the Surface Transportation Project Delivery Program (Program). This Program allows for FHWA to assign, and States to assume, responsibilities under the National Environmental Policy Act of 1969 (NEPA), and all or part of FHWA's responsibilities for environmental review, consultation, or other actions required under any Federal environmental law with respect to one or more Federal highway projects within the State. The FHWA has determined the renewal package to be complete and developed a draft Second Renewal MOU with ODOT outlining how the State would implement the Program with FHWA oversight. The FHWA invites the public to comment on ODOT's request, including its renewal package and the proposed Second Renewal MOU, which includes the proposed assignments and assumptions of environmental review, consultation, and other activities.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04354/renewal-package-from-the-state-of-ohio-to-the-surface-transportation-project-delivery-program-and",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04354.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Transportation Department",
+        "Federal Highway Administration"
+      ],
+      "agency_ids": [
+        492,
+        170
+      ],
+      "action": "Notice of proposed Second Renewal MOU and request for comments.",
+      "dates": "Please submit comments by April 6, 2026.",
       "cfr_references": [],
       "regulation_ids": [],
       "authority_weight": 0.9
@@ -1020,50 +1045,37 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03107",
-      "title": "Elem Indian Colony of Pomo Indians of the Sulphur Bank Rancheria, California; Liquor Control Ordinance",
-      "abstract": "This notice publishes the Liquor Control Ordinance of the Elem Indian Colony of Pomo Indians of the Sulphur Bank Rancheria, California.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03107/elem-indian-colony-of-pomo-indians-of-the-sulphur-bank-rancheria-california-liquor-control-ordinance",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03107.pdf",
-      "published_date": "2026-02-18",
-      "document_type": "Notice",
+      "source_id": "2026-04366",
+      "title": "Paper Manifest Sunset Rule; Modification of the Hazardous Waste Manifest Regulations",
+      "abstract": "The U.S. Environmental Protection Agency (EPA) is proposing regulatory amendments to the hazardous waste manifest regulations to establish a date for sunsetting use of paper manifests in favor of electronic manifests. Phasing out paper manifests would unlock the estimated $28.5 million annual savings through decreased burden to manifest users while also increasing human health and environmental protection through better tracking of hazardous waste and greater transparency for regulators and the public. The proposed rule also introduces several conforming amendments to existing regulations. These include new registration requirements with the EPA's e-Manifest system for RCRA hazardous waste transporters, certain PCB waste generators, and PCB waste transporters. Additionally, the rule updates exception reporting requirements for very small quantity generators (VSQGs) managing hazardous waste from episodic events, as well as for healthcare facilities and reverse distributors handling hazardous waste pharmaceuticals. It also revises discrepancy reporting requirements for owners and operators of hazardous waste facilities operating under standardized permits. Lastly, the proposed rule includes four technical corrections to the import and export requirements to correct EPA's mailing address, remove obsolete text, and correct a citation associated with manifest corrections for export shipments.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04366/paper-manifest-sunset-rule-modification-of-the-hazardous-waste-manifest-regulations",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04366.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
-        "Interior Department",
-        "Indian Affairs Bureau"
+        "Environmental Protection Agency"
       ],
       "agency_ids": [
-        253,
-        234
+        145
       ],
-      "action": "Notice.",
-      "dates": "The Liquor Control Ordinance shall become effective March 20, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03105",
-      "title": "Salt River Pima-Maricopa Indian Community of the Salt River Reservation, Arizona; Alcoholic Beverage Control Ordinance",
-      "abstract": "This notice publishes the amended Salt River Pima-Maricopa Indian Community Alcoholic Beverage Control Ordinance (Ordinance). The Ordinance repeals and replaces the previous liquor ordinance published in the Federal Register on January 21, 2016.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03105/salt-river-pima-maricopa-indian-community-of-the-salt-river-reservation-arizona-alcoholic-beverage",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03105.pdf",
-      "published_date": "2026-02-18",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Interior Department",
-        "Indian Affairs Bureau"
+      "action": "Proposed rule.",
+      "dates": "Comments must be received on or before May 4, 2026. Under the Paperwork Reduction Act (PRA), comments on the information collection provisions are best assured of consideration if the Office of Management and Budget (OMB) receives a copy of your comments on or before April 6, 2026.",
+      "cfr_references": [
+        "40 CFR 260",
+        "40 CFR 261",
+        "40 CFR 262",
+        "40 CFR 263",
+        "40 CFR 264",
+        "40 CFR 265",
+        "40 CFR 266",
+        "40 CFR 267",
+        "40 CFR 271",
+        "40 CFR 761"
       ],
-      "agency_ids": [
-        253,
-        234
+      "regulation_ids": [
+        "2050-AH35"
       ],
-      "action": "Notice.",
-      "dates": "This Ordinance shall become effective February 18, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -2058,49 +2070,95 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03159",
-      "title": "General Policy for Pricing and Charging for Materials and Services Sold by the Department of Energy",
-      "abstract": "The Department of Energy (DOE or the Department) is proposing to update the Department's general pricing regulation to establish prices and charges for materials and services sold to organizations and people outside of the Federal Government. DOE's general pricing regulation does not apply to the prices and charges provided for by statute, Executive order, or regulation. This notice of proposed rulemaking (NOPR) proposes to update definitions, exclusions, exemptions, and special pricing activities affecting the general pricing regulation.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03159/general-policy-for-pricing-and-charging-for-materials-and-services-sold-by-the-department-of-energy",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03159.pdf",
-      "published_date": "2026-02-18",
-      "document_type": "Proposed Rule",
+      "source_id": "2026-04376",
+      "title": "Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for the Threatened Scrub-Jay; Brevard County, FL; Categorical Exclusion",
+      "abstract": "We, the Fish and Wildlife Service (Service), announce receipt of an application from Melbourne Orlando International Airport (Taxiway A Rehabilitation Project) (applicant) for an incidental take permit (ITP) under the Endangered Species Act. The applicant requests the ITP to take the federally listed scrub-jay incidental to a taxiway rehabilitation in Brevard County, Florida. We request public comment on the application, which includes the applicant's proposed habitat conservation plan (HCP), and on the Service's preliminary determination that the proposed permitting action may be eligible for a categorical exclusion pursuant National Environmental Policy Act (NEPA), Department of Interior's (DOI) NEPA regulations, and the DOI Departmental Manual. To make this preliminary determination, we prepared a draft screening form and NEPA statement for HCPs, which is available for public review. We invite comment from the public and local, State, Tribal, and Federal agencies.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04376/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04376.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Notice",
       "document_subtype": "",
       "agencies": [
-        "Energy Department"
+        "Interior Department",
+        "Fish and Wildlife Service"
       ],
       "agency_ids": [
-        136
+        253,
+        197
       ],
-      "action": "Notice of proposed rulemaking and request for comment.",
-      "dates": "Comments on this proposed rule must be received on or before April 20, 2026.",
-      "cfr_references": [
-        "10 CFR 1009"
-      ],
-      "regulation_ids": [
-        "1920-AA01"
-      ],
+      "action": "Notice of availability; request for comments and information.",
+      "dates": "We must receive your written comments on or before April 6, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03102",
-      "title": "United States v. Reddy Ice LLC, et al. Proposed Final Judgment and Competitive Impact Statement",
-      "abstract": "",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03102/united-states-v-reddy-ice-llc-et-al-proposed-final-judgment-and-competitive-impact-statement",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03102.pdf",
-      "published_date": "2026-02-18",
+      "source_id": "2026-04371",
+      "title": "Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for Sand Skink and Bluetail Mole Skink; Lake County, FL; Categorical Exclusion",
+      "abstract": "We, the Fish and Wildlife Service (Service), announce receipt of an application from Clayton Properties Group, Inc. dba Highland Homes (Radio Road) (applicant) for an incidental take permit (ITP) under the Endangered Species Act. The applicant requests the ITP to take the federally listed threatened sand skink (skinks) incidental to the construction of a mixed residential development and the associated clearing and infrastructure in Lake County, Florida. We request public comment on the application, which includes the applicant's proposed habitat conservation plan (HCP), and on the Service's preliminary determination that the proposed permitting action may be eligible for a categorical exclusion pursuant to the National Environmental Policy Act (NEPA), the Department of the Interior's (DOI) NEPA regulations, and the DOI Departmental Manual. To make this preliminary determination, we prepared a draft screening form and NEPA statement for HCPs, which is available for public review. We invite comment from the public and local, State, Tribal, and Federal agencies.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04371/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-sand-skink",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04371.pdf",
+      "published_date": "2026-03-05",
       "document_type": "Notice",
       "document_subtype": "",
       "agencies": [
-        "Justice Department",
-        "Antitrust Division"
+        "Interior Department",
+        "Fish and Wildlife Service"
       ],
       "agency_ids": [
-        268,
-        23
+        253,
+        197
       ],
-      "action": "",
+      "action": "Notice of availability; request for comments and information.",
+      "dates": "We must receive your written comments on or before April 6, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04369",
+      "title": "Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for the Sand Skink and Blue-Tailed Mole-Skink; Highlands County, FL; Categorical Exclusion",
+      "abstract": "We, the Fish and Wildlife Service (Service), announce receipt of an application from Rizzzo Self Storage of Sebring, LLC (Sebring Parkway Parcel) (applicant) for an incidental take permit (ITP) under the Endangered Species Act. The applicant requests the ITP to take the federally listed sand skink and blue-tailed mole skink incidental to the construction of a self-storage facility and associated infrastructure. We request public comment on the application, which includes the applicant's proposed habitat conservation plan (HCP), and on the Service's preliminary determination that the proposed permitting action may be eligible for a categorical exclusion pursuant to the National Environmental Policy Act (NEPA), the Department of the Interior's (DOI) NEPA regulations, and the DOI Departmental Manual. To make this preliminary determination, we prepared a draft screening form and NEPA statement for HCPs, which is available for public review. We invite comment from the public and local, State, Tribal, and Federal agencies.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04369/receipt-of-incidental-take-permit-application-and-proposed-habitat-conservation-plan-for-the-sand",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04369.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Interior Department",
+        "Fish and Wildlife Service"
+      ],
+      "agency_ids": [
+        253,
+        197
+      ],
+      "action": "Notice of availability; request for comments and information.",
+      "dates": "We must receive your written comments on or before April 6, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04353",
+      "title": "Surface Transportation Project Delivery Program; Arizona Department of Transportation Final FHWA Audit Four Report",
+      "abstract": "The Moving Ahead for Progress in the 21st Century Act (MAP-21) established the Surface Transportation Project Delivery Program (Program) that allows a State to assume FHWA's environmental responsibilities for environmental review, consultation, and compliance under the National Environmental Policy Act (NEPA) for Federal highway projects. When a State assumes these Federal responsibilities, the State becomes solely responsible and liable for carrying out the responsibilities it has assumed, in lieu of FHWA. This Program mandates annual audits during each of the first 4 years of State participation to ensure compliance with program requirements. This is the fourth audit of the responsibilities assigned to the Arizona Department of Transportation (ADOT) under the Program. This notice announces the final fourth audit report for ADOT.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04353/surface-transportation-project-delivery-program-arizona-department-of-transportation-final-fhwa",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04353.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Notice",
+      "document_subtype": "",
+      "agencies": [
+        "Transportation Department",
+        "Federal Highway Administration"
+      ],
+      "agency_ids": [
+        492,
+        170
+      ],
+      "action": "Notice.",
       "dates": null,
       "cfr_references": [],
       "regulation_ids": [],
@@ -2340,52 +2398,6 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03140",
-      "title": "Notice of Request for Extension of a Currently Approved Information Collection",
-      "abstract": "In accordance with the Paperwork Reduction Act of 1995, the United States Department of Agriculture's Rural Utilities Service (RUS) invites comments on this extension to a currently approved information collection package for the Broadband Technical Assistance Program (BTA Program). The BTA Program provides financial assistance to technical assistance providers and rural communities to promote the expansion of broadband service into unserved rural areas.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03140/notice-of-request-for-extension-of-a-currently-approved-information-collection",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03140.pdf",
-      "published_date": "2026-02-18",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Agriculture Department",
-        "Rural Utilities Service"
-      ],
-      "agency_ids": [
-        12,
-        460
-      ],
-      "action": "Notice and request for comment.",
-      "dates": "Comments on this notice must be received by April 20, 2026 to be assured of consideration.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03108",
-      "title": "Privacy Act of 1974; Matching Program",
-      "abstract": "In accordance with the Privacy Act of 1974, as amended (\"Privacy Act\"), this document announces a new computer matching program the Federal Communications Commission (\"FCC\" or \"Commission\" or \"Agency\") and the Universal Service Administrative Company (USAC) will conduct with the Indiana Family and Social Services Administration Division of Family Resources. The purpose of this matching program is to verify the eligibility of applicants to and subscribers of Lifeline, and the Affordable Connectivity Program (ACP), both of which are administered by USAC under the direction of the FCC. More information about these programs is provided in the SUPPLEMENTARY INFORMATION section below.",
-      "url": "https://www.federalregister.gov/documents/2026/02/18/2026-03108/privacy-act-of-1974-matching-program",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-18/pdf/2026-03108.pdf",
-      "published_date": "2026-02-18",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Federal Communications Commission"
-      ],
-      "agency_ids": [
-        161
-      ],
-      "action": "Notice of a new matching program.",
-      "dates": "Written comments are due on or before March 20, 2026. This computer matching program will commence on March 20, 2026, and will conclude after 18 months.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
       "source_id": "2026-03971",
       "title": "Medicare, Medicaid, and Children's Health Insurance Programs: Announcement of Nationwide Temporary Moratoria on Enrollment of Durable Medical Equipment, Prosthetics, Orthotics, and Supplies (DMEPOS) Supplier Medical Supply Companies",
       "abstract": "This notice announces the imposition of a 6-month nationwide moratorium on the Medicare enrollment of DMEPOS supplier medical supply companies.",
@@ -2504,6 +2516,38 @@
       "dates": "The BLM requests that the public submit comments concerning the scope of the analysis, potential alternatives, planning criteria, and identification of relevant information, and studies by March 30, 2026. To afford the BLM the opportunity to consider issues, please ensure your comments are received prior to the close of the 30-day scoping period.",
       "cfr_references": [],
       "regulation_ids": [],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04377",
+      "title": "Reduction in Force",
+      "abstract": "The Office of Personnel Management (OPM) is issuing a proposed rule to revise its reduction-in-force (RIF) regulations. The proposed rule would make the RIF regulations more streamlined, efficient, and merit-based by prioritizing performance over tenure and length of service when determining which employees will be retained in a RIF and modifying the types of employees who are excluded from RIF competition. OPM also proposes to revise its regulations regarding the reemployment priority list (RPL), career transition assistance program (CTAP), the interagency career transition assistance program (ICTAP), transfers of function, and furloughs.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04377/reduction-in-force",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04377.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Proposed Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Personnel Management Office"
+      ],
+      "agency_ids": [
+        406
+      ],
+      "action": "Proposed rule.",
+      "dates": "Comments must be received on or before May 4, 2026.",
+      "cfr_references": [
+        "5 CFR 316",
+        "5 CFR 330",
+        "5 CFR 351",
+        "5 CFR 353",
+        "5 CFR 359",
+        "5 CFR 362",
+        "5 CFR 430"
+      ],
+      "regulation_ids": [
+        "3206-AO86"
+      ],
       "authority_weight": 0.9
     },
     {
@@ -2868,6 +2912,28 @@
       "regulation_ids": [
         "2126-AC86"
       ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04362",
+      "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Protections for Transit Workers Under Section 5333(b) Urban Program",
+      "abstract": "The Department of Labor (DOL of the Department) is submitting this Office of Labor-Management Standards, Department of Labor (OLMS)- sponsored information collection request (ICR) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act of 1995 (PRA). Public comments on the ICR are invited.",
+      "url": "https://www.federalregister.gov/documents/2026/03/05/2026-04362/agency-information-collection-activities-submission-for-omb-review-comment-request-protections-for",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-05/pdf/2026-04362.pdf",
+      "published_date": "2026-03-05",
+      "document_type": "Notice",
+      "document_subtype": "icr",
+      "agencies": [
+        "Labor Department"
+      ],
+      "agency_ids": [
+        271
+      ],
+      "action": "Notice of information collection; request for comment.",
+      "dates": "The OMB will consider all written comments that the agency receives on or before April 6, 2026.",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {

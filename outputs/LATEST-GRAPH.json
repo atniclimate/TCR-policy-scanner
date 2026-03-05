@@ -801,14 +801,6 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_97.039_355183766": {
-      "id": "usa_97.039_355183766",
-      "amount": 104176.25,
-      "recipient": "TEXAS DIVISION OF EMERGENCY MANAGEMENT",
-      "fiscal_year": "FY26",
-      "cfda": "97.039",
-      "_type": "ObligationNode"
-    },
     "usa_14.867_355241186": {
       "id": "usa_14.867_355241186",
       "amount": 110531.0,
@@ -823,6 +815,14 @@
       "authority_type": "Statute",
       "durability": "",
       "_type": "AuthorityNode"
+    },
+    "usa_97.039_355183766": {
+      "id": "usa_97.039_355183766",
+      "amount": 104176.25,
+      "recipient": "TEXAS DIVISION OF EMERGENCY MANAGEMENT",
+      "fiscal_year": "FY26",
+      "cfda": "97.039",
+      "_type": "ObligationNode"
     },
     "usa_97.039_354892433": {
       "id": "usa_97.039_354892433",
@@ -2872,20 +2872,6 @@
       "cfda": "97.039",
       "_type": "ObligationNode"
     },
-    "auth_proposed_rule": {
-      "id": "auth_proposed_rule",
-      "citation": "proposed rule",
-      "authority_type": "Regulation",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "auth_final_rule": {
-      "id": "auth_final_rule",
-      "citation": "Final rule",
-      "authority_type": "Regulation",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
     "usa_66.926_258855092": {
       "id": "usa_66.926_258855092",
       "amount": 569776.0,
@@ -2901,6 +2887,20 @@
       "fiscal_year": "FY26",
       "cfda": "66.926",
       "_type": "ObligationNode"
+    },
+    "auth_final_rule": {
+      "id": "auth_final_rule",
+      "citation": "final rule",
+      "authority_type": "Regulation",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "auth_proposed_rule": {
+      "id": "auth_proposed_rule",
+      "citation": "proposed rule",
+      "authority_type": "Regulation",
+      "durability": "",
+      "_type": "AuthorityNode"
     },
     "auth_safe_drinking_water_act": {
       "id": "auth_safe_drinking_water_act",
@@ -4549,6 +4549,20 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
+    "bar_information_collection_request": {
+      "id": "bar_information_collection_request",
+      "description": "information collection request",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
+    "bar_paperwork_reduction_act": {
+      "id": "bar_paperwork_reduction_act",
+      "description": "Paperwork Reduction Act",
+      "barrier_type": "Administrative",
+      "severity": "Med",
+      "_type": "BarrierNode"
+    },
     "usa_66.926_354250769": {
       "id": "usa_66.926_354250769",
       "amount": 900000.0,
@@ -4677,14 +4691,6 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_15.507_355682561": {
-      "id": "usa_15.507_355682561",
-      "amount": 400000.0,
-      "recipient": "SAN BERNARDINO VALLEY CONSERVATION TRUST",
-      "fiscal_year": "FY26",
-      "cfda": "15.507",
-      "_type": "ObligationNode"
-    },
     "usa_15.507_355682565": {
       "id": "usa_15.507_355682565",
       "amount": 234827.43,
@@ -4693,24 +4699,15 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_20.284_355713043": {
-      "id": "usa_20.284_355713043",
-      "amount": 700000.0,
-      "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
+    "auth_executive_order_14148": {
+      "id": "auth_executive_order_14148",
+      "citation": "Executive Order 14148",
+      "authority_type": "Guidance",
+      "durability": "",
+      "_type": "AuthorityNode"
     },
     "usa_20.205_355713351": {
       "id": "usa_20.205_355713351",
-      "amount": 2000000.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.205",
-      "_type": "ObligationNode"
-    },
-    "usa_20.205_355713350": {
-      "id": "usa_20.205_355713350",
       "amount": 2000000.0,
       "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
@@ -4725,26 +4722,18 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_20.284_355713041": {
-      "id": "usa_20.284_355713041",
-      "amount": 2713763.95,
-      "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION",
+    "usa_15.507_355682561": {
+      "id": "usa_15.507_355682561",
+      "amount": 400000.0,
+      "recipient": "SAN BERNARDINO VALLEY CONSERVATION TRUST",
       "fiscal_year": "FY26",
-      "cfda": "20.284",
+      "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_20.284_355713047": {
-      "id": "usa_20.284_355713047",
-      "amount": 625104.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "usa_20.284_355713046": {
-      "id": "usa_20.284_355713046",
-      "amount": 559380.0,
-      "recipient": "UTAH DEPARTMENT OF TRANSPORTATION",
+    "usa_20.284_355713043": {
+      "id": "usa_20.284_355713043",
+      "amount": 700000.0,
+      "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -4778,6 +4767,14 @@
       "durability": "",
       "_type": "AuthorityNode"
     },
+    "fv_dot_protect_2026-04366": {
+      "id": "fv_dot_protect_2026-04366",
+      "name": "Paper Manifest Sunset Rule; Modification of the Hazardous Wa",
+      "amount": 28500000.0,
+      "fiscal_year": "",
+      "funding_type": "",
+      "_type": "FundingVehicleNode"
+    },
     "usa_20.205_355713347": {
       "id": "usa_20.205_355713347",
       "amount": 5000000.0,
@@ -4798,6 +4795,14 @@
       "id": "usa_20.205_355330876",
       "amount": 2500000.0,
       "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_355713350": {
+      "id": "usa_20.205_355713350",
+      "amount": 2000000.0,
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -4850,18 +4855,18 @@
       "cfda": "15.507",
       "_type": "ObligationNode"
     },
-    "usa_15.507_355307479": {
-      "id": "usa_15.507_355307479",
-      "amount": 159768.0,
-      "recipient": "GRAND VALLEY WATER USERS ASSOCIATION",
-      "fiscal_year": "FY26",
-      "cfda": "15.507",
-      "_type": "ObligationNode"
-    },
     "usa_20.284_355330513": {
       "id": "usa_20.284_355330513",
       "amount": 2879503.0,
       "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "usa_20.284_355713041": {
+      "id": "usa_20.284_355713041",
+      "amount": 2713763.95,
+      "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -4886,6 +4891,22 @@
       "id": "usa_20.284_355330520",
       "amount": 1120497.0,
       "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "usa_20.284_355713047": {
+      "id": "usa_20.284_355713047",
+      "amount": 625104.0,
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "usa_20.284_355713046": {
+      "id": "usa_20.284_355713046",
+      "amount": 559380.0,
+      "recipient": "UTAH DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -4929,13 +4950,6 @@
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
-    },
-    "bar_paperwork_reduction_act": {
-      "id": "bar_paperwork_reduction_act",
-      "description": "Paperwork Reduction Act",
-      "barrier_type": "Administrative",
-      "severity": "Med",
-      "_type": "BarrierNode"
     },
     "usa_20.205_354807134": {
       "id": "usa_20.205_354807134",
@@ -5005,6 +5019,14 @@
       "id": "usa_15.507_354335804",
       "amount": 333013.0,
       "recipient": "MOJAVE WATER AGENCY PUBLIC FACILITIES CORPORATION",
+      "fiscal_year": "FY26",
+      "cfda": "15.507",
+      "_type": "ObligationNode"
+    },
+    "usa_15.507_355307479": {
+      "id": "usa_15.507_355307479",
+      "amount": 159768.0,
+      "recipient": "GRAND VALLEY WATER USERS ASSOCIATION",
       "fiscal_year": "FY26",
       "cfda": "15.507",
       "_type": "ObligationNode"
@@ -48417,34 +48439,6 @@
       "cfda": "66.038",
       "_type": "ObligationNode"
     },
-    "auth_42_u_s_c_4321": {
-      "id": "auth_42_u_s_c_4321",
-      "citation": "42 U.S.C. 4321",
-      "authority_type": "Statute",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "auth_54_u_s_c_306108": {
-      "id": "auth_54_u_s_c_306108",
-      "citation": "54 U.S.C. 306108",
-      "authority_type": "Statute",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "auth_36_cfr_800_14_b_": {
-      "id": "auth_36_cfr_800_14_b_",
-      "citation": "36 CFR 800.14(b)",
-      "authority_type": "Statute",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "bar_information_collection_request": {
-      "id": "bar_information_collection_request",
-      "description": "information collection request",
-      "barrier_type": "Administrative",
-      "severity": "Med",
-      "_type": "BarrierNode"
-    },
     "bar_information_collection_requirement": {
       "id": "bar_information_collection_requirement",
       "description": "information collection requirement",
@@ -49322,15 +49316,6 @@
       }
     },
     {
-      "source": "fema_bric",
-      "target": "usa_97.039_355183766",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 104176.25,
-        "recipient": "TEXAS DIVISION OF EMERGENCY MANAGEMENT"
-      }
-    },
-    {
       "source": "hud_ihbg",
       "target": "usa_14.867_355241186",
       "type": "OBLIGATED_BY",
@@ -49353,6 +49338,15 @@
       "type": "AUTHORIZED_BY",
       "metadata": {
         "inferred_from": "360593"
+      }
+    },
+    {
+      "source": "fema_bric",
+      "target": "usa_97.039_355183766",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 104176.25,
+        "recipient": "TEXAS DIVISION OF EMERGENCY MANAGEMENT"
       }
     },
     {
@@ -51723,38 +51717,6 @@
       }
     },
     {
-      "source": "dot_protect",
-      "target": "auth_proposed_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
-      }
-    },
-    {
-      "source": "epa_tribal_air",
-      "target": "auth_proposed_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_final_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
-      }
-    },
-    {
-      "source": "epa_tribal_air",
-      "target": "auth_final_rule",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03157"
-      }
-    },
-    {
       "source": "epa_gap",
       "target": "usa_66.926_258855092",
       "type": "OBLIGATED_BY",
@@ -51773,6 +51735,22 @@
       }
     },
     {
+      "source": "dot_protect",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03995"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03995"
+      }
+    },
+    {
       "source": "epa_stag",
       "target": "auth_bil",
       "type": "AUTHORIZED_BY",
@@ -51838,6 +51816,14 @@
     },
     {
       "source": "epa_stag",
+      "target": "auth_proposed_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-03646"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
       "target": "auth_proposed_rule",
       "type": "AUTHORIZED_BY",
       "metadata": {
@@ -53690,6 +53676,22 @@
       }
     },
     {
+      "source": "dot_protect",
+      "target": "bar_information_collection_request",
+      "type": "BLOCKED_BY",
+      "metadata": {
+        "inferred_from": "2026-04362"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "bar_paperwork_reduction_act",
+      "type": "BLOCKED_BY",
+      "metadata": {
+        "inferred_from": "2026-04362"
+      }
+    },
+    {
       "source": "epa_gap",
       "target": "usa_66.926_354250769",
       "type": "OBLIGATED_BY",
@@ -53835,15 +53837,6 @@
     },
     {
       "source": "usbr_watersmart",
-      "target": "usa_15.507_355682561",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 400000.0,
-        "recipient": "SAN BERNARDINO VALLEY CONSERVATION TRUST"
-      }
-    },
-    {
-      "source": "usbr_watersmart",
       "target": "usa_15.507_355682565",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -53853,25 +53846,15 @@
     },
     {
       "source": "dot_protect",
-      "target": "usa_20.284_355713043",
-      "type": "OBLIGATED_BY",
+      "target": "auth_executive_order_14148",
+      "type": "AUTHORIZED_BY",
       "metadata": {
-        "amount": 700000.0,
-        "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION"
+        "inferred_from": "2026-04388"
       }
     },
     {
       "source": "fhwa_ttp_safety",
       "target": "usa_20.205_355713351",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 2000000.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "fhwa_ttp_safety",
-      "target": "usa_20.205_355713350",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2000000.0,
@@ -53888,30 +53871,21 @@
       }
     },
     {
-      "source": "dot_protect",
-      "target": "usa_20.284_355713041",
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_355682561",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 2713763.95,
-        "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION"
+        "amount": 400000.0,
+        "recipient": "SAN BERNARDINO VALLEY CONSERVATION TRUST"
       }
     },
     {
       "source": "dot_protect",
-      "target": "usa_20.284_355713047",
+      "target": "usa_20.284_355713043",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 625104.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "usa_20.284_355713046",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 559380.0,
-        "recipient": "UTAH DEPARTMENT OF TRANSPORTATION"
+        "amount": 700000.0,
+        "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -53948,6 +53922,14 @@
       }
     },
     {
+      "source": "dot_protect",
+      "target": "fv_dot_protect_2026-04366",
+      "type": "FUNDED_BY",
+      "metadata": {
+        "inferred_from": "2026-04366"
+      }
+    },
+    {
       "source": "fhwa_ttp_safety",
       "target": "usa_20.205_355713347",
       "type": "OBLIGATED_BY",
@@ -53972,6 +53954,15 @@
       "metadata": {
         "amount": 2500000.0,
         "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_355713350",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2000000.0,
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54029,21 +54020,21 @@
       }
     },
     {
-      "source": "usbr_watersmart",
-      "target": "usa_15.507_355307479",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 159768.0,
-        "recipient": "GRAND VALLEY WATER USERS ASSOCIATION"
-      }
-    },
-    {
       "source": "dot_protect",
       "target": "usa_20.284_355330513",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 2879503.0,
         "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.284_355713041",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2713763.95,
+        "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54071,6 +54062,24 @@
       "metadata": {
         "amount": 1120497.0,
         "recipient": "TRANSPORTATION, NEW JERSEY DEPT OF"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.284_355713047",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 625104.0,
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.284_355713046",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 559380.0,
+        "recipient": "UTAH DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54116,14 +54125,6 @@
       "metadata": {
         "amount": 100000.0,
         "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "usbr_tap",
-      "target": "bar_paperwork_reduction_act",
-      "type": "BLOCKED_BY",
-      "metadata": {
-        "inferred_from": "2026-03140"
       }
     },
     {
@@ -54208,6 +54209,15 @@
       }
     },
     {
+      "source": "usbr_watersmart",
+      "target": "usa_15.507_355307479",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 159768.0,
+        "recipient": "GRAND VALLEY WATER USERS ASSOCIATION"
+      }
+    },
+    {
       "source": "dot_protect",
       "target": "usa_20.284_354806842",
       "type": "OBLIGATED_BY",
@@ -54259,6 +54269,14 @@
       "metadata": {
         "amount": 160000.0,
         "recipient": "DEPARTMENT OF TRANSPORTATION ARIZONA"
+      }
+    },
+    {
+      "source": "epa_tribal_air",
+      "target": "auth_final_rule",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-04159"
       }
     },
     {
@@ -103185,27 +103203,11 @@
       }
     },
     {
-      "source": "dot_protect",
-      "target": "auth_42_u_s_c_4321",
+      "source": "usbr_tap",
+      "target": "auth_proposed_rule",
       "type": "AUTHORIZED_BY",
       "metadata": {
-        "inferred_from": "2026-03106"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_54_u_s_c_306108",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03106"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_36_cfr_800_14_b_",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-03106"
+        "inferred_from": "2026-04377"
       }
     },
     {
@@ -103226,14 +103228,14 @@
     }
   ],
   "summary": {
-    "total_nodes": 6059,
-    "total_edges": 6127,
+    "total_nodes": 6058,
+    "total_edges": 6128,
     "programs": 18,
     "node_types": {
       "ProgramNode": 18,
       "AdvocacyLeverNode": 23,
-      "AuthorityNode": 32,
-      "FundingVehicleNode": 8,
+      "AuthorityNode": 30,
+      "FundingVehicleNode": 9,
       "BarrierNode": 16,
       "TrustSuperNode": 1,
       "ObligationNode": 5961

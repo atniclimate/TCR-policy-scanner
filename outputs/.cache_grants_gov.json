@@ -1,7 +1,7 @@
 {
   "source": "grants_gov",
-  "cached_at": "2026-03-04T13:59:27.180159+00:00",
-  "item_count": 1472,
+  "cached_at": "2026-03-05T14:03:15.898857+00:00",
+  "item_count": 1468,
   "items": [
     {
       "source": "grants_gov",
@@ -36,6 +36,69 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361411",
+      "title": "Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361411",
+      "pdf_url": "",
+      "published_date": "03/04/2026",
+      "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361412",
+      "title": "Feed the Future Innovation Labs",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361412",
+      "pdf_url": "",
+      "published_date": "03/04/2026",
+      "close_date": "04/09/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOS-GFS"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "361410",
+      "title": "CONSORTIUM FOR NUCLEAR FORENSICS",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/361410",
+      "pdf_url": "",
+      "published_date": "03/04/2026",
+      "close_date": "06/10/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "DOE-NNSA"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -120,27 +183,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "PAMS-SC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "360889",
-      "title": "Drug-Free Communities (DFC) Support Program &ndash; COMPETING CONTINUATION (Year 6)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360889",
-      "pdf_url": "",
-      "published_date": "03/03/2026",
-      "close_date": "04/14/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-CDC-NCIPC"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -330,27 +372,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "USDOJ-OJP-OVW"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "360888",
-      "title": "Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360888",
-      "pdf_url": "",
-      "published_date": "03/02/2026",
-      "close_date": "04/14/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-CDC-NCIPC"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -960,27 +981,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "EPA"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "361339",
-      "title": "Feed the Future Innovation Labs",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/361339",
-      "pdf_url": "",
-      "published_date": "02/20/2026",
-      "close_date": "04/03/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "DOS-GFS"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -8090,27 +8090,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "360640",
-      "title": "NSF/CASIS Transport Phenomena Research at the International Space Station to Benefit Life on Earth",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/360640",
-      "pdf_url": "",
-      "published_date": "09/22/2025",
-      "close_date": "03/04/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NSF"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "360623",
       "title": "The NIDDK Disorders of Gastrointestinal Interoception Consortium Clinical Centers (DGIC)",
       "abstract": "",
@@ -14079,48 +14058,6 @@
       "title": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study Renewal - Data Analysis, Informatics and Resource Center, and Coordinating Center (U24 Clinical Trial Not Allowed)",
       "abstract": "",
       "url": "https://www.grants.gov/search-results-detail/359275",
-      "pdf_url": "",
-      "published_date": "06/06/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "359276",
-      "title": "New NIA Institutional Training Programs for Aging Research",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/359276",
-      "pdf_url": "",
-      "published_date": "06/06/2025",
-      "close_date": "",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "359273",
-      "title": "Research Opportunities in Crisis Response Services for Suicide Prevention",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/359273",
       "pdf_url": "",
       "published_date": "06/06/2025",
       "close_date": "",
@@ -20627,27 +20564,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "357105",
-      "title": "Coupling, Energetics, and Dynamics of Atmospheric Regions",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/357105",
-      "pdf_url": "",
-      "published_date": "11/14/2024",
-      "close_date": "03/04/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NSF"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85,
-      "cfda": "15.156",
-      "cfda_program_match": "bia_tcr"
-    },
-    {
-      "source": "grants_gov",
       "source_id": "357112",
       "title": "Focused Technology Research and Development (R01 Clinical Trial Not Allowed)",
       "abstract": "",
@@ -20988,6 +20904,90 @@
       "title": "Clinical Characterization of Cancer Therapy-induced Adverse Sequelae and Mechanism-based Interventional Strategies (R01 Clinical Trial Optional)",
       "abstract": "",
       "url": "https://www.grants.gov/search-results-detail/357015",
+      "pdf_url": "",
+      "published_date": "11/06/2024",
+      "close_date": "01/07/2028",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "357019",
+      "title": "Bioengineering Partnerships with Industry (U01 Clinical Trial Optional)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/357019",
+      "pdf_url": "",
+      "published_date": "11/06/2024",
+      "close_date": "09/07/2027",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "357005",
+      "title": "Research Projects to Enhance Applicability of Mammalian Models for Translational Research (R01 Clinical Trial Not Allowed)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/357005",
+      "pdf_url": "",
+      "published_date": "11/06/2024",
+      "close_date": "09/07/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "357014",
+      "title": "Assay development and screening for discovery of chemical probes, drugs or immunomodulators (R01 Clinical Trial Not Allowed)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/357014",
+      "pdf_url": "",
+      "published_date": "11/06/2024",
+      "close_date": "09/07/2026",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "HHS-NIH11"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85,
+      "cfda": "15.156",
+      "cfda_program_match": "bia_tcr"
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "357002",
+      "title": "Molecular Imaging of Inflammation in Cancer (R01 Clinical Trial Not Allowed)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/357002",
       "pdf_url": "",
       "published_date": "11/06/2024",
       "close_date": "01/07/2028",
@@ -23333,25 +23333,6 @@
       "document_type": "grant_opportunity",
       "agencies": [
         "DOD-AMC"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "357002",
-      "title": "Molecular Imaging of Inflammation in Cancer (R01 Clinical Trial Not Allowed)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/357002",
-      "pdf_url": "",
-      "published_date": "11/06/2024",
-      "close_date": "01/07/2028",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
       ],
       "award_ceiling": "",
       "award_floor": "",
@@ -26686,25 +26667,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "348260",
-      "title": "Human Networks and Data Science",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/348260",
-      "pdf_url": "",
-      "published_date": "05/20/2023",
-      "close_date": "03/04/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NSF"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "347679",
       "title": "Infrastructure Capacity for Biological Research",
       "abstract": "",
@@ -27750,25 +27712,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "356943",
-      "title": "Human-Environment and Geographical Sciences Program",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/356943",
-      "pdf_url": "",
-      "published_date": "11/02/2024",
-      "close_date": "03/04/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NSF"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "356478",
       "title": "Mechanism for Time-Sensitive Substance Use Research (R21 Clinical Trial Optional)",
       "abstract": "",
@@ -28282,25 +28225,6 @@
     },
     {
       "source": "grants_gov",
-      "source_id": "357019",
-      "title": "Bioengineering Partnerships with Industry (U01 Clinical Trial Optional)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/357019",
-      "pdf_url": "",
-      "published_date": "11/06/2024",
-      "close_date": "09/07/2027",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "HHS-NIH11"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
       "source_id": "356982",
       "title": "BRAIN Initiative: Clinical Studies to Advance Next-Generation Devices for Recording and Modulation in the Human Central Nervous System (UH3 Clinical Trial Optional)",
       "abstract": "",
@@ -28764,25 +28688,6 @@
       "pdf_url": "",
       "published_date": "07/04/2024",
       "close_date": "06/01/2026",
-      "document_type": "grant_opportunity",
-      "agencies": [
-        "NSF"
-      ],
-      "award_ceiling": "",
-      "award_floor": "",
-      "tribal_eligible": false,
-      "eligibility_codes": [],
-      "authority_weight": 0.85
-    },
-    {
-      "source": "grants_gov",
-      "source_id": "355219",
-      "title": "Research on the Science and Technology Enterprise: Indicators, Statistics, and Methods (NCSES S&amp;T)",
-      "abstract": "",
-      "url": "https://www.grants.gov/search-results-detail/355219",
-      "pdf_url": "",
-      "published_date": "07/01/2024",
-      "close_date": "03/04/2026",
       "document_type": "grant_opportunity",
       "agencies": [
         "NSF"
@@ -29961,6 +29866,25 @@
       "pdf_url": "",
       "published_date": "02/12/2020",
       "close_date": "",
+      "document_type": "grant_opportunity",
+      "agencies": [
+        "NSF"
+      ],
+      "award_ceiling": "",
+      "award_floor": "",
+      "tribal_eligible": false,
+      "eligibility_codes": [],
+      "authority_weight": 0.85
+    },
+    {
+      "source": "grants_gov",
+      "source_id": "320753",
+      "title": "Science of Learning and Augmented Intelligence (SL)",
+      "abstract": "",
+      "url": "https://www.grants.gov/search-results-detail/320753",
+      "pdf_url": "",
+      "published_date": "09/19/2019",
+      "close_date": "08/05/2026",
       "document_type": "grant_opportunity",
       "agencies": [
         "NSF"
