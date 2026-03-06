@@ -761,6 +761,14 @@
       "cfda": "66.926",
       "_type": "ObligationNode"
     },
+    "usa_66.468_197965171": {
+      "id": "usa_66.468_197965171",
+      "amount": 299843.0,
+      "recipient": "UTE INDIAN TRIBE",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_258575712": {
       "id": "usa_66.468_258575712",
       "amount": 250000.0,
@@ -2959,7 +2967,7 @@
     },
     "usa_66.468_198509858": {
       "id": "usa_66.468_198509858",
-      "amount": 92861000.0,
+      "amount": 170671000.0,
       "recipient": "INDIANA FINANCE AUTHORITY",
       "fiscal_year": "FY26",
       "cfda": "66.468",
@@ -4357,6 +4365,14 @@
       "cfda": "66.038",
       "_type": "ObligationNode"
     },
+    "usa_20.205_250954329": {
+      "id": "usa_20.205_250954329",
+      "amount": 1961222.5,
+      "recipient": "EASTERN BAND OF CHEROKEE INDIANS",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
     "usa_14.867_268688309": {
       "id": "usa_14.867_268688309",
       "amount": 3237206.3,
@@ -4427,6 +4443,14 @@
       "recipient": "EASTERN BAND OF CHEROKEE INDIANS",
       "fiscal_year": "FY26",
       "cfda": "66.926",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258575853": {
+      "id": "usa_66.468_258575853",
+      "amount": 3977000.0,
+      "recipient": "SAN CARLOS APACHE TRIBAL COUNCIL",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
       "_type": "ObligationNode"
     },
     "usa_66.468_354663676": {
@@ -4706,14 +4730,6 @@
       "durability": "",
       "_type": "AuthorityNode"
     },
-    "usa_20.205_355713351": {
-      "id": "usa_20.205_355713351",
-      "amount": 2000000.0,
-      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.205",
-      "_type": "ObligationNode"
-    },
     "usa_15.507_355682562": {
       "id": "usa_15.507_355682562",
       "amount": 400000.0,
@@ -4746,27 +4762,6 @@
       "cfda": "20.284",
       "_type": "ObligationNode"
     },
-    "auth_31_u_s_c_3351": {
-      "id": "auth_31_u_s_c_3351",
-      "citation": "31 U.S.C. 3351",
-      "authority_type": "Statute",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "auth_5_u_s_c_552": {
-      "id": "auth_5_u_s_c_552",
-      "citation": "5 U.S.C. 552",
-      "authority_type": "Statute",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
-    "auth_executive_order_14249": {
-      "id": "auth_executive_order_14249",
-      "citation": "Executive Order 14249",
-      "authority_type": "Guidance",
-      "durability": "",
-      "_type": "AuthorityNode"
-    },
     "fv_dot_protect_2026-04366": {
       "id": "fv_dot_protect_2026-04366",
       "name": "Paper Manifest Sunset Rule; Modification of the Hazardous Wa",
@@ -4795,6 +4790,14 @@
       "id": "usa_20.205_355330876",
       "amount": 2500000.0,
       "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA",
+      "fiscal_year": "FY26",
+      "cfda": "20.205",
+      "_type": "ObligationNode"
+    },
+    "usa_20.205_355713351": {
+      "id": "usa_20.205_355713351",
+      "amount": 2000000.0,
+      "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.205",
       "_type": "ObligationNode"
@@ -4839,14 +4842,6 @@
       "cfda": "10.720",
       "_type": "ObligationNode"
     },
-    "usa_10.720_355327349": {
-      "id": "usa_10.720_355327349",
-      "amount": 176381.0,
-      "recipient": "AGRICULTURE, CONSERVATION & FORESTRY, MAINE DEPARTMENT OF",
-      "fiscal_year": "FY26",
-      "cfda": "10.720",
-      "_type": "ObligationNode"
-    },
     "usa_15.507_355307482": {
       "id": "usa_15.507_355307482",
       "amount": 1494569.0,
@@ -4867,14 +4862,6 @@
       "id": "usa_20.284_355713041",
       "amount": 2713763.95,
       "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION",
-      "fiscal_year": "FY26",
-      "cfda": "20.284",
-      "_type": "ObligationNode"
-    },
-    "usa_20.284_355330518": {
-      "id": "usa_20.284_355330518",
-      "amount": 2167963.0,
-      "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -4951,6 +4938,27 @@
       "cfda": "20.284",
       "_type": "ObligationNode"
     },
+    "auth_31_u_s_c_3351": {
+      "id": "auth_31_u_s_c_3351",
+      "citation": "31 U.S.C. 3351",
+      "authority_type": "Statute",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "auth_5_u_s_c_552": {
+      "id": "auth_5_u_s_c_552",
+      "citation": "5 U.S.C. 552",
+      "authority_type": "Statute",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
+    "auth_executive_order_14249": {
+      "id": "auth_executive_order_14249",
+      "citation": "Executive Order 14249",
+      "authority_type": "Guidance",
+      "durability": "",
+      "_type": "AuthorityNode"
+    },
     "usa_20.205_354807134": {
       "id": "usa_20.205_354807134",
       "amount": 12865000.0,
@@ -5007,6 +5015,14 @@
       "cfda": "10.720",
       "_type": "ObligationNode"
     },
+    "usa_10.720_355327349": {
+      "id": "usa_10.720_355327349",
+      "amount": 176381.0,
+      "recipient": "AGRICULTURE, CONSERVATION & FORESTRY, MAINE DEPARTMENT OF",
+      "fiscal_year": "FY26",
+      "cfda": "10.720",
+      "_type": "ObligationNode"
+    },
     "usa_15.507_354776930": {
       "id": "usa_15.507_354776930",
       "amount": 400000.0,
@@ -5035,6 +5051,14 @@
       "id": "usa_20.284_354806842",
       "amount": 7283200.0,
       "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION",
+      "fiscal_year": "FY26",
+      "cfda": "20.284",
+      "_type": "ObligationNode"
+    },
+    "usa_20.284_355330518": {
+      "id": "usa_20.284_355330518",
+      "amount": 2167963.0,
+      "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION",
       "fiscal_year": "FY26",
       "cfda": "20.284",
       "_type": "ObligationNode"
@@ -41071,14 +41095,6 @@
       "cfda": "20.205",
       "_type": "ObligationNode"
     },
-    "usa_20.205_251036158": {
-      "id": "usa_20.205_251036158",
-      "amount": 1930485.0,
-      "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA",
-      "fiscal_year": "FY26",
-      "cfda": "20.205",
-      "_type": "ObligationNode"
-    },
     "usa_14.867_271475245": {
       "id": "usa_14.867_271475245",
       "amount": 1776931.91,
@@ -41093,6 +41109,14 @@
       "recipient": "THE ASSOCIATION OF ALASKA HOUSING AUTHORITIES",
       "fiscal_year": "FY26",
       "cfda": "14.867",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_355769138": {
+      "id": "usa_66.468_355769138",
+      "amount": 844671000.0,
+      "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
       "_type": "ObligationNode"
     },
     "usa_66.468_258059947": {
@@ -41153,6 +41177,14 @@
     },
     "usa_66.468_353785104": {
       "id": "usa_66.468_353785104",
+      "amount": 27572000.0,
+      "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198417856": {
+      "id": "usa_66.468_198417856",
       "amount": 27572000.0,
       "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION",
       "fiscal_year": "FY26",
@@ -41575,10 +41607,26 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_198509591": {
+      "id": "usa_66.468_198509591",
+      "amount": 82898400.0,
+      "recipient": "NORTH CAROLINA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_198127890": {
       "id": "usa_66.468_198127890",
       "amount": 81203000.0,
       "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_257817916": {
+      "id": "usa_66.468_257817916",
+      "amount": 75829000.0,
+      "recipient": "PENNVEST",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -41623,10 +41671,26 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_257834249": {
+      "id": "usa_66.468_257834249",
+      "amount": 49339000.0,
+      "recipient": "VA STATE BOARD OF HEALTH",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_198417576": {
       "id": "usa_66.468_198417576",
       "amount": 49243000.0,
       "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_197960849": {
+      "id": "usa_66.468_197960849",
+      "amount": 48319000.0,
+      "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -41659,6 +41723,14 @@
       "id": "usa_66.468_258513658",
       "amount": 40535000.0,
       "recipient": "MISSOURI DEPARTMENT OF NATURAL R",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258893645": {
+      "id": "usa_66.468_258893645",
+      "amount": 39954000.0,
+      "recipient": "DEPARTMENT OF PUBLIC HEALTH CONNECTICUT",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -41703,6 +41775,14 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_198789922": {
+      "id": "usa_66.468_198789922",
+      "amount": 31809000.0,
+      "recipient": "SOUTH CAROLINA DEPARTMENT OF ENVIRONMENTAL SERVICES",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_198417566": {
       "id": "usa_66.468_198417566",
       "amount": 31253000.0,
@@ -41735,6 +41815,30 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_355771048": {
+      "id": "usa_66.468_355771048",
+      "amount": 28650000.0,
+      "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258064589": {
+      "id": "usa_66.468_258064589",
+      "amount": 28650000.0,
+      "recipient": "PUERTO RICO DEPARTMENT OF HEALTH",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198417886": {
+      "id": "usa_66.468_198417886",
+      "amount": 28650000.0,
+      "recipient": "MISSISSIPPI STATE DEPARTMENT OF HEALTH",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_353785157": {
       "id": "usa_66.468_353785157",
       "amount": 24974000.0,
@@ -41747,6 +41851,14 @@
       "id": "usa_66.468_354663590",
       "amount": 24898000.0,
       "recipient": "NEW MEXICO FINANCE AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_355771050": {
+      "id": "usa_66.468_355771050",
+      "amount": 24884000.0,
+      "recipient": "MICHIGAN DEPARTMENT OF ENVIRONMENT, GREAT LAKES, AND ENERGY",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -41775,6 +41887,14 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_258855501": {
+      "id": "usa_66.468_258855501",
+      "amount": 21055000.0,
+      "recipient": "HAWAII DEPARTMENT OF HEALTH",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_197965203": {
       "id": "usa_66.468_197965203",
       "amount": 21055000.0,
@@ -41799,10 +41919,26 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_258734549": {
+      "id": "usa_66.468_258734549",
+      "amount": 18674000.0,
+      "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_197960739": {
       "id": "usa_66.468_197960739",
       "amount": 18546000.0,
       "recipient": "MICHIGAN DEPARTMENT OF ENVIRONMENT, GREAT LAKES, AND ENERGY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_355771060": {
+      "id": "usa_66.468_355771060",
+      "amount": 18359000.0,
+      "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -41903,6 +42039,14 @@
       "cfda": "66.468",
       "_type": "ObligationNode"
     },
+    "usa_66.468_355769088": {
+      "id": "usa_66.468_355769088",
+      "amount": 9301000.0,
+      "recipient": "KENTUCKY INFRASTRUCTURE AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
     "usa_66.468_198789937": {
       "id": "usa_66.468_198789937",
       "amount": 9075000.0,
@@ -41955,6 +42099,14 @@
       "id": "usa_66.468_258684137",
       "amount": 7846000.0,
       "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_258893641": {
+      "id": "usa_66.468_258893641",
+      "amount": 7640000.0,
+      "recipient": "DEPARTMENT OF PUBLIC HEALTH CONNECTICUT",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -42019,6 +42171,14 @@
       "id": "usa_66.468_257810805",
       "amount": 1457620.0,
       "recipient": "DC WATER & SEWER AUTHORITY",
+      "fiscal_year": "FY26",
+      "cfda": "66.468",
+      "_type": "ObligationNode"
+    },
+    "usa_66.468_198417901": {
+      "id": "usa_66.468_198417901",
+      "amount": 1078000.0,
+      "recipient": "MICCOSUKEE CORPORATION",
       "fiscal_year": "FY26",
       "cfda": "66.468",
       "_type": "ObligationNode"
@@ -49272,6 +49432,15 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_197965171",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 299843.0,
+        "recipient": "UTE INDIAN TRIBE"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_258575712",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -51889,7 +52058,7 @@
       "target": "usa_66.468_198509858",
       "type": "OBLIGATED_BY",
       "metadata": {
-        "amount": 92861000.0,
+        "amount": 170671000.0,
         "recipient": "INDIANA FINANCE AUTHORITY"
       }
     },
@@ -53460,6 +53629,15 @@
       }
     },
     {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_250954329",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1961222.5,
+        "recipient": "EASTERN BAND OF CHEROKEE INDIANS"
+      }
+    },
+    {
       "source": "hud_ihbg",
       "target": "usa_14.867_268688309",
       "type": "OBLIGATED_BY",
@@ -53538,6 +53716,15 @@
       "metadata": {
         "amount": 122410.0,
         "recipient": "EASTERN BAND OF CHEROKEE INDIANS"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258575853",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 3977000.0,
+        "recipient": "SAN CARLOS APACHE TRIBAL COUNCIL"
       }
     },
     {
@@ -53809,6 +53996,14 @@
       }
     },
     {
+      "source": "irs_elective_pay",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "119-S-4021"
+      }
+    },
+    {
       "source": "epa_stag",
       "target": "usa_66.468_355151843",
       "type": "OBLIGATED_BY",
@@ -53853,15 +54048,6 @@
       }
     },
     {
-      "source": "fhwa_ttp_safety",
-      "target": "usa_20.205_355713351",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 2000000.0,
-        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
       "source": "usbr_watersmart",
       "target": "usa_15.507_355682562",
       "type": "OBLIGATED_BY",
@@ -53899,30 +54085,6 @@
     },
     {
       "source": "dot_protect",
-      "target": "auth_31_u_s_c_3351",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-04216"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_5_u_s_c_552",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-04216"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "auth_executive_order_14249",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "2026-04216"
-      }
-    },
-    {
-      "source": "dot_protect",
       "target": "fv_dot_protect_2026-04366",
       "type": "FUNDED_BY",
       "metadata": {
@@ -53954,6 +54116,15 @@
       "metadata": {
         "amount": 2500000.0,
         "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA"
+      }
+    },
+    {
+      "source": "fhwa_ttp_safety",
+      "target": "usa_20.205_355713351",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2000000.0,
+        "recipient": "VIRGINIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54002,15 +54173,6 @@
       }
     },
     {
-      "source": "usda_wildfire",
-      "target": "usa_10.720_355327349",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 176381.0,
-        "recipient": "AGRICULTURE, CONSERVATION & FORESTRY, MAINE DEPARTMENT OF"
-      }
-    },
-    {
       "source": "usbr_watersmart",
       "target": "usa_15.507_355307482",
       "type": "OBLIGATED_BY",
@@ -54035,15 +54197,6 @@
       "metadata": {
         "amount": 2713763.95,
         "recipient": "NEW MEXICO DEPARTMENT OF TRANSPORTATION"
-      }
-    },
-    {
-      "source": "dot_protect",
-      "target": "usa_20.284_355330518",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 2167963.0,
-        "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -54128,6 +54281,30 @@
       }
     },
     {
+      "source": "dot_protect",
+      "target": "auth_31_u_s_c_3351",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-04216"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_5_u_s_c_552",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-04216"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "auth_executive_order_14249",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "2026-04216"
+      }
+    },
+    {
       "source": "fhwa_ttp_safety",
       "target": "usa_20.205_354807134",
       "type": "OBLIGATED_BY",
@@ -54191,6 +54368,15 @@
       }
     },
     {
+      "source": "usda_wildfire",
+      "target": "usa_10.720_355327349",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 176381.0,
+        "recipient": "AGRICULTURE, CONSERVATION & FORESTRY, MAINE DEPARTMENT OF"
+      }
+    },
+    {
       "source": "usbr_watersmart",
       "target": "usa_15.507_354776930",
       "type": "OBLIGATED_BY",
@@ -54224,6 +54410,15 @@
       "metadata": {
         "amount": 7283200.0,
         "recipient": "MINNESOTA DEPARTMENT OF TRANSPORTATION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_20.284_355330518",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 2167963.0,
+        "recipient": "PENNSYLVANIA DEPARTMENT OF TRANSPORTATION"
       }
     },
     {
@@ -94771,15 +94966,6 @@
       }
     },
     {
-      "source": "fhwa_ttp_safety",
-      "target": "usa_20.205_251036158",
-      "type": "OBLIGATED_BY",
-      "metadata": {
-        "amount": 1930485.0,
-        "recipient": "DEPARTMENT OF TRANSPORTATION CALIFORNIA"
-      }
-    },
-    {
       "source": "hud_ihbg",
       "target": "usa_14.867_271475245",
       "type": "OBLIGATED_BY",
@@ -94795,6 +94981,24 @@
       "metadata": {
         "amount": 736683.44,
         "recipient": "THE ASSOCIATION OF ALASKA HOUSING AUTHORITIES"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_355769138",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 844671000.0,
+        "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_66.468_355769138",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 844671000.0,
+        "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION"
       }
     },
     {
@@ -94935,6 +95139,24 @@
     {
       "source": "dot_protect",
       "target": "usa_66.468_353785104",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 27572000.0,
+        "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198417856",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 27572000.0,
+        "recipient": "FLORIDA DEPARTMENT OF ENVIRONMENTAL PROTECTION"
+      }
+    },
+    {
+      "source": "dot_protect",
+      "target": "usa_66.468_198417856",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 27572000.0,
@@ -95474,11 +95696,29 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_198509591",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 82898400.0,
+        "recipient": "NORTH CAROLINA DEPARTMENT OF ENVIRONMENTAL QUALITY"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_198127890",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 81203000.0,
         "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_257817916",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 75829000.0,
+        "recipient": "PENNVEST"
       }
     },
     {
@@ -95528,11 +95768,29 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_257834249",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 49339000.0,
+        "recipient": "VA STATE BOARD OF HEALTH"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_198417576",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 49243000.0,
         "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_197960849",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 48319000.0,
+        "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES"
       }
     },
     {
@@ -95569,6 +95827,15 @@
       "metadata": {
         "amount": 40535000.0,
         "recipient": "MISSOURI DEPARTMENT OF NATURAL R"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258893645",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 39954000.0,
+        "recipient": "DEPARTMENT OF PUBLIC HEALTH CONNECTICUT"
       }
     },
     {
@@ -95618,6 +95885,15 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_198789922",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 31809000.0,
+        "recipient": "SOUTH CAROLINA DEPARTMENT OF ENVIRONMENTAL SERVICES"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_198417566",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -95654,6 +95930,33 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_355771048",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 28650000.0,
+        "recipient": "NORTH DAKOTA DEPARTMENT OF ENVIRONMENTAL QUALITY"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258064589",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 28650000.0,
+        "recipient": "PUERTO RICO DEPARTMENT OF HEALTH"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198417886",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 28650000.0,
+        "recipient": "MISSISSIPPI STATE DEPARTMENT OF HEALTH"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_353785157",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -95668,6 +95971,15 @@
       "metadata": {
         "amount": 24898000.0,
         "recipient": "NEW MEXICO FINANCE AUTHORITY"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_355771050",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 24884000.0,
+        "recipient": "MICHIGAN DEPARTMENT OF ENVIRONMENT, GREAT LAKES, AND ENERGY"
       }
     },
     {
@@ -95699,6 +96011,15 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_258855501",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 21055000.0,
+        "recipient": "HAWAII DEPARTMENT OF HEALTH"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_197965203",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -95726,11 +96047,29 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_258734549",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 18674000.0,
+        "recipient": "WISCONSIN DEPARTMENT OF NATURAL RESOURCES"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_197960739",
       "type": "OBLIGATED_BY",
       "metadata": {
         "amount": 18546000.0,
         "recipient": "MICHIGAN DEPARTMENT OF ENVIRONMENT, GREAT LAKES, AND ENERGY"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_355771060",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 18359000.0,
+        "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE"
       }
     },
     {
@@ -95843,6 +96182,15 @@
     },
     {
       "source": "epa_stag",
+      "target": "usa_66.468_355769088",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 9301000.0,
+        "recipient": "KENTUCKY INFRASTRUCTURE AUTHORITY"
+      }
+    },
+    {
+      "source": "epa_stag",
       "target": "usa_66.468_198789937",
       "type": "OBLIGATED_BY",
       "metadata": {
@@ -95902,6 +96250,15 @@
       "metadata": {
         "amount": 7846000.0,
         "recipient": "DEPARTMENT OF ENVIRONMENT & CONSERVATION TENNESSEE"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_258893641",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 7640000.0,
+        "recipient": "DEPARTMENT OF PUBLIC HEALTH CONNECTICUT"
       }
     },
     {
@@ -95974,6 +96331,15 @@
       "metadata": {
         "amount": 1457620.0,
         "recipient": "DC WATER & SEWER AUTHORITY"
+      }
+    },
+    {
+      "source": "epa_stag",
+      "target": "usa_66.468_198417901",
+      "type": "OBLIGATED_BY",
+      "metadata": {
+        "amount": 1078000.0,
+        "recipient": "MICCOSUKEE CORPORATION"
       }
     },
     {
@@ -103211,25 +103577,25 @@
       }
     },
     {
-      "source": "usbr_watersmart",
-      "target": "auth_bil",
-      "type": "AUTHORIZED_BY",
-      "metadata": {
-        "inferred_from": "119-S-3912"
-      }
-    },
-    {
       "source": "epa_gap",
       "target": "auth_bil",
       "type": "AUTHORIZED_BY",
       "metadata": {
         "inferred_from": "119-S-3952"
       }
+    },
+    {
+      "source": "usbr_watersmart",
+      "target": "auth_bil",
+      "type": "AUTHORIZED_BY",
+      "metadata": {
+        "inferred_from": "119-S-3912"
+      }
     }
   ],
   "summary": {
-    "total_nodes": 6058,
-    "total_edges": 6128,
+    "total_nodes": 6078,
+    "total_edges": 6151,
     "programs": 18,
     "node_types": {
       "ProgramNode": 18,
@@ -103238,7 +103604,7 @@
       "FundingVehicleNode": 9,
       "BarrierNode": 16,
       "TrustSuperNode": 1,
-      "ObligationNode": 5961
+      "ObligationNode": 5981
     }
   }
 }

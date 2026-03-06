@@ -1,7 +1,7 @@
 {
   "source": "federal_register",
-  "cached_at": "2026-03-05T14:00:30.518063+00:00",
-  "item_count": 155,
+  "cached_at": "2026-03-06T13:53:36.842432+00:00",
+  "item_count": 142,
   "items": [
     {
       "source": "federal_register",
@@ -57,30 +57,6 @@
       "regulation_ids": [
         "1018-BG47"
       ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03292",
-      "title": "Endangered and Threatened Wildlife and Plants; Notice of 12-Month Finding on a Petition To List the Washington Coast Chinook Salmon Evolutionarily Significant Unit as Threatened or Endangered Under the Endangered Species Act",
-      "abstract": "NMFS has completed a comprehensive status review of the Washington Coast (WC) Chinook salmon (Oncorhynchus tshawytscha) Evolutionarily Significant Unit (ESU) in response to a petition to list this species as threatened or endangered under the Endangered Species Act (ESA) and to designate critical habitat concurrently with the listing. Based on the best scientific and commercial information available, including the status review report, and after considering efforts being made to protect the species, NMFS has determined that the WC Chinook salmon ESU does not warrant listing.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03292/endangered-and-threatened-wildlife-and-plants-notice-of-12-month-finding-on-a-petition-to-list-the",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03292.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Commerce Department",
-        "National Oceanic and Atmospheric Administration"
-      ],
-      "agency_ids": [
-        54,
-        361
-      ],
-      "action": "Notice of 12-month petition finding.",
-      "dates": "This finding was made available on February 19, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -169,82 +145,72 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03290",
-      "title": "Notice of Intent To Revise Resource Management Plans for Northwestern and Coastal Oregon and Southwestern Oregon in Oregon/Washington and Prepare an Associated Environmental Impact Statement",
-      "abstract": "In support of the Oregon and California Revested Railroad Lands Act of 1937 (O&C Act), in compliance with the National Environmental Policy Act of 1969, as amended (NEPA), and the Federal Land Policy and Management Act of 1976, as amended, the Bureau of Land Management (BLM) Oregon/Washington (OR/WA) State Office intends to prepare a revision of the Northwestern and Coastal Oregon Resource Management Plan and Southwestern Oregon Resource Management Plan (hereafter, the RMPs) with an associated environmental analysis. The magnitude of unprecedented and destructive wildfires and other threats to forest health over the last decade, approaches to management (including the barred owl management), and severely reduced timber production compared to historically higher levels (and its resulting adverse economic consequences) merit consideration in an RMP revision. This notice announces the beginning of the scoping period to solicit public comments and identify issues, provide planning criteria for public review, and seek comment on current and future land use designations in the planning areas. The RMP revisions would replace the existing RMPs.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03290/notice-of-intent-to-revise-resource-management-plans-for-northwestern-and-coastal-oregon-and",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03290.pdf",
-      "published_date": "2026-02-19",
+      "source_id": "2026-04515",
+      "title": "Designated Placement Requirements Under Titles IV-E and IV-B for LGBTQI+ Children; Rescission",
+      "abstract": "The Administration for Children and Families (ACF) proposes to remove the requirements issued in the final rule Designated Placement Requirements Under Titles IV-E and IV-B for LGBTQI+ Children (89 FR 34818) that was published on April 30, 2024. The final rule required title IV-E/IV-B agencies to ensure that a Designated Placement is available for all children who self-identify with an alternative sexual orientation or self-identify as something other than their sex in foster care who request or would benefit from such a placement. On June 13, 2025, the U.S. District Court for the Eastern District of Texas vacated the final rule in its entirety, State of Texas v. United States Department of Health & Human Services, 770 F. Supp. 3d 940 (E.D. Tex. 2025), concluding that the final rule exceeded the Department of Health and Human Services' statutory authority and conflicted with the text of title IV-E. As a result of the court's decision, the final rule is no longer in effect or enforceable, and to ensure clarity for the public and regulated entities, ACF proposes to remove the provisions from the Code of Federal Regulations.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04515/designated-placement-requirements-under-titles-iv-e-and-iv-b-for-lgbtqi-children-rescission",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04515.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Proposed Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Health and Human Services Department"
+      ],
+      "agency_ids": [
+        221
+      ],
+      "action": "Notice of proposed rulemaking.",
+      "dates": "Comments on this proposed rule must be received by April 6, 2026.",
+      "cfr_references": [
+        "45 CFR 1355"
+      ],
+      "regulation_ids": [
+        "0970-AD19"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04474",
+      "title": "Global Laser Enrichment, LLC; (Paducah Laser Enrichment Facility); Notice of Receipt of Application for License; Notice of Consideration of Issuance of License; Notice of Hearing and Commission Order; Opportunity To Request a [Contested] Hearing; and Order Imposing Procedures for Access to Sensitive Unclassified Non-Safeguards Information and Safeguards Information for Contention Preparation",
+      "abstract": "",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04474/global-laser-enrichment-llc-paducah-laser-enrichment-facility-notice-of-receipt-of-application-for",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04474.pdf",
+      "published_date": "2026-03-06",
       "document_type": "Notice",
       "document_subtype": "",
       "agencies": [
-        "Interior Department",
-        "Land Management Bureau"
+        "Nuclear Regulatory Commission"
       ],
       "agency_ids": [
-        253,
-        275
+        383
       ],
-      "action": "Notice of intent.",
-      "dates": "To be considered, comments concerning the scope of the analysis, potential alternatives and identification of relevant information, studies, and ACEC nominations must be received by March 23, 2026.",
+      "action": "",
+      "dates": null,
       "cfr_references": [],
       "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03228",
-      "title": "Maximum Line Speed Under the New Swine Slaughter Inspection System (NSIS)",
-      "abstract": "FSIS is proposing to amend the Federal meat inspection regulations to allow establishments operating under the NSIS to determine their own line speeds based on their ability to maintain process control. FSIS is also proposing to clarify that the FSIS inspector may reduce the rate of establishment operations at any point in the slaughter process when, in their judgement, there is a loss of process control, or a carcass-by-carcass inspection cannot be adequately performed within the time available due to the manner in which the swine are presented to the online carcass inspector or the health condition of the particular herd. Finally, FSIS is proposing to amend the regulations to remove the requirement that NSIS establishments submit an annual attestation to FSIS stating that they maintain a program to monitor and document work-related conditions of establishment workers. The proposed amendments would allow NSIS establishments to slaughter swine more efficiently while continuing to ensure food safety and effective online carcass inspection.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03228/maximum-line-speed-under-the-new-swine-slaughter-inspection-system-nsis",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03228.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Proposed Rule",
+      "source_id": "2026-04406",
+      "title": "SHINE Technologies, LLC; SHINE Medical Isotope Production Facility; Consideration of Approval of Transfer of License and Conforming Amendment",
+      "abstract": "The U.S. Nuclear Regulatory Commission (NRC, the Commission) received and is considering approval of an application filed by Illuminated Holdings, Inc. and its wholly owned subsidiary, SHINE Technologies, LLC, on February 4, 2026. The application seeks NRC approval of the direct transfer of Construction Permit No. CPMIF-001 for the SHINE Medical Isotope Production Facility, currently held by SHINE Technologies, LLC (the current licensee) to a newly formed company, SHINE Chrysalis, LLC, and issuance of a conforming license amendment. The application also seeks NRC approval of the indirect transfer of control of the construction permit as a result of the establishment of a new intermediate parent company, SHINE Chrysalis Holdings, LLC, which will be the direct corporate parent of SHINE Chrysalis, LLC. SHINE Chrysalis Holdings, LLC is a direct subsidiary of Illuminated Holdings, Inc. The application contains sensitive unclassified non-safeguards information (SUNSI).",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04406/shine-technologies-llc-shine-medical-isotope-production-facility-consideration-of-approval-of",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04406.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Notice",
       "document_subtype": "",
       "agencies": [
-        "Agriculture Department",
-        "Food Safety and Inspection Service"
+        "Nuclear Regulatory Commission"
       ],
       "agency_ids": [
-        12,
-        201
+        383
       ],
-      "action": "Proposed rule.",
-      "dates": "Comments on the proposed rule must be received on or before April 20, 2026.",
-      "cfr_references": [
-        "9 CFR 310"
-      ],
-      "regulation_ids": [
-        "0583-AE02"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03227",
-      "title": "Maximum Line Speed Rates for Young Chicken and Turkey Establishments Operating Under the New Poultry Inspection System",
-      "abstract": "FSIS is proposing to amend the regulations to: allow young chicken establishments operating under the New Poultry Inspection System (NPIS) to operate at line speeds up to 175 birds per minute (bpm); increase the maximum line speed prescribed for turkey establishments operating under the NPIS from 55 bpm to 60 bpm; define \"maximum line speed\" as the time it takes for an inspector to effectively perform online carcass inspection procedures; clarify when FSIS may direct establishments to operate at a reduced line speed; and remove requirements for NPIS establishments to submit to FSIS annual attestations on worker safety programs. The proposed amendments would allow poultry establishments to slaughter birds more efficiently while continuing to ensure food safety and effective online carcass inspection.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03227/maximum-line-speed-rates-for-young-chicken-and-turkey-establishments-operating-under-the-new-poultry",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03227.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Proposed Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Agriculture Department",
-        "Food Safety and Inspection Service"
-      ],
-      "agency_ids": [
-        12,
-        201
-      ],
-      "action": "Proposed rule.",
-      "dates": "Comments must be received on or before April 20, 2026.",
-      "cfr_references": [
-        "9 CFR 381"
-      ],
-      "regulation_ids": [
-        "0583-AE01"
-      ],
+      "action": "Application for direct and indirect transfer of license; opportunity to comment, request a hearing, and petition for leave to intervene.",
+      "dates": "Submit comments by April 6, 2026. A request for a hearing must be filed by March 26, 2026. Any potential party as defined in section 2.4 of title 10 of the Code of Federal Regulations (10 CFR), who believes access to SUNSI is necessary to respond to this notice must follow the instructions in Section VI of the SUPPLEMENTARY INFORMATION section of this notice.",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -932,114 +898,55 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03301",
-      "title": "Rescission of the \u201cTen-Day Notices and Corrective Action for State Regulatory Program Issues\u201d Rule, Issued April 9, 2024",
-      "abstract": "The Office of Surface Mining Reclamation and Enforcement (\"OSMRE\" or \"OSM\") is rescinding the \"Ten-Day Notices and Corrective Action for State Regulatory Program Issues\" rule adopted on April 9, 2024 (the \"2024 Rule\"), and replacing it, in large part, with the rule titled, \"Clarification of Provisions Related to the Issuance of Ten-Day Notices to State Regulatory Authorities and Enhancement of Corrective Action for State Regulatory Program Issues,\" which was first adopted on November 24, 2020 (the \"2020 Rule\"). This final rule does make some minor modifications to the 2020 Rule to further streamline the process for OSM's coordination with State regulatory authorities, minimize duplication of efforts in the administration of the Surface Mining Control and Reclamation Act of 1977 (\"SMCRA\" or \"the Act\"), and appropriately recognize that State regulatory authorities are the primary regulatory authorities for non- Federal, non-Indian lands within their borders.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03301/rescission-of-the-ten-day-notices-and-corrective-action-for-state-regulatory-program-issues-rule",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03301.pdf",
-      "published_date": "2026-02-19",
+      "source_id": "2026-04475",
+      "title": "Freedom of Information Act Implementing Regulations",
+      "abstract": "The U.S. Nuclear Regulatory Commission (NRC) is amending its regulations that implement the Freedom of Information Act (FOIA) to provide clarity, promote agency accountability, improve efficiency in responding to FOIA requests, update roles and responsibilities, and align the regulations with current Federal best practices for implementing FOIA. This final rule addresses the Department of Justice (DOJ) recommendation that the NRC update its FOIA regulations and incorporate the DOJ's model language for FOIA regulations, where appropriate. The NRC is not soliciting public comment for these changes because the change is limited to an agency rule of procedure and practice.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04475/freedom-of-information-act-implementing-regulations",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04475.pdf",
+      "published_date": "2026-03-06",
       "document_type": "Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Nuclear Regulatory Commission"
+      ],
+      "agency_ids": [
+        383
+      ],
+      "action": "Final rule.",
+      "dates": "This final rule is effective on March 6, 2026.",
+      "cfr_references": [
+        "10 CFR 9"
+      ],
+      "regulation_ids": [
+        "3150-AL14"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
+      "source_id": "2026-04460",
+      "title": "Definition of Shellfish; Inclusion of Cephalopods",
+      "abstract": "We, the U.S. Fish and Wildlife Service (Service), propose to amend the definition of \"shellfish\" in the Code of Federal Regulations (CFR) by removing the phrase \"having a shell\" and adding specific taxa. This amendment would clarify that squid, cuttlefish, octopus, and other cephalopods are included within the regulatory definition of shellfish. This action is deregulatory in nature, as it reduces regulatory ambiguity, aligns the Service's regulations with current biological understanding and commercial practice, reduces regulatory burden and is within the Service's purview to amend definitions as needed.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04460/definition-of-shellfish-inclusion-of-cephalopods",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04460.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
         "Interior Department",
-        "Surface Mining Reclamation and Enforcement Office"
+        "Fish and Wildlife Service"
       ],
       "agency_ids": [
         253,
-        480
+        197
       ],
-      "action": "Final rule.",
-      "dates": "This rule is effective on March 23, 2026.",
+      "action": "Proposed rule.",
+      "dates": "We will consider comments received or postmarked on or before April 6, 2026. Comments submitted electronically using the Federal eRulemaking Portal (see ADDRESSES, below) must be received by 11:59 p.m. eastern time on the closing date.",
       "cfr_references": [
-        "30 CFR 733",
-        "30 CFR 842"
+        "50 CFR 10"
       ],
       "regulation_ids": [
-        "1029-AC89"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03264",
-      "title": "Electronic Driver Vehicle Inspection Reports",
-      "abstract": "FMCSA clarifies the requirement to complete a Driver Vehicle Inspection Report (DVIR) based upon a public comment filed by the National Tank Truck Carriers (NTTC). The DVIR may already be completed electronically, however the explicit language in this rule will make this clear. This will encourage motor carriers and drivers to utilize electronic, cost-saving methods when completing DVIRs.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03264/electronic-driver-vehicle-inspection-reports",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03264.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 396"
-      ],
-      "regulation_ids": [
-        "2126-AC89"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03263",
-      "title": "Commercial Driver's License Standards; Requirements and Penalties: Applicability to the Exception for Certain Military Personnel",
-      "abstract": "FMCSA amends the Federal Motor Carrier Safety regulations (FMCSR) to allow dual-status military technicians to qualify for the exception for certain military personnel from commercial driver's license (CDL) standards. Dual-status military technicians are civilian technicians employed by military units to provide day-to-day support such as training, maintenance, and other activities required to support the unit. They are required by statute to maintain membership in one of the Army or Air Force Reserve Components as a condition of their civilian employment.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03263/commercial-drivers-license-standards-requirements-and-penalties-applicability-to-the-exception-for",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03263.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026. Petitions for reconsideration of this final rule must be submitted to the FMCSA Administrator no later than March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 383"
-      ],
-      "regulation_ids": [
-        "2126-AC92"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03258",
-      "title": "Qualifications of Drivers; Vision Standards Grandfathering Provision",
-      "abstract": "FMCSA amends the Federal Motor Carrier Safety Regulations to remove the grandfathering provision under the physical qualifications standards for interstate drivers operating under the vision waiver study program administered from 1992 through 1994, and the vision exemption program operated from 1998 through 2022, as the grandfathering provision is now obsolete. FMCSA's current rules permit individuals who do not satisfy, with the worse eye, either the existing distant visual acuity standard with corrective lenses or the field of vision standard, or both, to be physically qualified to operate a commercial motor vehicle (CMV) in interstate commerce under specified conditions.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03258/qualifications-of-drivers-vision-standards-grandfathering-provision",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03258.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026. Petitions for reconsideration of this final rule must be submitted to the FMCSA Administrator no later than March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 391"
-      ],
-      "regulation_ids": [
-        "2126-AC87"
+        "1018-BJ16"
       ],
       "authority_weight": 0.9
     },
@@ -1964,112 +1871,6 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03309",
-      "title": "Indian Energy Service Center; Receipt of Tribal Energy Resource Agreement for the Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado",
-      "abstract": "This notice advises the public that the Department of the Interior (DOI) received a final proposed Tribal Energy Resource Agreement (TERA) for the Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado (Tribe) to enter into energy-related leases, business agreements, and rights-of-way on Tribal lands, at the Tribe's discretion and without further Secretary's review and approval.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03309/indian-energy-service-center-receipt-of-tribal-energy-resource-agreement-for-the-southern-ute-indian",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03309.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Notice",
-      "document_subtype": "",
-      "agencies": [
-        "Interior Department",
-        "Indian Affairs Bureau"
-      ],
-      "agency_ids": [
-        253,
-        234
-      ],
-      "action": "Notice.",
-      "dates": "Interested persons are invited to submit comments on or before March 23, 2026.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03300",
-      "title": "Petroleum-Equivalent Fuel Economy Calculation",
-      "abstract": "The Office of Critical Minerals and Energy Innovation (formerly the Office of Energy Efficiency and Renewable Energy) of the Department of Energy (DOE) has reviewed the petroleum-equivalency factor (PEF) for electric vehicles (EVs) used by the Environmental Protection Agency (EPA) in calculating light-duty vehicle manufacturers' compliance with the Department of Transportation's (DOT) Corporate Average Fuel Economy (CAFE) standards. DOE has determined that revisions to the PEF are necessary. DOE is first publishing a final rule that removes the fuel content factor (FCF) from the calculation of the PEF. Removal of the FCF is consistent with a United States Court of Appeals for the Eighth Circuit decision that held, among other things, that the inclusion of the FCF in the PEF calculation exceeded DOE's authority under the substantive statute. DOE will propose additional revisions to the PEF in a forthcoming notice of proposed rulemaking.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03300/petroleum-equivalent-fuel-economy-calculation",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03300.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Energy Department"
-      ],
-      "agency_ids": [
-        136
-      ],
-      "action": "Interim final rule; request for comments.",
-      "dates": "The effective date of this interim final rule is February 19, 2026. DOE will accept comments, data, and information regarding this interim final rule no later than March 23, 2026.",
-      "cfr_references": [
-        "10 CFR 474"
-      ],
-      "regulation_ids": [
-        "1904-AF47"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03265",
-      "title": "Parts and Accessories Necessary for Safe Operation; Fuel Tank Overfill Restriction",
-      "abstract": "FMCSA removes the requirement in the Federal Motor Carrier Safety Regulations (FMCSR) that a liquid fuel tank manufactured on or after January 1, 1973, be designed and constructed so that it cannot be filled, in a normal filling operation, with a quantity of fuel that exceeds 95 percent of the tank's liquid capacity. This final rule responds to a petition for rulemaking from the Commercial Vehicle Safety Alliance (CVSA). The revision removes an unnecessary and outdated requirement from the FMCSRs.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03265/parts-and-accessories-necessary-for-safe-operation-fuel-tank-overfill-restriction",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03265.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 393"
-      ],
-      "regulation_ids": [
-        "2126-AC91"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03255",
-      "title": "Parts and Accessories Necessary for Safe Operation; Certification and Labeling Requirements for Rear Impact Protection Guards",
-      "abstract": "FMCSA amends the Federal Motor Carrier Safety Regulations (FMCSR) to rescind the requirement that the rear impact guard be permanently marked or labeled with a certification from the impact guard manufacturer as required by the applicable Federal Motor Vehicle Safety Standard (FMVSS) promulgated by the National Highway Traffic Safety Administration (NHTSA). The certification label or marking provides motor carriers purchasing new trailers or new impact guards to replace damaged devices with a means to determine whether the equipment is certified as meeting the FMVSS. However, the labeling or marking requirement has proven problematic for motor carriers when the label or marking becomes illegible or wears off during the service life of the trailer or guard. This final rule eliminates an unintended regulatory burden on motor carriers without compromising safety, as it does not affect the applicable FMVSS. The final rule also rescinds a guidance document pertaining to illegible, incomplete, or missing rear impact guard certification labels.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03255/parts-and-accessories-necessary-for-safe-operation-certification-and-labeling-requirements-for-rear",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03255.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 393"
-      ],
-      "regulation_ids": [
-        "2126-AC81"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
       "source_id": "2026-04376",
       "title": "Receipt of Incidental Take Permit Application and Proposed Habitat Conservation Plan for the Threatened Scrub-Jay; Brevard County, FL; Categorical Exclusion",
       "abstract": "We, the Fish and Wildlife Service (Service), announce receipt of an application from Melbourne Orlando International Airport (Taxiway A Rehabilitation Project) (applicant) for an incidental take permit (ITP) under the Endangered Species Act. The applicant requests the ITP to take the federally listed scrub-jay incidental to a taxiway rehabilitation in Brevard County, Florida. We request public comment on the application, which includes the applicant's proposed habitat conservation plan (HCP), and on the Service's preliminary determination that the proposed permitting action may be eligible for a categorical exclusion pursuant National Environmental Policy Act (NEPA), Department of Interior's (DOI) NEPA regulations, and the DOI Departmental Manual. To make this preliminary determination, we prepared a draft screening form and NEPA statement for HCPs, which is available for public review. We invite comment from the public and local, State, Tribal, and Federal agencies.",
@@ -2496,6 +2297,34 @@
     },
     {
       "source": "federal_register",
+      "source_id": "2026-04472",
+      "title": "Magnuson-Stevens Act Provisions; Fisheries Off West Coast States; Pacific Coast Groundfish Fishery; 2026 Pacific Whiting Harvest Specifications, 2026 Tribal Allocation, and 2026 Incidental Set-Aside",
+      "abstract": "NMFS issues this proposed rule to establish the 2026 Tribal allocation of Pacific whiting and set-aside of Pacific whiting for research and incidental mortality in non-groundfish fisheries. The proposed measures are intended to help prevent overfishing, achieve optimum yield, ensure that management measures are based on the best scientific information available, and provide for the implementation of Tribal treaty fishing rights.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04472/magnuson-stevens-act-provisions-fisheries-off-west-coast-states-pacific-coast-groundfish-fishery",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04472.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Proposed Rule",
+      "document_subtype": "",
+      "agencies": [
+        "Commerce Department",
+        "National Oceanic and Atmospheric Administration"
+      ],
+      "agency_ids": [
+        54,
+        361
+      ],
+      "action": "Proposed rule; request for comments.",
+      "dates": "Comments on this proposed rule must be received no later than March 23, 2026.",
+      "cfr_references": [
+        "50 CFR 660"
+      ],
+      "regulation_ids": [
+        "0648-BO33"
+      ],
+      "authority_weight": 0.9
+    },
+    {
+      "source": "federal_register",
       "source_id": "2026-03912",
       "title": "Notice of Intent To Amend the Resource Management Plan for the Sonoran Desert National Monument, Arizona, and Prepare an Associated Environmental Assessment",
       "abstract": "In compliance with the National Environmental Policy Act of 1969, as amended (NEPA), and the Federal Land Policy and Management Act of 1976, as amended, the Bureau of Land Management (BLM) Arizona State Director intends to prepare a Resource Management Plan (RMP) Amendment with an associated environmental assessment (EA) concerning recreational target shooting for the Sonoran Desert National Monument (SDNM). By this notice the BLM is announcing the beginning of the scoping period to solicit public comments and identify issues and is providing the planning criteria for public review.",
@@ -2666,29 +2495,24 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03242",
-      "title": "Hiring Authority for Post-Secondary Students",
-      "abstract": "The Office of Personnel Management (OPM) is issuing a final rule to amend its career and career-conditional employment regulations. The revision is necessary to implement section 1108 of the John S. McCain National Defense Authorization Act (NDAA) for Fiscal Year (FY) 2019, which requires OPM to issue regulations implementing hiring authorities that allow agencies to hire certain post-secondary students into positions at specified grades in the competitive service. The intended effect of the authority is to provide additional flexibility in hiring eligible and qualified individuals.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03242/hiring-authority-for-post-secondary-students",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03242.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
+      "source_id": "2026-04495",
+      "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+      "abstract": "As part of its continuing effort to reduce paperwork burdens, and as required by the Paperwork Reduction Act (PRA) of 1995, the Federal Communications Commission (FCC or Commission) invites the general public and other Federal agencies to take this opportunity to comment on the following information collections. Comments are requested concerning: whether the proposed collection of information is necessary for the proper performance of the functions of the Commission, including whether the information shall have practical utility; the accuracy of the Commission's burden estimate; ways to enhance the quality, utility, and clarity of the information collected; ways to minimize the burden of the collection of information on the respondents, including the use of automated collection burden on small business concerns with fewer than 25 employees. The FCC may not conduct or sponsor a collection of information unless it displays a currently valid OMB control number. No person shall be subject to any penalty for failing to comply with a collection of information subject to the PRA that does not display a valid OMB control number.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04495/information-collection-being-reviewed-by-the-federal-communications-commission",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04495.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Notice",
       "document_subtype": "",
       "agencies": [
-        "Personnel Management Office"
+        "Federal Communications Commission"
       ],
       "agency_ids": [
-        406
+        161
       ],
-      "action": "Final rule.",
-      "dates": "This final rule is effective March 23, 2026.",
-      "cfr_references": [
-        "5 CFR 315",
-        "5 CFR 316"
-      ],
-      "regulation_ids": [
-        "3206-AN86"
-      ],
+      "action": "Notice; request for comments.",
+      "dates": "Written PRA comments should be submitted on or before May 5, 2026. If you anticipate that you will be submitting comments but find it difficult to do so within the period of time allowed by this notice, you should advise the contact listed below as soon as possible.",
+      "cfr_references": [],
+      "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
@@ -2884,38 +2708,6 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03266",
-      "title": "Removal of Obsolete References to \u201cWater Carriers\u201d",
-      "abstract": "FMCSA amends its regulations to remove obsolete references to \"water carriers\" in the FMCSA regulations (FMCSR). FMCSA does not specifically regulate water carriers except to the extent that such carriers also engage in motor carrier operations. In such cases, the existing FMCSR provide appropriate coverage of the carrier's motor carrier operations.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03266/removal-of-obsolete-references-to-water-carriers",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03266.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026. Petitions for reconsideration of this final rule must be submitted to the FMCSA Administrator no later than March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 365",
-        "49 CFR 370",
-        "49 CFR 379",
-        "49 CFR 386",
-        "49 CFR 390"
-      ],
-      "regulation_ids": [
-        "2126-AC86"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
       "source_id": "2026-04362",
       "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Protections for Transit Workers Under Section 5333(b) Urban Program",
       "abstract": "The Department of Labor (DOL of the Department) is submitting this Office of Labor-Management Standards, Department of Labor (OLMS)- sponsored information collection request (ICR) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act of 1995 (PRA). Public comments on the ICR are invited.",
@@ -2993,194 +2785,81 @@
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03276",
-      "title": "Request for Comments on the Renewal of a Previously Approved Information Collection: Application for Conveyance of Port Facility Property",
-      "abstract": "MARAD invites public comments on its intention to request Office of Management and Budget (OMB) approval to renew an information collection in accordance with the Paperwork Reduction Act of 1995. The proposed collection OMB 2133-0524 (Application for Conveyance of Port Facility Property) is used to determine if an applicant is committed to a port redevelopment plan, the plan is in the best interests of the public, and the property for development will be used in accordance with the terms of port conveyance and applicable statutes and regulations. MARAD is required to publish this notice in the Federal Register to obtain comments from the public and affected agencies.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03276/request-for-comments-on-the-renewal-of-a-previously-approved-information-collection-application-for",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03276.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Notice",
+      "source_id": "2026-04447",
+      "title": "Removal of Regulations for Renewal Communities Designations",
+      "abstract": "This rule removes HUD's Renewal Communities regulations because the designations were time limited, and all incentives have been repealed and sunset.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04447/removal-of-regulations-for-renewal-communities-designations",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04447.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Rule",
       "document_subtype": "",
       "agencies": [
-        "Transportation Department",
-        "Maritime Administration"
+        "Housing and Urban Development Department"
       ],
       "agency_ids": [
-        492,
-        282
+        228
       ],
-      "action": "Notice.",
-      "dates": null,
-      "cfr_references": [],
+      "action": "Final rule.",
+      "dates": "Effective Date: April 6, 2026.",
+      "cfr_references": [
+        "24 CFR 599"
+      ],
       "regulation_ids": [],
       "authority_weight": 0.9
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03262",
-      "title": "Parts and Accessories Necessary for Safe Operation; Spare Fuses",
-      "abstract": "FMCSA amends the emergency equipment rules to remove the requirement for commercial motor vehicles (CMVs) to be equipped with at least one spare fuse for each type and size of fuse needed for the operation of the CMV. This change will remove an unnecessary requirement from the Federal Motor Carrier Safety Regulations (FMCSR).",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03262/parts-and-accessories-necessary-for-safe-operation-spare-fuses",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03262.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
+      "source_id": "2026-04432",
+      "title": "Removal of Final Regulations Identifying Certain Partnership Related-Party Basis Adjustment Transactions as Transactions of Interest",
+      "abstract": "This document proposes to remove regulations that identify certain partnership related-party basis adjustment transactions and substantially similar transactions as transactions of interest, a type of reportable transaction. The regulations would affect participants in these transactions as well as material advisors.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04432/removal-of-final-regulations-identifying-certain-partnership-related-party-basis-adjustment",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04432.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
+        "Treasury Department",
+        "Internal Revenue Service"
       ],
       "agency_ids": [
-        492,
-        181
+        497,
+        254
       ],
-      "action": "Final rule.",
-      "dates": "Effective April 20, 2026. Petitions for reconsideration of this final rule must be submitted to the FMCSA Administrator no later than March 23, 2026.",
+      "action": "Notice of proposed rulemaking.",
+      "dates": "Electronic or written comments and requests for a public hearing must be received by April 6, 2026.",
       "cfr_references": [
-        "49 CFR 393"
+        "26 CFR 1"
       ],
       "regulation_ids": [
-        "2126-AC83"
+        "1545-BR57"
       ],
       "authority_weight": 0.9
     },
     {
       "source": "federal_register",
-      "source_id": "2026-03261",
-      "title": "Parts and Accessories Necessary for Safe Operation; Liquid-Burning Flares",
-      "abstract": "FMCSA amends the rules for emergency equipment on commercial motor vehicles (CMVs) to remove the references to liquid-burning flares from the warning device requirements in the Federal Motor Carrier Safety Regulations (FMCSR). This action eliminates outdated language referring to warning devices that FMCSA believes are no longer used.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03261/parts-and-accessories-necessary-for-safe-operation-liquid-burning-flares",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03261.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
+      "source_id": "2026-04431",
+      "title": "Electronic Furnishing of Payee Statements Regarding Digital Asset Sales by Brokers",
+      "abstract": "This document contains proposed regulations that would provide digital asset brokers that are required to furnish to their customers written statements reflecting information provided to the IRS with respect to digital asset sale transactions with an alternative process for obtaining consent from their customers to receive these statements in an electronic format without offering a paper delivery alternative.",
+      "url": "https://www.federalregister.gov/documents/2026/03/06/2026-04431/electronic-furnishing-of-payee-statements-regarding-digital-asset-sales-by-brokers",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-03-06/pdf/2026-04431.pdf",
+      "published_date": "2026-03-06",
+      "document_type": "Proposed Rule",
       "document_subtype": "",
       "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
+        "Treasury Department",
+        "Internal Revenue Service"
       ],
       "agency_ids": [
-        492,
-        181
+        497,
+        254
       ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
+      "action": "Notice of proposed rulemaking.",
+      "dates": "Written or electronic comments and requests for a public hearing must be received by May 5, 2026.",
       "cfr_references": [
-        "49 CFR 392",
-        "49 CFR 393"
+        "26 CFR 1"
       ],
       "regulation_ids": [
-        "2126-AC84"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03260",
-      "title": "Parts and Accessories Necessary for Safe Operation; Tire Load Markings",
-      "abstract": "FMCSA amends the requirements for commercial motor vehicle (CMV) tires to clarify that the Federal Motor Carrier Safety Regulations (FMCSR) do not require tire load restriction markings on the sidewalls of the tires. This change eliminates confusion and clarifies the scope of FMCSA's authority regarding requirements for CMV tires.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03260/parts-and-accessories-necessary-for-safe-operation-tire-load-markings",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03260.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 393"
-      ],
-      "regulation_ids": [
-        "2126-AC97"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03259",
-      "title": "Parts and Accessories Necessary for Safe Operation; License Plate Lamps",
-      "abstract": "FMCSA amends the Federal Motor Carrier Safety Regulations (FMCSRs) to add an exception from the lamp and reflective device requirements for license plate lamps on the rear of truck tractors while towing a trailer. This amendment removes an unnecessary regulatory requirement without impacting safety.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03259/parts-and-accessories-necessary-for-safe-operation-license-plate-lamps",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03259.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 393"
-      ],
-      "regulation_ids": [
-        "2126-AC96"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03257",
-      "title": "Parts and Accessories Necessary for Safe Operation; Auxiliary Fuel Tanks",
-      "abstract": "FMCSA amends its fuel tank requirements to add an exception to the prohibition on gravity and syphon feeds for auxiliary pumps with a nominal fuel tank capacity of not more than five gallons mounted on the trailer chassis frame or trailer bed, for purposes other than operation of the motor vehicle, that are operated only when the motor vehicle is not in motion. This revision responds to a petition for rulemaking from the Truck Trailer Manufacturers Association (TTMA). The revision provides relief from a regulatory requirement without impacting safety.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03257/parts-and-accessories-necessary-for-safe-operation-auxiliary-fuel-tanks",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03257.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 393"
-      ],
-      "regulation_ids": [
-        "2126-AC94"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03256",
-      "title": "Parts and Accessories Necessary for Safe Operation; Brakes on Portable Conveyors",
-      "abstract": "FMCSA adds an exception for portable conveyors used in aggregate industry operations, and manufactured before 2010, from the requirement that each commercial motor vehicle (CMV) be equipped with brakes acting on all wheels, provided certain conditions are satisfied. This final rule responds to a petition for rulemaking from the Michigan Aggregates Association. The exception will provide relief from a regulatory requirement for certain portable conveyors without impacting safety.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03256/parts-and-accessories-necessary-for-safe-operation-brakes-on-portable-conveyors",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03256.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Transportation Department",
-        "Federal Motor Carrier Safety Administration"
-      ],
-      "agency_ids": [
-        492,
-        181
-      ],
-      "action": "Final rule.",
-      "dates": "Effective March 23, 2026.",
-      "cfr_references": [
-        "49 CFR 393"
-      ],
-      "regulation_ids": [
-        "2126-AC93"
+        "1545-BR47"
       ],
       "authority_weight": 0.9
     },
@@ -3876,58 +3555,6 @@
       ],
       "action": "Notice of information collection; request for comments.",
       "dates": "Written comments should be received on or before April 21, 2026 to be assured of consideration.",
-      "cfr_references": [],
-      "regulation_ids": [],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03296",
-      "title": "Fisheries Off West Coast States; West Coast Salmon Fisheries; Rebuilding Plan for the Overfished Queets River Spring/Summer Chinook Salmon Stock",
-      "abstract": "NMFS proposes to approve and implement the rebuilding plan recommended by the Pacific Fishery Management Council (Council) for the overfished Queets River Spring/Summer Chinook salmon stock (Queets sp/ su Chinook salmon). NMFS determined in October 2023 that this stock was overfished. The rebuilding plan will be part of the framework that guides the development of annual management measures for ocean salmon fisheries until NMFS determines that the overfished stock is rebuilt.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03296/fisheries-off-west-coast-states-west-coast-salmon-fisheries-rebuilding-plan-for-the-overfished",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03296.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Proposed Rule",
-      "document_subtype": "",
-      "agencies": [
-        "Commerce Department",
-        "National Oceanic and Atmospheric Administration"
-      ],
-      "agency_ids": [
-        54,
-        361
-      ],
-      "action": "Proposed rule; request for comments.",
-      "dates": "Comments on this proposed rule must be received on or before March 23, 2026.",
-      "cfr_references": [
-        "50 CFR 660"
-      ],
-      "regulation_ids": [
-        "0648-BN25"
-      ],
-      "authority_weight": 0.9
-    },
-    {
-      "source": "federal_register",
-      "source_id": "2026-03270",
-      "title": "Agency Information Collection Activities: Comment Request for Burden Related to the Credit To Produce Electricity From Advanced Nuclear Power Facilities",
-      "abstract": "In accordance with the Paperwork Reduction Act of 1995, the IRS is inviting comments on the information collection request outlined in this notice.",
-      "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03270/agency-information-collection-activities-comment-request-for-burden-related-to-the-credit-to-produce",
-      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-02-19/pdf/2026-03270.pdf",
-      "published_date": "2026-02-19",
-      "document_type": "Notice",
-      "document_subtype": "icr",
-      "agencies": [
-        "Treasury Department",
-        "Internal Revenue Service"
-      ],
-      "agency_ids": [
-        497,
-        254
-      ],
-      "action": "Notice of information collection and request for comments.",
-      "dates": "Written comments should be received on or before April 20, 2026 to be assured of consideration.",
       "cfr_references": [],
       "regulation_ids": [],
       "authority_weight": 0.9
